@@ -7,413 +7,567 @@
 <meta name="robots" content="noindex" />
 <style>
   :root {
-    --bg: #0a0e14;
-    --bg-raised: #10151d;
-    --bg-card: #131922;
-    --border: rgba(255,255,255,0.08);
-    --border-strong: rgba(255,255,255,0.14);
-    --text: #e8edf3;
-    --text-muted: #8b98a8;
-    --text-faint: #5b6774;
-    --accent: #35d0ba;
-    --accent-soft: rgba(53,208,186,0.12);
-    --ok: #4ade80;
-    --ok-soft: rgba(74,222,128,0.12);
-    --warn: #f0a13a;
-    --warn-soft: rgba(240,161,58,0.12);
-    --mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+    --bg: #f5f7f9;
+    --surface: #ffffff;
+    --surface-soft: #f9fbfc;
+    --border: #e2e8ee;
+    --border-strong: #cfd8e1;
+    --text: #17212b;
+    --muted: #647382;
+    --faint: #8b98a4;
+    --accent: #0f766e;
+    --accent-strong: #0b5f59;
+    --accent-soft: #e8f5f3;
+    --blue: #315f91;
+    --blue-soft: #edf3f9;
+    --ok: #287a4b;
+    --ok-soft: #edf7f1;
+    --danger: #a43838;
+    --danger-soft: #fbefef;
+    --shadow: 0 8px 28px rgba(27, 39, 51, 0.06);
+    --mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas, monospace;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-    --radius: 10px;
-    --maxw: 1120px;
+    --radius: 14px;
+    --maxw: 1180px;
   }
 
   * { box-sizing: border-box; }
-
-  html, body {
+  html { scroll-behavior: smooth; }
+  body {
     margin: 0;
-    padding: 0;
+    min-height: 100vh;
     background: var(--bg);
     color: var(--text);
     font-family: var(--sans);
     -webkit-font-smoothing: antialiased;
   }
-
-  body { min-height: 100vh; }
-
   a { color: inherit; }
+  code { font-family: var(--mono); font-size: .94em; }
+  .wrap { width: min(var(--maxw), calc(100% - 48px)); margin: 0 auto; }
 
-  .wrap {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 28px;
+  #status-banner {
+    display: none;
+    padding: 10px 20px;
+    background: var(--danger-soft);
+    color: var(--danger);
+    border-bottom: 1px solid #efd0d0;
+    font-size: 13px;
+    text-align: center;
   }
+  #status-banner.show { display: block; }
 
-  /* ---------- Header ---------- */
   header.site {
-    border-bottom: 1px solid var(--border);
-    background: rgba(10,14,20,0.85);
-    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 20;
+    border-bottom: 1px solid rgba(207,216,225,.85);
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(12px);
   }
   header.site .row {
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    gap: 24px;
   }
   .brand {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    gap: 11px;
+    font-weight: 750;
+    letter-spacing: .015em;
     font-size: 14px;
   }
-  .brand .mark {
-    width: 22px;
-    height: 22px;
-    border-radius: 6px;
-    background: linear-gradient(135deg, var(--accent), #1f8f7f);
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
     display: grid;
     place-items: center;
-    font-size: 11px;
-    color: #06201b;
+    background: var(--accent);
+    color: #fff;
     font-weight: 800;
   }
-  .brand .sub { color: var(--text-muted); font-weight: 500; }
-  nav.top { display: flex; align-items: center; gap: 22px; font-size: 13px; }
-  nav.top a { text-decoration: none; color: var(--text-muted); transition: color .15s; }
+  .brand-sub { color: var(--muted); font-weight: 500; }
+  nav.top { display: flex; align-items: center; gap: 22px; font-size: 13px; color: var(--muted); }
+  nav.top a { text-decoration: none; }
   nav.top a:hover { color: var(--text); }
-  .repo-flag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 10px;
+  .branch-pill {
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
     border-radius: 999px;
-    border: 1px solid var(--border-strong);
-    font-size: 12px;
-    color: var(--text-muted);
+    padding: 6px 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
   }
-  .repo-flag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--warn); }
 
-  /* ---------- Hero ---------- */
-  .hero { padding: 56px 0 40px; }
+  .hero { padding: 64px 0 42px; }
   .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 18px;
-  }
-  .eyebrow .bar { width: 18px; height: 2px; background: var(--accent); }
-  h1.headline {
-    font-size: 42px;
-    line-height: 1.15;
-    margin: 0 0 16px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    max-width: 720px;
-  }
-  h1.headline .fade { color: var(--text-muted); }
-  p.lede {
-    font-size: 16px;
-    color: var(--text-muted);
-    max-width: 560px;
-    line-height: 1.6;
-    margin: 0 0 28px;
-  }
-  .hero-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-  .btn-primary {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--accent);
-    color: #06201b;
-    font-weight: 700;
-    font-size: 13px;
-    padding: 11px 18px;
-    border-radius: 8px;
-    text-decoration: none;
+    margin-bottom: 16px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: .08em;
   }
-  .btn-ghost {
-    font-size: 13px;
-    color: var(--text-muted);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border-strong);
-    padding-bottom: 2px;
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+  h1 {
+    margin: 0;
+    max-width: 820px;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.08;
+    letter-spacing: -.035em;
+    font-weight: 760;
+  }
+  .hero p {
+    max-width: 760px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.65;
   }
 
-  /* ---------- Stat grid ---------- */
   .stats {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    background: var(--bg-raised);
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 14px;
+    margin-top: 36px;
   }
   .stat {
+    min-width: 0;
     padding: 18px 20px;
-    border-right: 1px solid var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: 0 2px 12px rgba(27,39,51,.025);
   }
-  .stat:last-child { border-right: none; }
-  .stat .label {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-faint);
+  .stat-label {
     margin-bottom: 8px;
+    color: var(--faint);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .07em;
   }
-  .stat .value {
+  .stat-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-family: var(--mono);
-    font-size: 19px;
-    font-weight: 600;
-    color: var(--text);
+    font-size: 18px;
+    font-weight: 700;
   }
-  .stat .value.ok { color: var(--ok); }
-  .stat .value.warn { color: var(--warn); }
-  .stat .hint { font-size: 12px; color: var(--text-faint); margin-top: 6px; }
+  .stat-hint { margin-top: 6px; color: var(--muted); font-size: 12px; }
 
-  /* ---------- Sections ---------- */
-  section { padding: 56px 0; border-top: 1px solid var(--border); }
-  section.tight { padding: 40px 0; }
+  section { padding: 54px 0; }
+  section + section { border-top: 1px solid var(--border); }
   .section-head {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 24px;
-    margin-bottom: 28px;
-    flex-wrap: wrap;
+    gap: 28px;
+    margin-bottom: 24px;
   }
   .section-kicker {
+    margin-bottom: 7px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+  }
+  .section-note {
+    max-width: 440px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .current-card {
+    display: grid;
+    grid-template-columns: 170px minmax(0,1fr);
+    gap: 30px;
+    padding: 30px;
+    border: 1px solid #bcded9;
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+  .current-code {
+    align-self: start;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-family: var(--mono);
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .current-label {
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .current-title {
+    margin: 0 0 18px;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: -.015em;
+  }
+  .objective-list {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--muted);
+    line-height: 1.58;
+    font-size: 14px;
+  }
+  .objective-list li + li { margin-top: 7px; }
+
+  .current-progress {
+    margin: 0 0 20px;
+    padding: 15px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #f8fbfb;
+  }
+  .progress-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 10px;
+  }
+  .progress-label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .progress-count {
+    margin-top: 4px;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .progress-percent {
+    color: var(--accent-strong);
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .progress-track {
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e5ecee;
+  }
+  .progress-fill {
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--accent);
+    transition: width .25s ease;
+  }
+  .progress-meta {
+    margin-top: 9px;
+    color: var(--faint);
+    font-size: 11px;
+  }
+
+  .objective-list { list-style: none; padding-left: 0; }
+  .objective-list li {
+    display: grid;
+    grid-template-columns: 14px minmax(0,1fr);
+    gap: 9px;
+    align-items: start;
+  }
+  .objective-state {
+    width: 9px;
+    height: 9px;
+    margin-top: 6px;
+    border-radius: 50%;
+    border: 1px solid #aeb9bf;
+    background: #fff;
+  }
+  .objective-state.in_progress {
+    border-color: #d49a33;
+    background: #f2b94b;
+  }
+  .objective-state.done {
+    border-color: var(--accent);
+    background: var(--accent);
+  }
+
+  .epic-progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 14px;
+  }
+  .epic-progress-card {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  .epic-progress-card.pending {
+    background: #fbfcfd;
+  }
+  .epic-progress-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .epic-code {
+    margin-bottom: 5px;
+    color: var(--faint);
+    font-family: var(--mono);
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-    margin-bottom: 8px;
   }
-  h2.section-title { font-size: 24px; margin: 0; font-weight: 700; }
-  .section-note { font-size: 13px; color: var(--text-muted); max-width: 320px; line-height: 1.55; }
+  .epic-title {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .epic-percent {
+    color: var(--accent-strong);
+    font-family: var(--mono);
+    font-size: 17px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .epic-percent.pending {
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .epic-track {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e8edef;
+  }
+  .epic-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: var(--accent);
+  }
+  .epic-progress-card.pending .epic-track {
+    border: 1px dashed #c8d0d4;
+    background: transparent;
+  }
+  .epic-note {
+    margin-top: 9px;
+    color: var(--faint);
+    font-size: 10px;
+  }
 
-  /* ---------- Commits table ---------- */
-  .commit-list {
+  .roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 14px;
+  }
+  .roadmap-item {
+    position: relative;
+    min-height: 180px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  .roadmap-item.current {
+    border-color: #bcded9;
+    background: var(--accent-soft);
+  }
+  .roadmap-index {
+    margin-bottom: 18px;
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+  .roadmap-code {
+    margin-bottom: 10px;
+    color: var(--blue);
+    font-family: var(--mono);
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .roadmap-item.current .roadmap-code { color: var(--accent-strong); }
+  .roadmap-text { color: var(--muted); font-size: 13px; line-height: 1.5; }
+  .roadmap-arrow {
+    position: absolute;
+    right: -13px;
+    top: 50%;
+    z-index: 3;
+    width: 26px;
+    height: 26px;
+    margin-top: -13px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg);
+    color: var(--faint);
+    font-size: 14px;
+  }
+  .roadmap-item:last-child .roadmap-arrow { display: none; }
+
+  .milestone-card {
+    padding: 24px 26px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .milestone-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text);
+    font-size: 14px;
+  }
+  .milestone-card p { margin: 0; color: var(--muted); line-height: 1.65; font-size: 14px; }
+
+  .commit-list, .test-list {
     overflow: hidden;
-    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
   }
   .commit-row {
     display: grid;
-    grid-template-columns: 88px 1fr 150px;
-    gap: 16px;
+    grid-template-columns: 100px minmax(0,1fr) 170px;
+    gap: 14px;
     align-items: center;
-    padding: 14px 20px;
+    padding: 14px 18px;
     border-bottom: 1px solid var(--border);
     font-size: 13px;
   }
-  .commit-row:last-child { border-bottom: none; }
-  .commit-row:first-child { background: var(--accent-soft); }
-  .commit-sha {
-    font-family: var(--mono);
-    color: var(--accent);
-    font-weight: 600;
-  }
-  .commit-msg { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .commit-meta { color: var(--text-faint); font-size: 12px; text-align: right; font-family: var(--mono); }
-  .head-pill {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    color: #06201b;
-    background: var(--accent);
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-left: 8px;
-    vertical-align: middle;
-  }
+  .commit-row:last-child { border-bottom: 0; }
+  .commit-row:first-child { background: var(--surface-soft); }
+  .commit-sha { font-family: var(--mono); font-weight: 700; color: var(--accent); }
+  .commit-msg { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .commit-meta { text-align: right; color: var(--faint); font-size: 12px; }
 
-  /* ---------- Timeline (sprints) ---------- */
-  .timeline { position: relative; padding-left: 28px; }
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 6px;
-    top: 6px;
-    bottom: 6px;
-    width: 1px;
-    background: var(--border-strong);
-  }
-  .tl-item { position: relative; padding-bottom: 28px; }
-  .tl-item:last-child { padding-bottom: 0; }
-  .tl-item::before {
-    content: "";
-    position: absolute;
-    left: -28px;
-    top: 4px;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: var(--bg);
-    border: 2px solid var(--ok);
-  }
-  .tl-item.pending::before { border-color: var(--warn); }
-  .tl-head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 6px;
-  }
-  .tag {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent);
-  }
-  .tag.pending { background: var(--warn-soft); color: var(--warn); }
-  .tl-status { margin-left: auto; font-size: 12px; color: var(--ok); font-weight: 600; }
-  .tl-status.pending { color: var(--warn); }
-  .tl-title { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
-  .tl-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; max-width: 620px; }
-
-  /* ---------- Tests grid ---------- */
-  .tests-wrap {
+  .quality-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 20px;
+    grid-template-columns: 280px minmax(0,1fr);
+    gap: 16px;
   }
-  .test-hero-card {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--bg-card);
+  .quality-summary {
     padding: 26px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .test-hero-card .big {
-    font-family: var(--mono);
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--ok);
-  }
-  .test-hero-card .cmd { font-family: var(--mono); font-size: 13px; color: var(--text); }
-  .test-hero-card .desc { font-size: 12px; color: var(--text-faint); }
-  .test-list {
-    border: 1px solid var(--border);
+    border: 1px solid #c9dfd1;
     border-radius: var(--radius);
-    overflow: hidden;
-    background: var(--bg-card);
-  }
-  .test-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 18px;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-  }
-  .test-row:last-child { border-bottom: none; }
-  .test-name { font-family: var(--mono); color: var(--text); }
-  .test-scope { color: var(--text-faint); font-size: 12px; margin-left: 10px; }
-  .pass-pill {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--ok);
     background: var(--ok-soft);
-    padding: 3px 8px;
-    border-radius: 6px;
   }
-
-  /* ---------- Decision banner ---------- */
-  .decision {
-    border: 1px solid var(--border-strong);
-    border-radius: var(--radius);
-    background: linear-gradient(135deg, var(--warn-soft), transparent 60%);
-    padding: 28px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .decision .label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--warn);
-    margin-bottom: 8px;
-  }
-  .decision h3 { margin: 0 0 6px; font-size: 20px; }
-  .decision p { margin: 0; color: var(--text-muted); font-size: 13px; max-width: 480px; }
-  .decision-badge {
+  .quality-number {
+    color: var(--ok);
     font-family: var(--mono);
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--warn);
-    border: 1px solid var(--warn);
-    border-radius: 8px;
-    padding: 10px 18px;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .quality-summary h3 { margin: 12px 0 6px; font-size: 18px; }
+  .quality-summary p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+  .test-row {
+    display: grid;
+    grid-template-columns: 230px minmax(0,1fr) 70px;
+    gap: 14px;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .test-row:last-child { border-bottom: 0; }
+  .test-name { font-family: var(--mono); font-weight: 650; }
+  .test-command { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--faint); font-family: var(--mono); }
+  .pass-pill {
+    justify-self: end;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: var(--ok-soft);
+    color: var(--ok);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .05em;
   }
 
-  /* ---------- Footer ---------- */
+  .source-strip {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  .source-chip {
+    padding: 7px 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+
   footer.site {
     border-top: 1px solid var(--border);
-    padding: 24px 0 40px;
+    background: var(--surface);
+  }
+  footer .row {
+    min-height: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    color: var(--muted);
     font-size: 12px;
-    color: var(--text-faint);
-    flex-wrap: wrap;
-    gap: 10px;
   }
-  footer.site .foot-right { font-family: var(--mono); }
+  .foot-meta { font-family: var(--mono); color: var(--faint); }
 
-  .sync-note {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    color: var(--text-faint);
-    margin-top: 16px;
+  @media (max-width: 960px) {
+    .stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .roadmap-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .roadmap-arrow { display: none; }
+    .quality-grid { grid-template-columns: 1fr; }
   }
-  .sync-note .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ok); }
-  .sync-note.stale .dot { background: var(--warn); }
-
-  #status-banner {
-    display: none;
-    background: var(--warn-soft);
-    color: var(--warn);
-    font-size: 13px;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-  }
-  #status-banner.show { display: block; }
-
-  @media (max-width: 860px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
-    .stat:nth-child(2n) { border-right: none; }
-    .stat { border-bottom: 1px solid var(--border); }
-    .tests-wrap { grid-template-columns: 1fr; }
-    h1.headline { font-size: 30px; }
-    .commit-row { grid-template-columns: 70px 1fr; }
-    .commit-meta { display: none; }
+  @media (max-width: 700px) {
+    .wrap { width: min(100% - 28px, var(--maxw)); }
     nav.top { display: none; }
+    .hero { padding-top: 42px; }
+    .stats { grid-template-columns: 1fr; }
+    .section-head { align-items: flex-start; flex-direction: column; gap: 10px; }
+    .current-card { grid-template-columns: 1fr; }
+    .current-code { width: max-content; min-width: 120px; }
+    .roadmap-grid { grid-template-columns: 1fr; }
+    .commit-row { grid-template-columns: 82px minmax(0,1fr); }
+    .commit-meta { display: none; }
+    .test-row { grid-template-columns: minmax(0,1fr) 60px; }
+    .test-command { display: none; }
+    footer .row { align-items: flex-start; flex-direction: column; padding: 20px 0; }
   }
 </style>
 </head>
@@ -424,249 +578,281 @@
 <header class="site">
   <div class="wrap row">
     <div class="brand">
-      <span class="mark">S</span>
-      SIMETTRIA <span class="sub">/ desenvolvimento</span>
+      <span class="brand-mark">S</span>
+      <span>SIMETTRIA <span class="brand-sub">/ desenvolvimento</span></span>
     </div>
     <nav class="top">
-      <a href="https://github.com/JGaspar-Eng/simettria" target="_blank" rel="noopener">GitHub</a>
-      <a href="#commits">Commits</a>
-      <a href="#marcos">Marcos</a>
-      <a href="#qualidade">Qualidade</a>
-      <span class="repo-flag"><span class="dot"></span> privado · main</span>
+      <a href="#estado">Estado atual</a>
+      <a href="#progresso">Progresso</a>
+      <a href="#roadmap">Sequência</a>
+      <a href="#consolidado">Consolidado</a>
     </nav>
   </div>
 </header>
 
 <main>
   <div class="wrap hero">
-    <div class="eyebrow"><span class="bar"></span> Checkpoint técnico · fonte: GitHub</div>
-    <h1 class="headline">Estado real do <span class="fade">SIMETTRIA</span>,<br>direto do repositório.</h1>
-    <p class="lede">Painel gerado a partir do histórico da branch <code>main</code> a cada push. Nenhum dado é digitado manualmente — o que está aqui é o que está no Git.</p>
-    <div class="hero-actions">
-      <a class="btn-primary" href="https://github.com/JGaspar-Eng/simettria/commits/main" target="_blank" rel="noopener">Ver histórico completo ↗</a>
-      <a class="btn-ghost" href="#marcos">Ver marcos da Sprint 012 ↓</a>
-    </div>
+    <div class="eyebrow">Painel técnico versionado</div>
+    <h1>Estado real do desenvolvimento do SIMETTRIA.</h1>
+    <p>Este painel mostra onde o desenvolvimento está, quanto já avançou em cada área, quais são as próximas etapas e o que já foi consolidado no SIMETTRIA. As informações são atualizadas a partir dos registros versionados do projeto.</p>
 
-    <div class="stats" style="margin-top:40px;">
+    <div class="stats">
       <div class="stat">
-        <div class="label">HEAD da main</div>
-        <div class="value" id="stat-head">—</div>
-        <div class="hint">último commit publicado</div>
+        <div class="stat-label">Bloco atual</div>
+        <div class="stat-value" id="stat-current">—</div>
+        <div class="stat-hint">etapa em desenvolvimento</div>
       </div>
       <div class="stat">
-        <div class="label">Branch</div>
-        <div class="value" id="stat-branch">—</div>
-        <div class="hint">única branch de trabalho</div>
+        <div class="stat-label">Progresso atual</div>
+        <div class="stat-value" id="stat-progress">—</div>
+        <div class="stat-hint">objetivos concluídos desta etapa</div>
       </div>
       <div class="stat">
-        <div class="label">Suíte oficial</div>
-        <div class="value ok">test:all · PASS</div>
-        <div class="hint">7 validadores, 100%</div>
+        <div class="stat-label">Próxima etapa</div>
+        <div class="stat-value" id="stat-next">—</div>
+        <div class="stat-hint">sequência planejada</div>
       </div>
       <div class="stat">
-        <div class="label">Marco atual</div>
-        <div class="value">Sprint 012-M4</div>
-        <div class="hint">MemorialDocument · laje</div>
+        <div class="stat-label">Atualização</div>
+        <div class="stat-value" id="stat-updated">—</div>
+        <div class="stat-hint">última atualização do painel</div>
       </div>
-      <div class="stat">
-        <div class="label">Próxima decisão</div>
-        <div class="value warn">Definir M5</div>
-        <div class="hint">expansão ou endurecimento</div>
-      </div>
-    </div>
-
-    <div class="sync-note" id="sync-note">
-      <span class="dot"></span>
-      <span id="sync-text">carregando status.json…</span>
     </div>
   </div>
 
-  <section id="commits">
+  <section id="estado">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker">01 · Fonte real</div>
-          <h2 class="section-title">Últimos commits em <code>main</code></h2>
+          <div class="section-kicker">Onde estamos</div>
+          <h2>Bloco estrutural ativo</h2>
         </div>
-        <p class="section-note">Lista gerada pelo workflow de deploy diretamente do Git — não há edição manual desta seção.</p>
+        <p class="section-note">Esta é a etapa que está sendo trabalhada neste momento.</p>
       </div>
-      <div class="commit-list" id="commit-list">
-        <div class="commit-row"><div class="commit-sha">—</div><div class="commit-msg">carregando…</div><div class="commit-meta">—</div></div>
+
+      <div class="current-card">
+        <div class="current-code" id="current-code">—</div>
+        <div>
+          <div class="current-label">Em desenvolvimento</div>
+          <h3 class="current-title" id="current-title">Carregando estado atual…</h3>
+
+          <div class="current-progress">
+            <div class="progress-head">
+              <div>
+                <div class="progress-label">Progresso desta etapa</div>
+                <div class="progress-count" id="current-progress-count">—</div>
+              </div>
+              <div class="progress-percent" id="current-progress-percent">—</div>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="current-progress-fill"></div>
+            </div>
+            <div class="progress-meta" id="current-progress-meta">Carregando estados…</div>
+          </div>
+
+          <ul class="objective-list" id="objective-list"></ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="marcos">
+  <section id="progresso">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker">02 · Sprint 012 · Memorial</div>
-          <h2 class="section-title">MemorialDocument, marco a marco</h2>
+          <div class="section-kicker">Avanço documentado</div>
+          <h2>Progresso por área</h2>
         </div>
-        <p class="section-note">Contrato neutro de documento consumido pelos modais de viga, pilar e laje — cinco marcos concluídos.</p>
+        <p class="section-note">Os percentuais refletem o avanço registrado em cada área. Quando ainda não existe uma estimativa confiável, isso é indicado claramente.</p>
       </div>
 
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-head"><span class="tag">M0</span><span class="tl-status">✓ concluído</span></div>
-          <h3 class="tl-title">Contrato neutro do documento</h3>
-          <p class="tl-desc"><code>gerarMemorialDocumentoViga</code> transforma o Resolved Model do Calculation Graph em um documento estruturado — sem recálculo, sem estado global, sem HTML.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-head"><span class="tag">M1</span><span class="tl-status">✓ concluído</span></div>
-          <h3 class="tl-title">Geometria, propriedades e materiais da viga</h3>
-          <p class="tl-desc">O modal de detalhamento de viga passa a renderizar essas três seções a partir do documento, reaproveitando dados já resolvidos.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-head"><span class="tag">M2</span><span class="tl-status">✓ concluído</span></div>
-          <h3 class="tl-title">Carregamentos e resultados da viga</h3>
-          <p class="tl-desc">As quatro seções do modal de viga passam a ser consumidas pelo documento. Apresentação de valores estruturados corrigida.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-head"><span class="tag">M3</span><span class="tl-status">✓ concluído</span></div>
-          <h3 class="tl-title">Geometria, propriedades e materiais do pilar</h3>
-          <p class="tl-desc">Contrato estendido ao pilar. Carregamentos e resultados propositalmente omitidos — o pilar não tem essas fontes no Graph.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-head"><span class="tag">M4</span><span class="tl-status">✓ concluído</span></div>
-          <h3 class="tl-title">Carregamentos e transferência de carga da laje</h3>
-          <p class="tl-desc">Cinco seções — geometria, propriedades, materiais, carregamentos e transferência de carga às vigas de bordo — todas com Resolved Model real.</p>
-        </div>
-        <div class="tl-item pending">
-          <div class="tl-head"><span class="tag pending">M5</span><span class="tl-status pending">→ decisão pendente</span></div>
-          <h3 class="tl-title">Definir a próxima Sprint do Memorial</h3>
-          <p class="tl-desc">Expandir o contrato para fundação, ou tratar antes o backlog técnico registrado (XSS pré-existente, guarda dos adaptadores).</p>
-        </div>
-      </div>
+      <div class="epic-progress-grid" id="epic-progress-grid"></div>
     </div>
   </section>
 
-  <section id="qualidade">
+  <section id="roadmap">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker">03 · Qualidade</div>
-          <h2 class="section-title">O que está provado por teste</h2>
+          <div class="section-kicker">Próximos blocos</div>
+          <h2>Sequência estrutural planejada</h2>
         </div>
-        <p class="section-note">Resultado de teste é evidência, não substitui inspeção visual — mas impede regressão silenciosa.</p>
+        <p class="section-note">Mostra a ordem prevista das próximas etapas do desenvolvimento.</p>
       </div>
-
-      <div class="tests-wrap">
-        <div class="test-hero-card">
-          <div class="big">100%</div>
-          <div class="cmd">npm run test:all</div>
-          <div class="desc">7 validadores da suíte oficial, verdes na main.</div>
-        </div>
-        <div class="test-list">
-          <div class="test-row"><span><span class="test-name">test:base</span><span class="test-scope">base estática · IDs, imports, exports</span></span><span class="pass-pill">PASS</span></div>
-          <div class="test-row"><span><span class="test-name">test:flow</span><span class="test-scope">fluxo estrutural · UI/controllers</span></span><span class="pass-pill">PASS</span></div>
-          <div class="test-row"><span><span class="test-name">test:calc</span><span class="test-scope">Calculation Graph</span></span><span class="pass-pill">PASS</span></div>
-          <div class="test-row"><span><span class="test-name">test:calc-desacoplamento</span><span class="test-scope">desacoplamento do Graph</span></span><span class="pass-pill">PASS</span></div>
-          <div class="test-row"><span><span class="test-name">test:memorial-m2</span><span class="test-scope">MemorialDocument · viga</span></span><span class="pass-pill">PASS</span></div>
-          <div class="test-row"><span><span class="test-name">test:memorial-pilar-m3</span><span class="test-scope">MemorialDocument · pilar</span></span><span class="pass-pill">PASS</span></div>
-          <div class="test-row"><span><span class="test-name">test:memorial-laje-m4</span><span class="test-scope">MemorialDocument · laje</span></span><span class="pass-pill">PASS</span></div>
-        </div>
-      </div>
+      <div class="roadmap-grid" id="roadmap-grid"></div>
     </div>
   </section>
 
-  <section class="tight">
+  <section id="consolidado">
     <div class="wrap">
-      <div class="decision">
+      <div class="section-head">
         <div>
-          <div class="label">Decisão necessária</div>
-          <h3>Definir a próxima Sprint do Memorial</h3>
-          <p>Expandir o contrato MemorialDocument para fundação, ou endurecer primeiro o backlog técnico já registrado (XSS pré-existente nos modais e guarda dos adaptadores documento→renderer).</p>
+          <div class="section-kicker">O que foi consolidado</div>
+          <h2>Principais avanços consolidados</h2>
         </div>
-        <div class="decision-badge">M5</div>
+        <p class="section-note">Resumo dos principais avanços que já fazem parte do SIMETTRIA.</p>
+      </div>
+      <div class="milestone-card">
+        <strong>Sprint 012 · MemorialDocument + evolução estrutural</strong>
+        <p id="milestone-summary">Carregando marco consolidado…</p>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="site">
-  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
-    <div>SIMETTRIA — Caderno de desenvolvimento · gerado automaticamente, sem edição manual.</div>
-    <div class="foot-right" id="foot-meta">main · —</div>
+  <div class="wrap row">
+    <div>SIMETTRIA · acompanhamento do desenvolvimento</div>
+    <div>Atualizado em <span id="foot-updated">—</span></div>
   </div>
 </footer>
 
 <script>
 (function () {
+  function escapeHtml(value) {
+    return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
   function fmtDate(iso) {
     if (!iso) return "—";
     try {
-      var d = new Date(iso);
-      return d.toLocaleString("pt-BR", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }).replace(".", "");
-    } catch (e) { return iso; }
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(new Date(iso));
+    } catch (_) {
+      return iso;
+    }
   }
 
   function fmtDateShort(iso) {
     if (!iso) return "—";
     try {
-      var d = new Date(iso);
-      return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short" }).replace(".", "");
-    } catch (e) { return iso; }
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(new Date(iso));
+    } catch (_) {
+      return iso;
+    }
   }
 
-  function escapeHtml(s) {
-    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
+  function showError(message) {
+    var banner = document.getElementById("status-banner");
+    banner.textContent = message;
+    banner.classList.add("show");
+  }
+
+  function plainInlineMarkdown(value) {
+    return String(value == null ? "" : value)
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/\*\*([^*]+)\*\*/g, "$1");
   }
 
   function render(status) {
-    var head = status.head || {};
-    document.getElementById("stat-head").textContent = head.short_sha || "—";
-    document.getElementById("stat-branch").textContent = status.branch || "—";
+    var development = status.development || {};
+    var current = development.current || {};
+    var roadmap = Array.isArray(development.roadmap) ? development.roadmap : [];
+    var epics = Array.isArray(development.epics) ? development.epics : [];
+    var currentProgress = current.progress || {};
 
-    var list = document.getElementById("commit-list");
-    var commits = Array.isArray(status.commits) ? status.commits : [];
-    if (commits.length) {
-      list.innerHTML = commits.map(function (c, i) {
-        return (
-          '<div class="commit-row">' +
-            '<div class="commit-sha">' + escapeHtml(c.short_sha) + (i === 0 ? '<span class="head-pill">HEAD</span>' : '') + '</div>' +
-            '<div class="commit-msg" title="' + escapeHtml(c.message) + '">' + escapeHtml(c.message) + '</div>' +
-            '<div class="commit-meta">' + fmtDateShort(c.date) + '</div>' +
-          '</div>'
-        );
-      }).join("");
-    }
+    var currentRoadmapIndex = roadmap.findIndex(function (item) {
+      return item.code === current.code;
+    });
 
-    var syncText = document.getElementById("sync-text");
-    var syncNote = document.getElementById("sync-note");
-    var generated = status.generated_at ? fmtDate(status.generated_at) : null;
-    if (generated) {
-      syncText.textContent = "status.json gerado em " + generated + " pelo workflow de deploy";
-    } else {
-      syncText.textContent = "status.json carregado";
-    }
+    var nextRoadmap =
+      currentRoadmapIndex >= 0 && currentRoadmapIndex + 1 < roadmap.length
+        ? roadmap[currentRoadmapIndex + 1]
+        : null;
 
-    var footMeta = document.getElementById("foot-meta");
-    footMeta.textContent = (status.branch || "main") + " · " + (head.short_sha || "—") + (status.generated_at ? " · " + fmtDate(status.generated_at) : "");
+    document.getElementById("stat-current").textContent = current.code || "—";
+    document.getElementById("stat-progress").textContent =
+      Number(currentProgress.percent || 0) + "%";
+    document.getElementById("stat-next").textContent =
+      nextRoadmap ? nextRoadmap.code : "—";
+    document.getElementById("stat-updated").textContent =
+      fmtDateShort(status.generated_at);
+    document.getElementById("current-code").textContent = current.code || "—";
+    document.getElementById("current-title").textContent = current.title || "Estado atual indisponível";
+
+    var progress = current.progress || {};
+    var progressItems = Array.isArray(progress.items) ? progress.items : [];
+    var total = Number(progress.total || progressItems.length || 0);
+    var done = Number(progress.done || 0);
+    var inProgress = Number(progress.in_progress || 0);
+    var pending = Number(progress.pending || 0);
+    var percent = Number(progress.percent || 0);
+
+    document.getElementById("current-progress-count").textContent =
+      done + " de " + total + " objetivos concluídos";
+    document.getElementById("current-progress-percent").textContent = percent + "%";
+    document.getElementById("current-progress-fill").style.width = Math.max(0, Math.min(100, percent)) + "%";
+    document.getElementById("current-progress-meta").textContent =
+      "Em andamento: " + inProgress + " · Pendentes: " + pending;
+
+    document.getElementById("objective-list").innerHTML = progressItems.length
+      ? progressItems.map(function (item) {
+          var state = item.state || "pending";
+          return '<li><span class="objective-state ' + escapeHtml(state) + '"></span><span>' +
+            escapeHtml(item.text || "") + '</span></li>';
+        }).join("")
+      : "<li><span class=\"objective-state\"></span><span>Objetivos não informados no checkpoint.</span></li>";
+
+    document.getElementById("epic-progress-grid").innerHTML = epics.length
+      ? epics.map(function (epic) {
+          var measured = epic.status === "measured" && epic.percent != null;
+          var value = measured ? Math.max(0, Math.min(100, Number(epic.percent))) : 0;
+          var percentLabel = measured ? "~" + value + "%" : "reestimativa pendente";
+          return '<article class="epic-progress-card' + (measured ? '"' : ' pending"') + ' title="' + escapeHtml(epic.note || "") + '">' +
+            '<div class="epic-progress-head">' +
+              '<div><div class="epic-code">ÁREA ' + escapeHtml(epic.number) + '</div>' +
+              '<div class="epic-title">' + escapeHtml(epic.title || "") + '</div></div>' +
+              '<div class="epic-percent' + (measured ? '"' : ' pending"') + '>' + escapeHtml(percentLabel) + '</div>' +
+            '</div>' +
+            '<div class="epic-track"><div class="epic-fill" style="width:' + value + '%"></div></div>' +
+            '<div class="epic-note">estimativa versionada no roadmap</div>' +
+          '</article>';
+        }).join("")
+      : '<article class="epic-progress-card pending">Progresso dos épicos indisponível.</article>';
+    document.getElementById("roadmap-grid").innerHTML = roadmap.map(function (item, index) {
+      var isCurrent = item.code === current.code;
+      var roadmapText = String(item.text || "");
+      if (isCurrent) {
+        roadmapText = roadmapText.replace(/^bloco estrutural ativo:\s*/i, "");
+      }
+      return '<article class="roadmap-item' + (isCurrent ? ' current' : '') + '">' +
+        '<div class="roadmap-index">' + String(index + 1).padStart(2, "0") + '</div>' +
+        '<div class="roadmap-code">' + escapeHtml(item.code) + '</div>' +
+        '<div class="roadmap-text">' + escapeHtml(roadmapText) + '</div>' +
+        '<div class="roadmap-arrow">→</div>' +
+      '</article>';
+    }).join("");
+
+    document.getElementById("milestone-summary").textContent =
+      plainInlineMarkdown(development.milestone_summary || "Resumo não disponível.");
+
+    document.getElementById("foot-updated").textContent =
+      fmtDate(status.generated_at);
   }
 
-  function showBanner(msg) {
-    var b = document.getElementById("status-banner");
-    b.textContent = msg;
-    b.classList.add("show");
-    var syncNote = document.getElementById("sync-note");
-    syncNote.classList.add("stale");
-    document.getElementById("sync-text").textContent = msg;
-  }
-
-  fetch("./status.json", { cache: "no-store" })
-    .then(function (r) {
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      return r.json();
+  fetch("status.json?v=" + Date.now(), { cache: "no-store" })
+    .then(function (response) {
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      return response.json();
     })
     .then(render)
-    .catch(function (err) {
-      showBanner("status.json indisponível (" + err.message + ") — exibindo layout sem dados ao vivo.");
+    .catch(function (error) {
+      showError("Não foi possível carregar o status do SIMETTRIA: " + error.message);
     });
 })();
 </script>
-
 </body>
 </html>

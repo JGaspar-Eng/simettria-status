@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-16T21:03:40Z",
+  "generated_at": "2026-08-16T21:40:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a0a3637e04e1b2bf01ef09420c2fb0fa513b2ac7",
-    "short_sha": "a0a3637",
+    "sha": "61797df3e3667064eb3325b1e581f9e7630f4c45",
+    "short_sha": "61797df",
     "author": "JGaspar-Eng",
-    "date": "2026-08-16T18:03:26-03:00",
-    "message": "docs(roadmap): sincroniza estado estrutural e suite oficial"
+    "date": "2026-08-16T18:40:26-03:00",
+    "message": "feat(status): adiciona progresso rastreável ao painel de desenvolvimento"
   },
   "commits": [
+    {
+      "sha": "61797df3e3667064eb3325b1e581f9e7630f4c45",
+      "short_sha": "61797df",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-16T18:40:26-03:00",
+      "message": "feat(status): adiciona progresso rastreável ao painel de desenvolvimento"
+    },
     {
       "sha": "a0a3637e04e1b2bf01ef09420c2fb0fa513b2ac7",
       "short_sha": "a0a3637",
@@ -72,17 +79,217 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-14T18:00:11-03:00",
       "message": "feat(memorial): render pillar geometry and materials via document"
-    },
-    {
-      "sha": "53c28c0b9ed12f6725053314f40f598d1149ad6b",
-      "short_sha": "53c28c0",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-14T14:41:52-03:00",
-      "message": "docs(memorial): close sprint 012-m2 documentation"
     }
   ],
+  "development": {
+    "current": {
+      "code": "M3B",
+      "title": "rigidez dos pilares por pavimento e preparação da análise lateral",
+      "objectives": [
+        "auditar o modelo existente de níveis, pé-direito, continuidade de prumadas, vínculos e propriedades do concreto",
+        "estabelecer a altura estrutural efetiva de cada trecho de pilar por pavimento",
+        "determinar de forma rastreável a contribuição de rigidez lateral dos pilares nos dois eixos globais",
+        "agregar essas contribuições por pavimento sem criar estado estrutural paralelo",
+        "produzir uma base auditável que possa ser consumida posteriormente pela análise lateral/global."
+      ],
+      "progress": {
+        "total": 5,
+        "done": 0,
+        "in_progress": 0,
+        "pending": 5,
+        "percent": 0,
+        "items": [
+          {
+            "text": "auditar o modelo existente de níveis, pé-direito, continuidade de prumadas, vínculos e propriedades do concreto",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "estabelecer a altura estrutural efetiva de cada trecho de pilar por pavimento",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "determinar de forma rastreável a contribuição de rigidez lateral dos pilares nos dois eixos globais",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "agregar essas contribuições por pavimento sem criar estado estrutural paralelo",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "produzir uma base auditável que possa ser consumida posteriormente pela análise lateral/global.",
+            "state": "pending",
+            "marker": "⬜"
+          }
+        ]
+      }
+    },
+    "milestone_summary": "M0 criou o contrato neutro; M1 integrou Geometria, Propriedades e Materiais da viga; M2 completou Carregamentos e Resultados da viga; M3 estendeu o contrato ao pilar; M4 integrou a laje com Geometria, Propriedades, Materiais, Carregamentos e Transferência de carga às vigas. Após M4, o bloco estrutural M3A consolidou a orientação 0°/90° dos pilares e as inércias globais `Ix,g`/`Iy,g`.",
+    "roadmap": [
+      {
+        "code": "M3B",
+        "text": "bloco estrutural ativo: rigidez dos pilares por pavimento e preparação da análise lateral/global."
+      },
+      {
+        "code": "W1",
+        "text": "motor de ações de vento — planejado após M3B."
+      },
+      {
+        "code": "SA-L1",
+        "text": "análise lateral/global — planejada após M3B + W1."
+      },
+      {
+        "code": "OPT-PILAR-01",
+        "text": "otimização global da orientação dos pilares — planejada, não implementada."
+      }
+    ],
+    "epics": [
+      {
+        "number": 1,
+        "code": "E1",
+        "title": "Modelagem Estrutural",
+        "percent": 50,
+        "note": "~50%.",
+        "status": "measured"
+      },
+      {
+        "number": 2,
+        "code": "E2",
+        "title": "Infraestrutura / Geotecnia",
+        "percent": 60,
+        "note": "~60% (M2 V1 preliminar de fundações rasas concluído; capacidade normativa, memorial e motores multi-obra pendentes).",
+        "status": "measured"
+      },
+      {
+        "number": 3,
+        "code": "E3",
+        "title": "Integração Estrutural",
+        "percent": null,
+        "note": "reestimativa pendente após o fechamento do M3B; não será alterado por inferência enquanto o novo escopo de integração global estiver em implantação.",
+        "status": "pending_reestimate"
+      },
+      {
+        "number": 4,
+        "code": "E4",
+        "title": "Dimensionamento",
+        "percent": 5,
+        "note": "~5%.",
+        "status": "measured"
+      },
+      {
+        "number": 5,
+        "code": "E5",
+        "title": "Detalhamento",
+        "percent": 10,
+        "note": "~10% (interfaces preliminares prontas).",
+        "status": "measured"
+      },
+      {
+        "number": 6,
+        "code": "E6",
+        "title": "Visualização",
+        "percent": 25,
+        "note": "~25%.",
+        "status": "measured"
+      },
+      {
+        "number": 7,
+        "code": "E7",
+        "title": "Produtividade",
+        "percent": 25,
+        "note": "~25%.",
+        "status": "measured"
+      },
+      {
+        "number": 8,
+        "code": "E8",
+        "title": "BIM / Interoperabilidade",
+        "percent": 5,
+        "note": "~5%.",
+        "status": "measured"
+      },
+      {
+        "number": 9,
+        "code": "E9",
+        "title": "Inteligência",
+        "percent": 10,
+        "note": "~10%. A disponibilidade de `Ix,g`/`Iy,g` é infraestrutura estrutural habilitadora e não será contabilizada como otimização já implementada.",
+        "status": "measured"
+      },
+      {
+        "number": 10,
+        "code": "E10",
+        "title": "Produto Final",
+        "percent": 10,
+        "note": "~10%.",
+        "status": "measured"
+      },
+      {
+        "number": 11,
+        "code": "E11",
+        "title": "Normas Técnicas",
+        "percent": 5,
+        "note": "~5% (apenas NBR 6484, parcial).",
+        "status": "measured"
+      },
+      {
+        "number": 12,
+        "code": "E12",
+        "title": "Qualidade e Validação",
+        "percent": 15,
+        "note": "~15%. A infraestrutura de regressão está consolidada, mas o percentual não será elevado apenas pelo aumento da suíte: validação numérica de engenharia ainda depende dos motores normativos.",
+        "status": "measured"
+      }
+    ]
+  },
+  "tests": {
+    "command": "npm run test:all",
+    "validator_count": 8,
+    "validators": [
+      {
+        "name": "test:base",
+        "command": "python tests/validar_base_simettria.py"
+      },
+      {
+        "name": "test:flow",
+        "command": "node tests/validar_fluxo_estrutural.mjs"
+      },
+      {
+        "name": "test:calc",
+        "command": "node tests/validar_calculation_graph.mjs"
+      },
+      {
+        "name": "test:calc-desacoplamento",
+        "command": "node tests/validar_calculation_graph_desacoplamento.mjs"
+      },
+      {
+        "name": "test:memorial-m2",
+        "command": "node tests/validar_memorial_viga_secoes_m2.mjs"
+      },
+      {
+        "name": "test:memorial-pilar-m3",
+        "command": "node tests/validar_memorial_pilar_m3.mjs"
+      },
+      {
+        "name": "test:memorial-laje-m4",
+        "command": "node tests/validar_memorial_laje_m4.mjs"
+      },
+      {
+        "name": "test:pilar-m3a",
+        "command": "node tests/validar_orientacao_pilar_m3a.mjs"
+      }
+    ]
+  },
+  "sources": {
+    "current": "docs/CHECKPOINT.md",
+    "roadmap": "docs/ROADMAP.md",
+    "tests": "package.json"
+  },
   "workflow_run": {
-    "run_id": "31972358831",
-    "run_number": "6"
+    "run_id": "31974194564",
+    "run_number": "7"
   }
 }
