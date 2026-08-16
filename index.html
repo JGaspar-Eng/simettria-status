@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SIMETTRIA — Painel de Desenvolvimento</title>
+<meta name="robots" content="noindex" />
+<style>
+  :root {
+    --bg: #0a0e14;
+    --bg-raised: #10151d;
+    --bg-card: #131922;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.14);
+    --text: #e8edf3;
+    --text-muted: #8b98a8;
+    --text-faint: #5b6774;
+    --accent: #35d0ba;
+    --accent-soft: rgba(53,208,186,0.12);
+    --ok: #4ade80;
+    --ok-soft: rgba(74,222,128,0.12);
+    --warn: #f0a13a;
+    --warn-soft: rgba(240,161,58,0.12);
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    --radius: 10px;
+    --maxw: 1120px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body { min-height: 100vh; }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- Header ---------- */
+  header.site {
+    border-bottom: 1px solid var(--border);
+    background: rgba(10,14,20,0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  header.site .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+  }
+  .brand .mark {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent), #1f8f7f);
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    color: #06201b;
+    font-weight: 800;
+  }
+  .brand .sub { color: var(--text-muted); font-weight: 500; }
+  nav.top { display: flex; align-items: center; gap: 22px; font-size: 13px; }
+  nav.top a { text-decoration: none; color: var(--text-muted); transition: color .15s; }
+  nav.top a:hover { color: var(--text); }
+  .repo-flag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .repo-flag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--warn); }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 56px 0 40px; }
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 18px;
+  }
+  .eyebrow .bar { width: 18px; height: 2px; background: var(--accent); }
+  h1.headline {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 0 0 16px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    max-width: 720px;
+  }
+  h1.headline .fade { color: var(--text-muted); }
+  p.lede {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 560px;
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+  .hero-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #06201b;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 11px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .btn-ghost {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 2px;
+  }
+
+  /* ---------- Stat grid ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-raised);
+  }
+  .stat {
+    padding: 18px 20px;
+    border-right: 1px solid var(--border);
+  }
+  .stat:last-child { border-right: none; }
+  .stat .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    margin-bottom: 8px;
+  }
+  .stat .value {
+    font-family: var(--mono);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .stat .value.ok { color: var(--ok); }
+  .stat .value.warn { color: var(--warn); }
+  .stat .hint { font-size: 12px; color: var(--text-faint); margin-top: 6px; }
+
+  /* ---------- Sections ---------- */
+  section { padding: 56px 0; border-top: 1px solid var(--border); }
+  section.tight { padding: 40px 0; }
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .section-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 8px;
+  }
+  h2.section-title { font-size: 24px; margin: 0; font-weight: 700; }
+  .section-note { font-size: 13px; color: var(--text-muted); max-width: 320px; line-height: 1.55; }
+
+  /* ---------- Commits table ---------- */
+  .commit-list {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-card);
+  }
+  .commit-row {
+    display: grid;
+    grid-template-columns: 88px 1fr 150px;
+    gap: 16px;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .commit-row:last-child { border-bottom: none; }
+  .commit-row:first-child { background: var(--accent-soft); }
+  .commit-sha {
+    font-family: var(--mono);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .commit-msg { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .commit-meta { color: var(--text-faint); font-size: 12px; text-align: right; font-family: var(--mono); }
+  .head-pill {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #06201b;
+    background: var(--accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  /* ---------- Timeline (sprints) ---------- */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: var(--border-strong);
+  }
+  .tl-item { position: relative; padding-bottom: 28px; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--ok);
+  }
+  .tl-item.pending::before { border-color: var(--warn); }
+  .tl-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .tag.pending { background: var(--warn-soft); color: var(--warn); }
+  .tl-status { margin-left: auto; font-size: 12px; color: var(--ok); font-weight: 600; }
+  .tl-status.pending { color: var(--warn); }
+  .tl-title { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+  .tl-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; max-width: 620px; }
+
+  /* ---------- Tests grid ---------- */
+  .tests-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 20px;
+  }
+  .test-hero-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .test-hero-card .big {
+    font-family: var(--mono);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--ok);
+  }
+  .test-hero-card .cmd { font-family: var(--mono); font-size: 13px; color: var(--text); }
+  .test-hero-card .desc { font-size: 12px; color: var(--text-faint); }
+  .test-list {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-card);
+  }
+  .test-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .test-row:last-child { border-bottom: none; }
+  .test-name { font-family: var(--mono); color: var(--text); }
+  .test-scope { color: var(--text-faint); font-size: 12px; margin-left: 10px; }
+  .pass-pill {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ok);
+    background: var(--ok-soft);
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  /* ---------- Decision banner ---------- */
+  .decision {
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--warn-soft), transparent 60%);
+    padding: 28px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .decision .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--warn);
+    margin-bottom: 8px;
+  }
+  .decision h3 { margin: 0 0 6px; font-size: 20px; }
+  .decision p { margin: 0; color: var(--text-muted); font-size: 13px; max-width: 480px; }
+  .decision-badge {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--warn);
+    border: 1px solid var(--warn);
+    border-radius: 8px;
+    padding: 10px 18px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer.site {
+    border-top: 1px solid var(--border);
+    padding: 24px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-faint);
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer.site .foot-right { font-family: var(--mono); }
+
+  .sync-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-faint);
+    margin-top: 16px;
+  }
+  .sync-note .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ok); }
+  .sync-note.stale .dot { background: var(--warn); }
+
+  #status-banner {
+    display: none;
+    background: var(--warn-soft);
+    color: var(--warn);
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  #status-banner.show { display: block; }
+
+  @media (max-width: 860px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2n) { border-right: none; }
+    .stat { border-bottom: 1px solid var(--border); }
+    .tests-wrap { grid-template-columns: 1fr; }
+    h1.headline { font-size: 30px; }
+    .commit-row { grid-template-columns: 70px 1fr; }
+    .commit-meta { display: none; }
+    nav.top { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="status-banner"></div>
+
+<header class="site">
+  <div class="wrap row">
+    <div class="brand">
+      <span class="mark">S</span>
+      SIMETTRIA <span class="sub">/ desenvolvimento</span>
+    </div>
+    <nav class="top">
+      <a href="https://github.com/JGaspar-Eng/simettria" target="_blank" rel="noopener">GitHub</a>
+      <a href="#commits">Commits</a>
+      <a href="#marcos">Marcos</a>
+      <a href="#qualidade">Qualidade</a>
+      <span class="repo-flag"><span class="dot"></span> privado · main</span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow"><span class="bar"></span> Checkpoint técnico · fonte: GitHub</div>
+    <h1 class="headline">Estado real do <span class="fade">SIMETTRIA</span>,<br>direto do repositório.</h1>
+    <p class="lede">Painel gerado a partir do histórico da branch <code>main</code> a cada push. Nenhum dado é digitado manualmente — o que está aqui é o que está no Git.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://github.com/JGaspar-Eng/simettria/commits/main" target="_blank" rel="noopener">Ver histórico completo ↗</a>
+      <a class="btn-ghost" href="#marcos">Ver marcos da Sprint 012 ↓</a>
+    </div>
+
+    <div class="stats" style="margin-top:40px;">
+      <div class="stat">
+        <div class="label">HEAD da main</div>
+        <div class="value" id="stat-head">—</div>
+        <div class="hint">último commit publicado</div>
+      </div>
+      <div class="stat">
+        <div class="label">Branch</div>
+        <div class="value" id="stat-branch">—</div>
+        <div class="hint">única branch de trabalho</div>
+      </div>
+      <div class="stat">
+        <div class="label">Suíte oficial</div>
+        <div class="value ok">test:all · PASS</div>
+        <div class="hint">7 validadores, 100%</div>
+      </div>
+      <div class="stat">
+        <div class="label">Marco atual</div>
+        <div class="value">Sprint 012-M4</div>
+        <div class="hint">MemorialDocument · laje</div>
+      </div>
+      <div class="stat">
+        <div class="label">Próxima decisão</div>
+        <div class="value warn">Definir M5</div>
+        <div class="hint">expansão ou endurecimento</div>
+      </div>
+    </div>
+
+    <div class="sync-note" id="sync-note">
+      <span class="dot"></span>
+      <span id="sync-text">carregando status.json…</span>
+    </div>
+  </div>
+
+  <section id="commits">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">01 · Fonte real</div>
+          <h2 class="section-title">Últimos commits em <code>main</code></h2>
+        </div>
+        <p class="section-note">Lista gerada pelo workflow de deploy diretamente do Git — não há edição manual desta seção.</p>
+      </div>
+      <div class="commit-list" id="commit-list">
+        <div class="commit-row"><div class="commit-sha">—</div><div class="commit-msg">carregando…</div><div class="commit-meta">—</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="marcos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">02 · Sprint 012 · Memorial</div>
+          <h2 class="section-title">MemorialDocument, marco a marco</h2>
+        </div>
+        <p class="section-note">Contrato neutro de documento consumido pelos modais de viga, pilar e laje — cinco marcos concluídos.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-head"><span class="tag">M0</span><span class="tl-status">✓ concluído</span></div>
+          <h3 class="tl-title">Contrato neutro do documento</h3>
+          <p class="tl-desc"><code>gerarMemorialDocumentoViga</code> transforma o Resolved Model do Calculation Graph em um documento estruturado — sem recálculo, sem estado global, sem HTML.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head"><span class="tag">M1</span><span class="tl-status">✓ concluído</span></div>
+          <h3 class="tl-title">Geometria, propriedades e materiais da viga</h3>
+          <p class="tl-desc">O modal de detalhamento de viga passa a renderizar essas três seções a partir do documento, reaproveitando dados já resolvidos.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head"><span class="tag">M2</span><span class="tl-status">✓ concluído</span></div>
+          <h3 class="tl-title">Carregamentos e resultados da viga</h3>
+          <p class="tl-desc">As quatro seções do modal de viga passam a ser consumidas pelo documento. Apresentação de valores estruturados corrigida.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head"><span class="tag">M3</span><span class="tl-status">✓ concluído</span></div>
+          <h3 class="tl-title">Geometria, propriedades e materiais do pilar</h3>
+          <p class="tl-desc">Contrato estendido ao pilar. Carregamentos e resultados propositalmente omitidos — o pilar não tem essas fontes no Graph.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head"><span class="tag">M4</span><span class="tl-status">✓ concluído</span></div>
+          <h3 class="tl-title">Carregamentos e transferência de carga da laje</h3>
+          <p class="tl-desc">Cinco seções — geometria, propriedades, materiais, carregamentos e transferência de carga às vigas de bordo — todas com Resolved Model real.</p>
+        </div>
+        <div class="tl-item pending">
+          <div class="tl-head"><span class="tag pending">M5</span><span class="tl-status pending">→ decisão pendente</span></div>
+          <h3 class="tl-title">Definir a próxima Sprint do Memorial</h3>
+          <p class="tl-desc">Expandir o contrato para fundação, ou tratar antes o backlog técnico registrado (XSS pré-existente, guarda dos adaptadores).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="qualidade">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">03 · Qualidade</div>
+          <h2 class="section-title">O que está provado por teste</h2>
+        </div>
+        <p class="section-note">Resultado de teste é evidência, não substitui inspeção visual — mas impede regressão silenciosa.</p>
+      </div>
+
+      <div class="tests-wrap">
+        <div class="test-hero-card">
+          <div class="big">100%</div>
+          <div class="cmd">npm run test:all</div>
+          <div class="desc">7 validadores da suíte oficial, verdes na main.</div>
+        </div>
+        <div class="test-list">
+          <div class="test-row"><span><span class="test-name">test:base</span><span class="test-scope">base estática · IDs, imports, exports</span></span><span class="pass-pill">PASS</span></div>
+          <div class="test-row"><span><span class="test-name">test:flow</span><span class="test-scope">fluxo estrutural · UI/controllers</span></span><span class="pass-pill">PASS</span></div>
+          <div class="test-row"><span><span class="test-name">test:calc</span><span class="test-scope">Calculation Graph</span></span><span class="pass-pill">PASS</span></div>
+          <div class="test-row"><span><span class="test-name">test:calc-desacoplamento</span><span class="test-scope">desacoplamento do Graph</span></span><span class="pass-pill">PASS</span></div>
+          <div class="test-row"><span><span class="test-name">test:memorial-m2</span><span class="test-scope">MemorialDocument · viga</span></span><span class="pass-pill">PASS</span></div>
+          <div class="test-row"><span><span class="test-name">test:memorial-pilar-m3</span><span class="test-scope">MemorialDocument · pilar</span></span><span class="pass-pill">PASS</span></div>
+          <div class="test-row"><span><span class="test-name">test:memorial-laje-m4</span><span class="test-scope">MemorialDocument · laje</span></span><span class="pass-pill">PASS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="decision">
+        <div>
+          <div class="label">Decisão necessária</div>
+          <h3>Definir a próxima Sprint do Memorial</h3>
+          <p>Expandir o contrato MemorialDocument para fundação, ou endurecer primeiro o backlog técnico já registrado (XSS pré-existente nos modais e guarda dos adaptadores documento→renderer).</p>
+        </div>
+        <div class="decision-badge">M5</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+    <div>SIMETTRIA — Caderno de desenvolvimento · gerado automaticamente, sem edição manual.</div>
+    <div class="foot-right" id="foot-meta">main · —</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  function fmtDate(iso) {
+    if (!iso) return "—";
+    try {
+      var d = new Date(iso);
+      return d.toLocaleString("pt-BR", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }).replace(".", "");
+    } catch (e) { return iso; }
+  }
+
+  function fmtDateShort(iso) {
+    if (!iso) return "—";
+    try {
+      var d = new Date(iso);
+      return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short" }).replace(".", "");
+    } catch (e) { return iso; }
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function render(status) {
+    var head = status.head || {};
+    document.getElementById("stat-head").textContent = head.short_sha || "—";
+    document.getElementById("stat-branch").textContent = status.branch || "—";
+
+    var list = document.getElementById("commit-list");
+    var commits = Array.isArray(status.commits) ? status.commits : [];
+    if (commits.length) {
+      list.innerHTML = commits.map(function (c, i) {
+        return (
+          '<div class="commit-row">' +
+            '<div class="commit-sha">' + escapeHtml(c.short_sha) + (i === 0 ? '<span class="head-pill">HEAD</span>' : '') + '</div>' +
+            '<div class="commit-msg" title="' + escapeHtml(c.message) + '">' + escapeHtml(c.message) + '</div>' +
+            '<div class="commit-meta">' + fmtDateShort(c.date) + '</div>' +
+          '</div>'
+        );
+      }).join("");
+    }
+
+    var syncText = document.getElementById("sync-text");
+    var syncNote = document.getElementById("sync-note");
+    var generated = status.generated_at ? fmtDate(status.generated_at) : null;
+    if (generated) {
+      syncText.textContent = "status.json gerado em " + generated + " pelo workflow de deploy";
+    } else {
+      syncText.textContent = "status.json carregado";
+    }
+
+    var footMeta = document.getElementById("foot-meta");
+    footMeta.textContent = (status.branch || "main") + " · " + (head.short_sha || "—") + (status.generated_at ? " · " + fmtDate(status.generated_at) : "");
+  }
+
+  function showBanner(msg) {
+    var b = document.getElementById("status-banner");
+    b.textContent = msg;
+    b.classList.add("show");
+    var syncNote = document.getElementById("sync-note");
+    syncNote.classList.add("stale");
+    document.getElementById("sync-text").textContent = msg;
+  }
+
+  fetch("./status.json", { cache: "no-store" })
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(render)
+    .catch(function (err) {
+      showBanner("status.json indisponível (" + err.message + ") — exibindo layout sem dados ao vivo.");
+    });
+})();
+</script>
+
+</body>
+</html>
