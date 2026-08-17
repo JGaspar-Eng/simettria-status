@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-16T21:40:37Z",
+  "generated_at": "2026-08-17T00:22:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "61797df3e3667064eb3325b1e581f9e7630f4c45",
-    "short_sha": "61797df",
+    "sha": "f845c69978d33b4c8c1eb5133ae3d215ade28dd8",
+    "short_sha": "f845c69",
     "author": "JGaspar-Eng",
-    "date": "2026-08-16T18:40:26-03:00",
-    "message": "feat(status): adiciona progresso rastreável ao painel de desenvolvimento"
+    "date": "2026-08-16T21:22:15-03:00",
+    "message": "feat(pilar): persiste vinculo estrutural da base"
   },
   "commits": [
+    {
+      "sha": "f845c69978d33b4c8c1eb5133ae3d215ade28dd8",
+      "short_sha": "f845c69",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-16T21:22:15-03:00",
+      "message": "feat(pilar): persiste vinculo estrutural da base"
+    },
     {
       "sha": "61797df3e3667064eb3325b1e581f9e7630f4c45",
       "short_sha": "61797df",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-14T23:33:37-03:00",
       "message": "docs(memorial): close sprint 012-m3 documentation"
-    },
-    {
-      "sha": "de93fe86fdb707af619a2e72a6e17da68b3612c2",
-      "short_sha": "de93fe8",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-14T18:00:11-03:00",
-      "message": "feat(memorial): render pillar geometry and materials via document"
     }
   ],
   "development": {
@@ -247,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 8,
+    "validator_count": 9,
     "validators": [
       {
         "name": "test:base",
@@ -280,6 +280,10 @@
       {
         "name": "test:pilar-m3a",
         "command": "node tests/validar_orientacao_pilar_m3a.mjs"
+      },
+      {
+        "name": "test:pilar-m3b-vinculo",
+        "command": "node tests/validar_vinculo_base_pilar_m3b.mjs"
       }
     ]
   },
@@ -289,7 +293,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "31974194564",
-    "run_number": "7"
+    "run_id": "31981828689",
+    "run_number": "8"
   }
 }
