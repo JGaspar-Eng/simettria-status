@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-17T21:07:48Z",
+  "generated_at": "2026-08-18T01:16:23Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d6283f7a673c2604b6dbb93b7cf9f49a817ee302",
-    "short_sha": "d6283f7",
+    "sha": "330ba2edc5c93b54f9f20f33a47edf4c9a89d84c",
+    "short_sha": "330ba2e",
     "author": "JGaspar-Eng",
-    "date": "2026-08-17T18:07:36-03:00",
-    "message": "feat(pilar): calcula propriedades elasticas do concreto"
+    "date": "2026-08-17T22:16:11-03:00",
+    "message": "feat(pilar): modela rigidez lateral por pavimento"
   },
   "commits": [
+    {
+      "sha": "330ba2edc5c93b54f9f20f33a47edf4c9a89d84c",
+      "short_sha": "330ba2e",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-17T22:16:11-03:00",
+      "message": "feat(pilar): modela rigidez lateral por pavimento"
+    },
     {
       "sha": "d6283f7a673c2604b6dbb93b7cf9f49a817ee302",
       "short_sha": "d6283f7",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-16T13:41:08-03:00",
       "message": "ci: publish SIMETTRIA status dashboard"
-    },
-    {
-      "sha": "5c7d22b9ba41ee96b499b683be0fabee7bb756c0",
-      "short_sha": "5c7d22b",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-16T11:22:02-03:00",
-      "message": "feat(memorial): render slab loads and transfers via document"
     }
   ],
   "development": {
@@ -247,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 11,
+    "validator_count": 12,
     "validators": [
       {
         "name": "test:base",
@@ -292,6 +292,10 @@
       {
         "name": "test:pilar-m3b-concreto",
         "command": "node tests/validar_concreto_pilar_m3b.mjs"
+      },
+      {
+        "name": "test:pilar-m3b-rigidez",
+        "command": "node tests/validar_rigidez_lateral_pilar_m3b.mjs"
       }
     ]
   },
@@ -301,7 +305,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32069474379",
-    "run_number": "10"
+    "run_id": "32087613202",
+    "run_number": "11"
   }
 }
