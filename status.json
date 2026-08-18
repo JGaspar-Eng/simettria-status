@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-18T17:20:19Z",
+  "generated_at": "2026-08-18T17:28:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "92f77a6478fba99e7a145649542a7e5cd591346d",
-    "short_sha": "92f77a6",
+    "sha": "bb25f6c870af91a551cdbb3db7d3f575d7a7bcb8",
+    "short_sha": "bb25f6c",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T14:20:09-03:00",
-    "message": "Merge pull request #74 from JGaspar-Eng/agent/sa-l1-quatro-casos-derivas"
+    "date": "2026-08-18T14:28:00-03:00",
+    "message": "Merge pull request #75 from JGaspar-Eng/agent/sa-l1-calculation-graph"
   },
   "commits": [
+    {
+      "sha": "bb25f6c870af91a551cdbb3db7d3f575d7a7bcb8",
+      "short_sha": "bb25f6c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:28:00-03:00",
+      "message": "Merge pull request #75 from JGaspar-Eng/agent/sa-l1-calculation-graph"
+    },
+    {
+      "sha": "19b00d487a85a908994661116767d42b95d12132",
+      "short_sha": "19b00d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:27:21-03:00",
+      "message": "docs(sa-l1): registra terceiro objetivo verde"
+    },
+    {
+      "sha": "d3b5e9bdfd8f6566569ef63ea44bf28b6cbe7d13",
+      "short_sha": "d3b5e9b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:25:00-03:00",
+      "message": "test(sa-l1): desacopla rastreabilidade do sanitizador de ids"
+    },
+    {
+      "sha": "718a854466bf56d10c47d3347d26d3204c9542d8",
+      "short_sha": "718a854",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:23:40-03:00",
+      "message": "test(sa-l1): integra graph ao gate oficial"
+    },
+    {
+      "sha": "50a2c2853d98f9b3f99def923f0d8523111e180d",
+      "short_sha": "50a2c28",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:23:19-03:00",
+      "message": "test(sa-l1): valida rastreabilidade K F d no graph"
+    },
+    {
+      "sha": "c870f349491e26b3a054e06f0090bf7e77adaaf3",
+      "short_sha": "c870f34",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:22:38-03:00",
+      "message": "feat(sa-l1): integra resposta lateral ao Calculation Graph"
+    },
+    {
+      "sha": "56ef8c59b31609f573ba08cfd4421f9d72231b68",
+      "short_sha": "56ef8c5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:21:46-03:00",
+      "message": "refactor(sa-l1): expoe solver linear puro ao graph"
+    },
     {
       "sha": "92f77a6478fba99e7a145649542a7e5cd591346d",
       "short_sha": "92f77a6",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T14:16:43-03:00",
       "message": "test(sa-l1): cobre quatro casos e derivas"
-    },
-    {
-      "sha": "075a6d9e450385304b4d3171a680d01159c76a36",
-      "short_sha": "075a6d9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:16:03-03:00",
-      "message": "feat(sa-l1): consolida quatro casos e derivas"
-    },
-    {
-      "sha": "8a702ea4c985866d51ec928df73fad7d314a3379",
-      "short_sha": "8a702ea",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:15:03-03:00",
-      "message": "Merge pull request #73 from JGaspar-Eng/agent/sa-l1-solver-linear"
-    },
-    {
-      "sha": "7dbd84df5b5df8e1a74351efe59de64d6ed37669",
-      "short_sha": "7dbd84d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:14:12-03:00",
-      "message": "docs(sa-l1): registra primeiro objetivo verde"
-    },
-    {
-      "sha": "067ba4947e729c23e1252020c15d20dae0585ac9",
-      "short_sha": "067ba49",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:11:25-03:00",
-      "message": "test(wind): permite expansão do gate após W1"
-    },
-    {
-      "sha": "e6a6f9150ce4fede4e82a410784bea8a1da36bf6",
-      "short_sha": "e6a6f91",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:10:04-03:00",
-      "message": "test(sa-l1): integra solver ao gate oficial"
-    },
-    {
-      "sha": "d4a13911c0d880a71a72d29d1525bb75d3d5e11e",
-      "short_sha": "d4a1391",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:09:50-03:00",
-      "message": "test(sa-l1): valida solver lateral linear"
-    },
-    {
-      "sha": "e8d238a664d8007fa284e76b5526831835439bd6",
-      "short_sha": "e8d238a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:09:26-03:00",
-      "message": "feat(sa-l1): adiciona solver lateral linear"
     }
   ],
   "development": {
@@ -94,10 +94,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "resolver `K·d = F` por direção global consumindo a rigidez do M3B e o contrato W1, com restrições, deslocamentos, rotações, reações e validação de engenharia pelo caso fechado `δ = P·L³/(3EI)`",
@@ -111,8 +111,8 @@
           },
           {
             "text": "integrar a resposta lateral ao Calculation Graph com rastreabilidade explícita entre rigidez, forças e deslocamentos",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "expor a resposta do SA-L1 em auditoria de runtime somente leitura, sem antecipar dimensionamento ou segunda ordem",
@@ -247,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 20,
+    "validator_count": 21,
     "validators": [
       {
         "name": "test:base",
@@ -328,6 +328,10 @@
       {
         "name": "test:sa-l1-solver",
         "command": "node tests/validar_analise_lateral_sa_l1.mjs"
+      },
+      {
+        "name": "test:sa-l1-graph",
+        "command": "node tests/validar_analise_lateral_calculation_graph_sa_l1.mjs"
       }
     ]
   },
@@ -337,7 +341,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32165056387",
-    "run_number": "23"
+    "run_id": "32165750690",
+    "run_number": "24"
   }
 }
