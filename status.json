@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-18T17:07:04Z",
+  "generated_at": "2026-08-18T17:15:14Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a0c6fc6bfb738e22373ed856e76ecc5a65b0878f",
-    "short_sha": "a0c6fc6",
+    "sha": "8a702ea4c985866d51ec928df73fad7d314a3379",
+    "short_sha": "8a702ea",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T14:06:55-03:00",
-    "message": "Merge pull request #72 from JGaspar-Eng/agent/fix-status-publisher-sa-l1"
+    "date": "2026-08-18T14:15:03-03:00",
+    "message": "Merge pull request #73 from JGaspar-Eng/agent/sa-l1-solver-linear"
   },
   "commits": [
+    {
+      "sha": "8a702ea4c985866d51ec928df73fad7d314a3379",
+      "short_sha": "8a702ea",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:15:03-03:00",
+      "message": "Merge pull request #73 from JGaspar-Eng/agent/sa-l1-solver-linear"
+    },
+    {
+      "sha": "7dbd84df5b5df8e1a74351efe59de64d6ed37669",
+      "short_sha": "7dbd84d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:14:12-03:00",
+      "message": "docs(sa-l1): registra primeiro objetivo verde"
+    },
+    {
+      "sha": "067ba4947e729c23e1252020c15d20dae0585ac9",
+      "short_sha": "067ba49",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:11:25-03:00",
+      "message": "test(wind): permite expansão do gate após W1"
+    },
+    {
+      "sha": "e6a6f9150ce4fede4e82a410784bea8a1da36bf6",
+      "short_sha": "e6a6f91",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:10:04-03:00",
+      "message": "test(sa-l1): integra solver ao gate oficial"
+    },
+    {
+      "sha": "d4a13911c0d880a71a72d29d1525bb75d3d5e11e",
+      "short_sha": "d4a1391",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:09:50-03:00",
+      "message": "test(sa-l1): valida solver lateral linear"
+    },
+    {
+      "sha": "e8d238a664d8007fa284e76b5526831835439bd6",
+      "short_sha": "e8d238a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:09:26-03:00",
+      "message": "feat(sa-l1): adiciona solver lateral linear"
+    },
     {
       "sha": "a0c6fc6bfb738e22373ed856e76ecc5a65b0878f",
       "short_sha": "a0c6fc6",
@@ -37,62 +79,52 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T09:31:37-03:00",
       "message": "feat(wind): integra auditoria visual do W1"
-    },
-    {
-      "sha": "8982b3f1db087720e64414f701a19bd003feff1e",
-      "short_sha": "8982b3f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T09:19:21-03:00",
-      "message": "feat(wind): prepara saída consumível pelo SA-L1"
-    },
-    {
-      "sha": "0a98fa9e33119f01f270bfab1fe6408e5367d475",
-      "short_sha": "0a98fa9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T09:14:20-03:00",
-      "message": "feat(wind): integra ações do W1 ao Calculation Graph"
-    },
-    {
-      "sha": "6eacb22f61fb3544070d4bf928786a98318bbd2f",
-      "short_sha": "6eacb22",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T08:42:33-03:00",
-      "message": "test(wind): integra objetivo 2 do W1 ao gate oficial"
-    },
-    {
-      "sha": "1a3b916df9fd738371ab5471f3d1a5248ce81320",
-      "short_sha": "1a3b916",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-18T08:40:20-03:00",
-      "message": "feat(wind): implementa envelope e ações preliminares por pavimento"
-    },
-    {
-      "sha": "6a678c6892d9cce36f08a65bdde0e75b9a442c4e",
-      "short_sha": "6a678c6",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-18T07:54:38-03:00",
-      "message": "feat(graph): adiciona origem auditável para hipótese de modelo"
-    },
-    {
-      "sha": "2d5b90155806525ef14e8b6f00abeb8d0b7e5aea",
-      "short_sha": "2d5b901",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-18T00:56:15-03:00",
-      "message": "docs(wind): fecha auditoria de parâmetros do W1"
     }
   ],
   "development": {
     "current": {
       "code": "SA-L1",
-      "title": "análise lateral/global consumindo o contrato versionado produzido pelo W1",
-      "objectives": [],
+      "title": "análise lateral/global",
+      "objectives": [
+        "resolver `K·d = F` por direção global consumindo a rigidez do M3B e o contrato W1, com restrições, deslocamentos, rotações, reações e validação de engenharia pelo caso fechado `δ = P·L³/(3EI)`",
+        "orquestrar os quatro casos direcionais do W1 e consolidar translações por pavimento e deslocamentos relativos entre pavimentos",
+        "integrar a resposta lateral ao Calculation Graph com rastreabilidade explícita entre rigidez, forças e deslocamentos",
+        "expor a resposta do SA-L1 em auditoria de runtime somente leitura, sem antecipar dimensionamento ou segunda ordem",
+        "concluir validação automatizada ampliada e auditoria visual real antes do encerramento do bloco."
+      ],
       "progress": {
-        "total": 0,
-        "done": 0,
+        "total": 5,
+        "done": 1,
         "in_progress": 0,
-        "pending": 0,
-        "percent": 0,
-        "items": []
+        "pending": 4,
+        "percent": 20,
+        "items": [
+          {
+            "text": "resolver `K·d = F` por direção global consumindo a rigidez do M3B e o contrato W1, com restrições, deslocamentos, rotações, reações e validação de engenharia pelo caso fechado `δ = P·L³/(3EI)`",
+            "state": "done",
+            "marker": "✅"
+          },
+          {
+            "text": "orquestrar os quatro casos direcionais do W1 e consolidar translações por pavimento e deslocamentos relativos entre pavimentos",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "integrar a resposta lateral ao Calculation Graph com rastreabilidade explícita entre rigidez, forças e deslocamentos",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "expor a resposta do SA-L1 em auditoria de runtime somente leitura, sem antecipar dimensionamento ou segunda ordem",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "concluir validação automatizada ampliada e auditoria visual real antes do encerramento do bloco.",
+            "state": "pending",
+            "marker": "⬜"
+          }
+        ]
       }
     },
     "milestone_summary": "M0 criou o contrato neutro; M1 integrou Geometria, Propriedades e Materiais da viga; M2 completou Carregamentos e Resultados da viga; M3 estendeu o contrato ao pilar; M4 integrou a laje com Geometria, Propriedades, Materiais, Carregamentos e Transferência de carga às vigas. Após M4, o bloco estrutural M3A consolidou a orientação 0°/90° dos pilares e as inércias globais `Ix,g`/`Iy,g`.",
@@ -107,7 +139,7 @@
       },
       {
         "code": "SA-L1",
-        "text": "bloco estrutural ativo: análise lateral/global consumindo o contrato versionado produzido pelo W1"
+        "text": "bloco estrutural ativo: análise lateral/global"
       },
       {
         "code": "OPT-PILAR-01",
@@ -215,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 19,
+    "validator_count": 20,
     "validators": [
       {
         "name": "test:base",
@@ -292,6 +324,10 @@
       {
         "name": "test:vento-ui",
         "command": "node tests/validar_vento_auditoria_ui_w1.mjs"
+      },
+      {
+        "name": "test:sa-l1-solver",
+        "command": "node tests/validar_analise_lateral_sa_l1.mjs"
       }
     ]
   },
@@ -301,7 +337,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32163887779",
-    "run_number": "21"
+    "run_id": "32164607899",
+    "run_number": "22"
   }
 }
