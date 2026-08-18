@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-18T12:31:46Z",
+  "generated_at": "2026-08-18T17:07:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bf22ac1312001fbe0ff68706b6e31491e9ed1037",
-    "short_sha": "bf22ac1",
+    "sha": "a0c6fc6bfb738e22373ed856e76ecc5a65b0878f",
+    "short_sha": "a0c6fc6",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T09:31:37-03:00",
-    "message": "feat(wind): integra auditoria visual do W1"
+    "date": "2026-08-18T14:06:55-03:00",
+    "message": "Merge pull request #72 from JGaspar-Eng/agent/fix-status-publisher-sa-l1"
   },
   "commits": [
+    {
+      "sha": "a0c6fc6bfb738e22373ed856e76ecc5a65b0878f",
+      "short_sha": "a0c6fc6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:06:55-03:00",
+      "message": "Merge pull request #72 from JGaspar-Eng/agent/fix-status-publisher-sa-l1"
+    },
+    {
+      "sha": "fe7cfaadc3887fe306d720ee3d6f0a48e5d7d358",
+      "short_sha": "fe7cfaa",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T14:04:38-03:00",
+      "message": "fix(status): torna publicador resiliente ao fechamento de bloco"
+    },
+    {
+      "sha": "eeae855fd6909a6b73402ae70e360dcd49a7ca43",
+      "short_sha": "eeae855",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T13:53:36-03:00",
+      "message": "fix(wind): aceita nível-base sem laje"
+    },
     {
       "sha": "bf22ac1312001fbe0ff68706b6e31491e9ed1037",
       "short_sha": "bf22ac1",
@@ -58,79 +79,20 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-18T00:56:15-03:00",
       "message": "docs(wind): fecha auditoria de parâmetros do W1"
-    },
-    {
-      "sha": "987be8cd6119dc2abf900c29f4f9ae88dad8d351",
-      "short_sha": "987be8c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T00:30:45-03:00",
-      "message": "Merge pull request #65 from JGaspar-Eng/agent/fix-status-m3b-w1"
-    },
-    {
-      "sha": "b34a3ec3d8545c44e033a1d4657bbfd14e126948",
-      "short_sha": "b34a3ec",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T00:25:13-03:00",
-      "message": "docs(status): align roadmap with M3B closure"
-    },
-    {
-      "sha": "ac539ebe513d7060086fea370ea86468af52af9e",
-      "short_sha": "ac539eb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T00:25:12-03:00",
-      "message": "docs(status): close M3B and activate W1"
     }
   ],
   "development": {
     "current": {
-      "code": "W1",
-      "title": "motor de ações de vento e produção de ações horizontais rastreáveis",
-      "objectives": [
-        "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
-        "derivar ações horizontais rastreáveis por direção global e por pavimento",
-        "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
-        "preparar a saída consumível pela futura análise lateral/global, sem antecipar deslocamentos ou esforços globais",
-        "integrar validação automatizada do resultado ao fluxo oficial (`test:vento-ui`, gate GitHub Actions verde no commit `294b555`)",
-        "concluir a auditoria visual do modal no navegador, mediante capturas reais do usuário."
-      ],
+      "code": "SA-L1",
+      "title": "análise lateral/global consumindo o contrato versionado produzido pelo W1",
+      "objectives": [],
       "progress": {
-        "total": 6,
-        "done": 5,
+        "total": 0,
+        "done": 0,
         "in_progress": 0,
-        "pending": 1,
-        "percent": 83,
-        "items": [
-          {
-            "text": "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "derivar ações horizontais rastreáveis por direção global e por pavimento",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "preparar a saída consumível pela futura análise lateral/global, sem antecipar deslocamentos ou esforços globais",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "integrar validação automatizada do resultado ao fluxo oficial (`test:vento-ui`, gate GitHub Actions verde no commit `294b555`)",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "concluir a auditoria visual do modal no navegador, mediante capturas reais do usuário.",
-            "state": "pending",
-            "marker": "⬜"
-          }
-        ]
+        "pending": 0,
+        "percent": 0,
+        "items": []
       }
     },
     "milestone_summary": "M0 criou o contrato neutro; M1 integrou Geometria, Propriedades e Materiais da viga; M2 completou Carregamentos e Resultados da viga; M3 estendeu o contrato ao pilar; M4 integrou a laje com Geometria, Propriedades, Materiais, Carregamentos e Transferência de carga às vigas. Após M4, o bloco estrutural M3A consolidou a orientação 0°/90° dos pilares e as inércias globais `Ix,g`/`Iy,g`.",
@@ -141,11 +103,11 @@
       },
       {
         "code": "W1",
-        "text": "bloco estrutural ativo: motor de ações de vento e produção de ações horizontais rastreáveis."
+        "text": "motor de ações de vento e produção de ações horizontais rastreáveis."
       },
       {
         "code": "SA-L1",
-        "text": "análise lateral/global — planejada após M3B + W1."
+        "text": "bloco estrutural ativo: análise lateral/global consumindo o contrato versionado produzido pelo W1"
       },
       {
         "code": "OPT-PILAR-01",
@@ -339,7 +301,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32137297200",
-    "run_number": "19"
+    "run_id": "32163887779",
+    "run_number": "21"
   }
 }
