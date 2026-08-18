@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-18T01:16:23Z",
+  "generated_at": "2026-08-18T03:30:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "330ba2edc5c93b54f9f20f33a47edf4c9a89d84c",
-    "short_sha": "330ba2e",
-    "author": "JGaspar-Eng",
-    "date": "2026-08-17T22:16:11-03:00",
-    "message": "feat(pilar): modela rigidez lateral por pavimento"
+    "sha": "987be8cd6119dc2abf900c29f4f9ae88dad8d351",
+    "short_sha": "987be8c",
+    "author": "Joanez Gaspar",
+    "date": "2026-08-18T00:30:45-03:00",
+    "message": "Merge pull request #65 from JGaspar-Eng/agent/fix-status-m3b-w1"
   },
   "commits": [
+    {
+      "sha": "987be8cd6119dc2abf900c29f4f9ae88dad8d351",
+      "short_sha": "987be8c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T00:30:45-03:00",
+      "message": "Merge pull request #65 from JGaspar-Eng/agent/fix-status-m3b-w1"
+    },
+    {
+      "sha": "b34a3ec3d8545c44e033a1d4657bbfd14e126948",
+      "short_sha": "b34a3ec",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T00:25:13-03:00",
+      "message": "docs(status): align roadmap with M3B closure"
+    },
+    {
+      "sha": "ac539ebe513d7060086fea370ea86468af52af9e",
+      "short_sha": "ac539eb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T00:25:12-03:00",
+      "message": "docs(status): close M3B and activate W1"
+    },
     {
       "sha": "330ba2edc5c93b54f9f20f33a47edf4c9a89d84c",
       "short_sha": "330ba2e",
@@ -58,39 +79,18 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-16T16:59:53-03:00",
       "message": "feat(pilar): integra orientacao aos eixos globais"
-    },
-    {
-      "sha": "e9b3214cd04b8e1dffaf4a0c0407914bf1b888e7",
-      "short_sha": "e9b3214",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-16T15:36:17-03:00",
-      "message": "fix(laje): consolida cargas oficiais no memorial"
-    },
-    {
-      "sha": "9ca9d9b040929e9d2a6bf4408bc94a07bd8d0941",
-      "short_sha": "9ca9d9b",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-16T14:45:50-03:00",
-      "message": "fix(laje): amplia memorial geometrico no modal"
-    },
-    {
-      "sha": "8b47835e0735d59533434321e1f7bf3a49561018",
-      "short_sha": "8b47835",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-16T13:41:08-03:00",
-      "message": "ci: publish SIMETTRIA status dashboard"
     }
   ],
   "development": {
     "current": {
-      "code": "M3B",
-      "title": "rigidez dos pilares por pavimento e preparação da análise lateral",
+      "code": "W1",
+      "title": "motor de ações de vento e produção de ações horizontais rastreáveis",
       "objectives": [
-        "auditar o modelo existente de níveis, pé-direito, continuidade de prumadas, vínculos e propriedades do concreto",
-        "estabelecer a altura estrutural efetiva de cada trecho de pilar por pavimento",
-        "determinar de forma rastreável a contribuição de rigidez lateral dos pilares nos dois eixos globais",
-        "agregar essas contribuições por pavimento sem criar estado estrutural paralelo",
-        "produzir uma base auditável que possa ser consumida posteriormente pela análise lateral/global."
+        "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
+        "derivar ações horizontais rastreáveis por direção global e por pavimento",
+        "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
+        "preparar a saída consumível pela futura análise lateral/global, sem antecipar deslocamentos ou esforços globais",
+        "integrar validação automatizada e auditoria visual do resultado no fluxo oficial."
       ],
       "progress": {
         "total": 5,
@@ -100,27 +100,27 @@
         "percent": 0,
         "items": [
           {
-            "text": "auditar o modelo existente de níveis, pé-direito, continuidade de prumadas, vínculos e propriedades do concreto",
+            "text": "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
             "state": "pending",
             "marker": "⬜"
           },
           {
-            "text": "estabelecer a altura estrutural efetiva de cada trecho de pilar por pavimento",
+            "text": "derivar ações horizontais rastreáveis por direção global e por pavimento",
             "state": "pending",
             "marker": "⬜"
           },
           {
-            "text": "determinar de forma rastreável a contribuição de rigidez lateral dos pilares nos dois eixos globais",
+            "text": "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
             "state": "pending",
             "marker": "⬜"
           },
           {
-            "text": "agregar essas contribuições por pavimento sem criar estado estrutural paralelo",
+            "text": "preparar a saída consumível pela futura análise lateral/global, sem antecipar deslocamentos ou esforços globais",
             "state": "pending",
             "marker": "⬜"
           },
           {
-            "text": "produzir uma base auditável que possa ser consumida posteriormente pela análise lateral/global.",
+            "text": "integrar validação automatizada e auditoria visual do resultado no fluxo oficial.",
             "state": "pending",
             "marker": "⬜"
           }
@@ -131,11 +131,11 @@
     "roadmap": [
       {
         "code": "M3B",
-        "text": "bloco estrutural ativo: rigidez dos pilares por pavimento e preparação da análise lateral/global."
+        "text": "rigidez dos pilares por pavimento concluída em `330ba2e`: trechos, `Ecs`, inércias globais, matrizes de Euler-Bernoulli, condições nodais e agregação auditável."
       },
       {
         "code": "W1",
-        "text": "motor de ações de vento — planejado após M3B."
+        "text": "bloco estrutural ativo: motor de ações de vento e produção de ações horizontais rastreáveis."
       },
       {
         "code": "SA-L1",
@@ -305,7 +305,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32087613202",
-    "run_number": "11"
+    "run_id": "32095753440",
+    "run_number": "12"
   }
 }
