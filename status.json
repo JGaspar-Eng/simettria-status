@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-18T11:40:31Z",
+  "generated_at": "2026-08-18T11:42:43Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1a3b916df9fd738371ab5471f3d1a5248ce81320",
-    "short_sha": "1a3b916",
-    "author": "JGaspar-Eng",
-    "date": "2026-08-18T08:40:20-03:00",
-    "message": "feat(wind): implementa envelope e ações preliminares por pavimento"
+    "sha": "6eacb22f61fb3544070d4bf928786a98318bbd2f",
+    "short_sha": "6eacb22",
+    "author": "Joanez Gaspar",
+    "date": "2026-08-18T08:42:33-03:00",
+    "message": "test(wind): integra objetivo 2 do W1 ao gate oficial"
   },
   "commits": [
+    {
+      "sha": "6eacb22f61fb3544070d4bf928786a98318bbd2f",
+      "short_sha": "6eacb22",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T08:42:33-03:00",
+      "message": "test(wind): integra objetivo 2 do W1 ao gate oficial"
+    },
     {
       "sha": "1a3b916df9fd738371ab5471f3d1a5248ce81320",
       "short_sha": "1a3b916",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-17T13:57:23-03:00",
       "message": "feat(pilar): deriva trechos e altura L por pavimento"
-    },
-    {
-      "sha": "f845c69978d33b4c8c1eb5133ae3d215ade28dd8",
-      "short_sha": "f845c69",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-16T21:22:15-03:00",
-      "message": "feat(pilar): persiste vinculo estrutural da base"
     }
   ],
   "development": {
@@ -94,10 +94,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
@@ -106,8 +106,8 @@
           },
           {
             "text": "derivar ações horizontais rastreáveis por direção global e por pavimento",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
@@ -247,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 12,
+    "validator_count": 16,
     "validators": [
       {
         "name": "test:base",
@@ -296,6 +296,22 @@
       {
         "name": "test:pilar-m3b-rigidez",
         "command": "node tests/validar_rigidez_lateral_pilar_m3b.mjs"
+      },
+      {
+        "name": "test:vento-ca",
+        "command": "node tests/validar_ca_figura4_nbr6123.mjs"
+      },
+      {
+        "name": "test:vento-envelope",
+        "command": "node tests/validar_envelope_aerodinamico_w1.mjs"
+      },
+      {
+        "name": "test:vento-s2",
+        "command": "node tests/validar_vento_s2_nbr6123.mjs"
+      },
+      {
+        "name": "test:vento-acoes",
+        "command": "node tests/validar_vento_acoes_w1.mjs"
       }
     ]
   },
@@ -305,7 +321,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32132888814",
-    "run_number": "15"
+    "run_id": "32133070369",
+    "run_number": "16"
   }
 }
