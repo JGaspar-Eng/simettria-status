@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-18T12:19:32Z",
+  "generated_at": "2026-08-18T12:31:46Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8982b3f1db087720e64414f701a19bd003feff1e",
-    "short_sha": "8982b3f",
+    "sha": "bf22ac1312001fbe0ff68706b6e31491e9ed1037",
+    "short_sha": "bf22ac1",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T09:19:21-03:00",
-    "message": "feat(wind): prepara saída consumível pelo SA-L1"
+    "date": "2026-08-18T09:31:37-03:00",
+    "message": "feat(wind): integra auditoria visual do W1"
   },
   "commits": [
+    {
+      "sha": "bf22ac1312001fbe0ff68706b6e31491e9ed1037",
+      "short_sha": "bf22ac1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T09:31:37-03:00",
+      "message": "feat(wind): integra auditoria visual do W1"
+    },
     {
       "sha": "8982b3f1db087720e64414f701a19bd003feff1e",
       "short_sha": "8982b3f",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T00:25:12-03:00",
       "message": "docs(status): close M3B and activate W1"
-    },
-    {
-      "sha": "330ba2edc5c93b54f9f20f33a47edf4c9a89d84c",
-      "short_sha": "330ba2e",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-17T22:16:11-03:00",
-      "message": "feat(pilar): modela rigidez lateral por pavimento"
     }
   ],
   "development": {
@@ -90,14 +90,15 @@
         "derivar ações horizontais rastreáveis por direção global e por pavimento",
         "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
         "preparar a saída consumível pela futura análise lateral/global, sem antecipar deslocamentos ou esforços globais",
-        "integrar validação automatizada e auditoria visual do resultado no fluxo oficial."
+        "integrar validação automatizada do resultado ao fluxo oficial (`test:vento-ui`, gate GitHub Actions verde no commit `294b555`)",
+        "concluir a auditoria visual do modal no navegador, mediante capturas reais do usuário."
       ],
       "progress": {
-        "total": 5,
-        "done": 4,
+        "total": 6,
+        "done": 5,
         "in_progress": 0,
         "pending": 1,
-        "percent": 80,
+        "percent": 83,
         "items": [
           {
             "text": "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
@@ -120,7 +121,12 @@
             "marker": "✅"
           },
           {
-            "text": "integrar validação automatizada e auditoria visual do resultado no fluxo oficial.",
+            "text": "integrar validação automatizada do resultado ao fluxo oficial (`test:vento-ui`, gate GitHub Actions verde no commit `294b555`)",
+            "state": "done",
+            "marker": "✅"
+          },
+          {
+            "text": "concluir a auditoria visual do modal no navegador, mediante capturas reais do usuário.",
             "state": "pending",
             "marker": "⬜"
           }
@@ -247,7 +253,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 18,
+    "validator_count": 19,
     "validators": [
       {
         "name": "test:base",
@@ -320,6 +326,10 @@
       {
         "name": "test:vento-sa-l1",
         "command": "node tests/validar_vento_saida_sa_l1.mjs"
+      },
+      {
+        "name": "test:vento-ui",
+        "command": "node tests/validar_vento_auditoria_ui_w1.mjs"
       }
     ]
   },
@@ -329,7 +339,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32136220857",
-    "run_number": "18"
+    "run_id": "32137297200",
+    "run_number": "19"
   }
 }
