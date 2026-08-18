@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-18T11:42:43Z",
+  "generated_at": "2026-08-18T12:14:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6eacb22f61fb3544070d4bf928786a98318bbd2f",
-    "short_sha": "6eacb22",
+    "sha": "0a98fa9e33119f01f270bfab1fe6408e5367d475",
+    "short_sha": "0a98fa9",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T08:42:33-03:00",
-    "message": "test(wind): integra objetivo 2 do W1 ao gate oficial"
+    "date": "2026-08-18T09:14:20-03:00",
+    "message": "feat(wind): integra ações do W1 ao Calculation Graph"
   },
   "commits": [
+    {
+      "sha": "0a98fa9e33119f01f270bfab1fe6408e5367d475",
+      "short_sha": "0a98fa9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T09:14:20-03:00",
+      "message": "feat(wind): integra ações do W1 ao Calculation Graph"
+    },
     {
       "sha": "6eacb22f61fb3544070d4bf928786a98318bbd2f",
       "short_sha": "6eacb22",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-17T18:07:36-03:00",
       "message": "feat(pilar): calcula propriedades elasticas do concreto"
-    },
-    {
-      "sha": "ecff0199f90bc5c900dd14244bb2c4198585a5b0",
-      "short_sha": "ecff019",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-17T13:57:23-03:00",
-      "message": "feat(pilar): deriva trechos e altura L por pavimento"
     }
   ],
   "development": {
@@ -94,10 +94,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "auditar os parâmetros de vento já persistidos no projeto e delimitar as hipóteses de cálculo",
@@ -111,8 +111,8 @@
           },
           {
             "text": "preservar unidades, hipóteses, origem dos dados e diagnósticos no Calculation Graph",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "preparar a saída consumível pela futura análise lateral/global, sem antecipar deslocamentos ou esforços globais",
@@ -247,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 16,
+    "validator_count": 17,
     "validators": [
       {
         "name": "test:base",
@@ -312,6 +312,10 @@
       {
         "name": "test:vento-acoes",
         "command": "node tests/validar_vento_acoes_w1.mjs"
+      },
+      {
+        "name": "test:vento-graph",
+        "command": "node tests/validar_vento_calculation_graph_w1.mjs"
       }
     ]
   },
@@ -321,7 +325,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32133070369",
-    "run_number": "16"
+    "run_id": "32135777003",
+    "run_number": "17"
   }
 }
