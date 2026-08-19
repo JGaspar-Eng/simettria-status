@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T12:21:04Z",
+  "generated_at": "2026-08-19T16:24:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b126cb3733c22ebbd6f2c6991c445ddbf6d2ba2a",
-    "short_sha": "b126cb3",
+    "sha": "e5bd5d0362b2669179c4d14fc57c7377f7933b28",
+    "short_sha": "e5bd5d0",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T09:20:56-03:00",
-    "message": "Merge pull request #96 from JGaspar-Eng/agent/auditoria-progresso-12-areas"
+    "date": "2026-08-19T13:24:28-03:00",
+    "message": "Merge pull request #97 from JGaspar-Eng/agent/close-int-check-01"
   },
   "commits": [
+    {
+      "sha": "e5bd5d0362b2669179c4d14fc57c7377f7933b28",
+      "short_sha": "e5bd5d0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:24:28-03:00",
+      "message": "Merge pull request #97 from JGaspar-Eng/agent/close-int-check-01"
+    },
+    {
+      "sha": "23273747741be593d6da77c274f4268a9c0959ee",
+      "short_sha": "2327374",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:23:50-03:00",
+      "message": "docs(int-check): alinha contrato de próximo bloco"
+    },
+    {
+      "sha": "b2d48792f2884981bf126ec7016508dac13cc5b0",
+      "short_sha": "b2d4879",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:22:42-03:00",
+      "message": "test(status): acompanha fechamento INT-CHECK e novo bloco"
+    },
+    {
+      "sha": "d2d178d98486522f8eb86c99b43753deeb3c97b5",
+      "short_sha": "d2d178d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:22:13-03:00",
+      "message": "docs(int-predim): abre checkpoint ativo"
+    },
+    {
+      "sha": "584164b1af25bf1d84afc48af5b575a2e66943b3",
+      "short_sha": "584164b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:21:58-03:00",
+      "message": "docs(int-check): registra fechamento formal"
+    },
+    {
+      "sha": "eecaf862de959def75afd5c61e1035c31a427647",
+      "short_sha": "eecaf86",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:19:42-03:00",
+      "message": "docs(int-check): conclui auditoria visual"
+    },
     {
       "sha": "b126cb3733c22ebbd6f2c6991c445ddbf6d2ba2a",
       "short_sha": "b126cb3",
@@ -37,92 +79,50 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T09:18:32-03:00",
       "message": "docs(status): define política única de progresso por área"
-    },
-    {
-      "sha": "bc451883917949ed0e8dcec98ed7b572ac21d6d9",
-      "short_sha": "bc45188",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:12:23-03:00",
-      "message": "Merge pull request #95 from JGaspar-Eng/agent/int-check-01-runtime"
-    },
-    {
-      "sha": "50e90968ae0989c40f81d7cc2c423878b889ba3b",
-      "short_sha": "50e9096",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:11:42-03:00",
-      "message": "test(status): acompanha INT-CHECK 4 de 5 e Área 9 reestimada"
-    },
-    {
-      "sha": "fce4fb69de543180f60fad90d9e4c4e0ee4a6ed3",
-      "short_sha": "fce4fb6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:11:18-03:00",
-      "message": "docs(int-check): conclui integração runtime"
-    },
-    {
-      "sha": "c0e11c5f2820ecf275936f6e63f8d5976a2812db",
-      "short_sha": "c0e11c5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:10:18-03:00",
-      "message": "test(int-check): alinha asserção ao snapshot fornecido"
-    },
-    {
-      "sha": "857eec6c91b29ad89f2fc7192976a7e00147313f",
-      "short_sha": "857eec6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:09:07-03:00",
-      "message": "test(status): protege reestimativa dinâmica da área ativa"
-    },
-    {
-      "sha": "9652b0b773e4a6275e82a69317f71b52f673dc62",
-      "short_sha": "9652b0b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:08:43-03:00",
-      "message": "fix(status): reestima percentual da área ativa pelo trabalho real"
     }
   ],
   "development": {
     "current": {
-      "code": "INT-CHECK-01",
-      "title": "detector auditável de inconsistências",
+      "code": "INT-PREDIM-01",
+      "title": "sugestão contextual de pré-dimensionamento",
       "area": {
         "number": 9,
         "code": "E9",
         "title": "Inteligência"
       },
       "objectives": [
-        "consolidar os diagnósticos da validação geométrica central em relatório auditável, legível e priorizado, sem duplicar regras nem mutar o projeto",
-        "incorporar diagnósticos estruturais adicionais já existentes fora da validação geométrica, preservando a origem e sem criar autoridades paralelas",
-        "contextualizar os achados por elemento e pavimento e produzir uma sequência de correção determinística e rastreável",
-        "integrar o relatório ao runtime em modo somente leitura, sem correção automática do modelo",
+        "auditar o heurístico de pré-dimensionamento já existente e identificar sua autoridade atual, entradas, saídas e pontos de consumo, sem duplicar regras",
+        "criar uma camada contextual de recomendação que reutilize o heurístico existente e acrescente justificativa auditável por elemento",
+        "definir critérios de quando sugerir, quando manter a seção atual e quando declarar informação insuficiente, sem aplicar alteração automática",
+        "integrar a recomendação ao runtime em modo somente leitura e proteger o contrato por regressão",
         "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco."
       ],
       "progress": {
         "total": 5,
-        "done": 4,
+        "done": 0,
         "in_progress": 0,
-        "pending": 1,
-        "percent": 80,
+        "pending": 5,
+        "percent": 0,
         "items": [
           {
-            "text": "consolidar os diagnósticos da validação geométrica central em relatório auditável, legível e priorizado, sem duplicar regras nem mutar o projeto",
-            "state": "done",
-            "marker": "✅"
+            "text": "auditar o heurístico de pré-dimensionamento já existente e identificar sua autoridade atual, entradas, saídas e pontos de consumo, sem duplicar regras",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "incorporar diagnósticos estruturais adicionais já existentes fora da validação geométrica, preservando a origem e sem criar autoridades paralelas",
-            "state": "done",
-            "marker": "✅"
+            "text": "criar uma camada contextual de recomendação que reutilize o heurístico existente e acrescente justificativa auditável por elemento",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "contextualizar os achados por elemento e pavimento e produzir uma sequência de correção determinística e rastreável",
-            "state": "done",
-            "marker": "✅"
+            "text": "definir critérios de quando sugerir, quando manter a seção atual e quando declarar informação insuficiente, sem aplicar alteração automática",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "integrar o relatório ao runtime em modo somente leitura, sem correção automática do modelo",
-            "state": "done",
-            "marker": "✅"
+            "text": "integrar a recomendação ao runtime em modo somente leitura e proteger o contrato por regressão",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
             "text": "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco.",
@@ -151,8 +151,8 @@
         "text": "otimização global da orientação dos pilares — planejada, não implementada."
       },
       {
-        "code": "INT-CHECK-01",
-        "text": "bloco estrutural ativo: detector auditável de inconsistências"
+        "code": "INT-PREDIM-01",
+        "text": "bloco estrutural ativo: sugestão contextual de pré-dimensionamento"
       }
     ],
     "epics": [
@@ -309,12 +309,12 @@
         "status": "measured",
         "active": true,
         "work": {
-          "done": 2,
-          "partial": 1,
+          "done": 3,
+          "partial": 0,
           "active_now": 1,
           "planned": 3,
           "out_of_scope": 0,
-          "in_progress": 1,
+          "in_progress": 0,
           "total": 7
         }
       },
@@ -493,12 +493,12 @@
     ]
   },
   "sources": {
-    "current": "docs/INT_CHECK_01_CHECKPOINT.md",
+    "current": "docs/INT_PREDIM_01_CHECKPOINT.md",
     "roadmap": "docs/ROADMAP.md",
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32252192938",
-    "run_number": "51"
+    "run_id": "32275731800",
+    "run_number": "52"
   }
 }
