@@ -23,11 +23,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Preparar artefato (somente index.html + status.json)
+      - name: Preparar artefato do painel
         run: |
           mkdir -p public
           cp index.html public/index.html
           cp status.json public/status.json
+          cp status_areas.js public/status_areas.js
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
