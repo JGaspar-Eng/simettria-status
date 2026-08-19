@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-19T17:47:16Z",
+  "generated_at": "2026-08-19T18:00:00Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d7a4a6c39a91a3ae47bcf5d5c821941fc6ef3c02",
-    "short_sha": "d7a4a6c",
+    "sha": "8154aca11bd385e6e489110051299b57969bdcc9",
+    "short_sha": "8154aca",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:47:04-03:00",
-    "message": "Merge pull request #107 from JGaspar-Eng/agent/int-review-01-runtime"
+    "date": "2026-08-19T14:59:50-03:00",
+    "message": "Merge pull request #108 from JGaspar-Eng/agent/int-review-01-fechamento"
   },
   "commits": [
+    {
+      "sha": "8154aca11bd385e6e489110051299b57969bdcc9",
+      "short_sha": "8154aca",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:59:50-03:00",
+      "message": "Merge pull request #108 from JGaspar-Eng/agent/int-review-01-fechamento"
+    },
+    {
+      "sha": "239c00666d1ef50867bba6dbe8cb80545d7ebb6b",
+      "short_sha": "239c006",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:58:33-03:00",
+      "message": "test(status): protege fechamento e sequência reconciliada"
+    },
+    {
+      "sha": "55936eddbc706cbf71592849bae8de02cffc21f4",
+      "short_sha": "55936ed",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:58:11-03:00",
+      "message": "fix(status): reconcilia sequência com fechamentos formais"
+    },
+    {
+      "sha": "3bd0907c3e003c379fc1348d78ea218d6aac5101",
+      "short_sha": "3bd0907",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:57:06-03:00",
+      "message": "docs(int-verify): alinha contrato do checkpoint ativo"
+    },
+    {
+      "sha": "83e92f917efff1441e169a07834f36726cb11e49",
+      "short_sha": "83e92f9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:56:21-03:00",
+      "message": "docs(int-verify): inicia checkpoint 0 de 5"
+    },
+    {
+      "sha": "4d638d43998db28ba63deb15c9eddf22d8ef6588",
+      "short_sha": "4d638d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:56:06-03:00",
+      "message": "docs(int-review): registra fechamento formal"
+    },
+    {
+      "sha": "ee49ab358f7f33ca4128ce7e939978a26b2a8d6f",
+      "short_sha": "ee49ab3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:55:46-03:00",
+      "message": "docs(int-review): fecha objetivo visual 5 de 5"
+    },
     {
       "sha": "d7a4a6c39a91a3ae47bcf5d5c821941fc6ef3c02",
       "short_sha": "d7a4a6c",
@@ -30,99 +79,50 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T14:44:23-03:00",
       "message": "test(status): reflete INT-REVIEW em 80 por cento"
-    },
-    {
-      "sha": "4770dd6e7af44ccaf9fe369817812a6741cd5f15",
-      "short_sha": "4770dd6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:43:59-03:00",
-      "message": "docs(int-review): registra integração runtime"
-    },
-    {
-      "sha": "49689dd04c13b992b9581fb1cdd5805817f15302",
-      "short_sha": "49689dd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:43:35-03:00",
-      "message": "test(int-review): inclui runtime na suíte oficial"
-    },
-    {
-      "sha": "3fea1842dd56a77b39eaeb9115997eea1093adca",
-      "short_sha": "3fea184",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:43:14-03:00",
-      "message": "test(int-review): protege orquestração e painel runtime"
-    },
-    {
-      "sha": "b60ba82c4f0dbe1ccfc88eb87b708544bbdade66",
-      "short_sha": "b60ba82",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:42:37-03:00",
-      "message": "feat(int-review): integra revisão ao Calculation Graph"
-    },
-    {
-      "sha": "8074d6046a684f929f90ca48239f4257e785f50c",
-      "short_sha": "8074d60",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:41:42-03:00",
-      "message": "feat(int-review): cria orquestrador runtime somente leitura"
-    },
-    {
-      "sha": "d118554012be3e02c8440212fc563ed27b5d9d57",
-      "short_sha": "d118554",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:36:36-03:00",
-      "message": "Merge pull request #106 from JGaspar-Eng/agent/int-review-01-agregador"
-    },
-    {
-      "sha": "9b464cbf051e88710c1d7f1d6ab271b96eb7d2e0",
-      "short_sha": "9b464cb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:35:42-03:00",
-      "message": "test(status): avança INT-REVIEW para 60 por cento"
     }
   ],
   "development": {
     "current": {
-      "code": "INT-REVIEW-01",
-      "title": "assistente auditável de revisão",
+      "code": "INT-VERIFY-01",
+      "title": "verificações inteligentes integradas",
       "area": {
         "number": 9,
         "code": "E9",
         "title": "Inteligência"
       },
       "objectives": [
-        "auditar as saídas já existentes de INT-CHECK-01, OPT-PILAR-01 e INT-PREDIM-01 e definir quais podem compor uma revisão única sem duplicar regras",
-        "definir contrato explícito que diferencie inconsistência bloqueante, oportunidade de melhoria e informação insuficiente",
-        "implementar agregação determinística e auditável das autoridades existentes, sem mutar o projeto e sem reimplementar cálculos",
-        "integrar a revisão ao runtime em modo somente leitura, com rastreabilidade até a autoridade de origem",
+        "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
+        "definir contrato explícito de verificação inteligente, com severidade, autoridade, condição de aplicabilidade e evidência",
+        "implementar agregação apenas das verificações autorizadas, preservando origem e sem criar regras heurísticas ocultas",
+        "integrar as verificações ao runtime em modo somente leitura e sem correção automática",
         "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco."
       ],
       "progress": {
         "total": 5,
-        "done": 4,
+        "done": 0,
         "in_progress": 0,
-        "pending": 1,
-        "percent": 80,
+        "pending": 5,
+        "percent": 0,
         "items": [
           {
-            "text": "auditar as saídas já existentes de INT-CHECK-01, OPT-PILAR-01 e INT-PREDIM-01 e definir quais podem compor uma revisão única sem duplicar regras",
-            "state": "done",
-            "marker": "✅"
+            "text": "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "definir contrato explícito que diferencie inconsistência bloqueante, oportunidade de melhoria e informação insuficiente",
-            "state": "done",
-            "marker": "✅"
+            "text": "definir contrato explícito de verificação inteligente, com severidade, autoridade, condição de aplicabilidade e evidência",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "implementar agregação determinística e auditável das autoridades existentes, sem mutar o projeto e sem reimplementar cálculos",
-            "state": "done",
-            "marker": "✅"
+            "text": "implementar agregação apenas das verificações autorizadas, preservando origem e sem criar regras heurísticas ocultas",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "integrar a revisão ao runtime em modo somente leitura, com rastreabilidade até a autoridade de origem",
-            "state": "done",
-            "marker": "✅"
+            "text": "integrar as verificações ao runtime em modo somente leitura e sem correção automática",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
             "text": "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco.",
@@ -144,15 +144,15 @@
       },
       {
         "code": "SA-L1",
-        "text": "análise lateral/global — planejada após M3B + W1."
+        "text": "concluído — análise lateral/global"
       },
       {
         "code": "OPT-PILAR-01",
-        "text": "otimização global da orientação dos pilares — planejada, não implementada."
+        "text": "concluído — otimização global da orientação dos pilares"
       },
       {
-        "code": "INT-REVIEW-01",
-        "text": "bloco estrutural ativo: assistente auditável de revisão"
+        "code": "INT-VERIFY-01",
+        "text": "bloco estrutural ativo: verificações inteligentes integradas"
       }
     ],
     "epics": [
@@ -309,10 +309,10 @@
         "status": "measured",
         "active": true,
         "work": {
-          "done": 4,
+          "done": 5,
           "partial": 0,
           "active_now": 1,
-          "planned": 2,
+          "planned": 1,
           "out_of_scope": 0,
           "in_progress": 0,
           "total": 7
@@ -517,12 +517,12 @@
     ]
   },
   "sources": {
-    "current": "docs/INT_REVIEW_01_CHECKPOINT.md",
-    "roadmap": "docs/ROADMAP.md",
+    "current": "docs/INT_VERIFY_01_CHECKPOINT.md",
+    "roadmap": "docs/ROADMAP.md + documentos formais de fechamento",
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32283610240",
-    "run_number": "67"
+    "run_id": "32284832630",
+    "run_number": "68"
   }
 }
