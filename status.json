@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T11:36:32Z",
+  "generated_at": "2026-08-19T11:42:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6a7cecef73005558ff956476f455dc1546f85a04",
-    "short_sha": "6a7cece",
+    "sha": "51208e760ee322e0030b988c1f731ccdf27b0061",
+    "short_sha": "51208e7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T08:36:23-03:00",
-    "message": "Merge pull request #92 from JGaspar-Eng/agent/int-check-01-detector-base"
+    "date": "2026-08-19T08:42:13-03:00",
+    "message": "Merge pull request #93 from JGaspar-Eng/agent/int-check-01-diagnosticos-estruturais"
   },
   "commits": [
+    {
+      "sha": "51208e760ee322e0030b988c1f731ccdf27b0061",
+      "short_sha": "51208e7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:42:13-03:00",
+      "message": "Merge pull request #93 from JGaspar-Eng/agent/int-check-01-diagnosticos-estruturais"
+    },
+    {
+      "sha": "56d18f71543a349c22e8a11f2e12f9c452011445",
+      "short_sha": "56d18f7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:41:24-03:00",
+      "message": "test(status): acompanha INT-CHECK-01 em 40 por cento"
+    },
+    {
+      "sha": "894e2e89759760566ffad8ce62dc5d0fe0d6197c",
+      "short_sha": "894e2e8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:41:01-03:00",
+      "message": "docs(int-check): conclui objetivo 2"
+    },
+    {
+      "sha": "a5a821292ce2df09cbac50fbc1e692cf2ffb268e",
+      "short_sha": "a5a8212",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:40:14-03:00",
+      "message": "test(int-check): isola fixture do inspector de fundacao"
+    },
+    {
+      "sha": "e93bb877210faa3268abfc703718ec071e168782",
+      "short_sha": "e93bb87",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:38:56-03:00",
+      "message": "test(int-check): valida diagnosticos estruturais por autoridade existente"
+    },
+    {
+      "sha": "4b87c7d8a2c0592ac8e03dfd028ccc54ec57c379",
+      "short_sha": "4b87c7d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:38:14-03:00",
+      "message": "feat(int-check): agrega invalidos do inspector oficial"
+    },
     {
       "sha": "6a7cecef73005558ff956476f455dc1546f85a04",
       "short_sha": "6a7cece",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T08:33:03-03:00",
       "message": "fix(status): mostra parciais e trabalho ativo separadamente"
-    },
-    {
-      "sha": "748136f720a5ce3870e96d58c0cfd179e9ec4107",
-      "short_sha": "748136f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:32:41-03:00",
-      "message": "fix(status): separa parciais de trabalho ativo por area"
-    },
-    {
-      "sha": "4e6667c5e7eea4a8fbfbbdae4cd9cd94ecf75250",
-      "short_sha": "4e6667c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:31:59-03:00",
-      "message": "docs(int-check): ativa bloco e registra objetivo 1"
-    },
-    {
-      "sha": "aafcdc461825e178d201070496ad7d115ffd2702",
-      "short_sha": "aafcdc4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:31:42-03:00",
-      "message": "docs(int-check): encadeia proximo bloco da area 9"
-    },
-    {
-      "sha": "2104a494909eec0f0b758f187758b9d90097f2f7",
-      "short_sha": "2104a49",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:29:19-03:00",
-      "message": "test(int-check): integra detector ao gate oficial"
-    },
-    {
-      "sha": "0197bfb4c8a0c8ce0550ee2af5fae4cf7b2edca3",
-      "short_sha": "0197bfb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:29:04-03:00",
-      "message": "test(int-check): valida detector sem duplicar regras geometricas"
-    },
-    {
-      "sha": "9e3f66f3abfe8ea89eddf313121f222e95a1fba2",
-      "short_sha": "9e3f66f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:28:47-03:00",
-      "message": "feat(int-check): cria relatorio auditavel de inconsistencias"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "consolidar os diagnósticos da validação geométrica central em relatório auditável, legível e priorizado, sem duplicar regras nem mutar o projeto",
@@ -111,8 +111,8 @@
           },
           {
             "text": "incorporar diagnósticos estruturais adicionais já existentes fora da validação geométrica, preservando a origem e sem criar autoridades paralelas",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "contextualizar os achados por elemento e pavimento e produzir uma sequência de correção determinística e rastreável",
@@ -494,7 +494,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32248411320",
-    "run_number": "47"
+    "run_id": "32248895477",
+    "run_number": "48"
   }
 }
