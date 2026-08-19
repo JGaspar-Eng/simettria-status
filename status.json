@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-19T22:31:07Z",
+  "generated_at": "2026-08-19T22:49:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2995a123dfeb6338ef61936bb5617a1d0e58307f",
-    "short_sha": "2995a12",
+    "sha": "8578ef0cc2a24d74a40adf8ab0c4287c71d193db",
+    "short_sha": "8578ef0",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T19:30:59-03:00",
-    "message": "Merge pull request #120 from JGaspar-Eng/agent/fix-int-action-loop"
+    "date": "2026-08-19T19:48:58-03:00",
+    "message": "Merge pull request #121 from JGaspar-Eng/agent/predim-explica-criterio"
   },
   "commits": [
+    {
+      "sha": "8578ef0cc2a24d74a40adf8ab0c4287c71d193db",
+      "short_sha": "8578ef0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:48:58-03:00",
+      "message": "Merge pull request #121 from JGaspar-Eng/agent/predim-explica-criterio"
+    },
+    {
+      "sha": "e6ae24c0e988e3a892a43b8e56ecae07e5dd3326",
+      "short_sha": "e6ae24c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:48:04-03:00",
+      "message": "test(action): valida contrato sem depender de literal do service"
+    },
+    {
+      "sha": "90909bae84e2fd82c70f26e63ba4bded687fc4b1",
+      "short_sha": "90909ba",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:46:24-03:00",
+      "message": "test(action): impede aplicação assistida em vigas preliminares"
+    },
+    {
+      "sha": "7dacb18186f5303563b6730a8300cb84ce2b9ed4",
+      "short_sha": "7dacb18",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:46:01-03:00",
+      "message": "test(predim): cobre explicação e bloqueio de aplicação em vigas"
+    },
+    {
+      "sha": "4e86473b9ef5e49b9b263f9e32f08fe671252a10",
+      "short_sha": "4e86473",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:45:33-03:00",
+      "message": "fix(action): bloqueia aplicação automática de vigas heurísticas"
+    },
+    {
+      "sha": "57c57bb17bacfdcc7c521b50e5494dc59ba125cb",
+      "short_sha": "57c57bb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:44:55-03:00",
+      "message": "feat(review): expõe explicação didática do pré-dimensionamento"
+    },
+    {
+      "sha": "9d27ecadd91caaad2617c4f09fbb8c5914bd5ca3",
+      "short_sha": "9d27eca",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:44:31-03:00",
+      "message": "fix(predim): explica critério e restringe ação em vigas"
+    },
     {
       "sha": "2995a123dfeb6338ef61936bb5617a1d0e58307f",
       "short_sha": "2995a12",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T19:29:24-03:00",
       "message": "fix(int-action): interrompe realimentacao do MutationObserver"
-    },
-    {
-      "sha": "cd76ce3f6b7053938cac59f6cfbb3306264e532d",
-      "short_sha": "cd76ce3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:18:47-03:00",
-      "message": "Merge pull request #119 from JGaspar-Eng/agent/int-action-sequencia-didatica"
-    },
-    {
-      "sha": "f1a38e6fc25e542e637eb5ea4bc82c5e7664538f",
-      "short_sha": "f1a38e6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:17:12-03:00",
-      "message": "docs(int-action): registra aplicacao assistida sem reabrir area 9"
-    },
-    {
-      "sha": "62a1af1545cde7e3fd6627f88f3b45bca7eede19",
-      "short_sha": "62a1af1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:16:57-03:00",
-      "message": "test(status): protege sequencia estrutural autoexplicativa"
-    },
-    {
-      "sha": "b8dde36e12c866a6b15523d1afb344eb14475c84",
-      "short_sha": "b8dde36",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:16:38-03:00",
-      "message": "feat(status): torna sequencia estrutural autoexplicativa"
-    },
-    {
-      "sha": "2a9e350f9a9a0292ade7e1dc0ab016edcd487726",
-      "short_sha": "2a9e350",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:16:03-03:00",
-      "message": "test(int-action): integra regressao a suite oficial"
-    },
-    {
-      "sha": "5061c178cac5bad31c969068ca1ebb8e0377bd14",
-      "short_sha": "5061c17",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:15:42-03:00",
-      "message": "test(int-action): protege aplicacao assistida de recomendacoes"
-    },
-    {
-      "sha": "95effeeee302a8dc4167f4914accd0b2fe62de21",
-      "short_sha": "95effee",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:15:25-03:00",
-      "message": "feat(int-action): carrega extensao de aplicacao assistida"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32309169429",
-    "run_number": "80"
+    "run_id": "32310534455",
+    "run_number": "81"
   }
 }
