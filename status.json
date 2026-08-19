@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T02:07:13Z",
+  "generated_at": "2026-08-19T02:12:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a5183b30d7b35c92fd83202b66332bdb7dcf0114",
-    "short_sha": "a5183b3",
+    "sha": "0b9eb5d29e3f66e091fa2275b0746420bb01874e",
+    "short_sha": "0b9eb5d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:07:05-03:00",
-    "message": "fix(sa-l1): distingue pavimentos no modal de vento"
+    "date": "2026-08-18T23:12:30-03:00",
+    "message": "Merge pull request #79 from JGaspar-Eng/agent/sa-l1-nome-cobertura-semantico"
   },
   "commits": [
+    {
+      "sha": "0b9eb5d29e3f66e091fa2275b0746420bb01874e",
+      "short_sha": "0b9eb5d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:12:30-03:00",
+      "message": "Merge pull request #79 from JGaspar-Eng/agent/sa-l1-nome-cobertura-semantico"
+    },
+    {
+      "sha": "357c2349e2c5aeb8515ffef501415110ab4e70a5",
+      "short_sha": "357c234",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:11:42-03:00",
+      "message": "test(sa-l1): impede cobertura inferida pela posicao"
+    },
+    {
+      "sha": "779f0586c464d3f6591fc651ba3ace81c3cbf19c",
+      "short_sha": "779f058",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:11:22-03:00",
+      "message": "fix(sa-l1): nao presume cobertura no ultimo pavimento"
+    },
     {
       "sha": "a5183b30d7b35c92fd83202b66332bdb7dcf0114",
       "short_sha": "a5183b3",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T22:54:57-03:00",
       "message": "test(wizard): integra carregamento JSON ao gate oficial"
-    },
-    {
-      "sha": "46ae08d9746374fd064ea5e8fb955ee7d15e7c0a",
-      "short_sha": "46ae08d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T22:54:45-03:00",
-      "message": "test(wizard): cobre carregamento JSON na entrada"
-    },
-    {
-      "sha": "d9c1287dc5c625e867fb53ca118999c2e9c30668",
-      "short_sha": "d9c1287",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T22:54:28-03:00",
-      "message": "feat(wizard): permite carregar snapshot JSON na entrada"
-    },
-    {
-      "sha": "d5294c415d18bac00bd2e9f04b49f7aebbf9a27e",
-      "short_sha": "d5294c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T21:18:53-03:00",
-      "message": "feat(sa-l1): integra auditoria lateral ao runtime"
     }
   ],
   "development": {
@@ -349,7 +349,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32207400957",
-    "run_number": "29"
+    "run_id": "32207728364",
+    "run_number": "30"
   }
 }
