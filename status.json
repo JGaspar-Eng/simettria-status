@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-19T03:44:12Z",
+  "generated_at": "2026-08-19T03:48:43Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e4ed453b11d609d289a5de9d6c30619ba78f46b5",
-    "short_sha": "e4ed453",
+    "sha": "1e91370b8cc5c2b5f331b94c7bce3992b3569205",
+    "short_sha": "1e91370",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T00:44:01-03:00",
-    "message": "Merge pull request #87 from JGaspar-Eng/agent/opt-pilar-01-busca-global"
+    "date": "2026-08-19T00:48:35-03:00",
+    "message": "Merge pull request #88 from JGaspar-Eng/agent/opt-pilar-01-recomendacao-auditavel"
   },
   "commits": [
+    {
+      "sha": "1e91370b8cc5c2b5f331b94c7bce3992b3569205",
+      "short_sha": "1e91370",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:48:35-03:00",
+      "message": "Merge pull request #88 from JGaspar-Eng/agent/opt-pilar-01-recomendacao-auditavel"
+    },
+    {
+      "sha": "710b28dc6cdb63ee0c71758a8c01c46f9efcba1d",
+      "short_sha": "710b28d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:47:50-03:00",
+      "message": "test(status): acompanha progresso do objetivo 3"
+    },
+    {
+      "sha": "1771e7cbbf9faa56bdfd4c93b8acf5cb68a69bcf",
+      "short_sha": "1771e7c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:47:30-03:00",
+      "message": "docs(opt-pilar): registra recomendacao auditavel concluida"
+    },
+    {
+      "sha": "a6afd51224c4959a4b1c8adfac5759faa1f8cfa4",
+      "short_sha": "a6afd51",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:46:26-03:00",
+      "message": "test(opt-pilar): valida recomendacao e desempates auditaveis"
+    },
+    {
+      "sha": "3a9b95a46aae0be304c348aafe7d6fc2c9a97027",
+      "short_sha": "3a9b95a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:45:43-03:00",
+      "message": "feat(opt-pilar): gera recomendacao auditavel contra configuracao original"
+    },
     {
       "sha": "e4ed453b11d609d289a5de9d6c30619ba78f46b5",
       "short_sha": "e4ed453",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T00:40:07-03:00",
       "message": "feat(opt-pilar): compara configuracoes globais de orientacao"
-    },
-    {
-      "sha": "1b7eed631c0086266790a73083fbce4c45da1ce7",
-      "short_sha": "1b7eed6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:39:02-03:00",
-      "message": "Merge pull request #86 from JGaspar-Eng/agent/opt-pilar-01-avaliador-configuracao"
-    },
-    {
-      "sha": "44a0ea35c0b4ab4d9f101e9c760a15b16fa7d333",
-      "short_sha": "44a0ea3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:37:58-03:00",
-      "message": "test(status): protege checkpoint ativo por bloco"
-    },
-    {
-      "sha": "a7587654c259149b3cb5b0499754e505b4af5a5f",
-      "short_sha": "a758765",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:37:38-03:00",
-      "message": "fix(status): usa checkpoint ativo do bloco para objetivos"
-    },
-    {
-      "sha": "9bd0408cbad9c3da3435b46444b8ebd993aa6d34",
-      "short_sha": "9bd0408",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:36:55-03:00",
-      "message": "docs(opt-pilar): registra objetivos do bloco ativo"
-    },
-    {
-      "sha": "58dbb00970e8e1b55740406457cee6e831c064cc",
-      "short_sha": "58dbb00",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:33:47-03:00",
-      "message": "test(opt-pilar): integra avaliador ao gate oficial"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "avaliar uma configuração candidata completa de orientações 0°/90° sem mutar o projeto, reutilizando M3B + SA-L1 e adotando como critério primário o maior `|Δ/H|` entre pavimentos e casos",
@@ -116,8 +116,8 @@
           },
           {
             "text": "definir ordenação, desempates e relatório auditável da configuração recomendada, preservando a configuração original como referência",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "integrar a recomendação ao runtime em modo somente leitura, sem aplicar rotações automaticamente ao projeto",
@@ -458,7 +458,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32213192560",
-    "run_number": "40"
+    "run_id": "32213462931",
+    "run_number": "41"
   }
 }
