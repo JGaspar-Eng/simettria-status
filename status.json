@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-19T16:29:23Z",
+  "generated_at": "2026-08-19T16:33:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "97aa70b56005652680bc9559d879495dcf6d8dd3",
-    "short_sha": "97aa70b",
+    "sha": "63444cdf6bf3053a2b56e17e1ef1396ed54b43f0",
+    "short_sha": "63444cd",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T13:29:13-03:00",
-    "message": "Merge pull request #98 from JGaspar-Eng/agent/int-predim-01-contexto"
+    "date": "2026-08-19T13:32:52-03:00",
+    "message": "Merge pull request #99 from JGaspar-Eng/agent/int-predim-01-politica"
   },
   "commits": [
+    {
+      "sha": "63444cdf6bf3053a2b56e17e1ef1396ed54b43f0",
+      "short_sha": "63444cd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:32:52-03:00",
+      "message": "Merge pull request #99 from JGaspar-Eng/agent/int-predim-01-politica"
+    },
+    {
+      "sha": "3144a069905e930a1ee91d74e56bc3d6db3de845",
+      "short_sha": "3144a06",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:32:05-03:00",
+      "message": "test(status): acompanha INT-PREDIM em 60 por cento"
+    },
+    {
+      "sha": "bee076c8b7c596f66124bb0e64dc8928b4441212",
+      "short_sha": "bee076c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:31:46-03:00",
+      "message": "docs(int-predim): conclui política de decisão"
+    },
+    {
+      "sha": "a116836530ebf9fcc7c70b29b1ee1f3fbbf7ad8b",
+      "short_sha": "a116836",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:30:38-03:00",
+      "message": "test(int-predim): protege política de informação insuficiente"
+    },
+    {
+      "sha": "8aeff388644bba1d5220021252a442a73de16234",
+      "short_sha": "8aeff38",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:30:08-03:00",
+      "message": "feat(int-predim): formaliza política de decisão"
+    },
     {
       "sha": "97aa70b56005652680bc9559d879495dcf6d8dd3",
       "short_sha": "97aa70b",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T13:26:26-03:00",
       "message": "test(int-predim): valida recomendação contextual"
-    },
-    {
-      "sha": "1fa22582fcac820546ee5c8862d84d6eb285132b",
-      "short_sha": "1fa2258",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:26:13-03:00",
-      "message": "feat(int-predim): cria recomendação contextual auditável"
-    },
-    {
-      "sha": "e5bd5d0362b2669179c4d14fc57c7377f7933b28",
-      "short_sha": "e5bd5d0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:24:28-03:00",
-      "message": "Merge pull request #97 from JGaspar-Eng/agent/close-int-check-01"
-    },
-    {
-      "sha": "23273747741be593d6da77c274f4268a9c0959ee",
-      "short_sha": "2327374",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:23:50-03:00",
-      "message": "docs(int-check): alinha contrato de próximo bloco"
-    },
-    {
-      "sha": "b2d48792f2884981bf126ec7016508dac13cc5b0",
-      "short_sha": "b2d4879",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:22:42-03:00",
-      "message": "test(status): acompanha fechamento INT-CHECK e novo bloco"
-    },
-    {
-      "sha": "d2d178d98486522f8eb86c99b43753deeb3c97b5",
-      "short_sha": "d2d178d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:22:13-03:00",
-      "message": "docs(int-predim): abre checkpoint ativo"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "auditar o heurístico de pré-dimensionamento já existente e identificar sua autoridade atual, entradas, saídas e pontos de consumo, sem duplicar regras",
@@ -116,8 +116,8 @@
           },
           {
             "text": "definir critérios de quando sugerir, quando manter a seção atual e quando declarar informação insuficiente, sem aplicar alteração automática",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "integrar a recomendação ao runtime em modo somente leitura e proteger o contrato por regressão",
@@ -502,7 +502,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32276185398",
-    "run_number": "53"
+    "run_id": "32276534701",
+    "run_number": "54"
   }
 }
