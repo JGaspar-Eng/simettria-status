@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T02:53:17Z",
+  "generated_at": "2026-08-19T02:57:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "10c5abdbaad190b04c5db3a532e2239cb8090323",
-    "short_sha": "10c5abd",
+    "sha": "544e26fc98eb68484f24719d42e685a94bd4b2d8",
+    "short_sha": "544e26f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:53:08-03:00",
-    "message": "Merge pull request #83 from JGaspar-Eng/agent/dashboard-rotulos-semanticos"
+    "date": "2026-08-18T23:56:54-03:00",
+    "message": "Merge pull request #84 from JGaspar-Eng/agent/dashboard-cache-bust-assets"
   },
   "commits": [
+    {
+      "sha": "544e26fc98eb68484f24719d42e685a94bd4b2d8",
+      "short_sha": "544e26f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:56:54-03:00",
+      "message": "Merge pull request #84 from JGaspar-Eng/agent/dashboard-cache-bust-assets"
+    },
+    {
+      "sha": "c8c2549bd0bb66d38ceb902967bf7760083220ee",
+      "short_sha": "c8c2549",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:56:00-03:00",
+      "message": "test(status): protege cache bust do asset"
+    },
+    {
+      "sha": "4619e3100aeb160fa0db5e4dc65970e39e8df655",
+      "short_sha": "4619e31",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:55:45-03:00",
+      "message": "fix(status): versiona asset do painel por SHA"
+    },
     {
       "sha": "10c5abdbaad190b04c5db3a532e2239cb8090323",
       "short_sha": "10c5abd",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T23:38:04-03:00",
       "message": "feat(status): explicita area ativa e trabalhos por area"
-    },
-    {
-      "sha": "1bfffc38f9554b24c37a85e457719c62b52e134e",
-      "short_sha": "1bfffc3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:37:21-03:00",
-      "message": "refactor(status): usa gerador versionado do painel"
-    },
-    {
-      "sha": "cf1a909de83309c687b1325e68f4942fbc27e363",
-      "short_sha": "cf1a909",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:37:11-03:00",
-      "message": "test(status): integra painel ao gate oficial"
-    },
-    {
-      "sha": "13f8baa276c1146c6e8ddcb2312578e44a855580",
-      "short_sha": "13f8baa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:37:00-03:00",
-      "message": "test(status): cobre area ativa e cargas por epico"
     }
   ],
   "development": {
@@ -422,7 +422,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32210151332",
-    "run_number": "36"
+    "run_id": "32210372085",
+    "run_number": "37"
   }
 }
