@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-19T00:19:02Z",
+  "generated_at": "2026-08-19T01:55:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d5294c415d18bac00bd2e9f04b49f7aebbf9a27e",
-    "short_sha": "d5294c4",
+    "sha": "23c6de41c21328cc4d094791c8f83020755178f1",
+    "short_sha": "23c6de4",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T21:18:53-03:00",
-    "message": "feat(sa-l1): integra auditoria lateral ao runtime"
+    "date": "2026-08-18T22:55:39-03:00",
+    "message": "Merge pull request #77 from JGaspar-Eng/agent/wizard-carregar-json"
   },
   "commits": [
+    {
+      "sha": "23c6de41c21328cc4d094791c8f83020755178f1",
+      "short_sha": "23c6de4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T22:55:39-03:00",
+      "message": "Merge pull request #77 from JGaspar-Eng/agent/wizard-carregar-json"
+    },
+    {
+      "sha": "588211cad12590d7dabcdd0bb6e86deeddc8b580",
+      "short_sha": "588211c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T22:54:57-03:00",
+      "message": "test(wizard): integra carregamento JSON ao gate oficial"
+    },
+    {
+      "sha": "46ae08d9746374fd064ea5e8fb955ee7d15e7c0a",
+      "short_sha": "46ae08d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T22:54:45-03:00",
+      "message": "test(wizard): cobre carregamento JSON na entrada"
+    },
+    {
+      "sha": "d9c1287dc5c625e867fb53ca118999c2e9c30668",
+      "short_sha": "d9c1287",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T22:54:28-03:00",
+      "message": "feat(wizard): permite carregar snapshot JSON na entrada"
+    },
     {
       "sha": "d5294c415d18bac00bd2e9f04b49f7aebbf9a27e",
       "short_sha": "d5294c4",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T14:31:38-03:00",
       "message": "test(sa-l1): integra auditoria runtime ao gate"
-    },
-    {
-      "sha": "ef1c6939f98e49cb34768a4197f56f141e447136",
-      "short_sha": "ef1c693",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:31:14-03:00",
-      "message": "test(sa-l1): valida auditoria lateral de runtime"
-    },
-    {
-      "sha": "b6f5c92833af90b2b67ae2b1690c5de941ca06c7",
-      "short_sha": "b6f5c92",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:30:35-03:00",
-      "message": "feat(sa-l1): expoe resposta lateral na auditoria de vento"
-    },
-    {
-      "sha": "2916f2b8a9c7426039ad49066086c5a16be17fd5",
-      "short_sha": "2916f2b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:29:55-03:00",
-      "message": "refactor(sa-l1): reutiliza auditoria W1 no runtime"
-    },
-    {
-      "sha": "5615e8379bb00ef613ef9426ad3f43b0bd0819ce",
-      "short_sha": "5615e83",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T14:29:27-03:00",
-      "message": "feat(sa-l1): adiciona auditoria lateral de runtime"
     }
   ],
   "development": {
@@ -247,7 +247,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 22,
+    "validator_count": 23,
     "validators": [
       {
         "name": "test:base",
@@ -336,6 +336,10 @@
       {
         "name": "test:sa-l1-ui",
         "command": "node tests/validar_analise_lateral_auditoria_ui_sa_l1.mjs"
+      },
+      {
+        "name": "test:wizard-json",
+        "command": "node tests/validar_wizard_carregar_json.mjs"
       }
     ]
   },
@@ -345,7 +349,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32200761292",
-    "run_number": "25"
+    "run_id": "32206695619",
+    "run_number": "26"
   }
 }
