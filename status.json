@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T16:24:37Z",
+  "generated_at": "2026-08-19T16:29:23Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e5bd5d0362b2669179c4d14fc57c7377f7933b28",
-    "short_sha": "e5bd5d0",
+    "sha": "97aa70b56005652680bc9559d879495dcf6d8dd3",
+    "short_sha": "97aa70b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T13:24:28-03:00",
-    "message": "Merge pull request #97 from JGaspar-Eng/agent/close-int-check-01"
+    "date": "2026-08-19T13:29:13-03:00",
+    "message": "Merge pull request #98 from JGaspar-Eng/agent/int-predim-01-contexto"
   },
   "commits": [
+    {
+      "sha": "97aa70b56005652680bc9559d879495dcf6d8dd3",
+      "short_sha": "97aa70b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:29:13-03:00",
+      "message": "Merge pull request #98 from JGaspar-Eng/agent/int-predim-01-contexto"
+    },
+    {
+      "sha": "d6e6c6e0973d8fb416b77a943576d7eab8b2e1c4",
+      "short_sha": "d6e6c6e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:28:27-03:00",
+      "message": "test(status): acompanha INT-PREDIM em 40 por cento"
+    },
+    {
+      "sha": "8f52c06dc167795e0e51d24abfe4e7c3dad842fe",
+      "short_sha": "8f52c06",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:28:03-03:00",
+      "message": "docs(int-predim): conclui auditoria e camada contextual"
+    },
+    {
+      "sha": "92fd2516a381bd52a5dcf07f50b81927acaf69a9",
+      "short_sha": "92fd251",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:26:43-03:00",
+      "message": "test(int-predim): integra contexto ao gate"
+    },
+    {
+      "sha": "7e5d6b4b23c1e6dac19fa5378d552b513e2c0caf",
+      "short_sha": "7e5d6b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:26:26-03:00",
+      "message": "test(int-predim): valida recomendação contextual"
+    },
+    {
+      "sha": "1fa22582fcac820546ee5c8862d84d6eb285132b",
+      "short_sha": "1fa2258",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:26:13-03:00",
+      "message": "feat(int-predim): cria recomendação contextual auditável"
+    },
     {
       "sha": "e5bd5d0362b2669179c4d14fc57c7377f7933b28",
       "short_sha": "e5bd5d0",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T13:22:13-03:00",
       "message": "docs(int-predim): abre checkpoint ativo"
-    },
-    {
-      "sha": "584164b1af25bf1d84afc48af5b575a2e66943b3",
-      "short_sha": "584164b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:21:58-03:00",
-      "message": "docs(int-check): registra fechamento formal"
-    },
-    {
-      "sha": "eecaf862de959def75afd5c61e1035c31a427647",
-      "short_sha": "eecaf86",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:19:42-03:00",
-      "message": "docs(int-check): conclui auditoria visual"
-    },
-    {
-      "sha": "b126cb3733c22ebbd6f2c6991c445ddbf6d2ba2a",
-      "short_sha": "b126cb3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:20:56-03:00",
-      "message": "Merge pull request #96 from JGaspar-Eng/agent/auditoria-progresso-12-areas"
-    },
-    {
-      "sha": "8ed1f464d3ad2c9445358ed15f8153493f1c735e",
-      "short_sha": "8ed1f46",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:19:32-03:00",
-      "message": "test(status): audita índice dos 12 cards"
-    },
-    {
-      "sha": "7990f8ab75409f0c10f4b1b10cd1b26bbaa8de76",
-      "short_sha": "7990f8a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:19:06-03:00",
-      "message": "fix(status): aplica índice documentado às 12 áreas"
-    },
-    {
-      "sha": "53c2662cbaa006d79bec9854a3bf90c8c6deef5a",
-      "short_sha": "53c2662",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:18:32-03:00",
-      "message": "docs(status): define política única de progresso por área"
     }
   ],
   "development": {
@@ -99,20 +99,20 @@
       ],
       "progress": {
         "total": 5,
-        "done": 0,
+        "done": 2,
         "in_progress": 0,
-        "pending": 5,
-        "percent": 0,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "auditar o heurístico de pré-dimensionamento já existente e identificar sua autoridade atual, entradas, saídas e pontos de consumo, sem duplicar regras",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "criar uma camada contextual de recomendação que reutilize o heurístico existente e acrescente justificativa auditável por elemento",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "definir critérios de quando sugerir, quando manter a seção atual e quando declarar informação insuficiente, sem aplicar alteração automática",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 28,
+    "validator_count": 29,
     "validators": [
       {
         "name": "test:base",
@@ -483,6 +483,10 @@
         "command": "node tests/validar_detector_inconsistencias_runtime_int_check_01.mjs"
       },
       {
+        "name": "test:int-predim-contexto",
+        "command": "node tests/validar_predimensionamento_contextual_int_predim_01.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -498,7 +502,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32275731800",
-    "run_number": "52"
+    "run_id": "32276185398",
+    "run_number": "53"
   }
 }
