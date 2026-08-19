@@ -69,6 +69,11 @@
     document.head.appendChild(style);
   }
 
+  function removerConsolidadoEAtalho() {
+    document.getElementById("consolidado")?.remove();
+    document.querySelector('nav.top a[href="#consolidado"]')?.remove();
+  }
+
   function resumoTrabalhos(work, active) {
     work = work || {};
     var total = Number(work.total || 0);
@@ -88,6 +93,7 @@
 
   function aplicar(status) {
     instalarEstilos();
+    removerConsolidadoEAtalho();
     var development = status.development || {};
     var current = development.current || {};
     var area = current.area || {};

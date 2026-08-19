@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T02:57:03Z",
+  "generated_at": "2026-08-19T03:30:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "544e26fc98eb68484f24719d42e685a94bd4b2d8",
-    "short_sha": "544e26f",
+    "sha": "dfe443b07f4a97b1cc642cba79677d94e4ae6188",
+    "short_sha": "dfe443b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:56:54-03:00",
-    "message": "Merge pull request #84 from JGaspar-Eng/agent/dashboard-cache-bust-assets"
+    "date": "2026-08-19T00:30:36-03:00",
+    "message": "Merge pull request #85 from JGaspar-Eng/agent/dashboard-remove-consolidado"
   },
   "commits": [
+    {
+      "sha": "dfe443b07f4a97b1cc642cba79677d94e4ae6188",
+      "short_sha": "dfe443b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:30:36-03:00",
+      "message": "Merge pull request #85 from JGaspar-Eng/agent/dashboard-remove-consolidado"
+    },
+    {
+      "sha": "409d0a56d4579c7c0ccc3b9e741e46fe8ea31468",
+      "short_sha": "409d0a5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:29:49-03:00",
+      "message": "test(status): protege remocao do consolidado estatico"
+    },
+    {
+      "sha": "69d0d71759e0259b8aae976c02f871221f873107",
+      "short_sha": "69d0d71",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:29:32-03:00",
+      "message": "fix(status): remove bloco consolidado estatico"
+    },
     {
       "sha": "544e26fc98eb68484f24719d42e685a94bd4b2d8",
       "short_sha": "544e26f",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T23:39:11-03:00",
       "message": "Merge pull request #82 from JGaspar-Eng/agent/dashboard-areas-trabalhos"
-    },
-    {
-      "sha": "e11703a4f0150f9b7468f56608bfa553fcb32664",
-      "short_sha": "e11703a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:38:31-03:00",
-      "message": "feat(status): publica enriquecimento visual das areas"
-    },
-    {
-      "sha": "2b3a8bf44699f4058002ea0dfe241d711c64667a",
-      "short_sha": "2b3a8bf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:38:16-03:00",
-      "message": "test(status): cobre apresentacao das areas"
-    },
-    {
-      "sha": "14154af46d0b327eacb57dbba0264371990563b9",
-      "short_sha": "14154af",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:38:04-03:00",
-      "message": "feat(status): explicita area ativa e trabalhos por area"
     }
   ],
   "development": {
@@ -422,7 +422,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32210372085",
-    "run_number": "37"
+    "run_id": "32212399687",
+    "run_number": "38"
   }
 }
