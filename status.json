@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-19T02:26:30Z",
+  "generated_at": "2026-08-19T02:30:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ae6b9cad1d66a09294733a2b2831fe5c3aab72c4",
-    "short_sha": "ae6b9ca",
+    "sha": "fd54bc6ed310b299d4c225992cfe09681f20045c",
+    "short_sha": "fd54bc6",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:26:21-03:00",
-    "message": "Merge pull request #80 from JGaspar-Eng/agent/sa-l1-fechamento-documental"
+    "date": "2026-08-18T23:30:21-03:00",
+    "message": "Merge pull request #81 from JGaspar-Eng/agent/fix-dashboard-closure-reconcile"
   },
   "commits": [
+    {
+      "sha": "fd54bc6ed310b299d4c225992cfe09681f20045c",
+      "short_sha": "fd54bc6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:30:21-03:00",
+      "message": "Merge pull request #81 from JGaspar-Eng/agent/fix-dashboard-closure-reconcile"
+    },
+    {
+      "sha": "72a8c3aaf7a5ae6516fd0d931215b6917bf7989c",
+      "short_sha": "72a8c3a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:29:37-03:00",
+      "message": "chore(status): remove placeholder"
+    },
+    {
+      "sha": "3f3f9cf5f1d691dd59f95d46cb7f9803d0b47392",
+      "short_sha": "3f3f9cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:29:27-03:00",
+      "message": "chore(status): placeholder"
+    },
+    {
+      "sha": "7cc6176d05b3be6e5766cd843b8699e643a15c8d",
+      "short_sha": "7cc6176",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:29:21-03:00",
+      "message": "fix(status): reconcilia fechamento formal com bloco ativo"
+    },
     {
       "sha": "ae6b9cad1d66a09294733a2b2831fe5c3aab72c4",
       "short_sha": "ae6b9ca",
@@ -51,80 +79,20 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T23:11:42-03:00",
       "message": "test(sa-l1): impede cobertura inferida pela posicao"
-    },
-    {
-      "sha": "779f0586c464d3f6591fc651ba3ace81c3cbf19c",
-      "short_sha": "779f058",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:11:22-03:00",
-      "message": "fix(sa-l1): nao presume cobertura no ultimo pavimento"
-    },
-    {
-      "sha": "a5183b30d7b35c92fd83202b66332bdb7dcf0114",
-      "short_sha": "a5183b3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:07:05-03:00",
-      "message": "fix(sa-l1): distingue pavimentos no modal de vento"
-    },
-    {
-      "sha": "fc6c3baaa6258d8871802a1960a23db300c24a98",
-      "short_sha": "fc6c3ba",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:05:59-03:00",
-      "message": "test(sa-l1): cobre nomes derivados de pavimentos no modal"
-    },
-    {
-      "sha": "ea09f14ce8d0787cafc296063c49cc797514c612",
-      "short_sha": "ea09f14",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:05:36-03:00",
-      "message": "fix(sa-l1): distingue pavimentos no modal de vento"
     }
   ],
   "development": {
     "current": {
-      "code": "SA-L1",
-      "title": "análise lateral/global",
-      "objectives": [
-        "resolver `K·d = F` por direção global consumindo a rigidez do M3B e o contrato W1, com restrições, deslocamentos, rotações, reações e validação de engenharia pelo caso fechado `δ = P·L³/(3EI)`",
-        "orquestrar os quatro casos direcionais do W1 e consolidar translações por pavimento e deslocamentos relativos entre pavimentos",
-        "integrar a resposta lateral ao Calculation Graph com rastreabilidade explícita entre rigidez, forças e deslocamentos",
-        "expor a resposta do SA-L1 em auditoria de runtime somente leitura, sem antecipar dimensionamento ou segunda ordem",
-        "concluir validação automatizada ampliada e auditoria visual real antes do encerramento do bloco."
-      ],
+      "code": "OPT-PILAR-01",
+      "title": "otimização global de orientação",
+      "objectives": [],
       "progress": {
-        "total": 5,
-        "done": 4,
+        "total": 0,
+        "done": 0,
         "in_progress": 0,
-        "pending": 1,
-        "percent": 80,
-        "items": [
-          {
-            "text": "resolver `K·d = F` por direção global consumindo a rigidez do M3B e o contrato W1, com restrições, deslocamentos, rotações, reações e validação de engenharia pelo caso fechado `δ = P·L³/(3EI)`",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "orquestrar os quatro casos direcionais do W1 e consolidar translações por pavimento e deslocamentos relativos entre pavimentos",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "integrar a resposta lateral ao Calculation Graph com rastreabilidade explícita entre rigidez, forças e deslocamentos",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "expor a resposta do SA-L1 em auditoria de runtime somente leitura, sem antecipar dimensionamento ou segunda ordem",
-            "state": "done",
-            "marker": "✅"
-          },
-          {
-            "text": "concluir validação automatizada ampliada e auditoria visual real antes do encerramento do bloco.",
-            "state": "pending",
-            "marker": "⬜"
-          }
-        ]
+        "pending": 0,
+        "percent": 0,
+        "items": []
       }
     },
     "milestone_summary": "M0 criou o contrato neutro; M1 integrou Geometria, Propriedades e Materiais da viga; M2 completou Carregamentos e Resultados da viga; M3 estendeu o contrato ao pilar; M4 integrou a laje com Geometria, Propriedades, Materiais, Carregamentos e Transferência de carga às vigas. Após M4, o bloco estrutural M3A consolidou a orientação 0°/90° dos pilares e as inércias globais `Ix,g`/`Iy,g`.",
@@ -139,11 +107,11 @@
       },
       {
         "code": "SA-L1",
-        "text": "bloco estrutural ativo: análise lateral/global"
+        "text": "análise lateral/global — planejada após M3B + W1."
       },
       {
         "code": "OPT-PILAR-01",
-        "text": "otimização global da orientação dos pilares — planejada, não implementada."
+        "text": "bloco estrutural ativo: otimização global de orientação"
       }
     ],
     "epics": [
@@ -344,12 +312,12 @@
     ]
   },
   "sources": {
-    "current": "docs/CHECKPOINT.md",
+    "current": "docs/SA_L1_FECHAMENTO.md",
     "roadmap": "docs/ROADMAP.md",
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32208549285",
-    "run_number": "33"
+    "run_id": "32208790613",
+    "run_number": "34"
   }
 }
