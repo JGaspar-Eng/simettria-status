@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T23:15:04Z",
+  "generated_at": "2026-08-19T23:28:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "524d2a7bc5c0b2897fc537f75012d10a2a4f064d",
-    "short_sha": "524d2a7",
+    "sha": "0bce97ef6f38212d572e95f6c7d24700235b6d2c",
+    "short_sha": "0bce97e",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T20:14:54-03:00",
-    "message": "Merge pull request #122 from JGaspar-Eng/agent/int-predim-laje-didatica"
+    "date": "2026-08-19T20:28:06-03:00",
+    "message": "Merge pull request #123 from JGaspar-Eng/agent/int-review-navegacao-aplicar-viga"
   },
   "commits": [
+    {
+      "sha": "0bce97ef6f38212d572e95f6c7d24700235b6d2c",
+      "short_sha": "0bce97e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:28:06-03:00",
+      "message": "Merge pull request #123 from JGaspar-Eng/agent/int-review-navegacao-aplicar-viga"
+    },
+    {
+      "sha": "e8add6c348abed5644aa5e0eb6065caff68e0b6a",
+      "short_sha": "e8add6c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:26:53-03:00",
+      "message": "test(review): cobre aplicação de viga e troca de pavimento"
+    },
+    {
+      "sha": "7a99edb24e95a14ba5b40e25cb6f03371f346e9e",
+      "short_sha": "7a99edb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:26:30-03:00",
+      "message": "fix(review): navega ao pavimento e restaura aplicação assistida de vigas"
+    },
     {
       "sha": "524d2a7bc5c0b2897fc537f75012d10a2a4f064d",
       "short_sha": "524d2a7",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T19:48:58-03:00",
       "message": "Merge pull request #121 from JGaspar-Eng/agent/predim-explica-criterio"
-    },
-    {
-      "sha": "e6ae24c0e988e3a892a43b8e56ecae07e5dd3326",
-      "short_sha": "e6ae24c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:48:04-03:00",
-      "message": "test(action): valida contrato sem depender de literal do service"
-    },
-    {
-      "sha": "90909bae84e2fd82c70f26e63ba4bded687fc4b1",
-      "short_sha": "90909ba",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:46:24-03:00",
-      "message": "test(action): impede aplicação assistida em vigas preliminares"
-    },
-    {
-      "sha": "7dacb18186f5303563b6730a8300cb84ce2b9ed4",
-      "short_sha": "7dacb18",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:46:01-03:00",
-      "message": "test(predim): cobre explicação e bloqueio de aplicação em vigas"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32312432188",
-    "run_number": "82"
+    "run_id": "32313367977",
+    "run_number": "83"
   }
 }
