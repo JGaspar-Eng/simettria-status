@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T18:08:52Z",
+  "generated_at": "2026-08-19T18:12:43Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6b350f2ca121a72bc57cc72625884fad19ae6605",
-    "short_sha": "6b350f2",
+    "sha": "39810d273aae43af4f91159bcf0824ef9ee5dbb3",
+    "short_sha": "39810d2",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T15:08:42-03:00",
-    "message": "Merge pull request #110 from JGaspar-Eng/agent/int-verify-01-contrato"
+    "date": "2026-08-19T15:12:32-03:00",
+    "message": "Merge pull request #111 from JGaspar-Eng/agent/int-verify-01-adaptadores"
   },
   "commits": [
+    {
+      "sha": "39810d273aae43af4f91159bcf0824ef9ee5dbb3",
+      "short_sha": "39810d2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:12:32-03:00",
+      "message": "Merge pull request #111 from JGaspar-Eng/agent/int-verify-01-adaptadores"
+    },
+    {
+      "sha": "b80da7ec713feb0ce53f5b05218f39ce6a5264f1",
+      "short_sha": "b80da7e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:11:29-03:00",
+      "message": "test(status): atualiza progresso INT-VERIFY objetivo 3"
+    },
+    {
+      "sha": "d0dc65d03e0563998246a36ba3b4b7667b208302",
+      "short_sha": "d0dc65d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:11:00-03:00",
+      "message": "docs(int-verify): fecha adaptadores objetivo 3"
+    },
+    {
+      "sha": "cbcb9d1b535d069c0aade3a92c0668a797ae684d",
+      "short_sha": "cbcb9d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:10:36-03:00",
+      "message": "test(int-verify): integra adaptadores ao gate"
+    },
+    {
+      "sha": "57a98c60e46776686ddb7f91b71fce9d08711358",
+      "short_sha": "57a98c6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:10:01-03:00",
+      "message": "test(int-verify): valida adaptadores e agregação"
+    },
+    {
+      "sha": "334bde3558a5c670a50e3cf37eaa412a7fd4e7f5",
+      "short_sha": "334bde3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:09:42-03:00",
+      "message": "feat(int-verify): adapta autoridades ao contrato comum"
+    },
     {
       "sha": "6b350f2ca121a72bc57cc72625884fad19ae6605",
       "short_sha": "6b350f2",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T15:06:36-03:00",
       "message": "test(int-verify): integra contrato ao gate"
-    },
-    {
-      "sha": "cd6981107bc7274c4d679a8b232b584c4652b0f8",
-      "short_sha": "cd69811",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:05:59-03:00",
-      "message": "test(int-verify): valida contrato comum"
-    },
-    {
-      "sha": "0dd73581ab8c6846c3dfb9ab781bd3ef78e76020",
-      "short_sha": "0dd7358",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:05:32-03:00",
-      "message": "feat(int-verify): cria contrato comum de verificação"
-    },
-    {
-      "sha": "244bb115d211df15503089782184abbd9cfca5bb",
-      "short_sha": "244bb11",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:04:55-03:00",
-      "message": "Merge pull request #109 from JGaspar-Eng/agent/int-verify-01-auditoria"
-    },
-    {
-      "sha": "d68cf723b58875d5151073972f3831a72a7eb9f7",
-      "short_sha": "d68cf72",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:03:52-03:00",
-      "message": "test(status): atualiza progresso INT-VERIFY objetivo 1"
-    },
-    {
-      "sha": "de0a8db3d2b43b0c7e620e70bc31384711774f0f",
-      "short_sha": "de0a8db",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:03:21-03:00",
-      "message": "docs(int-verify): fecha auditoria objetivo 1"
-    },
-    {
-      "sha": "4a30ebc0f8f9bcc84c012d728b349fd99c0cb477",
-      "short_sha": "4a30ebc",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:03:04-03:00",
-      "message": "test(int-verify): integra auditoria ao gate oficial"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
@@ -116,8 +116,8 @@
           },
           {
             "text": "implementar agregação apenas das verificações autorizadas, preservando origem e sem criar regras heurísticas ocultas",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "integrar as verificações ao runtime em modo somente leitura e sem correção automática",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 36,
+    "validator_count": 37,
     "validators": [
       {
         "name": "test:base",
@@ -515,6 +515,10 @@
         "command": "node tests/validar_int_verify_contrato.mjs"
       },
       {
+        "name": "test:int-verify-adaptadores",
+        "command": "node tests/validar_int_verify_adaptadores.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -530,7 +534,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32285671339",
-    "run_number": "70"
+    "run_id": "32286036680",
+    "run_number": "71"
   }
 }
