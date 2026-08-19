@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T22:49:07Z",
+  "generated_at": "2026-08-19T23:15:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8578ef0cc2a24d74a40adf8ab0c4287c71d193db",
-    "short_sha": "8578ef0",
+    "sha": "524d2a7bc5c0b2897fc537f75012d10a2a4f064d",
+    "short_sha": "524d2a7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T19:48:58-03:00",
-    "message": "Merge pull request #121 from JGaspar-Eng/agent/predim-explica-criterio"
+    "date": "2026-08-19T20:14:54-03:00",
+    "message": "Merge pull request #122 from JGaspar-Eng/agent/int-predim-laje-didatica"
   },
   "commits": [
+    {
+      "sha": "524d2a7bc5c0b2897fc537f75012d10a2a4f064d",
+      "short_sha": "524d2a7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:14:54-03:00",
+      "message": "Merge pull request #122 from JGaspar-Eng/agent/int-predim-laje-didatica"
+    },
+    {
+      "sha": "80499606811b3ab99a40c590de228092f611fe0a",
+      "short_sha": "8049960",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:13:19-03:00",
+      "message": "test(predim): usa tolerancia em valor bruto de vao"
+    },
+    {
+      "sha": "797d00f8140fec127005ef16f0cad946992f6492",
+      "short_sha": "797d00f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:11:35-03:00",
+      "message": "test(predim): protege memoria didatica de lajes"
+    },
+    {
+      "sha": "45f7591f8c4dd39cc9fccae3e5833bc9404b22e4",
+      "short_sha": "45f7591",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:11:13-03:00",
+      "message": "feat(predim): mostra memoria didatica da espessura de laje"
+    },
+    {
+      "sha": "11719a9b551a365f8fa862e802fd8d0f9edccb4b",
+      "short_sha": "11719a9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:10:34-03:00",
+      "message": "test(predim): cobre explicacao e tipologia de lajes"
+    },
+    {
+      "sha": "e8f89bc00eb5bff0a2008b2e0b63e51c359f6df6",
+      "short_sha": "e8f89bc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T20:10:05-03:00",
+      "message": "fix(predim): explica lajes e respeita tipologia"
+    },
     {
       "sha": "8578ef0cc2a24d74a40adf8ab0c4287c71d193db",
       "short_sha": "8578ef0",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T19:46:01-03:00",
       "message": "test(predim): cobre explicação e bloqueio de aplicação em vigas"
-    },
-    {
-      "sha": "4e86473b9ef5e49b9b263f9e32f08fe671252a10",
-      "short_sha": "4e86473",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:45:33-03:00",
-      "message": "fix(action): bloqueia aplicação automática de vigas heurísticas"
-    },
-    {
-      "sha": "57c57bb17bacfdcc7c521b50e5494dc59ba125cb",
-      "short_sha": "57c57bb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:44:55-03:00",
-      "message": "feat(review): expõe explicação didática do pré-dimensionamento"
-    },
-    {
-      "sha": "9d27ecadd91caaad2617c4f09fbb8c5914bd5ca3",
-      "short_sha": "9d27eca",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:44:31-03:00",
-      "message": "fix(predim): explica critério e restringe ação em vigas"
-    },
-    {
-      "sha": "2995a123dfeb6338ef61936bb5617a1d0e58307f",
-      "short_sha": "2995a12",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:30:59-03:00",
-      "message": "Merge pull request #120 from JGaspar-Eng/agent/fix-int-action-loop"
-    },
-    {
-      "sha": "7f49d2f99121732dacde5310ddd8ff38650ff750",
-      "short_sha": "7f49d2f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:29:43-03:00",
-      "message": "test(int-action): protege contra loop de MutationObserver"
-    },
-    {
-      "sha": "2654abc88330ae6b3c297bce1c8f1973a4c49775",
-      "short_sha": "2654abc",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:29:24-03:00",
-      "message": "fix(int-action): interrompe realimentacao do MutationObserver"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32310534455",
-    "run_number": "81"
+    "run_id": "32312432188",
+    "run_number": "82"
   }
 }
