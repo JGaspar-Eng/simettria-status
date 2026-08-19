@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T21:22:09Z",
+  "generated_at": "2026-08-19T21:25:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e90d2e17cd77b976946cfa48032f138c18813dd2",
-    "short_sha": "e90d2e1",
+    "sha": "d9f083ac961e22870500428900cfc12376e7c6aa",
+    "short_sha": "d9f083a",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T18:21:59-03:00",
-    "message": "Merge pull request #114 from JGaspar-Eng/agent/int-ai-01-auditoria"
+    "date": "2026-08-19T18:24:54-03:00",
+    "message": "Merge pull request #115 from JGaspar-Eng/agent/int-ai-01-contrato"
   },
   "commits": [
+    {
+      "sha": "d9f083ac961e22870500428900cfc12376e7c6aa",
+      "short_sha": "d9f083a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:24:54-03:00",
+      "message": "Merge pull request #115 from JGaspar-Eng/agent/int-ai-01-contrato"
+    },
+    {
+      "sha": "2b049df69bdffd024fd4c1627850f50b1e714aca",
+      "short_sha": "2b049df",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:24:03-03:00",
+      "message": "test(status): atualiza INT-AI-01 para 2 de 5"
+    },
+    {
+      "sha": "4515cca62e640efb9e3fc94ccb9a212beda018be",
+      "short_sha": "4515cca",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:23:38-03:00",
+      "message": "docs(int-ai): conclui contrato provider-neutral"
+    },
+    {
+      "sha": "a178acddfed93446d5a4286337f9acd2d3160a23",
+      "short_sha": "a178acd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:23:17-03:00",
+      "message": "test(int-ai): integra contrato à suíte oficial"
+    },
+    {
+      "sha": "fe3a782b280ac8b2ab9e0e195945a1e7bdd75992",
+      "short_sha": "fe3a782",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:22:47-03:00",
+      "message": "test(int-ai): protege contrato provider-neutral"
+    },
+    {
+      "sha": "f7b57977e3db88715cd6dc0be05e02d330daa235",
+      "short_sha": "f7b5797",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:22:28-03:00",
+      "message": "feat(int-ai): define contrato provider-neutral de apoio"
+    },
     {
       "sha": "e90d2e17cd77b976946cfa48032f138c18813dd2",
       "short_sha": "e90d2e1",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T18:18:15-03:00",
       "message": "docs(int-ai): conclui auditoria de viabilidade"
-    },
-    {
-      "sha": "e542f10e41d1b50e7837f164a53b6213c9ff6a74",
-      "short_sha": "e542f10",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T18:17:59-03:00",
-      "message": "test(int-ai): integra auditoria à suíte oficial"
-    },
-    {
-      "sha": "a8d6f2084a7e106261f62e343143f0c354d292c7",
-      "short_sha": "a8d6f20",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T18:17:36-03:00",
-      "message": "test(int-ai): protege limites da auditoria de viabilidade"
-    },
-    {
-      "sha": "07ee5fa0d9c2a98875834a5c6a6613240a09773f",
-      "short_sha": "07ee5fa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T18:17:07-03:00",
-      "message": "docs(int-ai): audita viabilidade e limites da IA de apoio"
-    },
-    {
-      "sha": "a67069dc29c56514ffa8d24ccc3f7cea0fea7367",
-      "short_sha": "a67069d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T18:15:30-03:00",
-      "message": "Merge pull request #113 from JGaspar-Eng/agent/int-verify-01-fechamento"
-    },
-    {
-      "sha": "3b2185f43dd1476af1a897cb9bc549acfcd20a03",
-      "short_sha": "3b2185f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T18:14:15-03:00",
-      "message": "test(status): protege apenas a sequência pública contratada"
-    },
-    {
-      "sha": "b1212bfdfc09b19933e2bbe46bdbddc80b8f8f12",
-      "short_sha": "b1212bf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T18:13:11-03:00",
-      "message": "docs(int-verify): associa fechamento ao trabalho da Área 9"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "auditar casos de uso, restrições da arquitetura client-side e riscos de segurança/privacidade antes de qualquer integração com modelo de IA",
@@ -111,8 +111,8 @@
           },
           {
             "text": "definir contrato provider-neutral de apoio explicativo, obrigatoriamente fundamentado em evidências determinísticas já produzidas pelo SIMETTRIA",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "implementar empacotamento auditável de contexto e resposta, sem permitir que IA calcule, valide, dimensione, corrija ou decida engenharia",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 39,
+    "validator_count": 40,
     "validators": [
       {
         "name": "test:base",
@@ -527,6 +527,10 @@
         "command": "node tests/validar_int_ai_auditoria.mjs"
       },
       {
+        "name": "test:int-ai-contrato",
+        "command": "node tests/validar_int_ai_contrato.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -542,7 +546,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32303500521",
-    "run_number": "74"
+    "run_id": "32303751032",
+    "run_number": "75"
   }
 }
