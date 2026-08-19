@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-19T16:33:16Z",
+  "generated_at": "2026-08-19T16:43:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "63444cdf6bf3053a2b56e17e1ef1396ed54b43f0",
-    "short_sha": "63444cd",
+    "sha": "279b4c0d053a16d17a08f175db78abf2b14e6dca",
+    "short_sha": "279b4c0",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T13:32:52-03:00",
-    "message": "Merge pull request #99 from JGaspar-Eng/agent/int-predim-01-politica"
+    "date": "2026-08-19T13:43:19-03:00",
+    "message": "Merge pull request #100 from JGaspar-Eng/agent/int-predim-01-runtime"
   },
   "commits": [
+    {
+      "sha": "279b4c0d053a16d17a08f175db78abf2b14e6dca",
+      "short_sha": "279b4c0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:43:19-03:00",
+      "message": "Merge pull request #100 from JGaspar-Eng/agent/int-predim-01-runtime"
+    },
+    {
+      "sha": "b0efc58ca8cc6f7702a41e2d6f722be7e211dc01",
+      "short_sha": "b0efc58",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:42:39-03:00",
+      "message": "test(status): acompanha INT-PREDIM em 80 por cento"
+    },
+    {
+      "sha": "5537a679106a1ac617d749c662409587ae86827f",
+      "short_sha": "5537a67",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:42:19-03:00",
+      "message": "docs(int-predim): conclui integração runtime"
+    },
+    {
+      "sha": "868c45be69f35db441f8b75975ad62f0a6ade7f9",
+      "short_sha": "868c45b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:41:02-03:00",
+      "message": "test(int-predim): integra runtime ao gate"
+    },
+    {
+      "sha": "5ff59e48eb249357e41df12a3078c8029953e7ca",
+      "short_sha": "5ff59e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:40:33-03:00",
+      "message": "test(int-predim): protege integração runtime somente leitura"
+    },
+    {
+      "sha": "87447549b42fcb33e0301c7e3d7d05ee48e9dbaa",
+      "short_sha": "8744754",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:40:14-03:00",
+      "message": "feat(int-predim): registra extensão runtime da UI"
+    },
+    {
+      "sha": "978008618529c8a579b02151a499ff2fb094c67d",
+      "short_sha": "9780086",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:39:59-03:00",
+      "message": "feat(int-predim): integra recomendação contextual ao runtime"
+    },
+    {
+      "sha": "a444207be0e07db0eb37111a9f2afc28ccd04f33",
+      "short_sha": "a444207",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T13:39:30-03:00",
+      "message": "feat(int-predim): persiste perfil explícito do projeto"
+    },
     {
       "sha": "63444cdf6bf3053a2b56e17e1ef1396ed54b43f0",
       "short_sha": "63444cd",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T13:32:05-03:00",
       "message": "test(status): acompanha INT-PREDIM em 60 por cento"
-    },
-    {
-      "sha": "bee076c8b7c596f66124bb0e64dc8928b4441212",
-      "short_sha": "bee076c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:31:46-03:00",
-      "message": "docs(int-predim): conclui política de decisão"
-    },
-    {
-      "sha": "a116836530ebf9fcc7c70b29b1ee1f3fbbf7ad8b",
-      "short_sha": "a116836",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:30:38-03:00",
-      "message": "test(int-predim): protege política de informação insuficiente"
-    },
-    {
-      "sha": "8aeff388644bba1d5220021252a442a73de16234",
-      "short_sha": "8aeff38",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:30:08-03:00",
-      "message": "feat(int-predim): formaliza política de decisão"
-    },
-    {
-      "sha": "97aa70b56005652680bc9559d879495dcf6d8dd3",
-      "short_sha": "97aa70b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:29:13-03:00",
-      "message": "Merge pull request #98 from JGaspar-Eng/agent/int-predim-01-contexto"
-    },
-    {
-      "sha": "d6e6c6e0973d8fb416b77a943576d7eab8b2e1c4",
-      "short_sha": "d6e6c6e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:28:27-03:00",
-      "message": "test(status): acompanha INT-PREDIM em 40 por cento"
-    },
-    {
-      "sha": "8f52c06dc167795e0e51d24abfe4e7c3dad842fe",
-      "short_sha": "8f52c06",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:28:03-03:00",
-      "message": "docs(int-predim): conclui auditoria e camada contextual"
-    },
-    {
-      "sha": "92fd2516a381bd52a5dcf07f50b81927acaf69a9",
-      "short_sha": "92fd251",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:26:43-03:00",
-      "message": "test(int-predim): integra contexto ao gate"
-    },
-    {
-      "sha": "7e5d6b4b23c1e6dac19fa5378d552b513e2c0caf",
-      "short_sha": "7e5d6b4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:26:26-03:00",
-      "message": "test(int-predim): valida recomendação contextual"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 3,
+        "done": 4,
         "in_progress": 0,
-        "pending": 2,
-        "percent": 60,
+        "pending": 1,
+        "percent": 80,
         "items": [
           {
             "text": "auditar o heurístico de pré-dimensionamento já existente e identificar sua autoridade atual, entradas, saídas e pontos de consumo, sem duplicar regras",
@@ -121,8 +121,8 @@
           },
           {
             "text": "integrar a recomendação ao runtime em modo somente leitura e proteger o contrato por regressão",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco.",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 29,
+    "validator_count": 30,
     "validators": [
       {
         "name": "test:base",
@@ -487,6 +487,10 @@
         "command": "node tests/validar_predimensionamento_contextual_int_predim_01.mjs"
       },
       {
+        "name": "test:int-predim-runtime",
+        "command": "node tests/validar_predimensionamento_contextual_runtime_int_predim_01.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -502,7 +506,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32276554872",
-    "run_number": "55"
+    "run_id": "32277530555",
+    "run_number": "56"
   }
 }
