@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-19T17:15:27Z",
+  "generated_at": "2026-08-19T17:15:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3cba586bfb6474eaa7c70b7deeaefd62cfa3fb75",
-    "short_sha": "3cba586",
+    "sha": "97e16a7deb331a908210c70ac0448ab1ed0b18cb",
+    "short_sha": "97e16a7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:15:18-03:00",
-    "message": "docs(int-predim): registra fechamento visual e técnico"
+    "date": "2026-08-19T14:15:39-03:00",
+    "message": "chore: remove fechamento criado fora do fluxo"
   },
   "commits": [
+    {
+      "sha": "97e16a7deb331a908210c70ac0448ab1ed0b18cb",
+      "short_sha": "97e16a7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:15:39-03:00",
+      "message": "chore: remove fechamento criado fora do fluxo"
+    },
     {
       "sha": "3cba586bfb6474eaa7c70b7deeaefd62cfa3fb75",
       "short_sha": "3cba586",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T13:48:11-03:00",
       "message": "fix(int-predim): aponta runtime para container real de propriedades"
-    },
-    {
-      "sha": "279b4c0d053a16d17a08f175db78abf2b14e6dca",
-      "short_sha": "279b4c0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:43:19-03:00",
-      "message": "Merge pull request #100 from JGaspar-Eng/agent/int-predim-01-runtime"
     }
   ],
   "development": {
@@ -506,7 +506,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32280549147",
-    "run_number": "61"
+    "run_id": "32280583735",
+    "run_number": "62"
   }
 }
