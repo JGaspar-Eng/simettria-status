@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T17:33:07Z",
+  "generated_at": "2026-08-19T17:36:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5d7044c13294da1de57d175038a91e6f600c3309",
-    "short_sha": "5d7044c",
+    "sha": "d118554012be3e02c8440212fc563ed27b5d9d57",
+    "short_sha": "d118554",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:32:58-03:00",
-    "message": "Merge pull request #105 from JGaspar-Eng/agent/int-review-01-contrato"
+    "date": "2026-08-19T14:36:36-03:00",
+    "message": "Merge pull request #106 from JGaspar-Eng/agent/int-review-01-agregador"
   },
   "commits": [
+    {
+      "sha": "d118554012be3e02c8440212fc563ed27b5d9d57",
+      "short_sha": "d118554",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:36:36-03:00",
+      "message": "Merge pull request #106 from JGaspar-Eng/agent/int-review-01-agregador"
+    },
+    {
+      "sha": "9b464cbf051e88710c1d7f1d6ab271b96eb7d2e0",
+      "short_sha": "9b464cb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:35:42-03:00",
+      "message": "test(status): avança INT-REVIEW para 60 por cento"
+    },
+    {
+      "sha": "f17ad12b7b507c268862481836004f124eb35cea",
+      "short_sha": "f17ad12",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:35:09-03:00",
+      "message": "docs(int-review): fecha objetivo 3 de 5"
+    },
+    {
+      "sha": "b5258cf1d61066054de779d065293af803da5d09",
+      "short_sha": "b5258cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:34:40-03:00",
+      "message": "test(int-review): inclui agregador na suíte"
+    },
+    {
+      "sha": "d2758bddf03e4a525db56d5b51f03d9608094118",
+      "short_sha": "d2758bd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:34:06-03:00",
+      "message": "test(int-review): valida agregador auditavel"
+    },
+    {
+      "sha": "bddbf0e9814017033a2e52cf487d63c381ac6e4b",
+      "short_sha": "bddbf0e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:33:43-03:00",
+      "message": "feat(int-review): agrega autoridades sem recalculo"
+    },
     {
       "sha": "5d7044c13294da1de57d175038a91e6f600c3309",
       "short_sha": "5d7044c",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T14:31:24-03:00",
       "message": "test(int-review): inclui contrato comum na suíte"
-    },
-    {
-      "sha": "ceb612c69b4c54337c9f5d2d656a14f68073317a",
-      "short_sha": "ceb612c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:30:55-03:00",
-      "message": "test(int-review): valida contrato comum"
-    },
-    {
-      "sha": "fb1a26f4f9b4fc3465d26bb8e40de90d3da3ab29",
-      "short_sha": "fb1a26f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:30:34-03:00",
-      "message": "feat(int-review): cria contrato comum de revisão"
-    },
-    {
-      "sha": "eeca088e492ba6ed2483ae8dd510623a614fd57c",
-      "short_sha": "eeca088",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:30:00-03:00",
-      "message": "Merge pull request #104 from JGaspar-Eng/agent/int-review-01-objetivo1"
-    },
-    {
-      "sha": "3763a6ec60697215e0ab1ae243d758747f6e7d03",
-      "short_sha": "3763a6e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:28:32-03:00",
-      "message": "test(status): avança INT-REVIEW para 20 por cento"
-    },
-    {
-      "sha": "bb31ec654cc3d6459f2e67a3a0dee1cf7cbfbf8f",
-      "short_sha": "bb31ec6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:28:14-03:00",
-      "message": "docs(int-review): fecha objetivo 1 de 5"
-    },
-    {
-      "sha": "b0b8941fc9a5aa3f3c71bde7014a4fc31528a63a",
-      "short_sha": "b0b8941",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:27:57-03:00",
-      "message": "test(int-review): inclui auditoria na suíte oficial"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "auditar as saídas já existentes de INT-CHECK-01, OPT-PILAR-01 e INT-PREDIM-01 e definir quais podem compor uma revisão única sem duplicar regras",
@@ -116,8 +116,8 @@
           },
           {
             "text": "implementar agregação determinística e auditável das autoridades existentes, sem mutar o projeto e sem reimplementar cálculos",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "integrar a revisão ao runtime em modo somente leitura, com rastreabilidade até a autoridade de origem",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 32,
+    "validator_count": 33,
     "validators": [
       {
         "name": "test:base",
@@ -499,6 +499,10 @@
         "command": "node tests/validar_int_review_contrato.mjs"
       },
       {
+        "name": "test:int-review-agregador",
+        "command": "node tests/validar_int_review_agregador.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -514,7 +518,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32282236263",
-    "run_number": "65"
+    "run_id": "32282588573",
+    "run_number": "66"
   }
 }
