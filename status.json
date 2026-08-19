@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-19T12:12:32Z",
+  "generated_at": "2026-08-19T12:21:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bc451883917949ed0e8dcec98ed7b572ac21d6d9",
-    "short_sha": "bc45188",
+    "sha": "b126cb3733c22ebbd6f2c6991c445ddbf6d2ba2a",
+    "short_sha": "b126cb3",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T09:12:23-03:00",
-    "message": "Merge pull request #95 from JGaspar-Eng/agent/int-check-01-runtime"
+    "date": "2026-08-19T09:20:56-03:00",
+    "message": "Merge pull request #96 from JGaspar-Eng/agent/auditoria-progresso-12-areas"
   },
   "commits": [
+    {
+      "sha": "b126cb3733c22ebbd6f2c6991c445ddbf6d2ba2a",
+      "short_sha": "b126cb3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T09:20:56-03:00",
+      "message": "Merge pull request #96 from JGaspar-Eng/agent/auditoria-progresso-12-areas"
+    },
+    {
+      "sha": "8ed1f464d3ad2c9445358ed15f8153493f1c735e",
+      "short_sha": "8ed1f46",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T09:19:32-03:00",
+      "message": "test(status): audita índice dos 12 cards"
+    },
+    {
+      "sha": "7990f8ab75409f0c10f4b1b10cd1b26bbaa8de76",
+      "short_sha": "7990f8a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T09:19:06-03:00",
+      "message": "fix(status): aplica índice documentado às 12 áreas"
+    },
+    {
+      "sha": "53c2662cbaa006d79bec9854a3bf90c8c6deef5a",
+      "short_sha": "53c2662",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T09:18:32-03:00",
+      "message": "docs(status): define política única de progresso por área"
+    },
     {
       "sha": "bc451883917949ed0e8dcec98ed7b572ac21d6d9",
       "short_sha": "bc45188",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T09:08:43-03:00",
       "message": "fix(status): reestima percentual da área ativa pelo trabalho real"
-    },
-    {
-      "sha": "6b64dffb0fb4bfb23fa15264de740050ddead62f",
-      "short_sha": "6b64dff",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:07:14-03:00",
-      "message": "test(int-check): integra runtime ao gate oficial"
-    },
-    {
-      "sha": "05259250798b6f2ce30c928dae9f6cd947af13b9",
-      "short_sha": "0525925",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T09:06:51-03:00",
-      "message": "test(int-check): protege integração runtime somente leitura"
-    },
-    {
-      "sha": "740fe4ddbe98247edb2f85ac32bc88301c71b903",
-      "short_sha": "740fe4d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:48:59-03:00",
-      "message": "feat(int-check): integra detector ao painel do Calculation Graph"
-    },
-    {
-      "sha": "0197fbf03d8f4351de6c5f085faf728e1bc6b749",
-      "short_sha": "0197fbf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:48:02-03:00",
-      "message": "refactor(int-check): aceita snapshot estrutural do runtime"
     }
   ],
   "development": {
@@ -498,7 +498,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32251442698",
-    "run_number": "50"
+    "run_id": "32252192938",
+    "run_number": "51"
   }
 }

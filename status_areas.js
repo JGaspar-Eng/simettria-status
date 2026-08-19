@@ -99,33 +99,39 @@
     '</div>';
   }
 
-  function estimativaAreaAtiva(epic, current) {
+  function indiceDocumentado(epic, current) {
     var work = epic?.work || {};
     var total = Number(work.total || 0);
     if (!(total > 0)) return null;
     var done = Number(work.done || 0);
     var activeNow = Number(work.active_now || 0);
-    var progressoBloco = Math.max(0, Math.min(100, Number(current?.progress?.percent || 0))) / 100;
-    // Estimativa conservadora: trabalho concluído vale 100%; o único trabalho
-    // ativo vale o progresso explícito do bloco. Parciais históricos não recebem
-    // peso arbitrário porque não possuem percentual próprio documentado.
+    var progressoBloco = epic?.active
+      ? Math.max(0, Math.min(100, Number(current?.progress?.percent || 0))) / 100
+      : 0;
+    // Regra única para as 12 áreas: concluído vale 100%; o trabalho ativo usa
+    // somente o percentual explícito do bloco atual. Parciais históricos não
+    // recebem peso arbitrário porque não possuem percentual próprio documentado.
     var bruto = ((done + (activeNow * progressoBloco)) / total) * 100;
     return Math.max(0, Math.min(100, Math.round(bruto / 5) * 5));
   }
 
-  function aplicarEstimativaAreaAtiva(card, epic, current) {
-    var estimativa = estimativaAreaAtiva(epic, current);
-    if (estimativa == null) return;
+  function aplicarIndiceDocumentado(card, epic, current) {
+    var indice = indiceDocumentado(epic, current);
+    if (indice == null) return;
     var percent = card.querySelector(".epic-percent");
     var fill = card.querySelector(".epic-fill");
     var note = card.querySelector(".epic-note");
-    if (percent) percent.textContent = "~" + estimativa + "%";
-    if (fill) fill.style.width = estimativa + "%";
-    if (note) {
-      note.textContent = "reestimativa ativa: concluídos + progresso do bloco atual; parciais históricos sem peso arbitrário";
+    card.classList.remove("pending");
+    if (percent) {
+      percent.classList.remove("pending");
+      percent.textContent = "~" + indice + "%";
     }
-    card.dataset.areaEstimate = String(estimativa);
-    card.dataset.areaEstimateSource = "work-and-current-block";
+    if (fill) fill.style.width = indice + "%";
+    if (note) {
+      note.textContent = "índice documentado dos trabalhos cadastrados; parciais históricos sem peso arbitrário";
+    }
+    card.dataset.areaIndex = String(indice);
+    card.dataset.areaIndexSource = "registered-work";
   }
 
   function aplicar(status) {
@@ -166,7 +172,7 @@
 
     var sectionNote = document.querySelector("#progresso .section-note");
     if (sectionNote) {
-      sectionNote.textContent = "Cada área separa trabalhos concluídos, parciais históricos, trabalho em desenvolvimento agora e planejados. Na área ativa, a estimativa é recalculada de forma conservadora a partir dos trabalhos concluídos e do progresso do bloco atual.";
+      sectionNote.textContent = "Os 12 cards usam a mesma regra auditável: trabalhos concluídos contam integralmente; o trabalho ativo usa o progresso explícito do bloco atual; parciais históricos e planejados não recebem percentual presumido.";
     }
 
     var cards = document.querySelectorAll("#epic-progress-grid .epic-progress-card");
@@ -177,10 +183,10 @@
       card.classList.toggle("active-area", active);
       card.querySelector(".area-active-badge")?.remove();
       card.querySelector(".area-work-summary")?.remove();
+      aplicarIndiceDocumentado(card, epic, current);
       var title = card.querySelector(".epic-title");
       if (active && title) {
         title.insertAdjacentHTML("afterend", '<div class="area-active-badge">Área ativa agora</div>');
-        aplicarEstimativaAreaAtiva(card, epic, current);
       }
       card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active));
     });
