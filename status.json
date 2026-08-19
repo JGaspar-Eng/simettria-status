@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T18:05:05Z",
+  "generated_at": "2026-08-19T18:08:52Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "244bb115d211df15503089782184abbd9cfca5bb",
-    "short_sha": "244bb11",
+    "sha": "6b350f2ca121a72bc57cc72625884fad19ae6605",
+    "short_sha": "6b350f2",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T15:04:55-03:00",
-    "message": "Merge pull request #109 from JGaspar-Eng/agent/int-verify-01-auditoria"
+    "date": "2026-08-19T15:08:42-03:00",
+    "message": "Merge pull request #110 from JGaspar-Eng/agent/int-verify-01-contrato"
   },
   "commits": [
+    {
+      "sha": "6b350f2ca121a72bc57cc72625884fad19ae6605",
+      "short_sha": "6b350f2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:08:42-03:00",
+      "message": "Merge pull request #110 from JGaspar-Eng/agent/int-verify-01-contrato"
+    },
+    {
+      "sha": "75478e2602b36fd33cc1bc6098adb48fbe5c1af8",
+      "short_sha": "75478e2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:07:39-03:00",
+      "message": "test(status): atualiza progresso INT-VERIFY objetivo 2"
+    },
+    {
+      "sha": "1b746ca04b722943eb953d27fee72ad320e364e5",
+      "short_sha": "1b746ca",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:07:10-03:00",
+      "message": "docs(int-verify): fecha contrato objetivo 2"
+    },
+    {
+      "sha": "5596b503b41757085672228392600d67f817b089",
+      "short_sha": "5596b50",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:06:36-03:00",
+      "message": "test(int-verify): integra contrato ao gate"
+    },
+    {
+      "sha": "cd6981107bc7274c4d679a8b232b584c4652b0f8",
+      "short_sha": "cd69811",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:05:59-03:00",
+      "message": "test(int-verify): valida contrato comum"
+    },
+    {
+      "sha": "0dd73581ab8c6846c3dfb9ab781bd3ef78e76020",
+      "short_sha": "0dd7358",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:05:32-03:00",
+      "message": "feat(int-verify): cria contrato comum de verificação"
+    },
     {
       "sha": "244bb115d211df15503089782184abbd9cfca5bb",
       "short_sha": "244bb11",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T15:03:04-03:00",
       "message": "test(int-verify): integra auditoria ao gate oficial"
-    },
-    {
-      "sha": "292afdcc83d4ebb2b38e11f44d964a3cb1afbcb8",
-      "short_sha": "292afdc",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:02:31-03:00",
-      "message": "test(int-verify): protege autoridades auditadas"
-    },
-    {
-      "sha": "d016c2d958e7403a4eb0b4c47248fddf175d0c32",
-      "short_sha": "d016c2d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:01:45-03:00",
-      "message": "docs(int-verify): audita autoridades determinísticas"
-    },
-    {
-      "sha": "8154aca11bd385e6e489110051299b57969bdcc9",
-      "short_sha": "8154aca",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:59:50-03:00",
-      "message": "Merge pull request #108 from JGaspar-Eng/agent/int-review-01-fechamento"
-    },
-    {
-      "sha": "239c00666d1ef50867bba6dbe8cb80545d7ebb6b",
-      "short_sha": "239c006",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:58:33-03:00",
-      "message": "test(status): protege fechamento e sequência reconciliada"
-    },
-    {
-      "sha": "55936eddbc706cbf71592849bae8de02cffc21f4",
-      "short_sha": "55936ed",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:58:11-03:00",
-      "message": "fix(status): reconcilia sequência com fechamentos formais"
-    },
-    {
-      "sha": "3bd0907c3e003c379fc1348d78ea218d6aac5101",
-      "short_sha": "3bd0907",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:57:06-03:00",
-      "message": "docs(int-verify): alinha contrato do checkpoint ativo"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
@@ -111,8 +111,8 @@
           },
           {
             "text": "definir contrato explícito de verificação inteligente, com severidade, autoridade, condição de aplicabilidade e evidência",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "implementar agregação apenas das verificações autorizadas, preservando origem e sem criar regras heurísticas ocultas",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 35,
+    "validator_count": 36,
     "validators": [
       {
         "name": "test:base",
@@ -511,6 +511,10 @@
         "command": "node tests/validar_int_verify_autoridades.mjs"
       },
       {
+        "name": "test:int-verify-contrato",
+        "command": "node tests/validar_int_verify_contrato.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -526,7 +530,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32285317866",
-    "run_number": "69"
+    "run_id": "32285671339",
+    "run_number": "70"
   }
 }
