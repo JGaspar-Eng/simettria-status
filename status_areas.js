@@ -99,6 +99,35 @@
     '</div>';
   }
 
+  function estimativaAreaAtiva(epic, current) {
+    var work = epic?.work || {};
+    var total = Number(work.total || 0);
+    if (!(total > 0)) return null;
+    var done = Number(work.done || 0);
+    var activeNow = Number(work.active_now || 0);
+    var progressoBloco = Math.max(0, Math.min(100, Number(current?.progress?.percent || 0))) / 100;
+    // Estimativa conservadora: trabalho concluído vale 100%; o único trabalho
+    // ativo vale o progresso explícito do bloco. Parciais históricos não recebem
+    // peso arbitrário porque não possuem percentual próprio documentado.
+    var bruto = ((done + (activeNow * progressoBloco)) / total) * 100;
+    return Math.max(0, Math.min(100, Math.round(bruto / 5) * 5));
+  }
+
+  function aplicarEstimativaAreaAtiva(card, epic, current) {
+    var estimativa = estimativaAreaAtiva(epic, current);
+    if (estimativa == null) return;
+    var percent = card.querySelector(".epic-percent");
+    var fill = card.querySelector(".epic-fill");
+    var note = card.querySelector(".epic-note");
+    if (percent) percent.textContent = "~" + estimativa + "%";
+    if (fill) fill.style.width = estimativa + "%";
+    if (note) {
+      note.textContent = "reestimativa ativa: concluídos + progresso do bloco atual; parciais históricos sem peso arbitrário";
+    }
+    card.dataset.areaEstimate = String(estimativa);
+    card.dataset.areaEstimateSource = "work-and-current-block";
+  }
+
   function aplicar(status) {
     instalarEstilos();
     removerConsolidadoEAtalho();
@@ -137,7 +166,7 @@
 
     var sectionNote = document.querySelector("#progresso .section-note");
     if (sectionNote) {
-      sectionNote.textContent = "Cada área separa trabalhos concluídos, parciais históricos, trabalho em desenvolvimento agora e planejados. Somente a área ativa pode ter trabalho em desenvolvimento agora.";
+      sectionNote.textContent = "Cada área separa trabalhos concluídos, parciais históricos, trabalho em desenvolvimento agora e planejados. Na área ativa, a estimativa é recalculada de forma conservadora a partir dos trabalhos concluídos e do progresso do bloco atual.";
     }
 
     var cards = document.querySelectorAll("#epic-progress-grid .epic-progress-card");
@@ -151,6 +180,7 @@
       var title = card.querySelector(".epic-title");
       if (active && title) {
         title.insertAdjacentHTML("afterend", '<div class="area-active-badge">Área ativa agora</div>');
+        aplicarEstimativaAreaAtiva(card, epic, current);
       }
       card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active));
     });
