@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-19T03:56:01Z",
+  "generated_at": "2026-08-19T11:16:23Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "479924a64cc81ef058ceb7330c1e1f4ebc6bba0c",
-    "short_sha": "479924a",
+    "sha": "ff2078f4e963f76ed02a62440c553e92517c16a5",
+    "short_sha": "ff2078f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T00:55:52-03:00",
-    "message": "Merge pull request #89 from JGaspar-Eng/agent/opt-pilar-01-runtime-leitura"
+    "date": "2026-08-19T08:16:12-03:00",
+    "message": "Merge pull request #90 from JGaspar-Eng/agent/opt-pilar-01-nome-legivel"
   },
   "commits": [
+    {
+      "sha": "ff2078f4e963f76ed02a62440c553e92517c16a5",
+      "short_sha": "ff2078f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:16:12-03:00",
+      "message": "Merge pull request #90 from JGaspar-Eng/agent/opt-pilar-01-nome-legivel"
+    },
+    {
+      "sha": "6a7415b859fa268ee77fd44bc156aee5356d0a84",
+      "short_sha": "6a7415b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:14:58-03:00",
+      "message": "test(opt-pilar): valida rotulo sem fixar orientacao recomendada"
+    },
+    {
+      "sha": "0a76f40d03fa7cacc82dfd35cfc7e1bf2906c1a8",
+      "short_sha": "0a76f40",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:13:46-03:00",
+      "message": "test(opt-pilar): protege nome legivel na recomendacao visual"
+    },
+    {
+      "sha": "fe6eae1df52735e49625de19c26e3d7d0687e41c",
+      "short_sha": "fe6eae1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:13:22-03:00",
+      "message": "fix(opt-pilar): exibe nome legivel dos pilares na auditoria"
+    },
     {
       "sha": "479924a64cc81ef058ceb7330c1e1f4ebc6bba0c",
       "short_sha": "479924a",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T00:50:58-03:00",
       "message": "test(opt-pilar): valida auditoria runtime somente leitura"
-    },
-    {
-      "sha": "1fb5fa5cb01eee30b249f47bc86fc7c926aaa27d",
-      "short_sha": "1fb5fa5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:50:26-03:00",
-      "message": "feat(opt-pilar): exibe recomendacao no modal de auditoria"
-    },
-    {
-      "sha": "baa618ec4f4b7268af8827c0349fa0869565251f",
-      "short_sha": "baa618e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:49:29-03:00",
-      "message": "feat(opt-pilar): prepara auditoria runtime somente leitura"
-    },
-    {
-      "sha": "1e91370b8cc5c2b5f331b94c7bce3992b3569205",
-      "short_sha": "1e91370",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:48:35-03:00",
-      "message": "Merge pull request #88 from JGaspar-Eng/agent/opt-pilar-01-recomendacao-auditavel"
-    },
-    {
-      "sha": "710b28dc6cdb63ee0c71758a8c01c46f9efcba1d",
-      "short_sha": "710b28d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:47:50-03:00",
-      "message": "test(status): acompanha progresso do objetivo 3"
     }
   ],
   "development": {
@@ -462,7 +462,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32213897432",
-    "run_number": "42"
+    "run_id": "32246752919",
+    "run_number": "43"
   }
 }
