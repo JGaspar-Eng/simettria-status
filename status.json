@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T17:04:07Z",
+  "generated_at": "2026-08-19T17:07:02Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ff9cbc03a03e84e3469b274956daa6b6a8304334",
-    "short_sha": "ff9cbc0",
+    "sha": "38e103de7224ac203e9e465da6d35c6d8e67a203",
+    "short_sha": "38e103d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:03:59-03:00",
-    "message": "chore: remove arquivo temporario indevido"
+    "date": "2026-08-19T14:06:53-03:00",
+    "message": "Merge pull request #102 from JGaspar-Eng/agent/fix-int-predim-selection-contract"
   },
   "commits": [
+    {
+      "sha": "38e103de7224ac203e9e465da6d35c6d8e67a203",
+      "short_sha": "38e103d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:06:53-03:00",
+      "message": "Merge pull request #102 from JGaspar-Eng/agent/fix-int-predim-selection-contract"
+    },
+    {
+      "sha": "39b709ce3ffc0beac3724050d94baf156b1fb5ac",
+      "short_sha": "39b709c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:05:18-03:00",
+      "message": "test(int-predim): protege contrato real de selecao"
+    },
+    {
+      "sha": "b5cc2e4fd98f5c8c22e25a26339ab466b4341ffa",
+      "short_sha": "b5cc2e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:05:01-03:00",
+      "message": "fix(int-predim): usa contrato real da selecao"
+    },
     {
       "sha": "ff9cbc03a03e84e3469b274956daa6b6a8304334",
       "short_sha": "ff9cbc0",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T13:42:39-03:00",
       "message": "test(status): acompanha INT-PREDIM em 80 por cento"
-    },
-    {
-      "sha": "5537a679106a1ac617d749c662409587ae86827f",
-      "short_sha": "5537a67",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:42:19-03:00",
-      "message": "docs(int-predim): conclui integração runtime"
-    },
-    {
-      "sha": "868c45be69f35db441f8b75975ad62f0a6ade7f9",
-      "short_sha": "868c45b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:41:02-03:00",
-      "message": "test(int-predim): integra runtime ao gate"
-    },
-    {
-      "sha": "5ff59e48eb249357e41df12a3078c8029953e7ca",
-      "short_sha": "5ff59e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T13:40:33-03:00",
-      "message": "test(int-predim): protege integração runtime somente leitura"
     }
   ],
   "development": {
@@ -506,7 +506,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32279484467",
-    "run_number": "59"
+    "run_id": "32279757179",
+    "run_number": "60"
   }
 }
