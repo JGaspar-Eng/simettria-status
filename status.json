@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-19T17:36:48Z",
+  "generated_at": "2026-08-19T17:47:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d118554012be3e02c8440212fc563ed27b5d9d57",
-    "short_sha": "d118554",
+    "sha": "d7a4a6c39a91a3ae47bcf5d5c821941fc6ef3c02",
+    "short_sha": "d7a4a6c",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:36:36-03:00",
-    "message": "Merge pull request #106 from JGaspar-Eng/agent/int-review-01-agregador"
+    "date": "2026-08-19T14:47:04-03:00",
+    "message": "Merge pull request #107 from JGaspar-Eng/agent/int-review-01-runtime"
   },
   "commits": [
+    {
+      "sha": "d7a4a6c39a91a3ae47bcf5d5c821941fc6ef3c02",
+      "short_sha": "d7a4a6c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:47:04-03:00",
+      "message": "Merge pull request #107 from JGaspar-Eng/agent/int-review-01-runtime"
+    },
+    {
+      "sha": "fc9cbf335cd64863cb65c13d8cdc13e2a4c84131",
+      "short_sha": "fc9cbf3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:45:45-03:00",
+      "message": "test(int-check): atualiza fronteira runtime para INT-REVIEW"
+    },
+    {
+      "sha": "8f48de09513f2f7e9fb98169ba3f7c2ecb9d668e",
+      "short_sha": "8f48de0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:44:23-03:00",
+      "message": "test(status): reflete INT-REVIEW em 80 por cento"
+    },
+    {
+      "sha": "4770dd6e7af44ccaf9fe369817812a6741cd5f15",
+      "short_sha": "4770dd6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:43:59-03:00",
+      "message": "docs(int-review): registra integração runtime"
+    },
+    {
+      "sha": "49689dd04c13b992b9581fb1cdd5805817f15302",
+      "short_sha": "49689dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:43:35-03:00",
+      "message": "test(int-review): inclui runtime na suíte oficial"
+    },
+    {
+      "sha": "3fea1842dd56a77b39eaeb9115997eea1093adca",
+      "short_sha": "3fea184",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:43:14-03:00",
+      "message": "test(int-review): protege orquestração e painel runtime"
+    },
+    {
+      "sha": "b60ba82c4f0dbe1ccfc88eb87b708544bbdade66",
+      "short_sha": "b60ba82",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:42:37-03:00",
+      "message": "feat(int-review): integra revisão ao Calculation Graph"
+    },
+    {
+      "sha": "8074d6046a684f929f90ca48239f4257e785f50c",
+      "short_sha": "8074d60",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:41:42-03:00",
+      "message": "feat(int-review): cria orquestrador runtime somente leitura"
+    },
     {
       "sha": "d118554012be3e02c8440212fc563ed27b5d9d57",
       "short_sha": "d118554",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T14:35:42-03:00",
       "message": "test(status): avança INT-REVIEW para 60 por cento"
-    },
-    {
-      "sha": "f17ad12b7b507c268862481836004f124eb35cea",
-      "short_sha": "f17ad12",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:35:09-03:00",
-      "message": "docs(int-review): fecha objetivo 3 de 5"
-    },
-    {
-      "sha": "b5258cf1d61066054de779d065293af803da5d09",
-      "short_sha": "b5258cf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:34:40-03:00",
-      "message": "test(int-review): inclui agregador na suíte"
-    },
-    {
-      "sha": "d2758bddf03e4a525db56d5b51f03d9608094118",
-      "short_sha": "d2758bd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:34:06-03:00",
-      "message": "test(int-review): valida agregador auditavel"
-    },
-    {
-      "sha": "bddbf0e9814017033a2e52cf487d63c381ac6e4b",
-      "short_sha": "bddbf0e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:33:43-03:00",
-      "message": "feat(int-review): agrega autoridades sem recalculo"
-    },
-    {
-      "sha": "5d7044c13294da1de57d175038a91e6f600c3309",
-      "short_sha": "5d7044c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:32:58-03:00",
-      "message": "Merge pull request #105 from JGaspar-Eng/agent/int-review-01-contrato"
-    },
-    {
-      "sha": "22d9926799ba8a5394d870c4b3a59d1f6b94cb14",
-      "short_sha": "22d9926",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:32:12-03:00",
-      "message": "test(status): avança INT-REVIEW para 40 por cento"
-    },
-    {
-      "sha": "5480daa1cfba7edc5a050d9668eef3b940b334f8",
-      "short_sha": "5480daa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:31:45-03:00",
-      "message": "docs(int-review): fecha objetivo 2 de 5"
-    },
-    {
-      "sha": "ecd11790a1762d29da7cfe1d7412f5aee6e69695",
-      "short_sha": "ecd1179",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:31:24-03:00",
-      "message": "test(int-review): inclui contrato comum na suíte"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 3,
+        "done": 4,
         "in_progress": 0,
-        "pending": 2,
-        "percent": 60,
+        "pending": 1,
+        "percent": 80,
         "items": [
           {
             "text": "auditar as saídas já existentes de INT-CHECK-01, OPT-PILAR-01 e INT-PREDIM-01 e definir quais podem compor uma revisão única sem duplicar regras",
@@ -121,8 +121,8 @@
           },
           {
             "text": "integrar a revisão ao runtime em modo somente leitura, com rastreabilidade até a autoridade de origem",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco.",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 33,
+    "validator_count": 34,
     "validators": [
       {
         "name": "test:base",
@@ -503,6 +503,10 @@
         "command": "node tests/validar_int_review_agregador.mjs"
       },
       {
+        "name": "test:int-review-runtime",
+        "command": "node tests/validar_int_review_runtime.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -518,7 +522,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32282588573",
-    "run_number": "66"
+    "run_id": "32283610240",
+    "run_number": "67"
   }
 }
