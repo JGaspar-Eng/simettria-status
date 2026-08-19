@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-19T03:30:45Z",
+  "generated_at": "2026-08-19T03:39:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dfe443b07f4a97b1cc642cba79677d94e4ae6188",
-    "short_sha": "dfe443b",
+    "sha": "1b7eed631c0086266790a73083fbce4c45da1ce7",
+    "short_sha": "1b7eed6",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T00:30:36-03:00",
-    "message": "Merge pull request #85 from JGaspar-Eng/agent/dashboard-remove-consolidado"
+    "date": "2026-08-19T00:39:02-03:00",
+    "message": "Merge pull request #86 from JGaspar-Eng/agent/opt-pilar-01-avaliador-configuracao"
   },
   "commits": [
+    {
+      "sha": "1b7eed631c0086266790a73083fbce4c45da1ce7",
+      "short_sha": "1b7eed6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:39:02-03:00",
+      "message": "Merge pull request #86 from JGaspar-Eng/agent/opt-pilar-01-avaliador-configuracao"
+    },
+    {
+      "sha": "44a0ea35c0b4ab4d9f101e9c760a15b16fa7d333",
+      "short_sha": "44a0ea3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:37:58-03:00",
+      "message": "test(status): protege checkpoint ativo por bloco"
+    },
+    {
+      "sha": "a7587654c259149b3cb5b0499754e505b4af5a5f",
+      "short_sha": "a758765",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:37:38-03:00",
+      "message": "fix(status): usa checkpoint ativo do bloco para objetivos"
+    },
+    {
+      "sha": "9bd0408cbad9c3da3435b46444b8ebd993aa6d34",
+      "short_sha": "9bd0408",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:36:55-03:00",
+      "message": "docs(opt-pilar): registra objetivos do bloco ativo"
+    },
+    {
+      "sha": "58dbb00970e8e1b55740406457cee6e831c064cc",
+      "short_sha": "58dbb00",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:33:47-03:00",
+      "message": "test(opt-pilar): integra avaliador ao gate oficial"
+    },
+    {
+      "sha": "1b9d91809a4832264ca8512715ffcc962c882b52",
+      "short_sha": "1b9d918",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:33:31-03:00",
+      "message": "test(opt-pilar): valida avaliador de configuracao candidata"
+    },
+    {
+      "sha": "6639f5c09afc4e77f0905b0e7d58a2f399559716",
+      "short_sha": "6639f5c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:33:13-03:00",
+      "message": "feat(opt-pilar): avalia configuracao candidata sem mutar projeto"
+    },
     {
       "sha": "dfe443b07f4a97b1cc642cba79677d94e4ae6188",
       "short_sha": "dfe443b",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T00:29:32-03:00",
       "message": "fix(status): remove bloco consolidado estatico"
-    },
-    {
-      "sha": "544e26fc98eb68484f24719d42e685a94bd4b2d8",
-      "short_sha": "544e26f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:56:54-03:00",
-      "message": "Merge pull request #84 from JGaspar-Eng/agent/dashboard-cache-bust-assets"
-    },
-    {
-      "sha": "c8c2549bd0bb66d38ceb902967bf7760083220ee",
-      "short_sha": "c8c2549",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:56:00-03:00",
-      "message": "test(status): protege cache bust do asset"
-    },
-    {
-      "sha": "4619e3100aeb160fa0db5e4dc65970e39e8df655",
-      "short_sha": "4619e31",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:55:45-03:00",
-      "message": "fix(status): versiona asset do painel por SHA"
-    },
-    {
-      "sha": "10c5abdbaad190b04c5db3a532e2239cb8090323",
-      "short_sha": "10c5abd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:53:08-03:00",
-      "message": "Merge pull request #83 from JGaspar-Eng/agent/dashboard-rotulos-semanticos"
-    },
-    {
-      "sha": "22d64203951ea30612982080d63865871c9a0d1f",
-      "short_sha": "22d6420",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:52:19-03:00",
-      "message": "test(status): cobre rotulos semanticos das areas"
-    },
-    {
-      "sha": "91f85209429ebaa368110339d0f9ce4f3a0458c9",
-      "short_sha": "91f8520",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:52:02-03:00",
-      "message": "fix(status): distingue parciais de trabalho ativo"
-    },
-    {
-      "sha": "57f46204d89869853740eba0d80fd10421ec1603",
-      "short_sha": "57f4620",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:39:11-03:00",
-      "message": "Merge pull request #82 from JGaspar-Eng/agent/dashboard-areas-trabalhos"
     }
   ],
   "development": {
@@ -90,14 +90,46 @@
         "code": "E9",
         "title": "Inteligência"
       },
-      "objectives": [],
+      "objectives": [
+        "avaliar uma configuração candidata completa de orientações 0°/90° sem mutar o projeto, reutilizando M3B + SA-L1 e adotando como critério primário o maior `|Δ/H|` entre pavimentos e casos",
+        "gerar e comparar configurações globais de orientação sem decisão gulosa isolada por pilar, com limite combinatório explícito e comportamento determinístico",
+        "definir ordenação, desempates e relatório auditável da configuração recomendada, preservando a configuração original como referência",
+        "integrar a recomendação ao runtime em modo somente leitura, sem aplicar rotações automaticamente ao projeto",
+        "concluir validação automatizada ampliada e auditoria visual real antes do encerramento do bloco."
+      ],
       "progress": {
-        "total": 0,
-        "done": 0,
+        "total": 5,
+        "done": 1,
         "in_progress": 0,
-        "pending": 0,
-        "percent": 0,
-        "items": []
+        "pending": 4,
+        "percent": 20,
+        "items": [
+          {
+            "text": "avaliar uma configuração candidata completa de orientações 0°/90° sem mutar o projeto, reutilizando M3B + SA-L1 e adotando como critério primário o maior `|Δ/H|` entre pavimentos e casos",
+            "state": "done",
+            "marker": "✅"
+          },
+          {
+            "text": "gerar e comparar configurações globais de orientação sem decisão gulosa isolada por pilar, com limite combinatório explícito e comportamento determinístico",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "definir ordenação, desempates e relatório auditável da configuração recomendada, preservando a configuração original como referência",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "integrar a recomendação ao runtime em modo somente leitura, sem aplicar rotações automaticamente ao projeto",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "concluir validação automatizada ampliada e auditoria visual real antes do encerramento do bloco.",
+            "state": "pending",
+            "marker": "⬜"
+          }
+        ]
       }
     },
     "milestone_summary": "M0 criou o contrato neutro; M1 integrou Geometria, Propriedades e Materiais da viga; M2 completou Carregamentos e Resultados da viga; M3 estendeu o contrato ao pilar; M4 integrou a laje com Geometria, Propriedades, Materiais, Carregamentos e Transferência de carga às vigas. Após M4, o bloco estrutural M3A consolidou a orientação 0°/90° dos pilares e as inércias globais `Ix,g`/`Iy,g`.",
@@ -316,7 +348,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 24,
+    "validator_count": 25,
     "validators": [
       {
         "name": "test:base",
@@ -407,6 +439,10 @@
         "command": "node tests/validar_analise_lateral_auditoria_ui_sa_l1.mjs"
       },
       {
+        "name": "test:opt-pilar-avaliador",
+        "command": "node tests/validar_otimizacao_orientacao_pilares.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -417,12 +453,12 @@
     ]
   },
   "sources": {
-    "current": "docs/SA_L1_FECHAMENTO.md",
+    "current": "docs/OPT_PILAR_01_CHECKPOINT.md",
     "roadmap": "docs/ROADMAP.md",
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32212399687",
-    "run_number": "38"
+    "run_id": "32212899882",
+    "run_number": "39"
   }
 }
