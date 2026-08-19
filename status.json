@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T17:30:08Z",
+  "generated_at": "2026-08-19T17:33:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "eeca088e492ba6ed2483ae8dd510623a614fd57c",
-    "short_sha": "eeca088",
+    "sha": "5d7044c13294da1de57d175038a91e6f600c3309",
+    "short_sha": "5d7044c",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:30:00-03:00",
-    "message": "Merge pull request #104 from JGaspar-Eng/agent/int-review-01-objetivo1"
+    "date": "2026-08-19T14:32:58-03:00",
+    "message": "Merge pull request #105 from JGaspar-Eng/agent/int-review-01-contrato"
   },
   "commits": [
+    {
+      "sha": "5d7044c13294da1de57d175038a91e6f600c3309",
+      "short_sha": "5d7044c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:32:58-03:00",
+      "message": "Merge pull request #105 from JGaspar-Eng/agent/int-review-01-contrato"
+    },
+    {
+      "sha": "22d9926799ba8a5394d870c4b3a59d1f6b94cb14",
+      "short_sha": "22d9926",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:32:12-03:00",
+      "message": "test(status): avança INT-REVIEW para 40 por cento"
+    },
+    {
+      "sha": "5480daa1cfba7edc5a050d9668eef3b940b334f8",
+      "short_sha": "5480daa",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:31:45-03:00",
+      "message": "docs(int-review): fecha objetivo 2 de 5"
+    },
+    {
+      "sha": "ecd11790a1762d29da7cfe1d7412f5aee6e69695",
+      "short_sha": "ecd1179",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:31:24-03:00",
+      "message": "test(int-review): inclui contrato comum na suíte"
+    },
+    {
+      "sha": "ceb612c69b4c54337c9f5d2d656a14f68073317a",
+      "short_sha": "ceb612c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:30:55-03:00",
+      "message": "test(int-review): valida contrato comum"
+    },
+    {
+      "sha": "fb1a26f4f9b4fc3465d26bb8e40de90d3da3ab29",
+      "short_sha": "fb1a26f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T14:30:34-03:00",
+      "message": "feat(int-review): cria contrato comum de revisão"
+    },
     {
       "sha": "eeca088e492ba6ed2483ae8dd510623a614fd57c",
       "short_sha": "eeca088",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T14:27:57-03:00",
       "message": "test(int-review): inclui auditoria na suíte oficial"
-    },
-    {
-      "sha": "2802eaa6d1483e73c11677ae23c9208b523ebd01",
-      "short_sha": "2802eaa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:27:37-03:00",
-      "message": "test(int-review): protege auditoria de contratos"
-    },
-    {
-      "sha": "6ffdfb97a2730a7b8119ef7a7f7ffbf236a5a912",
-      "short_sha": "6ffdfb9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:27:21-03:00",
-      "message": "docs(int-review): audita contratos das autoridades"
-    },
-    {
-      "sha": "c9c6abf5c07f1d27ccb9fe3e5469cc8e18549c8b",
-      "short_sha": "c9c6abf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:20:48-03:00",
-      "message": "Merge pull request #103 from JGaspar-Eng/agent/close-int-predim-01"
-    },
-    {
-      "sha": "682800032532ad369aa9ba599dae27a9d19e335b",
-      "short_sha": "6828000",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:19:54-03:00",
-      "message": "docs(int-predim): alinha fechamento ao contrato do resolvedor"
-    },
-    {
-      "sha": "3b42997507159101e42ee65050e89c9a9aa4ac78",
-      "short_sha": "3b42997",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:18:42-03:00",
-      "message": "test(status): avança área 9 para INT-REVIEW-01"
-    },
-    {
-      "sha": "c961c3fc032e64bf59b384f13b01f014bf5ab164",
-      "short_sha": "c961c3f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:18:24-03:00",
-      "message": "docs(int-review): alinha trabalho ativo ao roadmap da área"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "auditar as saídas já existentes de INT-CHECK-01, OPT-PILAR-01 e INT-PREDIM-01 e definir quais podem compor uma revisão única sem duplicar regras",
@@ -111,8 +111,8 @@
           },
           {
             "text": "definir contrato explícito que diferencie inconsistência bloqueante, oportunidade de melhoria e informação insuficiente",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "implementar agregação determinística e auditável das autoridades existentes, sem mutar o projeto e sem reimplementar cálculos",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 31,
+    "validator_count": 32,
     "validators": [
       {
         "name": "test:base",
@@ -495,6 +495,10 @@
         "command": "node tests/validar_int_review_contratos.mjs"
       },
       {
+        "name": "test:int-review-contrato",
+        "command": "node tests/validar_int_review_contrato.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -510,7 +514,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32281945041",
-    "run_number": "64"
+    "run_id": "32282236263",
+    "run_number": "65"
   }
 }
