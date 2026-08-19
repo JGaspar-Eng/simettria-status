@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-19T03:39:13Z",
+  "generated_at": "2026-08-19T03:44:12Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1b7eed631c0086266790a73083fbce4c45da1ce7",
-    "short_sha": "1b7eed6",
+    "sha": "e4ed453b11d609d289a5de9d6c30619ba78f46b5",
+    "short_sha": "e4ed453",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T00:39:02-03:00",
-    "message": "Merge pull request #86 from JGaspar-Eng/agent/opt-pilar-01-avaliador-configuracao"
+    "date": "2026-08-19T00:44:01-03:00",
+    "message": "Merge pull request #87 from JGaspar-Eng/agent/opt-pilar-01-busca-global"
   },
   "commits": [
+    {
+      "sha": "e4ed453b11d609d289a5de9d6c30619ba78f46b5",
+      "short_sha": "e4ed453",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:44:01-03:00",
+      "message": "Merge pull request #87 from JGaspar-Eng/agent/opt-pilar-01-busca-global"
+    },
+    {
+      "sha": "3b2ba2491dd75da59270c95a5d3a48dea299ea87",
+      "short_sha": "3b2ba24",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:43:21-03:00",
+      "message": "test(status): acompanha progresso do objetivo 2"
+    },
+    {
+      "sha": "db94cf0f3edd811ec1b6f3ce20a661d65ad4a53e",
+      "short_sha": "db94cf0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:42:25-03:00",
+      "message": "docs(opt-pilar): registra busca global concluida"
+    },
+    {
+      "sha": "04cb9f6e1d20f5b5898910e88269f395d9d203ce",
+      "short_sha": "04cb9f6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:40:42-03:00",
+      "message": "test(opt-pilar): valida busca global exaustiva e limite"
+    },
+    {
+      "sha": "c2c67fe36f3dbed1d44200492b94f7dbb9fcf66f",
+      "short_sha": "c2c67fe",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T00:40:07-03:00",
+      "message": "feat(opt-pilar): compara configuracoes globais de orientacao"
+    },
     {
       "sha": "1b7eed631c0086266790a73083fbce4c45da1ce7",
       "short_sha": "1b7eed6",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T00:33:47-03:00",
       "message": "test(opt-pilar): integra avaliador ao gate oficial"
-    },
-    {
-      "sha": "1b9d91809a4832264ca8512715ffcc962c882b52",
-      "short_sha": "1b9d918",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:33:31-03:00",
-      "message": "test(opt-pilar): valida avaliador de configuracao candidata"
-    },
-    {
-      "sha": "6639f5c09afc4e77f0905b0e7d58a2f399559716",
-      "short_sha": "6639f5c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:33:13-03:00",
-      "message": "feat(opt-pilar): avalia configuracao candidata sem mutar projeto"
-    },
-    {
-      "sha": "dfe443b07f4a97b1cc642cba79677d94e4ae6188",
-      "short_sha": "dfe443b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:30:36-03:00",
-      "message": "Merge pull request #85 from JGaspar-Eng/agent/dashboard-remove-consolidado"
-    },
-    {
-      "sha": "409d0a56d4579c7c0ccc3b9e741e46fe8ea31468",
-      "short_sha": "409d0a5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:29:49-03:00",
-      "message": "test(status): protege remocao do consolidado estatico"
-    },
-    {
-      "sha": "69d0d71759e0259b8aae976c02f871221f873107",
-      "short_sha": "69d0d71",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T00:29:32-03:00",
-      "message": "fix(status): remove bloco consolidado estatico"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "avaliar uma configuração candidata completa de orientações 0°/90° sem mutar o projeto, reutilizando M3B + SA-L1 e adotando como critério primário o maior `|Δ/H|` entre pavimentos e casos",
@@ -111,8 +111,8 @@
           },
           {
             "text": "gerar e comparar configurações globais de orientação sem decisão gulosa isolada por pilar, com limite combinatório explícito e comportamento determinístico",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "definir ordenação, desempates e relatório auditável da configuração recomendada, preservando a configuração original como referência",
@@ -458,7 +458,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32212899882",
-    "run_number": "39"
+    "run_id": "32213192560",
+    "run_number": "40"
   }
 }
