@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-19T18:12:43Z",
+  "generated_at": "2026-08-19T19:50:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "39810d273aae43af4f91159bcf0824ef9ee5dbb3",
-    "short_sha": "39810d2",
+    "sha": "8bb18f43f462947ada52b54a2d5053b5625ab22d",
+    "short_sha": "8bb18f4",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T15:12:32-03:00",
-    "message": "Merge pull request #111 from JGaspar-Eng/agent/int-verify-01-adaptadores"
+    "date": "2026-08-19T16:50:01-03:00",
+    "message": "Merge pull request #112 from JGaspar-Eng/agent/int-verify-01-runtime"
   },
   "commits": [
+    {
+      "sha": "8bb18f43f462947ada52b54a2d5053b5625ab22d",
+      "short_sha": "8bb18f4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:50:01-03:00",
+      "message": "Merge pull request #112 from JGaspar-Eng/agent/int-verify-01-runtime"
+    },
+    {
+      "sha": "661dac5d34f3f35e8acaaca0c4b7e6764aff3f4f",
+      "short_sha": "661dac5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:48:58-03:00",
+      "message": "test(status): atualiza progresso INT-VERIFY para 4 de 5"
+    },
+    {
+      "sha": "dbe27f9dd950cce2722bfb0f21e82febfa7c8d66",
+      "short_sha": "dbe27f9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:48:32-03:00",
+      "message": "docs(int-verify): registra integração runtime 4 de 5"
+    },
+    {
+      "sha": "3d4f187df1dd6358fca5a55b1f37041d6c617a49",
+      "short_sha": "3d4f187",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:48:10-03:00",
+      "message": "test(int-verify): inclui runtime no gate oficial"
+    },
+    {
+      "sha": "3dfcd1da6aff603e31d7da92ab3012ed5af54756",
+      "short_sha": "3dfcd1d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:47:49-03:00",
+      "message": "test(int-verify): protege integração runtime real"
+    },
+    {
+      "sha": "1efe486342dbe35036f24710f915d77dd9b6823c",
+      "short_sha": "1efe486",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:47:25-03:00",
+      "message": "feat(int-verify): registra extensão runtime"
+    },
+    {
+      "sha": "65dc17a1bfd2a5b14851d197512aae994181bd41",
+      "short_sha": "65dc17a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:47:05-03:00",
+      "message": "feat(int-verify): integra painel runtime somente leitura"
+    },
+    {
+      "sha": "d42b729fbe484b7a1c500315929cc2ec65504ff5",
+      "short_sha": "d42b729",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T16:46:45-03:00",
+      "message": "feat(int-verify): cria orquestrador runtime somente leitura"
+    },
     {
       "sha": "39810d273aae43af4f91159bcf0824ef9ee5dbb3",
       "short_sha": "39810d2",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T15:11:29-03:00",
       "message": "test(status): atualiza progresso INT-VERIFY objetivo 3"
-    },
-    {
-      "sha": "d0dc65d03e0563998246a36ba3b4b7667b208302",
-      "short_sha": "d0dc65d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:11:00-03:00",
-      "message": "docs(int-verify): fecha adaptadores objetivo 3"
-    },
-    {
-      "sha": "cbcb9d1b535d069c0aade3a92c0668a797ae684d",
-      "short_sha": "cbcb9d1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:10:36-03:00",
-      "message": "test(int-verify): integra adaptadores ao gate"
-    },
-    {
-      "sha": "57a98c60e46776686ddb7f91b71fce9d08711358",
-      "short_sha": "57a98c6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:10:01-03:00",
-      "message": "test(int-verify): valida adaptadores e agregação"
-    },
-    {
-      "sha": "334bde3558a5c670a50e3cf37eaa412a7fd4e7f5",
-      "short_sha": "334bde3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:09:42-03:00",
-      "message": "feat(int-verify): adapta autoridades ao contrato comum"
-    },
-    {
-      "sha": "6b350f2ca121a72bc57cc72625884fad19ae6605",
-      "short_sha": "6b350f2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:08:42-03:00",
-      "message": "Merge pull request #110 from JGaspar-Eng/agent/int-verify-01-contrato"
-    },
-    {
-      "sha": "75478e2602b36fd33cc1bc6098adb48fbe5c1af8",
-      "short_sha": "75478e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:07:39-03:00",
-      "message": "test(status): atualiza progresso INT-VERIFY objetivo 2"
-    },
-    {
-      "sha": "1b746ca04b722943eb953d27fee72ad320e364e5",
-      "short_sha": "1b746ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:07:10-03:00",
-      "message": "docs(int-verify): fecha contrato objetivo 2"
-    },
-    {
-      "sha": "5596b503b41757085672228392600d67f817b089",
-      "short_sha": "5596b50",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:06:36-03:00",
-      "message": "test(int-verify): integra contrato ao gate"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 3,
+        "done": 4,
         "in_progress": 0,
-        "pending": 2,
-        "percent": 60,
+        "pending": 1,
+        "percent": 80,
         "items": [
           {
             "text": "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
@@ -121,8 +121,8 @@
           },
           {
             "text": "integrar as verificações ao runtime em modo somente leitura e sem correção automática",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco.",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 37,
+    "validator_count": 38,
     "validators": [
       {
         "name": "test:base",
@@ -519,6 +519,10 @@
         "command": "node tests/validar_int_verify_adaptadores.mjs"
       },
       {
+        "name": "test:int-verify-runtime",
+        "command": "node tests/validar_int_verify_runtime.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -534,7 +538,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32286036680",
-    "run_number": "71"
+    "run_id": "32295203116",
+    "run_number": "72"
   }
 }
