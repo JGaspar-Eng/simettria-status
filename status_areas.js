@@ -69,6 +69,24 @@
         color: var(--accent);
         font-weight: 700;
       }
+      .roadmap-state-badge {
+        display: inline-flex;
+        align-items: center;
+        width: max-content;
+        margin-bottom: 8px;
+        padding: 4px 7px;
+        border-radius: 999px;
+        font-size: 9px;
+        font-weight: 850;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+      }
+      .roadmap-state-badge.done { background: #eaf8f0; color: #24724a; }
+      .roadmap-state-badge.active { background: #e5f3f1; color: var(--accent); }
+      .roadmap-state-badge.planned { background: #eef2f5; color: var(--muted); }
+      .roadmap-explain { display:block; color: var(--muted); line-height:1.45; }
+      .roadmap-explain strong { color: var(--text); font-weight: 750; }
+      .roadmap-item.current .roadmap-explain strong { color: var(--accent); }
     `;
     document.head.appendChild(style);
   }
@@ -134,6 +152,56 @@
     card.dataset.areaIndexSource = "registered-work";
   }
 
+  function limparTextoSequencia(texto) {
+    return String(texto || "")
+      .replace(/^bloco estrutural ativo:\s*/i, "")
+      .replace(/^concluído\s*[—-]\s*/i, "")
+      .trim();
+  }
+
+  function enriquecerSequencia(status) {
+    var development = status.development || {};
+    var current = development.current || {};
+    var roadmap = Array.isArray(development.roadmap) ? development.roadmap : [];
+    var cards = Array.from(document.querySelectorAll("#roadmap-grid .roadmap-item"));
+    if (!roadmap.length || cards.length !== roadmap.length) return;
+
+    var currentIndex = roadmap.findIndex(function (item) { return item.code === current.code; });
+    var objetivos = current.progress?.items || [];
+    var proximoObjetivo = objetivos.find(function (item) { return item.state !== "done"; });
+
+    cards.forEach(function (card, index) {
+      var item = roadmap[index] || {};
+      var texto = limparTextoSequencia(item.text);
+      var isCurrent = item.code === current.code;
+      var concluido = currentIndex >= 0 && index < currentIndex;
+      var estado = isCurrent ? "EM DESENVOLVIMENTO" : (concluido ? "CONCLUÍDO" : "PLANEJADO");
+      var classe = isCurrent ? "active" : (concluido ? "done" : "planned");
+      var explicacao;
+
+      if (isCurrent) {
+        var agora = proximoObjetivo?.text || "Objetivos do bloco estão sendo consolidados.";
+        explicacao = '<strong>' + esc(current.title || texto) + '</strong><br>Agora: ' + esc(agora);
+      } else if (concluido) {
+        explicacao = '<strong>Resultado:</strong> ' + esc(texto || "etapa concluída e incorporada ao SIMETTRIA.");
+      } else {
+        explicacao = '<strong>Previsto:</strong> ' + esc(texto || "etapa ainda não iniciada.");
+      }
+
+      var box = card.querySelector(".roadmap-text");
+      if (box) {
+        box.innerHTML = '<span class="roadmap-state-badge ' + classe + '">' + estado + '</span>' +
+          '<span class="roadmap-explain">' + explicacao + '</span>';
+      }
+      card.dataset.sequenceState = classe;
+    });
+
+    var note = document.querySelector("#roadmap .section-note");
+    if (note) {
+      note.textContent = "Cada card informa o que já foi concluído, o resultado incorporado ao projeto e o que está sendo executado agora.";
+    }
+  }
+
   function aplicar(status) {
     instalarEstilos();
     removerConsolidadoEAtalho();
@@ -190,6 +258,7 @@
       }
       card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active));
     });
+    enriquecerSequencia(status);
     return true;
   }
 
