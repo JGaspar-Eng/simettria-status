@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T02:39:21Z",
+  "generated_at": "2026-08-19T02:53:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "57f46204d89869853740eba0d80fd10421ec1603",
-    "short_sha": "57f4620",
+    "sha": "10c5abdbaad190b04c5db3a532e2239cb8090323",
+    "short_sha": "10c5abd",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:39:11-03:00",
-    "message": "Merge pull request #82 from JGaspar-Eng/agent/dashboard-areas-trabalhos"
+    "date": "2026-08-18T23:53:08-03:00",
+    "message": "Merge pull request #83 from JGaspar-Eng/agent/dashboard-rotulos-semanticos"
   },
   "commits": [
+    {
+      "sha": "10c5abdbaad190b04c5db3a532e2239cb8090323",
+      "short_sha": "10c5abd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:53:08-03:00",
+      "message": "Merge pull request #83 from JGaspar-Eng/agent/dashboard-rotulos-semanticos"
+    },
+    {
+      "sha": "22d64203951ea30612982080d63865871c9a0d1f",
+      "short_sha": "22d6420",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:52:19-03:00",
+      "message": "test(status): cobre rotulos semanticos das areas"
+    },
+    {
+      "sha": "91f85209429ebaa368110339d0f9ce4f3a0458c9",
+      "short_sha": "91f8520",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:52:02-03:00",
+      "message": "fix(status): distingue parciais de trabalho ativo"
+    },
     {
       "sha": "57f46204d89869853740eba0d80fd10421ec1603",
       "short_sha": "57f4620",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T23:37:00-03:00",
       "message": "test(status): cobre area ativa e cargas por epico"
-    },
-    {
-      "sha": "07615e85fcdaa985d8d2178b51e9cc95408235cd",
-      "short_sha": "07615e8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:36:49-03:00",
-      "message": "feat(status): cria gerador testavel do painel"
-    },
-    {
-      "sha": "fd54bc6ed310b299d4c225992cfe09681f20045c",
-      "short_sha": "fd54bc6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:30:21-03:00",
-      "message": "Merge pull request #81 from JGaspar-Eng/agent/fix-dashboard-closure-reconcile"
-    },
-    {
-      "sha": "72a8c3aaf7a5ae6516fd0d931215b6917bf7989c",
-      "short_sha": "72a8c3a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:29:37-03:00",
-      "message": "chore(status): remove placeholder"
     }
   ],
   "development": {
@@ -422,7 +422,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32209324040",
-    "run_number": "35"
+    "run_id": "32210151332",
+    "run_number": "36"
   }
 }

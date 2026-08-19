@@ -69,17 +69,18 @@
     document.head.appendChild(style);
   }
 
-  function resumoTrabalhos(work) {
+  function resumoTrabalhos(work, active) {
     work = work || {};
     var total = Number(work.total || 0);
     var done = Number(work.done || 0);
-    var inProgress = Number(work.in_progress || 0);
+    var partial = Number(work.in_progress || 0);
     var planned = Number(work.planned || 0);
     var out = Number(work.out_of_scope || 0);
+    var partialLabel = active ? "em desenvolvimento agora" : "parciais";
     return '<div class="area-work-summary">' +
       '<div class="area-work-total"><strong>' + total + '</strong> trabalhos cadastrados</div>' +
       '<div><strong>' + done + '</strong> concluídos</div>' +
-      '<div><strong>' + inProgress + '</strong> em andamento</div>' +
+      '<div><strong>' + partial + '</strong> ' + partialLabel + '</div>' +
       '<div><strong>' + planned + '</strong> planejados</div>' +
       '<div><strong>' + out + '</strong> fora do escopo</div>' +
     '</div>';
@@ -122,21 +123,22 @@
 
     var sectionNote = document.querySelector("#progresso .section-note");
     if (sectionNote) {
-      sectionNote.textContent = "Cada área mostra o percentual documentado, a quantidade de trabalhos cadastrados e seus estados. A área em desenvolvimento fica destacada.";
+      sectionNote.textContent = "Cada área mostra o percentual documentado, a quantidade de trabalhos cadastrados e seus estados históricos. Somente a área ativa usa o rótulo em desenvolvimento agora; nas demais, itens iniciados aparecem como parciais.";
     }
 
     var cards = document.querySelectorAll("#epic-progress-grid .epic-progress-card");
     if (cards.length !== epics.length) return false;
     cards.forEach(function (card, index) {
       var epic = epics[index] || {};
-      card.classList.toggle("active-area", Boolean(epic.active));
+      var active = Boolean(epic.active);
+      card.classList.toggle("active-area", active);
       card.querySelector(".area-active-badge")?.remove();
       card.querySelector(".area-work-summary")?.remove();
       var title = card.querySelector(".epic-title");
-      if (epic.active && title) {
+      if (active && title) {
         title.insertAdjacentHTML("afterend", '<div class="area-active-badge">Área ativa agora</div>');
       }
-      card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work));
+      card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active));
     });
     return true;
   }
