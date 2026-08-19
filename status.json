@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T02:04:03Z",
+  "generated_at": "2026-08-19T02:07:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "86aac435fcc75c86843acc959bd16b57a919cad5",
-    "short_sha": "86aac43",
+    "sha": "a5183b30d7b35c92fd83202b66332bdb7dcf0114",
+    "short_sha": "a5183b3",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:03:56-03:00",
-    "message": "chore(sa-l1): remove temporary audit marker"
+    "date": "2026-08-18T23:07:05-03:00",
+    "message": "fix(sa-l1): distingue pavimentos no modal de vento"
   },
   "commits": [
+    {
+      "sha": "a5183b30d7b35c92fd83202b66332bdb7dcf0114",
+      "short_sha": "a5183b3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:07:05-03:00",
+      "message": "fix(sa-l1): distingue pavimentos no modal de vento"
+    },
+    {
+      "sha": "fc6c3baaa6258d8871802a1960a23db300c24a98",
+      "short_sha": "fc6c3ba",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:05:59-03:00",
+      "message": "test(sa-l1): cobre nomes derivados de pavimentos no modal"
+    },
+    {
+      "sha": "ea09f14ce8d0787cafc296063c49cc797514c612",
+      "short_sha": "ea09f14",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:05:36-03:00",
+      "message": "fix(sa-l1): distingue pavimentos no modal de vento"
+    },
     {
       "sha": "86aac435fcc75c86843acc959bd16b57a919cad5",
       "short_sha": "86aac43",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T21:18:53-03:00",
       "message": "feat(sa-l1): integra auditoria lateral ao runtime"
-    },
-    {
-      "sha": "34c74356b3d8bebb87aa16295005a8ac6e68032a",
-      "short_sha": "34c7435",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T21:18:12-03:00",
-      "message": "docs(checkpoint): registra auditoria runtime SA-L1 funcional"
-    },
-    {
-      "sha": "4a67c8382e26d5eb8e6a3411e5b6a0d91d65c9b3",
-      "short_sha": "4a67c83",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T21:15:52-03:00",
-      "message": "test(sa-l1): alinha fixture runtime ao caso W1 validado"
-    },
-    {
-      "sha": "2a5edf725770ad1bb4c013aa2d7ac0ce917cb757",
-      "short_sha": "2a5edf7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T21:15:04-03:00",
-      "message": "test(sa-l1): usa envelope W1 válido na auditoria runtime"
     }
   ],
   "development": {
@@ -349,7 +349,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32207195227",
-    "run_number": "28"
+    "run_id": "32207400957",
+    "run_number": "29"
   }
 }
