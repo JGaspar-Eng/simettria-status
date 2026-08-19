@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-19T18:00:00Z",
+  "generated_at": "2026-08-19T18:05:05Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8154aca11bd385e6e489110051299b57969bdcc9",
-    "short_sha": "8154aca",
+    "sha": "244bb115d211df15503089782184abbd9cfca5bb",
+    "short_sha": "244bb11",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T14:59:50-03:00",
-    "message": "Merge pull request #108 from JGaspar-Eng/agent/int-review-01-fechamento"
+    "date": "2026-08-19T15:04:55-03:00",
+    "message": "Merge pull request #109 from JGaspar-Eng/agent/int-verify-01-auditoria"
   },
   "commits": [
+    {
+      "sha": "244bb115d211df15503089782184abbd9cfca5bb",
+      "short_sha": "244bb11",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:04:55-03:00",
+      "message": "Merge pull request #109 from JGaspar-Eng/agent/int-verify-01-auditoria"
+    },
+    {
+      "sha": "d68cf723b58875d5151073972f3831a72a7eb9f7",
+      "short_sha": "d68cf72",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:03:52-03:00",
+      "message": "test(status): atualiza progresso INT-VERIFY objetivo 1"
+    },
+    {
+      "sha": "de0a8db3d2b43b0c7e620e70bc31384711774f0f",
+      "short_sha": "de0a8db",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:03:21-03:00",
+      "message": "docs(int-verify): fecha auditoria objetivo 1"
+    },
+    {
+      "sha": "4a30ebc0f8f9bcc84c012d728b349fd99c0cb477",
+      "short_sha": "4a30ebc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:03:04-03:00",
+      "message": "test(int-verify): integra auditoria ao gate oficial"
+    },
+    {
+      "sha": "292afdcc83d4ebb2b38e11f44d964a3cb1afbcb8",
+      "short_sha": "292afdc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:02:31-03:00",
+      "message": "test(int-verify): protege autoridades auditadas"
+    },
+    {
+      "sha": "d016c2d958e7403a4eb0b4c47248fddf175d0c32",
+      "short_sha": "d016c2d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T15:01:45-03:00",
+      "message": "docs(int-verify): audita autoridades determinísticas"
+    },
     {
       "sha": "8154aca11bd385e6e489110051299b57969bdcc9",
       "short_sha": "8154aca",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T14:57:06-03:00",
       "message": "docs(int-verify): alinha contrato do checkpoint ativo"
-    },
-    {
-      "sha": "83e92f917efff1441e169a07834f36726cb11e49",
-      "short_sha": "83e92f9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:56:21-03:00",
-      "message": "docs(int-verify): inicia checkpoint 0 de 5"
-    },
-    {
-      "sha": "4d638d43998db28ba63deb15c9eddf22d8ef6588",
-      "short_sha": "4d638d4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:56:06-03:00",
-      "message": "docs(int-review): registra fechamento formal"
-    },
-    {
-      "sha": "ee49ab358f7f33ca4128ce7e939978a26b2a8d6f",
-      "short_sha": "ee49ab3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:55:46-03:00",
-      "message": "docs(int-review): fecha objetivo visual 5 de 5"
-    },
-    {
-      "sha": "d7a4a6c39a91a3ae47bcf5d5c821941fc6ef3c02",
-      "short_sha": "d7a4a6c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:47:04-03:00",
-      "message": "Merge pull request #107 from JGaspar-Eng/agent/int-review-01-runtime"
-    },
-    {
-      "sha": "fc9cbf335cd64863cb65c13d8cdc13e2a4c84131",
-      "short_sha": "fc9cbf3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:45:45-03:00",
-      "message": "test(int-check): atualiza fronteira runtime para INT-REVIEW"
-    },
-    {
-      "sha": "8f48de09513f2f7e9fb98169ba3f7c2ecb9d668e",
-      "short_sha": "8f48de0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T14:44:23-03:00",
-      "message": "test(status): reflete INT-REVIEW em 80 por cento"
     }
   ],
   "development": {
@@ -99,15 +99,15 @@
       ],
       "progress": {
         "total": 5,
-        "done": 0,
+        "done": 1,
         "in_progress": 0,
-        "pending": 5,
-        "percent": 0,
+        "pending": 4,
+        "percent": 20,
         "items": [
           {
             "text": "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "definir contrato explícito de verificação inteligente, com severidade, autoridade, condição de aplicabilidade e evidência",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 34,
+    "validator_count": 35,
     "validators": [
       {
         "name": "test:base",
@@ -507,6 +507,10 @@
         "command": "node tests/validar_int_review_runtime.mjs"
       },
       {
+        "name": "test:int-verify-autoridades",
+        "command": "node tests/validar_int_verify_autoridades.mjs"
+      },
+      {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
@@ -522,7 +526,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32284832630",
-    "run_number": "68"
+    "run_id": "32285317866",
+    "run_number": "69"
   }
 }
