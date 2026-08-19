@@ -65,6 +65,10 @@
         font-size: 11px;
         font-weight: 750;
       }
+      .area-work-active {
+        color: var(--accent);
+        font-weight: 700;
+      }
     `;
     document.head.appendChild(style);
   }
@@ -78,14 +82,18 @@
     work = work || {};
     var total = Number(work.total || 0);
     var done = Number(work.done || 0);
-    var partial = Number(work.in_progress || 0);
+    var partial = Number(work.partial != null ? work.partial : (work.in_progress || 0));
+    var activeNow = Number(work.active_now || 0);
     var planned = Number(work.planned || 0);
     var out = Number(work.out_of_scope || 0);
-    var partialLabel = active ? "em desenvolvimento agora" : "parciais";
+    var activeHtml = active
+      ? '<div class="area-work-active"><strong>' + activeNow + '</strong> em desenvolvimento agora</div>'
+      : '';
     return '<div class="area-work-summary">' +
       '<div class="area-work-total"><strong>' + total + '</strong> trabalhos cadastrados</div>' +
       '<div><strong>' + done + '</strong> concluídos</div>' +
-      '<div><strong>' + partial + '</strong> ' + partialLabel + '</div>' +
+      '<div><strong>' + partial + '</strong> parciais</div>' +
+      activeHtml +
       '<div><strong>' + planned + '</strong> planejados</div>' +
       '<div><strong>' + out + '</strong> fora do escopo</div>' +
     '</div>';
@@ -129,7 +137,7 @@
 
     var sectionNote = document.querySelector("#progresso .section-note");
     if (sectionNote) {
-      sectionNote.textContent = "Cada área mostra o percentual documentado, a quantidade de trabalhos cadastrados e seus estados históricos. Somente a área ativa usa o rótulo em desenvolvimento agora; nas demais, itens iniciados aparecem como parciais.";
+      sectionNote.textContent = "Cada área separa trabalhos concluídos, parciais históricos, trabalho em desenvolvimento agora e planejados. Somente a área ativa pode ter trabalho em desenvolvimento agora.";
     }
 
     var cards = document.querySelectorAll("#epic-progress-grid .epic-progress-card");
