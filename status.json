@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-19T22:18:55Z",
+  "generated_at": "2026-08-19T22:31:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cd76ce3f6b7053938cac59f6cfbb3306264e532d",
-    "short_sha": "cd76ce3",
+    "sha": "2995a123dfeb6338ef61936bb5617a1d0e58307f",
+    "short_sha": "2995a12",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T19:18:47-03:00",
-    "message": "Merge pull request #119 from JGaspar-Eng/agent/int-action-sequencia-didatica"
+    "date": "2026-08-19T19:30:59-03:00",
+    "message": "Merge pull request #120 from JGaspar-Eng/agent/fix-int-action-loop"
   },
   "commits": [
+    {
+      "sha": "2995a123dfeb6338ef61936bb5617a1d0e58307f",
+      "short_sha": "2995a12",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:30:59-03:00",
+      "message": "Merge pull request #120 from JGaspar-Eng/agent/fix-int-action-loop"
+    },
+    {
+      "sha": "7f49d2f99121732dacde5310ddd8ff38650ff750",
+      "short_sha": "7f49d2f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:29:43-03:00",
+      "message": "test(int-action): protege contra loop de MutationObserver"
+    },
+    {
+      "sha": "2654abc88330ae6b3c297bce1c8f1973a4c49775",
+      "short_sha": "2654abc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T19:29:24-03:00",
+      "message": "fix(int-action): interrompe realimentacao do MutationObserver"
+    },
     {
       "sha": "cd76ce3f6b7053938cac59f6cfbb3306264e532d",
       "short_sha": "cd76ce3",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T19:15:25-03:00",
       "message": "feat(int-action): carrega extensao de aplicacao assistida"
-    },
-    {
-      "sha": "c8b8de1eb2234f97a48ba1fae29d06eded9f2c5f",
-      "short_sha": "c8b8de1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:15:12-03:00",
-      "message": "feat(int-action): aplica sugestoes deterministicas com confirmacao"
-    },
-    {
-      "sha": "dbccd57dc4bc096a410da26cd49ddb7b7ff44ddf",
-      "short_sha": "dbccd57",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:02:20-03:00",
-      "message": "Merge pull request #118 from JGaspar-Eng/agent/ux-didatica-fecha-int-ai"
-    },
-    {
-      "sha": "2dff0376e50f471b8b70cd15b0f4aaafa1062eeb",
-      "short_sha": "2dff037",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T19:00:56-03:00",
-      "message": "test(status): fecha area 9 e ativa dimensionamento"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32308228599",
-    "run_number": "79"
+    "run_id": "32309169429",
+    "run_number": "80"
   }
 }
