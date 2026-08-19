@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-19T02:30:28Z",
+  "generated_at": "2026-08-19T02:39:21Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fd54bc6ed310b299d4c225992cfe09681f20045c",
-    "short_sha": "fd54bc6",
+    "sha": "57f46204d89869853740eba0d80fd10421ec1603",
+    "short_sha": "57f4620",
     "author": "Joanez Gaspar",
-    "date": "2026-08-18T23:30:21-03:00",
-    "message": "Merge pull request #81 from JGaspar-Eng/agent/fix-dashboard-closure-reconcile"
+    "date": "2026-08-18T23:39:11-03:00",
+    "message": "Merge pull request #82 from JGaspar-Eng/agent/dashboard-areas-trabalhos"
   },
   "commits": [
+    {
+      "sha": "57f46204d89869853740eba0d80fd10421ec1603",
+      "short_sha": "57f4620",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:39:11-03:00",
+      "message": "Merge pull request #82 from JGaspar-Eng/agent/dashboard-areas-trabalhos"
+    },
+    {
+      "sha": "e11703a4f0150f9b7468f56608bfa553fcb32664",
+      "short_sha": "e11703a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:38:31-03:00",
+      "message": "feat(status): publica enriquecimento visual das areas"
+    },
+    {
+      "sha": "2b3a8bf44699f4058002ea0dfe241d711c64667a",
+      "short_sha": "2b3a8bf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:38:16-03:00",
+      "message": "test(status): cobre apresentacao das areas"
+    },
+    {
+      "sha": "14154af46d0b327eacb57dbba0264371990563b9",
+      "short_sha": "14154af",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:38:04-03:00",
+      "message": "feat(status): explicita area ativa e trabalhos por area"
+    },
+    {
+      "sha": "1bfffc38f9554b24c37a85e457719c62b52e134e",
+      "short_sha": "1bfffc3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:37:21-03:00",
+      "message": "refactor(status): usa gerador versionado do painel"
+    },
+    {
+      "sha": "cf1a909de83309c687b1325e68f4942fbc27e363",
+      "short_sha": "cf1a909",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:37:11-03:00",
+      "message": "test(status): integra painel ao gate oficial"
+    },
+    {
+      "sha": "13f8baa276c1146c6e8ddcb2312578e44a855580",
+      "short_sha": "13f8baa",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:37:00-03:00",
+      "message": "test(status): cobre area ativa e cargas por epico"
+    },
+    {
+      "sha": "07615e85fcdaa985d8d2178b51e9cc95408235cd",
+      "short_sha": "07615e8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-18T23:36:49-03:00",
+      "message": "feat(status): cria gerador testavel do painel"
+    },
     {
       "sha": "fd54bc6ed310b299d4c225992cfe09681f20045c",
       "short_sha": "fd54bc6",
@@ -23,68 +79,17 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-18T23:29:37-03:00",
       "message": "chore(status): remove placeholder"
-    },
-    {
-      "sha": "3f3f9cf5f1d691dd59f95d46cb7f9803d0b47392",
-      "short_sha": "3f3f9cf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:29:27-03:00",
-      "message": "chore(status): placeholder"
-    },
-    {
-      "sha": "7cc6176d05b3be6e5766cd843b8699e643a15c8d",
-      "short_sha": "7cc6176",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:29:21-03:00",
-      "message": "fix(status): reconcilia fechamento formal com bloco ativo"
-    },
-    {
-      "sha": "ae6b9cad1d66a09294733a2b2831fe5c3aab72c4",
-      "short_sha": "ae6b9ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:26:21-03:00",
-      "message": "Merge pull request #80 from JGaspar-Eng/agent/sa-l1-fechamento-documental"
-    },
-    {
-      "sha": "670f6993aae4d0b7a2b0cf2a79b0f22b3b5783db",
-      "short_sha": "670f699",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:25:22-03:00",
-      "message": "docs(sa-l1): registra fechamento visual e técnico"
-    },
-    {
-      "sha": "3c3628024df88a736682921588599228e2149c24",
-      "short_sha": "3c36280",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:24:20-03:00",
-      "message": "chore(docs): remove fechamento criado fora do fluxo"
-    },
-    {
-      "sha": "de6d40e8cd3992690067fa40e5f24f5c118eee04",
-      "short_sha": "de6d40e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:23:59-03:00",
-      "message": "docs(sa-l1): registra fechamento visual e técnico"
-    },
-    {
-      "sha": "0b9eb5d29e3f66e091fa2275b0746420bb01874e",
-      "short_sha": "0b9eb5d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:12:30-03:00",
-      "message": "Merge pull request #79 from JGaspar-Eng/agent/sa-l1-nome-cobertura-semantico"
-    },
-    {
-      "sha": "357c2349e2c5aeb8515ffef501415110ab4e70a5",
-      "short_sha": "357c234",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-18T23:11:42-03:00",
-      "message": "test(sa-l1): impede cobertura inferida pela posicao"
     }
   ],
   "development": {
     "current": {
       "code": "OPT-PILAR-01",
       "title": "otimização global de orientação",
+      "area": {
+        "number": 9,
+        "code": "E9",
+        "title": "Inteligência"
+      },
       "objectives": [],
       "progress": {
         "total": 0,
@@ -121,7 +126,15 @@
         "title": "Modelagem Estrutural",
         "percent": 50,
         "note": "~50%.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 5,
+          "in_progress": 3,
+          "planned": 3,
+          "out_of_scope": 0,
+          "total": 11
+        }
       },
       {
         "number": 2,
@@ -129,7 +142,15 @@
         "title": "Infraestrutura / Geotecnia",
         "percent": 60,
         "note": "~60% (M2 V1 preliminar de fundações rasas concluído; capacidade normativa, memorial e motores multi-obra pendentes).",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 11,
+          "in_progress": 1,
+          "planned": 5,
+          "out_of_scope": 0,
+          "total": 17
+        }
       },
       {
         "number": 3,
@@ -137,7 +158,15 @@
         "title": "Integração Estrutural",
         "percent": null,
         "note": "reestimativa pendente após o fechamento do M3B; não será alterado por inferência enquanto o novo escopo de integração global estiver em implantação.",
-        "status": "pending_reestimate"
+        "status": "pending_reestimate",
+        "active": false,
+        "work": {
+          "done": 3,
+          "in_progress": 1,
+          "planned": 5,
+          "out_of_scope": 0,
+          "total": 9
+        }
       },
       {
         "number": 4,
@@ -145,7 +174,15 @@
         "title": "Dimensionamento",
         "percent": 5,
         "note": "~5%.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 0,
+          "in_progress": 1,
+          "planned": 6,
+          "out_of_scope": 0,
+          "total": 7
+        }
       },
       {
         "number": 5,
@@ -153,7 +190,15 @@
         "title": "Detalhamento",
         "percent": 10,
         "note": "~10% (interfaces preliminares prontas).",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 0,
+          "in_progress": 1,
+          "planned": 6,
+          "out_of_scope": 0,
+          "total": 7
+        }
       },
       {
         "number": 6,
@@ -161,7 +206,15 @@
         "title": "Visualização",
         "percent": 25,
         "note": "~25%.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 1,
+          "in_progress": 0,
+          "planned": 4,
+          "out_of_scope": 0,
+          "total": 5
+        }
       },
       {
         "number": 7,
@@ -169,7 +222,15 @@
         "title": "Produtividade",
         "percent": 25,
         "note": "~25%.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 2,
+          "in_progress": 0,
+          "planned": 6,
+          "out_of_scope": 0,
+          "total": 8
+        }
       },
       {
         "number": 8,
@@ -177,7 +238,15 @@
         "title": "BIM / Interoperabilidade",
         "percent": 5,
         "note": "~5%.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 1,
+          "in_progress": 0,
+          "planned": 5,
+          "out_of_scope": 0,
+          "total": 6
+        }
       },
       {
         "number": 9,
@@ -185,7 +254,15 @@
         "title": "Inteligência",
         "percent": 10,
         "note": "~10%. A disponibilidade de `Ix,g`/`Iy,g` é infraestrutura estrutural habilitadora e não será contabilizada como otimização já implementada.",
-        "status": "measured"
+        "status": "measured",
+        "active": true,
+        "work": {
+          "done": 1,
+          "in_progress": 1,
+          "planned": 5,
+          "out_of_scope": 0,
+          "total": 7
+        }
       },
       {
         "number": 10,
@@ -193,7 +270,15 @@
         "title": "Produto Final",
         "percent": 10,
         "note": "~10%.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 0,
+          "in_progress": 2,
+          "planned": 5,
+          "out_of_scope": 0,
+          "total": 7
+        }
       },
       {
         "number": 11,
@@ -201,7 +286,15 @@
         "title": "Normas Técnicas",
         "percent": 5,
         "note": "~5% (apenas NBR 6484, parcial).",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 0,
+          "in_progress": 1,
+          "planned": 7,
+          "out_of_scope": 0,
+          "total": 8
+        }
       },
       {
         "number": 12,
@@ -209,13 +302,21 @@
         "title": "Qualidade e Validação",
         "percent": 15,
         "note": "~15%. A infraestrutura de regressão está consolidada, mas o percentual não será elevado apenas pelo aumento da suíte: validação numérica de engenharia ainda depende dos motores normativos.",
-        "status": "measured"
+        "status": "measured",
+        "active": false,
+        "work": {
+          "done": 6,
+          "in_progress": 0,
+          "planned": 6,
+          "out_of_scope": 0,
+          "total": 12
+        }
       }
     ]
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 23,
+    "validator_count": 24,
     "validators": [
       {
         "name": "test:base",
@@ -308,6 +409,10 @@
       {
         "name": "test:wizard-json",
         "command": "node tests/validar_wizard_carregar_json.mjs"
+      },
+      {
+        "name": "test:status-dashboard",
+        "command": "python tests/validar_status_dashboard.py"
       }
     ]
   },
@@ -317,7 +422,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32208790613",
-    "run_number": "34"
+    "run_id": "32209324040",
+    "run_number": "35"
   }
 }
