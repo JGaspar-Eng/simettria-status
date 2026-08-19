@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-19T11:42:22Z",
+  "generated_at": "2026-08-19T11:46:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "51208e760ee322e0030b988c1f731ccdf27b0061",
-    "short_sha": "51208e7",
+    "sha": "8ab1147cd23da63bdada7a9d4a1ad8f7a029a36d",
+    "short_sha": "8ab1147",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T08:42:13-03:00",
-    "message": "Merge pull request #93 from JGaspar-Eng/agent/int-check-01-diagnosticos-estruturais"
+    "date": "2026-08-19T08:46:20-03:00",
+    "message": "Merge pull request #94 from JGaspar-Eng/agent/int-check-01-contexto-sequencia"
   },
   "commits": [
+    {
+      "sha": "8ab1147cd23da63bdada7a9d4a1ad8f7a029a36d",
+      "short_sha": "8ab1147",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:46:20-03:00",
+      "message": "Merge pull request #94 from JGaspar-Eng/agent/int-check-01-contexto-sequencia"
+    },
+    {
+      "sha": "30f7ed5a01bc4ea081beb4e0426b5b79f5d59917",
+      "short_sha": "30f7ed5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:45:21-03:00",
+      "message": "test(status): acompanha INT-CHECK-01 em 60 por cento"
+    },
+    {
+      "sha": "66894123ad3be5c204e0a1a2e8a5781ce134c2f9",
+      "short_sha": "6689412",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:44:54-03:00",
+      "message": "docs(int-check): conclui objetivo 3"
+    },
+    {
+      "sha": "d8ec72d1f52d1d10a253a039c79d83edbf38f957",
+      "short_sha": "d8ec72d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:43:53-03:00",
+      "message": "test(int-check): valida contexto e sequencia deterministica"
+    },
+    {
+      "sha": "e372cb74624399887820cf34ed7bd926f1f3c6ba",
+      "short_sha": "e372cb7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T08:43:16-03:00",
+      "message": "feat(int-check): contextualiza achados e sequencia de correcao"
+    },
     {
       "sha": "51208e760ee322e0030b988c1f731ccdf27b0061",
       "short_sha": "51208e7",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T08:38:56-03:00",
       "message": "test(int-check): valida diagnosticos estruturais por autoridade existente"
-    },
-    {
-      "sha": "4b87c7d8a2c0592ac8e03dfd028ccc54ec57c379",
-      "short_sha": "4b87c7d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:38:14-03:00",
-      "message": "feat(int-check): agrega invalidos do inspector oficial"
-    },
-    {
-      "sha": "6a7cecef73005558ff956476f455dc1546f85a04",
-      "short_sha": "6a7cece",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:36:23-03:00",
-      "message": "Merge pull request #92 from JGaspar-Eng/agent/int-check-01-detector-base"
-    },
-    {
-      "sha": "b2891d2de81cee956c70406f3e77cab484253e40",
-      "short_sha": "b2891d2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:35:08-03:00",
-      "message": "fix(status): percorre cadeia completa de fechamentos"
-    },
-    {
-      "sha": "10264035f04c5683f004ae4537f9668464719b07",
-      "short_sha": "1026403",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:33:35-03:00",
-      "message": "test(status): protege trabalho ativo separado de parciais"
-    },
-    {
-      "sha": "632fa30ce099b8a660db462aa79631bea21a9911",
-      "short_sha": "632fa30",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T08:33:03-03:00",
-      "message": "fix(status): mostra parciais e trabalho ativo separadamente"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 40,
+        "pending": 2,
+        "percent": 60,
         "items": [
           {
             "text": "consolidar os diagnósticos da validação geométrica central em relatório auditável, legível e priorizado, sem duplicar regras nem mutar o projeto",
@@ -116,8 +116,8 @@
           },
           {
             "text": "contextualizar os achados por elemento e pavimento e produzir uma sequência de correção determinística e rastreável",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "integrar o relatório ao runtime em modo somente leitura, sem correção automática do modelo",
@@ -494,7 +494,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32248895477",
-    "run_number": "48"
+    "run_id": "32249241910",
+    "run_number": "49"
   }
 }
