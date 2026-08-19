@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-19T19:50:11Z",
+  "generated_at": "2026-08-19T21:15:39Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8bb18f43f462947ada52b54a2d5053b5625ab22d",
-    "short_sha": "8bb18f4",
+    "sha": "a67069dc29c56514ffa8d24ccc3f7cea0fea7367",
+    "short_sha": "a67069d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T16:50:01-03:00",
-    "message": "Merge pull request #112 from JGaspar-Eng/agent/int-verify-01-runtime"
+    "date": "2026-08-19T18:15:30-03:00",
+    "message": "Merge pull request #113 from JGaspar-Eng/agent/int-verify-01-fechamento"
   },
   "commits": [
+    {
+      "sha": "a67069dc29c56514ffa8d24ccc3f7cea0fea7367",
+      "short_sha": "a67069d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:15:30-03:00",
+      "message": "Merge pull request #113 from JGaspar-Eng/agent/int-verify-01-fechamento"
+    },
+    {
+      "sha": "3b2185f43dd1476af1a897cb9bc549acfcd20a03",
+      "short_sha": "3b2185f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:14:15-03:00",
+      "message": "test(status): protege apenas a sequência pública contratada"
+    },
+    {
+      "sha": "b1212bfdfc09b19933e2bbe46bdbddc80b8f8f12",
+      "short_sha": "b1212bf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:13:11-03:00",
+      "message": "docs(int-verify): associa fechamento ao trabalho da Área 9"
+    },
+    {
+      "sha": "5fa6de40242cc4bd1c69f2998ac5de14bec0fe79",
+      "short_sha": "5fa6de4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:11:27-03:00",
+      "message": "test(status): atualiza transição para INT-AI-01"
+    },
+    {
+      "sha": "a71045d2243fd769d2bb526be66d04341e3bfbe9",
+      "short_sha": "a71045d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:11:03-03:00",
+      "message": "docs(int-ai): inicia auditoria da IA de apoio"
+    },
+    {
+      "sha": "dce46cfd1f5d365301fcffa908bfa3a9ce30eccf",
+      "short_sha": "dce46cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:10:49-03:00",
+      "message": "docs(int-verify): cria fechamento formal"
+    },
+    {
+      "sha": "12d95829a43352052b453f070337ee509e37c06e",
+      "short_sha": "12d9582",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T18:10:36-03:00",
+      "message": "docs(int-verify): registra auditoria visual e conclui bloco"
+    },
     {
       "sha": "8bb18f43f462947ada52b54a2d5053b5625ab22d",
       "short_sha": "8bb18f4",
@@ -30,102 +79,53 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T16:48:32-03:00",
       "message": "docs(int-verify): registra integração runtime 4 de 5"
-    },
-    {
-      "sha": "3d4f187df1dd6358fca5a55b1f37041d6c617a49",
-      "short_sha": "3d4f187",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T16:48:10-03:00",
-      "message": "test(int-verify): inclui runtime no gate oficial"
-    },
-    {
-      "sha": "3dfcd1da6aff603e31d7da92ab3012ed5af54756",
-      "short_sha": "3dfcd1d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T16:47:49-03:00",
-      "message": "test(int-verify): protege integração runtime real"
-    },
-    {
-      "sha": "1efe486342dbe35036f24710f915d77dd9b6823c",
-      "short_sha": "1efe486",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T16:47:25-03:00",
-      "message": "feat(int-verify): registra extensão runtime"
-    },
-    {
-      "sha": "65dc17a1bfd2a5b14851d197512aae994181bd41",
-      "short_sha": "65dc17a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T16:47:05-03:00",
-      "message": "feat(int-verify): integra painel runtime somente leitura"
-    },
-    {
-      "sha": "d42b729fbe484b7a1c500315929cc2ec65504ff5",
-      "short_sha": "d42b729",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T16:46:45-03:00",
-      "message": "feat(int-verify): cria orquestrador runtime somente leitura"
-    },
-    {
-      "sha": "39810d273aae43af4f91159bcf0824ef9ee5dbb3",
-      "short_sha": "39810d2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:12:32-03:00",
-      "message": "Merge pull request #111 from JGaspar-Eng/agent/int-verify-01-adaptadores"
-    },
-    {
-      "sha": "b80da7ec713feb0ce53f5b05218f39ce6a5264f1",
-      "short_sha": "b80da7e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T15:11:29-03:00",
-      "message": "test(status): atualiza progresso INT-VERIFY objetivo 3"
     }
   ],
   "development": {
     "current": {
-      "code": "INT-VERIFY-01",
-      "title": "verificações inteligentes integradas",
+      "code": "INT-AI-01",
+      "title": "auditoria e camada de IA de apoio",
       "area": {
         "number": 9,
         "code": "E9",
         "title": "Inteligência"
       },
       "objectives": [
-        "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
-        "definir contrato explícito de verificação inteligente, com severidade, autoridade, condição de aplicabilidade e evidência",
-        "implementar agregação apenas das verificações autorizadas, preservando origem e sem criar regras heurísticas ocultas",
-        "integrar as verificações ao runtime em modo somente leitura e sem correção automática",
-        "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco."
+        "auditar casos de uso, restrições da arquitetura client-side e riscos de segurança/privacidade antes de qualquer integração com modelo de IA",
+        "definir contrato provider-neutral de apoio explicativo, obrigatoriamente fundamentado em evidências determinísticas já produzidas pelo SIMETTRIA",
+        "implementar empacotamento auditável de contexto e resposta, sem permitir que IA calcule, valide, dimensione, corrija ou decida engenharia",
+        "integrar a camada de apoio ao runtime apenas se a auditoria confirmar viabilidade técnica e de segurança, sempre em modo opcional e somente leitura",
+        "concluir regressão ampliada, documentação de limites e auditoria visual real antes do encerramento da Área 9."
       ],
       "progress": {
         "total": 5,
-        "done": 4,
+        "done": 0,
         "in_progress": 0,
-        "pending": 1,
-        "percent": 80,
+        "pending": 5,
+        "percent": 0,
         "items": [
           {
-            "text": "auditar verificações determinísticas já existentes fora do INT-CHECK/INT-REVIEW e identificar quais podem ser expostas sem duplicação",
-            "state": "done",
-            "marker": "✅"
+            "text": "auditar casos de uso, restrições da arquitetura client-side e riscos de segurança/privacidade antes de qualquer integração com modelo de IA",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "definir contrato explícito de verificação inteligente, com severidade, autoridade, condição de aplicabilidade e evidência",
-            "state": "done",
-            "marker": "✅"
+            "text": "definir contrato provider-neutral de apoio explicativo, obrigatoriamente fundamentado em evidências determinísticas já produzidas pelo SIMETTRIA",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "implementar agregação apenas das verificações autorizadas, preservando origem e sem criar regras heurísticas ocultas",
-            "state": "done",
-            "marker": "✅"
+            "text": "implementar empacotamento auditável de contexto e resposta, sem permitir que IA calcule, valide, dimensione, corrija ou decida engenharia",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "integrar as verificações ao runtime em modo somente leitura e sem correção automática",
-            "state": "done",
-            "marker": "✅"
+            "text": "integrar a camada de apoio ao runtime apenas se a auditoria confirmar viabilidade técnica e de segurança, sempre em modo opcional e somente leitura",
+            "state": "pending",
+            "marker": "⬜"
           },
           {
-            "text": "concluir regressão ampliada e auditoria visual real antes do encerramento do bloco.",
+            "text": "concluir regressão ampliada, documentação de limites e auditoria visual real antes do encerramento da Área 9.",
             "state": "pending",
             "marker": "⬜"
           }
@@ -151,8 +151,8 @@
         "text": "concluído — otimização global da orientação dos pilares"
       },
       {
-        "code": "INT-VERIFY-01",
-        "text": "bloco estrutural ativo: verificações inteligentes integradas"
+        "code": "INT-AI-01",
+        "text": "bloco estrutural ativo: auditoria e camada de IA de apoio"
       }
     ],
     "epics": [
@@ -309,10 +309,10 @@
         "status": "measured",
         "active": true,
         "work": {
-          "done": 5,
+          "done": 6,
           "partial": 0,
           "active_now": 1,
-          "planned": 1,
+          "planned": 0,
           "out_of_scope": 0,
           "in_progress": 0,
           "total": 7
@@ -533,12 +533,12 @@
     ]
   },
   "sources": {
-    "current": "docs/INT_VERIFY_01_CHECKPOINT.md",
+    "current": "docs/INT_AI_01_CHECKPOINT.md",
     "roadmap": "docs/ROADMAP.md + documentos formais de fechamento",
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32295203116",
-    "run_number": "72"
+    "run_id": "32302939866",
+    "run_number": "73"
   }
 }
