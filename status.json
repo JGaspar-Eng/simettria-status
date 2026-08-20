@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-20T11:18:01Z",
+  "generated_at": "2026-08-20T11:45:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dfd903c05d8145f3560418296af8311ffa79830e",
-    "short_sha": "dfd903c",
+    "sha": "352177f0037309a8520f737ada3bc7b09c9ccebd",
+    "short_sha": "352177f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T08:17:52-03:00",
-    "message": "Merge pull request #130 from JGaspar-Eng/agent/w1-ca-limite-conservador"
+    "date": "2026-08-20T08:45:23-03:00",
+    "message": "Merge pull request #131 from JGaspar-Eng/agent/opt-pilar-busca-escalavel"
   },
   "commits": [
+    {
+      "sha": "352177f0037309a8520f737ada3bc7b09c9ccebd",
+      "short_sha": "352177f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:45:23-03:00",
+      "message": "Merge pull request #131 from JGaspar-Eng/agent/opt-pilar-busca-escalavel"
+    },
+    {
+      "sha": "8a409693b227ce8806afb1c196be09c4c519b7f5",
+      "short_sha": "8a40969",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:44:19-03:00",
+      "message": "docs(opt-pilar): atualiza fechamento para estrategia hibrida"
+    },
+    {
+      "sha": "ac580d319519eef908406e244aa304131f3a93d1",
+      "short_sha": "ac580d3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:43:43-03:00",
+      "message": "docs(opt-pilar): registra busca escalavel sem teto funcional"
+    },
+    {
+      "sha": "ae2b717a46c077705b4d43e661fb5282abb1692d",
+      "short_sha": "ae2b717",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:41:34-03:00",
+      "message": "test(opt-pilar): atualiza runtime para busca escalavel"
+    },
+    {
+      "sha": "081b01ad9e1db90a00b80c2d48054af8518e3114",
+      "short_sha": "081b01a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:39:33-03:00",
+      "message": "test(opt-pilar): integra regressao escalavel ao gate"
+    },
+    {
+      "sha": "16b5c814093b63dc1a475d83b21c00fccdf70f1b",
+      "short_sha": "16b5c81",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:39:06-03:00",
+      "message": "test(opt-pilar): cobre busca escalavel com 14 e 50 pilares"
+    },
+    {
+      "sha": "5734035dde1cf87dcf4825708ed3da4bd81247b5",
+      "short_sha": "5734035",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:38:25-03:00",
+      "message": "fix(opt-pilar): usa recomendacao escalavel no runtime"
+    },
+    {
+      "sha": "9130679d91b8e7ab039bb5013d9a705141ea93e9",
+      "short_sha": "9130679",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:37:52-03:00",
+      "message": "fix(opt-pilar): adiciona busca escalavel para muitos pilares"
+    },
     {
       "sha": "dfd903c05d8145f3560418296af8311ffa79830e",
       "short_sha": "dfd903c",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T08:16:33-03:00",
       "message": "test(w1): valida limite conservador do Ca"
-    },
-    {
-      "sha": "d343654c9829f91d5d09cd691db2a0c58d5bde80",
-      "short_sha": "d343654",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:15:25-03:00",
-      "message": "refactor(w1): preserva transcrição e aplica resolvedor conservador"
-    },
-    {
-      "sha": "4ad47543ee313f452782c65a620a4e5ecb609584",
-      "short_sha": "4ad4754",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:10:35-03:00",
-      "message": "fix(w1): adiciona limite conservador para Ca"
-    },
-    {
-      "sha": "e45a79c938c2909f5cc689bdd6989a1b7b5bc18c",
-      "short_sha": "e45a79c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:03:17-03:00",
-      "message": "Merge pull request #129 from JGaspar-Eng/agent/w1-perimetro-vigas"
-    },
-    {
-      "sha": "d6ef56e5ec49731c5b7c101394f509f00e03624d",
-      "short_sha": "d6ef56e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:02:11-03:00",
-      "message": "test(w1): inclui perímetro de vigas no gate"
-    },
-    {
-      "sha": "764755f87c511bb8edf3c656094107b9c43bb34d",
-      "short_sha": "764755f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:01:39-03:00",
-      "message": "test(w1): cobre perímetro de vigas com vão de escada"
-    },
-    {
-      "sha": "9b99ab0aa77aa7ed7444e848557dc4d1a1301a34",
-      "short_sha": "9b99ab0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:01:13-03:00",
-      "message": "fix(w1): usa perímetro de vigas como fallback auditável"
-    },
-    {
-      "sha": "cfb1b6f64eefdd2972721d2dacdb778c08e3d9bb",
-      "short_sha": "cfb1b6f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:00:47-03:00",
-      "message": "fix(w1): deriva envolvente por perímetro fechado de vigas"
-    },
-    {
-      "sha": "1e4b71c2ad54f8ef25752f7928f44137ea09ea44",
-      "short_sha": "1e4b71c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T22:44:59-03:00",
-      "message": "Merge pull request #128 from JGaspar-Eng/agent/w1-vazio-interno-envelope"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 44,
+    "validator_count": 45,
     "validators": [
       {
         "name": "test:base",
@@ -475,6 +475,10 @@
         "command": "node tests/validar_otimizacao_orientacao_pilares.mjs"
       },
       {
+        "name": "test:opt-pilar-escalavel",
+        "command": "node tests/validar_otimizacao_orientacao_pilares_escalavel.mjs"
+      },
+      {
         "name": "test:opt-pilar-ui",
         "command": "node tests/validar_otimizacao_orientacao_auditoria_ui.mjs"
       },
@@ -562,7 +566,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32363122796",
-    "run_number": "90"
+    "run_id": "32365367149",
+    "run_number": "91"
   }
 }
