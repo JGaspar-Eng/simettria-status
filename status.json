@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-20T11:45:30Z",
+  "generated_at": "2026-08-20T12:08:14Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "352177f0037309a8520f737ada3bc7b09c9ccebd",
-    "short_sha": "352177f",
+    "sha": "83b1560fdd42ec1a999ab08cd09f688c84a2fd89",
+    "short_sha": "83b1560",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T08:45:23-03:00",
-    "message": "Merge pull request #131 from JGaspar-Eng/agent/opt-pilar-busca-escalavel"
+    "date": "2026-08-20T09:08:03-03:00",
+    "message": "Merge pull request #132 from JGaspar-Eng/agent/json-legado-carregamento-escalavel"
   },
   "commits": [
+    {
+      "sha": "83b1560fdd42ec1a999ab08cd09f688c84a2fd89",
+      "short_sha": "83b1560",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T09:08:03-03:00",
+      "message": "Merge pull request #132 from JGaspar-Eng/agent/json-legado-carregamento-escalavel"
+    },
+    {
+      "sha": "942b154e9fe644cb2f8d579023d483b4e1941cad",
+      "short_sha": "942b154",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T09:06:50-03:00",
+      "message": "test(int-review): valida detalhes sob demanda"
+    },
+    {
+      "sha": "7c3d13c4d26c7dbbf9c4e1063cc7337505da1781",
+      "short_sha": "7c3d13c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T09:02:41-03:00",
+      "message": "test(json): cobre legado e painel escalável"
+    },
+    {
+      "sha": "48b0c5340cc4db40e00b42c639f815f68594909f",
+      "short_sha": "48b0c53",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T09:02:03-03:00",
+      "message": "perf(calculation-graph): adia detalhes extensos"
+    },
+    {
+      "sha": "311ee2ff26f7b2868a4f9fb59b761ffe00ea0728",
+      "short_sha": "311ee2f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T09:01:05-03:00",
+      "message": "fix(wizard): libera projeto legado restaurado"
+    },
     {
       "sha": "352177f0037309a8520f737ada3bc7b09c9ccebd",
       "short_sha": "352177f",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T08:39:33-03:00",
       "message": "test(opt-pilar): integra regressao escalavel ao gate"
-    },
-    {
-      "sha": "16b5c814093b63dc1a475d83b21c00fccdf70f1b",
-      "short_sha": "16b5c81",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:39:06-03:00",
-      "message": "test(opt-pilar): cobre busca escalavel com 14 e 50 pilares"
-    },
-    {
-      "sha": "5734035dde1cf87dcf4825708ed3da4bd81247b5",
-      "short_sha": "5734035",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:38:25-03:00",
-      "message": "fix(opt-pilar): usa recomendacao escalavel no runtime"
-    },
-    {
-      "sha": "9130679d91b8e7ab039bb5013d9a705141ea93e9",
-      "short_sha": "9130679",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:37:52-03:00",
-      "message": "fix(opt-pilar): adiciona busca escalavel para muitos pilares"
-    },
-    {
-      "sha": "dfd903c05d8145f3560418296af8311ffa79830e",
-      "short_sha": "dfd903c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:17:52-03:00",
-      "message": "Merge pull request #130 from JGaspar-Eng/agent/w1-ca-limite-conservador"
-    },
-    {
-      "sha": "6b212d0a63a63dce683afd7b577b9897c019b981",
-      "short_sha": "6b212d0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:16:33-03:00",
-      "message": "test(w1): valida limite conservador do Ca"
     }
   ],
   "development": {
@@ -566,7 +566,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32365367149",
-    "run_number": "91"
+    "run_id": "32367268329",
+    "run_number": "92"
   }
 }
