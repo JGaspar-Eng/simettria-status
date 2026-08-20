@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-20T11:03:25Z",
+  "generated_at": "2026-08-20T11:18:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e45a79c938c2909f5cc689bdd6989a1b7b5bc18c",
-    "short_sha": "e45a79c",
+    "sha": "dfd903c05d8145f3560418296af8311ffa79830e",
+    "short_sha": "dfd903c",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T08:03:17-03:00",
-    "message": "Merge pull request #129 from JGaspar-Eng/agent/w1-perimetro-vigas"
+    "date": "2026-08-20T08:17:52-03:00",
+    "message": "Merge pull request #130 from JGaspar-Eng/agent/w1-ca-limite-conservador"
   },
   "commits": [
+    {
+      "sha": "dfd903c05d8145f3560418296af8311ffa79830e",
+      "short_sha": "dfd903c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:17:52-03:00",
+      "message": "Merge pull request #130 from JGaspar-Eng/agent/w1-ca-limite-conservador"
+    },
+    {
+      "sha": "6b212d0a63a63dce683afd7b577b9897c019b981",
+      "short_sha": "6b212d0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:16:33-03:00",
+      "message": "test(w1): valida limite conservador do Ca"
+    },
+    {
+      "sha": "d343654c9829f91d5d09cd691db2a0c58d5bde80",
+      "short_sha": "d343654",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:15:25-03:00",
+      "message": "refactor(w1): preserva transcrição e aplica resolvedor conservador"
+    },
+    {
+      "sha": "4ad47543ee313f452782c65a620a4e5ecb609584",
+      "short_sha": "4ad4754",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T08:10:35-03:00",
+      "message": "fix(w1): adiciona limite conservador para Ca"
+    },
     {
       "sha": "e45a79c938c2909f5cc689bdd6989a1b7b5bc18c",
       "short_sha": "e45a79c",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T22:44:59-03:00",
       "message": "Merge pull request #128 from JGaspar-Eng/agent/w1-vazio-interno-envelope"
-    },
-    {
-      "sha": "c772d32b5414cc4df5c77ecd966cd7c55080639b",
-      "short_sha": "c772d32",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T22:43:59-03:00",
-      "message": "docs: registra aberturas de laje e escadas no planejamento"
-    },
-    {
-      "sha": "282bc4d38917a531cf6d35f4ea06539071cb3927",
-      "short_sha": "282bc4d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T22:43:36-03:00",
-      "message": "test(w1): protege vazio interno sem liberar planta em L"
-    },
-    {
-      "sha": "f71500213569c75a853f4ca6cb250dd9fbe20b91",
-      "short_sha": "f715002",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T22:41:58-03:00",
-      "message": "fix(w1): distingue vazio interno do contorno externo"
-    },
-    {
-      "sha": "071b4a68a4091406e75125f4ee3d5349fbc8893d",
-      "short_sha": "071b4a6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T22:20:55-03:00",
-      "message": "Merge pull request #127 from JGaspar-Eng/agent/cg-detalhes-tecnicos-recolhiveis"
     }
   ],
   "development": {
@@ -562,7 +562,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32361928369",
-    "run_number": "89"
+    "run_id": "32363122796",
+    "run_number": "90"
   }
 }
