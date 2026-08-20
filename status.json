@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-20T00:50:42Z",
+  "generated_at": "2026-08-20T00:57:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "235fde500da5dc985703b7545208375f09c74efe",
-    "short_sha": "235fde5",
+    "sha": "f83fd2f3fc2b09a2d8c376fa1888481244d17f8f",
+    "short_sha": "f83fd2f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T21:50:33-03:00",
-    "message": "Merge pull request #124 from JGaspar-Eng/agent/wizard-modal-bloqueante"
+    "date": "2026-08-19T21:56:51-03:00",
+    "message": "Merge pull request #125 from JGaspar-Eng/agent/int-action-lote-sem-confirmacao"
   },
   "commits": [
+    {
+      "sha": "f83fd2f3fc2b09a2d8c376fa1888481244d17f8f",
+      "short_sha": "f83fd2f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T21:56:51-03:00",
+      "message": "Merge pull request #125 from JGaspar-Eng/agent/int-action-lote-sem-confirmacao"
+    },
+    {
+      "sha": "4e72120d27bc97d9efd2a348625fbf049289b9e6",
+      "short_sha": "4e72120",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T21:55:41-03:00",
+      "message": "docs(ux): registra aplicação direta e em lote"
+    },
+    {
+      "sha": "1ef5075f3de2b272432f27122467898ee16a16f3",
+      "short_sha": "1ef5075",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T21:55:25-03:00",
+      "message": "test(ux): ajusta contrato textual das ações em lote"
+    },
+    {
+      "sha": "790a04acf68a2a29dc03c65f94b2a02ef1604a03",
+      "short_sha": "790a04a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T21:55:00-03:00",
+      "message": "test(ux): cobre aplicação direta e ações em lote"
+    },
+    {
+      "sha": "ab32273f909f49fdfeb2a093f01db44d5c8c59ae",
+      "short_sha": "ab32273",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T21:54:26-03:00",
+      "message": "feat(ux): aplica sugestões individuais e em lote sem confirmação repetitiva"
+    },
     {
       "sha": "235fde500da5dc985703b7545208375f09c74efe",
       "short_sha": "235fde5",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T20:28:06-03:00",
       "message": "Merge pull request #123 from JGaspar-Eng/agent/int-review-navegacao-aplicar-viga"
-    },
-    {
-      "sha": "e8add6c348abed5644aa5e0eb6065caff68e0b6a",
-      "short_sha": "e8add6c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T20:26:53-03:00",
-      "message": "test(review): cobre aplicação de viga e troca de pavimento"
-    },
-    {
-      "sha": "7a99edb24e95a14ba5b40e25cb6f03371f346e9e",
-      "short_sha": "7a99edb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T20:26:30-03:00",
-      "message": "fix(review): navega ao pavimento e restaura aplicação assistida de vigas"
-    },
-    {
-      "sha": "524d2a7bc5c0b2897fc537f75012d10a2a4f064d",
-      "short_sha": "524d2a7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T20:14:54-03:00",
-      "message": "Merge pull request #122 from JGaspar-Eng/agent/int-predim-laje-didatica"
-    },
-    {
-      "sha": "80499606811b3ab99a40c590de228092f611fe0a",
-      "short_sha": "8049960",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T20:13:19-03:00",
-      "message": "test(predim): usa tolerancia em valor bruto de vao"
-    },
-    {
-      "sha": "797d00f8140fec127005ef16f0cad946992f6492",
-      "short_sha": "797d00f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T20:11:35-03:00",
-      "message": "test(predim): protege memoria didatica de lajes"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32318826746",
-    "run_number": "84"
+    "run_id": "32319216010",
+    "run_number": "85"
   }
 }
