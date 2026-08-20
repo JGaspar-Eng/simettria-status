@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-20T21:57:45Z",
+  "generated_at": "2026-08-20T23:51:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b5bdd101fa34cc6304b95d59e8829d39ed49e8b4",
-    "short_sha": "b5bdd10",
+    "sha": "ecf71144da778fb6859fce2fdd5af5d7013fc866",
+    "short_sha": "ecf7114",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T18:57:30-03:00",
-    "message": "feat(dim-pilar): define contrato normativo versionado"
+    "date": "2026-08-20T20:51:06-03:00",
+    "message": "Merge pull request #139 from JGaspar-Eng/agent/dim-pilar-01-politica-normativa"
   },
   "commits": [
+    {
+      "sha": "ecf71144da778fb6859fce2fdd5af5d7013fc866",
+      "short_sha": "ecf7114",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T20:51:06-03:00",
+      "message": "Merge pull request #139 from JGaspar-Eng/agent/dim-pilar-01-politica-normativa"
+    },
+    {
+      "sha": "06fab8612254e7dba712a0b28d8b0d36358f0315",
+      "short_sha": "06fab86",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T20:49:53-03:00",
+      "message": "test(dim-pilar): valida política normativa vigente"
+    },
+    {
+      "sha": "28e2a44e1da0246bdd50851da4aec6bc482643de",
+      "short_sha": "28e2a44",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T20:49:35-03:00",
+      "message": "refactor(dim-pilar): alinha contrato à política normativa"
+    },
+    {
+      "sha": "b984b9701e980c5f394680987b44bffb34052949",
+      "short_sha": "b984b97",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T20:49:05-03:00",
+      "message": "docs(dim-pilar): remove bloqueio indevido por licença"
+    },
+    {
+      "sha": "2d9d3c68eddd06f67c8bd099090e6e7b0f32aa8c",
+      "short_sha": "2d9d3c6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T20:48:52-03:00",
+      "message": "docs(normas): define política de versão normativa vigente"
+    },
     {
       "sha": "b5bdd101fa34cc6304b95d59e8829d39ed49e8b4",
       "short_sha": "b5bdd10",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T13:40:57-03:00",
       "message": "test(json): protege pintura do loading antes da carga"
-    },
-    {
-      "sha": "aa7070cf79567b09e2f7045660013432b20e123b",
-      "short_sha": "aa7070c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:40:33-03:00",
-      "message": "fix(json): conecta gate de pintura ao runtime do wizard"
-    },
-    {
-      "sha": "5773b21c6f06ae37003e3e3964b1674d526ea724",
-      "short_sha": "5773b21",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:40:10-03:00",
-      "message": "fix(json): garante pintura do loading antes da restauração"
-    },
-    {
-      "sha": "3874cc14489fc24807555351c0de407d905b0e82",
-      "short_sha": "3874cc1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:34:21-03:00",
-      "message": "Merge pull request #134 from JGaspar-Eng/agent/json-load-guard-performance"
-    },
-    {
-      "sha": "c20a6b27a8f103600faf9e6955595bf71429c370",
-      "short_sha": "c20a6b2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:28:25-03:00",
-      "message": "test(json): protege guard leve no carregamento"
-    },
-    {
-      "sha": "a6843adae1decdcf9886fa82825fb1eea9718d8b",
-      "short_sha": "a6843ad",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:28:05-03:00",
-      "message": "perf(wizard): evita observer global durante carga JSON"
     }
   ],
   "development": {
@@ -570,7 +570,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32421984292",
-    "run_number": "98"
+    "run_id": "32430343169",
+    "run_number": "99"
   }
 }
