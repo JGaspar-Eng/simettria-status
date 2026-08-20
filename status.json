@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-20T00:57:01Z",
+  "generated_at": "2026-08-20T01:07:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f83fd2f3fc2b09a2d8c376fa1888481244d17f8f",
-    "short_sha": "f83fd2f",
+    "sha": "7b362df53df1efe78d37e32d73b45ab3e18c1d4d",
+    "short_sha": "7b362df",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T21:56:51-03:00",
-    "message": "Merge pull request #125 from JGaspar-Eng/agent/int-action-lote-sem-confirmacao"
+    "date": "2026-08-19T22:06:54-03:00",
+    "message": "Merge pull request #126 from JGaspar-Eng/agent/cg-modo-comum-compacto"
   },
   "commits": [
+    {
+      "sha": "7b362df53df1efe78d37e32d73b45ab3e18c1d4d",
+      "short_sha": "7b362df",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:06:54-03:00",
+      "message": "Merge pull request #126 from JGaspar-Eng/agent/cg-modo-comum-compacto"
+    },
+    {
+      "sha": "54937353a9933f1460f50a75b683308ac55f7171",
+      "short_sha": "5493735",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:06:00-03:00",
+      "message": "test(cg): protege modo comum compacto"
+    },
+    {
+      "sha": "2c8e2819af52e0dbde635753f3b949d069936da2",
+      "short_sha": "2c8e281",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:05:41-03:00",
+      "message": "feat(cg): compacta modo comum do painel"
+    },
     {
       "sha": "f83fd2f3fc2b09a2d8c376fa1888481244d17f8f",
       "short_sha": "f83fd2f",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T21:49:20-03:00",
       "message": "test(wizard): cobre modal inicial bloqueante"
-    },
-    {
-      "sha": "793103946e3bcb539142635c3b64031c5009ac58",
-      "short_sha": "7931039",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T21:49:08-03:00",
-      "message": "fix(wizard): registra proteção bloqueante inicial"
-    },
-    {
-      "sha": "5d1fb26920fd4c2bffe44ca2a36796811f622050",
-      "short_sha": "5d1fb26",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T21:48:54-03:00",
-      "message": "fix(wizard): bloqueia fechamento antes de projeto válido"
-    },
-    {
-      "sha": "0bce97ef6f38212d572e95f6c7d24700235b6d2c",
-      "short_sha": "0bce97e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T20:28:06-03:00",
-      "message": "Merge pull request #123 from JGaspar-Eng/agent/int-review-navegacao-aplicar-viga"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32319216010",
-    "run_number": "85"
+    "run_id": "32319841382",
+    "run_number": "86"
   }
 }
