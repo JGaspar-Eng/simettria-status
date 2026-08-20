@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-20T21:48:34Z",
+  "generated_at": "2026-08-20T21:57:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "785b52358ca52e0274d4cb32d732a1e34c965d4e",
-    "short_sha": "785b523",
+    "sha": "b5bdd101fa34cc6304b95d59e8829d39ed49e8b4",
+    "short_sha": "b5bdd10",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T18:48:24-03:00",
-    "message": "docs(dim-pilar): conclui auditoria inicial do DIM-PILAR-01"
+    "date": "2026-08-20T18:57:30-03:00",
+    "message": "feat(dim-pilar): define contrato normativo versionado"
   },
   "commits": [
+    {
+      "sha": "b5bdd101fa34cc6304b95d59e8829d39ed49e8b4",
+      "short_sha": "b5bdd10",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T18:57:30-03:00",
+      "message": "feat(dim-pilar): define contrato normativo versionado"
+    },
     {
       "sha": "785b52358ca52e0274d4cb32d732a1e34c965d4e",
       "short_sha": "785b523",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T13:28:05-03:00",
       "message": "perf(wizard): evita observer global durante carga JSON"
-    },
-    {
-      "sha": "f18158d845a85b415deab022c2139e45ec3a2c11",
-      "short_sha": "f18158d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:00:24-03:00",
-      "message": "feat(ui): loading visual no carregamento de JSON"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 1,
+        "done": 2,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 20,
+        "pending": 3,
+        "percent": 40,
         "items": [
           {
             "text": "auditar as cargas, esforços, propriedades geométricas, materiais e vínculos de pilar realmente disponíveis no modelo atual, identificando lacunas antes de qualquer fórmula normativa",
@@ -111,8 +111,8 @@
           },
           {
             "text": "definir contrato normativo versionado para pilares, com unidades, hipóteses, estados-limite, fontes técnicas e limites explícitos de aplicabilidade",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "implementar o primeiro núcleo puro e testável de verificação/dimensionamento de pilar somente para o escopo autorizado pela auditoria, sem lógica de UI e sem duplicar regras normativas",
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 45,
+    "validator_count": 46,
     "validators": [
       {
         "name": "test:base",
@@ -425,6 +425,10 @@
       {
         "name": "test:pilar-m3b-rigidez",
         "command": "node tests/validar_rigidez_lateral_pilar_m3b.mjs"
+      },
+      {
+        "name": "test:dim-pilar-contrato",
+        "command": "node tests/validar_contrato_normativo_pilar_dim_pilar_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -566,7 +570,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32421238564",
-    "run_number": "97"
+    "run_id": "32421984292",
+    "run_number": "98"
   }
 }
