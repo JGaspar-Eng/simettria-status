@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-20T12:08:14Z",
+  "generated_at": "2026-08-20T16:00:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "83b1560fdd42ec1a999ab08cd09f688c84a2fd89",
-    "short_sha": "83b1560",
+    "sha": "f18158d845a85b415deab022c2139e45ec3a2c11",
+    "short_sha": "f18158d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T09:08:03-03:00",
-    "message": "Merge pull request #132 from JGaspar-Eng/agent/json-legado-carregamento-escalavel"
+    "date": "2026-08-20T13:00:24-03:00",
+    "message": "feat(ui): loading visual no carregamento de JSON"
   },
   "commits": [
+    {
+      "sha": "f18158d845a85b415deab022c2139e45ec3a2c11",
+      "short_sha": "f18158d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:00:24-03:00",
+      "message": "feat(ui): loading visual no carregamento de JSON"
+    },
+    {
+      "sha": "be037e79eb4f2f99c821b82597496de965ded4f8",
+      "short_sha": "be037e7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T12:58:17-03:00",
+      "message": "feat(ui): integra loading visual ao fluxo JSON"
+    },
+    {
+      "sha": "dff3f90ff5877ab367ca167198e8c6d9970373ab",
+      "short_sha": "dff3f90",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T12:57:06-03:00",
+      "message": "feat(ui): adiciona loading polido ao carregamento JSON"
+    },
     {
       "sha": "83b1560fdd42ec1a999ab08cd09f688c84a2fd89",
       "short_sha": "83b1560",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T08:44:19-03:00",
       "message": "docs(opt-pilar): atualiza fechamento para estrategia hibrida"
-    },
-    {
-      "sha": "ac580d319519eef908406e244aa304131f3a93d1",
-      "short_sha": "ac580d3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:43:43-03:00",
-      "message": "docs(opt-pilar): registra busca escalavel sem teto funcional"
-    },
-    {
-      "sha": "ae2b717a46c077705b4d43e661fb5282abb1692d",
-      "short_sha": "ae2b717",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:41:34-03:00",
-      "message": "test(opt-pilar): atualiza runtime para busca escalavel"
-    },
-    {
-      "sha": "081b01ad9e1db90a00b80c2d48054af8518e3114",
-      "short_sha": "081b01a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:39:33-03:00",
-      "message": "test(opt-pilar): integra regressao escalavel ao gate"
     }
   ],
   "development": {
@@ -566,7 +566,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32367268329",
-    "run_number": "92"
+    "run_id": "32389503785",
+    "run_number": "93"
   }
 }
