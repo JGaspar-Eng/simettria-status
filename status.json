@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-20T01:21:04Z",
+  "generated_at": "2026-08-20T01:45:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "071b4a68a4091406e75125f4ee3d5349fbc8893d",
-    "short_sha": "071b4a6",
+    "sha": "1e4b71c2ad54f8ef25752f7928f44137ea09ea44",
+    "short_sha": "1e4b71c",
     "author": "Joanez Gaspar",
-    "date": "2026-08-19T22:20:55-03:00",
-    "message": "Merge pull request #127 from JGaspar-Eng/agent/cg-detalhes-tecnicos-recolhiveis"
+    "date": "2026-08-19T22:44:59-03:00",
+    "message": "Merge pull request #128 from JGaspar-Eng/agent/w1-vazio-interno-envelope"
   },
   "commits": [
+    {
+      "sha": "1e4b71c2ad54f8ef25752f7928f44137ea09ea44",
+      "short_sha": "1e4b71c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:44:59-03:00",
+      "message": "Merge pull request #128 from JGaspar-Eng/agent/w1-vazio-interno-envelope"
+    },
+    {
+      "sha": "c772d32b5414cc4df5c77ecd966cd7c55080639b",
+      "short_sha": "c772d32",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:43:59-03:00",
+      "message": "docs: registra aberturas de laje e escadas no planejamento"
+    },
+    {
+      "sha": "282bc4d38917a531cf6d35f4ea06539071cb3927",
+      "short_sha": "282bc4d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:43:36-03:00",
+      "message": "test(w1): protege vazio interno sem liberar planta em L"
+    },
+    {
+      "sha": "f71500213569c75a853f4ca6cb250dd9fbe20b91",
+      "short_sha": "f715002",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-19T22:41:58-03:00",
+      "message": "fix(w1): distingue vazio interno do contorno externo"
+    },
     {
       "sha": "071b4a68a4091406e75125f4ee3d5349fbc8893d",
       "short_sha": "071b4a6",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-19T22:05:41-03:00",
       "message": "feat(cg): compacta modo comum do painel"
-    },
-    {
-      "sha": "f83fd2f3fc2b09a2d8c376fa1888481244d17f8f",
-      "short_sha": "f83fd2f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T21:56:51-03:00",
-      "message": "Merge pull request #125 from JGaspar-Eng/agent/int-action-lote-sem-confirmacao"
-    },
-    {
-      "sha": "4e72120d27bc97d9efd2a348625fbf049289b9e6",
-      "short_sha": "4e72120",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T21:55:41-03:00",
-      "message": "docs(ux): registra aplicação direta e em lote"
-    },
-    {
-      "sha": "1ef5075f3de2b272432f27122467898ee16a16f3",
-      "short_sha": "1ef5075",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T21:55:25-03:00",
-      "message": "test(ux): ajusta contrato textual das ações em lote"
-    },
-    {
-      "sha": "790a04acf68a2a29dc03c65f94b2a02ef1604a03",
-      "short_sha": "790a04a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-19T21:55:00-03:00",
-      "message": "test(ux): cobre aplicação direta e ações em lote"
     }
   ],
   "development": {
@@ -558,7 +558,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32320684488",
-    "run_number": "87"
+    "run_id": "32322139339",
+    "run_number": "88"
   }
 }
