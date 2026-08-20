@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-20T16:00:32Z",
+  "generated_at": "2026-08-20T16:34:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f18158d845a85b415deab022c2139e45ec3a2c11",
-    "short_sha": "f18158d",
+    "sha": "3874cc14489fc24807555351c0de407d905b0e82",
+    "short_sha": "3874cc1",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T13:00:24-03:00",
-    "message": "feat(ui): loading visual no carregamento de JSON"
+    "date": "2026-08-20T13:34:21-03:00",
+    "message": "Merge pull request #134 from JGaspar-Eng/agent/json-load-guard-performance"
   },
   "commits": [
+    {
+      "sha": "3874cc14489fc24807555351c0de407d905b0e82",
+      "short_sha": "3874cc1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:34:21-03:00",
+      "message": "Merge pull request #134 from JGaspar-Eng/agent/json-load-guard-performance"
+    },
+    {
+      "sha": "c20a6b27a8f103600faf9e6955595bf71429c370",
+      "short_sha": "c20a6b2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:28:25-03:00",
+      "message": "test(json): protege guard leve no carregamento"
+    },
+    {
+      "sha": "a6843adae1decdcf9886fa82825fb1eea9718d8b",
+      "short_sha": "a6843ad",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:28:05-03:00",
+      "message": "perf(wizard): evita observer global durante carga JSON"
+    },
     {
       "sha": "f18158d845a85b415deab022c2139e45ec3a2c11",
       "short_sha": "f18158d",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T09:02:03-03:00",
       "message": "perf(calculation-graph): adia detalhes extensos"
-    },
-    {
-      "sha": "311ee2ff26f7b2868a4f9fb59b761ffe00ea0728",
-      "short_sha": "311ee2f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T09:01:05-03:00",
-      "message": "fix(wizard): libera projeto legado restaurado"
-    },
-    {
-      "sha": "352177f0037309a8520f737ada3bc7b09c9ccebd",
-      "short_sha": "352177f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:45:23-03:00",
-      "message": "Merge pull request #131 from JGaspar-Eng/agent/opt-pilar-busca-escalavel"
-    },
-    {
-      "sha": "8a409693b227ce8806afb1c196be09c4c519b7f5",
-      "short_sha": "8a40969",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T08:44:19-03:00",
-      "message": "docs(opt-pilar): atualiza fechamento para estrategia hibrida"
     }
   ],
   "development": {
@@ -566,7 +566,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32389503785",
-    "run_number": "93"
+    "run_id": "32392748316",
+    "run_number": "94"
   }
 }
