@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-20T17:16:08Z",
+  "generated_at": "2026-08-20T20:30:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "196405ab315510e59995e7f9920ad0b69c9028ac",
-    "short_sha": "196405a",
+    "sha": "39c33f3b48591aff3ef2dc9c32c752d132683d3d",
+    "short_sha": "39c33f3",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T14:15:53-03:00",
-    "message": "Merge pull request #135 from JGaspar-Eng/agent/json-loading-paint-before-restore"
+    "date": "2026-08-20T17:29:52-03:00",
+    "message": "fix(json): garante loading antes da restauração (#136)"
   },
   "commits": [
+    {
+      "sha": "39c33f3b48591aff3ef2dc9c32c752d132683d3d",
+      "short_sha": "39c33f3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T17:29:52-03:00",
+      "message": "fix(json): garante loading antes da restauração (#136)"
+    },
     {
       "sha": "196405ab315510e59995e7f9920ad0b69c9028ac",
       "short_sha": "196405a",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T12:58:17-03:00",
       "message": "feat(ui): integra loading visual ao fluxo JSON"
-    },
-    {
-      "sha": "dff3f90ff5877ab367ca167198e8c6d9970373ab",
-      "short_sha": "dff3f90",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T12:57:06-03:00",
-      "message": "feat(ui): adiciona loading polido ao carregamento JSON"
     }
   ],
   "development": {
@@ -566,7 +566,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32396650881",
-    "run_number": "95"
+    "run_id": "32414400721",
+    "run_number": "96"
   }
 }
