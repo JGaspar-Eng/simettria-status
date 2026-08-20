@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-20T16:34:29Z",
+  "generated_at": "2026-08-20T17:16:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3874cc14489fc24807555351c0de407d905b0e82",
-    "short_sha": "3874cc1",
+    "sha": "196405ab315510e59995e7f9920ad0b69c9028ac",
+    "short_sha": "196405a",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T13:34:21-03:00",
-    "message": "Merge pull request #134 from JGaspar-Eng/agent/json-load-guard-performance"
+    "date": "2026-08-20T14:15:53-03:00",
+    "message": "Merge pull request #135 from JGaspar-Eng/agent/json-loading-paint-before-restore"
   },
   "commits": [
+    {
+      "sha": "196405ab315510e59995e7f9920ad0b69c9028ac",
+      "short_sha": "196405a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T14:15:53-03:00",
+      "message": "Merge pull request #135 from JGaspar-Eng/agent/json-loading-paint-before-restore"
+    },
+    {
+      "sha": "1674fc1643782cd6be2ba6ac02889053af586f5d",
+      "short_sha": "1674fc1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:40:57-03:00",
+      "message": "test(json): protege pintura do loading antes da carga"
+    },
+    {
+      "sha": "aa7070cf79567b09e2f7045660013432b20e123b",
+      "short_sha": "aa7070c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:40:33-03:00",
+      "message": "fix(json): conecta gate de pintura ao runtime do wizard"
+    },
+    {
+      "sha": "5773b21c6f06ae37003e3e3964b1674d526ea724",
+      "short_sha": "5773b21",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T13:40:10-03:00",
+      "message": "fix(json): garante pintura do loading antes da restauração"
+    },
     {
       "sha": "3874cc14489fc24807555351c0de407d905b0e82",
       "short_sha": "3874cc1",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T12:57:06-03:00",
       "message": "feat(ui): adiciona loading polido ao carregamento JSON"
-    },
-    {
-      "sha": "83b1560fdd42ec1a999ab08cd09f688c84a2fd89",
-      "short_sha": "83b1560",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T09:08:03-03:00",
-      "message": "Merge pull request #132 from JGaspar-Eng/agent/json-legado-carregamento-escalavel"
-    },
-    {
-      "sha": "942b154e9fe644cb2f8d579023d483b4e1941cad",
-      "short_sha": "942b154",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T09:06:50-03:00",
-      "message": "test(int-review): valida detalhes sob demanda"
-    },
-    {
-      "sha": "7c3d13c4d26c7dbbf9c4e1063cc7337505da1781",
-      "short_sha": "7c3d13c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T09:02:41-03:00",
-      "message": "test(json): cobre legado e painel escalável"
-    },
-    {
-      "sha": "48b0c5340cc4db40e00b42c639f815f68594909f",
-      "short_sha": "48b0c53",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T09:02:03-03:00",
-      "message": "perf(calculation-graph): adia detalhes extensos"
     }
   ],
   "development": {
@@ -566,7 +566,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32392748316",
-    "run_number": "94"
+    "run_id": "32396650881",
+    "run_number": "95"
   }
 }
