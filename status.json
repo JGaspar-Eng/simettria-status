@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-20T23:51:15Z",
+  "generated_at": "2026-08-21T01:52:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ecf71144da778fb6859fce2fdd5af5d7013fc866",
-    "short_sha": "ecf7114",
+    "sha": "156184df5095744fd9156c71f5bf968d4dff4e3a",
+    "short_sha": "156184d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T20:51:06-03:00",
-    "message": "Merge pull request #139 from JGaspar-Eng/agent/dim-pilar-01-politica-normativa"
+    "date": "2026-08-20T22:52:12-03:00",
+    "message": "Merge pull request #140 from JGaspar-Eng/agent/dim-pilar-01-esbeltez-geometrica"
   },
   "commits": [
+    {
+      "sha": "156184df5095744fd9156c71f5bf968d4dff4e3a",
+      "short_sha": "156184d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T22:52:12-03:00",
+      "message": "Merge pull request #140 from JGaspar-Eng/agent/dim-pilar-01-esbeltez-geometrica"
+    },
+    {
+      "sha": "0da10326c0876514ec974c678e634923aab5f550",
+      "short_sha": "0da1032",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T22:51:04-03:00",
+      "message": "docs(dim-pilar): registra núcleo geométrico de esbeltez"
+    },
+    {
+      "sha": "eac9ff7fe4f056754864279ec8479a7a6c586903",
+      "short_sha": "eac9ff7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T22:49:45-03:00",
+      "message": "test(dim-pilar): inclui esbeltez geométrica no gate"
+    },
+    {
+      "sha": "5bacb185d05f5653dfff51f9788fbc9ef3d3072c",
+      "short_sha": "5bacb18",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T22:49:26-03:00",
+      "message": "test(dim-pilar): valida esbeltez geométrica pura"
+    },
+    {
+      "sha": "34a284e8c4bb14ce55706955d311bae9cba642ad",
+      "short_sha": "34a284e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T22:49:15-03:00",
+      "message": "feat(dim-pilar): adiciona núcleo geométrico de esbeltez"
+    },
     {
       "sha": "ecf71144da778fb6859fce2fdd5af5d7013fc866",
       "short_sha": "ecf7114",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T20:48:52-03:00",
       "message": "docs(normas): define política de versão normativa vigente"
-    },
-    {
-      "sha": "b5bdd101fa34cc6304b95d59e8829d39ed49e8b4",
-      "short_sha": "b5bdd10",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T18:57:30-03:00",
-      "message": "feat(dim-pilar): define contrato normativo versionado"
-    },
-    {
-      "sha": "785b52358ca52e0274d4cb32d732a1e34c965d4e",
-      "short_sha": "785b523",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T18:48:24-03:00",
-      "message": "docs(dim-pilar): conclui auditoria inicial do DIM-PILAR-01"
-    },
-    {
-      "sha": "39c33f3b48591aff3ef2dc9c32c752d132683d3d",
-      "short_sha": "39c33f3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T17:29:52-03:00",
-      "message": "fix(json): garante loading antes da restauração (#136)"
-    },
-    {
-      "sha": "196405ab315510e59995e7f9920ad0b69c9028ac",
-      "short_sha": "196405a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T14:15:53-03:00",
-      "message": "Merge pull request #135 from JGaspar-Eng/agent/json-loading-paint-before-restore"
-    },
-    {
-      "sha": "1674fc1643782cd6be2ba6ac02889053af586f5d",
-      "short_sha": "1674fc1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T13:40:57-03:00",
-      "message": "test(json): protege pintura do loading antes da carga"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 46,
+    "validator_count": 47,
     "validators": [
       {
         "name": "test:base",
@@ -429,6 +429,10 @@
       {
         "name": "test:dim-pilar-contrato",
         "command": "node tests/validar_contrato_normativo_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-esbeltez",
+        "command": "node tests/validar_esbeltez_geometrica_pilar_dim_pilar_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -570,7 +574,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32430343169",
-    "run_number": "99"
+    "run_id": "32437807015",
+    "run_number": "100"
   }
 }
