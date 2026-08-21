@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-21T02:14:31Z",
+  "generated_at": "2026-08-21T02:37:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c40a64527131ac63d5fd6b2a4211c5bc1d42904b",
-    "short_sha": "c40a645",
+    "sha": "c61627e6fbea2f00ab9092d6a7b45d2c2b55e00c",
+    "short_sha": "c61627e",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T23:14:23-03:00",
-    "message": "fix(vento): resolve envelope de projeto legado por vigas (#142)"
+    "date": "2026-08-20T23:37:46-03:00",
+    "message": "fix(vento): resolve planta nao retangular no fluxo W1 (#143)"
   },
   "commits": [
+    {
+      "sha": "c61627e6fbea2f00ab9092d6a7b45d2c2b55e00c",
+      "short_sha": "c61627e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T23:37:46-03:00",
+      "message": "fix(vento): resolve planta nao retangular no fluxo W1 (#143)"
+    },
     {
       "sha": "c40a64527131ac63d5fd6b2a4211c5bc1d42904b",
       "short_sha": "c40a645",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T20:49:53-03:00",
       "message": "test(dim-pilar): valida política normativa vigente"
-    },
-    {
-      "sha": "28e2a44e1da0246bdd50851da4aec6bc482643de",
-      "short_sha": "28e2a44",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T20:49:35-03:00",
-      "message": "refactor(dim-pilar): alinha contrato à política normativa"
     }
   ],
   "development": {
@@ -578,7 +578,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32439153217",
-    "run_number": "102"
+    "run_id": "32440518509",
+    "run_number": "103"
   }
 }
