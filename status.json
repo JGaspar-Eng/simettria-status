@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-21T02:04:44Z",
+  "generated_at": "2026-08-21T02:14:31Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7370657bd6b99a1ed816f8a82e01d3961966e808",
-    "short_sha": "7370657",
+    "sha": "c40a64527131ac63d5fd6b2a4211c5bc1d42904b",
+    "short_sha": "c40a645",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T23:04:34-03:00",
-    "message": "feat(vento): reconhece envelope não retangular (#141)"
+    "date": "2026-08-20T23:14:23-03:00",
+    "message": "fix(vento): resolve envelope de projeto legado por vigas (#142)"
   },
   "commits": [
+    {
+      "sha": "c40a64527131ac63d5fd6b2a4211c5bc1d42904b",
+      "short_sha": "c40a645",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T23:14:23-03:00",
+      "message": "fix(vento): resolve envelope de projeto legado por vigas (#142)"
+    },
     {
       "sha": "7370657bd6b99a1ed816f8a82e01d3961966e808",
       "short_sha": "7370657",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T20:49:35-03:00",
       "message": "refactor(dim-pilar): alinha contrato à política normativa"
-    },
-    {
-      "sha": "b984b9701e980c5f394680987b44bffb34052949",
-      "short_sha": "b984b97",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T20:49:05-03:00",
-      "message": "docs(dim-pilar): remove bloqueio indevido por licença"
     }
   ],
   "development": {
@@ -578,7 +578,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32438559818",
-    "run_number": "101"
+    "run_id": "32439153217",
+    "run_number": "102"
   }
 }
