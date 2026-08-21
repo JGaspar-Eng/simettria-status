@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-21T02:49:10Z",
+  "generated_at": "2026-08-21T03:08:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2c7193ebef4a50331a13748d8d1f29059724be00",
-    "short_sha": "2c7193e",
+    "sha": "ff71e5d73e3823cb2b5fcb90dcd6a2439ccddbae",
+    "short_sha": "ff71e5d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T23:49:02-03:00",
-    "message": "fix(sa-l1): resolve Ecs em projetos legados (#144)"
+    "date": "2026-08-21T00:08:28-03:00",
+    "message": "fix(perf): evita travamento ao carregar projeto grande"
   },
   "commits": [
+    {
+      "sha": "ff71e5d73e3823cb2b5fcb90dcd6a2439ccddbae",
+      "short_sha": "ff71e5d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-21T00:08:28-03:00",
+      "message": "fix(perf): evita travamento ao carregar projeto grande"
+    },
     {
       "sha": "2c7193ebef4a50331a13748d8d1f29059724be00",
       "short_sha": "2c7193e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T22:49:15-03:00",
       "message": "feat(dim-pilar): adiciona núcleo geométrico de esbeltez"
-    },
-    {
-      "sha": "ecf71144da778fb6859fce2fdd5af5d7013fc866",
-      "short_sha": "ecf7114",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T20:51:06-03:00",
-      "message": "Merge pull request #139 from JGaspar-Eng/agent/dim-pilar-01-politica-normativa"
     }
   ],
   "development": {
@@ -578,7 +578,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32441162483",
-    "run_number": "104"
+    "run_id": "32442316907",
+    "run_number": "105"
   }
 }
