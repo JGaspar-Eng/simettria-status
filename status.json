@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-21T03:08:37Z",
+  "generated_at": "2026-08-21T12:23:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ff71e5d73e3823cb2b5fcb90dcd6a2439ccddbae",
-    "short_sha": "ff71e5d",
+    "sha": "7381efde0bf2d18add23f5f17a4798074986b2e2",
+    "short_sha": "7381efd",
     "author": "Joanez Gaspar",
-    "date": "2026-08-21T00:08:28-03:00",
-    "message": "fix(perf): evita travamento ao carregar projeto grande"
+    "date": "2026-08-21T09:23:09-03:00",
+    "message": "fix(perf): mantém vento e Graph responsivos em modelo grande"
   },
   "commits": [
+    {
+      "sha": "7381efde0bf2d18add23f5f17a4798074986b2e2",
+      "short_sha": "7381efd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-21T09:23:09-03:00",
+      "message": "fix(perf): mantém vento e Graph responsivos em modelo grande"
+    },
     {
       "sha": "ff71e5d73e3823cb2b5fcb90dcd6a2439ccddbae",
       "short_sha": "ff71e5d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T22:49:26-03:00",
       "message": "test(dim-pilar): valida esbeltez geométrica pura"
-    },
-    {
-      "sha": "34a284e8c4bb14ce55706955d311bae9cba642ad",
-      "short_sha": "34a284e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T22:49:15-03:00",
-      "message": "feat(dim-pilar): adiciona núcleo geométrico de esbeltez"
     }
   ],
   "development": {
@@ -578,7 +578,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32442316907",
-    "run_number": "105"
+    "run_id": "32481637509",
+    "run_number": "106"
   }
 }
