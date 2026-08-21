@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-21T01:52:20Z",
+  "generated_at": "2026-08-21T02:04:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "156184df5095744fd9156c71f5bf968d4dff4e3a",
-    "short_sha": "156184d",
+    "sha": "7370657bd6b99a1ed816f8a82e01d3961966e808",
+    "short_sha": "7370657",
     "author": "Joanez Gaspar",
-    "date": "2026-08-20T22:52:12-03:00",
-    "message": "Merge pull request #140 from JGaspar-Eng/agent/dim-pilar-01-esbeltez-geometrica"
+    "date": "2026-08-20T23:04:34-03:00",
+    "message": "feat(vento): reconhece envelope não retangular (#141)"
   },
   "commits": [
+    {
+      "sha": "7370657bd6b99a1ed816f8a82e01d3961966e808",
+      "short_sha": "7370657",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-20T23:04:34-03:00",
+      "message": "feat(vento): reconhece envelope não retangular (#141)"
+    },
     {
       "sha": "156184df5095744fd9156c71f5bf968d4dff4e3a",
       "short_sha": "156184d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T20:49:05-03:00",
       "message": "docs(dim-pilar): remove bloqueio indevido por licença"
-    },
-    {
-      "sha": "2d9d3c68eddd06f67c8bd099090e6e7b0f32aa8c",
-      "short_sha": "2d9d3c6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T20:48:52-03:00",
-      "message": "docs(normas): define política de versão normativa vigente"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 47,
+    "validator_count": 48,
     "validators": [
       {
         "name": "test:base",
@@ -445,6 +445,10 @@
       {
         "name": "test:vento-envelope-vigas",
         "command": "node tests/validar_envelope_perimetro_vigas_w1.mjs"
+      },
+      {
+        "name": "test:vento-envelope-nao-retangular",
+        "command": "node tests/validar_envelope_geometria_nao_retangular_w1.mjs"
       },
       {
         "name": "test:vento-s2",
@@ -574,7 +578,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32437807015",
-    "run_number": "100"
+    "run_id": "32438559818",
+    "run_number": "101"
   }
 }
