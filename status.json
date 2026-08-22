@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-22T00:07:21Z",
+  "generated_at": "2026-08-22T01:13:39Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1ec5a88d30279fc9784b21d38a574c2795d3d1c8",
-    "short_sha": "1ec5a88",
+    "sha": "935a8d1de1deacfabca39897d1de3b6f93c05ea0",
+    "short_sha": "935a8d1",
     "author": "Joanez Gaspar",
-    "date": "2026-08-21T21:07:10-03:00",
-    "message": "fix(graph): exige perfil explícito e trata entradas ausentes (#150)"
+    "date": "2026-08-21T22:13:30-03:00",
+    "message": "fix(graph): impede verificações técnicas antes do paint (#151)"
   },
   "commits": [
+    {
+      "sha": "935a8d1de1deacfabca39897d1de3b6f93c05ea0",
+      "short_sha": "935a8d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-21T22:13:30-03:00",
+      "message": "fix(graph): impede verificações técnicas antes do paint (#151)"
+    },
     {
       "sha": "1ec5a88d30279fc9784b21d38a574c2795d3d1c8",
       "short_sha": "1ec5a88",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T23:14:23-03:00",
       "message": "fix(vento): resolve envelope de projeto legado por vigas (#142)"
-    },
-    {
-      "sha": "7370657bd6b99a1ed816f8a82e01d3961966e808",
-      "short_sha": "7370657",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T23:04:34-03:00",
-      "message": "feat(vento): reconhece envelope não retangular (#141)"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 50,
+    "validator_count": 52,
     "validators": [
       {
         "name": "test:base",
@@ -577,6 +577,14 @@
       {
         "name": "test:gate-perfil",
         "command": "node tests/validar_gate_perfil_predimensionamento.mjs"
+      },
+      {
+        "name": "test:disparo-verify",
+        "command": "node tests/validar_disparo_verificacoes_calculation_graph.mjs"
+      },
+      {
+        "name": "test:ciclo-verify",
+        "command": "node tests/validar_ciclo_verificacoes_calculation_graph.mjs"
       }
     ]
   },
@@ -586,7 +594,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32539274545",
-    "run_number": "114"
+    "run_id": "32542798867",
+    "run_number": "115"
   }
 }
