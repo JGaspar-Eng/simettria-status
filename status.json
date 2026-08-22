@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-21T22:36:38Z",
+  "generated_at": "2026-08-22T00:07:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cf38d575a65838b1f0e80a5026d5a4570607c26e",
-    "short_sha": "cf38d57",
+    "sha": "1ec5a88d30279fc9784b21d38a574c2795d3d1c8",
+    "short_sha": "1ec5a88",
     "author": "Joanez Gaspar",
-    "date": "2026-08-21T19:36:31-03:00",
-    "message": "fix(perf): reduz custo global do Calculation Graph"
+    "date": "2026-08-21T21:07:10-03:00",
+    "message": "fix(graph): exige perfil explícito e trata entradas ausentes (#150)"
   },
   "commits": [
+    {
+      "sha": "1ec5a88d30279fc9784b21d38a574c2795d3d1c8",
+      "short_sha": "1ec5a88",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-21T21:07:10-03:00",
+      "message": "fix(graph): exige perfil explícito e trata entradas ausentes (#150)"
+    },
     {
       "sha": "cf38d575a65838b1f0e80a5026d5a4570607c26e",
       "short_sha": "cf38d57",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T23:04:34-03:00",
       "message": "feat(vento): reconhece envelope não retangular (#141)"
-    },
-    {
-      "sha": "156184df5095744fd9156c71f5bf968d4dff4e3a",
-      "short_sha": "156184d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T22:52:12-03:00",
-      "message": "Merge pull request #140 from JGaspar-Eng/agent/dim-pilar-01-esbeltez-geometrica"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 49,
+    "validator_count": 50,
     "validators": [
       {
         "name": "test:base",
@@ -573,6 +573,10 @@
       {
         "name": "test:perf-graph",
         "command": "node tests/validar_desempenho_calculation_graph.mjs"
+      },
+      {
+        "name": "test:gate-perfil",
+        "command": "node tests/validar_gate_perfil_predimensionamento.mjs"
       }
     ]
   },
@@ -582,7 +586,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32533659728",
-    "run_number": "112"
+    "run_id": "32539273172",
+    "run_number": "113"
   }
 }
