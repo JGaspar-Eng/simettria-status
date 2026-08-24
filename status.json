@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-24T00:31:10Z",
+  "generated_at": "2026-08-24T16:47:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "473416706b6c1b8a3d136b40bb1227e130f113c5",
-    "short_sha": "4734167",
+    "sha": "c7cb5c49f169e0627bd03f748e6c32c9d47040a3",
+    "short_sha": "c7cb5c4",
     "author": "Joanez Gaspar",
-    "date": "2026-08-23T21:31:02-03:00",
-    "message": "perf(sa-l1): compacta grafo lateral e reutiliza solver (#152)"
+    "date": "2026-08-24T13:47:32-03:00",
+    "message": "feat(projeto): permite completar configuração do concreto"
   },
   "commits": [
+    {
+      "sha": "c7cb5c49f169e0627bd03f748e6c32c9d47040a3",
+      "short_sha": "c7cb5c4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-24T13:47:32-03:00",
+      "message": "feat(projeto): permite completar configuração do concreto"
+    },
     {
       "sha": "473416706b6c1b8a3d136b40bb1227e130f113c5",
       "short_sha": "4734167",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T23:49:02-03:00",
       "message": "fix(sa-l1): resolve Ecs em projetos legados (#144)"
-    },
-    {
-      "sha": "c61627e6fbea2f00ab9092d6a7b45d2c2b55e00c",
-      "short_sha": "c61627e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T23:37:46-03:00",
-      "message": "fix(vento): resolve planta nao retangular no fluxo W1 (#143)"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 55,
+    "validator_count": 56,
     "validators": [
       {
         "name": "test:base",
@@ -597,6 +597,10 @@
       {
         "name": "test:ciclo-verify",
         "command": "node tests/validar_ciclo_verificacoes_calculation_graph.mjs"
+      },
+      {
+        "name": "test:config-concreto",
+        "command": "node tests/validar_config_concreto_projeto.mjs"
       }
     ]
   },
@@ -606,7 +610,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32676925573",
-    "run_number": "116"
+    "run_id": "32752874528",
+    "run_number": "117"
   }
 }
