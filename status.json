@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-22T01:13:39Z",
+  "generated_at": "2026-08-24T00:31:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "935a8d1de1deacfabca39897d1de3b6f93c05ea0",
-    "short_sha": "935a8d1",
+    "sha": "473416706b6c1b8a3d136b40bb1227e130f113c5",
+    "short_sha": "4734167",
     "author": "Joanez Gaspar",
-    "date": "2026-08-21T22:13:30-03:00",
-    "message": "fix(graph): impede verificações técnicas antes do paint (#151)"
+    "date": "2026-08-23T21:31:02-03:00",
+    "message": "perf(sa-l1): compacta grafo lateral e reutiliza solver (#152)"
   },
   "commits": [
+    {
+      "sha": "473416706b6c1b8a3d136b40bb1227e130f113c5",
+      "short_sha": "4734167",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-23T21:31:02-03:00",
+      "message": "perf(sa-l1): compacta grafo lateral e reutiliza solver (#152)"
+    },
     {
       "sha": "935a8d1de1deacfabca39897d1de3b6f93c05ea0",
       "short_sha": "935a8d1",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-20T23:37:46-03:00",
       "message": "fix(vento): resolve planta nao retangular no fluxo W1 (#143)"
-    },
-    {
-      "sha": "c40a64527131ac63d5fd6b2a4211c5bc1d42904b",
-      "short_sha": "c40a645",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-20T23:14:23-03:00",
-      "message": "fix(vento): resolve envelope de projeto legado por vigas (#142)"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 52,
+    "validator_count": 55,
     "validators": [
       {
         "name": "test:base",
@@ -477,6 +477,18 @@
       {
         "name": "test:sa-l1-graph",
         "command": "node tests/validar_analise_lateral_calculation_graph_sa_l1.mjs"
+      },
+      {
+        "name": "test:sa-l1-graph-compacto",
+        "command": "node tests/validar_analise_lateral_graph_compacto_sa_l1.mjs"
+      },
+      {
+        "name": "test:sa-l1-graph-identidade",
+        "command": "node tests/validar_analise_lateral_graph_identidade_sa_l1.mjs"
+      },
+      {
+        "name": "test:sa-l1-graph-adulteracao",
+        "command": "node tests/validar_analise_lateral_graph_adulteracao_sa_l1.mjs"
       },
       {
         "name": "test:sa-l1-ui",
@@ -594,7 +606,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32542798867",
-    "run_number": "115"
+    "run_id": "32676925573",
+    "run_number": "116"
   }
 }
