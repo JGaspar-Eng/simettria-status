@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-24T17:31:52Z",
+  "generated_at": "2026-08-24T22:59:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a8782850acfcfdfc9666272df823e35d56d35c30",
-    "short_sha": "a878285",
+    "sha": "b38ada03ebee83ffa85a53c120198de8637a43fe",
+    "short_sha": "b38ada0",
     "author": "Joanez Gaspar",
-    "date": "2026-08-24T14:31:44-03:00",
-    "message": "docs(status): sincroniza checkpoint ativo do DIM-PILAR-01"
+    "date": "2026-08-24T19:59:15-03:00",
+    "message": "Merge pull request #155 from JGaspar-Eng/agent/opt-pilar-escalavel-modal"
   },
   "commits": [
+    {
+      "sha": "b38ada03ebee83ffa85a53c120198de8637a43fe",
+      "short_sha": "b38ada0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-24T19:59:15-03:00",
+      "message": "Merge pull request #155 from JGaspar-Eng/agent/opt-pilar-escalavel-modal"
+    },
+    {
+      "sha": "87e9d52c3fa654f9a2901edb192918c54c576c07",
+      "short_sha": "87e9d52",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-24T19:34:20-03:00",
+      "message": "docs(opt-pilar): corrige comentário que ainda citava custo estimado"
+    },
+    {
+      "sha": "020ebe607e17287cb71a6c55ab1b8e11bc21599a",
+      "short_sha": "020ebe6",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-24T19:19:56-03:00",
+      "message": "fix(opt-pilar): substitui estimativa numérica de duração por aviso qualitativo"
+    },
+    {
+      "sha": "bd909f049fe23d052a195d35b9cf712948af655b",
+      "short_sha": "bd909f0",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-24T14:52:16-03:00",
+      "message": "fix(opt-pilar): remove barreira de 12 pilares e executa OPT-PILAR-01 sob demanda"
+    },
     {
       "sha": "a8782850acfcfdfc9666272df823e35d56d35c30",
       "short_sha": "a878285",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-21T19:36:31-03:00",
       "message": "fix(perf): reduz custo global do Calculation Graph"
-    },
-    {
-      "sha": "3cced34363e81027d3a62de5e10a7271d8ee3090",
-      "short_sha": "3cced34",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T13:34:14-03:00",
-      "message": "fix(perf): mostra progresso real do Graph e reduz custo por lote (#148)"
-    },
-    {
-      "sha": "bf498ebb8ada55fddf5c2dc163cdfbc7d24e4aeb",
-      "short_sha": "bf498eb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T09:37:19-03:00",
-      "message": "fix(perf): carrega Calculation Graph progressivamente (#147)"
-    },
-    {
-      "sha": "7381efde0bf2d18add23f5f17a4798074986b2e2",
-      "short_sha": "7381efd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T09:23:09-03:00",
-      "message": "fix(perf): mantém vento e Graph responsivos em modelo grande"
-    },
-    {
-      "sha": "ff71e5d73e3823cb2b5fcb90dcd6a2439ccddbae",
-      "short_sha": "ff71e5d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T00:08:28-03:00",
-      "message": "fix(perf): evita travamento ao carregar projeto grande"
     }
   ],
   "development": {
@@ -610,7 +610,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32757148080",
-    "run_number": "118"
+    "run_id": "32787249771",
+    "run_number": "119"
   }
 }
