@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-25T17:08:10Z",
+  "generated_at": "2026-08-25T17:38:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "805510b969a677f8ce3254e04653008fb10cc739",
-    "short_sha": "805510b",
+    "sha": "9d948a8c69a5b178a4652903c9ccd72f7e4d906f",
+    "short_sha": "9d948a8",
     "author": "Joanez Gaspar",
-    "date": "2026-08-25T14:08:01-03:00",
-    "message": "Merge pull request #156 from JGaspar-Eng/agent/persistencia-config-projeto-json"
+    "date": "2026-08-25T14:38:01-03:00",
+    "message": "Merge pull request #157 from JGaspar-Eng/agent/project-wizard-preserva-perfil"
   },
   "commits": [
+    {
+      "sha": "9d948a8c69a5b178a4652903c9ccd72f7e4d906f",
+      "short_sha": "9d948a8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:38:01-03:00",
+      "message": "Merge pull request #157 from JGaspar-Eng/agent/project-wizard-preserva-perfil"
+    },
+    {
+      "sha": "3f321b39d505c3f854051321631f76ca376d02ec",
+      "short_sha": "3f321b3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:27:00-03:00",
+      "message": "test(wizard): cobre abertura manual em projeto legado"
+    },
+    {
+      "sha": "7a343b908be4b97dde9cc3efba76130d743047a9",
+      "short_sha": "7a343b9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:26:19-03:00",
+      "message": "fix(wizard): não fecha abertura manual em projeto legado"
+    },
+    {
+      "sha": "dc1796ae579b1fda5596da40f2fbc11f5702b328",
+      "short_sha": "dc1796a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:18:28-03:00",
+      "message": "chore(wizard): mantém diff restrito ao perfil"
+    },
+    {
+      "sha": "8052952405f939a42320a10a2534bd127b174d02",
+      "short_sha": "8052952",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:16:35-03:00",
+      "message": "test(wizard): integra preservação de perfil ao gate oficial"
+    },
+    {
+      "sha": "b2fbee7529dd3293ca5994aa7de371b32baa8d02",
+      "short_sha": "b2fbee7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:16:07-03:00",
+      "message": "test(wizard): cobre preservação do perfil existente"
+    },
+    {
+      "sha": "b9e90125b35ece8cbb36395b78f1cc2cef8fc9b1",
+      "short_sha": "b9e9012",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:15:21-03:00",
+      "message": "fix(wizard): informa projeto atual ao regenerar modelo"
+    },
+    {
+      "sha": "a31421932f5bcd20f114555d44d93a2cf0ed14a6",
+      "short_sha": "a314219",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T14:13:15-03:00",
+      "message": "fix(wizard): preserva perfil ao regenerar projeto"
+    },
     {
       "sha": "805510b969a677f8ce3254e04653008fb10cc739",
       "short_sha": "805510b",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-25T13:20:54-03:00",
       "message": "test(storage): exige fonte única em estado.projeto"
-    },
-    {
-      "sha": "d40a8b4da739b483b573a0c085e6d9e9a861a6d2",
-      "short_sha": "d40a8b4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T13:20:13-03:00",
-      "message": "refactor(storage): mantém estado.projeto como fonte única"
-    },
-    {
-      "sha": "461d3307e53dacea42da028244f5f1307a6634a2",
-      "short_sha": "461d330",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T09:00:34-03:00",
-      "message": "test(storage): cobre persistência explícita da configuração"
-    },
-    {
-      "sha": "365d8c536a751767f83519fb1e49c23997ec7fef",
-      "short_sha": "365d8c5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T08:58:24-03:00",
-      "message": "fix(storage): persiste configuração explícita do projeto"
-    },
-    {
-      "sha": "67dfa893b79e9c0e85c1725c705797fdd2f7dc1f",
-      "short_sha": "67dfa89",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T08:41:33-03:00",
-      "message": "fix(projeto): reconcilia materiais persistidos no modal"
-    },
-    {
-      "sha": "681b36ea18a3564dbcbd7099610fe2cdb8cb0f18",
-      "short_sha": "681b36e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T08:40:58-03:00",
-      "message": "fix(projeto): recupera perfil legado no carregamento"
-    },
-    {
-      "sha": "81dbb5748c58ad7c58c53a5f037803e386e0bb43",
-      "short_sha": "81dbb57",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-24T22:20:58-03:00",
-      "message": "fix(projeto): status distingue gravacao parcial e teste carrega por File real"
-    },
-    {
-      "sha": "706bc40a364404680d90e19c183b45112d538c7e",
-      "short_sha": "706bc40",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-24T22:15:27-03:00",
-      "message": "fix(projeto): grava configuracao de concreto informada mesmo com pendencia"
-    },
-    {
-      "sha": "aa390415ee6bc46fe472a6212f170c7bd3a16c2a",
-      "short_sha": "aa39041",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-24T20:52:45-03:00",
-      "message": "fix(projeto): torna inequivoco o arquivo de projeto salvo e carregado"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 58,
+    "validator_count": 59,
     "validators": [
       {
         "name": "test:base",
@@ -579,6 +579,10 @@
         "command": "node tests/validar_wizard_carregar_json.mjs"
       },
       {
+        "name": "test:wizard-preserva-perfil",
+        "command": "node tests/validar_wizard_preserva_perfil.mjs"
+      },
+      {
         "name": "test:status-dashboard",
         "command": "python tests/validar_status_dashboard.py"
       },
@@ -618,7 +622,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32876080843",
-    "run_number": "120"
+    "run_id": "32879032283",
+    "run_number": "121"
   }
 }
