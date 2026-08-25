@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-25T17:38:15Z",
+  "generated_at": "2026-08-25T23:09:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "9d948a8c69a5b178a4652903c9ccd72f7e4d906f",
-    "short_sha": "9d948a8",
+    "sha": "f4b438f8f9d5c2d3ccca0087f8d700c7cb6c0f39",
+    "short_sha": "f4b438f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-25T14:38:01-03:00",
-    "message": "Merge pull request #157 from JGaspar-Eng/agent/project-wizard-preserva-perfil"
+    "date": "2026-08-25T20:09:29-03:00",
+    "message": "Merge pull request #158 from JGaspar-Eng/agent/dim-pilar-segunda-ordem-local"
   },
   "commits": [
+    {
+      "sha": "f4b438f8f9d5c2d3ccca0087f8d700c7cb6c0f39",
+      "short_sha": "f4b438f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:09:29-03:00",
+      "message": "Merge pull request #158 from JGaspar-Eng/agent/dim-pilar-segunda-ordem-local"
+    },
+    {
+      "sha": "97371dbe56093dbd92e7d7f80ff1c4fddb4ce15a",
+      "short_sha": "97371db",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T19:58:41-03:00",
+      "message": "test(pilar): integra segunda ordem local ao gate"
+    },
+    {
+      "sha": "38b8c25d89216c9d0729f0eaa69073334e797a9b",
+      "short_sha": "38b8c25",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T19:58:17-03:00",
+      "message": "test(pilar): cobre decisão de segunda ordem local"
+    },
+    {
+      "sha": "acbbc896e745abbe046cf6014a2d291423f7273e",
+      "short_sha": "acbbc89",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T19:58:02-03:00",
+      "message": "feat(pilar): adiciona decisão rastreável de segunda ordem local"
+    },
     {
       "sha": "9d948a8c69a5b178a4652903c9ccd72f7e4d906f",
       "short_sha": "9d948a8",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-25T14:16:07-03:00",
       "message": "test(wizard): cobre preservação do perfil existente"
-    },
-    {
-      "sha": "b9e90125b35ece8cbb36395b78f1cc2cef8fc9b1",
-      "short_sha": "b9e9012",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:15:21-03:00",
-      "message": "fix(wizard): informa projeto atual ao regenerar modelo"
-    },
-    {
-      "sha": "a31421932f5bcd20f114555d44d93a2cf0ed14a6",
-      "short_sha": "a314219",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:13:15-03:00",
-      "message": "fix(wizard): preserva perfil ao regenerar projeto"
-    },
-    {
-      "sha": "805510b969a677f8ce3254e04653008fb10cc739",
-      "short_sha": "805510b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:08:01-03:00",
-      "message": "Merge pull request #156 from JGaspar-Eng/agent/persistencia-config-projeto-json"
-    },
-    {
-      "sha": "5f3264f7a02c33ab713d1e5591b126cd4e9341d2",
-      "short_sha": "5f3264f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T13:20:54-03:00",
-      "message": "test(storage): exige fonte única em estado.projeto"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 59,
+    "validator_count": 60,
     "validators": [
       {
         "name": "test:base",
@@ -433,6 +433,10 @@
       {
         "name": "test:dim-pilar-esbeltez",
         "command": "node tests/validar_esbeltez_geometrica_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-segunda-ordem",
+        "command": "node tests/validar_segunda_ordem_local_pilar_dim_pilar_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -622,7 +626,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32879032283",
-    "run_number": "121"
+    "run_id": "32909494188",
+    "run_number": "122"
   }
 }
