@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-08-24T22:59:25Z",
+  "generated_at": "2026-08-25T17:08:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b38ada03ebee83ffa85a53c120198de8637a43fe",
-    "short_sha": "b38ada0",
+    "sha": "805510b969a677f8ce3254e04653008fb10cc739",
+    "short_sha": "805510b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-24T19:59:15-03:00",
-    "message": "Merge pull request #155 from JGaspar-Eng/agent/opt-pilar-escalavel-modal"
+    "date": "2026-08-25T14:08:01-03:00",
+    "message": "Merge pull request #156 from JGaspar-Eng/agent/persistencia-config-projeto-json"
   },
   "commits": [
     {
-      "sha": "b38ada03ebee83ffa85a53c120198de8637a43fe",
-      "short_sha": "b38ada0",
+      "sha": "805510b969a677f8ce3254e04653008fb10cc739",
+      "short_sha": "805510b",
       "author": "Joanez Gaspar",
-      "date": "2026-08-24T19:59:15-03:00",
-      "message": "Merge pull request #155 from JGaspar-Eng/agent/opt-pilar-escalavel-modal"
+      "date": "2026-08-25T14:08:01-03:00",
+      "message": "Merge pull request #156 from JGaspar-Eng/agent/persistencia-config-projeto-json"
     },
     {
-      "sha": "87e9d52c3fa654f9a2901edb192918c54c576c07",
-      "short_sha": "87e9d52",
+      "sha": "5f3264f7a02c33ab713d1e5591b126cd4e9341d2",
+      "short_sha": "5f3264f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T13:20:54-03:00",
+      "message": "test(storage): exige fonte única em estado.projeto"
+    },
+    {
+      "sha": "d40a8b4da739b483b573a0c085e6d9e9a861a6d2",
+      "short_sha": "d40a8b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T13:20:13-03:00",
+      "message": "refactor(storage): mantém estado.projeto como fonte única"
+    },
+    {
+      "sha": "461d3307e53dacea42da028244f5f1307a6634a2",
+      "short_sha": "461d330",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T09:00:34-03:00",
+      "message": "test(storage): cobre persistência explícita da configuração"
+    },
+    {
+      "sha": "365d8c536a751767f83519fb1e49c23997ec7fef",
+      "short_sha": "365d8c5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T08:58:24-03:00",
+      "message": "fix(storage): persiste configuração explícita do projeto"
+    },
+    {
+      "sha": "67dfa893b79e9c0e85c1725c705797fdd2f7dc1f",
+      "short_sha": "67dfa89",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T08:41:33-03:00",
+      "message": "fix(projeto): reconcilia materiais persistidos no modal"
+    },
+    {
+      "sha": "681b36ea18a3564dbcbd7099610fe2cdb8cb0f18",
+      "short_sha": "681b36e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T08:40:58-03:00",
+      "message": "fix(projeto): recupera perfil legado no carregamento"
+    },
+    {
+      "sha": "81dbb5748c58ad7c58c53a5f037803e386e0bb43",
+      "short_sha": "81dbb57",
       "author": "JGaspar-Eng",
-      "date": "2026-08-24T19:34:20-03:00",
-      "message": "docs(opt-pilar): corrige comentário que ainda citava custo estimado"
+      "date": "2026-08-24T22:20:58-03:00",
+      "message": "fix(projeto): status distingue gravacao parcial e teste carrega por File real"
     },
     {
-      "sha": "020ebe607e17287cb71a6c55ab1b8e11bc21599a",
-      "short_sha": "020ebe6",
+      "sha": "706bc40a364404680d90e19c183b45112d538c7e",
+      "short_sha": "706bc40",
       "author": "JGaspar-Eng",
-      "date": "2026-08-24T19:19:56-03:00",
-      "message": "fix(opt-pilar): substitui estimativa numérica de duração por aviso qualitativo"
+      "date": "2026-08-24T22:15:27-03:00",
+      "message": "fix(projeto): grava configuracao de concreto informada mesmo com pendencia"
     },
     {
-      "sha": "bd909f049fe23d052a195d35b9cf712948af655b",
-      "short_sha": "bd909f0",
+      "sha": "aa390415ee6bc46fe472a6212f170c7bd3a16c2a",
+      "short_sha": "aa39041",
       "author": "JGaspar-Eng",
-      "date": "2026-08-24T14:52:16-03:00",
-      "message": "fix(opt-pilar): remove barreira de 12 pilares e executa OPT-PILAR-01 sob demanda"
-    },
-    {
-      "sha": "a8782850acfcfdfc9666272df823e35d56d35c30",
-      "short_sha": "a878285",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-24T14:31:44-03:00",
-      "message": "docs(status): sincroniza checkpoint ativo do DIM-PILAR-01"
-    },
-    {
-      "sha": "c7cb5c49f169e0627bd03f748e6c32c9d47040a3",
-      "short_sha": "c7cb5c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-24T13:47:32-03:00",
-      "message": "feat(projeto): permite completar configuração do concreto"
-    },
-    {
-      "sha": "473416706b6c1b8a3d136b40bb1227e130f113c5",
-      "short_sha": "4734167",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-23T21:31:02-03:00",
-      "message": "perf(sa-l1): compacta grafo lateral e reutiliza solver (#152)"
-    },
-    {
-      "sha": "935a8d1de1deacfabca39897d1de3b6f93c05ea0",
-      "short_sha": "935a8d1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T22:13:30-03:00",
-      "message": "fix(graph): impede verificações técnicas antes do paint (#151)"
-    },
-    {
-      "sha": "1ec5a88d30279fc9784b21d38a574c2795d3d1c8",
-      "short_sha": "1ec5a88",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T21:07:10-03:00",
-      "message": "fix(graph): exige perfil explícito e trata entradas ausentes (#150)"
-    },
-    {
-      "sha": "cf38d575a65838b1f0e80a5026d5a4570607c26e",
-      "short_sha": "cf38d57",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-21T19:36:31-03:00",
-      "message": "fix(perf): reduz custo global do Calculation Graph"
+      "date": "2026-08-24T20:52:45-03:00",
+      "message": "fix(projeto): torna inequivoco o arquivo de projeto salvo e carregado"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 56,
+    "validator_count": 58,
     "validators": [
       {
         "name": "test:base",
@@ -601,6 +601,14 @@
       {
         "name": "test:config-concreto",
         "command": "node tests/validar_config_concreto_projeto.mjs"
+      },
+      {
+        "name": "test:persistencia-config",
+        "command": "node tests/validar_persistencia_config_projeto.mjs"
+      },
+      {
+        "name": "test:fluxo-json-ui",
+        "command": "node tests/validar_fluxo_json_ui.mjs"
       }
     ]
   },
@@ -610,7 +618,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32787249771",
-    "run_number": "119"
+    "run_id": "32876080843",
+    "run_number": "120"
   }
 }
