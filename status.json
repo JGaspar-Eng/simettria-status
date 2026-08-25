@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-25T23:09:37Z",
+  "generated_at": "2026-08-25T23:15:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f4b438f8f9d5c2d3ccca0087f8d700c7cb6c0f39",
-    "short_sha": "f4b438f",
+    "sha": "cc1b5944f2ebd1a68624b4cdffb34e5d4ea7255f",
+    "short_sha": "cc1b594",
     "author": "Joanez Gaspar",
-    "date": "2026-08-25T20:09:29-03:00",
-    "message": "Merge pull request #158 from JGaspar-Eng/agent/dim-pilar-segunda-ordem-local"
+    "date": "2026-08-25T20:15:37-03:00",
+    "message": "Merge pull request #159 from JGaspar-Eng/agent/dim-pilar-limite-esbeltez"
   },
   "commits": [
+    {
+      "sha": "cc1b5944f2ebd1a68624b4cdffb34e5d4ea7255f",
+      "short_sha": "cc1b594",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:15:37-03:00",
+      "message": "Merge pull request #159 from JGaspar-Eng/agent/dim-pilar-limite-esbeltez"
+    },
+    {
+      "sha": "99daf34489b74a236b9d8d93dbd6b1a2af3d0eec",
+      "short_sha": "99daf34",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:13:18-03:00",
+      "message": "chore(pilar): concentra cobertura no teste existente"
+    },
+    {
+      "sha": "df0ad34526c7cda8e86122ff763b73d3ccced74b",
+      "short_sha": "df0ad34",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:12:42-03:00",
+      "message": "test(pilar): integra limite de esbeltez ao gate existente"
+    },
+    {
+      "sha": "a5aa8c7157eb6aeb4e9b5b00ed221dec9629b792",
+      "short_sha": "a5aa8c7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:12:06-03:00",
+      "message": "test(pilar): exige segunda ordem no ponto limite"
+    },
+    {
+      "sha": "cd47da9f2043cc9433af74ddcb3cb58f18a5ebeb",
+      "short_sha": "cd47da9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:11:52-03:00",
+      "message": "fix(pilar): trata igualdade no limite de esbeltez"
+    },
+    {
+      "sha": "dff8341573c5a78e772710eb2de940a8aec9d26d",
+      "short_sha": "dff8341",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:11:31-03:00",
+      "message": "test(pilar): cobre limite normativo de esbeltez"
+    },
+    {
+      "sha": "e6ecff969d077848eca4f470b1326c602b240650",
+      "short_sha": "e6ecff9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T20:11:15-03:00",
+      "message": "feat(pilar): calcula limite normativo de esbeltez"
+    },
     {
       "sha": "f4b438f8f9d5c2d3ccca0087f8d700c7cb6c0f39",
       "short_sha": "f4b438f",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-25T19:58:17-03:00",
       "message": "test(pilar): cobre decisão de segunda ordem local"
-    },
-    {
-      "sha": "acbbc896e745abbe046cf6014a2d291423f7273e",
-      "short_sha": "acbbc89",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T19:58:02-03:00",
-      "message": "feat(pilar): adiciona decisão rastreável de segunda ordem local"
-    },
-    {
-      "sha": "9d948a8c69a5b178a4652903c9ccd72f7e4d906f",
-      "short_sha": "9d948a8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:38:01-03:00",
-      "message": "Merge pull request #157 from JGaspar-Eng/agent/project-wizard-preserva-perfil"
-    },
-    {
-      "sha": "3f321b39d505c3f854051321631f76ca376d02ec",
-      "short_sha": "3f321b3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:27:00-03:00",
-      "message": "test(wizard): cobre abertura manual em projeto legado"
-    },
-    {
-      "sha": "7a343b908be4b97dde9cc3efba76130d743047a9",
-      "short_sha": "7a343b9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:26:19-03:00",
-      "message": "fix(wizard): não fecha abertura manual em projeto legado"
-    },
-    {
-      "sha": "dc1796ae579b1fda5596da40f2fbc11f5702b328",
-      "short_sha": "dc1796a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:18:28-03:00",
-      "message": "chore(wizard): mantém diff restrito ao perfil"
-    },
-    {
-      "sha": "8052952405f939a42320a10a2534bd127b174d02",
-      "short_sha": "8052952",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:16:35-03:00",
-      "message": "test(wizard): integra preservação de perfil ao gate oficial"
-    },
-    {
-      "sha": "b2fbee7529dd3293ca5994aa7de371b32baa8d02",
-      "short_sha": "b2fbee7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T14:16:07-03:00",
-      "message": "test(wizard): cobre preservação do perfil existente"
     }
   ],
   "development": {
@@ -626,7 +626,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32909494188",
-    "run_number": "122"
+    "run_id": "32909963994",
+    "run_number": "123"
   }
 }
