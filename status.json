@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-08-26T03:44:18Z",
+  "generated_at": "2026-08-26T03:58:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6d790ee06fff705a6944ae29b02c44580b26732c",
-    "short_sha": "6d790ee",
+    "sha": "f4093f37bcfee39c75e5b6487252629c58e545a4",
+    "short_sha": "f4093f3",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T00:44:11-03:00",
-    "message": "Merge pull request #166 from JGaspar-Eng/feat/dim-pilar-01-elu-vento"
+    "date": "2026-08-26T00:58:21-03:00",
+    "message": "Merge pull request #167 from JGaspar-Eng/feat/dim-pilar-01-peso-proprio"
   },
   "commits": [
+    {
+      "sha": "f4093f37bcfee39c75e5b6487252629c58e545a4",
+      "short_sha": "f4093f3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:58:21-03:00",
+      "message": "Merge pull request #167 from JGaspar-Eng/feat/dim-pilar-01-peso-proprio"
+    },
+    {
+      "sha": "9f61f76181e252ec215d1a26a730e049b448c5f2",
+      "short_sha": "9f61f76",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:56:56-03:00",
+      "message": "chore: remove arquivo temporario"
+    },
+    {
+      "sha": "7eb8c87fe0604271cf24749d614ca151df9b5350",
+      "short_sha": "7eb8c87",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:56:49-03:00",
+      "message": "temp"
+    },
+    {
+      "sha": "77f05dc51735c0ebfda6fcfa33492d2be7e7600f",
+      "short_sha": "77f05dc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:56:42-03:00",
+      "message": "chore: remove arquivo temporario"
+    },
+    {
+      "sha": "f52904f8946af5eb199e9b2030aa5f5b513444df",
+      "short_sha": "f52904f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:56:34-03:00",
+      "message": "noop"
+    },
+    {
+      "sha": "969fb0f34e7b8ba56634116b05ababfbbfb9133e",
+      "short_sha": "969fb0f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:56:21-03:00",
+      "message": "test(pilar): valida peso próprio no ELU com vento"
+    },
+    {
+      "sha": "b7d6493bd633acf664d186511ea3a6ee8d49b6c5",
+      "short_sha": "b7d6493",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:55:51-03:00",
+      "message": "feat(pilar): inclui peso próprio nas combinações ELU"
+    },
+    {
+      "sha": "26c413447541c07231a1e4dd08c48c121c4309ce",
+      "short_sha": "26c4134",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:55:26-03:00",
+      "message": "feat(pilar): calcula peso próprio por trecho"
+    },
+    {
+      "sha": "d722b7880c376e762c9bf94f582ec47678b4942b",
+      "short_sha": "d722b78",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:55:12-03:00",
+      "message": "feat(pilar): centraliza peso específico do concreto armado"
+    },
     {
       "sha": "6d790ee06fff705a6944ae29b02c44580b26732c",
       "short_sha": "6d790ee",
       "author": "Joanez Gaspar",
       "date": "2026-08-26T00:44:11-03:00",
       "message": "Merge pull request #166 from JGaspar-Eng/feat/dim-pilar-01-elu-vento"
-    },
-    {
-      "sha": "fb730d80a84a37ef4b91f5ab5ef80727f56b613d",
-      "short_sha": "fb730d8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:42:48-03:00",
-      "message": "test(pilar): inclui ELU vento no gate de momentos"
-    },
-    {
-      "sha": "4b75dc73839badf0ad002151765bb3b752aef313",
-      "short_sha": "4b75dc7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:42:24-03:00",
-      "message": "test(pilar): valida ELU uso e vento por trecho"
-    },
-    {
-      "sha": "867c7f97f3259f6cfbd1c4a604336f07c4d7dc86",
-      "short_sha": "867c7f9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:42:04-03:00",
-      "message": "feat(pilar): combina Gk Qk e vento por trecho"
-    },
-    {
-      "sha": "3b694f09ab4a573d01d13e776d0b963dbd19e99f",
-      "short_sha": "3b694f0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:41:36-03:00",
-      "message": "feat(pilar): adiciona combinação ELU uso e vento"
-    },
-    {
-      "sha": "4bf3905b9153948396ada32a9aaeedbbc0501120",
-      "short_sha": "4bf3905",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:37:30-03:00",
-      "message": "Merge pull request #165 from JGaspar-Eng/feat/dim-pilar-01-cargas-caracteristicas"
-    },
-    {
-      "sha": "b51d6e6361c9221840b91a5a6ee970df60c2bbce",
-      "short_sha": "b51d6e6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:36:02-03:00",
-      "message": "test(pilar): inclui reacoes caracteristicas no gate DIM-PILAR"
-    },
-    {
-      "sha": "32b5980ae15320a1aac1d4b5e027e6352dac446a",
-      "short_sha": "32b5980",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:35:40-03:00",
-      "message": "test(pilar): valida separacao de Gk e Qk nas reacoes"
-    },
-    {
-      "sha": "5c1621ffb7b4a5a72366c9f00d79c63d58a3283a",
-      "short_sha": "5c1621f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:34:58-03:00",
-      "message": "feat(pilar): separa reacoes caracteristicas Gk e Qk"
-    },
-    {
-      "sha": "ae81ac4c98f6e9d589785b81c9ad358c007d8a80",
-      "short_sha": "ae81ac4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:19:49-03:00",
-      "message": "Merge pull request #164 from JGaspar-Eng/feat/dim-pilar-01-momentos-sa-l1"
     }
   ],
   "development": {
@@ -634,7 +634,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32927569309",
-    "run_number": "130"
+    "run_id": "32928438326",
+    "run_number": "131"
   }
 }
