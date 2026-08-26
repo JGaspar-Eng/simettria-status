@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-26T23:15:56Z",
+  "generated_at": "2026-08-26T23:47:21Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "664cc84d80e71e6a80d8daa3466950f9848782cb",
-    "short_sha": "664cc84",
+    "sha": "3575113a4b9e0989743218ef51096e194bc103b3",
+    "short_sha": "3575113",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T20:15:43-03:00",
-    "message": "Merge pull request #181 from JGaspar-Eng/feat/dim-pilar-01-objetivo5-regressao-v3"
+    "date": "2026-08-26T20:47:10-03:00",
+    "message": "Merge pull request #183 from JGaspar-Eng/docs/dim-pilar-01-fechamento-objetivo5"
   },
   "commits": [
+    {
+      "sha": "3575113a4b9e0989743218ef51096e194bc103b3",
+      "short_sha": "3575113",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T20:47:10-03:00",
+      "message": "Merge pull request #183 from JGaspar-Eng/docs/dim-pilar-01-fechamento-objetivo5"
+    },
+    {
+      "sha": "1e428d35523ce4505da69120ce8404ff716563bc",
+      "short_sha": "1e428d3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T20:44:04-03:00",
+      "message": "test(status): fecha progresso do DIM-PILAR-01 em 100%"
+    },
+    {
+      "sha": "adbb03dc72394887ccad8d33b4a32ed0c1121350",
+      "short_sha": "adbb03d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T20:43:36-03:00",
+      "message": "docs(pilar): fecha objetivo 5 do DIM-PILAR-01"
+    },
     {
       "sha": "664cc84d80e71e6a80d8daa3466950f9848782cb",
       "short_sha": "664cc84",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T19:43:01-03:00",
       "message": "docs(pilar): registra escopo da regressão final"
-    },
-    {
-      "sha": "0f38805960d2e639432823e19a1f493ec032b078",
-      "short_sha": "0f38805",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T19:41:51-03:00",
-      "message": "test(pilar): inclui regressão ampliada no gate oficial"
-    },
-    {
-      "sha": "26cbacb71d5a754956f95015b16dba6b9ad9a69d",
-      "short_sha": "26cbacb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T19:41:14-03:00",
-      "message": "test(pilar): amplia regressão de engenharia do DIM-PILAR-01"
-    },
-    {
-      "sha": "df7f9d8b4068c267b104ccb01b67610bfe1f2d61",
-      "short_sha": "df7f9d8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T19:40:16-03:00",
-      "message": "feat(pilar): deriva MA e MB rastreáveis de caso ELU"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 4,
-        "in_progress": 1,
+        "done": 5,
+        "in_progress": 0,
         "pending": 0,
-        "percent": 80,
+        "percent": 100,
         "items": [
           {
             "text": "auditar as cargas, esforços, propriedades geométricas, materiais e vínculos de pilar realmente disponíveis no modelo atual, identificando lacunas antes de qualquer fórmula normativa",
@@ -126,8 +126,8 @@
           },
           {
             "text": "concluir regressão ampliada, casos de engenharia verificáveis e auditoria visual real antes do encerramento do bloco.",
-            "state": "in_progress",
-            "marker": "🟡"
+            "state": "done",
+            "marker": "✅"
           }
         ]
       }
@@ -447,9 +447,9 @@
         "status": "measured",
         "active": true,
         "work": {
-          "done": 0,
+          "done": 1,
           "partial": 1,
-          "active_now": 1,
+          "active_now": 0,
           "planned": 5,
           "out_of_scope": 0,
           "in_progress": 1,
@@ -464,7 +464,7 @@
             {
               "text": "Concreto armado (NBR 6118)",
               "raw_text": "Concreto armado (NBR 6118) — não iniciado",
-              "state": "active_now",
+              "state": "done",
               "marker": "⬜"
             },
             {
@@ -1282,7 +1282,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33022653416",
-    "run_number": "141"
+    "run_id": "33024579943",
+    "run_number": "142"
   }
 }
