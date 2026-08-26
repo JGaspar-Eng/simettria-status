@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-26T00:26:49Z",
+  "generated_at": "2026-08-26T01:19:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "151795742b489b4cecc4a425aa800b1746beee0d",
-    "short_sha": "1517957",
+    "sha": "839f5e9e4fb75853bdac129c911d4f24948bd975",
+    "short_sha": "839f5e9",
     "author": "Joanez Gaspar",
-    "date": "2026-08-25T21:26:41-03:00",
-    "message": "Merge pull request #161 from JGaspar-Eng/agent/dim-pilar-pipeline-segunda-ordem"
+    "date": "2026-08-25T22:19:46-03:00",
+    "message": "Merge pull request #162 from JGaspar-Eng/feat/dim-pilar-01-ned-parcial-reacoes-elu"
   },
   "commits": [
+    {
+      "sha": "839f5e9e4fb75853bdac129c911d4f24948bd975",
+      "short_sha": "839f5e9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T22:19:46-03:00",
+      "message": "Merge pull request #162 from JGaspar-Eng/feat/dim-pilar-01-ned-parcial-reacoes-elu"
+    },
+    {
+      "sha": "c2deb7e0fd6f8e7b3218df2133535c2ce9684ba5",
+      "short_sha": "c2deb7e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T22:18:42-03:00",
+      "message": "test(pilar): corrige caso de categoria ausente"
+    },
+    {
+      "sha": "09d7b8347a4198c802f3c3759f998d0f9416fbd6",
+      "short_sha": "09d7b83",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T22:17:39-03:00",
+      "message": "test(pilar): inclui NEd parcial no test all"
+    },
+    {
+      "sha": "fe49dbb0ee78d786f7d02498a0726b6cdb7d8d17",
+      "short_sha": "fe49dbb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T22:17:17-03:00",
+      "message": "test(pilar): valida parcela ELU de NEd por reacoes de vigas"
+    },
+    {
+      "sha": "a96d329720b399051a8b630b54cdb5614b9f1275",
+      "short_sha": "a96d329",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T22:16:52-03:00",
+      "message": "feat(pilar): deriva parcela ELU de NEd por reacoes de vigas"
+    },
     {
       "sha": "151795742b489b4cecc4a425aa800b1746beee0d",
       "short_sha": "1517957",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-25T21:22:47-03:00",
       "message": "Merge pull request #160 from JGaspar-Eng/agent/dim-pilar-parametros-lambda1"
-    },
-    {
-      "sha": "49bc809268ff65913706775027f4c8fbfb2606f1",
-      "short_sha": "49bc809",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T21:20:25-03:00",
-      "message": "test(pilar): integra parâmetros lambda1 ao gate existente"
-    },
-    {
-      "sha": "c1a6918a4a531ee562dd0388b07de98b8d4b816b",
-      "short_sha": "c1a6918",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T21:19:54-03:00",
-      "message": "test(pilar): cobre parâmetros normativos de lambda1"
-    },
-    {
-      "sha": "380e652f0254a40a5f3c822004d72c8197c130d9",
-      "short_sha": "380e652",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T21:19:36-03:00",
-      "message": "feat(pilar): deriva parâmetros rastreáveis de lambda1"
-    },
-    {
-      "sha": "cc1b5944f2ebd1a68624b4cdffb34e5d4ea7255f",
-      "short_sha": "cc1b594",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:15:37-03:00",
-      "message": "Merge pull request #159 from JGaspar-Eng/agent/dim-pilar-limite-esbeltez"
-    },
-    {
-      "sha": "99daf34489b74a236b9d8d93dbd6b1a2af3d0eec",
-      "short_sha": "99daf34",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:13:18-03:00",
-      "message": "chore(pilar): concentra cobertura no teste existente"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 60,
+    "validator_count": 61,
     "validators": [
       {
         "name": "test:base",
@@ -437,6 +437,10 @@
       {
         "name": "test:dim-pilar-segunda-ordem",
         "command": "node tests/validar_segunda_ordem_local_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-ned-parcial",
+        "command": "node tests/validar_ned_parcial_reacoes_vigas_elu_dim_pilar_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -626,7 +630,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32915111813",
-    "run_number": "125"
+    "run_id": "32918561600",
+    "run_number": "126"
   }
 }
