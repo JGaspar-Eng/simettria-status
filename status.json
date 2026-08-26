@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-08-26T11:11:22Z",
+  "generated_at": "2026-08-26T11:50:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c01cf818d17676fceadcf6b095cc1dd6908c9f63",
-    "short_sha": "c01cf81",
+    "sha": "14d7cb7607f3b7ee1cfd968a1f7e40014777a676",
+    "short_sha": "14d7cb7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T08:11:13-03:00",
-    "message": "Merge pull request #170 from JGaspar-Eng/docs/registrar-ideias-futuras"
+    "date": "2026-08-26T08:50:03-03:00",
+    "message": "Merge pull request #171 from JGaspar-Eng/feat/dim-pilar-01-graph-memorial"
   },
   "commits": [
+    {
+      "sha": "14d7cb7607f3b7ee1cfd968a1f7e40014777a676",
+      "short_sha": "14d7cb7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:50:03-03:00",
+      "message": "Merge pull request #171 from JGaspar-Eng/feat/dim-pilar-01-graph-memorial"
+    },
+    {
+      "sha": "7d7a97aa0f55c449b4fab115d3c5a73aadf2296c",
+      "short_sha": "7d7a97a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:47:56-03:00",
+      "message": "test(pilar): inclui integração Graph no gate do memorial"
+    },
+    {
+      "sha": "863d68179739690f91cb09e09fbab7e23f68b5ad",
+      "short_sha": "863d681",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:47:06-03:00",
+      "message": "test(pilar): valida esforços no Graph e memorial"
+    },
+    {
+      "sha": "bca190bbae91b6263254a4950c141da3cd587415",
+      "short_sha": "bca190b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:46:31-03:00",
+      "message": "fix(pilar): remove substituição não resolvida dos momentos"
+    },
+    {
+      "sha": "5c46bf3e1e9420e8a1ade811f9ecf72f42b2a533",
+      "short_sha": "5c46bf3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:44:52-03:00",
+      "message": "feat(pilar): exibe esforços ELU rastreáveis no memorial"
+    },
+    {
+      "sha": "aea26a6de0c5ce0726c18027fc2a09380437201c",
+      "short_sha": "aea26a6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:43:54-03:00",
+      "message": "feat(pilar): inclui esforços resolvidos no MemorialDocument"
+    },
+    {
+      "sha": "3b890768b2eb5326269a31d455e3790bab70b1cb",
+      "short_sha": "3b89076",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:43:19-03:00",
+      "message": "feat(pilar): compõe esforços reais para o memorial"
+    },
+    {
+      "sha": "b77d97ab1ad10cc9b20d938abf97546328259f5d",
+      "short_sha": "b77d97a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T08:42:43-03:00",
+      "message": "feat(pilar): registra esforços ELU no Calculation Graph"
+    },
     {
       "sha": "c01cf818d17676fceadcf6b095cc1dd6908c9f63",
       "short_sha": "c01cf81",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T08:09:47-03:00",
       "message": "docs: formaliza sincronismo entre roadmap e painel"
-    },
-    {
-      "sha": "7c50f4fbd31a9ebde37122a8094aa25b408dbaf4",
-      "short_sha": "7c50f4f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T08:09:29-03:00",
-      "message": "docs: registra novas ideias futuras do SIMETTRIA"
-    },
-    {
-      "sha": "72858f2c7d07feb65b63f3cd6bcd69b8e34f989f",
-      "short_sha": "72858f2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:25:27-03:00",
-      "message": "Merge pull request #169 from JGaspar-Eng/fix/status-textos-coerentes"
-    },
-    {
-      "sha": "9933103ae8e84aa2565e664a22b19482c093bb93",
-      "short_sha": "9933103",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:24:13-03:00",
-      "message": "test(status): validate normative progress sem frozen counts"
-    },
-    {
-      "sha": "5fbe8ec65435a1a0777553510b1a0daf0c531933",
-      "short_sha": "5fbe8ec",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:21:38-03:00",
-      "message": "fix(status): remove stale active-block label from work text"
-    },
-    {
-      "sha": "2fd7854bd920b5760dd31f4c69de5e1a46794d8a",
-      "short_sha": "2fd7854",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:19:07-03:00",
-      "message": "test(status): allow lifecycle text on planned items"
-    },
-    {
-      "sha": "d9e37ca90d4a67de97ab62d82bb5b9f123f92c80",
-      "short_sha": "d9e37ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:16:53-03:00",
-      "message": "docs(status): define precedence for current work state"
-    },
-    {
-      "sha": "88428315887b4d3d3e0781c25d33369d9aab35ff",
-      "short_sha": "8842831",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:16:41-03:00",
-      "message": "test(status): reject contradictory work descriptions"
-    },
-    {
-      "sha": "9a560ba58e313b278a1aab2814b7546116bdd081",
-      "short_sha": "9a560ba",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T01:15:20-03:00",
-      "message": "fix(status): reconcile work states and display text"
     }
   ],
   "development": {
@@ -1282,7 +1282,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32962043353",
-    "run_number": "134"
+    "run_id": "32965352379",
+    "run_number": "135"
   }
 }
