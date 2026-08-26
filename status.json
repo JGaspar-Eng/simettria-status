@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-25T23:15:45Z",
+  "generated_at": "2026-08-26T00:22:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cc1b5944f2ebd1a68624b4cdffb34e5d4ea7255f",
-    "short_sha": "cc1b594",
+    "sha": "4e1573b0e58da25a334548d10c949fefe1a3284d",
+    "short_sha": "4e1573b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-25T20:15:37-03:00",
-    "message": "Merge pull request #159 from JGaspar-Eng/agent/dim-pilar-limite-esbeltez"
+    "date": "2026-08-25T21:22:47-03:00",
+    "message": "Merge pull request #160 from JGaspar-Eng/agent/dim-pilar-parametros-lambda1"
   },
   "commits": [
+    {
+      "sha": "4e1573b0e58da25a334548d10c949fefe1a3284d",
+      "short_sha": "4e1573b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:22:47-03:00",
+      "message": "Merge pull request #160 from JGaspar-Eng/agent/dim-pilar-parametros-lambda1"
+    },
+    {
+      "sha": "49bc809268ff65913706775027f4c8fbfb2606f1",
+      "short_sha": "49bc809",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:20:25-03:00",
+      "message": "test(pilar): integra parâmetros lambda1 ao gate existente"
+    },
+    {
+      "sha": "c1a6918a4a531ee562dd0388b07de98b8d4b816b",
+      "short_sha": "c1a6918",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:19:54-03:00",
+      "message": "test(pilar): cobre parâmetros normativos de lambda1"
+    },
+    {
+      "sha": "380e652f0254a40a5f3c822004d72c8197c130d9",
+      "short_sha": "380e652",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:19:36-03:00",
+      "message": "feat(pilar): deriva parâmetros rastreáveis de lambda1"
+    },
     {
       "sha": "cc1b5944f2ebd1a68624b4cdffb34e5d4ea7255f",
       "short_sha": "cc1b594",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-25T20:11:31-03:00",
       "message": "test(pilar): cobre limite normativo de esbeltez"
-    },
-    {
-      "sha": "e6ecff969d077848eca4f470b1326c602b240650",
-      "short_sha": "e6ecff9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:11:15-03:00",
-      "message": "feat(pilar): calcula limite normativo de esbeltez"
-    },
-    {
-      "sha": "f4b438f8f9d5c2d3ccca0087f8d700c7cb6c0f39",
-      "short_sha": "f4b438f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:09:29-03:00",
-      "message": "Merge pull request #158 from JGaspar-Eng/agent/dim-pilar-segunda-ordem-local"
-    },
-    {
-      "sha": "97371dbe56093dbd92e7d7f80ff1c4fddb4ce15a",
-      "short_sha": "97371db",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T19:58:41-03:00",
-      "message": "test(pilar): integra segunda ordem local ao gate"
-    },
-    {
-      "sha": "38b8c25d89216c9d0729f0eaa69073334e797a9b",
-      "short_sha": "38b8c25",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T19:58:17-03:00",
-      "message": "test(pilar): cobre decisão de segunda ordem local"
     }
   ],
   "development": {
@@ -626,7 +626,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32909963994",
-    "run_number": "123"
+    "run_id": "32914834751",
+    "run_number": "124"
   }
 }
