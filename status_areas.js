@@ -69,6 +69,64 @@
         color: var(--accent);
         font-weight: 700;
       }
+      .area-work-details {
+        grid-column: 1 / -1;
+        margin-top: 5px;
+        padding-top: 8px;
+        border-top: 1px dashed var(--border);
+      }
+      .area-work-details summary {
+        cursor: pointer;
+        color: var(--blue);
+        font-weight: 800;
+        list-style: none;
+      }
+      .area-work-details summary::-webkit-details-marker { display:none; }
+      .area-work-details summary::before { content: "▸ "; }
+      .area-work-details[open] summary::before { content: "▾ "; }
+      .area-work-list {
+        display: grid;
+        gap: 7px;
+        margin-top: 9px;
+      }
+      .area-work-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 7px;
+        align-items: start;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+      .area-work-state {
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 5px;
+        border-radius: 999px;
+        font-size: 8px;
+        font-weight: 850;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .area-work-state.done { background:#eaf8f0; color:#24724a; }
+      .area-work-state.partial { background:#fff5db; color:#8a6410; }
+      .area-work-state.active_now { background:#e5f3f1; color:var(--accent); }
+      .area-work-state.planned { background:#eef2f5; color:var(--muted); }
+      .area-work-state.out_of_scope { background:#f5ecec; color:#8b4b4b; }
+      .area-current-objectives {
+        grid-column: 1 / -1;
+        margin-top: 7px;
+        padding: 8px;
+        border-radius: 8px;
+        background: rgba(15,118,110,.05);
+      }
+      .area-current-objectives-title {
+        color: var(--text);
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+      .area-current-objective { margin-top: 4px; }
+      .area-current-objective strong { font-family: inherit; }
       .roadmap-state-badge {
         display: inline-flex;
         align-items: center;
@@ -96,7 +154,42 @@
     document.querySelector('nav.top a[href="#consolidado"]')?.remove();
   }
 
-  function resumoTrabalhos(work, active) {
+  function rotuloEstado(state) {
+    return {
+      done: "Concluído",
+      partial: "Parcial",
+      active_now: "Em andamento",
+      planned: "Planejado",
+      out_of_scope: "Fora do escopo",
+    }[state] || state;
+  }
+
+  function detalhesTrabalhos(work) {
+    var items = Array.isArray(work?.items) ? work.items : [];
+    if (!items.length) return "";
+    return '<details class="area-work-details"><summary>Ver trabalhos e situação</summary>' +
+      '<div class="area-work-list">' + items.map(function (item) {
+        var state = item.state || "planned";
+        return '<div class="area-work-item">' +
+          '<span class="area-work-state ' + esc(state) + '">' + esc(rotuloEstado(state)) + '</span>' +
+          '<span>' + esc(item.text) + '</span>' +
+        '</div>';
+      }).join("") + '</div></details>';
+  }
+
+  function objetivosAtuais(current) {
+    var items = Array.isArray(current?.progress?.items) ? current.progress.items : [];
+    if (!items.length) return "";
+    var atual = items.find(function (item) { return item.state === "in_progress"; });
+    var proximo = items.find(function (item) { return item.state === "pending"; });
+    var html = '<div class="area-current-objectives"><div class="area-current-objectives-title">Leitura rápida do bloco atual</div>';
+    if (atual) html += '<div class="area-current-objective"><strong>Agora:</strong> ' + esc(atual.text) + '</div>';
+    if (proximo) html += '<div class="area-current-objective"><strong>Depois:</strong> ' + esc(proximo.text) + '</div>';
+    html += '</div>';
+    return html;
+  }
+
+  function resumoTrabalhos(work, active, current) {
     work = work || {};
     var total = Number(work.total || 0);
     var done = Number(work.done || 0);
@@ -114,6 +207,8 @@
       activeHtml +
       '<div><strong>' + planned + '</strong> planejados</div>' +
       '<div><strong>' + out + '</strong> fora do escopo</div>' +
+      (active ? objetivosAtuais(current) : '') +
+      detalhesTrabalhos(work) +
     '</div>';
   }
 
@@ -126,9 +221,6 @@
     var progressoBloco = epic?.active
       ? Math.max(0, Math.min(100, Number(current?.progress?.percent || 0))) / 100
       : 0;
-    // Regra única para as 12 áreas: concluído vale 100%; o trabalho ativo usa
-    // somente o percentual explícito do bloco atual. Parciais históricos não
-    // recebem peso arbitrário porque não possuem percentual próprio documentado.
     var bruto = ((done + (activeNow * progressoBloco)) / total) * 100;
     return Math.max(0, Math.min(100, Math.round(bruto / 5) * 5));
   }
@@ -146,7 +238,7 @@
     }
     if (fill) fill.style.width = indice + "%";
     if (note) {
-      note.textContent = "índice documentado dos trabalhos cadastrados; parciais históricos sem peso arbitrário";
+      note.textContent = "índice documentado dos trabalhos cadastrados; detalhes abaixo mostram o que já foi feito e o que falta";
     }
     card.dataset.areaIndex = String(indice);
     card.dataset.areaIndexSource = "registered-work";
@@ -240,7 +332,7 @@
 
     var sectionNote = document.querySelector("#progresso .section-note");
     if (sectionNote) {
-      sectionNote.textContent = "Os 12 cards usam a mesma regra auditável: trabalhos concluídos contam integralmente; o trabalho ativo usa o progresso explícito do bloco atual; parciais históricos e planejados não recebem percentual presumido.";
+      sectionNote.textContent = "Os 12 cards usam a mesma regra auditável. Abra ‘Ver trabalhos e situação’ para ler, em linguagem direta, o que está concluído, parcial, em andamento, planejado ou fora do escopo.";
     }
 
     var cards = document.querySelectorAll("#epic-progress-grid .epic-progress-card");
@@ -256,7 +348,7 @@
       if (active && title) {
         title.insertAdjacentHTML("afterend", '<div class="area-active-badge">Área ativa agora</div>');
       }
-      card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active));
+      card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active, current));
     });
     enriquecerSequencia(status);
     return true;
