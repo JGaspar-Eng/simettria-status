@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-26T03:19:57Z",
+  "generated_at": "2026-08-26T03:37:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ae81ac4c98f6e9d589785b81c9ad358c007d8a80",
-    "short_sha": "ae81ac4",
+    "sha": "4bf3905b9153948396ada32a9aaeedbbc0501120",
+    "short_sha": "4bf3905",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T00:19:49-03:00",
-    "message": "Merge pull request #164 from JGaspar-Eng/feat/dim-pilar-01-momentos-sa-l1"
+    "date": "2026-08-26T00:37:30-03:00",
+    "message": "Merge pull request #165 from JGaspar-Eng/feat/dim-pilar-01-cargas-caracteristicas"
   },
   "commits": [
+    {
+      "sha": "4bf3905b9153948396ada32a9aaeedbbc0501120",
+      "short_sha": "4bf3905",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:37:30-03:00",
+      "message": "Merge pull request #165 from JGaspar-Eng/feat/dim-pilar-01-cargas-caracteristicas"
+    },
+    {
+      "sha": "b51d6e6361c9221840b91a5a6ee970df60c2bbce",
+      "short_sha": "b51d6e6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:36:02-03:00",
+      "message": "test(pilar): inclui reacoes caracteristicas no gate DIM-PILAR"
+    },
+    {
+      "sha": "32b5980ae15320a1aac1d4b5e027e6352dac446a",
+      "short_sha": "32b5980",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:35:40-03:00",
+      "message": "test(pilar): valida separacao de Gk e Qk nas reacoes"
+    },
+    {
+      "sha": "5c1621ffb7b4a5a72366c9f00d79c63d58a3283a",
+      "short_sha": "5c1621f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:34:58-03:00",
+      "message": "feat(pilar): separa reacoes caracteristicas Gk e Qk"
+    },
     {
       "sha": "ae81ac4c98f6e9d589785b81c9ad358c007d8a80",
       "short_sha": "ae81ac4",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T00:07:25-03:00",
       "message": "chore: remove arquivo temporario"
-    },
-    {
-      "sha": "426a337f24310656dbeeaa705d0c203e3024fb33",
-      "short_sha": "426a337",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:07:13-03:00",
-      "message": "noop"
-    },
-    {
-      "sha": "36daa0357df0c8d24f7becd5459b59b4992affad",
-      "short_sha": "36daa03",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:06:48-03:00",
-      "message": "test(pilar): inclui integracao de NEd por trecho"
-    },
-    {
-      "sha": "a01208f91350e419612ac06e57d05492c921833a",
-      "short_sha": "a01208f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:06:22-03:00",
-      "message": "test(pilar): cobre composicao real de NEd por trecho"
-    },
-    {
-      "sha": "4b5492baccd331edbe432e81b037192992b216dc",
-      "short_sha": "4b5492b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:06:09-03:00",
-      "message": "test(pilar): inclui propagacao por trecho no gate"
     }
   ],
   "development": {
@@ -634,7 +634,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32926039180",
-    "run_number": "128"
+    "run_id": "32927147600",
+    "run_number": "129"
   }
 }
