@@ -1,5 +1,6 @@
 name: Deploy Pages
 
+# O deploy também pode ser disparado manualmente quando a sincronização vem de outro workflow.
 on:
   push:
     branches:
