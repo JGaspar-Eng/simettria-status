@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-26T17:37:04Z",
+  "generated_at": "2026-08-26T22:34:41Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4ff182238abc60e8c49b689c1d764c2a56a94841",
-    "short_sha": "4ff1822",
+    "sha": "bdf06ca47e757f57f23d37e8dcf5ff088bef75ae",
+    "short_sha": "bdf06ca",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T14:36:51-03:00",
-    "message": "Merge pull request #176 from JGaspar-Eng/fix/status-dispara-pages"
+    "date": "2026-08-26T19:34:31-03:00",
+    "message": "Merge pull request #177 from JGaspar-Eng/fix/status-publisher-sem-dispatch"
   },
   "commits": [
+    {
+      "sha": "bdf06ca47e757f57f23d37e8dcf5ff088bef75ae",
+      "short_sha": "bdf06ca",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T19:34:31-03:00",
+      "message": "Merge pull request #177 from JGaspar-Eng/fix/status-publisher-sem-dispatch"
+    },
+    {
+      "sha": "a86abf88f546bbabcd5423a5242a8735b2815edc",
+      "short_sha": "a86abf8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:40:38-03:00",
+      "message": "test(status): protege publisher sem dispatch proibido"
+    },
+    {
+      "sha": "0aa9f961f2c2a3376bef6c8e54f5dcc51ee51d05",
+      "short_sha": "0aa9f96",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:39:47-03:00",
+      "message": "fix(status): remove dispatch sem permissão"
+    },
     {
       "sha": "4ff182238abc60e8c49b689c1d764c2a56a94841",
       "short_sha": "4ff1822",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T13:54:23-03:00",
       "message": "test(status): atualiza progresso do DIM-PILAR-01 para 80"
-    },
-    {
-      "sha": "3b0b3ab2f7b8d5c63d4b8d566b5fe5f3fa469a2e",
-      "short_sha": "3b0b3ab",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T13:53:50-03:00",
-      "message": "docs(pilar): fecha objetivo 4 do DIM-PILAR-01"
-    },
-    {
-      "sha": "91733a986f8ef60073af9ec5296bb02d31ba4c3c",
-      "short_sha": "91733a9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T13:53:19-03:00",
-      "message": "docs(ui): registra leitura estrutural global e detalhamento didático"
-    },
-    {
-      "sha": "512db07f161f6342b42e473f14e39903d7865466",
-      "short_sha": "512db07",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T13:52:40-03:00",
-      "message": "test(pilar): protege legibilidade do memorial"
     }
   ],
   "development": {
@@ -1282,7 +1282,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32995210332",
-    "run_number": "139"
+    "run_id": "33020130271",
+    "run_number": "140"
   }
 }
