@@ -1,11 +1,13 @@
 name: Deploy Pages
 
-# O deploy também pode ser disparado manualmente quando a sincronização vem de outro workflow.
+# Deploy normal em push e fallback periódico para sincronizações feitas por automação externa.
 on:
   push:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: read
