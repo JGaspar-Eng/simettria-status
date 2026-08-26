@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-26T12:23:03Z",
+  "generated_at": "2026-08-26T17:15:46Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "240d9c9a2ef1540e7339fe7710d83d945eca59b0",
-    "short_sha": "240d9c9",
+    "sha": "955991bc29ca5dd134cb4c36f52f8aa0a2d792a2",
+    "short_sha": "955991b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T09:22:53-03:00",
-    "message": "Merge pull request #173 from JGaspar-Eng/fix/dim-pilar-01-config-normativa-ui"
+    "date": "2026-08-26T14:06:06-03:00",
+    "message": "Merge pull request #175 from JGaspar-Eng/feat/dim-pilar-01-fecha-objetivo-4-v2"
   },
   "commits": [
+    {
+      "sha": "955991bc29ca5dd134cb4c36f52f8aa0a2d792a2",
+      "short_sha": "955991b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:06:06-03:00",
+      "message": "Merge pull request #175 from JGaspar-Eng/feat/dim-pilar-01-fecha-objetivo-4-v2"
+    },
+    {
+      "sha": "e983c8888cc7272e1be7f2dcfdca4e35ba0e2a48",
+      "short_sha": "e983c88",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T13:56:11-03:00",
+      "message": "docs(pilar): registra data da validação visual do objetivo 4"
+    },
+    {
+      "sha": "d4aa8881e5fe9e84d1be4b25adad78a42a41ef07",
+      "short_sha": "d4aa888",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T13:54:23-03:00",
+      "message": "test(status): atualiza progresso do DIM-PILAR-01 para 80"
+    },
+    {
+      "sha": "3b0b3ab2f7b8d5c63d4b8d566b5fe5f3fa469a2e",
+      "short_sha": "3b0b3ab",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T13:53:50-03:00",
+      "message": "docs(pilar): fecha objetivo 4 do DIM-PILAR-01"
+    },
+    {
+      "sha": "91733a986f8ef60073af9ec5296bb02d31ba4c3c",
+      "short_sha": "91733a9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T13:53:19-03:00",
+      "message": "docs(ui): registra leitura estrutural global e detalhamento didático"
+    },
+    {
+      "sha": "512db07f161f6342b42e473f14e39903d7865466",
+      "short_sha": "512db07",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T13:52:40-03:00",
+      "message": "test(pilar): protege legibilidade do memorial"
+    },
+    {
+      "sha": "086ea723a3c6ccfc96d27c02981a32af9b56b458",
+      "short_sha": "086ea72",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T13:52:17-03:00",
+      "message": "feat(pilar): humaniza leitura dos esforços no memorial"
+    },
     {
       "sha": "240d9c9a2ef1540e7339fe7710d83d945eca59b0",
       "short_sha": "240d9c9",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T09:20:41-03:00",
       "message": "fix(ui): expõe configuração normativa na barra superior"
-    },
-    {
-      "sha": "332d92a45ff50041fe86212d53000ea0e61939e3",
-      "short_sha": "332d92a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:11:56-03:00",
-      "message": "Merge pull request #172 from JGaspar-Eng/feat/dim-pilar-01-categoria-uso-projeto"
-    },
-    {
-      "sha": "201c4103212e346cc2a61377d20eb9d56ce96a0b",
-      "short_sha": "201c410",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:10:08-03:00",
-      "message": "fix(ui): preserva contrato de completude da configuração"
-    },
-    {
-      "sha": "2ecc13a310d2648bea851a9a57b9ea44d4892158",
-      "short_sha": "2ecc13a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:07:45-03:00",
-      "message": "test(config): ajusta asserção da mensagem de não inferência"
-    },
-    {
-      "sha": "5910bd443041b8791f7dfa8d8c2b9a0b005e8bdb",
-      "short_sha": "5910bd4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:06:33-03:00",
-      "message": "test(pilar): inclui categoria normativa no gate do memorial"
-    },
-    {
-      "sha": "0a80415d5bd1ef8c005ce8687663c6209872eca1",
-      "short_sha": "0a80415",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:06:10-03:00",
-      "message": "test(config): valida categoria de uso NBR 8681 do projeto"
-    },
-    {
-      "sha": "5107c63f8f81260d711adc1ff8e9a0978828e8ed",
-      "short_sha": "5107c63",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:05:47-03:00",
-      "message": "testable(pilar): expõe resolvedor de categoria efetiva"
-    },
-    {
-      "sha": "628d929af9669132d1262a7a37fe1145b0a82006",
-      "short_sha": "628d929",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:04:50-03:00",
-      "message": "feat(pilar): usa categoria NBR 8681 explícita do projeto"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 3,
+        "done": 4,
         "in_progress": 1,
-        "pending": 1,
-        "percent": 60,
+        "pending": 0,
+        "percent": 80,
         "items": [
           {
             "text": "auditar as cargas, esforços, propriedades geométricas, materiais e vínculos de pilar realmente disponíveis no modelo atual, identificando lacunas antes de qualquer fórmula normativa",
@@ -121,13 +121,13 @@
           },
           {
             "text": "integrar os resultados ao Calculation Graph e ao memorial de forma rastreável e somente leitura, distinguindo resultado normativo, hipótese e dado de entrada",
-            "state": "in_progress",
-            "marker": "🟡"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "concluir regressão ampliada, casos de engenharia verificáveis e auditoria visual real antes do encerramento do bloco.",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "in_progress",
+            "marker": "🟡"
           }
         ]
       }
@@ -1282,7 +1282,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32968264639",
-    "run_number": "137"
+    "run_id": "32993071141",
+    "run_number": "138"
   }
 }
