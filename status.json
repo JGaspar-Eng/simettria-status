@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-26T00:22:57Z",
+  "generated_at": "2026-08-26T00:26:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4e1573b0e58da25a334548d10c949fefe1a3284d",
-    "short_sha": "4e1573b",
+    "sha": "151795742b489b4cecc4a425aa800b1746beee0d",
+    "short_sha": "1517957",
     "author": "Joanez Gaspar",
-    "date": "2026-08-25T21:22:47-03:00",
-    "message": "Merge pull request #160 from JGaspar-Eng/agent/dim-pilar-parametros-lambda1"
+    "date": "2026-08-25T21:26:41-03:00",
+    "message": "Merge pull request #161 from JGaspar-Eng/agent/dim-pilar-pipeline-segunda-ordem"
   },
   "commits": [
+    {
+      "sha": "151795742b489b4cecc4a425aa800b1746beee0d",
+      "short_sha": "1517957",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:26:41-03:00",
+      "message": "Merge pull request #161 from JGaspar-Eng/agent/dim-pilar-pipeline-segunda-ordem"
+    },
+    {
+      "sha": "036c4798c2c36182bf851099a72d007a9bf75eec",
+      "short_sha": "036c479",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:25:06-03:00",
+      "message": "test(pilar): integra pipeline ao gate DIM-PILAR"
+    },
+    {
+      "sha": "8199451abadea654bae33636934d0e9492886c9e",
+      "short_sha": "8199451",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:24:44-03:00",
+      "message": "test(pilar): cobre pipeline de segunda ordem local"
+    },
+    {
+      "sha": "59535170dc38e3e025c1487ad95066cc72f23963",
+      "short_sha": "5953517",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-25T21:24:32-03:00",
+      "message": "feat(pilar): compõe pipeline de segunda ordem local"
+    },
     {
       "sha": "4e1573b0e58da25a334548d10c949fefe1a3284d",
       "short_sha": "4e1573b",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-25T20:13:18-03:00",
       "message": "chore(pilar): concentra cobertura no teste existente"
-    },
-    {
-      "sha": "df0ad34526c7cda8e86122ff763b73d3ccced74b",
-      "short_sha": "df0ad34",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:12:42-03:00",
-      "message": "test(pilar): integra limite de esbeltez ao gate existente"
-    },
-    {
-      "sha": "a5aa8c7157eb6aeb4e9b5b00ed221dec9629b792",
-      "short_sha": "a5aa8c7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:12:06-03:00",
-      "message": "test(pilar): exige segunda ordem no ponto limite"
-    },
-    {
-      "sha": "cd47da9f2043cc9433af74ddcb3cb58f18a5ebeb",
-      "short_sha": "cd47da9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:11:52-03:00",
-      "message": "fix(pilar): trata igualdade no limite de esbeltez"
-    },
-    {
-      "sha": "dff8341573c5a78e772710eb2de940a8aec9d26d",
-      "short_sha": "dff8341",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T20:11:31-03:00",
-      "message": "test(pilar): cobre limite normativo de esbeltez"
     }
   ],
   "development": {
@@ -626,7 +626,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32914834751",
-    "run_number": "124"
+    "run_id": "32915111813",
+    "run_number": "125"
   }
 }
