@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-26T03:09:07Z",
+  "generated_at": "2026-08-26T03:19:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6541be0f0f96cd009a7167c56214f4f7ff00868c",
-    "short_sha": "6541be0",
+    "sha": "ae81ac4c98f6e9d589785b81c9ad358c007d8a80",
+    "short_sha": "ae81ac4",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T00:08:57-03:00",
-    "message": "Merge pull request #163 from JGaspar-Eng/feat/dim-pilar-01-ned-por-trecho"
+    "date": "2026-08-26T00:19:49-03:00",
+    "message": "Merge pull request #164 from JGaspar-Eng/feat/dim-pilar-01-momentos-sa-l1"
   },
   "commits": [
+    {
+      "sha": "ae81ac4c98f6e9d589785b81c9ad358c007d8a80",
+      "short_sha": "ae81ac4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:19:49-03:00",
+      "message": "Merge pull request #164 from JGaspar-Eng/feat/dim-pilar-01-momentos-sa-l1"
+    },
+    {
+      "sha": "884d6d1287ab6e4c2677fcfefc14e852e1113467",
+      "short_sha": "884d6d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:18:31-03:00",
+      "message": "test(pilar): inclui momentos SA-L1 no gate"
+    },
+    {
+      "sha": "20849192ea41c89e98ea66f0d68590275aea37d9",
+      "short_sha": "2084919",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:18:02-03:00",
+      "message": "test(pilar): valida momentos locais recuperados do SA-L1"
+    },
+    {
+      "sha": "d0fc52c5b6844805c4f88f4c2c8e9f7a54e63685",
+      "short_sha": "d0fc52c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:17:38-03:00",
+      "message": "feat(pilar): recupera momentos locais do SA-L1"
+    },
     {
       "sha": "6541be0f0f96cd009a7167c56214f4f7ff00868c",
       "short_sha": "6541be0",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T00:06:09-03:00",
       "message": "test(pilar): inclui propagacao por trecho no gate"
-    },
-    {
-      "sha": "8bd158b8720e2bd84e68e6d26e8da0ab28f61ccb",
-      "short_sha": "8bd158b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:05:40-03:00",
-      "message": "test(pilar): valida propagacao de NEd parcial por trecho"
-    },
-    {
-      "sha": "e3856c43b5b46055c455afe836d95c5b3550d822",
-      "short_sha": "e3856c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:05:25-03:00",
-      "message": "feat(pilar): compoe NEd parcial por trecho"
-    },
-    {
-      "sha": "91ab711995f6e7e81315649ef48b935bab7903d8",
-      "short_sha": "91ab711",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:05:05-03:00",
-      "message": "feat(pilar): propaga NEd parcial pelas prumadas"
-    },
-    {
-      "sha": "839f5e9e4fb75853bdac129c911d4f24948bd975",
-      "short_sha": "839f5e9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-25T22:19:46-03:00",
-      "message": "Merge pull request #162 from JGaspar-Eng/feat/dim-pilar-01-ned-parcial-reacoes-elu"
     }
   ],
   "development": {
@@ -376,7 +376,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 61,
+    "validator_count": 62,
     "validators": [
       {
         "name": "test:base",
@@ -441,6 +441,10 @@
       {
         "name": "test:dim-pilar-ned-parcial",
         "command": "node tests/validar_ned_parcial_reacoes_vigas_elu_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-momentos-sa-l1",
+        "command": "node tests/validar_momentos_primeira_ordem_pilar_sa_l1_dim_pilar_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -630,7 +634,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32925362150",
-    "run_number": "127"
+    "run_id": "32926039180",
+    "run_number": "128"
   }
 }
