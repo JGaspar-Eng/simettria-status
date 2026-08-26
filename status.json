@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-26T12:12:04Z",
+  "generated_at": "2026-08-26T12:23:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "332d92a45ff50041fe86212d53000ea0e61939e3",
-    "short_sha": "332d92a",
+    "sha": "240d9c9a2ef1540e7339fe7710d83d945eca59b0",
+    "short_sha": "240d9c9",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T09:11:56-03:00",
-    "message": "Merge pull request #172 from JGaspar-Eng/feat/dim-pilar-01-categoria-uso-projeto"
+    "date": "2026-08-26T09:22:53-03:00",
+    "message": "Merge pull request #173 from JGaspar-Eng/fix/dim-pilar-01-config-normativa-ui"
   },
   "commits": [
+    {
+      "sha": "240d9c9a2ef1540e7339fe7710d83d945eca59b0",
+      "short_sha": "240d9c9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T09:22:53-03:00",
+      "message": "Merge pull request #173 from JGaspar-Eng/fix/dim-pilar-01-config-normativa-ui"
+    },
+    {
+      "sha": "e11cdd3fe4ba71f6f97977946a854da73ac575d1",
+      "short_sha": "e11cdd3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T09:21:00-03:00",
+      "message": "test(ui): garante acesso à configuração normativa"
+    },
+    {
+      "sha": "ba33d29d0511cdb64eedef141b27301c2af00aa5",
+      "short_sha": "ba33d29",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T09:20:41-03:00",
+      "message": "fix(ui): expõe configuração normativa na barra superior"
+    },
     {
       "sha": "332d92a45ff50041fe86212d53000ea0e61939e3",
       "short_sha": "332d92a",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T09:04:50-03:00",
       "message": "feat(pilar): usa categoria NBR 8681 explícita do projeto"
-    },
-    {
-      "sha": "eaeb2cb03cf737a14e8d853cff53003bcf897326",
-      "short_sha": "eaeb2cb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:04:12-03:00",
-      "message": "feat(ui): expõe categoria de uso NBR 8681 no projeto"
-    },
-    {
-      "sha": "7102b86a1b2a5a58af562008939fab0900a40b1d",
-      "short_sha": "7102b86",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:03:19-03:00",
-      "message": "feat(config): adiciona categoria de uso NBR 8681 do projeto"
-    },
-    {
-      "sha": "14d7cb7607f3b7ee1cfd968a1f7e40014777a676",
-      "short_sha": "14d7cb7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T08:50:03-03:00",
-      "message": "Merge pull request #171 from JGaspar-Eng/feat/dim-pilar-01-graph-memorial"
     }
   ],
   "development": {
@@ -1282,7 +1282,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32967282336",
-    "run_number": "136"
+    "run_id": "32968264639",
+    "run_number": "137"
   }
 }
