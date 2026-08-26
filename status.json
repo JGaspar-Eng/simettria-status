@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-26T17:15:46Z",
+  "generated_at": "2026-08-26T17:37:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "955991bc29ca5dd134cb4c36f52f8aa0a2d792a2",
-    "short_sha": "955991b",
+    "sha": "4ff182238abc60e8c49b689c1d764c2a56a94841",
+    "short_sha": "4ff1822",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T14:06:06-03:00",
-    "message": "Merge pull request #175 from JGaspar-Eng/feat/dim-pilar-01-fecha-objetivo-4-v2"
+    "date": "2026-08-26T14:36:51-03:00",
+    "message": "Merge pull request #176 from JGaspar-Eng/fix/status-dispara-pages"
   },
   "commits": [
+    {
+      "sha": "4ff182238abc60e8c49b689c1d764c2a56a94841",
+      "short_sha": "4ff1822",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:36:51-03:00",
+      "message": "Merge pull request #176 from JGaspar-Eng/fix/status-dispara-pages"
+    },
+    {
+      "sha": "78056d14f0fa91a99438af841b6cd81ca1ef2eee",
+      "short_sha": "78056d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:33:19-03:00",
+      "message": "test(status): protege distinção entre área e bloco ativo"
+    },
+    {
+      "sha": "d597a71ecc4c73ec4a4609ddf7bf31ea425b8ff1",
+      "short_sha": "d597a71",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:32:45-03:00",
+      "message": "fix(status): distingue índice da área e progresso do bloco"
+    },
+    {
+      "sha": "a174b7fa61b6ab2bf20e0f571150d7b10c2c0218",
+      "short_sha": "a174b7f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T14:25:04-03:00",
+      "message": "fix(status): dispara deploy Pages após sincronização"
+    },
     {
       "sha": "955991bc29ca5dd134cb4c36f52f8aa0a2d792a2",
       "short_sha": "955991b",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T13:52:40-03:00",
       "message": "test(pilar): protege legibilidade do memorial"
-    },
-    {
-      "sha": "086ea723a3c6ccfc96d27c02981a32af9b56b458",
-      "short_sha": "086ea72",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T13:52:17-03:00",
-      "message": "feat(pilar): humaniza leitura dos esforços no memorial"
-    },
-    {
-      "sha": "240d9c9a2ef1540e7339fe7710d83d945eca59b0",
-      "short_sha": "240d9c9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:22:53-03:00",
-      "message": "Merge pull request #173 from JGaspar-Eng/fix/dim-pilar-01-config-normativa-ui"
-    },
-    {
-      "sha": "e11cdd3fe4ba71f6f97977946a854da73ac575d1",
-      "short_sha": "e11cdd3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:21:00-03:00",
-      "message": "test(ui): garante acesso à configuração normativa"
-    },
-    {
-      "sha": "ba33d29d0511cdb64eedef141b27301c2af00aa5",
-      "short_sha": "ba33d29",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T09:20:41-03:00",
-      "message": "fix(ui): expõe configuração normativa na barra superior"
     }
   ],
   "development": {
@@ -1282,7 +1282,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32993071141",
-    "run_number": "138"
+    "run_id": "32995210332",
+    "run_number": "139"
   }
 }

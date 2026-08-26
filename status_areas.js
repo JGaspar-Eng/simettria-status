@@ -125,6 +125,19 @@
         font-weight: 800;
         margin-bottom: 6px;
       }
+      .area-current-block-progress {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid rgba(15,118,110,.12);
+      }
+      .area-current-block-progress strong {
+        color: var(--accent-strong);
+        font-size: 13px;
+      }
       .area-current-objective { margin-top: 4px; }
       .area-current-objective strong { font-family: inherit; }
       .roadmap-state-badge {
@@ -182,7 +195,9 @@
     if (!items.length) return "";
     var atual = items.find(function (item) { return item.state === "in_progress"; });
     var proximo = items.find(function (item) { return item.state === "pending"; });
-    var html = '<div class="area-current-objectives"><div class="area-current-objectives-title">Leitura rápida do bloco atual</div>';
+    var percentual = Math.max(0, Math.min(100, Number(current?.progress?.percent || 0)));
+    var html = '<div class="area-current-objectives"><div class="area-current-objectives-title">Bloco ativo</div>' +
+      '<div class="area-current-block-progress"><span>' + esc(current?.code || "bloco atual") + '</span><strong>' + percentual + '%</strong></div>';
     if (atual) html += '<div class="area-current-objective"><strong>Agora:</strong> ' + esc(atual.text) + '</div>';
     if (proximo) html += '<div class="area-current-objective"><strong>Depois:</strong> ' + esc(proximo.text) + '</div>';
     html += '</div>';
@@ -234,11 +249,13 @@
     card.classList.remove("pending");
     if (percent) {
       percent.classList.remove("pending");
-      percent.textContent = "~" + indice + "%";
+      percent.textContent = "Área ~" + indice + "%";
     }
     if (fill) fill.style.width = indice + "%";
     if (note) {
-      note.textContent = "índice documentado dos trabalhos cadastrados; detalhes abaixo mostram o que já foi feito e o que falta";
+      note.textContent = epic?.active
+        ? "índice global da Área " + epic.number + "; o progresso do bloco ativo aparece separadamente abaixo"
+        : "índice global documentado da área, calculado sobre os trabalhos cadastrados";
     }
     card.dataset.areaIndex = String(indice);
     card.dataset.areaIndexSource = "registered-work";
@@ -332,7 +349,7 @@
 
     var sectionNote = document.querySelector("#progresso .section-note");
     if (sectionNote) {
-      sectionNote.textContent = "Os 12 cards usam a mesma regra auditável. Abra ‘Ver trabalhos e situação’ para ler, em linguagem direta, o que está concluído, parcial, em andamento, planejado ou fora do escopo.";
+      sectionNote.textContent = "Cada card mostra o índice global documentado da área. Quando houver bloco ativo, o progresso desse bloco aparece separadamente dentro do próprio card para evitar confusão entre os dois níveis.";
     }
 
     var cards = document.querySelectorAll("#epic-progress-grid .epic-progress-card");
