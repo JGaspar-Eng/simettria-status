@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-26T03:37:38Z",
+  "generated_at": "2026-08-26T03:44:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4bf3905b9153948396ada32a9aaeedbbc0501120",
-    "short_sha": "4bf3905",
+    "sha": "6d790ee06fff705a6944ae29b02c44580b26732c",
+    "short_sha": "6d790ee",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T00:37:30-03:00",
-    "message": "Merge pull request #165 from JGaspar-Eng/feat/dim-pilar-01-cargas-caracteristicas"
+    "date": "2026-08-26T00:44:11-03:00",
+    "message": "Merge pull request #166 from JGaspar-Eng/feat/dim-pilar-01-elu-vento"
   },
   "commits": [
+    {
+      "sha": "6d790ee06fff705a6944ae29b02c44580b26732c",
+      "short_sha": "6d790ee",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:44:11-03:00",
+      "message": "Merge pull request #166 from JGaspar-Eng/feat/dim-pilar-01-elu-vento"
+    },
+    {
+      "sha": "fb730d80a84a37ef4b91f5ab5ef80727f56b613d",
+      "short_sha": "fb730d8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:42:48-03:00",
+      "message": "test(pilar): inclui ELU vento no gate de momentos"
+    },
+    {
+      "sha": "4b75dc73839badf0ad002151765bb3b752aef313",
+      "short_sha": "4b75dc7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:42:24-03:00",
+      "message": "test(pilar): valida ELU uso e vento por trecho"
+    },
+    {
+      "sha": "867c7f97f3259f6cfbd1c4a604336f07c4d7dc86",
+      "short_sha": "867c7f9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:42:04-03:00",
+      "message": "feat(pilar): combina Gk Qk e vento por trecho"
+    },
+    {
+      "sha": "3b694f09ab4a573d01d13e776d0b963dbd19e99f",
+      "short_sha": "3b694f0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T00:41:36-03:00",
+      "message": "feat(pilar): adiciona combinação ELU uso e vento"
+    },
     {
       "sha": "4bf3905b9153948396ada32a9aaeedbbc0501120",
       "short_sha": "4bf3905",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T00:19:49-03:00",
       "message": "Merge pull request #164 from JGaspar-Eng/feat/dim-pilar-01-momentos-sa-l1"
-    },
-    {
-      "sha": "884d6d1287ab6e4c2677fcfefc14e852e1113467",
-      "short_sha": "884d6d1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:18:31-03:00",
-      "message": "test(pilar): inclui momentos SA-L1 no gate"
-    },
-    {
-      "sha": "20849192ea41c89e98ea66f0d68590275aea37d9",
-      "short_sha": "2084919",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:18:02-03:00",
-      "message": "test(pilar): valida momentos locais recuperados do SA-L1"
-    },
-    {
-      "sha": "d0fc52c5b6844805c4f88f4c2c8e9f7a54e63685",
-      "short_sha": "d0fc52c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:17:38-03:00",
-      "message": "feat(pilar): recupera momentos locais do SA-L1"
-    },
-    {
-      "sha": "6541be0f0f96cd009a7167c56214f4f7ff00868c",
-      "short_sha": "6541be0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:08:57-03:00",
-      "message": "Merge pull request #163 from JGaspar-Eng/feat/dim-pilar-01-ned-por-trecho"
-    },
-    {
-      "sha": "40e9427ea2623e9e4f13391bb8440b91fb6f282b",
-      "short_sha": "40e9427",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T00:07:25-03:00",
-      "message": "chore: remove arquivo temporario"
     }
   ],
   "development": {
@@ -634,7 +634,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "32927147600",
-    "run_number": "129"
+    "run_id": "32927569309",
+    "run_number": "130"
   }
 }
