@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-27T16:35:45Z",
+  "generated_at": "2026-08-27T16:43:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a35f4ace18304bb9174add80dfa1a11514051b91",
-    "short_sha": "a35f4ac",
+    "sha": "8423823c262d4bacfd709a9d09f2b8716de903d8",
+    "short_sha": "8423823",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T13:35:36-03:00",
-    "message": "Merge pull request #195 from JGaspar-Eng/feat/orq-estrut-01-runtime-infra"
+    "date": "2026-08-27T13:43:24-03:00",
+    "message": "Merge pull request #196 from JGaspar-Eng/feat/orq-estrut-01-overlay-2d"
   },
   "commits": [
+    {
+      "sha": "8423823c262d4bacfd709a9d09f2b8716de903d8",
+      "short_sha": "8423823",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:43:24-03:00",
+      "message": "Merge pull request #196 from JGaspar-Eng/feat/orq-estrut-01-overlay-2d"
+    },
+    {
+      "sha": "bcbae94347a778ec1633b459c94c0b0975bc17e0",
+      "short_sha": "bcbae94",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:41:42-03:00",
+      "message": "feat(infra): exibe apoios derivados na planta 2D"
+    },
+    {
+      "sha": "c330fd278f0ae54338bea159f86bcad410f2d769",
+      "short_sha": "c330fd2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:40:24-03:00",
+      "message": "test(infra): cobre descritores do overlay 2D"
+    },
+    {
+      "sha": "ae6899d1ef2836eb2b21643f571f19a16a1340a4",
+      "short_sha": "ae6899d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:39:31-03:00",
+      "message": "feat(infra): define descritores visuais do overlay 2D"
+    },
     {
       "sha": "a35f4ace18304bb9174add80dfa1a11514051b91",
       "short_sha": "a35f4ac",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T09:27:53-03:00",
       "message": "test(fundacao): protege propostas e estado visual"
-    },
-    {
-      "sha": "3fc7aece763b7207e16772b00bb0767f46049c5d",
-      "short_sha": "3fc7aec",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:27:34-03:00",
-      "message": "feat(fundacao): define estado visual tecnico independente da selecao"
-    },
-    {
-      "sha": "b491df947b194158deb6da11cd20961777a5db77",
-      "short_sha": "b491df9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:27:14-03:00",
-      "message": "feat(fundacao): deriva demarcacoes e propostas rastreaveis"
-    },
-    {
-      "sha": "690b52085a99f684b1673866596297745a192f10",
-      "short_sha": "690b520",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:23:58-03:00",
-      "message": "Merge pull request #193 from JGaspar-Eng/feat/orq-estrut-01-apoios-base"
-    },
-    {
-      "sha": "8df73e4ee5c03bf5f1f9d5fed3b4e68dd6dda6e9",
-      "short_sha": "8df73e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:21:59-03:00",
-      "message": "test(fundacao): inclui apoios base no gate"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33094024409",
-    "run_number": "154"
+    "run_id": "33094699852",
+    "run_number": "155"
   }
 }
