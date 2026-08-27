@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-27T17:16:10Z",
+  "generated_at": "2026-08-27T17:24:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
-    "short_sha": "f669dfd",
+    "sha": "c8e0b26c95d8ee4c2843a63fc7519c2d8f081d8c",
+    "short_sha": "c8e0b26",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T14:15:56-03:00",
-    "message": "Merge pull request #197 from JGaspar-Eng/feat/ux-confiabilidade-persistencia-normas"
+    "date": "2026-08-27T14:23:55-03:00",
+    "message": "Merge pull request #198 from JGaspar-Eng/fix/persistencia-categoria-nbr8681"
   },
   "commits": [
+    {
+      "sha": "c8e0b26c95d8ee4c2843a63fc7519c2d8f081d8c",
+      "short_sha": "c8e0b26",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T14:23:55-03:00",
+      "message": "Merge pull request #198 from JGaspar-Eng/fix/persistencia-categoria-nbr8681"
+    },
+    {
+      "sha": "b599f078336a899cd811e60e0467f811f43fa8dd",
+      "short_sha": "b599f07",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T14:21:40-03:00",
+      "message": "test(wizard): protege categoria NBR 8681 existente"
+    },
+    {
+      "sha": "6d1b6fba1d29cda692fae1721a785bbfcb329d75",
+      "short_sha": "6d1b6fb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T14:21:11-03:00",
+      "message": "fix(wizard): preserva categoria NBR 8681 do projeto existente"
+    },
     {
       "sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
       "short_sha": "f669dfd",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T13:41:42-03:00",
       "message": "feat(infra): exibe apoios derivados na planta 2D"
-    },
-    {
-      "sha": "c330fd278f0ae54338bea159f86bcad410f2d769",
-      "short_sha": "c330fd2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:40:24-03:00",
-      "message": "test(infra): cobre descritores do overlay 2D"
-    },
-    {
-      "sha": "ae6899d1ef2836eb2b21643f571f19a16a1340a4",
-      "short_sha": "ae6899d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:39:31-03:00",
-      "message": "feat(infra): define descritores visuais do overlay 2D"
-    },
-    {
-      "sha": "a35f4ace18304bb9174add80dfa1a11514051b91",
-      "short_sha": "a35f4ac",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:35:36-03:00",
-      "message": "Merge pull request #195 from JGaspar-Eng/feat/orq-estrut-01-runtime-infra"
     }
   ],
   "development": {
@@ -1332,7 +1332,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33097526068",
-    "run_number": "156"
+    "run_id": "33098193549",
+    "run_number": "157"
   }
 }
