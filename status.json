@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-08-27T22:40:37Z",
+  "generated_at": "2026-08-27T22:43:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dfb2f1d648486acf424e804f33c89c5ef3c4fc84",
-    "short_sha": "dfb2f1d",
+    "sha": "84e4cca3dbe06c6af5d22525d308c6cf19c8792d",
+    "short_sha": "84e4cca",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T19:40:28-03:00",
-    "message": "docs(status): adiciona linha real de execução ao painel"
+    "date": "2026-08-27T19:43:39-03:00",
+    "message": "Merge pull request #199 from JGaspar-Eng/fix/status-sequencia-real"
   },
   "commits": [
+    {
+      "sha": "84e4cca3dbe06c6af5d22525d308c6cf19c8792d",
+      "short_sha": "84e4cca",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T19:43:39-03:00",
+      "message": "Merge pull request #199 from JGaspar-Eng/fix/status-sequencia-real"
+    },
+    {
+      "sha": "5247e4782de3a8a2f1ba9a419fa30d5047b6670d",
+      "short_sha": "5247e47",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T19:41:52-03:00",
+      "message": "docs(status): publica linha real de execução"
+    },
     {
       "sha": "dfb2f1d648486acf424e804f33c89c5ef3c4fc84",
       "short_sha": "dfb2f1d",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T13:48:13-03:00",
       "message": "test: cobre persistencia da categoria NBR 8681"
-    },
-    {
-      "sha": "969357ae810b27e8a8a4ae4f65c2f2836e003099",
-      "short_sha": "969357a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:47:58-03:00",
-      "message": "docs: registra auditoria de completude funcional"
-    },
-    {
-      "sha": "8423823c262d4bacfd709a9d09f2b8716de903d8",
-      "short_sha": "8423823",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:43:24-03:00",
-      "message": "Merge pull request #196 from JGaspar-Eng/feat/orq-estrut-01-overlay-2d"
     }
   ],
   "development": {
@@ -1332,7 +1332,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33123436599",
-    "run_number": "158"
+    "run_id": "33123639184",
+    "run_number": "159"
   }
 }
