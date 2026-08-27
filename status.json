@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-27T11:25:22Z",
+  "generated_at": "2026-08-27T11:57:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "16285ecf0136af817e7bd090f0414111be5e0558",
-    "short_sha": "16285ec",
+    "sha": "a3afc87a6026eabced83f7f03f9e6c8f2895367e",
+    "short_sha": "a3afc87",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T08:25:13-03:00",
-    "message": "Merge pull request #189 from JGaspar-Eng/fix/dim-fund-01-selecao-infra"
+    "date": "2026-08-27T08:57:09-03:00",
+    "message": "Merge pull request #190 from JGaspar-Eng/fix/dim-fund-01-ux-base-wrap"
   },
   "commits": [
+    {
+      "sha": "a3afc87a6026eabced83f7f03f9e6c8f2895367e",
+      "short_sha": "a3afc87",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:57:09-03:00",
+      "message": "Merge pull request #190 from JGaspar-Eng/fix/dim-fund-01-ux-base-wrap"
+    },
+    {
+      "sha": "10340376940a19a8f47a4e1f9752773d257ba7f6",
+      "short_sha": "1034037",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:55:12-03:00",
+      "message": "test(fundacao): protege navegação à base e quebra de texto"
+    },
+    {
+      "sha": "3e2fd7bf4af21b8e4eeb716b4b6504fb42360759",
+      "short_sha": "3e2fd7b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:54:43-03:00",
+      "message": "fix(fundacao): contém textos do painel normativo"
+    },
+    {
+      "sha": "e1bebdc7b9c81921bcdb1bf16243c64e074698ff",
+      "short_sha": "e1bebdc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:54:17-03:00",
+      "message": "fix(fundacao): navega automaticamente ao pavimento base"
+    },
     {
       "sha": "16285ecf0136af817e7bd090f0414111be5e0558",
       "short_sha": "16285ec",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T23:06:07-03:00",
       "message": "fix(fundacao): restaura comentários técnicos da RightBar"
-    },
-    {
-      "sha": "bb33503e5b6a0cb837810d5761a530f19e7051c2",
-      "short_sha": "bb33503",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T23:03:23-03:00",
-      "message": "fix(fundacao): preserva conteúdo adjacente da RightBar"
-    },
-    {
-      "sha": "ac389dd9176e9843df06dcad167b72e1af8c5504",
-      "short_sha": "ac389dd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:59:03-03:00",
-      "message": "feat(fundacao): exibe diagnóstico normativo na RightBar"
-    },
-    {
-      "sha": "cefde13e72090e230c6f0cbf55d7e5bd03911c17",
-      "short_sha": "cefde13",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:57:10-03:00",
-      "message": "test(fundacao): inclui regressão visual no gate"
-    },
-    {
-      "sha": "48462e735e2e3e8666759ac02dacdbbfdc11e717",
-      "short_sha": "48462e7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:56:37-03:00",
-      "message": "test(fundacao): protege apresentação normativa separada"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33067287110",
-    "run_number": "148"
+    "run_id": "33069631874",
+    "run_number": "149"
   }
 }
