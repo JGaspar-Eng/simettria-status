@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-27T11:57:17Z",
+  "generated_at": "2026-08-27T12:13:24Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a3afc87a6026eabced83f7f03f9e6c8f2895367e",
-    "short_sha": "a3afc87",
+    "sha": "e145349b264c1737b890f064dda479ada1d2aae7",
+    "short_sha": "e145349",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T08:57:09-03:00",
-    "message": "Merge pull request #190 from JGaspar-Eng/fix/dim-fund-01-ux-base-wrap"
+    "date": "2026-08-27T09:13:15-03:00",
+    "message": "Merge pull request #191 from JGaspar-Eng/feat/orq-estrut-01-nos-estruturais"
   },
   "commits": [
+    {
+      "sha": "e145349b264c1737b890f064dda479ada1d2aae7",
+      "short_sha": "e145349",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:13:15-03:00",
+      "message": "Merge pull request #191 from JGaspar-Eng/feat/orq-estrut-01-nos-estruturais"
+    },
+    {
+      "sha": "61c7e1de9581db0a7c238cfdf1aa401039d4170b",
+      "short_sha": "61c7e1d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:11:30-03:00",
+      "message": "fix(estrutura): rejeita coordenadas nulas na topologia"
+    },
+    {
+      "sha": "1304de7db3d986716aa96262566621257ad12364",
+      "short_sha": "1304de7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:08:20-03:00",
+      "message": "test(estrutura): inclui nos estruturais no gate"
+    },
+    {
+      "sha": "0b7aaa85507aa0dbe6bd0ee7d11f26d7a5c3cdd6",
+      "short_sha": "0b7aaa8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:07:27-03:00",
+      "message": "docs(estrutura): registra orquestracao global desejada"
+    },
+    {
+      "sha": "c0af6b7a1385dce1f0ffe844e587557e3d35ab81",
+      "short_sha": "c0af6b7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:06:54-03:00",
+      "message": "test(estrutura): protege derivacao de nos estruturais"
+    },
+    {
+      "sha": "eb4a8ed8edc04d67d7a9e4288c8a14a1be07c4d6",
+      "short_sha": "eb4a8ed",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:06:28-03:00",
+      "message": "feat(estrutura): deriva nos estruturais rastreaveis"
+    },
     {
       "sha": "a3afc87a6026eabced83f7f03f9e6c8f2895367e",
       "short_sha": "a3afc87",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T08:54:17-03:00",
       "message": "fix(fundacao): navega automaticamente ao pavimento base"
-    },
-    {
-      "sha": "16285ecf0136af817e7bd090f0414111be5e0558",
-      "short_sha": "16285ec",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T08:25:13-03:00",
-      "message": "Merge pull request #189 from JGaspar-Eng/fix/dim-fund-01-selecao-infra"
-    },
-    {
-      "sha": "e25c6878d682c932f29045543d43c54d4176669a",
-      "short_sha": "e25c687",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T08:23:12-03:00",
-      "message": "test(fundacao): protege seleção da fundação na infraestrutura"
-    },
-    {
-      "sha": "b743aef032b4fc45599ffd59bf50751ce4517df0",
-      "short_sha": "b743aef",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T08:22:51-03:00",
-      "message": "fix(fundacao): instala interação da fundação na infraestrutura"
-    },
-    {
-      "sha": "5743552d5e928038cd74fbecf0aacb6cc1f749e0",
-      "short_sha": "5743552",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T08:22:28-03:00",
-      "message": "fix(fundacao): habilita seleção e lançamento na infraestrutura"
-    },
-    {
-      "sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
-      "short_sha": "c0b0352",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T23:07:37-03:00",
-      "message": "Merge pull request #188 from JGaspar-Eng/feat/dim-fund-01-ui-auditoria"
-    },
-    {
-      "sha": "380981d1b47584c8191263d7f53a5b317942d4a3",
-      "short_sha": "380981d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T23:06:07-03:00",
-      "message": "fix(fundacao): restaura comentários técnicos da RightBar"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33069631874",
-    "run_number": "149"
+    "run_id": "33070849774",
+    "run_number": "150"
   }
 }
