@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-27T16:27:35Z",
+  "generated_at": "2026-08-27T16:35:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7392e9aac6f00d258c9483da2f229022c0220e49",
-    "short_sha": "7392e9a",
+    "sha": "a35f4ace18304bb9174add80dfa1a11514051b91",
+    "short_sha": "a35f4ac",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T13:27:24-03:00",
-    "message": "Merge pull request #194 from JGaspar-Eng/feat/orq-estrut-01-propostas-infra"
+    "date": "2026-08-27T13:35:36-03:00",
+    "message": "Merge pull request #195 from JGaspar-Eng/feat/orq-estrut-01-runtime-infra"
   },
   "commits": [
+    {
+      "sha": "a35f4ace18304bb9174add80dfa1a11514051b91",
+      "short_sha": "a35f4ac",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:35:36-03:00",
+      "message": "Merge pull request #195 from JGaspar-Eng/feat/orq-estrut-01-runtime-infra"
+    },
+    {
+      "sha": "2444ab8d5b3ce7e3f76cffc5e8d79730bb80584e",
+      "short_sha": "2444ab8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:33:50-03:00",
+      "message": "test(infra): cobre snapshot derivado do overlay"
+    },
+    {
+      "sha": "dc1e344d506fd623e09b8e38de2ddb8042b746bb",
+      "short_sha": "dc1e344",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:33:23-03:00",
+      "message": "feat(infra): cria snapshot derivado para overlay 2D"
+    },
     {
       "sha": "7392e9aac6f00d258c9483da2f229022c0220e49",
       "short_sha": "7392e9a",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T09:21:59-03:00",
       "message": "test(fundacao): inclui apoios base no gate"
-    },
-    {
-      "sha": "0abca0e41eea3c7cc82a1e9ccdf32e265e6a83a0",
-      "short_sha": "0abca0e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:21:10-03:00",
-      "message": "test(fundacao): protege apoios rastreaveis da base"
-    },
-    {
-      "sha": "f5fdb45a9688cde53fb738163a0eb1037c2b4809",
-      "short_sha": "f5fdb45",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:20:49-03:00",
-      "message": "feat(fundacao): deriva apoios rastreaveis da base"
-    },
-    {
-      "sha": "368627724c20190bcce465fb2ec70352503bbdcb",
-      "short_sha": "3686277",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:18:21-03:00",
-      "message": "Merge pull request #192 from JGaspar-Eng/feat/orq-estrut-01-orquestrador-global"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33093301558",
-    "run_number": "153"
+    "run_id": "33094024409",
+    "run_number": "154"
   }
 }
