@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-27T02:07:48Z",
+  "generated_at": "2026-08-27T11:25:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
-    "short_sha": "c0b0352",
+    "sha": "16285ecf0136af817e7bd090f0414111be5e0558",
+    "short_sha": "16285ec",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T23:07:37-03:00",
-    "message": "Merge pull request #188 from JGaspar-Eng/feat/dim-fund-01-ui-auditoria"
+    "date": "2026-08-27T08:25:13-03:00",
+    "message": "Merge pull request #189 from JGaspar-Eng/fix/dim-fund-01-selecao-infra"
   },
   "commits": [
+    {
+      "sha": "16285ecf0136af817e7bd090f0414111be5e0558",
+      "short_sha": "16285ec",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:25:13-03:00",
+      "message": "Merge pull request #189 from JGaspar-Eng/fix/dim-fund-01-selecao-infra"
+    },
+    {
+      "sha": "e25c6878d682c932f29045543d43c54d4176669a",
+      "short_sha": "e25c687",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:23:12-03:00",
+      "message": "test(fundacao): protege seleção da fundação na infraestrutura"
+    },
+    {
+      "sha": "b743aef032b4fc45599ffd59bf50751ce4517df0",
+      "short_sha": "b743aef",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:22:51-03:00",
+      "message": "fix(fundacao): instala interação da fundação na infraestrutura"
+    },
+    {
+      "sha": "5743552d5e928038cd74fbecf0aacb6cc1f749e0",
+      "short_sha": "5743552",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T08:22:28-03:00",
+      "message": "fix(fundacao): habilita seleção e lançamento na infraestrutura"
+    },
     {
       "sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
       "short_sha": "c0b0352",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T22:56:37-03:00",
       "message": "test(fundacao): protege apresentação normativa separada"
-    },
-    {
-      "sha": "b536c3e3edc546183e1856bf1662461035dc8727",
-      "short_sha": "b536c3e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:55:46-03:00",
-      "message": "feat(fundacao): adiciona status normativo separado na UI"
-    },
-    {
-      "sha": "4d0042f2d6ecf7bcc825bbf27ff596108b2be784",
-      "short_sha": "4d0042f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:51:59-03:00",
-      "message": "Merge pull request #187 from JGaspar-Eng/feat/dim-fund-01-integracao-graph-memorial"
-    },
-    {
-      "sha": "d1543af11e56e53bd367a8bbbf89d865650f9008",
-      "short_sha": "d1543af",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:48:50-03:00",
-      "message": "test(fundacao): inclui integração Graph/memorial no gate"
-    },
-    {
-      "sha": "8fe0f2ecee4d03db5a6e8b47a7c143091a48e385",
-      "short_sha": "8fe0f2e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:48:16-03:00",
-      "message": "test(fundacao): cobre runtime e Graph do DIM-FUND-01"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33032303997",
-    "run_number": "147"
+    "run_id": "33067287110",
+    "run_number": "148"
   }
 }
