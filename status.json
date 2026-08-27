@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-27T12:24:07Z",
+  "generated_at": "2026-08-27T16:27:35Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "690b52085a99f684b1673866596297745a192f10",
-    "short_sha": "690b520",
+    "sha": "7392e9aac6f00d258c9483da2f229022c0220e49",
+    "short_sha": "7392e9a",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T09:23:58-03:00",
-    "message": "Merge pull request #193 from JGaspar-Eng/feat/orq-estrut-01-apoios-base"
+    "date": "2026-08-27T13:27:24-03:00",
+    "message": "Merge pull request #194 from JGaspar-Eng/feat/orq-estrut-01-propostas-infra"
   },
   "commits": [
+    {
+      "sha": "7392e9aac6f00d258c9483da2f229022c0220e49",
+      "short_sha": "7392e9a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:27:24-03:00",
+      "message": "Merge pull request #194 from JGaspar-Eng/feat/orq-estrut-01-propostas-infra"
+    },
+    {
+      "sha": "0f63dc67970a1f5e7e3108677a4aa91a8fdb4cdc",
+      "short_sha": "0f63dc6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:28:41-03:00",
+      "message": "test(fundacao): inclui propostas e estado visual no gate"
+    },
+    {
+      "sha": "33523195b3769672915db65d4ebc4dd697a34a58",
+      "short_sha": "3352319",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:27:53-03:00",
+      "message": "test(fundacao): protege propostas e estado visual"
+    },
+    {
+      "sha": "3fc7aece763b7207e16772b00bb0767f46049c5d",
+      "short_sha": "3fc7aec",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:27:34-03:00",
+      "message": "feat(fundacao): define estado visual tecnico independente da selecao"
+    },
+    {
+      "sha": "b491df947b194158deb6da11cd20961777a5db77",
+      "short_sha": "b491df9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:27:14-03:00",
+      "message": "feat(fundacao): deriva demarcacoes e propostas rastreaveis"
+    },
     {
       "sha": "690b52085a99f684b1673866596297745a192f10",
       "short_sha": "690b520",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T09:18:21-03:00",
       "message": "Merge pull request #192 from JGaspar-Eng/feat/orq-estrut-01-orquestrador-global"
-    },
-    {
-      "sha": "482c5e5553476f3bd1309ccc73e56720b2dd5881",
-      "short_sha": "482c5e5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:16:47-03:00",
-      "message": "test(estrutura): inclui orquestrador global no gate"
-    },
-    {
-      "sha": "244ea869caf49c04c7f1478a4333cbdcd1423699",
-      "short_sha": "244ea86",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:15:55-03:00",
-      "message": "test(estrutura): protege orquestrador global"
-    },
-    {
-      "sha": "3b2eb1b6482d1dfbae2fc414788abd5d97926a56",
-      "short_sha": "3b2eb1b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:15:36-03:00",
-      "message": "feat(estrutura): cria orquestrador global de calculo"
-    },
-    {
-      "sha": "e145349b264c1737b890f064dda479ada1d2aae7",
-      "short_sha": "e145349",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:13:15-03:00",
-      "message": "Merge pull request #191 from JGaspar-Eng/feat/orq-estrut-01-nos-estruturais"
-    },
-    {
-      "sha": "61c7e1de9581db0a7c238cfdf1aa401039d4170b",
-      "short_sha": "61c7e1d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:11:30-03:00",
-      "message": "fix(estrutura): rejeita coordenadas nulas na topologia"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33071673686",
-    "run_number": "152"
+    "run_id": "33093301558",
+    "run_number": "153"
   }
 }
