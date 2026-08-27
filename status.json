@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-27T01:35:17Z",
+  "generated_at": "2026-08-27T01:52:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "44f99dbd343cbc0cfc65e6516f8d3998483a240f",
-    "short_sha": "44f99db",
+    "sha": "4d0042f2d6ecf7bcc825bbf27ff596108b2be784",
+    "short_sha": "4d0042f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T22:35:09-03:00",
-    "message": "Merge pull request #186 from JGaspar-Eng/feat/dim-fund-01-verificacao-centrada"
+    "date": "2026-08-26T22:51:59-03:00",
+    "message": "Merge pull request #187 from JGaspar-Eng/feat/dim-fund-01-integracao-graph-memorial"
   },
   "commits": [
+    {
+      "sha": "4d0042f2d6ecf7bcc825bbf27ff596108b2be784",
+      "short_sha": "4d0042f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:51:59-03:00",
+      "message": "Merge pull request #187 from JGaspar-Eng/feat/dim-fund-01-integracao-graph-memorial"
+    },
+    {
+      "sha": "d1543af11e56e53bd367a8bbbf89d865650f9008",
+      "short_sha": "d1543af",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:48:50-03:00",
+      "message": "test(fundacao): inclui integração Graph/memorial no gate"
+    },
+    {
+      "sha": "8fe0f2ecee4d03db5a6e8b47a7c143091a48e385",
+      "short_sha": "8fe0f2e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:48:16-03:00",
+      "message": "test(fundacao): cobre runtime e Graph do DIM-FUND-01"
+    },
+    {
+      "sha": "46415fa9f2c0e20980ebb9006d5e76b45802d9e4",
+      "short_sha": "46415fa",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:47:51-03:00",
+      "message": "feat(fundacao): cria runtime normativo do memorial"
+    },
+    {
+      "sha": "bab1370bfe8fd5671b8d8c66bcd0ef6635ca06bf",
+      "short_sha": "bab1370",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:47:27-03:00",
+      "message": "feat(fundacao): integra verificação ao Calculation Graph"
+    },
     {
       "sha": "44f99dbd343cbc0cfc65e6516f8d3998483a240f",
       "short_sha": "44f99db",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T22:30:08-03:00",
       "message": "docs(normas): fixa NBR 6122:2022 no DIM-FUND-01"
-    },
-    {
-      "sha": "9e0f906cd47ec938594be93bd3920626b2d6067c",
-      "short_sha": "9e0f906",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:29:36-03:00",
-      "message": "test(fundacao): cobre verificação centrada NBR 6122"
-    },
-    {
-      "sha": "0bc7bba4481d4f60402aa771eb269063f7343e43",
-      "short_sha": "0bc7bba",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:29:21-03:00",
-      "message": "test(fundacao): sincroniza contrato com NBR 6122:2022"
-    },
-    {
-      "sha": "59e1133dbaf15e835651e24b269c8b3bf563b077",
-      "short_sha": "59e1133",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:28:49-03:00",
-      "message": "feat(fundacao): fixa referência NBR 6122:2022"
-    },
-    {
-      "sha": "dd5c47633fd24bd3df737626c36b659dee2f1b32",
-      "short_sha": "dd5c476",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:28:25-03:00",
-      "message": "feat(fundacao): implementa primeira verificação geotécnica centrada"
-    },
-    {
-      "sha": "440707d91456a775586fa097b3c484cc23559d9d",
-      "short_sha": "440707d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:25:28-03:00",
-      "message": "Merge pull request #185 from JGaspar-Eng/feat/dim-fund-01-associacao-acoes"
     }
   ],
   "development": {
@@ -1024,7 +1024,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 65,
+    "validator_count": 66,
     "validators": [
       {
         "name": "test:base",
@@ -1105,6 +1105,10 @@
       {
         "name": "test:dim-fund-pressao-centrada",
         "command": "node tests/validar_pressao_centrada_fundacao_dim_fund_01.mjs"
+      },
+      {
+        "name": "test:dim-fund-graph-memorial",
+        "command": "node tests/validar_integracao_graph_memorial_fundacao_dim_fund_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -1294,7 +1298,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33030565318",
-    "run_number": "145"
+    "run_id": "33031462335",
+    "run_number": "146"
   }
 }
