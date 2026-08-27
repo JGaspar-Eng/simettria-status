@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-27T01:19:07Z",
+  "generated_at": "2026-08-27T01:25:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e063bd7180e7ed3225f1c1245b8152a52748883b",
-    "short_sha": "e063bd7",
+    "sha": "440707d91456a775586fa097b3c484cc23559d9d",
+    "short_sha": "440707d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T22:18:59-03:00",
-    "message": "Merge pull request #184 from JGaspar-Eng/feat/dim-fund-01-base-normativa"
+    "date": "2026-08-26T22:25:28-03:00",
+    "message": "Merge pull request #185 from JGaspar-Eng/feat/dim-fund-01-associacao-acoes"
   },
   "commits": [
+    {
+      "sha": "440707d91456a775586fa097b3c484cc23559d9d",
+      "short_sha": "440707d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:25:28-03:00",
+      "message": "Merge pull request #185 from JGaspar-Eng/feat/dim-fund-01-associacao-acoes"
+    },
+    {
+      "sha": "b1823623156f4b3bec903a8e79c711e36b430c8c",
+      "short_sha": "b182362",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:23:36-03:00",
+      "message": "test(status): atualiza progresso do DIM-FUND-01 para 60%"
+    },
+    {
+      "sha": "18a25b8d3bc6d31e25c4e96afeb97d74f8304fcc",
+      "short_sha": "18a25b8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:23:09-03:00",
+      "message": "test(fundacao): integra associação e ações ao gate"
+    },
+    {
+      "sha": "3626fbd566bee030d19e38a16ae0e03a518587c0",
+      "short_sha": "3626fbd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:22:42-03:00",
+      "message": "docs(fundacao): fecha objetivo 3 do DIM-FUND-01"
+    },
+    {
+      "sha": "b2c8af19f369623872f37bf1fc6240a2b1b36ce1",
+      "short_sha": "b2c8af1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:22:00-03:00",
+      "message": "test(fundacao): cobre associação explícita e transmissão de ações"
+    },
+    {
+      "sha": "cd2ac276d2868a7ed5f14a3f6f64dd93cece258e",
+      "short_sha": "cd2ac27",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:21:36-03:00",
+      "message": "feat(fundacao): cria associação estrutural explícita e pacote de ações"
+    },
     {
       "sha": "e063bd7180e7ed3225f1c1245b8152a52748883b",
       "short_sha": "e063bd7",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T22:15:57-03:00",
       "message": "docs(fundacao): abre checkpoint do DIM-FUND-01"
-    },
-    {
-      "sha": "138e0bf4abe5c1610772580736f5ae523227210a",
-      "short_sha": "138e0bf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:15:39-03:00",
-      "message": "docs(fundacao): registra auditoria inicial do DIM-FUND-01"
-    },
-    {
-      "sha": "de207942fda8f8f1d9ace1ba179fa73ba9e04c92",
-      "short_sha": "de20794",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:15:18-03:00",
-      "message": "test(fundacao): integra contrato DIM-FUND-01 ao gate"
-    },
-    {
-      "sha": "9f0d37e8a09318332292495c9a58c1bdf4e1d84d",
-      "short_sha": "9f0d37e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:14:49-03:00",
-      "message": "test(fundacao): cobre contrato inicial do DIM-FUND-01"
-    },
-    {
-      "sha": "3dab3c88f35a07efaa7f5f38fbac36da043f6f0e",
-      "short_sha": "3dab3c8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:14:33-03:00",
-      "message": "feat(fundacao): cria contrato normativo inicial do DIM-FUND-01"
-    },
-    {
-      "sha": "3575113a4b9e0989743218ef51096e194bc103b3",
-      "short_sha": "3575113",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T20:47:10-03:00",
-      "message": "Merge pull request #183 from JGaspar-Eng/docs/dim-pilar-01-fechamento-objetivo5"
-    },
-    {
-      "sha": "1e428d35523ce4505da69120ce8404ff716563bc",
-      "short_sha": "1e428d3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T20:44:04-03:00",
-      "message": "test(status): fecha progresso do DIM-PILAR-01 em 100%"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
       ],
       "progress": {
         "total": 5,
-        "done": 2,
+        "done": 3,
         "in_progress": 1,
-        "pending": 2,
-        "percent": 40,
+        "pending": 1,
+        "percent": 60,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -116,13 +116,13 @@
           },
           {
             "text": "estabelecer uma associação estrutural rastreável entre Pilar e Fundação e definir a transmissão de ações de cálculo sem vínculo implícito por proximidade",
-            "state": "in_progress",
-            "marker": "🟡"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "implementar a primeira verificação normativa de fundação rasa somente após edição, ações e resistência geotécnica de projeto estarem demonstradas",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "in_progress",
+            "marker": "🟡"
           },
           {
             "text": "integrar resultados e diagnósticos ao Calculation Graph/memorial e concluir regressão e auditoria visual real do bloco.",
@@ -1024,7 +1024,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 63,
+    "validator_count": 64,
     "validators": [
       {
         "name": "test:base",
@@ -1097,6 +1097,10 @@
       {
         "name": "test:dim-fund-contrato",
         "command": "node tests/validar_contrato_normativo_fundacao_dim_fund_01.mjs"
+      },
+      {
+        "name": "test:dim-fund-associacao",
+        "command": "node tests/validar_associacao_acoes_fundacao_dim_fund_01.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -1286,7 +1290,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33029703610",
-    "run_number": "143"
+    "run_id": "33030049368",
+    "run_number": "144"
   }
 }
