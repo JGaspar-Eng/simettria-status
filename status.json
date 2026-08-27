@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-27T01:52:09Z",
+  "generated_at": "2026-08-27T02:07:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4d0042f2d6ecf7bcc825bbf27ff596108b2be784",
-    "short_sha": "4d0042f",
+    "sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
+    "short_sha": "c0b0352",
     "author": "Joanez Gaspar",
-    "date": "2026-08-26T22:51:59-03:00",
-    "message": "Merge pull request #187 from JGaspar-Eng/feat/dim-fund-01-integracao-graph-memorial"
+    "date": "2026-08-26T23:07:37-03:00",
+    "message": "Merge pull request #188 from JGaspar-Eng/feat/dim-fund-01-ui-auditoria"
   },
   "commits": [
+    {
+      "sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
+      "short_sha": "c0b0352",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T23:07:37-03:00",
+      "message": "Merge pull request #188 from JGaspar-Eng/feat/dim-fund-01-ui-auditoria"
+    },
+    {
+      "sha": "380981d1b47584c8191263d7f53a5b317942d4a3",
+      "short_sha": "380981d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T23:06:07-03:00",
+      "message": "fix(fundacao): restaura comentários técnicos da RightBar"
+    },
+    {
+      "sha": "bb33503e5b6a0cb837810d5761a530f19e7051c2",
+      "short_sha": "bb33503",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T23:03:23-03:00",
+      "message": "fix(fundacao): preserva conteúdo adjacente da RightBar"
+    },
+    {
+      "sha": "ac389dd9176e9843df06dcad167b72e1af8c5504",
+      "short_sha": "ac389dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:59:03-03:00",
+      "message": "feat(fundacao): exibe diagnóstico normativo na RightBar"
+    },
+    {
+      "sha": "cefde13e72090e230c6f0cbf55d7e5bd03911c17",
+      "short_sha": "cefde13",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:57:10-03:00",
+      "message": "test(fundacao): inclui regressão visual no gate"
+    },
+    {
+      "sha": "48462e735e2e3e8666759ac02dacdbbfdc11e717",
+      "short_sha": "48462e7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:56:37-03:00",
+      "message": "test(fundacao): protege apresentação normativa separada"
+    },
+    {
+      "sha": "b536c3e3edc546183e1856bf1662461035dc8727",
+      "short_sha": "b536c3e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-26T22:55:46-03:00",
+      "message": "feat(fundacao): adiciona status normativo separado na UI"
+    },
     {
       "sha": "4d0042f2d6ecf7bcc825bbf27ff596108b2be784",
       "short_sha": "4d0042f",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-26T22:48:16-03:00",
       "message": "test(fundacao): cobre runtime e Graph do DIM-FUND-01"
-    },
-    {
-      "sha": "46415fa9f2c0e20980ebb9006d5e76b45802d9e4",
-      "short_sha": "46415fa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:47:51-03:00",
-      "message": "feat(fundacao): cria runtime normativo do memorial"
-    },
-    {
-      "sha": "bab1370bfe8fd5671b8d8c66bcd0ef6635ca06bf",
-      "short_sha": "bab1370",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:47:27-03:00",
-      "message": "feat(fundacao): integra verificação ao Calculation Graph"
-    },
-    {
-      "sha": "44f99dbd343cbc0cfc65e6516f8d3998483a240f",
-      "short_sha": "44f99db",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:35:09-03:00",
-      "message": "Merge pull request #186 from JGaspar-Eng/feat/dim-fund-01-verificacao-centrada"
-    },
-    {
-      "sha": "c1dc356e6365c57b90aebf640d798aae868dce8a",
-      "short_sha": "c1dc356",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:33:20-03:00",
-      "message": "test(status): atualiza DIM-FUND-01 para 80%"
-    },
-    {
-      "sha": "dc8483a80c8417e631563fde990da2d109d663c3",
-      "short_sha": "dc8483a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:32:49-03:00",
-      "message": "docs(fundacao): fecha objetivo 4 do DIM-FUND-01"
-    },
-    {
-      "sha": "782dce85b08f6a8c072daa2bd11a94edada7a664",
-      "short_sha": "782dce8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:30:39-03:00",
-      "message": "test(fundacao): integra pressão centrada ao gate"
-    },
-    {
-      "sha": "7f55fafe386bf080f4004f925781e944484c1e48",
-      "short_sha": "7f55faf",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-26T22:30:08-03:00",
-      "message": "docs(normas): fixa NBR 6122:2022 no DIM-FUND-01"
     }
   ],
   "development": {
@@ -1024,7 +1024,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 66,
+    "validator_count": 67,
     "validators": [
       {
         "name": "test:base",
@@ -1109,6 +1109,10 @@
       {
         "name": "test:dim-fund-graph-memorial",
         "command": "node tests/validar_integracao_graph_memorial_fundacao_dim_fund_01.mjs"
+      },
+      {
+        "name": "test:dim-fund-ui",
+        "command": "node tests/validar_fundacao_dim_fund_ui.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -1298,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33031462335",
-    "run_number": "146"
+    "run_id": "33032303997",
+    "run_number": "147"
   }
 }
