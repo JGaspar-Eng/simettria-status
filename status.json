@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-27T16:43:34Z",
+  "generated_at": "2026-08-27T17:16:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8423823c262d4bacfd709a9d09f2b8716de903d8",
-    "short_sha": "8423823",
+    "sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
+    "short_sha": "f669dfd",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T13:43:24-03:00",
-    "message": "Merge pull request #196 from JGaspar-Eng/feat/orq-estrut-01-overlay-2d"
+    "date": "2026-08-27T14:15:56-03:00",
+    "message": "Merge pull request #197 from JGaspar-Eng/feat/ux-confiabilidade-persistencia-normas"
   },
   "commits": [
+    {
+      "sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
+      "short_sha": "f669dfd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T14:15:56-03:00",
+      "message": "Merge pull request #197 from JGaspar-Eng/feat/ux-confiabilidade-persistencia-normas"
+    },
+    {
+      "sha": "3bcdc00a9e83bd66f4dae64e8c4b79c7443fa264",
+      "short_sha": "3bcdc00",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T14:13:57-03:00",
+      "message": "test: recalibra painel para plano funcional real"
+    },
+    {
+      "sha": "69b8e83eecfa633308675d83d38c75bf9840c60b",
+      "short_sha": "69b8e83",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T14:12:53-03:00",
+      "message": "docs: replaneja prioridades de confiabilidade e UX"
+    },
+    {
+      "sha": "8a29473e143d334d65c906c4c8d7dbd9900d6069",
+      "short_sha": "8a29473",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:48:13-03:00",
+      "message": "test: cobre persistencia da categoria NBR 8681"
+    },
+    {
+      "sha": "969357ae810b27e8a8a4ae4f65c2f2836e003099",
+      "short_sha": "969357a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T13:47:58-03:00",
+      "message": "docs: registra auditoria de completude funcional"
+    },
     {
       "sha": "8423823c262d4bacfd709a9d09f2b8716de903d8",
       "short_sha": "8423823",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T13:35:36-03:00",
       "message": "Merge pull request #195 from JGaspar-Eng/feat/orq-estrut-01-runtime-infra"
-    },
-    {
-      "sha": "2444ab8d5b3ce7e3f76cffc5e8d79730bb80584e",
-      "short_sha": "2444ab8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:33:50-03:00",
-      "message": "test(infra): cobre snapshot derivado do overlay"
-    },
-    {
-      "sha": "dc1e344d506fd623e09b8e38de2ddb8042b746bb",
-      "short_sha": "dc1e344",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:33:23-03:00",
-      "message": "feat(infra): cria snapshot derivado para overlay 2D"
-    },
-    {
-      "sha": "7392e9aac6f00d258c9483da2f229022c0220e49",
-      "short_sha": "7392e9a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:27:24-03:00",
-      "message": "Merge pull request #194 from JGaspar-Eng/feat/orq-estrut-01-propostas-infra"
-    },
-    {
-      "sha": "0f63dc67970a1f5e7e3108677a4aa91a8fdb4cdc",
-      "short_sha": "0f63dc6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:28:41-03:00",
-      "message": "test(fundacao): inclui propostas e estado visual no gate"
-    },
-    {
-      "sha": "33523195b3769672915db65d4ebc4dd697a34a58",
-      "short_sha": "3352319",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:27:53-03:00",
-      "message": "test(fundacao): protege propostas e estado visual"
     }
   ],
   "development": {
@@ -95,14 +95,19 @@
         "criar um contrato normativo inicial, puro e testável, que impeça promoção de estimativas preliminares, edição normativa presumida ou esforços não vinculados",
         "estabelecer uma associação estrutural rastreável entre Pilar e Fundação e definir a transmissão de ações de cálculo sem vínculo implícito por proximidade",
         "implementar a primeira verificação normativa de fundação rasa somente após edição, ações e resistência geotécnica de projeto estarem demonstradas",
-        "integrar resultados e diagnósticos ao Calculation Graph/memorial e concluir regressão e auditoria visual real do bloco."
+        "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente",
+        "incorporar a categoria de uso NBR 8681 ao Assistente de Projeto Novo, distinguindo claramente criação de projeto de edição/carregamento de projeto existente",
+        "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
+        "otimizar a verificação de orientação dos pilares e expor comandos claros para aplicar, revisar ou alterar as orientações calculadas",
+        "auditar as 88 sugestões do Calculation Graph e a experiência do Vento item a item, marcando somente o que estiver realmente integrado e validado visualmente",
+        "continuar o ORQ-ESTRUT-01 até o fluxo funcional completo: Calcular Tudo com loading, reações estruturais, demarcação/materialização rastreável da infraestrutura, seleção visual, painel lateral próprio, estados OK/alerta/falha e acesso a detalhamento/memorial."
       ],
       "progress": {
-        "total": 5,
+        "total": 10,
         "done": 4,
         "in_progress": 1,
-        "pending": 0,
-        "percent": 80,
+        "pending": 5,
+        "percent": 40,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -125,9 +130,34 @@
             "marker": "✅"
           },
           {
-            "text": "integrar resultados e diagnósticos ao Calculation Graph/memorial e concluir regressão e auditoria visual real do bloco.",
+            "text": "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente",
             "state": "in_progress",
             "marker": "🟡"
+          },
+          {
+            "text": "incorporar a categoria de uso NBR 8681 ao Assistente de Projeto Novo, distinguindo claramente criação de projeto de edição/carregamento de projeto existente",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "otimizar a verificação de orientação dos pilares e expor comandos claros para aplicar, revisar ou alterar as orientações calculadas",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "auditar as 88 sugestões do Calculation Graph e a experiência do Vento item a item, marcando somente o que estiver realmente integrado e validado visualmente",
+            "state": "pending",
+            "marker": "⬜"
+          },
+          {
+            "text": "continuar o ORQ-ESTRUT-01 até o fluxo funcional completo: Calcular Tudo com loading, reações estruturais, demarcação/materialização rastreável da infraestrutura, seleção visual, painel lateral próprio, estados OK/alerta/falha e acesso a detalhamento/memorial.",
+            "state": "pending",
+            "marker": "⬜"
           }
         ]
       }
@@ -1302,7 +1332,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33094699852",
-    "run_number": "155"
+    "run_id": "33097526068",
+    "run_number": "156"
   }
 }
