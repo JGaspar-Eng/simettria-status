@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-27T12:18:30Z",
+  "generated_at": "2026-08-27T12:24:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "368627724c20190bcce465fb2ec70352503bbdcb",
-    "short_sha": "3686277",
+    "sha": "690b52085a99f684b1673866596297745a192f10",
+    "short_sha": "690b520",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T09:18:21-03:00",
-    "message": "Merge pull request #192 from JGaspar-Eng/feat/orq-estrut-01-orquestrador-global"
+    "date": "2026-08-27T09:23:58-03:00",
+    "message": "Merge pull request #193 from JGaspar-Eng/feat/orq-estrut-01-apoios-base"
   },
   "commits": [
+    {
+      "sha": "690b52085a99f684b1673866596297745a192f10",
+      "short_sha": "690b520",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:23:58-03:00",
+      "message": "Merge pull request #193 from JGaspar-Eng/feat/orq-estrut-01-apoios-base"
+    },
+    {
+      "sha": "8df73e4ee5c03bf5f1f9d5fed3b4e68dd6dda6e9",
+      "short_sha": "8df73e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:21:59-03:00",
+      "message": "test(fundacao): inclui apoios base no gate"
+    },
+    {
+      "sha": "0abca0e41eea3c7cc82a1e9ccdf32e265e6a83a0",
+      "short_sha": "0abca0e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:21:10-03:00",
+      "message": "test(fundacao): protege apoios rastreaveis da base"
+    },
+    {
+      "sha": "f5fdb45a9688cde53fb738163a0eb1037c2b4809",
+      "short_sha": "f5fdb45",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T09:20:49-03:00",
+      "message": "feat(fundacao): deriva apoios rastreaveis da base"
+    },
     {
       "sha": "368627724c20190bcce465fb2ec70352503bbdcb",
       "short_sha": "3686277",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T09:11:30-03:00",
       "message": "fix(estrutura): rejeita coordenadas nulas na topologia"
-    },
-    {
-      "sha": "1304de7db3d986716aa96262566621257ad12364",
-      "short_sha": "1304de7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:08:20-03:00",
-      "message": "test(estrutura): inclui nos estruturais no gate"
-    },
-    {
-      "sha": "0b7aaa85507aa0dbe6bd0ee7d11f26d7a5c3cdd6",
-      "short_sha": "0b7aaa8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:07:27-03:00",
-      "message": "docs(estrutura): registra orquestracao global desejada"
-    },
-    {
-      "sha": "c0af6b7a1385dce1f0ffe844e587557e3d35ab81",
-      "short_sha": "c0af6b7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:06:54-03:00",
-      "message": "test(estrutura): protege derivacao de nos estruturais"
-    },
-    {
-      "sha": "eb4a8ed8edc04d67d7a9e4288c8a14a1be07c4d6",
-      "short_sha": "eb4a8ed",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T09:06:28-03:00",
-      "message": "feat(estrutura): deriva nos estruturais rastreaveis"
     }
   ],
   "development": {
@@ -1302,7 +1302,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33071239320",
-    "run_number": "151"
+    "run_id": "33071673686",
+    "run_number": "152"
   }
 }
