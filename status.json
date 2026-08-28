@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-08-28T11:47:55Z",
+  "generated_at": "2026-08-28T16:12:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5fd10ea71b1965acafcfe113a8266348ba47429c",
-    "short_sha": "5fd10ea",
+    "sha": "de3aece785ab201a0991a9676afb9dad3d83d9af",
+    "short_sha": "de3aece",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T08:47:44-03:00",
-    "message": "Merge pull request #205 from JGaspar-Eng/fix/p1-wizard-nomes-pavimentos"
+    "date": "2026-08-28T13:12:38-03:00",
+    "message": "Merge pull request #207 from JGaspar-Eng/feat/viga-apoio-em-viga"
   },
   "commits": [
+    {
+      "sha": "de3aece785ab201a0991a9676afb9dad3d83d9af",
+      "short_sha": "de3aece",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:12:38-03:00",
+      "message": "Merge pull request #207 from JGaspar-Eng/feat/viga-apoio-em-viga"
+    },
+    {
+      "sha": "8891b881a4802f28a364095f2280eef49af1bf2e",
+      "short_sha": "8891b88",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:10:49-03:00",
+      "message": "feat(viga): permite apoio estrutural pilar-viga"
+    },
     {
       "sha": "5fd10ea71b1965acafcfe113a8266348ba47429c",
       "short_sha": "5fd10ea",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T00:56:13-03:00",
       "message": "Merge pull request #203 from JGaspar-Eng/feat/p1-onboarding-categoria-nbr8681"
-    },
-    {
-      "sha": "187a3cbd420db7bfd5ca01a9d561d7bcf3481bfc",
-      "short_sha": "187a3cb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:54:22-03:00",
-      "message": "test(wizard): protege onboarding da categoria NBR 8681"
-    },
-    {
-      "sha": "d6662abf1e67a8c19cfefc9c4d76ab387ee0338e",
-      "short_sha": "d6662ab",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:53:54-03:00",
-      "message": "refactor(wizard): remove estado transitório não utilizado"
     }
   ],
   "development": {
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33168510452",
-    "run_number": "165"
+    "run_id": "33188874537",
+    "run_number": "166"
   }
 }
