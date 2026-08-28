@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-28T03:41:55Z",
+  "generated_at": "2026-08-28T03:47:02Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
-    "short_sha": "f968186",
+    "sha": "41376abfde652221e71d249bd4ac34ace4f74759",
+    "short_sha": "41376ab",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T00:41:45-03:00",
-    "message": "Merge pull request #201 from JGaspar-Eng/fix/p0-persistencia-categoria-nbr8681-gate"
+    "date": "2026-08-28T00:46:53-03:00",
+    "message": "Merge pull request #202 from JGaspar-Eng/docs/dim-fund-01-p0-fechamento"
   },
   "commits": [
+    {
+      "sha": "41376abfde652221e71d249bd4ac34ace4f74759",
+      "short_sha": "41376ab",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:46:53-03:00",
+      "message": "Merge pull request #202 from JGaspar-Eng/docs/dim-fund-01-p0-fechamento"
+    },
+    {
+      "sha": "7763d1b9e9902c80aefb069d6ae33c1787de21e4",
+      "short_sha": "7763d1b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:45:23-03:00",
+      "message": "test: atualiza dashboard para 5 de 10 no DIM-FUND-01"
+    },
+    {
+      "sha": "e002269cb7c9756e0acfc2c6cbbf0d03bc50136f",
+      "short_sha": "e002269",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:44:47-03:00",
+      "message": "docs: fecha P0 e inicia onboarding NBR 8681"
+    },
     {
       "sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
       "short_sha": "f968186",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T19:41:52-03:00",
       "message": "docs(status): publica linha real de execução"
-    },
-    {
-      "sha": "dfb2f1d648486acf424e804f33c89c5ef3c4fc84",
-      "short_sha": "dfb2f1d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T19:40:28-03:00",
-      "message": "docs(status): adiciona linha real de execução ao painel"
-    },
-    {
-      "sha": "c8e0b26c95d8ee4c2843a63fc7519c2d8f081d8c",
-      "short_sha": "c8e0b26",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T14:23:55-03:00",
-      "message": "Merge pull request #198 from JGaspar-Eng/fix/persistencia-categoria-nbr8681"
-    },
-    {
-      "sha": "b599f078336a899cd811e60e0467f811f43fa8dd",
-      "short_sha": "b599f07",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T14:21:40-03:00",
-      "message": "test(wizard): protege categoria NBR 8681 existente"
     }
   ],
   "development": {
@@ -95,7 +95,7 @@
         "criar um contrato normativo inicial, puro e testável, que impeça promoção de estimativas preliminares, edição normativa presumida ou esforços não vinculados",
         "estabelecer uma associação estrutural rastreável entre Pilar e Fundação e definir a transmissão de ações de cálculo sem vínculo implícito por proximidade",
         "implementar a primeira verificação normativa de fundação rasa somente após edição, ações e resistência geotécnica de projeto estarem demonstradas",
-        "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente",
+        "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente, incluindo regressão dedicada no `test:all` oficial",
         "incorporar a categoria de uso NBR 8681 ao Assistente de Projeto Novo, distinguindo claramente criação de projeto de edição/carregamento de projeto existente",
         "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
         "otimizar a verificação de orientação dos pilares e expor comandos claros para aplicar, revisar ou alterar as orientações calculadas",
@@ -104,10 +104,10 @@
       ],
       "progress": {
         "total": 10,
-        "done": 4,
+        "done": 5,
         "in_progress": 1,
-        "pending": 5,
-        "percent": 40,
+        "pending": 4,
+        "percent": 50,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -130,14 +130,14 @@
             "marker": "✅"
           },
           {
-            "text": "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente",
-            "state": "in_progress",
-            "marker": "🟡"
+            "text": "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente, incluindo regressão dedicada no `test:all` oficial",
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "incorporar a categoria de uso NBR 8681 ao Assistente de Projeto Novo, distinguindo claramente criação de projeto de edição/carregamento de projeto existente",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "in_progress",
+            "marker": "🟡"
           },
           {
             "text": "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33139642525",
-    "run_number": "161"
+    "run_id": "33139896104",
+    "run_number": "162"
   }
 }
