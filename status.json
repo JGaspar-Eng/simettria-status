@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-28T03:47:02Z",
+  "generated_at": "2026-08-28T03:56:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "41376abfde652221e71d249bd4ac34ace4f74759",
-    "short_sha": "41376ab",
+    "sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
+    "short_sha": "bb9146a",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T00:46:53-03:00",
-    "message": "Merge pull request #202 from JGaspar-Eng/docs/dim-fund-01-p0-fechamento"
+    "date": "2026-08-28T00:56:13-03:00",
+    "message": "Merge pull request #203 from JGaspar-Eng/feat/p1-onboarding-categoria-nbr8681"
   },
   "commits": [
+    {
+      "sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
+      "short_sha": "bb9146a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:56:13-03:00",
+      "message": "Merge pull request #203 from JGaspar-Eng/feat/p1-onboarding-categoria-nbr8681"
+    },
+    {
+      "sha": "187a3cbd420db7bfd5ca01a9d561d7bcf3481bfc",
+      "short_sha": "187a3cb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:54:22-03:00",
+      "message": "test(wizard): protege onboarding da categoria NBR 8681"
+    },
+    {
+      "sha": "d6662abf1e67a8c19cfefc9c4d76ab387ee0338e",
+      "short_sha": "d6662ab",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:53:54-03:00",
+      "message": "refactor(wizard): remove estado transitório não utilizado"
+    },
+    {
+      "sha": "4d83654df20c4c5c25ab56678489a87435859ba8",
+      "short_sha": "4d83654",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:52:24-03:00",
+      "message": "fix(wizard): preserva contrato do observador de fechamento"
+    },
+    {
+      "sha": "50e952f16e8e6b3d07709d7f7419bb98e890f3e6",
+      "short_sha": "50e952f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:51:48-03:00",
+      "message": "feat(wizard): coleta categoria NBR 8681 no onboarding"
+    },
     {
       "sha": "41376abfde652221e71d249bd4ac34ace4f74759",
       "short_sha": "41376ab",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T00:39:50-03:00",
       "message": "test: inclui persistencia NBR 8681 no gate oficial"
-    },
-    {
-      "sha": "a39441e16ec172ea97c50add1d85a4f8d70a26cf",
-      "short_sha": "a39441e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T21:33:13-03:00",
-      "message": "Merge pull request #200 from JGaspar-Eng/test/status-dashboard-publicacao-assets"
-    },
-    {
-      "sha": "0c4b4cc8eea4a0eb94cc7f34a1b661a33d9abe78",
-      "short_sha": "0c4b4cc",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T21:31:26-03:00",
-      "message": "docs(status): formaliza contrato de publicação do painel"
-    },
-    {
-      "sha": "e90a168b5416a553dd3270eb30bd63bd8f0d481f",
-      "short_sha": "e90a168",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T21:31:04-03:00",
-      "message": "test(status): protege contrato de publicação da sequência"
-    },
-    {
-      "sha": "84e4cca3dbe06c6af5d22525d308c6cf19c8792d",
-      "short_sha": "84e4cca",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T19:43:39-03:00",
-      "message": "Merge pull request #199 from JGaspar-Eng/fix/status-sequencia-real"
-    },
-    {
-      "sha": "5247e4782de3a8a2f1ba9a419fa30d5047b6670d",
-      "short_sha": "5247e47",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T19:41:52-03:00",
-      "message": "docs(status): publica linha real de execução"
     }
   ],
   "development": {
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33139896104",
-    "run_number": "162"
+    "run_id": "33140341554",
+    "run_number": "163"
   }
 }
