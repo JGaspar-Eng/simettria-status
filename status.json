@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-28T03:56:22Z",
+  "generated_at": "2026-08-28T11:43:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
-    "short_sha": "bb9146a",
+    "sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
+    "short_sha": "03a036e",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T00:56:13-03:00",
-    "message": "Merge pull request #203 from JGaspar-Eng/feat/p1-onboarding-categoria-nbr8681"
+    "date": "2026-08-28T08:43:20-03:00",
+    "message": "Merge pull request #204 from JGaspar-Eng/fix/p0-categoria-nbr8681-persistencia-real"
   },
   "commits": [
+    {
+      "sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
+      "short_sha": "03a036e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:43:20-03:00",
+      "message": "Merge pull request #204 from JGaspar-Eng/fix/p0-categoria-nbr8681-persistencia-real"
+    },
+    {
+      "sha": "ef77a5e3571bc2be91deba422934e7d20d8db867",
+      "short_sha": "ef77a5e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:41:50-03:00",
+      "message": "test(wizard): protege persistencia real da categoria"
+    },
+    {
+      "sha": "92731048ee10e9e3c8458101bf72b5d94b9b2593",
+      "short_sha": "9273104",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:41:26-03:00",
+      "message": "fix(wizard): preserva categoria NBR 8681 após criação"
+    },
     {
       "sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
       "short_sha": "bb9146a",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T00:45:23-03:00",
       "message": "test: atualiza dashboard para 5 de 10 no DIM-FUND-01"
-    },
-    {
-      "sha": "e002269cb7c9756e0acfc2c6cbbf0d03bc50136f",
-      "short_sha": "e002269",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:44:47-03:00",
-      "message": "docs: fecha P0 e inicia onboarding NBR 8681"
-    },
-    {
-      "sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
-      "short_sha": "f968186",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:41:45-03:00",
-      "message": "Merge pull request #201 from JGaspar-Eng/fix/p0-persistencia-categoria-nbr8681-gate"
-    },
-    {
-      "sha": "26df90bbb8c82e81c9b946acf2ca484e9c3f0b20",
-      "short_sha": "26df90b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:39:50-03:00",
-      "message": "test: inclui persistencia NBR 8681 no gate oficial"
     }
   ],
   "development": {
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33140341554",
-    "run_number": "163"
+    "run_id": "33168226810",
+    "run_number": "164"
   }
 }
