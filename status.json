@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-27T22:43:47Z",
+  "generated_at": "2026-08-28T00:33:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "84e4cca3dbe06c6af5d22525d308c6cf19c8792d",
-    "short_sha": "84e4cca",
+    "sha": "a39441e16ec172ea97c50add1d85a4f8d70a26cf",
+    "short_sha": "a39441e",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T19:43:39-03:00",
-    "message": "Merge pull request #199 from JGaspar-Eng/fix/status-sequencia-real"
+    "date": "2026-08-27T21:33:13-03:00",
+    "message": "Merge pull request #200 from JGaspar-Eng/test/status-dashboard-publicacao-assets"
   },
   "commits": [
+    {
+      "sha": "a39441e16ec172ea97c50add1d85a4f8d70a26cf",
+      "short_sha": "a39441e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T21:33:13-03:00",
+      "message": "Merge pull request #200 from JGaspar-Eng/test/status-dashboard-publicacao-assets"
+    },
+    {
+      "sha": "0c4b4cc8eea4a0eb94cc7f34a1b661a33d9abe78",
+      "short_sha": "0c4b4cc",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T21:31:26-03:00",
+      "message": "docs(status): formaliza contrato de publicação do painel"
+    },
+    {
+      "sha": "e90a168b5416a553dd3270eb30bd63bd8f0d481f",
+      "short_sha": "e90a168",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-27T21:31:04-03:00",
+      "message": "test(status): protege contrato de publicação da sequência"
+    },
     {
       "sha": "84e4cca3dbe06c6af5d22525d308c6cf19c8792d",
       "short_sha": "84e4cca",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T14:15:56-03:00",
       "message": "Merge pull request #197 from JGaspar-Eng/feat/ux-confiabilidade-persistencia-normas"
-    },
-    {
-      "sha": "3bcdc00a9e83bd66f4dae64e8c4b79c7443fa264",
-      "short_sha": "3bcdc00",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T14:13:57-03:00",
-      "message": "test: recalibra painel para plano funcional real"
-    },
-    {
-      "sha": "69b8e83eecfa633308675d83d38c75bf9840c60b",
-      "short_sha": "69b8e83",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T14:12:53-03:00",
-      "message": "docs: replaneja prioridades de confiabilidade e UX"
-    },
-    {
-      "sha": "8a29473e143d334d65c906c4c8d7dbd9900d6069",
-      "short_sha": "8a29473",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T13:48:13-03:00",
-      "message": "test: cobre persistencia da categoria NBR 8681"
     }
   ],
   "development": {
@@ -1332,7 +1332,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33123639184",
-    "run_number": "159"
+    "run_id": "33130088273",
+    "run_number": "160"
   }
 }
