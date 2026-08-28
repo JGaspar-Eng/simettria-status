@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-28T16:54:40Z",
+  "generated_at": "2026-08-28T17:17:24Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e8a12992274dfa07a5cb7d453d71603aa8a7a705",
-    "short_sha": "e8a1299",
+    "sha": "83e3e5b43723684b73828a012fe19bfe4897147d",
+    "short_sha": "83e3e5b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T13:54:30-03:00",
-    "message": "Merge pull request #210 from JGaspar-Eng/feat/visualiza-no-estrutural"
+    "date": "2026-08-28T14:17:16-03:00",
+    "message": "Merge pull request #211 from JGaspar-Eng/fix/validacao-apoio-viga"
   },
   "commits": [
+    {
+      "sha": "83e3e5b43723684b73828a012fe19bfe4897147d",
+      "short_sha": "83e3e5b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:17:16-03:00",
+      "message": "Merge pull request #211 from JGaspar-Eng/fix/validacao-apoio-viga"
+    },
+    {
+      "sha": "f57209c924ac6d87dff547e3979e2ee8a70e325b",
+      "short_sha": "f57209c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:15:51-03:00",
+      "message": "test(validacao): cobre referência pilar-viga"
+    },
+    {
+      "sha": "a8fcf14d4aaf594bff518a718fb79a517f99196e",
+      "short_sha": "a8fcf14",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:15:08-03:00",
+      "message": "fix(validacao): reconhece apoio estrutural em viga"
+    },
     {
       "sha": "e8a12992274dfa07a5cb7d453d71603aa8a7a705",
       "short_sha": "e8a1299",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T13:46:52-03:00",
       "message": "test(viga): cobre cópia pilar-viga entre pavimentos"
-    },
-    {
-      "sha": "1eaf05eacb44f1a3acfa7879d1fba695adc8bbbc",
-      "short_sha": "1eaf05e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:46:01-03:00",
-      "message": "fix(viga): preserva apoio pilar-viga ao copiar pavimento"
-    },
-    {
-      "sha": "157f42ea5ba74770be672e0a54b8ac1776ed940c",
-      "short_sha": "157f42e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:40:27-03:00",
-      "message": "Merge pull request #208 from JGaspar-Eng/fix/pilar-viga-pavimentos-snap"
-    },
-    {
-      "sha": "b0150340eb738612bf13dda32233315e1e8b041f",
-      "short_sha": "b015034",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:36:00-03:00",
-      "message": "test(viga): cobre snap ortogonal pilar-viga"
     }
   ],
   "development": {
@@ -1340,7 +1340,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33192182561",
-    "run_number": "169"
+    "run_id": "33193979739",
+    "run_number": "170"
   }
 }
