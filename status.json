@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-28T11:43:28Z",
+  "generated_at": "2026-08-28T11:47:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
-    "short_sha": "03a036e",
+    "sha": "5fd10ea71b1965acafcfe113a8266348ba47429c",
+    "short_sha": "5fd10ea",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T08:43:20-03:00",
-    "message": "Merge pull request #204 from JGaspar-Eng/fix/p0-categoria-nbr8681-persistencia-real"
+    "date": "2026-08-28T08:47:44-03:00",
+    "message": "Merge pull request #205 from JGaspar-Eng/fix/p1-wizard-nomes-pavimentos"
   },
   "commits": [
+    {
+      "sha": "5fd10ea71b1965acafcfe113a8266348ba47429c",
+      "short_sha": "5fd10ea",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:47:44-03:00",
+      "message": "Merge pull request #205 from JGaspar-Eng/fix/p1-wizard-nomes-pavimentos"
+    },
+    {
+      "sha": "cf3f7388b46e52c0dcc398f73c183a3543d4dcd2",
+      "short_sha": "cf3f738",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:46:19-03:00",
+      "message": "test(wizard): valida nomes estruturais dos pavimentos"
+    },
+    {
+      "sha": "9ba69525f65cf77b29e21ee1f540d876978db868",
+      "short_sha": "9ba6952",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:45:58-03:00",
+      "message": "fix(wizard): corrige sintaxe da normalização de pavimentos"
+    },
+    {
+      "sha": "f1d5702bd9421e131d43517a02b3aec7081013d8",
+      "short_sha": "f1d5702",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T08:45:21-03:00",
+      "message": "fix(wizard): normaliza nomes dos pavimentos por tipo"
+    },
     {
       "sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
       "short_sha": "03a036e",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T00:53:54-03:00",
       "message": "refactor(wizard): remove estado transitório não utilizado"
-    },
-    {
-      "sha": "4d83654df20c4c5c25ab56678489a87435859ba8",
-      "short_sha": "4d83654",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:52:24-03:00",
-      "message": "fix(wizard): preserva contrato do observador de fechamento"
-    },
-    {
-      "sha": "50e952f16e8e6b3d07709d7f7419bb98e890f3e6",
-      "short_sha": "50e952f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:51:48-03:00",
-      "message": "feat(wizard): coleta categoria NBR 8681 no onboarding"
-    },
-    {
-      "sha": "41376abfde652221e71d249bd4ac34ace4f74759",
-      "short_sha": "41376ab",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:46:53-03:00",
-      "message": "Merge pull request #202 from JGaspar-Eng/docs/dim-fund-01-p0-fechamento"
-    },
-    {
-      "sha": "7763d1b9e9902c80aefb069d6ae33c1787de21e4",
-      "short_sha": "7763d1b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:45:23-03:00",
-      "message": "test: atualiza dashboard para 5 de 10 no DIM-FUND-01"
     }
   ],
   "development": {
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33168226810",
-    "run_number": "164"
+    "run_id": "33168510452",
+    "run_number": "165"
   }
 }
