@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-08-28T00:33:22Z",
+  "generated_at": "2026-08-28T03:41:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a39441e16ec172ea97c50add1d85a4f8d70a26cf",
-    "short_sha": "a39441e",
+    "sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
+    "short_sha": "f968186",
     "author": "Joanez Gaspar",
-    "date": "2026-08-27T21:33:13-03:00",
-    "message": "Merge pull request #200 from JGaspar-Eng/test/status-dashboard-publicacao-assets"
+    "date": "2026-08-28T00:41:45-03:00",
+    "message": "Merge pull request #201 from JGaspar-Eng/fix/p0-persistencia-categoria-nbr8681-gate"
   },
   "commits": [
+    {
+      "sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
+      "short_sha": "f968186",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:41:45-03:00",
+      "message": "Merge pull request #201 from JGaspar-Eng/fix/p0-persistencia-categoria-nbr8681-gate"
+    },
+    {
+      "sha": "26df90bbb8c82e81c9b946acf2ca484e9c3f0b20",
+      "short_sha": "26df90b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T00:39:50-03:00",
+      "message": "test: inclui persistencia NBR 8681 no gate oficial"
+    },
     {
       "sha": "a39441e16ec172ea97c50add1d85a4f8d70a26cf",
       "short_sha": "a39441e",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-27T14:21:40-03:00",
       "message": "test(wizard): protege categoria NBR 8681 existente"
-    },
-    {
-      "sha": "6d1b6fba1d29cda692fae1721a785bbfcb329d75",
-      "short_sha": "6d1b6fb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T14:21:11-03:00",
-      "message": "fix(wizard): preserva categoria NBR 8681 do projeto existente"
-    },
-    {
-      "sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
-      "short_sha": "f669dfd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-27T14:15:56-03:00",
-      "message": "Merge pull request #197 from JGaspar-Eng/feat/ux-confiabilidade-persistencia-normas"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 67,
+    "validator_count": 68,
     "validators": [
       {
         "name": "test:base",
@@ -1293,6 +1293,10 @@
         "command": "node tests/validar_wizard_preserva_perfil.mjs"
       },
       {
+        "name": "test:persistencia-categoria-nbr8681",
+        "command": "node tests/validar_persistencia_categoria_uso_nbr8681.mjs"
+      },
+      {
         "name": "test:status-dashboard",
         "command": "python tests/validar_status_dashboard.py"
       },
@@ -1332,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33130088273",
-    "run_number": "160"
+    "run_id": "33139642525",
+    "run_number": "161"
   }
 }
