@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-28T16:12:47Z",
+  "generated_at": "2026-08-28T16:40:39Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "de3aece785ab201a0991a9676afb9dad3d83d9af",
-    "short_sha": "de3aece",
+    "sha": "157f42ea5ba74770be672e0a54b8ac1776ed940c",
+    "short_sha": "157f42e",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T13:12:38-03:00",
-    "message": "Merge pull request #207 from JGaspar-Eng/feat/viga-apoio-em-viga"
+    "date": "2026-08-28T13:40:27-03:00",
+    "message": "Merge pull request #208 from JGaspar-Eng/fix/pilar-viga-pavimentos-snap"
   },
   "commits": [
+    {
+      "sha": "157f42ea5ba74770be672e0a54b8ac1776ed940c",
+      "short_sha": "157f42e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:40:27-03:00",
+      "message": "Merge pull request #208 from JGaspar-Eng/fix/pilar-viga-pavimentos-snap"
+    },
+    {
+      "sha": "b0150340eb738612bf13dda32233315e1e8b041f",
+      "short_sha": "b015034",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:36:00-03:00",
+      "message": "test(viga): cobre snap ortogonal pilar-viga"
+    },
+    {
+      "sha": "195bd6797e162dff1a36cf5ab2058acf31e61f65",
+      "short_sha": "195bd67",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:35:31-03:00",
+      "message": "fix(viga): aceita pilar continuo nos pavimentos superiores"
+    },
+    {
+      "sha": "ba86e83f46b4fc0b66ccb9e438db7e2407a629cb",
+      "short_sha": "ba86e83",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:35:17-03:00",
+      "message": "fix(viga): preserva snap ortogonal no apoio em viga"
+    },
     {
       "sha": "de3aece785ab201a0991a9676afb9dad3d83d9af",
       "short_sha": "de3aece",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T08:45:21-03:00",
       "message": "fix(wizard): normaliza nomes dos pavimentos por tipo"
-    },
-    {
-      "sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
-      "short_sha": "03a036e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T08:43:20-03:00",
-      "message": "Merge pull request #204 from JGaspar-Eng/fix/p0-categoria-nbr8681-persistencia-real"
-    },
-    {
-      "sha": "ef77a5e3571bc2be91deba422934e7d20d8db867",
-      "short_sha": "ef77a5e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T08:41:50-03:00",
-      "message": "test(wizard): protege persistencia real da categoria"
-    },
-    {
-      "sha": "92731048ee10e9e3c8458101bf72b5d94b9b2593",
-      "short_sha": "9273104",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T08:41:26-03:00",
-      "message": "fix(wizard): preserva categoria NBR 8681 após criação"
-    },
-    {
-      "sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
-      "short_sha": "bb9146a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T00:56:13-03:00",
-      "message": "Merge pull request #203 from JGaspar-Eng/feat/p1-onboarding-categoria-nbr8681"
     }
   ],
   "development": {
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33188874537",
-    "run_number": "166"
+    "run_id": "33191087040",
+    "run_number": "167"
   }
 }
