@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-08-28T17:17:24Z",
+  "generated_at": "2026-08-28T17:23:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "83e3e5b43723684b73828a012fe19bfe4897147d",
-    "short_sha": "83e3e5b",
+    "sha": "19c547f9673aeee39c83fa61630fb3473e88068f",
+    "short_sha": "19c547f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T14:17:16-03:00",
-    "message": "Merge pull request #211 from JGaspar-Eng/fix/validacao-apoio-viga"
+    "date": "2026-08-28T14:23:06-03:00",
+    "message": "Merge pull request #212 from JGaspar-Eng/fix/ui-prancheta"
   },
   "commits": [
+    {
+      "sha": "19c547f9673aeee39c83fa61630fb3473e88068f",
+      "short_sha": "19c547f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:23:06-03:00",
+      "message": "Merge pull request #212 from JGaspar-Eng/fix/ui-prancheta"
+    },
+    {
+      "sha": "76c54ed1eddca8d08d3772886654ab3a3737473f",
+      "short_sha": "76c54ed",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:21:30-03:00",
+      "message": "test(ui): cobre navegação e nomes de pavimentos"
+    },
+    {
+      "sha": "4743acbe48d2fb310d1dd37658f7e432e0232492",
+      "short_sha": "4743acb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:21:01-03:00",
+      "message": "fix(ui): redesenha nós ao trocar pavimento"
+    },
+    {
+      "sha": "f5f65858434d65562e1453bdd0125f254437bd0f",
+      "short_sha": "f5f6585",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:20:37-03:00",
+      "message": "fix(ui): normaliza nomes genéricos de pavimentos legados"
+    },
+    {
+      "sha": "f2c06a0788585e1eb9c5f53e763e63ee4f470900",
+      "short_sha": "f2c06a0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T14:20:22-03:00",
+      "message": "feat(ui): usa roda do mouse para pan e zoom 2d"
+    },
     {
       "sha": "83e3e5b43723684b73828a012fe19bfe4897147d",
       "short_sha": "83e3e5b",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T13:52:48-03:00",
       "message": "test(ui): inclui nós estruturais no gate oficial"
-    },
-    {
-      "sha": "d1f61bdfb1b92f14e2d513ceffd59783ed94ab49",
-      "short_sha": "d1f61bd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:52:20-03:00",
-      "message": "test(ui): cobre marcador de encontro estrutural"
-    },
-    {
-      "sha": "9b152299e32d778b2d63e8bfbd1fb2014aae8df1",
-      "short_sha": "9b15229",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:52:04-03:00",
-      "message": "feat(ui): carrega overlay de nós estruturais"
-    },
-    {
-      "sha": "6a42e552d8f5d1f9938ef8c6bcc65e6187c86d9b",
-      "short_sha": "6a42e55",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:51:36-03:00",
-      "message": "feat(ui): representa encontros estruturais viga-viga"
-    },
-    {
-      "sha": "c7658b47a025b9b05b3d4099b688855af428286a",
-      "short_sha": "c7658b4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:49:02-03:00",
-      "message": "Merge pull request #209 from JGaspar-Eng/fix/copia-pilar-viga-pavimentos"
-    },
-    {
-      "sha": "60895a146cab9877d329e01a8c2443f47bd13266",
-      "short_sha": "60895a1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:46:52-03:00",
-      "message": "test(viga): cobre cópia pilar-viga entre pavimentos"
     }
   ],
   "development": {
@@ -1340,7 +1340,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33193979739",
-    "run_number": "170"
+    "run_id": "33194425371",
+    "run_number": "171"
   }
 }
