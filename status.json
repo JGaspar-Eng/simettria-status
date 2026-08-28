@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-28T16:40:39Z",
+  "generated_at": "2026-08-28T16:49:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "157f42ea5ba74770be672e0a54b8ac1776ed940c",
-    "short_sha": "157f42e",
+    "sha": "c7658b47a025b9b05b3d4099b688855af428286a",
+    "short_sha": "c7658b4",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T13:40:27-03:00",
-    "message": "Merge pull request #208 from JGaspar-Eng/fix/pilar-viga-pavimentos-snap"
+    "date": "2026-08-28T13:49:02-03:00",
+    "message": "Merge pull request #209 from JGaspar-Eng/fix/copia-pilar-viga-pavimentos"
   },
   "commits": [
+    {
+      "sha": "c7658b47a025b9b05b3d4099b688855af428286a",
+      "short_sha": "c7658b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:49:02-03:00",
+      "message": "Merge pull request #209 from JGaspar-Eng/fix/copia-pilar-viga-pavimentos"
+    },
+    {
+      "sha": "60895a146cab9877d329e01a8c2443f47bd13266",
+      "short_sha": "60895a1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:46:52-03:00",
+      "message": "test(viga): cobre cópia pilar-viga entre pavimentos"
+    },
+    {
+      "sha": "1eaf05eacb44f1a3acfa7879d1fba695adc8bbbc",
+      "short_sha": "1eaf05e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T13:46:01-03:00",
+      "message": "fix(viga): preserva apoio pilar-viga ao copiar pavimento"
+    },
     {
       "sha": "157f42ea5ba74770be672e0a54b8ac1776ed940c",
       "short_sha": "157f42e",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T08:47:44-03:00",
       "message": "Merge pull request #205 from JGaspar-Eng/fix/p1-wizard-nomes-pavimentos"
-    },
-    {
-      "sha": "cf3f7388b46e52c0dcc398f73c183a3543d4dcd2",
-      "short_sha": "cf3f738",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T08:46:19-03:00",
-      "message": "test(wizard): valida nomes estruturais dos pavimentos"
-    },
-    {
-      "sha": "9ba69525f65cf77b29e21ee1f540d876978db868",
-      "short_sha": "9ba6952",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T08:45:58-03:00",
-      "message": "fix(wizard): corrige sintaxe da normalização de pavimentos"
-    },
-    {
-      "sha": "f1d5702bd9421e131d43517a02b3aec7081013d8",
-      "short_sha": "f1d5702",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T08:45:21-03:00",
-      "message": "fix(wizard): normaliza nomes dos pavimentos por tipo"
     }
   ],
   "development": {
@@ -1336,7 +1336,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33191087040",
-    "run_number": "167"
+    "run_id": "33191758519",
+    "run_number": "168"
   }
 }
