@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-29T14:43:46Z",
+  "generated_at": "2026-08-29T20:16:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7e8856f6059dfd230e40e5611c316b1b18a1a11a",
-    "short_sha": "7e8856f",
+    "sha": "427ec896ffa88500694fa690441ba80fd9cb6244",
+    "short_sha": "427ec89",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T11:43:38-03:00",
-    "message": "Merge pull request #215 from JGaspar-Eng/feat/viga-viga-topologia"
+    "date": "2026-08-29T17:16:08-03:00",
+    "message": "Merge pull request #216 from JGaspar-Eng/fix/a3-sistemas-colineares-suporte"
   },
   "commits": [
+    {
+      "sha": "427ec896ffa88500694fa690441ba80fd9cb6244",
+      "short_sha": "427ec89",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T17:16:08-03:00",
+      "message": "Merge pull request #216 from JGaspar-Eng/fix/a3-sistemas-colineares-suporte"
+    },
+    {
+      "sha": "355e6cba2a69bf2e9b3bdf49fc687c4fc2c4be73",
+      "short_sha": "355e6cb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T15:37:35-03:00",
+      "message": "test(viga): cobre falso nó por suporte compartilhado"
+    },
+    {
+      "sha": "975c0efb127030ad89930008e4b52edf2d79df3b",
+      "short_sha": "975c0ef",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T15:36:52-03:00",
+      "message": "fix(viga): restringe nó compartilhado a pilar real"
+    },
     {
       "sha": "7e8856f6059dfd230e40e5611c316b1b18a1a11a",
       "short_sha": "7e8856f",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T23:43:57-03:00",
       "message": "fix(viga): preserva diagnóstico de pilar inexistente"
-    },
-    {
-      "sha": "680d79a75e554439592a6f26a5ef3e9b0ca632dc",
-      "short_sha": "680d79a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T23:41:49-03:00",
-      "message": "test(viga): inclui resolvedor no gate oficial"
-    },
-    {
-      "sha": "36f585947e684fc81597995a73b848b3bc9e9a9a",
-      "short_sha": "36f5859",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T23:41:18-03:00",
-      "message": "test(viga): cobre apoio explícito em viga"
-    },
-    {
-      "sha": "7f2db9ad8556076d8900eef3abd44b3b0650a8c7",
-      "short_sha": "7f2db9a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T23:40:46-03:00",
-      "message": "fix(viga): respeita tipo declarado do apoio"
     }
   ],
   "development": {
@@ -1344,7 +1344,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33258355403",
-    "run_number": "174"
+    "run_id": "33273036053",
+    "run_number": "175"
   }
 }
