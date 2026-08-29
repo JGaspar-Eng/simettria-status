@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-29T22:54:04Z",
+  "generated_at": "2026-08-29T23:01:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "aa6e1761cd9cd00d7ebf12e3a5065fed8a60b013",
-    "short_sha": "aa6e176",
+    "sha": "8614c11e8360f989c0c99c6f034efb6f4f7ca724",
+    "short_sha": "8614c11",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T19:53:57-03:00",
-    "message": "Merge pull request #222 from JGaspar-Eng/fix/nomenclatura-pavimentos"
+    "date": "2026-08-29T20:01:03-03:00",
+    "message": "Merge pull request #223 from JGaspar-Eng/fix/3d-orientacao-pilares"
   },
   "commits": [
+    {
+      "sha": "8614c11e8360f989c0c99c6f034efb6f4f7ca724",
+      "short_sha": "8614c11",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:01:03-03:00",
+      "message": "Merge pull request #223 from JGaspar-Eng/fix/3d-orientacao-pilares"
+    },
+    {
+      "sha": "98431ced3700a66b1273e0788be9c7ddbdcc8c88",
+      "short_sha": "98431ce",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:59:26-03:00",
+      "message": "fix(3d): conecta sincronização de orientação ao modal público"
+    },
+    {
+      "sha": "c1483063f05c43c1d9c5f2c5a0d8f0357498890b",
+      "short_sha": "c148306",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:58:11-03:00",
+      "message": "merge(main): reconcilia orientação 3D com nomenclatura canônica"
+    },
     {
       "sha": "aa6e1761cd9cd00d7ebf12e3a5065fed8a60b013",
       "short_sha": "aa6e176",
@@ -25,60 +46,39 @@
       "message": "merge(main): reconcilia nomenclatura com transferencia viga-viga e OPT-PILAR"
     },
     {
+      "sha": "4f9097a15daedec4bf1c5e946460760e7742402e",
+      "short_sha": "4f9097a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:44:54-03:00",
+      "message": "test(3d): inclui orientacao de pilares no gate"
+    },
+    {
+      "sha": "7f45bd83c5a3738f9785533f9d2ddae72a8911e4",
+      "short_sha": "7f45bd8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:44:18-03:00",
+      "message": "test(3d): cobre orientacao visual dos pilares"
+    },
+    {
+      "sha": "7cddf378d4bb9885c64511b8958bbd934d08a0e0",
+      "short_sha": "7cddf37",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:43:50-03:00",
+      "message": "fix(3d): aplica orientacao dos pilares apos criar cena"
+    },
+    {
+      "sha": "8048805cfbdc7c1c89aa89d7737c61a4d6ee960a",
+      "short_sha": "8048805",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:43:35-03:00",
+      "message": "fix(3d): sincroniza orientacao real dos pilares"
+    },
+    {
       "sha": "dd4f79a1e5cf02a43e75bcdae73a4a3eb64eb723",
       "short_sha": "dd4f79a",
       "author": "JGaspar-Eng",
       "date": "2026-08-29T19:42:52-03:00",
       "message": "fix(pavimento): nomenclatura canonica semanticamente correta"
-    },
-    {
-      "sha": "d6a31a2cca14a75f50a65c0f5f3c7a666636ac17",
-      "short_sha": "d6a31a2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:39:21-03:00",
-      "message": "Merge pull request #221 from JGaspar-Eng/fix/opt-pilar-aplicar-recomendacoes"
-    },
-    {
-      "sha": "3fca9d62ee698ab4cc97837f63e0dea51960c9e6",
-      "short_sha": "3fca9d6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:37:37-03:00",
-      "message": "test(opt-pilar): cobre aplicacao explicita de orientacoes"
-    },
-    {
-      "sha": "1e7de4eeab09bd2d97cb4769f5b9621a446bf808",
-      "short_sha": "1e7de4e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:36:55-03:00",
-      "message": "feat(opt-pilar): permite aplicar recomendacoes no modal"
-    },
-    {
-      "sha": "be4e05184319e5f3ea8cb5c644d6797a2a335a91",
-      "short_sha": "be4e051",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:35:48-03:00",
-      "message": "feat(opt-pilar): adiciona aplicacao explicita de orientacoes"
-    },
-    {
-      "sha": "3a0428ab6a2eee5d8fc497b09b74fc53bdb273ee",
-      "short_sha": "3a0428a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:31:38-03:00",
-      "message": "Merge pull request #220 from JGaspar-Eng/feat/transferencia-viga-viga-cargas"
-    },
-    {
-      "sha": "f109ad9a1ba90819145c62e2c3aed28e98c76431",
-      "short_sha": "f109ad9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:30:10-03:00",
-      "message": "fix(viga): subdivide solver nos pontos de transferencia"
-    },
-    {
-      "sha": "d867d2b968e195105721f12af70f62c1308cb93c",
-      "short_sha": "d867d2b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:25:50-03:00",
-      "message": "test(viga): inclui transferencia viga-viga no gate"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 74,
+    "validator_count": 75,
     "validators": [
       {
         "name": "test:base",
@@ -1351,6 +1351,10 @@
       {
         "name": "test:nomenclatura-pavimentos",
         "command": "node tests/validar_nomenclatura_pavimentos.mjs"
+      },
+      {
+        "name": "test:3d-orientacao",
+        "command": "node tests/validar_orientacao_pilares_3d.mjs"
       }
     ]
   },
@@ -1360,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33279692224",
-    "run_number": "181"
+    "run_id": "33279964958",
+    "run_number": "182"
   }
 }
