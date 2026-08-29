@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-08-28T17:23:15Z",
+  "generated_at": "2026-08-29T02:38:50Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "19c547f9673aeee39c83fa61630fb3473e88068f",
-    "short_sha": "19c547f",
+    "sha": "5ca1402ae10e61380ce0003cbf6d627a6f00f7c2",
+    "short_sha": "5ca1402",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T14:23:06-03:00",
-    "message": "Merge pull request #212 from JGaspar-Eng/fix/ui-prancheta"
+    "date": "2026-08-28T23:38:42-03:00",
+    "message": "Merge pull request #213 from JGaspar-Eng/fix/reacao-sem-pilar-diagnostico"
   },
   "commits": [
+    {
+      "sha": "5ca1402ae10e61380ce0003cbf6d627a6f00f7c2",
+      "short_sha": "5ca1402",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T23:38:42-03:00",
+      "message": "Merge pull request #213 from JGaspar-Eng/fix/reacao-sem-pilar-diagnostico"
+    },
+    {
+      "sha": "7660154fd30a29941b3a76d732f27dc13c9f6889",
+      "short_sha": "7660154",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-28T21:36:52-03:00",
+      "message": "fix(pilar): impede perda silenciosa de reacao na descida de cargas"
+    },
     {
       "sha": "19c547f9673aeee39c83fa61630fb3473e88068f",
       "short_sha": "19c547f",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T14:15:08-03:00",
       "message": "fix(validacao): reconhece apoio estrutural em viga"
-    },
-    {
-      "sha": "e8a12992274dfa07a5cb7d453d71603aa8a7a705",
-      "short_sha": "e8a1299",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:54:30-03:00",
-      "message": "Merge pull request #210 from JGaspar-Eng/feat/visualiza-no-estrutural"
-    },
-    {
-      "sha": "bc420312506ebce5281c8a98fec9f0a76c014e4e",
-      "short_sha": "bc42031",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T13:52:48-03:00",
-      "message": "test(ui): inclui nós estruturais no gate oficial"
     }
   ],
   "development": {
@@ -1340,7 +1340,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33194425371",
-    "run_number": "171"
+    "run_id": "33229467860",
+    "run_number": "172"
   }
 }
