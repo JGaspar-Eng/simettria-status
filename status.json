@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-29T22:16:42Z",
+  "generated_at": "2026-08-29T22:31:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "99df007768470a16b0b101eb385f53d8dc1b8d29",
-    "short_sha": "99df007",
+    "sha": "3a0428ab6a2eee5d8fc497b09b74fc53bdb273ee",
+    "short_sha": "3a0428a",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T19:16:32-03:00",
-    "message": "Merge pull request #219 from JGaspar-Eng/feat/painel-sincronizacao-viva"
+    "date": "2026-08-29T19:31:38-03:00",
+    "message": "Merge pull request #220 from JGaspar-Eng/feat/transferencia-viga-viga-cargas"
   },
   "commits": [
+    {
+      "sha": "3a0428ab6a2eee5d8fc497b09b74fc53bdb273ee",
+      "short_sha": "3a0428a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:31:38-03:00",
+      "message": "Merge pull request #220 from JGaspar-Eng/feat/transferencia-viga-viga-cargas"
+    },
+    {
+      "sha": "f109ad9a1ba90819145c62e2c3aed28e98c76431",
+      "short_sha": "f109ad9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:30:10-03:00",
+      "message": "fix(viga): subdivide solver nos pontos de transferencia"
+    },
+    {
+      "sha": "d867d2b968e195105721f12af70f62c1308cb93c",
+      "short_sha": "d867d2b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:25:50-03:00",
+      "message": "test(viga): inclui transferencia viga-viga no gate"
+    },
+    {
+      "sha": "0197c66dec837ce2a55c13d03d7f1db2dc697c6b",
+      "short_sha": "0197c66",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:25:24-03:00",
+      "message": "test(viga): exige transferencia viga-viga no NEd"
+    },
+    {
+      "sha": "d50718552dd262cb8c6f7f2f6ddb7d353726450a",
+      "short_sha": "d507185",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:24:44-03:00",
+      "message": "test(viga): cobre transferencia de reacoes viga-viga"
+    },
+    {
+      "sha": "e5822ff0d92d4aae390c633971da758ab078677d",
+      "short_sha": "e5822ff",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:24:13-03:00",
+      "message": "feat(viga): propaga reacoes viga-viga ate pilares"
+    },
+    {
+      "sha": "af94301d55ade9935a6bcfb862257d1467f5f261",
+      "short_sha": "af94301",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:23:15-03:00",
+      "message": "feat(viga): adiciona nucleo de transferencia viga-viga"
+    },
     {
       "sha": "99df007768470a16b0b101eb385f53d8dc1b8d29",
       "short_sha": "99df007",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T18:21:40-03:00",
       "message": "Merge pull request #218 from JGaspar-Eng/fix/a4-exclusao-viga-suporte"
-    },
-    {
-      "sha": "d35a8e4503242c4785a1750c06d65b451f8dd8bc",
-      "short_sha": "d35a8e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T18:19:57-03:00",
-      "message": "test(viga): inclui regressao de exclusao de suporte no gate"
-    },
-    {
-      "sha": "85ae705d06a483776305a2ce3e2edeb2a460de20",
-      "short_sha": "85ae705",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T18:19:32-03:00",
-      "message": "fix(viga): bloqueia exclusao de suporte com dependentes"
-    },
-    {
-      "sha": "1047ce457aa038c6ff5776f70ce6cccd0d138516",
-      "short_sha": "1047ce4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T18:18:54-03:00",
-      "message": "test(viga): cobre exclusao de suporte com dependentes"
-    },
-    {
-      "sha": "3c0ad6f4f39ba4e8a616c0ada9fce7e432e4d9c7",
-      "short_sha": "3c0ad6f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T17:19:59-03:00",
-      "message": "Merge pull request #217 from JGaspar-Eng/fix/copia-viga-viga-pavimentos"
-    },
-    {
-      "sha": "427ec896ffa88500694fa690441ba80fd9cb6244",
-      "short_sha": "427ec89",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T17:16:08-03:00",
-      "message": "Merge pull request #216 from JGaspar-Eng/fix/a3-sistemas-colineares-suporte"
-    },
-    {
-      "sha": "ff8968418a46c394f8e3e513f3c7d139acbb140d",
-      "short_sha": "ff89684",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-29T15:42:03-03:00",
-      "message": "fix(pavimento): copia viga apoiada em duas vigas entre pavimentos"
-    },
-    {
-      "sha": "355e6cba2a69bf2e9b3bdf49fc687c4fc2c4be73",
-      "short_sha": "355e6cb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T15:37:35-03:00",
-      "message": "test(viga): cobre falso nó por suporte compartilhado"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 72,
+    "validator_count": 73,
     "validators": [
       {
         "name": "test:base",
@@ -1095,6 +1095,10 @@
       {
         "name": "test:viga-exclusao-suporte",
         "command": "node tests/validar_exclusao_viga_suporte_a4.mjs"
+      },
+      {
+        "name": "test:viga-transferencia",
+        "command": "node tests/validar_transferencia_reacoes_viga_viga.mjs"
       },
       {
         "name": "test:pilar-m3b-vinculo",
@@ -1352,7 +1356,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33278176356",
-    "run_number": "178"
+    "run_id": "33278802317",
+    "run_number": "179"
   }
 }
