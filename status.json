@@ -1,21 +1,35 @@
 {
-  "generated_at": "2026-08-29T20:16:18Z",
+  "generated_at": "2026-08-29T20:20:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "427ec896ffa88500694fa690441ba80fd9cb6244",
-    "short_sha": "427ec89",
+    "sha": "3c0ad6f4f39ba4e8a616c0ada9fce7e432e4d9c7",
+    "short_sha": "3c0ad6f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T17:16:08-03:00",
-    "message": "Merge pull request #216 from JGaspar-Eng/fix/a3-sistemas-colineares-suporte"
+    "date": "2026-08-29T17:19:59-03:00",
+    "message": "Merge pull request #217 from JGaspar-Eng/fix/copia-viga-viga-pavimentos"
   },
   "commits": [
+    {
+      "sha": "3c0ad6f4f39ba4e8a616c0ada9fce7e432e4d9c7",
+      "short_sha": "3c0ad6f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T17:19:59-03:00",
+      "message": "Merge pull request #217 from JGaspar-Eng/fix/copia-viga-viga-pavimentos"
+    },
     {
       "sha": "427ec896ffa88500694fa690441ba80fd9cb6244",
       "short_sha": "427ec89",
       "author": "Joanez Gaspar",
       "date": "2026-08-29T17:16:08-03:00",
       "message": "Merge pull request #216 from JGaspar-Eng/fix/a3-sistemas-colineares-suporte"
+    },
+    {
+      "sha": "ff8968418a46c394f8e3e513f3c7d139acbb140d",
+      "short_sha": "ff89684",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-29T15:42:03-03:00",
+      "message": "fix(pavimento): copia viga apoiada em duas vigas entre pavimentos"
     },
     {
       "sha": "355e6cba2a69bf2e9b3bdf49fc687c4fc2c4be73",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T11:38:10-03:00",
       "message": "Merge pull request #214 from JGaspar-Eng/fix/apoio-em-viga-resolver-integrado"
-    },
-    {
-      "sha": "b2143df46f0f78479cf3dfdce0c5e13c7a212e0e",
-      "short_sha": "b2143df",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T23:45:46-03:00",
-      "message": "test(pilar): explicita apoio fantasma como pilar"
-    },
-    {
-      "sha": "aa174463d2ceb2ef45141632ee040750af92e3ec",
-      "short_sha": "aa17446",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T23:43:57-03:00",
-      "message": "fix(viga): preserva diagnóstico de pilar inexistente"
     }
   ],
   "development": {
@@ -1344,7 +1344,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33273036053",
-    "run_number": "175"
+    "run_id": "33273206447",
+    "run_number": "176"
   }
 }
