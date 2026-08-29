@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-29T23:01:15Z",
+  "generated_at": "2026-08-29T23:08:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8614c11e8360f989c0c99c6f034efb6f4f7ca724",
-    "short_sha": "8614c11",
+    "sha": "7da84222793d9fb488564acae912a2ecc406d7ed",
+    "short_sha": "7da8422",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T20:01:03-03:00",
-    "message": "Merge pull request #223 from JGaspar-Eng/fix/3d-orientacao-pilares"
+    "date": "2026-08-29T20:07:52-03:00",
+    "message": "Merge pull request #224 from JGaspar-Eng/feat/3d-deformada-sa-l1"
   },
   "commits": [
+    {
+      "sha": "7da84222793d9fb488564acae912a2ecc406d7ed",
+      "short_sha": "7da8422",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:07:52-03:00",
+      "message": "Merge pull request #224 from JGaspar-Eng/feat/3d-deformada-sa-l1"
+    },
+    {
+      "sha": "8f959e6e70b5331ac19d7e69242539820b9161ec",
+      "short_sha": "8f959e6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:06:07-03:00",
+      "message": "test(3d): valida eixo centroidal da viga deformada"
+    },
+    {
+      "sha": "3f7be815fd0e798446f7e581f474367b4034e0d1",
+      "short_sha": "3f7be81",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:05:39-03:00",
+      "message": "fix(3d): alinha eixo deformado ao centroide das vigas"
+    },
+    {
+      "sha": "9dc2e846aa1c552ec07ff598546ec4026745e972",
+      "short_sha": "9dc2e84",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:04:59-03:00",
+      "message": "test(3d): inclui deformada SA-L1 no gate 3D"
+    },
+    {
+      "sha": "3830945b7c2a45929467eac96682a305a93cd18f",
+      "short_sha": "3830945",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:04:31-03:00",
+      "message": "test(3d): cobre deformada lateral SA-L1"
+    },
+    {
+      "sha": "a0c8c9d3625587271c31a78d5c47db06ac9e67c5",
+      "short_sha": "a0c8c9d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:04:04-03:00",
+      "message": "feat(3d): liga controles à deformada lateral SA-L1"
+    },
+    {
+      "sha": "12b6d1b332fce4e26a8b214d4075a2115c319d06",
+      "short_sha": "12b6d1b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:03:36-03:00",
+      "message": "feat(3d): cria deformada lateral SA-L1 auditável"
+    },
     {
       "sha": "8614c11e8360f989c0c99c6f034efb6f4f7ca724",
       "short_sha": "8614c11",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T19:58:11-03:00",
       "message": "merge(main): reconcilia orientação 3D com nomenclatura canônica"
-    },
-    {
-      "sha": "aa6e1761cd9cd00d7ebf12e3a5065fed8a60b013",
-      "short_sha": "aa6e176",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:53:57-03:00",
-      "message": "Merge pull request #222 from JGaspar-Eng/fix/nomenclatura-pavimentos"
-    },
-    {
-      "sha": "3dd234f32f7e4d9cad528dd6a9a9943c8f979f6d",
-      "short_sha": "3dd234f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:52:32-03:00",
-      "message": "merge(main): reconcilia nomenclatura com transferencia viga-viga e OPT-PILAR"
-    },
-    {
-      "sha": "4f9097a15daedec4bf1c5e946460760e7742402e",
-      "short_sha": "4f9097a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:44:54-03:00",
-      "message": "test(3d): inclui orientacao de pilares no gate"
-    },
-    {
-      "sha": "7f45bd83c5a3738f9785533f9d2ddae72a8911e4",
-      "short_sha": "7f45bd8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:44:18-03:00",
-      "message": "test(3d): cobre orientacao visual dos pilares"
-    },
-    {
-      "sha": "7cddf378d4bb9885c64511b8958bbd934d08a0e0",
-      "short_sha": "7cddf37",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:43:50-03:00",
-      "message": "fix(3d): aplica orientacao dos pilares apos criar cena"
-    },
-    {
-      "sha": "8048805cfbdc7c1c89aa89d7737c61a4d6ee960a",
-      "short_sha": "8048805",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:43:35-03:00",
-      "message": "fix(3d): sincroniza orientacao real dos pilares"
-    },
-    {
-      "sha": "dd4f79a1e5cf02a43e75bcdae73a4a3eb64eb723",
-      "short_sha": "dd4f79a",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-29T19:42:52-03:00",
-      "message": "fix(pavimento): nomenclatura canonica semanticamente correta"
     }
   ],
   "development": {
@@ -1364,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33279964958",
-    "run_number": "182"
+    "run_id": "33280242621",
+    "run_number": "183"
   }
 }
