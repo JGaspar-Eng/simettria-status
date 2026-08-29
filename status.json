@@ -1,21 +1,35 @@
 {
-  "generated_at": "2026-08-29T23:41:43Z",
+  "generated_at": "2026-08-29T23:43:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3a3b89dc0b9a8e65560a5d63507ca916399da9a9",
-    "short_sha": "3a3b89d",
+    "sha": "cd6270b369b544cbb7fd55f80f29ffb3df800c94",
+    "short_sha": "cd6270b",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T20:41:33-03:00",
-    "message": "Merge pull request #226 from JGaspar-Eng/chore/contrato-vigas-topologia-atual"
+    "date": "2026-08-29T20:42:56-03:00",
+    "message": "Merge pull request #227 from JGaspar-Eng/fix/auto-laje-topologia-atual"
   },
   "commits": [
+    {
+      "sha": "cd6270b369b544cbb7fd55f80f29ffb3df800c94",
+      "short_sha": "cd6270b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:42:56-03:00",
+      "message": "Merge pull request #227 from JGaspar-Eng/fix/auto-laje-topologia-atual"
+    },
     {
       "sha": "3a3b89dc0b9a8e65560a5d63507ca916399da9a9",
       "short_sha": "3a3b89d",
       "author": "Joanez Gaspar",
       "date": "2026-08-29T20:41:33-03:00",
       "message": "Merge pull request #226 from JGaspar-Eng/chore/contrato-vigas-topologia-atual"
+    },
+    {
+      "sha": "cedca2802848da54e0884377d6111c5e941e29d4",
+      "short_sha": "cedca28",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-29T20:33:21-03:00",
+      "message": "test(auto-laje): cobre topologia viga->viga, ramo parcial e copia entre pavimentos"
     },
     {
       "sha": "93fd0e864110605e18a5f6ce7d2cc6c64cc0b7d1",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T20:05:39-03:00",
       "message": "fix(3d): alinha eixo deformado ao centroide das vigas"
-    },
-    {
-      "sha": "9dc2e846aa1c552ec07ff598546ec4026745e972",
-      "short_sha": "9dc2e84",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:04:59-03:00",
-      "message": "test(3d): inclui deformada SA-L1 no gate 3D"
-    },
-    {
-      "sha": "3830945b7c2a45929467eac96682a305a93cd18f",
-      "short_sha": "3830945",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:04:31-03:00",
-      "message": "test(3d): cobre deformada lateral SA-L1"
     }
   ],
   "development": {
@@ -1364,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33281568708",
-    "run_number": "185"
+    "run_id": "33281621556",
+    "run_number": "186"
   }
 }
