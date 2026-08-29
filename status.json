@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-29T20:20:09Z",
+  "generated_at": "2026-08-29T21:21:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3c0ad6f4f39ba4e8a616c0ada9fce7e432e4d9c7",
-    "short_sha": "3c0ad6f",
+    "sha": "5a2f0fa716363a63c6a187db0490de4fda4f52d8",
+    "short_sha": "5a2f0fa",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T17:19:59-03:00",
-    "message": "Merge pull request #217 from JGaspar-Eng/fix/copia-viga-viga-pavimentos"
+    "date": "2026-08-29T18:21:40-03:00",
+    "message": "Merge pull request #218 from JGaspar-Eng/fix/a4-exclusao-viga-suporte"
   },
   "commits": [
+    {
+      "sha": "5a2f0fa716363a63c6a187db0490de4fda4f52d8",
+      "short_sha": "5a2f0fa",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T18:21:40-03:00",
+      "message": "Merge pull request #218 from JGaspar-Eng/fix/a4-exclusao-viga-suporte"
+    },
+    {
+      "sha": "d35a8e4503242c4785a1750c06d65b451f8dd8bc",
+      "short_sha": "d35a8e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T18:19:57-03:00",
+      "message": "test(viga): inclui regressao de exclusao de suporte no gate"
+    },
+    {
+      "sha": "85ae705d06a483776305a2ce3e2edeb2a460de20",
+      "short_sha": "85ae705",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T18:19:32-03:00",
+      "message": "fix(viga): bloqueia exclusao de suporte com dependentes"
+    },
+    {
+      "sha": "1047ce457aa038c6ff5776f70ce6cccd0d138516",
+      "short_sha": "1047ce4",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T18:18:54-03:00",
+      "message": "test(viga): cobre exclusao de suporte com dependentes"
+    },
     {
       "sha": "3c0ad6f4f39ba4e8a616c0ada9fce7e432e4d9c7",
       "short_sha": "3c0ad6f",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T11:43:38-03:00",
       "message": "Merge pull request #215 from JGaspar-Eng/feat/viga-viga-topologia"
-    },
-    {
-      "sha": "93409f12bb36cc9a2707a83792b7ad2e41f83bac",
-      "short_sha": "93409f1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T11:41:49-03:00",
-      "message": "test(viga): cobre apoio explícito viga-viga"
-    },
-    {
-      "sha": "52f322586d4c719480fea9cb8a4ddf61f80d87ba",
-      "short_sha": "52f3225",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T11:40:39-03:00",
-      "message": "feat(viga): adiciona interação viga para viga"
-    },
-    {
-      "sha": "56e50fb914ca6462a7012a4a1683143e52a02d38",
-      "short_sha": "56e50fb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T11:39:55-03:00",
-      "message": "feat(viga): generaliza apoio entre vigas"
-    },
-    {
-      "sha": "93c2684a0556af6739d1aa62643754d8fe77affe",
-      "short_sha": "93c2684",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T11:38:10-03:00",
-      "message": "Merge pull request #214 from JGaspar-Eng/fix/apoio-em-viga-resolver-integrado"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 70,
+    "validator_count": 71,
     "validators": [
       {
         "name": "test:base",
@@ -1091,6 +1091,10 @@
       {
         "name": "test:viga-sistemas",
         "command": "node tests/validar_resolvedor_sistemas_vigas.mjs"
+      },
+      {
+        "name": "test:viga-exclusao-suporte",
+        "command": "node tests/validar_exclusao_viga_suporte_a4.mjs"
       },
       {
         "name": "test:pilar-m3b-vinculo",
@@ -1344,7 +1348,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33273206447",
-    "run_number": "176"
+    "run_id": "33275876160",
+    "run_number": "177"
   }
 }
