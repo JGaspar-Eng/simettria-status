@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-29T14:38:19Z",
+  "generated_at": "2026-08-29T14:43:46Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "93c2684a0556af6739d1aa62643754d8fe77affe",
-    "short_sha": "93c2684",
+    "sha": "7e8856f6059dfd230e40e5611c316b1b18a1a11a",
+    "short_sha": "7e8856f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T11:38:10-03:00",
-    "message": "Merge pull request #214 from JGaspar-Eng/fix/apoio-em-viga-resolver-integrado"
+    "date": "2026-08-29T11:43:38-03:00",
+    "message": "Merge pull request #215 from JGaspar-Eng/feat/viga-viga-topologia"
   },
   "commits": [
+    {
+      "sha": "7e8856f6059dfd230e40e5611c316b1b18a1a11a",
+      "short_sha": "7e8856f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T11:43:38-03:00",
+      "message": "Merge pull request #215 from JGaspar-Eng/feat/viga-viga-topologia"
+    },
+    {
+      "sha": "93409f12bb36cc9a2707a83792b7ad2e41f83bac",
+      "short_sha": "93409f1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T11:41:49-03:00",
+      "message": "test(viga): cobre apoio explícito viga-viga"
+    },
+    {
+      "sha": "52f322586d4c719480fea9cb8a4ddf61f80d87ba",
+      "short_sha": "52f3225",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T11:40:39-03:00",
+      "message": "feat(viga): adiciona interação viga para viga"
+    },
+    {
+      "sha": "56e50fb914ca6462a7012a4a1683143e52a02d38",
+      "short_sha": "56e50fb",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T11:39:55-03:00",
+      "message": "feat(viga): generaliza apoio entre vigas"
+    },
     {
       "sha": "93c2684a0556af6739d1aa62643754d8fe77affe",
       "short_sha": "93c2684",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T23:40:46-03:00",
       "message": "fix(viga): respeita tipo declarado do apoio"
-    },
-    {
-      "sha": "5ca1402ae10e61380ce0003cbf6d627a6f00f7c2",
-      "short_sha": "5ca1402",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T23:38:42-03:00",
-      "message": "Merge pull request #213 from JGaspar-Eng/fix/reacao-sem-pilar-diagnostico"
-    },
-    {
-      "sha": "7660154fd30a29941b3a76d732f27dc13c9f6889",
-      "short_sha": "7660154",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-28T21:36:52-03:00",
-      "message": "fix(pilar): impede perda silenciosa de reacao na descida de cargas"
-    },
-    {
-      "sha": "19c547f9673aeee39c83fa61630fb3473e88068f",
-      "short_sha": "19c547f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:23:06-03:00",
-      "message": "Merge pull request #212 from JGaspar-Eng/fix/ui-prancheta"
-    },
-    {
-      "sha": "76c54ed1eddca8d08d3772886654ab3a3737473f",
-      "short_sha": "76c54ed",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:21:30-03:00",
-      "message": "test(ui): cobre navegação e nomes de pavimentos"
     }
   ],
   "development": {
@@ -1344,7 +1344,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33258128327",
-    "run_number": "173"
+    "run_id": "33258355403",
+    "run_number": "174"
   }
 }
