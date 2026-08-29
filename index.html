@@ -548,11 +548,138 @@
   }
   .foot-meta { font-family: var(--mono); color: var(--faint); }
 
+  /* ---- Faixa de sincronização do painel ---------------------------------- */
+  .sync-strip { padding: 16px 0 0; }
+  .sync-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 13px 16px;
+    border: 1px solid var(--border-strong);
+    border-left: 5px solid var(--muted);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: 0 2px 12px rgba(27,39,51,.05);
+    transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+  }
+  .sync-main { display: flex; align-items: flex-start; gap: 12px; min-width: 0; }
+  .sync-dot {
+    flex: none;
+    width: 11px;
+    height: 11px;
+    margin-top: 4px;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+  .sync-texts { min-width: 0; }
+  .sync-title {
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .sync-line {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 12.5px;
+    color: var(--text);
+  }
+  .sync-ref {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .sync-sep { color: var(--faint); }
+  .sync-published { color: var(--muted); }
+  .sync-message {
+    max-width: 640px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .sync-actions {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: right;
+  }
+  .sync-checked {
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+  .sync-refresh {
+    padding: 7px 11px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 11.5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .sync-refresh:hover { color: var(--text); border-color: var(--muted); }
+  .sync-refresh[disabled] { opacity: .55; cursor: default; }
+
+  .sync-card[data-sync-state="ok"] { border-left-color: var(--ok); }
+  .sync-card[data-sync-state="ok"] .sync-dot { background: var(--ok); }
+  .sync-card[data-sync-state="ok"] .sync-title { color: var(--ok); }
+
+  .sync-card[data-sync-state="updated"] {
+    border-color: #86c7bf;
+    border-left-color: var(--accent);
+    background: var(--accent-soft);
+    box-shadow: 0 0 0 3px rgba(15,118,110,.16);
+  }
+  .sync-card[data-sync-state="updated"] .sync-dot { background: var(--accent); }
+  .sync-card[data-sync-state="updated"] .sync-title { color: var(--accent-strong); }
+  .sync-card[data-sync-state="updated"] .sync-ref { background: #fff; border-color: #bcded9; }
+
+  .sync-card[data-sync-state="offline"] {
+    border-left-color: #b9812c;
+    background: #fdf7ec;
+  }
+  .sync-card[data-sync-state="offline"] .sync-dot { background: #b9812c; }
+  .sync-card[data-sync-state="offline"] .sync-title { color: #8c6120; }
+
+  .sync-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 26px;
+    z-index: 60;
+    display: none;
+    transform: translateX(-50%);
+    padding: 11px 18px;
+    border-radius: 999px;
+    background: var(--accent-strong);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(11,95,89,.28);
+  }
+  .sync-toast.show { display: block; }
+
   @media (max-width: 960px) {
     .stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .roadmap-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .roadmap-arrow { display: none; }
     .quality-grid { grid-template-columns: 1fr; }
+    .sync-message { max-width: 420px; }
   }
   @media (max-width: 700px) {
     .wrap { width: min(100% - 28px, var(--maxw)); }
@@ -568,6 +695,13 @@
     .test-row { grid-template-columns: minmax(0,1fr) 60px; }
     .test-command { display: none; }
     footer .row { align-items: flex-start; flex-direction: column; padding: 20px 0; }
+    .sync-card { flex-direction: column; align-items: stretch; gap: 12px; }
+    .sync-line { display: block; }
+    .sync-sep { display: none; }
+    .sync-published { display: block; margin-top: 5px; }
+    .sync-actions { justify-content: space-between; text-align: left; }
+    .sync-message { max-width: none; white-space: normal; }
+    .sync-toast { left: 14px; right: 14px; bottom: 14px; transform: none; text-align: center; }
   }
 </style>
 </head>
@@ -591,6 +725,27 @@
 </header>
 
 <main>
+  <div class="wrap sync-strip">
+    <section class="sync-card" id="sync-card" data-sync-state="loading">
+      <div class="sync-main">
+        <span class="sync-dot" aria-hidden="true"></span>
+        <div class="sync-texts" role="status" aria-live="polite">
+          <div class="sync-title" id="sync-title">Verificando sincronização…</div>
+          <div class="sync-line">
+            <span class="sync-ref" id="sync-ref">—</span>
+            <span class="sync-sep" aria-hidden="true">·</span>
+            <span class="sync-published" id="sync-published">Última publicação do painel: —</span>
+          </div>
+          <div class="sync-message" id="sync-message" title="">—</div>
+        </div>
+      </div>
+      <div class="sync-actions">
+        <div class="sync-checked" id="sync-checked">Consultando status.json…</div>
+        <button type="button" class="sync-refresh" id="sync-refresh">Verificar agora</button>
+      </div>
+    </section>
+  </div>
+
   <div class="wrap hero">
     <div class="eyebrow">Painel técnico versionado</div>
     <h1>Estado real do desenvolvimento do SIMETTRIA.</h1>
@@ -701,6 +856,8 @@
 
 </main>
 
+<div class="sync-toast" id="sync-toast" aria-hidden="true">Novo estado do SIMETTRIA carregado agora</div>
+
 <footer class="site">
   <div class="wrap row">
     <div>SIMETTRIA · acompanhamento do desenvolvimento</div>
@@ -746,7 +903,8 @@
   }
 
   function showError(message) {
-    var banner = document.getElementById("status-banner");
+    var banner = el("status-banner");
+    if (!banner) return;
     banner.textContent = message;
     banner.classList.add("show");
   }
@@ -755,6 +913,20 @@
     return String(value == null ? "" : value)
       .replace(/`([^`]+)`/g, "$1")
       .replace(/\*\*([^*]+)\*\*/g, "$1");
+  }
+
+  // O painel base pode ser reescrito a qualquer momento (HEAD novo em
+  // status.json) sobre um DOM já enriquecido por status_areas.js, que remove a
+  // seção #consolidado. Escrever direto em getElementById(...) quebraria nesse
+  // segundo render; todos os alvos são opcionais por construção.
+  function definirTexto(id, valor) {
+    var alvo = el(id);
+    if (alvo) alvo.textContent = valor;
+  }
+
+  function definirHtml(id, valor) {
+    var alvo = el(id);
+    if (alvo) alvo.innerHTML = valor;
   }
 
   function render(status) {
@@ -773,15 +945,12 @@
         ? roadmap[currentRoadmapIndex + 1]
         : null;
 
-    document.getElementById("stat-current").textContent = current.code || "—";
-    document.getElementById("stat-progress").textContent =
-      Number(currentProgress.percent || 0) + "%";
-    document.getElementById("stat-next").textContent =
-      nextRoadmap ? nextRoadmap.code : "—";
-    document.getElementById("stat-updated").textContent =
-      fmtDateShort(status.generated_at);
-    document.getElementById("current-code").textContent = current.code || "—";
-    document.getElementById("current-title").textContent = current.title || "Estado atual indisponível";
+    definirTexto("stat-current", current.code || "—");
+    definirTexto("stat-progress", Number(currentProgress.percent || 0) + "%");
+    definirTexto("stat-next", nextRoadmap ? nextRoadmap.code : "—");
+    definirTexto("stat-updated", fmtDateShort(status.generated_at));
+    definirTexto("current-code", current.code || "—");
+    definirTexto("current-title", current.title || "Estado atual indisponível");
 
     var progress = current.progress || {};
     var progressItems = Array.isArray(progress.items) ? progress.items : [];
@@ -791,22 +960,21 @@
     var pending = Number(progress.pending || 0);
     var percent = Number(progress.percent || 0);
 
-    document.getElementById("current-progress-count").textContent =
-      done + " de " + total + " objetivos concluídos";
-    document.getElementById("current-progress-percent").textContent = percent + "%";
-    document.getElementById("current-progress-fill").style.width = Math.max(0, Math.min(100, percent)) + "%";
-    document.getElementById("current-progress-meta").textContent =
-      "Em andamento: " + inProgress + " · Pendentes: " + pending;
+    definirTexto("current-progress-count", done + " de " + total + " objetivos concluídos");
+    definirTexto("current-progress-percent", percent + "%");
+    var barra = el("current-progress-fill");
+    if (barra) barra.style.width = Math.max(0, Math.min(100, percent)) + "%";
+    definirTexto("current-progress-meta", "Em andamento: " + inProgress + " · Pendentes: " + pending);
 
-    document.getElementById("objective-list").innerHTML = progressItems.length
+    definirHtml("objective-list", progressItems.length
       ? progressItems.map(function (item) {
           var state = item.state || "pending";
           return '<li><span class="objective-state ' + escapeHtml(state) + '"></span><span>' +
             escapeHtml(item.text || "") + '</span></li>';
         }).join("")
-      : "<li><span class=\"objective-state\"></span><span>Objetivos não informados no checkpoint.</span></li>";
+      : "<li><span class=\"objective-state\"></span><span>Objetivos não informados no checkpoint.</span></li>");
 
-    document.getElementById("epic-progress-grid").innerHTML = epics.length
+    definirHtml("epic-progress-grid", epics.length
       ? epics.map(function (epic) {
           var measured = epic.status === "measured" && epic.percent != null;
           var value = measured ? Math.max(0, Math.min(100, Number(epic.percent))) : 0;
@@ -821,8 +989,8 @@
             '<div class="epic-note">estimativa versionada no roadmap</div>' +
           '</article>';
         }).join("")
-      : '<article class="epic-progress-card pending">Progresso dos épicos indisponível.</article>';
-    document.getElementById("roadmap-grid").innerHTML = roadmap.map(function (item, index) {
+      : '<article class="epic-progress-card pending">Progresso dos épicos indisponível.</article>');
+    definirHtml("roadmap-grid", roadmap.map(function (item, index) {
       var isCurrent = item.code === current.code;
       var roadmapText = String(item.text || "");
       if (isCurrent) {
@@ -834,27 +1002,200 @@
         '<div class="roadmap-text">' + escapeHtml(roadmapText) + '</div>' +
         '<div class="roadmap-arrow">→</div>' +
       '</article>';
-    }).join("");
+    }).join(""));
 
-    document.getElementById("milestone-summary").textContent =
-      plainInlineMarkdown(development.milestone_summary || "Resumo não disponível.");
-
-    document.getElementById("foot-updated").textContent =
-      fmtDate(status.generated_at);
+    definirTexto("milestone-summary", plainInlineMarkdown(development.milestone_summary || "Resumo não disponível."));
+    definirTexto("foot-updated", fmtDate(status.generated_at));
   }
 
-  fetch("status.json?v=" + Date.now(), { cache: "no-store" })
-    .then(function (response) {
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      return response.json();
-    })
-    .then(render)
-    .catch(function (error) {
-      showError("Não foi possível carregar o status do SIMETTRIA: " + error.message);
-    });
+  // ------------------------------------------------------------------------
+  // Sincronização viva do painel.
+  //
+  // O painel é publicado por workflow a cada push em main. Antes, a aba lia
+  // status.json uma única vez no carregamento: uma aba deixada aberta exibia
+  // estado antigo indefinidamente. Aqui o painel passa a reconsultar
+  // status.json periodicamente, ao voltar ao foco e sob demanda, distinguindo
+  // dois tempos distintos:
+  //   - "última publicação do painel" = status.generated_at (servidor);
+  //   - "verificado agora"            = instante da consulta (navegador).
+  // ------------------------------------------------------------------------
+  var INTERVALO_VERIFICACAO_MS = 60000;
+  var DESTAQUE_NOVO_ESTADO_MS = 8000;
+
+  var shaRenderizado = null;
+  var geradoEmRenderizado = null;
+  var ultimoStatusValido = null;
+  var promessaEmCurso = null;
+  var timerDestaque = null;
+
+  function el(id) {
+    return document.getElementById(id);
+  }
+
+  function fmtHora(date) {
+    try {
+      return new Intl.DateTimeFormat("pt-BR", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      }).format(date);
+    } catch (_) {
+      return String(date);
+    }
+  }
+
+  function hideError() {
+    var banner = el("status-banner");
+    if (banner) {
+      banner.textContent = "";
+      banner.classList.remove("show");
+    }
+  }
+
+  function definirEstadoSync(estado, titulo) {
+    var card = el("sync-card");
+    if (card) card.setAttribute("data-sync-state", estado);
+    var alvo = el("sync-title");
+    if (alvo) alvo.textContent = titulo;
+  }
+
+  function definirVerificadoEm(texto) {
+    var alvo = el("sync-checked");
+    if (alvo) alvo.textContent = texto;
+  }
+
+  function renderSync(status) {
+    var head = status.head || {};
+    var ref = el("sync-ref");
+    if (ref) ref.textContent = (status.branch || "—") + " @ " + (head.short_sha || "—");
+    var publicado = el("sync-published");
+    if (publicado) publicado.textContent = "Última publicação do painel: " + fmtDate(status.generated_at);
+    var mensagem = el("sync-message");
+    if (mensagem) {
+      var texto = head.message || "—";
+      mensagem.textContent = texto;
+      mensagem.setAttribute("title", texto);
+    }
+  }
+
+  function destacarNovoEstado() {
+    definirEstadoSync("updated", "Novo estado do SIMETTRIA carregado agora");
+    var toast = el("sync-toast");
+    if (toast) toast.classList.add("show");
+    if (timerDestaque) clearTimeout(timerDestaque);
+    timerDestaque = setTimeout(function () {
+      timerDestaque = null;
+      if (toast) toast.classList.remove("show");
+      var card = el("sync-card");
+      if (card && card.getAttribute("data-sync-state") === "updated") {
+        definirEstadoSync("ok", "Painel sincronizado");
+      }
+    }, DESTAQUE_NOVO_ESTADO_MS);
+  }
+
+  // Reaplica o conteúdo do painel e avisa os módulos de enriquecimento
+  // (status_areas.js / status_sequence.js) que o DOM base foi reescrito.
+  function aplicarStatus(status) {
+    var sha = (status.head || {}).sha || null;
+    var geradoEm = status.generated_at || null;
+    var primeiraCarga = shaRenderizado === null;
+    var houveTroca = !primeiraCarga && sha !== shaRenderizado;
+    ultimoStatusValido = status;
+    renderSync(status);
+    // O corpo do painel não é reescrito a cada ciclo — isso faria os cards
+    // piscarem sem informação nova. Reescreve quando o HEAD muda e também
+    // quando apenas generated_at muda (re-run do workflow sobre o mesmo
+    // commit), senão "Atualização" e o rodapé ficariam presos no valor antigo.
+    if (primeiraCarga || houveTroca || geradoEm !== geradoEmRenderizado) {
+      shaRenderizado = sha;
+      geradoEmRenderizado = geradoEm;
+      // Uma falha ao repintar o corpo não é falha de sincronização: o HEAD foi
+      // confirmado. Reportá-la como erro de rede daria ao usuário a informação
+      // errada sobre o estado do painel.
+      try {
+        render(status);
+      } catch (erroRender) {
+        if (typeof console !== "undefined" && console.error) {
+          console.error("Falha ao repintar o painel:", erroRender);
+        }
+      }
+      try {
+        document.dispatchEvent(new CustomEvent("simettria:status", { detail: status }));
+      } catch (_) { /* ambiente sem CustomEvent: enriquecimento segue no fetch próprio */ }
+    }
+    return houveTroca;
+  }
+
+  function verificar() {
+    // Uma chamada concorrente (polling + foco + botão) não vira um "false"
+    // silencioso: quem chamou recebe o resultado real da consulta em curso.
+    if (promessaEmCurso) return promessaEmCurso;
+    var botao = el("sync-refresh");
+    if (botao) botao.disabled = true;
+    promessaEmCurso = fetch("status.json?v=" + Date.now(), { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      })
+      .then(function (status) {
+        var houveTroca = aplicarStatus(status);
+        hideError();
+        definirVerificadoEm("Verificado agora às " + fmtHora(new Date()));
+        if (houveTroca) destacarNovoEstado();
+        else if (!timerDestaque) definirEstadoSync("ok", "Painel sincronizado");
+        return houveTroca;
+      })
+      .catch(function (error) {
+        // Falha de rede nunca apaga o último estado válido já renderizado.
+        if (ultimoStatusValido) {
+          if (timerDestaque) {
+            clearTimeout(timerDestaque);
+            timerDestaque = null;
+            var toast = el("sync-toast");
+            if (toast) toast.classList.remove("show");
+          }
+          definirEstadoSync("offline", "Não foi possível confirmar nova atualização");
+          definirVerificadoEm("Última tentativa às " + fmtHora(new Date()) + " · nova tentativa automática");
+        } else {
+          definirEstadoSync("offline", "Não foi possível carregar o estado do painel");
+          definirVerificadoEm("Última tentativa às " + fmtHora(new Date()));
+          showError("Não foi possível carregar o status do SIMETTRIA: " + error.message);
+        }
+        return false;
+      })
+      .then(function (resultado) {
+        promessaEmCurso = null;
+        if (botao) botao.disabled = false;
+        return resultado;
+      });
+    return promessaEmCurso;
+  }
+
+  var botaoVerificar = el("sync-refresh");
+  if (botaoVerificar) botaoVerificar.addEventListener("click", function () { verificar(); });
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") verificar();
+  });
+
+  // Aba oculta não consulta: o retorno ao foco já força uma verificação.
+  setInterval(function () {
+    if (document.visibilityState === "hidden") return;
+    verificar();
+  }, INTERVALO_VERIFICACAO_MS);
+
+  verificar();
+
+  if (typeof window !== "undefined") {
+    window.__simettriaPainelSync = {
+      verificar: verificar,
+      shaRenderizado: function () { return shaRenderizado; },
+      intervaloMs: INTERVALO_VERIFICACAO_MS
+    };
+  }
 })();
 </script>
-<script src="status_areas.js?v=5a2f0fa716363a63c6a187db0490de4fda4f52d8"></script>
-<script src="status_sequence.js?v=5a2f0fa716363a63c6a187db0490de4fda4f52d8"></script>
+<script src="status_areas.js?v=99df007768470a16b0b101eb385f53d8dc1b8d29"></script>
+<script src="status_sequence.js?v=99df007768470a16b0b101eb385f53d8dc1b8d29"></script>
 </body>
 </html>

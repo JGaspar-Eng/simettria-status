@@ -377,6 +377,13 @@
     requestAnimationFrame(function () { aguardarBase(status, tentativa + 1); });
   }
 
+  // Mesmo motivo do status_sequence.js: o painel base pode reescrever os cards
+  // de área a qualquer momento, ao detectar um HEAD novo em status.json.
+  document.addEventListener("simettria:status", function (evento) {
+    var status = evento && evento.detail;
+    if (status) aguardarBase(status, 0);
+  });
+
   fetch("status.json?v=" + Date.now(), { cache: "no-store" })
     .then(function (response) {
       if (!response.ok) throw new Error("HTTP " + response.status);

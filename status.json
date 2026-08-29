@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-08-29T21:21:47Z",
+  "generated_at": "2026-08-29T22:16:42Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5a2f0fa716363a63c6a187db0490de4fda4f52d8",
-    "short_sha": "5a2f0fa",
+    "sha": "99df007768470a16b0b101eb385f53d8dc1b8d29",
+    "short_sha": "99df007",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T18:21:40-03:00",
-    "message": "Merge pull request #218 from JGaspar-Eng/fix/a4-exclusao-viga-suporte"
+    "date": "2026-08-29T19:16:32-03:00",
+    "message": "Merge pull request #219 from JGaspar-Eng/feat/painel-sincronizacao-viva"
   },
   "commits": [
+    {
+      "sha": "99df007768470a16b0b101eb385f53d8dc1b8d29",
+      "short_sha": "99df007",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:16:32-03:00",
+      "message": "Merge pull request #219 from JGaspar-Eng/feat/painel-sincronizacao-viva"
+    },
+    {
+      "sha": "f53e8cdcda910621e05d8ba5bf612d373db0fda5",
+      "short_sha": "f53e8cd",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-29T18:32:13-03:00",
+      "message": "feat(painel): sincronizacao viva do painel de desenvolvimento"
+    },
     {
       "sha": "5a2f0fa716363a63c6a187db0490de4fda4f52d8",
       "short_sha": "5a2f0fa",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T15:37:35-03:00",
       "message": "test(viga): cobre falso nó por suporte compartilhado"
-    },
-    {
-      "sha": "975c0efb127030ad89930008e4b52edf2d79df3b",
-      "short_sha": "975c0ef",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T15:36:52-03:00",
-      "message": "fix(viga): restringe nó compartilhado a pilar real"
-    },
-    {
-      "sha": "7e8856f6059dfd230e40e5611c316b1b18a1a11a",
-      "short_sha": "7e8856f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T11:43:38-03:00",
-      "message": "Merge pull request #215 from JGaspar-Eng/feat/viga-viga-topologia"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 71,
+    "validator_count": 72,
     "validators": [
       {
         "name": "test:base",
@@ -1313,6 +1313,10 @@
         "command": "python tests/validar_status_dashboard.py"
       },
       {
+        "name": "test:status-dashboard-sync",
+        "command": "node tests/validar_status_dashboard_sync.mjs"
+      },
+      {
         "name": "test:perf-graph",
         "command": "node tests/validar_desempenho_calculation_graph.mjs"
       },
@@ -1348,7 +1352,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33275876160",
-    "run_number": "177"
+    "run_id": "33278176356",
+    "run_number": "178"
   }
 }

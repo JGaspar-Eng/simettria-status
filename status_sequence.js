@@ -133,6 +133,16 @@
       }).observe(grid, { childList:true, subtree:false });
     }
 
+    // O painel base reconsulta status.json periodicamente. Quando ele reescreve
+    // o DOM com um HEAD novo, este módulo precisa do status novo — o
+    // MutationObserver acima sozinho reaplicaria dados antigos.
+    document.addEventListener("simettria:status", function (evento) {
+      var status = evento && evento.detail;
+      if (!status) return;
+      ultimoStatus = status;
+      setTimeout(aplicar, 80);
+    });
+
     fetch("status.json?v=" + Date.now(), { cache:"no-store" })
       .then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);
