@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-29T23:08:01Z",
+  "generated_at": "2026-08-29T23:24:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7da84222793d9fb488564acae912a2ecc406d7ed",
-    "short_sha": "7da8422",
+    "sha": "9f59a0e188bcb540640c3981299fed696200666c",
+    "short_sha": "9f59a0e",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T20:07:52-03:00",
-    "message": "Merge pull request #224 from JGaspar-Eng/feat/3d-deformada-sa-l1"
+    "date": "2026-08-29T20:24:06-03:00",
+    "message": "Merge pull request #225 from JGaspar-Eng/fix/zoom-fit-topologia-vigas"
   },
   "commits": [
+    {
+      "sha": "9f59a0e188bcb540640c3981299fed696200666c",
+      "short_sha": "9f59a0e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:24:06-03:00",
+      "message": "Merge pull request #225 from JGaspar-Eng/fix/zoom-fit-topologia-vigas"
+    },
+    {
+      "sha": "e12bbbe40df00d23a842accdc44f66c6822dc72d",
+      "short_sha": "e12bbbe",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:22:10-03:00",
+      "message": "test(2d): protege zoom-fit com viga apoiada em viga"
+    },
+    {
+      "sha": "2fd444604dc8d0a923427d71fc3b56b1b9beea09",
+      "short_sha": "2fd4446",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T20:21:47-03:00",
+      "message": "fix(2d): enquadra vigas por geometria real"
+    },
     {
       "sha": "7da84222793d9fb488564acae912a2ecc406d7ed",
       "short_sha": "7da8422",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T20:03:36-03:00",
       "message": "feat(3d): cria deformada lateral SA-L1 auditável"
-    },
-    {
-      "sha": "8614c11e8360f989c0c99c6f034efb6f4f7ca724",
-      "short_sha": "8614c11",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:01:03-03:00",
-      "message": "Merge pull request #223 from JGaspar-Eng/fix/3d-orientacao-pilares"
-    },
-    {
-      "sha": "98431ced3700a66b1273e0788be9c7ddbdcc8c88",
-      "short_sha": "98431ce",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:59:26-03:00",
-      "message": "fix(3d): conecta sincronização de orientação ao modal público"
-    },
-    {
-      "sha": "c1483063f05c43c1d9c5f2c5a0d8f0357498890b",
-      "short_sha": "c148306",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:58:11-03:00",
-      "message": "merge(main): reconcilia orientação 3D com nomenclatura canônica"
     }
   ],
   "development": {
@@ -1364,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33280242621",
-    "run_number": "183"
+    "run_id": "33280895394",
+    "run_number": "184"
   }
 }
