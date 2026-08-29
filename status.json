@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-29T02:38:50Z",
+  "generated_at": "2026-08-29T14:38:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5ca1402ae10e61380ce0003cbf6d627a6f00f7c2",
-    "short_sha": "5ca1402",
+    "sha": "93c2684a0556af6739d1aa62643754d8fe77affe",
+    "short_sha": "93c2684",
     "author": "Joanez Gaspar",
-    "date": "2026-08-28T23:38:42-03:00",
-    "message": "Merge pull request #213 from JGaspar-Eng/fix/reacao-sem-pilar-diagnostico"
+    "date": "2026-08-29T11:38:10-03:00",
+    "message": "Merge pull request #214 from JGaspar-Eng/fix/apoio-em-viga-resolver-integrado"
   },
   "commits": [
+    {
+      "sha": "93c2684a0556af6739d1aa62643754d8fe77affe",
+      "short_sha": "93c2684",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T11:38:10-03:00",
+      "message": "Merge pull request #214 from JGaspar-Eng/fix/apoio-em-viga-resolver-integrado"
+    },
+    {
+      "sha": "b2143df46f0f78479cf3dfdce0c5e13c7a212e0e",
+      "short_sha": "b2143df",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T23:45:46-03:00",
+      "message": "test(pilar): explicita apoio fantasma como pilar"
+    },
+    {
+      "sha": "aa174463d2ceb2ef45141632ee040750af92e3ec",
+      "short_sha": "aa17446",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T23:43:57-03:00",
+      "message": "fix(viga): preserva diagnóstico de pilar inexistente"
+    },
+    {
+      "sha": "680d79a75e554439592a6f26a5ef3e9b0ca632dc",
+      "short_sha": "680d79a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T23:41:49-03:00",
+      "message": "test(viga): inclui resolvedor no gate oficial"
+    },
+    {
+      "sha": "36f585947e684fc81597995a73b848b3bc9e9a9a",
+      "short_sha": "36f5859",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T23:41:18-03:00",
+      "message": "test(viga): cobre apoio explícito em viga"
+    },
+    {
+      "sha": "7f2db9ad8556076d8900eef3abd44b3b0650a8c7",
+      "short_sha": "7f2db9a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-28T23:40:46-03:00",
+      "message": "fix(viga): respeita tipo declarado do apoio"
+    },
     {
       "sha": "5ca1402ae10e61380ce0003cbf6d627a6f00f7c2",
       "short_sha": "5ca1402",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-28T14:21:30-03:00",
       "message": "test(ui): cobre navegação e nomes de pavimentos"
-    },
-    {
-      "sha": "4743acbe48d2fb310d1dd37658f7e432e0232492",
-      "short_sha": "4743acb",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:21:01-03:00",
-      "message": "fix(ui): redesenha nós ao trocar pavimento"
-    },
-    {
-      "sha": "f5f65858434d65562e1453bdd0125f254437bd0f",
-      "short_sha": "f5f6585",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:20:37-03:00",
-      "message": "fix(ui): normaliza nomes genéricos de pavimentos legados"
-    },
-    {
-      "sha": "f2c06a0788585e1eb9c5f53e763e63ee4f470900",
-      "short_sha": "f2c06a0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:20:22-03:00",
-      "message": "feat(ui): usa roda do mouse para pan e zoom 2d"
-    },
-    {
-      "sha": "83e3e5b43723684b73828a012fe19bfe4897147d",
-      "short_sha": "83e3e5b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:17:16-03:00",
-      "message": "Merge pull request #211 from JGaspar-Eng/fix/validacao-apoio-viga"
-    },
-    {
-      "sha": "f57209c924ac6d87dff547e3979e2ee8a70e325b",
-      "short_sha": "f57209c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:15:51-03:00",
-      "message": "test(validacao): cobre referência pilar-viga"
-    },
-    {
-      "sha": "a8fcf14d4aaf594bff518a718fb79a517f99196e",
-      "short_sha": "a8fcf14",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-28T14:15:08-03:00",
-      "message": "fix(validacao): reconhece apoio estrutural em viga"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 69,
+    "validator_count": 70,
     "validators": [
       {
         "name": "test:base",
@@ -1087,6 +1087,10 @@
       {
         "name": "test:pilar-m3a",
         "command": "node tests/validar_orientacao_pilar_m3a.mjs"
+      },
+      {
+        "name": "test:viga-sistemas",
+        "command": "node tests/validar_resolvedor_sistemas_vigas.mjs"
       },
       {
         "name": "test:pilar-m3b-vinculo",
@@ -1340,7 +1344,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33229467860",
-    "run_number": "172"
+    "run_id": "33258128327",
+    "run_number": "173"
   }
 }
