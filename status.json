@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-29T22:39:29Z",
+  "generated_at": "2026-08-29T22:54:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d6a31a2cca14a75f50a65c0f5f3c7a666636ac17",
-    "short_sha": "d6a31a2",
+    "sha": "aa6e1761cd9cd00d7ebf12e3a5065fed8a60b013",
+    "short_sha": "aa6e176",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T19:39:21-03:00",
-    "message": "Merge pull request #221 from JGaspar-Eng/fix/opt-pilar-aplicar-recomendacoes"
+    "date": "2026-08-29T19:53:57-03:00",
+    "message": "Merge pull request #222 from JGaspar-Eng/fix/nomenclatura-pavimentos"
   },
   "commits": [
+    {
+      "sha": "aa6e1761cd9cd00d7ebf12e3a5065fed8a60b013",
+      "short_sha": "aa6e176",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:53:57-03:00",
+      "message": "Merge pull request #222 from JGaspar-Eng/fix/nomenclatura-pavimentos"
+    },
+    {
+      "sha": "3dd234f32f7e4d9cad528dd6a9a9943c8f979f6d",
+      "short_sha": "3dd234f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:52:32-03:00",
+      "message": "merge(main): reconcilia nomenclatura com transferencia viga-viga e OPT-PILAR"
+    },
+    {
+      "sha": "dd4f79a1e5cf02a43e75bcdae73a4a3eb64eb723",
+      "short_sha": "dd4f79a",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-29T19:42:52-03:00",
+      "message": "fix(pavimento): nomenclatura canonica semanticamente correta"
+    },
     {
       "sha": "d6a31a2cca14a75f50a65c0f5f3c7a666636ac17",
       "short_sha": "d6a31a2",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T19:25:50-03:00",
       "message": "test(viga): inclui transferencia viga-viga no gate"
-    },
-    {
-      "sha": "0197c66dec837ce2a55c13d03d7f1db2dc697c6b",
-      "short_sha": "0197c66",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:25:24-03:00",
-      "message": "test(viga): exige transferencia viga-viga no NEd"
-    },
-    {
-      "sha": "d50718552dd262cb8c6f7f2f6ddb7d353726450a",
-      "short_sha": "d507185",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:24:44-03:00",
-      "message": "test(viga): cobre transferencia de reacoes viga-viga"
-    },
-    {
-      "sha": "e5822ff0d92d4aae390c633971da758ab078677d",
-      "short_sha": "e5822ff",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:24:13-03:00",
-      "message": "feat(viga): propaga reacoes viga-viga ate pilares"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 73,
+    "validator_count": 74,
     "validators": [
       {
         "name": "test:base",
@@ -1347,6 +1347,10 @@
       {
         "name": "test:fluxo-json-ui",
         "command": "node tests/validar_fluxo_json_ui.mjs"
+      },
+      {
+        "name": "test:nomenclatura-pavimentos",
+        "command": "node tests/validar_nomenclatura_pavimentos.mjs"
       }
     ]
   },
@@ -1356,7 +1360,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33279125927",
-    "run_number": "180"
+    "run_id": "33279692224",
+    "run_number": "181"
   }
 }
