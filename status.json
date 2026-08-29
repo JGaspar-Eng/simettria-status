@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-29T22:31:47Z",
+  "generated_at": "2026-08-29T22:39:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3a0428ab6a2eee5d8fc497b09b74fc53bdb273ee",
-    "short_sha": "3a0428a",
+    "sha": "d6a31a2cca14a75f50a65c0f5f3c7a666636ac17",
+    "short_sha": "d6a31a2",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T19:31:38-03:00",
-    "message": "Merge pull request #220 from JGaspar-Eng/feat/transferencia-viga-viga-cargas"
+    "date": "2026-08-29T19:39:21-03:00",
+    "message": "Merge pull request #221 from JGaspar-Eng/fix/opt-pilar-aplicar-recomendacoes"
   },
   "commits": [
+    {
+      "sha": "d6a31a2cca14a75f50a65c0f5f3c7a666636ac17",
+      "short_sha": "d6a31a2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:39:21-03:00",
+      "message": "Merge pull request #221 from JGaspar-Eng/fix/opt-pilar-aplicar-recomendacoes"
+    },
+    {
+      "sha": "3fca9d62ee698ab4cc97837f63e0dea51960c9e6",
+      "short_sha": "3fca9d6",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:37:37-03:00",
+      "message": "test(opt-pilar): cobre aplicacao explicita de orientacoes"
+    },
+    {
+      "sha": "1e7de4eeab09bd2d97cb4769f5b9621a446bf808",
+      "short_sha": "1e7de4e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:36:55-03:00",
+      "message": "feat(opt-pilar): permite aplicar recomendacoes no modal"
+    },
+    {
+      "sha": "be4e05184319e5f3ea8cb5c644d6797a2a335a91",
+      "short_sha": "be4e051",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T19:35:48-03:00",
+      "message": "feat(opt-pilar): adiciona aplicacao explicita de orientacoes"
+    },
     {
       "sha": "3a0428ab6a2eee5d8fc497b09b74fc53bdb273ee",
       "short_sha": "3a0428a",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T19:24:13-03:00",
       "message": "feat(viga): propaga reacoes viga-viga ate pilares"
-    },
-    {
-      "sha": "af94301d55ade9935a6bcfb862257d1467f5f261",
-      "short_sha": "af94301",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:23:15-03:00",
-      "message": "feat(viga): adiciona nucleo de transferencia viga-viga"
-    },
-    {
-      "sha": "99df007768470a16b0b101eb385f53d8dc1b8d29",
-      "short_sha": "99df007",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T19:16:32-03:00",
-      "message": "Merge pull request #219 from JGaspar-Eng/feat/painel-sincronizacao-viva"
-    },
-    {
-      "sha": "f53e8cdcda910621e05d8ba5bf612d373db0fda5",
-      "short_sha": "f53e8cd",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-29T18:32:13-03:00",
-      "message": "feat(painel): sincronizacao viva do painel de desenvolvimento"
-    },
-    {
-      "sha": "5a2f0fa716363a63c6a187db0490de4fda4f52d8",
-      "short_sha": "5a2f0fa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T18:21:40-03:00",
-      "message": "Merge pull request #218 from JGaspar-Eng/fix/a4-exclusao-viga-suporte"
     }
   ],
   "development": {
@@ -1356,7 +1356,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33278802317",
-    "run_number": "179"
+    "run_id": "33279125927",
+    "run_number": "180"
   }
 }
