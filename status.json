@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T16:33:30Z",
+  "generated_at": "2026-08-30T17:01:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ce442b87a1b968f3b53ce9c08a4083eb7ce7e8cc",
-    "short_sha": "ce442b8",
+    "sha": "44ae9a3f0d0f2f888e39c1ec02e52825fe41280f",
+    "short_sha": "44ae9a3",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T13:33:21-03:00",
-    "message": "fix(wizard): remove descrição duplicada no passo Projeto (#241)"
+    "date": "2026-08-30T14:01:31-03:00",
+    "message": "docs(painel): atualiza estado real e destrava atualização (#243)"
   },
   "commits": [
+    {
+      "sha": "44ae9a3f0d0f2f888e39c1ec02e52825fe41280f",
+      "short_sha": "44ae9a3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T14:01:31-03:00",
+      "message": "docs(painel): atualiza estado real e destrava atualização (#243)"
+    },
     {
       "sha": "ce442b87a1b968f3b53ce9c08a4083eb7ce7e8cc",
       "short_sha": "ce442b8",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T00:40:22-03:00",
       "message": "docs(coordenacao): espelha no CLAUDE.md o token \"continuar simettria\" (#232)"
-    },
-    {
-      "sha": "e2059a5f142c1fb558b2ab13f1777fc226969f57",
-      "short_sha": "e2059a5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:17:06-03:00",
-      "message": "Merge pull request #230 from JGaspar-Eng/fix/3d-toggle-deformada-sa-l1"
     }
   ],
   "development": {
@@ -97,17 +97,18 @@
         "implementar a primeira verificação normativa de fundação rasa somente após edição, ações e resistência geotécnica de projeto estarem demonstradas",
         "corrigir e provar a persistência real da categoria de uso NBR 8681 no ciclo salvar JSON → fechar → reabrir → salvar novamente, incluindo regressão dedicada no `test:all` oficial",
         "incorporar a categoria de uso NBR 8681 ao Assistente de Projeto Novo, distinguindo claramente criação de projeto de edição/carregamento de projeto existente",
+        "corrigir a semântica de nível não físico em toda a cadeia estrutural: `fundacao_baldrame` deixa de empilhar altura, receber vento e gerar trecho de pilar, com a correção propagada por pavimento, pilar, envelope aerodinâmico, ações de vento, Calculation Graph, saída SA-L1 e rigidez agregada",
         "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
         "otimizar a verificação de orientação dos pilares e expor comandos claros para aplicar, revisar ou alterar as orientações calculadas",
         "auditar as 88 sugestões do Calculation Graph e a experiência do Vento item a item, marcando somente o que estiver realmente integrado e validado visualmente",
         "continuar o ORQ-ESTRUT-01 até o fluxo funcional completo: Calcular Tudo com loading, reações estruturais, demarcação/materialização rastreável da infraestrutura, seleção visual, painel lateral próprio, estados OK/alerta/falha e acesso a detalhamento/memorial."
       ],
       "progress": {
-        "total": 10,
-        "done": 5,
-        "in_progress": 1,
+        "total": 11,
+        "done": 7,
+        "in_progress": 0,
         "pending": 4,
-        "percent": 50,
+        "percent": 64,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -136,8 +137,13 @@
           },
           {
             "text": "incorporar a categoria de uso NBR 8681 ao Assistente de Projeto Novo, distinguindo claramente criação de projeto de edição/carregamento de projeto existente",
-            "state": "in_progress",
-            "marker": "🟡"
+            "state": "done",
+            "marker": "✅"
+          },
+          {
+            "text": "corrigir a semântica de nível não físico em toda a cadeia estrutural: `fundacao_baldrame` deixa de empilhar altura, receber vento e gerar trecho de pilar, com a correção propagada por pavimento, pilar, envelope aerodinâmico, ações de vento, Calculation Graph, saída SA-L1 e rigidez agregada",
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
@@ -1372,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33322786493",
-    "run_number": "198"
+    "run_id": "33324078657",
+    "run_number": "199"
   }
 }
