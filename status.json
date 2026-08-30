@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-08-30T00:13:45Z",
+  "generated_at": "2026-08-30T00:15:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2fcb28a3c3cb4397d69dcedb20b3e965b882c072",
-    "short_sha": "2fcb28a",
+    "sha": "0204ab2e5a1f3535374bfdfa58c0835a88ca870e",
+    "short_sha": "0204ab2",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T21:13:35-03:00",
-    "message": "Merge pull request #228 from JGaspar-Eng/fix/auto-laje-reconciliacao-geometria"
+    "date": "2026-08-29T21:15:18-03:00",
+    "message": "Merge pull request #229 from JGaspar-Eng/fix/nos-estruturais-redraw-imediato"
   },
   "commits": [
+    {
+      "sha": "0204ab2e5a1f3535374bfdfa58c0835a88ca870e",
+      "short_sha": "0204ab2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:15:18-03:00",
+      "message": "Merge pull request #229 from JGaspar-Eng/fix/nos-estruturais-redraw-imediato"
+    },
     {
       "sha": "2fcb28a3c3cb4397d69dcedb20b3e965b882c072",
       "short_sha": "2fcb28a",
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:13:35-03:00",
       "message": "Merge pull request #228 from JGaspar-Eng/fix/auto-laje-reconciliacao-geometria"
+    },
+    {
+      "sha": "af1cdee3307696085b6ea26be20880e8100b7953",
+      "short_sha": "af1cdee",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:08:14-03:00",
+      "message": "test(2d): protege redraw imediato dos nós estruturais"
+    },
+    {
+      "sha": "4d236700038db1a95eeeed0e0b83cfc584434e11",
+      "short_sha": "4d23670",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:07:50-03:00",
+      "message": "fix(2d): redesenha nós após qualquer atualização da prancheta"
     },
     {
       "sha": "02815facbeebea8880b5d1c99b4a30dd2ef5ff89",
@@ -58,27 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-29T20:33:21-03:00",
       "message": "test(auto-laje): cobre topologia viga->viga, ramo parcial e copia entre pavimentos"
-    },
-    {
-      "sha": "93fd0e864110605e18a5f6ce7d2cc6c64cc0b7d1",
-      "short_sha": "93fd0e8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:31:27-03:00",
-      "message": "chore(contract): alinha topologias atuais de vigas"
-    },
-    {
-      "sha": "9f59a0e188bcb540640c3981299fed696200666c",
-      "short_sha": "9f59a0e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:24:06-03:00",
-      "message": "Merge pull request #225 from JGaspar-Eng/fix/zoom-fit-topologia-vigas"
-    },
-    {
-      "sha": "e12bbbe40df00d23a842accdc44f66c6822dc72d",
-      "short_sha": "e12bbbe",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:22:10-03:00",
-      "message": "test(2d): protege zoom-fit com viga apoiada em viga"
     }
   ],
   "development": {
@@ -1364,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33282813159",
-    "run_number": "187"
+    "run_id": "33282881068",
+    "run_number": "188"
   }
 }
