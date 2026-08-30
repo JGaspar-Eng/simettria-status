@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T00:15:28Z",
+  "generated_at": "2026-08-30T00:17:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0204ab2e5a1f3535374bfdfa58c0835a88ca870e",
-    "short_sha": "0204ab2",
+    "sha": "e2059a5f142c1fb558b2ab13f1777fc226969f57",
+    "short_sha": "e2059a5",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T21:15:18-03:00",
-    "message": "Merge pull request #229 from JGaspar-Eng/fix/nos-estruturais-redraw-imediato"
+    "date": "2026-08-29T21:17:06-03:00",
+    "message": "Merge pull request #230 from JGaspar-Eng/fix/3d-toggle-deformada-sa-l1"
   },
   "commits": [
+    {
+      "sha": "e2059a5f142c1fb558b2ab13f1777fc226969f57",
+      "short_sha": "e2059a5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:17:06-03:00",
+      "message": "Merge pull request #230 from JGaspar-Eng/fix/3d-toggle-deformada-sa-l1"
+    },
     {
       "sha": "0204ab2e5a1f3535374bfdfa58c0835a88ca870e",
       "short_sha": "0204ab2",
@@ -23,6 +30,27 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:13:35-03:00",
       "message": "Merge pull request #228 from JGaspar-Eng/fix/auto-laje-reconciliacao-geometria"
+    },
+    {
+      "sha": "e00b1276c140811cdcd90cbad5d6a0b1d82f7ffa",
+      "short_sha": "e00b127",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:12:07-03:00",
+      "message": "test(3d): exige toggle explícito e overlay materializado"
+    },
+    {
+      "sha": "4c0eefdf39efc4783ff7bb01df876206e30446cf",
+      "short_sha": "4c0eefd",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:11:36-03:00",
+      "message": "fix(3d): confirma materialização real da deformada"
+    },
+    {
+      "sha": "8a1ff1a8c7c6d8987908f8278c59108e4efe37be",
+      "short_sha": "8a1ff1a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:09:57-03:00",
+      "message": "fix(3d): torna toggle da deformada explícito e diagnosticável"
     },
     {
       "sha": "af1cdee3307696085b6ea26be20880e8100b7953",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:06:28-03:00",
       "message": "fix(auto-laje): reconcilia painéis após mudança de geometria"
-    },
-    {
-      "sha": "a64512fa74e11696b3d8cdbd8b106f1f43643ecf",
-      "short_sha": "a64512f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:05:50-03:00",
-      "message": "test(auto-laje): reproduz recomposição após mudança de vigas"
-    },
-    {
-      "sha": "cd6270b369b544cbb7fd55f80f29ffb3df800c94",
-      "short_sha": "cd6270b",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:42:56-03:00",
-      "message": "Merge pull request #227 from JGaspar-Eng/fix/auto-laje-topologia-atual"
-    },
-    {
-      "sha": "3a3b89dc0b9a8e65560a5d63507ca916399da9a9",
-      "short_sha": "3a3b89d",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:41:33-03:00",
-      "message": "Merge pull request #226 from JGaspar-Eng/chore/contrato-vigas-topologia-atual"
-    },
-    {
-      "sha": "cedca2802848da54e0884377d6111c5e941e29d4",
-      "short_sha": "cedca28",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-29T20:33:21-03:00",
-      "message": "test(auto-laje): cobre topologia viga->viga, ramo parcial e copia entre pavimentos"
     }
   ],
   "development": {
@@ -1364,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33282881068",
-    "run_number": "188"
+    "run_id": "33282950442",
+    "run_number": "189"
   }
 }
