@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T18:28:01Z",
+  "generated_at": "2026-08-30T18:32:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cfe953cc3299d8f6f662e30082b63b3c7db19251",
-    "short_sha": "cfe953c",
+    "sha": "c1e24b9583d206ba1041e871cca0d16738a6afce",
+    "short_sha": "c1e24b9",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T15:27:51-03:00",
-    "message": "chore: remove arquivo temporário acidental"
+    "date": "2026-08-30T15:32:16-03:00",
+    "message": "docs(status): fecha orientação dos pilares (#247)"
   },
   "commits": [
+    {
+      "sha": "c1e24b9583d206ba1041e871cca0d16738a6afce",
+      "short_sha": "c1e24b9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T15:32:16-03:00",
+      "message": "docs(status): fecha orientação dos pilares (#247)"
+    },
     {
       "sha": "cfe953cc3299d8f6f662e30082b63b3c7db19251",
       "short_sha": "cfe953c",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T14:01:31-03:00",
       "message": "docs(painel): atualiza estado real e destrava atualização (#243)"
-    },
-    {
-      "sha": "ce442b87a1b968f3b53ce9c08a4083eb7ce7e8cc",
-      "short_sha": "ce442b8",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T13:33:21-03:00",
-      "message": "fix(wizard): remove descrição duplicada no passo Projeto (#241)"
     }
   ],
   "development": {
@@ -105,10 +105,10 @@
       ],
       "progress": {
         "total": 11,
-        "done": 8,
+        "done": 9,
         "in_progress": 0,
-        "pending": 3,
-        "percent": 73,
+        "pending": 2,
+        "percent": 82,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -152,8 +152,8 @@
           },
           {
             "text": "otimizar a verificação de orientação dos pilares e expor comandos claros para aplicar, revisar ou alterar as orientações calculadas",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "auditar as 88 sugestões do Calculation Graph e a experiência do Vento item a item, marcando somente o que estiver realmente integrado e validado visualmente",
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33328142256",
-    "run_number": "207"
+    "run_id": "33328353930",
+    "run_number": "208"
   }
 }
