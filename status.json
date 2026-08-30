@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T03:40:55Z",
+  "generated_at": "2026-08-30T13:23:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8274f8f9184d8834dc4300f450f9f14be458edd4",
-    "short_sha": "8274f8f",
+    "sha": "486efc7839f9db057db7273f13f983b59a432074",
+    "short_sha": "486efc7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T00:40:45-03:00",
-    "message": "fix(pavimento): fundacao_baldrame deixa de ser pavimento fisico (#233)"
+    "date": "2026-08-30T10:23:08-03:00",
+    "message": "fix(pilar): preserva índice canônico após filtro de níveis não físicos (#234)"
   },
   "commits": [
+    {
+      "sha": "486efc7839f9db057db7273f13f983b59a432074",
+      "short_sha": "486efc7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T10:23:08-03:00",
+      "message": "fix(pilar): preserva índice canônico após filtro de níveis não físicos (#234)"
+    },
     {
       "sha": "8274f8f9184d8834dc4300f450f9f14be458edd4",
       "short_sha": "8274f8f",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:08:14-03:00",
       "message": "test(2d): protege redraw imediato dos nós estruturais"
-    },
-    {
-      "sha": "4d236700038db1a95eeeed0e0b83cfc584434e11",
-      "short_sha": "4d23670",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:07:50-03:00",
-      "message": "fix(2d): redesenha nós após qualquer atualização da prancheta"
     }
   ],
   "development": {
@@ -1368,7 +1368,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33290811198",
-    "run_number": "191"
+    "run_id": "33314037379",
+    "run_number": "192"
   }
 }
