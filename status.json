@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T17:14:07Z",
+  "generated_at": "2026-08-30T17:20:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ad975a736689ce05a0c6f39876507b76d663ed17",
-    "short_sha": "ad975a7",
+    "sha": "effc82ca84cdde350336a6bbc66cf2413108eadf",
+    "short_sha": "effc82c",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T14:13:58-03:00",
-    "message": "docs(status): fecha interação da Infraestrutura no painel (#244)"
+    "date": "2026-08-30T14:20:15-03:00",
+    "message": "perf(opt-pilar): evita busca exaustiva patológica em 12 pilares (#245)"
   },
   "commits": [
+    {
+      "sha": "effc82ca84cdde350336a6bbc66cf2413108eadf",
+      "short_sha": "effc82c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T14:20:15-03:00",
+      "message": "perf(opt-pilar): evita busca exaustiva patológica em 12 pilares (#245)"
+    },
     {
       "sha": "ad975a736689ce05a0c6f39876507b76d663ed17",
       "short_sha": "ad975a7",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T11:06:55-03:00",
       "message": "fix(vento): envelope aerodinâmico opera sobre pavimentos físicos (#235)"
-    },
-    {
-      "sha": "486efc7839f9db057db7273f13f983b59a432074",
-      "short_sha": "486efc7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T10:23:08-03:00",
-      "message": "fix(pilar): preserva índice canônico após filtro de níveis não físicos (#234)"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33324671290",
-    "run_number": "201"
+    "run_id": "33324979338",
+    "run_number": "202"
   }
 }
