@@ -34,37 +34,14 @@ jobs:
           cp status_areas.js public/status_areas.js
           cp status_sequence.js public/status_sequence.js
 
+      - name: Regressão do contrato do artefato
+        run: python3 tests/test_contrato_artefato.py
+
       - name: Validar contrato do artefato publicado
         run: |
           node --check public/status_areas.js
           node --check public/status_sequence.js
-          python3 <<'PY'
-          import json
-          import re
-          from pathlib import Path
-
-          public = Path("public")
-          html = (public / "index.html").read_text(encoding="utf-8")
-          json.loads((public / "status.json").read_text(encoding="utf-8"))
-
-          refs = re.findall(r'<script\s+src="([^"?]+)(?:\?[^\"]*)?"></script>', html, flags=re.I)
-          locais = [ref for ref in refs if not ref.startswith(("http://", "https://", "//"))]
-          faltantes = [ref for ref in locais if not (public / ref).is_file()]
-          if faltantes:
-              raise SystemExit("Assets locais referenciados mas ausentes do artefato: " + ", ".join(faltantes))
-
-          esperados = {"status_areas.js", "status_sequence.js"}
-          if not esperados.issubset(set(locais)):
-              raise SystemExit("index.html não referencia todos os scripts obrigatórios: " + ", ".join(sorted(esperados)))
-
-          if html.count("status_areas.js") != 1 or html.count("status_sequence.js") != 1:
-              raise SystemExit("Scripts do painel devem ser referenciados exatamente uma vez no index.html")
-
-          if html.index("status_areas.js") > html.index("status_sequence.js"):
-              raise SystemExit("status_areas.js deve carregar antes de status_sequence.js")
-
-          print("SIMETTRIA_STATUS_PAGES_ASSET_CONTRACT_OK")
-          PY
+          python3 scripts/validar_contrato_artefato.py public
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
