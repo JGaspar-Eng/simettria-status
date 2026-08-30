@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T03:40:32Z",
+  "generated_at": "2026-08-30T03:40:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cf59397011b928ecdaebd2bfe29966fe730f5a5e",
-    "short_sha": "cf59397",
+    "sha": "8274f8f9184d8834dc4300f450f9f14be458edd4",
+    "short_sha": "8274f8f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T00:40:22-03:00",
-    "message": "docs(coordenacao): espelha no CLAUDE.md o token \"continuar simettria\" (#232)"
+    "date": "2026-08-30T00:40:45-03:00",
+    "message": "fix(pavimento): fundacao_baldrame deixa de ser pavimento fisico (#233)"
   },
   "commits": [
+    {
+      "sha": "8274f8f9184d8834dc4300f450f9f14be458edd4",
+      "short_sha": "8274f8f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T00:40:45-03:00",
+      "message": "fix(pavimento): fundacao_baldrame deixa de ser pavimento fisico (#233)"
+    },
     {
       "sha": "cf59397011b928ecdaebd2bfe29966fe730f5a5e",
       "short_sha": "cf59397",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:07:50-03:00",
       "message": "fix(2d): redesenha nós após qualquer atualização da prancheta"
-    },
-    {
-      "sha": "02815facbeebea8880b5d1c99b4a30dd2ef5ff89",
-      "short_sha": "02815fa",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:06:55-03:00",
-      "message": "test(auto-laje): inclui reconciliação no gate de fluxo"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 75,
+    "validator_count": 76,
     "validators": [
       {
         "name": "test:base",
@@ -1353,6 +1353,10 @@
         "command": "node tests/validar_nomenclatura_pavimentos.mjs"
       },
       {
+        "name": "test:pseudo-fundacao",
+        "command": "node tests/validar_pseudo_fundacao_niveis.mjs"
+      },
+      {
         "name": "test:3d-orientacao",
         "command": "node tests/validar_orientacao_pilares_3d.mjs"
       }
@@ -1364,7 +1368,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33290796973",
-    "run_number": "190"
+    "run_id": "33290811198",
+    "run_number": "191"
   }
 }
