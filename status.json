@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T15:15:19Z",
+  "generated_at": "2026-08-30T15:22:50Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "327c7a3e95843605f0c442bae2e99acf7d22358e",
-    "short_sha": "327c7a3",
+    "sha": "da5992da01c4fce12bd6535c214d1b0cb283a544",
+    "short_sha": "da5992d",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T12:15:10-03:00",
-    "message": "fix(vento): validação geométrica opera sobre pavimentos físicos (#238)"
+    "date": "2026-08-30T12:22:41-03:00",
+    "message": "fix(vento): fallbacks de envelope usam pavimentos físicos (#239)"
   },
   "commits": [
+    {
+      "sha": "da5992da01c4fce12bd6535c214d1b0cb283a544",
+      "short_sha": "da5992d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T12:22:41-03:00",
+      "message": "fix(vento): fallbacks de envelope usam pavimentos físicos (#239)"
+    },
     {
       "sha": "327c7a3e95843605f0c442bae2e99acf7d22358e",
       "short_sha": "327c7a3",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:13:35-03:00",
       "message": "Merge pull request #228 from JGaspar-Eng/fix/auto-laje-reconciliacao-geometria"
-    },
-    {
-      "sha": "e00b1276c140811cdcd90cbad5d6a0b1d82f7ffa",
-      "short_sha": "e00b127",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:12:07-03:00",
-      "message": "test(3d): exige toggle explícito e overlay materializado"
     }
   ],
   "development": {
@@ -1372,7 +1372,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33319113360",
-    "run_number": "195"
+    "run_id": "33319463802",
+    "run_number": "196"
   }
 }
