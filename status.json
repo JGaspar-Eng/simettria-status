@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T17:01:40Z",
+  "generated_at": "2026-08-30T17:08:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "44ae9a3f0d0f2f888e39c1ec02e52825fe41280f",
-    "short_sha": "44ae9a3",
+    "sha": "c1138780f315ebd549084162bab88c72d5a61002",
+    "short_sha": "c113878",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T14:01:31-03:00",
-    "message": "docs(painel): atualiza estado real e destrava atualização (#243)"
+    "date": "2026-08-30T14:08:42-03:00",
+    "message": "fix(ux): torna seleção da Infraestrutura previsível e remove ações rápidas redundantes (#242)"
   },
   "commits": [
+    {
+      "sha": "c1138780f315ebd549084162bab88c72d5a61002",
+      "short_sha": "c113878",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T14:08:42-03:00",
+      "message": "fix(ux): torna seleção da Infraestrutura previsível e remove ações rápidas redundantes (#242)"
+    },
     {
       "sha": "44ae9a3f0d0f2f888e39c1ec02e52825fe41280f",
       "short_sha": "44ae9a3",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T00:40:45-03:00",
       "message": "fix(pavimento): fundacao_baldrame deixa de ser pavimento fisico (#233)"
-    },
-    {
-      "sha": "cf59397011b928ecdaebd2bfe29966fe730f5a5e",
-      "short_sha": "cf59397",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T00:40:22-03:00",
-      "message": "docs(coordenacao): espelha no CLAUDE.md o token \"continuar simettria\" (#232)"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33324078657",
-    "run_number": "199"
+    "run_id": "33324423051",
+    "run_number": "200"
   }
 }
