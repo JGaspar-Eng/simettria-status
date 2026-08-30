@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-29T23:43:03Z",
+  "generated_at": "2026-08-30T00:13:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cd6270b369b544cbb7fd55f80f29ffb3df800c94",
-    "short_sha": "cd6270b",
+    "sha": "2fcb28a3c3cb4397d69dcedb20b3e965b882c072",
+    "short_sha": "2fcb28a",
     "author": "Joanez Gaspar",
-    "date": "2026-08-29T20:42:56-03:00",
-    "message": "Merge pull request #227 from JGaspar-Eng/fix/auto-laje-topologia-atual"
+    "date": "2026-08-29T21:13:35-03:00",
+    "message": "Merge pull request #228 from JGaspar-Eng/fix/auto-laje-reconciliacao-geometria"
   },
   "commits": [
+    {
+      "sha": "2fcb28a3c3cb4397d69dcedb20b3e965b882c072",
+      "short_sha": "2fcb28a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:13:35-03:00",
+      "message": "Merge pull request #228 from JGaspar-Eng/fix/auto-laje-reconciliacao-geometria"
+    },
+    {
+      "sha": "02815facbeebea8880b5d1c99b4a30dd2ef5ff89",
+      "short_sha": "02815fa",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:06:55-03:00",
+      "message": "test(auto-laje): inclui reconciliação no gate de fluxo"
+    },
+    {
+      "sha": "4462ada0b10bd38845ec5d3ade720939cd08f865",
+      "short_sha": "4462ada",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:06:28-03:00",
+      "message": "fix(auto-laje): reconcilia painéis após mudança de geometria"
+    },
+    {
+      "sha": "a64512fa74e11696b3d8cdbd8b106f1f43643ecf",
+      "short_sha": "a64512f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-29T21:05:50-03:00",
+      "message": "test(auto-laje): reproduz recomposição após mudança de vigas"
+    },
     {
       "sha": "cd6270b369b544cbb7fd55f80f29ffb3df800c94",
       "short_sha": "cd6270b",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T20:22:10-03:00",
       "message": "test(2d): protege zoom-fit com viga apoiada em viga"
-    },
-    {
-      "sha": "2fd444604dc8d0a923427d71fc3b56b1b9beea09",
-      "short_sha": "2fd4446",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:21:47-03:00",
-      "message": "fix(2d): enquadra vigas por geometria real"
-    },
-    {
-      "sha": "7da84222793d9fb488564acae912a2ecc406d7ed",
-      "short_sha": "7da8422",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:07:52-03:00",
-      "message": "Merge pull request #224 from JGaspar-Eng/feat/3d-deformada-sa-l1"
-    },
-    {
-      "sha": "8f959e6e70b5331ac19d7e69242539820b9161ec",
-      "short_sha": "8f959e6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:06:07-03:00",
-      "message": "test(3d): valida eixo centroidal da viga deformada"
-    },
-    {
-      "sha": "3f7be815fd0e798446f7e581f474367b4034e0d1",
-      "short_sha": "3f7be81",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T20:05:39-03:00",
-      "message": "fix(3d): alinha eixo deformado ao centroide das vigas"
     }
   ],
   "development": {
@@ -1062,7 +1062,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_fluxo_estrutural.mjs"
+        "command": "node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs"
       },
       {
         "name": "test:calc",
@@ -1364,7 +1364,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33281621556",
-    "run_number": "186"
+    "run_id": "33282813159",
+    "run_number": "187"
   }
 }
