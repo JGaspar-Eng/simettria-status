@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T14:30:51Z",
+  "generated_at": "2026-08-30T15:15:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a4c14aeacca0b918bd1a626100c69ca524ccf698",
-    "short_sha": "a4c14ae",
+    "sha": "327c7a3e95843605f0c442bae2e99acf7d22358e",
+    "short_sha": "327c7a3",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T11:30:42-03:00",
-    "message": "fix(vento): Graph e saida SA-L1 operam sobre pavimentos fisicos (#236)"
+    "date": "2026-08-30T12:15:10-03:00",
+    "message": "fix(vento): validação geométrica opera sobre pavimentos físicos (#238)"
   },
   "commits": [
+    {
+      "sha": "327c7a3e95843605f0c442bae2e99acf7d22358e",
+      "short_sha": "327c7a3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T12:15:10-03:00",
+      "message": "fix(vento): validação geométrica opera sobre pavimentos físicos (#238)"
+    },
     {
       "sha": "a4c14aeacca0b918bd1a626100c69ca524ccf698",
       "short_sha": "a4c14ae",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:12:07-03:00",
       "message": "test(3d): exige toggle explícito e overlay materializado"
-    },
-    {
-      "sha": "4c0eefdf39efc4783ff7bb01df876206e30446cf",
-      "short_sha": "4c0eefd",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:11:36-03:00",
-      "message": "fix(3d): confirma materialização real da deformada"
     }
   ],
   "development": {
@@ -1054,7 +1054,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 76,
+    "validator_count": 77,
     "validators": [
       {
         "name": "test:base",
@@ -1183,6 +1183,10 @@
       {
         "name": "test:vento-acoes",
         "command": "node tests/validar_vento_acoes_w1.mjs"
+      },
+      {
+        "name": "test:vento-acoes-pav-fisicos",
+        "command": "node tests/validar_vento_acoes_pavimentos_fisicos.mjs"
       },
       {
         "name": "test:vento-graph",
@@ -1368,7 +1372,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33317058504",
-    "run_number": "194"
+    "run_id": "33319113360",
+    "run_number": "195"
   }
 }
