@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T17:08:54Z",
+  "generated_at": "2026-08-30T17:14:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c1138780f315ebd549084162bab88c72d5a61002",
-    "short_sha": "c113878",
+    "sha": "ad975a736689ce05a0c6f39876507b76d663ed17",
+    "short_sha": "ad975a7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T14:08:42-03:00",
-    "message": "fix(ux): torna seleção da Infraestrutura previsível e remove ações rápidas redundantes (#242)"
+    "date": "2026-08-30T14:13:58-03:00",
+    "message": "docs(status): fecha interação da Infraestrutura no painel (#244)"
   },
   "commits": [
+    {
+      "sha": "ad975a736689ce05a0c6f39876507b76d663ed17",
+      "short_sha": "ad975a7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T14:13:58-03:00",
+      "message": "docs(status): fecha interação da Infraestrutura no painel (#244)"
+    },
     {
       "sha": "c1138780f315ebd549084162bab88c72d5a61002",
       "short_sha": "c113878",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T10:23:08-03:00",
       "message": "fix(pilar): preserva índice canônico após filtro de níveis não físicos (#234)"
-    },
-    {
-      "sha": "8274f8f9184d8834dc4300f450f9f14be458edd4",
-      "short_sha": "8274f8f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T00:40:45-03:00",
-      "message": "fix(pavimento): fundacao_baldrame deixa de ser pavimento fisico (#233)"
     }
   ],
   "development": {
@@ -105,10 +105,10 @@
       ],
       "progress": {
         "total": 11,
-        "done": 7,
+        "done": 8,
         "in_progress": 0,
-        "pending": 4,
-        "percent": 64,
+        "pending": 3,
+        "percent": 73,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -147,8 +147,8 @@
           },
           {
             "text": "corrigir a interação da Infraestrutura para seleção previsível pelo botão esquerdo, preservar o papel do botão direito e remover/reorganizar as Ações rápidas que continuam redundantes",
-            "state": "pending",
-            "marker": "⬜"
+            "state": "done",
+            "marker": "✅"
           },
           {
             "text": "otimizar a verificação de orientação dos pilares e expor comandos claros para aplicar, revisar ou alterar as orientações calculadas",
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33324423051",
-    "run_number": "200"
+    "run_id": "33324671290",
+    "run_number": "201"
   }
 }
