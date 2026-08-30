@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T13:23:16Z",
+  "generated_at": "2026-08-30T14:07:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "486efc7839f9db057db7273f13f983b59a432074",
-    "short_sha": "486efc7",
+    "sha": "ec656b756aa17441390c86c9300b132c10cd6295",
+    "short_sha": "ec656b7",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T10:23:08-03:00",
-    "message": "fix(pilar): preserva índice canônico após filtro de níveis não físicos (#234)"
+    "date": "2026-08-30T11:06:55-03:00",
+    "message": "fix(vento): envelope aerodinâmico opera sobre pavimentos físicos (#235)"
   },
   "commits": [
+    {
+      "sha": "ec656b756aa17441390c86c9300b132c10cd6295",
+      "short_sha": "ec656b7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T11:06:55-03:00",
+      "message": "fix(vento): envelope aerodinâmico opera sobre pavimentos físicos (#235)"
+    },
     {
       "sha": "486efc7839f9db057db7273f13f983b59a432074",
       "short_sha": "486efc7",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-29T21:09:57-03:00",
       "message": "fix(3d): torna toggle da deformada explícito e diagnosticável"
-    },
-    {
-      "sha": "af1cdee3307696085b6ea26be20880e8100b7953",
-      "short_sha": "af1cdee",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-29T21:08:14-03:00",
-      "message": "test(2d): protege redraw imediato dos nós estruturais"
     }
   ],
   "development": {
@@ -1368,7 +1368,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33314037379",
-    "run_number": "192"
+    "run_id": "33315979737",
+    "run_number": "193"
   }
 }
