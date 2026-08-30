@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-30T17:20:25Z",
+  "generated_at": "2026-08-30T18:24:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "effc82ca84cdde350336a6bbc66cf2413108eadf",
-    "short_sha": "effc82c",
+    "sha": "3530201472ec5b5f18a5a8e99d94e17a792f2426",
+    "short_sha": "3530201",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T14:20:15-03:00",
-    "message": "perf(opt-pilar): evita busca exaustiva patológica em 12 pilares (#245)"
+    "date": "2026-08-30T15:24:00-03:00",
+    "message": "fix(graph): restaura lote contextual para sugestões de laje"
   },
   "commits": [
+    {
+      "sha": "3530201472ec5b5f18a5a8e99d94e17a792f2426",
+      "short_sha": "3530201",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T15:24:00-03:00",
+      "message": "fix(graph): restaura lote contextual para sugestões de laje"
+    },
     {
       "sha": "effc82ca84cdde350336a6bbc66cf2413108eadf",
       "short_sha": "effc82c",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T11:30:42-03:00",
       "message": "fix(vento): Graph e saida SA-L1 operam sobre pavimentos fisicos (#236)"
-    },
-    {
-      "sha": "ec656b756aa17441390c86c9300b132c10cd6295",
-      "short_sha": "ec656b7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T11:06:55-03:00",
-      "message": "fix(vento): envelope aerodinâmico opera sobre pavimentos físicos (#235)"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33324979338",
-    "run_number": "202"
+    "run_id": "33327956405",
+    "run_number": "203"
   }
 }
