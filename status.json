@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-08-31T12:24:01Z",
+  "generated_at": "2026-08-31T15:26:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d147b2fded832b2b5e7249c28444ffef9f734056",
-    "short_sha": "d147b2f",
+    "sha": "f846b79f3ef2e151d8c67671f3977f26c734601e",
+    "short_sha": "f846b79",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T09:23:50-03:00",
-    "message": "Merge pull request #261 from JGaspar-Eng/feat/orq-continuar-resultados-parciais"
+    "date": "2026-08-31T12:26:18-03:00",
+    "message": "Merge pull request #262 from JGaspar-Eng/feat/orq-overlay-infra-resultado-global"
   },
   "commits": [
+    {
+      "sha": "f846b79f3ef2e151d8c67671f3977f26c734601e",
+      "short_sha": "f846b79",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:26:18-03:00",
+      "message": "Merge pull request #262 from JGaspar-Eng/feat/orq-overlay-infra-resultado-global"
+    },
+    {
+      "sha": "c8924345be3988cf6b7363f6889378db8fb7d9a1",
+      "short_sha": "c892434",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:23:39-03:00",
+      "message": "chore: remove temporary file"
+    },
+    {
+      "sha": "f376627c9d1f2a767b6ca0ca1859a49b8f77402f",
+      "short_sha": "f376627",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:23:16-03:00",
+      "message": "noop"
+    },
+    {
+      "sha": "552375c4da751ca1ef5d5522e04adb3719494f97",
+      "short_sha": "552375c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:23:03-03:00",
+      "message": "chore(orq): remove marcador temporario"
+    },
+    {
+      "sha": "64b40a703ccfc756e57175dd08c92b8439f2e09b",
+      "short_sha": "64b40a7",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:22:31-03:00",
+      "message": "chore(orq): marca frente overlay infra"
+    },
+    {
+      "sha": "8e28516367dbf4b9cf553dea4702d3caaf5a5453",
+      "short_sha": "8e28516",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:22:08-03:00",
+      "message": "test(orq): valida snapshot da infraestrutura vindo do resultado global"
+    },
+    {
+      "sha": "d558e66f3f66c72352f98158b86542cb0382bc40",
+      "short_sha": "d558e66",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T12:21:21-03:00",
+      "message": "feat(orq): projeta resultado global no snapshot da infraestrutura"
+    },
     {
       "sha": "d147b2fded832b2b5e7249c28444ffef9f734056",
       "short_sha": "d147b2f",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T09:15:00-03:00",
       "message": "feat(orq): mantém infra waiting sem reação demonstrada"
-    },
-    {
-      "sha": "ab15063644185dc14cdb8a0865726c668ab17b94",
-      "short_sha": "ab15063",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:14:09-03:00",
-      "message": "feat(orq): prepara apoios mesmo aguardando reacao global"
-    },
-    {
-      "sha": "eee3877d69bcdc0fed2558cedaabc12202c09853",
-      "short_sha": "eee3877",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:13:43-03:00",
-      "message": "feat(orq): preserva consolidacao parcial sem promover reacao global"
-    },
-    {
-      "sha": "b1e58518dc9a3530c3bc9ea58d3f28b10063621b",
-      "short_sha": "b1e5851",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:13:10-03:00",
-      "message": "feat(orq): permite continuar com etapa parcial rastreavel"
-    },
-    {
-      "sha": "0e982889d564d217eb2ed1071fc26447a7a94cf1",
-      "short_sha": "0e98288",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:09:36-03:00",
-      "message": "Merge pull request #260 from JGaspar-Eng/fix/orq-reacoes-vigas-entradas-reais"
-    },
-    {
-      "sha": "74760f17fe06be86928f2bd2494da67e72724c40",
-      "short_sha": "74760f1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:06:28-03:00",
-      "message": "test(orq): cobre preparacao das entradas reais da superestrutura"
-    },
-    {
-      "sha": "12fb5d3be9e6963115508bf5a3d734e5b33cf5fe",
-      "short_sha": "12fb5d3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:05:09-03:00",
-      "message": "fix(orq): usa config e cargas de lajes nas reacoes de vigas"
-    },
-    {
-      "sha": "76b8c23ab8559e106b448f4b52e218622c7f1aa6",
-      "short_sha": "76b8c23",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:03:54-03:00",
-      "message": "Merge pull request #259 from JGaspar-Eng/fix/orq-terreo-legado-fisico"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33391547043",
-    "run_number": "221"
+    "run_id": "33408434354",
+    "run_number": "222"
   }
 }
