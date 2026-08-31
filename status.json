@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-31T22:23:30Z",
+  "generated_at": "2026-08-31T23:05:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1e4b6e54494ce15808216fc1ebaba68e0c2fc8e5",
-    "short_sha": "1e4b6e5",
+    "sha": "74f4f8275fab11598c3553ccb7027441a52acbcd",
+    "short_sha": "74f4f82",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T19:23:21-03:00",
-    "message": "Merge pull request #264 from JGaspar-Eng/feat/estrutural-u4-u9"
+    "date": "2026-08-31T20:05:08-03:00",
+    "message": "Merge pull request #265 from JGaspar-Eng/feat/u10-state-ready-consumers"
   },
   "commits": [
+    {
+      "sha": "74f4f8275fab11598c3553ccb7027441a52acbcd",
+      "short_sha": "74f4f82",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T20:05:08-03:00",
+      "message": "Merge pull request #265 from JGaspar-Eng/feat/u10-state-ready-consumers"
+    },
+    {
+      "sha": "e87c4243e6cea5e3373ffea4d3ce229eba3a09e5",
+      "short_sha": "e87c424",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-31T20:02:37-03:00",
+      "message": "fix(test): torna validador U10A portável no CI"
+    },
+    {
+      "sha": "9f2b9a738278e09f079dc131ec71352cfe8d8e44",
+      "short_sha": "9f2b9a7",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-31T19:48:50-03:00",
+      "message": "fix(graph): bloqueia valores stale fora de READY na U10A"
+    },
     {
       "sha": "1e4b6e54494ce15808216fc1ebaba68e0c2fc8e5",
       "short_sha": "1e4b6e5",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T12:23:03-03:00",
       "message": "chore(orq): remove marcador temporario"
-    },
-    {
-      "sha": "64b40a703ccfc756e57175dd08c92b8439f2e09b",
-      "short_sha": "64b40a7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:22:31-03:00",
-      "message": "chore(orq): marca frente overlay infra"
-    },
-    {
-      "sha": "8e28516367dbf4b9cf553dea4702d3caaf5a5453",
-      "short_sha": "8e28516",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:22:08-03:00",
-      "message": "test(orq): valida snapshot da infraestrutura vindo do resultado global"
-    },
-    {
-      "sha": "d558e66f3f66c72352f98158b86542cb0382bc40",
-      "short_sha": "d558e66",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:21:21-03:00",
-      "message": "feat(orq): projeta resultado global no snapshot da infraestrutura"
     }
   ],
   "development": {
@@ -1060,7 +1060,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 119,
+    "validator_count": 120,
     "validators": [
       {
         "name": "test:base",
@@ -1537,6 +1537,10 @@
       {
         "name": "test:viga-rotulagem-u9",
         "command": "node tests/validar_rotulagem_semantica_viga_unidade9.mjs"
+      },
+      {
+        "name": "test:u10a-state-ready",
+        "command": "node tests/validar_state_ready_consumidores_unidade10a.mjs"
       }
     ]
   },
@@ -1546,7 +1550,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33445976419",
-    "run_number": "223"
+    "run_id": "33449145573",
+    "run_number": "224"
   }
 }
