@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-08-31T11:38:47Z",
+  "generated_at": "2026-08-31T12:04:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "032a6cc5eb177d2d669965b2dab8c49ab8e65722",
-    "short_sha": "032a6cc",
+    "sha": "76b8c23ab8559e106b448f4b52e218622c7f1aa6",
+    "short_sha": "76b8c23",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T08:38:36-03:00",
-    "message": "fix(niveis): corrige nomenclatura legada de pavimentos (#258)"
+    "date": "2026-08-31T09:03:54-03:00",
+    "message": "Merge pull request #259 from JGaspar-Eng/fix/orq-terreo-legado-fisico"
   },
   "commits": [
+    {
+      "sha": "76b8c23ab8559e106b448f4b52e218622c7f1aa6",
+      "short_sha": "76b8c23",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:03:54-03:00",
+      "message": "Merge pull request #259 from JGaspar-Eng/fix/orq-terreo-legado-fisico"
+    },
+    {
+      "sha": "1c1a92731c466144fd14cb33610c3ca504ff1fac",
+      "short_sha": "1c1a927",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:01:15-03:00",
+      "message": "fix(orq): restringe promocao ao pavimento estrutural restaurado"
+    },
+    {
+      "sha": "97c1585d0e51c257bf6f844daab18cc35ee49435",
+      "short_sha": "97c1585",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T08:58:35-03:00",
+      "message": "test(orq): cobre terreo legado como trecho fisico"
+    },
+    {
+      "sha": "8fdf1561d9f8cb3513225384a21e4225de3cd9f7",
+      "short_sha": "8fdf156",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T08:56:25-03:00",
+      "message": "fix(orq): trata terreo legado promovido como pavimento fisico"
+    },
     {
       "sha": "032a6cc5eb177d2d669965b2dab8c49ab8e65722",
       "short_sha": "032a6cc",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T00:22:53-03:00",
       "message": "fix(ui): ativa prioridade de arquivo na barra superior"
-    },
-    {
-      "sha": "fac9f0a4cfbfee5fc95c2477b309e725cac92ee9",
-      "short_sha": "fac9f0a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:22:33-03:00",
-      "message": "fix(ui): reduz mais o rotulo de espessura das lajes"
-    },
-    {
-      "sha": "a03120165cd3c2ba831d518ee50984156ac6f2f1",
-      "short_sha": "a031201",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:21:43-03:00",
-      "message": "fix(ui): prioriza arquivo e compacta barra superior"
-    },
-    {
-      "sha": "c23cee377d10c3695aca220dd2706ee55279187b",
-      "short_sha": "c23cee3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:18:36-03:00",
-      "message": "fix(ui): reduz hierarquia visual da espessura das lajes"
-    },
-    {
-      "sha": "323ec9a46dda30beeeed90dfb0a2fe544a9144c3",
-      "short_sha": "323ec9a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:08:07-03:00",
-      "message": "feat(ui): carrega referência visual de pilares Forecast"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33387935192",
-    "run_number": "218"
+    "run_id": "33389899592",
+    "run_number": "219"
   }
 }
