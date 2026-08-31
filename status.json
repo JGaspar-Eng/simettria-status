@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-31T12:04:03Z",
+  "generated_at": "2026-08-31T12:09:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "76b8c23ab8559e106b448f4b52e218622c7f1aa6",
-    "short_sha": "76b8c23",
+    "sha": "0e982889d564d217eb2ed1071fc26447a7a94cf1",
+    "short_sha": "0e98288",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T09:03:54-03:00",
-    "message": "Merge pull request #259 from JGaspar-Eng/fix/orq-terreo-legado-fisico"
+    "date": "2026-08-31T09:09:36-03:00",
+    "message": "Merge pull request #260 from JGaspar-Eng/fix/orq-reacoes-vigas-entradas-reais"
   },
   "commits": [
+    {
+      "sha": "0e982889d564d217eb2ed1071fc26447a7a94cf1",
+      "short_sha": "0e98288",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:09:36-03:00",
+      "message": "Merge pull request #260 from JGaspar-Eng/fix/orq-reacoes-vigas-entradas-reais"
+    },
+    {
+      "sha": "74760f17fe06be86928f2bd2494da67e72724c40",
+      "short_sha": "74760f1",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:06:28-03:00",
+      "message": "test(orq): cobre preparacao das entradas reais da superestrutura"
+    },
+    {
+      "sha": "12fb5d3be9e6963115508bf5a3d734e5b33cf5fe",
+      "short_sha": "12fb5d3",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:05:09-03:00",
+      "message": "fix(orq): usa config e cargas de lajes nas reacoes de vigas"
+    },
     {
       "sha": "76b8c23ab8559e106b448f4b52e218622c7f1aa6",
       "short_sha": "76b8c23",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T00:36:27-03:00",
       "message": "fix(ui): uniformiza seções de pilares em 4.3"
-    },
-    {
-      "sha": "6adc11163c3a28098e9636408b47ea1830931166",
-      "short_sha": "6adc111",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:33:30-03:00",
-      "message": "fix(ui): iguala h da laje ao renderer da secao da viga"
-    },
-    {
-      "sha": "1feca192a33859f0ad0908bfead2f58771e84d1c",
-      "short_sha": "1feca19",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:29:30-03:00",
-      "message": "fix(ui): iguala fonte de h da laje à seção da viga"
-    },
-    {
-      "sha": "321021aadc3e9729d15c06bbc57048c13e63f014",
-      "short_sha": "321021a",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:22:53-03:00",
-      "message": "fix(ui): ativa prioridade de arquivo na barra superior"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33389899592",
-    "run_number": "219"
+    "run_id": "33390367112",
+    "run_number": "220"
   }
 }
