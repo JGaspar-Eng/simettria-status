@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-31T15:26:29Z",
+  "generated_at": "2026-08-31T22:23:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f846b79f3ef2e151d8c67671f3977f26c734601e",
-    "short_sha": "f846b79",
+    "sha": "1e4b6e54494ce15808216fc1ebaba68e0c2fc8e5",
+    "short_sha": "1e4b6e5",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T12:26:18-03:00",
-    "message": "Merge pull request #262 from JGaspar-Eng/feat/orq-overlay-infra-resultado-global"
+    "date": "2026-08-31T19:23:21-03:00",
+    "message": "Merge pull request #264 from JGaspar-Eng/feat/estrutural-u4-u9"
   },
   "commits": [
+    {
+      "sha": "1e4b6e54494ce15808216fc1ebaba68e0c2fc8e5",
+      "short_sha": "1e4b6e5",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T19:23:21-03:00",
+      "message": "Merge pull request #264 from JGaspar-Eng/feat/estrutural-u4-u9"
+    },
+    {
+      "sha": "e57ba757c6b5283472e36af47fb506c6324bf7f1",
+      "short_sha": "e57ba75",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-31T19:19:56-03:00",
+      "message": "docs(checkpoint): consolida unidades estruturais 4-9"
+    },
+    {
+      "sha": "bcbf714ea415570ffe75247fc2f28e9313d12bce",
+      "short_sha": "bcbf714",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-31T19:17:54-03:00",
+      "message": "feat(estrutural): consolida cadeia laje-viga-ELU (U4-U9)"
+    },
     {
       "sha": "f846b79f3ef2e151d8c67671f3977f26c734601e",
       "short_sha": "f846b79",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T12:21:21-03:00",
       "message": "feat(orq): projeta resultado global no snapshot da infraestrutura"
-    },
-    {
-      "sha": "d147b2fded832b2b5e7249c28444ffef9f734056",
-      "short_sha": "d147b2f",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:23:50-03:00",
-      "message": "Merge pull request #261 from JGaspar-Eng/feat/orq-continuar-resultados-parciais"
-    },
-    {
-      "sha": "dd7068e5f64df01d3d9532298d8d3294fd720306",
-      "short_sha": "dd7068e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:16:05-03:00",
-      "message": "test(orq): prova continuidade segura ate infraestrutura"
-    },
-    {
-      "sha": "6b265de196bee5dcc092822ff12a440c2c6a9ac0",
-      "short_sha": "6b265de",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:15:00-03:00",
-      "message": "feat(orq): mantém infra waiting sem reação demonstrada"
     }
   ],
   "development": {
@@ -1060,7 +1060,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 77,
+    "validator_count": 119,
     "validators": [
       {
         "name": "test:base",
@@ -1105,6 +1105,22 @@
       {
         "name": "test:viga-transferencia",
         "command": "node tests/validar_transferencia_reacoes_viga_viga.mjs"
+      },
+      {
+        "name": "test:viga-solver-elu",
+        "command": "node tests/validar_solver_elu_viga_nbr8681.mjs"
+      },
+      {
+        "name": "test:laje-quinhoes",
+        "command": "node tests/validar_quinhoes_laje_viga_nbr6118.mjs"
+      },
+      {
+        "name": "test:laje-overlap",
+        "command": "node tests/validar_sobreposicao_borda_laje_viga.mjs"
+      },
+      {
+        "name": "test:laje-conservacao",
+        "command": "node tests/validar_conservacao_transferencia_laje_viga.mjs"
       },
       {
         "name": "test:pilar-m3b-vinculo",
@@ -1369,6 +1385,158 @@
       {
         "name": "test:3d-orientacao",
         "command": "node tests/validar_orientacao_pilares_3d.mjs"
+      },
+      {
+        "name": "test:laje-stale-u7",
+        "command": "node tests/validar_stale_topologia_laje_viga_unidade7.mjs"
+      },
+      {
+        "name": "test:viga-carga-classificacao",
+        "command": "node tests/validar_carga_classificacao_viga.mjs"
+      },
+      {
+        "name": "test:viga-carga-classificacao-grafo",
+        "command": "node tests/validar_carga_classificacao_viga_grafo.mjs"
+      },
+      {
+        "name": "test:viga-separacao-acoes",
+        "command": "node tests/validar_viga_separacao_acoes.mjs"
+      },
+      {
+        "name": "test:viga-persistencia-cargas",
+        "command": "node tests/validar_persistencia_cargas_viga.mjs"
+      },
+      {
+        "name": "test:viga-verificacao-elu",
+        "command": "node tests/validar_verificacao_elu_viga.mjs"
+      },
+      {
+        "name": "test:viga-armadura",
+        "command": "node tests/validar_armadura_viga.mjs"
+      },
+      {
+        "name": "test:viga-armadura-alternativas",
+        "command": "node tests/validar_armadura_alternativas.mjs"
+      },
+      {
+        "name": "test:viga-armadura-manual",
+        "command": "node tests/validar_armadura_selecao_manual.mjs"
+      },
+      {
+        "name": "test:viga-memorial-arvore",
+        "command": "node tests/validar_memorial_arvore_viga.mjs"
+      },
+      {
+        "name": "test:viga-memorial-continua",
+        "command": "node tests/validar_memorial_viga_continua.mjs"
+      },
+      {
+        "name": "test:nbr8681-combinacoes",
+        "command": "node tests/validar_combinacoes_nbr8681.mjs"
+      },
+      {
+        "name": "test:nbr8681-combinacoes-grafo",
+        "command": "node tests/validar_combinacoes_nbr8681_grafo.mjs"
+      },
+      {
+        "name": "test:nbr8681-gate-classificacao",
+        "command": "node tests/validar_gate_classificacao_carga_viga_nbr8681.mjs"
+      },
+      {
+        "name": "test:nbr8681-gate-parcelas",
+        "command": "node tests/validar_gate_parcelas_caracteristicas_nbr8681.mjs"
+      },
+      {
+        "name": "test:dim-pilar-categoria-uso",
+        "command": "node tests/validar_categoria_uso_projeto_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-lambda1",
+        "command": "node tests/validar_parametros_lambda1_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-pipeline-2a-ordem",
+        "command": "node tests/validar_pipeline_segunda_ordem_local_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-ned-trecho",
+        "command": "node tests/validar_ned_parcial_por_trecho_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-ned-trecho-integracao",
+        "command": "node tests/validar_ned_parcial_por_trecho_integration_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-reacoes-caracteristicas",
+        "command": "node tests/validar_reacoes_caracteristicas_vigas_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-combinacoes-vento",
+        "command": "node tests/validar_combinacoes_elu_vento_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-esforcos-memorial",
+        "command": "node tests/validar_esforcos_graph_memorial_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:dim-pilar-regressao-engenharia",
+        "command": "node tests/validar_regressao_engenharia_pilar_dim_pilar_01.mjs"
+      },
+      {
+        "name": "test:integracao-restore",
+        "command": "node tests/validar_integracao_restore_inspector_solver_memorial.mjs"
+      },
+      {
+        "name": "test:pipeline-engenharia",
+        "command": "node tests/validar_pipeline_engenharia.mjs"
+      },
+      {
+        "name": "test:memorial-documento",
+        "command": "node tests/validar_memorial_documento.mjs"
+      },
+      {
+        "name": "test:status-canonico",
+        "command": "node tests/validar_status_canonico.mjs"
+      },
+      {
+        "name": "test:ui-diagrama-estrutural",
+        "command": "node tests/validar_structural_diagram_renderer.mjs"
+      },
+      {
+        "name": "test:3d-deformada-lateral",
+        "command": "node tests/validar_deformada_lateral_3d_sa_l1.mjs"
+      },
+      {
+        "name": "test:nomenclatura-fundacao-legada",
+        "command": "node tests/validar_nomenclatura_fundacao_legada_superestrutura.mjs"
+      },
+      {
+        "name": "test:orq-nos-estruturais",
+        "command": "node tests/validar_nos_estruturais_orq_estrut_01.mjs"
+      },
+      {
+        "name": "test:orq-calculo-global",
+        "command": "node tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+      },
+      {
+        "name": "test:orq-apoios-infraestrutura",
+        "command": "node tests/validar_apoios_infraestrutura_orq_estrut_01.mjs"
+      },
+      {
+        "name": "test:orq-propostas-estado-visual",
+        "command": "node tests/validar_propostas_estado_visual_infra_orq_estrut_01.mjs"
+      },
+      {
+        "name": "test:cobertura-suite",
+        "command": "node tests/validar_cobertura_suite_oficial.mjs"
+      },
+      {
+        "name": "test:knowledge-export",
+        "command": "python -m unittest tests.test_knowledge_export"
+      },
+      {
+        "name": "test:viga-rotulagem-u9",
+        "command": "node tests/validar_rotulagem_semantica_viga_unidade9.mjs"
       }
     ]
   },
@@ -1378,7 +1546,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33408434354",
-    "run_number": "222"
+    "run_id": "33445976419",
+    "run_number": "223"
   }
 }
