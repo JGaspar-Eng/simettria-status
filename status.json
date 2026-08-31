@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-08-31T01:38:53Z",
+  "generated_at": "2026-08-31T01:44:36Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "74f3987b2bacf2a6a7b40366a9f84acdbb6b84b2",
-    "short_sha": "74f3987",
+    "sha": "ef3c418f840f0c89bc11530455034f6c38d22d99",
+    "short_sha": "ef3c418",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T22:38:43-03:00",
-    "message": "feat(orq): conecta executores integrados existentes (#252)"
+    "date": "2026-08-30T22:44:27-03:00",
+    "message": "feat(orq): conecta reações ELU parciais sem promover cálculo global (#253)"
   },
   "commits": [
+    {
+      "sha": "ef3c418f840f0c89bc11530455034f6c38d22d99",
+      "short_sha": "ef3c418",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T22:44:27-03:00",
+      "message": "feat(orq): conecta reações ELU parciais sem promover cálculo global (#253)"
+    },
     {
       "sha": "74f3987b2bacf2a6a7b40366a9f84acdbb6b84b2",
       "short_sha": "74f3987",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T15:27:19-03:00",
       "message": "noop"
-    },
-    {
-      "sha": "3530201472ec5b5f18a5a8e99d94e17a792f2426",
-      "short_sha": "3530201",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T15:24:00-03:00",
-      "message": "fix(graph): restaura lote contextual para sugestões de laje"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33348212053",
-    "run_number": "212"
+    "run_id": "33348503193",
+    "run_number": "213"
   }
 }
