@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-31T01:59:26Z",
+  "generated_at": "2026-08-31T02:40:51Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "459e1bb2f61cdc56b145073e94799d9d99cf6bb5",
-    "short_sha": "459e1bb",
+    "sha": "b7155cff6394a8d9dbdbeab36a62cf416c62f299",
+    "short_sha": "b7155cf",
     "author": "Joanez Gaspar",
-    "date": "2026-08-30T22:59:13-03:00",
-    "message": "feat(orq): expõe NEd e MEd parciais na base dos pilares (#255)"
+    "date": "2026-08-30T23:40:41-03:00",
+    "message": "Merge pull request #256 from JGaspar-Eng/feat/orq-calcular-estrutura-ui"
   },
   "commits": [
+    {
+      "sha": "b7155cff6394a8d9dbdbeab36a62cf416c62f299",
+      "short_sha": "b7155cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T23:40:41-03:00",
+      "message": "Merge pull request #256 from JGaspar-Eng/feat/orq-calcular-estrutura-ui"
+    },
+    {
+      "sha": "79c8ed0d2acb31033cad711fbe32b985391af7c1",
+      "short_sha": "79c8ed0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T23:36:11-03:00",
+      "message": "fix(orq-ui): mantém feedback visível após cálculo"
+    },
+    {
+      "sha": "cbbbb549ebf566d88371d76b99d6c8d47098b92c",
+      "short_sha": "cbbbb54",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T23:03:56-03:00",
+      "message": "fix(orq): pinta progresso zero antes do calculo global"
+    },
+    {
+      "sha": "fd0f7bebed265b6aa7b1be0915268e564b85e396",
+      "short_sha": "fd0f7be",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T23:02:27-03:00",
+      "message": "test(orq): trava wiring visual do comando global"
+    },
+    {
+      "sha": "77057f8236c75d6ed24edb6e0f2f268537f47580",
+      "short_sha": "77057f8",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T23:01:43-03:00",
+      "message": "feat(orq): carrega wiring visual do calculo global"
+    },
+    {
+      "sha": "057dc556bb813f9727090d913c2a44fd6b64436f",
+      "short_sha": "057dc55",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-30T23:01:26-03:00",
+      "message": "feat(orq): adiciona comando global de calculo na UI"
+    },
     {
       "sha": "459e1bb2f61cdc56b145073e94799d9d99cf6bb5",
       "short_sha": "459e1bb",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-30T22:38:43-03:00",
       "message": "feat(orq): conecta executores integrados existentes (#252)"
-    },
-    {
-      "sha": "52065169c0d486e51cf404a40d79b68c6dcc130c",
-      "short_sha": "5206516",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T22:27:53-03:00",
-      "message": "docs(status): fecha Calculation Graph e Vento (#251)"
-    },
-    {
-      "sha": "941c2d78f86e56df381da39315efcd1cf3886e56",
-      "short_sha": "941c2d7",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T22:17:03-03:00",
-      "message": "docs(status): mostra Áreas 4 e 11 ativas em vermelho"
-    },
-    {
-      "sha": "7c814ee7a65e9bb8b7d344b2c765adefef481fa1",
-      "short_sha": "7c814ee",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T21:59:39-03:00",
-      "message": "fix(graph): lotes tipados, desempenho e progresso real"
-    },
-    {
-      "sha": "c1e24b9583d206ba1041e871cca0d16738a6afce",
-      "short_sha": "c1e24b9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T15:32:16-03:00",
-      "message": "docs(status): fecha orientação dos pilares (#247)"
-    },
-    {
-      "sha": "cfe953cc3299d8f6f662e30082b63b3c7db19251",
-      "short_sha": "cfe953c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T15:27:51-03:00",
-      "message": "chore: remove arquivo temporário acidental"
-    },
-    {
-      "sha": "3fed9e482f818f15c53de5e369a64599b3d604d8",
-      "short_sha": "3fed9e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-30T15:27:42-03:00",
-      "message": "tmp"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33349242161",
-    "run_number": "215"
+    "run_id": "33351425611",
+    "run_number": "216"
   }
 }
