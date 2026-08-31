@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-08-31T12:09:44Z",
+  "generated_at": "2026-08-31T12:24:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0e982889d564d217eb2ed1071fc26447a7a94cf1",
-    "short_sha": "0e98288",
+    "sha": "d147b2fded832b2b5e7249c28444ffef9f734056",
+    "short_sha": "d147b2f",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T09:09:36-03:00",
-    "message": "Merge pull request #260 from JGaspar-Eng/fix/orq-reacoes-vigas-entradas-reais"
+    "date": "2026-08-31T09:23:50-03:00",
+    "message": "Merge pull request #261 from JGaspar-Eng/feat/orq-continuar-resultados-parciais"
   },
   "commits": [
+    {
+      "sha": "d147b2fded832b2b5e7249c28444ffef9f734056",
+      "short_sha": "d147b2f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:23:50-03:00",
+      "message": "Merge pull request #261 from JGaspar-Eng/feat/orq-continuar-resultados-parciais"
+    },
+    {
+      "sha": "dd7068e5f64df01d3d9532298d8d3294fd720306",
+      "short_sha": "dd7068e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:16:05-03:00",
+      "message": "test(orq): prova continuidade segura ate infraestrutura"
+    },
+    {
+      "sha": "6b265de196bee5dcc092822ff12a440c2c6a9ac0",
+      "short_sha": "6b265de",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:15:00-03:00",
+      "message": "feat(orq): mantém infra waiting sem reação demonstrada"
+    },
+    {
+      "sha": "ab15063644185dc14cdb8a0865726c668ab17b94",
+      "short_sha": "ab15063",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:14:09-03:00",
+      "message": "feat(orq): prepara apoios mesmo aguardando reacao global"
+    },
+    {
+      "sha": "eee3877d69bcdc0fed2558cedaabc12202c09853",
+      "short_sha": "eee3877",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:13:43-03:00",
+      "message": "feat(orq): preserva consolidacao parcial sem promover reacao global"
+    },
+    {
+      "sha": "b1e58518dc9a3530c3bc9ea58d3f28b10063621b",
+      "short_sha": "b1e5851",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T09:13:10-03:00",
+      "message": "feat(orq): permite continuar com etapa parcial rastreavel"
+    },
     {
       "sha": "0e982889d564d217eb2ed1071fc26447a7a94cf1",
       "short_sha": "0e98288",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T09:03:54-03:00",
       "message": "Merge pull request #259 from JGaspar-Eng/fix/orq-terreo-legado-fisico"
-    },
-    {
-      "sha": "1c1a92731c466144fd14cb33610c3ca504ff1fac",
-      "short_sha": "1c1a927",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T09:01:15-03:00",
-      "message": "fix(orq): restringe promocao ao pavimento estrutural restaurado"
-    },
-    {
-      "sha": "97c1585d0e51c257bf6f844daab18cc35ee49435",
-      "short_sha": "97c1585",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T08:58:35-03:00",
-      "message": "test(orq): cobre terreo legado como trecho fisico"
-    },
-    {
-      "sha": "8fdf1561d9f8cb3513225384a21e4225de3cd9f7",
-      "short_sha": "8fdf156",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T08:56:25-03:00",
-      "message": "fix(orq): trata terreo legado promovido como pavimento fisico"
-    },
-    {
-      "sha": "032a6cc5eb177d2d669965b2dab8c49ab8e65722",
-      "short_sha": "032a6cc",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T08:38:36-03:00",
-      "message": "fix(niveis): corrige nomenclatura legada de pavimentos (#258)"
-    },
-    {
-      "sha": "6a472a693ddc711cd9dfd09e2e84c151695fa307",
-      "short_sha": "6a472a6",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:42:45-03:00",
-      "message": "Merge pull request #257 from JGaspar-Eng/feat/laje-espessura-rotulo"
-    },
-    {
-      "sha": "52c8693770646ac75e0df8fdea5b7a92f7fff8cc",
-      "short_sha": "52c8693",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T00:36:27-03:00",
-      "message": "fix(ui): uniformiza seções de pilares em 4.3"
     }
   ],
   "development": {
@@ -1378,7 +1378,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33390367112",
-    "run_number": "220"
+    "run_id": "33391547043",
+    "run_number": "221"
   }
 }
