@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-01T22:56:44Z",
+  "generated_at": "2026-09-01T23:05:56Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "54688a4ad1a6457b271edefba06a303ff7b5b010",
-    "short_sha": "54688a4",
+    "sha": "beb36e2f31f76c1a351bf7611fde408516310e56",
+    "short_sha": "beb36e2",
     "author": "Joanez Gaspar",
-    "date": "2026-09-01T19:56:24-03:00",
-    "message": "Merge pull request #278 from JGaspar-Eng/feat/dashboard-estado-tecnico-vivo"
+    "date": "2026-09-01T20:05:36-03:00",
+    "message": "Merge pull request #279 from JGaspar-Eng/fix/dashboard-pr-state-real"
   },
   "commits": [
+    {
+      "sha": "beb36e2f31f76c1a351bf7611fde408516310e56",
+      "short_sha": "beb36e2",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T20:05:36-03:00",
+      "message": "Merge pull request #279 from JGaspar-Eng/fix/dashboard-pr-state-real"
+    },
+    {
+      "sha": "3bc3e8c909a3ea3ad6e438a02da22e8407fba1c7",
+      "short_sha": "3bc3e8c",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T20:03:44-03:00",
+      "message": "test(painel): mantém schema compatível"
+    },
+    {
+      "sha": "688fc7b50fbeee770a9359d8ae3dffc3c28eb90a",
+      "short_sha": "688fc7b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T20:03:25-03:00",
+      "message": "fix(painel): mantém schema compatível"
+    },
+    {
+      "sha": "72703911eafe5c3c46e504e69077b7a9a0db6566",
+      "short_sha": "7270391",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T20:02:48-03:00",
+      "message": "test(painel): cobre estado real dos PRs"
+    },
+    {
+      "sha": "b0bac98d23c8e905da72c2b0c5b62d75b17e8df0",
+      "short_sha": "b0bac98",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T20:02:30-03:00",
+      "message": "fix(painel): usa estado real dos PRs na coordenação"
+    },
     {
       "sha": "54688a4ad1a6457b271edefba06a303ff7b5b010",
       "short_sha": "54688a4",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-01T14:38:46-03:00",
       "message": "test(painel): remove validador da suíte oficial"
-    },
-    {
-      "sha": "addd91da85891a965b8b8d63a2c09f8d88dab3aa",
-      "short_sha": "addd91d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:38:40-03:00",
-      "message": "test(painel): move validação para infraestrutura do painel"
-    },
-    {
-      "sha": "069910e3944ca0878b2abdb54681018280dd5c18",
-      "short_sha": "069910e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:37:18-03:00",
-      "message": "test(painel): preserva contrato de publicação sem Actions write"
-    },
-    {
-      "sha": "5b05dd585877962ef632df4af1e6ba35872ea1c2",
-      "short_sha": "5b05dd5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:35:26-03:00",
-      "message": "feat(painel): publica estado vivo da issue 231"
-    },
-    {
-      "sha": "27a4dcf2ede2b28376cdc93258250d3a88bf0b9f",
-      "short_sha": "27a4dcf",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:35:07-03:00",
-      "message": "feat(painel): renderiza estado técnico vivo das frentes"
-    },
-    {
-      "sha": "1bacaa17659075e31f913575f1413ebfc1f9859a",
-      "short_sha": "1bacaa1",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:34:21-03:00",
-      "message": "test(painel): valida snapshot da issue de coordenação"
     }
   ],
   "development": {
@@ -1637,7 +1637,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33568686109",
-    "run_number": "242"
+    "run_id": "33569409036",
+    "run_number": "244"
   }
 }
