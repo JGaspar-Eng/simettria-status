@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-09-01T00:54:08Z",
+  "generated_at": "2026-09-01T01:12:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "405b94693efff7484e5a3e8d1c4df70686c8c000",
-    "short_sha": "405b946",
+    "sha": "a561d818ab611849ad2d60e11befbe53da8c652a",
+    "short_sha": "a561d81",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T21:54:00-03:00",
-    "message": "Merge pull request #269 from JGaspar-Eng/fix/dashboard-estado-real-v2"
+    "date": "2026-08-31T22:12:38-03:00",
+    "message": "Merge pull request #270 from JGaspar-Eng/feat/orq-materializacao-contrato"
   },
   "commits": [
+    {
+      "sha": "a561d818ab611849ad2d60e11befbe53da8c652a",
+      "short_sha": "a561d81",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:12:38-03:00",
+      "message": "Merge pull request #270 from JGaspar-Eng/feat/orq-materializacao-contrato"
+    },
+    {
+      "sha": "30557ec41b733697b43b7199749662d02ab6ff9e",
+      "short_sha": "30557ec",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:10:13-03:00",
+      "message": "ci(orq): mantém regressão dentro da suite oficial"
+    },
+    {
+      "sha": "b9bd5bfe43c767ff8b68a5471282541ed0f6b279",
+      "short_sha": "b9bd5bf",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:09:53-03:00",
+      "message": "test(orq): remove validador duplicado fora da suite"
+    },
+    {
+      "sha": "b3fb02ce8f842f05a286a71592cbceda6eab7b15",
+      "short_sha": "b3fb02c",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:09:33-03:00",
+      "message": "test(orq): integra contrato de materializacao na suite oficial"
+    },
+    {
+      "sha": "9a31f0b067a89a872161aabb0d48419e9afa2a99",
+      "short_sha": "9a31f0b",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:06:44-03:00",
+      "message": "ci(orq): executa regressao de materializacao"
+    },
+    {
+      "sha": "253cd9f06f07bae0513705e5562f34fc1c304411",
+      "short_sha": "253cd9f",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:06:33-03:00",
+      "message": "test(orq): cobre contrato fail closed de materializacao"
+    },
+    {
+      "sha": "f505aceaf53d838690f3fd3b103cdd9a17d6a8d5",
+      "short_sha": "f505ace",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:05:37-03:00",
+      "message": "feat(orq): acopla elegibilidade de materializacao as propostas"
+    },
+    {
+      "sha": "424177a00c4ff12eb500b6ee310ef93c2c0d335e",
+      "short_sha": "424177a",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T22:05:03-03:00",
+      "message": "feat(orq): define contrato de materializacao rastreavel"
+    },
     {
       "sha": "405b94693efff7484e5a3e8d1c4df70686c8c000",
       "short_sha": "405b946",
@@ -23,62 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-31T21:52:09-03:00",
       "message": "fix(status): separa plano checkpoint e execução real"
-    },
-    {
-      "sha": "5f73e95944019ceca830293e35cfa8790fabfa26",
-      "short_sha": "5f73e95",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:47:37-03:00",
-      "message": "Merge pull request #268 from JGaspar-Eng/feat/orq-apoio-painel"
-    },
-    {
-      "sha": "1ddbda083c217b296fcccb2c45da20fdbdc75144",
-      "short_sha": "1ddbda0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:28:27-03:00",
-      "message": "fix(orq): destaca apoio selecionado e mostra nome do pilar"
-    },
-    {
-      "sha": "0c381068f837cd7c8b7081da1b61ab6f80f4bcd5",
-      "short_sha": "0c38106",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:19:43-03:00",
-      "message": "test(orq): cobre painel somente leitura do apoio"
-    },
-    {
-      "sha": "156daaefb8f9d6208a93c1ee7d2b8d59a74454bf",
-      "short_sha": "156daae",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:18:55-03:00",
-      "message": "feat(orq): permite selecionar apoio e abrir painel"
-    },
-    {
-      "sha": "774b53166617e84286fc7a0d3735a1e4ec1082e4",
-      "short_sha": "774b531",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:18:04-03:00",
-      "message": "feat(orq): cria view-model do painel de apoio"
-    },
-    {
-      "sha": "48e62349d73429c435ab3ce608acfc6209a481a1",
-      "short_sha": "48e6234",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:12:23-03:00",
-      "message": "Merge pull request #266 from JGaspar-Eng/feat/u10b-cobertura-bordas-laje"
-    },
-    {
-      "sha": "ffff53336f263a2a58cd7f10a764a45598b2fa12",
-      "short_sha": "ffff533",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-31T21:09:38-03:00",
-      "message": "feat(laje): publica cobertura de bordas na U10B"
-    },
-    {
-      "sha": "4d813ef1cf2b0116bbac16366c0550dd6d0b578d",
-      "short_sha": "4d813ef",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T21:09:22-03:00",
-      "message": "Merge pull request #263 from JGaspar-Eng/feat/orq-overlay-infra-ui"
     }
   ],
   "development": {
@@ -1629,7 +1629,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33456609027",
-    "run_number": "228"
+    "run_id": "33457835105",
+    "run_number": "229"
   }
 }
