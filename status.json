@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-09-01T01:23:16Z",
+  "generated_at": "2026-09-01T03:35:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0f93a68a5b59abbab847a6be5bb625c29da2a4b3",
-    "short_sha": "0f93a68",
+    "sha": "c9a93b9fa9f71bde99f39f2966f50bc6630a74e9",
+    "short_sha": "c9a93b9",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T22:23:06-03:00",
-    "message": "Merge pull request #271 from JGaspar-Eng/fix/orq-materializacao-geometria"
+    "date": "2026-09-01T00:35:17-03:00",
+    "message": "Merge pull request #272 from JGaspar-Eng/fix/orq-materializacao-rastreabilidade"
   },
   "commits": [
+    {
+      "sha": "c9a93b9fa9f71bde99f39f2966f50bc6630a74e9",
+      "short_sha": "c9a93b9",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T00:35:17-03:00",
+      "message": "Merge pull request #272 from JGaspar-Eng/fix/orq-materializacao-rastreabilidade"
+    },
+    {
+      "sha": "32aa06d49b85971cafe0d84381b1561a908b00c3",
+      "short_sha": "32aa06d",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:13:44-03:00",
+      "message": "test(orq): cobre cadeia de rastreabilidade do apoio"
+    },
+    {
+      "sha": "ad2f4d2f811e04bd00ed76649d4f6c975919fa20",
+      "short_sha": "ad2f4d2",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:12:53-03:00",
+      "message": "fix(orq): exige fonte demonstrada na rastreabilidade"
+    },
+    {
+      "sha": "3e28f3232f7559aa20bca6e36d0fcfe582ed8ff9",
+      "short_sha": "3e28f32",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:12:39-03:00",
+      "message": "fix(orq): não presume fonte de reação sem evidência"
+    },
+    {
+      "sha": "48e3e61deec764ff9b3bdde30958c5571d84576b",
+      "short_sha": "48e3e61",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:11:55-03:00",
+      "message": "test(orq): cobre rastreabilidade antes da persistencia"
+    },
+    {
+      "sha": "f615ded75e150e777e8abfc19fb0eee0714cd576",
+      "short_sha": "f615ded",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:11:23-03:00",
+      "message": "fix(orq): propaga estado global ao contrato de proposta"
+    },
+    {
+      "sha": "0abae35b5aad9168aea71e1ee40a79a57447b537",
+      "short_sha": "0abae35",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:11:06-03:00",
+      "message": "fix(orq): fecha rastreabilidade da materializacao explicita"
+    },
+    {
+      "sha": "5e48717d02522f681542f248f0e1cfad4510a952",
+      "short_sha": "5e48717",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:10:43-03:00",
+      "message": "fix(orq): completa contexto rastreavel das propostas"
+    },
+    {
+      "sha": "7d1856e49440bd184716f8f3cbd9d8206d3cfbb9",
+      "short_sha": "7d1856e",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T23:10:26-03:00",
+      "message": "fix(orq): propaga identidade e fonte do apoio"
+    },
     {
       "sha": "0f93a68a5b59abbab847a6be5bb625c29da2a4b3",
       "short_sha": "0f93a68",
       "author": "Joanez Gaspar",
       "date": "2026-08-31T22:23:06-03:00",
       "message": "Merge pull request #271 from JGaspar-Eng/fix/orq-materializacao-geometria"
-    },
-    {
-      "sha": "e2593367e94f1264fcdecac3bdf18eb5bfe4672a",
-      "short_sha": "e259336",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:20:57-03:00",
-      "message": "fix(orq): normaliza conversao metrico pixel do rascunho"
-    },
-    {
-      "sha": "eb9ae919d3ba87233533465d18bbe36956509948",
-      "short_sha": "eb9ae91",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:19:18-03:00",
-      "message": "ci(orq): mantém gate dentro do test all"
-    },
-    {
-      "sha": "1a8ace0c2e0f0665206cd9c643c65a8657074d53",
-      "short_sha": "1a8ace0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:18:56-03:00",
-      "message": "test(orq): mantém rascunho no validador oficial de fundação"
-    },
-    {
-      "sha": "567cd3c39cd12b6be8daf3bfec3920f5556cd3de",
-      "short_sha": "567cd3c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:18:37-03:00",
-      "message": "test(orq): cobre rascunho de fundacao sem defaults"
-    },
-    {
-      "sha": "528b3959aa111874c2595f20de5eeb89f199e97f",
-      "short_sha": "528b395",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:16:47-03:00",
-      "message": "ci(orq): valida rascunho sem defaults de fundacao"
-    },
-    {
-      "sha": "750a3b36f77f54519f81ee4eea5c875f95a27a92",
-      "short_sha": "750a3b3",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:16:24-03:00",
-      "message": "test(orq): bloqueia defaults no rascunho de fundacao"
-    },
-    {
-      "sha": "0cbb0c11e0e79c01207ad1d18ad951f4c7145b76",
-      "short_sha": "0cbb0c1",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:16:07-03:00",
-      "message": "feat(orq): prepara rascunho de fundacao sem persistir"
-    },
-    {
-      "sha": "bebc5a0d76d034bc52d7bc9c83e56c5f186a4d1c",
-      "short_sha": "bebc5a0",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:15:41-03:00",
-      "message": "refactor(orq): mantém contrato de proposta e separa gate geométrico"
-    },
-    {
-      "sha": "1532a937633ee7a3a4096a42631041a6019dcb86",
-      "short_sha": "1532a93",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:13:49-03:00",
-      "message": "fix(orq): exige geometria explicita antes de materializar"
     }
   ],
   "development": {
@@ -1629,7 +1629,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33458528079",
-    "run_number": "230"
+    "run_id": "33466757333",
+    "run_number": "231"
   }
 }
