@@ -1,5 +1,8 @@
 (function () {
-  var AREAS_ATIVAS_PARALELAS = new Set([11]);
+  function areasDaExecucao(status) {
+    var itens = status?.development?.execution?.active || [];
+    return new Set(itens.map(function (item) { return Number(item.area); }).filter(Boolean));
+  }
 
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) {
@@ -7,12 +10,12 @@
     });
   }
 
-  function areaAtiva(epic) {
-    return Boolean(epic?.active || AREAS_ATIVAS_PARALELAS.has(Number(epic?.number)));
+  function areaAtiva(epic, areasAtivas) {
+    return Boolean(epic?.active || areasAtivas.has(Number(epic?.number)));
   }
 
-  function areaParalela(epic) {
-    return !epic?.active && AREAS_ATIVAS_PARALELAS.has(Number(epic?.number));
+  function areaParalela(epic, areasAtivas) {
+    return !epic?.active && areasAtivas.has(Number(epic?.number));
   }
 
   function instalarEstilos() {
@@ -110,7 +113,7 @@
     var planned = Number(work.planned || 0);
     var out = Number(work.out_of_scope || 0);
     var activeHtml = "";
-    if (parallel) activeHtml = '<div class="area-work-active">Auditoria normativa em desenvolvimento agora</div>';
+    if (parallel) activeHtml = '<div class="area-work-active">Execução paralela registrada</div>';
     else if (active) activeHtml = '<div class="area-work-active"><strong>' + activeNow + '</strong> em desenvolvimento agora</div>';
     return '<div class="area-work-summary">' +
       '<div class="area-work-total"><strong>' + total + '</strong> trabalhos cadastrados</div>' +
@@ -148,40 +151,6 @@
     card.dataset.areaIndexSource = "registered-work";
   }
 
-  function limparTextoSequencia(texto) {
-    return String(texto || "").replace(/^bloco estrutural ativo:\s*/i, "").replace(/^concluído\s*[—-]\s*/i, "").trim();
-  }
-
-  function enriquecerSequencia(status) {
-    var development = status.development || {};
-    var current = development.current || {};
-    var roadmap = Array.isArray(development.roadmap) ? development.roadmap : [];
-    var cards = Array.from(document.querySelectorAll("#roadmap-grid .roadmap-item"));
-    if (!roadmap.length || cards.length !== roadmap.length) return;
-    var currentIndex = roadmap.findIndex(function (item) { return item.code === current.code; });
-    var objetivos = current.progress?.items || [];
-    var proximoObjetivo = objetivos.find(function (item) { return item.state !== "done"; });
-    cards.forEach(function (card, index) {
-      var item = roadmap[index] || {};
-      var texto = limparTextoSequencia(item.text);
-      var isCurrent = item.code === current.code;
-      var concluido = currentIndex >= 0 && index < currentIndex;
-      var estado = isCurrent ? "EM DESENVOLVIMENTO" : (concluido ? "CONCLUÍDO" : "PLANEJADO");
-      var classe = isCurrent ? "active" : (concluido ? "done" : "planned");
-      var explicacao;
-      if (isCurrent) {
-        var agora = proximoObjetivo?.text || "Objetivos do bloco estão sendo consolidados.";
-        explicacao = '<strong>' + esc(current.title || texto) + '</strong><br>Agora: ' + esc(agora);
-      } else if (concluido) explicacao = '<strong>Resultado:</strong> ' + esc(texto || "etapa concluída e incorporada ao SIMETTRIA.");
-      else explicacao = '<strong>Previsto:</strong> ' + esc(texto || "etapa ainda não iniciada.");
-      var box = card.querySelector(".roadmap-text");
-      if (box) box.innerHTML = '<span class="roadmap-state-badge ' + classe + '">' + estado + '</span><span class="roadmap-explain">' + explicacao + '</span>';
-      card.dataset.sequenceState = classe;
-    });
-    var note = document.querySelector("#roadmap .section-note");
-    if (note) note.textContent = "Cada card informa o que já foi concluído, o resultado incorporado ao projeto e o que está sendo executado agora.";
-  }
-
   function aplicar(status) {
     instalarEstilos();
     removerConsolidadoEAtalho();
@@ -189,6 +158,7 @@
     var current = development.current || {};
     var area = current.area || {};
     var epics = Array.isArray(development.epics) ? development.epics : [];
+    var areasAtivas = areasDaExecucao(status);
 
     var stats = document.querySelector(".stats");
     if (stats && !document.getElementById("stat-active-area")) {
@@ -199,8 +169,11 @@
     }
     var statArea = document.getElementById("stat-active-area");
     var statAreaHint = document.getElementById("stat-active-area-hint");
-    if (statArea) statArea.textContent = "Áreas 4 e 11";
-    if (statAreaHint) statAreaHint.textContent = "Dimensionamento + Normas Técnicas";
+    if (statArea) {
+      var areasRotuladas = Array.from(areasAtivas).sort(function (a, b) { return a - b; }).map(function (n) { return "Área " + n; });
+      statArea.textContent = areasRotuladas.length ? areasRotuladas.join(" e ") : "Nenhuma";
+    }
+    if (statAreaHint) statAreaHint.textContent = "derivadas da execução registrada";
 
     var currentTitle = document.getElementById("current-title");
     if (currentTitle && !document.getElementById("current-area-context")) {
@@ -219,8 +192,8 @@
     if (cards.length !== epics.length) return false;
     cards.forEach(function (card, index) {
       var epic = epics[index] || {};
-      var active = areaAtiva(epic);
-      var parallel = areaParalela(epic);
+      var active = areaAtiva(epic, areasAtivas);
+      var parallel = areaParalela(epic, areasAtivas);
       card.classList.toggle("active-area", active);
       card.querySelector(".area-active-badge")?.remove();
       card.querySelector(".area-work-summary")?.remove();
@@ -229,7 +202,6 @@
       if (active && title) title.insertAdjacentHTML("afterend", '<div class="area-active-badge">' + (parallel ? 'Área ativa em paralelo' : 'Área ativa agora') + '</div>');
       card.insertAdjacentHTML("beforeend", resumoTrabalhos(epic.work, active, current, parallel));
     });
-    enriquecerSequencia(status);
     return true;
   }
 

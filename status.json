@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-01T00:47:49Z",
+  "generated_at": "2026-09-01T00:54:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5f73e95944019ceca830293e35cfa8790fabfa26",
-    "short_sha": "5f73e95",
+    "sha": "405b94693efff7484e5a3e8d1c4df70686c8c000",
+    "short_sha": "405b946",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T21:47:37-03:00",
-    "message": "Merge pull request #268 from JGaspar-Eng/feat/orq-apoio-painel"
+    "date": "2026-08-31T21:54:00-03:00",
+    "message": "Merge pull request #269 from JGaspar-Eng/fix/dashboard-estado-real-v2"
   },
   "commits": [
+    {
+      "sha": "405b94693efff7484e5a3e8d1c4df70686c8c000",
+      "short_sha": "405b946",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:54:00-03:00",
+      "message": "Merge pull request #269 from JGaspar-Eng/fix/dashboard-estado-real-v2"
+    },
+    {
+      "sha": "69a79d34da8bc4a0d4ea02683c6cc155ff451ec5",
+      "short_sha": "69a79d3",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-31T21:52:09-03:00",
+      "message": "fix(status): separa plano checkpoint e execução real"
+    },
     {
       "sha": "5f73e95944019ceca830293e35cfa8790fabfa26",
       "short_sha": "5f73e95",
@@ -65,23 +79,83 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T21:09:22-03:00",
       "message": "Merge pull request #263 from JGaspar-Eng/feat/orq-overlay-infra-ui"
-    },
-    {
-      "sha": "7b3bcb93d2575645191732a85c07d56f91aad284",
-      "short_sha": "7b3bcb9",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T20:07:35-03:00",
-      "message": "test(orq): preserva apoios com ELU pendente"
-    },
-    {
-      "sha": "8a98767df8a96b955bab8b01aaeb0ded8f1a9e77",
-      "short_sha": "8a98767",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T20:06:12-03:00",
-      "message": "fix(orq): continua infraestrutura com superestrutura pendente"
     }
   ],
   "development": {
+    "plan": {
+      "roadmap_source": "docs/ROADMAP.md",
+      "description": "Ordem planejada; não representa atividade corrente."
+    },
+    "formal": {
+      "checkpoint_source": "docs/CHECKPOINT.md",
+      "reference_block": {
+        "code": "DIM-FUND-01",
+        "title": "núcleo normativo inicial de fundações rasas",
+        "source": "docs/DIM_FUND_01_CHECKPOINT.md"
+      }
+    },
+    "execution": {
+      "recent": [
+        {
+          "code": "U10B",
+          "title": "Auditoria de cobertura das bordas da laje",
+          "state": "completed",
+          "area": 1,
+          "source": "tests/validar_cobertura_bordas_laje_u10b.mjs"
+        },
+        {
+          "code": "ORQ-ESTRUT-01",
+          "title": "Orquestração estrutural global e infraestrutura automática",
+          "state": "in_progress",
+          "area": 4,
+          "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
+        },
+        {
+          "code": "U10A",
+          "title": "Consumidores state-ready da Unidade 10A",
+          "state": "completed",
+          "area": 1,
+          "source": "tests/validar_state_ready_consumidores_unidade10a.mjs"
+        }
+      ],
+      "active": [
+        {
+          "code": "ORQ-ESTRUT-01",
+          "title": "Orquestração estrutural global e infraestrutura automática",
+          "state": "in_progress",
+          "area": 4,
+          "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
+        }
+      ],
+      "completed": [
+        {
+          "code": "U10B",
+          "title": "Auditoria de cobertura das bordas da laje",
+          "state": "completed",
+          "area": 1,
+          "source": "tests/validar_cobertura_bordas_laje_u10b.mjs"
+        },
+        {
+          "code": "U10A",
+          "title": "Consumidores state-ready da Unidade 10A",
+          "state": "completed",
+          "area": 1,
+          "source": "tests/validar_state_ready_consumidores_unidade10a.mjs"
+        }
+      ],
+      "next": [
+        {
+          "code": "ORQ-ESTRUT-01",
+          "title": "Concluir o fluxo visual integrado de cálculo e infraestrutura",
+          "state": "in_progress",
+          "area": 4,
+          "source": "docs/DIM_FUND_01_CHECKPOINT.md"
+        }
+      ],
+      "source": "docs/DEVELOPMENT_STATUS.json",
+      "ordering": "more_recent_first",
+      "policy": "Itens de execução são explícitos, ordenados do mais recente para o mais antigo e não dependem de posição no roadmap nem da existência de um fechamento."
+    },
     "current": {
       "code": "DIM-FUND-01",
       "title": "núcleo normativo inicial de fundações rasas",
@@ -1551,10 +1625,11 @@
   "sources": {
     "current": "docs/DIM_FUND_01_CHECKPOINT.md",
     "roadmap": "docs/ROADMAP.md + documentos formais de fechamento + CHECKPOINT",
+    "execution": "docs/DEVELOPMENT_STATUS.json",
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33456199486",
-    "run_number": "227"
+    "run_id": "33456609027",
+    "run_number": "228"
   }
 }

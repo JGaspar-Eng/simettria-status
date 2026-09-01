@@ -782,7 +782,7 @@
           <div class="section-kicker">Onde estamos</div>
           <h2>Bloco estrutural ativo</h2>
         </div>
-        <p class="section-note">Esta é a etapa que está sendo trabalhada neste momento.</p>
+        <p class="section-note">Referência formal do checkpoint. A atividade real é mostrada separadamente abaixo.</p>
       </div>
 
       <div class="current-card">
@@ -865,6 +865,8 @@
   </div>
 </footer>
 
+<script src="status_areas.js?v=405b94693efff7484e5a3e8d1c4df70686c8c000"></script>
+<script src="status_sequence.js?v=405b94693efff7484e5a3e8d1c4df70686c8c000"></script>
 <script>
 (function () {
   function escapeHtml(value) {
@@ -940,14 +942,12 @@
       return item.code === current.code;
     });
 
-    var nextRoadmap =
-      currentRoadmapIndex >= 0 && currentRoadmapIndex + 1 < roadmap.length
-        ? roadmap[currentRoadmapIndex + 1]
-        : null;
+    var execution = development.execution || {};
+    var nextExecution = Array.isArray(execution.next) ? execution.next[0] : null;
 
     definirTexto("stat-current", current.code || "—");
     definirTexto("stat-progress", Number(currentProgress.percent || 0) + "%");
-    definirTexto("stat-next", nextRoadmap ? nextRoadmap.code : "—");
+    definirTexto("stat-next", nextExecution ? nextExecution.code : "—");
     definirTexto("stat-updated", fmtDateShort(status.generated_at));
     definirTexto("current-code", current.code || "—");
     definirTexto("current-title", current.title || "Estado atual indisponível");
@@ -1195,7 +1195,5 @@
   }
 })();
 </script>
-<script src="status_areas.js?v=5f73e95944019ceca830293e35cfa8790fabfa26"></script>
-<script src="status_sequence.js?v=5f73e95944019ceca830293e35cfa8790fabfa26"></script>
 </body>
 </html>
