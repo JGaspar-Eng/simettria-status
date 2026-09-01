@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-01T00:12:32Z",
+  "generated_at": "2026-09-01T00:47:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "48e62349d73429c435ab3ce608acfc6209a481a1",
-    "short_sha": "48e6234",
+    "sha": "5f73e95944019ceca830293e35cfa8790fabfa26",
+    "short_sha": "5f73e95",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T21:12:23-03:00",
-    "message": "Merge pull request #266 from JGaspar-Eng/feat/u10b-cobertura-bordas-laje"
+    "date": "2026-08-31T21:47:37-03:00",
+    "message": "Merge pull request #268 from JGaspar-Eng/feat/orq-apoio-painel"
   },
   "commits": [
+    {
+      "sha": "5f73e95944019ceca830293e35cfa8790fabfa26",
+      "short_sha": "5f73e95",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:47:37-03:00",
+      "message": "Merge pull request #268 from JGaspar-Eng/feat/orq-apoio-painel"
+    },
+    {
+      "sha": "1ddbda083c217b296fcccb2c45da20fdbdc75144",
+      "short_sha": "1ddbda0",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:28:27-03:00",
+      "message": "fix(orq): destaca apoio selecionado e mostra nome do pilar"
+    },
+    {
+      "sha": "0c381068f837cd7c8b7081da1b61ab6f80f4bcd5",
+      "short_sha": "0c38106",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:19:43-03:00",
+      "message": "test(orq): cobre painel somente leitura do apoio"
+    },
+    {
+      "sha": "156daaefb8f9d6208a93c1ee7d2b8d59a74454bf",
+      "short_sha": "156daae",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:18:55-03:00",
+      "message": "feat(orq): permite selecionar apoio e abrir painel"
+    },
+    {
+      "sha": "774b53166617e84286fc7a0d3735a1e4ec1082e4",
+      "short_sha": "774b531",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:18:04-03:00",
+      "message": "feat(orq): cria view-model do painel de apoio"
+    },
     {
       "sha": "48e62349d73429c435ab3ce608acfc6209a481a1",
       "short_sha": "48e6234",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T20:06:12-03:00",
       "message": "fix(orq): continua infraestrutura com superestrutura pendente"
-    },
-    {
-      "sha": "74f4f8275fab11598c3553ccb7027441a52acbcd",
-      "short_sha": "74f4f82",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T20:05:08-03:00",
-      "message": "Merge pull request #265 from JGaspar-Eng/feat/u10-state-ready-consumers"
-    },
-    {
-      "sha": "e87c4243e6cea5e3373ffea4d3ce229eba3a09e5",
-      "short_sha": "e87c424",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-31T20:02:37-03:00",
-      "message": "fix(test): torna validador U10A portável no CI"
-    },
-    {
-      "sha": "9f2b9a738278e09f079dc131ec71352cfe8d8e44",
-      "short_sha": "9f2b9a7",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-31T19:48:50-03:00",
-      "message": "fix(graph): bloqueia valores stale fora de READY na U10A"
-    },
-    {
-      "sha": "c3829df3c640ca01b6a842c1d19efa148b08fcbf",
-      "short_sha": "c3829df",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T19:34:09-03:00",
-      "message": "revert(ui): restaura barra de infraestrutura"
-    },
-    {
-      "sha": "ab6ba37b3af8749d43563af32bc9ee407de2a8d8",
-      "short_sha": "ab6ba37",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T19:31:47-03:00",
-      "message": "fix(ui): preserva status ORQ na barra da infraestrutura"
     }
   ],
   "development": {
@@ -1554,7 +1554,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33453810625",
-    "run_number": "226"
+    "run_id": "33456199486",
+    "run_number": "227"
   }
 }
