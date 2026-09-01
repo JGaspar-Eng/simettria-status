@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-01T03:35:27Z",
+  "generated_at": "2026-09-01T11:07:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c9a93b9fa9f71bde99f39f2966f50bc6630a74e9",
-    "short_sha": "c9a93b9",
+    "sha": "d905ccbd56e99fe073bd2e6062296156b54a581d",
+    "short_sha": "d905ccb",
     "author": "Joanez Gaspar",
-    "date": "2026-09-01T00:35:17-03:00",
-    "message": "Merge pull request #272 from JGaspar-Eng/fix/orq-materializacao-rastreabilidade"
+    "date": "2026-09-01T08:07:03-03:00",
+    "message": "Merge pull request #273 from JGaspar-Eng/feat/area11-classificador-normativo-fundacoes"
   },
   "commits": [
+    {
+      "sha": "d905ccbd56e99fe073bd2e6062296156b54a581d",
+      "short_sha": "d905ccb",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T08:07:03-03:00",
+      "message": "Merge pull request #273 from JGaspar-Eng/feat/area11-classificador-normativo-fundacoes"
+    },
+    {
+      "sha": "0cb78e01219c13e82240998094a45a30570482dd",
+      "short_sha": "0cb78e0",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-01T00:55:49-03:00",
+      "message": "fix(area11): fecha coercao numerica e estrato nao caracterizado no classificador"
+    },
+    {
+      "sha": "461db82386e040f7597fee64b33af55580a69bc0",
+      "short_sha": "461db82",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-01T00:49:26-03:00",
+      "message": "feat(area11): classificador normativo rastreavel de fundacao"
+    },
     {
       "sha": "c9a93b9fa9f71bde99f39f2966f50bc6630a74e9",
       "short_sha": "c9a93b9",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T23:11:06-03:00",
       "message": "fix(orq): fecha rastreabilidade da materializacao explicita"
-    },
-    {
-      "sha": "5e48717d02522f681542f248f0e1cfad4510a952",
-      "short_sha": "5e48717",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:10:43-03:00",
-      "message": "fix(orq): completa contexto rastreavel das propostas"
-    },
-    {
-      "sha": "7d1856e49440bd184716f8f3cbd9d8206d3cfbb9",
-      "short_sha": "7d1856e",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:10:26-03:00",
-      "message": "fix(orq): propaga identidade e fonte do apoio"
-    },
-    {
-      "sha": "0f93a68a5b59abbab847a6be5bb625c29da2a4b3",
-      "short_sha": "0f93a68",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T22:23:06-03:00",
-      "message": "Merge pull request #271 from JGaspar-Eng/fix/orq-materializacao-geometria"
     }
   ],
   "development": {
@@ -1134,7 +1134,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 121,
+    "validator_count": 122,
     "validators": [
       {
         "name": "test:base",
@@ -1601,6 +1601,10 @@
         "command": "node tests/validar_apoios_infraestrutura_orq_estrut_01.mjs"
       },
       {
+        "name": "test:area11-classificador-fundacao",
+        "command": "node tests/validar_classificacao_normativa_fundacao_area11.mjs"
+      },
+      {
         "name": "test:orq-propostas-estado-visual",
         "command": "node tests/validar_propostas_estado_visual_infra_orq_estrut_01.mjs"
       },
@@ -1629,7 +1633,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33466757333",
-    "run_number": "231"
+    "run_id": "33500830552",
+    "run_number": "232"
   }
 }
