@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-08-31T23:05:18Z",
+  "generated_at": "2026-09-01T00:09:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "74f4f8275fab11598c3553ccb7027441a52acbcd",
-    "short_sha": "74f4f82",
+    "sha": "4d813ef1cf2b0116bbac16366c0550dd6d0b578d",
+    "short_sha": "4d813ef",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T20:05:08-03:00",
-    "message": "Merge pull request #265 from JGaspar-Eng/feat/u10-state-ready-consumers"
+    "date": "2026-08-31T21:09:22-03:00",
+    "message": "Merge pull request #263 from JGaspar-Eng/feat/orq-overlay-infra-ui"
   },
   "commits": [
+    {
+      "sha": "4d813ef1cf2b0116bbac16366c0550dd6d0b578d",
+      "short_sha": "4d813ef",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:09:22-03:00",
+      "message": "Merge pull request #263 from JGaspar-Eng/feat/orq-overlay-infra-ui"
+    },
+    {
+      "sha": "7b3bcb93d2575645191732a85c07d56f91aad284",
+      "short_sha": "7b3bcb9",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T20:07:35-03:00",
+      "message": "test(orq): preserva apoios com ELU pendente"
+    },
+    {
+      "sha": "8a98767df8a96b955bab8b01aaeb0ded8f1a9e77",
+      "short_sha": "8a98767",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T20:06:12-03:00",
+      "message": "fix(orq): continua infraestrutura com superestrutura pendente"
+    },
     {
       "sha": "74f4f8275fab11598c3553ccb7027441a52acbcd",
       "short_sha": "74f4f82",
@@ -32,6 +53,20 @@
       "message": "fix(graph): bloqueia valores stale fora de READY na U10A"
     },
     {
+      "sha": "c3829df3c640ca01b6a842c1d19efa148b08fcbf",
+      "short_sha": "c3829df",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T19:34:09-03:00",
+      "message": "revert(ui): restaura barra de infraestrutura"
+    },
+    {
+      "sha": "ab6ba37b3af8749d43563af32bc9ee407de2a8d8",
+      "short_sha": "ab6ba37",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T19:31:47-03:00",
+      "message": "fix(ui): preserva status ORQ na barra da infraestrutura"
+    },
+    {
       "sha": "1e4b6e54494ce15808216fc1ebaba68e0c2fc8e5",
       "short_sha": "1e4b6e5",
       "author": "Joanez Gaspar",
@@ -44,41 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-08-31T19:19:56-03:00",
       "message": "docs(checkpoint): consolida unidades estruturais 4-9"
-    },
-    {
-      "sha": "bcbf714ea415570ffe75247fc2f28e9313d12bce",
-      "short_sha": "bcbf714",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-31T19:17:54-03:00",
-      "message": "feat(estrutural): consolida cadeia laje-viga-ELU (U4-U9)"
-    },
-    {
-      "sha": "f846b79f3ef2e151d8c67671f3977f26c734601e",
-      "short_sha": "f846b79",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:26:18-03:00",
-      "message": "Merge pull request #262 from JGaspar-Eng/feat/orq-overlay-infra-resultado-global"
-    },
-    {
-      "sha": "c8924345be3988cf6b7363f6889378db8fb7d9a1",
-      "short_sha": "c892434",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:23:39-03:00",
-      "message": "chore: remove temporary file"
-    },
-    {
-      "sha": "f376627c9d1f2a767b6ca0ca1859a49b8f77402f",
-      "short_sha": "f376627",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:23:16-03:00",
-      "message": "noop"
-    },
-    {
-      "sha": "552375c4da751ca1ef5d5522e04adb3719494f97",
-      "short_sha": "552375c",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T12:23:03-03:00",
-      "message": "chore(orq): remove marcador temporario"
     }
   ],
   "development": {
@@ -1550,7 +1550,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33449145573",
-    "run_number": "224"
+    "run_id": "33453606837",
+    "run_number": "225"
   }
 }
