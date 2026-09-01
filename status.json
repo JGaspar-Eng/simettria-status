@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-01T00:09:32Z",
+  "generated_at": "2026-09-01T00:12:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4d813ef1cf2b0116bbac16366c0550dd6d0b578d",
-    "short_sha": "4d813ef",
+    "sha": "48e62349d73429c435ab3ce608acfc6209a481a1",
+    "short_sha": "48e6234",
     "author": "Joanez Gaspar",
-    "date": "2026-08-31T21:09:22-03:00",
-    "message": "Merge pull request #263 from JGaspar-Eng/feat/orq-overlay-infra-ui"
+    "date": "2026-08-31T21:12:23-03:00",
+    "message": "Merge pull request #266 from JGaspar-Eng/feat/u10b-cobertura-bordas-laje"
   },
   "commits": [
+    {
+      "sha": "48e62349d73429c435ab3ce608acfc6209a481a1",
+      "short_sha": "48e6234",
+      "author": "Joanez Gaspar",
+      "date": "2026-08-31T21:12:23-03:00",
+      "message": "Merge pull request #266 from JGaspar-Eng/feat/u10b-cobertura-bordas-laje"
+    },
+    {
+      "sha": "ffff53336f263a2a58cd7f10a764a45598b2fa12",
+      "short_sha": "ffff533",
+      "author": "JGaspar-Eng",
+      "date": "2026-08-31T21:09:38-03:00",
+      "message": "feat(laje): publica cobertura de bordas na U10B"
+    },
     {
       "sha": "4d813ef1cf2b0116bbac16366c0550dd6d0b578d",
       "short_sha": "4d813ef",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T19:31:47-03:00",
       "message": "fix(ui): preserva status ORQ na barra da infraestrutura"
-    },
-    {
-      "sha": "1e4b6e54494ce15808216fc1ebaba68e0c2fc8e5",
-      "short_sha": "1e4b6e5",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T19:23:21-03:00",
-      "message": "Merge pull request #264 from JGaspar-Eng/feat/estrutural-u4-u9"
-    },
-    {
-      "sha": "e57ba757c6b5283472e36af47fb506c6324bf7f1",
-      "short_sha": "e57ba75",
-      "author": "JGaspar-Eng",
-      "date": "2026-08-31T19:19:56-03:00",
-      "message": "docs(checkpoint): consolida unidades estruturais 4-9"
     }
   ],
   "development": {
@@ -1060,7 +1060,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 120,
+    "validator_count": 121,
     "validators": [
       {
         "name": "test:base",
@@ -1121,6 +1121,10 @@
       {
         "name": "test:laje-conservacao",
         "command": "node tests/validar_conservacao_transferencia_laje_viga.mjs"
+      },
+      {
+        "name": "test:u10b-cobertura-bordas",
+        "command": "node tests/validar_cobertura_bordas_laje_u10b.mjs"
       },
       {
         "name": "test:pilar-m3b-vinculo",
@@ -1550,7 +1554,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33453606837",
-    "run_number": "225"
+    "run_id": "33453810625",
+    "run_number": "226"
   }
 }
