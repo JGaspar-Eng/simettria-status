@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-01T11:07:13Z",
+  "generated_at": "2026-09-01T11:52:52Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d905ccbd56e99fe073bd2e6062296156b54a581d",
-    "short_sha": "d905ccb",
+    "sha": "edcb3228d4e8091ea9c2c610ae909ce067f4e9b5",
+    "short_sha": "edcb322",
     "author": "Joanez Gaspar",
-    "date": "2026-09-01T08:07:03-03:00",
-    "message": "Merge pull request #273 from JGaspar-Eng/feat/area11-classificador-normativo-fundacoes"
+    "date": "2026-09-01T08:52:42-03:00",
+    "message": "Merge pull request #274 from JGaspar-Eng/fix/orq-classificacao-normativa-gate"
   },
   "commits": [
+    {
+      "sha": "edcb3228d4e8091ea9c2c610ae909ce067f4e9b5",
+      "short_sha": "edcb322",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T08:52:42-03:00",
+      "message": "Merge pull request #274 from JGaspar-Eng/fix/orq-classificacao-normativa-gate"
+    },
+    {
+      "sha": "504becf83dddb58b82aa397483eb16079e6a144b",
+      "short_sha": "504becf",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T08:17:18-03:00",
+      "message": "test(orq): explicita autorizacao normativa nos cenarios materializaveis"
+    },
+    {
+      "sha": "6175f0f8e78f9a81074edd0ecfc44b250c30ad63",
+      "short_sha": "6175f0f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T08:16:33-03:00",
+      "message": "test(orq): cobre contrato normativo completo e bloqueio de materializacao"
+    },
+    {
+      "sha": "24df7661de5c8e14d3a00a4f6eaab5123d6aaae1",
+      "short_sha": "24df766",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T08:13:54-03:00",
+      "message": "fix(orq): bloqueia materializacao sem autorizacao normativa explicita"
+    },
+    {
+      "sha": "f009c36f0e1a5aee088dec3f0e051a37dfdd8732",
+      "short_sha": "f009c36",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T08:13:25-03:00",
+      "message": "fix(orq): exige contrato completo da classificacao normativa"
+    },
     {
       "sha": "d905ccbd56e99fe073bd2e6062296156b54a581d",
       "short_sha": "d905ccb",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-08-31T23:13:44-03:00",
       "message": "test(orq): cobre cadeia de rastreabilidade do apoio"
-    },
-    {
-      "sha": "ad2f4d2f811e04bd00ed76649d4f6c975919fa20",
-      "short_sha": "ad2f4d2",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:12:53-03:00",
-      "message": "fix(orq): exige fonte demonstrada na rastreabilidade"
-    },
-    {
-      "sha": "3e28f3232f7559aa20bca6e36d0fcfe582ed8ff9",
-      "short_sha": "3e28f32",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:12:39-03:00",
-      "message": "fix(orq): não presume fonte de reação sem evidência"
-    },
-    {
-      "sha": "48e3e61deec764ff9b3bdde30958c5571d84576b",
-      "short_sha": "48e3e61",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:11:55-03:00",
-      "message": "test(orq): cobre rastreabilidade antes da persistencia"
-    },
-    {
-      "sha": "f615ded75e150e777e8abfc19fb0eee0714cd576",
-      "short_sha": "f615ded",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:11:23-03:00",
-      "message": "fix(orq): propaga estado global ao contrato de proposta"
-    },
-    {
-      "sha": "0abae35b5aad9168aea71e1ee40a79a57447b537",
-      "short_sha": "0abae35",
-      "author": "Joanez Gaspar",
-      "date": "2026-08-31T23:11:06-03:00",
-      "message": "fix(orq): fecha rastreabilidade da materializacao explicita"
     }
   ],
   "development": {
@@ -1633,7 +1633,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33500830552",
-    "run_number": "232"
+    "run_id": "33504724823",
+    "run_number": "233"
   }
 }
