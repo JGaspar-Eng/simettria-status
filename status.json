@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-02T02:12:58Z",
+  "generated_at": "2026-09-02T02:13:02Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
-    "short_sha": "1c6fba4",
+    "sha": "e68a97f46025c2a7cdcfbd46ab95d309f62c93ce",
+    "short_sha": "e68a97f",
     "author": "Joanez Gaspar",
-    "date": "2026-09-01T23:06:27-03:00",
-    "message": "Merge pull request #281 from JGaspar-Eng/fix/dashboard-estado-real-v2"
+    "date": "2026-09-01T23:12:46-03:00",
+    "message": "Merge pull request #277 from JGaspar-Eng/feat/area11-nucleo-estrutural-sapata"
   },
   "commits": [
+    {
+      "sha": "e68a97f46025c2a7cdcfbd46ab95d309f62c93ce",
+      "short_sha": "e68a97f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T23:12:46-03:00",
+      "message": "Merge pull request #277 from JGaspar-Eng/feat/area11-nucleo-estrutural-sapata"
+    },
     {
       "sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
       "short_sha": "1c6fba4",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-01T19:53:41-03:00",
       "message": "fix(painel): posiciona estado vivo ao final"
-    },
-    {
-      "sha": "a3e956909d70cbe075f4179d512c32a9571774ab",
-      "short_sha": "a3e9569",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:42:06-03:00",
-      "message": "fix(painel): limita dados públicos do snapshot"
     }
   ],
   "development": {
@@ -1146,7 +1146,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 123,
+    "validator_count": 124,
     "validators": [
       {
         "name": "test:base",
@@ -1613,6 +1613,10 @@
         "command": "node tests/validar_apoios_infraestrutura_orq_estrut_01.mjs"
       },
       {
+        "name": "test:area11-altura-sapata",
+        "command": "node tests/validar_altura_estrutural_sapata_area11.mjs"
+      },
+      {
         "name": "test:area11-predim-sapata",
         "command": "node tests/validar_predimensionamento_sapata_isolada_area11.mjs"
       },
@@ -1649,7 +1653,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33582369663",
-    "run_number": "247"
+    "run_id": "33582376090",
+    "run_number": "248"
   }
 }
