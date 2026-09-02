@@ -45,11 +45,11 @@
     return "active";
   }
 
-  function frontCard(front, compacto) {
+  function frontCard(front, compacto, numero) {
     const card = el("article", "live-front-card " + statusClasse(front.status));
     const head = el("div", "live-front-head");
     const identidade = el("div", "live-front-identity");
-    identidade.appendChild(el("div", "live-front-name", front.front));
+    identidade.appendChild(el("div", "live-front-name", `${numero}. ${front.front}`));
     const meta = [];
     if (front.from) meta.push(front.from);
     if (front.pr && front.pr !== "NONE") meta.push(front.pr);
@@ -168,11 +168,11 @@
     if (!active.length) {
       ativos.appendChild(el("div", "live-error", "Nenhuma frente ativa foi encontrada no último snapshot da coordenação."));
     } else {
-      active.forEach((front) => ativos.appendChild(frontCard(front, false)));
+      active.forEach((front, index) => ativos.appendChild(frontCard(front, false, index + 1)));
     }
 
     const recent = Array.isArray(data.recent) ? data.recent : [];
-    recent.slice(0, 8).forEach((front) => recentes.appendChild(frontCard(front, true)));
+    recent.slice(0, 8).forEach((front, index) => recentes.appendChild(frontCard(front, true, active.length + index + 1)));
   }
 
   function formatarData(iso) {
