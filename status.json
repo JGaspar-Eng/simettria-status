@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-02T20:36:12Z",
+  "generated_at": "2026-09-02T20:44:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dd44e359248876232af3a570fcf01ca944a1dc62",
-    "short_sha": "dd44e35",
+    "sha": "238c19f8ecf161e88f31946554963e600d011ab6",
+    "short_sha": "238c19f",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T17:21:33-03:00",
-    "message": "docs(status): acompanha dívidas e materialização da Área 11"
+    "date": "2026-09-02T17:43:47-03:00",
+    "message": "docs(status): mantém Área 11 como em execução"
   },
   "commits": [
+    {
+      "sha": "238c19f8ecf161e88f31946554963e600d011ab6",
+      "short_sha": "238c19f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T17:43:47-03:00",
+      "message": "docs(status): mantém Área 11 como em execução"
+    },
+    {
+      "sha": "6d3cd5219f837b5404ddcac61e82993ef6afc4fa",
+      "short_sha": "6d3cd52",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T17:42:02-03:00",
+      "message": "test(status): acompanha Area 11 ativa em paralelo"
+    },
+    {
+      "sha": "a5ede82549b48ae8a4ce3aca1a8fbe54f565a4a6",
+      "short_sha": "a5ede82",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T17:39:33-03:00",
+      "message": "docs(status): marca Area 11 como em execucao"
+    },
     {
       "sha": "dd44e359248876232af3a570fcf01ca944a1dc62",
       "short_sha": "dd44e35",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-02T16:59:07-03:00",
       "message": "fix(area11): endurece geometria executiva das camadas da sapata"
-    },
-    {
-      "sha": "f0adfab8c24d95ce32e0dd5595af712970be9d40",
-      "short_sha": "f0adfab",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T16:34:12-03:00",
-      "message": "test(area11): cobre comprimento de corte e cabimento dos ganchos"
-    },
-    {
-      "sha": "c723e91d05e5bbb88c09536430a8a9e1e8344677",
-      "short_sha": "c723e91",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T16:33:02-03:00",
-      "message": "feat(area11): valida cabimento executivo dos ganchos da sapata"
-    },
-    {
-      "sha": "034056ba191fec121b9260967ba4f25b0f1cfa75",
-      "short_sha": "034056b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T16:31:52-03:00",
-      "message": "feat(area11): explicita geometria e corte das barras da sapata"
     }
   ],
   "development": {
@@ -96,6 +96,13 @@
     },
     "execution": {
       "recent": [
+        {
+          "code": "NOR-FUND-05-HARDENING",
+          "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
+          "state": "in_progress",
+          "area": 11,
+          "source": "PR #291 / issue #231"
+        },
         {
           "code": "NOR-TEC-01",
           "title": "Contrato geotécnico SPT e nível d'água consolidado",
@@ -119,6 +126,13 @@
         }
       ],
       "active": [
+        {
+          "code": "NOR-FUND-05-HARDENING",
+          "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
+          "state": "in_progress",
+          "area": 11,
+          "source": "PR #291 / issue #231"
+        },
         {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
@@ -157,13 +171,6 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
-        },
-        {
-          "code": "NOR-FUND-05-HARDENING",
-          "title": "Quitar N1, B4 e testes/hardening remanescentes antes da materialização",
-          "state": "planned",
-          "area": 11,
-          "source": "issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO",
@@ -1788,7 +1795,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33680240808",
-    "run_number": "331"
+    "run_id": "33681018576",
+    "run_number": "332"
   }
 }
