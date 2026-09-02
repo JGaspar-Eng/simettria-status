@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-02T12:31:06.958121+00:00",
+  "generated_at": "2026-09-02T12:31:20.646770+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -25,13 +25,13 @@
       "comment_id": 5493636650,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493636650",
       "updated_at": "2026-09-01T12:03:33Z",
-      "next_for_chatgpt": [
-        "após revisão independente, mergear se aprovado; depois tratar o próximo produtor necessário sem inventar critério geométrico."
-      ],
       "ci": [
         "Testes SIMETTRIA #841 SUCCESS no HEAD exato"
       ],
       "next_for_claude": [],
+      "next_for_chatgpt": [
+        "após revisão independente, mergear se aprovado; depois tratar o próximo produtor necessário sem inventar critério geométrico."
+      ],
       "result": [
         "novo serviço calcula somente area_minima_m2 = NEd/resistencia_projeto_kpa para carga centrada quando ação é completa e resistência é explicitamente de PROJETO",
         "reação parcial, resistência preliminar, falta de proveniência e momento não nulo fecham o gate",
@@ -58,14 +58,14 @@
       "comment_id": 5487649574,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5487649574",
       "updated_at": "2026-09-01T02:01:50Z",
-      "next_for_chatgpt": [
-        "após existir classificador/runtime rastreável capaz de fornecer tipologia e geometria explícita, ligar a ação de confirmação ao apoio selecionado, persistir somente o rascunho aprovado e parar em READY_FOR_USER_VISUAL_REVIEW antes do merge"
-      ],
       "ci": [
         "não aplicável; nenhum commit novo"
       ],
       "next_for_claude": [
         "na Área 11, não alterar UI; ao fechar o contrato normativo/classificador aplicável, registrar na #231 exatamente qual serviço produz `classificacao.tipo`, `classificacao.origem`, `classificacao.criterio` e `classificacao.dados_materializacao` consumíveis pelo ORQ"
+      ],
+      "next_for_chatgpt": [
+        "após existir classificador/runtime rastreável capaz de fornecer tipologia e geometria explícita, ligar a ação de confirmação ao apoio selecionado, persistir somente o rascunho aprovado e parar em READY_FOR_USER_VISUAL_REVIEW antes do merge"
       ],
       "result": [
         "estado atual confirmado: PR #270 já mergeou o contrato rastreável e PR #271 já mergeou o gate geométrico sem defaults; main = 0f93a68a5b59abbab847a6be5bb625c29da2a4b3",
@@ -92,14 +92,14 @@
       "comment_id": 5486589775,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5486589775",
       "updated_at": "2026-09-01T00:13:34Z",
-      "next_for_chatgpt": [
-        "implementar seleção/painel, testar, abrir PR e parar em READY_FOR_USER_VISUAL_REVIEW"
-      ],
       "ci": [
         "pendente"
       ],
       "next_for_claude": [
         "continuar somente Área 11 conforme frente vigente"
+      ],
+      "next_for_chatgpt": [
+        "implementar seleção/painel, testar, abrir PR e parar em READY_FOR_USER_VISUAL_REVIEW"
       ],
       "result": [
         "próximo incremento do P6 iniciado: marcador ORQ precisa ser selecionável e abrir painel próprio somente-leitura, sem criar Fundação"
@@ -121,14 +121,14 @@
       "comment_id": 5480829698,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5480829698",
       "updated_at": "2026-08-31T15:50:20Z",
-      "next_for_chatgpt": [
-        "implementar wiring ORQ -> snapshot -> descritores -> SVG da Infraestrutura; rodar suíte oficial; parar em gate visual do usuário"
-      ],
       "ci": [
         "pendente"
       ],
       "next_for_claude": [
         "NONE; manter Área 11 independente"
+      ],
+      "next_for_chatgpt": [
+        "implementar wiring ORQ -> snapshot -> descritores -> SVG da Infraestrutura; rodar suíte oficial; parar em gate visual do usuário"
       ],
       "result": [
         "frente assumida para projetar visualmente, na workspace Infraestrutura, os apoios já preparados pelo ORQ",
@@ -152,9 +152,9 @@
       "comment_id": 5478145136,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5478145136",
       "updated_at": "2026-08-31T12:11:51Z",
-      "next_for_chatgpt": [],
       "ci": [],
       "next_for_claude": [],
+      "next_for_chatgpt": [],
       "result": [],
       "suite_gaps": []
     },
@@ -171,14 +171,14 @@
       "comment_id": 5472604201,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472604201",
       "updated_at": "2026-08-31T01:31:44Z",
-      "next_for_chatgpt": [
-        "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
-      ],
       "ci": [
         "pendente"
       ],
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
+      ],
+      "next_for_chatgpt": [
+        "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
       ],
       "result": [
         "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
@@ -204,14 +204,14 @@
       "comment_id": 5509554683,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509554683",
       "updated_at": "2026-09-02T12:30:54Z",
-      "next_for_chatgpt": [
-        "aplicar a política vigente; nenhum trabalho nesta frente"
-      ],
       "ci": [
         "não aplicável"
       ],
       "next_for_claude": [
         "aplicar a política vigente"
+      ],
+      "next_for_chatgpt": [
+        "aplicar a política vigente; nenhum trabalho nesta frente"
       ],
       "result": [
         "emenda de governança foi aprovada e continua vigente como política da issue #231",
@@ -235,13 +235,13 @@
       "comment_id": 5509552477,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509552477",
       "updated_at": "2026-09-02T12:30:44Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "não aplicável; automação local histórica"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -265,13 +265,13 @@
       "comment_id": 5509550380,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509550380",
       "updated_at": "2026-09-02T12:30:34Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "não aplicável; configuração local histórica"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -295,13 +295,13 @@
       "comment_id": 5509548098,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509548098",
       "updated_at": "2026-09-02T12:30:23Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "não aplicável a este fechamento de governança"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -325,14 +325,14 @@
       "comment_id": 5509546090,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509546090",
       "updated_at": "2026-09-02T12:30:13Z",
-      "next_for_chatgpt": [
-        "aplicar a regra quando o token for usado; nenhum trabalho nesta frente"
-      ],
       "ci": [
         "PR #232 mergeado"
       ],
       "next_for_claude": [
         "aplicar a regra vigente"
+      ],
+      "next_for_chatgpt": [
+        "aplicar a regra quando o token for usado; nenhum trabalho nesta frente"
       ],
       "result": [
         "convenção do token \"continuar simettria\" foi adotada como política da #231 e espelhada no CLAUDE.md pelo PR #232, já mergeado",
@@ -355,13 +355,13 @@
       "comment_id": 5509544411,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509544411",
       "updated_at": "2026-09-02T12:30:05Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "npm run test:base registrado como SIMETTRIA_BASE_OK no histórico; PR #232 mergeado"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -386,13 +386,13 @@
       "comment_id": 5509542399,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509542399",
       "updated_at": "2026-09-02T12:29:55Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "PR #232 mergeado; teste base documentado no histórico"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -417,13 +417,13 @@
       "comment_id": 5509540333,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509540333",
       "updated_at": "2026-09-02T12:29:45Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "não aplicável a este fechamento de governança"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -448,13 +448,13 @@
       "comment_id": 5509538013,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509538013",
       "updated_at": "2026-09-02T12:29:33Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "não aplicável"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -478,13 +478,13 @@
       "comment_id": 5509535885,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509535885",
       "updated_at": "2026-09-02T12:29:22Z",
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "ci": [
         "Deploy Pages #292 SUCCESS; publicação posterior mantida operacional"
       ],
       "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
         "NONE"
       ],
       "result": [
@@ -510,14 +510,14 @@
       "comment_id": 5509534074,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509534074",
       "updated_at": "2026-09-02T12:29:13Z",
-      "next_for_chatgpt": [
-        "NONE nesta frente"
-      ],
       "ci": [
         "evidência incorporada pelos PRs da cadeia já mergeados"
       ],
       "next_for_claude": [
         "NONE"
+      ],
+      "next_for_chatgpt": [
+        "NONE nesta frente"
       ],
       "result": [
         "correção principal entregue pelo PR #233, já mergeado",
@@ -541,14 +541,14 @@
       "comment_id": 5509532101,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509532101",
       "updated_at": "2026-09-02T12:29:03Z",
-      "next_for_chatgpt": [
-        "aplicar a autorização quando os gates permitirem; nenhum trabalho nesta frente"
-      ],
       "ci": [
         "não aplicável"
       ],
       "next_for_claude": [
         "aplicar a política vigente"
+      ],
+      "next_for_chatgpt": [
+        "aplicar a autorização quando os gates permitirem; nenhum trabalho nesta frente"
       ],
       "result": [
         "autorização permanente de merge foi registrada e continua vigente como regra de governança",
