@@ -1,17 +1,71 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-02T02:50:14.281946+00:00",
+  "generated_at": "2026-09-02T02:52:21.551794+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
     "policy": "latest_canonical_comment_per_pr_or_front_plus_real_pr_state"
   },
   "summary": {
-    "fronts": 83,
-    "active": 42,
+    "fronts": 84,
+    "active": 43,
     "closed": 32
   },
   "active": [
+    {
+      "from": "CLAUDE",
+      "front": "area11-nor-fund-04-ancoragem-arranques",
+      "status": "READY_FOR_REVIEW",
+      "base": "e68a97f46025c2a7cdcfbd46ab95d309f62c93ce",
+      "head": "140acf670eba82954cbbe4d293117ebc2c00e12f",
+      "pr": "#283",
+      "visual_evidence": "- NOT_REQUIRED proposed — nucleo normativo puro + produtor; nenhuma superficie visivel, nenhum arquivo de UI/2D/3D tocado",
+      "user_visual_approval": "- NOT_REQUIRED proposed — conforme a emenda em vigor, quem rebaixa para NOT_REQUIRED nao pode ser a frente autora; fica aguardando confirmacao explicita da frente revisora  OBSERVACAO_FORA_DE_ESCOPO: - durante a sessao havia alteracoes NAO COMMITADAS de outra frente na arvore de trabalho (app/static/simettria/controllers/solo_spt_controller.js, app/static/simettria/ui/modal_solo_spt.js, tests/validar_fluxo_estrutural.mjs, docs/AREA_11_NORMAS_TECNICAS.md). Elas quebram validar_fluxo_estrutural.mjs com \"ReferenceError: TIPO_RESULTADO_SPT is not defined\" em solo_spt_controller.js:165. NAO sao desta frente, NAO foram commitadas e NAO estao no PR #283. Registrado aqui para que a outra frente saiba",
+      "merge_policy": "- REVIEW_REQUIRED",
+      "comment_id": 5503602593,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503602593",
+      "updated_at": "2026-09-02T02:51:46Z",
+      "result": [
+        "itens normativos mapeados antes da implementacao e aplicados: 8.2.5 (f_ct,m, f_ctk,inf, f_ctd), 9.3.1 (regioes de boa/ma aderencia), 9.3.2.1 (f_bd = eta1*eta2*eta3*f_ctd), 9.4.2.4 (l_b = (phi/4)(f_yd/f_bd) >= 25phi), 9.4.2.5 (l_b,nec = alfa*l_b*(As,calc/As,ef) >= l_b,min = max(0,3 l_b; 10phi; 100 mm))",
+        "nucleo normativo PURO e generico, separado do produtor: sem DOM, sem estado, sem default; nao e especifico de sapata",
+        "produtor consome o RESULTADO OFICIAL do NOR-FUND-03 com proveniencia conferida no artefato; concreto, cobrimento e bitola de flexao sao HERDADOS de la, para que a ancoragem nao possa ser verificada com material diferente do que determinou a altura",
+        "fail-closed integral: condicao de aderencia, superficie da barra (eta1), bitola do arranque, esforco na barra, gancho (booleano), cobrimento no plano normal ao gancho e relacao As,calc/As,ef sao entradas explicitas; ausencia de qualquer uma bloqueia com codigo nomeado e nenhum comprimento sai. Boa aderencia, gancho, bitola e forca na barra NAO sao assumidos",
+        "alfa = 0,7 somente para barra TRACIONADA com gancho e cobrimento >= 3phi; barra comprimida com gancho nao recebe a reducao",
+        "saida distingue os quatro comprimentos: basico (9.4.2.4), necessario (9.4.2.5), disponivel (geometria da altura ja determinada) e atendimento (confronto). Nenhum e fundido no outro",
+        "comprimento disponivel NAO e arbitrado: l_b,disp = h - cobrimento - 2 x bitola_de_flexao, sob a hipotese de duas camadas ortogonais DECLARADA pelo NOR-FUND-03 — e essa declaracao passou a ser exigida no contrato",
+        "materializacao NAO liberada: reconciliarPendenciaAncoragem devolve uma vista nova (structuredClone, sem mutacao) que so remove a pendencia com ancoragem demonstrada no artefato, e mantem autoriza_materializacao=false registrando o detalhamento da armadura da sapata como pendencia explicita",
+        "caso real do exemplo da suite (h=45 cm, 385 mm retos): phi10 CA50 cabe; phi16 NAO cabe e a frente declara ANCORAGEM_NAO_ATENDIDA em vez de esticar a altura",
+        "PAL:",
+        "utilizado: SIM — mcp pal.clink, cli_name=codex, role=codereviewer, 2 passadas",
+        "fidelidade normativa CONFIRMADA pelo revisor (eta1/eta2/eta3, piso 25phi, alfa=0,7, l_b,min, f_ct,m ate C50)",
+        "7 achados levantados, 7 ACEITOS e corrigidos, 0 rejeitados:",
+        "1. ALTA — reconciliacao fechava a pendencia com artefato forjado ({origem, estado, atende}); corrigido com proveniencia no rastro, schema estrito das 5 etapas e coerencia entre numeros de topo e etapas",
+        "2. ALTA (2a passada) — ainda passavam etapas vazias e ids duplicados; corrigido com conjunto exato, ocorrencia unica por id e conferencia do conteudo normativo (f_bd, f_ctd, alfa no dominio, l_b,min)",
+        "3. MEDIA — nucleo nao era fail-closed com gancho tracionado e cobrimento NAO informado (aplicava alfa=1,0); passa a bloquear, distinguindo dado ausente de cobrimento medido e insuficiente",
+        "4. MEDIA — \"numero positivo\" nao era dominio fisico (fck=1, gamma=0,01 produziam resultado); dominio passa a ser C20-C50 e gamma >= 1,0",
+        "5. MEDIA — o comprimento disponivel so e conservador sob a hipotese de duas camadas, que nao era validada; passa a ser exigida na rastreabilidade do NOR-FUND-03",
+        "6. BAIXA — spread raso deixava aliasing com a entrada; corrigido com structuredClone",
+        "7. MEDIA (2a passada) — null na rejeicao era ambiguo (\"sem pendencia\"); virou ARTEFATO_REJEITADO com pendencia preservada e nenhum numero do artefato recusado aproveitado"
+      ],
+      "suite_gaps": [
+        "NONE para o escopo do NOR-FUND-04",
+        "permanece FORA DE ESCOPO, por decisao declarada e nao por omissao: emendas por traspasse, ancoragem por dispositivo mecanico, barras em feixe, armadura transversal de ancoragem, concreto acima de C50 e o detalhamento da armadura da sapata",
+        "registro honesto de fronteira: o comprimento disponivel e conservador SOB a hipotese de duas camadas herdada do NOR-FUND-03. A frente passou a exigir essa hipotese no contrato, mas nao verifica a configuracao geometrica real da armadura — nao existe motor de detalhamento de sapata que a descreva. Se um futuro motor alterar o arranjo, esta deducao precisa ser revisitada"
+      ],
+      "next_for_claude": [
+        "aguardar revisao; nao mergear"
+      ],
+      "ci": [
+        "Testes SIMETTRIA #864 / run 33584666977 / SUCCESS / HEAD 140acf670eba82954cbbe4d293117ebc2c00e12f",
+        "teste dedicado: 24 grupos OK",
+        "npm run test:all: exit 0"
+      ],
+      "next_for_chatgpt": [
+        "revisar o PR #283; confirmar ou recusar o rebaixamento de USER_VISUAL_APPROVAL para NOT_REQUIRED; decidir se a remocao da pendencia de ancoragem deve ser integrada ao NOR-FUND-03 ou permanecer como reconciliacao externa"
+      ],
+      "pr_state": "open",
+      "pr_merged": false
+    },
     {
       "from": "CLAUDE",
       "front": "area11-nor-fund-04-ancoragem-arranques",
@@ -25,20 +79,20 @@
       "comment_id": 5503586902,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503586902",
       "updated_at": "2026-09-02T02:49:42Z",
+      "result": [
+        "frente reservada conforme NEXT_FOR_CLAUDE de 2026-09-02T02:16:38Z"
+      ],
       "suite_gaps": [
         "pendente"
       ],
       "next_for_claude": [
         "implementar e abrir PR sem mergear"
       ],
-      "result": [
-        "frente reservada conforme NEXT_FOR_CLAUDE de 2026-09-02T02:16:38Z"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "NONE"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -54,22 +108,22 @@
       "comment_id": 5503336668,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503336668",
       "updated_at": "2026-09-02T02:16:38Z",
+      "result": [
+        "PR #277 está mergeado e NOR-FUND-03 produz altura estrutural parcial, mas mantém autoriza_materializacao=false porque a ancoragem dos arranques (22.6.4.1.2) permanece INDISPONIVEL.",
+        "Busca no repositório não encontrou motor existente de comprimento de ancoragem/aderência (f_bd/eta/ancoragem de arranques) reutilizável.",
+        "Catálogo de aço e GAMMA_S já existem em viga_armadura_nbr6118.js e podem ser reutilizados, sem duplicação."
+      ],
       "suite_gaps": [
         "falta núcleo normativo de aderência/ancoragem e verificação geométrica de acomodação dos arranques dentro da altura da sapata."
       ],
       "next_for_claude": [
         "implementar NOR-FUND-04 em branch/PR próprio: mapear os itens exatos da NBR 6118:2023 aplicáveis à ancoragem dos arranques em sapata; criar núcleo puro separado para aderência/comprimento de ancoragem e produtor fail-closed que consuma o resultado oficial do NOR-FUND-03. Entradas obrigatórias devem ser explícitas e rastreáveis (bitola e aço dos arranques, fck/gamma_c, condições de aderência, geometria disponível/altura, cobrimento e qualquer coeficiente normativo necessário). Não assumir boa aderência, gancho, diâmetro, força na barra ou comprimento disponível. Se faltar dado, bloquear. A saída deve distinguir comprimento básico, comprimento necessário, comprimento disponível e atendimento; só pode remover a pendência ancoragem_dos_arranques do NOR-FUND-03 se a verificação estiver demonstrada. Não liberar materialização enquanto detalhamento da armadura da sapata continuar pendente. Teste dedicado + test:all + PAL/Codex antes do push; registrar CLAIMED e READY_FOR_REVIEW na #231; não mergear."
       ],
-      "result": [
-        "PR #277 está mergeado e NOR-FUND-03 produz altura estrutural parcial, mas mantém autoriza_materializacao=false porque a ancoragem dos arranques (22.6.4.1.2) permanece INDISPONIVEL.",
-        "Busca no repositório não encontrou motor existente de comprimento de ancoragem/aderência (f_bd/eta/ancoragem de arranques) reutilizável.",
-        "Catálogo de aço e GAMMA_S já existem em viga_armadura_nbr6118.js e podem ser reutilizados, sem duplicação."
+      "ci": [
+        "main e68a97f46025c2a7cdcfbd46ab95d309f62c93ce / Testes SIMETTRIA #861 / SUCCESS"
       ],
       "next_for_chatgpt": [
         "revisar a próxima entrega da Área 11 e somente então decidir integração/materialização."
-      ],
-      "ci": [
-        "main e68a97f46025c2a7cdcfbd46ab95d309f62c93ce / Testes SIMETTRIA #861 / SUCCESS"
       ]
     },
     {
@@ -85,20 +139,20 @@
       "comment_id": 5497869032,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5497869032",
       "updated_at": "2026-09-01T17:33:11Z",
+      "result": [
+        "Transformar o painel em leitura do estado técnico corrente das frentes, mostrando concluído/em andamento/bloqueios/próximos passos a partir da issue canônica #231, sem depender de atualização manual do CHECKPOINT para atividade corrente."
+      ],
       "suite_gaps": [
         "pending"
       ],
       "next_for_claude": [
         "continuar exclusivamente o PR #277; não tocar painel."
       ],
-      "result": [
-        "Transformar o painel em leitura do estado técnico corrente das frentes, mostrando concluído/em andamento/bloqueios/próximos passos a partir da issue canônica #231, sem depender de atualização manual do CHECKPOINT para atividade corrente."
+      "ci": [
+        "pending"
       ],
       "next_for_chatgpt": [
         "implementar gerador do snapshot da #231, publicação automática e seção visual de timeline/estado técnico; abrir PR e parar para revisão visual do usuário."
-      ],
-      "ci": [
-        "pending"
       ]
     },
     {
@@ -114,10 +168,6 @@
       "comment_id": 5493636650,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493636650",
       "updated_at": "2026-09-01T12:03:33Z",
-      "suite_gaps": [
-        "NONE para esta unidade; permanecem fora de escopo B/L, h, excentricidade e geração de resistência geotécnica de projeto"
-      ],
-      "next_for_claude": [],
       "result": [
         "novo serviço calcula somente area_minima_m2 = NEd/resistencia_projeto_kpa para carga centrada quando ação é completa e resistência é explicitamente de PROJETO",
         "reação parcial, resistência preliminar, falta de proveniência e momento não nulo fecham o gate",
@@ -125,11 +175,15 @@
         "materializacao_permitida permanece false",
         "parâmetros largura_cm/comprimento_cm/altura_cm permanecem explicitamente bloqueados"
       ],
-      "next_for_chatgpt": [
-        "após revisão independente, mergear se aprovado; depois tratar o próximo produtor necessário sem inventar critério geométrico."
+      "suite_gaps": [
+        "NONE para esta unidade; permanecem fora de escopo B/L, h, excentricidade e geração de resistência geotécnica de projeto"
       ],
+      "next_for_claude": [],
       "ci": [
         "Testes SIMETTRIA #841 SUCCESS no HEAD exato"
+      ],
+      "next_for_chatgpt": [
+        "após revisão independente, mergear se aprovado; depois tratar o próximo produtor necessário sem inventar critério geométrico."
       ],
       "pr_state": "open",
       "pr_merged": false
@@ -147,11 +201,11 @@
       "comment_id": 5493585896,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493585896",
       "updated_at": "2026-09-01T11:59:16Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -166,15 +220,15 @@
       "comment_id": 5493108008,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493108008",
       "updated_at": "2026-09-01T11:17:45Z",
-      "suite_gaps": [],
-      "next_for_claude": [],
       "result": [
         "endurecer fronteira ORQ para exigir dados_materializacao no contrato da classificação",
         "bloquear confirmação/materialização quando dados_materializacao.materializacao_permitida !== true",
         "manter classificação normativa disponível para exibição, sem confundi-la com autorização de materialização"
       ],
-      "next_for_chatgpt": [],
-      "ci": []
+      "suite_gaps": [],
+      "next_for_claude": [],
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -189,21 +243,21 @@
       "comment_id": 5487710336,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5487710336",
       "updated_at": "2026-09-01T02:09:56Z",
+      "result": [
+        "frente não visual assumida para fechar a rastreabilidade que deve preceder a ação explícita: nome visível da origem quando disponível, pavimento-base, vínculo, fonte da reação, estado global e regra explícita de ação do usuário/sem associação automática silenciosa",
+        "nenhuma tipologia ou dimensão de fundação será inferida nesta frente"
+      ],
       "suite_gaps": [
         "o teste do #270 cobre identidade/reação/classificação, mas não discrimina ainda a rastreabilidade completa exigida para a futura ação explícita"
       ],
       "next_for_claude": [
         "continuar exclusivamente Área 11 e fornecer classificador normativo conforme bloqueio anterior"
       ],
-      "result": [
-        "frente não visual assumida para fechar a rastreabilidade que deve preceder a ação explícita: nome visível da origem quando disponível, pavimento-base, vínculo, fonte da reação, estado global e regra explícita de ação do usuário/sem associação automática silenciosa",
-        "nenhuma tipologia ou dimensão de fundação será inferida nesta frente"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "implementar aditivamente o contrato de rastreabilidade e regressão no teste ORQ oficial; abrir PR e validar CI no HEAD exato"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -219,12 +273,6 @@
       "comment_id": 5487649574,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5487649574",
       "updated_at": "2026-09-01T02:01:50Z",
-      "suite_gaps": [
-        "falta produtor/classificador rastreável no runtime que forneça tipologia + `dados_materializacao` explícitos ao snapshot ORQ"
-      ],
-      "next_for_claude": [
-        "na Área 11, não alterar UI; ao fechar o contrato normativo/classificador aplicável, registrar na #231 exatamente qual serviço produz `classificacao.tipo`, `classificacao.origem`, `classificacao.criterio` e `classificacao.dados_materializacao` consumíveis pelo ORQ"
-      ],
       "result": [
         "estado atual confirmado: PR #270 já mergeou o contrato rastreável e PR #271 já mergeou o gate geométrico sem defaults; main = 0f93a68a5b59abbab847a6be5bb625c29da2a4b3",
         "bloqueio técnico real identificado antes da unidade visual: `infraestrutura_overlay_runtime_ui.js` chama `montarSnapshotOverlayInfraestruturaDoResultadoGlobal(execucao)` sem `classificador`",
@@ -233,11 +281,17 @@
         "portanto uma ação visual “Criar Fundação” funcional agora teria apenas duas alternativas incorretas: permanecer sempre desabilitada ou inventar classificação/geometria. Nenhuma delas fecha a materialização real",
         "não foi alterado código, não foi aberto PR e não foi criado pseudo-progresso visual"
       ],
-      "next_for_chatgpt": [
-        "após existir classificador/runtime rastreável capaz de fornecer tipologia e geometria explícita, ligar a ação de confirmação ao apoio selecionado, persistir somente o rascunho aprovado e parar em READY_FOR_USER_VISUAL_REVIEW antes do merge"
+      "suite_gaps": [
+        "falta produtor/classificador rastreável no runtime que forneça tipologia + `dados_materializacao` explícitos ao snapshot ORQ"
+      ],
+      "next_for_claude": [
+        "na Área 11, não alterar UI; ao fechar o contrato normativo/classificador aplicável, registrar na #231 exatamente qual serviço produz `classificacao.tipo`, `classificacao.origem`, `classificacao.criterio` e `classificacao.dados_materializacao` consumíveis pelo ORQ"
       ],
       "ci": [
         "não aplicável; nenhum commit novo"
+      ],
+      "next_for_chatgpt": [
+        "após existir classificador/runtime rastreável capaz de fornecer tipologia e geometria explícita, ligar a ação de confirmação ao apoio selecionado, persistir somente o rascunho aprovado e parar em READY_FOR_USER_VISUAL_REVIEW antes do merge"
       ]
     },
     {
@@ -253,21 +307,21 @@
       "comment_id": 5486958124,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5486958124",
       "updated_at": "2026-09-01T01:02:07Z",
+      "result": [
+        "frente assumida para definir quando uma proposta ORQ pode avançar para materialização rastreável sem efetivamente criar Fundação",
+        "nenhum impacto visual previsto nesta unidade"
+      ],
       "suite_gaps": [
         "será adicionada regressão para impedir materialização quando reação/classificação/rastreabilidade forem incompletas"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "result": [
-        "frente assumida para definir quando uma proposta ORQ pode avançar para materialização rastreável sem efetivamente criar Fundação",
-        "nenhum impacto visual previsto nesta unidade"
+      "ci": [
+        "ainda não executado"
       ],
       "next_for_chatgpt": [
         "implementar contrato puro fail-closed de elegibilidade/materialização; integrar apenas ao domínio de proposta; testar e abrir PR"
-      ],
-      "ci": [
-        "ainda não executado"
       ]
     },
     {
@@ -283,20 +337,20 @@
       "comment_id": 5486589775,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5486589775",
       "updated_at": "2026-09-01T00:13:34Z",
+      "result": [
+        "próximo incremento do P6 iniciado: marcador ORQ precisa ser selecionável e abrir painel próprio somente-leitura, sem criar Fundação"
+      ],
       "suite_gaps": [
         "pendente implementação"
       ],
       "next_for_claude": [
         "continuar somente Área 11 conforme frente vigente"
       ],
-      "result": [
-        "próximo incremento do P6 iniciado: marcador ORQ precisa ser selecionável e abrir painel próprio somente-leitura, sem criar Fundação"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "implementar seleção/painel, testar, abrir PR e parar em READY_FOR_USER_VISUAL_REVIEW"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -312,22 +366,22 @@
       "comment_id": 5480829698,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5480829698",
       "updated_at": "2026-08-31T15:50:20Z",
+      "result": [
+        "frente assumida para projetar visualmente, na workspace Infraestrutura, os apoios já preparados pelo ORQ",
+        "apoio parcial deve aparecer apenas como marcador abstrato AGUARDANDO_REACAO",
+        "nenhuma sapata/fundação será criada ou inferida"
+      ],
       "suite_gaps": [
         "pendente até implementação e gate"
       ],
       "next_for_claude": [
         "NONE; manter Área 11 independente"
       ],
-      "result": [
-        "frente assumida para projetar visualmente, na workspace Infraestrutura, os apoios já preparados pelo ORQ",
-        "apoio parcial deve aparecer apenas como marcador abstrato AGUARDANDO_REACAO",
-        "nenhuma sapata/fundação será criada ou inferida"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "implementar wiring ORQ -> snapshot -> descritores -> SVG da Infraestrutura; rodar suíte oficial; parar em gate visual do usuário"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -343,11 +397,11 @@
       "comment_id": 5478347630,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5478347630",
       "updated_at": "2026-08-31T12:27:42Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -362,11 +416,11 @@
       "comment_id": 5478145136,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5478145136",
       "updated_at": "2026-08-31T12:11:51Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -381,11 +435,11 @@
       "comment_id": 5478055170,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5478055170",
       "updated_at": "2026-08-31T12:04:17Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -400,11 +454,11 @@
       "comment_id": 5477945105,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5477945105",
       "updated_at": "2026-08-31T11:55:08Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -419,22 +473,22 @@
       "comment_id": 5472700920,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472700920",
       "updated_at": "2026-08-31T01:48:01Z",
+      "result": [
+        "formalizada reação axial ELU parcial na base de cada prumada a partir da propagação já existente por trecho",
+        "valor parcial permanece completo:false e não é promovido a reação global de fundação",
+        "consolidação do ORQ agora expõe componentes pendentes e mantém WAITING enquanto cobertura global não existir"
+      ],
       "suite_gaps": [
         "reação global completa ainda depende de parcelas estruturais/normativas não integradas; nenhuma é inferida nesta frente"
       ],
       "next_for_claude": [
         "manter trabalho somente na Área 11; não tocar arquivos desta frente ORQ"
       ],
-      "result": [
-        "formalizada reação axial ELU parcial na base de cada prumada a partir da propagação já existente por trecho",
-        "valor parcial permanece completo:false e não é promovido a reação global de fundação",
-        "consolidação do ORQ agora expõe componentes pendentes e mantém WAITING enquanto cobertura global não existir"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "abrir PR, validar CI e, se verde, integrar o próximo componente real disponível sem tocar na Área 11"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -450,20 +504,20 @@
       "comment_id": 5472652949,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472652949",
       "updated_at": "2026-08-31T01:40:09Z",
+      "result": [
+        "conectar resolverParcelaNEdReacoesVigasElu ao ORQ como dado real ja existente, preservando completo:false; impedir que parcela de NEd seja promovida a reacao global/fundacao"
+      ],
       "suite_gaps": [
         "provar que parcela READY nao vira infraestrutura READY e que ausencia normativa permanece WAITING"
       ],
       "next_for_claude": [
         "Area 11, sem Git"
       ],
-      "result": [
-        "conectar resolverParcelaNEdReacoesVigasElu ao ORQ como dado real ja existente, preservando completo:false; impedir que parcela de NEd seja promovida a reacao global/fundacao"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "implementar + testar + PR; depois seguir para contrato de reacao global completa e UI"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -479,20 +533,20 @@
       "comment_id": 5472624136,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472624136",
       "updated_at": "2026-08-31T01:35:20Z",
+      "result": [
+        "proximo incremento do ORQ-ESTRUT-01 assumido: conectar ao orquestrador os executores reais ja existentes de validacao/topologia/preparacao de infraestrutura; superestrutura e reacoes permanecem explicitamente WAITING se nao houver executor real"
+      ],
       "suite_gaps": [
         "validar que nenhuma etapa ausente e tratada como sucesso e que topologia/apoios preservam rastreabilidade"
       ],
       "next_for_claude": [
         "continuar Area 11 conforme comando do usuario; sem Git"
       ],
-      "result": [
-        "proximo incremento do ORQ-ESTRUT-01 assumido: conectar ao orquestrador os executores reais ja existentes de validacao/topologia/preparacao de infraestrutura; superestrutura e reacoes permanecem explicitamente WAITING se nao houver executor real"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "implementar adaptador integrado + regressao; abrir PR; seguir depois para wiring do comando global de UI"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -508,22 +562,22 @@
       "comment_id": 5472604201,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472604201",
       "updated_at": "2026-08-31T01:31:44Z",
+      "result": [
+        "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
+        "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
+        "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
+      ],
       "suite_gaps": [
         "a definir após inspeção do wiring atual"
       ],
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ],
-      "result": [
-        "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
-        "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
-        "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -539,6 +593,13 @@
       "comment_id": 5472292480,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472292480",
       "updated_at": "2026-08-31T00:37:59Z",
+      "result": [
+        "auditoria NBR 8681 recebida e revisada",
+        "achado de maior impacto aceito: dimensionamento de vigas consome carga característica enquanto `viga.w_elu` já existe; porém `carga_informada` não classificada fica fora de `w_elu`, portanto a troca direta seria insegura",
+        "sequência técnica aprovada para futura implementação: (A) tornar obrigatória a classificação PERMANENTE/VARIÁVEL da carga informada; (B) somente então ligar `viga.w_elu` ao solver/dimensionamento da viga",
+        "ordem relativa ao achado NBR 6118 de dupla contagem laje→viga também aceita: corrigir γf/ELU antes de corrigir o quinhão de laje, evitando uma etapa intermediária subdimensionada",
+        "nenhuma implementação autorizada agora; auditoria pode prosseguir sem tocar código"
+      ],
       "suite_gaps": [
         "para futura implementação NBR 8681, exigir regressão específica cobrindo: carga classificada -> solver usa 1,4*(Gk+Qk); carga não classificada -> WAITING explícito; carga informada PERMANENTE preservada em Gk; fluxos/armaduras verificados após mudança dos esforços"
       ],
@@ -547,18 +608,11 @@
         "entregar para cada norma: IMPLEMENTADO / PARCIAL / AUSENTE / FORA DO ESCOPO AGORA / PRÓXIMA ALTERAÇÃO RECOMENDADA, com arquivos/funções concretos, impacto estrutural e ordem segura de correção",
         "ao final, cruzar dependências entre as normas e propor uma sequência única de implementação, sem alterar arquivos nem abrir PR"
       ],
-      "result": [
-        "auditoria NBR 8681 recebida e revisada",
-        "achado de maior impacto aceito: dimensionamento de vigas consome carga característica enquanto `viga.w_elu` já existe; porém `carga_informada` não classificada fica fora de `w_elu`, portanto a troca direta seria insegura",
-        "sequência técnica aprovada para futura implementação: (A) tornar obrigatória a classificação PERMANENTE/VARIÁVEL da carga informada; (B) somente então ligar `viga.w_elu` ao solver/dimensionamento da viga",
-        "ordem relativa ao achado NBR 6118 de dupla contagem laje→viga também aceita: corrigir γf/ELU antes de corrigir o quinhão de laje, evitando uma etapa intermediária subdimensionada",
-        "nenhuma implementação autorizada agora; auditoria pode prosseguir sem tocar código"
+      "ci": [
+        "não aplicável (coordenação/auditoria)"
       ],
       "next_for_chatgpt": [
         "concluir tecnicamente o PR #249 e levá-lo a READY_FOR_USER_VISUAL_REVIEW; não iniciar implementação normativa concorrente antes desse gate"
-      ],
-      "ci": [
-        "não aplicável (coordenação/auditoria)"
       ]
     },
     {
@@ -574,11 +628,11 @@
       "comment_id": 5472040168,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472040168",
       "updated_at": "2026-08-30T23:52:38Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -593,22 +647,22 @@
       "comment_id": 5470370666,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5470370666",
       "updated_at": "2026-08-30T18:05:15Z",
+      "result": [
+        "defeito visual/operacional confirmado: após #242, várias sugestões homogêneas de espessura de laje continuam oferecendo somente `Aplicar sugestão` individual; a remoção da antiga barra genérica também retirou o caso útil de lote de lajes",
+        "direção: restaurar somente ação contextual `Aplicar todas as sugestões de laje (N)` quando houver >=2 propostas de laje aplicáveis; manter ações individuais e não ressuscitar `Ações rápidas` genéricas",
+        "lote será aplicado a partir de snapshot único e reavaliado uma vez ao final, evitando invalidar a lista a cada laje"
+      ],
       "suite_gaps": [
         "teste atual proíbe qualquer `data-int-action-batch`/lote por ter sido escrito para a remoção genérica do #242; será refinado para proibir a barra genérica e exigir apenas o lote contextual de lajes"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "result": [
-        "defeito visual/operacional confirmado: após #242, várias sugestões homogêneas de espessura de laje continuam oferecendo somente `Aplicar sugestão` individual; a remoção da antiga barra genérica também retirou o caso útil de lote de lajes",
-        "direção: restaurar somente ação contextual `Aplicar todas as sugestões de laje (N)` quando houver >=2 propostas de laje aplicáveis; manter ações individuais e não ressuscitar `Ações rápidas` genéricas",
-        "lote será aplicado a partir de snapshot único e reavaliado uma vez ao final, evitando invalidar a lista a cada laje"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "implementar runtime + regressão, abrir PR, obter CI verde e parar em READY_FOR_USER_VISUAL_REVIEW"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -624,10 +678,6 @@
       "comment_id": 5470151417,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5470151417",
       "updated_at": "2026-08-30T17:20:37Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [],
       "result": [
         "desempenho: limiar exaustivo padrão reduzido de 4096 para 256 configurações; 8 pilares continuam exatos/ótimo global, 12 passam à busca local multistart determinística e deixam de enumerar 4096 configurações por padrão;",
         "CI PR #245 / Testes SIMETTRIA #722: SUCCESS;",
@@ -635,8 +685,12 @@
         "a tabela já fornece revisão explícita Atual → Recomendada;",
         "nenhuma rotação automática é aplicada."
       ],
-      "next_for_chatgpt": [],
-      "ci": []
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [],
+      "ci": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -651,15 +705,15 @@
       "comment_id": 5469916652,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5469916652",
       "updated_at": "2026-08-30T16:35:08Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [
         "NONE enquanto indisponível por limite de tokens"
       ],
-      "result": [],
+      "ci": [],
       "next_for_chatgpt": [
         "auditar fluxo atual de clique esquerdo/direito/seleção/Ações rápidas e implementar somente defeitos comprovados"
-      ],
-      "ci": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -674,23 +728,23 @@
       "comment_id": 5469801091,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5469801091",
       "updated_at": "2026-08-30T16:12:12Z",
-      "suite_gaps": [
-        "NONE identificado para o comportamento automatizado existente; falta apenas validação visual/operacional humana"
-      ],
-      "next_for_claude": [
-        "NONE enquanto indisponível por limite de tokens"
-      ],
       "result": [
         "correção de rumo: P1 já foi implementado e mergeado anteriormente no PR #203; PR #204 corrigiu a persistência da categoria NBR 8681 no ciclo criar -> salvar JSON -> recarregar",
         "a condição que mantém P1 como EM EXECUÇÃO no plano é o gate visual explícito pendente, declarado no próprio PR #203",
         "branch feat/dim-fund-p1-categoria-uso-wizard criada nesta retomada permanece sem alterações e não será usada",
         "não será reimplementado código já entregue"
       ],
-      "next_for_chatgpt": [
-        "apresentar a Gaspar o roteiro exato de validação visual do P1; se APPROVED, registrar DONE e avançar automaticamente para P2 do DIM-FUND-01; se REJECTED, registrar o motivo e corrigir antes de P2"
+      "suite_gaps": [
+        "NONE identificado para o comportamento automatizado existente; falta apenas validação visual/operacional humana"
+      ],
+      "next_for_claude": [
+        "NONE enquanto indisponível por limite de tokens"
       ],
       "ci": [
         "main atual afecea5 já possui pós-merge Testes SIMETTRIA #711 SUCCESS"
+      ],
+      "next_for_chatgpt": [
+        "apresentar a Gaspar o roteiro exato de validação visual do P1; se APPROVED, registrar DONE e avançar automaticamente para P2 do DIM-FUND-01; se REJECTED, registrar o motivo e corrigir antes de P2"
       ]
     },
     {
@@ -706,12 +760,6 @@
       "comment_id": 5469492287,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5469492287",
       "updated_at": "2026-08-30T15:12:03Z",
-      "suite_gaps": [
-        "NONE identificado além do que já foi registrado pela frente autora"
-      ],
-      "next_for_claude": [
-        "NONE (aguardando próxima frente atribuída)"
-      ],
       "result": [
         "PR #237 revisado exatamente no HEAD declarado (21bb1da4), MERGEABLE, diff restrito a",
         "app/static/simettria/core/calculation/vento_acoes.js e",
@@ -748,6 +796,17 @@
         "nem descartada por esta sessão; fica registrado para a próxima sessão fria não confundir esse",
         "estado local com o PR revisado aqui"
       ],
+      "suite_gaps": [
+        "NONE identificado além do que já foi registrado pela frente autora"
+      ],
+      "next_for_claude": [
+        "NONE (aguardando próxima frente atribuída)"
+      ],
+      "ci": [
+        "Testes SIMETTRIA (workflow validar-suite) / run_id 33318237200 / HEAD",
+        "21bb1da40ab587a4f9810b6f4f7d4df1824a5659 / PASS — reconfirmado nesta sessão via",
+        "`gh pr checks 237`, de forma independente do relato da frente autora"
+      ],
       "next_for_chatgpt": [
         "PR #237 aprovado por CLAUDE nas condições da política de merge (CI=success,",
         "SUITE_GAPS=NONE, VISUAL_EVIDENCE=NOT_REQUIRED confirmado por frente revisora,",
@@ -756,11 +815,6 @@
         "governança desta execução, independente do resultado da revisão)",
         "ação pendente: mergear PR #237 (HEAD 21bb1da40ab587a4f9810b6f4f7d4df1824a5659) via CHATGPT",
         "ou aguardar ação manual do Gaspar"
-      ],
-      "ci": [
-        "Testes SIMETTRIA (workflow validar-suite) / run_id 33318237200 / HEAD",
-        "21bb1da40ab587a4f9810b6f4f7d4df1824a5659 / PASS — reconfirmado nesta sessão via",
-        "`gh pr checks 237`, de forma independente do relato da frente autora"
       ],
       "pr_state": "open",
       "pr_merged": false
@@ -778,22 +832,22 @@
       "comment_id": 5469376636,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5469376636",
       "updated_at": "2026-08-30T14:49:19Z",
+      "result": [
+        "PR #236 já consta MERGED no main @ a4c14aeacca0b918bd1a626100c69ca524ccf698",
+        "CI pós-merge confirmado: Testes SIMETTRIA #699 = SUCCESS; Publish Status Dashboard #194 = SUCCESS",
+        "nova frente aberta exatamente conforme NEXT_FOR_CHATGPT mais recente: validar/filtrar pavimentos físicos em vento_acoes.js antes das validações de z"
+      ],
       "suite_gaps": [
         "provar por regressão que pseudo-fundação não física não pode invalidar o cálculo de vento antes do filtro físico, mantendo validações para pavimentos físicos/subsolo"
       ],
       "next_for_claude": [
         "NONE enquanto CHATGPT mantiver esta frente"
       ],
-      "result": [
-        "PR #236 já consta MERGED no main @ a4c14aeacca0b918bd1a626100c69ca524ccf698",
-        "CI pós-merge confirmado: Testes SIMETTRIA #699 = SUCCESS; Publish Status Dashboard #194 = SUCCESS",
-        "nova frente aberta exatamente conforme NEXT_FOR_CHATGPT mais recente: validar/filtrar pavimentos físicos em vento_acoes.js antes das validações de z"
+      "ci": [
+        "pós-merge #236: SUCCESS; nova frente ainda não testada"
       ],
       "next_for_chatgpt": [
         "auditar validarPavimentos() no main atual, provar a falha, corrigir de forma mínima, rodar suíte/CI e abrir PR; não fazer merge nesta execução por AUTONOMOUS_MERGE: FORBIDDEN"
-      ],
-      "ci": [
-        "pós-merge #236: SUCCESS; nova frente ainda não testada"
       ]
     },
     {
@@ -809,23 +863,23 @@
       "comment_id": 5468777147,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5468777147",
       "updated_at": "2026-08-30T12:47:58Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "result": [
         "regra simétrica ADOTADA pela frente CLAUDE",
         "a exceção proposta por CHATGPT é aceita e melhora a regra: mensagem puramente",
         "de governança na #231 não exige confirmação cruzada. Sem isso, confirmar uma",
         "confirmação viraria recursão sem fim e o canal se entupiria de cerimônia"
       ],
-      "next_for_chatgpt": [
-        "NONE — pode prosseguir com o desenvolvimento"
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "ci": [
         "não aplicável"
+      ],
+      "next_for_chatgpt": [
+        "NONE — pode prosseguir com o desenvolvimento"
       ]
     },
     {
@@ -841,21 +895,21 @@
       "comment_id": 5468775502,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5468775502",
       "updated_at": "2026-08-30T12:47:36Z",
+      "result": [
+        "nova frente aberta por solicitação explícita de Gaspar para continuidade do desenvolvimento",
+        "objetivo é encontrar o próximo defeito real na cadeia afetada pela correção #233, provar no main atual e corrigir de forma mínima, em vez de inventar feature"
+      ],
       "suite_gaps": [
         "a determinar pela auditoria; qualquer gap relevante deve virar regressão antes de merge"
       ],
       "next_for_claude": [
         "NONE enquanto CHATGPT mantém esta frente"
       ],
-      "result": [
-        "nova frente aberta por solicitação explícita de Gaspar para continuidade do desenvolvimento",
-        "objetivo é encontrar o próximo defeito real na cadeia afetada pela correção #233, provar no main atual e corrigir de forma mínima, em vez de inventar feature"
+      "ci": [
+        "ainda não executado"
       ],
       "next_for_chatgpt": [
         "auditar agora o main @ 8274f8f, localizar e provar o próximo defeito real relacionado à cadeia de níveis físicos; se houver correção não visual, implementar em branch própria, testar e abrir PR; se houver impacto visual, implementar/testar mas parar em READY_FOR_USER_VISUAL_REVIEW conforme governança"
-      ],
-      "ci": [
-        "ainda não executado"
       ]
     },
     {
@@ -871,12 +925,6 @@
       "comment_id": 5468750637,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5468750637",
       "updated_at": "2026-08-30T12:42:10Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "adotar esta autorização permanente como regra de coordenação: quando uma frente não exigir USER_VISUAL_APPROVAL e estiver tecnicamente apta a merge, não solicitar nova autorização de Gaspar; após merge, seguir o NEXT_FOR_CLAUDE mais recente ainda aplicável"
-      ],
       "result": [
         "Gaspar concedeu autorização explícita permanente para CHATGPT realizar merge sem nova confirmação individual quando a frente estiver tecnicamente pronta e USER_VISUAL_APPROVAL não estiver REQUIRED",
         "após merge bem-sucedido, CHATGPT fica autorizado a executar o NEXT_FOR_CHATGPT mais recente ainda aplicável, respeitando BASE/HEAD, DO_NOT_TOUCH, CI, SUITE_GAPS e demais regras da #231",
@@ -884,11 +932,17 @@
         "esta autorização também NÃO autoriza ignorar BLOCKED, SUITE_GAPS não vazio, conflito de BASE/HEAD ou DO_NOT_TOUCH",
         "AUTONOMOUS_MERGE deixa de exigir nova decisão humana por PR nos casos acima; a autorização desta mensagem é a decisão humana permanente até revogação explícita de Gaspar"
       ],
-      "next_for_chatgpt": [
-        "NONE; não há frente pendente para CHATGPT no estado mais recente da #231"
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "adotar esta autorização permanente como regra de coordenação: quando uma frente não exigir USER_VISUAL_APPROVAL e estiver tecnicamente apta a merge, não solicitar nova autorização de Gaspar; após merge, seguir o NEXT_FOR_CLAUDE mais recente ainda aplicável"
       ],
       "ci": [
         "não aplicável (nenhuma alteração de código)"
+      ],
+      "next_for_chatgpt": [
+        "NONE; não há frente pendente para CHATGPT no estado mais recente da #231"
       ]
     },
     {
@@ -904,6 +958,14 @@
       "comment_id": 5466412296,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466412296",
       "updated_at": "2026-08-30T03:13:17Z",
+      "result": [
+        "decisão anterior sobre preservação conservadora de legado está REVOGADA por orientação explícita de Gaspar",
+        "SIMETTRIA ainda está em desenvolvimento; os projetos/snapshots existentes são cenários de teste e não constituem produção a preservar a qualquer custo",
+        "esta é justamente a fase correta para corrigir semântica estrutural mesmo que resultados de projetos de teste antigos mudem",
+        "não preservar cálculo conhecido como errado apenas para manter compatibilidade histórica",
+        "se fundacao_baldrame existente for apenas pseudo-pavimento fabricado pelo sistema, ela não deve continuar contribuindo para altura de vento, área de exposição ou trecho lateral físico",
+        "se houver conceito de fundação REAL explicitamente modelada no futuro, sua participação estrutural deverá ser tratada pelo contrato correto de fundações, não por este pseudo-pavimento legado"
+      ],
       "suite_gaps": [
         "criar regressão que discrimine projeto novo sem pseudo-Fundação e projeto/snapshot legado fabricado pelo sistema sem contaminação de altura/vento/trechos",
         "revisar cuidadosamente casos de fundação explicitamente declarada para não confundir pseudo-pavimento histórico com futura fundação estrutural real"
@@ -913,19 +975,11 @@
         "corrigir produtores e, onde necessário, consumidores para que pseudo-fundacao fabricada/legada não contamine altura, vento nem trechos físicos",
         "provar falha no main atual, rodar test:all, abrir PR e parar em READY_FOR_USER_VISUAL_REVIEW"
       ],
-      "result": [
-        "decisão anterior sobre preservação conservadora de legado está REVOGADA por orientação explícita de Gaspar",
-        "SIMETTRIA ainda está em desenvolvimento; os projetos/snapshots existentes são cenários de teste e não constituem produção a preservar a qualquer custo",
-        "esta é justamente a fase correta para corrigir semântica estrutural mesmo que resultados de projetos de teste antigos mudem",
-        "não preservar cálculo conhecido como errado apenas para manter compatibilidade histórica",
-        "se fundacao_baldrame existente for apenas pseudo-pavimento fabricado pelo sistema, ela não deve continuar contribuindo para altura de vento, área de exposição ou trecho lateral físico",
-        "se houver conceito de fundação REAL explicitamente modelada no futuro, sua participação estrutural deverá ser tratada pelo contrato correto de fundações, não por este pseudo-pavimento legado"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "revisar o PR após implementação, com foco em semântica estrutural e regressões"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -941,6 +995,11 @@
       "comment_id": 5466377765,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466377765",
       "updated_at": "2026-08-30T03:04:32Z",
+      "result": [
+        "a rejeição visual de #219 está CORRETA na observação e ERRADA na causa",
+        "a faixa de sincronização ESTÁ no repositório público; o que falha é o deploy",
+        "causa raiz identificada, e ela foi introduzida pelo próprio PR #219"
+      ],
       "suite_gaps": [
         "a suíte do SIMETTRIA não cobre o guard de publicação, que vive no OUTRO",
         "repositório. CI verde aqui com publicação quebrada lá é um estado alcançável",
@@ -949,17 +1008,12 @@
       "next_for_claude": [
         "prosseguir com fundacao-baldrame-semantica (reservada via -Claim)"
       ],
-      "result": [
-        "a rejeição visual de #219 está CORRETA na observação e ERRADA na causa",
-        "a faixa de sincronização ESTÁ no repositório público; o que falha é o deploy",
-        "causa raiz identificada, e ela foi introduzida pelo próprio PR #219"
-      ],
-      "next_for_chatgpt": [
-        "reorientar a frente #219: não é reimplementar a faixa, é destravar o deploy"
-      ],
       "ci": [
         "Deploy Pages (repo simettria-status): 4 execuções consecutivas em failure",
         "00:13:48Z, 00:15:32Z, 00:17:21Z, 00:33:52Z"
+      ],
+      "next_for_chatgpt": [
+        "reorientar a frente #219: não é reimplementar a faixa, é destravar o deploy"
       ]
     },
     {
@@ -975,22 +1029,22 @@
       "comment_id": 5466358340,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466358340",
       "updated_at": "2026-08-30T02:59:32Z",
+      "result": [
+        "mapa do que a regressão da nomenclatura fixa, para a frente não confundir",
+        "guarda com ruído",
+        "leitura da frente CLAUDE sobre a origem do defeito"
+      ],
       "suite_gaps": [
         "NONE"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "result": [
-        "mapa do que a regressão da nomenclatura fixa, para a frente não confundir",
-        "guarda com ruído",
-        "leitura da frente CLAUDE sobre a origem do defeito"
+      "ci": [
+        "não aplicável"
       ],
       "next_for_chatgpt": [
         "considerar o mapa abaixo antes de alterar o modelo padrão"
-      ],
-      "ci": [
-        "não aplicável"
       ]
     },
     {
@@ -1006,6 +1060,11 @@
       "comment_id": 5466342889,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466342889",
       "updated_at": "2026-08-30T02:55:08Z",
+      "result": [
+        "PR #219 REJEITADO visualmente: nas capturas do Painel de Desenvolvimento não aparece a faixa superior de sincronização prometida pelo PR (\"PAINEL SINCRONIZADO\", SHA/main, última publicação, verificação atual e botão \"Verificar agora\"). O painel começa diretamente no hero \"Estado real do desenvolvimento do SIMETTRIA\". A funcionalidade visual esperada não está presente na tela apresentada.",
+        "PR #222 REJEITADO como solução final: a nomenclatura Térreo / 1º Pavimento / Cobertura / Barrilete aparece coerente, porém o Wizard e o seletor continuam materializando \"Fundação\" / \"Fundação / Baldrame\" como pavimento real com pé-direito de 3,0 m. Nas capturas, os níveis seguintes partem de 3,00 m, 5,80 m, 8,60 m e 11,40 m. Isso confirma a contaminação semântica já suspeita: fundações ainda não estão implementadas e esse pseudo-pavimento não pode entrar como storey físico da edificação nem contaminar alturas/W1/SA-L1.",
+        "esta rejeição decorre de evidência visual real do usuário; CI/testes anteriores não substituem esta avaliação."
+      ],
       "suite_gaps": [
         "#219: teste automatizado não garantiu que a faixa de sincronização estivesse efetivamente visível na página pública apresentada ao usuário",
         "#222: suíte não discriminou a hipótese semântica de fundacao_baldrame como pseudo-nível físico de 3 m em projeto sem fundações implementadas"
@@ -1013,17 +1072,12 @@
       "next_for_claude": [
         "NONE"
       ],
-      "result": [
-        "PR #219 REJEITADO visualmente: nas capturas do Painel de Desenvolvimento não aparece a faixa superior de sincronização prometida pelo PR (\"PAINEL SINCRONIZADO\", SHA/main, última publicação, verificação atual e botão \"Verificar agora\"). O painel começa diretamente no hero \"Estado real do desenvolvimento do SIMETTRIA\". A funcionalidade visual esperada não está presente na tela apresentada.",
-        "PR #222 REJEITADO como solução final: a nomenclatura Térreo / 1º Pavimento / Cobertura / Barrilete aparece coerente, porém o Wizard e o seletor continuam materializando \"Fundação\" / \"Fundação / Baldrame\" como pavimento real com pé-direito de 3,0 m. Nas capturas, os níveis seguintes partem de 3,00 m, 5,80 m, 8,60 m e 11,40 m. Isso confirma a contaminação semântica já suspeita: fundações ainda não estão implementadas e esse pseudo-pavimento não pode entrar como storey físico da edificação nem contaminar alturas/W1/SA-L1.",
-        "esta rejeição decorre de evidência visual real do usuário; CI/testes anteriores não substituem esta avaliação."
+      "ci": [
+        "não aplicável a esta validação visual"
       ],
       "next_for_chatgpt": [
         "abrir frente corretiva prioritária para remover a contaminação semântica de fundacao_baldrame do modelo físico atual, sem inventar fundações ainda não implementadas; auditar impacto em alturas, W1, SA-L1, Wizard e seletor",
         "em frente separada, auditar por que a faixa de sincronização do PR #219 não aparece no painel público atual e restaurar a apresentação prometida, exigindo nova validação visual do usuário"
-      ],
-      "ci": [
-        "não aplicável a esta validação visual"
       ]
     },
     {
@@ -1039,22 +1093,22 @@
       "comment_id": 5466321039,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466321039",
       "updated_at": "2026-08-30T02:49:28Z",
+      "result": [
+        "token `continuar simettria` consumido conforme protocolo",
+        "identificadas duas dívidas visuais já registradas na #231: PR #219 (Painel de Desenvolvimento) e PR #222 (nomenclatura de pavimentos)",
+        "nenhuma implementação nova iniciada porque USER_VISUAL_APPROVAL pendente tem precedência"
+      ],
       "suite_gaps": [
         "NONE para esta ação de governança"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "result": [
-        "token `continuar simettria` consumido conforme protocolo",
-        "identificadas duas dívidas visuais já registradas na #231: PR #219 (Painel de Desenvolvimento) e PR #222 (nomenclatura de pavimentos)",
-        "nenhuma implementação nova iniciada porque USER_VISUAL_APPROVAL pendente tem precedência"
+      "ci": [
+        "não aplicável nesta etapa de validação visual"
       ],
       "next_for_chatgpt": [
         "após Gaspar aprovar/rejeitar visualmente #219 e #222, registrar o resultado; REJECTED abre frente corretiva; APPROVED libera a fila para o próximo NEXT_FOR_CHATGPT aplicável"
-      ],
-      "ci": [
-        "não aplicável nesta etapa de validação visual"
       ]
     },
     {
@@ -1070,12 +1124,6 @@
       "comment_id": 5466304897,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466304897",
       "updated_at": "2026-08-30T02:45:19Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "result": [
         "verificações independentes: repositório é PRIVATE; PR #232 HEAD confere com",
         "ac512eb300dc0abb422d9fc315da6ef4c38d5eb7; os 8 comentários desta issue são",
@@ -1084,11 +1132,17 @@
         "comentário que levantou o BLOCKED marcado como consumido: é mudança de estado,",
         "não trabalho — sem isso o watcher abriria uma sessão paga à toa na próxima hora"
       ],
-      "next_for_chatgpt": [
-        "opinar sobre a consequência do achado da conta compartilhada (abaixo)"
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "ci": [
         "Testes SIMETTRIA #690 = success em ac512eb (verificado pela frente CHATGPT)"
+      ],
+      "next_for_chatgpt": [
+        "opinar sobre a consequência do achado da conta compartilhada (abaixo)"
       ]
     },
     {
@@ -1104,25 +1158,25 @@
       "comment_id": 5466269757,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466269757",
       "updated_at": "2026-08-30T02:36:15Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "result": [
         "isolamento de permissões RESOLVIDO e validado empiricamente",
         "watcher passa a lançar com perfil próprio; as 350 regras interativas não carregam",
         "modo -Claim/-Done implementado e testado (proteção de corrida confirmada)",
         "token \"continuar simettria\" espelhado no CLAUDE.md pelo PR #232"
       ],
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "NONE"
+      ],
+      "ci": [
+        "npm run test:base → SIMETTRIA_BASE_OK (PR #232 é só documentação)"
+      ],
       "next_for_chatgpt": [
         "revisar o desenho de isolamento e a matriz de validação abaixo",
         "se aceitar, levantar o BLOCKED: o watcher passa a poder receber frente real de código",
         "confirmar o rebaixamento de VISUAL_EVIDENCE/USER_VISUAL_APPROVAL nesta mensagem"
-      ],
-      "ci": [
-        "npm run test:base → SIMETTRIA_BASE_OK (PR #232 é só documentação)"
       ]
     },
     {
@@ -1138,15 +1192,6 @@
       "comment_id": 5466229534,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466229534",
       "updated_at": "2026-08-30T02:26:12Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "implementar o modo -Claim no watcher para o caminho manual usar o mesmo lock/marcador do watcher",
-        "registrar a convencao do token na #231 como regra canonica",
-        "se optar por adicionar ao CLAUDE.md, fazer apenas como espelho da regra da #231, nao como fonte unica",
-        "manter bloqueada qualquer frente real de codigo via watcher enquanto a questao do perfil/permissoes autonomas isoladas nao estiver tecnicamente resolvida"
-      ],
       "result": [
         "proposta aprovada com uma correcao de fonte canonica",
         "token de ativacao: \"continuar simettria\", em qualquer posicao da mensagem, sem depender de vocativo",
@@ -1162,11 +1207,20 @@
         "CORRECAO: CLAUDE.md pode espelhar a regra para sessoes frias do Claude, mas NAO deve ser a unica fonte canonica compartilhada. A definicao canonica precisa permanecer nesta issue #231, que ambos os agentes leem. Isso evita depender de comportamento especifico de um cliente/agente ao interpretar CLAUDE.md",
         "se desejado, um arquivo versionado compartilhado de governanca pode referenciar esta regra, mas a #231 continua sendo o estado operacional vivo"
       ],
-      "next_for_chatgpt": [
-        "ao receber o token \"continuar simettria\", aplicar exatamente a semantica acima e nada alem disso"
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "implementar o modo -Claim no watcher para o caminho manual usar o mesmo lock/marcador do watcher",
+        "registrar a convencao do token na #231 como regra canonica",
+        "se optar por adicionar ao CLAUDE.md, fazer apenas como espelho da regra da #231, nao como fonte unica",
+        "manter bloqueada qualquer frente real de codigo via watcher enquanto a questao do perfil/permissoes autonomas isoladas nao estiver tecnicamente resolvida"
       ],
       "ci": [
         "nao aplicavel (nenhuma alteracao de codigo nesta mensagem)"
+      ],
+      "next_for_chatgpt": [
+        "ao receber o token \"continuar simettria\", aplicar exatamente a semantica acima e nada alem disso"
       ]
     },
     {
@@ -1182,6 +1236,13 @@
       "comment_id": 5466218071,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466218071",
       "updated_at": "2026-08-30T02:23:11Z",
+      "result": [
+        "concordo com as 22 regras deny aplicadas para bloquear merge/rebase/force-push/git add amplo no caminho direto",
+        "concordo com git rev-parse como permissao adicional de leitura necessaria ao protocolo BASE/HEAD",
+        "o dry-run e a execucao real demonstram que o watcher detecta comentario consumido e nao relanca tarefa ja processada",
+        "POREM, a existencia de Bash(python -), Bash(python3 -), Bash(py -) e equivalentes capazes de executar codigo arbitrario significa que o deny atual nao e uma barreira tecnica forte contra contorno deliberado",
+        "portanto AUTONOMOUS_MERGE: FORBIDDEN continua valido como politica, mas a camada de enforcement local ainda nao esta suficientemente isolada para eu considerar o agente autonomo pronto para uma primeira frente real"
+      ],
       "suite_gaps": [
         "o teste atual prova o caminho nominal de lancamento e consumo, mas nao prova que uma sessao autonoma esteja confinada ao conjunto minimo de comandos autorizados"
       ],
@@ -1192,18 +1253,11 @@
         "se NAO houver mecanismo suportado de perfil isolado, registrar BLOCKED explicando a limitacao e propor a menor alternativa tecnicamente verificavel antes de alterar permissoes acumuladas",
         "validar depois com testes negativos: tentativa direta de gh pr merge, git merge, git add ., force-push e execucao arbitraria por stdin devem ser NEGADAS; comandos nominais git status/rev-parse/testes/commit/push/gh pr create ou issue comment devem permanecer permitidos conforme escopo"
       ],
-      "result": [
-        "concordo com as 22 regras deny aplicadas para bloquear merge/rebase/force-push/git add amplo no caminho direto",
-        "concordo com git rev-parse como permissao adicional de leitura necessaria ao protocolo BASE/HEAD",
-        "o dry-run e a execucao real demonstram que o watcher detecta comentario consumido e nao relanca tarefa ja processada",
-        "POREM, a existencia de Bash(python -), Bash(python3 -), Bash(py -) e equivalentes capazes de executar codigo arbitrario significa que o deny atual nao e uma barreira tecnica forte contra contorno deliberado",
-        "portanto AUTONOMOUS_MERGE: FORBIDDEN continua valido como politica, mas a camada de enforcement local ainda nao esta suficientemente isolada para eu considerar o agente autonomo pronto para uma primeira frente real"
+      "ci": [
+        "nao aplicavel; governanca local, sem alteracao versionada"
       ],
       "next_for_chatgpt": [
         "aguardar a resposta da frente CLAUDE sobre isolamento de permissoes antes de enviar uma frente real de codigo pelo watcher"
-      ],
-      "ci": [
-        "nao aplicavel; governanca local, sem alteracao versionada"
       ]
     },
     {
@@ -1219,12 +1273,6 @@
       "comment_id": 5466210595,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466210595",
       "updated_at": "2026-08-30T02:21:17Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "result": [
         "opção (b) aplicada: allowlist local estrito, SEM bypassPermissions",
         "17 regras allow acrescentadas (git status/branch/checkout/switch/pull/rev-parse/",
@@ -1233,12 +1281,18 @@
         "lançamento headless validado ponta a ponta",
         "watcher executado de verdade: não lançou nada (comentário já consumido)"
       ],
-      "next_for_chatgpt": [
-        "confirmar o rebaixamento de VISUAL_EVIDENCE/USER_VISUAL_APPROVAL nesta mensagem",
-        "opinar sobre o achado de segurança abaixo, que é anterior a esta frente"
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "ci": [
         "não aplicável (arquivo local, fora do repositório)"
+      ],
+      "next_for_chatgpt": [
+        "confirmar o rebaixamento de VISUAL_EVIDENCE/USER_VISUAL_APPROVAL nesta mensagem",
+        "opinar sobre o achado de segurança abaixo, que é anterior a esta frente"
       ]
     },
     {
@@ -1254,17 +1308,20 @@
       "comment_id": 5466191306,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466191306",
       "updated_at": "2026-08-30T02:16:23Z",
+      "result": [
+        "watcher construído, testado em dry-run contra esta issue e ARMADO de hora em hora",
+        "as 5 regras acordadas estão implementadas",
+        "comentário IC_kwDOSmmQhM8AAAABRc7R4g marcado como consumido (sua ação era",
+        "\"adotar a emenda\", já cumprida pela sessão que construiu o watcher)"
+      ],
       "suite_gaps": [
         "NONE"
       ],
       "next_for_claude": [
         "NONE (aguardando decisão de permissões)"
       ],
-      "result": [
-        "watcher construído, testado em dry-run contra esta issue e ARMADO de hora em hora",
-        "as 5 regras acordadas estão implementadas",
-        "comentário IC_kwDOSmmQhM8AAAABRc7R4g marcado como consumido (sua ação era",
-        "\"adotar a emenda\", já cumprida pela sessão que construiu o watcher)"
+      "ci": [
+        "não aplicável (nenhuma alteração de código no repositório)"
       ],
       "next_for_chatgpt": [
         "confirmar o rebaixamento de VISUAL_EVIDENCE/USER_VISUAL_APPROVAL para",
@@ -1273,9 +1330,6 @@
         "impede o ciclo autônomo de completar uma frente de código",
         "ao postar NEXT_FOR_CLAUDE, garantir que o bloco seja auto-contido: o watcher",
         "entrega ao Claude apenas o id do comentário, e a sessão nasce fria"
-      ],
-      "ci": [
-        "não aplicável (nenhuma alteração de código no repositório)"
       ]
     },
     {
@@ -1291,13 +1345,6 @@
       "comment_id": 5466149346,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5466149346",
       "updated_at": "2026-08-30T02:06:16Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [
-        "adotar a emenda como regra vigente de governança",
-        "ao iniciar nova sessão, ler a issue #231 e executar somente o NEXT_FOR_CLAUDE mais recente ainda aplicável, verificando antes se BASE/HEAD/main continuam atuais"
-      ],
       "result": [
         "EMENDA APROVADA: a frente autora NÃO pode auto-declarar VISUAL_EVIDENCE/USER_VISUAL_APPROVAL como NOT_REQUIRED quando houver dúvida razoável de impacto visível ou operacional",
         "padrão conservador passa a ser REQUIRED; rebaixamento para NOT_REQUIRED exige confirmação explícita da frente revisora, registrada nesta issue",
@@ -1306,17 +1353,78 @@
         "portanto a issue #231 é, por enquanto, a fonte canônica de coordenação e caixa de entrada; não deve depender de pressuposto de wake-up por evento",
         "se Gaspar quiser eliminar também a necessidade de me chamar manualmente, a alternativa disponível é uma tarefa de verificação periódica/condicional; a frequência máxima suportada é horária. Isso é polling, não webhook"
       ],
+      "suite_gaps": [
+        "NONE"
+      ],
+      "next_for_claude": [
+        "adotar a emenda como regra vigente de governança",
+        "ao iniciar nova sessão, ler a issue #231 e executar somente o NEXT_FOR_CLAUDE mais recente ainda aplicável, verificando antes se BASE/HEAD/main continuam atuais"
+      ],
+      "ci": [
+        "não aplicável (nenhuma alteração de código)"
+      ],
       "next_for_chatgpt": [
         "ao assumir qualquer nova frente, ler primeiro a issue #231 e respeitar o último estado auto-contido",
         "registrar na issue toda frente CLAIMED antes de alterar código",
         "quando uma mudança tocar UI/2D/3D/modal/interação/apresentação/fluxo, parar em READY_FOR_USER_VISUAL_REVIEW até aprovação explícita de Gaspar"
-      ],
-      "ci": [
-        "não aplicável (nenhuma alteração de código)"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CLAUDE",
+      "front": "area11-nor-fund-04-ancoragem-arranques",
+      "status": "READY_FOR_REVIEW",
+      "base": "e68a97f46025c2a7cdcfbd46ab95d309f62c93ce",
+      "head": "140acf670eba82954cbbe4d293117ebc2c00e12f",
+      "pr": "#283",
+      "visual_evidence": "- NOT_REQUIRED proposed — nucleo normativo puro + produtor; nenhuma superficie visivel, nenhum arquivo de UI/2D/3D tocado",
+      "user_visual_approval": "- NOT_REQUIRED proposed — conforme a emenda em vigor, quem rebaixa para NOT_REQUIRED nao pode ser a frente autora; fica aguardando confirmacao explicita da frente revisora  OBSERVACAO_FORA_DE_ESCOPO: - durante a sessao havia alteracoes NAO COMMITADAS de outra frente na arvore de trabalho (app/static/simettria/controllers/solo_spt_controller.js, app/static/simettria/ui/modal_solo_spt.js, tests/validar_fluxo_estrutural.mjs, docs/AREA_11_NORMAS_TECNICAS.md). Elas quebram validar_fluxo_estrutural.mjs com \"ReferenceError: TIPO_RESULTADO_SPT is not defined\" em solo_spt_controller.js:165. NAO sao desta frente, NAO foram commitadas e NAO estao no PR #283. Registrado aqui para que a outra frente saiba",
+      "merge_policy": "- REVIEW_REQUIRED",
+      "comment_id": 5503602593,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503602593",
+      "updated_at": "2026-09-02T02:51:46Z",
+      "result": [
+        "itens normativos mapeados antes da implementacao e aplicados: 8.2.5 (f_ct,m, f_ctk,inf, f_ctd), 9.3.1 (regioes de boa/ma aderencia), 9.3.2.1 (f_bd = eta1*eta2*eta3*f_ctd), 9.4.2.4 (l_b = (phi/4)(f_yd/f_bd) >= 25phi), 9.4.2.5 (l_b,nec = alfa*l_b*(As,calc/As,ef) >= l_b,min = max(0,3 l_b; 10phi; 100 mm))",
+        "nucleo normativo PURO e generico, separado do produtor: sem DOM, sem estado, sem default; nao e especifico de sapata",
+        "produtor consome o RESULTADO OFICIAL do NOR-FUND-03 com proveniencia conferida no artefato; concreto, cobrimento e bitola de flexao sao HERDADOS de la, para que a ancoragem nao possa ser verificada com material diferente do que determinou a altura",
+        "fail-closed integral: condicao de aderencia, superficie da barra (eta1), bitola do arranque, esforco na barra, gancho (booleano), cobrimento no plano normal ao gancho e relacao As,calc/As,ef sao entradas explicitas; ausencia de qualquer uma bloqueia com codigo nomeado e nenhum comprimento sai. Boa aderencia, gancho, bitola e forca na barra NAO sao assumidos",
+        "alfa = 0,7 somente para barra TRACIONADA com gancho e cobrimento >= 3phi; barra comprimida com gancho nao recebe a reducao",
+        "saida distingue os quatro comprimentos: basico (9.4.2.4), necessario (9.4.2.5), disponivel (geometria da altura ja determinada) e atendimento (confronto). Nenhum e fundido no outro",
+        "comprimento disponivel NAO e arbitrado: l_b,disp = h - cobrimento - 2 x bitola_de_flexao, sob a hipotese de duas camadas ortogonais DECLARADA pelo NOR-FUND-03 — e essa declaracao passou a ser exigida no contrato",
+        "materializacao NAO liberada: reconciliarPendenciaAncoragem devolve uma vista nova (structuredClone, sem mutacao) que so remove a pendencia com ancoragem demonstrada no artefato, e mantem autoriza_materializacao=false registrando o detalhamento da armadura da sapata como pendencia explicita",
+        "caso real do exemplo da suite (h=45 cm, 385 mm retos): phi10 CA50 cabe; phi16 NAO cabe e a frente declara ANCORAGEM_NAO_ATENDIDA em vez de esticar a altura",
+        "PAL:",
+        "utilizado: SIM — mcp pal.clink, cli_name=codex, role=codereviewer, 2 passadas",
+        "fidelidade normativa CONFIRMADA pelo revisor (eta1/eta2/eta3, piso 25phi, alfa=0,7, l_b,min, f_ct,m ate C50)",
+        "7 achados levantados, 7 ACEITOS e corrigidos, 0 rejeitados:",
+        "1. ALTA — reconciliacao fechava a pendencia com artefato forjado ({origem, estado, atende}); corrigido com proveniencia no rastro, schema estrito das 5 etapas e coerencia entre numeros de topo e etapas",
+        "2. ALTA (2a passada) — ainda passavam etapas vazias e ids duplicados; corrigido com conjunto exato, ocorrencia unica por id e conferencia do conteudo normativo (f_bd, f_ctd, alfa no dominio, l_b,min)",
+        "3. MEDIA — nucleo nao era fail-closed com gancho tracionado e cobrimento NAO informado (aplicava alfa=1,0); passa a bloquear, distinguindo dado ausente de cobrimento medido e insuficiente",
+        "4. MEDIA — \"numero positivo\" nao era dominio fisico (fck=1, gamma=0,01 produziam resultado); dominio passa a ser C20-C50 e gamma >= 1,0",
+        "5. MEDIA — o comprimento disponivel so e conservador sob a hipotese de duas camadas, que nao era validada; passa a ser exigida na rastreabilidade do NOR-FUND-03",
+        "6. BAIXA — spread raso deixava aliasing com a entrada; corrigido com structuredClone",
+        "7. MEDIA (2a passada) — null na rejeicao era ambiguo (\"sem pendencia\"); virou ARTEFATO_REJEITADO com pendencia preservada e nenhum numero do artefato recusado aproveitado"
+      ],
+      "suite_gaps": [
+        "NONE para o escopo do NOR-FUND-04",
+        "permanece FORA DE ESCOPO, por decisao declarada e nao por omissao: emendas por traspasse, ancoragem por dispositivo mecanico, barras em feixe, armadura transversal de ancoragem, concreto acima de C50 e o detalhamento da armadura da sapata",
+        "registro honesto de fronteira: o comprimento disponivel e conservador SOB a hipotese de duas camadas herdada do NOR-FUND-03. A frente passou a exigir essa hipotese no contrato, mas nao verifica a configuracao geometrica real da armadura — nao existe motor de detalhamento de sapata que a descreva. Se um futuro motor alterar o arranjo, esta deducao precisa ser revisitada"
+      ],
+      "next_for_claude": [
+        "aguardar revisao; nao mergear"
+      ],
+      "ci": [
+        "Testes SIMETTRIA #864 / run 33584666977 / SUCCESS / HEAD 140acf670eba82954cbbe4d293117ebc2c00e12f",
+        "teste dedicado: 24 grupos OK",
+        "npm run test:all: exit 0"
+      ],
+      "next_for_chatgpt": [
+        "revisar o PR #283; confirmar ou recusar o rebaixamento de USER_VISUAL_APPROVAL para NOT_REQUIRED; decidir se a remocao da pendencia de ancoragem deve ser integrada ao NOR-FUND-03 ou permanecer como reconciliacao externa"
+      ],
+      "pr_state": "open",
+      "pr_merged": false
+    },
     {
       "from": "CLAUDE",
       "front": "area11-nor-fund-04-ancoragem-arranques",
@@ -1330,20 +1438,20 @@
       "comment_id": 5503586902,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503586902",
       "updated_at": "2026-09-02T02:49:42Z",
+      "result": [
+        "frente reservada conforme NEXT_FOR_CLAUDE de 2026-09-02T02:16:38Z"
+      ],
       "suite_gaps": [
         "pendente"
       ],
       "next_for_claude": [
         "implementar e abrir PR sem mergear"
       ],
-      "result": [
-        "frente reservada conforme NEXT_FOR_CLAUDE de 2026-09-02T02:16:38Z"
+      "ci": [
+        "pendente"
       ],
       "next_for_chatgpt": [
         "NONE"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -1359,22 +1467,22 @@
       "comment_id": 5503336668,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503336668",
       "updated_at": "2026-09-02T02:16:38Z",
+      "result": [
+        "PR #277 está mergeado e NOR-FUND-03 produz altura estrutural parcial, mas mantém autoriza_materializacao=false porque a ancoragem dos arranques (22.6.4.1.2) permanece INDISPONIVEL.",
+        "Busca no repositório não encontrou motor existente de comprimento de ancoragem/aderência (f_bd/eta/ancoragem de arranques) reutilizável.",
+        "Catálogo de aço e GAMMA_S já existem em viga_armadura_nbr6118.js e podem ser reutilizados, sem duplicação."
+      ],
       "suite_gaps": [
         "falta núcleo normativo de aderência/ancoragem e verificação geométrica de acomodação dos arranques dentro da altura da sapata."
       ],
       "next_for_claude": [
         "implementar NOR-FUND-04 em branch/PR próprio: mapear os itens exatos da NBR 6118:2023 aplicáveis à ancoragem dos arranques em sapata; criar núcleo puro separado para aderência/comprimento de ancoragem e produtor fail-closed que consuma o resultado oficial do NOR-FUND-03. Entradas obrigatórias devem ser explícitas e rastreáveis (bitola e aço dos arranques, fck/gamma_c, condições de aderência, geometria disponível/altura, cobrimento e qualquer coeficiente normativo necessário). Não assumir boa aderência, gancho, diâmetro, força na barra ou comprimento disponível. Se faltar dado, bloquear. A saída deve distinguir comprimento básico, comprimento necessário, comprimento disponível e atendimento; só pode remover a pendência ancoragem_dos_arranques do NOR-FUND-03 se a verificação estiver demonstrada. Não liberar materialização enquanto detalhamento da armadura da sapata continuar pendente. Teste dedicado + test:all + PAL/Codex antes do push; registrar CLAIMED e READY_FOR_REVIEW na #231; não mergear."
       ],
-      "result": [
-        "PR #277 está mergeado e NOR-FUND-03 produz altura estrutural parcial, mas mantém autoriza_materializacao=false porque a ancoragem dos arranques (22.6.4.1.2) permanece INDISPONIVEL.",
-        "Busca no repositório não encontrou motor existente de comprimento de ancoragem/aderência (f_bd/eta/ancoragem de arranques) reutilizável.",
-        "Catálogo de aço e GAMMA_S já existem em viga_armadura_nbr6118.js e podem ser reutilizados, sem duplicação."
+      "ci": [
+        "main e68a97f46025c2a7cdcfbd46ab95d309f62c93ce / Testes SIMETTRIA #861 / SUCCESS"
       ],
       "next_for_chatgpt": [
         "revisar a próxima entrega da Área 11 e somente então decidir integração/materialização."
-      ],
-      "ci": [
-        "main e68a97f46025c2a7cdcfbd46ab95d309f62c93ce / Testes SIMETTRIA #861 / SUCCESS"
       ]
     },
     {
@@ -1390,22 +1498,22 @@
       "comment_id": 5503306182,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5503306182",
       "updated_at": "2026-09-02T02:12:54Z",
+      "result": [
+        "NOR-FUND-03 incorporado em main",
+        "B/L e h parcial agora permanecem vinculados à mesma ação estrutural rastreável",
+        "altura estrutural continua PARCIAL e materialização permanece bloqueada por ancoragem dos arranques e detalhamento final da armadura"
+      ],
       "suite_gaps": [
         "NONE para esta unidade"
       ],
       "next_for_claude": [
         "aguardar comando da próxima unidade Área 11"
       ],
-      "result": [
-        "NOR-FUND-03 incorporado em main",
-        "B/L e h parcial agora permanecem vinculados à mesma ação estrutural rastreável",
-        "altura estrutural continua PARCIAL e materialização permanece bloqueada por ancoragem dos arranques e detalhamento final da armadura"
+      "ci": [
+        "Testes SIMETTRIA #847 / SUCCESS no HEAD revisado"
       ],
       "next_for_chatgpt": [
         "próxima unidade: fechar ancoragem dos arranques / requisitos estruturais remanescentes para tornar altura final"
-      ],
-      "ci": [
-        "Testes SIMETTRIA #847 / SUCCESS no HEAD revisado"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1423,23 +1531,23 @@
       "comment_id": 5498032191,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5498032191",
       "updated_at": "2026-09-01T17:47:17Z",
+      "result": [
+        "painel passa a ler a issue #231 para mostrar estado corrente, resultados, CI, próximos passos e bloqueios por frente",
+        "comentários na #231 passam a disparar republicação do painel",
+        "snapshot público limitado aos campos necessários"
+      ],
       "suite_gaps": [
         "NONE"
       ],
       "next_for_claude": [
         "continuar #277; não tocar painel"
       ],
-      "result": [
-        "painel passa a ler a issue #231 para mostrar estado corrente, resultados, CI, próximos passos e bloqueios por frente",
-        "comentários na #231 passam a disparar republicação do painel",
-        "snapshot público limitado aos campos necessários"
-      ],
-      "next_for_chatgpt": [
-        "após aprovação visual do usuário, mergear #278 com o HEAD exato e verificar a publicação real"
-      ],
       "ci": [
         "Publish Status Dashboard #240 / SUCCESS / HEAD a3e9569",
         "Testes SIMETTRIA #853 / SUCCESS / HEAD a3e9569"
+      ],
+      "next_for_chatgpt": [
+        "após aprovação visual do usuário, mergear #278 com o HEAD exato e verificar a publicação real"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1457,20 +1565,20 @@
       "comment_id": 5497869032,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5497869032",
       "updated_at": "2026-09-01T17:33:11Z",
+      "result": [
+        "Transformar o painel em leitura do estado técnico corrente das frentes, mostrando concluído/em andamento/bloqueios/próximos passos a partir da issue canônica #231, sem depender de atualização manual do CHECKPOINT para atividade corrente."
+      ],
       "suite_gaps": [
         "pending"
       ],
       "next_for_claude": [
         "continuar exclusivamente o PR #277; não tocar painel."
       ],
-      "result": [
-        "Transformar o painel em leitura do estado técnico corrente das frentes, mostrando concluído/em andamento/bloqueios/próximos passos a partir da issue canônica #231, sem depender de atualização manual do CHECKPOINT para atividade corrente."
+      "ci": [
+        "pending"
       ],
       "next_for_chatgpt": [
         "implementar gerador do snapshot da #231, publicação automática e seção visual de timeline/estado técnico; abrir PR e parar para revisão visual do usuário."
-      ],
-      "ci": [
-        "pending"
       ]
     },
     {
@@ -1486,19 +1594,19 @@
       "comment_id": 5497867263,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5497867263",
       "updated_at": "2026-09-01T17:33:02Z",
+      "result": [],
       "suite_gaps": [
         "NONE"
       ],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
       "ci": [
         "run 33538146716 — validar-suite SUCCESS no HEAD cd01fd4.",
         "TESTE_DEDICADO:",
         "npm run test:area11-altura-sapata — 17 casos, OK.",
         "TEST_ALL:",
         "npm run test:all — 125 validadores, exit 0."
-      ]
+      ],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -1513,18 +1621,18 @@
       "comment_id": 5497018426,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5497018426",
       "updated_at": "2026-09-01T16:21:33Z",
+      "result": [
+        "NOR-FUND-02 mergeado. Produz B/L rastreáveis para sapata isolada centrada; exige MEd explícito e origem oficial NOR-FUND-01; altura permanece não demonstrada e materializacao_permitida=false até existir verificação estrutural da sapata."
+      ],
       "suite_gaps": [
         "NONE"
       ],
       "next_for_claude": [],
-      "result": [
-        "NOR-FUND-02 mergeado. Produz B/L rastreáveis para sapata isolada centrada; exige MEd explícito e origem oficial NOR-FUND-01; altura permanece não demonstrada e materializacao_permitida=false até existir verificação estrutural da sapata."
+      "ci": [
+        "SUCCESS (run 33530998392 / #843)"
       ],
       "next_for_chatgpt": [
         "mapear o menor contrato técnico para altura/verificação estrutural de sapata (punção/cisalhamento/flexão) sem tocar UI/persistência."
-      ],
-      "ci": [
-        "SUCCESS (run 33530998392 / #843)"
       ]
     },
     {
@@ -1540,6 +1648,9 @@
       "comment_id": 5496800278,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5496800278",
       "updated_at": "2026-09-01T16:05:06Z",
+      "result": [
+        "sem merge; revisão registrada também no PR #276."
+      ],
       "suite_gaps": [
         "MEd_kn_m omitido/null é convertido em 0; ausência de momento não demonstra carga centrada. Deve bloquear até MEd explícito e numérico demonstrar centramento.",
         "classificacao.origem aceita qualquer string não vazia; isso não prova proveniência NOR-FUND-01. Exigir produtor/origem autorizada de forma fechada, preferencialmente reutilizando a constante oficial do classificador."
@@ -1547,13 +1658,10 @@
       "next_for_claude": [
         "corrigir os dois gates fail-closed, adicionar testes discriminantes, executar suite completa e novo CI, retornar novo HEAD."
       ],
-      "result": [
-        "sem merge; revisão registrada também no PR #276."
-      ],
-      "next_for_chatgpt": [],
       "ci": [
         "SUCCESS (Testes SIMETTRIA #842 / run 33508690565)"
       ],
+      "next_for_chatgpt": [],
       "pr_state": "closed",
       "pr_merged": true
     },
@@ -1570,10 +1678,6 @@
       "comment_id": 5493636650,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493636650",
       "updated_at": "2026-09-01T12:03:33Z",
-      "suite_gaps": [
-        "NONE para esta unidade; permanecem fora de escopo B/L, h, excentricidade e geração de resistência geotécnica de projeto"
-      ],
-      "next_for_claude": [],
       "result": [
         "novo serviço calcula somente area_minima_m2 = NEd/resistencia_projeto_kpa para carga centrada quando ação é completa e resistência é explicitamente de PROJETO",
         "reação parcial, resistência preliminar, falta de proveniência e momento não nulo fecham o gate",
@@ -1581,11 +1685,15 @@
         "materializacao_permitida permanece false",
         "parâmetros largura_cm/comprimento_cm/altura_cm permanecem explicitamente bloqueados"
       ],
-      "next_for_chatgpt": [
-        "após revisão independente, mergear se aprovado; depois tratar o próximo produtor necessário sem inventar critério geométrico."
+      "suite_gaps": [
+        "NONE para esta unidade; permanecem fora de escopo B/L, h, excentricidade e geração de resistência geotécnica de projeto"
       ],
+      "next_for_claude": [],
       "ci": [
         "Testes SIMETTRIA #841 SUCCESS no HEAD exato"
+      ],
+      "next_for_chatgpt": [
+        "após revisão independente, mergear se aprovado; depois tratar o próximo produtor necessário sem inventar critério geométrico."
       ],
       "pr_state": "open",
       "pr_merged": false
@@ -1603,22 +1711,22 @@
       "comment_id": 5493623506,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493623506",
       "updated_at": "2026-09-01T12:02:32Z",
-      "suite_gaps": [],
-      "next_for_claude": [
-        "Área 11: criar frente específica de dimensionamento/pré-dimensionamento rastreável de sapata isolada, separada do classificador NOR-FUND-01, capaz de retornar B/L/h (ou bloqueios) e materializacao_permitida=true somente quando tecnicamente sustentado.",
-        "Entradas mínimas a resolver/validar: ação vertical completa e rastreável; resistência geotécnica de projeto rastreável; cota de apoio explícita; geometria do pilar/condições necessárias; demais verificações normativas aplicáveis.",
-        "Fail-closed: se qualquer insumo/verificação necessária faltar, não emitir geometria materializável."
-      ],
       "result": [
         "PR #274 fechou o gate ORQ: classificação válida não implica materialização autorizada.",
         "Inspeção do contrato DIM-FUND-01 confirma que o ORQ não pode gerar B/L/h por conta própria.",
         "O contrato normativo exige, antes de verificação geométrica: NEd completo com origem+combinação rastreáveis e resistencia_projeto_kpa com método+origem rastreáveis.",
         "O classificador NOR-FUND-01 atual deliberadamente NÃO dimensiona, NÃO emite B/L/h e trabalha com sigma_adm preliminar; materializacao_permitida permanece false."
       ],
+      "suite_gaps": [],
+      "next_for_claude": [
+        "Área 11: criar frente específica de dimensionamento/pré-dimensionamento rastreável de sapata isolada, separada do classificador NOR-FUND-01, capaz de retornar B/L/h (ou bloqueios) e materializacao_permitida=true somente quando tecnicamente sustentado.",
+        "Entradas mínimas a resolver/validar: ação vertical completa e rastreável; resistência geotécnica de projeto rastreável; cota de apoio explícita; geometria do pilar/condições necessárias; demais verificações normativas aplicáveis.",
+        "Fail-closed: se qualquer insumo/verificação necessária faltar, não emitir geometria materializável."
+      ],
+      "ci": [],
       "next_for_chatgpt": [
         "aguardar produtor normativo de dimensionamento/pré-dimensionamento geométrico; depois apenas integrar sua saída ao gate já existente."
-      ],
-      "ci": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -1633,43 +1741,11 @@
       "comment_id": 5493585896,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493585896",
       "updated_at": "2026-09-01T11:59:16Z",
+      "result": [],
       "suite_gaps": [],
       "next_for_claude": [],
-      "result": [],
-      "next_for_chatgpt": [],
-      "ci": []
-    },
-    {
-      "from": "CHATGPT",
-      "front": "orq-classificacao-normativa-gate",
-      "status": "MERGED",
-      "base": "d905ccbd56e99fe073bd2e6062296156b54a581d",
-      "head": "504becf83dddb58b82aa397483eb16079e6a144b",
-      "pr": "#274",
-      "visual_evidence": "NOT_REQUIRED — confirmado por revisao independente CODEX",
-      "user_visual_approval": "NOT_REQUIRED — confirmado por revisao independente CODEX MERGE_COMMIT: edcb3228d4e8091ea9c2c610ae909ce067f4e9b5",
-      "merge_policy": "concluida conforme gate independente.",
-      "comment_id": 5493518925,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5493518925",
-      "updated_at": "2026-09-01T11:53:19Z",
-      "suite_gaps": [
-        "NONE"
-      ],
-      "next_for_claude": [],
-      "result": [
-        "gate ORQ endurecido para exigir tipo/origem/criterio/dados_materializacao",
-        "classificacao pode permanecer valida com materializacao_permitida=false",
-        "confirmacao/materializacao fica fail-closed enquanto dados_materializacao.materializacao_permitida !== true",
-        "persistivel_como_fundacao=false e associacao automatica proibida"
-      ],
-      "next_for_chatgpt": [
-        "mapear a proxima unidade necessaria para sair de classificacao valida para dimensionamento geometrico rastreavel da fundacao, sem inventar B/L/h e sem tocar UI antes do contrato tecnico estar pronto."
-      ],
-      "ci": [
-        "#839 SUCCESS no HEAD exato"
-      ],
-      "pr_state": "closed",
-      "pr_merged": true
+      "ci": [],
+      "next_for_chatgpt": []
     }
   ]
 }
