@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-02T02:53:53Z",
+  "generated_at": "2026-09-02T03:04:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e3d926b3efe17f68507eadced6694e108e92ca7f",
-    "short_sha": "e3d926b",
+    "sha": "4658e62651351e2ccdaccacc090d3261a7569eab",
+    "short_sha": "4658e62",
     "author": "Joanez Gaspar",
-    "date": "2026-09-01T23:22:44-03:00",
-    "message": "Merge pull request #282 from JGaspar-Eng/feat/area11-nor-tec-01-5"
+    "date": "2026-09-02T00:03:47-03:00",
+    "message": "Merge pull request #284 from JGaspar-Eng/fix/area11-nor-tec-01-4-preserva-nspt"
   },
   "commits": [
+    {
+      "sha": "4658e62651351e2ccdaccacc090d3261a7569eab",
+      "short_sha": "4658e62",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T00:03:47-03:00",
+      "message": "Merge pull request #284 from JGaspar-Eng/fix/area11-nor-tec-01-4-preserva-nspt"
+    },
+    {
+      "sha": "bbe9c761436ca62b00b43db15741ec31cccfb903",
+      "short_sha": "bbe9c76",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-01T23:56:04-03:00",
+      "message": "fix(area11): preserva NSPT informado na derivacao"
+    },
     {
       "sha": "e3d926b3efe17f68507eadced6694e108e92ca7f",
       "short_sha": "e3d926b",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-01T20:03:25-03:00",
       "message": "fix(painel): mantém schema compatível"
-    },
-    {
-      "sha": "72703911eafe5c3c46e504e69077b7a9a0db6566",
-      "short_sha": "7270391",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T20:02:48-03:00",
-      "message": "test(painel): cobre estado real dos PRs"
-    },
-    {
-      "sha": "b0bac98d23c8e905da72c2b0c5b62d75b17e8df0",
-      "short_sha": "b0bac98",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T20:02:30-03:00",
-      "message": "fix(painel): usa estado real dos PRs na coordenação"
     }
   ],
   "development": {
@@ -1653,7 +1653,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33584919884",
-    "run_number": "254"
+    "run_id": "33585583928",
+    "run_number": "255"
   }
 }
