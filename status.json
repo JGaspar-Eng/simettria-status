@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-02T03:13:18Z",
+  "generated_at": "2026-09-02T11:34:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "45c59af0b8a1bad4f91e684cd47a98ef5763c8c9",
-    "short_sha": "45c59af",
+    "sha": "5bec8b18de37326d6f8554565285dc4b1cc6d973",
+    "short_sha": "5bec8b1",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T00:12:48-03:00",
-    "message": "Merge pull request #283 from JGaspar-Eng/feat/area11-nor-fund-04-ancoragem-arranques"
+    "date": "2026-09-02T08:33:48-03:00",
+    "message": "Merge pull request #285 from JGaspar-Eng/docs/dashboard-nor-tec-01-concluida"
   },
   "commits": [
+    {
+      "sha": "5bec8b18de37326d6f8554565285dc4b1cc6d973",
+      "short_sha": "5bec8b1",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T08:33:48-03:00",
+      "message": "Merge pull request #285 from JGaspar-Eng/docs/dashboard-nor-tec-01-concluida"
+    },
+    {
+      "sha": "fa0997fa4f6579cf2e33706a32842fdb290c4efe",
+      "short_sha": "fa0997f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T08:31:54-03:00",
+      "message": "test(status): atualiza expectativa da execução recente"
+    },
+    {
+      "sha": "fd7a2245b2cf3212fc7b1757c4a57554d0bd1e33",
+      "short_sha": "fd7a224",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T08:06:35-03:00",
+      "message": "docs(status): registra NOR-TEC-01 concluída"
+    },
     {
       "sha": "45c59af0b8a1bad4f91e684cd47a98ef5763c8c9",
       "short_sha": "45c59af",
@@ -58,27 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-01T23:19:24-03:00",
       "message": "feat(area11): sinaliza divergencia de NSPT"
-    },
-    {
-      "sha": "e68a97f46025c2a7cdcfbd46ab95d309f62c93ce",
-      "short_sha": "e68a97f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T23:12:46-03:00",
-      "message": "Merge pull request #277 from JGaspar-Eng/feat/area11-nucleo-estrutural-sapata"
-    },
-    {
-      "sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
-      "short_sha": "1c6fba4",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T23:06:27-03:00",
-      "message": "Merge pull request #281 from JGaspar-Eng/fix/dashboard-estado-real-v2"
-    },
-    {
-      "sha": "90244aa53bb8b09fdf8c69e6491211f36e947bf9",
-      "short_sha": "90244aa",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-01T23:00:48-03:00",
-      "message": "feat(area11): consolida contrato SPT e nivel d'agua"
     }
   ],
   "development": {
@@ -97,6 +97,13 @@
     "execution": {
       "recent": [
         {
+          "code": "NOR-TEC-01",
+          "title": "Contrato geotécnico SPT e nível d'água consolidado",
+          "state": "completed",
+          "area": 11,
+          "source": "docs/AREA_11_NORMAS_TECNICAS.md"
+        },
+        {
           "code": "U10B",
           "title": "Auditoria de cobertura das bordas da laje",
           "state": "completed",
@@ -109,13 +116,6 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
-        },
-        {
-          "code": "U10A",
-          "title": "Consumidores state-ready da Unidade 10A",
-          "state": "completed",
-          "area": 1,
-          "source": "tests/validar_state_ready_consumidores_unidade10a.mjs"
         }
       ],
       "active": [
@@ -128,6 +128,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "NOR-TEC-01",
+          "title": "Contrato geotécnico SPT e nível d'água consolidado",
+          "state": "completed",
+          "area": 11,
+          "source": "docs/AREA_11_NORMAS_TECNICAS.md"
+        },
         {
           "code": "U10B",
           "title": "Auditoria de cobertura das bordas da laje",
@@ -1657,7 +1664,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33586185961",
-    "run_number": "259"
+    "run_id": "33625249281",
+    "run_number": "260"
   }
 }
