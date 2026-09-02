@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-02T16:10:14.960358+00:00",
+  "generated_at": "2026-09-02T16:21:10.941962+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -8,8 +8,8 @@
   },
   "summary": {
     "fronts": 87,
-    "active": 6,
-    "closed": 71
+    "active": 5,
+    "closed": 72
   },
   "active": [
     {
@@ -30,17 +30,17 @@
         "branch criada: feat/area11-nor-fund-05-detalhamento-armadura",
         "objetivo: consumir a área necessária já demonstrada pelo NOR-FUND-03, produzir arranjo de barras rastreável por direção e reconciliar a pendência detalhamento_da_armadura_de_sapata sem reabrir NOR-FUND-01/02/03/04"
       ],
-      "suite_gaps": [
-        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
+      "ci": [
+        "ainda não executado"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "ainda não executado"
-      ],
       "next_for_chatgpt": [
         "implementar NOR-FUND-05 em branch própria, com fail-closed, proveniência e testes; abrir PR somente após teste dedicado + test:all"
+      ],
+      "suite_gaps": [
+        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
       ]
     },
     {
@@ -62,49 +62,17 @@
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
       ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
+      "ci": [
+        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
       ],
       "next_for_claude": [
         "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
       ],
-      "ci": [
-        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
-      ],
       "next_for_chatgpt": [
         "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
-      ]
-    },
-    {
-      "from": "CHATGPT",
-      "front": "ORQ-ESTRUT-01 / continuidade segura com resultados parciais",
-      "status": "READY_FOR_USER_VISUAL_REVIEW",
-      "base": null,
-      "head": null,
-      "pr": null,
-      "visual_evidence": "- REQUIRED",
-      "user_visual_approval": "- REQUIRED",
-      "merge_policy": "- MERGED; fechamento funcional pendente exclusivamente da validação visual",
-      "comment_id": 5509571286,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509571286",
-      "updated_at": "2026-09-02T12:32:17Z",
-      "result": [
-        "comportamento entregue e mergeado no PR #261",
-        "ORQ pode continuar até preparar Infraestrutura com resultados parciais rastreáveis sem promover reação incompleta a READY global",
-        "alteração afeta o fluxo de Calcular estrutura; o registro CLAIMED antigo está superado",
-        "resta apenas validação visual/operacional humana do fluxo entregue"
       ],
       "suite_gaps": [
-        "NONE para a unidade entregue"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
-      "ci": [
-        "PR #261 mergeado"
-      ],
-      "next_for_chatgpt": [
-        "apresentar roteiro de validação visual a Gaspar"
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ]
     },
     {
@@ -126,17 +94,17 @@
         "nenhuma Fundação é criada/classificada/persistida nesta unidade",
         "registro CLAIMED antigo está superado; resta somente validar visualmente o comportamento entregue"
       ],
-      "suite_gaps": [
-        "NONE para a unidade entregue"
+      "ci": [
+        "PR #263 mergeado"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "PR #263 mergeado"
-      ],
       "next_for_chatgpt": [
         "apresentar roteiro de validação visual a Gaspar"
+      ],
+      "suite_gaps": [
+        "NONE para a unidade entregue"
       ]
     },
     {
@@ -158,17 +126,17 @@
         "nenhuma Fundação é criada ou persistida por esta frente",
         "o registro CLAIMED antigo está superado; o único gate remanescente é visual"
       ],
-      "suite_gaps": [
-        "NONE para o comportamento automatizado entregue"
+      "ci": [
+        "PR #268 mergeado"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "PR #268 mergeado"
-      ],
       "next_for_chatgpt": [
         "apresentar roteiro de validação visual a Gaspar"
+      ],
+      "suite_gaps": [
+        "NONE para o comportamento automatizado entregue"
       ]
     },
     {
@@ -189,21 +157,55 @@
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
       ],
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
+      "ci": [
+        "pendente"
       ],
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ],
-      "ci": [
-        "pendente"
-      ],
       "next_for_chatgpt": [
         "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CHATGPT",
+      "front": "ORQ-ESTRUT-01 / continuidade segura com resultados parciais",
+      "status": "DONE",
+      "base": null,
+      "head": null,
+      "pr": null,
+      "visual_evidence": "APPROVED pelo usuário em validação manual no runtime local.",
+      "user_visual_approval": "APPROVED",
+      "merge_policy": "- já integrado anteriormente; sem merge pendente para esta frente.",
+      "comment_id": 5512749469,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5512749469",
+      "updated_at": "2026-09-02T16:20:33Z",
+      "result": [
+        "fluxo seguiu normalmente até a Infraestrutura;",
+        "o sistema permaneceu em estado \"Aguardando\", sem promover READY global indevido;",
+        "apoio exibido como \"Aguardando reação\" / WAITING;",
+        "reação axial exibida como \"Ainda não demonstrada\";",
+        "Fundação materializada = NÃO;",
+        "associação automática = Bloqueada;",
+        "Calculation Graph permaneceu operacional e não houve travamento;",
+        "o usuário declarou aprovação explícita e observou que eventuais ajustes futuros poderão ser tratados em novas frentes."
+      ],
+      "ci": [
+        "PR #261 já mergeado, conforme registro da frente."
+      ],
+      "next_for_claude": [],
+      "next_for_chatgpt": [
+        "encerrar esta frente no painel/coordenação; nenhuma correção adicional requerida nesta validação."
+      ],
+      "suite_gaps": [
+        "NONE para o comportamento validado."
+      ]
+    },
     {
       "from": "CHATGPT",
       "front": "NOR-FUND-05 — detalhamento da armadura da sapata",
@@ -228,12 +230,12 @@
         "manter fail-closed e não liberar materialização sem demonstração normativa rastreável;",
         "`npm run test:all` permanece gate oficial."
       ],
-      "suite_gaps": [],
-      "next_for_claude": [],
       "ci": [],
+      "next_for_claude": [],
       "next_for_chatgpt": [
         "manter coordenação das frentes paralelas e evitar conflito de escopo."
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -253,17 +255,17 @@
         "branch criada: feat/area11-nor-fund-05-detalhamento-armadura",
         "objetivo: consumir a área necessária já demonstrada pelo NOR-FUND-03, produzir arranjo de barras rastreável por direção e reconciliar a pendência detalhamento_da_armadura_de_sapata sem reabrir NOR-FUND-01/02/03/04"
       ],
-      "suite_gaps": [
-        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
+      "ci": [
+        "ainda não executado"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "ainda não executado"
-      ],
       "next_for_chatgpt": [
         "implementar NOR-FUND-05 em branch própria, com fail-closed, proveniência e testes; abrir PR somente após teste dedicado + test:all"
+      ],
+      "suite_gaps": [
+        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
       ]
     },
     {
@@ -285,17 +287,17 @@
         "frentes já implementadas mas ainda sem aprovação visual foram reclassificadas para READY_FOR_USER_VISUAL_REVIEW, em vez de permanecer CLAIMED",
         "frentes realmente atuais foram preservadas"
       ],
-      "suite_gaps": [
-        "NONE"
+      "ci": [
+        "não aplicável; auditoria de coordenação"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "não aplicável; auditoria de coordenação"
-      ],
       "next_for_chatgpt": [
         "usar somente o snapshot consolidado para escolher próximas validações/frentes"
+      ],
+      "suite_gaps": [
+        "NONE"
       ]
     },
     {
@@ -317,49 +319,17 @@
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
       ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
+      "ci": [
+        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
       ],
       "next_for_claude": [
         "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
       ],
-      "ci": [
-        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
-      ],
       "next_for_chatgpt": [
         "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
-      ]
-    },
-    {
-      "from": "CHATGPT",
-      "front": "ORQ-ESTRUT-01 / continuidade segura com resultados parciais",
-      "status": "READY_FOR_USER_VISUAL_REVIEW",
-      "base": null,
-      "head": null,
-      "pr": null,
-      "visual_evidence": "- REQUIRED",
-      "user_visual_approval": "- REQUIRED",
-      "merge_policy": "- MERGED; fechamento funcional pendente exclusivamente da validação visual",
-      "comment_id": 5509571286,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509571286",
-      "updated_at": "2026-09-02T12:32:17Z",
-      "result": [
-        "comportamento entregue e mergeado no PR #261",
-        "ORQ pode continuar até preparar Infraestrutura com resultados parciais rastreáveis sem promover reação incompleta a READY global",
-        "alteração afeta o fluxo de Calcular estrutura; o registro CLAIMED antigo está superado",
-        "resta apenas validação visual/operacional humana do fluxo entregue"
       ],
       "suite_gaps": [
-        "NONE para a unidade entregue"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
-      "ci": [
-        "PR #261 mergeado"
-      ],
-      "next_for_chatgpt": [
-        "apresentar roteiro de validação visual a Gaspar"
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ]
     },
     {
@@ -381,17 +351,17 @@
         "nenhuma Fundação é criada/classificada/persistida nesta unidade",
         "registro CLAIMED antigo está superado; resta somente validar visualmente o comportamento entregue"
       ],
-      "suite_gaps": [
-        "NONE para a unidade entregue"
+      "ci": [
+        "PR #263 mergeado"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "PR #263 mergeado"
-      ],
       "next_for_chatgpt": [
         "apresentar roteiro de validação visual a Gaspar"
+      ],
+      "suite_gaps": [
+        "NONE para a unidade entregue"
       ]
     },
     {
@@ -413,17 +383,17 @@
         "nenhuma Fundação é criada ou persistida por esta frente",
         "o registro CLAIMED antigo está superado; o único gate remanescente é visual"
       ],
-      "suite_gaps": [
-        "NONE para o comportamento automatizado entregue"
+      "ci": [
+        "PR #268 mergeado"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "PR #268 mergeado"
-      ],
       "next_for_chatgpt": [
         "apresentar roteiro de validação visual a Gaspar"
+      ],
+      "suite_gaps": [
+        "NONE para o comportamento automatizado entregue"
       ]
     },
     {
@@ -444,17 +414,17 @@
         "PR #276, já mergeado, calcula a área necessária NEd/Rd e avança de forma rastreável até B/L por regra formalizada de balanços iguais, mantendo materialização bloqueada",
         "portanto #275 não deve continuar como frente ativa/READY_FOR_REVIEW; fica histórico como solução intermediária superada"
       ],
-      "suite_gaps": [
-        "NONE para o fechamento histórico do #275; lacunas estruturais posteriores seguiram em #277/#283"
+      "ci": [
+        "PR #276 mergeado e validado na suíte oficial"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "PR #276 mergeado e validado na suíte oficial"
-      ],
       "next_for_chatgpt": [
         "NONE no #275"
+      ],
+      "suite_gaps": [
+        "NONE para o fechamento histórico do #275; lacunas estruturais posteriores seguiram em #277/#283"
       ],
       "pr_state": "open",
       "pr_merged": false
@@ -477,17 +447,17 @@
         "este registro é regra consolidada, não frente de trabalho ativa",
         "aprovação visual continua obrigatória quando USER_VISUAL_APPROVAL=REQUIRED; a mudança para DONE não revoga essa regra"
       ],
-      "suite_gaps": [
-        "NONE"
+      "ci": [
+        "não aplicável"
       ],
       "next_for_claude": [
         "aplicar a política vigente"
       ],
-      "ci": [
-        "não aplicável"
-      ],
       "next_for_chatgpt": [
         "aplicar a política vigente; nenhum trabalho nesta frente"
+      ],
+      "suite_gaps": [
+        "NONE"
       ]
     },
     {
@@ -507,16 +477,16 @@
         "watcher foi construído/testado e posteriormente incorporado ao fluxo com perfil autônomo isolado",
         "a configuração intermediária de despertador não é frente ativa atual"
       ],
-      "suite_gaps": [
-        "NONE"
+      "ci": [
+        "não aplicável; automação local histórica"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "não aplicável; automação local histórica"
-      ],
       "next_for_chatgpt": [
+        "NONE"
+      ],
+      "suite_gaps": [
         "NONE"
       ]
     },
@@ -537,16 +507,16 @@
         "configuração intermediária de allow/deny foi sucedida pelo perfil autônomo isolado validado posteriormente",
         "não representa trabalho ativo atual"
       ],
-      "suite_gaps": [
-        "NONE"
+      "ci": [
+        "não aplicável; configuração local histórica"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "não aplicável; configuração local histórica"
-      ],
       "next_for_chatgpt": [
+        "NONE"
+      ],
+      "suite_gaps": [
         "NONE"
       ]
     },
@@ -567,17 +537,17 @@
         "bloqueio intermediário foi superado pela solução de perfil autônomo isolado validada posteriormente",
         "o risco de permissões deixou de ser frente pendente e permanece apenas como regra de segurança histórica"
       ],
-      "suite_gaps": [
-        "NONE para esta frente histórica"
+      "ci": [
+        "não aplicável a este fechamento de governança"
       ],
       "next_for_claude": [
         "NONE"
       ],
-      "ci": [
-        "não aplicável a este fechamento de governança"
-      ],
       "next_for_chatgpt": [
         "NONE"
+      ],
+      "suite_gaps": [
+        "NONE para esta frente histórica"
       ]
     }
   ]
