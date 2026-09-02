@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-09-02T20:09:57Z",
+  "generated_at": "2026-09-02T20:10:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a5ccb3fba80ab75dbff512195d31506b2a82c20f",
-    "short_sha": "a5ccb3f",
+    "sha": "06025cc57f718ee6b574683f7276609626829c0a",
+    "short_sha": "06025cc",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T14:08:18-03:00",
-    "message": "Merge pull request #287 from JGaspar-Eng/feat/area11-nor-fund-05-detalhamento-armadura"
+    "date": "2026-09-02T17:09:46-03:00",
+    "message": "feat(area11): quita M3/M4 do detalhamento executivo da sapata"
   },
   "commits": [
+    {
+      "sha": "06025cc57f718ee6b574683f7276609626829c0a",
+      "short_sha": "06025cc",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T17:09:46-03:00",
+      "message": "feat(area11): quita M3/M4 do detalhamento executivo da sapata"
+    },
+    {
+      "sha": "014611a09289f0360fc001cacf5eedf0b97c76a0",
+      "short_sha": "014611a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T17:00:24-03:00",
+      "message": "test(area11): cobre camadas e geometria executiva da sapata"
+    },
+    {
+      "sha": "993e87782b315455ff4a30e298d6bfaff00cd7fb",
+      "short_sha": "993e877",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T16:59:07-03:00",
+      "message": "fix(area11): endurece geometria executiva das camadas da sapata"
+    },
+    {
+      "sha": "f0adfab8c24d95ce32e0dd5595af712970be9d40",
+      "short_sha": "f0adfab",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T16:34:12-03:00",
+      "message": "test(area11): cobre comprimento de corte e cabimento dos ganchos"
+    },
+    {
+      "sha": "c723e91d05e5bbb88c09536430a8a9e1e8344677",
+      "short_sha": "c723e91",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T16:33:02-03:00",
+      "message": "feat(area11): valida cabimento executivo dos ganchos da sapata"
+    },
+    {
+      "sha": "034056ba191fec121b9260967ba4f25b0f1cfa75",
+      "short_sha": "034056b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T16:31:52-03:00",
+      "message": "feat(area11): explicita geometria e corte das barras da sapata"
+    },
     {
       "sha": "a5ccb3fba80ab75dbff512195d31506b2a82c20f",
       "short_sha": "a5ccb3f",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-02T13:47:54-03:00",
       "message": "fix(area11): fecha integridade da cadeia no NOR-FUND-05"
-    },
-    {
-      "sha": "2bdbe6bd60d551a2c8f16759f4be264b64d46d15",
-      "short_sha": "2bdbe6b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T13:46:49-03:00",
-      "message": "fix(area11): distingue indisponibilidade e causas do detalhamento"
-    },
-    {
-      "sha": "cfa3ad619ba9a0d977d11c0b33de2cb7b0a45345",
-      "short_sha": "cfa3ad6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T13:20:59-03:00",
-      "message": "test(area11): cobre superfície da barra no NOR-FUND-05"
-    },
-    {
-      "sha": "b90ead68e522049bdaed12630dbfe3ee0f9b7d42",
-      "short_sha": "b90ead6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T13:20:01-03:00",
-      "message": "fix(area11): exige superfície da barra no detalhamento"
-    },
-    {
-      "sha": "1fad6ef63685ee2859348b52747cef79479384b1",
-      "short_sha": "1fad6ef",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T13:18:59-03:00",
-      "message": "fix(area11): trata superfície da barra nos ganchos da sapata"
-    },
-    {
-      "sha": "4b7b3cd6f4d3b6e08b545c9de4d9c8b632a71fc9",
-      "short_sha": "4b7b3cd",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T13:14:55-03:00",
-      "message": "test(area11): endurece casos limite do NOR-FUND-05"
-    },
-    {
-      "sha": "5c0aafce95cfb81f5c4fdb2e6dbd7bcaa521a03e",
-      "short_sha": "5c0aafc",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T13:13:42-03:00",
-      "message": "fix(area11): exige prova reconciliada do NOR-FUND-04"
     }
   ],
   "development": {
@@ -1675,7 +1675,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33677624344",
-    "run_number": "325"
+    "run_id": "33677633880",
+    "run_number": "326"
   }
 }
