@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-01T23:05:56Z",
+  "generated_at": "2026-09-02T02:06:46Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "beb36e2f31f76c1a351bf7611fde408516310e56",
-    "short_sha": "beb36e2",
+    "sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
+    "short_sha": "1c6fba4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-01T20:05:36-03:00",
-    "message": "Merge pull request #279 from JGaspar-Eng/fix/dashboard-pr-state-real"
+    "date": "2026-09-01T23:06:27-03:00",
+    "message": "Merge pull request #281 from JGaspar-Eng/fix/dashboard-estado-real-v2"
   },
   "commits": [
+    {
+      "sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
+      "short_sha": "1c6fba4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-01T23:06:27-03:00",
+      "message": "Merge pull request #281 from JGaspar-Eng/fix/dashboard-estado-real-v2"
+    },
+    {
+      "sha": "90244aa53bb8b09fdf8c69e6491211f36e947bf9",
+      "short_sha": "90244aa",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-01T23:00:48-03:00",
+      "message": "feat(area11): consolida contrato SPT e nivel d'agua"
+    },
     {
       "sha": "beb36e2f31f76c1a351bf7611fde408516310e56",
       "short_sha": "beb36e2",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-01T14:42:06-03:00",
       "message": "fix(painel): limita dados públicos do snapshot"
-    },
-    {
-      "sha": "c1506e220e50609d2002ab33e10d8b52df5e0790",
-      "short_sha": "c1506e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:39:06-03:00",
-      "message": "test(painel): valida coordenação fora da suíte oficial"
-    },
-    {
-      "sha": "ab8b8224f5b61f010174474e067ece86a296cbd2",
-      "short_sha": "ab8b822",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T14:38:46-03:00",
-      "message": "test(painel): remove validador da suíte oficial"
     }
   ],
   "development": {
@@ -974,48 +974,54 @@
         "number": 11,
         "code": "E11",
         "title": "Normas Técnicas",
-        "percent": 5,
-        "note": "~5% (apenas NBR 6484, parcial).",
+        "percent": 15,
+        "note": "~15%, indicador de contagem dos trabalhos cadastrados — **não** é medida de aderência normativa. O repositório comprova o escopo declarado por cada módulo, não a fração de cada norma efetivamente coberta.",
         "status": "measured",
         "active": false,
         "work": {
-          "done": 1,
-          "partial": 3,
+          "done": 2,
+          "partial": 5,
           "active_now": 0,
-          "planned": 4,
+          "planned": 3,
           "out_of_scope": 0,
-          "in_progress": 3,
-          "total": 8,
+          "in_progress": 5,
+          "total": 10,
           "items": [
             {
-              "text": "NBR 6484 — classificação de solos por N-SPT (consistência/compacidade) já implementada em `services/solo_spt_service.js` (único ponto, não duplicada)",
-              "raw_text": "NBR 6484 — classificação de solos por N-SPT (consistência/compacidade) já implementada em `services/solo_spt_service.js` (único ponto, não duplicada)",
+              "text": "NBR 6484 — classificação de solos por N-SPT (compacidade/consistência) conforme ABNT NBR 6484:2020, Anexo A, Tabela A.1, já implementada em `services/solo_spt_service.js` (único ponto, não duplicada), coberta por `validar_fluxo_estrutural.mjs` e pelo guardião estático `validar_base_simettria.py`; registro do ensaio (etapas de cravação, PH/PM, paralisação) permanece fora do escopo do software",
+              "raw_text": "NBR 6484 — classificação de solos por N-SPT (compacidade/consistência) conforme **ABNT NBR 6484:2020**, Anexo A, Tabela A.1, já implementada em `services/solo_spt_service.js` (único ponto, não duplicada), coberta por `validar_fluxo_estrutural.mjs` e pelo guardião estático `validar_base_simettria.py`; registro do ensaio (etapas de cravação, PH/PM, paralisação) permanece fora do escopo do software",
               "state": "partial",
               "marker": "🟡"
             },
             {
               "text": "NBR 6118 (concreto armado) — núcleo normativo de pilares parcialmente implementado; demais verificações e dimensionamentos continuam pendentes.",
-              "raw_text": "NBR 6118 (concreto armado) — referência citada, sem implementação de cálculo",
+              "raw_text": "NBR 6118 (concreto armado) — quinhões de carga laje→vigas (`normas/quinhoes_laje_nbr6118.js`) e núcleo normativo de pilares (contrato versionado, esbeltez e efeitos locais de 2ª ordem, edição 2023/Em1:2026); o contrato declara que o dimensionamento de pilares ainda não está implementado",
               "state": "partial",
-              "marker": "⬜"
+              "marker": "🟡"
             },
             {
-              "text": "NBR 6120 (cargas) — referência citada, sem implementação",
-              "raw_text": "NBR 6120 (cargas) — referência citada, sem implementação",
-              "state": "planned",
-              "marker": "⬜"
+              "text": "NBR 6120 (cargas) — implementada apenas quanto ao peso específico do concreto armado (`normas/peso_especifico_concreto_armado_nbr6120.js`, 25 kN/m³), consumido por `pilar_peso_proprio.js`; demais ações da norma sem módulo dedicado",
+              "raw_text": "NBR 6120 (cargas) — implementada apenas quanto ao peso específico do concreto armado (`normas/peso_especifico_concreto_armado_nbr6120.js`, 25 kN/m³), consumido por `pilar_peso_proprio.js`; demais ações da norma sem módulo dedicado",
+              "state": "partial",
+              "marker": "🟡"
             },
             {
-              "text": "NBR 6122 (fundações)",
-              "raw_text": "NBR 6122 (fundações) — não iniciado",
-              "state": "planned",
-              "marker": "⬜"
+              "text": "NBR 6122 (fundações) — contrato normativo de dados mínimos e verificação de pressão para carga centrada em fundação rasa (edição 2022); os módulos declaram que não dimensionam fundações",
+              "raw_text": "NBR 6122 (fundações) — contrato normativo de dados mínimos e verificação de pressão para carga centrada em fundação rasa (edição 2022); os módulos declaram que não dimensionam fundações",
+              "state": "partial",
+              "marker": "🟡"
+            },
+            {
+              "text": "NBR 6123 (forças devidas ao vento) — S2, ações W1 e coeficiente de arrasto pela Figura 4 (edição 2023), com o ábaco transcrito por `scripts/transcrever_abaco_ca.py`",
+              "raw_text": "NBR 6123 (forças devidas ao vento) — S2, ações W1 e coeficiente de arrasto pela Figura 4 (edição 2023), com o ábaco transcrito por `scripts/transcrever_abaco_ca.py`",
+              "state": "done",
+              "marker": "🟡"
             },
             {
               "text": "NBR 8681 (ações e segurança / combinações) — combinações ELU normais e com vento parcialmente implementadas; cobertura normativa completa ainda pendente.",
-              "raw_text": "NBR 8681 (ações e segurança / combinações) — não iniciado",
+              "raw_text": "NBR 8681 (ações e segurança / combinações) — combinações últimas normais para edificações tipo 2, efeito desfavorável e ação variável única (ADR-0014), mais a combinação ELU com vento para pilares; ações favoráveis, edificações tipo 1, múltiplas ações variáveis e combinações especiais/excepcionais permanecem fora do domínio implementado",
               "state": "partial",
-              "marker": "⬜"
+              "marker": "🟡"
             },
             {
               "text": "NBR 14859 (lajes pré-fabricadas)",
@@ -1030,8 +1036,14 @@
               "marker": "⬜"
             },
             {
-              "text": "NR-1, NR-6, NR-8, NR-12, NR-18, NR-33, NR-35 (segurança do trabalho)",
-              "raw_text": "NR-1, NR-6, NR-8, NR-12, NR-18, NR-33, NR-35 (segurança do trabalho) — não iniciado",
+              "text": "NBR 7197 (concreto protendido)",
+              "raw_text": "NBR 7197 (concreto protendido) — não iniciado",
+              "state": "planned",
+              "marker": "⬜"
+            },
+            {
+              "text": "NR-1, NR-6, NR-8, NR-12, NR-18, NR-33, NR-35 (segurança do trabalho) — nenhuma ocorrência localizada em `app/static/simettria/` (divergência com o card do dashboard registrada como pendência em [`AREA_11_NORMAS_TECNICAS.md`](AREA_11_NORMAS_TECNICAS.md#51-classificação-das-nrs-de-segurança-do-trabalho-divergência-não-resolvida))",
+              "raw_text": "NR-1, NR-6, NR-8, NR-12, NR-18, NR-33, NR-35 (segurança do trabalho) — nenhuma ocorrência localizada em `app/static/simettria/` (divergência com o card do dashboard registrada como pendência em [`AREA_11_NORMAS_TECNICAS.md`](AREA_11_NORMAS_TECNICAS.md#51-classificação-das-nrs-de-segurança-do-trabalho-divergência-não-resolvida))",
               "state": "done",
               "marker": "⬜"
             }
@@ -1637,7 +1649,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33569409036",
-    "run_number": "244"
+    "run_id": "33581977897",
+    "run_number": "246"
   }
 }
