@@ -111,6 +111,10 @@ assert "status_areas.js" in erro, erro
 raiz = Path(__file__).resolve().parents[1]
 publicado = (raiz / "index.html").read_text(encoding="utf-8")
 locais = validar_contrato(publicado)
-assert locais == ["status_areas.js", "status_sequence.js"], locais
+assert locais == [
+    "status_areas.js",
+    "status_sequence.js",
+    "status_coordination.js",
+], locais
 
 print("SIMETTRIA_STATUS_CONTRATO_ARTEFATO_OK")
