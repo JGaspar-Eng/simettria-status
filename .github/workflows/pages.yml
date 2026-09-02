@@ -33,6 +33,8 @@ jobs:
           cp status.json public/status.json
           cp status_areas.js public/status_areas.js
           cp status_sequence.js public/status_sequence.js
+          cp status_coordination.js public/status_coordination.js
+          cp coordination.json public/coordination.json
 
       - name: Regressão do contrato do artefato
         run: python3 tests/test_contrato_artefato.py
@@ -41,6 +43,7 @@ jobs:
         run: |
           node --check public/status_areas.js
           node --check public/status_sequence.js
+          node --check public/status_coordination.js
           python3 scripts/validar_contrato_artefato.py public
 
       - name: Upload Pages artifact
