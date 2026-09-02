@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-02T20:44:08Z",
+  "generated_at": "2026-09-02T20:58:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "238c19f8ecf161e88f31946554963e600d011ab6",
-    "short_sha": "238c19f",
+    "sha": "a2446faa9e89a83ba4a184f15e9a0192c86f92ea",
+    "short_sha": "a2446fa",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T17:43:47-03:00",
-    "message": "docs(status): mantém Área 11 como em execução"
+    "date": "2026-09-02T17:57:53-03:00",
+    "message": "fix(status): alinha checklist da Área 11 ao trabalho em revisão"
   },
   "commits": [
+    {
+      "sha": "a2446faa9e89a83ba4a184f15e9a0192c86f92ea",
+      "short_sha": "a2446fa",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T17:57:53-03:00",
+      "message": "fix(status): alinha checklist da Área 11 ao trabalho em revisão"
+    },
     {
       "sha": "238c19f8ecf161e88f31946554963e600d011ab6",
       "short_sha": "238c19f",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-02T17:00:24-03:00",
       "message": "test(area11): cobre camadas e geometria executiva da sapata"
-    },
-    {
-      "sha": "993e87782b315455ff4a30e298d6bfaff00cd7fb",
-      "short_sha": "993e877",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T16:59:07-03:00",
-      "message": "fix(area11): endurece geometria executiva das camadas da sapata"
     }
   ],
   "development": {
@@ -199,32 +199,32 @@
             {
               "code": "N1",
               "title": "Endurecer fast-path de idempotência e validar vista já completa",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "B4",
               "title": "Revisar nomenclatura, referências normativas e superfície de API",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "TEST-2B",
               "title": "Teste dedicado em que o mínimo de duas barras governa",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "TEST-SMAX20",
               "title": "Teste dedicado que congela s_max = 20 cm como critério de projeto",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "DIAG-MULTI",
               "title": "Preservar múltiplas causas simultâneas de bloqueio",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "INTEGRIDADE-MULTI",
               "title": "Documentar ou reforçar integridade contra adulteração coerente multi-campo",
-              "state": "planned"
+              "state": "in_progress"
             }
           ]
         },
@@ -1795,7 +1795,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33681018576",
-    "run_number": "332"
+    "run_id": "33682400019",
+    "run_number": "333"
   }
 }

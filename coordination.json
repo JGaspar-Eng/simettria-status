@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-02T20:44:21.015845+00:00",
+  "generated_at": "2026-09-02T20:58:23.757838+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -36,11 +36,11 @@
         "branch criada: feat/area11-nor-fund-05-detalhamento-armadura",
         "objetivo: consumir a área necessária já demonstrada pelo NOR-FUND-03, produzir arranjo de barras rastreável por direção e reconciliar a pendência detalhamento_da_armadura_de_sapata sem reabrir NOR-FUND-01/02/03/04"
       ],
-      "suite_gaps": [
-        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
-      ],
       "next_for_claude": [
         "NONE"
+      ],
+      "suite_gaps": [
+        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
       ]
     },
     {
@@ -68,11 +68,11 @@
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
       ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
-      ],
       "next_for_claude": [
         "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
+      ],
+      "suite_gaps": [
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ]
     },
     {
@@ -99,11 +99,11 @@
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
       ],
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
-      ],
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
       ]
     }
   ],
@@ -129,8 +129,8 @@
         "do not merge #289 until exact-head CI succeeds and fresh independent return review approves CURRENT_HEAD"
       ],
       "result": [],
-      "suite_gaps": [],
-      "next_for_claude": []
+      "next_for_claude": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -159,10 +159,10 @@
         "artefato forjado por adulteração do comprimento total é rejeitado",
         "teste dedicado agora tem 28 grupos"
       ],
+      "next_for_claude": [],
       "suite_gaps": [
         "N1, B4, teste dedicado de minimo_de_duas_barras, intenção de s_max=20 cm e limite de adulteração coerente multi-campo permanecem dívidas de hardening separadas"
       ],
-      "next_for_claude": [],
       "pr_state": "closed",
       "pr_merged": true
     },
@@ -182,8 +182,8 @@
       "next_for_chatgpt": [],
       "ci": [],
       "result": [],
-      "suite_gaps": [],
-      "next_for_claude": []
+      "next_for_claude": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -201,8 +201,8 @@
       "next_for_chatgpt": [],
       "ci": [],
       "result": [],
-      "suite_gaps": [],
-      "next_for_claude": []
+      "next_for_claude": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -232,15 +232,15 @@
         "B3 corrigido: reconciliação final legítima idempotente",
         "teste dedicado ampliado para 25 grupos"
       ],
+      "next_for_claude": [
+        "NONE"
+      ],
       "suite_gaps": [
         "M3: comprimento total de corte da barra ainda não produzido",
         "M4: geometria do gancho ainda não confrontada com a altura disponível",
         "B2: distribuicao_uniforme permanece hipótese/condição do modelo, não verificação independente",
         "B4: nomenclatura/referências auxiliares/re-export permanecem dívida baixa",
         "intenção de sobredimensionamento por s_max=20 cm ainda não tem teste dedicado"
-      ],
-      "next_for_claude": [
-        "NONE"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -270,10 +270,10 @@
         "a implementação correspondente está integrada no PR #263",
         "este comentário existe para substituir o registro antigo READY_FOR_USER_VISUAL_REVIEW com PR:NONE que ainda aparecia como ativo no painel"
       ],
-      "suite_gaps": [
+      "next_for_claude": [
         "NONE"
       ],
-      "next_for_claude": [
+      "suite_gaps": [
         "NONE"
       ]
     },
@@ -306,11 +306,11 @@
         "painel de apoio confirmou Fundação materializada = Não e Associação automática = Bloqueada",
         "evidência visual fornecida pelo usuário nesta sessão e aceita como suficiente para fechamento"
       ],
-      "suite_gaps": [
-        "NONE identificado para o comportamento visual validado"
-      ],
       "next_for_claude": [
         "NONE"
+      ],
+      "suite_gaps": [
+        "NONE identificado para o comportamento visual validado"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -343,10 +343,10 @@
         "Nenhuma edição, criação ou materialização automática foi disparada pelo painel.",
         "Usuário declarou explicitamente: \"tudo ok\"."
       ],
+      "next_for_claude": [],
       "suite_gaps": [
         "NONE identificado para o comportamento visual validado."
-      ],
-      "next_for_claude": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -377,10 +377,10 @@
         "Calculation Graph permaneceu operacional e não houve travamento;",
         "o usuário declarou aprovação explícita e observou que eventuais ajustes futuros poderão ser tratados em novas frentes."
       ],
+      "next_for_claude": [],
       "suite_gaps": [
         "NONE para o comportamento validado."
-      ],
-      "next_for_claude": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -410,8 +410,8 @@
         "manter fail-closed e não liberar materialização sem demonstração normativa rastreável;",
         "`npm run test:all` permanece gate oficial."
       ],
-      "suite_gaps": [],
-      "next_for_claude": []
+      "next_for_claude": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -437,11 +437,11 @@
         "branch criada: feat/area11-nor-fund-05-detalhamento-armadura",
         "objetivo: consumir a área necessária já demonstrada pelo NOR-FUND-03, produzir arranjo de barras rastreável por direção e reconciliar a pendência detalhamento_da_armadura_de_sapata sem reabrir NOR-FUND-01/02/03/04"
       ],
-      "suite_gaps": [
-        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
-      ],
       "next_for_claude": [
         "NONE"
+      ],
+      "suite_gaps": [
+        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
       ]
     },
     {
@@ -469,10 +469,10 @@
         "frentes já implementadas mas ainda sem aprovação visual foram reclassificadas para READY_FOR_USER_VISUAL_REVIEW, em vez de permanecer CLAIMED",
         "frentes realmente atuais foram preservadas"
       ],
-      "suite_gaps": [
+      "next_for_claude": [
         "NONE"
       ],
-      "next_for_claude": [
+      "suite_gaps": [
         "NONE"
       ]
     }

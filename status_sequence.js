@@ -28,7 +28,9 @@
     var items = checklist && checklist.items;
     if (!Array.isArray(items) || !items.length) return "";
     var done = items.filter(function (item) { return item.state === "completed"; }).length;
-    return '<div class="execution-checklist"><div class="execution-checklist-head"><div><div class="execution-card-code">' + esc(checklist.code || "CHECKLIST") + '</div><h3>' + esc(checklist.title || "Checklist") + '</h3></div><div class="execution-checklist-progress">' + done + '/' + items.length + ' concluídos</div></div><ul class="execution-check-items">' + items.map(checklistItem).join("") + '</ul></div>';
+    var active = items.filter(function (item) { return item.state === "in_progress"; }).length;
+    var progress = done + '/' + items.length + ' concluídos' + (active ? ' · ' + active + ' em execução' : '');
+    return '<div class="execution-checklist"><div class="execution-checklist-head"><div><div class="execution-card-code">' + esc(checklist.code || "CHECKLIST") + '</div><h3>' + esc(checklist.title || "Checklist") + '</h3></div><div class="execution-checklist-progress">' + progress + '</div></div><ul class="execution-check-items">' + items.map(checklistItem).join("") + '</ul></div>';
   }
   function checklistSection(checklists) {
     if (!Array.isArray(checklists) || !checklists.length) return "";
