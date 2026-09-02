@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-02T16:07:15Z",
+  "generated_at": "2026-09-02T16:09:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5bec8b18de37326d6f8554565285dc4b1cc6d973",
-    "short_sha": "5bec8b1",
+    "sha": "796a3fee1fdb67b82b4d8dfe03436a38f13ed499",
+    "short_sha": "796a3fe",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T08:33:48-03:00",
-    "message": "Merge pull request #285 from JGaspar-Eng/docs/dashboard-nor-tec-01-concluida"
+    "date": "2026-09-02T13:09:34-03:00",
+    "message": "Merge pull request #286 from JGaspar-Eng/ui/painel-historico-sem-duplicatas"
   },
   "commits": [
+    {
+      "sha": "796a3fee1fdb67b82b4d8dfe03436a38f13ed499",
+      "short_sha": "796a3fe",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T13:09:34-03:00",
+      "message": "Merge pull request #286 from JGaspar-Eng/ui/painel-historico-sem-duplicatas"
+    },
+    {
+      "sha": "0965a35b1d1f164237df829d35410cc9131aceef",
+      "short_sha": "0965a35",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T13:01:00-03:00",
+      "message": "fix(painel): separa frentes ativas do histórico"
+    },
     {
       "sha": "5bec8b18de37326d6f8554565285dc4b1cc6d973",
       "short_sha": "5bec8b1",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-01T23:48:58-03:00",
       "message": "feat(area11): verifica ancoragem dos arranques pilar-sapata (NOR-FUND-04)"
-    },
-    {
-      "sha": "e3d926b3efe17f68507eadced6694e108e92ca7f",
-      "short_sha": "e3d926b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T23:22:44-03:00",
-      "message": "Merge pull request #282 from JGaspar-Eng/feat/area11-nor-tec-01-5"
-    },
-    {
-      "sha": "c8456fd41a430cfca8adf838e0aac99828c252fc",
-      "short_sha": "c8456fd",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-01T23:19:24-03:00",
-      "message": "feat(area11): sinaliza divergencia de NSPT"
     }
   ],
   "development": {
@@ -1664,7 +1664,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33652892713",
-    "run_number": "305"
+    "run_id": "33653168567",
+    "run_number": "306"
   }
 }

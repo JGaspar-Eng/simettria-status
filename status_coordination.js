@@ -45,23 +45,27 @@
     return "active";
   }
 
-  function frontCard(front, compacto) {
-    const card = el("article", "live-front-card " + statusClasse(front.status));
+  function frontCard(front, compacto, numero) {
+    const historico = Boolean(compacto);
+    const card = el("article", "live-front-card " + statusClasse(front.status) + (historico ? " historical" : ""));
     const head = el("div", "live-front-head");
     const identidade = el("div", "live-front-identity");
-    identidade.appendChild(el("div", "live-front-name", front.front));
+    identidade.appendChild(el("div", "live-front-name", `${numero}. ${front.front}`));
     const meta = [];
     if (front.from) meta.push(front.from);
     if (front.pr && front.pr !== "NONE") meta.push(front.pr);
     if (front.head) meta.push(String(front.head).slice(0, 7));
+    if (historico) meta.push("registro histórico");
     identidade.appendChild(el("div", "live-front-meta", meta.join(" · ") || "—"));
     head.appendChild(identidade);
-    const pill = el("span", "live-status-pill", STATUS_LABEL[front.status] || front.status);
-    pill.setAttribute("data-status", front.status || "");
+
+    const pillText = historico ? "Histórico" : (STATUS_LABEL[front.status] || front.status);
+    const pill = el("span", "live-status-pill", pillText);
+    pill.setAttribute("data-status", historico ? "HISTORICAL" : (front.status || ""));
     head.appendChild(pill);
     card.appendChild(head);
 
-    if (compacto) {
+    if (historico) {
       const resumo = (front.result || [])[0] || "Sem resumo técnico publicado.";
       card.appendChild(el("p", "live-summary", resumo));
       return card;
@@ -116,9 +120,9 @@
       .live-details-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.live-detail{padding:12px 14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:9px}.live-detail.warning{background:var(--danger-soft)}.live-detail.next{background:var(--accent-soft)}
       .live-detail-title{font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--muted);margin-bottom:7px}.live-list{margin:0;padding-left:17px;font-size:12.5px;line-height:1.5;color:var(--text)}.live-list li+li{margin-top:4px}.live-empty{font-size:12px;color:var(--faint)}
       .live-governance{display:flex;gap:12px;flex-wrap:wrap;margin-top:13px;color:var(--faint);font-size:10.5px;font-family:var(--mono)}.live-source-link{color:var(--blue);text-decoration:none}.live-source-link:hover{text-decoration:underline}
-      .live-recent{margin-top:28px}.live-recent-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.live-recent-title{font-size:13px;font-weight:800}.live-recent-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.live-recent-grid .live-front-card{padding:14px 15px}.live-summary{margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
-      .live-error{padding:16px;border:1px solid #e8c6c6;background:var(--danger-soft);color:var(--danger);border-radius:10px;font-size:13px}
-      @media(max-width:760px){.live-head{align-items:flex-start;flex-direction:column}.live-details-grid,.live-recent-grid{grid-template-columns:1fr}.live-front-head{flex-direction:column}.live-status-pill{align-self:flex-start}}
+      .live-recent{margin-top:30px;padding-top:20px;border-top:1px dashed var(--border)}.live-recent-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin-bottom:12px}.live-recent-title{font-size:14px;font-weight:850}.live-recent-note{max-width:560px;color:var(--faint);font-size:11.5px;line-height:1.45;text-align:right}.live-recent-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.live-recent-grid .live-front-card{padding:14px 15px}.live-front-card.historical{border-left-color:#aab4be;background:#f8fafb;box-shadow:none;opacity:.9}.live-front-card.historical .live-status-pill{background:#edf1f4;color:#66727e}.live-summary{margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+      .live-error{padding:16px;border:1px solid #e8c6c6;background:var(--danger-soft);color:var(--danger);border-radius:10px;font-size:13px}.live-history-empty{padding:13px 15px;border:1px dashed var(--border);border-radius:9px;color:var(--faint);font-size:12px;background:#f8fafb}
+      @media(max-width:760px){.live-head{align-items:flex-start;flex-direction:column}.live-details-grid,.live-recent-grid{grid-template-columns:1fr}.live-front-head,.live-recent-head{flex-direction:column;align-items:flex-start}.live-status-pill{align-self:flex-start}.live-recent-note{text-align:left}}
     `;
     document.head.appendChild(style);
 
@@ -134,9 +138,11 @@
     head.appendChild(el("p", "", "Esta seção lê o último estado canônico de cada frente. Ela mostra trabalho corrente, bloqueios e próximos passos sem depender do checkpoint ficar manualmente em dia."));
     wrap.appendChild(head);
     wrap.appendChild(el("div", "live-active-grid"));
+
     const recent = el("div", "live-recent");
     const recentHead = el("div", "live-recent-head");
-    recentHead.appendChild(el("div", "live-recent-title", "Timeline recente das frentes"));
+    recentHead.appendChild(el("div", "live-recent-title", "Histórico recente — frentes não ativas"));
+    recentHead.appendChild(el("div", "live-recent-note", "As frentes ativas já aparecem acima. Esta seção registra movimentações recentes e não representa novas pendências."));
     recent.appendChild(recentHead);
     recent.appendChild(el("div", "live-recent-grid"));
     wrap.appendChild(recent);
@@ -168,11 +174,19 @@
     if (!active.length) {
       ativos.appendChild(el("div", "live-error", "Nenhuma frente ativa foi encontrada no último snapshot da coordenação."));
     } else {
-      active.forEach((front) => ativos.appendChild(frontCard(front, false)));
+      active.forEach((front, index) => ativos.appendChild(frontCard(front, false, index + 1)));
     }
 
-    const recent = Array.isArray(data.recent) ? data.recent : [];
-    recent.slice(0, 8).forEach((front) => recentes.appendChild(frontCard(front, true)));
+    const activeNames = new Set(active.map((front) => String(front.front || "")));
+    const recent = (Array.isArray(data.recent) ? data.recent : [])
+      .filter((front) => !activeNames.has(String(front.front || "")))
+      .slice(0, 8);
+
+    if (!recent.length) {
+      recentes.appendChild(el("div", "live-history-empty", "Nenhum registro histórico recente fora das frentes ativas."));
+    } else {
+      recent.forEach((front, index) => recentes.appendChild(frontCard(front, true, active.length + index + 1)));
+    }
   }
 
   function formatarData(iso) {
