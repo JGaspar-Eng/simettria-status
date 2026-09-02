@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-02T12:32:29.628214+00:00",
+  "generated_at": "2026-09-02T12:32:34.564357+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -12,6 +12,38 @@
     "closed": 70
   },
   "active": [
+    {
+      "from": "CHATGPT",
+      "front": "ORQ-ESTRUT-01 / continuidade segura com resultados parciais",
+      "status": "READY_FOR_USER_VISUAL_REVIEW",
+      "base": null,
+      "head": null,
+      "pr": null,
+      "visual_evidence": "- REQUIRED",
+      "user_visual_approval": "- REQUIRED",
+      "merge_policy": "- MERGED; fechamento funcional pendente exclusivamente da validação visual",
+      "comment_id": 5509571286,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509571286",
+      "updated_at": "2026-09-02T12:32:17Z",
+      "suite_gaps": [
+        "NONE para a unidade entregue"
+      ],
+      "next_for_claude": [
+        "NONE"
+      ],
+      "result": [
+        "comportamento entregue e mergeado no PR #261",
+        "ORQ pode continuar até preparar Infraestrutura com resultados parciais rastreáveis sem promover reação incompleta a READY global",
+        "alteração afeta o fluxo de Calcular estrutura; o registro CLAIMED antigo está superado",
+        "resta apenas validação visual/operacional humana do fluxo entregue"
+      ],
+      "next_for_chatgpt": [
+        "apresentar roteiro de validação visual a Gaspar"
+      ],
+      "ci": [
+        "PR #261 mergeado"
+      ]
+    },
     {
       "from": "CHATGPT",
       "front": "ORQ-ESTRUT-01 / overlay visual de apoios na Infraestrutura",
@@ -28,9 +60,6 @@
       "suite_gaps": [
         "NONE para a unidade entregue"
       ],
-      "next_for_chatgpt": [
-        "apresentar roteiro de validação visual a Gaspar"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -39,6 +68,9 @@
         "resultado real do ORQ é projetado na Infraestrutura/2D com marcadores SVG abstratos; apoio parcial permanece AGUARDANDO_REACAO",
         "nenhuma Fundação é criada/classificada/persistida nesta unidade",
         "registro CLAIMED antigo está superado; resta somente validar visualmente o comportamento entregue"
+      ],
+      "next_for_chatgpt": [
+        "apresentar roteiro de validação visual a Gaspar"
       ],
       "ci": [
         "PR #263 mergeado"
@@ -60,9 +92,6 @@
       "suite_gaps": [
         "NONE para o comportamento automatizado entregue"
       ],
-      "next_for_chatgpt": [
-        "apresentar roteiro de validação visual a Gaspar"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -71,6 +100,9 @@
         "marcador ORQ tornou-se selecionável na Infraestrutura/2D e abre painel lateral próprio somente-leitura",
         "nenhuma Fundação é criada ou persistida por esta frente",
         "o registro CLAIMED antigo está superado; o único gate remanescente é visual"
+      ],
+      "next_for_chatgpt": [
+        "apresentar roteiro de validação visual a Gaspar"
       ],
       "ci": [
         "PR #268 mergeado"
@@ -92,9 +124,6 @@
       "suite_gaps": [
         "falta produtor/classificador rastreável no runtime que forneça tipologia + `dados_materializacao` explícitos ao snapshot ORQ"
       ],
-      "next_for_chatgpt": [
-        "após existir classificador/runtime rastreável capaz de fornecer tipologia e geometria explícita, ligar a ação de confirmação ao apoio selecionado, persistir somente o rascunho aprovado e parar em READY_FOR_USER_VISUAL_REVIEW antes do merge"
-      ],
       "next_for_claude": [
         "na Área 11, não alterar UI; ao fechar o contrato normativo/classificador aplicável, registrar na #231 exatamente qual serviço produz `classificacao.tipo`, `classificacao.origem`, `classificacao.criterio` e `classificacao.dados_materializacao` consumíveis pelo ORQ"
       ],
@@ -106,28 +135,12 @@
         "portanto uma ação visual “Criar Fundação” funcional agora teria apenas duas alternativas incorretas: permanecer sempre desabilitada ou inventar classificação/geometria. Nenhuma delas fecha a materialização real",
         "não foi alterado código, não foi aberto PR e não foi criado pseudo-progresso visual"
       ],
+      "next_for_chatgpt": [
+        "após existir classificador/runtime rastreável capaz de fornecer tipologia e geometria explícita, ligar a ação de confirmação ao apoio selecionado, persistir somente o rascunho aprovado e parar em READY_FOR_USER_VISUAL_REVIEW antes do merge"
+      ],
       "ci": [
         "não aplicável; nenhum commit novo"
       ]
-    },
-    {
-      "from": "CHATGPT",
-      "front": "ORQ-ESTRUT-01 / continuidade segura com resultados parciais",
-      "status": "CLAIMED",
-      "base": "0e982889d564d217eb2ed1071fc26447a7a94cf1",
-      "head": null,
-      "pr": null,
-      "visual_evidence": "REQUIRED — comportamento do comando Calcular estrutura muda.",
-      "user_visual_approval": "REQUIRED antes do merge.",
-      "merge_policy": "BLOCKED até CI verde + validação visual explícita.",
-      "comment_id": 5478145136,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5478145136",
-      "updated_at": "2026-08-31T12:11:51Z",
-      "suite_gaps": [],
-      "next_for_chatgpt": [],
-      "next_for_claude": [],
-      "result": [],
-      "ci": []
     },
     {
       "from": "CHATGPT",
@@ -145,9 +158,6 @@
       "suite_gaps": [
         "a definir após inspeção do wiring atual"
       ],
-      "next_for_chatgpt": [
-        "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
-      ],
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ],
@@ -156,12 +166,47 @@
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
       ],
+      "next_for_chatgpt": [
+        "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
+      ],
       "ci": [
         "pendente"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CHATGPT",
+      "front": "ORQ-ESTRUT-01 / continuidade segura com resultados parciais",
+      "status": "READY_FOR_USER_VISUAL_REVIEW",
+      "base": null,
+      "head": null,
+      "pr": null,
+      "visual_evidence": "- REQUIRED",
+      "user_visual_approval": "- REQUIRED",
+      "merge_policy": "- MERGED; fechamento funcional pendente exclusivamente da validação visual",
+      "comment_id": 5509571286,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509571286",
+      "updated_at": "2026-09-02T12:32:17Z",
+      "suite_gaps": [
+        "NONE para a unidade entregue"
+      ],
+      "next_for_claude": [
+        "NONE"
+      ],
+      "result": [
+        "comportamento entregue e mergeado no PR #261",
+        "ORQ pode continuar até preparar Infraestrutura com resultados parciais rastreáveis sem promover reação incompleta a READY global",
+        "alteração afeta o fluxo de Calcular estrutura; o registro CLAIMED antigo está superado",
+        "resta apenas validação visual/operacional humana do fluxo entregue"
+      ],
+      "next_for_chatgpt": [
+        "apresentar roteiro de validação visual a Gaspar"
+      ],
+      "ci": [
+        "PR #261 mergeado"
+      ]
+    },
     {
       "from": "CHATGPT",
       "front": "ORQ-ESTRUT-01 / overlay visual de apoios na Infraestrutura",
@@ -178,9 +223,6 @@
       "suite_gaps": [
         "NONE para a unidade entregue"
       ],
-      "next_for_chatgpt": [
-        "apresentar roteiro de validação visual a Gaspar"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -189,6 +231,9 @@
         "resultado real do ORQ é projetado na Infraestrutura/2D com marcadores SVG abstratos; apoio parcial permanece AGUARDANDO_REACAO",
         "nenhuma Fundação é criada/classificada/persistida nesta unidade",
         "registro CLAIMED antigo está superado; resta somente validar visualmente o comportamento entregue"
+      ],
+      "next_for_chatgpt": [
+        "apresentar roteiro de validação visual a Gaspar"
       ],
       "ci": [
         "PR #263 mergeado"
@@ -210,9 +255,6 @@
       "suite_gaps": [
         "NONE para o comportamento automatizado entregue"
       ],
-      "next_for_chatgpt": [
-        "apresentar roteiro de validação visual a Gaspar"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -221,6 +263,9 @@
         "marcador ORQ tornou-se selecionável na Infraestrutura/2D e abre painel lateral próprio somente-leitura",
         "nenhuma Fundação é criada ou persistida por esta frente",
         "o registro CLAIMED antigo está superado; o único gate remanescente é visual"
+      ],
+      "next_for_chatgpt": [
+        "apresentar roteiro de validação visual a Gaspar"
       ],
       "ci": [
         "PR #268 mergeado"
@@ -242,9 +287,6 @@
       "suite_gaps": [
         "NONE para o fechamento histórico do #275; lacunas estruturais posteriores seguiram em #277/#283"
       ],
-      "next_for_chatgpt": [
-        "NONE no #275"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -252,6 +294,9 @@
         "PR #275 permaneceu aberto, mas sua unidade foi superada pela implementação normativa posterior da Área 11",
         "PR #276, já mergeado, calcula a área necessária NEd/Rd e avança de forma rastreável até B/L por regra formalizada de balanços iguais, mantendo materialização bloqueada",
         "portanto #275 não deve continuar como frente ativa/READY_FOR_REVIEW; fica histórico como solução intermediária superada"
+      ],
+      "next_for_chatgpt": [
+        "NONE no #275"
       ],
       "ci": [
         "PR #276 mergeado e validado na suíte oficial"
@@ -275,9 +320,6 @@
       "suite_gaps": [
         "NONE"
       ],
-      "next_for_chatgpt": [
-        "aplicar a política vigente; nenhum trabalho nesta frente"
-      ],
       "next_for_claude": [
         "aplicar a política vigente"
       ],
@@ -285,6 +327,9 @@
         "emenda de governança foi aprovada e continua vigente como política da issue #231",
         "este registro é regra consolidada, não frente de trabalho ativa",
         "aprovação visual continua obrigatória quando USER_VISUAL_APPROVAL=REQUIRED; a mudança para DONE não revoga essa regra"
+      ],
+      "next_for_chatgpt": [
+        "aplicar a política vigente; nenhum trabalho nesta frente"
       ],
       "ci": [
         "não aplicável"
@@ -306,15 +351,15 @@
       "suite_gaps": [
         "NONE"
       ],
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "next_for_claude": [
         "NONE"
       ],
       "result": [
         "watcher foi construído/testado e posteriormente incorporado ao fluxo com perfil autônomo isolado",
         "a configuração intermediária de despertador não é frente ativa atual"
+      ],
+      "next_for_chatgpt": [
+        "NONE"
       ],
       "ci": [
         "não aplicável; automação local histórica"
@@ -336,15 +381,15 @@
       "suite_gaps": [
         "NONE"
       ],
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "next_for_claude": [
         "NONE"
       ],
       "result": [
         "configuração intermediária de allow/deny foi sucedida pelo perfil autônomo isolado validado posteriormente",
         "não representa trabalho ativo atual"
+      ],
+      "next_for_chatgpt": [
+        "NONE"
       ],
       "ci": [
         "não aplicável; configuração local histórica"
@@ -366,15 +411,15 @@
       "suite_gaps": [
         "NONE para esta frente histórica"
       ],
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "next_for_claude": [
         "NONE"
       ],
       "result": [
         "bloqueio intermediário foi superado pela solução de perfil autônomo isolado validada posteriormente",
         "o risco de permissões deixou de ser frente pendente e permanece apenas como regra de segurança histórica"
+      ],
+      "next_for_chatgpt": [
+        "NONE"
       ],
       "ci": [
         "não aplicável a este fechamento de governança"
@@ -396,15 +441,15 @@
       "suite_gaps": [
         "NONE"
       ],
-      "next_for_chatgpt": [
-        "aplicar a regra quando o token for usado; nenhum trabalho nesta frente"
-      ],
       "next_for_claude": [
         "aplicar a regra vigente"
       ],
       "result": [
         "convenção do token \"continuar simettria\" foi adotada como política da #231 e espelhada no CLAUDE.md pelo PR #232, já mergeado",
         "esta frente é regra consolidada, não trabalho ativo"
+      ],
+      "next_for_chatgpt": [
+        "aplicar a regra quando o token for usado; nenhum trabalho nesta frente"
       ],
       "ci": [
         "PR #232 mergeado"
@@ -426,9 +471,6 @@
       "suite_gaps": [
         "NONE"
       ],
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -436,6 +478,9 @@
         "isolamento de permissões foi resolvido e validado empiricamente",
         "modo -Claim/-Done e perfil próprio do watcher foram incorporados; PR #232 está mergeado",
         "esta frente não representa trabalho pendente"
+      ],
+      "next_for_chatgpt": [
+        "NONE"
       ],
       "ci": [
         "npm run test:base registrado como SIMETTRIA_BASE_OK no histórico; PR #232 mergeado"
@@ -457,9 +502,6 @@
       "suite_gaps": [
         "NONE para esta frente histórica"
       ],
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -467,6 +509,9 @@
         "allowlist de autor e convenção de confiança foram incorporadas ao fluxo de coordenação",
         "PR #232 está mergeado e o estado posterior de isolamento/permissões supersede esta revisão intermediária",
         "não é trabalho ativo"
+      ],
+      "next_for_chatgpt": [
+        "NONE"
       ],
       "ci": [
         "PR #232 mergeado; teste base documentado no histórico"
@@ -488,9 +533,6 @@
       "suite_gaps": [
         "NONE para a frente agregadora histórica"
       ],
-      "next_for_chatgpt": [
-        "NONE"
-      ],
       "next_for_claude": [
         "NONE"
       ],
@@ -499,38 +541,11 @@
         "#219 teve sua causa corrigida no deploy do painel; #222 originou a cadeia de correção de pseudo-fundação/pavimentos físicos, já incorporada por PRs posteriores",
         "os bloqueios desta mensagem foram substituídos por frentes corretivas próprias e não devem permanecer como bloqueio ativo"
       ],
-      "ci": [
-        "não aplicável a este fechamento de governança"
-      ]
-    },
-    {
-      "from": "CHATGPT",
-      "front": "fundacao-baldrame-semantica (apoio à frente CHATGPT — NÃO reivindicada)",
-      "status": "DONE",
-      "base": null,
-      "head": null,
-      "pr": null,
-      "visual_evidence": "- NOT_REQUIRED",
-      "user_visual_approval": "- NOT_REQUIRED",
-      "merge_policy": "- DONE",
-      "comment_id": 5509538013,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509538013",
-      "updated_at": "2026-09-02T12:29:33Z",
-      "suite_gaps": [
-        "NONE"
-      ],
       "next_for_chatgpt": [
         "NONE"
       ],
-      "next_for_claude": [
-        "NONE"
-      ],
-      "result": [
-        "mensagem de apoio/revisão já consumida pela frente principal e pelos PRs posteriores",
-        "não corresponde a frente executável nem a trabalho pendente"
-      ],
       "ci": [
-        "não aplicável"
+        "não aplicável a este fechamento de governança"
       ]
     }
   ]
