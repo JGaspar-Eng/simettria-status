@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-02T03:13:00Z",
+  "generated_at": "2026-09-02T03:13:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4658e62651351e2ccdaccacc090d3261a7569eab",
-    "short_sha": "4658e62",
+    "sha": "45c59af0b8a1bad4f91e684cd47a98ef5763c8c9",
+    "short_sha": "45c59af",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T00:03:47-03:00",
-    "message": "Merge pull request #284 from JGaspar-Eng/fix/area11-nor-tec-01-4-preserva-nspt"
+    "date": "2026-09-02T00:12:48-03:00",
+    "message": "Merge pull request #283 from JGaspar-Eng/feat/area11-nor-fund-04-ancoragem-arranques"
   },
   "commits": [
+    {
+      "sha": "45c59af0b8a1bad4f91e684cd47a98ef5763c8c9",
+      "short_sha": "45c59af",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T00:12:48-03:00",
+      "message": "Merge pull request #283 from JGaspar-Eng/feat/area11-nor-fund-04-ancoragem-arranques"
+    },
+    {
+      "sha": "90963c51bbd17298b5de99f15b2b6a6b49df77f9",
+      "short_sha": "90963c5",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-02T00:09:13-03:00",
+      "message": "fix(area11): rejeicao de artefato de ancoragem sempre devolve vista segura"
+    },
     {
       "sha": "4658e62651351e2ccdaccacc090d3261a7569eab",
       "short_sha": "4658e62",
@@ -23,6 +37,13 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-01T23:56:04-03:00",
       "message": "fix(area11): preserva NSPT informado na derivacao"
+    },
+    {
+      "sha": "140acf670eba82954cbbe4d293117ebc2c00e12f",
+      "short_sha": "140acf6",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-01T23:48:58-03:00",
+      "message": "feat(area11): verifica ancoragem dos arranques pilar-sapata (NOR-FUND-04)"
     },
     {
       "sha": "e3d926b3efe17f68507eadced6694e108e92ca7f",
@@ -58,27 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-01T23:00:48-03:00",
       "message": "feat(area11): consolida contrato SPT e nivel d'agua"
-    },
-    {
-      "sha": "beb36e2f31f76c1a351bf7611fde408516310e56",
-      "short_sha": "beb36e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T20:05:36-03:00",
-      "message": "Merge pull request #279 from JGaspar-Eng/fix/dashboard-pr-state-real"
-    },
-    {
-      "sha": "3bc3e8c909a3ea3ad6e438a02da22e8407fba1c7",
-      "short_sha": "3bc3e8c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T20:03:44-03:00",
-      "message": "test(painel): mantém schema compatível"
-    },
-    {
-      "sha": "688fc7b50fbeee770a9359d8ae3dffc3c28eb90a",
-      "short_sha": "688fc7b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-01T20:03:25-03:00",
-      "message": "fix(painel): mantém schema compatível"
     }
   ],
   "development": {
@@ -1146,7 +1146,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 124,
+    "validator_count": 125,
     "validators": [
       {
         "name": "test:base",
@@ -1617,6 +1617,10 @@
         "command": "node tests/validar_altura_estrutural_sapata_area11.mjs"
       },
       {
+        "name": "test:area11-ancoragem-arranques",
+        "command": "node tests/validar_ancoragem_arranques_sapata_area11.mjs"
+      },
+      {
         "name": "test:area11-predim-sapata",
         "command": "node tests/validar_predimensionamento_sapata_isolada_area11.mjs"
       },
@@ -1653,7 +1657,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33586170691",
-    "run_number": "257"
+    "run_id": "33586176429",
+    "run_number": "258"
   }
 }
