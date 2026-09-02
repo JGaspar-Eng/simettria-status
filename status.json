@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-02T16:51:27Z",
+  "generated_at": "2026-09-02T16:58:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "796a3fee1fdb67b82b4d8dfe03436a38f13ed499",
-    "short_sha": "796a3fe",
+    "sha": "692f2013347eca9dd2345e00b81154db5ee593dd",
+    "short_sha": "692f201",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T13:09:34-03:00",
-    "message": "Merge pull request #286 from JGaspar-Eng/ui/painel-historico-sem-duplicatas"
+    "date": "2026-09-02T13:58:31-03:00",
+    "message": "docs(status): marca Area 11 ativa em paralelo (#288)"
   },
   "commits": [
+    {
+      "sha": "692f2013347eca9dd2345e00b81154db5ee593dd",
+      "short_sha": "692f201",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T13:58:31-03:00",
+      "message": "docs(status): marca Area 11 ativa em paralelo (#288)"
+    },
     {
       "sha": "796a3fee1fdb67b82b4d8dfe03436a38f13ed499",
       "short_sha": "796a3fe",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-01T23:56:04-03:00",
       "message": "fix(area11): preserva NSPT informado na derivacao"
-    },
-    {
-      "sha": "140acf670eba82954cbbe4d293117ebc2c00e12f",
-      "short_sha": "140acf6",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-01T23:48:58-03:00",
-      "message": "feat(area11): verifica ancoragem dos arranques pilar-sapata (NOR-FUND-04)"
     }
   ],
   "development": {
@@ -125,6 +125,13 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
+        },
+        {
+          "code": "NOR-FUND-05",
+          "title": "Detalhamento da armadura da sapata isolada",
+          "state": "in_progress",
+          "area": 11,
+          "source": "docs/AREA_11_NORMAS_TECNICAS.md"
         }
       ],
       "completed": [
@@ -1664,7 +1671,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33657447672",
-    "run_number": "313"
+    "run_id": "33658199839",
+    "run_number": "314"
   }
 }
