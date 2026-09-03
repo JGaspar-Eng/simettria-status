@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-03T17:27:23Z",
+  "generated_at": "2026-09-03T17:29:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4e6bac9c41b0b5486373cf2360e9b6e5d400ad49",
-    "short_sha": "4e6bac9",
+    "sha": "43567d25c30c9a2e9a726aacb8c1ef2232452f85",
+    "short_sha": "43567d2",
     "author": "Joanez Gaspar",
-    "date": "2026-09-03T14:10:13-03:00",
-    "message": "Merge pull request #299 from JGaspar-Eng/feat/area11-fund-materializacao-json"
+    "date": "2026-09-03T14:28:41-03:00",
+    "message": "Merge pull request #300 from JGaspar-Eng/docs/area11-stale-status"
   },
   "commits": [
+    {
+      "sha": "43567d25c30c9a2e9a726aacb8c1ef2232452f85",
+      "short_sha": "43567d2",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T14:28:41-03:00",
+      "message": "Merge pull request #300 from JGaspar-Eng/docs/area11-stale-status"
+    },
+    {
+      "sha": "282724257abf6ee98208a7e928ad851f47ba58e2",
+      "short_sha": "2827242",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T14:25:46-03:00",
+      "message": "chore: remove placeholder acidental"
+    },
+    {
+      "sha": "3daa2728d5f52b54ba5a2f425e410abee5471032",
+      "short_sha": "3daa272",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T14:25:22-03:00",
+      "message": "noop"
+    },
+    {
+      "sha": "71c2be33c0fc982a40560df6761b610293f8b2be",
+      "short_sha": "71c2be3",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T14:25:04-03:00",
+      "message": "test(status): acompanha JSON concluido e STALE ativo"
+    },
+    {
+      "sha": "408f1e791a78a45b06ae148de110463310c5b5cf",
+      "short_sha": "408f1e7",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T14:24:25-03:00",
+      "message": "docs(status): conclui JSON e inicia STALE da Area 11"
+    },
     {
       "sha": "4e6bac9c41b0b5486373cf2360e9b6e5d400ad49",
       "short_sha": "4e6bac9",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-03T13:31:55-03:00",
       "message": "fix(area11): separa contrato base e extensao executiva de fundacao"
-    },
-    {
-      "sha": "a979bfe007e6a2b1d00ec403203fbf4f2b8f70f4",
-      "short_sha": "a979bfe",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:29:39-03:00",
-      "message": "docs(area11): documenta persistencia executiva da sapata"
-    },
-    {
-      "sha": "c4574b2f4fd2dda94e6057910783ef7ed530fd48",
-      "short_sha": "c4574b2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:29:16-03:00",
-      "message": "test(area11): cobre persistencia JSON e reconciliacao legada"
-    },
-    {
-      "sha": "b91b0a99fbf824556770be992210bd67c102fbfc",
-      "short_sha": "b91b0a9",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:27:23-03:00",
-      "message": "fix(area11): reconcilia fundacao persistida sem duplicar identidade"
-    },
-    {
-      "sha": "9e2c9f3a967a4ea887bb5074ec61a4ab0ba2660b",
-      "short_sha": "9e2c9f3",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:26:53-03:00",
-      "message": "feat(area11): persiste contrato executivo da sapata"
-    },
-    {
-      "sha": "87e468e109ba5ad36cf3b2ca7c4105a6bb9ad8b2",
-      "short_sha": "87e468e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:04:18-03:00",
-      "message": "Merge pull request #298 from JGaspar-Eng/docs/area11-json-active"
     }
   ],
   "development": {
@@ -97,11 +97,18 @@
     "execution": {
       "recent": [
         {
-          "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
           "state": "in_progress",
           "area": 11,
           "source": "issue #231"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #299 / issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO-MODELO",
@@ -125,13 +132,6 @@
           "source": "PR #291 / issue #231"
         },
         {
-          "code": "NOR-TEC-01",
-          "title": "Contrato geotécnico SPT e nível d'água consolidado",
-          "state": "completed",
-          "area": 11,
-          "source": "docs/AREA_11_NORMAS_TECNICAS.md"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -141,8 +141,8 @@
       ],
       "active": [
         {
-          "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
           "state": "in_progress",
           "area": 11,
           "source": "issue #231"
@@ -156,6 +156,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #299 / issue #231"
+        },
         {
           "code": "FUND-MATERIALIZACAO-MODELO",
           "title": "Criação/atualização da sapata autorizada no modelo estrutural",
@@ -208,8 +215,8 @@
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
         },
         {
-          "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Promover o estado executivo da sapata para persistência/JSON versionada e compatível",
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidar e recalcular a sapata após mudanças relevantes de entrada",
           "state": "in_progress",
           "area": 11,
           "source": "issue #231"
@@ -281,12 +288,12 @@
             {
               "code": "JSON",
               "title": "Persistência/JSON versionada e compatível com projetos anteriores",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "STALE",
               "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "EDIT",
@@ -1830,7 +1837,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33784619991",
-    "run_number": "356"
+    "run_id": "33784790313",
+    "run_number": "357"
   }
 }
