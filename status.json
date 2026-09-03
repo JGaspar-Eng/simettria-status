@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-03T22:42:28Z",
+  "generated_at": "2026-09-03T22:55:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "26696b4f7722dd9aacc8b3eec822ad3895a16b58",
-    "short_sha": "26696b4",
+    "sha": "2a3e1479a4548efdb415acf3d436cb9ee1734c55",
+    "short_sha": "2a3e147",
     "author": "Joanez Gaspar",
-    "date": "2026-09-03T19:18:35-03:00",
-    "message": "Merge pull request #303 from JGaspar-Eng/docs/area11-dashboard-auto-sync"
+    "date": "2026-09-03T19:54:46-03:00",
+    "message": "Merge pull request #302 from JGaspar-Eng/feat/area11-fund-materializacao-edit"
   },
   "commits": [
+    {
+      "sha": "2a3e1479a4548efdb415acf3d436cb9ee1734c55",
+      "short_sha": "2a3e147",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T19:54:46-03:00",
+      "message": "Merge pull request #302 from JGaspar-Eng/feat/area11-fund-materializacao-edit"
+    },
+    {
+      "sha": "323758a4ae5df8198e1b26b2d1159578a52368c9",
+      "short_sha": "323758a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T19:41:39-03:00",
+      "message": "Merge main into feat/area11-fund-materializacao-edit"
+    },
     {
       "sha": "26696b4f7722dd9aacc8b3eec822ad3895a16b58",
       "short_sha": "26696b4",
@@ -32,6 +46,27 @@
       "message": "feat(status): sincroniza materialização pela coordenação"
     },
     {
+      "sha": "b072e4b890d054d4764e340ae82533badfef9000",
+      "short_sha": "b072e4b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:37:16-03:00",
+      "message": "docs(area11): registra contrato operacional de edit"
+    },
+    {
+      "sha": "8ce5a10fbe16dd784c7702b297881d4f223cc148",
+      "short_sha": "8ce5a10",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:37:07-03:00",
+      "message": "test(area11): cobre edicao remocao e recalculo da sapata"
+    },
+    {
+      "sha": "b64aaef0fef3b762d8dbcba0e5f74312a2557dc5",
+      "short_sha": "b64aaef",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:36:28-03:00",
+      "message": "feat(area11): controla edicao e remocao de sapata materializada"
+    },
+    {
       "sha": "598f301b34ce3702c519171f0401e32cba8956f5",
       "short_sha": "598f301",
       "author": "Joanez Gaspar",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-03T18:05:41-03:00",
       "message": "test(area11): usa alteração geotécnica relevante no caso STALE"
-    },
-    {
-      "sha": "ef7b822bee97a071b1f5307b1c2bf21cdb9100cb",
-      "short_sha": "ef7b822",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T18:03:51-03:00",
-      "message": "test(area11): integra STALE ao gate oficial transitório"
-    },
-    {
-      "sha": "053c2c951fc62f0a8746386f263043c871483d28",
-      "short_sha": "053c2c9",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T18:02:53-03:00",
-      "message": "test(area11): cobre invalidação e recálculo stale da sapata"
-    },
-    {
-      "sha": "ae6b393d3567e25dd09a3091ad3c1794a7559e6f",
-      "short_sha": "ae6b393",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T18:02:20-03:00",
-      "message": "feat(area11): adiciona invalidação e recálculo stale da sapata"
-    },
-    {
-      "sha": "43567d25c30c9a2e9a726aacb8c1ef2232452f85",
-      "short_sha": "43567d2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T14:28:41-03:00",
-      "message": "Merge pull request #300 from JGaspar-Eng/docs/area11-stale-status"
-    },
-    {
-      "sha": "282724257abf6ee98208a7e928ad851f47ba58e2",
-      "short_sha": "2827242",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T14:25:46-03:00",
-      "message": "chore: remove placeholder acidental"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         {
           "code": "FUND-MATERIALIZACAO-EDIT",
           "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-          "state": "in_progress",
+          "state": "completed",
           "area": 11,
           "source": "issue #231 / PR #302"
         },
@@ -141,13 +141,6 @@
       ],
       "active": [
         {
-          "code": "FUND-MATERIALIZACAO-EDIT",
-          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR #302"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -156,6 +149,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "FUND-MATERIALIZACAO-EDIT",
+          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #302"
+        },
         {
           "code": "FUND-MATERIALIZACAO-STALE",
           "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
@@ -220,13 +220,6 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-EDIT",
-          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR #302"
         }
       ],
       "checklists": [
@@ -305,7 +298,7 @@
             {
               "code": "EDIT",
               "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "MEMORIAL",
@@ -1844,7 +1837,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33814291599",
-    "run_number": "365"
+    "run_id": "33815258605",
+    "run_number": "367"
   }
 }
