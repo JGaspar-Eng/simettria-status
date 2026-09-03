@@ -1,21 +1,56 @@
 {
-  "generated_at": "2026-09-03T12:29:52Z",
+  "generated_at": "2026-09-03T16:00:56Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bc096a2902151d3dde39ba4beed5b63d1155cbf5",
-    "short_sha": "bc096a2",
+    "sha": "cac3c2a04b6e8f33f39b26715b6abd4f4c7854fc",
+    "short_sha": "cac3c2a",
     "author": "Joanez Gaspar",
-    "date": "2026-09-03T09:24:27-03:00",
-    "message": "Merge pull request #296 from JGaspar-Eng/docs/area11-modelo-active"
+    "date": "2026-09-03T13:00:37-03:00",
+    "message": "Merge pull request #297 from JGaspar-Eng/feat/area11-fund-materializacao-modelo"
   },
   "commits": [
+    {
+      "sha": "cac3c2a04b6e8f33f39b26715b6abd4f4c7854fc",
+      "short_sha": "cac3c2a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T13:00:37-03:00",
+      "message": "Merge pull request #297 from JGaspar-Eng/feat/area11-fund-materializacao-modelo"
+    },
+    {
+      "sha": "189abf68f04ca694fdd6e1ac990cd2613575a19a",
+      "short_sha": "189abf6",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T09:27:18-03:00",
+      "message": "merge(main): atualiza base da frente MODELO"
+    },
     {
       "sha": "bc096a2902151d3dde39ba4beed5b63d1155cbf5",
       "short_sha": "bc096a2",
       "author": "Joanez Gaspar",
       "date": "2026-09-03T09:24:27-03:00",
       "message": "Merge pull request #296 from JGaspar-Eng/docs/area11-modelo-active"
+    },
+    {
+      "sha": "1e51cba99a998b5abe1a2b8ae407924182ecbb41",
+      "short_sha": "1e51cba",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T09:24:07-03:00",
+      "message": "docs(test): remove nota redundante da frente modelo"
+    },
+    {
+      "sha": "fdad462503ca51e37d82680ee0286e31ab2f5775",
+      "short_sha": "fdad462",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T09:23:54-03:00",
+      "message": "test(area11): prova reproducao ORQ antes do modelo"
+    },
+    {
+      "sha": "9a626c35345b7129af5e4bcd516e3e8ccd99cc4e",
+      "short_sha": "9a626c3",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T09:23:07-03:00",
+      "message": "fix(area11): reproduz autorizacao ORQ antes de tocar modelo"
     },
     {
       "sha": "72c922a5b4ec3bc4250b51e3da7b85fbb52b688e",
@@ -32,53 +67,18 @@
       "message": "docs(status): avanca materializacao Area 11 para MODELO"
     },
     {
-      "sha": "c43e17426c743f55936def88820d5931f624deb2",
-      "short_sha": "c43e174",
+      "sha": "352302ae59a9a5c7e6be4385cdcdbf2ab33d7ad5",
+      "short_sha": "352302a",
       "author": "Joanez Gaspar",
-      "date": "2026-09-03T08:56:33-03:00",
-      "message": "feat(area11): inicia orquestracao da materializacao da sapata"
+      "date": "2026-09-03T09:19:30-03:00",
+      "message": "docs(test): registra cobertura do modelo"
     },
     {
-      "sha": "b22433bad8dc29516a223d17e7502b8ebdbe0812",
-      "short_sha": "b22433b",
+      "sha": "55b9daf2c56d60b4b62d8cf877043e04be2398ef",
+      "short_sha": "55b9daf",
       "author": "Joanez Gaspar",
-      "date": "2026-09-03T00:15:19-03:00",
-      "message": "fix(area11): usa apenas reproducao integral como autoridade final"
-    },
-    {
-      "sha": "59032779569899199bbe5699786886f496bbe0ec",
-      "short_sha": "5903277",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T00:13:14-03:00",
-      "message": "test(area11): cobre vetores fail-closed da materializacao"
-    },
-    {
-      "sha": "d8ad669a19b4296458add5893e897c5d12f65456",
-      "short_sha": "d8ad669",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T00:12:37-03:00",
-      "message": "fix(area11): fecha fail-open do gate de materializacao"
-    },
-    {
-      "sha": "c58e209c8b7ae77da2894f801f71637d4f6508f1",
-      "short_sha": "c58e209",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T23:50:59-03:00",
-      "message": "merge main into feat/area11-fund-materializacao-orq"
-    },
-    {
-      "sha": "afd4df8ea6129ff4f28c89bb20474953e7736656",
-      "short_sha": "afd4df8",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T23:50:04-03:00",
-      "message": "Merge pull request #294 from JGaspar-Eng/docs/area11-materializacao-active"
-    },
-    {
-      "sha": "3b285ea56c527a2d30c775c8dbbe84d986e8cd5f",
-      "short_sha": "3b285ea",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T23:49:45-03:00",
-      "message": "test(area11): preserva guard e executa validador da materializacao"
+      "date": "2026-09-03T09:19:20-03:00",
+      "message": "test(area11): remove guard redundante de runtime"
     }
   ],
   "development": {
@@ -1816,7 +1816,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33755515406",
-    "run_number": "345"
+    "run_id": "33776040081",
+    "run_number": "347"
   }
 }
