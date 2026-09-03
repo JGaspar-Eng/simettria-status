@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-03T21:07:45Z",
+  "generated_at": "2026-09-03T21:31:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "43567d25c30c9a2e9a726aacb8c1ef2232452f85",
-    "short_sha": "43567d2",
+    "sha": "598f301b34ce3702c519171f0401e32cba8956f5",
+    "short_sha": "598f301",
     "author": "Joanez Gaspar",
-    "date": "2026-09-03T14:28:41-03:00",
-    "message": "Merge pull request #300 from JGaspar-Eng/docs/area11-stale-status"
+    "date": "2026-09-03T18:30:58-03:00",
+    "message": "Merge pull request #301 from JGaspar-Eng/feat/area11-fund-materializacao-stale"
   },
   "commits": [
+    {
+      "sha": "598f301b34ce3702c519171f0401e32cba8956f5",
+      "short_sha": "598f301",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:30:58-03:00",
+      "message": "Merge pull request #301 from JGaspar-Eng/feat/area11-fund-materializacao-stale"
+    },
+    {
+      "sha": "ba95b76e960b3b8c116ef3d942737a697a860b22",
+      "short_sha": "ba95b76",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:05:41-03:00",
+      "message": "test(area11): usa alteração geotécnica relevante no caso STALE"
+    },
+    {
+      "sha": "ef7b822bee97a071b1f5307b1c2bf21cdb9100cb",
+      "short_sha": "ef7b822",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:03:51-03:00",
+      "message": "test(area11): integra STALE ao gate oficial transitório"
+    },
+    {
+      "sha": "053c2c951fc62f0a8746386f263043c871483d28",
+      "short_sha": "053c2c9",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:02:53-03:00",
+      "message": "test(area11): cobre invalidação e recálculo stale da sapata"
+    },
+    {
+      "sha": "ae6b393d3567e25dd09a3091ad3c1794a7559e6f",
+      "short_sha": "ae6b393",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T18:02:20-03:00",
+      "message": "feat(area11): adiciona invalidação e recálculo stale da sapata"
+    },
     {
       "sha": "43567d25c30c9a2e9a726aacb8c1ef2232452f85",
       "short_sha": "43567d2",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-03T14:24:25-03:00",
       "message": "docs(status): conclui JSON e inicia STALE da Area 11"
-    },
-    {
-      "sha": "4e6bac9c41b0b5486373cf2360e9b6e5d400ad49",
-      "short_sha": "4e6bac9",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T14:10:13-03:00",
-      "message": "Merge pull request #299 from JGaspar-Eng/feat/area11-fund-materializacao-json"
-    },
-    {
-      "sha": "c6854206cd3791eca9fd18bf75b7db0c7830d116",
-      "short_sha": "c685420",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:55:35-03:00",
-      "message": "fix(area11): restaura documentacao do structural contract"
-    },
-    {
-      "sha": "1839e4ea79821c37794677baa8244fe12aec0814",
-      "short_sha": "1839e4e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:54:31-03:00",
-      "message": "fix(area11): restaura documentacao contratual do lifecycle"
-    },
-    {
-      "sha": "85e22ba8ad83306aeba7b40dabf87bb352a73884",
-      "short_sha": "85e22ba",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:32:25-03:00",
-      "message": "feat(area11): usa contrato executivo na persistencia de fundacao"
-    },
-    {
-      "sha": "fb8ab3d711ce89789efe23aae151d470ffcbc72c",
-      "short_sha": "fb8ab3d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T13:31:55-03:00",
-      "message": "fix(area11): separa contrato base e extensao executiva de fundacao"
     }
   ],
   "development": {
@@ -1837,7 +1837,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33806204465",
-    "run_number": "359"
+    "run_id": "33808362150",
+    "run_number": "360"
   }
 }
