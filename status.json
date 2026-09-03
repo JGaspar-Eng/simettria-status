@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-09-02T23:43:40Z",
+  "generated_at": "2026-09-03T02:34:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a2446faa9e89a83ba4a184f15e9a0192c86f92ea",
-    "short_sha": "a2446fa",
+    "sha": "4038f47216a8194fde2fb0082d80f9437713f71c",
+    "short_sha": "4038f47",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T17:57:53-03:00",
-    "message": "fix(status): alinha checklist da Área 11 ao trabalho em revisão"
+    "date": "2026-09-02T23:34:07-03:00",
+    "message": "Merge pull request #291 from JGaspar-Eng/feat/area11-debt-n1-b4-hardening"
   },
   "commits": [
+    {
+      "sha": "4038f47216a8194fde2fb0082d80f9437713f71c",
+      "short_sha": "4038f47",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T23:34:07-03:00",
+      "message": "Merge pull request #291 from JGaspar-Eng/feat/area11-debt-n1-b4-hardening"
+    },
+    {
+      "sha": "8543fe10c74fb1cbb71b5ca1aeadc309c629009c",
+      "short_sha": "8543fe1",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T20:41:23-03:00",
+      "message": "test(status): acompanha fechamento do hardening Area 11"
+    },
+    {
+      "sha": "8261ca5056d42ff195634c3abeb4d0a3cb78c641",
+      "short_sha": "8261ca5",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T20:19:46-03:00",
+      "message": "merge(main): atualiza hardening Area 11 sobre status vigente"
+    },
+    {
+      "sha": "649b64ddcf13978f9de1688061e9042c1aa05059",
+      "short_sha": "649b64d",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T20:18:51-03:00",
+      "message": "docs(status): prepara fechamento do hardening Area 11"
+    },
     {
       "sha": "a2446faa9e89a83ba4a184f15e9a0192c86f92ea",
       "short_sha": "a2446fa",
@@ -39,46 +67,18 @@
       "message": "docs(status): marca Area 11 como em execucao"
     },
     {
-      "sha": "dd44e359248876232af3a570fcf01ca944a1dc62",
-      "short_sha": "dd44e35",
+      "sha": "1ad37c36070e54533f1e823d5c39303910d915aa",
+      "short_sha": "1ad37c3",
       "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:21:33-03:00",
-      "message": "docs(status): acompanha dívidas e materialização da Área 11"
+      "date": "2026-09-02T17:37:22-03:00",
+      "message": "fix(status): mantém Área 11 ativa durante hardening"
     },
     {
-      "sha": "37d351c522d90f73296fc01269aac51c31e1d883",
-      "short_sha": "37d351c",
+      "sha": "46bf09b58fbe0b38567905889f66b9b872f4748a",
+      "short_sha": "46bf09b",
       "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:16:42-03:00",
-      "message": "fix(status): preserva ordenação contratual existente"
-    },
-    {
-      "sha": "d9d941f868331ac63f357537c88f225cf54949d3",
-      "short_sha": "d9d941f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:16:18-03:00",
-      "message": "feat(status): renderiza checklist Area 11"
-    },
-    {
-      "sha": "093f77dc9c1f381e1e5589374ccbf020d7ad72bf",
-      "short_sha": "093f77d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:15:53-03:00",
-      "message": "docs(status): adiciona checklist Area 11"
-    },
-    {
-      "sha": "06025cc57f718ee6b574683f7276609626829c0a",
-      "short_sha": "06025cc",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:09:46-03:00",
-      "message": "feat(area11): quita M3/M4 do detalhamento executivo da sapata"
-    },
-    {
-      "sha": "014611a09289f0360fc001cacf5eedf0b97c76a0",
-      "short_sha": "014611a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:00:24-03:00",
-      "message": "test(area11): cobre camadas e geometria executiva da sapata"
+      "date": "2026-09-02T17:34:06-03:00",
+      "message": "docs(status): marca dividas tecnicas Area 11 como quitadas"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         {
           "code": "NOR-FUND-05-HARDENING",
           "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
-          "state": "in_progress",
+          "state": "completed",
           "area": 11,
           "source": "PR #291 / issue #231"
         },
@@ -127,13 +127,6 @@
       ],
       "active": [
         {
-          "code": "NOR-FUND-05-HARDENING",
-          "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
-          "state": "in_progress",
-          "area": 11,
-          "source": "PR #291 / issue #231"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -142,6 +135,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "NOR-FUND-05-HARDENING",
+          "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #291 / issue #231"
+        },
         {
           "code": "NOR-TEC-01",
           "title": "Contrato geotécnico SPT e nível d'água consolidado",
@@ -199,32 +199,32 @@
             {
               "code": "N1",
               "title": "Endurecer fast-path de idempotência e validar vista já completa",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "B4",
               "title": "Revisar nomenclatura, referências normativas e superfície de API",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "TEST-2B",
               "title": "Teste dedicado em que o mínimo de duas barras governa",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "TEST-SMAX20",
               "title": "Teste dedicado que congela s_max = 20 cm como critério de projeto",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "DIAG-MULTI",
               "title": "Preservar múltiplas causas simultâneas de bloqueio",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "INTEGRIDADE-MULTI",
               "title": "Documentar ou reforçar integridade contra adulteração coerente multi-campo",
-              "state": "in_progress"
+              "state": "completed"
             }
           ]
         },
@@ -1795,7 +1795,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33696383489",
-    "run_number": "334"
+    "run_id": "33708125654",
+    "run_number": "335"
   }
 }
