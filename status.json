@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-03T02:39:07Z",
+  "generated_at": "2026-09-03T02:50:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4038f47216a8194fde2fb0082d80f9437713f71c",
-    "short_sha": "4038f47",
+    "sha": "afd4df8ea6129ff4f28c89bb20474953e7736656",
+    "short_sha": "afd4df8",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T23:34:07-03:00",
-    "message": "Merge pull request #291 from JGaspar-Eng/feat/area11-debt-n1-b4-hardening"
+    "date": "2026-09-02T23:50:04-03:00",
+    "message": "Merge pull request #294 from JGaspar-Eng/docs/area11-materializacao-active"
   },
   "commits": [
+    {
+      "sha": "afd4df8ea6129ff4f28c89bb20474953e7736656",
+      "short_sha": "afd4df8",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T23:50:04-03:00",
+      "message": "Merge pull request #294 from JGaspar-Eng/docs/area11-materializacao-active"
+    },
+    {
+      "sha": "57a4d3678cf63964a118c55afc8528f3cb00e7c1",
+      "short_sha": "57a4d36",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T23:47:29-03:00",
+      "message": "test(status): aceita materializacao da area 11 em paralelo"
+    },
+    {
+      "sha": "7fa622815b63f10b6f8b378faed04117c1ee115b",
+      "short_sha": "7fa6228",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T23:46:49-03:00",
+      "message": "docs(area11): marca materializacao como frente ativa"
+    },
     {
       "sha": "4038f47216a8194fde2fb0082d80f9437713f71c",
       "short_sha": "4038f47",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-02T17:42:02-03:00",
       "message": "test(status): acompanha Area 11 ativa em paralelo"
-    },
-    {
-      "sha": "a5ede82549b48ae8a4ce3aca1a8fbe54f565a4a6",
-      "short_sha": "a5ede82",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:39:33-03:00",
-      "message": "docs(status): marca Area 11 como em execucao"
-    },
-    {
-      "sha": "1ad37c36070e54533f1e823d5c39303910d915aa",
-      "short_sha": "1ad37c3",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:37:22-03:00",
-      "message": "fix(status): mantém Área 11 ativa durante hardening"
-    },
-    {
-      "sha": "46bf09b58fbe0b38567905889f66b9b872f4748a",
-      "short_sha": "46bf09b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:34:06-03:00",
-      "message": "docs(status): marca dividas tecnicas Area 11 como quitadas"
     }
   ],
   "development": {
@@ -97,6 +97,13 @@
     "execution": {
       "recent": [
         {
+          "code": "FUND-MATERIALIZACAO-ORQ",
+          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
+          "state": "in_progress",
+          "area": 11,
+          "source": "branch feat/area11-fund-materializacao-orq / issue #231"
+        },
+        {
           "code": "NOR-FUND-05-HARDENING",
           "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
           "state": "completed",
@@ -111,13 +118,6 @@
           "source": "docs/AREA_11_NORMAS_TECNICAS.md"
         },
         {
-          "code": "U10B",
-          "title": "Auditoria de cobertura das bordas da laje",
-          "state": "completed",
-          "area": 1,
-          "source": "tests/validar_cobertura_bordas_laje_u10b.mjs"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -126,6 +126,13 @@
         }
       ],
       "active": [
+        {
+          "code": "FUND-MATERIALIZACAO-ORQ",
+          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
+          "state": "in_progress",
+          "area": 11,
+          "source": "branch feat/area11-fund-materializacao-orq / issue #231"
+        },
         {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
@@ -173,9 +180,9 @@
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
         },
         {
-          "code": "FUND-MATERIALIZACAO",
-          "title": "Integrar a sapata calculada ao modelo, persistência, memorial, 2D e 3D",
-          "state": "planned",
+          "code": "FUND-MATERIALIZACAO-ORQ",
+          "title": "Consumir oficialmente NOR-FUND-01→05 e liberar somente solução autorizada",
+          "state": "in_progress",
           "area": 11,
           "source": "issue #231"
         }
@@ -236,7 +243,7 @@
             {
               "code": "ORQ",
               "title": "Orquestrador consumir oficialmente NOR-FUND-01→05 e materializar somente solução autorizada",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "MODELO",
@@ -1795,7 +1802,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33708411751",
-    "run_number": "337"
+    "run_id": "33709117767",
+    "run_number": "338"
   }
 }
