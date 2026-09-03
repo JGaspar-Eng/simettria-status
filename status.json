@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-03T16:00:56Z",
+  "generated_at": "2026-09-03T16:04:41Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cac3c2a04b6e8f33f39b26715b6abd4f4c7854fc",
-    "short_sha": "cac3c2a",
+    "sha": "87e468e109ba5ad36cf3b2ca7c4105a6bb9ad8b2",
+    "short_sha": "87e468e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-03T13:00:37-03:00",
-    "message": "Merge pull request #297 from JGaspar-Eng/feat/area11-fund-materializacao-modelo"
+    "date": "2026-09-03T13:04:18-03:00",
+    "message": "Merge pull request #298 from JGaspar-Eng/docs/area11-json-active"
   },
   "commits": [
+    {
+      "sha": "87e468e109ba5ad36cf3b2ca7c4105a6bb9ad8b2",
+      "short_sha": "87e468e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T13:04:18-03:00",
+      "message": "Merge pull request #298 from JGaspar-Eng/docs/area11-json-active"
+    },
+    {
+      "sha": "717382cf8437290626f6112be325abd7dd1082d2",
+      "short_sha": "717382c",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T13:02:22-03:00",
+      "message": "test(status): congela JSON ativo na Area 11"
+    },
+    {
+      "sha": "69c5ccea4110b103f00b99b712d53a2a2a5945ca",
+      "short_sha": "69c5cce",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T13:01:30-03:00",
+      "message": "docs(status): avanca materializacao Area 11 para JSON"
+    },
     {
       "sha": "cac3c2a04b6e8f33f39b26715b6abd4f4c7854fc",
       "short_sha": "cac3c2a",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-03T09:21:08-03:00",
       "message": "test(status): congela MODELO ativo na Area 11"
-    },
-    {
-      "sha": "c1532418fab90c832fc4c6bf924b9d0141f3a139",
-      "short_sha": "c153241",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T09:20:29-03:00",
-      "message": "docs(status): avanca materializacao Area 11 para MODELO"
-    },
-    {
-      "sha": "352302ae59a9a5c7e6be4385cdcdbf2ab33d7ad5",
-      "short_sha": "352302a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T09:19:30-03:00",
-      "message": "docs(test): registra cobertura do modelo"
-    },
-    {
-      "sha": "55b9daf2c56d60b4b62d8cf877043e04be2398ef",
-      "short_sha": "55b9daf",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T09:19:20-03:00",
-      "message": "test(area11): remove guard redundante de runtime"
     }
   ],
   "development": {
@@ -97,11 +97,18 @@
     "execution": {
       "recent": [
         {
-          "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
           "state": "in_progress",
           "area": 11,
-          "source": "branch feat/area11-fund-materializacao-modelo / issue #231"
+          "source": "issue #231"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-MODELO",
+          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #297 / issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO-ORQ",
@@ -134,11 +141,11 @@
       ],
       "active": [
         {
-          "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
           "state": "in_progress",
           "area": 11,
-          "source": "branch feat/area11-fund-materializacao-modelo / issue #231"
+          "source": "issue #231"
         },
         {
           "code": "ORQ-ESTRUT-01",
@@ -149,6 +156,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "FUND-MATERIALIZACAO-MODELO",
+          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #297 / issue #231"
+        },
         {
           "code": "FUND-MATERIALIZACAO-ORQ",
           "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
@@ -194,8 +208,8 @@
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
         },
         {
-          "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criar/atualizar sapata autorizada no modelo com geometria, armaduras e rastreabilidade",
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Promover o estado executivo da sapata para persistência/JSON versionada e compatível",
           "state": "in_progress",
           "area": 11,
           "source": "issue #231"
@@ -262,12 +276,12 @@
             {
               "code": "MODELO",
               "title": "Criar/atualizar sapata no modelo com geometria, armaduras e rastreabilidade",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "JSON",
               "title": "Persistência/JSON versionada e compatível com projetos anteriores",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "STALE",
@@ -1816,7 +1830,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33776040081",
-    "run_number": "347"
+    "run_id": "33776414956",
+    "run_number": "348"
   }
 }
