@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-03T22:14:37Z",
+  "generated_at": "2026-09-03T22:18:51Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "598f301b34ce3702c519171f0401e32cba8956f5",
-    "short_sha": "598f301",
+    "sha": "26696b4f7722dd9aacc8b3eec822ad3895a16b58",
+    "short_sha": "26696b4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-03T18:30:58-03:00",
-    "message": "Merge pull request #301 from JGaspar-Eng/feat/area11-fund-materializacao-stale"
+    "date": "2026-09-03T19:18:35-03:00",
+    "message": "Merge pull request #303 from JGaspar-Eng/docs/area11-dashboard-auto-sync"
   },
   "commits": [
+    {
+      "sha": "26696b4f7722dd9aacc8b3eec822ad3895a16b58",
+      "short_sha": "26696b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T19:18:35-03:00",
+      "message": "Merge pull request #303 from JGaspar-Eng/docs/area11-dashboard-auto-sync"
+    },
+    {
+      "sha": "f3dedcc8da1333c1fe48b503fd08ffde72822154",
+      "short_sha": "f3dedcc",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T19:12:45-03:00",
+      "message": "feat(status): aplica overlay automático da materialização"
+    },
+    {
+      "sha": "6afa17e6b3f88cc4afc17e0890740bc57893328a",
+      "short_sha": "6afa17e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T19:12:21-03:00",
+      "message": "feat(status): sincroniza materialização pela coordenação"
+    },
     {
       "sha": "598f301b34ce3702c519171f0401e32cba8956f5",
       "short_sha": "598f301",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-03T14:25:46-03:00",
       "message": "chore: remove placeholder acidental"
-    },
-    {
-      "sha": "3daa2728d5f52b54ba5a2f425e410abee5471032",
-      "short_sha": "3daa272",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T14:25:22-03:00",
-      "message": "noop"
-    },
-    {
-      "sha": "71c2be33c0fc982a40560df6761b610293f8b2be",
-      "short_sha": "71c2be3",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T14:25:04-03:00",
-      "message": "test(status): acompanha JSON concluido e STALE ativo"
-    },
-    {
-      "sha": "408f1e791a78a45b06ae148de110463310c5b5cf",
-      "short_sha": "408f1e7",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T14:24:25-03:00",
-      "message": "docs(status): conclui JSON e inicia STALE da Area 11"
     }
   ],
   "development": {
@@ -97,32 +97,32 @@
     "execution": {
       "recent": [
         {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
+          "code": "FUND-MATERIALIZACAO-EDIT",
+          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
           "state": "in_progress",
           "area": 11,
-          "source": "issue #231"
+          "source": "issue #231 / PR #302"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #301"
         },
         {
           "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
+          "title": "Persistência/JSON versionada e compatível com projetos anteriores",
           "state": "completed",
           "area": 11,
-          "source": "PR #299 / issue #231"
+          "source": "issue #231 / PR #299"
         },
         {
           "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "title": "Criar/atualizar sapata no modelo com geometria, armaduras e rastreabilidade",
           "state": "completed",
           "area": 11,
-          "source": "PR #297 / issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-ORQ",
-          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
-          "state": "completed",
-          "area": 11,
-          "source": "PR #295 / issue #231"
+          "source": "issue #231 / PR #297"
         },
         {
           "code": "NOR-FUND-05-HARDENING",
@@ -141,11 +141,11 @@
       ],
       "active": [
         {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
+          "code": "FUND-MATERIALIZACAO-EDIT",
+          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
           "state": "in_progress",
           "area": 11,
-          "source": "issue #231"
+          "source": "issue #231 / PR #302"
         },
         {
           "code": "ORQ-ESTRUT-01",
@@ -157,25 +157,32 @@
       ],
       "completed": [
         {
-          "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
           "state": "completed",
           "area": 11,
-          "source": "PR #299 / issue #231"
+          "source": "issue #231 / PR #301"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Persistência/JSON versionada e compatível com projetos anteriores",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #299"
         },
         {
           "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "title": "Criar/atualizar sapata no modelo com geometria, armaduras e rastreabilidade",
           "state": "completed",
           "area": 11,
-          "source": "PR #297 / issue #231"
+          "source": "issue #231 / PR #297"
         },
         {
           "code": "FUND-MATERIALIZACAO-ORQ",
-          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
+          "title": "Orquestrador consumir oficialmente NOR-FUND-01→05 e materializar somente solução autorizada",
           "state": "completed",
           "area": 11,
-          "source": "PR #295 / issue #231"
+          "source": "issue #231"
         },
         {
           "code": "NOR-FUND-05-HARDENING",
@@ -215,11 +222,11 @@
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
         },
         {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidar e recalcular a sapata após mudanças relevantes de entrada",
+          "code": "FUND-MATERIALIZACAO-EDIT",
+          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
           "state": "in_progress",
           "area": 11,
-          "source": "issue #231"
+          "source": "issue #231 / PR #302"
         }
       ],
       "checklists": [
@@ -293,12 +300,12 @@
             {
               "code": "STALE",
               "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "EDIT",
               "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "MEMORIAL",
@@ -328,7 +335,7 @@
           ]
         }
       ],
-      "source": "docs/DEVELOPMENT_STATUS.json",
+      "source": "docs/DEVELOPMENT_STATUS.json + issue #231 (overlay automático FUND-MATERIALIZACAO)",
       "ordering": "more_recent_first",
       "policy": "Itens de execução são explícitos, ordenados do mais recente para o mais antigo e não dependem de posição no roadmap nem da existência de um fechamento."
     },
@@ -1837,7 +1844,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33812074740",
-    "run_number": "363"
+    "run_id": "33812429732",
+    "run_number": "364"
   }
 }
