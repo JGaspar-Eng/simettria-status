@@ -1,21 +1,63 @@
 {
-  "generated_at": "2026-09-03T03:17:28Z",
+  "generated_at": "2026-09-03T11:57:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "afd4df8ea6129ff4f28c89bb20474953e7736656",
-    "short_sha": "afd4df8",
+    "sha": "c43e17426c743f55936def88820d5931f624deb2",
+    "short_sha": "c43e174",
     "author": "Joanez Gaspar",
-    "date": "2026-09-02T23:50:04-03:00",
-    "message": "Merge pull request #294 from JGaspar-Eng/docs/area11-materializacao-active"
+    "date": "2026-09-03T08:56:33-03:00",
+    "message": "feat(area11): inicia orquestracao da materializacao da sapata"
   },
   "commits": [
+    {
+      "sha": "c43e17426c743f55936def88820d5931f624deb2",
+      "short_sha": "c43e174",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T08:56:33-03:00",
+      "message": "feat(area11): inicia orquestracao da materializacao da sapata"
+    },
+    {
+      "sha": "b22433bad8dc29516a223d17e7502b8ebdbe0812",
+      "short_sha": "b22433b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T00:15:19-03:00",
+      "message": "fix(area11): usa apenas reproducao integral como autoridade final"
+    },
+    {
+      "sha": "59032779569899199bbe5699786886f496bbe0ec",
+      "short_sha": "5903277",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T00:13:14-03:00",
+      "message": "test(area11): cobre vetores fail-closed da materializacao"
+    },
+    {
+      "sha": "d8ad669a19b4296458add5893e897c5d12f65456",
+      "short_sha": "d8ad669",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-03T00:12:37-03:00",
+      "message": "fix(area11): fecha fail-open do gate de materializacao"
+    },
+    {
+      "sha": "c58e209c8b7ae77da2894f801f71637d4f6508f1",
+      "short_sha": "c58e209",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T23:50:59-03:00",
+      "message": "merge main into feat/area11-fund-materializacao-orq"
+    },
     {
       "sha": "afd4df8ea6129ff4f28c89bb20474953e7736656",
       "short_sha": "afd4df8",
       "author": "Joanez Gaspar",
       "date": "2026-09-02T23:50:04-03:00",
       "message": "Merge pull request #294 from JGaspar-Eng/docs/area11-materializacao-active"
+    },
+    {
+      "sha": "3b285ea56c527a2d30c775c8dbbe84d986e8cd5f",
+      "short_sha": "3b285ea",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-02T23:49:45-03:00",
+      "message": "test(area11): preserva guard e executa validador da materializacao"
     },
     {
       "sha": "57a4d3678cf63964a118c55afc8528f3cb00e7c1",
@@ -32,53 +74,11 @@
       "message": "docs(area11): marca materializacao como frente ativa"
     },
     {
-      "sha": "4038f47216a8194fde2fb0082d80f9437713f71c",
-      "short_sha": "4038f47",
+      "sha": "2aa2729ea708b13c3f5324e9515dcb03aea61bc2",
+      "short_sha": "2aa2729",
       "author": "Joanez Gaspar",
-      "date": "2026-09-02T23:34:07-03:00",
-      "message": "Merge pull request #291 from JGaspar-Eng/feat/area11-debt-n1-b4-hardening"
-    },
-    {
-      "sha": "8543fe10c74fb1cbb71b5ca1aeadc309c629009c",
-      "short_sha": "8543fe1",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T20:41:23-03:00",
-      "message": "test(status): acompanha fechamento do hardening Area 11"
-    },
-    {
-      "sha": "8261ca5056d42ff195634c3abeb4d0a3cb78c641",
-      "short_sha": "8261ca5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T20:19:46-03:00",
-      "message": "merge(main): atualiza hardening Area 11 sobre status vigente"
-    },
-    {
-      "sha": "649b64ddcf13978f9de1688061e9042c1aa05059",
-      "short_sha": "649b64d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T20:18:51-03:00",
-      "message": "docs(status): prepara fechamento do hardening Area 11"
-    },
-    {
-      "sha": "a2446faa9e89a83ba4a184f15e9a0192c86f92ea",
-      "short_sha": "a2446fa",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:57:53-03:00",
-      "message": "fix(status): alinha checklist da Área 11 ao trabalho em revisão"
-    },
-    {
-      "sha": "238c19f8ecf161e88f31946554963e600d011ab6",
-      "short_sha": "238c19f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:43:47-03:00",
-      "message": "docs(status): mantém Área 11 como em execução"
-    },
-    {
-      "sha": "6d3cd5219f837b5404ddcac61e82993ef6afc4fa",
-      "short_sha": "6d3cd52",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-02T17:42:02-03:00",
-      "message": "test(status): acompanha Area 11 ativa em paralelo"
+      "date": "2026-09-02T23:46:27-03:00",
+      "message": "test(area11): inclui gate de materializacao na suite oficial"
     }
   ],
   "development": {
@@ -1802,7 +1802,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33710809437",
-    "run_number": "340"
+    "run_id": "33752438003",
+    "run_number": "341"
   }
 }
