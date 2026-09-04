@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T03:38:28Z",
+  "generated_at": "2026-09-04T03:38:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
@@ -97,6 +97,13 @@
     "execution": {
       "recent": [
         {
+          "code": "FUND-MATERIALIZACAO-2D",
+          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231 / PR NONE"
+        },
+        {
           "code": "FUND-MATERIALIZACAO-MEMORIAL",
           "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
           "state": "completed",
@@ -147,6 +154,13 @@
         }
       ],
       "active": [
+        {
+          "code": "FUND-MATERIALIZACAO-2D",
+          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231 / PR NONE"
+        },
         {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
@@ -234,6 +248,13 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-2D",
+          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231 / PR NONE"
         }
       ],
       "checklists": [
@@ -322,7 +343,7 @@
             {
               "code": "2D",
               "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-              "state": "planned"
+              "state": "in_progress"
             },
             {
               "code": "3D",
@@ -1851,7 +1872,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33833923108",
-    "run_number": "372"
+    "run_id": "33833945032",
+    "run_number": "373"
   }
 }
