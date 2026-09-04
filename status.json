@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T12:03:54Z",
+  "generated_at": "2026-09-04T12:12:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
@@ -101,7 +101,7 @@
           "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
           "state": "in_progress",
           "area": 11,
-          "source": "issue #231 / PR NONE  SCOPE: - gerar descritor geométrico 3D da sapata e armaduras já materializadas - consumir geometria/armadura/ancoragem existentes; 3D não calcula estrutura - bloquear materialização não ATUAL, identidade inválida e artefato executivo incoerente - preservar camadas, barras e ganchos com IDs estáveis e rastreabilidade - sem alteração do renderer/UI nesta unidade"
+          "source": "issue #231 / PR #306"
         },
         {
           "code": "FUND-MATERIALIZACAO-2D",
@@ -161,13 +161,6 @@
         }
       ],
       "active": [
-        {
-          "code": "FUND-MATERIALIZACAO-3D",
-          "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR NONE  SCOPE: - gerar descritor geométrico 3D da sapata e armaduras já materializadas - consumir geometria/armadura/ancoragem existentes; 3D não calcula estrutura - bloquear materialização não ATUAL, identidade inválida e artefato executivo incoerente - preservar camadas, barras e ganchos com IDs estáveis e rastreabilidade - sem alteração do renderer/UI nesta unidade"
-        },
         {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
@@ -262,13 +255,6 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-3D",
-          "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR NONE  SCOPE: - gerar descritor geométrico 3D da sapata e armaduras já materializadas - consumir geometria/armadura/ancoragem existentes; 3D não calcula estrutura - bloquear materialização não ATUAL, identidade inválida e artefato executivo incoerente - preservar camadas, barras e ganchos com IDs estáveis e rastreabilidade - sem alteração do renderer/UI nesta unidade"
         }
       ],
       "checklists": [
@@ -362,7 +348,7 @@
             {
               "code": "3D",
               "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
-              "state": "in_progress"
+              "state": "planned"
             },
             {
               "code": "TRACE",
@@ -1886,7 +1872,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33870881632",
-    "run_number": "377"
+    "run_id": "33871597221",
+    "run_number": "378"
   }
 }
