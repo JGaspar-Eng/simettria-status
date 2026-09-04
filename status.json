@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-09-04T04:03:29Z",
+  "generated_at": "2026-09-04T12:02:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2057fb3c74172ac4e447f3ffc8040a16b6e9a8d4",
-    "short_sha": "2057fb3",
+    "sha": "66a30d4c807095da0bc58f622e9485fae7b2b8d8",
+    "short_sha": "66a30d4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-04T00:37:55-03:00",
-    "message": "Merge pull request #304 from JGaspar-Eng/feat/area11-fund-materializacao-memorial"
+    "date": "2026-09-04T09:02:39-03:00",
+    "message": "Merge pull request #305 from JGaspar-Eng/feat/area11-fund-materializacao-2d"
   },
   "commits": [
+    {
+      "sha": "66a30d4c807095da0bc58f622e9485fae7b2b8d8",
+      "short_sha": "66a30d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T09:02:39-03:00",
+      "message": "Merge pull request #305 from JGaspar-Eng/feat/area11-fund-materializacao-2d"
+    },
+    {
+      "sha": "58874845d91d3525addd896fe6fd6af02c03da6d",
+      "short_sha": "5887484",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:54:31-03:00",
+      "message": "test(area11): cobre proveniência e coerência da malha 2D"
+    },
+    {
+      "sha": "1df7b463091d34fa5527b427668b38301057e16b",
+      "short_sha": "1df7b46",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:54:02-03:00",
+      "message": "fix(area11): torna projeção 2D estritamente rastreável"
+    },
+    {
+      "sha": "08a06a31d663f81c83516d7ddc98e1203e86f915",
+      "short_sha": "08a06a3",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:51:59-03:00",
+      "message": "docs(area11): documenta projeção executiva 2D"
+    },
+    {
+      "sha": "d013865fbdba4dd3b440fc461c6a5a2c0a590ef3",
+      "short_sha": "d013865",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:51:38-03:00",
+      "message": "test(area11): inclui validação 2D na cobertura oficial"
+    },
+    {
+      "sha": "dfcd021f4da044dfc11678aa95430a5d8dc1013c",
+      "short_sha": "dfcd021",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:50:50-03:00",
+      "message": "test(area11): cobre descritor 2D da sapata materializada"
+    },
+    {
+      "sha": "f33e718add08411e12dcda4058a4da8ef610c1a5",
+      "short_sha": "f33e718",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:50:10-03:00",
+      "message": "fix(area11): usa coordenadas locais no descritor 2D"
+    },
+    {
+      "sha": "801cea5c7d1b5ec91b5792996a0622be111a2a03",
+      "short_sha": "801cea5",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-04T00:49:40-03:00",
+      "message": "feat(area11): gera descritor 2D da sapata materializada"
+    },
     {
       "sha": "2057fb3c74172ac4e447f3ffc8040a16b6e9a8d4",
       "short_sha": "2057fb3",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-03T21:58:38-03:00",
       "message": "test(area11): alinha diagnóstico do probe fail-closed"
-    },
-    {
-      "sha": "b165d647a74af598b32909411d49d5bfeb6f08c6",
-      "short_sha": "b165d64",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T21:58:07-03:00",
-      "message": "fix(area11): preserva diagnóstico canônico de memorial stale"
-    },
-    {
-      "sha": "219c43346f183c3e8b9b59a64ad21ff18af1436d",
-      "short_sha": "219c433",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T21:56:28-03:00",
-      "message": "test(area11): cobre bloqueios persistido e identidade do memorial"
-    },
-    {
-      "sha": "3d5f0eb992a501a21b7a61dc6587d4dfcbce6a7a",
-      "short_sha": "3d5f0eb",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T21:55:59-03:00",
-      "message": "fix(area11): bloqueia memorial stale persistido e identidade divergente"
-    },
-    {
-      "sha": "c0e0a37cb2100f6f08924308aa6ed1baf0b845d6",
-      "short_sha": "c0e0a37",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T20:53:45-03:00",
-      "message": "test(area11): remove probe redundante do memorial"
-    },
-    {
-      "sha": "6febb0ce1b28b78396eb6dce23bc9b65da049b15",
-      "short_sha": "6febb0c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T20:53:29-03:00",
-      "message": "test(area11): cobre memorial na suíte oficial"
-    },
-    {
-      "sha": "29c31ecad734995d85cdedc316468a56aeda8a60",
-      "short_sha": "29c31ec",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T20:20:05-03:00",
-      "message": "test(area11): cobre memorial executivo da sapata"
-    },
-    {
-      "sha": "2d2a5c84666492b7c5d41f992b08722e0cf21599",
-      "short_sha": "2d2a5c8",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T20:19:16-03:00",
-      "message": "docs(area11): registra contrato do memorial executivo"
-    },
-    {
-      "sha": "e2263776f93cda40710f1235ab04fa3a79d0853b",
-      "short_sha": "e226377",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-03T20:18:46-03:00",
-      "message": "feat(area11): publica memorial executivo da sapata materializada"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         {
           "code": "FUND-MATERIALIZACAO-2D",
           "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-          "state": "in_progress",
+          "state": "completed",
           "area": 11,
           "source": "issue #231 / PR #305"
         },
@@ -155,13 +155,6 @@
       ],
       "active": [
         {
-          "code": "FUND-MATERIALIZACAO-2D",
-          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR #305"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -170,6 +163,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "FUND-MATERIALIZACAO-2D",
+          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #305"
+        },
         {
           "code": "FUND-MATERIALIZACAO-MEMORIAL",
           "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
@@ -248,13 +248,6 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-2D",
-          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR #305"
         }
       ],
       "checklists": [
@@ -343,7 +336,7 @@
             {
               "code": "2D",
               "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "3D",
@@ -1872,7 +1865,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33835387439",
-    "run_number": "374"
+    "run_id": "33870803513",
+    "run_number": "375"
   }
 }
