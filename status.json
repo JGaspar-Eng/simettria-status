@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-09-05T13:26:58Z",
+  "generated_at": "2026-09-05T14:30:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3611f1eec1677880ad2e5e98657b75a58e08664f",
-    "short_sha": "3611f1e",
+    "sha": "c3f94f32e7d86c5ce735ddf558ed54c23675ea5c",
+    "short_sha": "c3f94f3",
     "author": "Joanez Gaspar",
-    "date": "2026-09-05T01:34:31-03:00",
-    "message": "Merge pull request #311 from JGaspar-Eng/feat/area11-fund-materializacao-global"
+    "date": "2026-09-05T11:30:10-03:00",
+    "message": "Merge pull request #312 from JGaspar-Eng/feat/rigidez-global-vigas-sa-l1"
   },
   "commits": [
+    {
+      "sha": "c3f94f32e7d86c5ce735ddf558ed54c23675ea5c",
+      "short_sha": "c3f94f3",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T11:30:10-03:00",
+      "message": "Merge pull request #312 from JGaspar-Eng/feat/rigidez-global-vigas-sa-l1"
+    },
+    {
+      "sha": "a5284bb93d9cbd5be846468f1544d75b6d796598",
+      "short_sha": "a5284bb",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:54:56-03:00",
+      "message": "test(sa-l1): cobre vigas não participantes sem bloquear memorial"
+    },
+    {
+      "sha": "58ad39078ce5cf15d74ea437c9ed0dc2ccb6b2db",
+      "short_sha": "58ad390",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:54:15-03:00",
+      "message": "fix(sa-l1): não bloqueia vigas fora da topologia suportada"
+    },
+    {
+      "sha": "0625b013ff92b4e67045dbbea523a3db2d795124",
+      "short_sha": "0625b01",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:34:38-03:00",
+      "message": "test(sa-l1): fecha rigidez de viga sem vínculo rotacional explícito"
+    },
+    {
+      "sha": "5dbfa224c30c045380d88b8a3c91c8d1bbd52f49",
+      "short_sha": "5dbfa22",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:34:01-03:00",
+      "message": "fix(sa-l1): exige continuidade rotacional explícita nas vigas"
+    },
+    {
+      "sha": "267753f89b9fe44b6c0b82ca742a91681c98a675",
+      "short_sha": "267753f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:24:07-03:00",
+      "message": "test(sa-l1): discrimina participação da rigidez das vigas"
+    },
+    {
+      "sha": "6f1a3e43f2d4f055a4b31a3059f8ab0ca823d707",
+      "short_sha": "6f1a3e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:22:57-03:00",
+      "message": "feat(sa-l1): usa rigidez lateral conjunta de pilares e vigas"
+    },
+    {
+      "sha": "a22d873b63c832bf5e1bf2f439e7c718ad7efe25",
+      "short_sha": "a22d873",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T10:22:34-03:00",
+      "message": "feat(sa-l1): inclui rigidez das vigas no pórtico lateral"
+    },
     {
       "sha": "3611f1eec1677880ad2e5e98657b75a58e08664f",
       "short_sha": "3611f1e",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-05T01:25:03-03:00",
       "message": "fix(area11): corrige leitura dos memoriais no GLOBAL"
-    },
-    {
-      "sha": "f8696163441f35bddd88d1f08ed2bd6bde76c170",
-      "short_sha": "f869616",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T01:23:16-03:00",
-      "message": "test(area11): cobre fechamento GLOBAL no gate TRACE"
-    },
-    {
-      "sha": "a1eb554745d314c20870c0aff85f45ccb72c60d6",
-      "short_sha": "a1eb554",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T01:22:35-03:00",
-      "message": "docs(area11): documenta fechamento global da materializacao"
-    },
-    {
-      "sha": "b3a483de818f9d60c9bbd1828d02f6779f44a6a7",
-      "short_sha": "b3a483d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T01:22:06-03:00",
-      "message": "feat(area11): consolida estado global da materializacao"
-    },
-    {
-      "sha": "7269240106547520ba05f5a3104ebc36649e2f5e",
-      "short_sha": "7269240",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T01:20:24-03:00",
-      "message": "Merge pull request #307 from JGaspar-Eng/feat/area11-fund-materializacao-trace"
-    },
-    {
-      "sha": "e46f4ff692900223d9dc58c21c283e16dc454920",
-      "short_sha": "e46f4ff",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T01:17:49-03:00",
-      "message": "test(area11): cobre reconciliacao integral do memorial TRACE"
-    },
-    {
-      "sha": "f8163bf90c81bc95671973c92531a69f2711f740",
-      "short_sha": "f8163bf",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T01:17:18-03:00",
-      "message": "fix(area11): reconcilia memorial e evidencias no TRACE"
-    },
-    {
-      "sha": "ce11ea5e42371e0f5deb4fb6a11c07da5855abee",
-      "short_sha": "ce11ea5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:32:13-03:00",
-      "message": "test(area11): preserva governança do gate ao incluir TRACE"
-    },
-    {
-      "sha": "e944162d44b1999151db84057ae2058f8ef7fd41",
-      "short_sha": "e944162",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:31:18-03:00",
-      "message": "docs(area11): documenta TRACE da sapata materializada"
     }
   ],
   "development": {
@@ -1886,7 +1886,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33968914184",
-    "run_number": "389"
+    "run_id": "33971998446",
+    "run_number": "390"
   }
 }
