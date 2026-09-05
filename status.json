@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-05T04:24:04Z",
+  "generated_at": "2026-09-05T04:34:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7269240106547520ba05f5a3104ebc36649e2f5e",
-    "short_sha": "7269240",
+    "sha": "3611f1eec1677880ad2e5e98657b75a58e08664f",
+    "short_sha": "3611f1e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-05T01:20:24-03:00",
-    "message": "Merge pull request #307 from JGaspar-Eng/feat/area11-fund-materializacao-trace"
+    "date": "2026-09-05T01:34:31-03:00",
+    "message": "Merge pull request #311 from JGaspar-Eng/feat/area11-fund-materializacao-global"
   },
   "commits": [
+    {
+      "sha": "3611f1eec1677880ad2e5e98657b75a58e08664f",
+      "short_sha": "3611f1e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T01:34:31-03:00",
+      "message": "Merge pull request #311 from JGaspar-Eng/feat/area11-fund-materializacao-global"
+    },
+    {
+      "sha": "56e0f50c79938ad43c2b2748aff54960b1c507d8",
+      "short_sha": "56e0f50",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T01:25:03-03:00",
+      "message": "fix(area11): corrige leitura dos memoriais no GLOBAL"
+    },
+    {
+      "sha": "f8696163441f35bddd88d1f08ed2bd6bde76c170",
+      "short_sha": "f869616",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T01:23:16-03:00",
+      "message": "test(area11): cobre fechamento GLOBAL no gate TRACE"
+    },
+    {
+      "sha": "a1eb554745d314c20870c0aff85f45ccb72c60d6",
+      "short_sha": "a1eb554",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T01:22:35-03:00",
+      "message": "docs(area11): documenta fechamento global da materializacao"
+    },
+    {
+      "sha": "b3a483de818f9d60c9bbd1828d02f6779f44a6a7",
+      "short_sha": "b3a483d",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T01:22:06-03:00",
+      "message": "feat(area11): consolida estado global da materializacao"
+    },
     {
       "sha": "7269240106547520ba05f5a3104ebc36649e2f5e",
       "short_sha": "7269240",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-04T09:31:18-03:00",
       "message": "docs(area11): documenta TRACE da sapata materializada"
-    },
-    {
-      "sha": "48cbdc9a5a6886cd3ab2dd90a2d2ecb056851b6b",
-      "short_sha": "48cbdc9",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:30:59-03:00",
-      "message": "test(area11): inclui TRACE no gate oficial"
-    },
-    {
-      "sha": "3cdd882f1ee60e15f877e06de1bc07fdcce03f6e",
-      "short_sha": "3cdd882",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:30:22-03:00",
-      "message": "test(area11): valida TRACE da sapata materializada"
-    },
-    {
-      "sha": "30989e1b33638f806d475f2a90c98ec2b3d40f59",
-      "short_sha": "30989e1",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:29:44-03:00",
-      "message": "test(area11): preserva cobertura 2D e 3D existente"
-    },
-    {
-      "sha": "0c397efb6251767e304e68f35940be1ec2c65ac3",
-      "short_sha": "0c397ef",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:28:55-03:00",
-      "message": "test(area11): cobre TRACE da sapata materializada"
-    },
-    {
-      "sha": "e99580d285830ad1be36689fbf333b27bff284d2",
-      "short_sha": "e99580d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-04T09:27:21-03:00",
-      "message": "feat(area11): rastreia barras da sapata materializada"
     }
   ],
   "development": {
@@ -99,9 +99,9 @@
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
           "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-          "state": "in_progress",
+          "state": "completed",
           "area": 11,
-          "source": "issue #231 / PR #311 SCOPE: fechamento global fail-closed das sapatas materializadas, exigindo TRACE por elemento e unicidade global de fundações/conjuntos/barras."
+          "source": "issue #231 / PR #311"
         },
         {
           "code": "FUND-MATERIALIZACAO-TRACE",
@@ -144,13 +144,6 @@
           "state": "completed",
           "area": 11,
           "source": "issue #231 / PR #301"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada e compatível com projetos anteriores",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231 / PR #299"
         },
         {
           "code": "NOR-FUND-05-HARDENING",
@@ -169,13 +162,6 @@
       ],
       "active": [
         {
-          "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR #311 SCOPE: fechamento global fail-closed das sapatas materializadas, exigindo TRACE por elemento e unicidade global de fundações/conjuntos/barras."
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -184,6 +170,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "FUND-MATERIALIZACAO-GLOBAL",
+          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #311"
+        },
         {
           "code": "FUND-MATERIALIZACAO-TRACE",
           "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
@@ -231,7 +224,7 @@
           "title": "Persistência/JSON versionada e compatível com projetos anteriores",
           "state": "completed",
           "area": 11,
-          "source": "issue #231 / PR #299"
+          "source": "issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO-MODELO",
@@ -283,13 +276,6 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231 / PR #311 SCOPE: fechamento global fail-closed das sapatas materializadas, exigindo TRACE por elemento e unicidade global de fundações/conjuntos/barras."
         }
       ],
       "checklists": [
@@ -393,7 +379,7 @@
             {
               "code": "GLOBAL",
               "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-              "state": "in_progress"
+              "state": "completed"
             }
           ]
         }
@@ -1907,7 +1893,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33944437231",
-    "run_number": "385"
+    "run_id": "33944926398",
+    "run_number": "386"
   }
 }
