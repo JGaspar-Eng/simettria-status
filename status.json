@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T04:20:42Z",
+  "generated_at": "2026-09-05T04:24:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
@@ -97,6 +97,13 @@
     "execution": {
       "recent": [
         {
+          "code": "FUND-MATERIALIZACAO-GLOBAL",
+          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231 / PR #311 SCOPE: fechamento global fail-closed das sapatas materializadas, exigindo TRACE por elemento e unicidade global de fundações/conjuntos/barras."
+        },
+        {
           "code": "FUND-MATERIALIZACAO-TRACE",
           "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
           "state": "completed",
@@ -146,13 +153,6 @@
           "source": "issue #231 / PR #299"
         },
         {
-          "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criar/atualizar sapata no modelo com geometria, armaduras e rastreabilidade",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231 / PR #297"
-        },
-        {
           "code": "NOR-FUND-05-HARDENING",
           "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
           "state": "completed",
@@ -168,6 +168,13 @@
         }
       ],
       "active": [
+        {
+          "code": "FUND-MATERIALIZACAO-GLOBAL",
+          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231 / PR #311 SCOPE: fechamento global fail-closed das sapatas materializadas, exigindo TRACE por elemento e unicidade global de fundações/conjuntos/barras."
+        },
         {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
@@ -231,7 +238,7 @@
           "title": "Criar/atualizar sapata no modelo com geometria, armaduras e rastreabilidade",
           "state": "completed",
           "area": 11,
-          "source": "issue #231 / PR #297"
+          "source": "issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO-ORQ",
@@ -276,6 +283,13 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-GLOBAL",
+          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231 / PR #311 SCOPE: fechamento global fail-closed das sapatas materializadas, exigindo TRACE por elemento e unicidade global de fundações/conjuntos/barras."
         }
       ],
       "checklists": [
@@ -379,7 +393,7 @@
             {
               "code": "GLOBAL",
               "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-              "state": "planned"
+              "state": "in_progress"
             }
           ]
         }
@@ -1893,7 +1907,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33944284348",
-    "run_number": "384"
+    "run_id": "33944437231",
+    "run_number": "385"
   }
 }
