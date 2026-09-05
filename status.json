@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-05T15:29:54Z",
+  "generated_at": "2026-09-05T15:39:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fd84e21755374472802fbb1f74511e2f832b2ec8",
-    "short_sha": "fd84e21",
+    "sha": "e46d7d984540443bbddfb48be2c31dea97ae3c7b",
+    "short_sha": "e46d7d9",
     "author": "Joanez Gaspar",
-    "date": "2026-09-05T12:29:36-03:00",
-    "message": "Merge pull request #313 from JGaspar-Eng/feat/sa-l1-auditoria-rigidez-estrutura"
+    "date": "2026-09-05T12:38:48-03:00",
+    "message": "Merge pull request #314 from JGaspar-Eng/feat/sa-l1-wiring-vigas-proveniencia"
   },
   "commits": [
+    {
+      "sha": "e46d7d984540443bbddfb48be2c31dea97ae3c7b",
+      "short_sha": "e46d7d9",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T12:38:48-03:00",
+      "message": "Merge pull request #314 from JGaspar-Eng/feat/sa-l1-wiring-vigas-proveniencia"
+    },
+    {
+      "sha": "64014f0d65b11df6c3e0b888149a6654ef2d3ae8",
+      "short_sha": "64014f0",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T12:36:49-03:00",
+      "message": "test(sa-l1): garante wiring real de vigas na auditoria"
+    },
+    {
+      "sha": "081d602c431794bff6d443e9ae6195f7a128f95c",
+      "short_sha": "081d602",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T12:36:20-03:00",
+      "message": "fix(sa-l1): fornece vigas à auditoria real do modal"
+    },
+    {
+      "sha": "339b7c252aa7d8d6d87f19d19378668fb6e7070a",
+      "short_sha": "339b7c2",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T12:34:12-03:00",
+      "message": "test(sa-l1): prova proveniencia dinamica da rigidez no graph"
+    },
+    {
+      "sha": "731aa8a477f267ab6eb1fec774e9fb6960f9fe35",
+      "short_sha": "731aa8a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-05T12:33:47-03:00",
+      "message": "fix(sa-l1): rastreia origem real da rigidez no graph"
+    },
     {
       "sha": "fd84e21755374472802fbb1f74511e2f832b2ec8",
       "short_sha": "fd84e21",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-05T10:54:56-03:00",
       "message": "test(sa-l1): cobre vigas não participantes sem bloquear memorial"
-    },
-    {
-      "sha": "58ad39078ce5cf15d74ea437c9ed0dc2ccb6b2db",
-      "short_sha": "58ad390",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T10:54:15-03:00",
-      "message": "fix(sa-l1): não bloqueia vigas fora da topologia suportada"
-    },
-    {
-      "sha": "0625b013ff92b4e67045dbbea523a3db2d795124",
-      "short_sha": "0625b01",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T10:34:38-03:00",
-      "message": "test(sa-l1): fecha rigidez de viga sem vínculo rotacional explícito"
-    },
-    {
-      "sha": "5dbfa224c30c045380d88b8a3c91c8d1bbd52f49",
-      "short_sha": "5dbfa22",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T10:34:01-03:00",
-      "message": "fix(sa-l1): exige continuidade rotacional explícita nas vigas"
-    },
-    {
-      "sha": "267753f89b9fe44b6c0b82ca742a91681c98a675",
-      "short_sha": "267753f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T10:24:07-03:00",
-      "message": "test(sa-l1): discrimina participação da rigidez das vigas"
-    },
-    {
-      "sha": "6f1a3e43f2d4f055a4b31a3059f8ab0ca823d707",
-      "short_sha": "6f1a3e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T10:22:57-03:00",
-      "message": "feat(sa-l1): usa rigidez lateral conjunta de pilares e vigas"
     }
   ],
   "development": {
@@ -1886,7 +1886,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "33974960644",
-    "run_number": "391"
+    "run_id": "33975436625",
+    "run_number": "392"
   }
 }
