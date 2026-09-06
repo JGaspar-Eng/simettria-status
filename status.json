@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-06T03:16:11Z",
+  "generated_at": "2026-09-06T03:19:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "47681af249385c13eb840b822e337c062058eeef",
-    "short_sha": "47681af",
+    "sha": "5a32106d9884e0ccb5489096320682f3d0a6ff63",
+    "short_sha": "5a32106",
     "author": "Joanez Gaspar",
-    "date": "2026-09-06T00:15:54-03:00",
-    "message": "Merge pull request #317 from JGaspar-Eng/fix/ux-ghost3d"
+    "date": "2026-09-06T00:19:18-03:00",
+    "message": "Merge pull request #319 from JGaspar-Eng/fix/ux-predimensionamento-contextual-v2"
   },
   "commits": [
+    {
+      "sha": "5a32106d9884e0ccb5489096320682f3d0a6ff63",
+      "short_sha": "5a32106",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T00:19:18-03:00",
+      "message": "Merge pull request #319 from JGaspar-Eng/fix/ux-predimensionamento-contextual-v2"
+    },
+    {
+      "sha": "914a7541e878a566d48d2ea67a7bb6dbc0ca0a34",
+      "short_sha": "914a754",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T00:17:10-03:00",
+      "message": "test(ux): congela seleção e sugestão contextual em conjunto"
+    },
+    {
+      "sha": "ad06600d82190697cef58bd9b6647d83d9aac65f",
+      "short_sha": "ad06600",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T00:16:41-03:00",
+      "message": "fix(ux): preserva seleção e restaura sugestão contextual"
+    },
     {
       "sha": "47681af249385c13eb840b822e337c062058eeef",
       "short_sha": "47681af",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-06T00:09:53-03:00",
       "message": "test(ux): congela semântica da seleção 2D no gate existente"
-    },
-    {
-      "sha": "122aa10aa6b9d2e7b408dbeecee4203b6259f321",
-      "short_sha": "122aa10",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:46:04-03:00",
-      "message": "test(ux): cobre ciclo do modo fantasma 3D"
-    },
-    {
-      "sha": "abb263ca2188a40bd704ba8c39e93b3fda12e5fe",
-      "short_sha": "abb263c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:45:53-03:00",
-      "message": "fix(ux): conecta modo fantasma ao modal 3D"
-    },
-    {
-      "sha": "bb4dc60e6ec311ec91f137707847d21251fe61a2",
-      "short_sha": "bb4dc60",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:45:33-03:00",
-      "message": "fix(ux): restaura interação fantasma no 3D"
     }
   ],
   "development": {
@@ -1886,7 +1886,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34008558186",
-    "run_number": "394"
+    "run_id": "34008698341",
+    "run_number": "395"
   }
 }
