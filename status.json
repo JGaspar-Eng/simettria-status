@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-06T03:15:47Z",
+  "generated_at": "2026-09-06T03:16:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1d9120b65ecf172c7353d7802f2257b8a112ce70",
-    "short_sha": "1d9120b",
+    "sha": "47681af249385c13eb840b822e337c062058eeef",
+    "short_sha": "47681af",
     "author": "Joanez Gaspar",
-    "date": "2026-09-06T00:15:32-03:00",
-    "message": "Merge pull request #316 from JGaspar-Eng/fix/ux-selecao-2d-autoridade-unica"
+    "date": "2026-09-06T00:15:54-03:00",
+    "message": "Merge pull request #317 from JGaspar-Eng/fix/ux-ghost3d"
   },
   "commits": [
+    {
+      "sha": "47681af249385c13eb840b822e337c062058eeef",
+      "short_sha": "47681af",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T00:15:54-03:00",
+      "message": "Merge pull request #317 from JGaspar-Eng/fix/ux-ghost3d"
+    },
     {
       "sha": "1d9120b65ecf172c7353d7802f2257b8a112ce70",
       "short_sha": "1d9120b",
@@ -23,6 +30,20 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-06T00:13:47-03:00",
       "message": "test(ux): alinha contrato congelado ao runtime validado"
+    },
+    {
+      "sha": "aba10f6524818b3d57fd5f8e20e7021dbd8f6098",
+      "short_sha": "aba10f6",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T00:11:25-03:00",
+      "message": "test(ux): move contrato fantasma para gate 3D oficial"
+    },
+    {
+      "sha": "67b5d178970fe05efa96b92dc3ad2a09a6a6bf56",
+      "short_sha": "67b5d17",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T00:11:19-03:00",
+      "message": "test(ux): congela modo fantasma no gate 3D oficial"
     },
     {
       "sha": "6b95b2d9e6d22296c5e2b02e0501261bcb80d140",
@@ -39,46 +60,25 @@
       "message": "test(ux): congela semântica da seleção 2D no gate existente"
     },
     {
-      "sha": "9f09410939b7562be78aa1844eb7a4867e402f07",
-      "short_sha": "9f09410",
+      "sha": "122aa10aa6b9d2e7b408dbeecee4203b6259f321",
+      "short_sha": "122aa10",
       "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:43:52-03:00",
-      "message": "test(ux): congela ctrl adiciona e shift remove"
+      "date": "2026-09-05T23:46:04-03:00",
+      "message": "test(ux): cobre ciclo do modo fantasma 3D"
     },
     {
-      "sha": "d31badfe97a56821563b4d818619a02d7d127a41",
-      "short_sha": "d31badf",
+      "sha": "abb263ca2188a40bd704ba8c39e93b3fda12e5fe",
+      "short_sha": "abb263c",
       "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:43:41-03:00",
-      "message": "fix(ux): ctrl adiciona e shift remove seleção"
+      "date": "2026-09-05T23:45:53-03:00",
+      "message": "fix(ux): conecta modo fantasma ao modal 3D"
     },
     {
-      "sha": "245d8f347a7b1cdc3e5f20bb767d3916ca74bce5",
-      "short_sha": "245d8f3",
+      "sha": "bb4dc60e6ec311ec91f137707847d21251fe61a2",
+      "short_sha": "bb4dc60",
       "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:43:14-03:00",
-      "message": "fix(ux): separa adição e remoção na seleção 2D"
-    },
-    {
-      "sha": "b644031d0e53e02a6ed71640f6d28ec7666a78d6",
-      "short_sha": "b644031",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:30:01-03:00",
-      "message": "test(ux): congela semântica da seleção 2d"
-    },
-    {
-      "sha": "bd84775f2e7c266d6fe3614789dd5afda8bbcb27",
-      "short_sha": "bd84775",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:29:49-03:00",
-      "message": "fix(ux): liga seleção 2d pela autoridade única"
-    },
-    {
-      "sha": "0ad4d48ad655dcb3fa08a8cfcbdc8f5d9ab7c8c5",
-      "short_sha": "0ad4d48",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-05T23:29:30-03:00",
-      "message": "fix(ux): centraliza eventos da seleção 2d"
+      "date": "2026-09-05T23:45:33-03:00",
+      "message": "fix(ux): restaura interação fantasma no 3D"
     }
   ],
   "development": {
@@ -1886,7 +1886,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34008544087",
-    "run_number": "393"
+    "run_id": "34008558186",
+    "run_number": "394"
   }
 }
