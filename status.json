@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T21:46:33Z",
+  "generated_at": "2026-09-07T21:52:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "caaaa83e020b5d7a3038e24212cb56d6e8115154",
-    "short_sha": "caaaa83",
+    "sha": "68ae3bd5a211957b105603ecef5b42d58ed8d865",
+    "short_sha": "68ae3bd",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:46:14-03:00",
-    "message": "Merge pull request #341 from JGaspar-Eng/fix/int-review-repassa-vigas-opt-pilar"
+    "date": "2026-09-07T18:51:47-03:00",
+    "message": "Merge pull request #344 from JGaspar-Eng/fix/int-verify-escala-ausente-fail-closed"
   },
   "commits": [
+    {
+      "sha": "68ae3bd5a211957b105603ecef5b42d58ed8d865",
+      "short_sha": "68ae3bd",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:51:47-03:00",
+      "message": "Merge pull request #344 from JGaspar-Eng/fix/int-verify-escala-ausente-fail-closed"
+    },
+    {
+      "sha": "9acfe32604030605c9e20cbf1655c768ddb38b04",
+      "short_sha": "9acfe32",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:49:36-03:00",
+      "message": "test(int-verify): impede default silencioso de escala"
+    },
+    {
+      "sha": "0f0f46972e7e78f99c0e53e7705adc895ea7e62a",
+      "short_sha": "0f0f469",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:49:15-03:00",
+      "message": "fix(int-verify): falha fechada sem escala geotécnica"
+    },
     {
       "sha": "caaaa83e020b5d7a3038e24212cb56d6e8115154",
       "short_sha": "caaaa83",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:35:33-03:00",
       "message": "test(int-check): exige proveniencia da inspecao injetada"
-    },
-    {
-      "sha": "c8db5a9e699280d349b89cc4abd63b2521ec6bff",
-      "short_sha": "c8db5a9",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:35:17-03:00",
-      "message": "test(int-check): rejeita inspecao obsoleta"
-    },
-    {
-      "sha": "32b2a3b9acaa59688213a9c70ff9bf94ad781da5",
-      "short_sha": "32b2a3b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:34:34-03:00",
-      "message": "fix(int-check): valida proveniencia da inspecao injetada"
-    },
-    {
-      "sha": "3348f4b22a4af752a3a85a98cc8f5910719d022c",
-      "short_sha": "3348f4b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:33:52-03:00",
-      "message": "fix(inspector): prova versao da inspecao estrutural"
     }
   ],
   "development": {
@@ -1910,7 +1910,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34164325108",
-    "run_number": "425"
+    "run_id": "34164643364",
+    "run_number": "426"
   }
 }
