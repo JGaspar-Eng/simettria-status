@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T21:10:18Z",
+  "generated_at": "2026-09-07T21:15:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fdb3cdf80adc7599492837b5960db6d966e7d079",
-    "short_sha": "fdb3cdf",
+    "sha": "5aa55544a7e95f883b4c8189bf15160de7c10554",
+    "short_sha": "5aa5554",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:09:59-03:00",
-    "message": "Merge pull request #328 from JGaspar-Eng/fix/sa-l1-pavimento-vigas-nao-participantes"
+    "date": "2026-09-07T18:15:30-03:00",
+    "message": "Merge pull request #331 from JGaspar-Eng/fix/int-verify-escala-fail-closed"
   },
   "commits": [
+    {
+      "sha": "5aa55544a7e95f883b4c8189bf15160de7c10554",
+      "short_sha": "5aa5554",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:15:30-03:00",
+      "message": "Merge pull request #331 from JGaspar-Eng/fix/int-verify-escala-fail-closed"
+    },
+    {
+      "sha": "071611abb27a478a578b209b08ddec482dcbf87b",
+      "short_sha": "071611a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:13:32-03:00",
+      "message": "test(int-verify): congela fail-closed da escala"
+    },
+    {
+      "sha": "23d621b84ce3de5ba60ae10eed81551afb64c707",
+      "short_sha": "23d621b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:13:11-03:00",
+      "message": "fix(int-verify): rejeita escala geotecnica invalida"
+    },
     {
       "sha": "fdb3cdf80adc7599492837b5960db6d966e7d079",
       "short_sha": "fdb3cdf",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T17:31:20-03:00",
       "message": "Merge pull request #326 from JGaspar-Eng/fix/pilar-prumada-entidade-viva"
-    },
-    {
-      "sha": "aead2cedd27d743b67e661e4b041e3de52f4fdcf",
-      "short_sha": "aead2ce",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:29:04-03:00",
-      "message": "test(pilar): cobre prumada apos consolidacao"
-    },
-    {
-      "sha": "de5b95c1f83d24670cb69f3c471f65d441617b1c",
-      "short_sha": "de5b95c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:28:40-03:00",
-      "message": "fix(pilar): resolve entidade viva apos consolidar prumada"
-    },
-    {
-      "sha": "8630c57f52a6c1af08a059ff2be440bbc0b75be3",
-      "short_sha": "8630c57",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:25:09-03:00",
-      "message": "Merge pull request #325 from JGaspar-Eng/test/sa-l1-sensibilidade-secao-viga"
     }
   ],
   "development": {
@@ -1924,7 +1924,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34162124997",
-    "run_number": "416"
+    "run_id": "34162476899",
+    "run_number": "417"
   }
 }
