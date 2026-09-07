@@ -1,15 +1,15 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-07T20:27:44.013845+00:00",
+  "generated_at": "2026-09-07T20:31:53.539244+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
     "policy": "latest_canonical_comment_per_pr_or_front_plus_real_pr_state"
   },
   "summary": {
-    "fronts": 111,
+    "fronts": 112,
     "active": 10,
-    "closed": 88
+    "closed": 89
   },
   "active": [
     {
@@ -25,9 +25,6 @@
       "comment_id": 5575347241,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5575347241",
       "updated_at": "2026-09-07T20:27:04Z",
-      "suite_gaps": [
-        "falta regressão que prove edição de `Toda a prumada` sobre a entidade sobrevivente após consolidação"
-      ],
       "ci": [
         "pendente"
       ],
@@ -40,6 +37,9 @@
       "result": [
         "defeito remanescente confirmado na main atual: `aplicarPropriedadesPilares` chama `consolidarPrumadasPilares()` e depois pode continuar usando a referência antiga `pilar` quando a entidade selecionada foi removida pela consolidação; o patch antigo do PR #309 continha correção, mas o PR mistura mudanças visuais e conteúdo SA-L1 hoje obsoleto e não deve ser reaproveitado integralmente",
         "frente nova será cirúrgica: resolver a entidade sobrevivente após consolidação e congelar o comportamento com regressão"
+      ],
+      "suite_gaps": [
+        "falta regressão que prove edição de `Toda a prumada` sobre a entidade sobrevivente após consolidação"
       ]
     },
     {
@@ -55,9 +55,6 @@
       "comment_id": 5549372608,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5549372608",
       "updated_at": "2026-09-05T04:35:15Z",
-      "suite_gaps": [
-        "a definir após auditoria do modelo lateral existente"
-      ],
       "ci": [
         "ainda não aplicável"
       ],
@@ -70,6 +67,9 @@
       "result": [
         "nova frente iniciada a partir do main após merge do GLOBAL",
         "branch: feat/rigidez-global-vigas-sa-l1"
+      ],
+      "suite_gaps": [
+        "a definir após auditoria do modelo lateral existente"
       ]
     },
     {
@@ -85,7 +85,6 @@
       "comment_id": 5549317655,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5549317655",
       "updated_at": "2026-09-05T04:23:47Z",
-      "suite_gaps": [],
       "ci": [
         "Testes SIMETTRIA #981 SUCCESS",
         "REVIEW: APPROVE",
@@ -93,7 +92,8 @@
       ],
       "next_for_claude": [],
       "next_for_chatgpt": [],
-      "result": []
+      "result": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -108,11 +108,11 @@
       "comment_id": 5540383718,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5540383718",
       "updated_at": "2026-09-04T12:24:30Z",
-      "suite_gaps": [],
       "ci": [],
       "next_for_claude": [],
       "next_for_chatgpt": [],
-      "result": []
+      "result": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -127,9 +127,6 @@
       "comment_id": 5535307326,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5535307326",
       "updated_at": "2026-09-04T03:38:31Z",
-      "suite_gaps": [
-        "a definir durante implementação"
-      ],
       "ci": [
         "ainda não aplicável"
       ],
@@ -141,6 +138,9 @@
       ],
       "result": [
         "branch feat/area11-fund-materializacao-2d criada a partir do merge do MEMORIAL"
+      ],
+      "suite_gaps": [
+        "a definir durante implementação"
       ]
     },
     {
@@ -156,9 +156,6 @@
       "comment_id": 5529528681,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5529528681",
       "updated_at": "2026-09-03T17:26:57Z",
-      "suite_gaps": [
-        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
-      ],
       "ci": [
         "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
       ],
@@ -171,6 +168,9 @@
       "result": [
         "PR #299 JSON mergeado e aprovado",
         "STALE passa a ser a atividade corrente da Área 11"
+      ],
+      "suite_gaps": [
+        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
       ]
     },
     {
@@ -186,11 +186,11 @@
       "comment_id": 5525365570,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5525365570",
       "updated_at": "2026-09-03T11:57:42Z",
-      "suite_gaps": [],
       "ci": [],
       "next_for_claude": [],
       "next_for_chatgpt": [],
-      "result": []
+      "result": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -205,9 +205,6 @@
       "comment_id": 5512502676,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5512502676",
       "updated_at": "2026-09-02T16:02:22Z",
-      "suite_gaps": [
-        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
-      ],
       "ci": [
         "ainda não executado"
       ],
@@ -221,6 +218,9 @@
         "NOR-FUND-05 iniciada a partir do main atual",
         "branch criada: feat/area11-nor-fund-05-detalhamento-armadura",
         "objetivo: consumir a área necessária já demonstrada pelo NOR-FUND-03, produzir arranjo de barras rastreável por direção e reconciliar a pendência detalhamento_da_armadura_de_sapata sem reabrir NOR-FUND-01/02/03/04"
+      ],
+      "suite_gaps": [
+        "em definição nesta frente; será fechado antes de READY_FOR_REVIEW"
       ]
     },
     {
@@ -236,9 +236,6 @@
       "comment_id": 5509573933,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509573933",
       "updated_at": "2026-09-02T12:32:30Z",
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
-      ],
       "ci": [
         "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
       ],
@@ -253,6 +250,9 @@
         "geometria em planta e altura estrutural passaram a ser produzidas nas frentes normativas posteriores (#276/#277) e a ancoragem dos arranques foi fechada no #283",
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
+      ],
+      "suite_gaps": [
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ]
     },
     {
@@ -268,9 +268,6 @@
       "comment_id": 5472604201,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472604201",
       "updated_at": "2026-08-31T01:31:44Z",
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
-      ],
       "ci": [
         "pendente"
       ],
@@ -284,10 +281,47 @@
         "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CHATGPT",
+      "front": "pilar-prumada-entidade-viva",
+      "status": "MERGED",
+      "base": "8630c57f52a6c1af08a059ff2be440bbc0b75be3",
+      "head": "5e67ec04413979f3b96fc427579992e9a357607c",
+      "pr": "#326",
+      "visual_evidence": "- NOT_REQUIRED: controller + teste, sem alteração de apresentação",
+      "user_visual_approval": "- NOT_REQUIRED pelo mesmo motivo",
+      "merge_policy": "- AUTO_OK",
+      "comment_id": 5575380572,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5575380572",
+      "updated_at": "2026-09-07T20:31:35Z",
+      "ci": [
+        "Testes SIMETTRIA #1045 / success / HEAD aead2cedd27d743b67e661e4b041e3de52f4fdcf"
+      ],
+      "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
+        "sanear PRs antigos que ficaram perigosamente obsoletos após estas correções, sem reabrir escopo visual"
+      ],
+      "result": [
+        "`aplicarPropriedadesPilares` deixa de editar referência órfã após consolidação",
+        "entidade sobrevivente é resolvida por id/posição, continuidade é aplicada ao pilar vivo, alvos retornados pertencem ao estado e são deduplicados",
+        "regressão reproduz seleção do duplicado removido e exige extensão real da continuidade até P2",
+        "PR #326 mergeado"
+      ],
+      "suite_gaps": [
+        "NONE para o defeito reproduzido"
+      ],
+      "pr_state": "closed",
+      "pr_merged": true
+    },
     {
       "from": "CHATGPT",
       "front": "pilar-prumada-entidade-viva",
@@ -301,9 +335,6 @@
       "comment_id": 5575347241,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5575347241",
       "updated_at": "2026-09-07T20:27:04Z",
-      "suite_gaps": [
-        "falta regressão que prove edição de `Toda a prumada` sobre a entidade sobrevivente após consolidação"
-      ],
       "ci": [
         "pendente"
       ],
@@ -316,6 +347,9 @@
       "result": [
         "defeito remanescente confirmado na main atual: `aplicarPropriedadesPilares` chama `consolidarPrumadasPilares()` e depois pode continuar usando a referência antiga `pilar` quando a entidade selecionada foi removida pela consolidação; o patch antigo do PR #309 continha correção, mas o PR mistura mudanças visuais e conteúdo SA-L1 hoje obsoleto e não deve ser reaproveitado integralmente",
         "frente nova será cirúrgica: resolver a entidade sobrevivente após consolidação e congelar o comportamento com regressão"
+      ],
+      "suite_gaps": [
+        "falta regressão que prove edição de `Toda a prumada` sobre a entidade sobrevivente após consolidação"
       ]
     },
     {
@@ -331,9 +365,6 @@
       "comment_id": 5575339700,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5575339700",
       "updated_at": "2026-09-07T20:26:06Z",
-      "suite_gaps": [
-        "NONE para o critério de conclusão da issue #308"
-      ],
       "ci": [
         "Testes SIMETTRIA #1043 / success / HEAD a3d3aa51cb8e87cfab831ad72f19ccef749a871e"
       ],
@@ -349,6 +380,9 @@
         "nenhuma alteração em código de produção ou UX",
         "PR #325 mergeado",
         "issue #308 encerrada como completed após o critério de sensibilidade de seção ficar coberto"
+      ],
+      "suite_gaps": [
+        "NONE para o critério de conclusão da issue #308"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -366,9 +400,6 @@
       "comment_id": 5552128714,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5552128714",
       "updated_at": "2026-09-05T13:26:42Z",
-      "suite_gaps": [
-        "topologias pilar-viga, viga-viga e ponto-ponto ainda não possuem DOF rotacional próprio e são explicitamente não participantes"
-      ],
       "ci": [
         "Testes SIMETTRIA #986 / SUCCESS / HEAD 267753f89b9fe44b6c0b82ca742a91681c98a675"
       ],
@@ -383,6 +414,9 @@
         "alteração de h da viga altera a resposta lateral; 14x60 reduz deslocamento em relação a 14x30 no teste",
         "demais topologias de viga são declaradas não participantes, nunca convertidas silenciosamente",
         "runtime real DIM-PILAR/memorial usa o assembler conjunto"
+      ],
+      "suite_gaps": [
+        "topologias pilar-viga, viga-viga e ponto-ponto ainda não possuem DOF rotacional próprio e são explicitamente não participantes"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -400,9 +434,6 @@
       "comment_id": 5549372608,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5549372608",
       "updated_at": "2026-09-05T04:35:15Z",
-      "suite_gaps": [
-        "a definir após auditoria do modelo lateral existente"
-      ],
       "ci": [
         "ainda não aplicável"
       ],
@@ -415,6 +446,9 @@
       "result": [
         "nova frente iniciada a partir do main após merge do GLOBAL",
         "branch: feat/rigidez-global-vigas-sa-l1"
+      ],
+      "suite_gaps": [
+        "a definir após auditoria do modelo lateral existente"
       ]
     },
     {
@@ -430,9 +464,6 @@
       "comment_id": 5549370637,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5549370637",
       "updated_at": "2026-09-05T04:34:50Z",
-      "suite_gaps": [
-        "ressalvas não bloqueantes registradas: restaurar asserções TRACE removidas e substituir localeCompare por comparação bruta em futura manutenção"
-      ],
       "ci": [
         "Testes SIMETTRIA #984 / SUCCESS / HEAD 56e0f50c79938ad43c2b2748aff54960b1c507d8"
       ],
@@ -448,6 +479,9 @@
         "índice global determinístico publicado",
         "cadeia FUND-MATERIALIZACAO encerrada: ORQ→MODELO→JSON→STALE→EDIT→MEMORIAL→2D→3D→TRACE→GLOBAL",
         "merge commit: 3611f1eec1677880ad2e5e98657b75a58e08664f"
+      ],
+      "suite_gaps": [
+        "ressalvas não bloqueantes registradas: restaurar asserções TRACE removidas e substituir localeCompare por comparação bruta em futura manutenção"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -465,7 +499,6 @@
       "comment_id": 5549317655,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5549317655",
       "updated_at": "2026-09-05T04:23:47Z",
-      "suite_gaps": [],
       "ci": [
         "Testes SIMETTRIA #981 SUCCESS",
         "REVIEW: APPROVE",
@@ -473,7 +506,8 @@
       ],
       "next_for_claude": [],
       "next_for_chatgpt": [],
-      "result": []
+      "result": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -488,13 +522,13 @@
       "comment_id": 5549266212,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5549266212",
       "updated_at": "2026-09-05T04:13:17Z",
-      "suite_gaps": [],
       "ci": [
         "Testes SIMETTRIA #955 SUCCESS"
       ],
       "next_for_claude": [],
       "next_for_chatgpt": [],
       "result": [],
+      "suite_gaps": [],
       "pr_state": "closed",
       "pr_merged": true
     },
@@ -511,11 +545,11 @@
       "comment_id": 5540383718,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5540383718",
       "updated_at": "2026-09-04T12:24:30Z",
-      "suite_gaps": [],
       "ci": [],
       "next_for_claude": [],
       "next_for_chatgpt": [],
-      "result": []
+      "result": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -530,7 +564,6 @@
       "comment_id": 5540379600,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5540379600",
       "updated_at": "2026-09-04T12:24:07Z",
-      "suite_gaps": [],
       "ci": [
         "#952 SUCCESS",
         "REVIEW: APPROVE",
@@ -538,7 +571,8 @@
       ],
       "next_for_claude": [],
       "next_for_chatgpt": [],
-      "result": []
+      "result": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -553,7 +587,6 @@
       "comment_id": 5540248253,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5540248253",
       "updated_at": "2026-09-04T12:12:14Z",
-      "suite_gaps": [],
       "ci": [
         "#950 SUCCESS",
         "SCOPE:",
@@ -565,6 +598,7 @@
       "next_for_claude": [],
       "next_for_chatgpt": [],
       "result": [],
+      "suite_gaps": [],
       "pr_state": "closed",
       "pr_merged": true
     },
@@ -581,7 +615,6 @@
       "comment_id": 5540154707,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5540154707",
       "updated_at": "2026-09-04T12:03:25Z",
-      "suite_gaps": [],
       "ci": [
         "#947 SUCCESS",
         "REVIEW: APPROVE"
@@ -589,37 +622,9 @@
       "next_for_claude": [],
       "next_for_chatgpt": [],
       "result": [],
+      "suite_gaps": [],
       "pr_state": "closed",
       "pr_merged": true
-    },
-    {
-      "from": "CHATGPT",
-      "front": "FUND-MATERIALIZACAO-2D",
-      "status": "CLAIMED",
-      "base": "2057fb3c74172ac4e447f3ffc8040a16b6e9a8d4",
-      "head": "2057fb3c74172ac4e447f3ffc8040a16b6e9a8d4",
-      "pr": "NONE",
-      "visual_evidence": "- REQUIRED",
-      "user_visual_approval": "- REQUIRED",
-      "merge_policy": "- REVIEW_REQUIRED",
-      "comment_id": 5535307326,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5535307326",
-      "updated_at": "2026-09-04T03:38:31Z",
-      "suite_gaps": [
-        "a definir durante implementação"
-      ],
-      "ci": [
-        "ainda não aplicável"
-      ],
-      "next_for_claude": [
-        "NONE"
-      ],
-      "next_for_chatgpt": [
-        "implementar a frente 2D e parar apenas em READY_FOR_USER_VISUAL_REVIEW após CI/revisão"
-      ],
-      "result": [
-        "branch feat/area11-fund-materializacao-2d criada a partir do merge do MEMORIAL"
-      ]
     }
   ]
 }

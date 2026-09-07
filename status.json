@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T20:27:21Z",
+  "generated_at": "2026-09-07T20:31:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8630c57f52a6c1af08a059ff2be440bbc0b75be3",
-    "short_sha": "8630c57",
+    "sha": "5e67ec04413979f3b96fc427579992e9a357607c",
+    "short_sha": "5e67ec0",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T17:25:09-03:00",
-    "message": "Merge pull request #325 from JGaspar-Eng/test/sa-l1-sensibilidade-secao-viga"
+    "date": "2026-09-07T17:31:20-03:00",
+    "message": "Merge pull request #326 from JGaspar-Eng/fix/pilar-prumada-entidade-viva"
   },
   "commits": [
+    {
+      "sha": "5e67ec04413979f3b96fc427579992e9a357607c",
+      "short_sha": "5e67ec0",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:31:20-03:00",
+      "message": "Merge pull request #326 from JGaspar-Eng/fix/pilar-prumada-entidade-viva"
+    },
+    {
+      "sha": "aead2cedd27d743b67e661e4b041e3de52f4fdcf",
+      "short_sha": "aead2ce",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:29:04-03:00",
+      "message": "test(pilar): cobre prumada apos consolidacao"
+    },
+    {
+      "sha": "de5b95c1f83d24670cb69f3c471f65d441617b1c",
+      "short_sha": "de5b95c",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:28:40-03:00",
+      "message": "fix(pilar): resolve entidade viva apos consolidar prumada"
+    },
     {
       "sha": "8630c57f52a6c1af08a059ff2be440bbc0b75be3",
       "short_sha": "8630c57",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T16:08:43-03:00",
       "message": "Merge pull request #323 from JGaspar-Eng/fix/viga-pilar-contrato-rotacional"
-    },
-    {
-      "sha": "c96442b43f15d906b28b26b4ec66a83ef13b88bd",
-      "short_sha": "c96442b",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-07T15:28:29-03:00",
-      "message": "fix(sa-l1): persiste vinculo rotacional explicito de vigas"
-    },
-    {
-      "sha": "8431654bb0ba2588b84a283de66b4472369ed66e",
-      "short_sha": "8431654",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T00:25:39-03:00",
-      "message": "Merge pull request #321 from JGaspar-Eng/docs/painel-somente-abertas"
-    },
-    {
-      "sha": "715a8155ab2f7f6df76f4559744092c63fca537e",
-      "short_sha": "715a815",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T00:23:24-03:00",
-      "message": "docs(status): remove overlay historico de coordenacao do painel"
     }
   ],
   "development": {
@@ -1903,7 +1903,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34159456491",
-    "run_number": "406"
+    "run_id": "34159727302",
+    "run_number": "407"
   }
 }
