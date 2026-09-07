@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T21:19:19Z",
+  "generated_at": "2026-09-07T21:22:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e3b973bb17b75ff1c612172dfdf2ef6e5bd592fb",
-    "short_sha": "e3b973b",
+    "sha": "cca6b52bd9349b508e61881784d712ffac67e8cb",
+    "short_sha": "cca6b52",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:19:01-03:00",
-    "message": "Merge pull request #334 from JGaspar-Eng/fix/int-verify-coordenadas-fail-closed"
+    "date": "2026-09-07T18:22:29-03:00",
+    "message": "Merge pull request #335 from JGaspar-Eng/fix/int-verify-sa-l1-invalid-fail-closed"
   },
   "commits": [
+    {
+      "sha": "cca6b52bd9349b508e61881784d712ffac67e8cb",
+      "short_sha": "cca6b52",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:22:29-03:00",
+      "message": "Merge pull request #335 from JGaspar-Eng/fix/int-verify-sa-l1-invalid-fail-closed"
+    },
+    {
+      "sha": "ff5ded8ff63fd307083c695776aa0574f6e01807",
+      "short_sha": "ff5ded8",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:20:27-03:00",
+      "message": "test(int-verify): congela bloqueio SA-L1 sem diagnosticos"
+    },
+    {
+      "sha": "2bf14537386109f1f3763bba660faa50ebf6b3b7",
+      "short_sha": "2bf1453",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:20:10-03:00",
+      "message": "fix(int-verify): preserva bloqueio SA-L1 invalido"
+    },
     {
       "sha": "e3b973bb17b75ff1c612172dfdf2ef6e5bd592fb",
       "short_sha": "e3b973b",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:09:59-03:00",
       "message": "Merge pull request #328 from JGaspar-Eng/fix/sa-l1-pavimento-vigas-nao-participantes"
-    },
-    {
-      "sha": "8312f529fac5f4236ac9f24630115d828a7bbd35",
-      "short_sha": "8312f52",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:07:46-03:00",
-      "message": "test(sa-l1): cobre pavimento de viga não participante"
-    },
-    {
-      "sha": "a0dfb0c0516fe5c01ab23089260745f76ce737ed",
-      "short_sha": "a0dfb0c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:07:09-03:00",
-      "message": "fix(sa-l1): rastreia pavimento de vigas não participantes"
-    },
-    {
-      "sha": "bce9acd578aba2bf29359c73b066a5af4a7c322b",
-      "short_sha": "bce9acd",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:47:26-03:00",
-      "message": "Merge pull request #327 from JGaspar-Eng/fix/status-coordenacao-dedup-frente"
     }
   ],
   "development": {
@@ -1924,7 +1924,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34162690985",
-    "run_number": "418"
+    "run_id": "34162901996",
+    "run_number": "419"
   }
 }
