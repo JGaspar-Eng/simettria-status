@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-07T03:17:07Z",
+  "generated_at": "2026-09-07T03:25:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bb205c8728eb44715eb088978ed049acd30e9e44",
-    "short_sha": "bb205c8",
+    "sha": "8431654bb0ba2588b84a283de66b4472369ed66e",
+    "short_sha": "8431654",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T00:16:48-03:00",
-    "message": "chore: remove arquivo temporário acidental"
+    "date": "2026-09-07T00:25:39-03:00",
+    "message": "Merge pull request #321 from JGaspar-Eng/docs/painel-somente-abertas"
   },
   "commits": [
+    {
+      "sha": "8431654bb0ba2588b84a283de66b4472369ed66e",
+      "short_sha": "8431654",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T00:25:39-03:00",
+      "message": "Merge pull request #321 from JGaspar-Eng/docs/painel-somente-abertas"
+    },
+    {
+      "sha": "715a8155ab2f7f6df76f4559744092c63fca537e",
+      "short_sha": "715a815",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T00:23:24-03:00",
+      "message": "docs(status): remove overlay historico de coordenacao do painel"
+    },
+    {
+      "sha": "1b4df608f04ace0d9e45a8e0d06bf59e6e84686b",
+      "short_sha": "1b4df60",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T00:22:54-03:00",
+      "message": "docs(status): remove blocos legados do painel operacional"
+    },
+    {
+      "sha": "867e2b08bd51460cb0e15de38ad61f383d8d010c",
+      "short_sha": "867e2b0",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T00:18:03-03:00",
+      "message": "docs(status): oculta histórico concluído do painel operacional"
+    },
+    {
+      "sha": "e813593bbed91e4e36a359164d845da114d72e93",
+      "short_sha": "e813593",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T00:17:41-03:00",
+      "message": "docs(status): exibe somente frentes abertas no painel operacional"
+    },
     {
       "sha": "bb205c8728eb44715eb088978ed049acd30e9e44",
       "short_sha": "bb205c8",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-06T23:56:55-03:00",
       "message": "chore: trigger invalid"
-    },
-    {
-      "sha": "a77fcf22da25f3d4f4b91394bfb5219e54222279",
-      "short_sha": "a77fcf2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:56:45-03:00",
-      "message": "test(opt-pilar): prova propagação de vigas na busca escalável"
-    },
-    {
-      "sha": "af3b175925a1c0415dfd94e18cf20e11be50021d",
-      "short_sha": "af3b175",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:56:19-03:00",
-      "message": "test(opt-pilar): congela participação rastreável das vigas"
-    },
-    {
-      "sha": "64259963d3af751630688f6a2bce20588380b69a",
-      "short_sha": "6425996",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:55:19-03:00",
-      "message": "fix(opt-pilar): propaga vigas no serviço de auditoria"
-    },
-    {
-      "sha": "e70c2e450c7b497682505bfd7db26e5e4473215b",
-      "short_sha": "e70c2e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:55:00-03:00",
-      "message": "fix(opt-pilar): propaga vigas na busca escalável"
-    },
-    {
-      "sha": "82c6eb2b597771175a9cb78a5741f49f27d70ad2",
-      "short_sha": "82c6eb2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:54:22-03:00",
-      "message": "fix(opt-pilar): usa rigidez estrutural unificada"
     }
   ],
   "development": {
@@ -95,6 +95,33 @@
       }
     },
     "execution": {
+      "panel": {
+        "active": [],
+        "planned": [
+          {
+            "code": "SA-L1-VIGA-AUTORIDADE-GEO-MAT",
+            "title": "Consumir a autoridade oficial de geometria e material das vigas no SA-L1, eliminando cálculo duplicado de I e Ecs",
+            "state": "planned",
+            "area": 3,
+            "source": "planejamento técnico após PR #320"
+          },
+          {
+            "code": "VIGA-PILAR-CONTRATO-ROTACIONAL",
+            "title": "Formalizar e persistir os vínculos rotacionais das extremidades viga–pilar, mantendo fail-closed sem continuidade presumida",
+            "state": "planned",
+            "area": 3,
+            "source": "planejamento técnico após PR #320"
+          },
+          {
+            "code": "CALC-GRAPH-PROVENIENCIA",
+            "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
+            "state": "planned",
+            "area": 3,
+            "source": "planejamento técnico após PR #320"
+          }
+        ],
+        "policy": "O painel operacional mostra somente frentes em execução e planejadas. Itens concluídos permanecem apenas no histórico técnico e não são renderizados no painel."
+      },
       "recent": [
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
@@ -1886,7 +1913,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34079117344",
-    "run_number": "398"
+    "run_id": "34079610283",
+    "run_number": "400"
   }
 }
