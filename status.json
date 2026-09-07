@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-09-07T21:52:06Z",
+  "generated_at": "2026-09-07T22:14:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "68ae3bd5a211957b105603ecef5b42d58ed8d865",
-    "short_sha": "68ae3bd",
+    "sha": "02b4ac74069837ab239c250fa3a768f62528174f",
+    "short_sha": "02b4ac7",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:51:47-03:00",
-    "message": "Merge pull request #344 from JGaspar-Eng/fix/int-verify-escala-ausente-fail-closed"
+    "date": "2026-09-07T19:13:55-03:00",
+    "message": "Merge pull request #345 from JGaspar-Eng/fix/cg-assinatura-vinculo-rotacional-viga"
   },
   "commits": [
+    {
+      "sha": "02b4ac74069837ab239c250fa3a768f62528174f",
+      "short_sha": "02b4ac7",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T19:13:55-03:00",
+      "message": "Merge pull request #345 from JGaspar-Eng/fix/cg-assinatura-vinculo-rotacional-viga"
+    },
+    {
+      "sha": "bfa07bc51f94c00bd5010c9b553f30c0bed4cc3e",
+      "short_sha": "bfa07bc",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T19:12:04-03:00",
+      "message": "test(cg): aceita fechamento de função no EOF"
+    },
+    {
+      "sha": "55e9704d6356f220240606da7af791a8aabf5412",
+      "short_sha": "55e9704",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T19:09:50-03:00",
+      "message": "chore: remove placeholder"
+    },
+    {
+      "sha": "e722151b4252f8f07ac1ffc8a2942371f09a3746",
+      "short_sha": "e722151",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T19:09:37-03:00",
+      "message": "chore: placeholder"
+    },
+    {
+      "sha": "dbdb12084190d59f3d054e0d48acdd05321e4c84",
+      "short_sha": "dbdb120",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T19:09:28-03:00",
+      "message": "test(cg): cobre assinatura por vinculo rotacional"
+    },
+    {
+      "sha": "0ac38ac9378cfe9c36b270628b6b77c517be7368",
+      "short_sha": "0ac38ac",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T19:07:42-03:00",
+      "message": "fix(cg): inclui vinculos rotacionais na assinatura de viga"
+    },
     {
       "sha": "68ae3bd5a211957b105603ecef5b42d58ed8d865",
       "short_sha": "68ae3bd",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:46:14-03:00",
       "message": "Merge pull request #341 from JGaspar-Eng/fix/int-review-repassa-vigas-opt-pilar"
-    },
-    {
-      "sha": "6fb2fa5b39b959acb11738d4c0b6051cd8b469ae",
-      "short_sha": "6fb2fa5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:43:26-03:00",
-      "message": "test(int-review): integra regressão à suíte oficial"
-    },
-    {
-      "sha": "2ab488e87bd6145e61a3c72059d220b895f1fbfc",
-      "short_sha": "2ab488e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:43:15-03:00",
-      "message": "test(int-review): congela repasse de vigas ao OPT-PILAR"
-    },
-    {
-      "sha": "23be33122325f8e241b49224cd475f868838b791",
-      "short_sha": "23be331",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:41:18-03:00",
-      "message": "test(int-review): congela repasse de vigas ao OPT-PILAR"
-    },
-    {
-      "sha": "8e5d99692600825bd4148a4fb8e0aaba7f6c56b5",
-      "short_sha": "8e5d996",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:41:10-03:00",
-      "message": "fix(int-review): repassa vigas à otimização automática"
-    },
-    {
-      "sha": "3cae563b96c3527c09f579ddaac85e2a065eb380",
-      "short_sha": "3cae563",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:38:50-03:00",
-      "message": "Merge pull request #339 from JGaspar-Eng/fix/int-check-inspecao-stale-fail-closed"
-    },
-    {
-      "sha": "262a4b5753f6ed05f17189028c7ab2501a7a15e9",
-      "short_sha": "262a4b5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:35:33-03:00",
-      "message": "test(int-check): exige proveniencia da inspecao injetada"
     }
   ],
   "development": {
@@ -1910,7 +1910,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34164643364",
-    "run_number": "426"
+    "run_id": "34165949422",
+    "run_number": "427"
   }
 }
