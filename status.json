@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T21:15:48Z",
+  "generated_at": "2026-09-07T21:19:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5aa55544a7e95f883b4c8189bf15160de7c10554",
-    "short_sha": "5aa5554",
+    "sha": "e3b973bb17b75ff1c612172dfdf2ef6e5bd592fb",
+    "short_sha": "e3b973b",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:15:30-03:00",
-    "message": "Merge pull request #331 from JGaspar-Eng/fix/int-verify-escala-fail-closed"
+    "date": "2026-09-07T18:19:01-03:00",
+    "message": "Merge pull request #334 from JGaspar-Eng/fix/int-verify-coordenadas-fail-closed"
   },
   "commits": [
+    {
+      "sha": "e3b973bb17b75ff1c612172dfdf2ef6e5bd592fb",
+      "short_sha": "e3b973b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:19:01-03:00",
+      "message": "Merge pull request #334 from JGaspar-Eng/fix/int-verify-coordenadas-fail-closed"
+    },
+    {
+      "sha": "9883c7128907943c4df52ae023dd978b90934388",
+      "short_sha": "9883c71",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:16:39-03:00",
+      "message": "test(int-verify): congela coordenadas geotecnicas presentes"
+    },
+    {
+      "sha": "d61791c471c7c2eb33ab9cbdc62e36c1bfe7ec60",
+      "short_sha": "d61791c",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:16:15-03:00",
+      "message": "fix(int-verify): rejeita coordenadas geotecnicas ausentes"
+    },
     {
       "sha": "5aa55544a7e95f883b4c8189bf15160de7c10554",
       "short_sha": "5aa5554",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T17:47:26-03:00",
       "message": "Merge pull request #327 from JGaspar-Eng/fix/status-coordenacao-dedup-frente"
-    },
-    {
-      "sha": "d20ef06276b8740a7d6bad3f6dde2b7b36b27120",
-      "short_sha": "d20ef06",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:45:35-03:00",
-      "message": "test(status): cobre transição PR NONE para PR real"
-    },
-    {
-      "sha": "15b41ca3a0e63dd4d32c1cb88d3fe66060af30b8",
-      "short_sha": "15b41ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:45:16-03:00",
-      "message": "fix(status): deduplica frente antes do PR"
-    },
-    {
-      "sha": "5e67ec04413979f3b96fc427579992e9a357607c",
-      "short_sha": "5e67ec0",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:31:20-03:00",
-      "message": "Merge pull request #326 from JGaspar-Eng/fix/pilar-prumada-entidade-viva"
     }
   ],
   "development": {
@@ -1924,7 +1924,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34162476899",
-    "run_number": "417"
+    "run_id": "34162690985",
+    "run_number": "418"
   }
 }
