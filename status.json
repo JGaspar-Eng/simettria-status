@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-09-06T03:19:32Z",
+  "generated_at": "2026-09-07T02:59:26Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5a32106d9884e0ccb5489096320682f3d0a6ff63",
-    "short_sha": "5a32106",
+    "sha": "0e71a3d523b50a6f03e9bf137808682c749573b1",
+    "short_sha": "0e71a3d",
     "author": "Joanez Gaspar",
-    "date": "2026-09-06T00:19:18-03:00",
-    "message": "Merge pull request #319 from JGaspar-Eng/fix/ux-predimensionamento-contextual-v2"
+    "date": "2026-09-06T23:59:09-03:00",
+    "message": "Merge pull request #320 from JGaspar-Eng/fix/opt-pilar-rigidez-estrutura-v2"
   },
   "commits": [
+    {
+      "sha": "0e71a3d523b50a6f03e9bf137808682c749573b1",
+      "short_sha": "0e71a3d",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:59:09-03:00",
+      "message": "Merge pull request #320 from JGaspar-Eng/fix/opt-pilar-rigidez-estrutura-v2"
+    },
+    {
+      "sha": "5252fcee1bd933afd69c60aa2ee81d91f2fcc2c3",
+      "short_sha": "5252fce",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:57:06-03:00",
+      "message": "chore: remove temporary trigger"
+    },
+    {
+      "sha": "87ed56bff4822034fbfb7f9743b5c2e705027d1a",
+      "short_sha": "87ed56b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:56:55-03:00",
+      "message": "chore: trigger invalid"
+    },
+    {
+      "sha": "a77fcf22da25f3d4f4b91394bfb5219e54222279",
+      "short_sha": "a77fcf2",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:56:45-03:00",
+      "message": "test(opt-pilar): prova propagação de vigas na busca escalável"
+    },
+    {
+      "sha": "af3b175925a1c0415dfd94e18cf20e11be50021d",
+      "short_sha": "af3b175",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:56:19-03:00",
+      "message": "test(opt-pilar): congela participação rastreável das vigas"
+    },
+    {
+      "sha": "64259963d3af751630688f6a2bce20588380b69a",
+      "short_sha": "6425996",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:55:19-03:00",
+      "message": "fix(opt-pilar): propaga vigas no serviço de auditoria"
+    },
+    {
+      "sha": "e70c2e450c7b497682505bfd7db26e5e4473215b",
+      "short_sha": "e70c2e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:55:00-03:00",
+      "message": "fix(opt-pilar): propaga vigas na busca escalável"
+    },
+    {
+      "sha": "82c6eb2b597771175a9cb78a5741f49f27d70ad2",
+      "short_sha": "82c6eb2",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-06T23:54:22-03:00",
+      "message": "fix(opt-pilar): usa rigidez estrutural unificada"
+    },
     {
       "sha": "5a32106d9884e0ccb5489096320682f3d0a6ff63",
       "short_sha": "5a32106",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-06T00:17:10-03:00",
       "message": "test(ux): congela seleção e sugestão contextual em conjunto"
-    },
-    {
-      "sha": "ad06600d82190697cef58bd9b6647d83d9aac65f",
-      "short_sha": "ad06600",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:16:41-03:00",
-      "message": "fix(ux): preserva seleção e restaura sugestão contextual"
-    },
-    {
-      "sha": "47681af249385c13eb840b822e337c062058eeef",
-      "short_sha": "47681af",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:15:54-03:00",
-      "message": "Merge pull request #317 from JGaspar-Eng/fix/ux-ghost3d"
-    },
-    {
-      "sha": "1d9120b65ecf172c7353d7802f2257b8a112ce70",
-      "short_sha": "1d9120b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:15:32-03:00",
-      "message": "Merge pull request #316 from JGaspar-Eng/fix/ux-selecao-2d-autoridade-unica"
-    },
-    {
-      "sha": "8cac2107d4485fa1b2de440e9bbf123c8bc62880",
-      "short_sha": "8cac210",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:13:47-03:00",
-      "message": "test(ux): alinha contrato congelado ao runtime validado"
-    },
-    {
-      "sha": "aba10f6524818b3d57fd5f8e20e7021dbd8f6098",
-      "short_sha": "aba10f6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:11:25-03:00",
-      "message": "test(ux): move contrato fantasma para gate 3D oficial"
-    },
-    {
-      "sha": "67b5d178970fe05efa96b92dc3ad2a09a6a6bf56",
-      "short_sha": "67b5d17",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:11:19-03:00",
-      "message": "test(ux): congela modo fantasma no gate 3D oficial"
-    },
-    {
-      "sha": "6b95b2d9e6d22296c5e2b02e0501261bcb80d140",
-      "short_sha": "6b95b2d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:10:09-03:00",
-      "message": "test(ux): move contrato de seleção para gate já oficial"
-    },
-    {
-      "sha": "8ef6eccd773e6adb7872cb1e41ec5b0c1e7b49da",
-      "short_sha": "8ef6ecc",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T00:09:53-03:00",
-      "message": "test(ux): congela semântica da seleção 2D no gate existente"
     }
   ],
   "development": {
@@ -1886,7 +1886,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34008698341",
-    "run_number": "395"
+    "run_id": "34078084620",
+    "run_number": "396"
   }
 }
