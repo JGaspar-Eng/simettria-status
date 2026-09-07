@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-07T19:44:16Z",
+  "generated_at": "2026-09-07T20:20:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "46d0eded614ae01021dc0bd4d200dd3b4e9f1617",
-    "short_sha": "46d0ede",
+    "sha": "a817320832d073156c78b4d1a98dde47eb222795",
+    "short_sha": "a817320",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T16:43:58-03:00",
-    "message": "Merge pull request #324 from JGaspar-Eng/fix/sa-l1-consumidores-vigas"
+    "date": "2026-09-07T17:19:51-03:00",
+    "message": "Merge pull request #322 from JGaspar-Eng/fix/sa-l1-modal-vigas-auditaveis"
   },
   "commits": [
+    {
+      "sha": "a817320832d073156c78b4d1a98dde47eb222795",
+      "short_sha": "a817320",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:19:51-03:00",
+      "message": "Merge pull request #322 from JGaspar-Eng/fix/sa-l1-modal-vigas-auditaveis"
+    },
+    {
+      "sha": "a991d3a37a5d72a140676a025ccc6e87aa46c894",
+      "short_sha": "a991d3a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T16:59:05-03:00",
+      "message": "fix(sa-l1): exibe participacao auditavel das vigas no modal"
+    },
     {
       "sha": "46d0eded614ae01021dc0bd4d200dd3b4e9f1617",
       "short_sha": "46d0ede",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T00:18:03-03:00",
       "message": "docs(status): oculta histórico concluído do painel operacional"
-    },
-    {
-      "sha": "e813593bbed91e4e36a359164d845da114d72e93",
-      "short_sha": "e813593",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T00:17:41-03:00",
-      "message": "docs(status): exibe somente frentes abertas no painel operacional"
-    },
-    {
-      "sha": "bb205c8728eb44715eb088978ed049acd30e9e44",
-      "short_sha": "bb205c8",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T00:16:48-03:00",
-      "message": "chore: remove arquivo temporário acidental"
     }
   ],
   "development": {
@@ -1917,7 +1917,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34156701292",
-    "run_number": "402"
+    "run_id": "34158993288",
+    "run_number": "403"
   }
 }
