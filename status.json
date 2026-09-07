@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-07T03:25:59Z",
+  "generated_at": "2026-09-07T19:08:58Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8431654bb0ba2588b84a283de66b4472369ed66e",
-    "short_sha": "8431654",
+    "sha": "b0496c49fe5986a6071147e0a6c6dcfa5265cade",
+    "short_sha": "b0496c4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T00:25:39-03:00",
-    "message": "Merge pull request #321 from JGaspar-Eng/docs/painel-somente-abertas"
+    "date": "2026-09-07T16:08:43-03:00",
+    "message": "Merge pull request #323 from JGaspar-Eng/fix/viga-pilar-contrato-rotacional"
   },
   "commits": [
+    {
+      "sha": "b0496c49fe5986a6071147e0a6c6dcfa5265cade",
+      "short_sha": "b0496c4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T16:08:43-03:00",
+      "message": "Merge pull request #323 from JGaspar-Eng/fix/viga-pilar-contrato-rotacional"
+    },
+    {
+      "sha": "c96442b43f15d906b28b26b4ec66a83ef13b88bd",
+      "short_sha": "c96442b",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-07T15:28:29-03:00",
+      "message": "fix(sa-l1): persiste vinculo rotacional explicito de vigas"
+    },
     {
       "sha": "8431654bb0ba2588b84a283de66b4472369ed66e",
       "short_sha": "8431654",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-06T23:59:09-03:00",
       "message": "Merge pull request #320 from JGaspar-Eng/fix/opt-pilar-rigidez-estrutura-v2"
-    },
-    {
-      "sha": "5252fcee1bd933afd69c60aa2ee81d91f2fcc2c3",
-      "short_sha": "5252fce",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:57:06-03:00",
-      "message": "chore: remove temporary trigger"
-    },
-    {
-      "sha": "87ed56bff4822034fbfb7f9743b5c2e705027d1a",
-      "short_sha": "87ed56b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-06T23:56:55-03:00",
-      "message": "chore: trigger invalid"
     }
   ],
   "development": {
@@ -1398,7 +1398,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 126,
+    "validator_count": 127,
     "validators": [
       {
         "name": "test:base",
@@ -1587,6 +1587,10 @@
       {
         "name": "test:sa-l1-ui",
         "command": "node tests/validar_analise_lateral_auditoria_ui_sa_l1.mjs"
+      },
+      {
+        "name": "test:viga-vinculo-rotacional",
+        "command": "node tests/validar_vinculo_rotacional_viga_sa_l1.mjs"
       },
       {
         "name": "test:opt-pilar-avaliador",
@@ -1913,7 +1917,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34079610283",
-    "run_number": "400"
+    "run_id": "34154441902",
+    "run_number": "401"
   }
 }
