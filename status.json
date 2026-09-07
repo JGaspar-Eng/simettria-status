@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-07T23:42:54Z",
+  "generated_at": "2026-09-07T23:50:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a1192adec146e43b5ee5f2676ec784dfd75a4570",
-    "short_sha": "a1192ad",
+    "sha": "40d3149f48bdfbf595cf81caf5f9eeca278bea59",
+    "short_sha": "40d3149",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T20:42:40-03:00",
-    "message": "fix(opt-pilar): repassa vigas ao vento (#347)"
+    "date": "2026-09-07T20:50:09-03:00",
+    "message": "fix(sa-l1): deriva vento com a colecao explicita de vigas (#349)"
   },
   "commits": [
+    {
+      "sha": "40d3149f48bdfbf595cf81caf5f9eeca278bea59",
+      "short_sha": "40d3149",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T20:50:09-03:00",
+      "message": "fix(sa-l1): deriva vento com a colecao explicita de vigas (#349)"
+    },
     {
       "sha": "a1192adec146e43b5ee5f2676ec784dfd75a4570",
       "short_sha": "a1192ad",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:49:36-03:00",
       "message": "test(int-verify): impede default silencioso de escala"
-    },
-    {
-      "sha": "0f0f46972e7e78f99c0e53e7705adc895ea7e62a",
-      "short_sha": "0f0f469",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:49:15-03:00",
-      "message": "fix(int-verify): falha fechada sem escala geotécnica"
     }
   ],
   "development": {
@@ -1391,7 +1391,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 127,
+    "validator_count": 128,
     "validators": [
       {
         "name": "test:base",
@@ -1616,6 +1616,10 @@
       {
         "name": "test:int-review-contratos",
         "command": "node tests/validar_int_review_contratos.mjs"
+      },
+      {
+        "name": "test:sa-l1-repasse-vigas-vento",
+        "command": "node tests/validar_repasse_vigas_vento_sa_l1.mjs"
       },
       {
         "name": "test:int-review-contrato",
@@ -1910,7 +1914,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34170941020",
-    "run_number": "428"
+    "run_id": "34171346269",
+    "run_number": "429"
   }
 }
