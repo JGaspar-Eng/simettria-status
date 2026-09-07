@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-09-07T21:27:56Z",
+  "generated_at": "2026-09-07T21:28:05Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cca6b52bd9349b508e61881784d712ffac67e8cb",
-    "short_sha": "cca6b52",
+    "sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
+    "short_sha": "6d80d4e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:22:29-03:00",
-    "message": "Merge pull request #335 from JGaspar-Eng/fix/int-verify-sa-l1-invalid-fail-closed"
+    "date": "2026-09-07T18:27:47-03:00",
+    "message": "Merge pull request #337 from JGaspar-Eng/fix/spt-coordenadas-furo-fail-closed"
   },
   "commits": [
+    {
+      "sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
+      "short_sha": "6d80d4e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:27:47-03:00",
+      "message": "Merge pull request #337 from JGaspar-Eng/fix/spt-coordenadas-furo-fail-closed"
+    },
+    {
+      "sha": "0d932039a9b2bb63a4379a1a2687a12f6c6df25a",
+      "short_sha": "0d93203",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:25:46-03:00",
+      "message": "test(geotecnia): discrimina furo sem georreferenciamento"
+    },
+    {
+      "sha": "4beff332bcd1def3734c71c8f8928269eb57cbd4",
+      "short_sha": "4beff33",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:25:30-03:00",
+      "message": "refactor(int-verify): usa consulta georreferenciada fail-closed"
+    },
+    {
+      "sha": "f32e3b105e2b3ea3c18dd50ad7c19b38dafdc8cf",
+      "short_sha": "f32e3b1",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:25:13-03:00",
+      "message": "fix(geotecnia): filtra furos sem georreferenciamento"
+    },
+    {
+      "sha": "9f5f182954e66e9578c017ae6d61f443c36198f4",
+      "short_sha": "9f5f182",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:24:39-03:00",
+      "message": "test(int-verify): congela filtro de furos georreferenciados"
+    },
+    {
+      "sha": "21ccb9f139638e2f96a924c808e5a428a73c86ea",
+      "short_sha": "21ccb9f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:24:17-03:00",
+      "message": "fix(int-verify): ignora furos sem georreferenciamento valido"
+    },
     {
       "sha": "cca6b52bd9349b508e61881784d712ffac67e8cb",
       "short_sha": "cca6b52",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:19:01-03:00",
       "message": "Merge pull request #334 from JGaspar-Eng/fix/int-verify-coordenadas-fail-closed"
-    },
-    {
-      "sha": "9883c7128907943c4df52ae023dd978b90934388",
-      "short_sha": "9883c71",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:16:39-03:00",
-      "message": "test(int-verify): congela coordenadas geotecnicas presentes"
-    },
-    {
-      "sha": "d61791c471c7c2eb33ab9cbdc62e36c1bfe7ec60",
-      "short_sha": "d61791c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:16:15-03:00",
-      "message": "fix(int-verify): rejeita coordenadas geotecnicas ausentes"
-    },
-    {
-      "sha": "5aa55544a7e95f883b4c8189bf15160de7c10554",
-      "short_sha": "5aa5554",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:15:30-03:00",
-      "message": "Merge pull request #331 from JGaspar-Eng/fix/int-verify-escala-fail-closed"
-    },
-    {
-      "sha": "071611abb27a478a578b209b08ddec482dcbf87b",
-      "short_sha": "071611a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:13:32-03:00",
-      "message": "test(int-verify): congela fail-closed da escala"
-    },
-    {
-      "sha": "23d621b84ce3de5ba60ae10eed81551afb64c707",
-      "short_sha": "23d621b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:13:11-03:00",
-      "message": "fix(int-verify): rejeita escala geotecnica invalida"
-    },
-    {
-      "sha": "fdb3cdf80adc7599492837b5960db6d966e7d079",
-      "short_sha": "fdb3cdf",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:09:59-03:00",
-      "message": "Merge pull request #328 from JGaspar-Eng/fix/sa-l1-pavimento-vigas-nao-participantes"
     }
   ],
   "development": {
@@ -1917,7 +1917,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34163214987",
-    "run_number": "420"
+    "run_id": "34163226537",
+    "run_number": "421"
   }
 }
