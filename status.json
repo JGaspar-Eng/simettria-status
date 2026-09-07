@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-07T22:14:17Z",
+  "generated_at": "2026-09-07T23:42:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "02b4ac74069837ab239c250fa3a768f62528174f",
-    "short_sha": "02b4ac7",
+    "sha": "a1192adec146e43b5ee5f2676ec784dfd75a4570",
+    "short_sha": "a1192ad",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T19:13:55-03:00",
-    "message": "Merge pull request #345 from JGaspar-Eng/fix/cg-assinatura-vinculo-rotacional-viga"
+    "date": "2026-09-07T20:42:40-03:00",
+    "message": "fix(opt-pilar): repassa vigas ao vento (#347)"
   },
   "commits": [
+    {
+      "sha": "a1192adec146e43b5ee5f2676ec784dfd75a4570",
+      "short_sha": "a1192ad",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T20:42:40-03:00",
+      "message": "fix(opt-pilar): repassa vigas ao vento (#347)"
+    },
     {
       "sha": "02b4ac74069837ab239c250fa3a768f62528174f",
       "short_sha": "02b4ac7",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:49:15-03:00",
       "message": "fix(int-verify): falha fechada sem escala geotécnica"
-    },
-    {
-      "sha": "caaaa83e020b5d7a3038e24212cb56d6e8115154",
-      "short_sha": "caaaa83",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:46:14-03:00",
-      "message": "Merge pull request #341 from JGaspar-Eng/fix/int-review-repassa-vigas-opt-pilar"
     }
   ],
   "development": {
@@ -1910,7 +1910,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34165949422",
-    "run_number": "427"
+    "run_id": "34170941020",
+    "run_number": "428"
   }
 }
