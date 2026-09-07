@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T21:01:36Z",
+  "generated_at": "2026-09-07T21:10:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bce9acd578aba2bf29359c73b066a5af4a7c322b",
-    "short_sha": "bce9acd",
+    "sha": "fdb3cdf80adc7599492837b5960db6d966e7d079",
+    "short_sha": "fdb3cdf",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T17:47:26-03:00",
-    "message": "Merge pull request #327 from JGaspar-Eng/fix/status-coordenacao-dedup-frente"
+    "date": "2026-09-07T18:09:59-03:00",
+    "message": "Merge pull request #328 from JGaspar-Eng/fix/sa-l1-pavimento-vigas-nao-participantes"
   },
   "commits": [
+    {
+      "sha": "fdb3cdf80adc7599492837b5960db6d966e7d079",
+      "short_sha": "fdb3cdf",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:09:59-03:00",
+      "message": "Merge pull request #328 from JGaspar-Eng/fix/sa-l1-pavimento-vigas-nao-participantes"
+    },
+    {
+      "sha": "8312f529fac5f4236ac9f24630115d828a7bbd35",
+      "short_sha": "8312f52",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:07:46-03:00",
+      "message": "test(sa-l1): cobre pavimento de viga não participante"
+    },
+    {
+      "sha": "a0dfb0c0516fe5c01ab23089260745f76ce737ed",
+      "short_sha": "a0dfb0c",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:07:09-03:00",
+      "message": "fix(sa-l1): rastreia pavimento de vigas não participantes"
+    },
     {
       "sha": "bce9acd578aba2bf29359c73b066a5af4a7c322b",
       "short_sha": "bce9acd",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T17:25:09-03:00",
       "message": "Merge pull request #325 from JGaspar-Eng/test/sa-l1-sensibilidade-secao-viga"
-    },
-    {
-      "sha": "a3d3aa51cb8e87cfab831ad72f19ccef749a871e",
-      "short_sha": "a3d3aa5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:22:36-03:00",
-      "message": "test(sa-l1): prova sensibilidade a secao da viga"
-    },
-    {
-      "sha": "a817320832d073156c78b4d1a98dde47eb222795",
-      "short_sha": "a817320",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T17:19:51-03:00",
-      "message": "Merge pull request #322 from JGaspar-Eng/fix/sa-l1-modal-vigas-auditaveis"
-    },
-    {
-      "sha": "a991d3a37a5d72a140676a025ccc6e87aa46c894",
-      "short_sha": "a991d3a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T16:59:05-03:00",
-      "message": "fix(sa-l1): exibe participacao auditavel das vigas no modal"
     }
   ],
   "development": {
@@ -1924,7 +1924,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34161580013",
-    "run_number": "415"
+    "run_id": "34162124997",
+    "run_number": "416"
   }
 }
