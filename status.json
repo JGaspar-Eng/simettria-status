@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-09-07T20:31:53Z",
+  "generated_at": "2026-09-07T20:47:41Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5e67ec04413979f3b96fc427579992e9a357607c",
-    "short_sha": "5e67ec0",
+    "sha": "bce9acd578aba2bf29359c73b066a5af4a7c322b",
+    "short_sha": "bce9acd",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T17:31:20-03:00",
-    "message": "Merge pull request #326 from JGaspar-Eng/fix/pilar-prumada-entidade-viva"
+    "date": "2026-09-07T17:47:26-03:00",
+    "message": "Merge pull request #327 from JGaspar-Eng/fix/status-coordenacao-dedup-frente"
   },
   "commits": [
+    {
+      "sha": "bce9acd578aba2bf29359c73b066a5af4a7c322b",
+      "short_sha": "bce9acd",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:47:26-03:00",
+      "message": "Merge pull request #327 from JGaspar-Eng/fix/status-coordenacao-dedup-frente"
+    },
+    {
+      "sha": "d20ef06276b8740a7d6bad3f6dde2b7b36b27120",
+      "short_sha": "d20ef06",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:45:35-03:00",
+      "message": "test(status): cobre transição PR NONE para PR real"
+    },
+    {
+      "sha": "15b41ca3a0e63dd4d32c1cb88d3fe66060af30b8",
+      "short_sha": "15b41ca",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T17:45:16-03:00",
+      "message": "fix(status): deduplica frente antes do PR"
+    },
     {
       "sha": "5e67ec04413979f3b96fc427579992e9a357607c",
       "short_sha": "5e67ec0",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T16:59:05-03:00",
       "message": "fix(sa-l1): exibe participacao auditavel das vigas no modal"
-    },
-    {
-      "sha": "46d0eded614ae01021dc0bd4d200dd3b4e9f1617",
-      "short_sha": "46d0ede",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T16:43:58-03:00",
-      "message": "Merge pull request #324 from JGaspar-Eng/fix/sa-l1-consumidores-vigas"
-    },
-    {
-      "sha": "41980f1ed2fe031f03c0aae6059192416f5251e5",
-      "short_sha": "41980f1",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T16:42:09-03:00",
-      "message": "fix(sa-l1): repassa vigas aos consumidores runtime"
-    },
-    {
-      "sha": "b0496c49fe5986a6071147e0a6c6dcfa5265cade",
-      "short_sha": "b0496c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T16:08:43-03:00",
-      "message": "Merge pull request #323 from JGaspar-Eng/fix/viga-pilar-contrato-rotacional"
     }
   ],
   "development": {
@@ -152,6 +152,27 @@
           "source": "issue #231 / PR #305"
         },
         {
+          "code": "FUND-MATERIALIZACAO-MEMORIAL",
+          "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #304"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-EDIT",
+          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #302"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
+          "state": "completed",
+          "area": 11,
+          "source": "issue #231 / PR #301"
+        },
+        {
           "code": "NOR-FUND-05-HARDENING",
           "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
           "state": "completed",
@@ -209,21 +230,21 @@
           "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
           "state": "completed",
           "area": 11,
-          "source": "issue #231"
+          "source": "issue #231 / PR #304"
         },
         {
           "code": "FUND-MATERIALIZACAO-EDIT",
           "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
           "state": "completed",
           "area": 11,
-          "source": "issue #231"
+          "source": "issue #231 / PR #302"
         },
         {
           "code": "FUND-MATERIALIZACAO-STALE",
           "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
           "state": "completed",
           "area": 11,
-          "source": "issue #231"
+          "source": "issue #231 / PR #301"
         },
         {
           "code": "FUND-MATERIALIZACAO-JSON",
@@ -1903,7 +1924,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34159742669",
-    "run_number": "408"
+    "run_id": "34160734586",
+    "run_number": "413"
   }
 }
