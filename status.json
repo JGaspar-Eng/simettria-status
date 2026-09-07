@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-09-07T21:36:24Z",
+  "generated_at": "2026-09-07T21:39:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
-    "short_sha": "6d80d4e",
+    "sha": "3cae563b96c3527c09f579ddaac85e2a065eb380",
+    "short_sha": "3cae563",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:27:47-03:00",
-    "message": "Merge pull request #337 from JGaspar-Eng/fix/spt-coordenadas-furo-fail-closed"
+    "date": "2026-09-07T18:38:50-03:00",
+    "message": "Merge pull request #339 from JGaspar-Eng/fix/int-check-inspecao-stale-fail-closed"
   },
   "commits": [
+    {
+      "sha": "3cae563b96c3527c09f579ddaac85e2a065eb380",
+      "short_sha": "3cae563",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:38:50-03:00",
+      "message": "Merge pull request #339 from JGaspar-Eng/fix/int-check-inspecao-stale-fail-closed"
+    },
+    {
+      "sha": "262a4b5753f6ed05f17189028c7ab2501a7a15e9",
+      "short_sha": "262a4b5",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:35:33-03:00",
+      "message": "test(int-check): exige proveniencia da inspecao injetada"
+    },
+    {
+      "sha": "c8db5a9e699280d349b89cc4abd63b2521ec6bff",
+      "short_sha": "c8db5a9",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:35:17-03:00",
+      "message": "test(int-check): rejeita inspecao obsoleta"
+    },
+    {
+      "sha": "32b2a3b9acaa59688213a9c70ff9bf94ad781da5",
+      "short_sha": "32b2a3b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:34:34-03:00",
+      "message": "fix(int-check): valida proveniencia da inspecao injetada"
+    },
+    {
+      "sha": "3348f4b22a4af752a3a85a98cc8f5910719d022c",
+      "short_sha": "3348f4b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:33:52-03:00",
+      "message": "fix(inspector): prova versao da inspecao estrutural"
+    },
+    {
+      "sha": "ff3921e7f64bdd22cad9c015dd3edc520290fea2",
+      "short_sha": "ff3921e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:32:39-03:00",
+      "message": "fix(int-check): rejeita inspecao estrutural obsoleta"
+    },
     {
       "sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
       "short_sha": "6d80d4e",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:25:13-03:00",
       "message": "fix(geotecnia): filtra furos sem georreferenciamento"
-    },
-    {
-      "sha": "9f5f182954e66e9578c017ae6d61f443c36198f4",
-      "short_sha": "9f5f182",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:24:39-03:00",
-      "message": "test(int-verify): congela filtro de furos georreferenciados"
-    },
-    {
-      "sha": "21ccb9f139638e2f96a924c808e5a428a73c86ea",
-      "short_sha": "21ccb9f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:24:17-03:00",
-      "message": "fix(int-verify): ignora furos sem georreferenciamento valido"
-    },
-    {
-      "sha": "cca6b52bd9349b508e61881784d712ffac67e8cb",
-      "short_sha": "cca6b52",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:22:29-03:00",
-      "message": "Merge pull request #335 from JGaspar-Eng/fix/int-verify-sa-l1-invalid-fail-closed"
-    },
-    {
-      "sha": "ff5ded8ff63fd307083c695776aa0574f6e01807",
-      "short_sha": "ff5ded8",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:20:27-03:00",
-      "message": "test(int-verify): congela bloqueio SA-L1 sem diagnosticos"
-    },
-    {
-      "sha": "2bf14537386109f1f3763bba660faa50ebf6b3b7",
-      "short_sha": "2bf1453",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:20:10-03:00",
-      "message": "fix(int-verify): preserva bloqueio SA-L1 invalido"
-    },
-    {
-      "sha": "e3b973bb17b75ff1c612172dfdf2ef6e5bd592fb",
-      "short_sha": "e3b973b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:19:01-03:00",
-      "message": "Merge pull request #334 from JGaspar-Eng/fix/int-verify-coordenadas-fail-closed"
     }
   ],
   "development": {
@@ -1910,7 +1910,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34163730800",
-    "run_number": "423"
+    "run_id": "34163891395",
+    "run_number": "424"
   }
 }
