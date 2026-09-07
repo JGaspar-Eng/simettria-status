@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-07T21:39:07Z",
+  "generated_at": "2026-09-07T21:46:33Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3cae563b96c3527c09f579ddaac85e2a065eb380",
-    "short_sha": "3cae563",
+    "sha": "caaaa83e020b5d7a3038e24212cb56d6e8115154",
+    "short_sha": "caaaa83",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T18:38:50-03:00",
-    "message": "Merge pull request #339 from JGaspar-Eng/fix/int-check-inspecao-stale-fail-closed"
+    "date": "2026-09-07T18:46:14-03:00",
+    "message": "Merge pull request #341 from JGaspar-Eng/fix/int-review-repassa-vigas-opt-pilar"
   },
   "commits": [
+    {
+      "sha": "caaaa83e020b5d7a3038e24212cb56d6e8115154",
+      "short_sha": "caaaa83",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:46:14-03:00",
+      "message": "Merge pull request #341 from JGaspar-Eng/fix/int-review-repassa-vigas-opt-pilar"
+    },
+    {
+      "sha": "6fb2fa5b39b959acb11738d4c0b6051cd8b469ae",
+      "short_sha": "6fb2fa5",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:43:26-03:00",
+      "message": "test(int-review): integra regressão à suíte oficial"
+    },
+    {
+      "sha": "2ab488e87bd6145e61a3c72059d220b895f1fbfc",
+      "short_sha": "2ab488e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:43:15-03:00",
+      "message": "test(int-review): congela repasse de vigas ao OPT-PILAR"
+    },
+    {
+      "sha": "23be33122325f8e241b49224cd475f868838b791",
+      "short_sha": "23be331",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:41:18-03:00",
+      "message": "test(int-review): congela repasse de vigas ao OPT-PILAR"
+    },
+    {
+      "sha": "8e5d99692600825bd4148a4fb8e0aaba7f6c56b5",
+      "short_sha": "8e5d996",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T18:41:10-03:00",
+      "message": "fix(int-review): repassa vigas à otimização automática"
+    },
     {
       "sha": "3cae563b96c3527c09f579ddaac85e2a065eb380",
       "short_sha": "3cae563",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:33:52-03:00",
       "message": "fix(inspector): prova versao da inspecao estrutural"
-    },
-    {
-      "sha": "ff3921e7f64bdd22cad9c015dd3edc520290fea2",
-      "short_sha": "ff3921e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:32:39-03:00",
-      "message": "fix(int-check): rejeita inspecao estrutural obsoleta"
-    },
-    {
-      "sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
-      "short_sha": "6d80d4e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:27:47-03:00",
-      "message": "Merge pull request #337 from JGaspar-Eng/fix/spt-coordenadas-furo-fail-closed"
-    },
-    {
-      "sha": "0d932039a9b2bb63a4379a1a2687a12f6c6df25a",
-      "short_sha": "0d93203",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:25:46-03:00",
-      "message": "test(geotecnia): discrimina furo sem georreferenciamento"
-    },
-    {
-      "sha": "4beff332bcd1def3734c71c8f8928269eb57cbd4",
-      "short_sha": "4beff33",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:25:30-03:00",
-      "message": "refactor(int-verify): usa consulta georreferenciada fail-closed"
-    },
-    {
-      "sha": "f32e3b105e2b3ea3c18dd50ad7c19b38dafdc8cf",
-      "short_sha": "f32e3b1",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:25:13-03:00",
-      "message": "fix(geotecnia): filtra furos sem georreferenciamento"
     }
   ],
   "development": {
@@ -1910,7 +1910,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34163891395",
-    "run_number": "424"
+    "run_id": "34164325108",
+    "run_number": "425"
   }
 }
