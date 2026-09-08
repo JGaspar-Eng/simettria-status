@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-08T02:13:43Z",
+  "generated_at": "2026-09-08T11:28:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2b94537674985beb71fca3a9ac7b358f69ddfe14",
-    "short_sha": "2b94537",
+    "sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
+    "short_sha": "d3397c3",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T23:13:24-03:00",
-    "message": "fix(viga,pilar): entrada null ou string vazia deixa de virar zero (#359)"
+    "date": "2026-09-08T08:27:48-03:00",
+    "message": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360) (#361)"
   },
   "commits": [
+    {
+      "sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
+      "short_sha": "d3397c3",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-08T08:27:48-03:00",
+      "message": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360) (#361)"
+    },
     {
       "sha": "2b94537674985beb71fca3a9ac7b358f69ddfe14",
       "short_sha": "2b94537",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T19:12:04-03:00",
       "message": "test(cg): aceita fechamento de função no EOF"
-    },
-    {
-      "sha": "55e9704d6356f220240606da7af791a8aabf5412",
-      "short_sha": "55e9704",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T19:09:50-03:00",
-      "message": "chore: remove placeholder"
     }
   ],
   "development": {
@@ -1391,7 +1391,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 133,
+    "validator_count": 134,
     "validators": [
       {
         "name": "test:base",
@@ -1778,6 +1778,10 @@
         "command": "node tests/validar_armadura_viga.mjs"
       },
       {
+        "name": "test:viga-fck-escopo",
+        "command": "node tests/validar_fck_escopo_armadura_viga.mjs"
+      },
+      {
         "name": "test:viga-armadura-alternativas",
         "command": "node tests/validar_armadura_alternativas.mjs"
       },
@@ -1934,7 +1938,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34179308240",
-    "run_number": "440"
+    "run_id": "34220820481",
+    "run_number": "442"
   }
 }
