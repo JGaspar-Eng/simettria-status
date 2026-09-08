@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-07T23:50:49Z",
+  "generated_at": "2026-09-08T00:06:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "40d3149f48bdfbf595cf81caf5f9eeca278bea59",
-    "short_sha": "40d3149",
+    "sha": "f8bfa7f0f1dd0cc50a8858ec1b88c41d99b7395d",
+    "short_sha": "f8bfa7f",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T20:50:09-03:00",
-    "message": "fix(sa-l1): deriva vento com a colecao explicita de vigas (#349)"
+    "date": "2026-09-07T21:06:21-03:00",
+    "message": "fix(viga): bloqueia sistema quando a secao nao tem rigidez (#351)"
   },
   "commits": [
+    {
+      "sha": "f8bfa7f0f1dd0cc50a8858ec1b88c41d99b7395d",
+      "short_sha": "f8bfa7f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T21:06:21-03:00",
+      "message": "fix(viga): bloqueia sistema quando a secao nao tem rigidez (#351)"
+    },
     {
       "sha": "40d3149f48bdfbf595cf81caf5f9eeca278bea59",
       "short_sha": "40d3149",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T18:51:47-03:00",
       "message": "Merge pull request #344 from JGaspar-Eng/fix/int-verify-escala-ausente-fail-closed"
-    },
-    {
-      "sha": "9acfe32604030605c9e20cbf1655c768ddb38b04",
-      "short_sha": "9acfe32",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:49:36-03:00",
-      "message": "test(int-verify): impede default silencioso de escala"
     }
   ],
   "development": {
@@ -1391,7 +1391,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 128,
+    "validator_count": 129,
     "validators": [
       {
         "name": "test:base",
@@ -1616,6 +1616,10 @@
       {
         "name": "test:int-review-contratos",
         "command": "node tests/validar_int_review_contratos.mjs"
+      },
+      {
+        "name": "test:viga-secao-sem-rigidez",
+        "command": "node tests/validar_secao_sem_rigidez_viga.mjs"
       },
       {
         "name": "test:sa-l1-repasse-vigas-vento",
@@ -1914,7 +1918,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34171346269",
-    "run_number": "429"
+    "run_id": "34172235782",
+    "run_number": "431"
   }
 }
