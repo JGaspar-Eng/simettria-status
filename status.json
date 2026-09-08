@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-08T00:33:51Z",
+  "generated_at": "2026-09-08T01:43:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fda47d1e8857828853328c05677c61cf265ed88a",
-    "short_sha": "fda47d1",
+    "sha": "8489eca93a18bf94b7211e7391b72978e9b7058e",
+    "short_sha": "8489eca",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T21:33:32-03:00",
-    "message": "fix(dim-pilar): parcela caracteristica invalida bloqueia a combinacao ELU (#353)"
+    "date": "2026-09-07T22:42:56-03:00",
+    "message": "fix(dim-fund): cota de base corrompida bloqueia a transmissao de acoes (#355)"
   },
   "commits": [
+    {
+      "sha": "8489eca93a18bf94b7211e7391b72978e9b7058e",
+      "short_sha": "8489eca",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T22:42:56-03:00",
+      "message": "fix(dim-fund): cota de base corrompida bloqueia a transmissao de acoes (#355)"
+    },
     {
       "sha": "fda47d1e8857828853328c05677c61cf265ed88a",
       "short_sha": "fda47d1",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T19:09:28-03:00",
       "message": "test(cg): cobre assinatura por vinculo rotacional"
-    },
-    {
-      "sha": "0ac38ac9378cfe9c36b270628b6b77c517be7368",
-      "short_sha": "0ac38ac",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T19:07:42-03:00",
-      "message": "fix(cg): inclui vinculos rotacionais na assinatura de viga"
     }
   ],
   "development": {
@@ -1391,7 +1391,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 130,
+    "validator_count": 131,
     "validators": [
       {
         "name": "test:base",
@@ -1616,6 +1616,10 @@
       {
         "name": "test:int-review-contratos",
         "command": "node tests/validar_int_review_contratos.mjs"
+      },
+      {
+        "name": "test:dim-fund-cota-base-fail-closed",
+        "command": "node tests/validar_cota_base_fundacao_fail_closed.mjs"
       },
       {
         "name": "test:dim-pilar-parcela-fail-closed",
@@ -1922,7 +1926,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34173710104",
-    "run_number": "433"
+    "run_id": "34177573671",
+    "run_number": "435"
   }
 }
