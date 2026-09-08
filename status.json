@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-08T00:06:40Z",
+  "generated_at": "2026-09-08T00:33:51Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f8bfa7f0f1dd0cc50a8858ec1b88c41d99b7395d",
-    "short_sha": "f8bfa7f",
+    "sha": "fda47d1e8857828853328c05677c61cf265ed88a",
+    "short_sha": "fda47d1",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T21:06:21-03:00",
-    "message": "fix(viga): bloqueia sistema quando a secao nao tem rigidez (#351)"
+    "date": "2026-09-07T21:33:32-03:00",
+    "message": "fix(dim-pilar): parcela caracteristica invalida bloqueia a combinacao ELU (#353)"
   },
   "commits": [
+    {
+      "sha": "fda47d1e8857828853328c05677c61cf265ed88a",
+      "short_sha": "fda47d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T21:33:32-03:00",
+      "message": "fix(dim-pilar): parcela caracteristica invalida bloqueia a combinacao ELU (#353)"
+    },
     {
       "sha": "f8bfa7f0f1dd0cc50a8858ec1b88c41d99b7395d",
       "short_sha": "f8bfa7f",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T19:07:42-03:00",
       "message": "fix(cg): inclui vinculos rotacionais na assinatura de viga"
-    },
-    {
-      "sha": "68ae3bd5a211957b105603ecef5b42d58ed8d865",
-      "short_sha": "68ae3bd",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T18:51:47-03:00",
-      "message": "Merge pull request #344 from JGaspar-Eng/fix/int-verify-escala-ausente-fail-closed"
     }
   ],
   "development": {
@@ -1391,7 +1391,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 129,
+    "validator_count": 130,
     "validators": [
       {
         "name": "test:base",
@@ -1616,6 +1616,10 @@
       {
         "name": "test:int-review-contratos",
         "command": "node tests/validar_int_review_contratos.mjs"
+      },
+      {
+        "name": "test:dim-pilar-parcela-fail-closed",
+        "command": "node tests/validar_parcela_elu_pilar_fail_closed.mjs"
       },
       {
         "name": "test:viga-secao-sem-rigidez",
@@ -1918,7 +1922,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34172235782",
-    "run_number": "431"
+    "run_id": "34173710104",
+    "run_number": "433"
   }
 }
