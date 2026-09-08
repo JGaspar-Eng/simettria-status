@@ -3,7 +3,6 @@
 
   function removerBlocosLegados() {
     document.querySelector(".stats")?.remove();
-    document.getElementById("progresso")?.remove();
 
     var currentTitle = document.getElementById("current-title");
     var currentSection = currentTitle?.closest("section");
@@ -14,7 +13,6 @@
     var nav = document.querySelector("nav.top");
     if (nav) {
       nav.querySelector('a[href="#estado-atual"]')?.remove();
-      nav.querySelector('a[href="#progresso"]')?.remove();
       nav.querySelector('a[href="#consolidado"]')?.remove();
     }
   }
