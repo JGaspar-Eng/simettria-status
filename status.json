@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-08T02:07:43Z",
+  "generated_at": "2026-09-08T02:13:43Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7680378bc0d1688f10d037dedba30386055c21a0",
-    "short_sha": "7680378",
+    "sha": "2b94537674985beb71fca3a9ac7b358f69ddfe14",
+    "short_sha": "2b94537",
     "author": "Joanez Gaspar",
-    "date": "2026-09-07T23:07:28-03:00",
-    "message": "fix(laje): entrada null ou string vazia deixa de virar carga zero (#357)"
+    "date": "2026-09-07T23:13:24-03:00",
+    "message": "fix(viga,pilar): entrada null ou string vazia deixa de virar zero (#359)"
   },
   "commits": [
+    {
+      "sha": "2b94537674985beb71fca3a9ac7b358f69ddfe14",
+      "short_sha": "2b94537",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-07T23:13:24-03:00",
+      "message": "fix(viga,pilar): entrada null ou string vazia deixa de virar zero (#359)"
+    },
     {
       "sha": "7680378bc0d1688f10d037dedba30386055c21a0",
       "short_sha": "7680378",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T19:09:50-03:00",
       "message": "chore: remove placeholder"
-    },
-    {
-      "sha": "e722151b4252f8f07ac1ffc8a2942371f09a3746",
-      "short_sha": "e722151",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T19:09:37-03:00",
-      "message": "chore: placeholder"
     }
   ],
   "development": {
@@ -1391,7 +1391,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 132,
+    "validator_count": 133,
     "validators": [
       {
         "name": "test:base",
@@ -1616,6 +1616,10 @@
       {
         "name": "test:int-review-contratos",
         "command": "node tests/validar_int_review_contratos.mjs"
+      },
+      {
+        "name": "test:viga-pilar-entrada-null",
+        "command": "node tests/validar_entrada_viga_pilar_null_fail_closed.mjs"
       },
       {
         "name": "test:laje-entrada-null",
@@ -1930,7 +1934,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34178971090",
-    "run_number": "438"
+    "run_id": "34179308240",
+    "run_number": "440"
   }
 }
