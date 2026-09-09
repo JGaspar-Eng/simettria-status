@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T21:51:36Z",
+  "generated_at": "2026-09-09T21:55:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c775dd60372a99361438f5c1f946e55d689e6abc",
-    "short_sha": "c775dd6",
+    "sha": "9ca638adb023608acb3ebdf358444ca5c66566ba",
+    "short_sha": "9ca638a",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T18:50:34-03:00",
-    "message": "style(status-dashboard): destaca frentes ativas em vermelho no painel público (#375)"
+    "date": "2026-09-09T18:54:57-03:00",
+    "message": "fix(orq): revalida reação antes de derivar proposta (#390)"
   },
   "commits": [
+    {
+      "sha": "9ca638adb023608acb3ebdf358444ca5c66566ba",
+      "short_sha": "9ca638a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T18:54:57-03:00",
+      "message": "fix(orq): revalida reação antes de derivar proposta (#390)"
+    },
     {
       "sha": "c775dd60372a99361438f5c1f946e55d689e6abc",
       "short_sha": "c775dd6",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T16:28:41-03:00",
       "message": "fix(sa-l1): consome autoridade oficial de Ix da viga em vez de recalcular (#374)"
-    },
-    {
-      "sha": "366759fd64b83f2e30fc3ef285f9b031cd2dfc1b",
-      "short_sha": "366759f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T14:46:47-03:00",
-      "message": "feat(orq): conecta NOR-FUND-01 com insumos explícitos (#376)"
     }
   ],
   "development": {
@@ -1943,7 +1943,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34409168378",
-    "run_number": "480"
+    "run_id": "34409490350",
+    "run_number": "482"
   }
 }
