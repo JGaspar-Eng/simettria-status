@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T22:11:05Z",
+  "generated_at": "2026-09-09T22:15:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7d54b5aa52e9bcdcccb14e2b0794cfb2ddc832cf",
-    "short_sha": "7d54b5a",
+    "sha": "74e1f49ca801ce6a2e42d967da854fd7a18d8040",
+    "short_sha": "74e1f49",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T19:10:39-03:00",
-    "message": "fix(orq): exige dimensões numéricas explícitas no rascunho (#397)"
+    "date": "2026-09-09T19:14:54-03:00",
+    "message": "feat(status-dashboard): reativa expansão do card de área com próximos passos (#394)"
   },
   "commits": [
+    {
+      "sha": "74e1f49ca801ce6a2e42d967da854fd7a18d8040",
+      "short_sha": "74e1f49",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T19:14:54-03:00",
+      "message": "feat(status-dashboard): reativa expansão do card de área com próximos passos (#394)"
+    },
     {
       "sha": "7d54b5aa52e9bcdcccb14e2b0794cfb2ddc832cf",
       "short_sha": "7d54b5a",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T18:15:23-03:00",
       "message": "fix(orq): bloqueia reação base ausente convertida em zero (#384)"
-    },
-    {
-      "sha": "7d01d6abee252243501385a6052a2d40b92d12e2",
-      "short_sha": "7d01d6a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T17:02:21-03:00",
-      "message": "fix(status): deriva execution.panel.active de execution.active (#379) (#382)"
     }
   ],
   "development": {
@@ -1380,7 +1380,12 @@
           ]
         }
       }
-    ]
+    ],
+    "overall_progress": {
+      "done_equivalente": 40.91,
+      "total_trabalhos_cadastrados": 106,
+      "percent": 39
+    }
   },
   "tests": {
     "command": "npm run test:all",
@@ -1943,7 +1948,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34410884426",
-    "run_number": "490"
+    "run_id": "34411243338",
+    "run_number": "491"
   }
 }

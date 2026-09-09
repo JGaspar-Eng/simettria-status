@@ -138,6 +138,20 @@
     line-height: 1.65;
   }
 
+  .hero-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .hero-text { flex: 1 1 480px; }
+  .overall-progress-card {
+    flex: 0 0 240px;
+    min-width: 0;
+  }
+  .overall-progress-card .stat-value { font-size: 32px; }
+
   .stats {
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
@@ -747,9 +761,18 @@
   </div>
 
   <div class="wrap hero">
-    <div class="eyebrow">Painel técnico versionado</div>
-    <h1>Estado real do desenvolvimento do SIMETTRIA.</h1>
-    <p>Este painel mostra onde o desenvolvimento está, quanto já avançou em cada área, quais são as próximas etapas e o que já foi consolidado no SIMETTRIA. As informações são atualizadas a partir dos registros versionados do projeto.</p>
+    <div class="hero-top">
+      <div class="hero-text">
+        <div class="eyebrow">Painel técnico versionado</div>
+        <h1>Estado real do desenvolvimento do SIMETTRIA.</h1>
+        <p>Este painel mostra onde o desenvolvimento está, quanto já avançou em cada área, quais são as próximas etapas e o que já foi consolidado no SIMETTRIA. As informações são atualizadas a partir dos registros versionados do projeto.</p>
+      </div>
+      <div class="stat overall-progress-card" id="overall-progress-card" hidden>
+        <div class="stat-label">Progresso geral do projeto</div>
+        <div class="stat-value" id="overall-progress-value">—</div>
+        <div class="stat-hint" id="overall-progress-hint">trabalhos cadastrados concluídos</div>
+      </div>
+    </div>
 
     <div class="stats">
       <div class="stat">
@@ -865,8 +888,8 @@
   </div>
 </footer>
 
-<script src="status_areas.js?v=7d54b5aa52e9bcdcccb14e2b0794cfb2ddc832cf"></script>
-<script src="status_sequence.js?v=7d54b5aa52e9bcdcccb14e2b0794cfb2ddc832cf"></script>
+<script src="status_areas.js?v=74e1f49ca801ce6a2e42d967da854fd7a18d8040"></script>
+<script src="status_sequence.js?v=74e1f49ca801ce6a2e42d967da854fd7a18d8040"></script>
 <script>
 (function () {
   function escapeHtml(value) {
@@ -1195,6 +1218,6 @@
   }
 })();
 </script>
-<script src="status_coordination.js?v=7d54b5aa52e9bcdcccb14e2b0794cfb2ddc832cf"></script>
+<script src="status_coordination.js?v=74e1f49ca801ce6a2e42d967da854fd7a18d8040"></script>
 </body>
 </html>
