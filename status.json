@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T21:16:30Z",
+  "generated_at": "2026-09-09T21:20:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
-    "short_sha": "1d11cce",
+    "sha": "fa30b8dec5e7db8eb45277c0d6057468b10c3a51",
+    "short_sha": "fa30b8d",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T18:15:23-03:00",
-    "message": "fix(orq): bloqueia reação base ausente convertida em zero (#384)"
+    "date": "2026-09-09T18:20:12-03:00",
+    "message": "fix(orq): impede cota base ausente de coincidir com zero (#386)"
   },
   "commits": [
+    {
+      "sha": "fa30b8dec5e7db8eb45277c0d6057468b10c3a51",
+      "short_sha": "fa30b8d",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T18:20:12-03:00",
+      "message": "fix(orq): impede cota base ausente de coincidir com zero (#386)"
+    },
     {
       "sha": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
       "short_sha": "1d11cce",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T09:31:29-03:00",
       "message": "feat(orq): integra demarcações de infraestrutura ao cálculo global (#366)"
-    },
-    {
-      "sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
-      "short_sha": "d3397c3",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-08T08:27:48-03:00",
-      "message": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360) (#361)"
     }
   ],
   "development": {
@@ -1939,7 +1939,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34405972056",
-    "run_number": "470"
+    "run_id": "34406344523",
+    "run_number": "471"
   }
 }
