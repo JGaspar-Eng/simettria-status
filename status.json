@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T22:24:15Z",
+  "generated_at": "2026-09-09T22:29:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dd9d50ec6ee2461706644b280e085df73ed2ec9d",
-    "short_sha": "dd9d50e",
+    "sha": "64657f761a9085112fb7f7b553b0d55fc036afdd",
+    "short_sha": "64657f7",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T19:23:58-03:00",
-    "message": "docs(status): fecha CALC-GRAPH-PROVENIENCIA no registro de execucao (#410)"
+    "date": "2026-09-09T19:29:02-03:00",
+    "message": "fix(orq): exige marcador único da base da prumada (#414)"
   },
   "commits": [
+    {
+      "sha": "64657f761a9085112fb7f7b553b0d55fc036afdd",
+      "short_sha": "64657f7",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T19:29:02-03:00",
+      "message": "fix(orq): exige marcador único da base da prumada (#414)"
+    },
     {
       "sha": "dd9d50ec6ee2461706644b280e085df73ed2ec9d",
       "short_sha": "dd9d50e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T18:27:24-03:00",
       "message": "fix(orq): bloqueia reação de apoio vazia como demonstrada (#388)"
-    },
-    {
-      "sha": "fa30b8dec5e7db8eb45277c0d6057468b10c3a51",
-      "short_sha": "fa30b8d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T18:20:12-03:00",
-      "message": "fix(orq): impede cota base ausente de coincidir com zero (#386)"
     }
   ],
   "development": {
@@ -1941,7 +1941,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34412015400",
-    "run_number": "494"
+    "run_id": "34412439395",
+    "run_number": "495"
   }
 }
