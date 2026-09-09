@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:39:03Z",
+  "generated_at": "2026-09-09T17:40:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
@@ -124,18 +124,32 @@
       },
       "recent": [
         {
-          "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-          "state": "completed",
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
+          "state": "in_progress",
           "area": 11,
-          "source": "issue #231 / PR #311"
+          "source": "issue #231"
         },
         {
-          "code": "FUND-MATERIALIZACAO-TRACE",
-          "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
+          "code": "FUND-MATERIALIZACAO-JSON",
+          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
           "state": "completed",
           "area": 11,
-          "source": "issue #231 / PR #307"
+          "source": "PR #299 / issue #231"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-MODELO",
+          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #297 / issue #231"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-ORQ",
+          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
+          "state": "completed",
+          "area": 11,
+          "source": "PR #295 / issue #231"
         },
         {
           "code": "NOR-FUND-05-HARDENING",
@@ -154,6 +168,13 @@
       ],
       "active": [
         {
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231"
+        },
+        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global e infraestrutura automática",
           "state": "in_progress",
@@ -163,74 +184,25 @@
       ],
       "completed": [
         {
-          "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231 / PR #311"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-TRACE",
-          "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231 / PR #307"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-3D",
-          "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-2D",
-          "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-MEMORIAL",
-          "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-EDIT",
-          "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
-          "state": "completed",
-          "area": 11,
-          "source": "issue #231"
-        },
-        {
           "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada e compatível com projetos anteriores",
+          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
           "state": "completed",
           "area": 11,
-          "source": "issue #231"
+          "source": "PR #299 / issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criar/atualizar sapata no modelo com geometria, armaduras e rastreabilidade",
+          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
           "state": "completed",
           "area": 11,
-          "source": "issue #231"
+          "source": "PR #297 / issue #231"
         },
         {
           "code": "FUND-MATERIALIZACAO-ORQ",
-          "title": "Orquestrador consumir oficialmente NOR-FUND-01→05 e materializar somente solução autorizada",
+          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
           "state": "completed",
           "area": 11,
-          "source": "issue #231"
+          "source": "PR #295 / issue #231"
         },
         {
           "code": "NOR-FUND-05-HARDENING",
@@ -268,6 +240,13 @@
           "state": "in_progress",
           "area": 4,
           "source": "docs/DIM_FUND_01_CHECKPOINT.md"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidar e recalcular a sapata após mudanças relevantes de entrada",
+          "state": "in_progress",
+          "area": 11,
+          "source": "issue #231"
         }
       ],
       "checklists": [
@@ -341,42 +320,42 @@
             {
               "code": "STALE",
               "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
-              "state": "completed"
+              "state": "in_progress"
             },
             {
               "code": "EDIT",
               "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-              "state": "completed"
+              "state": "planned"
             },
             {
               "code": "MEMORIAL",
               "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
-              "state": "completed"
+              "state": "planned"
             },
             {
               "code": "2D",
               "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-              "state": "completed"
+              "state": "planned"
             },
             {
               "code": "3D",
               "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
-              "state": "completed"
+              "state": "planned"
             },
             {
               "code": "TRACE",
               "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
-              "state": "completed"
+              "state": "planned"
             },
             {
               "code": "GLOBAL",
               "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
-              "state": "completed"
+              "state": "planned"
             }
           ]
         }
       ],
-      "source": "docs/DEVELOPMENT_STATUS.json + issue #231 (overlay automático FUND-MATERIALIZACAO)",
+      "source": "docs/DEVELOPMENT_STATUS.json",
       "ordering": "more_recent_first",
       "policy": "Itens de execução são explícitos, ordenados do mais recente para o mais antigo e não dependem de posição no roadmap nem da existência de um fechamento."
     },
@@ -1917,7 +1896,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34384170001",
-    "run_number": "452"
+    "run_id": "34384275652",
+    "run_number": "453"
   }
 }
