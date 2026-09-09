@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T19:30:05Z",
+  "generated_at": "2026-09-09T19:33:26Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "06be157e3bf59fe14fec7f91de68bd1605cfbe11",
-    "short_sha": "06be157",
+    "sha": "c931705b44143dbfae80d9d608f9ad980ba343ba",
+    "short_sha": "c931705",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T16:28:41-03:00",
-    "message": "fix(sa-l1): consome autoridade oficial de Ix da viga em vez de recalcular (#374)"
+    "date": "2026-09-09T16:33:11-03:00",
+    "message": "feat(orq): audita cobertura global de reações por pilar"
   },
   "commits": [
+    {
+      "sha": "c931705b44143dbfae80d9d608f9ad980ba343ba",
+      "short_sha": "c931705",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T16:33:11-03:00",
+      "message": "feat(orq): audita cobertura global de reações por pilar"
+    },
     {
       "sha": "06be157e3bf59fe14fec7f91de68bd1605cfbe11",
       "short_sha": "06be157",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T22:42:56-03:00",
       "message": "fix(dim-fund): cota de base corrompida bloqueia a transmissao de acoes (#355)"
-    },
-    {
-      "sha": "fda47d1e8857828853328c05677c61cf265ed88a",
-      "short_sha": "fda47d1",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T21:33:32-03:00",
-      "message": "fix(dim-pilar): parcela caracteristica invalida bloqueia a combinacao ELU (#353)"
     }
   ],
   "development": {
@@ -1900,7 +1900,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34395341339",
-    "run_number": "459"
+    "run_id": "34395739412",
+    "run_number": "460"
   }
 }
