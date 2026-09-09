@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T22:23:28Z",
+  "generated_at": "2026-09-09T22:24:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "74e1f49ca801ce6a2e42d967da854fd7a18d8040",
-    "short_sha": "74e1f49",
+    "sha": "dd9d50ec6ee2461706644b280e085df73ed2ec9d",
+    "short_sha": "dd9d50e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T19:14:54-03:00",
-    "message": "feat(status-dashboard): reativa expansão do card de área com próximos passos (#394)"
+    "date": "2026-09-09T19:23:58-03:00",
+    "message": "docs(status): fecha CALC-GRAPH-PROVENIENCIA no registro de execucao (#410)"
   },
   "commits": [
+    {
+      "sha": "dd9d50ec6ee2461706644b280e085df73ed2ec9d",
+      "short_sha": "dd9d50e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T19:23:58-03:00",
+      "message": "docs(status): fecha CALC-GRAPH-PROVENIENCIA no registro de execucao (#410)"
+    },
     {
       "sha": "74e1f49ca801ce6a2e42d967da854fd7a18d8040",
       "short_sha": "74e1f49",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T18:20:12-03:00",
       "message": "fix(orq): impede cota base ausente de coincidir com zero (#386)"
-    },
-    {
-      "sha": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
-      "short_sha": "1d11cce",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T18:15:23-03:00",
-      "message": "fix(orq): bloqueia reação base ausente convertida em zero (#384)"
     }
   ],
   "development": {
@@ -97,13 +97,6 @@
     "execution": {
       "panel": {
         "active": [
-          {
-            "code": "CALC-GRAPH-PROVENIENCIA",
-            "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
-            "state": "in_progress",
-            "area": 3,
-            "source": "issue #231 (claim CLAUDE)"
-          },
           {
             "code": "FUND-MATERIALIZACAO-STALE",
             "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
@@ -126,9 +119,9 @@
         {
           "code": "CALC-GRAPH-PROVENIENCIA",
           "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
-          "state": "in_progress",
+          "state": "completed",
           "area": 3,
-          "source": "issue #231 (claim CLAUDE)"
+          "source": "PR #392 / issue #231"
         },
         {
           "code": "SA-L1-VIGA-AUTORIDADE-GEO-MAT",
@@ -182,13 +175,6 @@
       ],
       "active": [
         {
-          "code": "CALC-GRAPH-PROVENIENCIA",
-          "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
-          "state": "in_progress",
-          "area": 3,
-          "source": "issue #231 (claim CLAUDE)"
-        },
-        {
           "code": "FUND-MATERIALIZACAO-STALE",
           "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
           "state": "in_progress",
@@ -204,6 +190,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "CALC-GRAPH-PROVENIENCIA",
+          "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
+          "state": "completed",
+          "area": 3,
+          "source": "PR #392 / issue #231"
+        },
         {
           "code": "SA-L1-VIGA-AUTORIDADE-GEO-MAT",
           "title": "Consumir a autoridade oficial de geometria e material das vigas no SA-L1, eliminando cálculo duplicado de I e Ecs",
@@ -719,7 +712,7 @@
         "percent": null,
         "note": "reestimativa pendente após o fechamento do M3B; não será alterado por inferência enquanto o novo escopo de integração global estiver em implantação.",
         "status": "pending_reestimate",
-        "active": true,
+        "active": false,
         "work": {
           "done": 5,
           "partial": 0,
@@ -1948,7 +1941,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34411948036",
-    "run_number": "493"
+    "run_id": "34412015400",
+    "run_number": "494"
   }
 }
