@@ -1,17 +1,44 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-09T21:16:16.090399+00:00",
+  "generated_at": "2026-09-09T21:16:47.792591+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
     "policy": "latest_per_front_then_pr_plus_real_pr_state"
   },
   "summary": {
-    "fronts": 100,
-    "active": 7,
+    "fronts": 101,
+    "active": 8,
     "closed": 80
   },
   "active": [
+    {
+      "from": "CHATGPT",
+      "front": "ORQ-COTA-BASE-NULL-FAIL-CLOSED",
+      "status": "CLAIMED",
+      "base": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
+      "head": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
+      "pr": "NONE ISSUE: #385",
+      "visual_evidence": null,
+      "user_visual_approval": "- NOT_REQUIRED candidato; backend numérico sem superfície visual",
+      "merge_policy": null,
+      "comment_id": 5608862570,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5608862570",
+      "updated_at": "2026-09-09T21:16:11Z",
+      "result": [
+        "defeito provado: seleção dos casos da cota mínima usa `Number(caso.cota_base_m)`; com cota mínima válida 0, `null`/`\"\"` também coincidem com 0 e podem entrar em `casosBase`"
+      ],
+      "ci": [
+        "pendente"
+      ],
+      "suite_gaps": [
+        "regressão ainda pendente"
+      ],
+      "next_for_chatgpt": [
+        "corrigir seleção fail-closed, testar, abrir PR e validar CI no HEAD exato"
+      ],
+      "next_for_claude": []
+    },
     {
       "from": "CLAUDE",
       "front": "painel-execution-active-desync",
@@ -25,17 +52,17 @@
       "comment_id": 5607698405,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607698405",
       "updated_at": "2026-09-09T19:42:09Z",
-      "next_for_claude": [],
-      "suite_gaps": [],
-      "ci": [
-        "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
-      ],
       "result": [
         "execution.panel.active passa a ser sempre derivado de execution.active (fonte única) em scripts/gerar_status_dashboard.py",
         "DEVELOPMENT_STATUS.json corrigido: SA-L1-VIGA-AUTORIDADE-GEO-MAT e VIGA-PILAR-CONTRATO-ROTACIONAL completed; CALC-GRAPH-PROVENIENCIA active (área 3)",
         "teste regressivo dedicado prova a correção (falha no código pré-patch)"
       ],
-      "next_for_chatgpt": []
+      "ci": [
+        "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
+      ],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
+      "next_for_claude": []
     },
     {
       "from": "CLAUDE",
@@ -50,11 +77,11 @@
       "comment_id": 5607589538,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607589538",
       "updated_at": "2026-09-09T19:33:45Z",
-      "next_for_claude": [],
-      "suite_gaps": [],
-      "ci": [],
       "result": [],
-      "next_for_chatgpt": []
+      "ci": [],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
+      "next_for_claude": []
     },
     {
       "from": "CHATGPT",
@@ -69,20 +96,20 @@
       "comment_id": 5606284373,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5606284373",
       "updated_at": "2026-09-09T17:48:44Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [
-        "regressão ainda será adicionada"
+      "result": [
+        "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
       ],
       "ci": [
         "pendente"
       ],
-      "result": [
-        "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
+      "suite_gaps": [
+        "regressão ainda será adicionada"
       ],
       "next_for_chatgpt": [
         "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
+      ],
+      "next_for_claude": [
+        "NONE"
       ]
     },
     {
@@ -98,13 +125,13 @@
       "comment_id": 5601896447,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5601896447",
       "updated_at": "2026-09-09T12:33:49Z",
+      "result": [],
+      "ci": [],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
       "next_for_claude": [
         "NONE; frente reservada"
-      ],
-      "suite_gaps": [],
-      "ci": [],
-      "result": [],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -119,21 +146,21 @@
       "comment_id": 5529528681,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5529528681",
       "updated_at": "2026-09-03T17:26:57Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [
-        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
-      ],
-      "ci": [
-        "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
-      ],
       "result": [
         "PR #299 JSON mergeado e aprovado",
         "STALE passa a ser a atividade corrente da Área 11"
       ],
+      "ci": [
+        "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
+      ],
+      "suite_gaps": [
+        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
+      ],
       "next_for_chatgpt": [
         "implementar STALE em branch própria a partir do main atual"
+      ],
+      "next_for_claude": [
+        "NONE"
       ]
     },
     {
@@ -149,23 +176,23 @@
       "comment_id": 5509573933,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5509573933",
       "updated_at": "2026-09-02T12:32:30Z",
-      "next_for_claude": [
-        "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
-      ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
-      ],
-      "ci": [
-        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
-      ],
       "result": [
         "o bloqueio antigo por ausência de classificador/rastreabilidade foi superado pelos PRs #272, #273 e #274",
         "geometria em planta e altura estrutural passaram a ser produzidas nas frentes normativas posteriores (#276/#277) e a ancoragem dos arranques foi fechada no #283",
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
       ],
+      "ci": [
+        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
+      ],
+      "suite_gaps": [
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
+      ],
       "next_for_chatgpt": [
         "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
+      ],
+      "next_for_claude": [
+        "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
       ]
     },
     {
@@ -181,26 +208,53 @@
       "comment_id": 5472604201,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5472604201",
       "updated_at": "2026-08-31T01:31:44Z",
-      "next_for_claude": [
-        "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
-      ],
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
-      ],
-      "ci": [
-        "pendente"
-      ],
       "result": [
         "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
       ],
+      "ci": [
+        "pendente"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
+      ],
       "next_for_chatgpt": [
         "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
+      ],
+      "next_for_claude": [
+        "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CHATGPT",
+      "front": "ORQ-COTA-BASE-NULL-FAIL-CLOSED",
+      "status": "CLAIMED",
+      "base": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
+      "head": "1d11ccefe5c9c46f2762feb83eb3bf1e18e849b8",
+      "pr": "NONE ISSUE: #385",
+      "visual_evidence": null,
+      "user_visual_approval": "- NOT_REQUIRED candidato; backend numérico sem superfície visual",
+      "merge_policy": null,
+      "comment_id": 5608862570,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5608862570",
+      "updated_at": "2026-09-09T21:16:11Z",
+      "result": [
+        "defeito provado: seleção dos casos da cota mínima usa `Number(caso.cota_base_m)`; com cota mínima válida 0, `null`/`\"\"` também coincidem com 0 e podem entrar em `casosBase`"
+      ],
+      "ci": [
+        "pendente"
+      ],
+      "suite_gaps": [
+        "regressão ainda pendente"
+      ],
+      "next_for_chatgpt": [
+        "corrigir seleção fail-closed, testar, abrir PR e validar CI no HEAD exato"
+      ],
+      "next_for_claude": []
+    },
     {
       "from": "CHATGPT",
       "front": "ORQ-REACAO-BASE-NULL-FAIL-CLOSED",
@@ -214,23 +268,23 @@
       "comment_id": 5608855754,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5608855754",
       "updated_at": "2026-09-09T21:15:35Z",
-      "next_for_claude": [
-        "manter CALC-GRAPH-PROVENIENCIA isolada"
-      ],
-      "suite_gaps": [
-        "NONE"
-      ],
-      "ci": [
-        "Testes SIMETTRIA run 34405718574 / SUCCESS",
-        "HEAD exato validado: a1500b60349ee200bbcaecbf86110b7b47a535fb"
-      ],
       "result": [
         "`null`, `\"\"`, `undefined` e `NaN` não podem mais virar reação parcial de base 0 kN",
         "zero numérico explícito permanece válido",
         "regressão integrada ao validador ORQ já pertencente ao gate oficial"
       ],
+      "ci": [
+        "Testes SIMETTRIA run 34405718574 / SUCCESS",
+        "HEAD exato validado: a1500b60349ee200bbcaecbf86110b7b47a535fb"
+      ],
+      "suite_gaps": [
+        "NONE"
+      ],
       "next_for_chatgpt": [
         "continuar auditoria estritamente na área ORQ reservada"
+      ],
+      "next_for_claude": [
+        "manter CALC-GRAPH-PROVENIENCIA isolada"
       ]
     },
     {
@@ -246,21 +300,21 @@
       "comment_id": 5607755215,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607755215",
       "updated_at": "2026-09-09T19:46:31Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [],
-      "ci": [
-        "run #1108 SUCCESS no HEAD exato",
-        "MERGE: 305f15db35cce693b16c0f0709786d9950985dcb"
-      ],
       "result": [
         "cortante SA-L1 transportado para combinações ELU;",
         "VEd de base exposto no ORQ sem default zero;",
         "auditoria por pilar distingue cortante demonstrado/ausente;",
         "cobertura global permanece fail-closed."
       ],
-      "next_for_chatgpt": []
+      "ci": [
+        "run #1108 SUCCESS no HEAD exato",
+        "MERGE: 305f15db35cce693b16c0f0709786d9950985dcb"
+      ],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
+      "next_for_claude": [
+        "NONE"
+      ]
     },
     {
       "from": "CLAUDE",
@@ -275,17 +329,17 @@
       "comment_id": 5607698405,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607698405",
       "updated_at": "2026-09-09T19:42:09Z",
-      "next_for_claude": [],
-      "suite_gaps": [],
-      "ci": [
-        "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
-      ],
       "result": [
         "execution.panel.active passa a ser sempre derivado de execution.active (fonte única) em scripts/gerar_status_dashboard.py",
         "DEVELOPMENT_STATUS.json corrigido: SA-L1-VIGA-AUTORIDADE-GEO-MAT e VIGA-PILAR-CONTRATO-ROTACIONAL completed; CALC-GRAPH-PROVENIENCIA active (área 3)",
         "teste regressivo dedicado prova a correção (falha no código pré-patch)"
       ],
-      "next_for_chatgpt": []
+      "ci": [
+        "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
+      ],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
+      "next_for_claude": []
     },
     {
       "from": "CLAUDE",
@@ -300,11 +354,11 @@
       "comment_id": 5607589538,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607589538",
       "updated_at": "2026-09-09T19:33:45Z",
-      "next_for_claude": [],
-      "suite_gaps": [],
-      "ci": [],
       "result": [],
-      "next_for_chatgpt": []
+      "ci": [],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
+      "next_for_claude": []
     },
     {
       "from": "CLAUDE",
@@ -319,20 +373,20 @@
       "comment_id": 5607529879,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607529879",
       "updated_at": "2026-09-09T19:29:12Z",
-      "next_for_claude": [
-        "NONE nesta frente; próxima frente (correção de PR #375 e investigação de execution.panel.active vazio) será registrada em comentário separado"
-      ],
-      "suite_gaps": [],
-      "ci": [
-        "validar-suite run 34394938548 SUCCESS no HEAD exato 8087347 (após sincronizar com main, sem conflito)"
-      ],
       "result": [
         "SA-L1 passa a consumir o nó oficial viga.Ix do Calculation Graph em vez de recalcular b*h^3/12 localmente",
         "teste regressivo dedicado comprova ativação do nó oficial (falha no código pré-patch)",
         "fail-closed preservado"
       ],
+      "ci": [
+        "validar-suite run 34394938548 SUCCESS no HEAD exato 8087347 (após sincronizar com main, sem conflito)"
+      ],
+      "suite_gaps": [],
       "next_for_chatgpt": [
         "NONE"
+      ],
+      "next_for_claude": [
+        "NONE nesta frente; próxima frente (correção de PR #375 e investigação de execution.panel.active vazio) será registrada em comentário separado"
       ]
     },
     {
@@ -348,20 +402,20 @@
       "comment_id": 5606284373,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5606284373",
       "updated_at": "2026-09-09T17:48:44Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [
-        "regressão ainda será adicionada"
+      "result": [
+        "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
       ],
       "ci": [
         "pendente"
       ],
-      "result": [
-        "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
+      "suite_gaps": [
+        "regressão ainda será adicionada"
       ],
       "next_for_chatgpt": [
         "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
+      ],
+      "next_for_claude": [
+        "NONE"
       ]
     },
     {
@@ -377,20 +431,20 @@
       "comment_id": 5606264361,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5606264361",
       "updated_at": "2026-09-09T17:47:04Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [
-        "NONE"
+      "result": [
+        "#373 concluída. ORQ pode usar NOR-FUND-01 com perfil/cota explícitos por apoio; ausência permanece BLOQUEADA e rastreável; nenhuma inferência por proximidade/furo ativo."
       ],
       "ci": [
         "Testes SIMETTRIA / run 34384765521 (#1098) / SUCCESS / HEAD a91cc2c412369657633848e73822562bace54267"
       ],
-      "result": [
-        "#373 concluída. ORQ pode usar NOR-FUND-01 com perfil/cota explícitos por apoio; ausência permanece BLOQUEADA e rastreável; nenhuma inferência por proximidade/furo ativo."
+      "suite_gaps": [
+        "NONE"
       ],
       "next_for_chatgpt": [
         "continuar P6 ORQ-ESTRUT-01 atacando o próximo bloqueio real do fluxo integrado: reações globais padrão ainda não atingem READY."
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -408,20 +462,20 @@
       "comment_id": 5606155529,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5606155529",
       "updated_at": "2026-09-09T17:38:40Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [
-        "NONE"
+      "result": [
+        "#369 concluída. ORQ aceita envelope oficial do classificador normativo e preserva bloqueios/rastreabilidade sem promover bloqueio a falha estrutural."
       ],
       "ci": [
         "Testes SIMETTRIA / run 34383881119 (#1094) / SUCCESS / HEAD 5e53368005c1c8b0ea96d960aef74731c1bad5c0"
       ],
-      "result": [
-        "#369 concluída. ORQ aceita envelope oficial do classificador normativo e preserva bloqueios/rastreabilidade sem promover bloqueio a falha estrutural."
+      "suite_gaps": [
+        "NONE"
       ],
       "next_for_chatgpt": [
         "continuar P6 ORQ-ESTRUT-01: conectar o produtor NOR-FUND-01 ao fluxo integrado sem inferir perfil/cota ausentes."
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -439,13 +493,13 @@
       "comment_id": 5601896447,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5601896447",
       "updated_at": "2026-09-09T12:33:49Z",
+      "result": [],
+      "ci": [],
+      "suite_gaps": [],
+      "next_for_chatgpt": [],
       "next_for_claude": [
         "NONE; frente reservada"
-      ],
-      "suite_gaps": [],
-      "ci": [],
-      "result": [],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -460,13 +514,6 @@
       "comment_id": 5601871772,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5601871772",
       "updated_at": "2026-09-09T12:31:50Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [],
-      "ci": [
-        "Testes SIMETTRIA run #1089 / SUCCESS / HEAD 7088ddf3"
-      ],
       "result": [
         "pipeline ORQ inclui `derivar_propostas_infraestrutura` após os apoios",
         "apoio sem reação global demonstrada produz marcador AGUARDANDO_REACAO e nenhuma proposta",
@@ -474,8 +521,15 @@
         "materialização permanece bloqueada sem confirmação explícita",
         "regressão oficial discrimina os caminhos com/sem reação"
       ],
+      "ci": [
+        "Testes SIMETTRIA run #1089 / SUCCESS / HEAD 7088ddf3"
+      ],
+      "suite_gaps": [],
       "next_for_chatgpt": [
         "continuar ORQ-ESTRUT-01 em nova frente técnica a partir do main atualizado"
+      ],
+      "next_for_claude": [
+        "NONE"
       ]
     },
     {
@@ -491,56 +545,23 @@
       "comment_id": 5575848508,
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5575848508",
       "updated_at": "2026-09-07T21:36:06Z",
-      "next_for_claude": [
-        "NONE"
-      ],
-      "suite_gaps": [
-        "NONE: regressão comportamental discrimina o stale original"
-      ],
-      "ci": [
-        "Testes SIMETTRIA run #1062 em andamento no HEAD exato"
-      ],
       "result": [
         "achado: INT-CHECK reutilizava `inspecaoEstrutural` sem provar que ela correspondia ao snapshot atual",
         "inspector agora registra proveniência/versão completa por identidade em WeakMap privado",
         "detector só reutiliza inspeção oficial completa do mesmo snapshot; caso contrário reinspeciona",
         "regressão altera dimensão de fundação após inspeção e exige que o defeito novo seja detectado"
       ],
+      "ci": [
+        "Testes SIMETTRIA run #1062 em andamento no HEAD exato"
+      ],
+      "suite_gaps": [
+        "NONE: regressão comportamental discrimina o stale original"
+      ],
       "next_for_chatgpt": [
         "aguardar CI exato; revisar diff; merge somente verde; continuar auditoria de consumidores de snapshots"
       ],
-      "pr_state": "closed",
-      "pr_merged": true
-    },
-    {
-      "from": "CHATGPT",
-      "front": "audit-int-verify-georreferenciamento",
-      "status": "MERGED",
-      "base": "cca6b52bd9349b508e61881784d712ffac67e8cb",
-      "head": "6d80d4ecab0283a9025403ce7f272b1205038e25",
-      "pr": "#337",
-      "visual_evidence": "- NOT_REQUIRED",
-      "user_visual_approval": "- NOT_REQUIRED",
-      "merge_policy": "- AUTO_OK",
-      "comment_id": 5575790102,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5575790102",
-      "updated_at": "2026-09-07T21:28:09Z",
       "next_for_claude": [
         "NONE"
-      ],
-      "suite_gaps": [
-        "NONE"
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run #1060 / SUCCESS / HEAD 0d932039a9b2bb63a4379a1a2687a12f6c6df25a"
-      ],
-      "result": [
-        "seleção G5/G6 protegida contra furo sem georreferenciamento válido",
-        "regressão comportamental discrimina a falha original",
-        "issue #336 encerrada"
-      ],
-      "next_for_chatgpt": [
-        "continuar auditoria fail-closed do caminho geotécnico/inteligência sem reabrir frentes validadas sem evidência concreta"
       ],
       "pr_state": "closed",
       "pr_merged": true
