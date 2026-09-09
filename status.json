@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T19:42:29Z",
+  "generated_at": "2026-09-09T19:46:33Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c931705b44143dbfae80d9d608f9ad980ba343ba",
-    "short_sha": "c931705",
+    "sha": "305f15db35cce693b16c0f0709786d9950985dcb",
+    "short_sha": "305f15d",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T16:33:11-03:00",
-    "message": "feat(orq): audita cobertura global de reações por pilar"
+    "date": "2026-09-09T16:46:17-03:00",
+    "message": "feat(orq): transporta cortante SA-L1 até ações de base"
   },
   "commits": [
+    {
+      "sha": "305f15db35cce693b16c0f0709786d9950985dcb",
+      "short_sha": "305f15d",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T16:46:17-03:00",
+      "message": "feat(orq): transporta cortante SA-L1 até ações de base"
+    },
     {
       "sha": "c931705b44143dbfae80d9d608f9ad980ba343ba",
       "short_sha": "c931705",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T23:07:28-03:00",
       "message": "fix(laje): entrada null ou string vazia deixa de virar carga zero (#357)"
-    },
-    {
-      "sha": "8489eca93a18bf94b7211e7391b72978e9b7058e",
-      "short_sha": "8489eca",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T22:42:56-03:00",
-      "message": "fix(dim-fund): cota de base corrompida bloqueia a transmissao de acoes (#355)"
     }
   ],
   "development": {
@@ -1900,7 +1900,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34396626493",
-    "run_number": "463"
+    "run_id": "34397032327",
+    "run_number": "464"
   }
 }
