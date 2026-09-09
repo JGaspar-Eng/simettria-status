@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T21:40:26Z",
+  "generated_at": "2026-09-09T21:50:50Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8d53542b6ddbe65c9027cf4119b550f178d97322",
-    "short_sha": "8d53542",
+    "sha": "57fe440188b025a0822fbc1a466e87514cbef7d2",
+    "short_sha": "57fe440",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T18:27:24-03:00",
-    "message": "fix(orq): bloqueia reação de apoio vazia como demonstrada (#388)"
+    "date": "2026-09-09T18:50:31-03:00",
+    "message": "fix(status): epic.active cobre todas as frentes paralelas, nao so o bloco atual (#391)"
   },
   "commits": [
+    {
+      "sha": "57fe440188b025a0822fbc1a466e87514cbef7d2",
+      "short_sha": "57fe440",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T18:50:31-03:00",
+      "message": "fix(status): epic.active cobre todas as frentes paralelas, nao so o bloco atual (#391)"
+    },
     {
       "sha": "8d53542b6ddbe65c9027cf4119b550f178d97322",
       "short_sha": "8d53542",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T14:38:07-03:00",
       "message": "feat(orq): preserva envelope normativo nas propostas (#372)"
-    },
-    {
-      "sha": "427e8ea5707afa0cdc546d6ec712c8a713d2146e",
-      "short_sha": "427e8ea",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T13:16:14-03:00",
-      "message": "fix(orq): bloqueia materialização sem cálculo global READY (#368)"
     }
   ],
   "development": {
@@ -719,7 +719,7 @@
         "percent": null,
         "note": "reestimativa pendente após o fechamento do M3B; não será alterado por inferência enquanto o novo escopo de integração global estiver em implantação.",
         "status": "pending_reestimate",
-        "active": false,
+        "active": true,
         "work": {
           "done": 5,
           "partial": 0,
@@ -1215,7 +1215,7 @@
         "percent": 15,
         "note": "~15%, indicador de contagem dos trabalhos cadastrados — **não** é medida de aderência normativa. O repositório comprova o escopo declarado por cada módulo, não a fração de cada norma efetivamente coberta.",
         "status": "measured",
-        "active": false,
+        "active": true,
         "work": {
           "done": 2,
           "partial": 5,
@@ -1384,7 +1384,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 136,
+    "validator_count": 137,
     "validators": [
       {
         "name": "test:base",
@@ -1703,6 +1703,10 @@
         "command": "python tests/validar_status_dashboard.py"
       },
       {
+        "name": "test:status-epicos-area-paralela",
+        "command": "python tests/validar_epicos_area_paralela_ativa.py"
+      },
+      {
         "name": "test:status-dashboard-sync",
         "command": "node tests/validar_status_dashboard_sync.mjs"
       },
@@ -1939,7 +1943,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34408184872",
-    "run_number": "477"
+    "run_id": "34409103166",
+    "run_number": "478"
   }
 }
