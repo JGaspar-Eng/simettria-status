@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T12:23:24Z",
+  "generated_at": "2026-09-09T12:31:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
-    "short_sha": "d3397c3",
+    "sha": "323a43142130f9e9cd81128beebd4230fb6e3732",
+    "short_sha": "323a431",
     "author": "Joanez Gaspar",
-    "date": "2026-09-08T08:27:48-03:00",
-    "message": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360) (#361)"
+    "date": "2026-09-09T09:31:29-03:00",
+    "message": "feat(orq): integra demarcações de infraestrutura ao cálculo global (#366)"
   },
   "commits": [
+    {
+      "sha": "323a43142130f9e9cd81128beebd4230fb6e3732",
+      "short_sha": "323a431",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T09:31:29-03:00",
+      "message": "feat(orq): integra demarcações de infraestrutura ao cálculo global (#366)"
+    },
     {
       "sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
       "short_sha": "d3397c3",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T19:13:55-03:00",
       "message": "Merge pull request #345 from JGaspar-Eng/fix/cg-assinatura-vinculo-rotacional-viga"
-    },
-    {
-      "sha": "bfa07bc51f94c00bd5010c9b553f30c0bed4cc3e",
-      "short_sha": "bfa07bc",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T19:12:04-03:00",
-      "message": "test(cg): aceita fechamento de função no EOF"
     }
   ],
   "development": {
@@ -1931,7 +1931,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34350700869",
-    "run_number": "444"
+    "run_id": "34351520751",
+    "run_number": "445"
   }
 }
