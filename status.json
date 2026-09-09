@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T17:49:03Z",
+  "generated_at": "2026-09-09T19:29:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "366759fd64b83f2e30fc3ef285f9b031cd2dfc1b",
-    "short_sha": "366759f",
+    "sha": "06be157e3bf59fe14fec7f91de68bd1605cfbe11",
+    "short_sha": "06be157",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T14:46:47-03:00",
-    "message": "feat(orq): conecta NOR-FUND-01 com insumos explícitos (#376)"
+    "date": "2026-09-09T16:28:41-03:00",
+    "message": "fix(sa-l1): consome autoridade oficial de Ix da viga em vez de recalcular (#374)"
   },
   "commits": [
+    {
+      "sha": "06be157e3bf59fe14fec7f91de68bd1605cfbe11",
+      "short_sha": "06be157",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T16:28:41-03:00",
+      "message": "fix(sa-l1): consome autoridade oficial de Ix da viga em vez de recalcular (#374)"
+    },
     {
       "sha": "366759fd64b83f2e30fc3ef285f9b031cd2dfc1b",
       "short_sha": "366759f",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T21:33:32-03:00",
       "message": "fix(dim-pilar): parcela caracteristica invalida bloqueia a combinacao ELU (#353)"
-    },
-    {
-      "sha": "f8bfa7f0f1dd0cc50a8858ec1b88c41d99b7395d",
-      "short_sha": "f8bfa7f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T21:06:21-03:00",
-      "message": "fix(viga): bloqueia sistema quando a secao nao tem rigidez (#351)"
     }
   ],
   "development": {
@@ -1349,7 +1349,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 134,
+    "validator_count": 135,
     "validators": [
       {
         "name": "test:base",
@@ -1542,6 +1542,10 @@
       {
         "name": "test:viga-vinculo-rotacional",
         "command": "node tests/validar_vinculo_rotacional_viga_sa_l1.mjs"
+      },
+      {
+        "name": "test:sa-l1-viga-inercia-autoridade",
+        "command": "node tests/validar_sa_l1_viga_inercia_autoridade_oficial.mjs"
       },
       {
         "name": "test:opt-pilar-avaliador",
@@ -1896,7 +1900,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34385199582",
-    "run_number": "457"
+    "run_id": "34395290289",
+    "run_number": "458"
   }
 }
