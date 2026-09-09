@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T19:46:51Z",
+  "generated_at": "2026-09-09T20:02:43Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "305f15db35cce693b16c0f0709786d9950985dcb",
-    "short_sha": "305f15d",
+    "sha": "7d01d6abee252243501385a6052a2d40b92d12e2",
+    "short_sha": "7d01d6a",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T16:46:17-03:00",
-    "message": "feat(orq): transporta cortante SA-L1 até ações de base"
+    "date": "2026-09-09T17:02:21-03:00",
+    "message": "fix(status): deriva execution.panel.active de execution.active (#379) (#382)"
   },
   "commits": [
+    {
+      "sha": "7d01d6abee252243501385a6052a2d40b92d12e2",
+      "short_sha": "7d01d6a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T17:02:21-03:00",
+      "message": "fix(status): deriva execution.panel.active de execution.active (#379) (#382)"
+    },
     {
       "sha": "305f15db35cce693b16c0f0709786d9950985dcb",
       "short_sha": "305f15d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-07T23:13:24-03:00",
       "message": "fix(viga,pilar): entrada null ou string vazia deixa de virar zero (#359)"
-    },
-    {
-      "sha": "7680378bc0d1688f10d037dedba30386055c21a0",
-      "short_sha": "7680378",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-07T23:07:28-03:00",
-      "message": "fix(laje): entrada null ou string vazia deixa de virar carga zero (#357)"
     }
   ],
   "development": {
@@ -96,33 +96,47 @@
     },
     "execution": {
       "panel": {
-        "active": [],
-        "planned": [
-          {
-            "code": "SA-L1-VIGA-AUTORIDADE-GEO-MAT",
-            "title": "Consumir a autoridade oficial de geometria e material das vigas no SA-L1, eliminando cálculo duplicado de I e Ecs",
-            "state": "planned",
-            "area": 3,
-            "source": "planejamento técnico após PR #320"
-          },
-          {
-            "code": "VIGA-PILAR-CONTRATO-ROTACIONAL",
-            "title": "Formalizar e persistir os vínculos rotacionais das extremidades viga–pilar, mantendo fail-closed sem continuidade presumida",
-            "state": "planned",
-            "area": 3,
-            "source": "planejamento técnico após PR #320"
-          },
+        "active": [
           {
             "code": "CALC-GRAPH-PROVENIENCIA",
             "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
-            "state": "planned",
+            "state": "in_progress",
             "area": 3,
-            "source": "planejamento técnico após PR #320"
+            "source": "issue #231 (claim CLAUDE)"
+          },
+          {
+            "code": "FUND-MATERIALIZACAO-STALE",
+            "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
+            "state": "in_progress",
+            "area": 11,
+            "source": "issue #231"
+          },
+          {
+            "code": "ORQ-ESTRUT-01",
+            "title": "Orquestração estrutural global e infraestrutura automática",
+            "state": "in_progress",
+            "area": 4,
+            "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
           }
         ],
-        "policy": "O painel operacional mostra somente frentes em execução e planejadas. Itens concluídos permanecem apenas no histórico técnico e não são renderizados no painel."
+        "planned": [],
+        "policy": "O painel operacional mostra somente frentes em execução e planejadas. Itens concluídos permanecem apenas no histórico técnico e não são renderizados no painel. `active` é sempre derivado de execution.active pelo gerador (scripts/gerar_status_dashboard.py) — não editar este campo manualmente, ver issue #379."
       },
       "recent": [
+        {
+          "code": "CALC-GRAPH-PROVENIENCIA",
+          "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
+          "state": "in_progress",
+          "area": 3,
+          "source": "issue #231 (claim CLAUDE)"
+        },
+        {
+          "code": "SA-L1-VIGA-AUTORIDADE-GEO-MAT",
+          "title": "Consumir a autoridade oficial de geometria e material das vigas no SA-L1, eliminando cálculo duplicado de I e Ecs",
+          "state": "completed",
+          "area": 3,
+          "source": "PR #374 / issue #231"
+        },
         {
           "code": "FUND-MATERIALIZACAO-STALE",
           "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
@@ -168,6 +182,13 @@
       ],
       "active": [
         {
+          "code": "CALC-GRAPH-PROVENIENCIA",
+          "title": "Revisar terminologia e proveniência do Calculation Graph para a autoridade estrutural atual de pilares + vigas",
+          "state": "in_progress",
+          "area": 3,
+          "source": "issue #231 (claim CLAUDE)"
+        },
+        {
           "code": "FUND-MATERIALIZACAO-STALE",
           "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
           "state": "in_progress",
@@ -183,6 +204,20 @@
         }
       ],
       "completed": [
+        {
+          "code": "SA-L1-VIGA-AUTORIDADE-GEO-MAT",
+          "title": "Consumir a autoridade oficial de geometria e material das vigas no SA-L1, eliminando cálculo duplicado de I e Ecs",
+          "state": "completed",
+          "area": 3,
+          "source": "PR #374 / issue #231"
+        },
+        {
+          "code": "VIGA-PILAR-CONTRATO-ROTACIONAL",
+          "title": "Formalizar e persistir os vínculos rotacionais das extremidades viga–pilar, mantendo fail-closed sem continuidade presumida",
+          "state": "completed",
+          "area": 3,
+          "source": "PR #323, #345"
+        },
         {
           "code": "FUND-MATERIALIZACAO-JSON",
           "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
@@ -1349,7 +1384,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 135,
+    "validator_count": 136,
     "validators": [
       {
         "name": "test:base",
@@ -1672,6 +1707,10 @@
         "command": "node tests/validar_status_dashboard_sync.mjs"
       },
       {
+        "name": "test:painel-execution-active-desync",
+        "command": "python tests/validar_painel_execution_active_desync.py"
+      },
+      {
         "name": "test:perf-graph",
         "command": "node tests/validar_desempenho_calculation_graph.mjs"
       },
@@ -1900,7 +1939,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34397057789",
-    "run_number": "465"
+    "run_id": "34398632658",
+    "run_number": "466"
   }
 }
