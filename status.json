@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T21:21:22Z",
+  "generated_at": "2026-09-09T21:27:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fa30b8dec5e7db8eb45277c0d6057468b10c3a51",
-    "short_sha": "fa30b8d",
+    "sha": "8d53542b6ddbe65c9027cf4119b550f178d97322",
+    "short_sha": "8d53542",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T18:20:12-03:00",
-    "message": "fix(orq): impede cota base ausente de coincidir com zero (#386)"
+    "date": "2026-09-09T18:27:24-03:00",
+    "message": "fix(orq): bloqueia reação de apoio vazia como demonstrada (#388)"
   },
   "commits": [
+    {
+      "sha": "8d53542b6ddbe65c9027cf4119b550f178d97322",
+      "short_sha": "8d53542",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T18:27:24-03:00",
+      "message": "fix(orq): bloqueia reação de apoio vazia como demonstrada (#388)"
+    },
     {
       "sha": "fa30b8dec5e7db8eb45277c0d6057468b10c3a51",
       "short_sha": "fa30b8d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T13:16:14-03:00",
       "message": "fix(orq): bloqueia materialização sem cálculo global READY (#368)"
-    },
-    {
-      "sha": "323a43142130f9e9cd81128beebd4230fb6e3732",
-      "short_sha": "323a431",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T09:31:29-03:00",
-      "message": "feat(orq): integra demarcações de infraestrutura ao cálculo global (#366)"
     }
   ],
   "development": {
@@ -1939,7 +1939,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34406425073",
-    "run_number": "473"
+    "run_id": "34407022915",
+    "run_number": "474"
   }
 }
