@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-09T22:47:10Z",
+  "generated_at": "2026-09-10T02:11:51Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2d954f1fb7377295cf658d70ddb0c3568c82346a",
-    "short_sha": "2d954f1",
+    "sha": "35457f4d5d087bacd7813aceb3674aca3bec75a7",
+    "short_sha": "35457f4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T19:35:46-03:00",
-    "message": "fix(orq): exige identidade explícita no rascunho (#416)"
+    "date": "2026-09-09T23:11:32-03:00",
+    "message": "fix(viga-apoio): coordenada pilar/viga ausente deixa de virar origem (0,0) (#425)"
   },
   "commits": [
+    {
+      "sha": "35457f4d5d087bacd7813aceb3674aca3bec75a7",
+      "short_sha": "35457f4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-09T23:11:32-03:00",
+      "message": "fix(viga-apoio): coordenada pilar/viga ausente deixa de virar origem (0,0) (#425)"
+    },
     {
       "sha": "2d954f1fb7377295cf658d70ddb0c3568c82346a",
       "short_sha": "2d954f1",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T18:50:34-03:00",
       "message": "style(status-dashboard): destaca frentes ativas em vermelho no painel público (#375)"
-    },
-    {
-      "sha": "57fe440188b025a0822fbc1a466e87514cbef7d2",
-      "short_sha": "57fe440",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T18:50:31-03:00",
-      "message": "fix(status): epic.active cobre todas as frentes paralelas, nao so o bloco atual (#391)"
     }
   ],
   "development": {
@@ -1382,7 +1382,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 137,
+    "validator_count": 138,
     "validators": [
       {
         "name": "test:base",
@@ -1579,6 +1579,10 @@
       {
         "name": "test:sa-l1-viga-inercia-autoridade",
         "command": "node tests/validar_sa_l1_viga_inercia_autoridade_oficial.mjs"
+      },
+      {
+        "name": "test:viga-apoio-coordenada-fail-closed",
+        "command": "node tests/validar_viga_apoio_coordenada_fail_closed.mjs"
       },
       {
         "name": "test:opt-pilar-avaliador",
@@ -1941,7 +1945,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34413886215",
-    "run_number": "501"
+    "run_id": "34428462397",
+    "run_number": "502"
   }
 }
