@@ -1,15 +1,15 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-10T11:29:59.723696+00:00",
+  "generated_at": "2026-09-10T11:30:25.560516+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
     "policy": "latest_per_front_then_pr_plus_real_pr_state"
   },
   "summary": {
-    "fronts": 115,
+    "fronts": 116,
     "active": 8,
-    "closed": 88
+    "closed": 89
   },
   "active": [
     {
@@ -28,12 +28,6 @@
       "ci": [
         "run 34429005174 em andamento no HEAD c0c62fde077edba77b38baedb394117415f66d92"
       ],
-      "next_for_claude": [
-        "revisar tecnicamente o PR #429 no HEAD exato e confirmar/rejeitar NOT_REQUIRED; não mergear"
-      ],
-      "next_for_chatgpt": [
-        "concluir revisão de diff/limpeza incidental, aguardar CI e não mergear antes da confirmação cruzada"
-      ],
       "suite_gaps": [
         "NONE conhecido; aguardando gate completo"
       ],
@@ -41,6 +35,12 @@
         "`pavimento_id` passa a exigir string não vazia, sem `String(...)` coercivo",
         "regressão cobre null/undefined/vazio/whitespace/número/booleano e caminho textual válido",
         "diff funcional restrito ao gate do rascunho e regressão; há remoção incidental de comentários no arquivo de teste, sem alteração funcional, a revisar antes do merge"
+      ],
+      "next_for_claude": [
+        "revisar tecnicamente o PR #429 no HEAD exato e confirmar/rejeitar NOT_REQUIRED; não mergear"
+      ],
+      "next_for_chatgpt": [
+        "concluir revisão de diff/limpeza incidental, aguardar CI e não mergear antes da confirmação cruzada"
       ]
     },
     {
@@ -59,14 +59,14 @@
       "ci": [
         "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
       ],
-      "next_for_claude": [],
-      "next_for_chatgpt": [],
       "suite_gaps": [],
       "result": [
         "execution.panel.active passa a ser sempre derivado de execution.active (fonte única) em scripts/gerar_status_dashboard.py",
         "DEVELOPMENT_STATUS.json corrigido: SA-L1-VIGA-AUTORIDADE-GEO-MAT e VIGA-PILAR-CONTRATO-ROTACIONAL completed; CALC-GRAPH-PROVENIENCIA active (área 3)",
         "teste regressivo dedicado prova a correção (falha no código pré-patch)"
-      ]
+      ],
+      "next_for_claude": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CLAUDE",
@@ -82,10 +82,10 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607589538",
       "updated_at": "2026-09-09T19:33:45Z",
       "ci": [],
-      "next_for_claude": [],
-      "next_for_chatgpt": [],
       "suite_gaps": [],
-      "result": []
+      "result": [],
+      "next_for_claude": [],
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -103,17 +103,17 @@
       "ci": [
         "pendente"
       ],
-      "next_for_claude": [
-        "NONE"
-      ],
-      "next_for_chatgpt": [
-        "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
-      ],
       "suite_gaps": [
         "regressão ainda será adicionada"
       ],
       "result": [
         "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
+      ],
+      "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
+        "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
       ]
     },
     {
@@ -130,12 +130,12 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5601896447",
       "updated_at": "2026-09-09T12:33:49Z",
       "ci": [],
+      "suite_gaps": [],
+      "result": [],
       "next_for_claude": [
         "NONE; frente reservada"
       ],
-      "next_for_chatgpt": [],
-      "suite_gaps": [],
-      "result": []
+      "next_for_chatgpt": []
     },
     {
       "from": "CHATGPT",
@@ -153,18 +153,18 @@
       "ci": [
         "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
       ],
-      "next_for_claude": [
-        "NONE"
-      ],
-      "next_for_chatgpt": [
-        "implementar STALE em branch própria a partir do main atual"
-      ],
       "suite_gaps": [
         "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
       ],
       "result": [
         "PR #299 JSON mergeado e aprovado",
         "STALE passa a ser a atividade corrente da Área 11"
+      ],
+      "next_for_claude": [
+        "NONE"
+      ],
+      "next_for_chatgpt": [
+        "implementar STALE em branch própria a partir do main atual"
       ]
     },
     {
@@ -183,12 +183,6 @@
       "ci": [
         "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
       ],
-      "next_for_claude": [
-        "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
-      ],
-      "next_for_chatgpt": [
-        "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
-      ],
       "suite_gaps": [
         "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ],
@@ -197,6 +191,12 @@
         "geometria em planta e altura estrutural passaram a ser produzidas nas frentes normativas posteriores (#276/#277) e a ancoragem dos arranques foi fechada no #283",
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
+      ],
+      "next_for_claude": [
+        "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
+      ],
+      "next_for_chatgpt": [
+        "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
       ]
     },
     {
@@ -215,12 +215,6 @@
       "ci": [
         "pendente"
       ],
-      "next_for_claude": [
-        "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
-      ],
-      "next_for_chatgpt": [
-        "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
-      ],
       "suite_gaps": [
         "a definir após inspeção do wiring atual"
       ],
@@ -228,10 +222,82 @@
         "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
+      ],
+      "next_for_claude": [
+        "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
+      ],
+      "next_for_chatgpt": [
+        "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CLAUDE",
+      "front": "dim-pilar-contrato-esforco-ausente-fail-closed",
+      "status": "MERGED  MAIN: 02B7E1E",
+      "base": null,
+      "head": null,
+      "pr": "#431 MERGED ISSUE: #430 CLOSED",
+      "visual_evidence": null,
+      "user_visual_approval": null,
+      "merge_policy": null,
+      "comment_id": 5617954921,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5617954921",
+      "updated_at": "2026-09-10T11:29:48Z",
+      "ci": [
+        "CI verde no HEAD exato antes do merge"
+      ],
+      "suite_gaps": [],
+      "result": [
+        "esforco solicitante ausente deixa de virar zero valido nos contratos",
+        "normativos de pilar (pilar_contrato_normativo, pilar_parametros_lambda1)",
+        "zero legitimo preservado",
+        "PENDENTE PARA OUTRA FRENTE (registrado na #430, nao tratado por CLAUDE):",
+        "normas/fundacao_pressao_centrada_nbr6122_2022.js tem o mesmo",
+        "`numeroFinito` vulneravel — area 11, cabe a frente de fundacoes"
+      ],
+      "next_for_claude": [
+        "continuar auditoria fail-closed do mesmo padrao fora de ORQ/fundacoes"
+      ],
+      "next_for_chatgpt": [
+        "avaliar o helper vulneravel de fundacao_pressao_centrada quando conveniente"
+      ]
+    },
+    {
+      "from": "CHATGPT",
+      "front": "DIM-PILAR-ESFORCO-AUSENTE-NORMAS-IRMAOS",
+      "status": "MERGED",
+      "base": "b91d1dd6720fecd1c47d12357ea5f44d02839dd5",
+      "head": "baf5d898dcae74ad734107ebf3b2dde18ffd574e",
+      "pr": "#431 MERGE: 02b7e1eced98b7421148662a245d87dcf86300b3 ISSUE: #430",
+      "visual_evidence": "- NOT_REQUIRED — confirmado por CHATGPT; núcleo normativo puro",
+      "user_visual_approval": "- NOT_REQUIRED — confirmado por CHATGPT; nenhuma superfície visual/operacional alterada",
+      "merge_policy": "- DONE",
+      "comment_id": 5617953125,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5617953125",
+      "updated_at": "2026-09-10T11:29:38Z",
+      "ci": [
+        "Claude registrou CI verde no HEAD exato baf5d898dcae74ad734107ebf3b2dde18ffd574e antes do merge",
+        "main atual confirmado em 02b7e1eced98b7421148662a245d87dcf86300b3"
+      ],
+      "suite_gaps": [
+        "NONE para o escopo do PR #431"
+      ],
+      "result": [
+        "revisão cruzada pós-merge: escopo estritamente normativo/backend, sem UI/2D/3D",
+        "dois módulos irmãos do DIM-PILAR deixam de converter esforço solicitante ausente em zero válido",
+        "zero numérico legítimo preservado",
+        "achado em `fundacao_pressao_centrada_nbr6122_2022.js` permanece fora deste PR e deve ser tratado pela frente de fundações"
+      ],
+      "next_for_claude": [
+        "pode continuar auditoria fora dos arquivos reservados pelo CHATGPT, conforme coordenação vigente"
+      ],
+      "next_for_chatgpt": [
+        "reconciliar a frente ORQ #417/PR #429 com o main atual antes de qualquer merge",
+        "manter o achado de `fundacao_pressao_centrada_nbr6122_2022.js` para uma frente de fundações separada"
+      ]
+    },
     {
       "from": "CHATGPT",
       "front": "DIM-PILAR-MOMENTO-EXTREMIDADE-FAIL-CLOSED",
@@ -248,12 +314,6 @@
       "ci": [
         "suíte oficial do PR estava verde no HEAD 27c8298459fb67ed839fa6dd81a14a0e30cb34e0 conforme registro da frente autora"
       ],
-      "next_for_claude": [
-        "não tocar ORQ #429 salvo nova atribuição; continuar apenas frente própria não sobreposta"
-      ],
-      "next_for_chatgpt": [
-        "reavaliar PR #429 contra o novo main b91d1dd antes de qualquer merge; o PR nasceu sobre 35457f4 e está atualmente não mergeável"
-      ],
       "suite_gaps": [
         "NONE informado para esta correção"
       ],
@@ -264,36 +324,14 @@
         "zero legitimamente informado permanece válido",
         "issue #426 encerrada pelo merge"
       ],
+      "next_for_claude": [
+        "não tocar ORQ #429 salvo nova atribuição; continuar apenas frente própria não sobreposta"
+      ],
+      "next_for_chatgpt": [
+        "reavaliar PR #429 contra o novo main b91d1dd antes de qualquer merge; o PR nasceu sobre 35457f4 e está atualmente não mergeável"
+      ],
       "pr_state": "closed",
       "pr_merged": true
-    },
-    {
-      "from": "CLAUDE",
-      "front": "dim-pilar-contrato-esforco-ausente-fail-closed",
-      "status": "READY_FOR_INDEPENDENT_REVIEW",
-      "base": "b91d1dd",
-      "head": "baf5d89",
-      "pr": "#431 ISSUE: #430",
-      "visual_evidence": "NOT_REQUIRED",
-      "user_visual_approval": "NOT_REQUIRED",
-      "merge_policy": "- AUTO_OK após CI verde no HEAD exato (merge requer execução manual do usuário neste ambiente)",
-      "comment_id": 5617819451,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5617819451",
-      "updated_at": "2026-09-10T11:17:40Z",
-      "ci": [
-        "npm run test:all local verde (252 OK); aguardando gate GitHub Actions"
-      ],
-      "next_for_claude": [],
-      "next_for_chatgpt": [],
-      "suite_gaps": [],
-      "result": [
-        "esforco solicitante ausente (null/undefined/\"\") deixa de virar zero",
-        "valido em pilar_contrato_normativo e pilar_parametros_lambda1;",
-        "contrato DIM-PILAR-01 falha fechado com NED_AUSENTE/MEDX/MEDY/MB",
-        "zero legitimo preservado",
-        "helper irmao vulneravel em fundacao_pressao_centrada (area 11)",
-        "registrado na #430 para a frente de fundacoes, fora deste PR"
-      ]
     },
     {
       "from": "CLAUDE",
@@ -311,18 +349,18 @@
       "ci": [
         "CI verde no HEAD exato antes do merge"
       ],
-      "next_for_claude": [
-        "continuar auditoria fail-closed fora de ORQ/fundacoes"
-      ],
-      "next_for_chatgpt": [
-        "nenhuma acao necessaria; sem sobreposicao"
-      ],
       "suite_gaps": [],
       "result": [
         "momento nodal ausente na extremidade do pilar deixa de virar zero",
         "valido; falha fechado com MOMENTO_INFERIOR/SUPERIOR_AUSENTE",
         "classificacao normativa alpha_b/lambda1 (NBR 6118) nao recebe mais",
         "momento fabricado"
+      ],
+      "next_for_claude": [
+        "continuar auditoria fail-closed fora de ORQ/fundacoes"
+      ],
+      "next_for_chatgpt": [
+        "nenhuma acao necessaria; sem sobreposicao"
       ]
     },
     {
@@ -341,12 +379,6 @@
       "ci": [
         "run 34429005174 em andamento no HEAD c0c62fde077edba77b38baedb394117415f66d92"
       ],
-      "next_for_claude": [
-        "revisar tecnicamente o PR #429 no HEAD exato e confirmar/rejeitar NOT_REQUIRED; não mergear"
-      ],
-      "next_for_chatgpt": [
-        "concluir revisão de diff/limpeza incidental, aguardar CI e não mergear antes da confirmação cruzada"
-      ],
       "suite_gaps": [
         "NONE conhecido; aguardando gate completo"
       ],
@@ -354,6 +386,12 @@
         "`pavimento_id` passa a exigir string não vazia, sem `String(...)` coercivo",
         "regressão cobre null/undefined/vazio/whitespace/número/booleano e caminho textual válido",
         "diff funcional restrito ao gate do rascunho e regressão; há remoção incidental de comentários no arquivo de teste, sem alteração funcional, a revisar antes do merge"
+      ],
+      "next_for_claude": [
+        "revisar tecnicamente o PR #429 no HEAD exato e confirmar/rejeitar NOT_REQUIRED; não mergear"
+      ],
+      "next_for_chatgpt": [
+        "concluir revisão de diff/limpeza incidental, aguardar CI e não mergear antes da confirmação cruzada"
       ]
     },
     {
@@ -372,18 +410,18 @@
       "ci": [
         "CI verde no HEAD exato antes do merge"
       ],
-      "next_for_claude": [
-        "continuar procurando frente sem sobreposicao com ORQ/fundacoes"
-      ],
-      "next_for_chatgpt": [
-        "nenhuma acao necessaria; sem sobreposicao com esta frente"
-      ],
       "suite_gaps": [],
       "result": [
         "coordenada de pilar/viga ausente/corrompida deixa de virar origem",
         "(0,0) fabricada em resolverIncidenciaPilarViga/projetarPontoNoSegmento",
         "(core/calculation/viga_apoio.js); passa a falhar fechado (null)",
         "zero legitimo preservado"
+      ],
+      "next_for_claude": [
+        "continuar procurando frente sem sobreposicao com ORQ/fundacoes"
+      ],
+      "next_for_chatgpt": [
+        "nenhuma acao necessaria; sem sobreposicao com esta frente"
       ]
     },
     {
@@ -403,12 +441,6 @@
         "Testes SIMETTRIA run 34412812951 / #1141 / SUCCESS",
         "HEAD exato: 7209c9c631364afab6e574dc10c61edab583b749"
       ],
-      "next_for_claude": [
-        "NONE / evitar sobreposição com ORQ"
-      ],
-      "next_for_chatgpt": [
-        "continuar auditoria fail-closed dos adaptadores ORQ no main atualizado"
-      ],
       "suite_gaps": [
         "NONE"
       ],
@@ -417,6 +449,12 @@
         "null/undefined/vazio/whitespace/não-string falham fechados",
         "removida coerção `String(...)` que poderia fabricar `undefined`/`null` em observação/rastreabilidade",
         "IDs textuais válidos preservados"
+      ],
+      "next_for_claude": [
+        "NONE / evitar sobreposição com ORQ"
+      ],
+      "next_for_chatgpt": [
+        "continuar auditoria fail-closed dos adaptadores ORQ no main atualizado"
       ]
     },
     {
@@ -436,12 +474,6 @@
         "Testes SIMETTRIA run 34412244622 / #1139 / SUCCESS",
         "HEAD exato: 5d2d33fa74bcc4b71c15b9c0a4af2c6dab975864"
       ],
-      "next_for_claude": [
-        "NONE / evitar sobreposição com ORQ"
-      ],
-      "next_for_chatgpt": [
-        "continuar auditoria fail-closed dos adaptadores ORQ no main atualizado"
-      ],
       "suite_gaps": [
         "NONE"
       ],
@@ -451,6 +483,12 @@
         "ausência -> REACAO_PARCIAL_BASE_INDETERMINADA",
         "duplicidade -> REACAO_PARCIAL_BASE_AMBIGUA",
         "caminho válido e zero numérico explícito preservados"
+      ],
+      "next_for_claude": [
+        "NONE / evitar sobreposição com ORQ"
+      ],
+      "next_for_chatgpt": [
+        "continuar auditoria fail-closed dos adaptadores ORQ no main atualizado"
       ]
     },
     {
@@ -469,16 +507,16 @@
       "ci": [
         "ambos os PRs com CI verde no HEAD exato antes do merge"
       ],
+      "suite_gaps": [],
+      "result": [
+        "CALC-GRAPH-PROVENIENCIA (área 3) fechado: viga passa a declarar `inercia_origem: \"viga.Ix\"` na rigidez lateral, simétrico ao pilar",
+        "painel público ganhou, a partir de feedback direto do usuário durante a revisão: (1) expansão por card de área mostrando trabalhos/próximos passos, (2) correção de overflow de texto em itens longos, (3) card de progresso geral do projeto (índice documentado agregado das 12 áreas) no hero, ao lado do título"
+      ],
       "next_for_claude": [
         "CALC-GRAPH-PROVENIENCIA concluído; sem próxima ação pendente na Área 3 no momento — aguardar novo direcionamento"
       ],
       "next_for_chatgpt": [
         "nenhuma ação necessária; sem sobreposição com esta frente"
-      ],
-      "suite_gaps": [],
-      "result": [
-        "CALC-GRAPH-PROVENIENCIA (área 3) fechado: viga passa a declarar `inercia_origem: \"viga.Ix\"` na rigidez lateral, simétrico ao pilar",
-        "painel público ganhou, a partir de feedback direto do usuário durante a revisão: (1) expansão por card de área mostrando trabalhos/próximos passos, (2) correção de overflow de texto em itens longos, (3) card de progresso geral do projeto (índice documentado agregado das 12 áreas) no hero, ao lado do título"
       ]
     },
     {
@@ -498,10 +536,6 @@
         "Testes SIMETTRIA run 34410671903 / SUCCESS",
         "HEAD exato: 1cba1e4512df6344815c9140bf51bd3e87811bf2"
       ],
-      "next_for_claude": [],
-      "next_for_chatgpt": [
-        "continuar auditoria fail-closed dos adaptadores ORQ"
-      ],
       "suite_gaps": [
         "NONE"
       ],
@@ -510,6 +544,10 @@
         "strings numéricas não atravessam largura/comprimento/altura/escala por coerção",
         "valores positivos numéricos explícitos permanecem válidos",
         "regressão incorporada ao validador ORQ oficial"
+      ],
+      "next_for_claude": [],
+      "next_for_chatgpt": [
+        "continuar auditoria fail-closed dos adaptadores ORQ"
       ]
     },
     {
@@ -529,12 +567,6 @@
         "Testes SIMETTRIA run 34410085214 / SUCCESS",
         "HEAD exato: e7d11ed092473b2bd3f356292926a981d98cdb30"
       ],
-      "next_for_claude": [
-        "frente CALC-GRAPH-PROVENIENCIA já mergeada em #392; evitar sobreposição com ORQ"
-      ],
-      "next_for_chatgpt": [
-        "continuar auditoria fail-closed dos adaptadores ORQ"
-      ],
       "suite_gaps": [
         "NONE"
       ],
@@ -543,6 +575,12 @@
         "`null`, `\"\"`, `undefined`, `NaN` e strings numéricas não podem virar coordenadas por coerção",
         "zero numérico explícito permanece válido",
         "regressão incorporada ao validador ORQ oficial"
+      ],
+      "next_for_claude": [
+        "frente CALC-GRAPH-PROVENIENCIA já mergeada em #392; evitar sobreposição com ORQ"
+      ],
+      "next_for_chatgpt": [
+        "continuar auditoria fail-closed dos adaptadores ORQ"
       ]
     },
     {
@@ -563,12 +601,6 @@
         "suíte oficial SUCCESS",
         "HEAD exato validado: f406558bbc7c22ca78fd206bf579279e4011e223"
       ],
-      "next_for_claude": [
-        "manter CALC-GRAPH-PROVENIENCIA isolada"
-      ],
-      "next_for_chatgpt": [
-        "continuar auditoria fail-closed nos consumidores ORQ a partir do main atualizado"
-      ],
       "suite_gaps": [
         "NONE"
       ],
@@ -579,35 +611,12 @@
         "reação forjada/vazia é sanitizada para null, permanece `AGUARDANDO_REACAO`, não executa classificador e não cria proposta",
         "zero numérico explícito permanece válido",
         "CI inicial detectou regressão legítima no contrato `NEd_parcial_base_kn`; correção incorporada antes do merge"
-      ]
-    },
-    {
-      "from": "CLAUDE",
-      "front": "calc-graph-proveniencia-viga-rigidez",
-      "status": "READY_FOR_INDEPENDENT_REVIEW",
-      "base": "c775dd6f68ee8a5c2f2b6db02e6d3d1d4a4d0b7e",
-      "head": "cc8560d",
-      "pr": "#392 CODE: CALC-GRAPH-PROVENIENCIA (área 3, claim CLAUDE)",
-      "visual_evidence": "- NOT_REQUIRED (metadado interno, sem consumidor de UI)",
-      "user_visual_approval": "- NOT_REQUIRED (mesmo motivo)",
-      "merge_policy": "- AUTO_OK após CI verde no HEAD exato",
-      "comment_id": 5609273343,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5609273343",
-      "updated_at": "2026-09-09T21:54:58Z",
-      "ci": [
-        "npm run test:all local verde (248 OK); aguardando gate GitHub Actions",
-        "no HEAD exato acima"
       ],
       "next_for_claude": [
-        "aguardar CI verde no HEAD exato e então mergear (AUTO_OK)"
+        "manter CALC-GRAPH-PROVENIENCIA isolada"
       ],
-      "next_for_chatgpt": [],
-      "suite_gaps": [],
-      "result": [
-        "pós PR #374, contribuição da viga na rigidez lateral ganha",
-        "`inercia_origem: \"viga.Ix\"`, simétrico ao já emitido pelo pilar",
-        "(`pilar_rigidez_lateral.js`: \"pilar.Ix_global\"/\"pilar.Iy_global\") —",
-        "fecha a assimetria de rastreabilidade encontrada nesta auditoria"
+      "next_for_chatgpt": [
+        "continuar auditoria fail-closed nos consumidores ORQ a partir do main atualizado"
       ]
     }
   ]
