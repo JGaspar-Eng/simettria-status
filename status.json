@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-10T13:24:18Z",
+  "generated_at": "2026-09-10T13:27:53Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "02b7e1eced98b7421148662a245d87dcf86300b3",
-    "short_sha": "02b7e1e",
+    "sha": "70323e46342b03b23c8109f37dd7ac76b02de490",
+    "short_sha": "70323e4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T08:29:16-03:00",
-    "message": "fix(dim-pilar): esforco solicitante ausente deixa de virar zero valido nos contratos normativos (#431)"
+    "date": "2026-09-10T10:27:19-03:00",
+    "message": "fix(dim-fund): momento ausente deixa de virar zero na pressão centrada (#433)"
   },
   "commits": [
+    {
+      "sha": "70323e46342b03b23c8109f37dd7ac76b02de490",
+      "short_sha": "70323e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T10:27:19-03:00",
+      "message": "fix(dim-fund): momento ausente deixa de virar zero na pressão centrada (#433)"
+    },
     {
       "sha": "02b7e1eced98b7421148662a245d87dcf86300b3",
       "short_sha": "02b7e1e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T19:05:55-03:00",
       "message": "fix(orq): bloqueia posição ausente no rascunho de fundação (#395)"
-    },
-    {
-      "sha": "ee608c6af87c4cf11cde682d53cd8c5f4434da5f",
-      "short_sha": "ee608c6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T19:00:38-03:00",
-      "message": "fix(sa-l1): declara proveniencia do Calculation Graph na rigidez da viga (#392)"
     }
   ],
   "development": {
@@ -1953,7 +1953,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34482395751",
-    "run_number": "526"
+    "run_id": "34482745405",
+    "run_number": "527"
   }
 }
