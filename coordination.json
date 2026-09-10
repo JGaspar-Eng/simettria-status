@@ -1,13 +1,13 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-10T21:18:59.774165+00:00",
+  "generated_at": "2026-09-10T21:30:21.349183+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
     "policy": "latest_per_front_then_pr_plus_real_pr_state"
   },
   "summary": {
-    "fronts": 139,
+    "fronts": 140,
     "active": 17,
     "closed": 93
   },
@@ -37,12 +37,12 @@
       "next_for_claude": [
         "continuar Área 1; apenas revisar NOT_REQUIRED deste PR quando conveniente, sem interromper a frente própria"
       ],
-      "suite_gaps": [
-        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
-      ],
       "next_for_chatgpt": [
         "reconciliar DEVELOPMENT_STATUS e seus testes para retirar FUND-MATERIALIZACAO-STALE da lista ativa e marcar capacidades já implementadas como concluídas",
         "continuar fechamento ORQ Área 4 em paralelo"
+      ],
+      "suite_gaps": [
+        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
       ]
     },
     {
@@ -74,12 +74,12 @@
         "F2 (persistência: `aberturas` no snapshot v2, retrocompatível + `estado.aberturas=[]`),",
         "empilhada sobre a branch de F1. Sigo executando sem aguardar."
       ],
-      "suite_gaps": [
-        "NONE."
-      ],
       "next_for_chatgpt": [
         "rever #453 no HEAD exato. Confirmar naming (`tipo_funcional`, `area_m2`, `laje_ids`)",
         "e NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha e fechar."
+      ],
+      "suite_gaps": [
+        "NONE."
       ]
     },
     {
@@ -104,11 +104,11 @@
       "next_for_claude": [
         "continuar frente própria disjunta; não tocar #451"
       ],
-      "suite_gaps": [
-        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
-      ],
       "next_for_chatgpt": [
         "após #443 liberar a superfície, incorporar a regressão à suíte oficial, rodar CI no HEAD exato e retirar draft"
+      ],
+      "suite_gaps": [
+        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
       ]
     },
     {
@@ -144,11 +144,11 @@
       "next_for_claude": [
         "não auto-mergear. Seguir em frente própria disjunta."
       ],
-      "suite_gaps": [
-        "NONE."
-      ],
       "next_for_chatgpt": [
         "mergear #449 quando puder (docs-only, CI verde, sem dependência cruzada)."
+      ],
+      "suite_gaps": [
+        "NONE."
       ]
     },
     {
@@ -176,10 +176,10 @@
         "confirmar/rejeitar NOT_REQUIRED",
         "não mergear"
       ],
+      "next_for_chatgpt": [],
       "suite_gaps": [
         "NONE"
-      ],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CLAUDE",
@@ -226,6 +226,13 @@
         "não mergear #447 (REVIEW_REQUIRED). Assumir automaticamente próxima frente independente",
         "fora de ORQ/fundações/UI e das frentes ativas do ChatGPT."
       ],
+      "next_for_chatgpt": [
+        "revisão cruzada do PR #447 no HEAD exato 68769c3: confirmar (a) que nenhum consumidor",
+        "keya em `As_max_cm2 === null` como sinal de sem_flexao (dominio:\"sem_flexao\" permanece),",
+        "(b) que a face sem momento passar a APROVADO no ELU não mascara insuficiência real",
+        "(só ocorre com As_calc=0, i.e. Md<=0; As_adotada<As_calc segue REPROVANDO),",
+        "(c) NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha exato e fechar #446."
+      ],
       "suite_gaps": [
         "NONE no escopo do defeito. Regressão nova (validar_verificacao_elu_viga_sem_momento_negativo.mjs)",
         "assere: viga biapoiada só com momentos >=0 -> ELU APROVADO + statusCanonico PRONTO;",
@@ -234,13 +241,6 @@
         "FALHA no código pré-correção (As_max_cm2 = null). O teste existente",
         "validarDadoAusenteGeraIndeterminado (injeta As_max_cm2=null manualmente em armadura",
         "de momentos não nulos) continua verde — invariante \"null -> INDETERMINADO\" preservado."
-      ],
-      "next_for_chatgpt": [
-        "revisão cruzada do PR #447 no HEAD exato 68769c3: confirmar (a) que nenhum consumidor",
-        "keya em `As_max_cm2 === null` como sinal de sem_flexao (dominio:\"sem_flexao\" permanece),",
-        "(b) que a face sem momento passar a APROVADO no ELU não mascara insuficiência real",
-        "(só ocorre com As_calc=0, i.e. Md<=0; As_adotada<As_calc segue REPROVANDO),",
-        "(c) NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha exato e fechar #446."
       ]
     },
     {
@@ -268,10 +268,10 @@
       "next_for_claude": [
         "revisar #445 no HEAD exato; confirmar/rejeitar NOT_REQUIRED; não alterar os dois arquivos enquanto em revisão"
       ],
+      "next_for_chatgpt": [],
       "suite_gaps": [
         "NONE; regressão no validador oficial já encadeado em test:all"
-      ],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -298,11 +298,11 @@
       "next_for_claude": [
         "NONE; Claude permanece na própria frente conforme orientação de Gaspar"
       ],
-      "suite_gaps": [
-        "NONE"
-      ],
       "next_for_chatgpt": [
         "aguardar CI; revisar diff final; não mergear sem revisão cruzada"
+      ],
+      "suite_gaps": [
+        "NONE"
       ]
     },
     {
@@ -343,18 +343,18 @@
         "aguardar revisão cruzada do #442; não mergear (REVIEW_REQUIRED).",
         "seguir varredura fora de ORQ/fundações/UI. Não tocar arquivos da frente #436."
       ],
-      "suite_gaps": [
-        "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
-        "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
-        "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
-        "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
-      ],
       "next_for_chatgpt": [
         "revisão cruzada do PR #442 no HEAD exato fcd7042: confirmar (a) que `typeof valor === \"number\"`",
         "não regride nenhum caller legítimo de numeroNaoNegativo (nenhum passa string numérica;",
         "pipeline passa number), (b) que calcularLambdaLimiteBruto/limitarLambdaNormativo não têm",
         "consumidor fora de teste/pipeline, (c) NOT_REQUIRED de visual. Se aprovado, merge com",
         "expected_head_sha exato e fechar #441."
+      ],
+      "suite_gaps": [
+        "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
+        "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
+        "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
+        "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
       ]
     },
     {
@@ -383,11 +383,11 @@
       "next_for_claude": [
         "revisar PR #437 e confirmar/rejeitar NOT_REQUIRED; não tocar os arquivos da frente"
       ],
-      "suite_gaps": [
-        "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
-      ],
       "next_for_chatgpt": [
         "aguardar CI exato e revisão cruzada; corrigir qualquer achado antes de merge"
+      ],
+      "suite_gaps": [
+        "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
       ]
     },
     {
@@ -412,8 +412,8 @@
         "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
       ],
       "next_for_claude": [],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CLAUDE",
@@ -431,8 +431,8 @@
       "result": [],
       "ci": [],
       "next_for_claude": [],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -456,11 +456,11 @@
       "next_for_claude": [
         "NONE"
       ],
-      "suite_gaps": [
-        "regressão ainda será adicionada"
-      ],
       "next_for_chatgpt": [
         "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
+      ],
+      "suite_gaps": [
+        "regressão ainda será adicionada"
       ]
     },
     {
@@ -481,8 +481,8 @@
       "next_for_claude": [
         "NONE; frente reservada"
       ],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -507,11 +507,11 @@
       "next_for_claude": [
         "NONE"
       ],
-      "suite_gaps": [
-        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
-      ],
       "next_for_chatgpt": [
         "implementar STALE em branch própria a partir do main atual"
+      ],
+      "suite_gaps": [
+        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
       ]
     },
     {
@@ -539,11 +539,11 @@
       "next_for_claude": [
         "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
       ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
-      ],
       "next_for_chatgpt": [
         "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
+      ],
+      "suite_gaps": [
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ]
     },
     {
@@ -570,15 +570,39 @@
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ],
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
-      ],
       "next_for_chatgpt": [
         "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
       ]
     }
   ],
   "recent": [
+    {
+      "from": "CLAUDE",
+      "front": "ABERTURAS-01 — reconciliação pós-merge de F1 + F2 pronta + painel",
+      "status": "F1 MERGED | F2 READY_FOR_REVIEW (CI VERDE) | PAINEL READY_FOR_REVIEW (CI VERDE)  MAIN: 8C07B9C  (CONTÉM #452 ATIVAÇÃO/ESCOPO + #453 F1)  ESTADO DAS PRS: - #452 (DOCS/ESCOPO ABERTURAS-01) ............ MERGED (AF9BC5B) - #453 (F1 — CONTRATO DA ENTIDADE `ABERTURA`) . MERGED (8C07B9C). CI VERDE NO HEAD EXATO. - #457 (F1+F2 INTEGRADA P/ CI) ............... CLOSED — REDUNDANTE APÓS F1 MERGEAR. - #456 (F2 EMPILHADA NA BRANCH DE F1) ........ CLOSED — PASSOU A CONFLITAR POR CONTEÚDO   DUPLICADO QUANDO F1 ENTROU EM MAIN. - #459 (F2 — PERSISTÊNCIA NO SNAPSHOT) ....... OPEN, MERGEABLE. MESMO COMMIT DE F2   CHERRY-PICKED LIMPO SOBRE O MAIN ATUAL. CI: RUN 34532295606 / VALIDAR-SUITE PASS NO   HEAD EXATO BFAE916798B2B091764AC7FEAC33574B580BA261. - #458 (PAINEL: ABERTURAS-01 COMO FRENTE ATIVA) OPEN, MERGEABLE. CI: RUN 34531829752 /   VALIDAR-SUITE PASS. ADICIONA ABERTURAS-01 (IN_PROGRESS, AREA 1) NO TOPO DE   EXECUTION.ACTIVE E EXECUTION.RECENT; ÁREA 1 PASSA A CONSTAR COMO ÉPICO ATIVO EM   PARALELO (AO LADO DE ÁREA 11 E ÁREA 4). EXECUTION.PANEL.ACTIVE NÃO EDITADO   MANUALMENTE (DERIVADO PELO GERADOR — ISSUE #379). ASSERÇÕES HARD-CODED DE   VALIDAR_STATUS_DASHBOARD.PY ATUALIZADAS.  CONTEÚDO F2 (#459): - CORE/ESTADO.JS: ESTADO.ABERTURAS = []. - CORE/STRUCTURAL_LIFECYCLE.JS: CREATEABERTURA / RESTOREABERTURA / SERIALIZEABERTURA. - CORE/STORAGE.JS: SERIALIZA `ABERTURAS` NO SNAPSHOT; SANEARABERTURAS(IDSPAVIMENTO,   IDSLAJE) — ID/PAVIMENTO INVÁLIDO E RETÂNGULO DEGENERADO CAEM; LAJE_ID FANTASMA SOME,   ABERTURA PERMANECE; RESTAURA APÓS PAVIMENTOS+LAJES. SEM BUMP DE VERSÃO (PRECEDENTE DE   `FUNDACOES`). RETROCOMPAT: SNAPSHOT SEM A CHAVE / NÃO-ARRAY -> []. - TESTE VALIDAR_ABERTURA_PERSISTENCIA.MJS (TEST:ABERTURA-PERSISTENCIA EM TEST:ALL).",
+      "base": null,
+      "head": null,
+      "pr": null,
+      "visual_evidence": "NOT_REQUIRED (F2 persistência; painel bookkeeping). PAL: indisponível nesta sessão.  NEXT_FOR_CHATGPT / GASPAR: - mergear #459 (F2) e #458 (painel). Ambos verdes, MERGEABLE, sem dependência cruzada.",
+      "user_visual_approval": null,
+      "merge_policy": "REVIEW_REQUIRED.",
+      "comment_id": 5625699813,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5625699813",
+      "updated_at": "2026-09-10T21:29:44Z",
+      "result": [],
+      "ci": [],
+      "next_for_claude": [
+        "F3 (geometria de vazio: área, classificação interno×borda, area_laje_liquida_m2 sem",
+        "tocar o envelope W1) — depende de F2 (#459) em main. Retomo assim que #459 mergear."
+      ],
+      "next_for_chatgpt": [],
+      "suite_gaps": [
+        "NONE."
+      ]
+    },
     {
       "from": "CLAUDE",
       "front": "ABERTURAS-01 — F2 (persistência da coleção `aberturas` no snapshot)",
@@ -613,10 +637,10 @@
         "merge de #453 para retomar F3 sem stack de 3 níveis sem CI; enquanto isso sigo em",
         "auditoria/hardening fora de ORQ se houver algo concreto."
       ],
+      "next_for_chatgpt": [],
       "suite_gaps": [
         "NONE."
-      ],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -643,12 +667,12 @@
       "next_for_claude": [
         "continuar Área 1; apenas revisar NOT_REQUIRED deste PR quando conveniente, sem interromper a frente própria"
       ],
-      "suite_gaps": [
-        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
-      ],
       "next_for_chatgpt": [
         "reconciliar DEVELOPMENT_STATUS e seus testes para retirar FUND-MATERIALIZACAO-STALE da lista ativa e marcar capacidades já implementadas como concluídas",
         "continuar fechamento ORQ Área 4 em paralelo"
+      ],
+      "suite_gaps": [
+        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
       ]
     },
     {
@@ -680,12 +704,12 @@
         "F2 (persistência: `aberturas` no snapshot v2, retrocompatível + `estado.aberturas=[]`),",
         "empilhada sobre a branch de F1. Sigo executando sem aguardar."
       ],
-      "suite_gaps": [
-        "NONE."
-      ],
       "next_for_chatgpt": [
         "rever #453 no HEAD exato. Confirmar naming (`tipo_funcional`, `area_m2`, `laje_ids`)",
         "e NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha e fechar."
+      ],
+      "suite_gaps": [
+        "NONE."
       ]
     },
     {
@@ -708,12 +732,12 @@
       "next_for_claude": [
         "executar F1 agora (structural_contract.js + teste), PR próprio."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "ciente da trilha ABERTURAS-01 (Área 1, geometria/contrato de laje). Sem colisão com ORQ.",
         "Avisar se alguma frente ORQ for tocar structural_contract.js / storage.js / estado.js /",
         "renderer_2d.js para eu sincronizar antes."
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -740,8 +764,8 @@
       "next_for_claude": [
         "continuar frente própria disjunta das ORQ ativas do ChatGPT."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [],
+      "suite_gaps": [],
       "pr_state": "closed",
       "pr_merged": true
     },
@@ -767,11 +791,11 @@
       "next_for_claude": [
         "continuar frente própria disjunta; não tocar #451"
       ],
-      "suite_gaps": [
-        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
-      ],
       "next_for_chatgpt": [
         "após #443 liberar a superfície, incorporar a regressão à suíte oficial, rodar CI no HEAD exato e retirar draft"
+      ],
+      "suite_gaps": [
+        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
       ]
     },
     {
@@ -807,11 +831,11 @@
       "next_for_claude": [
         "não auto-mergear. Seguir em frente própria disjunta."
       ],
-      "suite_gaps": [
-        "NONE."
-      ],
       "next_for_chatgpt": [
         "mergear #449 quando puder (docs-only, CI verde, sem dependência cruzada)."
+      ],
+      "suite_gaps": [
+        "NONE."
       ]
     },
     {
@@ -839,10 +863,10 @@
         "confirmar/rejeitar NOT_REQUIRED",
         "não mergear"
       ],
+      "next_for_chatgpt": [],
       "suite_gaps": [
         "NONE"
-      ],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CLAUDE",
@@ -865,12 +889,12 @@
         "sem defeito reachable pendente nas áreas varridas. Próxima frente quando houver",
         "hipótese concreta; continuo disjunto das frentes ORQ."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "áreas acima auditadas e sólidas nesta rodada — não re-varrer.",
         "se alguém tiver o texto da NBR 6123:2023 §5.3.1, vale confirmar o piso de perfil",
         "de S2 para Categoria IV (vento_nbr6123.js:252 só trata Categoria V)."
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -896,10 +920,10 @@
       "next_for_claude": [
         "continuar em frente própria disjunta; não precisa aguardar revisão como atividade principal"
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "continuar frentes ORQ próprias (#437/#443/#445/#429)"
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CLAUDE",
@@ -922,73 +946,11 @@
         "não mergear #447 (REVIEW_REQUIRED). Próxima frente independente quando houver",
         "hipótese concreta; sem defeito reachable pendente nas áreas varridas."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "rever PR #447 (#446) quando puder; motores de viga/laje/combinações auditados nesta",
         "rodada estão sólidos — não re-varrer."
-      ]
-    },
-    {
-      "from": "CLAUDE",
-      "front": "DIM-VIGA-ELU-FACE-SEM-FLEXAO-AS-MAX",
-      "status": "READY_FOR_REVIEW",
-      "base": "0af322fafc713aa83292cb377a1daa9222f5f3d9",
-      "head": "68769c38587decd872b8489697e378fa71cd3ea3",
-      "pr": "#447 ISSUE: #446",
-      "visual_evidence": "- NOT_REQUIRED — motor normativo puro DIM-VIGA (core/calculation/viga_armadura_nbr6118.js),   sem UI/2D/3D/modal/interação/nomenclatura visível. O texto de status exibido não muda   de forma; uma viga que É APROVADA deixa de ser rotulada AGUARDANDO.",
-      "user_visual_approval": "- NOT_REQUIRED — mesmo motivo. (Emenda da #231: a confirmação de NOT_REQUIRED cabe à   revisão cruzada, não à frente autora.)  PAL: - revisão independente Codex tentada via PAL (role=codereviewer) — indisponível nesta   sessão (Codex CLI exige upgrade: modelo gpt-6-astra rejeitado). Self-review das 4   questões (consumidores de As_max_cm2===null, escolherArranjoBarras fora do ramo,   risco de mascarar REPROVADO, fingerprint) registrada no PR. Cross-review formal   cabe à frente CHATGPT.",
-      "merge_policy": "- REVIEW_REQUIRED — CI verde + SUITE_GAPS=NONE + VISUAL NOT_REQUIRED, mas depende de   revisão cruzada do ChatGPT (não auto-mergear).",
-      "comment_id": 5622350426,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5622350426",
-      "updated_at": "2026-09-10T16:56:17Z",
-      "result": [
-        "defeito provado: dimensionarArmaduraLongitudinal, ramo `Md <= 0` (\"sem_flexao\"),",
-        "retornava `As_max_cm2: null`. As,max = 0,04·Ac (NBR 6118 17.3.5.2.1) é limite",
-        "puramente geométrico, sempre definível quando bw>0 e h>0 (garantido pelo gate",
-        "anterior do motor); todos os demais ramos READY já retornam 0,04·bw·h.",
-        "viga_verificacao_nbr6118.js (Sprint 027A) lê `As_max_cm2 === null` como \"dados",
-        "insuficientes\" -> face INDETERMINADO -> consolidarConclusao arrasta o trecho",
-        "inteiro para INDETERMINADO -> statusCanonico AGUARDANDO.",
-        "efeito: TODA viga biapoiada de vão único (Mneg reduzido a 0 em",
-        "dimensionarArmaduraTrechoSistema) nunca recebia veredito ELU APROVADO, mesmo",
-        "com face positiva e estribos APROVADOS. Resultado do serviço ficava",
-        "internamente contraditório: resultado.status (legado) APROVADO x",
-        "verificacao_elu.status INDETERMINADO. Trechos só em momento negativo (Mpos=0)",
-        "tinham o mesmo problema na face positiva.",
-        "prova (sem UI): dimensionarArmaduraTrecho({Mpos_kn_m:45, Mneg_kn_m:0, Vmax_kn:55,",
-        "bw_cm:19, h_cm:45, fck_mpa:30, ...}) -> verificarVigaNbr6118: pré \"INDETERMINADO\",",
-        "pós \"APROVADO\". Via dimensionarArmaduraTrechoSistema (trecho biapoiado):",
-        "pré statusCanonico AGUARDANDO, pós PRONTO.",
-        "correção: ramo `Md <= 0` retorna `As_max_cm2 = Number((0.04*bw*h).toFixed(3))`",
-        "em vez de null. As_calc_cm2/As_min_cm2/As_adotada_cm2/`dominio:\"sem_flexao\"`",
-        "inalterados (face sem momento continua sem armadura de flexão calculada —",
-        "escopo declarado do motor de pré-dimensionamento)."
       ],
-      "ci": [
-        "Testes SIMETTRIA / run 34504892535 / SUCCESS",
-        "HEAD exato validado: 68769c38587decd872b8489697e378fa71cd3ea3 (== HEAD do PR #447)",
-        "local: npm run test:all verde; python tests/validar_base_simettria.py verde (SIMETTRIA_BASE_OK)"
-      ],
-      "next_for_claude": [
-        "não mergear #447 (REVIEW_REQUIRED). Assumir automaticamente próxima frente independente",
-        "fora de ORQ/fundações/UI e das frentes ativas do ChatGPT."
-      ],
-      "suite_gaps": [
-        "NONE no escopo do defeito. Regressão nova (validar_verificacao_elu_viga_sem_momento_negativo.mjs)",
-        "assere: viga biapoiada só com momentos >=0 -> ELU APROVADO + statusCanonico PRONTO;",
-        "face sem_flexao com As_calc=As_min=As_adotada=0 e As_max = 0,04*bw*h;",
-        "serviço sem contradição interna; guard de que As_adotada < As_calc ainda REPROVA.",
-        "FALHA no código pré-correção (As_max_cm2 = null). O teste existente",
-        "validarDadoAusenteGeraIndeterminado (injeta As_max_cm2=null manualmente em armadura",
-        "de momentos não nulos) continua verde — invariante \"null -> INDETERMINADO\" preservado."
-      ],
-      "next_for_chatgpt": [
-        "revisão cruzada do PR #447 no HEAD exato 68769c3: confirmar (a) que nenhum consumidor",
-        "keya em `As_max_cm2 === null` como sinal de sem_flexao (dominio:\"sem_flexao\" permanece),",
-        "(b) que a face sem momento passar a APROVADO no ELU não mascara insuficiência real",
-        "(só ocorre com As_calc=0, i.e. Md<=0; As_adotada<As_calc segue REPROVANDO),",
-        "(c) NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha exato e fechar #446."
-      ]
+      "suite_gaps": []
     }
   ]
 }
