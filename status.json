@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-10T02:20:58Z",
+  "generated_at": "2026-09-10T11:11:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "35457f4d5d087bacd7813aceb3674aca3bec75a7",
-    "short_sha": "35457f4",
+    "sha": "b91d1dd6720fecd1c47d12357ea5f44d02839dd5",
+    "short_sha": "b91d1dd",
     "author": "Joanez Gaspar",
-    "date": "2026-09-09T23:11:32-03:00",
-    "message": "fix(viga-apoio): coordenada pilar/viga ausente deixa de virar origem (0,0) (#425)"
+    "date": "2026-09-10T08:10:42-03:00",
+    "message": "fix(dim-pilar): momento nodal ausente na extremidade deixa de virar zero valido (#428)"
   },
   "commits": [
+    {
+      "sha": "b91d1dd6720fecd1c47d12357ea5f44d02839dd5",
+      "short_sha": "b91d1dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T08:10:42-03:00",
+      "message": "fix(dim-pilar): momento nodal ausente na extremidade deixa de virar zero valido (#428)"
+    },
     {
       "sha": "35457f4d5d087bacd7813aceb3674aca3bec75a7",
       "short_sha": "35457f4",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T18:54:57-03:00",
       "message": "fix(orq): revalida reação antes de derivar proposta (#390)"
-    },
-    {
-      "sha": "c775dd60372a99361438f5c1f946e55d689e6abc",
-      "short_sha": "c775dd6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T18:50:34-03:00",
-      "message": "style(status-dashboard): destaca frentes ativas em vermelho no painel público (#375)"
     }
   ],
   "development": {
@@ -1382,7 +1382,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 138,
+    "validator_count": 139,
     "validators": [
       {
         "name": "test:base",
@@ -1857,6 +1857,10 @@
         "command": "node tests/validar_regressao_engenharia_pilar_dim_pilar_01.mjs"
       },
       {
+        "name": "test:dim-pilar-momento-extremidade-ausente",
+        "command": "node tests/validar_momento_extremidade_pilar_ausente_fail_closed.mjs"
+      },
+      {
         "name": "test:integracao-restore",
         "command": "node tests/validar_integracao_restore_inspector_solver_memorial.mjs"
       },
@@ -1945,7 +1949,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34429034579",
-    "run_number": "507"
+    "run_id": "34469922802",
+    "run_number": "508"
   }
 }
