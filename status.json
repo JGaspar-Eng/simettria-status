@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-10T11:19:06Z",
+  "generated_at": "2026-09-10T11:29:35Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b91d1dd6720fecd1c47d12357ea5f44d02839dd5",
-    "short_sha": "b91d1dd",
+    "sha": "02b7e1eced98b7421148662a245d87dcf86300b3",
+    "short_sha": "02b7e1e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T08:10:42-03:00",
-    "message": "fix(dim-pilar): momento nodal ausente na extremidade deixa de virar zero valido (#428)"
+    "date": "2026-09-10T08:29:16-03:00",
+    "message": "fix(dim-pilar): esforco solicitante ausente deixa de virar zero valido nos contratos normativos (#431)"
   },
   "commits": [
+    {
+      "sha": "02b7e1eced98b7421148662a245d87dcf86300b3",
+      "short_sha": "02b7e1e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T08:29:16-03:00",
+      "message": "fix(dim-pilar): esforco solicitante ausente deixa de virar zero valido nos contratos normativos (#431)"
+    },
     {
       "sha": "b91d1dd6720fecd1c47d12357ea5f44d02839dd5",
       "short_sha": "b91d1dd",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-09T19:00:38-03:00",
       "message": "fix(sa-l1): declara proveniencia do Calculation Graph na rigidez da viga (#392)"
-    },
-    {
-      "sha": "9ca638adb023608acb3ebdf358444ca5c66566ba",
-      "short_sha": "9ca638a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T18:54:57-03:00",
-      "message": "fix(orq): revalida reação antes de derivar proposta (#390)"
     }
   ],
   "development": {
@@ -1382,7 +1382,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 139,
+    "validator_count": 140,
     "validators": [
       {
         "name": "test:base",
@@ -1861,6 +1861,10 @@
         "command": "node tests/validar_momento_extremidade_pilar_ausente_fail_closed.mjs"
       },
       {
+        "name": "test:dim-pilar-contrato-esforco-ausente",
+        "command": "node tests/validar_contrato_pilar_esforco_ausente_fail_closed.mjs"
+      },
+      {
         "name": "test:integracao-restore",
         "command": "node tests/validar_integracao_restore_inspector_solver_memorial.mjs"
       },
@@ -1949,7 +1953,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34470635019",
-    "run_number": "513"
+    "run_id": "34471550122",
+    "run_number": "514"
   }
 }
