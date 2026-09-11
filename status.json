@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T17:49:32Z",
+  "generated_at": "2026-09-11T20:08:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ed2ae1ec83931be2e9fcbe524615b01864a8c82f",
-    "short_sha": "ed2ae1e",
+    "sha": "d60d8410f9a09756b51be8d62cf882cbb8998cf5",
+    "short_sha": "d60d841",
     "author": "Joanez Gaspar",
-    "date": "2026-09-11T14:34:59-03:00",
-    "message": "feat(escada): estado sem_laje e reserva_implantacao no contrato de trecho (#493)"
+    "date": "2026-09-11T17:08:21-03:00",
+    "message": "feat(escada): bloqueia exclusão de pavimento referenciado em escada.paradas (#494)"
   },
   "commits": [
+    {
+      "sha": "d60d8410f9a09756b51be8d62cf882cbb8998cf5",
+      "short_sha": "d60d841",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-11T17:08:21-03:00",
+      "message": "feat(escada): bloqueia exclusão de pavimento referenciado em escada.paradas (#494)"
+    },
     {
       "sha": "ed2ae1ec83931be2e9fcbe524615b01864a8c82f",
       "short_sha": "ed2ae1e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T01:10:37-03:00",
       "message": "chore: remove marcador temporário acidental"
-    },
-    {
-      "sha": "a96b7073a2fd39a51dff5f561490ad5aaa3be59e",
-      "short_sha": "a96b707",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T01:10:24-03:00",
-      "message": "temporary"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 151,
+    "validator_count": 152,
     "validators": [
       {
         "name": "test:base",
@@ -1692,6 +1692,10 @@
       {
         "name": "test:escada-controller",
         "command": "node tests/validar_escada_controller.mjs"
+      },
+      {
+        "name": "test:escada-pavimento-integridade",
+        "command": "node tests/validar_escada_pavimento_integridade.mjs"
       },
       {
         "name": "test:abertura-geometria",
@@ -2046,7 +2050,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34629829988",
-    "run_number": "647"
+    "run_id": "34642611598",
+    "run_number": "648"
   }
 }
