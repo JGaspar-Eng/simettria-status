@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-11T01:04:46.369170+00:00",
+  "generated_at": "2026-09-11T01:05:41.603712+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -28,6 +28,12 @@
       "next_for_chatgpt": [
         "após revisão cruzada, merge com expected_head_sha; então refazer #443 sobre o novo main para eliminar a mesma coerção na fronteira de materialização"
       ],
+      "ci": [
+        "validar-suite: SUCCESS no HEAD exato 80aab140 (run 34547694760)"
+      ],
+      "suite_gaps": [
+        "NONE para esta frente; não foi criado teste órfão nem allowlist"
+      ],
       "next_for_claude": [
         "revisar #460 quando possível e confirmar/rejeitar NOT_REQUIRED; continuar em paralelo a correção do #459 e sua trilha"
       ],
@@ -37,12 +43,6 @@
         "reação estrutural usa o mesmo gate estrito",
         "regressão incorporada diretamente ao validador oficial `validar_propostas_estado_visual_infra_orq_estrut_01.mjs`: string numérica/vazia/null/undefined rejeitadas; zero numérico explícito preservado",
         "PR antigo #451 fechado como superseded"
-      ],
-      "suite_gaps": [
-        "NONE para esta frente; não foi criado teste órfão nem allowlist"
-      ],
-      "ci": [
-        "validar-suite: SUCCESS no HEAD exato 80aab140 (run 34547694760)"
       ]
     },
     {
@@ -59,13 +59,13 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5627630926",
       "updated_at": "2026-09-11T00:45:31Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [],
       "next_for_claude": [],
       "result": [
         "defeito do PR antigo #445 confirmado ainda presente no main atual: `x_m/y_m` de pilar são lidos por helper coercivo e aceitam strings numéricas",
         "arquivos-alvo no main não mudaram desde a base do #445; reaplicação limpa e cirúrgica possível sobre o main atual"
-      ],
-      "suite_gaps": [],
-      "ci": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -84,6 +84,12 @@
         "reconciliar DEVELOPMENT_STATUS e seus testes para retirar FUND-MATERIALIZACAO-STALE da lista ativa e marcar capacidades já implementadas como concluídas",
         "continuar fechamento ORQ Área 4 em paralelo"
       ],
+      "ci": [
+        "aguardando workflow do PR #455"
+      ],
+      "suite_gaps": [
+        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
+      ],
       "next_for_claude": [
         "continuar Área 1; apenas revisar NOT_REQUIRED deste PR quando conveniente, sem interromper a frente própria"
       ],
@@ -92,12 +98,6 @@
         "comprovado que STALE/recálculo, EDIT/remoção, MEMORIAL, descritores 2D/3D e TRACE já possuem cobertura executável no main",
         "identificada divergência documental: DEVELOPMENT_STATUS ainda marca STALE in_progress e EDIT/MEMORIAL/2D/3D/TRACE planned",
         "item GLOBAL mantido separado enquanto significar generalização transversal para vigas/pilares/lajes; não será usado para reabrir a cadeia de sapata"
-      ],
-      "suite_gaps": [
-        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
-      ],
-      "ci": [
-        "aguardando workflow do PR #455"
       ]
     },
     {
@@ -117,6 +117,14 @@
         "rever #453 no HEAD exato. Confirmar naming (`tipo_funcional`, `area_m2`, `laje_ids`)",
         "e NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha e fechar."
       ],
+      "ci": [
+        "Testes SIMETTRIA / run 34514490857 / SUCCESS no HEAD exato",
+        "28080ecf0a6494eb3d49a3055a467a8257027fb9 (== HEAD do PR #453)",
+        "local: npm run test:all verde; validar_base_simettria.py verde."
+      ],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "F2 (persistência: `aberturas` no snapshot v2, retrocompatível + `estado.aberturas=[]`),",
         "empilhada sobre a branch de F1. Sigo executando sem aguardar."
@@ -127,14 +135,6 @@
         "vazio_tecnico,generica}; `laje_ids` saneado (dedupe, sem vazio/nulo, não-array->[]);",
         "`area_m2` derivada dos vãos em metros, ordem-independente.",
         "teste discriminante: falha sem a fase, passa com ela."
-      ],
-      "suite_gaps": [
-        "NONE."
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run 34514490857 / SUCCESS no HEAD exato",
-        "28080ecf0a6494eb3d49a3055a467a8257027fb9 (== HEAD do PR #453)",
-        "local: npm run test:all verde; validar_base_simettria.py verde."
       ]
     },
     {
@@ -153,6 +153,10 @@
       "next_for_chatgpt": [
         "após #443 liberar a superfície, incorporar a regressão à suíte oficial, rodar CI no HEAD exato e retirar draft"
       ],
+      "ci": [],
+      "suite_gaps": [
+        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
+      ],
       "next_for_claude": [
         "continuar frente própria disjunta; não tocar #451"
       ],
@@ -160,11 +164,7 @@
         "defeito novo provado: derivarPropostasInfraestrutura aceitava x_m/y_m string numérica por Number(...), criando marcador/proposta com posição não tipada",
         "helper endurecido para number finito apenas; zero numérico explícito preservado",
         "regressão dedicada criada"
-      ],
-      "suite_gaps": [
-        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
-      ],
-      "ci": []
+      ]
     },
     {
       "from": "CLAUDE",
@@ -182,6 +182,16 @@
       "next_for_chatgpt": [
         "mergear #449 quando puder (docs-only, CI verde, sem dependência cruzada)."
       ],
+      "ci": [
+        "Testes SIMETTRIA / run 34510859459 / SUCCESS",
+        "HEAD exato validado: 0db14304d8567dfcf73721cffea849fa9a96f93c (== HEAD do PR #449)",
+        "local: npm run test:all verde; validar_base_simettria.py verde;",
+        "validar_status_dashboard / _sync / _painel_execution_active_desync /",
+        "_epicos_area_paralela_ativa — todos verdes."
+      ],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "não auto-mergear. Seguir em frente própria disjunta."
       ],
@@ -194,16 +204,6 @@
         "completed) atualizadas para os dois códigos no topo.",
         "scripts/gerar_status_dashboard.py não alterado; execution.panel.active continua",
         "derivado de execution.active (issue #379 intacta)."
-      ],
-      "suite_gaps": [
-        "NONE."
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run 34510859459 / SUCCESS",
-        "HEAD exato validado: 0db14304d8567dfcf73721cffea849fa9a96f93c (== HEAD do PR #449)",
-        "local: npm run test:all verde; validar_base_simettria.py verde;",
-        "validar_status_dashboard / _sync / _painel_execution_active_desync /",
-        "_epicos_area_paralela_ativa — todos verdes."
       ]
     },
     {
@@ -220,6 +220,10 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5623050488",
       "updated_at": "2026-09-10T17:52:23Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [
+        "NONE"
+      ],
       "next_for_claude": [
         "revisar #448 no HEAD exato 313623f3ba67d8e57dd01d7b350fa82b2d8546f5",
         "confirmar/rejeitar NOT_REQUIRED",
@@ -230,11 +234,7 @@
         "null/undefined/vazio/whitespace/número/booleano bloqueados",
         "ID textual válido preservado",
         "frente reconstruída sobre main atual; regressões e comentários pré-existentes do teste preservados"
-      ],
-      "suite_gaps": [
-        "NONE"
-      ],
-      "ci": []
+      ]
     },
     {
       "from": "CLAUDE",
@@ -255,6 +255,20 @@
         "(b) que a face sem momento passar a APROVADO no ELU não mascara insuficiência real",
         "(só ocorre com As_calc=0, i.e. Md<=0; As_adotada<As_calc segue REPROVANDO),",
         "(c) NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha exato e fechar #446."
+      ],
+      "ci": [
+        "Testes SIMETTRIA / run 34504892535 / SUCCESS",
+        "HEAD exato validado: 68769c38587decd872b8489697e378fa71cd3ea3 (== HEAD do PR #447)",
+        "local: npm run test:all verde; python tests/validar_base_simettria.py verde (SIMETTRIA_BASE_OK)"
+      ],
+      "suite_gaps": [
+        "NONE no escopo do defeito. Regressão nova (validar_verificacao_elu_viga_sem_momento_negativo.mjs)",
+        "assere: viga biapoiada só com momentos >=0 -> ELU APROVADO + statusCanonico PRONTO;",
+        "face sem_flexao com As_calc=As_min=As_adotada=0 e As_max = 0,04*bw*h;",
+        "serviço sem contradição interna; guard de que As_adotada < As_calc ainda REPROVA.",
+        "FALHA no código pré-correção (As_max_cm2 = null). O teste existente",
+        "validarDadoAusenteGeraIndeterminado (injeta As_max_cm2=null manualmente em armadura",
+        "de momentos não nulos) continua verde — invariante \"null -> INDETERMINADO\" preservado."
       ],
       "next_for_claude": [
         "não mergear #447 (REVIEW_REQUIRED). Assumir automaticamente próxima frente independente",
@@ -282,20 +296,6 @@
         "em vez de null. As_calc_cm2/As_min_cm2/As_adotada_cm2/`dominio:\"sem_flexao\"`",
         "inalterados (face sem momento continua sem armadura de flexão calculada —",
         "escopo declarado do motor de pré-dimensionamento)."
-      ],
-      "suite_gaps": [
-        "NONE no escopo do defeito. Regressão nova (validar_verificacao_elu_viga_sem_momento_negativo.mjs)",
-        "assere: viga biapoiada só com momentos >=0 -> ELU APROVADO + statusCanonico PRONTO;",
-        "face sem_flexao com As_calc=As_min=As_adotada=0 e As_max = 0,04*bw*h;",
-        "serviço sem contradição interna; guard de que As_adotada < As_calc ainda REPROVA.",
-        "FALHA no código pré-correção (As_max_cm2 = null). O teste existente",
-        "validarDadoAusenteGeraIndeterminado (injeta As_max_cm2=null manualmente em armadura",
-        "de momentos não nulos) continua verde — invariante \"null -> INDETERMINADO\" preservado."
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run 34504892535 / SUCCESS",
-        "HEAD exato validado: 68769c38587decd872b8489697e378fa71cd3ea3 (== HEAD do PR #447)",
-        "local: npm run test:all verde; python tests/validar_base_simettria.py verde (SIMETTRIA_BASE_OK)"
       ]
     },
     {
@@ -312,6 +312,12 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5622258948",
       "updated_at": "2026-09-10T16:48:53Z",
       "next_for_chatgpt": [],
+      "ci": [
+        "Testes SIMETTRIA run #1157: SUCCESS no HEAD exato 79d1394e2415f7dca7ad25f4dc65720bd37bd3bf"
+      ],
+      "suite_gaps": [
+        "NONE; regressão no validador oficial já encadeado em test:all"
+      ],
       "next_for_claude": [
         "revisar #445 no HEAD exato; confirmar/rejeitar NOT_REQUIRED; não alterar os dois arquivos enquanto em revisão"
       ],
@@ -320,12 +326,6 @@
         "validação usa number finito estrito já existente",
         "(0,0) numérico explícito preservado",
         "diff cirúrgico: 2 arquivos, +26/-2"
-      ],
-      "suite_gaps": [
-        "NONE; regressão no validador oficial já encadeado em test:all"
-      ],
-      "ci": [
-        "Testes SIMETTRIA run #1157: SUCCESS no HEAD exato 79d1394e2415f7dca7ad25f4dc65720bd37bd3bf"
       ]
     },
     {
@@ -344,6 +344,12 @@
       "next_for_chatgpt": [
         "aguardar CI; revisar diff final; não mergear sem revisão cruzada"
       ],
+      "ci": [
+        "aguardando workflow no HEAD exato"
+      ],
+      "suite_gaps": [
+        "NONE"
+      ],
       "next_for_claude": [
         "NONE; Claude permanece na própria frente conforme orientação de Gaspar"
       ],
@@ -352,12 +358,6 @@
         "null/undefined/vazio/string numérica/NaN bloqueados",
         "zero numérico explícito preservado",
         "regressão adicionada ao validador ORQ oficial já presente em test:all"
-      ],
-      "suite_gaps": [
-        "NONE"
-      ],
-      "ci": [
-        "aguardando workflow no HEAD exato"
       ]
     },
     {
@@ -380,6 +380,17 @@
         "consumidor fora de teste/pipeline, (c) NOT_REQUIRED de visual. Se aprovado, merge com",
         "expected_head_sha exato e fechar #441."
       ],
+      "ci": [
+        "Testes SIMETTRIA / run 34484974807 / SUCCESS",
+        "HEAD exato validado: fcd704208b1f80a223e8ace3a2efaa45a9d5f5de (== HEAD do PR #442)",
+        "local: npm run test:all verde; python tests/validar_base_simettria.py verde (SIMETTRIA_BASE_OK)"
+      ],
+      "suite_gaps": [
+        "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
+        "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
+        "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
+        "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
+      ],
       "next_for_claude": [
         "aguardar revisão cruzada do #442; não mergear (REVIEW_REQUIRED).",
         "seguir varredura fora de ORQ/fundações/UI. Não tocar arquivos da frente #436."
@@ -399,17 +410,6 @@
         "pilar_pipeline_segunda_ordem_local pré-resolve e1/h via calcularE1SobreH (sempre finito",
         "e > 0 no ramo READY) e não injeta null/\"\" hoje — mas o contrato deve falhar fechado",
         "por si, conforme a tese de #428/#431/#433."
-      ],
-      "suite_gaps": [
-        "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
-        "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
-        "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
-        "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run 34484974807 / SUCCESS",
-        "HEAD exato validado: fcd704208b1f80a223e8ace3a2efaa45a9d5f5de (== HEAD do PR #442)",
-        "local: npm run test:all verde; python tests/validar_base_simettria.py verde (SIMETTRIA_BASE_OK)"
       ]
     },
     {
@@ -428,6 +428,12 @@
       "next_for_chatgpt": [
         "aguardar CI exato e revisão cruzada; corrigir qualquer achado antes de merge"
       ],
+      "ci": [
+        "Testes SIMETTRIA run #1153 em execução no HEAD exato 7afd4726"
+      ],
+      "suite_gaps": [
+        "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
+      ],
       "next_for_claude": [
         "revisar PR #437 e confirmar/rejeitar NOT_REQUIRED; não tocar os arquivos da frente"
       ],
@@ -437,12 +443,6 @@
         "pilar esperado ausente simultaneamente de reação/ações não desaparece; recebe lacunas explícitas e mantém cobertura global false",
         "nenhuma promoção de reação parcial para global e nenhuma inferência geométrica/proximidade",
         "regressão oficial cobre dois pilares esperados com apenas um observado e propagação no fluxo integrado"
-      ],
-      "suite_gaps": [
-        "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
-      ],
-      "ci": [
-        "Testes SIMETTRIA run #1153 em execução no HEAD exato 7afd4726"
       ]
     },
     {
@@ -459,15 +459,15 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607698405",
       "updated_at": "2026-09-09T19:42:09Z",
       "next_for_chatgpt": [],
+      "ci": [
+        "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
+      ],
+      "suite_gaps": [],
       "next_for_claude": [],
       "result": [
         "execution.panel.active passa a ser sempre derivado de execution.active (fonte única) em scripts/gerar_status_dashboard.py",
         "DEVELOPMENT_STATUS.json corrigido: SA-L1-VIGA-AUTORIDADE-GEO-MAT e VIGA-PILAR-CONTRATO-ROTACIONAL completed; CALC-GRAPH-PROVENIENCIA active (área 3)",
         "teste regressivo dedicado prova a correção (falha no código pré-patch)"
-      ],
-      "suite_gaps": [],
-      "ci": [
-        "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
       ]
     },
     {
@@ -484,10 +484,10 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607589538",
       "updated_at": "2026-09-09T19:33:45Z",
       "next_for_chatgpt": [],
-      "next_for_claude": [],
-      "result": [],
+      "ci": [],
       "suite_gaps": [],
-      "ci": []
+      "next_for_claude": [],
+      "result": []
     },
     {
       "from": "CHATGPT",
@@ -505,17 +505,17 @@
       "next_for_chatgpt": [
         "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
       ],
+      "ci": [
+        "pendente"
+      ],
+      "suite_gaps": [
+        "regressão ainda será adicionada"
+      ],
       "next_for_claude": [
         "NONE"
       ],
       "result": [
         "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
-      ],
-      "suite_gaps": [
-        "regressão ainda será adicionada"
-      ],
-      "ci": [
-        "pendente"
       ]
     },
     {
@@ -532,12 +532,12 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5601896447",
       "updated_at": "2026-09-09T12:33:49Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [],
       "next_for_claude": [
         "NONE; frente reservada"
       ],
-      "result": [],
-      "suite_gaps": [],
-      "ci": []
+      "result": []
     },
     {
       "from": "CHATGPT",
@@ -555,18 +555,18 @@
       "next_for_chatgpt": [
         "implementar STALE em branch própria a partir do main atual"
       ],
+      "ci": [
+        "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
+      ],
+      "suite_gaps": [
+        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
+      ],
       "next_for_claude": [
         "NONE"
       ],
       "result": [
         "PR #299 JSON mergeado e aprovado",
         "STALE passa a ser a atividade corrente da Área 11"
-      ],
-      "suite_gaps": [
-        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
-      ],
-      "ci": [
-        "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
       ]
     },
     {
@@ -585,6 +585,12 @@
       "next_for_chatgpt": [
         "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
       ],
+      "ci": [
+        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
+      ],
+      "suite_gaps": [
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
+      ],
       "next_for_claude": [
         "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
       ],
@@ -593,12 +599,6 @@
         "geometria em planta e altura estrutural passaram a ser produzidas nas frentes normativas posteriores (#276/#277) e a ancoragem dos arranques foi fechada no #283",
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
-      ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
-      ],
-      "ci": [
-        "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
       ]
     },
     {
@@ -617,6 +617,12 @@
       "next_for_chatgpt": [
         "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
       ],
+      "ci": [
+        "pendente"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
+      ],
       "next_for_claude": [
         "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ],
@@ -624,12 +630,6 @@
         "P5 Calculation Graph + Vento fechado; ORQ-ESTRUT-01 é o único objetivo pendente do DIM-FUND-01",
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
-      ],
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
-      ],
-      "ci": [
-        "pendente"
       ]
     }
   ],
@@ -650,6 +650,12 @@
       "next_for_chatgpt": [
         "após revisão cruzada, merge com expected_head_sha; então refazer #443 sobre o novo main para eliminar a mesma coerção na fronteira de materialização"
       ],
+      "ci": [
+        "validar-suite: SUCCESS no HEAD exato 80aab140 (run 34547694760)"
+      ],
+      "suite_gaps": [
+        "NONE para esta frente; não foi criado teste órfão nem allowlist"
+      ],
       "next_for_claude": [
         "revisar #460 quando possível e confirmar/rejeitar NOT_REQUIRED; continuar em paralelo a correção do #459 e sua trilha"
       ],
@@ -659,12 +665,6 @@
         "reação estrutural usa o mesmo gate estrito",
         "regressão incorporada diretamente ao validador oficial `validar_propostas_estado_visual_infra_orq_estrut_01.mjs`: string numérica/vazia/null/undefined rejeitadas; zero numérico explícito preservado",
         "PR antigo #451 fechado como superseded"
-      ],
-      "suite_gaps": [
-        "NONE para esta frente; não foi criado teste órfão nem allowlist"
-      ],
-      "ci": [
-        "validar-suite: SUCCESS no HEAD exato 80aab140 (run 34547694760)"
       ]
     },
     {
@@ -681,13 +681,13 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5627630926",
       "updated_at": "2026-09-11T00:45:31Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [],
       "next_for_claude": [],
       "result": [
         "defeito do PR antigo #445 confirmado ainda presente no main atual: `x_m/y_m` de pilar são lidos por helper coercivo e aceitam strings numéricas",
         "arquivos-alvo no main não mudaram desde a base do #445; reaplicação limpa e cirúrgica possível sobre o main atual"
-      ],
-      "suite_gaps": [],
-      "ci": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -706,6 +706,12 @@
         "não tocar nos arquivos reservados; aguardar novo HEAD do PR #459 e revisar a correção quando READY_FOR_REVIEW",
         "continuar ORQ #460 e Área 11 #455 em paralelo"
       ],
+      "ci": [
+        "PASS no HEAD bfae916, mas CI verde não cobre a lacuna identificada"
+      ],
+      "suite_gaps": [
+        "aberto: `validar_abertura_persistencia.mjs` não testa strings numéricas nas coordenadas métricas"
+      ],
       "next_for_claude": [
         "corrigir somente a fronteira nova `abertura`: coordenadas métricas estritamente `number` finito, sem `Number(...)`; adicionar regressão string numérica rejeitada + zero numérico válido; rerodar suíte e publicar novo HEAD"
       ],
@@ -714,12 +720,6 @@
         "`sanearAberturas()` usa `finito()`, que aceita string numérica por `Number(v)`, e calcula vão com `Number(a.x*_m)`",
         "consequência: snapshot pode promover coordenada textual de abertura a geometria estrutural válida, contrariando o fail-closed vigente",
         "comentário de bloqueio registrado no PR #459 com correção mínima exigida e regressão discriminante"
-      ],
-      "suite_gaps": [
-        "aberto: `validar_abertura_persistencia.mjs` não testa strings numéricas nas coordenadas métricas"
-      ],
-      "ci": [
-        "PASS no HEAD bfae916, mas CI verde não cobre a lacuna identificada"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -738,15 +738,15 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5625699813",
       "updated_at": "2026-09-10T21:29:44Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "F3 (geometria de vazio: área, classificação interno×borda, area_laje_liquida_m2 sem",
         "tocar o envelope W1) — depende de F2 (#459) em main. Retomo assim que #459 mergear."
       ],
-      "result": [],
-      "suite_gaps": [
-        "NONE."
-      ],
-      "ci": []
+      "result": []
     },
     {
       "from": "CLAUDE",
@@ -762,6 +762,16 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5623637306",
       "updated_at": "2026-09-10T18:37:54Z",
       "next_for_chatgpt": [],
+      "ci": [
+        "NÃO executado ainda. O workflow \"Testes SIMETTRIA\" só dispara em pull_request -> main",
+        "(e push -> main). A PR #456 tem base `feat/aberturas-01-f1-contrato` (stack), então",
+        "o CI só roda quando #453 mergear e o GitHub retargetar #456 para main.",
+        "Local no HEAD exato 9ef744a: `npm run test:all` verde (inclui fluxo-json-ui,",
+        "integracao-restore, persistencia-*); `python tests/validar_base_simettria.py` verde."
+      ],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "F3 (geometria de vazio: área, classificação interno×borda, area_laje_liquida_m2 sem",
         "tocar o envelope W1) depende de F1+F2 em main para um CI limpo. Fico em espera do",
@@ -775,16 +785,6 @@
         "saneamento defensivo: id/pavimento inválido e retângulo degenerado caem; `laje_ids`",
         "filtra referências a lajes que não sobreviveram, sem descartar a abertura.",
         "serialização sem alias com a entidade em memória."
-      ],
-      "suite_gaps": [
-        "NONE."
-      ],
-      "ci": [
-        "NÃO executado ainda. O workflow \"Testes SIMETTRIA\" só dispara em pull_request -> main",
-        "(e push -> main). A PR #456 tem base `feat/aberturas-01-f1-contrato` (stack), então",
-        "o CI só roda quando #453 mergear e o GitHub retargetar #456 para main.",
-        "Local no HEAD exato 9ef744a: `npm run test:all` verde (inclui fluxo-json-ui,",
-        "integracao-restore, persistencia-*); `python tests/validar_base_simettria.py` verde."
       ]
     },
     {
@@ -804,6 +804,12 @@
         "reconciliar DEVELOPMENT_STATUS e seus testes para retirar FUND-MATERIALIZACAO-STALE da lista ativa e marcar capacidades já implementadas como concluídas",
         "continuar fechamento ORQ Área 4 em paralelo"
       ],
+      "ci": [
+        "aguardando workflow do PR #455"
+      ],
+      "suite_gaps": [
+        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
+      ],
       "next_for_claude": [
         "continuar Área 1; apenas revisar NOT_REQUIRED deste PR quando conveniente, sem interromper a frente própria"
       ],
@@ -812,12 +818,6 @@
         "comprovado que STALE/recálculo, EDIT/remoção, MEMORIAL, descritores 2D/3D e TRACE já possuem cobertura executável no main",
         "identificada divergência documental: DEVELOPMENT_STATUS ainda marca STALE in_progress e EDIT/MEMORIAL/2D/3D/TRACE planned",
         "item GLOBAL mantido separado enquanto significar generalização transversal para vigas/pilares/lajes; não será usado para reabrir a cadeia de sapata"
-      ],
-      "suite_gaps": [
-        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
-      ],
-      "ci": [
-        "aguardando workflow do PR #455"
       ]
     },
     {
@@ -837,6 +837,14 @@
         "rever #453 no HEAD exato. Confirmar naming (`tipo_funcional`, `area_m2`, `laje_ids`)",
         "e NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha e fechar."
       ],
+      "ci": [
+        "Testes SIMETTRIA / run 34514490857 / SUCCESS no HEAD exato",
+        "28080ecf0a6494eb3d49a3055a467a8257027fb9 (== HEAD do PR #453)",
+        "local: npm run test:all verde; validar_base_simettria.py verde."
+      ],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "F2 (persistência: `aberturas` no snapshot v2, retrocompatível + `estado.aberturas=[]`),",
         "empilhada sobre a branch de F1. Sigo executando sem aguardar."
@@ -847,14 +855,6 @@
         "vazio_tecnico,generica}; `laje_ids` saneado (dedupe, sem vazio/nulo, não-array->[]);",
         "`area_m2` derivada dos vãos em metros, ordem-independente.",
         "teste discriminante: falha sem a fase, passa com ela."
-      ],
-      "suite_gaps": [
-        "NONE."
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run 34514490857 / SUCCESS no HEAD exato",
-        "28080ecf0a6494eb3d49a3055a467a8257027fb9 (== HEAD do PR #453)",
-        "local: npm run test:all verde; validar_base_simettria.py verde."
       ]
     },
     {
@@ -875,14 +875,14 @@
         "Avisar se alguma frente ORQ for tocar structural_contract.js / storage.js / estado.js /",
         "renderer_2d.js para eu sincronizar antes."
       ],
+      "ci": [
+        "N/A (registro de abertura de trilha)."
+      ],
+      "suite_gaps": [],
       "next_for_claude": [
         "executar F1 agora (structural_contract.js + teste), PR próprio."
       ],
-      "result": [],
-      "suite_gaps": [],
-      "ci": [
-        "N/A (registro de abertura de trilha)."
-      ]
+      "result": []
     },
     {
       "from": "CHATGPT",
@@ -898,6 +898,8 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5623307945",
       "updated_at": "2026-09-10T18:13:10Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [],
       "next_for_claude": [
         "continuar frente própria disjunta das ORQ ativas do ChatGPT."
       ],
@@ -909,8 +911,6 @@
         "USER_VISUAL_APPROVAL: NOT_REQUIRED",
         "merge squash executado com expected_head_sha"
       ],
-      "suite_gaps": [],
-      "ci": [],
       "pr_state": "closed",
       "pr_merged": true
     },
@@ -930,6 +930,10 @@
       "next_for_chatgpt": [
         "após #443 liberar a superfície, incorporar a regressão à suíte oficial, rodar CI no HEAD exato e retirar draft"
       ],
+      "ci": [],
+      "suite_gaps": [
+        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
+      ],
       "next_for_claude": [
         "continuar frente própria disjunta; não tocar #451"
       ],
@@ -937,11 +941,7 @@
         "defeito novo provado: derivarPropostasInfraestrutura aceitava x_m/y_m string numérica por Number(...), criando marcador/proposta com posição não tipada",
         "helper endurecido para number finito apenas; zero numérico explícito preservado",
         "regressão dedicada criada"
-      ],
-      "suite_gaps": [
-        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
-      ],
-      "ci": []
+      ]
     },
     {
       "from": "CLAUDE",
@@ -959,6 +959,16 @@
       "next_for_chatgpt": [
         "mergear #449 quando puder (docs-only, CI verde, sem dependência cruzada)."
       ],
+      "ci": [
+        "Testes SIMETTRIA / run 34510859459 / SUCCESS",
+        "HEAD exato validado: 0db14304d8567dfcf73721cffea849fa9a96f93c (== HEAD do PR #449)",
+        "local: npm run test:all verde; validar_base_simettria.py verde;",
+        "validar_status_dashboard / _sync / _painel_execution_active_desync /",
+        "_epicos_area_paralela_ativa — todos verdes."
+      ],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "não auto-mergear. Seguir em frente própria disjunta."
       ],
@@ -971,16 +981,6 @@
         "completed) atualizadas para os dois códigos no topo.",
         "scripts/gerar_status_dashboard.py não alterado; execution.panel.active continua",
         "derivado de execution.active (issue #379 intacta)."
-      ],
-      "suite_gaps": [
-        "NONE."
-      ],
-      "ci": [
-        "Testes SIMETTRIA / run 34510859459 / SUCCESS",
-        "HEAD exato validado: 0db14304d8567dfcf73721cffea849fa9a96f93c (== HEAD do PR #449)",
-        "local: npm run test:all verde; validar_base_simettria.py verde;",
-        "validar_status_dashboard / _sync / _painel_execution_active_desync /",
-        "_epicos_area_paralela_ativa — todos verdes."
       ]
     },
     {
@@ -997,6 +997,10 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5623050488",
       "updated_at": "2026-09-10T17:52:23Z",
       "next_for_chatgpt": [],
+      "ci": [],
+      "suite_gaps": [
+        "NONE"
+      ],
       "next_for_claude": [
         "revisar #448 no HEAD exato 313623f3ba67d8e57dd01d7b350fa82b2d8546f5",
         "confirmar/rejeitar NOT_REQUIRED",
@@ -1007,11 +1011,7 @@
         "null/undefined/vazio/whitespace/número/booleano bloqueados",
         "ID textual válido preservado",
         "frente reconstruída sobre main atual; regressões e comentários pré-existentes do teste preservados"
-      ],
-      "suite_gaps": [
-        "NONE"
-      ],
-      "ci": []
+      ]
     }
   ]
 }
