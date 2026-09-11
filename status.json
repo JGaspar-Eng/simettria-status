@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T01:04:00Z",
+  "generated_at": "2026-09-11T01:04:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e4afe9b58d05b5b8567890f0c0cb74ee29c889ff",
-    "short_sha": "e4afe9b",
+    "sha": "50292e2399bdd12eee60c2261d014e0a04ae2a9d",
+    "short_sha": "50292e2",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T22:03:41-03:00",
-    "message": "fix(orq): rejeita coordenadas textuais nas propostas de infraestrutura (#460)"
+    "date": "2026-09-10T22:04:11-03:00",
+    "message": "fix(orq): rejeita coordenada textual no apoio de pilar (#461)"
   },
   "commits": [
+    {
+      "sha": "50292e2399bdd12eee60c2261d014e0a04ae2a9d",
+      "short_sha": "50292e2",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T22:04:11-03:00",
+      "message": "fix(orq): rejeita coordenada textual no apoio de pilar (#461)"
+    },
     {
       "sha": "e4afe9b58d05b5b8567890f0c0cb74ee29c889ff",
       "short_sha": "e4afe9b",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T10:27:19-03:00",
       "message": "fix(dim-fund): momento ausente deixa de virar zero na pressão centrada (#433)"
-    },
-    {
-      "sha": "02b7e1eced98b7421148662a245d87dcf86300b3",
-      "short_sha": "02b7e1e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T08:29:16-03:00",
-      "message": "fix(dim-pilar): esforco solicitante ausente deixa de virar zero valido nos contratos normativos (#431)"
     }
   ],
   "development": {
@@ -2018,7 +2018,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34549111948",
-    "run_number": "574"
+    "run_id": "34549146415",
+    "run_number": "576"
   }
 }
