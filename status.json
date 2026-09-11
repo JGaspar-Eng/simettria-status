@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-11T02:49:33Z",
+  "generated_at": "2026-09-11T02:57:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f8bedaeee3801db310b1fffc816225df7c0472a4",
-    "short_sha": "f8bedae",
+    "sha": "f5f7a4a51b0928532bd3076647c6dff26ab774fb",
+    "short_sha": "f5f7a4a",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T23:49:16-03:00",
-    "message": "temp"
+    "date": "2026-09-10T23:57:10-03:00",
+    "message": "feat(orq): adapta propriedades oficiais de pilar ao kernel espacial (#477)"
   },
   "commits": [
+    {
+      "sha": "f5f7a4a51b0928532bd3076647c6dff26ab774fb",
+      "short_sha": "f5f7a4a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T23:57:10-03:00",
+      "message": "feat(orq): adapta propriedades oficiais de pilar ao kernel espacial (#477)"
+    },
+    {
+      "sha": "deae51ae168ae6df1ace4fe237ee2c77df2829a2",
+      "short_sha": "deae51a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T23:49:24-03:00",
+      "message": "revert: remove placeholder criado por engano"
+    },
     {
       "sha": "f8bedaeee3801db310b1fffc816225df7c0472a4",
       "short_sha": "f8bedae",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T22:08:24-03:00",
       "message": "feat(aberturas): F3+F4 — geometria de vazio + controller de dominio (#462)"
-    },
-    {
-      "sha": "c918d1239c5d9f53d55df026df84b10e6fa97ae8",
-      "short_sha": "c918d12",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T22:06:13-03:00",
-      "message": "docs(area11): consolida evidencias para fechamento da materializacao (#455)"
-    },
-    {
-      "sha": "f63cb0b4f773046ceb546ca434c551c50f00b62e",
-      "short_sha": "f63cb0b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T22:05:48-03:00",
-      "message": "fix(orq): audita pilares esperados ausentes dos mapas parciais (#437)"
     }
   ],
   "development": {
@@ -2030,7 +2030,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34556086290",
-    "run_number": "609"
+    "run_id": "34556582373",
+    "run_number": "611"
   }
 }
