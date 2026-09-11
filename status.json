@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T12:36:17Z",
+  "generated_at": "2026-09-11T12:37:50Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8066c9d63ff34956b3994cf643a1ba7ac8757d63",
-    "short_sha": "8066c9d",
+    "sha": "5fcd0f5e6ad2d6885b2b2fae7b00312f6ad6a2aa",
+    "short_sha": "5fcd0f5",
     "author": "Joanez Gaspar",
-    "date": "2026-09-11T09:34:22-03:00",
-    "message": "feat(orq): adapta geometria oficial de viga ao kernel espacial (#479)"
+    "date": "2026-09-11T09:37:32-03:00",
+    "message": "feat(escada): ESCADA-01 — contrato, estado, lifecycle e persistência (#484)"
   },
   "commits": [
+    {
+      "sha": "5fcd0f5e6ad2d6885b2b2fae7b00312f6ad6a2aa",
+      "short_sha": "5fcd0f5",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-11T09:37:32-03:00",
+      "message": "feat(escada): ESCADA-01 — contrato, estado, lifecycle e persistência (#484)"
+    },
     {
       "sha": "8066c9d63ff34956b3994cf643a1ba7ac8757d63",
       "short_sha": "8066c9d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T00:26:58-03:00",
       "message": "fix(nav): corrige corrida de eventos que travava a troca de pavimento (#480)"
-    },
-    {
-      "sha": "f5f7a4a51b0928532bd3076647c6dff26ab774fb",
-      "short_sha": "f5f7a4a",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T23:57:10-03:00",
-      "message": "feat(orq): adapta propriedades oficiais de pilar ao kernel espacial (#477)"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 148,
+    "validator_count": 150,
     "validators": [
       {
         "name": "test:base",
@@ -1680,6 +1680,14 @@
       {
         "name": "test:abertura-persistencia",
         "command": "node tests/validar_abertura_persistencia.mjs"
+      },
+      {
+        "name": "test:escada-contrato",
+        "command": "node tests/validar_escada_contrato.mjs"
+      },
+      {
+        "name": "test:escada-persistencia",
+        "command": "node tests/validar_escada_persistencia.mjs"
       },
       {
         "name": "test:abertura-geometria",
@@ -2034,7 +2042,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34599751548",
-    "run_number": "632"
+    "run_id": "34599888383",
+    "run_number": "633"
   }
 }
