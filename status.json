@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T00:58:18Z",
+  "generated_at": "2026-09-11T00:58:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f35214ebff1782e0e9a86795773ab8849bcffc8b",
-    "short_sha": "f35214e",
+    "sha": "7bfa2a896beb60ec12173111ab9a1972f14359f3",
+    "short_sha": "7bfa2a8",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T21:58:03-03:00",
-    "message": "feat(aberturas): F2 — persistência da coleção `aberturas` no snapshot (retrocompatível) (#459)"
+    "date": "2026-09-10T21:58:09-03:00",
+    "message": "docs(status): ABERTURAS-01 entra como frente ativa no painel operacional (#458)"
   },
   "commits": [
+    {
+      "sha": "7bfa2a896beb60ec12173111ab9a1972f14359f3",
+      "short_sha": "7bfa2a8",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T21:58:09-03:00",
+      "message": "docs(status): ABERTURAS-01 entra como frente ativa no painel operacional (#458)"
+    },
     {
       "sha": "f35214ebff1782e0e9a86795773ab8849bcffc8b",
       "short_sha": "f35214e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T08:10:42-03:00",
       "message": "fix(dim-pilar): momento nodal ausente na extremidade deixa de virar zero valido (#428)"
-    },
-    {
-      "sha": "35457f4d5d087bacd7813aceb3674aca3bec75a7",
-      "short_sha": "35457f4",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-09T23:11:32-03:00",
-      "message": "fix(viga-apoio): coordenada pilar/viga ausente deixa de virar origem (0,0) (#425)"
     }
   ],
   "development": {
@@ -98,6 +98,13 @@
       "panel": {
         "active": [
           {
+            "code": "ABERTURAS-01",
+            "title": "Vazios estruturais em laje (infraestrutura para escadas)",
+            "state": "in_progress",
+            "area": 1,
+            "source": "docs/ABERTURAS_01_ESCOPO.md / issue #231"
+          },
+          {
             "code": "FUND-MATERIALIZACAO-STALE",
             "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
             "state": "in_progress",
@@ -116,6 +123,13 @@
         "policy": "O painel operacional mostra somente frentes em execução e planejadas. Itens concluídos permanecem apenas no histórico técnico e não são renderizados no painel. `active` é sempre derivado de execution.active pelo gerador (scripts/gerar_status_dashboard.py) — não editar este campo manualmente, ver issue #379."
       },
       "recent": [
+        {
+          "code": "ABERTURAS-01",
+          "title": "Vazios estruturais em laje (infraestrutura para escadas)",
+          "state": "in_progress",
+          "area": 1,
+          "source": "docs/ABERTURAS_01_ESCOPO.md / issue #231"
+        },
         {
           "code": "DIM-VIGA-SEM-FLEXAO-ASMAX",
           "title": "Face de viga sem momento reporta As,max geométrico e para de arrastar a verificação ELU para INDETERMINADO",
@@ -188,6 +202,13 @@
         }
       ],
       "active": [
+        {
+          "code": "ABERTURAS-01",
+          "title": "Vazios estruturais em laje (infraestrutura para escadas)",
+          "state": "in_progress",
+          "area": 1,
+          "source": "docs/ABERTURAS_01_ESCOPO.md / issue #231"
+        },
         {
           "code": "FUND-MATERIALIZACAO-STALE",
           "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
@@ -532,7 +553,7 @@
         "percent": 50,
         "note": "~50%.",
         "status": "measured",
-        "active": false,
+        "active": true,
         "work": {
           "done": 5,
           "partial": 3,
@@ -1997,7 +2018,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34548709756",
-    "run_number": "571"
+    "run_id": "34548716008",
+    "run_number": "572"
   }
 }
