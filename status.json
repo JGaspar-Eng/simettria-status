@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T02:12:12Z",
+  "generated_at": "2026-09-11T02:22:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3022be1d9f4a5adaaa11795b916c898661c5143e",
-    "short_sha": "3022be1",
+    "sha": "925664afa686610c27f43e3622eccd6f5cbf3e97",
+    "short_sha": "925664a",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T23:00:01-03:00",
-    "message": "docs(aberturas): marca F5 (2D) como aprovada visualmente e mergeada (#467) (#468)"
+    "date": "2026-09-10T23:22:11-03:00",
+    "message": "feat(orq): contrato global determinístico de DOFs e vínculos (#471)"
   },
   "commits": [
+    {
+      "sha": "925664afa686610c27f43e3622eccd6f5cbf3e97",
+      "short_sha": "925664a",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T23:22:11-03:00",
+      "message": "feat(orq): contrato global determinístico de DOFs e vínculos (#471)"
+    },
     {
       "sha": "3022be1d9f4a5adaaa11795b916c898661c5143e",
       "short_sha": "3022be1",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T22:05:01-03:00",
       "message": "fix(orq): exige coordenadas numéricas na materialização (#443)"
-    },
-    {
-      "sha": "50292e2399bdd12eee60c2261d014e0a04ae2a9d",
-      "short_sha": "50292e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T22:04:11-03:00",
-      "message": "fix(orq): rejeita coordenada textual no apoio de pilar (#461)"
     }
   ],
   "development": {
@@ -2030,7 +2030,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34553676255",
-    "run_number": "604"
+    "run_id": "34554350298",
+    "run_number": "605"
   }
 }
