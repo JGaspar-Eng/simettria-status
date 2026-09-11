@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T01:05:45Z",
+  "generated_at": "2026-09-11T01:06:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "367fb034da66d4ea780ac1305459248ff759763b",
-    "short_sha": "367fb03",
+    "sha": "f63cb0b4f773046ceb546ca434c551c50f00b62e",
+    "short_sha": "f63cb0b",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T22:05:28-03:00",
-    "message": "fix(orq): exige pavimento-base textual no rascunho (#448)"
+    "date": "2026-09-10T22:05:48-03:00",
+    "message": "fix(orq): audita pilares esperados ausentes dos mapas parciais (#437)"
   },
   "commits": [
+    {
+      "sha": "f63cb0b4f773046ceb546ca434c551c50f00b62e",
+      "short_sha": "f63cb0b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T22:05:48-03:00",
+      "message": "fix(orq): audita pilares esperados ausentes dos mapas parciais (#437)"
+    },
     {
       "sha": "367fb034da66d4ea780ac1305459248ff759763b",
       "short_sha": "367fb03",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T15:11:05-03:00",
       "message": "docs(status): registra #442 e #447 no painel operacional"
-    },
-    {
-      "sha": "f342beb209ae6bc06af2e99e5af2eea215346198",
-      "short_sha": "f342beb",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T14:40:07-03:00",
-      "message": "fix(dim-viga): libera ELU de viga sem momento negativo (#447)"
     }
   ],
   "development": {
@@ -2018,7 +2018,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34549240095",
-    "run_number": "582"
+    "run_id": "34549263140",
+    "run_number": "584"
   }
 }
