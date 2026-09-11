@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T03:20:50Z",
+  "generated_at": "2026-09-11T03:27:14Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f5f7a4a51b0928532bd3076647c6dff26ab774fb",
-    "short_sha": "f5f7a4a",
+    "sha": "44ab8190b62fc97df07eb04ec632754862835dd3",
+    "short_sha": "44ab819",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T23:57:10-03:00",
-    "message": "feat(orq): adapta propriedades oficiais de pilar ao kernel espacial (#477)"
+    "date": "2026-09-11T00:26:58-03:00",
+    "message": "fix(nav): corrige corrida de eventos que travava a troca de pavimento (#480)"
   },
   "commits": [
+    {
+      "sha": "44ab8190b62fc97df07eb04ec632754862835dd3",
+      "short_sha": "44ab819",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-11T00:26:58-03:00",
+      "message": "fix(nav): corrige corrida de eventos que travava a troca de pavimento (#480)"
+    },
     {
       "sha": "f5f7a4a51b0928532bd3076647c6dff26ab774fb",
       "short_sha": "f5f7a4a",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T22:20:38-03:00",
       "message": "docs(governanca): emenda modelo enxuto de execucao (decisao explicita do Gaspar) (#464)"
-    },
-    {
-      "sha": "75cee59e43a9282c2cf98e0f2c5d9a0fa1fe5c0b",
-      "short_sha": "75cee59",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T22:08:24-03:00",
-      "message": "feat(aberturas): F3+F4 — geometria de vazio + controller de dominio (#462)"
     }
   ],
   "development": {
@@ -2030,7 +2030,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34558028871",
-    "run_number": "613"
+    "run_id": "34558476940",
+    "run_number": "614"
   }
 }
