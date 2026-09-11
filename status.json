@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T04:27:08Z",
+  "generated_at": "2026-09-11T04:28:12Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "21c9d9da16488151434f2ea64b981a8004a7e95d",
-    "short_sha": "21c9d9d",
+    "sha": "436ff336f41ed48b32b101aff885c59fc8768223",
+    "short_sha": "436ff33",
     "author": "Joanez Gaspar",
-    "date": "2026-09-11T01:10:37-03:00",
-    "message": "chore: remove marcador temporário acidental"
+    "date": "2026-09-11T01:27:55-03:00",
+    "message": "feat(aberturas): F6 — recorte 3D do vazio na laje (motor Babylon oficial) (#469)"
   },
   "commits": [
+    {
+      "sha": "436ff336f41ed48b32b101aff885c59fc8768223",
+      "short_sha": "436ff33",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-11T01:27:55-03:00",
+      "message": "feat(aberturas): F6 — recorte 3D do vazio na laje (motor Babylon oficial) (#469)"
+    },
     {
       "sha": "21c9d9da16488151434f2ea64b981a8004a7e95d",
       "short_sha": "21c9d9d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T23:49:24-03:00",
       "message": "revert: remove placeholder criado por engano"
-    },
-    {
-      "sha": "f8bedaeee3801db310b1fffc816225df7c0472a4",
-      "short_sha": "f8bedae",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T23:49:16-03:00",
-      "message": "temp"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 147,
+    "validator_count": 148,
     "validators": [
       {
         "name": "test:base",
@@ -1782,6 +1782,10 @@
         "command": "node tests/validar_renderer_2d_aberturas.mjs"
       },
       {
+        "name": "test:abertura-babylon-3d",
+        "command": "node tests/validar_babylon_3d_limpo_aberturas.mjs"
+      },
+      {
         "name": "test:painel-execution-active-desync",
         "command": "python tests/validar_painel_execution_active_desync.py"
       },
@@ -2030,7 +2034,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34562229042",
-    "run_number": "626"
+    "run_id": "34562295571",
+    "run_number": "627"
   }
 }
