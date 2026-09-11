@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T01:06:49Z",
+  "generated_at": "2026-09-11T01:08:42Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c918d1239c5d9f53d55df026df84b10e6fa97ae8",
-    "short_sha": "c918d12",
+    "sha": "75cee59e43a9282c2cf98e0f2c5d9a0fa1fe5c0b",
+    "short_sha": "75cee59",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T22:06:13-03:00",
-    "message": "docs(area11): consolida evidencias para fechamento da materializacao (#455)"
+    "date": "2026-09-10T22:08:24-03:00",
+    "message": "feat(aberturas): F3+F4 — geometria de vazio + controller de dominio (#462)"
   },
   "commits": [
+    {
+      "sha": "75cee59e43a9282c2cf98e0f2c5d9a0fa1fe5c0b",
+      "short_sha": "75cee59",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T22:08:24-03:00",
+      "message": "feat(aberturas): F3+F4 — geometria de vazio + controller de dominio (#462)"
+    },
     {
       "sha": "c918d1239c5d9f53d55df026df84b10e6fa97ae8",
       "short_sha": "c918d12",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T18:18:15-03:00",
       "message": "feat(aberturas): F1 — contrato da entidade `abertura` (vazio estrutural em laje) (#453)"
-    },
-    {
-      "sha": "af9bc5b2d4d54d9842ff5ee6b3e816f350771b9e",
-      "short_sha": "af9bc5b",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T18:13:44-03:00",
-      "message": "docs(roadmap): ativa ABERTURAS-01 como frente paralela da Area 1 (decisao explicita do Gaspar) (#452)"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 144,
+    "validator_count": 146,
     "validators": [
       {
         "name": "test:base",
@@ -1680,6 +1680,14 @@
       {
         "name": "test:abertura-persistencia",
         "command": "node tests/validar_abertura_persistencia.mjs"
+      },
+      {
+        "name": "test:abertura-geometria",
+        "command": "node tests/validar_geometria_abertura.mjs"
+      },
+      {
+        "name": "test:abertura-controller",
+        "command": "node tests/validar_abertura_controller.mjs"
       },
       {
         "name": "test:dim-fund-cota-base-fail-closed",
@@ -2018,7 +2026,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34549311354",
-    "run_number": "587"
+    "run_id": "34549443386",
+    "run_number": "588"
   }
 }
