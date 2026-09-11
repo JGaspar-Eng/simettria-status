@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-11T00:58:59Z",
+  "generated_at": "2026-09-11T01:04:00Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7bfa2a896beb60ec12173111ab9a1972f14359f3",
-    "short_sha": "7bfa2a8",
+    "sha": "e4afe9b58d05b5b8567890f0c0cb74ee29c889ff",
+    "short_sha": "e4afe9b",
     "author": "Joanez Gaspar",
-    "date": "2026-09-10T21:58:09-03:00",
-    "message": "docs(status): ABERTURAS-01 entra como frente ativa no painel operacional (#458)"
+    "date": "2026-09-10T22:03:41-03:00",
+    "message": "fix(orq): rejeita coordenadas textuais nas propostas de infraestrutura (#460)"
   },
   "commits": [
+    {
+      "sha": "e4afe9b58d05b5b8567890f0c0cb74ee29c889ff",
+      "short_sha": "e4afe9b",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-10T22:03:41-03:00",
+      "message": "fix(orq): rejeita coordenadas textuais nas propostas de infraestrutura (#460)"
+    },
     {
       "sha": "7bfa2a896beb60ec12173111ab9a1972f14359f3",
       "short_sha": "7bfa2a8",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-10T08:29:16-03:00",
       "message": "fix(dim-pilar): esforco solicitante ausente deixa de virar zero valido nos contratos normativos (#431)"
-    },
-    {
-      "sha": "b91d1dd6720fecd1c47d12357ea5f44d02839dd5",
-      "short_sha": "b91d1dd",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-10T08:10:42-03:00",
-      "message": "fix(dim-pilar): momento nodal ausente na extremidade deixa de virar zero valido (#428)"
     }
   ],
   "development": {
@@ -2018,7 +2018,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34548716008",
-    "run_number": "572"
+    "run_id": "34549111948",
+    "run_number": "574"
   }
 }
