@@ -24,7 +24,7 @@ html,body{margin:0;width:100%;height:100%;background:#f5f7f9;font-family:system-
     try{
       const [statusResp,scriptResp]=await Promise.all([
         fetch('status.json?t='+Date.now(),{cache:'no-store'}),
-        fetch('https://raw.githubusercontent.com/JGaspar-Eng/simettria/3f1a386f0f0b6beae72ef090cb28758a7af0dac5/docs/status_areas.js?t='+Date.now(),{cache:'no-store'})
+        fetch('https://raw.githubusercontent.com/JGaspar-Eng/simettria/fix/painel-orq-detalhe-real/docs/status_areas.js?t='+Date.now(),{cache:'no-store'})
       ]);
       if(!statusResp.ok) throw new Error('status.json HTTP '+statusResp.status);
       if(!scriptResp.ok) throw new Error('status_areas.js da PR HTTP '+scriptResp.status);
