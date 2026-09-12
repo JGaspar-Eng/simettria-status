@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-12T21:43:28Z",
+  "generated_at": "2026-09-12T21:49:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "45790d748d5163d83beab04c7c20102947bf40be",
-    "short_sha": "45790d7",
+    "sha": "ef369df8110bdfd04fbaa312115b3effc4c128ec",
+    "short_sha": "ef369df",
     "author": "Joanez Gaspar",
-    "date": "2026-09-12T15:16:53-03:00",
-    "message": "feat(escada): uniformiza retorno de criarEscada/editarEscada em { ok, motivo, escada } (#511)"
+    "date": "2026-09-12T18:49:01-03:00",
+    "message": "feat(escada): modal de cadastro (criação) de estado.escadas — PR-B1+B2 (#512)"
   },
   "commits": [
+    {
+      "sha": "ef369df8110bdfd04fbaa312115b3effc4c128ec",
+      "short_sha": "ef369df",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-12T18:49:01-03:00",
+      "message": "feat(escada): modal de cadastro (criação) de estado.escadas — PR-B1+B2 (#512)"
+    },
     {
       "sha": "45790d748d5163d83beab04c7c20102947bf40be",
       "short_sha": "45790d7",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T17:08:21-03:00",
       "message": "feat(escada): bloqueia exclusão de pavimento referenciado em escada.paradas (#494)"
-    },
-    {
-      "sha": "ed2ae1ec83931be2e9fcbe524615b01864a8c82f",
-      "short_sha": "ed2ae1e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T14:34:59-03:00",
-      "message": "feat(escada): estado sem_laje e reserva_implantacao no contrato de trecho (#493)"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 156,
+    "validator_count": 157,
     "validators": [
       {
         "name": "test:base",
@@ -1708,6 +1708,10 @@
       {
         "name": "test:escada-abertura-integridade",
         "command": "node tests/validar_escada_abertura_integridade.mjs"
+      },
+      {
+        "name": "test:modal-escada",
+        "command": "node tests/validar_modal_escada.mjs"
       },
       {
         "name": "test:btn-limpar-escada-dependente",
@@ -2066,7 +2070,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34720668869",
-    "run_number": "677"
+    "run_id": "34721021249",
+    "run_number": "678"
   }
 }
