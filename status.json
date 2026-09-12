@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-12T17:27:51Z",
+  "generated_at": "2026-09-12T18:17:12Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
-    "short_sha": "1fe3d3d",
+    "sha": "45790d748d5163d83beab04c7c20102947bf40be",
+    "short_sha": "45790d7",
     "author": "Joanez Gaspar",
-    "date": "2026-09-12T14:21:08-03:00",
-    "message": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento (#509)"
+    "date": "2026-09-12T15:16:53-03:00",
+    "message": "feat(escada): uniformiza retorno de criarEscada/editarEscada em { ok, motivo, escada } (#511)"
   },
   "commits": [
+    {
+      "sha": "45790d748d5163d83beab04c7c20102947bf40be",
+      "short_sha": "45790d7",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-12T15:16:53-03:00",
+      "message": "feat(escada): uniformiza retorno de criarEscada/editarEscada em { ok, motivo, escada } (#511)"
+    },
     {
       "sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
       "short_sha": "1fe3d3d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T14:34:59-03:00",
       "message": "feat(escada): estado sem_laje e reserva_implantacao no contrato de trecho (#493)"
-    },
-    {
-      "sha": "2601272cd123ff6fb5854a58e1477f39007617a5",
-      "short_sha": "2601272",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T13:34:25-03:00",
-      "message": "docs(escada): atualiza ESCADA_01_ESCOPO.md com controller já mergeado (#489) (#490)"
     }
   ],
   "development": {
@@ -2066,7 +2066,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34708287369",
-    "run_number": "674"
+    "run_id": "34710712171",
+    "run_number": "675"
   }
 }
