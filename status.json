@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-12T17:10:34Z",
+  "generated_at": "2026-09-12T17:21:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "575d24e841637ee39b6864e15ea838674dcd099e",
-    "short_sha": "575d24e",
+    "sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
+    "short_sha": "1fe3d3d",
     "author": "Joanez Gaspar",
-    "date": "2026-09-12T02:31:50-03:00",
-    "message": "feat(escada): bloqueia atualizarPavimento(cota_m) que quebre ordem vertical da escada (#508)"
+    "date": "2026-09-12T14:21:08-03:00",
+    "message": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento (#509)"
   },
   "commits": [
+    {
+      "sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
+      "short_sha": "1fe3d3d",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-12T14:21:08-03:00",
+      "message": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento (#509)"
+    },
     {
       "sha": "575d24e841637ee39b6864e15ea838674dcd099e",
       "short_sha": "575d24e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T13:34:25-03:00",
       "message": "docs(escada): atualiza ESCADA_01_ESCOPO.md com controller já mergeado (#489) (#490)"
-    },
-    {
-      "sha": "8de2232a2a43736d1b1f9ee6c7a88db4c2dd0932",
-      "short_sha": "8de2232",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T12:55:16-03:00",
-      "message": "feat(escada): ESCADA-01 — controller de domínio (criar/editar/remover) (#489)"
     }
   ],
   "development": {
@@ -2066,7 +2066,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34707420817",
-    "run_number": "672"
+    "run_id": "34707971834",
+    "run_number": "673"
   }
 }
