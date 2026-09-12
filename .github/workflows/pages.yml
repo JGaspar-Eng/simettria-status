@@ -35,6 +35,9 @@ jobs:
           cp status_sequence.js public/status_sequence.js
           cp status_coordination.js public/status_coordination.js
           cp coordination.json public/coordination.json
+          if [ -f preview-pr492.html ]; then
+            cp preview-pr492.html public/preview-pr492.html
+          fi
 
       - name: Regressão do contrato do artefato
         run: python3 tests/test_contrato_artefato.py
