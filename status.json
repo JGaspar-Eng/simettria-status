@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-12T02:21:05Z",
+  "generated_at": "2026-09-12T04:30:33Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d60d8410f9a09756b51be8d62cf882cbb8998cf5",
-    "short_sha": "d60d841",
+    "sha": "d948dc663066fe4ddf2acb696f85227448a40632",
+    "short_sha": "d948dc6",
     "author": "Joanez Gaspar",
-    "date": "2026-09-11T17:08:21-03:00",
-    "message": "feat(escada): bloqueia exclusão de pavimento referenciado em escada.paradas (#494)"
+    "date": "2026-09-12T01:30:14-03:00",
+    "message": "feat(escada): fail-closed em materialização/reset de modelo com escada dependente (#495)"
   },
   "commits": [
+    {
+      "sha": "d948dc663066fe4ddf2acb696f85227448a40632",
+      "short_sha": "d948dc6",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-12T01:30:14-03:00",
+      "message": "feat(escada): fail-closed em materialização/reset de modelo com escada dependente (#495)"
+    },
     {
       "sha": "d60d8410f9a09756b51be8d62cf882cbb8998cf5",
       "short_sha": "d60d841",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T01:27:55-03:00",
       "message": "feat(aberturas): F6 — recorte 3D do vazio na laje (motor Babylon oficial) (#469)"
-    },
-    {
-      "sha": "21c9d9da16488151434f2ea64b981a8004a7e95d",
-      "short_sha": "21c9d9d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T01:10:37-03:00",
-      "message": "chore: remove marcador temporário acidental"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 152,
+    "validator_count": 154,
     "validators": [
       {
         "name": "test:base",
@@ -1696,6 +1696,14 @@
       {
         "name": "test:escada-pavimento-integridade",
         "command": "node tests/validar_escada_pavimento_integridade.mjs"
+      },
+      {
+        "name": "test:escada-materializacao-reset-integridade",
+        "command": "node tests/validar_escada_materializacao_reset_integridade.mjs"
+      },
+      {
+        "name": "test:btn-limpar-escada-dependente",
+        "command": "node tests/validar_btn_limpar_escada_dependente.mjs"
       },
       {
         "name": "test:abertura-geometria",
@@ -2050,7 +2058,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34667401773",
-    "run_number": "657"
+    "run_id": "34673171835",
+    "run_number": "658"
   }
 }
