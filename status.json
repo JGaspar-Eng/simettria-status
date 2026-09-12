@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-12T05:27:27Z",
+  "generated_at": "2026-09-12T05:32:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "88351f226c3d692fb3ac1943e57178ef183bfdd1",
-    "short_sha": "88351f2",
+    "sha": "575d24e841637ee39b6864e15ea838674dcd099e",
+    "short_sha": "575d24e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-12T02:14:18-03:00",
-    "message": "feat(orq): encadeia pipeline global linear demonstrado (#504)"
+    "date": "2026-09-12T02:31:50-03:00",
+    "message": "feat(escada): bloqueia atualizarPavimento(cota_m) que quebre ordem vertical da escada (#508)"
   },
   "commits": [
+    {
+      "sha": "575d24e841637ee39b6864e15ea838674dcd099e",
+      "short_sha": "575d24e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-12T02:31:50-03:00",
+      "message": "feat(escada): bloqueia atualizarPavimento(cota_m) que quebre ordem vertical da escada (#508)"
+    },
     {
       "sha": "88351f226c3d692fb3ac1943e57178ef183bfdd1",
       "short_sha": "88351f2",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T12:55:16-03:00",
       "message": "feat(escada): ESCADA-01 — controller de domínio (criar/editar/remover) (#489)"
-    },
-    {
-      "sha": "743fa379df0451a0ff98655d143d3ca8f395ce7e",
-      "short_sha": "743fa37",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T12:54:40-03:00",
-      "message": "feat(orq): resolve sistema estrutural global linear (#487)"
     }
   ],
   "development": {
@@ -1431,7 +1431,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 155,
+    "validator_count": 156,
     "validators": [
       {
         "name": "test:base",
@@ -1696,6 +1696,10 @@
       {
         "name": "test:escada-pavimento-integridade",
         "command": "node tests/validar_escada_pavimento_integridade.mjs"
+      },
+      {
+        "name": "test:escada-pavimento-cota-integridade",
+        "command": "node tests/validar_escada_pavimento_cota_integridade.mjs"
       },
       {
         "name": "test:escada-materializacao-reset-integridade",
@@ -2062,7 +2066,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34675620144",
-    "run_number": "669"
+    "run_id": "34675819128",
+    "run_number": "670"
   }
 }
