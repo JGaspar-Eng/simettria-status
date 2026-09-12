@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-12T04:53:17Z",
+  "generated_at": "2026-09-12T05:04:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d8463e289383c2986964e61227ebd1330a29aaca",
-    "short_sha": "d8463e2",
+    "sha": "dbb56e5e2e7bbe1599df9fc8b53a409731c6cf77",
+    "short_sha": "dbb56e5",
     "author": "Joanez Gaspar",
-    "date": "2026-09-12T01:48:49-03:00",
-    "message": "feat(escada): bloqueia remoção de abertura referenciada por escada.trechos (#505)"
+    "date": "2026-09-12T02:04:33-03:00",
+    "message": "feat(orq): recupera esforços globais e traço de equilíbrio (#497)"
   },
   "commits": [
+    {
+      "sha": "dbb56e5e2e7bbe1599df9fc8b53a409731c6cf77",
+      "short_sha": "dbb56e5",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-12T02:04:33-03:00",
+      "message": "feat(orq): recupera esforços globais e traço de equilíbrio (#497)"
+    },
     {
       "sha": "d8463e289383c2986964e61227ebd1330a29aaca",
       "short_sha": "d8463e2",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-11T09:37:32-03:00",
       "message": "feat(escada): ESCADA-01 — contrato, estado, lifecycle e persistência (#484)"
-    },
-    {
-      "sha": "8066c9d63ff34956b3994cf643a1ba7ac8757d63",
-      "short_sha": "8066c9d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-11T09:34:22-03:00",
-      "message": "feat(orq): adapta geometria oficial de viga ao kernel espacial (#479)"
     }
   ],
   "development": {
@@ -2062,7 +2062,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34674165754",
-    "run_number": "663"
+    "run_id": "34674652933",
+    "run_number": "664"
   }
 }
