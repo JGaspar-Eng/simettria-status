@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIMETTRIA — Preview PR #492</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#f5f7f9;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#bar{height:36px;display:flex;align-items:center;justify-content:center;background:#fff3cd;color:#664d03;border-bottom:1px solid #ffecb5;font-size:12px;font-weight:700;letter-spacing:.02em}
+#frame{display:block;width:100%;height:calc(100% - 37px);border:0;visibility:hidden}
+#error{display:none;padding:24px;color:#842029;background:#f8d7da;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<div id="bar">PREVIEW VISUAL — PR #492 · HEAD 3f1a386 · não é a versão publicada</div>
+<div id="error"></div>
+<iframe id="frame" src="index.html?preview=pr492"></iframe>
+<script>
+(async function(){
+  const frame=document.getElementById('frame');
+  const error=document.getElementById('error');
+  function fail(e){error.style.display='block';error.textContent='Falha ao montar preview da PR #492:\n'+(e&&e.message?e.message:String(e));}
+  frame.addEventListener('load',async function(){
+    try{
+      const [statusResp,scriptResp]=await Promise.all([
+        fetch('status.json?t='+Date.now(),{cache:'no-store'}),
+        fetch('https://raw.githubusercontent.com/JGaspar-Eng/simettria/3f1a386f0f0b6beae72ef090cb28758a7af0dac5/docs/status_areas.js?t='+Date.now(),{cache:'no-store'})
+      ]);
+      if(!statusResp.ok) throw new Error('status.json HTTP '+statusResp.status);
+      if(!scriptResp.ok) throw new Error('status_areas.js da PR HTTP '+scriptResp.status);
+      const status=await statusResp.json();
+      const codigo=await scriptResp.text();
+      const doc=frame.contentDocument;
+      const win=frame.contentWindow;
+      const script=doc.createElement('script');
+      script.textContent=codigo+'\n//# sourceURL=status_areas-pr492.js';
+      doc.body.appendChild(script);
+      await new Promise(r=>setTimeout(r,50));
+      doc.dispatchEvent(new win.CustomEvent('simettria:status',{detail:status}));
+      frame.style.visibility='visible';
+    }catch(e){fail(e);}
+  },{once:true});
+})();
+</script>
+</body>
+</html>
