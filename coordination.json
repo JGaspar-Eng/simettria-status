@@ -1,13 +1,13 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-09-12T18:25:16.325332+00:00",
+  "generated_at": "2026-09-12T21:43:42.349122+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
     "policy": "latest_per_front_then_pr_plus_real_pr_state"
   },
   "summary": {
-    "fronts": 165,
+    "fronts": 166,
     "active": 27,
     "closed": 96
   },
@@ -874,6 +874,25 @@
   "recent": [
     {
       "from": "CLAUDE",
+      "front": "(sugestão futura, sem frente aberta) — dimensões editáveis ao criar `abertura`",
+      "status": "BACKLOG  CONTEXTO: DURANTE A VALIDAÇÃO VISUAL DA PR #512 (MODAL DE CADASTRO DE ESCADA), O GASPAR SUGERIU UMA MELHORIA NO FLUXO JÁ EXISTENTE DE CRIAÇÃO DE `ABERTURA` (MODO ABERTURA, DOIS CLIQUES NA PRANCHETA): AO SELECIONAR O PRIMEIRO E O SEGUNDO PONTO DO RETÂNGULO, MOSTRAR AS DIMENSÕES RESULTANTES (LARGURA × ALTURA) E PERMITIR EDIÇÃO FINA DESSES VALORES EM VEZ DE DEPENDER SÓ DA PRECISÃO DO CLIQUE/ARRASTE NO CANVAS.  FORA DE ESCOPO DA #512 (QUE SÓ TOCA `MODAL_ESCADA.JS`/WIRING DE ESCADA, SEM TOCAR O FLUXO DE `ABERTURA`). POSSÍVEL EXTENSÃO FUTURA A OUTROS ELEMENTOS DESENHÁVEIS POR DOIS PONTOS (LAJE, POR EXEMPLO), A AVALIAR QUANDO ESSA FRENTE FOR ABERTA.  NENHUM BRANCH ABERTO, NENHUMA IMPLEMENTAÇÃO INICIADA.",
+      "base": null,
+      "head": null,
+      "pr": null,
+      "visual_evidence": null,
+      "user_visual_approval": null,
+      "merge_policy": null,
+      "comment_id": 5648877601,
+      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5648877601",
+      "updated_at": "2026-09-12T21:41:25Z",
+      "suite_gaps": [],
+      "result": [],
+      "next_for_chatgpt": [],
+      "ci": [],
+      "next_for_claude": []
+    },
+    {
+      "from": "CLAUDE",
       "front": "ESCADA-01 — uniformiza retorno de criarEscada/editarEscada (PR-A) — PR #511",
       "status": "MERGED/DONE",
       "base": "1fe3d3d (main, pós-#509)",
@@ -1170,33 +1189,6 @@
         "pontos de parada acordados (decisão arquitetural nova, conflito real,",
         "ambiguidade de modelagem, ou qualquer mudança visual/UI)."
       ]
-    },
-    {
-      "from": "CHATGPT",
-      "front": "ORQ-GLOBAL-SOLVER-01",
-      "status": "MERGED",
-      "base": "a61365760489fd883ae6a081aad9b37f7c8c966d ISSUE: #488",
-      "head": "35fb0742360ad850c9ce72fcd29f69ad9247765c",
-      "pr": "#487",
-      "visual_evidence": "NOT_REQUIRED",
-      "user_visual_approval": "NOT_REQUIRED",
-      "merge_policy": "AUTO_OK se CI verde no HEAD exato e sem colisão.",
-      "comment_id": 5634644368,
-      "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5634644368",
-      "updated_at": "2026-09-11T12:47:02Z",
-      "suite_gaps": [],
-      "result": [
-        "PR #486 (montagem K global) mergeada em main: a613657",
-        "nova unidade resolve Kff·uf=Ff com vínculos explícitos e fail-closed",
-        "reações permanecem marcadas apenas como matemáticas/intermediárias; `reacoes_globais_demonstradas` não é promovido"
-      ],
-      "next_for_chatgpt": [],
-      "ci": [],
-      "next_for_claude": [
-        "manter ESCADA fora dos arquivos acima; avisar antes de tocar core/calculation com potencial de colisão"
-      ],
-      "pr_state": "closed",
-      "pr_merged": true
     }
   ]
 }
