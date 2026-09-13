@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-13T19:25:06Z",
+  "generated_at": "2026-09-13T19:28:58Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ebc31695c63374c65c22d34e3d44f10f87eebf5c",
-    "short_sha": "ebc3169",
+    "sha": "28eda63fc3b9342b0b8bac5a7fa89711069e0983",
+    "short_sha": "28eda63",
     "author": "Joanez Gaspar",
-    "date": "2026-09-13T16:21:42-03:00",
-    "message": "feat(escada): edição e remoção de estado.escadas no modal — PR-B3 (#513)"
+    "date": "2026-09-13T16:28:41-03:00",
+    "message": "feat(orq): conecta pipeline global demonstrado ao executor (#507)"
   },
   "commits": [
+    {
+      "sha": "28eda63fc3b9342b0b8bac5a7fa89711069e0983",
+      "short_sha": "28eda63",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-13T16:28:41-03:00",
+      "message": "feat(orq): conecta pipeline global demonstrado ao executor (#507)"
+    },
     {
       "sha": "ebc31695c63374c65c22d34e3d44f10f87eebf5c",
       "short_sha": "ebc3169",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-12T01:48:49-03:00",
       "message": "feat(escada): bloqueia remoção de abertura referenciada por escada.trechos (#505)"
-    },
-    {
-      "sha": "d948dc663066fe4ddf2acb696f85227448a40632",
-      "short_sha": "d948dc6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-12T01:30:14-03:00",
-      "message": "feat(escada): fail-closed em materialização/reset de modelo com escada dependente (#495)"
     }
   ],
   "development": {
@@ -2070,7 +2070,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34777614275",
-    "run_number": "683"
+    "run_id": "34777803291",
+    "run_number": "684"
   }
 }
