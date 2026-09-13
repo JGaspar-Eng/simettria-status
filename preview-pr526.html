@@ -20,26 +20,33 @@ html,body{margin:0;width:100%;height:100%;background:#f5f7f9;font-family:system-
   const frame=document.getElementById('frame');
   const error=document.getElementById('error');
   function fail(e){error.style.display='block';error.textContent='Falha ao montar preview da PR #526:\n'+(e&&e.message?e.message:String(e));}
+  function decodeGithubContent(payload){
+    if(!payload || payload.encoding!=='base64' || !payload.content) throw new Error('conteúdo GitHub inválido');
+    const bin=atob(payload.content.replace(/\s/g,''));
+    const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));
+    return new TextDecoder('utf-8').decode(bytes);
+  }
   frame.addEventListener('load',async function(){
     try{
-      const base='https://raw.githubusercontent.com/JGaspar-Eng/simettria/a5ef20e702ce105fec8f02634cb01a5f375a9f0d/docs/';
+      const ref='a5ef20e702ce105fec8f02634cb01a5f375a9f0d';
+      const api='https://api.github.com/repos/JGaspar-Eng/simettria/contents/docs/';
       const [statusResp,devResp,scriptResp]=await Promise.all([
         fetch('status.json?t='+Date.now(),{cache:'no-store'}),
-        fetch(base+'DEVELOPMENT_STATUS.json?t='+Date.now(),{cache:'no-store'}),
-        fetch(base+'status_areas.js?t='+Date.now(),{cache:'no-store'})
+        fetch(api+'DEVELOPMENT_STATUS.json?ref='+ref,{cache:'no-store',headers:{Accept:'application/vnd.github+json'}}),
+        fetch(api+'status_areas.js?ref='+ref,{cache:'no-store',headers:{Accept:'application/vnd.github+json'}})
       ]);
       if(!statusResp.ok) throw new Error('status.json HTTP '+statusResp.status);
       if(!devResp.ok) throw new Error('DEVELOPMENT_STATUS.json da PR HTTP '+devResp.status);
       if(!scriptResp.ok) throw new Error('status_areas.js da PR HTTP '+scriptResp.status);
       const status=await statusResp.json();
-      const dev=await devResp.json();
+      const dev=JSON.parse(decodeGithubContent(await devResp.json()));
+      const codigo=decodeGithubContent(await scriptResp.json());
       status.development=status.development||{};
       status.development.execution=dev.execution;
       const currentArea=Number(status.development?.current?.area?.number);
       const activeAreas=new Set([currentArea]);
       (dev.execution?.active||[]).forEach(x=>{ if(x&&x.area!=null) activeAreas.add(Number(x.area)); });
       (status.development.epics||[]).forEach(epic=>{ epic.active=activeAreas.has(Number(epic.number)); });
-      const codigo=await scriptResp.text();
       const doc=frame.contentDocument;
       const win=frame.contentWindow;
       const script=doc.createElement('script');
