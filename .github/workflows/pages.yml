@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - preview/pr526
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
@@ -37,6 +38,9 @@ jobs:
           cp coordination.json public/coordination.json
           if [ -f preview-pr492.html ]; then
             cp preview-pr492.html public/preview-pr492.html
+          fi
+          if [ -f preview-pr526.html ]; then
+            cp preview-pr526.html public/preview-pr526.html
           fi
 
       - name: Regressão do contrato do artefato
