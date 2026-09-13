@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-13T20:19:43Z",
+  "generated_at": "2026-09-13T21:52:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "28eda63fc3b9342b0b8bac5a7fa89711069e0983",
-    "short_sha": "28eda63",
+    "sha": "c167b0e22aa2b0087cb09f65f90c81d6e5549d24",
+    "short_sha": "c167b0e",
     "author": "Joanez Gaspar",
-    "date": "2026-09-13T16:28:41-03:00",
-    "message": "feat(orq): conecta pipeline global demonstrado ao executor (#507)"
+    "date": "2026-09-13T18:52:25-03:00",
+    "message": "fix(painel): reconcilia frentes reais e detalhamento operacional (#526)"
   },
   "commits": [
+    {
+      "sha": "c167b0e22aa2b0087cb09f65f90c81d6e5549d24",
+      "short_sha": "c167b0e",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-13T18:52:25-03:00",
+      "message": "fix(painel): reconcilia frentes reais e detalhamento operacional (#526)"
+    },
     {
       "sha": "28eda63fc3b9342b0b8bac5a7fa89711069e0983",
       "short_sha": "28eda63",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-12T02:04:33-03:00",
       "message": "feat(orq): recupera esforços globais e traço de equilíbrio (#497)"
-    },
-    {
-      "sha": "d8463e289383c2986964e61227ebd1330a29aaca",
-      "short_sha": "d8463e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-12T01:48:49-03:00",
-      "message": "feat(escada): bloqueia remoção de abertura referenciada por escada.trechos (#505)"
     }
   ],
   "development": {
@@ -98,37 +98,73 @@
       "panel": {
         "active": [
           {
-            "code": "ABERTURAS-01",
-            "title": "Vazios estruturais em laje (infraestrutura para escadas)",
+            "code": "ESCADA-DIM-01-NORMATIVA",
+            "title": "Auditoria normativa e mapa de impacto da geometria física de escadas; sem branch de implementação",
             "state": "in_progress",
             "area": 1,
-            "source": "docs/ABERTURAS_01_ESCOPO.md / issue #231"
-          },
-          {
-            "code": "FUND-MATERIALIZACAO-STALE",
-            "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
-            "state": "in_progress",
-            "area": 11,
-            "source": "issue #231"
+            "source": "NBR 9077:2025 + NBR 9050:2020 VC 2021 / coordenação #231"
           },
           {
             "code": "ORQ-ESTRUT-01",
-            "title": "Orquestração estrutural global e infraestrutura automática",
+            "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
             "state": "in_progress",
             "area": 4,
-            "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
+            "source": "issue #514 / PR #524 / issue #231"
           }
         ],
-        "planned": [],
-        "policy": "O painel operacional mostra somente frentes em execução e planejadas. Itens concluídos permanecem apenas no histórico técnico e não são renderizados no painel. `active` é sempre derivado de execution.active pelo gerador (scripts/gerar_status_dashboard.py) — não editar este campo manualmente, ver issue #379."
+        "planned": [
+          {
+            "code": "FUND-MATERIALIZACAO-GLOBAL",
+            "title": "Generalizar integração da infraestrutura quando as reações globais reais estiverem demonstradas por apoio",
+            "state": "planned",
+            "area": 11,
+            "source": "Área 11 / cadeia ORQ global"
+          }
+        ],
+        "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
         {
-          "code": "ABERTURAS-01",
-          "title": "Vazios estruturais em laje (infraestrutura para escadas)",
+          "code": "ORQ-GLOBAL-ENTRADAS-BASE-01",
+          "title": "Materializar DOFs e mapa explícito nó-base↔pilar; PR #524 com CI verde aguardando revisão cruzada",
+          "state": "in_progress",
+          "area": 4,
+          "source": "issue #515 / PR #524"
+        },
+        {
+          "code": "ORQ-GLOBAL-ENTRADAS-MODELO-01",
+          "title": "Materializar entradas autoritativas do modelo real para o pipeline global",
+          "state": "in_progress",
+          "area": 4,
+          "source": "issue #514"
+        },
+        {
+          "code": "ORQ-GLOBAL-INTEGRACAO-01",
+          "title": "Pipeline global demonstrado conectado ao executor ORQ",
+          "state": "completed",
+          "area": 4,
+          "source": "PR #507 / main 28eda63"
+        },
+        {
+          "code": "ESCADA-01",
+          "title": "Cadastro, edição e exclusão de escadas estruturadas, sem geometria física 2D/3D",
+          "state": "completed",
+          "area": 1,
+          "source": "PRs #511, #512, #513"
+        },
+        {
+          "code": "ESCADA-DIM-01-NORMATIVA",
+          "title": "Levantamento vigente NBR 9077:2025 e NBR 9050:2020 VC 2021 antes da geometria física",
           "state": "in_progress",
           "area": 1,
-          "source": "docs/ABERTURAS_01_ESCOPO.md / issue #231"
+          "source": "coordenação atual / fontes normativas primárias fornecidas pelo usuário"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidação, recálculo, edição, memorial, 2D/3D e trace da sapata materializada",
+          "state": "completed",
+          "area": 11,
+          "source": "PRs #458-#461 / reconciliação #463"
         },
         {
           "code": "DIM-VIGA-SEM-FLEXAO-ASMAX",
@@ -157,74 +193,46 @@
           "state": "completed",
           "area": 3,
           "source": "PR #374 / issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-JSON",
-          "title": "Persistência/JSON versionada da sapata materializada com compatibilidade retroativa",
-          "state": "completed",
-          "area": 11,
-          "source": "PR #299 / issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-MODELO",
-          "title": "Criação/atualização da sapata autorizada no modelo estrutural",
-          "state": "completed",
-          "area": 11,
-          "source": "PR #297 / issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-ORQ",
-          "title": "Orquestração da cadeia NOR-FUND-01→05 para materialização da sapata",
-          "state": "completed",
-          "area": 11,
-          "source": "PR #295 / issue #231"
-        },
-        {
-          "code": "NOR-FUND-05-HARDENING",
-          "title": "Quitação final das dívidas técnicas do detalhamento executivo da sapata",
-          "state": "completed",
-          "area": 11,
-          "source": "PR #291 / issue #231"
-        },
-        {
-          "code": "ORQ-ESTRUT-01",
-          "title": "Orquestração estrutural global e infraestrutura automática",
-          "state": "in_progress",
-          "area": 4,
-          "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
         }
       ],
       "active": [
         {
-          "code": "ABERTURAS-01",
-          "title": "Vazios estruturais em laje (infraestrutura para escadas)",
+          "code": "ESCADA-DIM-01-NORMATIVA",
+          "title": "Auditoria normativa e mapa de impacto da geometria física de escadas; sem branch de implementação",
           "state": "in_progress",
           "area": 1,
-          "source": "docs/ABERTURAS_01_ESCOPO.md / issue #231"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidação e recálculo da sapata após mudança de carga, geometria, solo ou materiais",
-          "state": "in_progress",
-          "area": 11,
-          "source": "issue #231"
+          "source": "NBR 9077:2025 + NBR 9050:2020 VC 2021 / coordenação #231"
         },
         {
           "code": "ORQ-ESTRUT-01",
-          "title": "Orquestração estrutural global e infraestrutura automática",
+          "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
           "state": "in_progress",
           "area": 4,
-          "source": "docs/ORQ_ESTRUT_01_ARQUITETURA.md"
+          "source": "issue #514 / PR #524 / issue #231"
         }
       ],
       "completed": [
+        {
+          "code": "ESCADA-01",
+          "title": "Contrato, cadastro, edição e exclusão de escadas estruturadas; geometria física permanece fora desta fase",
+          "state": "completed",
+          "area": 1,
+          "source": "PRs #511, #512, #513"
+        },
+        {
+          "code": "ORQ-GLOBAL-INTEGRACAO-01",
+          "title": "Pipeline global demonstrado conectado ao executor ORQ sem fallback silencioso",
+          "state": "completed",
+          "area": 4,
+          "source": "PR #507 / main 28eda63"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-STALE",
+          "title": "Invalidar/recalcular e expor edição, memorial, 2D/3D e trace da sapata materializada",
+          "state": "completed",
+          "area": 11,
+          "source": "PRs #458-#461 / PR #463 reconcilia status"
+        },
         {
           "code": "DIM-VIGA-SEM-FLEXAO-ASMAX",
           "title": "Face de viga sem momento reporta As,max geométrico e para de arrastar a verificação ELU para INDETERMINADO",
@@ -312,21 +320,230 @@
       ],
       "next": [
         {
-          "code": "ORQ-ESTRUT-01",
-          "title": "Concluir o fluxo visual integrado de cálculo e infraestrutura",
-          "state": "in_progress",
-          "area": 4,
-          "source": "docs/DIM_FUND_01_CHECKPOINT.md"
+          "code": "ESCADA-DIM-01-FASE-A",
+          "title": "Vocabulário + serviço backend de geometria de degraus somente após aprovação da matriz normativa vigente",
+          "state": "planned",
+          "area": 1,
+          "source": "auditoria ESCADA-DIM-01"
         },
         {
-          "code": "FUND-MATERIALIZACAO-STALE",
-          "title": "Invalidar e recalcular a sapata após mudanças relevantes de entrada",
-          "state": "in_progress",
+          "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
+          "title": "Conectividade, orientação e propriedades espaciais dos elementos reais",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #516"
+        },
+        {
+          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+          "title": "Ações nodais e equivalentes do modelo sem carga implícita",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #517"
+        },
+        {
+          "code": "ORQ-GLOBAL-CONVENCAO-01",
+          "title": "Convenção explícita de eixos, componente normal, sinal e unidades",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #518"
+        },
+        {
+          "code": "FUND-MATERIALIZACAO-GLOBAL",
+          "title": "Integrar fundações às reações globais reais por apoio quando a cadeia ORQ estiver demonstrada",
+          "state": "planned",
           "area": 11,
-          "source": "issue #231"
+          "source": "reconciliação Área 11 / ORQ global"
         }
       ],
       "checklists": [
+        {
+          "code": "AREA1-ESCADA",
+          "title": "Área 1 — Escadas: cadastro concluído e geometria física seguinte",
+          "area": 1,
+          "items": [
+            {
+              "code": "ESCADA-CONTRATO",
+              "title": "Contrato estrutural e integridade de escadas",
+              "state": "completed",
+              "source": "PR #511"
+            },
+            {
+              "code": "ESCADA-CADASTRO",
+              "title": "Modal de cadastro de escada",
+              "state": "completed",
+              "source": "PR #512"
+            },
+            {
+              "code": "ESCADA-EDICAO",
+              "title": "Edição, preservação de nao_informada e exclusão",
+              "state": "completed",
+              "source": "PR #513"
+            },
+            {
+              "code": "ESCADA-DIM-NORMA",
+              "title": "Matriz normativa da geometria física com NBR 9077:2025 e NBR 9050:2020 VC 2021",
+              "state": "in_progress",
+              "source": "auditoria normativa; sem código"
+            },
+            {
+              "code": "ESCADA-DIM-BACKEND",
+              "title": "Serviço backend de lances, degraus e patamares",
+              "state": "planned",
+              "source": "ESCADA-DIM-01 Fase A"
+            },
+            {
+              "code": "ESCADA-DIM-ENVELOPE",
+              "title": "Compatibilidade geométrica com abertura/reserva de implantação",
+              "state": "planned",
+              "source": "ESCADA-DIM-01 Fase B"
+            },
+            {
+              "code": "ESCADA-DIM-UI",
+              "title": "Exibição textual do resultado",
+              "state": "planned",
+              "source": "ESCADA-DIM-01 Fase C"
+            },
+            {
+              "code": "ESCADA-DIM-2D",
+              "title": "Representação 2D dos lances e patamares",
+              "state": "planned",
+              "source": "ESCADA-DIM-01 Fase D"
+            },
+            {
+              "code": "ESCADA-DIM-3D",
+              "title": "Representação 3D da escada física",
+              "state": "planned",
+              "source": "ESCADA-DIM-01 Fase E"
+            }
+          ]
+        },
+        {
+          "code": "AREA4-ORQ-GLOBAL",
+          "title": "Área 4 — ORQ estrutural global: cadeia demonstrada e materialização do modelo",
+          "area": 4,
+          "items": [
+            {
+              "code": "DOF-GLOBAL",
+              "title": "Contrato e enumeração de DOFs globais com vínculos explícitos",
+              "state": "completed",
+              "source": "ORQ-GLOBAL-DOF-01 / PRs #465-#466"
+            },
+            {
+              "code": "KERNEL-12X12",
+              "title": "Kernel de rigidez de pórtico espacial 12×12",
+              "state": "completed",
+              "source": "rigidez_portico_espacial.js"
+            },
+            {
+              "code": "ADAPT-PILAR",
+              "title": "Adaptador oficial de pilares ao kernel espacial",
+              "state": "completed",
+              "source": "PR #477"
+            },
+            {
+              "code": "ADAPT-VIGA",
+              "title": "Adaptador oficial de vigas ao kernel espacial",
+              "state": "completed",
+              "source": "PR #479"
+            },
+            {
+              "code": "MONTAGEM-K",
+              "title": "Transformação local→global e montagem da matriz K global",
+              "state": "completed",
+              "source": "PR #486 / issue #485"
+            },
+            {
+              "code": "SOLVER-LINEAR",
+              "title": "Solver estrutural global linear com vínculos explícitos",
+              "state": "completed",
+              "source": "PRs #487-#488"
+            },
+            {
+              "code": "RECUP-EQUILIBRIO",
+              "title": "Recuperação de esforços e traço de equilíbrio global",
+              "state": "completed",
+              "source": "PR #497 / issue #496"
+            },
+            {
+              "code": "REACOES-GLOBAIS",
+              "title": "Autoridade explícita de reações globais por pilar",
+              "state": "completed",
+              "source": "PR #500 / issue #498"
+            },
+            {
+              "code": "PIPELINE-GLOBAL",
+              "title": "Pipeline demonstrado montagem→solver→recuperação→equilíbrio→reações",
+              "state": "completed",
+              "source": "PR #504 / issue #501"
+            },
+            {
+              "code": "INTEGRACAO-EXECUTOR",
+              "title": "Pipeline global conectado ao executor ORQ sem fallback silencioso",
+              "state": "completed",
+              "source": "PR #507 / issue #506"
+            },
+            {
+              "code": "ENTRADAS-MODELO",
+              "title": "Autoridade de entradas reais do modelo para contexto.analise_global",
+              "state": "in_progress",
+              "source": "issue #514"
+            },
+            {
+              "code": "ENTRADAS-BASE",
+              "title": "DOFs e mapa explícito nó-base↔pilar; CI verde, aguardando revisão cruzada",
+              "state": "in_progress",
+              "source": "issue #515 / PR #524 HEAD 1eda5f61"
+            },
+            {
+              "code": "ENTRADAS-BASE-TESTE",
+              "title": "Regressões da materialização parcial integradas ao gate oficial",
+              "state": "in_progress",
+              "source": "issue #522 / PR #524"
+            },
+            {
+              "code": "ENTRADAS-BASE-DOC",
+              "title": "Rastreabilidade das parcelas ainda não materializadas",
+              "state": "planned",
+              "source": "issue #523"
+            },
+            {
+              "code": "ELEMENTOS-MODELO",
+              "title": "Autoridade de elementos espaciais reais",
+              "state": "planned",
+              "source": "issue #516"
+            },
+            {
+              "code": "MECANICA-GJ",
+              "title": "Autoridade mecânica G/J para pilares e vigas; E de viga quando aplicável",
+              "state": "planned",
+              "source": "issue #519"
+            },
+            {
+              "code": "TOPOLOGIA-VERTICAL",
+              "title": "Conectividade vertical explícita dos trechos de pilar",
+              "state": "planned",
+              "source": "issue #520"
+            },
+            {
+              "code": "ORIENTACAO-ESPACIAL",
+              "title": "Base local 3D explícita, unitária, ortogonal e dextrógira",
+              "state": "planned",
+              "source": "issue #521"
+            },
+            {
+              "code": "ACOES-MODELO",
+              "title": "Ações nodais e equivalentes com proveniência completa",
+              "state": "planned",
+              "source": "issue #517"
+            },
+            {
+              "code": "CONVENCAO-UNIDADES",
+              "title": "Componente normal, sinal e unidades globais explícitos",
+              "state": "planned",
+              "source": "issue #518"
+            }
+          ]
+        },
         {
           "code": "AREA11-DEBT",
           "title": "Área 11 — Dívidas técnicas antes da materialização",
@@ -397,36 +614,36 @@
             {
               "code": "STALE",
               "title": "Invalidar e recalcular corretamente após mudança de carga, geometria, solo ou materiais",
-              "state": "in_progress"
+              "state": "completed"
             },
             {
               "code": "EDIT",
               "title": "Editar/remover/recalcular preservando proveniência e campos governados pelo cálculo",
-              "state": "planned"
+              "state": "completed"
             },
             {
               "code": "MEMORIAL",
               "title": "Memorial executivo com fórmulas, substituições, unidades, normas e quantitativos",
-              "state": "planned"
+              "state": "completed"
             },
             {
               "code": "2D",
               "title": "Representação 2D das armaduras pelo contrato oficial, sem recálculo no renderer",
-              "state": "planned"
+              "state": "completed"
             },
             {
               "code": "3D",
               "title": "Representação 3D com modo fantasma, filtros e cores semânticas",
-              "state": "planned"
+              "state": "completed"
             },
             {
               "code": "TRACE",
               "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
-              "state": "planned"
+              "state": "completed"
             },
             {
               "code": "GLOBAL",
-              "title": "Generalizar contrato de detalhamento para vigas, pilares e lajes",
+              "title": "Generalizar integração para consumir reações globais reais por apoio quando a cadeia ORQ estiver completa",
               "state": "planned"
             }
           ]
@@ -1257,7 +1474,7 @@
         "percent": 15,
         "note": "~15%, indicador de contagem dos trabalhos cadastrados — **não** é medida de aderência normativa. O repositório comprova o escopo declarado por cada módulo, não a fração de cada norma efetivamente coberta.",
         "status": "measured",
-        "active": true,
+        "active": false,
         "work": {
           "done": 2,
           "partial": 5,
@@ -2070,7 +2287,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34780407057",
-    "run_number": "687"
+    "run_id": "34785106819",
+    "run_number": "688"
   }
 }
