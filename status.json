@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-14T22:31:05Z",
+  "generated_at": "2026-09-14T22:32:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
-    "short_sha": "f8a2b22",
+    "sha": "da3a08fafd028b3db964ac0ce56f0d2d41c61a45",
+    "short_sha": "da3a08f",
     "author": "Joanez Gaspar",
-    "date": "2026-09-14T18:56:44-03:00",
-    "message": "feat(escada): Fase B — compatibilidade planar com reserva do trecho (#529)"
+    "date": "2026-09-14T19:31:25-03:00",
+    "message": "feat(orq): deriva orientação espacial auditável (#531)"
   },
   "commits": [
+    {
+      "sha": "da3a08fafd028b3db964ac0ce56f0d2d41c61a45",
+      "short_sha": "da3a08f",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-14T19:31:25-03:00",
+      "message": "feat(orq): deriva orientação espacial auditável (#531)"
+    },
     {
       "sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
       "short_sha": "f8a2b22",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-12T15:16:53-03:00",
       "message": "feat(escada): uniformiza retorno de criarEscada/editarEscada em { ok, motivo, escada } (#511)"
-    },
-    {
-      "sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
-      "short_sha": "1fe3d3d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-12T14:21:08-03:00",
-      "message": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento (#509)"
     }
   ],
   "development": {
@@ -2287,7 +2287,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34904423993",
-    "run_number": "714"
+    "run_id": "34904557876",
+    "run_number": "716"
   }
 }
