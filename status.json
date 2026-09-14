@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-14T12:44:59Z",
+  "generated_at": "2026-09-14T15:53:26Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c167b0e22aa2b0087cb09f65f90c81d6e5549d24",
-    "short_sha": "c167b0e",
+    "sha": "c0f31a46ad07dfb9bb2d2c4af828107db10cba8d",
+    "short_sha": "c0f31a4",
     "author": "Joanez Gaspar",
-    "date": "2026-09-13T18:52:25-03:00",
-    "message": "fix(painel): reconcilia frentes reais e detalhamento operacional (#526)"
+    "date": "2026-09-14T12:52:51-03:00",
+    "message": "feat(orq): materializa DOFs e mapa apoio-pilar do modelo (#524)"
   },
   "commits": [
+    {
+      "sha": "c0f31a46ad07dfb9bb2d2c4af828107db10cba8d",
+      "short_sha": "c0f31a4",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-14T12:52:51-03:00",
+      "message": "feat(orq): materializa DOFs e mapa apoio-pilar do modelo (#524)"
+    },
     {
       "sha": "c167b0e22aa2b0087cb09f65f90c81d6e5549d24",
       "short_sha": "c167b0e",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-12T02:10:03-03:00",
       "message": "feat(orq): demonstra autoridade de reações globais por pilar (#500)"
-    },
-    {
-      "sha": "dbb56e5e2e7bbe1599df9fc8b53a409731c6cf77",
-      "short_sha": "dbb56e5",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-12T02:04:33-03:00",
-      "message": "feat(orq): recupera esforços globais e traço de equilíbrio (#497)"
     }
   ],
   "development": {
@@ -2287,7 +2287,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34845110242",
-    "run_number": "691"
+    "run_id": "34865081591",
+    "run_number": "693"
   }
 }
