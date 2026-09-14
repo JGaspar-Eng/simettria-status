@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-14T21:51:56Z",
+  "generated_at": "2026-09-14T21:57:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dcea30cf3da28f21dcf500ba6406563483079699",
-    "short_sha": "dcea30c",
+    "sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
+    "short_sha": "f8a2b22",
     "author": "Joanez Gaspar",
-    "date": "2026-09-14T18:21:57-03:00",
-    "message": "feat(orq): demonstra topologia vertical de pilares (#528)"
+    "date": "2026-09-14T18:56:44-03:00",
+    "message": "feat(escada): Fase B — compatibilidade planar com reserva do trecho (#529)"
   },
   "commits": [
+    {
+      "sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
+      "short_sha": "f8a2b22",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-14T18:56:44-03:00",
+      "message": "feat(escada): Fase B — compatibilidade planar com reserva do trecho (#529)"
+    },
     {
       "sha": "dcea30cf3da28f21dcf500ba6406563483079699",
       "short_sha": "dcea30c",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-12T14:21:08-03:00",
       "message": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento (#509)"
-    },
-    {
-      "sha": "575d24e841637ee39b6864e15ea838674dcd099e",
-      "short_sha": "575d24e",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-12T02:31:50-03:00",
-      "message": "feat(escada): bloqueia atualizarPavimento(cota_m) que quebre ordem vertical da escada (#508)"
     }
   ],
   "development": {
@@ -2287,7 +2287,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34901103006",
-    "run_number": "709"
+    "run_id": "34901549983",
+    "run_number": "710"
   }
 }
