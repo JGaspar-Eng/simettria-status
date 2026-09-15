@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-15T03:29:51Z",
+  "generated_at": "2026-09-15T11:51:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6fa2afb540504c1280d9fa23e2f601fa985e3d0c",
-    "short_sha": "6fa2afb",
+    "sha": "65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57",
+    "short_sha": "65bf260",
     "author": "Joanez Gaspar",
-    "date": "2026-09-14T19:52:02-03:00",
-    "message": "feat(orq): consolida propriedades mecânicas espaciais G/J (#532)"
+    "date": "2026-09-15T08:51:27-03:00",
+    "message": "feat(storage): introduz schema documental v3 explícito (#533)"
   },
   "commits": [
+    {
+      "sha": "65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57",
+      "short_sha": "65bf260",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-15T08:51:27-03:00",
+      "message": "feat(storage): introduz schema documental v3 explícito (#533)"
+    },
     {
       "sha": "6fa2afb540504c1280d9fa23e2f601fa985e3d0c",
       "short_sha": "6fa2afb",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-13T16:21:42-03:00",
       "message": "feat(escada): edição e remoção de estado.escadas no modal — PR-B3 (#513)"
-    },
-    {
-      "sha": "ef369df8110bdfd04fbaa312115b3effc4c128ec",
-      "short_sha": "ef369df",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-12T18:49:01-03:00",
-      "message": "feat(escada): modal de cadastro (criação) de estado.escadas — PR-B1+B2 (#512)"
     }
   ],
   "development": {
@@ -1648,7 +1648,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 157,
+    "validator_count": 158,
     "validators": [
       {
         "name": "test:base",
@@ -1656,7 +1656,11 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs"
+      },
+      {
+        "name": "test:schema-documental",
+        "command": "node tests/validar_schema_documental_pre1a0.mjs"
       },
       {
         "name": "test:calc",
@@ -2287,7 +2291,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34925183427",
-    "run_number": "723"
+    "run_id": "34965569325",
+    "run_number": "724"
   }
 }
