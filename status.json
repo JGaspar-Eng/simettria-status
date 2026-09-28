@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T13:19:28Z",
+  "generated_at": "2026-09-28T22:12:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "230830d651a4fb01238bda46fa9bc1d4dccf097c",
-    "short_sha": "230830d",
-    "author": "Joanez Gaspar",
-    "date": "2026-09-28T08:42:37-03:00",
-    "message": "feat(planilhas): adiciona benchmarks legados lote 03"
+    "sha": "63e0d76b698de1edb52e22b61ee6025f03bd0fd4",
+    "short_sha": "63e0d76",
+    "author": "JGaspar-Eng",
+    "date": "2026-09-28T10:18:00-03:00",
+    "message": "feat(schema): adiciona resolvedor semantico de laje pre-1a1"
   },
   "commits": [
+    {
+      "sha": "63e0d76b698de1edb52e22b61ee6025f03bd0fd4",
+      "short_sha": "63e0d76",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T10:18:00-03:00",
+      "message": "feat(schema): adiciona resolvedor semantico de laje pre-1a1"
+    },
     {
       "sha": "230830d651a4fb01238bda46fa9bc1d4dccf097c",
       "short_sha": "230830d",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-14T13:15:04-03:00",
       "message": "feat(escada): ESCADA-DIM-01 Fase A — geometria preliminar (NBR9050) (#527)"
-    },
-    {
-      "sha": "c0f31a46ad07dfb9bb2d2c4af828107db10cba8d",
-      "short_sha": "c0f31a4",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-14T12:52:51-03:00",
-      "message": "feat(orq): materializa DOFs e mapa apoio-pilar do modelo (#524)"
     }
   ],
   "development": {
@@ -1648,7 +1648,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 159,
+    "validator_count": 160,
     "validators": [
       {
         "name": "test:base",
@@ -1656,11 +1656,15 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs"
       },
       {
         "name": "test:schema-documental",
         "command": "node tests/validar_schema_documental_pre1a0.mjs"
+      },
+      {
+        "name": "test:resolvedor-laje-pre1a1",
+        "command": "node tests/validar_resolvedor_laje_pre1a1.mjs"
       },
       {
         "name": "test:calc",
@@ -2295,7 +2299,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36427772928",
-    "run_number": "730"
+    "run_id": "36490991034",
+    "run_number": "731"
   }
 }
