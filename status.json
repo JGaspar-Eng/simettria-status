@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T22:35:21Z",
+  "generated_at": "2026-09-28T22:41:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f62559557bdd6d04ab1bacb12489a50ca44add3a",
-    "short_sha": "f625595",
+    "sha": "b52f625a3bcb1afa5731bfbf8576f4585b6112a1",
+    "short_sha": "b52f625",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T19:35:00-03:00",
-    "message": "docs-escada-abertura-contrato"
+    "date": "2026-09-28T19:41:21-03:00",
+    "message": "feat-escada-compatibilidade-abertura"
   },
   "commits": [
+    {
+      "sha": "b52f625a3bcb1afa5731bfbf8576f4585b6112a1",
+      "short_sha": "b52f625",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:41:21-03:00",
+      "message": "feat-escada-compatibilidade-abertura"
+    },
     {
       "sha": "f62559557bdd6d04ab1bacb12489a50ca44add3a",
       "short_sha": "f625595",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-28T08:03:33-03:00",
       "message": "feat(planilhas): adiciona benchmarks legados lote 02"
-    },
-    {
-      "sha": "61749765a8d1caf773806be7ffccd3d72fd9bdb8",
-      "short_sha": "6174976",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-27T23:23:10-03:00",
-      "message": "feat(planilhas): adiciona benchmarks legados para lajes e vigas"
     }
   ],
   "development": {
@@ -107,11 +107,11 @@
         ],
         "planned": [
           {
-            "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
-            "title": "Implementar serviço puro de compatibilidade abertura↔passagem conforme ADR-0018",
+            "code": "ESCADA-DIM-01-PASSAGEM-GEOMETRIA",
+            "title": "Produzir de forma explícita a região de passagem da escada na faixa vertical de cada laje",
             "state": "planned",
             "area": 1,
-            "source": "ADR-0018"
+            "source": "ADR-0018 / contrato do backend de abertura"
           },
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
@@ -124,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
+          "title": "Serviço puro fail-closed de compatibilidade entre abertura real e passagem declarada por laje",
+          "state": "completed",
+          "area": 1,
+          "source": "tests/validar_compatibilidade_abertura_escada.mjs"
+        },
         {
           "code": "ESCADA-DIM-01-ABERTURA-CONTRATO",
           "title": "Contrato de compatibilidade da passagem da escada com abertura real de laje",
@@ -233,6 +240,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
+          "title": "Compatibilidade abertura↔passagem por laje com identidade e faixa vertical autoritativas",
+          "state": "completed",
+          "area": 1,
+          "source": "tests/validar_compatibilidade_abertura_escada.mjs"
+        },
         {
           "code": "ESCADA-DIM-01-ABERTURA-CONTRATO",
           "title": "Contrato de passagem/recorte da escada em abertura real de laje",
@@ -376,15 +390,15 @@
       ],
       "next": [
         {
-          "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
-          "title": "Implementar serviço puro de compatibilidade abertura↔passagem conforme ADR-0018",
+          "code": "ESCADA-DIM-01-PASSAGEM-GEOMETRIA",
+          "title": "Produzir a região XY da passagem da escada para cada faixa vertical de laje, sem inferência de abertura",
           "state": "planned",
           "area": 1,
-          "source": "ADR-0018"
+          "source": "ADR-0018 / backend de abertura"
         },
         {
           "code": "ESCADA-DIM-01-FASE-C",
-          "title": "Exibição textual do resultado somente após o backend de compatibilidade com abertura real",
+          "title": "Exibição textual do resultado somente após a geometria de passagem estar demonstrada",
           "state": "planned",
           "area": 1,
           "source": "checklist ESCADA-DIM-01"
@@ -469,6 +483,12 @@
             {
               "code": "ESCADA-DIM-ABERTURA-BACKEND",
               "title": "Serviço puro de compatibilidade abertura↔passagem",
+              "state": "completed",
+              "source": "tests/validar_compatibilidade_abertura_escada.mjs"
+            },
+            {
+              "code": "ESCADA-DIM-PASSAGEM-GEOMETRIA",
+              "title": "Autoridade geométrica da região de passagem por laje",
               "state": "planned",
               "source": "ADR-0018"
             },
@@ -1723,7 +1743,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 162,
+    "validator_count": 163,
     "validators": [
       {
         "name": "test:base",
@@ -1731,7 +1751,11 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs"
+      },
+      {
+        "name": "test:escada-abertura",
+        "command": "node tests/validar_compatibilidade_abertura_escada.mjs"
       },
       {
         "name": "test:schema-documental",
@@ -2382,7 +2406,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36493246626",
-    "run_number": "733"
+    "run_id": "36493873096",
+    "run_number": "734"
   }
 }
