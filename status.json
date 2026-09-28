@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T23:19:07Z",
+  "generated_at": "2026-09-28T23:32:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0fea587036123fa0f9f64c0a2c6cd6c2453772dc",
-    "short_sha": "0fea587",
+    "sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
+    "short_sha": "cd963b5",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T20:16:41-03:00",
-    "message": "test-status-remove-assert-duplicado"
+    "date": "2026-09-28T20:30:25-03:00",
+    "message": "feat-orq-acoes-vigas-elu"
   },
   "commits": [
+    {
+      "sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
+      "short_sha": "cd963b5",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T20:30:25-03:00",
+      "message": "feat-orq-acoes-vigas-elu"
+    },
     {
       "sha": "0fea587036123fa0f9f64c0a2c6cd6c2453772dc",
       "short_sha": "0fea587",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:18:51-03:00",
       "message": "fix(laje): distinguir contrato invalido de ausencia"
-    },
-    {
-      "sha": "6c13877a83e400aadf6bfc361f2cd80150b30e25",
-      "short_sha": "6c13877",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:18:51-03:00",
-      "message": "feat(laje): definir intervalo vertical canonico v3"
     }
   ],
   "development": {
@@ -98,6 +98,13 @@
       "panel": {
         "active": [
           {
+            "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+            "title": "Ações globais do modelo — ações equivalentes de vigas demonstradas; vetor nodal e não-vigas ainda pendentes",
+            "state": "in_progress",
+            "area": 4,
+            "source": "issue #517 / ADR-0019"
+          },
+          {
             "code": "ORQ-ESTRUT-01",
             "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
             "state": "in_progress",
@@ -107,11 +114,18 @@
         ],
         "planned": [
           {
-            "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-            "title": "Materializar ações nodais e equivalentes dos elementos reais sem carga implícita",
+            "code": "ORQ-GLOBAL-ACOES-PILARES-01",
+            "title": "Materializar ações equivalentes próprias dos pilares sem promover carga_kn legado a NEd",
             "state": "planned",
             "area": 4,
-            "source": "issue #517"
+            "source": "issue #517 / ADR-0019"
+          },
+          {
+            "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
+            "title": "Definir autoridade de diafragma/distribuição nodal para resultantes de vento por pavimento",
+            "state": "planned",
+            "area": 4,
+            "source": "issue #517 / ADR-0019"
           },
           {
             "code": "ORQ-GLOBAL-CONVENCAO-01",
@@ -138,6 +152,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-ACOES-VIGAS-ELU-01",
+          "title": "Ações equivalentes consistentes das vigas segmentadas derivadas exclusivamente de viga.w_elu READY",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0019 / tests/validar_orq_acoes_globais_modelo_v1.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
           "title": "Materialização dos elementos espaciais reais com terminais de pilar e segmentação de vigas por nós explícitos",
@@ -260,6 +281,13 @@
       ],
       "active": [
         {
+          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+          "title": "Ações globais do modelo — ações equivalentes de vigas demonstradas; vetor nodal e não-vigas ainda pendentes",
+          "state": "in_progress",
+          "area": 4,
+          "source": "issue #517 / ADR-0019"
+        },
+        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
           "state": "in_progress",
@@ -268,6 +296,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-ACOES-VIGAS-ELU-01",
+          "title": "Vetor equivalente local ELU de vigas segmentadas com proveniência de viga.w_elu",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0019 / tests/validar_orq_acoes_globais_modelo_v1.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
           "title": "Conectividade, orientação e propriedades espaciais materializadas para pilares e vigas do modelo",
@@ -439,11 +474,18 @@
       ],
       "next": [
         {
-          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-          "title": "Ações nodais e equivalentes do modelo sem carga implícita",
+          "code": "ORQ-GLOBAL-ACOES-PILARES-01",
+          "title": "Ações equivalentes próprias dos pilares, preservando fail-closed para carga legada",
           "state": "planned",
           "area": 4,
-          "source": "issue #517"
+          "source": "issue #517 / ADR-0019"
+        },
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
+          "title": "Contrato de diafragma/distribuição nodal antes de inserir vento no pórtico global",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #517 / ADR-0019"
         },
         {
           "code": "ORQ-GLOBAL-CONVENCAO-01",
@@ -681,10 +723,28 @@
               "source": "issue #521 / autoridade orientacao_portico_espacial.js"
             },
             {
+              "code": "ACOES-VIGAS-ELU",
+              "title": "Ações equivalentes consistentes das vigas segmentadas por viga.w_elu READY",
+              "state": "completed",
+              "source": "ADR-0019"
+            },
+            {
+              "code": "ACOES-PILARES",
+              "title": "Ações equivalentes próprias dos pilares",
+              "state": "planned",
+              "source": "issue #517 / ADR-0019"
+            },
+            {
+              "code": "DIAFRAGMA-VENTO",
+              "title": "Autoridade de distribuição nodal dos resultantes de vento",
+              "state": "planned",
+              "source": "issue #517 / ADR-0019"
+            },
+            {
               "code": "ACOES-MODELO",
               "title": "Ações nodais e equivalentes com proveniência completa",
-              "state": "planned",
-              "source": "issue #517"
+              "state": "in_progress",
+              "source": "issue #517 / ADR-0019"
             },
             {
               "code": "CONVENCAO-UNIDADES",
@@ -1798,7 +1858,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 163,
+    "validator_count": 164,
     "validators": [
       {
         "name": "test:base",
@@ -2409,6 +2469,10 @@
         "command": "node tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
       },
       {
+        "name": "test:orq-acoes-modelo",
+        "command": "node tests/validar_orq_acoes_globais_modelo_v1.mjs"
+      },
+      {
         "name": "test:orq-apoios-infraestrutura",
         "command": "node tests/validar_apoios_infraestrutura_orq_estrut_01.mjs"
       },
@@ -2461,7 +2525,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36497324912",
-    "run_number": "742"
+    "run_id": "36498548113",
+    "run_number": "744"
   }
 }
