@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T22:24:27Z",
+  "generated_at": "2026-09-28T22:35:21Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "881b55486bccd24d9a5965ce7b54daef4b6fecf8",
-    "short_sha": "881b554",
+    "sha": "f62559557bdd6d04ab1bacb12489a50ca44add3a",
+    "short_sha": "f625595",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T19:23:58-03:00",
-    "message": "docs-status-pre1b1"
+    "date": "2026-09-28T19:35:00-03:00",
+    "message": "docs-escada-abertura-contrato"
   },
   "commits": [
+    {
+      "sha": "f62559557bdd6d04ab1bacb12489a50ca44add3a",
+      "short_sha": "f625595",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:35:00-03:00",
+      "message": "docs-escada-abertura-contrato"
+    },
     {
       "sha": "881b55486bccd24d9a5965ce7b54daef4b6fecf8",
       "short_sha": "881b554",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-27T23:23:10-03:00",
       "message": "feat(planilhas): adiciona benchmarks legados para lajes e vigas"
-    },
-    {
-      "sha": "65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57",
-      "short_sha": "65bf260",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-15T08:51:27-03:00",
-      "message": "feat(storage): introduz schema documental v3 explícito (#533)"
     }
   ],
   "development": {
@@ -98,13 +98,6 @@
       "panel": {
         "active": [
           {
-            "code": "ESCADA-DIM-01-NORMATIVA",
-            "title": "Auditoria normativa e mapa de impacto da geometria física de escadas; sem branch de implementação",
-            "state": "in_progress",
-            "area": 1,
-            "source": "NBR 9077:2025 + NBR 9050:2020 VC 2021 / coordenação #231"
-          },
-          {
             "code": "ORQ-ESTRUT-01",
             "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
             "state": "in_progress",
@@ -113,6 +106,13 @@
           }
         ],
         "planned": [
+          {
+            "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
+            "title": "Implementar serviço puro de compatibilidade abertura↔passagem conforme ADR-0018",
+            "state": "planned",
+            "area": 1,
+            "source": "ADR-0018"
+          },
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
             "title": "Generalizar integração da infraestrutura quando as reações globais reais estiverem demonstradas por apoio",
@@ -124,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ESCADA-DIM-01-ABERTURA-CONTRATO",
+          "title": "Contrato de compatibilidade da passagem da escada com abertura real de laje",
+          "state": "completed",
+          "area": 1,
+          "source": "ADR-0018"
+        },
         {
           "code": "PRE-1B1-INTERVALO-PLANOS",
           "title": "Resolver de forma canônica e fail-closed o intervalo vertical entre pavimentos no schema documental v3",
@@ -167,11 +174,18 @@
           "source": "PRs #511, #512, #513"
         },
         {
-          "code": "ESCADA-DIM-01-NORMATIVA",
-          "title": "Levantamento vigente NBR 9077:2025 e NBR 9050:2020 VC 2021 antes da geometria física",
-          "state": "in_progress",
+          "code": "ESCADA-DIM-01-FASE-B",
+          "title": "Compatibilidade planar da projeção preliminar com a reserva de implantação do trecho",
+          "state": "completed",
           "area": 1,
-          "source": "coordenação atual / fontes normativas primárias fornecidas pelo usuário"
+          "source": "PR #529 / main f8a2b22"
+        },
+        {
+          "code": "ESCADA-DIM-01-FASE-A",
+          "title": "Geometria preliminar de espelhos, pisos e patamares com rastreabilidade normativa",
+          "state": "completed",
+          "area": 1,
+          "source": "PR #527 / main ffded91"
         },
         {
           "code": "FUND-MATERIALIZACAO-STALE",
@@ -211,13 +225,6 @@
       ],
       "active": [
         {
-          "code": "ESCADA-DIM-01-NORMATIVA",
-          "title": "Auditoria normativa e mapa de impacto da geometria física de escadas; sem branch de implementação",
-          "state": "in_progress",
-          "area": 1,
-          "source": "NBR 9077:2025 + NBR 9050:2020 VC 2021 / coordenação #231"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
           "state": "in_progress",
@@ -226,6 +233,27 @@
         }
       ],
       "completed": [
+        {
+          "code": "ESCADA-DIM-01-ABERTURA-CONTRATO",
+          "title": "Contrato de passagem/recorte da escada em abertura real de laje",
+          "state": "completed",
+          "area": 1,
+          "source": "ADR-0018"
+        },
+        {
+          "code": "ESCADA-DIM-01-FASE-B",
+          "title": "Compatibilidade planar da projeção preliminar com a reserva de implantação do trecho",
+          "state": "completed",
+          "area": 1,
+          "source": "PR #529 / main f8a2b22"
+        },
+        {
+          "code": "ESCADA-DIM-01-FASE-A",
+          "title": "Geometria preliminar de espelhos, pisos e patamares com rastreabilidade normativa",
+          "state": "completed",
+          "area": 1,
+          "source": "PR #527 / main ffded91"
+        },
         {
           "code": "PRE-1B1-INTERVALO-PLANOS",
           "title": "Resolver de forma canônica e fail-closed o intervalo vertical entre pavimentos no schema documental v3",
@@ -348,11 +376,18 @@
       ],
       "next": [
         {
-          "code": "ESCADA-DIM-01-FASE-A",
-          "title": "Vocabulário + serviço backend de geometria de degraus somente após aprovação da matriz normativa vigente",
+          "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
+          "title": "Implementar serviço puro de compatibilidade abertura↔passagem conforme ADR-0018",
           "state": "planned",
           "area": 1,
-          "source": "auditoria ESCADA-DIM-01"
+          "source": "ADR-0018"
+        },
+        {
+          "code": "ESCADA-DIM-01-FASE-C",
+          "title": "Exibição textual do resultado somente após o backend de compatibilidade com abertura real",
+          "state": "planned",
+          "area": 1,
+          "source": "checklist ESCADA-DIM-01"
         },
         {
           "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
@@ -410,20 +445,32 @@
             {
               "code": "ESCADA-DIM-NORMA",
               "title": "Matriz normativa da geometria física com NBR 9077:2025 e NBR 9050:2020 VC 2021",
-              "state": "in_progress",
-              "source": "auditoria normativa; sem código"
+              "state": "completed",
+              "source": "PR #527 / issue #231"
             },
             {
               "code": "ESCADA-DIM-BACKEND",
               "title": "Serviço backend de lances, degraus e patamares",
-              "state": "planned",
-              "source": "ESCADA-DIM-01 Fase A"
+              "state": "completed",
+              "source": "PR #527 / main ffded91"
             },
             {
               "code": "ESCADA-DIM-ENVELOPE",
-              "title": "Compatibilidade geométrica com abertura/reserva de implantação",
+              "title": "Compatibilidade geométrica com reserva de implantação",
+              "state": "completed",
+              "source": "PR #529 / main f8a2b22"
+            },
+            {
+              "code": "ESCADA-DIM-ABERTURA-CONTRATO",
+              "title": "Contrato de passagem/recorte da escada em abertura real de laje",
+              "state": "completed",
+              "source": "ADR-0018"
+            },
+            {
+              "code": "ESCADA-DIM-ABERTURA-BACKEND",
+              "title": "Serviço puro de compatibilidade abertura↔passagem",
               "state": "planned",
-              "source": "ESCADA-DIM-01 Fase B"
+              "source": "ADR-0018"
             },
             {
               "code": "ESCADA-DIM-UI",
@@ -798,7 +845,7 @@
         "percent": 50,
         "note": "~50%.",
         "status": "measured",
-        "active": true,
+        "active": false,
         "work": {
           "done": 5,
           "partial": 3,
@@ -2335,7 +2382,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36492163853",
-    "run_number": "732"
+    "run_id": "36493246626",
+    "run_number": "733"
   }
 }
