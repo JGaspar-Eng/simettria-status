@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T22:41:40Z",
+  "generated_at": "2026-09-28T22:44:52Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b52f625a3bcb1afa5731bfbf8576f4585b6112a1",
-    "short_sha": "b52f625",
+    "sha": "8c21ec6a341d4d353e45eb39981f9969b5173e04",
+    "short_sha": "8c21ec6",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T19:41:21-03:00",
-    "message": "feat-escada-compatibilidade-abertura"
+    "date": "2026-09-28T19:44:31-03:00",
+    "message": "docs-escada-geometria-fisica-auditoria"
   },
   "commits": [
+    {
+      "sha": "8c21ec6a341d4d353e45eb39981f9969b5173e04",
+      "short_sha": "8c21ec6",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:44:31-03:00",
+      "message": "docs-escada-geometria-fisica-auditoria"
+    },
     {
       "sha": "b52f625a3bcb1afa5731bfbf8576f4585b6112a1",
       "short_sha": "b52f625",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-28T08:42:37-03:00",
       "message": "feat(planilhas): adiciona benchmarks legados lote 03"
-    },
-    {
-      "sha": "4685ab6317dd6e21c0d5e483d772e7f5f161ea81",
-      "short_sha": "4685ab6",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-28T08:03:33-03:00",
-      "message": "feat(planilhas): adiciona benchmarks legados lote 02"
     }
   ],
   "development": {
@@ -107,11 +107,11 @@
         ],
         "planned": [
           {
-            "code": "ESCADA-DIM-01-PASSAGEM-GEOMETRIA",
-            "title": "Produzir de forma explícita a região de passagem da escada na faixa vertical de cada laje",
+            "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
+            "title": "Definir a geometria física/estrutural mínima do trecho antes de derivar passagem em laje",
             "state": "planned",
             "area": 1,
-            "source": "ADR-0018 / contrato do backend de abertura"
+            "source": "docs/ESCADA_GEOMETRIA_FISICA_AUDITORIA.md"
           },
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
@@ -124,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ESCADA-01-GEOMETRIA-FISICA-AUDITORIA",
+          "title": "Auditoria confirmou ausência de espessura/volume físico suficiente para derivar passagem em laje sem hipótese oculta",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ESCADA_GEOMETRIA_FISICA_AUDITORIA.md"
+        },
         {
           "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
           "title": "Serviço puro fail-closed de compatibilidade entre abertura real e passagem declarada por laje",
@@ -240,6 +247,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ESCADA-01-GEOMETRIA-FISICA-AUDITORIA",
+          "title": "Auditoria da informação física necessária para derivar passagem da escada em laje",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ESCADA_GEOMETRIA_FISICA_AUDITORIA.md"
+        },
         {
           "code": "ESCADA-DIM-01-ABERTURA-BACKEND",
           "title": "Compatibilidade abertura↔passagem por laje com identidade e faixa vertical autoritativas",
@@ -390,11 +404,18 @@
       ],
       "next": [
         {
-          "code": "ESCADA-DIM-01-PASSAGEM-GEOMETRIA",
-          "title": "Produzir a região XY da passagem da escada para cada faixa vertical de laje, sem inferência de abertura",
+          "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
+          "title": "Definir tipologia, espessura, intradorso e autoridade XYZ mínima do trecho",
           "state": "planned",
           "area": 1,
-          "source": "ADR-0018 / backend de abertura"
+          "source": "docs/ESCADA_GEOMETRIA_FISICA_AUDITORIA.md"
+        },
+        {
+          "code": "ESCADA-DIM-01-PASSAGEM-GEOMETRIA",
+          "title": "Produzir a região XY da passagem por laje após existir geometria física autoritativa",
+          "state": "planned",
+          "area": 1,
+          "source": "ADR-0018 / auditoria de geometria física"
         },
         {
           "code": "ESCADA-DIM-01-FASE-C",
@@ -485,6 +506,12 @@
               "title": "Serviço puro de compatibilidade abertura↔passagem",
               "state": "completed",
               "source": "tests/validar_compatibilidade_abertura_escada.mjs"
+            },
+            {
+              "code": "ESCADA-GEOMETRIA-FISICA-CONTRATO",
+              "title": "Contrato da geometria física/estrutural do trecho",
+              "state": "planned",
+              "source": "docs/ESCADA_GEOMETRIA_FISICA_AUDITORIA.md"
             },
             {
               "code": "ESCADA-DIM-PASSAGEM-GEOMETRIA",
@@ -2406,7 +2433,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36493873096",
-    "run_number": "734"
+    "run_id": "36494167004",
+    "run_number": "735"
   }
 }
