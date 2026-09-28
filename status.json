@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-09-28T22:44:52Z",
+  "generated_at": "2026-09-28T23:17:02Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8c21ec6a341d4d353e45eb39981f9969b5173e04",
-    "short_sha": "8c21ec6",
+    "sha": "0fea587036123fa0f9f64c0a2c6cd6c2453772dc",
+    "short_sha": "0fea587",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T19:44:31-03:00",
-    "message": "docs-escada-geometria-fisica-auditoria"
+    "date": "2026-09-28T20:16:41-03:00",
+    "message": "test-status-remove-assert-duplicado"
   },
   "commits": [
+    {
+      "sha": "0fea587036123fa0f9f64c0a2c6cd6c2453772dc",
+      "short_sha": "0fea587",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T20:16:41-03:00",
+      "message": "test-status-remove-assert-duplicado"
+    },
+    {
+      "sha": "b1f347d79175f9f78ed0918b9469244ba2d963a8",
+      "short_sha": "b1f347d",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T20:16:15-03:00",
+      "message": "feat-orq-global-elementos-modelo"
+    },
     {
       "sha": "8c21ec6a341d4d353e45eb39981f9969b5173e04",
       "short_sha": "8c21ec6",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:18:51-03:00",
       "message": "feat(laje): definir intervalo vertical canonico v3"
-    },
-    {
-      "sha": "63e0d76b698de1edb52e22b61ee6025f03bd0fd4",
-      "short_sha": "63e0d76",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T10:18:00-03:00",
-      "message": "feat(schema): adiciona resolvedor semantico de laje pre-1a1"
-    },
-    {
-      "sha": "230830d651a4fb01238bda46fa9bc1d4dccf097c",
-      "short_sha": "230830d",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-28T08:42:37-03:00",
-      "message": "feat(planilhas): adiciona benchmarks legados lote 03"
     }
   ],
   "development": {
@@ -107,6 +107,20 @@
         ],
         "planned": [
           {
+            "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+            "title": "Materializar ações nodais e equivalentes dos elementos reais sem carga implícita",
+            "state": "planned",
+            "area": 4,
+            "source": "issue #517"
+          },
+          {
+            "code": "ORQ-GLOBAL-CONVENCAO-01",
+            "title": "Fixar componente normal, sinal e unidades globais explícitos",
+            "state": "planned",
+            "area": 4,
+            "source": "issue #518"
+          },
+          {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
             "title": "Definir a geometria física/estrutural mínima do trecho antes de derivar passagem em laje",
             "state": "planned",
@@ -124,6 +138,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
+          "title": "Materialização dos elementos espaciais reais com terminais de pilar e segmentação de vigas por nós explícitos",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #516 / tests_support/orq_entradas_modelo_base.mjs"
+        },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-AUDITORIA",
           "title": "Auditoria confirmou ausência de espessura/volume físico suficiente para derivar passagem em laje sem hipótese oculta",
@@ -161,10 +182,10 @@
         },
         {
           "code": "ORQ-GLOBAL-ENTRADAS-BASE-01",
-          "title": "Materializar DOFs e mapa explícito nó-base↔pilar; PR #524 com CI verde aguardando revisão cruzada",
-          "state": "in_progress",
+          "title": "DOFs globais e mapa explícito nó-base↔pilar materializados sem proximidade",
+          "state": "completed",
           "area": 4,
-          "source": "issue #515 / PR #524"
+          "source": "issue #515 / PR #524 / main c0f31a4"
         },
         {
           "code": "ORQ-GLOBAL-ENTRADAS-MODELO-01",
@@ -247,6 +268,20 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
+          "title": "Conectividade, orientação e propriedades espaciais materializadas para pilares e vigas do modelo",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #516 / tests_support/orq_entradas_modelo_base.mjs"
+        },
+        {
+          "code": "ORQ-GLOBAL-ENTRADAS-BASE-01",
+          "title": "DOFs globais e mapa explícito nó-base↔pilar materializados sem proximidade",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #515 / PR #524 / main c0f31a4"
+        },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-AUDITORIA",
           "title": "Auditoria da informação física necessária para derivar passagem da escada em laje",
@@ -404,6 +439,20 @@
       ],
       "next": [
         {
+          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+          "title": "Ações nodais e equivalentes do modelo sem carga implícita",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #517"
+        },
+        {
+          "code": "ORQ-GLOBAL-CONVENCAO-01",
+          "title": "Convenção explícita de eixos, componente normal, sinal e unidades",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #518"
+        },
+        {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
           "title": "Definir tipologia, espessura, intradorso e autoridade XYZ mínima do trecho",
           "state": "planned",
@@ -423,27 +472,6 @@
           "state": "planned",
           "area": 1,
           "source": "checklist ESCADA-DIM-01"
-        },
-        {
-          "code": "ORQ-GLOBAL-ELEMENTOS-MODELO-01",
-          "title": "Conectividade, orientação e propriedades espaciais dos elementos reais",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #516"
-        },
-        {
-          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-          "title": "Ações nodais e equivalentes do modelo sem carga implícita",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #517"
-        },
-        {
-          "code": "ORQ-GLOBAL-CONVENCAO-01",
-          "title": "Convenção explícita de eixos, componente normal, sinal e unidades",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #518"
         },
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
@@ -612,45 +640,45 @@
             },
             {
               "code": "ENTRADAS-BASE",
-              "title": "DOFs e mapa explícito nó-base↔pilar; CI verde, aguardando revisão cruzada",
-              "state": "in_progress",
-              "source": "issue #515 / PR #524 HEAD 1eda5f61"
+              "title": "DOFs e mapa explícito nó-base↔pilar",
+              "state": "completed",
+              "source": "issue #515 / PR #524 / main c0f31a4"
             },
             {
               "code": "ENTRADAS-BASE-TESTE",
               "title": "Regressões da materialização parcial integradas ao gate oficial",
-              "state": "in_progress",
+              "state": "completed",
               "source": "issue #522 / PR #524"
             },
             {
               "code": "ENTRADAS-BASE-DOC",
               "title": "Rastreabilidade das parcelas ainda não materializadas",
-              "state": "planned",
-              "source": "issue #523"
+              "state": "completed",
+              "source": "issue #523 / preparador ORQ fail-closed"
             },
             {
               "code": "ELEMENTOS-MODELO",
-              "title": "Autoridade de elementos espaciais reais",
-              "state": "planned",
-              "source": "issue #516"
+              "title": "Autoridade de elementos espaciais reais, incluindo terminais de pilar e segmentação nodal de vigas",
+              "state": "completed",
+              "source": "issue #516 / tests_support/orq_entradas_modelo_base.mjs"
             },
             {
               "code": "MECANICA-GJ",
               "title": "Autoridade mecânica G/J para pilares e vigas; E de viga quando aplicável",
-              "state": "planned",
-              "source": "issue #519"
+              "state": "completed",
+              "source": "issue #519 / PR #532 / main 6fa2afb"
             },
             {
               "code": "TOPOLOGIA-VERTICAL",
               "title": "Conectividade vertical explícita dos trechos de pilar",
-              "state": "planned",
-              "source": "issue #520"
+              "state": "completed",
+              "source": "issue #520 / PR #528 / main dcea30c"
             },
             {
               "code": "ORIENTACAO-ESPACIAL",
               "title": "Base local 3D explícita, unitária, ortogonal e dextrógira",
-              "state": "planned",
-              "source": "issue #521"
+              "state": "completed",
+              "source": "issue #521 / autoridade orientacao_portico_espacial.js"
             },
             {
               "code": "ACOES-MODELO",
@@ -2433,7 +2461,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36494167004",
-    "run_number": "735"
+    "run_id": "36497141173",
+    "run_number": "736"
   }
 }
