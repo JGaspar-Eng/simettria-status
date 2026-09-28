@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-09-28T22:12:45Z",
+  "generated_at": "2026-09-28T22:24:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "63e0d76b698de1edb52e22b61ee6025f03bd0fd4",
-    "short_sha": "63e0d76",
+    "sha": "881b55486bccd24d9a5965ce7b54daef4b6fecf8",
+    "short_sha": "881b554",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T10:18:00-03:00",
-    "message": "feat(schema): adiciona resolvedor semantico de laje pre-1a1"
+    "date": "2026-09-28T19:23:58-03:00",
+    "message": "docs-status-pre1b1"
   },
   "commits": [
+    {
+      "sha": "881b55486bccd24d9a5965ce7b54daef4b6fecf8",
+      "short_sha": "881b554",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:23:58-03:00",
+      "message": "docs-status-pre1b1"
+    },
+    {
+      "sha": "4185075ca647f64f2d47e3e02bd519e13836d83c",
+      "short_sha": "4185075",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:19:11-03:00",
+      "message": "test(pavimentos): fechar gaps do intervalo vertical"
+    },
+    {
+      "sha": "7a191ccfff002aa569951bbcc660ff371e1080c5",
+      "short_sha": "7a191cc",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:19:11-03:00",
+      "message": "feat(pavimentos): resolver intervalo vertical v3"
+    },
+    {
+      "sha": "0cad1f6a23e6cd357ac4534665cae6f29e4f0d17",
+      "short_sha": "0cad1f6",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:18:51-03:00",
+      "message": "fix(laje): distinguir contrato invalido de ausencia"
+    },
+    {
+      "sha": "6c13877a83e400aadf6bfc361f2cd80150b30e25",
+      "short_sha": "6c13877",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T19:18:51-03:00",
+      "message": "feat(laje): definir intervalo vertical canonico v3"
+    },
     {
       "sha": "63e0d76b698de1edb52e22b61ee6025f03bd0fd4",
       "short_sha": "63e0d76",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-15T08:51:27-03:00",
       "message": "feat(storage): introduz schema documental v3 explícito (#533)"
-    },
-    {
-      "sha": "6fa2afb540504c1280d9fa23e2f601fa985e3d0c",
-      "short_sha": "6fa2afb",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-14T19:52:02-03:00",
-      "message": "feat(orq): consolida propriedades mecânicas espaciais G/J (#532)"
-    },
-    {
-      "sha": "da3a08fafd028b3db964ac0ce56f0d2d41c61a45",
-      "short_sha": "da3a08f",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-14T19:31:25-03:00",
-      "message": "feat(orq): deriva orientação espacial auditável (#531)"
-    },
-    {
-      "sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
-      "short_sha": "f8a2b22",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-14T18:56:44-03:00",
-      "message": "feat(escada): Fase B — compatibilidade planar com reserva do trecho (#529)"
-    },
-    {
-      "sha": "dcea30cf3da28f21dcf500ba6406563483079699",
-      "short_sha": "dcea30c",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-14T18:21:57-03:00",
-      "message": "feat(orq): demonstra topologia vertical de pilares (#528)"
-    },
-    {
-      "sha": "ffded915c9e2b15f57871abb247ae186a58907bd",
-      "short_sha": "ffded91",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-14T13:15:04-03:00",
-      "message": "feat(escada): ESCADA-DIM-01 Fase A — geometria preliminar (NBR9050) (#527)"
     }
   ],
   "development": {
@@ -124,6 +124,20 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "PRE-1B1-INTERVALO-PLANOS",
+          "title": "Resolver de forma canônica e fail-closed o intervalo vertical entre pavimentos no schema documental v3",
+          "state": "completed",
+          "area": 1,
+          "source": "ADR-0017 + tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs"
+        },
+        {
+          "code": "PRE-1A1-SCHEMA-SEMANTICO",
+          "title": "Consolidar schema semântico v3 e resolvedor central de laje sem inferência geométrica",
+          "state": "completed",
+          "area": 1,
+          "source": "ADR-0016 + tests/validar_resolvedor_laje_pre1a1.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ENTRADAS-BASE-01",
           "title": "Materializar DOFs e mapa explícito nó-base↔pilar; PR #524 com CI verde aguardando revisão cruzada",
@@ -212,6 +226,20 @@
         }
       ],
       "completed": [
+        {
+          "code": "PRE-1B1-INTERVALO-PLANOS",
+          "title": "Resolver de forma canônica e fail-closed o intervalo vertical entre pavimentos no schema documental v3",
+          "state": "completed",
+          "area": 1,
+          "source": "ADR-0017 + tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs"
+        },
+        {
+          "code": "PRE-1A1-SCHEMA-SEMANTICO",
+          "title": "Consolidar schema semântico v3 e resolvedor central de laje sem inferência geométrica",
+          "state": "completed",
+          "area": 1,
+          "source": "ADR-0016 + tests/validar_resolvedor_laje_pre1a1.mjs"
+        },
         {
           "code": "ESCADA-01",
           "title": "Contrato, cadastro, edição e exclusão de escadas estruturadas; geometria física permanece fora desta fase",
@@ -1648,7 +1676,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 160,
+    "validator_count": 162,
     "validators": [
       {
         "name": "test:base",
@@ -1656,11 +1684,19 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs"
       },
       {
         "name": "test:schema-documental",
         "command": "node tests/validar_schema_documental_pre1a0.mjs"
+      },
+      {
+        "name": "test:intervalo-vertical-laje",
+        "command": "node tests/validar_intervalo_vertical_laje_pre1a1.mjs"
+      },
+      {
+        "name": "test:intervalo-vertical-pavimentos",
+        "command": "node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs"
       },
       {
         "name": "test:resolvedor-laje-pre1a1",
@@ -2299,7 +2335,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36490991034",
-    "run_number": "731"
+    "run_id": "36492163853",
+    "run_number": "732"
   }
 }
