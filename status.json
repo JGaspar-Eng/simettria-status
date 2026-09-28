@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T23:32:44Z",
+  "generated_at": "2026-09-28T23:42:41Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
-    "short_sha": "cd963b5",
+    "sha": "16d29078a2d4ef2c1f96c14dc653c93dfaf94196",
+    "short_sha": "16d2907",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T20:30:25-03:00",
-    "message": "feat-orq-acoes-vigas-elu"
+    "date": "2026-09-28T20:42:10-03:00",
+    "message": "feat-orq-acoes-pilares"
   },
   "commits": [
+    {
+      "sha": "16d29078a2d4ef2c1f96c14dc653c93dfaf94196",
+      "short_sha": "16d2907",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T20:42:10-03:00",
+      "message": "feat-orq-acoes-pilares"
+    },
     {
       "sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
       "short_sha": "cd963b5",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:19:11-03:00",
       "message": "feat(pavimentos): resolver intervalo vertical v3"
-    },
-    {
-      "sha": "0cad1f6a23e6cd357ac4534665cae6f29e4f0d17",
-      "short_sha": "0cad1f6",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:18:51-03:00",
-      "message": "fix(laje): distinguir contrato invalido de ausencia"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-            "title": "Ações globais do modelo — ações equivalentes de vigas demonstradas; vetor nodal e não-vigas ainda pendentes",
+            "title": "Ações globais do modelo — vigas e peso próprio dos pilares demonstrados; vento nodal ainda pendente",
             "state": "in_progress",
             "area": 4,
             "source": "issue #517 / ADR-0019"
@@ -113,13 +113,6 @@
           }
         ],
         "planned": [
-          {
-            "code": "ORQ-GLOBAL-ACOES-PILARES-01",
-            "title": "Materializar ações equivalentes próprias dos pilares sem promover carga_kn legado a NEd",
-            "state": "planned",
-            "area": 4,
-            "source": "issue #517 / ADR-0019"
-          },
           {
             "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
             "title": "Definir autoridade de diafragma/distribuição nodal para resultantes de vento por pavimento",
@@ -152,6 +145,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-ACOES-PILARES-01",
+          "title": "Peso próprio ELU dos trechos de pilar materializado como ação equivalente axial sem promover carga_kn legado",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0019 / tests/validar_orq_acoes_globais_modelo_v1.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ACOES-VIGAS-ELU-01",
           "title": "Ações equivalentes consistentes das vigas segmentadas derivadas exclusivamente de viga.w_elu READY",
@@ -282,7 +282,7 @@
       "active": [
         {
           "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-          "title": "Ações globais do modelo — ações equivalentes de vigas demonstradas; vetor nodal e não-vigas ainda pendentes",
+          "title": "Ações globais do modelo — vigas e peso próprio dos pilares demonstrados; vento nodal ainda pendente",
           "state": "in_progress",
           "area": 4,
           "source": "issue #517 / ADR-0019"
@@ -296,6 +296,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-ACOES-PILARES-01",
+          "title": "Ação equivalente ELU do peso próprio dos pilares com fail-closed para carga legada",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0019 / tests/validar_orq_acoes_globais_modelo_v1.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ACOES-VIGAS-ELU-01",
           "title": "Vetor equivalente local ELU de vigas segmentadas com proveniência de viga.w_elu",
@@ -473,13 +480,6 @@
         }
       ],
       "next": [
-        {
-          "code": "ORQ-GLOBAL-ACOES-PILARES-01",
-          "title": "Ações equivalentes próprias dos pilares, preservando fail-closed para carga legada",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #517 / ADR-0019"
-        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
           "title": "Contrato de diafragma/distribuição nodal antes de inserir vento no pórtico global",
@@ -731,8 +731,8 @@
             {
               "code": "ACOES-PILARES",
               "title": "Ações equivalentes próprias dos pilares",
-              "state": "planned",
-              "source": "issue #517 / ADR-0019"
+              "state": "completed",
+              "source": "ADR-0019 / tests/validar_orq_acoes_globais_modelo_v1.mjs"
             },
             {
               "code": "DIAFRAGMA-VENTO",
@@ -2525,7 +2525,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36498548113",
-    "run_number": "744"
+    "run_id": "36499395529",
+    "run_number": "745"
   }
 }
