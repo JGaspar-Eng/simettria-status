@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-15T11:53:55Z",
+  "generated_at": "2026-09-28T02:23:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57",
-    "short_sha": "65bf260",
+    "sha": "61749765a8d1caf773806be7ffccd3d72fd9bdb8",
+    "short_sha": "6174976",
     "author": "Joanez Gaspar",
-    "date": "2026-09-15T08:51:27-03:00",
-    "message": "feat(storage): introduz schema documental v3 explícito (#533)"
+    "date": "2026-09-27T23:23:10-03:00",
+    "message": "feat(planilhas): adiciona benchmarks legados para lajes e vigas"
   },
   "commits": [
+    {
+      "sha": "61749765a8d1caf773806be7ffccd3d72fd9bdb8",
+      "short_sha": "6174976",
+      "author": "Joanez Gaspar",
+      "date": "2026-09-27T23:23:10-03:00",
+      "message": "feat(planilhas): adiciona benchmarks legados para lajes e vigas"
+    },
     {
       "sha": "65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57",
       "short_sha": "65bf260",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-09-13T16:28:41-03:00",
       "message": "feat(orq): conecta pipeline global demonstrado ao executor (#507)"
-    },
-    {
-      "sha": "ebc31695c63374c65c22d34e3d44f10f87eebf5c",
-      "short_sha": "ebc3169",
-      "author": "Joanez Gaspar",
-      "date": "2026-09-13T16:21:42-03:00",
-      "message": "feat(escada): edição e remoção de estado.escadas no modal — PR-B3 (#513)"
     }
   ],
   "development": {
@@ -1648,7 +1648,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 158,
+    "validator_count": 159,
     "validators": [
       {
         "name": "test:base",
@@ -1713,6 +1713,10 @@
       {
         "name": "test:laje-conservacao",
         "command": "node tests/validar_conservacao_transferencia_laje_viga.mjs"
+      },
+      {
+        "name": "test:benchmarks-planilhas",
+        "command": "node tests/validar_benchmarks_planilhas_legado.mjs"
       },
       {
         "name": "test:u10b-cobertura-bordas",
@@ -2291,7 +2295,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "34965762561",
-    "run_number": "725"
+    "run_id": "36369616105",
+    "run_number": "726"
   }
 }
