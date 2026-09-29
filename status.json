@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T16:30:31Z",
+  "generated_at": "2026-09-29T16:43:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f45de0939b39d6b51f20c03643ac34a33bd88e7a",
-    "short_sha": "f45de09",
+    "sha": "c84662f716335c1b2fedd34238943fe29ab6240a",
+    "short_sha": "c84662f",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T13:30:10-03:00",
-    "message": "feat-fund-global-acoes-integracao"
+    "date": "2026-09-29T13:43:12-03:00",
+    "message": "feat-fund-global-classificacao-casos"
   },
   "commits": [
+    {
+      "sha": "c84662f716335c1b2fedd34238943fe29ab6240a",
+      "short_sha": "c84662f",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T13:43:12-03:00",
+      "message": "feat-fund-global-classificacao-casos"
+    },
     {
       "sha": "f45de0939b39d6b51f20c03643ac34a33bd88e7a",
       "short_sha": "f45de09",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-29T08:23:19-03:00",
       "message": "feat-orq-diafragma-integracao-mpc"
-    },
-    {
-      "sha": "bb5143d434c1be739ff272d2041764ffd5f5f380",
-      "short_sha": "bb5143d",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T23:13:26-03:00",
-      "message": "feat-orq-diafragma-condensacao"
     }
   ],
   "development": {
@@ -99,19 +99,19 @@
         "active": [
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
-            "title": "Integração da infraestrutura ao envelope global — casos completos conectados ao ORQ; definir tratamento normativo das ações não axiais",
+            "title": "Integração da infraestrutura ao envelope global — casos classificados e roteados; catalogar método para excentricidade/dupla excentricidade",
             "state": "in_progress",
             "area": 11,
-            "source": "Área 11 / ADR-0022 + ADR-0023"
+            "source": "Área 11 / ADR-0022 + ADR-0023 + ADR-0024"
           }
         ],
         "planned": [
           {
-            "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
-            "title": "Definir contrato normativo para casos com cortante, flexão biaxial ou torção antes de dimensionamento de fundação",
+            "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-01",
+            "title": "Catalogar método de sapata com excentricidade/dupla excentricidade a partir das referências reais antes de implementar fórmulas",
             "state": "planned",
             "area": 11,
-            "source": "ADR-0023 / Área 11"
+            "source": "ADR-0024 / reference_engineering/CATALOG.md"
           },
           {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -124,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
+          "title": "Oito casos por apoio classificados em axial centrado, compressão com ações não axiais ou sem compressão/arrancamento, sem dimensionamento implícito",
+          "state": "completed",
+          "area": 11,
+          "source": "ADR-0024 / tests/validar_fund_global_classificacao_casos_area11.mjs"
+        },
         {
           "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
           "title": "Os oito casos globais completos passam a integrar cada apoio do preparar_infraestrutura sem liberar o classificador legado",
@@ -338,13 +345,20 @@
       "active": [
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Integração da infraestrutura ao envelope global — casos completos conectados ao ORQ; definir tratamento normativo das ações não axiais",
+          "title": "Integração da infraestrutura ao envelope global — casos classificados e roteados; catalogar método para excentricidade/dupla excentricidade",
           "state": "in_progress",
           "area": 11,
-          "source": "Área 11 / ADR-0022 + ADR-0023"
+          "source": "Área 11 / ADR-0022 + ADR-0023 + ADR-0024"
         }
       ],
       "completed": [
+        {
+          "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
+          "title": "Contrato de classificação e roteamento dos casos globais de fundação",
+          "state": "completed",
+          "area": 11,
+          "source": "ADR-0024 / tests/validar_fund_global_classificacao_casos_area11.mjs"
+        },
         {
           "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
           "title": "Integração fail-closed das ações globais completas nos apoios do ORQ",
@@ -614,11 +628,11 @@
       ],
       "next": [
         {
-          "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
-          "title": "Definir tratamento normativo explícito para ações não axiais antes de promover casos ao dimensionamento de fundações",
+          "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-01",
+          "title": "Abrir e catalogar matematicamente as referências de carga excêntrica/dupla excentricidade antes de criar o motor correspondente",
           "state": "planned",
           "area": 11,
-          "source": "ADR-0023 / Área 11"
+          "source": "ADR-0024 / reference_engineering/CATALOG.md"
         },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -1020,9 +1034,15 @@
             },
             {
               "code": "GLOBAL-METODO-ACOES-GERAIS",
-              "title": "Definir tratamento normativo para cortante, flexão biaxial e torção",
+              "title": "Classificar e rotear casos axiais, não axiais e sem compressão sem dimensionamento implícito",
+              "state": "completed",
+              "source": "ADR-0024"
+            },
+            {
+              "code": "GLOBAL-CATALOGACAO-EXCENTRICIDADE",
+              "title": "Catalogar método de excentricidade/dupla excentricidade a partir das referências reais",
               "state": "planned",
-              "source": "ADR-0023 / Área 11"
+              "source": "ADR-0024 / reference_engineering/CATALOG.md"
             },
             {
               "code": "GLOBAL",
@@ -2031,7 +2051,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 167,
+    "validator_count": 168,
     "validators": [
       {
         "name": "test:base",
@@ -2180,6 +2200,10 @@
       {
         "name": "test:area11-global-acoes",
         "command": "node tests/validar_fund_global_acoes_area11.mjs"
+      },
+      {
+        "name": "test:area11-global-classificacao",
+        "command": "node tests/validar_fund_global_classificacao_casos_area11.mjs"
       },
       {
         "name": "test:nos-ui",
@@ -2710,7 +2734,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36598191682",
-    "run_number": "764"
+    "run_id": "36599781977",
+    "run_number": "765"
   }
 }
