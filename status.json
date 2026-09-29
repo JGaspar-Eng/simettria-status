@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T11:55:07Z",
+  "generated_at": "2026-09-29T12:14:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f65e5993974825b7c4784f3a0ffa0d174f6469b9",
-    "short_sha": "f65e599",
+    "sha": "6d54fe1c78800fb53832211535ce736447c896cf",
+    "short_sha": "6d54fe1",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T08:54:42-03:00",
-    "message": "feat-orq-pacote-acoes-globais"
+    "date": "2026-09-29T09:14:23-03:00",
+    "message": "feat-orq-vetor-reduzido"
   },
   "commits": [
+    {
+      "sha": "6d54fe1c78800fb53832211535ce736447c896cf",
+      "short_sha": "6d54fe1",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T09:14:23-03:00",
+      "message": "feat-orq-vetor-reduzido"
+    },
     {
       "sha": "f65e5993974825b7c4784f3a0ffa0d174f6469b9",
       "short_sha": "f65e599",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T20:16:41-03:00",
       "message": "test-status-remove-assert-duplicado"
-    },
-    {
-      "sha": "b1f347d79175f9f78ed0918b9469244ba2d963a8",
-      "short_sha": "b1f347d",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T20:16:15-03:00",
-      "message": "feat-orq-global-elementos-modelo"
     }
   ],
   "development": {
@@ -107,6 +107,13 @@
         ],
         "planned": [
           {
+            "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
+            "title": "Executar os oito casos ELU explícitos e envelopar reações por apoio",
+            "state": "planned",
+            "area": 4,
+            "source": "issue #514 / pacote global de ações"
+          },
+          {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
             "title": "Definir a geometria física/estrutural mínima do trecho antes de derivar passagem em laje",
             "state": "planned",
@@ -124,6 +131,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-VETOR-REDUZIDO-01",
+          "title": "Pipeline global passa a consumir ações adicionais diretamente no espaço reduzido do diafragma, sem distribuição em nós físicos",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_pipeline.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ACOES-MODELO-01",
           "title": "Pacote explícito de oito casos ELU com gravidade por elemento e vento no espaço reduzido do diafragma",
@@ -310,6 +324,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-VETOR-REDUZIDO-01",
+          "title": "Ponte fail-closed para ações reduzidas adicionais no solver MPC e no traço de equilíbrio projetado",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_pipeline.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ACOES-MODELO-01",
           "title": "Autoridade completa de ações globais sem combinação implícita",
@@ -536,6 +557,13 @@
         }
       ],
       "next": [
+        {
+          "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
+          "title": "Executar os oito casos ELU explícitos e envelopar reações por apoio sem selecionar caso governante implicitamente",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #514 / pacote global de ações"
+        },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
           "title": "Definir tipologia, espessura, intradorso e autoridade XYZ mínima do trecho",
@@ -805,6 +833,18 @@
               "title": "Pacote de oito casos ELU com ações equivalentes e vento reduzido rastreáveis",
               "state": "completed",
               "source": "issue #517 / ADR-0019 / tests_support/orq_pacote_acoes_globais.mjs"
+            },
+            {
+              "code": "VETOR-REDUZIDO",
+              "title": "Ações adicionais aplicadas diretamente no espaço reduzido do diafragma",
+              "state": "completed",
+              "source": "ADR-0020 / tests_support/orq_diafragma_pipeline.mjs"
+            },
+            {
+              "code": "CASOS-ENVELOPE",
+              "title": "Execução dos oito casos e envelope de reações por apoio",
+              "state": "planned",
+              "source": "issue #514"
             },
             {
               "code": "CONVENCAO-UNIDADES",
@@ -2593,7 +2633,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36564694540",
-    "run_number": "756"
+    "run_id": "36566807662",
+    "run_number": "758"
   }
 }
