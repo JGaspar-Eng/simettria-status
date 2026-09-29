@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T16:43:34Z",
+  "generated_at": "2026-09-29T17:00:33Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c84662f716335c1b2fedd34238943fe29ab6240a",
-    "short_sha": "c84662f",
+    "sha": "d03d956102c5e7b45400c1f1c78f27a270a7fbda",
+    "short_sha": "d03d956",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T13:43:12-03:00",
-    "message": "feat-fund-global-classificacao-casos"
+    "date": "2026-09-29T14:00:09-03:00",
+    "message": "docs-fund-catalogacao-excentricidade"
   },
   "commits": [
+    {
+      "sha": "d03d956102c5e7b45400c1f1c78f27a270a7fbda",
+      "short_sha": "d03d956",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T14:00:09-03:00",
+      "message": "docs-fund-catalogacao-excentricidade"
+    },
     {
       "sha": "c84662f716335c1b2fedd34238943fe29ab6240a",
       "short_sha": "c84662f",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-29T08:31:12-03:00",
       "message": "feat-orq-diafragma-vento"
-    },
-    {
-      "sha": "d90364970efa5025e82f7c2d907f7b5b37499745",
-      "short_sha": "d903649",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-29T08:23:19-03:00",
-      "message": "feat-orq-diafragma-integracao-mpc"
     }
   ],
   "development": {
@@ -99,19 +99,19 @@
         "active": [
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
-            "title": "Integração da infraestrutura ao envelope global — casos classificados e roteados; catalogar método para excentricidade/dupla excentricidade",
+            "title": "Integração da infraestrutura ao envelope global — Mathcad de excentricidade catalogado; auditar ábacos Montoya",
             "state": "in_progress",
             "area": 11,
-            "source": "Área 11 / ADR-0022 + ADR-0023 + ADR-0024"
+            "source": "Área 11 / ADR-0024 / FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
           }
         ],
         "planned": [
           {
-            "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-01",
-            "title": "Catalogar método de sapata com excentricidade/dupla excentricidade a partir das referências reais antes de implementar fórmulas",
+            "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-02",
+            "title": "Auditar diretamente os ábacos Montoya e mapear coeficientes/regiões sem interpolação presumida",
             "state": "planned",
             "area": 11,
-            "source": "ADR-0024 / reference_engineering/CATALOG.md"
+            "source": "FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
           },
           {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -124,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-01",
+          "title": "Cinco Mathcad de excentricidade auditados por XML; núcleos simples/duplo, condições e dependência de ábaco catalogados",
+          "state": "completed",
+          "area": 11,
+          "source": "docs/reference_engineering/FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
+        },
         {
           "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
           "title": "Oito casos por apoio classificados em axial centrado, compressão com ações não axiais ou sem compressão/arrancamento, sem dimensionamento implícito",
@@ -345,13 +352,20 @@
       "active": [
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Integração da infraestrutura ao envelope global — casos classificados e roteados; catalogar método para excentricidade/dupla excentricidade",
+          "title": "Integração da infraestrutura ao envelope global — Mathcad de excentricidade catalogado; auditar ábacos Montoya",
           "state": "in_progress",
           "area": 11,
-          "source": "Área 11 / ADR-0022 + ADR-0023 + ADR-0024"
+          "source": "Área 11 / ADR-0024 / FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
         }
       ],
       "completed": [
+        {
+          "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-01",
+          "title": "Catalogação matemática inicial das referências Mathcad de excentricidade",
+          "state": "completed",
+          "area": 11,
+          "source": "docs/reference_engineering/FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
+        },
         {
           "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
           "title": "Contrato de classificação e roteamento dos casos globais de fundação",
@@ -628,11 +642,11 @@
       ],
       "next": [
         {
-          "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-01",
-          "title": "Abrir e catalogar matematicamente as referências de carga excêntrica/dupla excentricidade antes de criar o motor correspondente",
+          "code": "FUND-GLOBAL-CATALOGACAO-EXCENTRICIDADE-02",
+          "title": "Catalogar ábacos Montoya e fechar mapeamento de λ/regiões antes de qualquer motor de dupla excentricidade",
           "state": "planned",
           "area": 11,
-          "source": "ADR-0024 / reference_engineering/CATALOG.md"
+          "source": "FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
         },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -1040,9 +1054,15 @@
             },
             {
               "code": "GLOBAL-CATALOGACAO-EXCENTRICIDADE",
-              "title": "Catalogar método de excentricidade/dupla excentricidade a partir das referências reais",
+              "title": "Catalogar referências Mathcad de excentricidade/dupla excentricidade",
+              "state": "completed",
+              "source": "FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
+            },
+            {
+              "code": "GLOBAL-CATALOGACAO-ABACO",
+              "title": "Auditar ábacos Montoya e mapear coeficientes/regiões",
               "state": "planned",
-              "source": "ADR-0024 / reference_engineering/CATALOG.md"
+              "source": "FUND_GLOBAL_CATALOGACAO_EXCENTRICIDADE.md"
             },
             {
               "code": "GLOBAL",
@@ -2734,7 +2754,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36599781977",
-    "run_number": "765"
+    "run_id": "36601821513",
+    "run_number": "766"
   }
 }
