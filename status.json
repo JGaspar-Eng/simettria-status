@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T12:14:48Z",
+  "generated_at": "2026-09-29T12:25:51Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6d54fe1c78800fb53832211535ce736447c896cf",
-    "short_sha": "6d54fe1",
+    "sha": "4489d27d9fb2fa5b8e8316e772867aab51b3224c",
+    "short_sha": "4489d27",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T09:14:23-03:00",
-    "message": "feat-orq-vetor-reduzido"
+    "date": "2026-09-29T09:25:29-03:00",
+    "message": "feat-orq-casos-envelope"
   },
   "commits": [
+    {
+      "sha": "4489d27d9fb2fa5b8e8316e772867aab51b3224c",
+      "short_sha": "4489d27",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T09:25:29-03:00",
+      "message": "feat-orq-casos-envelope"
+    },
     {
       "sha": "6d54fe1c78800fb53832211535ce736447c896cf",
       "short_sha": "6d54fe1",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T20:30:25-03:00",
       "message": "feat-orq-acoes-vigas-elu"
-    },
-    {
-      "sha": "0fea587036123fa0f9f64c0a2c6cd6c2453772dc",
-      "short_sha": "0fea587",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T20:16:41-03:00",
-      "message": "test-status-remove-assert-duplicado"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "ORQ-ESTRUT-01",
-            "title": "Orquestração estrutural global — integrar o pacote explícito de casos ao contexto.analise_global e envelopar reações por apoio",
+            "title": "Orquestração estrutural global — publicar casos e envelope demonstrados no contexto.analise_global",
             "state": "in_progress",
             "area": 4,
             "source": "issue #514 / issue #231"
@@ -107,11 +107,11 @@
         ],
         "planned": [
           {
-            "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
-            "title": "Executar os oito casos ELU explícitos e envelopar reações por apoio",
+            "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
+            "title": "Publicar os oito resultados e o envelope no contexto.analise_global sem caso governante implícito",
             "state": "planned",
             "area": 4,
-            "source": "issue #514 / pacote global de ações"
+            "source": "issue #514 / ADR-0022"
           },
           {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -131,6 +131,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
+          "title": "Oito casos ELU executados individualmente com envelope mínimo/máximo por componente e por pilar",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0022 / tests_support/orq_casos_envelope_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-VETOR-REDUZIDO-01",
           "title": "Pipeline global passa a consumir ações adicionais diretamente no espaço reduzido do diafragma, sem distribuição em nós físicos",
@@ -317,13 +324,20 @@
       "active": [
         {
           "code": "ORQ-ESTRUT-01",
-          "title": "Orquestração estrutural global — integrar o pacote explícito de casos ao contexto.analise_global e envelopar reações por apoio",
+          "title": "Orquestração estrutural global — publicar casos e envelope demonstrados no contexto.analise_global",
           "state": "in_progress",
           "area": 4,
           "source": "issue #514 / issue #231"
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
+          "title": "Execução dos oito casos e envelope rastreável de reações por apoio",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0022 / tests_support/orq_casos_envelope_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-VETOR-REDUZIDO-01",
           "title": "Ponte fail-closed para ações reduzidas adicionais no solver MPC e no traço de equilíbrio projetado",
@@ -558,11 +572,11 @@
       ],
       "next": [
         {
-          "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
-          "title": "Executar os oito casos ELU explícitos e envelopar reações por apoio sem selecionar caso governante implicitamente",
+          "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
+          "title": "Publicar casos e envelope demonstrados no contexto.analise_global sem selecionar governante",
           "state": "planned",
           "area": 4,
-          "source": "issue #514 / pacote global de ações"
+          "source": "issue #514 / ADR-0022"
         },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -843,8 +857,14 @@
             {
               "code": "CASOS-ENVELOPE",
               "title": "Execução dos oito casos e envelope de reações por apoio",
+              "state": "completed",
+              "source": "ADR-0022 / tests_support/orq_casos_envelope_global.mjs"
+            },
+            {
+              "code": "CONTEXTO-ANALISE",
+              "title": "Publicação do pacote demonstrado em contexto.analise_global",
               "state": "planned",
-              "source": "issue #514"
+              "source": "issue #514 / ADR-0022"
             },
             {
               "code": "CONVENCAO-UNIDADES",
@@ -2578,7 +2598,7 @@
       },
       {
         "name": "test:orq-acoes-modelo",
-        "command": "node tests/validar_orq_acoes_globais_modelo_v1.mjs && node tests_support/orq_pacote_acoes_globais.mjs"
+        "command": "node tests/validar_orq_acoes_globais_modelo_v1.mjs && node tests_support/orq_pacote_acoes_globais.mjs && node tests_support/orq_casos_envelope_global.mjs"
       },
       {
         "name": "test:orq-apoios-infraestrutura",
@@ -2633,7 +2653,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36566807662",
-    "run_number": "758"
+    "run_id": "36568021535",
+    "run_number": "759"
   }
 }
