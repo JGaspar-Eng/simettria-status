@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T12:25:51Z",
+  "generated_at": "2026-09-29T12:41:52Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4489d27d9fb2fa5b8e8316e772867aab51b3224c",
-    "short_sha": "4489d27",
+    "sha": "c16089e6542efde28f4276be82e499139c8a52df",
+    "short_sha": "c16089e",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T09:25:29-03:00",
-    "message": "feat-orq-casos-envelope"
+    "date": "2026-09-29T09:41:26-03:00",
+    "message": "feat-orq-contexto-analise"
   },
   "commits": [
+    {
+      "sha": "c16089e6542efde28f4276be82e499139c8a52df",
+      "short_sha": "c16089e",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T09:41:26-03:00",
+      "message": "feat-orq-contexto-analise"
+    },
     {
       "sha": "4489d27d9fb2fa5b8e8316e772867aab51b3224c",
       "short_sha": "4489d27",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T20:42:10-03:00",
       "message": "feat-orq-acoes-pilares"
-    },
-    {
-      "sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
-      "short_sha": "cd963b5",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T20:30:25-03:00",
-      "message": "feat-orq-acoes-vigas-elu"
     }
   ],
   "development": {
@@ -98,39 +98,32 @@
       "panel": {
         "active": [
           {
-            "code": "ORQ-ESTRUT-01",
-            "title": "Orquestração estrutural global — publicar casos e envelope demonstrados no contexto.analise_global",
+            "code": "FUND-MATERIALIZACAO-GLOBAL",
+            "title": "Integração da infraestrutura ao envelope global — definir critério normativo explícito de consumo por apoio",
             "state": "in_progress",
-            "area": 4,
-            "source": "issue #514 / issue #231"
+            "area": 11,
+            "source": "Área 11 / ADR-0022"
           }
         ],
         "planned": [
-          {
-            "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
-            "title": "Publicar os oito resultados e o envelope no contexto.analise_global sem caso governante implícito",
-            "state": "planned",
-            "area": 4,
-            "source": "issue #514 / ADR-0022"
-          },
           {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
             "title": "Definir a geometria física/estrutural mínima do trecho antes de derivar passagem em laje",
             "state": "planned",
             "area": 1,
             "source": "docs/ESCADA_GEOMETRIA_FISICA_AUDITORIA.md"
-          },
-          {
-            "code": "FUND-MATERIALIZACAO-GLOBAL",
-            "title": "Generalizar integração da infraestrutura quando as reações globais reais estiverem demonstradas por apoio",
-            "state": "planned",
-            "area": 11,
-            "source": "Área 11 / cadeia ORQ global"
           }
         ],
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
+          "title": "Modelo real produz contexto.analise_global multiprocessado consumível pelo ORQ, com envelope preservado até a fronteira de fundações",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #514 / tests_support/orq_entradas_modelo_base.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
           "title": "Oito casos ELU executados individualmente com envelope mínimo/máximo por componente e por pilar",
@@ -323,14 +316,28 @@
       ],
       "active": [
         {
-          "code": "ORQ-ESTRUT-01",
-          "title": "Orquestração estrutural global — publicar casos e envelope demonstrados no contexto.analise_global",
+          "code": "FUND-MATERIALIZACAO-GLOBAL",
+          "title": "Integração da infraestrutura ao envelope global — definir critério normativo explícito de consumo por apoio",
           "state": "in_progress",
-          "area": 4,
-          "source": "issue #514 / issue #231"
+          "area": 11,
+          "source": "Área 11 / ADR-0022"
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-ESTRUT-01",
+          "title": "Orquestração estrutural global com entradas reais, oito casos, envelope e contexto multiprocessado demonstrados",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #514 / main"
+        },
+        {
+          "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
+          "title": "Publicação fail-closed do pacote global em contexto.analise_global",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #514 / tests_support/orq_entradas_modelo_base.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-CASOS-ENVELOPE-01",
           "title": "Execução dos oito casos e envelope rastreável de reações por apoio",
@@ -572,13 +579,6 @@
       ],
       "next": [
         {
-          "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
-          "title": "Publicar casos e envelope demonstrados no contexto.analise_global sem selecionar governante",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #514 / ADR-0022"
-        },
-        {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
           "title": "Definir tipologia, espessura, intradorso e autoridade XYZ mínima do trecho",
           "state": "planned",
@@ -598,13 +598,6 @@
           "state": "planned",
           "area": 1,
           "source": "checklist ESCADA-DIM-01"
-        },
-        {
-          "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Integrar fundações às reações globais reais por apoio quando a cadeia ORQ estiver demonstrada",
-          "state": "planned",
-          "area": 11,
-          "source": "reconciliação Área 11 / ORQ global"
         }
       ],
       "checklists": [
@@ -761,8 +754,8 @@
             {
               "code": "ENTRADAS-MODELO",
               "title": "Autoridade de entradas reais do modelo para contexto.analise_global",
-              "state": "in_progress",
-              "source": "issue #514"
+              "state": "completed",
+              "source": "issue #514 / tests_support/orq_entradas_modelo_base.mjs"
             },
             {
               "code": "ENTRADAS-BASE",
@@ -863,8 +856,8 @@
             {
               "code": "CONTEXTO-ANALISE",
               "title": "Publicação do pacote demonstrado em contexto.analise_global",
-              "state": "planned",
-              "source": "issue #514 / ADR-0022"
+              "state": "completed",
+              "source": "issue #514 / tests_support/orq_entradas_modelo_base.mjs"
             },
             {
               "code": "CONVENCAO-UNIDADES",
@@ -973,8 +966,8 @@
             },
             {
               "code": "GLOBAL",
-              "title": "Generalizar integração para consumir reações globais reais por apoio quando a cadeia ORQ estiver completa",
-              "state": "planned"
+              "title": "Generalizar integração para consumir o envelope global por apoio com critério normativo explícito",
+              "state": "in_progress"
             }
           ]
         }
@@ -1804,7 +1797,7 @@
         "percent": 15,
         "note": "~15%, indicador de contagem dos trabalhos cadastrados — **não** é medida de aderência normativa. O repositório comprova o escopo declarado por cada módulo, não a fração de cada norma efetivamente coberta.",
         "status": "measured",
-        "active": false,
+        "active": true,
         "work": {
           "done": 2,
           "partial": 5,
@@ -2653,7 +2646,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36568021535",
-    "run_number": "759"
+    "run_id": "36569808857",
+    "run_number": "761"
   }
 }
