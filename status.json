@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T12:41:52Z",
+  "generated_at": "2026-09-29T13:18:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c16089e6542efde28f4276be82e499139c8a52df",
-    "short_sha": "c16089e",
+    "sha": "9dd4d36f0265b9d5598cc020137102d0063d5a1f",
+    "short_sha": "9dd4d36",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T09:41:26-03:00",
-    "message": "feat-orq-contexto-analise"
+    "date": "2026-09-29T10:17:41-03:00",
+    "message": "feat-fund-global-acoes"
   },
   "commits": [
+    {
+      "sha": "9dd4d36f0265b9d5598cc020137102d0063d5a1f",
+      "short_sha": "9dd4d36",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T10:17:41-03:00",
+      "message": "feat-fund-global-acoes"
+    },
     {
       "sha": "c16089e6542efde28f4276be82e499139c8a52df",
       "short_sha": "c16089e",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T23:09:37-03:00",
       "message": "feat-orq-diafragma-classes"
-    },
-    {
-      "sha": "16d29078a2d4ef2c1f96c14dc653c93dfaf94196",
-      "short_sha": "16d2907",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T20:42:10-03:00",
-      "message": "feat-orq-acoes-pilares"
     }
   ],
   "development": {
@@ -99,13 +99,20 @@
         "active": [
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
-            "title": "Integração da infraestrutura ao envelope global — definir critério normativo explícito de consumo por apoio",
+            "title": "Integração da infraestrutura ao envelope global — ações por apoio demonstradas; conectar adaptador ao runtime",
             "state": "in_progress",
             "area": 11,
-            "source": "Área 11 / ADR-0022"
+            "source": "Área 11 / ADR-0022 + ADR-0023"
           }
         ],
         "planned": [
+          {
+            "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
+            "title": "Conectar os casos globais completos ao preparar_infraestrutura do ORQ",
+            "state": "planned",
+            "area": 11,
+            "source": "ADR-0023"
+          },
           {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
             "title": "Definir a geometria física/estrutural mínima do trecho antes de derivar passagem em laje",
@@ -117,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-GLOBAL-ACOES-01",
+          "title": "Envelope global convertido em oito casos completos por apoio, preservando forças/momentos e sem governante implícito",
+          "state": "completed",
+          "area": 11,
+          "source": "ADR-0023 / tests/validar_fund_global_acoes_area11.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-CONTEXTO-ANALISE-01",
           "title": "Modelo real produz contexto.analise_global multiprocessado consumível pelo ORQ, com envelope preservado até a fronteira de fundações",
@@ -246,9 +260,9 @@
         {
           "code": "ORQ-GLOBAL-ENTRADAS-MODELO-01",
           "title": "Materializar entradas autoritativas do modelo real para o pipeline global",
-          "state": "in_progress",
+          "state": "completed",
           "area": 4,
-          "source": "issue #514"
+          "source": "issue #514 / main c16089e"
         },
         {
           "code": "ORQ-GLOBAL-INTEGRACAO-01",
@@ -317,13 +331,20 @@
       "active": [
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Integração da infraestrutura ao envelope global — definir critério normativo explícito de consumo por apoio",
+          "title": "Integração da infraestrutura ao envelope global — ações por apoio demonstradas; conectar adaptador ao runtime",
           "state": "in_progress",
           "area": 11,
-          "source": "Área 11 / ADR-0022"
+          "source": "Área 11 / ADR-0022 + ADR-0023"
         }
       ],
       "completed": [
+        {
+          "code": "FUND-GLOBAL-ACOES-01",
+          "title": "Adaptador fail-closed de envelope global para ações completas por apoio de fundação",
+          "state": "completed",
+          "area": 11,
+          "source": "ADR-0023 / tests/validar_fund_global_acoes_area11.mjs"
+        },
         {
           "code": "ORQ-ESTRUT-01",
           "title": "Orquestração estrutural global com entradas reais, oito casos, envelope e contexto multiprocessado demonstrados",
@@ -578,6 +599,13 @@
         }
       ],
       "next": [
+        {
+          "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
+          "title": "Conectar os casos globais completos ao preparar_infraestrutura do ORQ sem reduzir a N/M governante",
+          "state": "planned",
+          "area": 11,
+          "source": "ADR-0023"
+        },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
           "title": "Definir tipologia, espessura, intradorso e autoridade XYZ mínima do trecho",
@@ -963,6 +991,18 @@
               "code": "TRACE",
               "title": "Navegação bidirecional cálculo/memorial ↔ 2D/3D",
               "state": "completed"
+            },
+            {
+              "code": "GLOBAL-ACOES",
+              "title": "Traduzir envelope global em ações completas por apoio sem governante implícito",
+              "state": "completed",
+              "source": "ADR-0023"
+            },
+            {
+              "code": "GLOBAL-ACOES-INTEGRACAO",
+              "title": "Conectar ações globais completas aos apoios do ORQ",
+              "state": "planned",
+              "source": "ADR-0023"
             },
             {
               "code": "GLOBAL",
@@ -1971,7 +2011,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 166,
+    "validator_count": 167,
     "validators": [
       {
         "name": "test:base",
@@ -2116,6 +2156,10 @@
       {
         "name": "test:dim-fund-ui",
         "command": "node tests/validar_fundacao_dim_fund_ui.mjs"
+      },
+      {
+        "name": "test:area11-global-acoes",
+        "command": "node tests/validar_fund_global_acoes_area11.mjs"
       },
       {
         "name": "test:nos-ui",
@@ -2646,7 +2690,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36569808857",
-    "run_number": "761"
+    "run_id": "36574054670",
+    "run_number": "763"
   }
 }
