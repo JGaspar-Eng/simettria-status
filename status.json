@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T11:41:22Z",
+  "generated_at": "2026-09-29T11:55:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2206e492452e62bf4a79841a007deaa35b656aab",
-    "short_sha": "2206e49",
+    "sha": "f65e5993974825b7c4784f3a0ffa0d174f6469b9",
+    "short_sha": "f65e599",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T08:41:01-03:00",
-    "message": "feat-orq-convencao-global"
+    "date": "2026-09-29T08:54:42-03:00",
+    "message": "feat-orq-pacote-acoes-globais"
   },
   "commits": [
+    {
+      "sha": "f65e5993974825b7c4784f3a0ffa0d174f6469b9",
+      "short_sha": "f65e599",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T08:54:42-03:00",
+      "message": "feat-orq-pacote-acoes-globais"
+    },
     {
       "sha": "2206e492452e62bf4a79841a007deaa35b656aab",
       "short_sha": "2206e49",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T20:16:15-03:00",
       "message": "feat-orq-global-elementos-modelo"
-    },
-    {
-      "sha": "8c21ec6a341d4d353e45eb39981f9969b5173e04",
-      "short_sha": "8c21ec6",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:44:31-03:00",
-      "message": "docs-escada-geometria-fisica-auditoria"
     }
   ],
   "development": {
@@ -98,18 +98,11 @@
       "panel": {
         "active": [
           {
-            "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-            "title": "Ações globais do modelo — vigas, pilares e vento por diafragma demonstrados; composição do pacote global ainda pendente",
-            "state": "in_progress",
-            "area": 4,
-            "source": "issue #517 / ADR-0019 + ADR-0020"
-          },
-          {
             "code": "ORQ-ESTRUT-01",
-            "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
+            "title": "Orquestração estrutural global — integrar o pacote explícito de casos ao contexto.analise_global e envelopar reações por apoio",
             "state": "in_progress",
             "area": 4,
-            "source": "issue #514 / PR #524 / issue #231"
+            "source": "issue #514 / issue #231"
           }
         ],
         "planned": [
@@ -131,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+          "title": "Pacote explícito de oito casos ELU com gravidade por elemento e vento no espaço reduzido do diafragma",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #517 / ADR-0019 / tests_support/orq_pacote_acoes_globais.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-CONVENCAO-01",
           "title": "Convenção estrutural canônica global XYZ dextrógira, Z ascendente, UZ normal, sinal +1 e unidades m/kN/kN.m",
@@ -302,21 +302,21 @@
       ],
       "active": [
         {
-          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-          "title": "Ações globais do modelo — vigas, pilares e vento por diafragma demonstrados; composição do pacote global ainda pendente",
-          "state": "in_progress",
-          "area": 4,
-          "source": "issue #517 / ADR-0019 + ADR-0020"
-        },
-        {
           "code": "ORQ-ESTRUT-01",
-          "title": "Orquestração estrutural global — entradas autoritativas do modelo real",
+          "title": "Orquestração estrutural global — integrar o pacote explícito de casos ao contexto.analise_global e envelopar reações por apoio",
           "state": "in_progress",
           "area": 4,
-          "source": "issue #514 / PR #524 / issue #231"
+          "source": "issue #514 / issue #231"
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-ACOES-MODELO-01",
+          "title": "Autoridade completa de ações globais sem combinação implícita",
+          "state": "completed",
+          "area": 4,
+          "source": "issue #517 / ADR-0019 / tests_support/orq_pacote_acoes_globais.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-CONVENCAO-01",
           "title": "Autoridade canônica de eixos globais, reação normal, sinal e unidades",
@@ -802,9 +802,9 @@
             },
             {
               "code": "ACOES-MODELO",
-              "title": "Ações nodais e equivalentes com proveniência completa",
-              "state": "in_progress",
-              "source": "issue #517 / ADR-0019"
+              "title": "Pacote de oito casos ELU com ações equivalentes e vento reduzido rastreáveis",
+              "state": "completed",
+              "source": "issue #517 / ADR-0019 / tests_support/orq_pacote_acoes_globais.mjs"
             },
             {
               "code": "CONVENCAO-UNIDADES",
@@ -2538,7 +2538,7 @@
       },
       {
         "name": "test:orq-acoes-modelo",
-        "command": "node tests/validar_orq_acoes_globais_modelo_v1.mjs"
+        "command": "node tests/validar_orq_acoes_globais_modelo_v1.mjs && node tests_support/orq_pacote_acoes_globais.mjs"
       },
       {
         "name": "test:orq-apoios-infraestrutura",
@@ -2593,7 +2593,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36563269221",
-    "run_number": "754"
+    "run_id": "36564694540",
+    "run_number": "756"
   }
 }
