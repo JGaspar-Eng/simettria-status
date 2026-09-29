@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-28T23:42:41Z",
+  "generated_at": "2026-09-29T02:09:58Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "16d29078a2d4ef2c1f96c14dc653c93dfaf94196",
-    "short_sha": "16d2907",
+    "sha": "e3860c5d1cc3e6cd50bc56d90549b2f31e4c7a39",
+    "short_sha": "e3860c5",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T20:42:10-03:00",
-    "message": "feat-orq-acoes-pilares"
+    "date": "2026-09-28T23:09:37-03:00",
+    "message": "feat-orq-diafragma-classes"
   },
   "commits": [
+    {
+      "sha": "e3860c5d1cc3e6cd50bc56d90549b2f31e4c7a39",
+      "short_sha": "e3860c5",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T23:09:37-03:00",
+      "message": "feat-orq-diafragma-classes"
+    },
     {
       "sha": "16d29078a2d4ef2c1f96c14dc653c93dfaf94196",
       "short_sha": "16d2907",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:19:11-03:00",
       "message": "test(pavimentos): fechar gaps do intervalo vertical"
-    },
-    {
-      "sha": "7a191ccfff002aa569951bbcc660ff371e1080c5",
-      "short_sha": "7a191cc",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:19:11-03:00",
-      "message": "feat(pavimentos): resolver intervalo vertical v3"
     }
   ],
   "development": {
@@ -114,11 +114,18 @@
         ],
         "planned": [
           {
-            "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
-            "title": "Definir autoridade de diafragma/distribuição nodal para resultantes de vento por pavimento",
+            "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
+            "title": "Condensar K/F pelas classes de diafragma e expandir deslocamentos ao espaço completo",
             "state": "planned",
             "area": 4,
-            "source": "issue #517 / ADR-0019"
+            "source": "ADR-0020"
+          },
+          {
+            "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
+            "title": "Aplicar resultantes de vento aos DOFs sintéticos após a condensação cinemática",
+            "state": "planned",
+            "area": 4,
+            "source": "issue #517 / ADR-0019 + ADR-0020"
           },
           {
             "code": "ORQ-GLOBAL-CONVENCAO-01",
@@ -145,6 +152,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-CLASSES-01",
+          "title": "Classes de equivalência UX/UY por pavimento para hipótese explícita de diafragma rígido",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_rigido_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ACOES-PILARES-01",
           "title": "Peso próprio ELU dos trechos de pilar materializado como ação equivalente axial sem promover carga_kn legado",
@@ -296,6 +310,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-CLASSES-01",
+          "title": "Autoridade fail-closed de classes cinemáticas do diafragma global",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_rigido_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-ACOES-PILARES-01",
           "title": "Ação equivalente ELU do peso próprio dos pilares com fail-closed para carga legada",
@@ -481,11 +502,18 @@
       ],
       "next": [
         {
-          "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
-          "title": "Contrato de diafragma/distribuição nodal antes de inserir vento no pórtico global",
+          "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
+          "title": "Condensar K/F por classes de diafragma e expandir deslocamentos ao espaço completo",
           "state": "planned",
           "area": 4,
-          "source": "issue #517 / ADR-0019"
+          "source": "ADR-0020"
+        },
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
+          "title": "Aplicar resultantes de vento aos DOFs sintéticos após a condensação cinemática",
+          "state": "planned",
+          "area": 4,
+          "source": "issue #517 / ADR-0019 + ADR-0020"
         },
         {
           "code": "ORQ-GLOBAL-CONVENCAO-01",
@@ -735,10 +763,22 @@
               "source": "ADR-0019 / tests/validar_orq_acoes_globais_modelo_v1.mjs"
             },
             {
-              "code": "DIAFRAGMA-VENTO",
-              "title": "Autoridade de distribuição nodal dos resultantes de vento",
+              "code": "DIAFRAGMA-CLASSES",
+              "title": "Classes de equivalência UX/UY sem mestre físico arbitrário",
+              "state": "completed",
+              "source": "ADR-0020"
+            },
+            {
+              "code": "DIAFRAGMA-CONDENSACAO",
+              "title": "Transformação cinemática T e condensação K/F",
               "state": "planned",
-              "source": "issue #517 / ADR-0019"
+              "source": "ADR-0020"
+            },
+            {
+              "code": "DIAFRAGMA-VENTO",
+              "title": "Aplicação dos resultantes de vento nos DOFs sintéticos do diafragma",
+              "state": "planned",
+              "source": "issue #517 / ADR-0019 + ADR-0020"
             },
             {
               "code": "ACOES-MODELO",
@@ -1858,7 +1898,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 164,
+    "validator_count": 165,
     "validators": [
       {
         "name": "test:base",
@@ -2007,6 +2047,10 @@
       {
         "name": "test:nos-ui",
         "command": "node tests/validar_nos_estruturais_ui.mjs"
+      },
+      {
+        "name": "test:orq-diafragma",
+        "command": "node tests_support/orq_diafragma_rigido_global.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -2525,7 +2569,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36499395529",
-    "run_number": "745"
+    "run_id": "36511286982",
+    "run_number": "746"
   }
 }
