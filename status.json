@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T02:09:58Z",
+  "generated_at": "2026-09-29T02:13:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e3860c5d1cc3e6cd50bc56d90549b2f31e4c7a39",
-    "short_sha": "e3860c5",
+    "sha": "bb5143d434c1be739ff272d2041764ffd5f5f380",
+    "short_sha": "bb5143d",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T23:09:37-03:00",
-    "message": "feat-orq-diafragma-classes"
+    "date": "2026-09-28T23:13:26-03:00",
+    "message": "feat-orq-diafragma-condensacao"
   },
   "commits": [
+    {
+      "sha": "bb5143d434c1be739ff272d2041764ffd5f5f380",
+      "short_sha": "bb5143d",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-28T23:13:26-03:00",
+      "message": "feat-orq-diafragma-condensacao"
+    },
     {
       "sha": "e3860c5d1cc3e6cd50bc56d90549b2f31e4c7a39",
       "short_sha": "e3860c5",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:23:58-03:00",
       "message": "docs-status-pre1b1"
-    },
-    {
-      "sha": "4185075ca647f64f2d47e3e02bd519e13836d83c",
-      "short_sha": "4185075",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:19:11-03:00",
-      "message": "test(pavimentos): fechar gaps do intervalo vertical"
     }
   ],
   "development": {
@@ -114,8 +114,8 @@
         ],
         "planned": [
           {
-            "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
-            "title": "Condensar K/F pelas classes de diafragma e expandir deslocamentos ao espaço completo",
+            "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
+            "title": "Integrar solver reduzido, expansão e equilíbrio projetado por classes MPC",
             "state": "planned",
             "area": 4,
             "source": "ADR-0020"
@@ -152,6 +152,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
+          "title": "Transformação T, condensação K/F e expansão de deslocamentos implementadas como núcleo matemático puro",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_rigido_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-CLASSES-01",
           "title": "Classes de equivalência UX/UY por pavimento para hipótese explícita de diafragma rígido",
@@ -310,6 +317,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
+          "title": "Núcleo matemático de condensação cinemática do diafragma rígido",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_rigido_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-CLASSES-01",
           "title": "Autoridade fail-closed de classes cinemáticas do diafragma global",
@@ -502,8 +516,8 @@
       ],
       "next": [
         {
-          "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
-          "title": "Condensar K/F por classes de diafragma e expandir deslocamentos ao espaço completo",
+          "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
+          "title": "Integrar solver reduzido, expansão e equilíbrio projetado por classes MPC",
           "state": "planned",
           "area": 4,
           "source": "ADR-0020"
@@ -770,7 +784,13 @@
             },
             {
               "code": "DIAFRAGMA-CONDENSACAO",
-              "title": "Transformação cinemática T e condensação K/F",
+              "title": "Transformação cinemática T, condensação K/F e expansão de deslocamentos",
+              "state": "completed",
+              "source": "ADR-0020"
+            },
+            {
+              "code": "DIAFRAGMA-INTEGRACAO-MPC",
+              "title": "Integração do solver reduzido com equilíbrio projetado e reações completas",
               "state": "planned",
               "source": "ADR-0020"
             },
@@ -2569,7 +2589,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36511286982",
-    "run_number": "746"
+    "run_id": "36511587440",
+    "run_number": "748"
   }
 }
