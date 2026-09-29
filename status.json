@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T11:31:34Z",
+  "generated_at": "2026-09-29T11:41:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "74d1faff222f3bc2c9efba6e95f18253d741e056",
-    "short_sha": "74d1faf",
+    "sha": "2206e492452e62bf4a79841a007deaa35b656aab",
+    "short_sha": "2206e49",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T08:31:12-03:00",
-    "message": "feat-orq-diafragma-vento"
+    "date": "2026-09-29T08:41:01-03:00",
+    "message": "feat-orq-convencao-global"
   },
   "commits": [
+    {
+      "sha": "2206e492452e62bf4a79841a007deaa35b656aab",
+      "short_sha": "2206e49",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T08:41:01-03:00",
+      "message": "feat-orq-convencao-global"
+    },
     {
       "sha": "74d1faff222f3bc2c9efba6e95f18253d741e056",
       "short_sha": "74d1faf",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:44:31-03:00",
       "message": "docs-escada-geometria-fisica-auditoria"
-    },
-    {
-      "sha": "b52f625a3bcb1afa5731bfbf8576f4585b6112a1",
-      "short_sha": "b52f625",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:41:21-03:00",
-      "message": "feat-escada-compatibilidade-abertura"
     }
   ],
   "development": {
@@ -114,13 +114,6 @@
         ],
         "planned": [
           {
-            "code": "ORQ-GLOBAL-CONVENCAO-01",
-            "title": "Fixar componente normal, sinal e unidades globais explícitos",
-            "state": "planned",
-            "area": 4,
-            "source": "issue #518"
-          },
-          {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
             "title": "Definir a geometria física/estrutural mínima do trecho antes de derivar passagem em laje",
             "state": "planned",
@@ -138,6 +131,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-CONVENCAO-01",
+          "title": "Convenção estrutural canônica global XYZ dextrógira, Z ascendente, UZ normal, sinal +1 e unidades m/kN/kN.m",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0021 / tests_support/orq_convencao_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
           "title": "Quatro casos de vento SA-L1 materializados diretamente nos DOFs sintéticos UX/UY do diafragma reduzido",
@@ -317,6 +317,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-CONVENCAO-01",
+          "title": "Autoridade canônica de eixos globais, reação normal, sinal e unidades",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0021 / tests_support/orq_convencao_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
           "title": "Autoridade de casos de vento no espaço reduzido do diafragma sem distribuição nodal arbitrária",
@@ -529,13 +536,6 @@
         }
       ],
       "next": [
-        {
-          "code": "ORQ-GLOBAL-CONVENCAO-01",
-          "title": "Convenção explícita de eixos, componente normal, sinal e unidades",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #518"
-        },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
           "title": "Definir tipologia, espessura, intradorso e autoridade XYZ mínima do trecho",
@@ -808,9 +808,9 @@
             },
             {
               "code": "CONVENCAO-UNIDADES",
-              "title": "Componente normal, sinal e unidades globais explícitos",
-              "state": "planned",
-              "source": "issue #518"
+              "title": "Componente normal UZ, sinal +1 e unidades globais canônicas",
+              "state": "completed",
+              "source": "ADR-0021 / tests_support/orq_convencao_global.mjs"
             }
           ]
         },
@@ -1918,7 +1918,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 165,
+    "validator_count": 166,
     "validators": [
       {
         "name": "test:base",
@@ -2071,6 +2071,10 @@
       {
         "name": "test:orq-diafragma",
         "command": "node tests_support/orq_diafragma_rigido_global.mjs && node tests_support/orq_diafragma_pipeline.mjs && node tests_support/orq_vento_diafragma_global.mjs"
+      },
+      {
+        "name": "test:orq-convencao",
+        "command": "node tests_support/orq_convencao_global.mjs && node tests_support/orq_entradas_modelo_base.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -2589,7 +2593,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36562258968",
-    "run_number": "752"
+    "run_id": "36563269221",
+    "run_number": "754"
   }
 }
