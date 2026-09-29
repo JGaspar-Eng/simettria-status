@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T11:23:42Z",
+  "generated_at": "2026-09-29T11:31:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d90364970efa5025e82f7c2d907f7b5b37499745",
-    "short_sha": "d903649",
+    "sha": "74d1faff222f3bc2c9efba6e95f18253d741e056",
+    "short_sha": "74d1faf",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T08:23:19-03:00",
-    "message": "feat-orq-diafragma-integracao-mpc"
+    "date": "2026-09-29T08:31:12-03:00",
+    "message": "feat-orq-diafragma-vento"
   },
   "commits": [
+    {
+      "sha": "74d1faff222f3bc2c9efba6e95f18253d741e056",
+      "short_sha": "74d1faf",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T08:31:12-03:00",
+      "message": "feat-orq-diafragma-vento"
+    },
     {
       "sha": "d90364970efa5025e82f7c2d907f7b5b37499745",
       "short_sha": "d903649",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:41:21-03:00",
       "message": "feat-escada-compatibilidade-abertura"
-    },
-    {
-      "sha": "f62559557bdd6d04ab1bacb12489a50ca44add3a",
-      "short_sha": "f625595",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:35:00-03:00",
-      "message": "docs-escada-abertura-contrato"
     }
   ],
   "development": {
@@ -99,10 +99,10 @@
         "active": [
           {
             "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-            "title": "Ações globais do modelo — vigas e peso próprio dos pilares demonstrados; vento nodal ainda pendente",
+            "title": "Ações globais do modelo — vigas, pilares e vento por diafragma demonstrados; composição do pacote global ainda pendente",
             "state": "in_progress",
             "area": 4,
-            "source": "issue #517 / ADR-0019"
+            "source": "issue #517 / ADR-0019 + ADR-0020"
           },
           {
             "code": "ORQ-ESTRUT-01",
@@ -113,13 +113,6 @@
           }
         ],
         "planned": [
-          {
-            "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
-            "title": "Aplicar resultantes de vento aos DOFs sintéticos após a condensação cinemática",
-            "state": "planned",
-            "area": 4,
-            "source": "issue #517 / ADR-0019 + ADR-0020"
-          },
           {
             "code": "ORQ-GLOBAL-CONVENCAO-01",
             "title": "Fixar componente normal, sinal e unidades globais explícitos",
@@ -145,6 +138,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
+          "title": "Quatro casos de vento SA-L1 materializados diretamente nos DOFs sintéticos UX/UY do diafragma reduzido",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_vento_diafragma_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
           "title": "Solver condensado, expansão ao espaço completo e equilíbrio projetado por classes MPC integrados ao pipeline global",
@@ -303,10 +303,10 @@
       "active": [
         {
           "code": "ORQ-GLOBAL-ACOES-MODELO-01",
-          "title": "Ações globais do modelo — vigas e peso próprio dos pilares demonstrados; vento nodal ainda pendente",
+          "title": "Ações globais do modelo — vigas, pilares e vento por diafragma demonstrados; composição do pacote global ainda pendente",
           "state": "in_progress",
           "area": 4,
-          "source": "issue #517 / ADR-0019"
+          "source": "issue #517 / ADR-0019 + ADR-0020"
         },
         {
           "code": "ORQ-ESTRUT-01",
@@ -317,6 +317,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
+          "title": "Autoridade de casos de vento no espaço reduzido do diafragma sem distribuição nodal arbitrária",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_vento_diafragma_global.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
           "title": "Integração do diafragma rígido no solver e traço de equilíbrio global",
@@ -522,13 +529,6 @@
         }
       ],
       "next": [
-        {
-          "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
-          "title": "Aplicar resultantes de vento aos DOFs sintéticos após a integração MPC",
-          "state": "planned",
-          "area": 4,
-          "source": "issue #517 / ADR-0019 + ADR-0020"
-        },
         {
           "code": "ORQ-GLOBAL-CONVENCAO-01",
           "title": "Convenção explícita de eixos, componente normal, sinal e unidades",
@@ -797,8 +797,8 @@
             {
               "code": "DIAFRAGMA-VENTO",
               "title": "Aplicação dos resultantes de vento nos DOFs sintéticos do diafragma",
-              "state": "planned",
-              "source": "issue #517 / ADR-0019 + ADR-0020"
+              "state": "completed",
+              "source": "ADR-0020 / tests_support/orq_vento_diafragma_global.mjs"
             },
             {
               "code": "ACOES-MODELO",
@@ -2070,7 +2070,7 @@
       },
       {
         "name": "test:orq-diafragma",
-        "command": "node tests_support/orq_diafragma_rigido_global.mjs && node tests_support/orq_diafragma_pipeline.mjs"
+        "command": "node tests_support/orq_diafragma_rigido_global.mjs && node tests_support/orq_diafragma_pipeline.mjs && node tests_support/orq_vento_diafragma_global.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -2589,7 +2589,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36561436057",
-    "run_number": "750"
+    "run_id": "36562258968",
+    "run_number": "752"
   }
 }
