@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T13:18:13Z",
+  "generated_at": "2026-09-29T16:30:31Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "9dd4d36f0265b9d5598cc020137102d0063d5a1f",
-    "short_sha": "9dd4d36",
+    "sha": "f45de0939b39d6b51f20c03643ac34a33bd88e7a",
+    "short_sha": "f45de09",
     "author": "JGaspar-Eng",
-    "date": "2026-09-29T10:17:41-03:00",
-    "message": "feat-fund-global-acoes"
+    "date": "2026-09-29T13:30:10-03:00",
+    "message": "feat-fund-global-acoes-integracao"
   },
   "commits": [
+    {
+      "sha": "f45de0939b39d6b51f20c03643ac34a33bd88e7a",
+      "short_sha": "f45de09",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T13:30:10-03:00",
+      "message": "feat-fund-global-acoes-integracao"
+    },
     {
       "sha": "9dd4d36f0265b9d5598cc020137102d0063d5a1f",
       "short_sha": "9dd4d36",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T23:13:26-03:00",
       "message": "feat-orq-diafragma-condensacao"
-    },
-    {
-      "sha": "e3860c5d1cc3e6cd50bc56d90549b2f31e4c7a39",
-      "short_sha": "e3860c5",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T23:09:37-03:00",
-      "message": "feat-orq-diafragma-classes"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "FUND-MATERIALIZACAO-GLOBAL",
-            "title": "Integração da infraestrutura ao envelope global — ações por apoio demonstradas; conectar adaptador ao runtime",
+            "title": "Integração da infraestrutura ao envelope global — casos completos conectados ao ORQ; definir tratamento normativo das ações não axiais",
             "state": "in_progress",
             "area": 11,
             "source": "Área 11 / ADR-0022 + ADR-0023"
@@ -107,11 +107,11 @@
         ],
         "planned": [
           {
-            "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
-            "title": "Conectar os casos globais completos ao preparar_infraestrutura do ORQ",
+            "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
+            "title": "Definir contrato normativo para casos com cortante, flexão biaxial ou torção antes de dimensionamento de fundação",
             "state": "planned",
             "area": 11,
-            "source": "ADR-0023"
+            "source": "ADR-0023 / Área 11"
           },
           {
             "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -124,6 +124,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
+          "title": "Os oito casos globais completos passam a integrar cada apoio do preparar_infraestrutura sem liberar o classificador legado",
+          "state": "completed",
+          "area": 11,
+          "source": "ADR-0023 / tests_support/orq_entradas_modelo_base.mjs"
+        },
         {
           "code": "FUND-GLOBAL-ACOES-01",
           "title": "Envelope global convertido em oito casos completos por apoio, preservando forças/momentos e sem governante implícito",
@@ -331,13 +338,20 @@
       "active": [
         {
           "code": "FUND-MATERIALIZACAO-GLOBAL",
-          "title": "Integração da infraestrutura ao envelope global — ações por apoio demonstradas; conectar adaptador ao runtime",
+          "title": "Integração da infraestrutura ao envelope global — casos completos conectados ao ORQ; definir tratamento normativo das ações não axiais",
           "state": "in_progress",
           "area": 11,
           "source": "Área 11 / ADR-0022 + ADR-0023"
         }
       ],
       "completed": [
+        {
+          "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
+          "title": "Integração fail-closed das ações globais completas nos apoios do ORQ",
+          "state": "completed",
+          "area": 11,
+          "source": "ADR-0023 / tests_support/orq_entradas_modelo_base.mjs"
+        },
         {
           "code": "FUND-GLOBAL-ACOES-01",
           "title": "Adaptador fail-closed de envelope global para ações completas por apoio de fundação",
@@ -600,11 +614,11 @@
       ],
       "next": [
         {
-          "code": "FUND-GLOBAL-ACOES-INTEGRACAO-01",
-          "title": "Conectar os casos globais completos ao preparar_infraestrutura do ORQ sem reduzir a N/M governante",
+          "code": "FUND-GLOBAL-METODO-ACOES-GERAIS-01",
+          "title": "Definir tratamento normativo explícito para ações não axiais antes de promover casos ao dimensionamento de fundações",
           "state": "planned",
           "area": 11,
-          "source": "ADR-0023"
+          "source": "ADR-0023 / Área 11"
         },
         {
           "code": "ESCADA-01-GEOMETRIA-FISICA-CONTRATO",
@@ -1001,8 +1015,14 @@
             {
               "code": "GLOBAL-ACOES-INTEGRACAO",
               "title": "Conectar ações globais completas aos apoios do ORQ",
+              "state": "completed",
+              "source": "ADR-0023 / tests_support/orq_entradas_modelo_base.mjs"
+            },
+            {
+              "code": "GLOBAL-METODO-ACOES-GERAIS",
+              "title": "Definir tratamento normativo para cortante, flexão biaxial e torção",
               "state": "planned",
-              "source": "ADR-0023"
+              "source": "ADR-0023 / Área 11"
             },
             {
               "code": "GLOBAL",
@@ -2690,7 +2710,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36574054670",
-    "run_number": "763"
+    "run_id": "36598191682",
+    "run_number": "764"
   }
 }
