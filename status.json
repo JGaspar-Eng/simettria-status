@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-29T02:13:45Z",
+  "generated_at": "2026-09-29T11:23:42Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bb5143d434c1be739ff272d2041764ffd5f5f380",
-    "short_sha": "bb5143d",
+    "sha": "d90364970efa5025e82f7c2d907f7b5b37499745",
+    "short_sha": "d903649",
     "author": "JGaspar-Eng",
-    "date": "2026-09-28T23:13:26-03:00",
-    "message": "feat-orq-diafragma-condensacao"
+    "date": "2026-09-29T08:23:19-03:00",
+    "message": "feat-orq-diafragma-integracao-mpc"
   },
   "commits": [
+    {
+      "sha": "d90364970efa5025e82f7c2d907f7b5b37499745",
+      "short_sha": "d903649",
+      "author": "JGaspar-Eng",
+      "date": "2026-09-29T08:23:19-03:00",
+      "message": "feat-orq-diafragma-integracao-mpc"
+    },
     {
       "sha": "bb5143d434c1be739ff272d2041764ffd5f5f380",
       "short_sha": "bb5143d",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-09-28T19:35:00-03:00",
       "message": "docs-escada-abertura-contrato"
-    },
-    {
-      "sha": "881b55486bccd24d9a5965ce7b54daef4b6fecf8",
-      "short_sha": "881b554",
-      "author": "JGaspar-Eng",
-      "date": "2026-09-28T19:23:58-03:00",
-      "message": "docs-status-pre1b1"
     }
   ],
   "development": {
@@ -114,13 +114,6 @@
         ],
         "planned": [
           {
-            "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
-            "title": "Integrar solver reduzido, expansão e equilíbrio projetado por classes MPC",
-            "state": "planned",
-            "area": 4,
-            "source": "ADR-0020"
-          },
-          {
             "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
             "title": "Aplicar resultantes de vento aos DOFs sintéticos após a condensação cinemática",
             "state": "planned",
@@ -152,6 +145,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
+          "title": "Solver condensado, expansão ao espaço completo e equilíbrio projetado por classes MPC integrados ao pipeline global",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_pipeline.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
           "title": "Transformação T, condensação K/F e expansão de deslocamentos implementadas como núcleo matemático puro",
@@ -317,6 +317,13 @@
         }
       ],
       "completed": [
+        {
+          "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
+          "title": "Integração do diafragma rígido no solver e traço de equilíbrio global",
+          "state": "completed",
+          "area": 4,
+          "source": "ADR-0020 / tests_support/orq_diafragma_pipeline.mjs"
+        },
         {
           "code": "ORQ-GLOBAL-DIAFRAGMA-CONDENSACAO-01",
           "title": "Núcleo matemático de condensação cinemática do diafragma rígido",
@@ -516,15 +523,8 @@
       ],
       "next": [
         {
-          "code": "ORQ-GLOBAL-DIAFRAGMA-INTEGRACAO-MPC-01",
-          "title": "Integrar solver reduzido, expansão e equilíbrio projetado por classes MPC",
-          "state": "planned",
-          "area": 4,
-          "source": "ADR-0020"
-        },
-        {
           "code": "ORQ-GLOBAL-DIAFRAGMA-VENTO-01",
-          "title": "Aplicar resultantes de vento aos DOFs sintéticos após a condensação cinemática",
+          "title": "Aplicar resultantes de vento aos DOFs sintéticos após a integração MPC",
           "state": "planned",
           "area": 4,
           "source": "issue #517 / ADR-0019 + ADR-0020"
@@ -791,8 +791,8 @@
             {
               "code": "DIAFRAGMA-INTEGRACAO-MPC",
               "title": "Integração do solver reduzido com equilíbrio projetado e reações completas",
-              "state": "planned",
-              "source": "ADR-0020"
+              "state": "completed",
+              "source": "ADR-0020 / tests_support/orq_diafragma_pipeline.mjs"
             },
             {
               "code": "DIAFRAGMA-VENTO",
@@ -2070,7 +2070,7 @@
       },
       {
         "name": "test:orq-diafragma",
-        "command": "node tests_support/orq_diafragma_rigido_global.mjs"
+        "command": "node tests_support/orq_diafragma_rigido_global.mjs && node tests_support/orq_diafragma_pipeline.mjs"
       },
       {
         "name": "test:vento-ca",
@@ -2589,7 +2589,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36511587440",
-    "run_number": "748"
+    "run_id": "36561436057",
+    "run_number": "750"
   }
 }
