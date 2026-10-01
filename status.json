@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-01T20:40:11Z",
+  "generated_at": "2026-10-01T20:42:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0d068e0af3aa32e82697027e7da8ae0bc0e0c140",
-    "short_sha": "0d068e0",
+    "sha": "6aea1a579c77c5097328bba5b4be61912d3be0d2",
+    "short_sha": "6aea1a5",
     "author": "JGaspar-Eng",
-    "date": "2026-10-01T17:39:36-03:00",
-    "message": "feat-escada-u-informa-bw-minima-ancoragem"
+    "date": "2026-10-01T17:42:38-03:00",
+    "message": "feat-escada-u-memorial-tecnico-runtime"
   },
   "commits": [
+    {
+      "sha": "6aea1a579c77c5097328bba5b4be61912d3be0d2",
+      "short_sha": "6aea1a5",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-01T17:42:38-03:00",
+      "message": "feat-escada-u-memorial-tecnico-runtime"
+    },
     {
       "sha": "0d068e0af3aa32e82697027e7da8ae0bc0e0c140",
       "short_sha": "0d068e0",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-01T13:12:14-03:00",
       "message": "feat-escada-u-dimensionamento-resistente-lances"
-    },
-    {
-      "sha": "a23f391e6773e4ae235ed18040f6fc141cb1728d",
-      "short_sha": "a23f391",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-01T12:43:54-03:00",
-      "message": "feat-escada-u-cargas-e-reacoes"
     }
   ],
   "development": {
@@ -2177,7 +2177,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 191,
+    "validator_count": 192,
     "validators": [
       {
         "name": "test:base",
@@ -2550,6 +2550,10 @@
       {
         "name": "test:escada-u-detalhamento-armadura",
         "command": "node tests/validar_escada_u_detalhamento_armadura.mjs"
+      },
+      {
+        "name": "test:escada-u-memorial",
+        "command": "node tests/validar_escada_u_memorial.mjs"
       },
       {
         "name": "test:escada-u-abertura-referenciada",
@@ -2952,7 +2956,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36923205424",
-    "run_number": "775"
+    "run_id": "36923574228",
+    "run_number": "776"
   }
 }
