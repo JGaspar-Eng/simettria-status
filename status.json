@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-01T23:47:44Z",
+  "generated_at": "2026-10-02T00:24:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a4838d5afe2cca4d59ca67bd05cd6e2e7e4ffd85",
-    "short_sha": "a4838d5",
+    "sha": "d99bd9faa96a5241ddf5262b58d12923608fd686",
+    "short_sha": "d99bd9f",
     "author": "JGaspar-Eng",
-    "date": "2026-10-01T20:47:26-03:00",
-    "message": "feat-escada-u-injeta-reacoes-apoios-extremos"
+    "date": "2026-10-01T21:23:55-03:00",
+    "message": "feat-escada-u-cisalhamento-els"
   },
   "commits": [
+    {
+      "sha": "d99bd9faa96a5241ddf5262b58d12923608fd686",
+      "short_sha": "d99bd9f",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-01T21:23:55-03:00",
+      "message": "feat-escada-u-cisalhamento-els"
+    },
     {
       "sha": "a4838d5afe2cca4d59ca67bd05cd6e2e7e4ffd85",
       "short_sha": "a4838d5",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-01T17:34:15-03:00",
       "message": "feat-escada-u-exibe-ancoragem-apoios"
-    },
-    {
-      "sha": "1f994d1704a1b0f4079a26252647c5c1f14d3747",
-      "short_sha": "1f994d1",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-01T17:29:55-03:00",
-      "message": "feat-escada-u-verifica-ancoragem-nos-apoios"
     }
   ],
   "development": {
@@ -2177,7 +2177,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 192,
+    "validator_count": 193,
     "validators": [
       {
         "name": "test:base",
@@ -2538,6 +2538,10 @@
       {
         "name": "test:escada-u-analise-estatica",
         "command": "node tests/validar_escada_u_analise_estatica.mjs"
+      },
+      {
+        "name": "test:escada-u-cisalhamento-els",
+        "command": "node tests/validar_escada_u_cisalhamento_els.mjs"
       },
       {
         "name": "test:escada-u-dimensionamento-resistente",
@@ -2956,7 +2960,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "36942659480",
-    "run_number": "781"
+    "run_id": "36945788815",
+    "run_number": "782"
   }
 }
