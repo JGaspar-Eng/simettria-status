@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-08T03:43:24Z",
+  "generated_at": "2026-10-08T03:52:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "672de46546b049ac0ae1fdefd700dfd0fab34e3b",
-    "short_sha": "672de46",
+    "sha": "35b67197a7ec40d4ba394ec6ff5cb80692b7b0b5",
+    "short_sha": "35b6719",
     "author": "JGaspar-Eng",
-    "date": "2026-10-08T00:43:02-03:00",
-    "message": "fix: fecha prismas da escada u sem faces cruzadas"
+    "date": "2026-10-08T00:51:53-03:00",
+    "message": "fix: exibe os dois lados das lajes da escada"
   },
   "commits": [
+    {
+      "sha": "35b67197a7ec40d4ba394ec6ff5cb80692b7b0b5",
+      "short_sha": "35b6719",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T00:51:53-03:00",
+      "message": "fix: exibe os dois lados das lajes da escada"
+    },
     {
       "sha": "672de46546b049ac0ae1fdefd700dfd0fab34e3b",
       "short_sha": "672de46",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-03T11:42:45-03:00",
       "message": "fix-escada-u-encaixe-face-real-viga"
-    },
-    {
-      "sha": "a42b17414c04ff7e94bcf4280d47e3f90faaf96b",
-      "short_sha": "a42b174",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-03T11:21:10-03:00",
-      "message": "fix-escada-u-apoio-extremo-q1inicio"
     }
   ],
   "development": {
@@ -2960,7 +2960,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "37724046763",
-    "run_number": "807"
+    "run_id": "37724737509",
+    "run_number": "808"
   }
 }
