@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-08T12:41:35Z",
+  "generated_at": "2026-10-08T14:43:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "96231470730492ee3805980c50d03748629a7e20",
-    "short_sha": "9623147",
+    "sha": "c6269017e28051043294af76bcb7f0c21a149201",
+    "short_sha": "c626901",
     "author": "JGaspar-Eng",
-    "date": "2026-10-08T09:41:15-03:00",
-    "message": "revert: restaura checkpoint visual da escada"
+    "date": "2026-10-08T11:43:14-03:00",
+    "message": "fix: alinha primeiro degrau ao plano da laje"
   },
   "commits": [
+    {
+      "sha": "c6269017e28051043294af76bcb7f0c21a149201",
+      "short_sha": "c626901",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T11:43:14-03:00",
+      "message": "fix: alinha primeiro degrau ao plano da laje"
+    },
     {
       "sha": "96231470730492ee3805980c50d03748629a7e20",
       "short_sha": "9623147",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T00:51:53-03:00",
       "message": "fix: exibe os dois lados das lajes da escada"
-    },
-    {
-      "sha": "672de46546b049ac0ae1fdefd700dfd0fab34e3b",
-      "short_sha": "672de46",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T00:43:02-03:00",
-      "message": "fix: fecha prismas da escada u sem faces cruzadas"
     }
   ],
   "development": {
@@ -2960,7 +2960,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "37778660781",
-    "run_number": "816"
+    "run_id": "37794779169",
+    "run_number": "817"
   }
 }
