@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-08T11:28:27Z",
+  "generated_at": "2026-10-08T11:32:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "53424b25571e816c8eca696d981d5eb5a4a85b5f",
-    "short_sha": "53424b2",
+    "sha": "b0d5ca75db467503632efb49063ed6ff4f88d1dc",
+    "short_sha": "b0d5ca7",
     "author": "JGaspar-Eng",
-    "date": "2026-10-08T08:28:09-03:00",
-    "message": "revert: restaura referencia estavel da escada"
+    "date": "2026-10-08T08:32:02-03:00",
+    "message": "fix: ajusta patamar a viga intermediaria"
   },
   "commits": [
+    {
+      "sha": "b0d5ca75db467503632efb49063ed6ff4f88d1dc",
+      "short_sha": "b0d5ca7",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T08:32:02-03:00",
+      "message": "fix: ajusta patamar a viga intermediaria"
+    },
     {
       "sha": "53424b25571e816c8eca696d981d5eb5a4a85b5f",
       "short_sha": "53424b2",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-07T16:45:34-03:00",
       "message": "fix-escada-u-sombreamento-e-apoio-superior"
-    },
-    {
-      "sha": "cbecb69ddb38ecdf004390791aaead39d2f70194",
-      "short_sha": "cbecb69",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-03T13:44:15-03:00",
-      "message": "fix-escada-u-filtra-vigas-por-pavimento"
     }
   ],
   "development": {
@@ -2960,7 +2960,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "37770243903",
-    "run_number": "813"
+    "run_id": "37770680840",
+    "run_number": "814"
   }
 }
