@@ -101,7 +101,7 @@
   }
 
   function detalhesArea(epic, status) {
-    return '<details class="area-work-details"><summary>Ver frentes, checklists e trabalhos</summary>' + frentesArea(epic, status) + checklistsArea(epic, status) + trabalhosRoadmap(epic?.work) + '</details>';
+    return '<details class="area-work-details"><summary>Ver frentes, checklists e trabalhos</summary><p class="epic-note">' + esc(epic.note || "Base de cálculo indisponível.") + '</p>' + frentesArea(epic, status) + checklistsArea(epic, status) + trabalhosRoadmap(epic?.work) + '</details>';
   }
 
   function renderizarAreas(status) {
@@ -112,7 +112,7 @@
     if (!epics.length) return;
     instalarEstiloAreas();
     var note = section.querySelector(".section-note");
-    if (note) note.textContent = "Todas as 12 áreas. Frentes ativas, próximas, concluídas e checklists vêm do status versionado; nenhum percentual específico é inventado.";
+    if (note) note.textContent = "Índices calculados dos trabalhos cadastrados, arredondados a 5 pontos. Parciais sem fração documentada não pontuam. Não medem cobertura normativa nem aprovação de projetos.";
     grid.innerHTML = epics.map(function (epic) {
       var measured = epic.status === "measured" && epic.percent != null;
       var value = measured ? Math.max(0, Math.min(100, Number(epic.percent))) : 0;
@@ -120,7 +120,7 @@
       return '<article class="epic-progress-card area-expanded' + (ativa ? ' active' : measured ? '' : ' pending') + '">' +
         '<div class="epic-progress-head"><div><div class="epic-code">ÁREA ' + esc(epic.number) + '</div><div class="epic-title">' + esc(epic.title || "") + '</div></div><div class="epic-percent' + (measured ? '' : ' pending') + '">' + esc(measured ? '~' + value + '%' : 'reestimativa pendente') + '</div></div>' +
         '<div class="epic-track"><div class="epic-fill" style="width:' + value + '%"></div></div>' +
-        (ativa ? '<div class="epic-area-badge">EM EXECUÇÃO</div>' : '<div class="epic-note">estado versionado da área</div>') +
+        (ativa ? '<div class="epic-area-badge">EM EXECUÇÃO</div>' : '<div class="epic-note">índice dos trabalhos cadastrados</div>') +
         detalhesArea(epic, status) + '</article>';
     }).join("");
   }

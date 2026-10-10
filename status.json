@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-08T14:43:34Z",
+  "generated_at": "2026-10-10T19:49:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c6269017e28051043294af76bcb7f0c21a149201",
-    "short_sha": "c626901",
+    "sha": "2070f2e5b4d0f49260c2d81d3110b9466e4131d7",
+    "short_sha": "2070f2e",
     "author": "JGaspar-Eng",
-    "date": "2026-10-08T11:43:14-03:00",
-    "message": "fix: alinha primeiro degrau ao plano da laje"
+    "date": "2026-10-10T16:48:52-03:00",
+    "message": "feat(fund): integra demandas ELU e diferenciais ELS rastreaveis"
   },
   "commits": [
+    {
+      "sha": "2070f2e5b4d0f49260c2d81d3110b9466e4131d7",
+      "short_sha": "2070f2e",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-10T16:48:52-03:00",
+      "message": "feat(fund): integra demandas ELU e diferenciais ELS rastreaveis"
+    },
+    {
+      "sha": "6f596e9692fb3a52436b47b76504e36d21f9f7a6",
+      "short_sha": "6f596e9",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T20:27:53-03:00",
+      "message": "fix: fecha primeiro degrau no apoio externo"
+    },
+    {
+      "sha": "a28387ed781dcfa7ae223a8d91d551ca435133f7",
+      "short_sha": "a28387e",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T19:47:56-03:00",
+      "message": "test: fecha invariantes da transicao do patamar"
+    },
+    {
+      "sha": "b2896cf15eed36bd5085a425f37ccb3004e22078",
+      "short_sha": "b2896cf",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T19:44:07-03:00",
+      "message": "fix: elimina degrau residual no patamar"
+    },
+    {
+      "sha": "ab1d9a6178a8d40f1ca5329579f991c826be4ec2",
+      "short_sha": "ab1d9a6",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T19:38:10-03:00",
+      "message": "fix: unifica limites reais da escada U"
+    },
+    {
+      "sha": "8d2afdf5e4acb3b53b3b74732a5a7621048719b3",
+      "short_sha": "8d2afdf",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T19:26:02-03:00",
+      "message": "test: audita apoios da escada em vãos variados"
+    },
+    {
+      "sha": "18478ae961237d87ff45e52621550f9c3c24313d",
+      "short_sha": "18478ae",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T13:55:31-03:00",
+      "message": "fix: embute apoio da escada no topo estrutural"
+    },
+    {
+      "sha": "81899c999bac302726a9c4b3c656109aefceceef",
+      "short_sha": "81899c9",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T13:49:06-03:00",
+      "message": "fix: cria apoio horizontal nos extremos da escada"
+    },
+    {
+      "sha": "18445431ece348831163ebeb6d6e487a5fe5f751",
+      "short_sha": "1844543",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-08T12:06:03-03:00",
+      "message": "fix: apoia laje inclinada sem prolongar degraus"
+    },
     {
       "sha": "c6269017e28051043294af76bcb7f0c21a149201",
       "short_sha": "c626901",
       "author": "JGaspar-Eng",
       "date": "2026-10-08T11:43:14-03:00",
       "message": "fix: alinha primeiro degrau ao plano da laje"
-    },
-    {
-      "sha": "96231470730492ee3805980c50d03748629a7e20",
-      "short_sha": "9623147",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T09:41:15-03:00",
-      "message": "revert: restaura checkpoint visual da escada"
-    },
-    {
-      "sha": "1308be002929e28e28f18687fe93bfeda131d145",
-      "short_sha": "1308be0",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T09:35:35-03:00",
-      "message": "fix: fecha encontro do primeiro degrau"
-    },
-    {
-      "sha": "b0d5ca75db467503632efb49063ed6ff4f88d1dc",
-      "short_sha": "b0d5ca7",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T08:32:02-03:00",
-      "message": "fix: ajusta patamar a viga intermediaria"
-    },
-    {
-      "sha": "53424b25571e816c8eca696d981d5eb5a4a85b5f",
-      "short_sha": "53424b2",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T08:28:09-03:00",
-      "message": "revert: restaura referencia estavel da escada"
-    },
-    {
-      "sha": "d4153a1255188a9a83f3ef98fd54d90966bf69c8",
-      "short_sha": "d4153a1",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T08:25:55-03:00",
-      "message": "fix: iguala apoios e pisadas dos lances"
-    },
-    {
-      "sha": "501cc0d551830021f5d82e4f778fdb4191ac26cd",
-      "short_sha": "501cc0d",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T08:12:50-03:00",
-      "message": "fix: fecha apoios visuais da escada"
-    },
-    {
-      "sha": "bd30690d7bb6164765d70af02ce8b4844afada20",
-      "short_sha": "bd30690",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T08:03:40-03:00",
-      "message": "fix: melhora luz e encaixe do primeiro lance"
-    },
-    {
-      "sha": "90388072a85a73431ddd2cecce2b07c8a394d62f",
-      "short_sha": "9038807",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T07:54:38-03:00",
-      "message": "fix: aplica material de viga na escada"
-    },
-    {
-      "sha": "35b67197a7ec40d4ba394ec6ff5cb80692b7b0b5",
-      "short_sha": "35b6719",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T00:51:53-03:00",
-      "message": "fix: exibe os dois lados das lajes da escada"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Smoke test ponta a ponta do fluxo estrutural para identificar o proximo bloqueio funcional real",
+            "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU e comparacao opcional de recalques diferenciais com totais ELS declarados; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,132 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-RECALQUE-DIFERENCIAL-01",
+          "title": "Comparacao entre pares de apoios de recalques totais ELS explicitamente declarados e calculados, com mesmo caso/horizonte, limite e distancia rastreaveis; reprovacao e pendencia refletidas no painel, sem calculo das parcelas de longo prazo nem aprovacao executiva",
+          "state": "completed",
+          "area": 4,
+          "source": "services/fundacao_recalques_diferenciais_service.js / services/orquestrador_calculo_estrutural_integrado_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_recalques_diferenciais.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-SOLICITACOES-CISALHAMENTO-PUNCAO-01",
+          "title": "Solicitacoes geometricas nas secoes a d das quatro faces e contorno arredondado a 2d medio integradas aos oito casos ELU, com pressao liquida rastreavel; resistencias, beta, concentracao, detalhamento e aprovacao global bloqueados",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_solicitacoes_cisalhamento_puncao.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_solicitacoes_cisalhamento_puncao.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-RECALQUE-TOTAL-01",
+          "title": "Soma do recalque imediato com parcelas geotecnicas declaradas de adensamento e fluencia, limite e horizonte explicitos por caso ELS; vinculo com geometria/pressao, cadastro, snapshot, reprovacao global e painel testados; calculo das parcelas de longo prazo e verificacao executiva dos diferenciais permanecem pendentes; comparacao opcional entre apoios ja integrada separadamente",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_recalque_total.js / services/fundacao_recalques_els_service.js / services/fundacao_verificacao_global_service.js / services/fundacao_insumos_projeto_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_recalques_els.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-FLEXAO-BIAXIAL-FAIXAS-01",
+          "title": "Equilibrio resistente de flexao por metro de faixa flexivel integrado aos oito ELU, com alturas uteis e armadura explicitas, envelope da borda e bloqueio de geometria obsoleta; modelo global de placa, concentracao junto ao pilar, puncao e aprovacao executiva permanecem pendentes",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_flexao_biaxial_faixas.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_flexao_biaxial_faixas.mjs / tests/validar_fund_global_classificacao_casos_area11.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-SOLICITACOES-BIAXIAIS-01",
+          "title": "Esforcos verticais nas quatro faces do pilar integrados por caso ELU a partir da pressao biaxial; secao atual e rotacao 0/90, desconto de peso uniforme somente explicito, painel distingue solicitacoes de resistencia; dimensionamento biaxial permanece parcial",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_solicitacoes_biaxiais.js / services/fundacao_verificacao_global_service.js / tests_support/fundacao_solicitacoes_biaxiais.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-CADASTRO-ESTABILIDADE-ELS-01",
+          "title": "Tres cadastros opcionais no formulario existente: resistencia horizontal ELU, parcelas de tombamento ELU e recalque imediato ELS independente; referencias obrigatorias, geometria confirmada e resultados antigos invalidados; sem aprovacao global",
+          "state": "completed",
+          "area": 11,
+          "source": "services/fundacao_insumos_projeto_service.js / ui/fundacao_insumos_complementares_ui.js / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs / QA local ficticio"
+        },
+        {
+          "code": "INT-PILAR-FUND-ASSOCIACAO-01",
+          "title": "Associacao manual pilar de base -> sapata isolada centrada, exclusiva e existente; geometria atual resolvida no calculo normal, oito casos por apoio, snapshot e bloqueios de referencia invalida testados; sem materializacao ou aprovacao executiva",
+          "state": "completed",
+          "area": 3,
+          "source": "services/fundacao_insumos_projeto_service.js / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs / QA local ficticio"
+        },
+        {
+          "code": "FUND-CADASTRO-INSUMOS-01",
+          "title": "Cadastro de geometria, resistencia rastreavel, desnivel, acrescimo ELU e vinculo SPT por apoio; persiste no projeto, alimenta o calculo normal e invalida resultados antigos; sem valores presumidos",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local e formulario com dados ficticios - services/fundacao_insumos_projeto_service.js"
+        },
+        {
+          "code": "FUND-PAINEL-VERIFICACOES-01",
+          "title": "Painel do apoio mostra etapas atendidas, reprovadas ou pendentes, identifica os oito casos globais e separa ELS; resultados da ultima execucao, sem aprovacao executiva",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local e visual com fixture - services/orq_apoio_painel_service.js e ui/infraestrutura_overlay_runtime_ui.js"
+        },
+        {
+          "code": "FUND-RECALQUE-IMEDIATO-01",
+          "title": "Recalque elastico imediato integrado com casos ELS independentes, geometria vinculada, parametros e limites explicitos; total e diferencial nao liberados",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - core/calculation/fundacao_recalque_elastico_imediato.js e services/fundacao_recalques_els_service.js"
+        },
+        {
+          "code": "FUND-TOMBAMENTO-BASE-CENTRADA-01",
+          "title": "Equilibrio nas bordas integrado aos oito casos com parcelas de projeto separadas, normal favoravel centrada e transporte de momentos; sem resistencia lateral presumida",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - core/calculation/fundacao_tombamento_base_centrada.js"
+        },
+        {
+          "code": "FUND-INTERFACE-HT-01",
+          "title": "Deslizamento e torcao combinados nos oito casos, com resistencia uniforme de projeto rastreavel e equilibrio do campo verificado; sem aprovacao global",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - core/calculation/fundacao_cisalhamento_torcao_interface.js"
+        },
+        {
+          "code": "KNOWLEDGE-EXPORT-RECUPERACAO-01",
+          "title": "Exportacao tolera bloqueios breves do Windows com tentativas limitadas e preserva backup se a recuperacao falhar",
+          "state": "completed",
+          "area": 12,
+          "source": "Validacao local - scripts/knowledge_export.py e tests/test_knowledge_export.py"
+        },
+        {
+          "code": "FUND-SPT-TCC-01",
+          "title": "Laudo 10.731/20: tres furos e 36 ensaios conferidos, cotas RN explicitas e furo associado por apoio; sem resistencia de projeto presumida",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/sondagem_projeto_tcc_service.js"
+        },
+        {
+          "code": "FUND-GLOBAL-CADEIA-VERIFICACAO-01",
+          "title": "Cadeia centrada de estrutura, ancoragem e armaduras integrada caso a caso; confronto de resistencia horizontal rastreavel e pendencias completas sem aprovacao global",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/fundacao_verificacao_global_service.js"
+        },
+        {
+          "code": "FUND-GLOBAL-RESUMO-PRESSAO-01",
+          "title": "Resumo dos oito casos com pressao maxima, empates rastreaveis, reprovacoes e pendencias, sem aprovacao global de fundacao",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/fundacao_classificacao_casos_globais_service.js"
+        },
+        {
+          "code": "FUND-GLOBAL-PRESSAO-BIAXIAL-01",
+          "title": "Verificacao parcial de pressao biaxial em contato integral nos oito casos, com transporte de momentos e insumos explicitos; estabilidade e dimensionamento executivo nao liberados",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/fundacao_classificacao_casos_globais_service.js"
+        },
+        {
+          "code": "ORQ-GLOBAL-RUNTIME-MVP-01",
+          "title": "Botao Calcular estrutura conectado aos oito casos globais; vento associado aos planos superiores, com equilibrio de forcas e momentos verificado",
+          "state": "completed",
+          "area": 1,
+          "source": "Validacao local e navegador - services/orq_calculo_global_runtime_service.js"
+        },
         {
           "code": "ESCADA-U-MVP-01",
           "title": "Escada em U com dois lances paralelos, patamar automatico por desnivel piso-a-piso, verificacao de envelope e visual 2D/3D",
@@ -406,12 +532,89 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Smoke test ponta a ponta do fluxo estrutural para identificar o proximo bloqueio funcional real",
+          "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU e comparacao opcional de recalques diferenciais com totais ELS declarados; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
       ],
       "completed": [
+        {
+          "code": "FUND-CADASTRO-INSUMOS-01",
+          "title": "Cadastro de geometria, resistencia rastreavel, desnivel, acrescimo ELU e vinculo SPT por apoio; persiste no projeto, alimenta o calculo normal e invalida resultados antigos; sem valores presumidos",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local e formulario com dados ficticios - services/fundacao_insumos_projeto_service.js"
+        },
+        {
+          "code": "FUND-PAINEL-VERIFICACOES-01",
+          "title": "Painel do apoio mostra etapas atendidas, reprovadas ou pendentes, identifica os oito casos globais e separa ELS; resultados da ultima execucao, sem aprovacao executiva",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local e visual com fixture - services/orq_apoio_painel_service.js e ui/infraestrutura_overlay_runtime_ui.js"
+        },
+        {
+          "code": "FUND-RECALQUE-IMEDIATO-01",
+          "title": "Recalque elastico imediato integrado com casos ELS independentes, geometria vinculada, parametros e limites explicitos; total e diferencial nao liberados",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - core/calculation/fundacao_recalque_elastico_imediato.js e services/fundacao_recalques_els_service.js"
+        },
+        {
+          "code": "FUND-TOMBAMENTO-BASE-CENTRADA-01",
+          "title": "Equilibrio nas bordas integrado aos oito casos com parcelas de projeto separadas, normal favoravel centrada e transporte de momentos; sem resistencia lateral presumida",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - core/calculation/fundacao_tombamento_base_centrada.js"
+        },
+        {
+          "code": "FUND-INTERFACE-HT-01",
+          "title": "Deslizamento e torcao combinados nos oito casos, com resistencia uniforme de projeto rastreavel e equilibrio do campo verificado; sem aprovacao global",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - core/calculation/fundacao_cisalhamento_torcao_interface.js"
+        },
+        {
+          "code": "KNOWLEDGE-EXPORT-RECUPERACAO-01",
+          "title": "Exportacao tolera bloqueios breves do Windows com tentativas limitadas e preserva backup se a recuperacao falhar",
+          "state": "completed",
+          "area": 12,
+          "source": "Validacao local - scripts/knowledge_export.py e tests/test_knowledge_export.py"
+        },
+        {
+          "code": "FUND-SPT-TCC-01",
+          "title": "Laudo 10.731/20: tres furos e 36 ensaios conferidos, cotas RN explicitas e furo associado por apoio; sem resistencia de projeto presumida",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/sondagem_projeto_tcc_service.js"
+        },
+        {
+          "code": "FUND-GLOBAL-CADEIA-VERIFICACAO-01",
+          "title": "Cadeia centrada de estrutura, ancoragem e armaduras integrada caso a caso; confronto de resistencia horizontal rastreavel e pendencias completas sem aprovacao global",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/fundacao_verificacao_global_service.js"
+        },
+        {
+          "code": "FUND-GLOBAL-RESUMO-PRESSAO-01",
+          "title": "Resumo dos oito casos com pressao maxima, empates rastreaveis, reprovacoes e pendencias, sem aprovacao global de fundacao",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/fundacao_classificacao_casos_globais_service.js"
+        },
+        {
+          "code": "FUND-GLOBAL-PRESSAO-BIAXIAL-01",
+          "title": "Verificacao parcial de pressao biaxial em contato integral nos oito casos, com transporte de momentos e insumos explicitos; estabilidade e dimensionamento executivo nao liberados",
+          "state": "completed",
+          "area": 11,
+          "source": "Validacao local - services/fundacao_classificacao_casos_globais_service.js"
+        },
+        {
+          "code": "ORQ-GLOBAL-RUNTIME-MVP-01",
+          "title": "Botao Calcular estrutura conectado aos oito casos globais; vento associado aos planos superiores, com equilibrio de forcas e momentos verificado",
+          "state": "completed",
+          "area": 1,
+          "source": "Validacao local e navegador - services/orq_calculo_global_runtime_service.js"
+        },
         {
           "code": "ESCADA-U-MVP-01",
           "title": "Escada em U com dois lances paralelos, patamar automatico por desnivel piso-a-piso, verificacao de envelope e visual 2D/3D",
@@ -1296,8 +1499,8 @@
         "number": 1,
         "code": "E1",
         "title": "Modelagem Estrutural",
-        "percent": 50,
-        "note": "~50%.",
+        "percent": 45,
+        "note": "Índice dos trabalhos cadastrados: 5 concluídos, 3 parciais, 0 em andamento e 3 planejados; total 11. Contribuição do bloco ativo: 0.00. Índice bruto 45.45%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1382,8 +1585,8 @@
         "number": 2,
         "code": "E2",
         "title": "Infraestrutura / Geotecnia",
-        "percent": 60,
-        "note": "~60% (M2 V1 preliminar de fundações rasas concluído; capacidade normativa, memorial e motores multi-obra pendentes).",
+        "percent": 65,
+        "note": "Índice dos trabalhos cadastrados: 11 concluídos, 1 parciais, 0 em andamento e 5 planejados; total 17. Contribuição do bloco ativo: 0.00. Índice bruto 64.71%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1504,17 +1707,17 @@
         "number": 3,
         "code": "E3",
         "title": "Integração Estrutural",
-        "percent": null,
-        "note": "reestimativa pendente após o fechamento do M3B; não será alterado por inferência enquanto o novo escopo de integração global estiver em implantação.",
-        "status": "pending_reestimate",
+        "percent": 55,
+        "note": "Índice dos trabalhos cadastrados: 5 concluídos, 1 parciais, 0 em andamento e 3 planejados; total 9. Contribuição do bloco ativo: 0.00. Índice bruto 55.56%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "status": "measured",
         "active": false,
         "work": {
           "done": 5,
-          "partial": 0,
+          "partial": 1,
           "active_now": 0,
-          "planned": 4,
+          "planned": 3,
           "out_of_scope": 0,
-          "in_progress": 0,
+          "in_progress": 1,
           "total": 9,
           "items": [
             {
@@ -1548,10 +1751,10 @@
               "marker": "⬜"
             },
             {
-              "text": "Pilar → fundação — não iniciado; fundação permanece entidade independente conforme ADR-007",
-              "raw_text": "Pilar → fundação — não iniciado; fundação permanece entidade independente conforme ADR-007.",
-              "state": "planned",
-              "marker": "⬜"
+              "text": "Pilar → fundação — associação manual por identidade implementada para uma sapata isolada centrada por pilar de base, no cadastro do projeto; dimensões, altura e cota lidas da entidade atual, oito casos globais mantidos por apoio, snapshot preservado e referências removidas/deslocadas/duplicadas bloqueadas. Fundação permanece independente conforme ADR-007. Associações excêntricas, compartilhadas e de outras tipologias permanecem pendentes",
+              "raw_text": "Pilar → fundação — associação manual por identidade implementada para uma sapata isolada centrada por pilar de base, no cadastro do projeto; dimensões, altura e cota lidas da entidade atual, oito casos globais mantidos por apoio, snapshot preservado e referências removidas/deslocadas/duplicadas bloqueadas. Fundação permanece independente conforme ADR-007. Associações excêntricas, compartilhadas e de outras tipologias permanecem pendentes.",
+              "state": "partial",
+              "marker": "🟡"
             },
             {
               "text": "Fundação → SPT como vínculo estrutural — não iniciado; as consultas geotécnicas existentes permanecem dinâmicas e sem vínculo persistido",
@@ -1578,17 +1781,17 @@
         "number": 4,
         "code": "E4",
         "title": "Dimensionamento",
-        "percent": 5,
-        "note": "~5%.",
+        "percent": 15,
+        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 3 parciais, 1 em andamento e 3 planejados; total 7. Contribuição do bloco ativo: 0.91. Índice bruto 13.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": true,
         "work": {
           "done": 0,
-          "partial": 1,
+          "partial": 3,
           "active_now": 1,
-          "planned": 5,
+          "planned": 3,
           "out_of_scope": 0,
-          "in_progress": 1,
+          "in_progress": 3,
           "total": 7,
           "items": [
             {
@@ -1598,10 +1801,10 @@
               "marker": "🟡"
             },
             {
-              "text": "Concreto armado (NBR 6118)",
-              "raw_text": "Concreto armado (NBR 6118) — não iniciado",
-              "state": "planned",
-              "marker": "⬜"
+              "text": "Dimensionamento geral de elementos em concreto — núcleo de pilares concluído no seu escopo restrito (NBR 6118); análise mínima de laje unidirecional implementada; dimensionamento geral de todos os elementos permanece parcial",
+              "raw_text": "Dimensionamento geral de elementos em concreto — núcleo de pilares concluído no seu escopo restrito (NBR 6118); análise mínima de laje unidirecional implementada; dimensionamento geral de todos os elementos permanece parcial",
+              "state": "partial",
+              "marker": "🟡"
             },
             {
               "text": "Aço",
@@ -1622,16 +1825,16 @@
               "marker": "⬜"
             },
             {
-              "text": "Fundações (dimensionamento)",
-              "raw_text": "Fundações (dimensionamento) — não iniciado",
+              "text": "Fundações (dimensionamento) — núcleo centrado, pressão biaxial em contato integral e verificações parciais de estabilidade/recalque imediato implementados; cadastros por apoio de resistência horizontal ELU, parcelas de tombamento ELU e recalque imediato ELS integrados ao cálculo e ao arquivo do projeto, sem parâmetros presumidos; esforços biaxiais nas quatro faces, equilíbrio resistente parcial por metro de faixa flexível e solicitações geométricas de cortante/punção por caso ELU; soma de recalque total com parcelas ELS declaradas e comparação opcional de diferenciais entre apoios; modelo global de placa, concentração de flexão junto ao pilar, resistências de cisalhamento/punção, cálculo geotécnico das parcelas de longo prazo, detalhamento integral e aprovação completa pendentes",
+              "raw_text": "Fundações (dimensionamento) — núcleo centrado, pressão biaxial em contato integral e verificações parciais de estabilidade/recalque imediato implementados; cadastros por apoio de resistência horizontal ELU, parcelas de tombamento ELU e recalque imediato ELS integrados ao cálculo e ao arquivo do projeto, sem parâmetros presumidos; esforços biaxiais nas quatro faces, equilíbrio resistente parcial por metro de faixa flexível e solicitações geométricas de cortante/punção por caso ELU; soma de recalque total com parcelas ELS declaradas e comparação opcional de diferenciais entre apoios; modelo global de placa, concentração de flexão junto ao pilar, resistências de cisalhamento/punção, cálculo geotécnico das parcelas de longo prazo, detalhamento integral e aprovação completa pendentes",
               "state": "active_now",
-              "marker": "⬜"
+              "marker": "🟡"
             },
             {
-              "text": "Verificações normativas / estados-limite",
-              "raw_text": "Verificações normativas / estados-limite — não iniciado",
-              "state": "planned",
-              "marker": "⬜"
+              "text": "Verificações normativas / estados-limite — contratos, combinações ELU e verificações no escopo implementado com regressão automatizada; cobertura normativa integral e fluxo executivo ainda pendentes",
+              "raw_text": "Verificações normativas / estados-limite — contratos, combinações ELU e verificações no escopo implementado com regressão automatizada; cobertura normativa integral e fluxo executivo ainda pendentes",
+              "state": "partial",
+              "marker": "🟡"
             }
           ]
         }
@@ -1640,8 +1843,8 @@
         "number": 5,
         "code": "E5",
         "title": "Detalhamento",
-        "percent": 10,
-        "note": "~10% (interfaces preliminares prontas).",
+        "percent": 0,
+        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 1 parciais, 0 em andamento e 6 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice bruto 0.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1702,8 +1905,8 @@
         "number": 6,
         "code": "E6",
         "title": "Visualização",
-        "percent": 25,
-        "note": "~25%.",
+        "percent": 20,
+        "note": "Índice dos trabalhos cadastrados: 1 concluídos, 0 parciais, 0 em andamento e 4 planejados; total 5. Contribuição do bloco ativo: 0.00. Índice bruto 20.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1753,7 +1956,7 @@
         "code": "E7",
         "title": "Produtividade",
         "percent": 25,
-        "note": "~25%.",
+        "note": "Índice dos trabalhos cadastrados: 2 concluídos, 0 parciais, 0 em andamento e 6 planejados; total 8. Contribuição do bloco ativo: 0.00. Índice bruto 25.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1820,8 +2023,8 @@
         "number": 8,
         "code": "E8",
         "title": "BIM / Interoperabilidade",
-        "percent": 5,
-        "note": "~5%.",
+        "percent": 15,
+        "note": "Índice dos trabalhos cadastrados: 1 concluídos, 0 parciais, 0 em andamento e 5 planejados; total 6. Contribuição do bloco ativo: 0.00. Índice bruto 16.67%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1876,8 +2079,8 @@
         "number": 9,
         "code": "E9",
         "title": "Inteligência",
-        "percent": 10,
-        "note": "~10%. A disponibilidade de `Ix,g`/`Iy,g` é infraestrutura estrutural habilitadora e não será contabilizada como otimização já implementada.",
+        "percent": 100,
+        "note": "Índice dos trabalhos cadastrados: 7 concluídos, 0 parciais, 0 em andamento e 0 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice bruto 100.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -1938,8 +2141,8 @@
         "number": 10,
         "code": "E10",
         "title": "Produto Final",
-        "percent": 10,
-        "note": "~10%.",
+        "percent": 0,
+        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 2 parciais, 0 em andamento e 5 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice bruto 0.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2000,8 +2203,8 @@
         "number": 11,
         "code": "E11",
         "title": "Normas Técnicas",
-        "percent": 15,
-        "note": "~15%, indicador de contagem dos trabalhos cadastrados — **não** é medida de aderência normativa. O repositório comprova o escopo declarado por cada módulo, não a fração de cada norma efetivamente coberta.",
+        "percent": 20,
+        "note": "Índice dos trabalhos cadastrados: 2 concluídos, 5 parciais, 0 em andamento e 3 planejados; total 10. Contribuição do bloco ativo: 0.00. Índice bruto 20.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2080,8 +2283,8 @@
         "number": 12,
         "code": "E12",
         "title": "Qualidade e Validação",
-        "percent": 15,
-        "note": "~15%. A infraestrutura de regressão está consolidada, mas o percentual não será elevado apenas pelo aumento da suíte: validação numérica de engenharia ainda depende dos motores normativos.",
+        "percent": 50,
+        "note": "Índice dos trabalhos cadastrados: 6 concluídos, 0 parciais, 0 em andamento e 6 planejados; total 12. Contribuição do bloco ativo: 0.00. Índice bruto 50.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2177,7 +2380,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 193,
+    "validator_count": 194,
     "validators": [
       {
         "name": "test:base",
@@ -2517,7 +2720,11 @@
       },
       {
         "name": "test:escada-u-babylon-3d",
-        "command": "node tests/validar_escada_u_babylon_3d.mjs"
+        "command": "node tests/validar_escada_u_babylon_3d.mjs && node tests/validar_escada_u_apoios_reais.mjs"
+      },
+      {
+        "name": "test:escada-u-apoios-reais",
+        "command": "node tests/validar_escada_u_apoios_reais.mjs"
       },
       {
         "name": "test:escada-u-estrutura-funcional",
@@ -2689,7 +2896,7 @@
       },
       {
         "name": "test:status-dashboard",
-        "command": "python tests/validar_status_dashboard.py"
+        "command": "python tests/validar_status_dashboard.py && python scripts/gerar_status_dashboard.py --output docs/status.json"
       },
       {
         "name": "test:status-epicos-area-paralela",
@@ -2960,7 +3167,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "37794779169",
-    "run_number": "817"
+    "run_id": "38081293535",
+    "run_number": "818"
   }
 }

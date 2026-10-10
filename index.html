@@ -748,7 +748,7 @@
           <div class="sync-line">
             <span class="sync-ref" id="sync-ref">—</span>
             <span class="sync-sep" aria-hidden="true">·</span>
-            <span class="sync-published" id="sync-published">Última publicação do painel: —</span>
+            <span class="sync-published" id="sync-published">Última atualização dos dados: —</span>
           </div>
           <div class="sync-message" id="sync-message" title="">—</div>
         </div>
@@ -888,8 +888,8 @@
   </div>
 </footer>
 
-<script src="status_areas.js?v=c6269017e28051043294af76bcb7f0c21a149201"></script>
-<script src="status_sequence.js?v=c6269017e28051043294af76bcb7f0c21a149201"></script>
+<script src="status_areas.js?v=2070f2e5b4d0f49260c2d81d3110b9466e4131d7"></script>
+<script src="status_sequence.js?v=2070f2e5b4d0f49260c2d81d3110b9466e4131d7"></script>
 <script>
 (function () {
   function escapeHtml(value) {
@@ -1009,7 +1009,7 @@
               '<div class="epic-percent' + (measured ? '"' : ' pending"') + '>' + escapeHtml(percentLabel) + '</div>' +
             '</div>' +
             '<div class="epic-track"><div class="epic-fill" style="width:' + value + '%"></div></div>' +
-            '<div class="epic-note">estimativa versionada no roadmap</div>' +
+            '<div class="epic-note">' + escapeHtml(epic.note || "Base de cálculo indisponível.") + '</div>' +
           '</article>';
         }).join("")
       : '<article class="epic-progress-card pending">Progresso dos épicos indisponível.</article>');
@@ -1039,7 +1039,7 @@
   // estado antigo indefinidamente. Aqui o painel passa a reconsultar
   // status.json periodicamente, ao voltar ao foco e sob demanda, distinguindo
   // dois tempos distintos:
-  //   - "última publicação do painel" = status.generated_at (servidor);
+  //   - "última atualização dos dados" = status.generated_at; não comprova publicação;
   //   - "verificado agora"            = instante da consulta (navegador).
   // ------------------------------------------------------------------------
   var INTERVALO_VERIFICACAO_MS = 60000;
@@ -1047,6 +1047,7 @@
 
   var shaRenderizado = null;
   var geradoEmRenderizado = null;
+  var dadosRenderizados = null;
   var ultimoStatusValido = null;
   var promessaEmCurso = null;
   var timerDestaque = null;
@@ -1092,7 +1093,8 @@
     var ref = el("sync-ref");
     if (ref) ref.textContent = (status.branch || "—") + " @ " + (head.short_sha || "—");
     var publicado = el("sync-published");
-    if (publicado) publicado.textContent = "Última publicação do painel: " + fmtDate(status.generated_at);
+    if (publicado) publicado.textContent = "Última atualização dos dados: " + fmtDate(status.generated_at)
+      + (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location?.hostname || "") ? " · painel local, não publicado" : "");
     var mensagem = el("sync-message");
     if (mensagem) {
       var texto = head.message || "—";
@@ -1121,6 +1123,7 @@
   function aplicarStatus(status) {
     var sha = (status.head || {}).sha || null;
     var geradoEm = status.generated_at || null;
+    var dados = JSON.stringify(status.development || {});
     var primeiraCarga = shaRenderizado === null;
     var houveTroca = !primeiraCarga && sha !== shaRenderizado;
     ultimoStatusValido = status;
@@ -1128,10 +1131,11 @@
     // O corpo do painel não é reescrito a cada ciclo — isso faria os cards
     // piscarem sem informação nova. Reescreve quando o HEAD muda e também
     // quando apenas generated_at muda (re-run do workflow sobre o mesmo
-    // commit), senão "Atualização" e o rodapé ficariam presos no valor antigo.
-    if (primeiraCarga || houveTroca || geradoEm !== geradoEmRenderizado) {
+    // commit) ou o conteúdo muda, para não manter informação antiga na aba.
+    if (primeiraCarga || houveTroca || geradoEm !== geradoEmRenderizado || dados !== dadosRenderizados) {
       shaRenderizado = sha;
       geradoEmRenderizado = geradoEm;
+      dadosRenderizados = dados;
       // Uma falha ao repintar o corpo não é falha de sincronização: o HEAD foi
       // confirmado. Reportá-la como erro de rede daria ao usuário a informação
       // errada sobre o estado do painel.
@@ -1218,6 +1222,6 @@
   }
 })();
 </script>
-<script src="status_coordination.js?v=c6269017e28051043294af76bcb7f0c21a149201"></script>
+<script src="status_coordination.js?v=2070f2e5b4d0f49260c2d81d3110b9466e4131d7"></script>
 </body>
 </html>
