@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-10T19:49:13Z",
+  "generated_at": "2026-10-11T14:35:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2070f2e5b4d0f49260c2d81d3110b9466e4131d7",
-    "short_sha": "2070f2e",
+    "sha": "dab0aa391c63351ffa8909f4115f9df50e843a87",
+    "short_sha": "dab0aa3",
     "author": "JGaspar-Eng",
-    "date": "2026-10-10T16:48:52-03:00",
-    "message": "feat(fund): integra demandas ELU e diferenciais ELS rastreaveis"
+    "date": "2026-10-11T11:34:59-03:00",
+    "message": "feat(fund): cadastra totais ELS e pares diferenciais no painel"
   },
   "commits": [
+    {
+      "sha": "dab0aa391c63351ffa8909f4115f9df50e843a87",
+      "short_sha": "dab0aa3",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-11T11:34:59-03:00",
+      "message": "feat(fund): cadastra totais ELS e pares diferenciais no painel"
+    },
     {
       "sha": "2070f2e5b4d0f49260c2d81d3110b9466e4131d7",
       "short_sha": "2070f2e",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T12:06:03-03:00",
       "message": "fix: apoia laje inclinada sem prolongar degraus"
-    },
-    {
-      "sha": "c6269017e28051043294af76bcb7f0c21a149201",
-      "short_sha": "c626901",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T11:43:14-03:00",
-      "message": "fix: alinha primeiro degrau ao plano da laje"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU e comparacao opcional de recalques diferenciais com totais ELS declarados; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
+            "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU; cadastro UI de parcelas de recalque total por apoio e pares diferenciais por caso ELS, com proveniencia e persistencia; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,20 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-CADASTRO-PARES-ELS-UI-01",
+          "title": "Editor por apoio para adicionar, editar e remover pares de recalques diferenciais com casos, limites, horizonte e referencias explicitas; sem presumir valores nem liberar aprovacao; persistencia JSON, invalidacao de calculo e regressao integradas",
+          "state": "completed",
+          "area": 4,
+          "source": "services/fundacao_pares_recalques_cadastro_service.js / ui/fundacao_pares_recalques_ui.js / ui/infraestrutura_overlay_runtime_ui.js / tests_support/fundacao_pares_recalques_cadastro.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-CADASTRO-RECALQUE-TOTAL-UI-01",
+          "title": "Editor opcional de recalque total por caso ELS, com adensamento e fluencia declarados, horizonte, limites, origem e geometria vigentes; alimenta o motor existente sem estimar parametros e bloqueia entradas incompletas",
+          "state": "completed",
+          "area": 4,
+          "source": "ui/fundacao_recalque_total_ui.js / ui/fundacao_insumos_complementares_ui.js / services/fundacao_insumos_projeto_service.js / tests_support/fundacao_recalque_total_ui.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
         {
           "code": "FUND-RECALQUE-DIFERENCIAL-01",
           "title": "Comparacao entre pares de apoios de recalques totais ELS explicitamente declarados e calculados, com mesmo caso/horizonte, limite e distancia rastreaveis; reprovacao e pendencia refletidas no painel, sem calculo das parcelas de longo prazo nem aprovacao executiva",
@@ -532,7 +546,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU e comparacao opcional de recalques diferenciais com totais ELS declarados; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
+          "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU; cadastro UI de parcelas de recalque total por apoio e pares diferenciais por caso ELS, com proveniencia e persistencia; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3167,7 +3181,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38081293535",
-    "run_number": "818"
+    "run_id": "38147772422",
+    "run_number": "819"
   }
 }
