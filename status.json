@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-11T16:39:09Z",
+  "generated_at": "2026-10-11T16:51:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a283c315b41eae82a27ad8adc228dec1912da500",
-    "short_sha": "a283c31",
+    "sha": "3d25535144b4ed4b0c8c576ccfad69f78d40f20d",
+    "short_sha": "3d25535",
     "author": "JGaspar-Eng",
-    "date": "2026-10-11T13:38:51-03:00",
-    "message": "feat(fund): integra cinco verificacoes da malha flexivel preliminar"
+    "date": "2026-10-11T13:51:07-03:00",
+    "message": "feat(fund): audita dez frentes da malha flexivel e criterios externos"
   },
   "commits": [
+    {
+      "sha": "3d25535144b4ed4b0c8c576ccfad69f78d40f20d",
+      "short_sha": "3d25535",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-11T13:51:07-03:00",
+      "message": "feat(fund): audita dez frentes da malha flexivel e criterios externos"
+    },
     {
       "sha": "a283c315b41eae82a27ad8adc228dec1912da500",
       "short_sha": "a283c31",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T19:44:07-03:00",
       "message": "fix: elimina degrau residual no patamar"
-    },
-    {
-      "sha": "ab1d9a6178a8d40f1ca5329579f991c826be4ec2",
-      "short_sha": "ab1d9a6",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T19:38:10-03:00",
-      "message": "fix: unifica limites reais da escada U"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: malha reta de sapata flexivel integrada com contagem e As geometricas X/Y, checagem de espacos e camadas d, comprimentos e massa teoricos, cadastro UI e oito casos ELU; flexao, cortante, puncao, ELS e estabilidade parciais. Faltam modelo global de placa, As minima, ancoragens, ganchos, detalhamento e aprovacao executiva",
+            "title": "Fundacoes: malha flexivel com revisao de As minima, extensao reta para lbd e limite de espacamento ELS por criterios EXTERNOS declarados; eixos de barras 2D/3D e quadro de comprimentos retos, painel e UI com rastreabilidade. Nao calcula norma integral, lbd por aderencia, fissuracao, placa global, ganchos, detalhamento ou aprovacao executiva",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,76 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-REVISAO-INTEGRACAO-ELU-01",
+          "title": "Critérios e geometria da malha flexível vinculados ao apoio; oito combinações ELU preservadas, reprovação externa propagada, persistência JSON e regressão sem liberação executiva",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-EDITOR-CRITERIOS-01",
+          "title": "Editor opcional de seis valores de projeto e seis fontes/metodos externos: minimos X/Y, comprimentos lbd X/Y e limites de espacamento ELS X/Y; dados não presumidos",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-QUADRO-BARRAS-01",
+          "title": "Quadro preliminar das familias X/Y com IDs individuais, quantidades, bitolas, comprimentos retos e reconciliação com quantitativo geométrico anterior",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-GEOMETRIA-3D-01",
+          "title": "Geometria 3D dos eixos de barras nas alturas reais de cada camada, conferência de cobrimento e limites de representação; sem ganchos ou renderizador executivo",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-EIXOS-2D-Y-01",
+          "title": "Eixos individuais das barras orientadas em Y no plano da sapata, coordenadas sem deslocamento da cobertura transversal e nomenclatura determinística",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-EIXOS-2D-X-01",
+          "title": "Eixos individuais das barras orientadas em X no plano da sapata, coordenadas por cobrimento, bitola e espaçamento efetivo; sem posições presumidas",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-LIMITE-ELS-01",
+          "title": "Comparação do espaçamento geométrico com limites ELS EXTERNOS por direção, sem inferir abertura de fissura ou conformidade normativa",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-ANCORAGEM-Y-01",
+          "title": "Extensão geométrica reta além da face do pilar em Y confrontada com lbd externo; não afirma aderência ou gancho executivamente validado",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-ANCORAGEM-X-01",
+          "title": "Extensão geométrica reta além da face do pilar em X confrontada com lbd externo; falha explicitada sem estimar comprimento aderente normativo",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-AS-MIN-EXTERNA-01",
+          "title": "Confronto entre As geométrica por metro e armadura mínima X/Y do memorial externo com método e origem obrigatórios; não calcula mínimo NBR 6118",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_revisao_malha_flexivel.js / ui/fundacao_criterios_malha_ui.js / ui/fundacao_armadura_flexivel_ui.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_revisao_malha_flexivel.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
         {
           "code": "FUND-MALHA-INTEGRACAO-UI-01",
           "title": "Malha opcional no formulario de flexao flexivel com bitolas, espacamentos, camadas, origem e densidade declaradas; As derivada e confrontada, persistencia JSON e auditoria de oito ELU, sem liberar detalhamento",
@@ -672,7 +742,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: malha reta de sapata flexivel integrada com contagem e As geometricas X/Y, checagem de espacos e camadas d, comprimentos e massa teoricos, cadastro UI e oito casos ELU; flexao, cortante, puncao, ELS e estabilidade parciais. Faltam modelo global de placa, As minima, ancoragens, ganchos, detalhamento e aprovacao executiva",
+          "title": "Fundacoes: malha flexivel com revisao de As minima, extensao reta para lbd e limite de espacamento ELS por criterios EXTERNOS declarados; eixos de barras 2D/3D e quadro de comprimentos retos, painel e UI com rastreabilidade. Nao calcula norma integral, lbd por aderencia, fissuracao, placa global, ganchos, detalhamento ou aprovacao executiva",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3307,7 +3377,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38156332716",
-    "run_number": "823"
+    "run_id": "38157176355",
+    "run_number": "824"
   }
 }
