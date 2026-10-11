@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-11T17:08:13Z",
+  "generated_at": "2026-10-11T17:36:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "551c44cd7152ace675b44948813c3a24663ba074",
-    "short_sha": "551c44c",
+    "sha": "eee29503673625b6e8d6fb5e779360a53112ed56",
+    "short_sha": "eee2950",
     "author": "JGaspar-Eng",
-    "date": "2026-10-11T14:07:57-03:00",
-    "message": "feat(fund): calcula minimos ancoragem e limite ELS parciais"
+    "date": "2026-10-11T14:36:07-03:00",
+    "message": "feat(fund): verifica limites resistentes NBR de cortante e puncao"
   },
   "commits": [
+    {
+      "sha": "eee29503673625b6e8d6fb5e779360a53112ed56",
+      "short_sha": "eee2950",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-11T14:36:07-03:00",
+      "message": "feat(fund): verifica limites resistentes NBR de cortante e puncao"
+    },
     {
       "sha": "551c44cd7152ace675b44948813c3a24663ba074",
       "short_sha": "551c44c",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T20:27:53-03:00",
       "message": "fix: fecha primeiro degrau no apoio externo"
-    },
-    {
-      "sha": "a28387ed781dcfa7ae223a8d91d551ca435133f7",
-      "short_sha": "a28387e",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T19:47:56-03:00",
-      "message": "test: fecha invariantes da transicao do patamar"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: As minima positiva bidirecional calculada de fctk e momento minimo no escopo C20-C50/CA50; lb e lb,nec de barra reta por nucleo NBR 6118 com aderencia declarada e demanda dos 8 ELU; limite ELS-W por CAA; croqui SVG vetorial preliminar. Sem calculo real de wk, placa global, cisalhamento/puncao normativos e pranchas executivas. Aprovacao segue bloqueada",
+            "title": "Fundacoes: VRd1 inferior conservador de cortante sem contar As1; punção C' τRd1 calculada da armadura uniforme aderente e β do caso (quando necessário); compressão diagonal C τRd2 para ações sem momento; por oito ELU, sem aprovar obra. Faltam placa global, verificação integral de cisalhamento/punção com transferência biaxial, wk em ELS, emendas e pranchas.",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,34 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-CORTANTE-VRD1-INFERIOR-NBR-01",
+          "title": "Capacidade de cortante conservadora inferior em quatro faces a d com k=1, taxa As1=0 e sigma cp=0, limitada ao item 19.4.1; não atendimento do piso não significa reprovação de VRd1 real",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_cis_puncao_nbr6118_parcial.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_cis_puncao_nbr6118_parcial.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-PUNCAO-RD1-C-PRIME-NBR-01",
+          "title": "Tensão resistente τRd1 no contorno C' a 2d pela taxa de armadura uniformemente distribuída e aderente, com limite rho e k, sem sigma cp favorável; transferência por beta externo obrigatório quando há momentos",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_cis_puncao_nbr6118_parcial.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_cis_puncao_nbr6118_parcial.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-PUNCAO-RD2-C-NBR-01",
+          "title": "Limite de compressão diagonal junto à face do pilar τRd2 e τSd conservadora sem desconto de solo para casos de momento nulo; casos com momentos ficam pendentes",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_cis_puncao_nbr6118_parcial.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_cis_puncao_nbr6118_parcial.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-CIS-PUN-INTEGRACAO-ORQ-01",
+          "title": "Resultados parciais de cortante e punção C/C' por oito casos ELU integrados no painel; pendências explícitas, sem aprovação executiva e regressão de casos inválidos",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_cis_puncao_nbr6118_parcial.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_cis_puncao_nbr6118_parcial.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
         {
           "code": "FUND-REVISAO-ASMIN-NBR-01",
           "title": "Cálculo próprio de armadura mínima por momento mínimo e taxa de laje positiva bidirecional NBR 6118, limitado a C20-C50, CA50 e coeficientes demonstrados; comparação com malha real, sem liberar projeto",
@@ -770,7 +798,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: As minima positiva bidirecional calculada de fctk e momento minimo no escopo C20-C50/CA50; lb e lb,nec de barra reta por nucleo NBR 6118 com aderencia declarada e demanda dos 8 ELU; limite ELS-W por CAA; croqui SVG vetorial preliminar. Sem calculo real de wk, placa global, cisalhamento/puncao normativos e pranchas executivas. Aprovacao segue bloqueada",
+          "title": "Fundacoes: VRd1 inferior conservador de cortante sem contar As1; punção C' τRd1 calculada da armadura uniforme aderente e β do caso (quando necessário); compressão diagonal C τRd2 para ações sem momento; por oito ELU, sem aprovar obra. Faltam placa global, verificação integral de cisalhamento/punção com transferência biaxial, wk em ELS, emendas e pranchas.",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3405,7 +3433,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38158360481",
-    "run_number": "825"
+    "run_id": "38160336268",
+    "run_number": "826"
   }
 }
