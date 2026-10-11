@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-11T15:48:43Z",
+  "generated_at": "2026-10-11T16:39:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "72307676fcc8833f325b599562b53f4e220dda98",
-    "short_sha": "7230767",
+    "sha": "a283c315b41eae82a27ad8adc228dec1912da500",
+    "short_sha": "a283c31",
     "author": "JGaspar-Eng",
-    "date": "2026-10-11T12:48:24-03:00",
-    "message": "feat(fund): calcula flexao local e As teorica nas faixas flexiveis"
+    "date": "2026-10-11T13:38:51-03:00",
+    "message": "feat(fund): integra cinco verificacoes da malha flexivel preliminar"
   },
   "commits": [
+    {
+      "sha": "a283c315b41eae82a27ad8adc228dec1912da500",
+      "short_sha": "a283c31",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-11T13:38:51-03:00",
+      "message": "feat(fund): integra cinco verificacoes da malha flexivel preliminar"
+    },
     {
       "sha": "72307676fcc8833f325b599562b53f4e220dda98",
       "short_sha": "7230767",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T19:38:10-03:00",
       "message": "fix: unifica limites reais da escada U"
-    },
-    {
-      "sha": "8d2afdf5e4acb3b53b3b74732a5a7621048719b3",
-      "short_sha": "8d2afdf",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T19:26:02-03:00",
-      "message": "test: audita apoios da escada em vãos variados"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: flexao local por face e borda de sapata flexivel, As teorica de equilibrio local e confronto com armadura declarada; envelopes flexao por face/direcao nos oito ELU e editor de armadura por apoio; cortante, puncao, ELS e estabilidade parciais; sem verificacao de placa global, As minima, resistencia normativa integral, detalhamento ou aprovacao executiva",
+            "title": "Fundacoes: malha reta de sapata flexivel integrada com contagem e As geometricas X/Y, checagem de espacos e camadas d, comprimentos e massa teoricos, cadastro UI e oito casos ELU; flexao, cortante, puncao, ELS e estabilidade parciais. Faltam modelo global de placa, As minima, ancoragens, ganchos, detalhamento e aprovacao executiva",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,41 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-MALHA-INTEGRACAO-UI-01",
+          "title": "Malha opcional no formulario de flexao flexivel com bitolas, espacamentos, camadas, origem e densidade declaradas; As derivada e confrontada, persistencia JSON e auditoria de oito ELU, sem liberar detalhamento",
+          "state": "completed",
+          "area": 4,
+          "source": "ui/fundacao_armadura_flexivel_ui.js / services/fundacao_insumos_projeto_service.js / core/calculation/fundacao_flexao_biaxial_faixas.js / tests_support/fundacao_malha_ui.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-MALHA-QUANTIDADE-RETA-01",
+          "title": "Contagem de barras e comprimento SOMENTE RETO por direcao, volume teorico de aco e massa opcional com densidade/fonte declaradas; sem perdas, ganchos, ancoragens ou quantitativo executivo",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_flexivel_preliminar.js / tests_support/fundacao_malha_flexivel_preliminar.mjs"
+        },
+        {
+          "code": "FUND-MALHA-CAMADAS-D-01",
+          "title": "Coerencia geometrica das alturas uteis X/Y com cobrimento, bitolas e ordem das duas camadas da sapata flexivel, recusando d divergente e armadura geometricamente obsoleta",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_flexivel_preliminar.js / tests_support/fundacao_malha_flexivel_preliminar.mjs"
+        },
+        {
+          "code": "FUND-MALHA-ESPACAMENTO-AGREGADO-01",
+          "title": "Verificacao geometrica de espaco livre entre barras contra maior de 2cm, bitola e 1,2 do diametro maximo de agregado declarado, sem presumir dimensoes ou aprovar concretagem",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_flexivel_preliminar.js / tests_support/fundacao_malha_flexivel_preliminar.mjs"
+        },
+        {
+          "code": "FUND-MALHA-AS-X-Y-01",
+          "title": "Derivacao da quantidade de barras e As por metro conservadora em ambas direcoes de sapata flexivel, com largura de distribuicao, cobrimento, bitola e espacamento declarados, sem projeto executivo",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_flexivel_preliminar.js / tests_support/fundacao_malha_flexivel_preliminar.mjs"
+        },
         {
           "code": "FUND-CADASTRO-ARMADURA-FAIXAS-UI-01",
           "title": "Editor de armaduras X/Y, dX/dY, fck, gamaC e origens para sapata flexivel, com geometria/pilar centrado atual, validacao, persistencia e invalidacao de calculo; sem aprovar detalhamento",
@@ -637,7 +672,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: flexao local por face e borda de sapata flexivel, As teorica de equilibrio local e confronto com armadura declarada; envelopes flexao por face/direcao nos oito ELU e editor de armadura por apoio; cortante, puncao, ELS e estabilidade parciais; sem verificacao de placa global, As minima, resistencia normativa integral, detalhamento ou aprovacao executiva",
+          "title": "Fundacoes: malha reta de sapata flexivel integrada com contagem e As geometricas X/Y, checagem de espacos e camadas d, comprimentos e massa teoricos, cadastro UI e oito casos ELU; flexao, cortante, puncao, ELS e estabilidade parciais. Faltam modelo global de placa, As minima, ancoragens, ganchos, detalhamento e aprovacao executiva",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3272,7 +3307,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38152826316",
-    "run_number": "822"
+    "run_id": "38156332716",
+    "run_number": "823"
   }
 }
