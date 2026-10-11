@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-11T16:51:27Z",
+  "generated_at": "2026-10-11T17:08:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3d25535144b4ed4b0c8c576ccfad69f78d40f20d",
-    "short_sha": "3d25535",
+    "sha": "551c44cd7152ace675b44948813c3a24663ba074",
+    "short_sha": "551c44c",
     "author": "JGaspar-Eng",
-    "date": "2026-10-11T13:51:07-03:00",
-    "message": "feat(fund): audita dez frentes da malha flexivel e criterios externos"
+    "date": "2026-10-11T14:07:57-03:00",
+    "message": "feat(fund): calcula minimos ancoragem e limite ELS parciais"
   },
   "commits": [
+    {
+      "sha": "551c44cd7152ace675b44948813c3a24663ba074",
+      "short_sha": "551c44c",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-11T14:07:57-03:00",
+      "message": "feat(fund): calcula minimos ancoragem e limite ELS parciais"
+    },
     {
       "sha": "3d25535144b4ed4b0c8c576ccfad69f78d40f20d",
       "short_sha": "3d25535",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T19:47:56-03:00",
       "message": "test: fecha invariantes da transicao do patamar"
-    },
-    {
-      "sha": "b2896cf15eed36bd5085a425f37ccb3004e22078",
-      "short_sha": "b2896cf",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T19:44:07-03:00",
-      "message": "fix: elimina degrau residual no patamar"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: malha flexivel com revisao de As minima, extensao reta para lbd e limite de espacamento ELS por criterios EXTERNOS declarados; eixos de barras 2D/3D e quadro de comprimentos retos, painel e UI com rastreabilidade. Nao calcula norma integral, lbd por aderencia, fissuracao, placa global, ganchos, detalhamento ou aprovacao executiva",
+            "title": "Fundacoes: As minima positiva bidirecional calculada de fctk e momento minimo no escopo C20-C50/CA50; lb e lb,nec de barra reta por nucleo NBR 6118 com aderencia declarada e demanda dos 8 ELU; limite ELS-W por CAA; croqui SVG vetorial preliminar. Sem calculo real de wk, placa global, cisalhamento/puncao normativos e pranchas executivas. Aprovacao segue bloqueada",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,34 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-REVISAO-ASMIN-NBR-01",
+          "title": "Cálculo próprio de armadura mínima por momento mínimo e taxa de laje positiva bidirecional NBR 6118, limitado a C20-C50, CA50 e coeficientes demonstrados; comparação com malha real, sem liberar projeto",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_normativa_parcial.js / ui/fundacao_armadura_flexivel_ui.js / ui/fundacao_croqui_geometrico_svg.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_malha_normativa_parcial.mjs / tests_support/fundacao_croqui_svg.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-ANCORAGEM-NBR-01",
+          "title": "Reaproveita núcleo normativo ABNT de aderência, lb básico e lb necessário; usa superfície e condição de aderência declaradas, As calculada nos 8 ELU e extensão reta geométrica, sem presumir ganchos ou distribuição de placa",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_normativa_parcial.js / ui/fundacao_armadura_flexivel_ui.js / ui/fundacao_croqui_geometrico_svg.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_malha_normativa_parcial.mjs / tests_support/fundacao_croqui_svg.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-REVISAO-LIMITE-ELS-W-NBR-01",
+          "title": "Limite de abertura de fissuração em serviço frequente calculado pela classe ambiental CAA I a IV, conforme tabela normativa; cálculo de wk e ELS real permanece explicitamente pendente",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_normativa_parcial.js / ui/fundacao_armadura_flexivel_ui.js / ui/fundacao_croqui_geometrico_svg.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_malha_normativa_parcial.mjs / tests_support/fundacao_croqui_svg.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-CROQUI-MALHA-SVG-NAOEXECUTIVO-01",
+          "title": "Croqui técnico vetorial em planta e corte, derivado dos eixos geométricos de barras e altura das camadas, com carimbo NÃO EXECUTIVO e bloqueio de prancha de obra",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_malha_normativa_parcial.js / ui/fundacao_armadura_flexivel_ui.js / ui/fundacao_croqui_geometrico_svg.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_malha_normativa_parcial.mjs / tests_support/fundacao_croqui_svg.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
         {
           "code": "FUND-REVISAO-INTEGRACAO-ELU-01",
           "title": "Critérios e geometria da malha flexível vinculados ao apoio; oito combinações ELU preservadas, reprovação externa propagada, persistência JSON e regressão sem liberação executiva",
@@ -742,7 +770,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: malha flexivel com revisao de As minima, extensao reta para lbd e limite de espacamento ELS por criterios EXTERNOS declarados; eixos de barras 2D/3D e quadro de comprimentos retos, painel e UI com rastreabilidade. Nao calcula norma integral, lbd por aderencia, fissuracao, placa global, ganchos, detalhamento ou aprovacao executiva",
+          "title": "Fundacoes: As minima positiva bidirecional calculada de fctk e momento minimo no escopo C20-C50/CA50; lb e lb,nec de barra reta por nucleo NBR 6118 com aderencia declarada e demanda dos 8 ELU; limite ELS-W por CAA; croqui SVG vetorial preliminar. Sem calculo real de wk, placa global, cisalhamento/puncao normativos e pranchas executivas. Aprovacao segue bloqueada",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3377,7 +3405,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38157176355",
-    "run_number": "824"
+    "run_id": "38158360481",
+    "run_number": "825"
   }
 }
