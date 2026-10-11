@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-11T14:35:20Z",
+  "generated_at": "2026-10-11T14:57:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dab0aa391c63351ffa8909f4115f9df50e843a87",
-    "short_sha": "dab0aa3",
+    "sha": "3acc612b966314be4f8cdaa0f7c73e94cbc2f9e5",
+    "short_sha": "3acc612",
     "author": "JGaspar-Eng",
-    "date": "2026-10-11T11:34:59-03:00",
-    "message": "feat(fund): cadastra totais ELS e pares diferenciais no painel"
+    "date": "2026-10-11T11:56:56-03:00",
+    "message": "feat(fund): confronta cortante e puncao por capacidades de projeto"
   },
   "commits": [
+    {
+      "sha": "3acc612b966314be4f8cdaa0f7c73e94cbc2f9e5",
+      "short_sha": "3acc612",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-11T11:56:56-03:00",
+      "message": "feat(fund): confronta cortante e puncao por capacidades de projeto"
+    },
     {
       "sha": "dab0aa391c63351ffa8909f4115f9df50e843a87",
       "short_sha": "dab0aa3",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-08T13:49:06-03:00",
       "message": "fix: cria apoio horizontal nos extremos da escada"
-    },
-    {
-      "sha": "18445431ece348831163ebeb6d6e487a5fe5f751",
-      "short_sha": "1844543",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T12:06:03-03:00",
-      "message": "fix: apoia laje inclinada sem prolongar degraus"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU; cadastro UI de parcelas de recalque total por apoio e pares diferenciais por caso ELS, com proveniencia e persistencia; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
+            "title": "Fundacoes: estabilidade/ELS e flexao parcial; demandas geometricas ELU a d e 2d com confronto por caso de capacidades externas declaradas de cortante/puncao e beta; UI com origem e persistencia, recalques totais e pares diferenciais ELS; calculo normativo de resistencias, placa global, detalhamento e geotecnia de longo prazo pendentes; sem aprovacao executiva",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,27 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-CADASTRO-CIS-PUNCAO-UI-01",
+          "title": "Cadastro no painel de secoes a d por apoio e capacidades externas de cortante por face e puncao por caso ELU; fontes, beta, geometria atual e controles fail-closed; persistencia e invalidacao de resultados comprovadas, sem aprovacao normativa",
+          "state": "completed",
+          "area": 4,
+          "source": "ui/fundacao_cisalhamento_puncao_declarado_ui.js / ui/infraestrutura_overlay_runtime_ui.js / services/fundacao_insumos_projeto_service.js / tests_support/fundacao_confrontos_cortante_puncao.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-PUNCAO-RESISTENCIA-DECLARADA-01",
+          "title": "Tensao media de puncao no contorno geometrico a 2d medio amplificada por beta externo de projeto confrontada com tensao resistente externa do mesmo contorno; oito casos e reprovações globais rastreadas; sem calculo normativo de beta ou VRd",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_puncao_resistencia_declarada.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_confrontos_cortante_puncao.mjs"
+        },
+        {
+          "code": "FUND-CORTANTE-RESISTENCIA-DECLARADA-01",
+          "title": "Confronto das demandas maximas por metro a d nas quatro faces com capacidades externas por face e caso ELU, geometria/proveniencia obrigatorias, resultados parciais e reprovações refletidas no calculo e painel",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_cortante_resistencia_declarada.js / services/fundacao_verificacao_global_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_confrontos_cortante_puncao.mjs"
+        },
         {
           "code": "FUND-CADASTRO-PARES-ELS-UI-01",
           "title": "Editor por apoio para adicionar, editar e remover pares de recalques diferenciais com casos, limites, horizonte e referencias explicitas; sem presumir valores nem liberar aprovacao; persistencia JSON, invalidacao de calculo e regressao integradas",
@@ -546,7 +567,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: estabilidade/ELS, flexao parcial, demandas geometricas de cortante/puncao nos oito ELU; cadastro UI de parcelas de recalque total por apoio e pares diferenciais por caso ELS, com proveniencia e persistencia; resistencias estruturais, placa global, detalhamento e calculo geotecnico de longo prazo pendentes; sem aprovacao de projeto",
+          "title": "Fundacoes: estabilidade/ELS e flexao parcial; demandas geometricas ELU a d e 2d com confronto por caso de capacidades externas declaradas de cortante/puncao e beta; UI com origem e persistencia, recalques totais e pares diferenciais ELS; calculo normativo de resistencias, placa global, detalhamento e geotecnia de longo prazo pendentes; sem aprovacao executiva",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3181,7 +3202,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38147772422",
-    "run_number": "819"
+    "run_id": "38149253433",
+    "run_number": "820"
   }
 }
