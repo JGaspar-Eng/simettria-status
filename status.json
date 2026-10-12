@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-12T17:31:30Z",
+  "generated_at": "2026-10-12T19:43:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7a197c19d29b93ab46f429b92b7f2a606bad5bd0",
-    "short_sha": "7a197c1",
+    "sha": "e64377060cbcef881c0e952aee62e8543354a30e",
+    "short_sha": "e643770",
     "author": "JGaspar-Eng",
-    "date": "2026-10-12T14:31:09-03:00",
-    "message": "feat(fund): exporta prancha vetorial de auditoria nao executiva"
+    "date": "2026-10-12T16:42:52-03:00",
+    "message": "fix(fund): deriva rho da area Acri declarada no ELS"
   },
   "commits": [
+    {
+      "sha": "e64377060cbcef881c0e952aee62e8543354a30e",
+      "short_sha": "e643770",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-12T16:42:52-03:00",
+      "message": "fix(fund): deriva rho da area Acri declarada no ELS"
+    },
     {
       "sha": "7a197c19d29b93ab46f429b92b7f2a606bad5bd0",
       "short_sha": "7a197c1",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-11T13:38:51-03:00",
       "message": "feat(fund): integra cinco verificacoes da malha flexivel preliminar"
-    },
-    {
-      "sha": "72307676fcc8833f325b599562b53f4e220dda98",
-      "short_sha": "7230767",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-11T12:48:24-03:00",
-      "message": "feat(fund): calcula flexao local e As teorica nas faixas flexiveis"
     }
   ],
   "development": {
@@ -108,6 +108,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-ELS-W-ACRI-IDENTIDADE-GEOMETRICA-01",
+          "title": "Acri documentada em cm2 por metro de faixa e conferida com a secao bruta e As da malha; rho=As/Acri calculado, entrada de rho livre ignorada e dados legados sem Acri bloqueados. Memorial X/Y e editor atualizados; o criterio ELS global continua pendente.",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_fissuracao_els_faixas_parcial.js / ui/fundacao_fissuracao_els_ui.js / services/fundacao_memorial_sapata_auditavel_service.js / tests_support/fundacao_fissuracao_els_faixas_parcial.mjs"
+        },
         {
           "code": "FUND-PRANCHA-SVG-AUDITORIA-01",
           "title": "Prancha vetorial SVG de AUDITORIA para sapata fisica: planta, cortes X/Y, quadro das familias de barras retas com verificacao cruzada de coordenadas, comprimentos, bitolas e geometria; sem ganchos, dobra, corte executivo ou permissao de obra",
@@ -3510,7 +3517,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38284749317",
-    "run_number": "831"
+    "run_id": "38299472394",
+    "run_number": "832"
   }
 }
