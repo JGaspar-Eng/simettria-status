@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-12T17:22:55Z",
+  "generated_at": "2026-10-12T17:31:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "668a6481addd7c5d9ad6062639c19f196f97202d",
-    "short_sha": "668a648",
+    "sha": "7a197c19d29b93ab46f429b92b7f2a606bad5bd0",
+    "short_sha": "7a197c1",
     "author": "JGaspar-Eng",
-    "date": "2026-10-12T14:22:36-03:00",
-    "message": "feat(fund): avalia fluxo biaxial e fissuracao ELS parciais"
+    "date": "2026-10-12T14:31:09-03:00",
+    "message": "feat(fund): exporta prancha vetorial de auditoria nao executiva"
   },
   "commits": [
+    {
+      "sha": "7a197c19d29b93ab46f429b92b7f2a606bad5bd0",
+      "short_sha": "7a197c1",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-12T14:31:09-03:00",
+      "message": "feat(fund): exporta prancha vetorial de auditoria nao executiva"
+    },
     {
       "sha": "668a6481addd7c5d9ad6062639c19f196f97202d",
       "short_sha": "668a648",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-11T12:48:24-03:00",
       "message": "feat(fund): calcula flexao local e As teorica nas faixas flexiveis"
-    },
-    {
-      "sha": "5ef2a5b84d55683bc450bc02094f487283a73370",
-      "short_sha": "5ef2a5b",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-11T12:22:00-03:00",
-      "message": "feat(fund): audita cinco envelopes ELU de cortante e puncao"
     }
   ],
   "development": {
@@ -108,6 +108,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-PRANCHA-SVG-AUDITORIA-01",
+          "title": "Prancha vetorial SVG de AUDITORIA para sapata fisica: planta, cortes X/Y, quadro das familias de barras retas com verificacao cruzada de coordenadas, comprimentos, bitolas e geometria; sem ganchos, dobra, corte executivo ou permissao de obra",
+          "state": "completed",
+          "area": 5,
+          "source": "ui/fundacao_prancha_auditoria_svg.js / ui/infraestrutura_overlay_runtime_ui.js / tests_support/fundacao_prancha_auditoria_svg.mjs / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
         {
           "code": "FUND-ELS-W-FAIXAS-ESTRESSE-WK-01",
           "title": "Fissuracao ELS-W parcial de faixas de um metro com momentos FREQUENTES de fonte externa, sigma no aco calculada em secao retangular fissurada, regioes Acri e modulos externos declarados, menor wk1/wk2 segundo expressoes 17.3.3.2, limite CAA; sem momento ELS global proprio ou aprovacao de sapata",
@@ -3503,7 +3510,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38283795221",
-    "run_number": "830"
+    "run_id": "38284749317",
+    "run_number": "831"
   }
 }
