@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-12T17:05:03Z",
+  "generated_at": "2026-10-12T17:22:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "35dd17929f3c9c5d2a02a0ba60b525996adc77fe",
-    "short_sha": "35dd179",
+    "sha": "668a6481addd7c5d9ad6062639c19f196f97202d",
+    "short_sha": "668a648",
     "author": "JGaspar-Eng",
-    "date": "2026-10-12T14:04:46-03:00",
-    "message": "feat(fund): avalia placa Mindlin bidimensional exploratoria"
+    "date": "2026-10-12T14:22:36-03:00",
+    "message": "feat(fund): avalia fluxo biaxial e fissuracao ELS parciais"
   },
   "commits": [
+    {
+      "sha": "668a6481addd7c5d9ad6062639c19f196f97202d",
+      "short_sha": "668a648",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-12T14:22:36-03:00",
+      "message": "feat(fund): avalia fluxo biaxial e fissuracao ELS parciais"
+    },
     {
       "sha": "35dd17929f3c9c5d2a02a0ba60b525996adc77fe",
       "short_sha": "35dd179",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-11T12:22:00-03:00",
       "message": "feat(fund): audita cinco envelopes ELU de cortante e puncao"
-    },
-    {
-      "sha": "3acc612b966314be4f8cdaa0f7c73e94cbc2f9e5",
-      "short_sha": "3acc612",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-11T11:56:56-03:00",
-      "message": "feat(fund): confronta cortante e puncao por capacidades de projeto"
     }
   ],
   "development": {
@@ -108,6 +108,27 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-ELS-W-FAIXAS-ESTRESSE-WK-01",
+          "title": "Fissuracao ELS-W parcial de faixas de um metro com momentos FREQUENTES de fonte externa, sigma no aco calculada em secao retangular fissurada, regioes Acri e modulos externos declarados, menor wk1/wk2 segundo expressoes 17.3.3.2, limite CAA; sem momento ELS global proprio ou aprovacao de sapata",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_fissuracao_els_faixas_parcial.js / tests_support/fundacao_fissuracao_els_faixas_parcial.mjs"
+        },
+        {
+          "code": "FUND-ELS-W-CADASTRO-MEMORIAL-01",
+          "title": "Editor opcional por sapata com proveniencia de caso frequente, E/eta/rho Acri, assinatura antiobsolescencia da malha e CAA, memoria e painel com resultados por direcao sem elevar aprovacao global",
+          "state": "completed",
+          "area": 4,
+          "source": "services/fundacao_insumos_projeto_service.js / services/fundacao_cadeia_auditavel_service.js / services/fundacao_memorial_sapata_auditavel_service.js / ui/fundacao_fissuracao_els_ui.js / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-FLUXO-PUNCAO-BIAX-MECANICO-01",
+          "title": "Triagem mecanica biaxial por fluxo vertical no perimetro C e C-prime com V/Mx/My exteriores e pressao de solo descontada, campo afim equilibrado e beta mecanico estritamente nao normativo, oito ELU e memoria integrada, sem usar no VRd NBR ou aprovar obra",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_fluxo_puncao_biaxial_mecanico.js / services/fundacao_verificacao_global_service.js / services/fundacao_cadeia_auditavel_service.js / services/orq_apoio_painel_service.js / tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs"
+        },
         {
           "code": "FUND-PLACA-MINDLIN-Q4-EXPLORATORIA-01",
           "title": "Primeira analise bidimensional da sapata isolada por elementos finitos Mindlin Q4 integracao completa, solo por pressao prescrita, cargas verticais e momentos equivalentes na superficie do pilar; equilibrio energetico e oito ELU sem aprovacao normativa ou executiva",
@@ -3482,7 +3503,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38281823577",
-    "run_number": "829"
+    "run_id": "38283795221",
+    "run_number": "830"
   }
 }
