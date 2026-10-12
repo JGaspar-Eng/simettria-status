@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-11T17:36:25Z",
+  "generated_at": "2026-10-12T04:35:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "eee29503673625b6e8d6fb5e779360a53112ed56",
-    "short_sha": "eee2950",
+    "sha": "9f7d4fa4003fc45fb551ad4dedf9db770db91ef9",
+    "short_sha": "9f7d4fa",
     "author": "JGaspar-Eng",
-    "date": "2026-10-11T14:36:07-03:00",
-    "message": "feat(fund): verifica limites resistentes NBR de cortante e puncao"
+    "date": "2026-10-12T01:34:46-03:00",
+    "message": "feat(fund): integra auditoria e memorial rastreavel de sapata isolada"
   },
   "commits": [
+    {
+      "sha": "9f7d4fa4003fc45fb551ad4dedf9db770db91ef9",
+      "short_sha": "9f7d4fa",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-12T01:34:46-03:00",
+      "message": "feat(fund): integra auditoria e memorial rastreavel de sapata isolada"
+    },
     {
       "sha": "eee29503673625b6e8d6fb5e779360a53112ed56",
       "short_sha": "eee2950",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-10T16:48:52-03:00",
       "message": "feat(fund): integra demandas ELU e diferenciais ELS rastreaveis"
-    },
-    {
-      "sha": "6f596e9692fb3a52436b47b76504e36d21f9f7a6",
-      "short_sha": "6f596e9",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-08T20:27:53-03:00",
-      "message": "fix: fecha primeiro degrau no apoio externo"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: VRd1 inferior conservador de cortante sem contar As1; punção C' τRd1 calculada da armadura uniforme aderente e β do caso (quando necessário); compressão diagonal C τRd2 para ações sem momento; por oito ELU, sem aprovar obra. Faltam placa global, verificação integral de cisalhamento/punção com transferência biaxial, wk em ELS, emendas e pranchas.",
+            "title": "Fundacoes: fechamento técnico de uma cadeia única de sapata isolada prioritário. Auditoria por apoio físico e oito ELU integrada ao ORQ; memorial exportável de cargas, pressões, estabilidade, flexão, cisalhamento/punção e armaduras reais nos escopos parciais, com pendências e bloqueios por norma. A conclusão integral permanece pendente: placa global, verificação normativa de solo, punção biaxial, fissuração ELS e detalhamento executivo; sem aprovação ou materialização de obra.",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -108,6 +108,27 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-SAPATA-MEMORIAL-EXPORTACAO-01",
+          "title": "Memorial de auditoria da sapata fisica exportavel em Markdown no painel, com dados atuais, origem, bloqueio de snapshot obsoleto, sem prancha ou autorizacao executiva",
+          "state": "completed",
+          "area": 4,
+          "source": "services/fundacao_memorial_sapata_auditavel_service.js / ui/fundacao_memorial_auditavel_ui.js / ui/infraestrutura_overlay_runtime_ui.js / tests_support/fundacao_cadeia_memorial_auditavel.mjs"
+        },
+        {
+          "code": "FUND-SAPATA-AUDITORIA-ELU-01",
+          "title": "Dossie integrado por apoio e sapata isolada: oito casos ELU reconciliados, geometria atual, pressoes, estabilidade, flexao, cortante, puncao, ELS, fontes, inconsistencias e bloqueios explicitos",
+          "state": "completed",
+          "area": 4,
+          "source": "services/fundacao_cadeia_auditavel_service.js / services/fundacao_verificacao_global_service.js / tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        },
+        {
+          "code": "FUND-SAPATA-CONTRATO-FECHAMENTO-01",
+          "title": "Contrato escrito dos requisitos tecnicos ainda abertos para fechamento normativo de sapata isolada, sem elevar percentual ou concluir dimensionamento e detalhamento",
+          "state": "completed",
+          "area": 4,
+          "source": "docs/FUND_SAPATA_ISOLADA_CADEIA_FECHAMENTO.md"
+        },
         {
           "code": "FUND-CORTANTE-VRD1-INFERIOR-NBR-01",
           "title": "Capacidade de cortante conservadora inferior em quatro faces a d com k=1, taxa As1=0 e sigma cp=0, limitada ao item 19.4.1; não atendimento do piso não significa reprovação de VRd1 real",
@@ -798,7 +819,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: VRd1 inferior conservador de cortante sem contar As1; punção C' τRd1 calculada da armadura uniforme aderente e β do caso (quando necessário); compressão diagonal C τRd2 para ações sem momento; por oito ELU, sem aprovar obra. Faltam placa global, verificação integral de cisalhamento/punção com transferência biaxial, wk em ELS, emendas e pranchas.",
+          "title": "Fundacoes: fechamento técnico de uma cadeia única de sapata isolada prioritário. Auditoria por apoio físico e oito ELU integrada ao ORQ; memorial exportável de cargas, pressões, estabilidade, flexão, cisalhamento/punção e armaduras reais nos escopos parciais, com pendências e bloqueios por norma. A conclusão integral permanece pendente: placa global, verificação normativa de solo, punção biaxial, fissuração ELS e detalhamento executivo; sem aprovação ou materialização de obra.",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3433,7 +3454,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38160336268",
-    "run_number": "826"
+    "run_id": "38204363396",
+    "run_number": "827"
   }
 }
