@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-12T19:43:16Z",
+  "generated_at": "2026-10-12T19:50:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e64377060cbcef881c0e952aee62e8543354a30e",
-    "short_sha": "e643770",
+    "sha": "e87a11ce67b27fa087f2b10cd1681730a229b9ed",
+    "short_sha": "e87a11c",
     "author": "JGaspar-Eng",
-    "date": "2026-10-12T16:42:52-03:00",
-    "message": "fix(fund): deriva rho da area Acri declarada no ELS"
+    "date": "2026-10-12T16:50:19-03:00",
+    "message": "fix(fund): distingue alertas parciais das reprovacoes globais"
   },
   "commits": [
+    {
+      "sha": "e87a11ce67b27fa087f2b10cd1681730a229b9ed",
+      "short_sha": "e87a11c",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-12T16:50:19-03:00",
+      "message": "fix(fund): distingue alertas parciais das reprovacoes globais"
+    },
     {
       "sha": "e64377060cbcef881c0e952aee62e8543354a30e",
       "short_sha": "e643770",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-11T13:51:07-03:00",
       "message": "feat(fund): audita dez frentes da malha flexivel e criterios externos"
-    },
-    {
-      "sha": "a283c315b41eae82a27ad8adc228dec1912da500",
-      "short_sha": "a283c31",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-11T13:38:51-03:00",
-      "message": "feat(fund): integra cinco verificacoes da malha flexivel preliminar"
     }
   ],
   "development": {
@@ -108,6 +108,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-DOSSIE-CONFRONTOS-PARCIAIS-01",
+          "title": "Dossie separa nao atendimentos em estudos locais de ELS-W e capacidade USACE das reprovacoes normativas globais, reporta valores por caso/direcao, quadro visual e memorial, mantendo aprovacao e materializacao bloqueadas.",
+          "state": "completed",
+          "area": 4,
+          "source": "services/fundacao_cadeia_auditavel_service.js / services/fundacao_memorial_sapata_auditavel_service.js / ui/fundacao_memorial_auditavel_ui.js / tests_support/fundacao_cadeia_memorial_auditavel.mjs"
+        },
         {
           "code": "FUND-ELS-W-ACRI-IDENTIDADE-GEOMETRICA-01",
           "title": "Acri documentada em cm2 por metro de faixa e conferida com a secao bruta e As da malha; rho=As/Acri calculado, entrada de rho livre ignorada e dados legados sem Acri bloqueados. Memorial X/Y e editor atualizados; o criterio ELS global continua pendente.",
@@ -3517,7 +3524,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38299472394",
-    "run_number": "832"
+    "run_id": "38300287639",
+    "run_number": "833"
   }
 }
