@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-13T15:09:38Z",
+  "generated_at": "2026-10-13T16:33:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
-    "short_sha": "4a3ed4d",
-    "author": "Joanez Gaspar",
-    "date": "2026-10-13T12:09:18-03:00",
-    "message": "docs(fund): registra marcos de selecao e estudo nao executivo de estacas"
+    "sha": "e52785fb7c8010199571804724d509540594323c",
+    "short_sha": "e52785f",
+    "author": "JGaspar-Eng",
+    "date": "2026-10-13T13:32:40-03:00",
+    "message": "feat(fund): mostra estudo de estacas em 2D e Babylon 3D sem liberar obra"
   },
   "commits": [
+    {
+      "sha": "e52785fb7c8010199571804724d509540594323c",
+      "short_sha": "e52785f",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T13:32:40-03:00",
+      "message": "feat(fund): mostra estudo de estacas em 2D e Babylon 3D sem liberar obra"
+    },
+    {
+      "sha": "72b5abb71c8f0ae1dd045d18635092e32e38b593",
+      "short_sha": "72b5abb",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T13:32:25-03:00",
+      "message": "fix(fund): reforca oito verificacoes parciais e conflitos de blocos"
+    },
     {
       "sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
       "short_sha": "4a3ed4d",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-12T14:31:09-03:00",
       "message": "feat(fund): exporta prancha vetorial de auditoria nao executiva"
-    },
-    {
-      "sha": "668a6481addd7c5d9ad6062639c19f196f97202d",
-      "short_sha": "668a648",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-12T14:22:36-03:00",
-      "message": "feat(fund): avalia fluxo biaxial e fissuracao ELS parciais"
-    },
-    {
-      "sha": "35dd17929f3c9c5d2a02a0ba60b525996adc77fe",
-      "short_sha": "35dd179",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-12T14:04:46-03:00",
-      "message": "feat(fund): avalia placa Mindlin bidimensional exploratoria"
     }
   ],
   "development": {
@@ -108,6 +108,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-DEZ-FRENTES-CICLO-2026-10-13",
+          "title": "Ciclo auditavel de 10 frentes de fundacoes: guardas e diagnosticos parciais para placa, geotecnia, puncao, ELS e croqui, selecao multinivel e conflitos, casos governantes de estacas, rotulos 2D, previa Babylon 3D nao executiva, sincronismo e regressao. Nenhuma aprovacao normativa ou liberacao de obra.",
+          "state": "completed",
+          "area": 4,
+          "source": "docs/FUND_10_FRENTES_CICLO_2026_10_13.md / tests_support/fundacao_preview3d_integridade.mjs / tests_support/fundacao_lote_anti_sobreposicao.mjs"
+        },
         {
           "code": "FUND-ESTACAS-UX-LOTE-01",
           "title": "Editor ORQ por apoio para resistencias geotecnica/estrutural documentadas, geometria e cota das estacas; estudo axial com croqui SVG 2D não executivo, botão de estudo em lote por nível e invalidacao de prévias obsoletas. Aplicação e Babylon 3D não liberados.",
@@ -3552,7 +3559,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38419591020",
-    "run_number": "838"
+    "run_id": "38431416676",
+    "run_number": "839"
   }
 }
