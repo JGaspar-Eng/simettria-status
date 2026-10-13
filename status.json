@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-13T17:07:18Z",
+  "generated_at": "2026-10-13T17:44:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "922a59d76f46f4e460b2d6713ec2691938677c91",
-    "short_sha": "922a59d",
+    "sha": "821c518e6093b425848dceab497c172037a99e83",
+    "short_sha": "821c518",
     "author": "JGaspar-Eng",
-    "date": "2026-10-13T14:07:01-03:00",
-    "message": "docs(status): sincroniza painel apos ajuste de estacas"
+    "date": "2026-10-13T14:43:36-03:00",
+    "message": "fix(fund): diagnosticar cobertura ORQ e apoios multibase por pilar"
   },
   "commits": [
+    {
+      "sha": "821c518e6093b425848dceab497c172037a99e83",
+      "short_sha": "821c518",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T14:43:36-03:00",
+      "message": "fix(fund): diagnosticar cobertura ORQ e apoios multibase por pilar"
+    },
+    {
+      "sha": "088c304ba358eee777a60de9325c761f31a4955d",
+      "short_sha": "088c304",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T14:31:34-03:00",
+      "message": "fix(infra): exibir diagnostico ao estudar estacas"
+    },
     {
       "sha": "922a59d76f46f4e460b2d6713ec2691938677c91",
       "short_sha": "922a59d",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-13T11:24:10-03:00",
       "message": "feat(fund): seleciona pilares de fundacao por nivel fisico"
-    },
-    {
-      "sha": "353e6665a0c2eb30bff6fb8faaa94724ea0a75a2",
-      "short_sha": "353e666",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-12T23:27:54-03:00",
-      "message": "feat(fund): implanta sapata isolada vinculada ao pilar de base"
-    },
-    {
-      "sha": "e87a11ce67b27fa087f2b10cd1681730a229b9ed",
-      "short_sha": "e87a11c",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-12T16:50:19-03:00",
-      "message": "fix(fund): distingue alertas parciais das reprovacoes globais"
     }
   ],
   "development": {
@@ -3559,7 +3559,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38436043254",
-    "run_number": "841"
+    "run_id": "38440999348",
+    "run_number": "842"
   }
 }
