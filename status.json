@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-12T19:50:40Z",
+  "generated_at": "2026-10-13T02:28:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e87a11ce67b27fa087f2b10cd1681730a229b9ed",
-    "short_sha": "e87a11c",
+    "sha": "353e6665a0c2eb30bff6fb8faaa94724ea0a75a2",
+    "short_sha": "353e666",
     "author": "JGaspar-Eng",
-    "date": "2026-10-12T16:50:19-03:00",
-    "message": "fix(fund): distingue alertas parciais das reprovacoes globais"
+    "date": "2026-10-12T23:27:54-03:00",
+    "message": "feat(fund): implanta sapata isolada vinculada ao pilar de base"
   },
   "commits": [
+    {
+      "sha": "353e6665a0c2eb30bff6fb8faaa94724ea0a75a2",
+      "short_sha": "353e666",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-12T23:27:54-03:00",
+      "message": "feat(fund): implanta sapata isolada vinculada ao pilar de base"
+    },
     {
       "sha": "e87a11ce67b27fa087f2b10cd1681730a229b9ed",
       "short_sha": "e87a11c",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-11T14:07:57-03:00",
       "message": "feat(fund): calcula minimos ancoragem e limite ELS parciais"
-    },
-    {
-      "sha": "3d25535144b4ed4b0c8c576ccfad69f78d40f20d",
-      "short_sha": "3d25535",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-11T13:51:07-03:00",
-      "message": "feat(fund): audita dez frentes da malha flexivel e criterios externos"
     }
   ],
   "development": {
@@ -108,6 +108,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-SAPATA-CRIACAO-EXPLICITA-PILAR-01",
+          "title": "Fluxo de criação de sapata isolada a partir da seleção explícita de pilar: botão no painel de propriedades e no apoio ORQ, lançamento centrado no pavimento-base, associação estrutural persistida sem resistência de solo inventada, dimensões ilustrativas editáveis, prevenção de duplicidade/sobreposição, diagnóstico da vinculação, testes integrados de clique e snapshot; sem aprovação de cálculo.",
+          "state": "completed",
+          "area": 1,
+          "source": "services/fundacao_lancamento_vinculado_service.js / controllers/fundacao_controller.js / ui/rightbar.js / ui/infraestrutura_overlay_runtime_ui.js / tests_support/fundacao_lancamento_vinculado_pilar.mjs / tests/validar_fundacao_dim_fund_ui.mjs"
+        },
         {
           "code": "FUND-DOSSIE-CONFRONTOS-PARCIAIS-01",
           "title": "Dossie separa nao atendimentos em estudos locais de ELS-W e capacidade USACE das reprovacoes normativas globais, reporta valores por caso/direcao, quadro visual e memorial, mantendo aprovacao e materializacao bloqueadas.",
@@ -3524,7 +3531,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38300287639",
-    "run_number": "833"
+    "run_id": "38337003899",
+    "run_number": "834"
   }
 }
