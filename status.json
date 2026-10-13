@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-13T17:44:04Z",
+  "generated_at": "2026-10-13T17:58:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "821c518e6093b425848dceab497c172037a99e83",
-    "short_sha": "821c518",
+    "sha": "6884b0584fbca00697cb296df858bb1b0f1502fc",
+    "short_sha": "6884b05",
     "author": "JGaspar-Eng",
-    "date": "2026-10-13T14:43:36-03:00",
-    "message": "fix(fund): diagnosticar cobertura ORQ e apoios multibase por pilar"
+    "date": "2026-10-13T14:58:18-03:00",
+    "message": "fix(infra): sincronizar previas e invalidar reacoes obsoletas"
   },
   "commits": [
+    {
+      "sha": "6884b0584fbca00697cb296df858bb1b0f1502fc",
+      "short_sha": "6884b05",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T14:58:18-03:00",
+      "message": "fix(infra): sincronizar previas e invalidar reacoes obsoletas"
+    },
+    {
+      "sha": "1770be07897a3e9093eb6929e9f4afcf3363ea96",
+      "short_sha": "1770be0",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T14:58:05-03:00",
+      "message": "fix(fund): endurecer contratos ELU ELS e corrigir cobrimento de ganchos"
+    },
     {
       "sha": "821c518e6093b425848dceab497c172037a99e83",
       "short_sha": "821c518",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-13T12:03:58-03:00",
       "message": "feat(fund): cadastra parametros externos e desenha estudo de estacas no 2D"
-    },
-    {
-      "sha": "c8595ebf103984354a4e6490bc226320b747b2be",
-      "short_sha": "c8595eb",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-13T11:51:06-03:00",
-      "message": "feat(fund): estuda grupos de estacas em oito ELU e prepara geometria 2D/3D"
-    },
-    {
-      "sha": "361244448cb551716a5a5cc71ba0f9c502787c2e",
-      "short_sha": "3612444",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-13T11:24:10-03:00",
-      "message": "feat(fund): seleciona pilares de fundacao por nivel fisico"
     }
   ],
   "development": {
@@ -3559,7 +3559,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38440999348",
-    "run_number": "842"
+    "run_id": "38442985307",
+    "run_number": "843"
   }
 }
