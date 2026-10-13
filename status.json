@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-13T15:04:20Z",
+  "generated_at": "2026-10-13T15:09:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "92c439569e3fcc6f8db555dd1327c77df51d2c20",
-    "short_sha": "92c4395",
+    "sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
+    "short_sha": "4a3ed4d",
     "author": "Joanez Gaspar",
-    "date": "2026-10-13T12:03:58-03:00",
-    "message": "feat(fund): cadastra parametros externos e desenha estudo de estacas no 2D"
+    "date": "2026-10-13T12:09:18-03:00",
+    "message": "docs(fund): registra marcos de selecao e estudo nao executivo de estacas"
   },
   "commits": [
+    {
+      "sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
+      "short_sha": "4a3ed4d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-13T12:09:18-03:00",
+      "message": "docs(fund): registra marcos de selecao e estudo nao executivo de estacas"
+    },
     {
       "sha": "92c439569e3fcc6f8db555dd1327c77df51d2c20",
       "short_sha": "92c4395",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-12T14:04:46-03:00",
       "message": "feat(fund): avalia placa Mindlin bidimensional exploratoria"
-    },
-    {
-      "sha": "e32f68980771873e57de08ad9a6f70224ee110a2",
-      "short_sha": "e32f689",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-12T13:09:48-03:00",
-      "message": "feat(fund): calcula capacidade undrenada parcial com origem e oito ELU"
     }
   ],
   "development": {
@@ -108,6 +108,27 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "FUND-ESTACAS-UX-LOTE-01",
+          "title": "Editor ORQ por apoio para resistencias geotecnica/estrutural documentadas, geometria e cota das estacas; estudo axial com croqui SVG 2D não executivo, botão de estudo em lote por nível e invalidacao de prévias obsoletas. Aplicação e Babylon 3D não liberados.",
+          "state": "completed",
+          "area": 4,
+          "source": "ui/fundacao_grupo_estacas_estudo_ui.js / ui/fundacao_selecao_lote_ui.js / ui/infraestrutura_overlay_runtime_ui.js / tests_support/fundacao_grupo_estacas_estudo_ui.mjs / tests_support/fundacao_estacas_selecao_ui_stale.mjs"
+        },
+        {
+          "code": "FUND-ESTACAS-GRUPO-AXIAL-01",
+          "title": "Estudo numérico de distribuição axial de grupo retangular rígido com oito ELU N/Mx/My, capacidade por estaca EXTERNA documentada, contorno e geometria de referência, verificação de equilíbrio, croqui de auditoria 2D e descritores 3D reconciliados; não aprova grupo, bloco ou obra.",
+          "state": "completed",
+          "area": 4,
+          "source": "core/calculation/fundacao_grupo_estacas_axial_exploratorio.js / services/fundacao_estudo_lote_estacas_service.js / ui/fundacao_grupo_estacas_croqui_svg.js / tests_support/fundacao_grupo_estacas_axial_exploratorio.mjs / tests_support/fundacao_estudo_lote_estacas.mjs"
+        },
+        {
+          "code": "FUND-LOTE-SELECAO-NIVEIS-01",
+          "title": "Seleção preparatória de pilares que efetivamente começam em nível físico de fundação no Térreo ou Inferior, sem confundir prumadas atravessantes, com diagnóstico de ausência de esforços e fundações existentes e botão de aplicação em lote BLOQUEADO.",
+          "state": "completed",
+          "area": 1,
+          "source": "services/fundacao_selecao_lote_niveis_service.js / ui/fundacao_selecao_lote_ui.js / tests_support/fundacao_selecao_lote_niveis.mjs"
+        },
         {
           "code": "FUND-SAPATA-CRIACAO-EXPLICITA-PILAR-01",
           "title": "Fluxo de criação de sapata isolada a partir da seleção explícita de pilar: botão no painel de propriedades e no apoio ORQ, lançamento centrado no pavimento-base, associação estrutural persistida sem resistência de solo inventada, dimensões ilustrativas editáveis, prevenção de duplicidade/sobreposição, diagnóstico da vinculação, testes integrados de clique e snapshot; sem aprovação de cálculo.",
@@ -3531,7 +3552,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38418823749",
-    "run_number": "837"
+    "run_id": "38419591020",
+    "run_number": "838"
   }
 }
