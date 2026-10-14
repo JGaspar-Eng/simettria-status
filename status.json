@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-14T01:49:17Z",
+  "generated_at": "2026-10-14T02:58:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "93b3c12e724fdc7a558431ba61830123a8908471",
-    "short_sha": "93b3c12",
+    "sha": "359034cd9dab744d0d6114dcd37b0c2f77a906e8",
+    "short_sha": "359034c",
     "author": "JGaspar-Eng",
-    "date": "2026-10-13T22:48:50-03:00",
-    "message": "fix(infra): filtrar apoios por nivel e bloquear conflitos de blocos"
+    "date": "2026-10-13T23:57:43-03:00",
+    "message": "feat(fund): auditar todos os pilares do projeto sem exclusoes"
   },
   "commits": [
+    {
+      "sha": "359034cd9dab744d0d6114dcd37b0c2f77a906e8",
+      "short_sha": "359034c",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T23:57:43-03:00",
+      "message": "feat(fund): auditar todos os pilares do projeto sem exclusoes"
+    },
+    {
+      "sha": "01d4a2bb105393a270d6cb6887b83aad90ede5e2",
+      "short_sha": "01d4a2b",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T23:49:02-03:00",
+      "message": "docs(status): atualizar painel das 10 frentes e bloqueios executivos"
+    },
+    {
+      "sha": "2258c80f7f226b09008bf7b14cdb7ca08e27bd48",
+      "short_sha": "2258c80",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T23:48:39-03:00",
+      "message": "feat(fund): integrar placa Winkler e cadastros de apoios multinivel"
+    },
     {
       "sha": "93b3c12e724fdc7a558431ba61830123a8908471",
       "short_sha": "93b3c12",
@@ -58,27 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-13T14:07:01-03:00",
       "message": "docs(status): sincroniza painel apos ajuste de estacas"
-    },
-    {
-      "sha": "19083ec79472c4d70c99ef34cc995a86a8ebbd97",
-      "short_sha": "19083ec",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T14:05:59-03:00",
-      "message": "fix(fund): explica bloqueios do estudo de estacas no painel"
-    },
-    {
-      "sha": "e52785fb7c8010199571804724d509540594323c",
-      "short_sha": "e52785f",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T13:32:40-03:00",
-      "message": "feat(fund): mostra estudo de estacas em 2D e Babylon 3D sem liberar obra"
-    },
-    {
-      "sha": "72b5abb71c8f0ae1dd045d18635092e32e38b593",
-      "short_sha": "72b5abb",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T13:32:25-03:00",
-      "message": "fix(fund): reforca oito verificacoes parciais e conflitos de blocos"
     }
   ],
   "development": {
@@ -99,12 +99,49 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "Fundacoes: fechamento técnico de uma cadeia única de sapata isolada prioritário. Auditoria por apoio físico e oito ELU integrada ao ORQ; memorial exportável de cargas, pressões, estabilidade, flexão, cisalhamento/punção e armaduras reais nos escopos parciais, com pendências e bloqueios por norma. A conclusão integral permanece pendente: placa global, verificação normativa de solo, punção biaxial, fissuração ELS e detalhamento executivo; sem aprovação ou materialização de obra.",
+            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
         ],
-        "planned": [],
+        "planned": [
+          {
+            "code": "FUND-PLACA-EXEC",
+            "title": "Fechar modelo de placa: benchmarks independentes, refinamento e convergência, contato solo–estrutura e limites do Winkler. Estudo atual é não executivo.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          },
+          {
+            "code": "FUND-GEOTEC-EXEC",
+            "title": "Implementar capacidade geotécnica integral NBR 6122, recalques e estabilidade com perfil e parâmetros documentados.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          },
+          {
+            "code": "FUND-CIS-PUNC-EXEC",
+            "title": "Concluir punção biaxial, cortante e transferência normativa de momentos, com contornos e resistências demonstrados.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          },
+          {
+            "code": "FUND-ELS-EXEC",
+            "title": "Concluir fissuração e recalques em ELS para ações de serviço reais, incluindo compatibilidade dos apoios.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          },
+          {
+            "code": "FUND-ARM-EXEC",
+            "title": "Concluir detalhamento, ancoragens, ganchos, emendas, cortes, quantitativos e pranchas executivas verificadas.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          },
+          {
+            "code": "FUND-48P-PROVA",
+            "title": "Executar projeto real de 48 pilares: reconciliar bases, oito ELU por apoio, estudo de sapata/bloco e checagem visual 2D/3D.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          }
+        ],
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
@@ -924,7 +961,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "Fundacoes: fechamento técnico de uma cadeia única de sapata isolada prioritário. Auditoria por apoio físico e oito ELU integrada ao ORQ; memorial exportável de cargas, pressões, estabilidade, flexão, cisalhamento/punção e armaduras reais nos escopos parciais, com pendências e bloqueios por norma. A conclusão integral permanece pendente: placa global, verificação normativa de solo, punção biaxial, fissuração ELS e detalhamento executivo; sem aprovação ou materialização de obra.",
+          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3559,7 +3596,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38497736118",
-    "run_number": "844"
+    "run_id": "38503788852",
+    "run_number": "845"
   }
 }
