@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-14T13:34:41Z",
+  "generated_at": "2026-10-14T13:57:56Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cc42e8fdee80231e429f4de43ccc40f744470e3b",
-    "short_sha": "cc42e8f",
+    "sha": "dc0d814e12828e0171311bbbac29e0a73f5556a7",
+    "short_sha": "dc0d814",
     "author": "JGaspar-Eng",
-    "date": "2026-10-14T10:34:07-03:00",
-    "message": "docs(status): registrar solver global integrado de escada e dependencias executivas"
+    "date": "2026-10-14T10:57:21-03:00",
+    "message": "docs(status): registrar interface de classificacao de cargas por lote"
   },
   "commits": [
+    {
+      "sha": "dc0d814e12828e0171311bbbac29e0a73f5556a7",
+      "short_sha": "dc0d814",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T10:57:21-03:00",
+      "message": "docs(status): registrar interface de classificacao de cargas por lote"
+    },
+    {
+      "sha": "9b7f585f37af3724e1cd1a6935fae2cf76dc0f00",
+      "short_sha": "9b7f585",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T10:57:09-03:00",
+      "message": "feat(orq): classificar cargas de vigas em lotes com confirmacao e proveniencia"
+    },
     {
       "sha": "cc42e8fdee80231e429f4de43ccc40f744470e3b",
       "short_sha": "cc42e8f",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T05:36:02-03:00",
       "message": "fix(fund): reconciliar arredondamento de pilares e explicar falhas ORQ"
-    },
-    {
-      "sha": "359034cd9dab744d0d6114dcd37b0c2f77a906e8",
-      "short_sha": "359034c",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T23:57:43-03:00",
-      "message": "feat(fund): auditar todos os pilares do projeto sem exclusoes"
-    },
-    {
-      "sha": "01d4a2bb105393a270d6cb6887b83aad90ede5e2",
-      "short_sha": "01d4a2b",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T23:49:02-03:00",
-      "message": "docs(status): atualizar painel das 10 frentes e bloqueios executivos"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
+            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. CADASTRO MANUAL EM LOTE: novo controle na Infraestrutura permite revisar cargas de vigas agrupadas por pavimento e valor, exige escolha PERMANENTE/VARIAVEL, justificativa técnica e confirmação explícita; não atribui automaticamente Gk/Qk, preserva escadas e vigas preexistentes; registra proveniência persistida por viga e invalida cálculo global anterior. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -961,7 +961,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
+          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. CADASTRO MANUAL EM LOTE: novo controle na Infraestrutura permite revisar cargas de vigas agrupadas por pavimento e valor, exige escolha PERMANENTE/VARIAVEL, justificativa técnica e confirmação explícita; não atribui automaticamente Gk/Qk, preserva escadas e vigas preexistentes; registra proveniência persistida por viga e invalida cálculo global anterior. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3596,7 +3596,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38572901411",
-    "run_number": "849"
+    "run_id": "38576252129",
+    "run_number": "850"
   }
 }
