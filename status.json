@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-14T14:11:54Z",
+  "generated_at": "2026-10-14T14:43:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c9b288b453037b2c4c17345b4cafd7b38df52b08",
-    "short_sha": "c9b288b",
+    "sha": "443c51d7e50b0e3928d4e5a03831551eb11cecdb",
+    "short_sha": "443c51d",
     "author": "JGaspar-Eng",
-    "date": "2026-10-14T11:11:17-03:00",
-    "message": "docs(status): indicar bloqueios reais e status nao executivo das dez frentes"
+    "date": "2026-10-14T11:42:39-03:00",
+    "message": "docs(status): reconhecer alvenaria permanente Gk informada no assistente"
   },
   "commits": [
+    {
+      "sha": "443c51d7e50b0e3928d4e5a03831551eb11cecdb",
+      "short_sha": "443c51d",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T11:42:39-03:00",
+      "message": "docs(status): reconhecer alvenaria permanente Gk informada no assistente"
+    },
+    {
+      "sha": "0d25856a615ca52d3cafb5c28395f133f680c994",
+      "short_sha": "0d25856",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T11:42:26-03:00",
+      "message": "fix(orq): classificar alvenaria do wizard como Gk e reconciliar arquivos legados"
+    },
     {
       "sha": "c9b288b453037b2c4c17345b4cafd7b38df52b08",
       "short_sha": "c9b288b",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T09:53:16-03:00",
       "message": "feat(orq): derivar topologia segura de vigas intermediarias de escada"
-    },
-    {
-      "sha": "398b4b11d1ff7145d7c9bd11259f15c206379ed9",
-      "short_sha": "398b4b1",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T08:01:48-03:00",
-      "message": "docs(status): registrar inspeção de duplicidade e regra de cotas no painel"
-    },
-    {
-      "sha": "b3b963d96e554fdf14578fc7dd23b60ac599442c",
-      "short_sha": "b3b963d",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T08:01:37-03:00",
-      "message": "fix(orq): distinguir vigas coincidentes de niveis distintos e bloquear lancamentos duplicados"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. CADASTRO MANUAL EM LOTE: novo controle na Infraestrutura permite revisar cargas de vigas agrupadas por pavimento e valor, exige escolha PERMANENTE/VARIAVEL, justificativa técnica e confirmação explícita; não atribui automaticamente Gk/Qk, preserva escadas e vigas preexistentes; registra proveniência persistida por viga e invalida cálculo global anterior. AUDITORIA DE 10 FRENTES: botão na Infraestrutura apresenta, a partir do modelo ativo, quantidade de pilares, vigas, cargas sem classificação, SPT registrado, falta da categoria NBR 8681 e ausência de ORQ completo. Nenhuma frente recebe status executivo sem verificação normativa; sem preenchimento de dados ausentes. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
+            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. CADASTRO MANUAL EM LOTE: novo controle na Infraestrutura permite revisar cargas de vigas agrupadas por pavimento e valor, exige escolha PERMANENTE/VARIAVEL, justificativa técnica e confirmação explícita; não atribui automaticamente Gk/Qk, preserva escadas e vigas preexistentes; registra proveniência persistida por viga e invalida cálculo global anterior. AUDITORIA DE 10 FRENTES: botão na Infraestrutura apresenta, a partir do modelo ativo, quantidade de pilares, vigas, cargas sem classificação, SPT registrado, falta da categoria NBR 8681 e ausência de ORQ completo. Nenhuma frente recebe status executivo sem verificação normativa; sem preenchimento de dados ausentes. CORREÇÃO WIZARD ALVENARIA Gk (14/10): o campo Alvenaria padrão (qualquer valor kN/m) grava natureza PERMANENTE e origem explicitamente no projeto; novos lançamentos de vigas registram Gk e proveniência. Snapshots antigos do MBI recebem conciliação estrita apenas quando o valor da viga coincide com o valor documentado no wizard, preservando classificações manuais, escadas e cargas diferentes. O ORQ reconcilia também projetos já abertos e o painel diferencia alvenaria Gk reconhecida de cargas realmente pendentes. Nenhuma categoria NBR 8681, ação de vento ou parâmetro de solo é inferido. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -961,7 +961,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. CADASTRO MANUAL EM LOTE: novo controle na Infraestrutura permite revisar cargas de vigas agrupadas por pavimento e valor, exige escolha PERMANENTE/VARIAVEL, justificativa técnica e confirmação explícita; não atribui automaticamente Gk/Qk, preserva escadas e vigas preexistentes; registra proveniência persistida por viga e invalida cálculo global anterior. AUDITORIA DE 10 FRENTES: botão na Infraestrutura apresenta, a partir do modelo ativo, quantidade de pilares, vigas, cargas sem classificação, SPT registrado, falta da categoria NBR 8681 e ausência de ORQ completo. Nenhuma frente recebe status executivo sem verificação normativa; sem preenchimento de dados ausentes. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
+          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. VIGAS: diagnóstico de pares coincidentes identifica nomes e IDs reais, origem, cotas e possível sobreposição apenas 2D; distinção entre tolerância de SNAP (4 px) e precisão geométrica (0,5 mm). Novas vigas coincidentes na mesma cota são impedidas; dados existentes preservados sem exclusão automática. TOPOLOGIA INTERMEDIÁRIA: rotina preparatória identifica apoios P3/P4 em cotas distintas e subdivisões necessárias de barras verticais, com Gk/Qk da escada rastreados. AGORA integrada à malha global de rigidez e às ações ELU dos elementos, com nós matemáticos nas cotas das vigas intermediárias, subdivisão dos pilares sem duplicar peso próprio e preservação dos apoios físicos. Cenário controlado com quatro vigas da escada, oito ELU e equilíbrio global aprovado; o JSON real dos 48 pilares continua dependente da classificação das ações e validação estrutural/normativa. CADASTRO MANUAL EM LOTE: novo controle na Infraestrutura permite revisar cargas de vigas agrupadas por pavimento e valor, exige escolha PERMANENTE/VARIAVEL, justificativa técnica e confirmação explícita; não atribui automaticamente Gk/Qk, preserva escadas e vigas preexistentes; registra proveniência persistida por viga e invalida cálculo global anterior. AUDITORIA DE 10 FRENTES: botão na Infraestrutura apresenta, a partir do modelo ativo, quantidade de pilares, vigas, cargas sem classificação, SPT registrado, falta da categoria NBR 8681 e ausência de ORQ completo. Nenhuma frente recebe status executivo sem verificação normativa; sem preenchimento de dados ausentes. CORREÇÃO WIZARD ALVENARIA Gk (14/10): o campo Alvenaria padrão (qualquer valor kN/m) grava natureza PERMANENTE e origem explicitamente no projeto; novos lançamentos de vigas registram Gk e proveniência. Snapshots antigos do MBI recebem conciliação estrita apenas quando o valor da viga coincide com o valor documentado no wizard, preservando classificações manuais, escadas e cargas diferentes. O ORQ reconcilia também projetos já abertos e o painel diferencia alvenaria Gk reconhecida de cargas realmente pendentes. Nenhuma categoria NBR 8681, ação de vento ou parâmetro de solo é inferido. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3596,7 +3596,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38578320211",
-    "run_number": "851"
+    "run_id": "38582982566",
+    "run_number": "852"
   }
 }
