@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-13T17:58:47Z",
+  "generated_at": "2026-10-14T01:49:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6884b0584fbca00697cb296df858bb1b0f1502fc",
-    "short_sha": "6884b05",
+    "sha": "93b3c12e724fdc7a558431ba61830123a8908471",
+    "short_sha": "93b3c12",
     "author": "JGaspar-Eng",
-    "date": "2026-10-13T14:58:18-03:00",
-    "message": "fix(infra): sincronizar previas e invalidar reacoes obsoletas"
+    "date": "2026-10-13T22:48:50-03:00",
+    "message": "fix(infra): filtrar apoios por nivel e bloquear conflitos de blocos"
   },
   "commits": [
+    {
+      "sha": "93b3c12e724fdc7a558431ba61830123a8908471",
+      "short_sha": "93b3c12",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T22:48:50-03:00",
+      "message": "fix(infra): filtrar apoios por nivel e bloquear conflitos de blocos"
+    },
+    {
+      "sha": "9b9ecaf3fbe8cc03eb0b13a0a30b0ef4f5e1807f",
+      "short_sha": "9b9ecaf",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-13T22:48:41-03:00",
+      "message": "feat(orq): integrar apoios multinivel e reacoes ELU por pilar"
+    },
     {
       "sha": "6884b0584fbca00697cb296df858bb1b0f1502fc",
       "short_sha": "6884b05",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-13T13:32:25-03:00",
       "message": "fix(fund): reforca oito verificacoes parciais e conflitos de blocos"
-    },
-    {
-      "sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
-      "short_sha": "4a3ed4d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-13T12:09:18-03:00",
-      "message": "docs(fund): registra marcos de selecao e estudo nao executivo de estacas"
-    },
-    {
-      "sha": "92c439569e3fcc6f8db555dd1327c77df51d2c20",
-      "short_sha": "92c4395",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-13T12:03:58-03:00",
-      "message": "feat(fund): cadastra parametros externos e desenha estudo de estacas no 2D"
     }
   ],
   "development": {
@@ -3559,7 +3559,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38442985307",
-    "run_number": "843"
+    "run_id": "38497736118",
+    "run_number": "844"
   }
 }
