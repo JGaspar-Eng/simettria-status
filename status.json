@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-14T22:17:50Z",
+  "generated_at": "2026-10-14T22:41:24Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "aeb7f859af544355a8afd3b6fd876eb7c6bc4649",
-    "short_sha": "aeb7f85",
+    "sha": "17ab716725df4683b6c4c3383273293a9748f4df",
+    "short_sha": "17ab716",
     "author": "JGaspar-Eng",
-    "date": "2026-10-14T19:17:11-03:00",
-    "message": "docs(status): atualizar selecao 2D e continuidade vertical em lote"
+    "date": "2026-10-14T19:40:48-03:00",
+    "message": "docs(status): registrar reparo da multisselecao de seis pilares"
   },
   "commits": [
+    {
+      "sha": "17ab716725df4683b6c4c3383273293a9748f4df",
+      "short_sha": "17ab716",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T19:40:48-03:00",
+      "message": "docs(status): registrar reparo da multisselecao de seis pilares"
+    },
+    {
+      "sha": "ab0d64429253d086d55f17d2f7b2402d3c235f2a",
+      "short_sha": "ab0d644",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T19:40:18-03:00",
+      "message": "fix(ui): usar selecao completa de pilares no modal de continuidade"
+    },
     {
       "sha": "aeb7f859af544355a8afd3b6fd876eb7c6bc4649",
       "short_sha": "aeb7f85",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T16:25:07-03:00",
       "message": "feat(estrutura): auditar sacadas em balanco e editar cargas em multisselecao 2D"
-    },
-    {
-      "sha": "a4596d1ae77d485050e4bd4ae6cf9480a1e95420",
-      "short_sha": "a4596d1",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T14:52:14-03:00",
-      "message": "docs(status): registrar revisao segura das 19 vigas da cobertura"
-    },
-    {
-      "sha": "57dcd468234e3108f63af4205f1d96ab7d3178fa",
-      "short_sha": "57dcd46",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T14:52:03-03:00",
-      "message": "fix(cobertura): permitir substituir cargas lineares selecionadas com previa e historico"
     }
   ],
   "development": {
@@ -3596,7 +3596,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38646606280",
-    "run_number": "861"
+    "run_id": "38649318234",
+    "run_number": "862"
   }
 }
