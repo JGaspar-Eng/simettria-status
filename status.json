@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-14T02:58:09Z",
+  "generated_at": "2026-10-14T08:36:52Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "359034cd9dab744d0d6114dcd37b0c2f77a906e8",
-    "short_sha": "359034c",
+    "sha": "37102320ccbcd4bc4c6bbf91cb3979175c66e82d",
+    "short_sha": "3710232",
     "author": "JGaspar-Eng",
-    "date": "2026-10-13T23:57:43-03:00",
-    "message": "feat(fund): auditar todos os pilares do projeto sem exclusoes"
+    "date": "2026-10-14T05:36:14-03:00",
+    "message": "docs(status): atualizar painel com causa e correção do P1"
   },
   "commits": [
+    {
+      "sha": "37102320ccbcd4bc4c6bbf91cb3979175c66e82d",
+      "short_sha": "3710232",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T05:36:14-03:00",
+      "message": "docs(status): atualizar painel com causa e correção do P1"
+    },
+    {
+      "sha": "e5b763c52aa27ed9e48eb75c330699054cd325ee",
+      "short_sha": "e5b763c",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T05:36:02-03:00",
+      "message": "fix(fund): reconciliar arredondamento de pilares e explicar falhas ORQ"
+    },
     {
       "sha": "359034cd9dab744d0d6114dcd37b0c2f77a906e8",
       "short_sha": "359034c",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-13T14:43:36-03:00",
       "message": "fix(fund): diagnosticar cobertura ORQ e apoios multibase por pilar"
-    },
-    {
-      "sha": "088c304ba358eee777a60de9325c761f31a4955d",
-      "short_sha": "088c304",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T14:31:34-03:00",
-      "message": "fix(infra): exibir diagnostico ao estudar estacas"
-    },
-    {
-      "sha": "922a59d76f46f4e460b2d6713ec2691938677c91",
-      "short_sha": "922a59d",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-13T14:07:01-03:00",
-      "message": "docs(status): sincroniza painel apos ajuste de estacas"
     }
   ],
   "development": {
@@ -99,7 +99,7 @@
         "active": [
           {
             "code": "MVP-FLUXO-ESTRUTURAL-01",
-            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
+            "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
             "state": "in_progress",
             "source": "AI.md - funcional primeiro, completo depois"
           }
@@ -961,7 +961,7 @@
       "active": [
         {
           "code": "MVP-FLUXO-ESTRUTURAL-01",
-          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
+          "title": "FUNDAÇÕES — 10 frentes em desenvolvimento. ORQ: bases multinível Inferior/Térreo, identificação e oito ELU de apoios em cenário validado; sapata física vinculada por pavimento; pares ELS multinível; diagnóstico e bloqueios por pilar; estacas com auditoria global de todos os pilares cadastrados (cenários de 5, 48, 100 e 200 pilares testados), diagnóstico por pilar e prévia 2D/3D não executiva. CORREÇÃO 14/10: criação com coordenadas métricas/gráficas sincronizadas; cadastro legado aceita exclusivamente a diferença de até 0,5 mm causada pelo arredondamento a 3 casas (não altera dados salvos); inconsistências reais continuam bloqueadas. O ORQ passa a mostrar código e elemento dos erros geométricos, sem inventar ELU. PLACA: estudo Mindlin com pressões prescritas e novo estudo opcional Winkler linear (k externo com origem, contato integral, equilíbrio e memorial). Pendentes para conclusão executiva: validação do modelo real de 48 pilares, benchmarks e convergência de placa, geotecnia NBR 6122, punção/cortante integral, fissuração ELS e armaduras/pranchas. SEM liberação de obra.",
           "state": "in_progress",
           "source": "AI.md - funcional primeiro, completo depois"
         }
@@ -3596,7 +3596,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38503788852",
-    "run_number": "845"
+    "run_id": "38536317793",
+    "run_number": "846"
   }
 }
