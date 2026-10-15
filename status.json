@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T17:51:47Z",
+  "generated_at": "2026-10-15T18:06:53Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "42d2640a548ea90649ad8d40d165aee49f61aa14",
-    "short_sha": "42d2640",
+    "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
+    "short_sha": "6ce86bf",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T14:51:30-03:00",
-    "message": "fix(tabela-k): selecionar proxima linha conservadora sem interpolar"
+    "date": "2026-10-15T15:06:31-03:00",
+    "message": "feat(balancos): aplicar armadura por pavimentos tipo em lote"
   },
   "commits": [
+    {
+      "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
+      "short_sha": "6ce86bf",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T15:06:31-03:00",
+      "message": "feat(balancos): aplicar armadura por pavimentos tipo em lote"
+    },
     {
       "sha": "42d2640a548ea90649ad8d40d165aee49f61aa14",
       "short_sha": "42d2640",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T23:25:29-03:00",
       "message": "feat(balancos): auditar retirada virtual de oito apoios"
-    },
-    {
-      "sha": "c66af3aaaa7ebc97de60813420ff08ac9de82d5c",
-      "short_sha": "c66af3a",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T21:42:50-03:00",
-      "message": "test(ui): validar exclusao sucessiva de lajes no Chrome"
     }
   ],
   "development": {
@@ -151,6 +151,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "BAL-K-03-ARMADURAS-PAVIMENTOS-TIPO-20261015",
+          "title": "Aplicação por padrão aos pavimentos-tipo: o editor seleciona sacadas estruturalmente equivalentes pela geometria, faixa interna, seção da raiz e ações ELU, em vez de exigir escolha de cada laje. Seleção de todas e manual opcionais; teste independente de cada destino, confirmação única e lote atômico sem alteração de sacadas distintas. Regressões 1/4/12/24/64/128/256 sacadas, Chrome com 4 pisos e bloqueio de um caso mais exigente; não executivo.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/BAL_K_03_ARMADURAS_PAVIMENTOS_TIPO_2026_10_15.md / tests_support/sacadas_armadura_lote_pavimentos_tipo.mjs"
+        },
         {
           "code": "BAL-K-02-ARREDONDAMENTO-CONSERVADOR-20261015",
           "title": "Tabela K sem interpolacao: quando Kc calculado cai entre linhas, selecionar a proxima linha mais exigente em Ks/As (x/d maior, Kc tabulado menor ou igual); fck entre classes adota concreto tabelado inferior; empates adotam maior x/d e valores fora do dominio bloqueiam. A interface diferencia Kc calculado e Kc tabelado; testes para C20..C50, CA25/CA50/CA60 e varios tamanhos de projeto.",
@@ -2871,7 +2878,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 202,
+    "validator_count": 203,
     "validators": [
       {
         "name": "test:base",
@@ -2879,7 +2886,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
@@ -2888,6 +2895,10 @@
       {
         "name": "test:sacadas-flexao-generica",
         "command": "node tests_support/sacadas_flexao_generica_escala.mjs"
+      },
+      {
+        "name": "test:sacadas-tipo",
+        "command": "node tests_support/sacadas_armadura_lote_pavimentos_tipo.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3690,7 +3701,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38780811495",
-    "run_number": "875"
+    "run_id": "38782883956",
+    "run_number": "876"
   }
 }
