@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T02:25:54Z",
+  "generated_at": "2026-10-15T13:11:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1ffe36e98f6083ca3c43ee1ea3b42f1846bff296",
-    "short_sha": "1ffe36e",
+    "sha": "f1ad7f0397b9aea051c2b37b19bc2a994b36cb09",
+    "short_sha": "f1ad7f0",
     "author": "JGaspar-Eng",
-    "date": "2026-10-14T23:25:29-03:00",
-    "message": "feat(balancos): auditar retirada virtual de oito apoios"
+    "date": "2026-10-15T10:10:42-03:00",
+    "message": "feat(balancos): retirar pilares provisorios sem apagar vigas"
   },
   "commits": [
+    {
+      "sha": "f1ad7f0397b9aea051c2b37b19bc2a994b36cb09",
+      "short_sha": "f1ad7f0",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T10:10:42-03:00",
+      "message": "feat(balancos): retirar pilares provisorios sem apagar vigas"
+    },
     {
       "sha": "1ffe36e98f6083ca3c43ee1ea3b42f1846bff296",
       "short_sha": "1ffe36e",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T19:17:11-03:00",
       "message": "docs(status): atualizar selecao 2D e continuidade vertical em lote"
-    },
-    {
-      "sha": "fd879b848762b5727dabea563ab7cdfcf62936dd",
-      "short_sha": "fd879b8",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T19:17:00-03:00",
-      "message": "fix(ui): restaurar exclusao de lajes e editar continuidade de pilares em lote"
     }
   ],
   "development": {
@@ -2822,7 +2822,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 197,
+    "validator_count": 198,
     "validators": [
       {
         "name": "test:base",
@@ -2847,6 +2847,10 @@
       {
         "name": "test:browser-sacadas-apoios",
         "command": "node tests_support/sacadas_apoios_browser.mjs"
+      },
+      {
+        "name": "test:browser-sacadas-retirada",
+        "command": "node tests_support/sacadas_retirada_apoios_browser.mjs"
       },
       {
         "name": "test:schema-documental",
@@ -3621,7 +3625,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38670920629",
-    "run_number": "866"
+    "run_id": "38740509328",
+    "run_number": "867"
   }
 }
