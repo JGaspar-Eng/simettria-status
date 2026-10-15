@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T16:51:37Z",
+  "generated_at": "2026-10-15T17:15:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c76adc523ba1c6e03158d2f9722fb7211b8ca764",
-    "short_sha": "c76adc5",
+    "sha": "0e5dc6b2027deb08519b57be5f1a4f1976694028",
+    "short_sha": "0e5dc6b",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T13:51:14-03:00",
-    "message": "feat(balancos): estudo generico de flexao negativa em qualquer quantidade de sacadas"
+    "date": "2026-10-15T14:15:35-03:00",
+    "message": "fix(ui): distinguir geometria de seguranca das sacadas e evitar re-registro"
   },
   "commits": [
+    {
+      "sha": "0e5dc6b2027deb08519b57be5f1a4f1976694028",
+      "short_sha": "0e5dc6b",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T14:15:35-03:00",
+      "message": "fix(ui): distinguir geometria de seguranca das sacadas e evitar re-registro"
+    },
     {
       "sha": "c76adc523ba1c6e03158d2f9722fb7211b8ca764",
       "short_sha": "c76adc5",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T20:27:39-03:00",
       "message": "fix(ui): manter selecao de lajes apos exclusao mesmo com ORQ bloqueado"
-    },
-    {
-      "sha": "4023a0daec7db3c04668d57150ae177217066071",
-      "short_sha": "4023a0d",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T20:06:57-03:00",
-      "message": "docs(status): registrar selecao de lajes e futuro nivel de reservatorio"
     }
   ],
   "development": {
@@ -151,6 +151,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "BAL-UI-02-STATUS-SEGURO-20261015",
+          "title": "Sacadas: distinguir geometria sem inconsistencias de seguranca estrutural nao verificada; quadro tabular generico por sacada e memorial expansivel. Quando faixas ja estao cadastradas e apoios externos removidos, nao reapresentar acoes destrutivas; re-registro conserva os metadados das vigas de extremidade livre. Chrome e regressao de 12 sacadas com 36 vigas sem pilares.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/BAL_UI_02_APRESENTACAO_STATUS_SACADAS_2026_10_15.md / tests_support/sacadas_retirada_apoios_browser.mjs"
+        },
         {
           "code": "BAL-FLEX-01-DIMENSIONAMENTO-GENERICO-20261015",
           "title": "Motor GENERICO de flexao negativa de sacadas: qualquer quantidade e pavimentos, 4 orientacoes, por laje e por secao; calcula As superior e alternativas teoricas com verificacao da resistencia flexional e 20% de reserva interna, sem promover a aprovacao de obra. Regressao sintética 1/4/12/24/64/128/256 sacadas, varias orientacoes, bloqueios e Chrome; dados reais do JSON permanecem intocados.",
@@ -3665,7 +3672,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38772453787",
-    "run_number": "872"
+    "run_id": "38775837240",
+    "run_number": "873"
   }
 }
