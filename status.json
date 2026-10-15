@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T14:13:48Z",
+  "generated_at": "2026-10-15T16:51:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6053a0c20b5b9f75f8d44af69f1e26980047ebef",
-    "short_sha": "6053a0c",
+    "sha": "c76adc523ba1c6e03158d2f9722fb7211b8ca764",
+    "short_sha": "c76adc5",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T11:13:26-03:00",
-    "message": "feat(balancos): envelope conservador automatico de acoes"
+    "date": "2026-10-15T13:51:14-03:00",
+    "message": "feat(balancos): estudo generico de flexao negativa em qualquer quantidade de sacadas"
   },
   "commits": [
+    {
+      "sha": "c76adc523ba1c6e03158d2f9722fb7211b8ca764",
+      "short_sha": "c76adc5",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T13:51:14-03:00",
+      "message": "feat(balancos): estudo generico de flexao negativa em qualquer quantidade de sacadas"
+    },
     {
       "sha": "6053a0c20b5b9f75f8d44af69f1e26980047ebef",
       "short_sha": "6053a0c",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T20:06:57-03:00",
       "message": "docs(status): registrar selecao de lajes e futuro nivel de reservatorio"
-    },
-    {
-      "sha": "4898afa052ce0757f83da68ddfbedd12b2a81f4b",
-      "short_sha": "4898afa",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T20:06:41-03:00",
-      "message": "fix(ui): selecionar lajes por geometria e oferecer filtros 2D"
     }
   ],
   "development": {
@@ -151,6 +151,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "BAL-FLEX-01-DIMENSIONAMENTO-GENERICO-20261015",
+          "title": "Motor GENERICO de flexao negativa de sacadas: qualquer quantidade e pavimentos, 4 orientacoes, por laje e por secao; calcula As superior e alternativas teoricas com verificacao da resistencia flexional e 20% de reserva interna, sem promover a aprovacao de obra. Regressao sintética 1/4/12/24/64/128/256 sacadas, varias orientacoes, bloqueios e Chrome; dados reais do JSON permanecem intocados.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/BAL_FLEX_01_DIMENSIONAMENTO_GENERICO_2026_10_15.md / tests_support/sacadas_flexao_generica_escala.mjs"
+        },
         {
           "code": "BAL-ROB-01-ENVELOPE-CONSERVADOR-20261015",
           "title": "Sacadas: envelope automatico de solicitacoes com Qk de estudo 4,0 kN/m2 (valor de referencia mais gravoso, nao exigencia residencial), Gk acabamento reserva 1,5 kN/m2, carga linear borda 3 kN/m e forca horizontal guarda-corpo 1 kN/m SEPARADA; valores de reserva sao hipoteses de engenharia e valores cadastrados maiores prevalecem. ELU/ELS por faixa, testes 12 sacadas e Chrome; ainda SEM resistencia, ancoragem, torcao, deformacao e ORQ validado.",
@@ -2843,7 +2850,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 200,
+    "validator_count": 201,
     "validators": [
       {
         "name": "test:base",
@@ -2851,11 +2858,15 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
         "command": "node tests_support/sacadas_apoios_provisorios.mjs"
+      },
+      {
+        "name": "test:sacadas-flexao-generica",
+        "command": "node tests_support/sacadas_flexao_generica_escala.mjs"
       },
       {
         "name": "test:balancos-orq",
@@ -3654,7 +3665,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38749481589",
-    "run_number": "870"
+    "run_id": "38772453787",
+    "run_number": "872"
   }
 }
