@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T18:35:31Z",
+  "generated_at": "2026-10-15T20:26:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4ca9cff407f8dd91e48f1a6646a49a7273110af4",
-    "short_sha": "4ca9cff",
+    "sha": "8bc7a7585ca10bd5199a6ed21091bb4a1a3393b7",
+    "short_sha": "8bc7a75",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T15:35:07-03:00",
-    "message": "feat(orq): rastrear acoes e vetores das sacadas na raiz"
+    "date": "2026-10-15T17:26:01-03:00",
+    "message": "feat(orq): compor acoes de balanco por trechos nos casos ELU"
   },
   "commits": [
+    {
+      "sha": "8bc7a7585ca10bd5199a6ed21091bb4a1a3393b7",
+      "short_sha": "8bc7a75",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T17:26:01-03:00",
+      "message": "feat(orq): compor acoes de balanco por trechos nos casos ELU"
+    },
     {
       "sha": "4ca9cff407f8dd91e48f1a6646a49a7273110af4",
       "short_sha": "4ca9cff",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T10:34:24-03:00",
       "message": "feat(balancos): calcular solicitacoes de faixa e bloquear ORQ incompleto"
-    },
-    {
-      "sha": "f1ad7f0397b9aea051c2b37b19bc2a994b36cb09",
-      "short_sha": "f1ad7f0",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T10:10:42-03:00",
-      "message": "feat(balancos): retirar pilares provisorios sem apagar vigas"
     }
   ],
   "development": {
@@ -169,6 +169,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-BAL-COMB-TRECHOS-20261015",
+          "title": "Composição rastreável das ações características das sacadas em segmentos reais das vigas raiz, com força vertical e torção local, coeficientes dos dois arranjos globais NBR 8681 e conservação de esforços. Graph não distribui balanços como quatro apoios e neutraliza nós de reação obsoletos; pacote global aceita soma opcional com ações existentes por trecho. Regressões 1..256 sacadas e rejeição de geometria/vínculos inválidos. Montagem de entrada, não oito reações calculadas ou verificação resistente.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ORQ_BAL_COMB_01_TRECHOS_2026_10_15.md / tests_support/orq_balancos_combinacoes_trechos.mjs"
+        },
         {
           "code": "ORQ-BAL-RAIZ-VETORES-PRELIMINARES-20261015",
           "title": "Forças e momentos Gk/Qk por sacada rastreados até as vigas raiz, com conservação de resultantes e vetores consistentes de esforços verticais e torção em eixos locais de viga espacial. Prévia segura por ORQ com diagnóstico WAITING, sem distribuir carga como laje sobre quatro apoios. Chrome e testes sintéticos 1..256 sacadas e 40 pilares; diagnóstico de fundações agrupa repetição por causa, oito ELU não inventados.",
@@ -2903,7 +2910,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 204,
+    "validator_count": 205,
     "validators": [
       {
         "name": "test:base",
@@ -2911,7 +2918,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
@@ -2928,6 +2935,10 @@
       {
         "name": "test:sacadas-raiz-orq",
         "command": "node tests_support/sacadas_transferencia_raiz.mjs && node tests_support/sacadas_vetor_portico_raiz.mjs && node tests_support/orq_balancos_40_pilares_preflight.mjs"
+      },
+      {
+        "name": "test:balancos-orq-trechos",
+        "command": "node tests_support/sacadas_graph_excluir_quinhoes.mjs && node tests_support/orq_balancos_combinacoes_trechos.mjs && node tests_support/orq_pacote_acoes_globais.mjs && node tests_support/orq_balanco_oito_casos_portico_sintetico.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3730,7 +3741,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38786847170",
-    "run_number": "877"
+    "run_id": "38801907995",
+    "run_number": "878"
   }
 }
