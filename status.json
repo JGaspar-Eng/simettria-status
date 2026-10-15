@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T13:34:47Z",
+  "generated_at": "2026-10-15T13:59:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cd61c4afc1d73377250688ab93f886349bcbe2cb",
-    "short_sha": "cd61c4a",
+    "sha": "fd1266097b4fff1d0aa1dfc470374220cc90625e",
+    "short_sha": "fd12660",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T10:34:24-03:00",
-    "message": "feat(balancos): calcular solicitacoes de faixa e bloquear ORQ incompleto"
+    "date": "2026-10-15T10:58:51-03:00",
+    "message": "feat(balancos): calcular cargas residenciais automaticamente"
   },
   "commits": [
+    {
+      "sha": "fd1266097b4fff1d0aa1dfc470374220cc90625e",
+      "short_sha": "fd12660",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T10:58:51-03:00",
+      "message": "feat(balancos): calcular cargas residenciais automaticamente"
+    },
     {
       "sha": "cd61c4afc1d73377250688ab93f886349bcbe2cb",
       "short_sha": "cd61c4a",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T19:40:48-03:00",
       "message": "docs(status): registrar reparo da multisselecao de seis pilares"
-    },
-    {
-      "sha": "ab0d64429253d086d55f17d2f7b2402d3c235f2a",
-      "short_sha": "ab0d644",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T19:40:18-03:00",
-      "message": "fix(ui): usar selecao completa de pilares no modal de continuidade"
     }
   ],
   "development": {
@@ -151,6 +151,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "BAL-AUTO-01-CARGAS-RESIDENCIAIS-20261015",
+          "title": "Sacadas residenciais: estudo ELU/ELS automaticamente ao abrir, sem formulário de Gk/Qk; Qk=2,5 kN/m2 (NBR 6120 Tabela 10), peso próprio pela espessura, Gk adicional quando cadastrado, categoria do projeto ou hipótese explicitamente preliminar, aviso de guarda-corpo horizontal (NBR 6120 Tabela 12), vento e cargas especiais separados. Chrome reaberto com modelo sem pilares, regressões de 12 lajes; sem cálculo executivo ou ORQ global liberado.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/BAL_AUTO_01_CARGAS_AUTOMATICAS_SACADAS_2026_10_15.md / tests_support/sacadas_retirada_apoios_browser.mjs"
+        },
         {
           "code": "BAL-RES-01-SOLICITACOES-ORQ-GATE-20261015",
           "title": "Cálculo de solicitações de faixa de sacada sem pilares: momentos negativos e cortantes ELU/ELS com Gk/Qk e fonte explícitos; guarda ORQ impede distribuir cargas de balanços como lajes biapoiadas ou fabricar reações de base; integração de prontidão das dez frentes, regressões de 12 sacadas e Chrome aprovados. NÃO calcula armaduras, torção, deformação, fissuração ou distribuição global.",
@@ -3640,7 +3647,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38743851632",
-    "run_number": "868"
+    "run_id": "38747351378",
+    "run_number": "869"
   }
 }
