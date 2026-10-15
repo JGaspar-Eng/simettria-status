@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T13:11:06Z",
+  "generated_at": "2026-10-15T13:34:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f1ad7f0397b9aea051c2b37b19bc2a994b36cb09",
-    "short_sha": "f1ad7f0",
+    "sha": "cd61c4afc1d73377250688ab93f886349bcbe2cb",
+    "short_sha": "cd61c4a",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T10:10:42-03:00",
-    "message": "feat(balancos): retirar pilares provisorios sem apagar vigas"
+    "date": "2026-10-15T10:34:24-03:00",
+    "message": "feat(balancos): calcular solicitacoes de faixa e bloquear ORQ incompleto"
   },
   "commits": [
+    {
+      "sha": "cd61c4afc1d73377250688ab93f886349bcbe2cb",
+      "short_sha": "cd61c4a",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T10:34:24-03:00",
+      "message": "feat(balancos): calcular solicitacoes de faixa e bloquear ORQ incompleto"
+    },
     {
       "sha": "f1ad7f0397b9aea051c2b37b19bc2a994b36cb09",
       "short_sha": "f1ad7f0",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T19:40:18-03:00",
       "message": "fix(ui): usar selecao completa de pilares no modal de continuidade"
-    },
-    {
-      "sha": "aeb7f859af544355a8afd3b6fd876eb7c6bc4649",
-      "short_sha": "aeb7f85",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T19:17:11-03:00",
-      "message": "docs(status): atualizar selecao 2D e continuidade vertical em lote"
     }
   ],
   "development": {
@@ -151,6 +151,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "BAL-RES-01-SOLICITACOES-ORQ-GATE-20261015",
+          "title": "Cálculo de solicitações de faixa de sacada sem pilares: momentos negativos e cortantes ELU/ELS com Gk/Qk e fonte explícitos; guarda ORQ impede distribuir cargas de balanços como lajes biapoiadas ou fabricar reações de base; integração de prontidão das dez frentes, regressões de 12 sacadas e Chrome aprovados. NÃO calcula armaduras, torção, deformação, fissuração ou distribuição global.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/BAL_RES_01_SOLICITACOES_LAJES_BALANCO_2026_10_15.md / tests_support/sacadas_orq_gates.mjs"
+        },
         {
           "code": "UI-LAJE-EXCLUSAO-CICLO-BROWSER-20261014",
           "title": "Regressão REAL no Chrome/Playwright: filtro Somente lajes e Ctrl+clique em L1/L2, exclusão confirmada de L1, L2 e L3 sequencialmente sem F5; estado, SELECAO, contador e filtro conferidos em cada etapa, seguidos da seleção de pilar e viga. Teste com dados sintéticos em contexto isolado; nenhuma alteração do projeto residencial. Correção de UI já implementada em fe06770, não valida cálculo executivo.",
@@ -2822,7 +2829,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 198,
+    "validator_count": 200,
     "validators": [
       {
         "name": "test:base",
@@ -2830,11 +2837,19 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
         "command": "node tests_support/sacadas_apoios_provisorios.mjs"
+      },
+      {
+        "name": "test:balancos-orq",
+        "command": "node tests_support/sacadas_orq_gates.mjs"
+      },
+      {
+        "name": "test:frentes-estruturais",
+        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs"
       },
       {
         "name": "test:escada-abertura",
@@ -3625,7 +3640,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38740509328",
-    "run_number": "867"
+    "run_id": "38743851632",
+    "run_number": "868"
   }
 }
