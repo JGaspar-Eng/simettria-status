@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T18:06:53Z",
+  "generated_at": "2026-10-15T18:35:31Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
-    "short_sha": "6ce86bf",
+    "sha": "4ca9cff407f8dd91e48f1a6646a49a7273110af4",
+    "short_sha": "4ca9cff",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T15:06:31-03:00",
-    "message": "feat(balancos): aplicar armadura por pavimentos tipo em lote"
+    "date": "2026-10-15T15:35:07-03:00",
+    "message": "feat(orq): rastrear acoes e vetores das sacadas na raiz"
   },
   "commits": [
+    {
+      "sha": "4ca9cff407f8dd91e48f1a6646a49a7273110af4",
+      "short_sha": "4ca9cff",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T15:35:07-03:00",
+      "message": "feat(orq): rastrear acoes e vetores das sacadas na raiz"
+    },
     {
       "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
       "short_sha": "6ce86bf",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T10:10:42-03:00",
       "message": "feat(balancos): retirar pilares provisorios sem apagar vigas"
-    },
-    {
-      "sha": "1ffe36e98f6083ca3c43ee1ea3b42f1846bff296",
-      "short_sha": "1ffe36e",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T23:25:29-03:00",
-      "message": "feat(balancos): auditar retirada virtual de oito apoios"
     }
   ],
   "development": {
@@ -142,15 +142,40 @@
             "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
           },
           {
-            "code": "FUND-48P-PROVA",
-            "title": "Executar projeto real de 48 pilares: reconciliar bases, oito ELU por apoio, estudo de sapata/bloco e checagem visual 2D/3D.",
+            "code": "FUND-40P-PROVA",
+            "title": "Executar o projeto residencial atualizado de 40 pilares como regressão real (sem limitar o motor a 40): reconciliar bases, oito ELU por apoio, sapata/bloco/estacas e checagem 2D/3D.",
             "state": "planned",
-            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+            "source": "docs/ORQ_40P_10_FRENTES_PLANO_2026_10_15.md"
+          },
+          {
+            "code": "ORQ-BAL-TORCAO-01",
+            "title": "Acoplar carga vertical e torção das vigas de raiz de sacadas à rigidez do pórtico 3D; checar placa, ligações, testes de sinais e equilíbrio em malha antes de emitir reações globais.",
+            "state": "planned",
+            "source": "docs/ORQ_40P_10_FRENTES_PLANO_2026_10_15.md"
+          },
+          {
+            "code": "ORQ-OITO-ELU-40P-01",
+            "title": "Validar os oito casos ELU globais e reações N/M/V com proveniência e vento para todos os apoios dos projetos, incluindo o caso real atualizado de 40 pilares.",
+            "state": "planned",
+            "source": "docs/ORQ_40P_10_FRENTES_PLANO_2026_10_15.md"
+          },
+          {
+            "code": "QA-REGRESSAO-PERF-01",
+            "title": "Aumentar testes genéricos de carga e velocidade, regressão Browser, fixture real anonimizada e invariantes de persistência e segurança com validação automatizada por commit.",
+            "state": "planned",
+            "source": "docs/ORQ_40P_10_FRENTES_PLANO_2026_10_15.md"
           }
         ],
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-BAL-RAIZ-VETORES-PRELIMINARES-20261015",
+          "title": "Forças e momentos Gk/Qk por sacada rastreados até as vigas raiz, com conservação de resultantes e vetores consistentes de esforços verticais e torção em eixos locais de viga espacial. Prévia segura por ORQ com diagnóstico WAITING, sem distribuir carga como laje sobre quatro apoios. Chrome e testes sintéticos 1..256 sacadas e 40 pilares; diagnóstico de fundações agrupa repetição por causa, oito ELU não inventados.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ORQ_40P_10_FRENTES_PLANO_2026_10_15.md / tests_support/sacadas_vetor_portico_raiz.mjs"
+        },
         {
           "code": "BAL-K-03-ARMADURAS-PAVIMENTOS-TIPO-20261015",
           "title": "Aplicação por padrão aos pavimentos-tipo: o editor seleciona sacadas estruturalmente equivalentes pela geometria, faixa interna, seção da raiz e ações ELU, em vez de exigir escolha de cada laje. Seleção de todas e manual opcionais; teste independente de cada destino, confirmação única e lote atômico sem alteração de sacadas distintas. Regressões 1/4/12/24/64/128/256 sacadas, Chrome com 4 pisos e bloqueio de um caso mais exigente; não executivo.",
@@ -2878,7 +2903,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 203,
+    "validator_count": 204,
     "validators": [
       {
         "name": "test:base",
@@ -2886,7 +2911,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
@@ -2899,6 +2924,10 @@
       {
         "name": "test:sacadas-tipo",
         "command": "node tests_support/sacadas_armadura_lote_pavimentos_tipo.mjs"
+      },
+      {
+        "name": "test:sacadas-raiz-orq",
+        "command": "node tests_support/sacadas_transferencia_raiz.mjs && node tests_support/sacadas_vetor_portico_raiz.mjs && node tests_support/orq_balancos_40_pilares_preflight.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3701,7 +3730,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38782883956",
-    "run_number": "876"
+    "run_id": "38786847170",
+    "run_number": "877"
   }
 }
