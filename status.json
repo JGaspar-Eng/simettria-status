@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-14T23:28:31Z",
+  "generated_at": "2026-10-15T00:43:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3497d04608d30348276912ee890d6cd969e007fb",
-    "short_sha": "3497d04",
+    "sha": "c66af3aaaa7ebc97de60813420ff08ac9de82d5c",
+    "short_sha": "c66af3a",
     "author": "JGaspar-Eng",
-    "date": "2026-10-14T20:27:55-03:00",
-    "message": "docs(status): registrar recuperacao da selecao 2D apos exclusao"
+    "date": "2026-10-14T21:42:50-03:00",
+    "message": "test(ui): validar exclusao sucessiva de lajes no Chrome"
   },
   "commits": [
+    {
+      "sha": "c66af3aaaa7ebc97de60813420ff08ac9de82d5c",
+      "short_sha": "c66af3a",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T21:42:50-03:00",
+      "message": "test(ui): validar exclusao sucessiva de lajes no Chrome"
+    },
     {
       "sha": "3497d04608d30348276912ee890d6cd969e007fb",
       "short_sha": "3497d04",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T18:51:42-03:00",
       "message": "docs(status): registrar replicacao multiandar e exclusao da cobertura"
-    },
-    {
-      "sha": "7d01310bb680c90fac38295c24e390ef8e860e3d",
-      "short_sha": "7d01310",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T18:51:31-03:00",
-      "message": "feat(balancos): selecionar sacadas 2D e replicar por pavimento sem cobertura"
     }
   ],
   "development": {
@@ -105,6 +105,12 @@
           }
         ],
         "planned": [
+          {
+            "code": "HID-RES-SUP-01",
+            "title": "Modelar explicitamente o nível técnico de reservatório acima da cobertura, sem renomear, deslocar ou recriar elementos existentes. Depois implementar cadastro de ocupação, autonomia, volume e cargas com insumos e fontes, sem capacidade presumida.",
+            "state": "planned",
+            "source": "docs/FUND_EXECUTIVO_DEPENDENCIAS_2026_10_13.md"
+          },
           {
             "code": "FUND-PLACA-EXEC",
             "title": "Fechar modelo de placa: benchmarks independentes, refinamento e convergência, contato solo–estrutura e limites do Winkler. Estudo atual é não executivo.",
@@ -145,6 +151,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "UI-LAJE-EXCLUSAO-CICLO-BROWSER-20261014",
+          "title": "Regressão REAL no Chrome/Playwright: filtro Somente lajes e Ctrl+clique em L1/L2, exclusão confirmada de L1, L2 e L3 sequencialmente sem F5; estado, SELECAO, contador e filtro conferidos em cada etapa, seguidos da seleção de pilar e viga. Teste com dados sintéticos em contexto isolado; nenhuma alteração do projeto residencial. Correção de UI já implementada em fe06770, não valida cálculo executivo.",
+          "state": "completed",
+          "area": 1,
+          "source": "tests_support/selecao_lajes_exclusao_sucessiva_browser.mjs / fe06770"
+        },
         {
           "code": "FUND-DEZ-FRENTES-CICLO-2026-10-13",
           "title": "Ciclo auditavel de 10 frentes de fundacoes: guardas e diagnosticos parciais para placa, geotecnia, puncao, ELS e croqui, selecao multinivel e conflitos, casos governantes de estacas, rotulos 2D, previa Babylon 3D nao executiva, sincronismo e regressao. Nenhuma aprovacao normativa ou liberacao de obra.",
@@ -2809,7 +2822,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 194,
+    "validator_count": 195,
     "validators": [
       {
         "name": "test:base",
@@ -2822,6 +2835,10 @@
       {
         "name": "test:escada-abertura",
         "command": "node tests/validar_compatibilidade_abertura_escada.mjs"
+      },
+      {
+        "name": "test:browser-selecao-lajes",
+        "command": "node tests_support/selecao_lajes_exclusao_sucessiva_browser.mjs"
       },
       {
         "name": "test:schema-documental",
@@ -3596,7 +3613,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38654271961",
-    "run_number": "864"
+    "run_id": "38661606220",
+    "run_number": "865"
   }
 }
