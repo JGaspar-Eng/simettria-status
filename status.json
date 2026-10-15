@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T20:26:19Z",
+  "generated_at": "2026-10-15T20:49:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8bc7a7585ca10bd5199a6ed21091bb4a1a3393b7",
-    "short_sha": "8bc7a75",
+    "sha": "a5924856d83a985b5219f74ce3edcffc6d624320",
+    "short_sha": "a592485",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T17:26:01-03:00",
-    "message": "feat(orq): compor acoes de balanco por trechos nos casos ELU"
+    "date": "2026-10-15T17:48:50-03:00",
+    "message": "feat: executar oito ELU do modelo residencial em ensaio controlado"
   },
   "commits": [
+    {
+      "sha": "a5924856d83a985b5219f74ce3edcffc6d624320",
+      "short_sha": "a592485",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T17:48:50-03:00",
+      "message": "feat: executar oito ELU do modelo residencial em ensaio controlado"
+    },
     {
       "sha": "8bc7a7585ca10bd5199a6ed21091bb4a1a3393b7",
       "short_sha": "8bc7a75",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T10:58:51-03:00",
       "message": "feat(balancos): calcular cargas residenciais automaticamente"
-    },
-    {
-      "sha": "cd61c4afc1d73377250688ab93f886349bcbe2cb",
-      "short_sha": "cd61c4a",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T10:34:24-03:00",
-      "message": "feat(balancos): calcular solicitacoes de faixa e bloquear ORQ incompleto"
     }
   ],
   "development": {
@@ -169,6 +169,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-40P-REAL-CASOS-ELU-20261015",
+          "title": "Execução matricial no JSON residencial real (SHA cd433b..., 40 pilares, 333 vigas, 86 lajes): 12 sacadas com carga/torção na raiz, 8 casos ELU em 543 elementos e 1.644 DOFs; 40 envelopes transferidos aos 40 apoios, com 8 casos cada. Ensaio somente em memória com classificação normativa e natureza de cargas NÃO comprovadas e declaradas como hipóteses. Infraestrutura WAITING por método resistente, sem fundações criadas. UI remove bloqueio geral de sacadas, mantendo cobertura pendente de cargas próprias.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ORQ_40P_REAL_REFERENCIAS_2026_10_15.md / tests_support/orq_40p_real_hipotese_controlada.mjs"
+        },
         {
           "code": "ORQ-BAL-COMB-TRECHOS-20261015",
           "title": "Composição rastreável das ações características das sacadas em segmentos reais das vigas raiz, com força vertical e torção local, coeficientes dos dois arranjos globais NBR 8681 e conservação de esforços. Graph não distribui balanços como quatro apoios e neutraliza nós de reação obsoletos; pacote global aceita soma opcional com ações existentes por trecho. Regressões 1..256 sacadas e rejeição de geometria/vínculos inválidos. Montagem de entrada, não oito reações calculadas ou verificação resistente.",
@@ -2910,7 +2917,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 205,
+    "validator_count": 206,
     "validators": [
       {
         "name": "test:base",
@@ -2939,6 +2946,10 @@
       {
         "name": "test:balancos-orq-trechos",
         "command": "node tests_support/sacadas_graph_excluir_quinhoes.mjs && node tests_support/orq_balancos_combinacoes_trechos.mjs && node tests_support/orq_pacote_acoes_globais.mjs && node tests_support/orq_balanco_oito_casos_portico_sintetico.mjs"
+      },
+      {
+        "name": "test:orq-real-optin",
+        "command": "node tests_support/orq_40p_real_hipotese_controlada.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3741,7 +3752,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38801907995",
-    "run_number": "878"
+    "run_id": "38804991880",
+    "run_number": "879"
   }
 }
