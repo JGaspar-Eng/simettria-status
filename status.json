@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T17:41:16Z",
+  "generated_at": "2026-10-15T17:51:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8c3c0dfb9b350c4861dd61c337e1b3431253991e",
-    "short_sha": "8c3c0df",
+    "sha": "42d2640a548ea90649ad8d40d165aee49f61aa14",
+    "short_sha": "42d2640",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T14:40:58-03:00",
-    "message": "feat(balancos): integrar tabela K e editor grafico de armadura"
+    "date": "2026-10-15T14:51:30-03:00",
+    "message": "fix(tabela-k): selecionar proxima linha conservadora sem interpolar"
   },
   "commits": [
+    {
+      "sha": "42d2640a548ea90649ad8d40d165aee49f61aa14",
+      "short_sha": "42d2640",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T14:51:30-03:00",
+      "message": "fix(tabela-k): selecionar proxima linha conservadora sem interpolar"
+    },
     {
       "sha": "8c3c0dfb9b350c4861dd61c337e1b3431253991e",
       "short_sha": "8c3c0df",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T21:42:50-03:00",
       "message": "test(ui): validar exclusao sucessiva de lajes no Chrome"
-    },
-    {
-      "sha": "3497d04608d30348276912ee890d6cd969e007fb",
-      "short_sha": "3497d04",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T20:27:55-03:00",
-      "message": "docs(status): registrar recuperacao da selecao 2D apos exclusao"
     }
   ],
   "development": {
@@ -152,8 +152,15 @@
       },
       "recent": [
         {
+          "code": "BAL-K-02-ARREDONDAMENTO-CONSERVADOR-20261015",
+          "title": "Tabela K sem interpolacao: quando Kc calculado cai entre linhas, selecionar a proxima linha mais exigente em Ks/As (x/d maior, Kc tabulado menor ou igual); fck entre classes adota concreto tabelado inferior; empates adotam maior x/d e valores fora do dominio bloqueiam. A interface diferencia Kc calculado e Kc tabelado; testes para C20..C50, CA25/CA50/CA60 e varios tamanhos de projeto.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/BAL_K_02_ARREDONDAMENTO_CONSERVADOR_2026_10_15.md / tests_support/tabela_k_concreto_armado.mjs"
+        },
+        {
           "code": "BAL-K-01-EDITOR-GRAFICO-20261015",
-          "title": "Tabela K fornecida pelo usuário (39 linhas, Kc para C20..C50, Ks para CA25/CA50/CA60), interpolação auditável e comparação conservadora com solução analítica. Sacadas em quantidade livre recebem editor gráfico com aço, bitola, espaçamento e cobrimento ajustáveis; corte SVG com barras arrastáveis e atualização instantânea; grava proposta preliminar por laje somente mediante confirmação. Chrome e testes sintéticos aprovados; aprovação executiva não concedida.",
+          "title": "Tabela K fornecida pelo usuário (39 linhas, Kc para C20..C50, Ks para CA25/CA50/CA60), consulta tabulada auditável e comparação conservadora com solução analítica. Sacadas em quantidade livre recebem editor gráfico com aço, bitola, espaçamento e cobrimento ajustáveis; corte SVG com barras arrastáveis e atualização instantânea; grava proposta preliminar por laje somente mediante confirmação. Chrome e testes sintéticos aprovados; aprovação executiva não concedida.",
           "state": "completed",
           "area": 1,
           "source": "docs/BAL_K_01_TABELA_K_EDITOR_GRAFICO_2026_10_15.md / tests_support/tabela_k_concreto_armado.mjs"
@@ -3683,7 +3690,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38779365268",
-    "run_number": "874"
+    "run_id": "38780811495",
+    "run_number": "875"
   }
 }
