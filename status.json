@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-15T00:43:17Z",
+  "generated_at": "2026-10-15T02:25:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c66af3aaaa7ebc97de60813420ff08ac9de82d5c",
-    "short_sha": "c66af3a",
+    "sha": "1ffe36e98f6083ca3c43ee1ea3b42f1846bff296",
+    "short_sha": "1ffe36e",
     "author": "JGaspar-Eng",
-    "date": "2026-10-14T21:42:50-03:00",
-    "message": "test(ui): validar exclusao sucessiva de lajes no Chrome"
+    "date": "2026-10-14T23:25:29-03:00",
+    "message": "feat(balancos): auditar retirada virtual de oito apoios"
   },
   "commits": [
+    {
+      "sha": "1ffe36e98f6083ca3c43ee1ea3b42f1846bff296",
+      "short_sha": "1ffe36e",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-14T23:25:29-03:00",
+      "message": "feat(balancos): auditar retirada virtual de oito apoios"
+    },
     {
       "sha": "c66af3aaaa7ebc97de60813420ff08ac9de82d5c",
       "short_sha": "c66af3a",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-14T19:17:00-03:00",
       "message": "fix(ui): restaurar exclusao de lajes e editar continuidade de pilares em lote"
-    },
-    {
-      "sha": "4d64c92504d6d1b9dff39b48b53bca97b99e7334",
-      "short_sha": "4d64c92",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-14T18:51:42-03:00",
-      "message": "docs(status): registrar replicacao multiandar e exclusao da cobertura"
     }
   ],
   "development": {
@@ -2822,7 +2822,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 195,
+    "validator_count": 197,
     "validators": [
       {
         "name": "test:base",
@@ -2830,7 +2830,11 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs"
+      },
+      {
+        "name": "test:sacadas-apoios",
+        "command": "node tests_support/sacadas_apoios_provisorios.mjs"
       },
       {
         "name": "test:escada-abertura",
@@ -2839,6 +2843,10 @@
       {
         "name": "test:browser-selecao-lajes",
         "command": "node tests_support/selecao_lajes_exclusao_sucessiva_browser.mjs"
+      },
+      {
+        "name": "test:browser-sacadas-apoios",
+        "command": "node tests_support/sacadas_apoios_browser.mjs"
       },
       {
         "name": "test:schema-documental",
@@ -3613,7 +3621,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38661606220",
-    "run_number": "865"
+    "run_id": "38670920629",
+    "run_number": "866"
   }
 }
