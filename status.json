@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T11:56:40Z",
+  "generated_at": "2026-10-16T12:32:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "acd3946613b9a1f918c04c190ffcdf3bd14bdd19",
-    "short_sha": "acd3946",
+    "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
+    "short_sha": "0ab32da",
     "author": "JGaspar-Eng",
-    "date": "2026-10-16T08:56:01-03:00",
-    "message": "fix(vento): preservar W1 e diagnosticar vigas em cotas distintas no SA-L1"
+    "date": "2026-10-16T09:31:33-03:00",
+    "message": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1"
   },
   "commits": [
+    {
+      "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
+      "short_sha": "0ab32da",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-16T09:31:33-03:00",
+      "message": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1"
+    },
     {
       "sha": "acd3946613b9a1f918c04c190ffcdf3bd14bdd19",
       "short_sha": "acd3946",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T15:35:07-03:00",
       "message": "feat(orq): rastrear acoes e vetores das sacadas na raiz"
-    },
-    {
-      "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
-      "short_sha": "6ce86bf",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T15:06:31-03:00",
-      "message": "feat(balancos): aplicar armadura por pavimentos tipo em lote"
     }
   ],
   "development": {
@@ -169,6 +169,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-ESCADA-3D-SA-L1-20261016",
+          "title": "Níveis intermediários de vigas pilar-pilar integrados à validação geométrica 3D e à matriz de rigidez lateral SA-L1 com seis nós e subdivisão física dos pilares. JSON residencial de 40 pilares reconhece 3 vigas intermediárias sem falso erro de projeção; W1 e SA-L1 quatro sentidos READY; testes de duplicação real, cota fora da prumada, contribuição EI/L somente para vínculos CONTINUO comprovados e invariância dos deslocamentos na ausência dessa rigidez. Proteção executiva e JSON preservados.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/TOPOLOGIA_ESCADA_3D_2026_10_16.md / tests_support/topologia_vigas_multinivel.mjs"
+        },
         {
           "code": "UX-FOCO-COMANDOS-20261015",
           "title": "Reorganização das barras de ferramentas em principais e avançadas com diálogos sem clonagem ou perda de listeners; ferramentas futuras desativadas ficam recolhidas. Auditoria de 10 frentes abre resumo compacto, assistente e detalhes opt-in, corrigindo mensagem que confundia 12 sacadas com ações de raiz rastreadas e ausência de oito ELU globais. Teste Chrome comprova Graph, cobertura, classificação, auditoria e fluxo assistido sem alterar o JSON.",
@@ -2945,7 +2952,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 215,
+    "validator_count": 216,
     "validators": [
       {
         "name": "test:base",
@@ -3258,6 +3265,10 @@
       {
         "name": "test:vento-sa-gate",
         "command": "node tests_support/vento_sa_l1_gate_geometrico.mjs"
+      },
+      {
+        "name": "test:topologia-escada-3d",
+        "command": "node tests_support/topologia_vigas_multinivel.mjs"
       },
       {
         "name": "test:browser-vento-niveis",
@@ -3816,7 +3827,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38897094510",
-    "run_number": "885"
+    "run_id": "38901156714",
+    "run_number": "886"
   }
 }
