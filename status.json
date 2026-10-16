@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T12:32:09Z",
+  "generated_at": "2026-10-16T16:28:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
-    "short_sha": "0ab32da",
+    "sha": "09835e3fa90d337b02f3e54feaf81cf37cb8d574",
+    "short_sha": "09835e3",
     "author": "JGaspar-Eng",
-    "date": "2026-10-16T09:31:33-03:00",
-    "message": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1"
+    "date": "2026-10-16T13:28:02-03:00",
+    "message": "fix(orq): exigir 8 ELU por pilar e insumos por apoio no assistente"
   },
   "commits": [
+    {
+      "sha": "09835e3fa90d337b02f3e54feaf81cf37cb8d574",
+      "short_sha": "09835e3",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-16T13:28:02-03:00",
+      "message": "fix(orq): exigir 8 ELU por pilar e insumos por apoio no assistente"
+    },
     {
       "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
       "short_sha": "0ab32da",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T17:26:01-03:00",
       "message": "feat(orq): compor acoes de balanco por trechos nos casos ELU"
-    },
-    {
-      "sha": "4ca9cff407f8dd91e48f1a6646a49a7273110af4",
-      "short_sha": "4ca9cff",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T15:35:07-03:00",
-      "message": "feat(orq): rastrear acoes e vetores das sacadas na raiz"
     }
   ],
   "development": {
@@ -169,6 +169,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-AUDIT-EVIDENCIAS-ELU-20261016",
+          "title": "Auditoria unificada das 10 frentes e do assistente do cálculo: oito ELU só são comprovados com oito casos únicos e envelopes correspondentes a todos os IDs de pilares do modelo atual; cadastro geotécnico contado por IDs reais de apoios e origem dos insumos. Corrigida consulta incorreta ao estado do serviço de base. UI apresenta 0/40 ELU e 0/40 insumos do modelo residencial sem hipóteses automáticas. Testes de rejeição de IDs falsos/parciais e browser.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ORQ_AUDITORIA_10_FRENTES_EVIDENCIAS_2026_10_16.md / tests_support/orq_autoplano_prova_oito_elu_apoios.mjs"
+        },
         {
           "code": "ORQ-ESCADA-3D-SA-L1-20261016",
           "title": "Níveis intermediários de vigas pilar-pilar integrados à validação geométrica 3D e à matriz de rigidez lateral SA-L1 com seis nós e subdivisão física dos pilares. JSON residencial de 40 pilares reconhece 3 vigas intermediárias sem falso erro de projeção; W1 e SA-L1 quatro sentidos READY; testes de duplicação real, cota fora da prumada, contribuição EI/L somente para vínculos CONTINUO comprovados e invariância dos deslocamentos na ausência dessa rigidez. Proteção executiva e JSON preservados.",
@@ -2996,7 +3003,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
+        "command": "node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3827,7 +3834,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38901156714",
-    "run_number": "886"
+    "run_id": "38932202544",
+    "run_number": "887"
   }
 }
