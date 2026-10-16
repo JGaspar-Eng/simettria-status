@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T01:46:43Z",
+  "generated_at": "2026-10-16T02:21:21Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c1632dea3cd45f92c2910cf3bfd3337d1b310e11",
-    "short_sha": "c1632de",
+    "sha": "ce4648a94a114608756f7c8f5f5b5a71d199f79b",
+    "short_sha": "ce4648a",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T22:46:13-03:00",
-    "message": "feat(orq): assistente intuitivo de entradas e dez verificacoes rastreadas"
+    "date": "2026-10-15T23:20:50-03:00",
+    "message": "feat(ui): simplificar comandos e esclarecer auditoria das sacadas"
   },
   "commits": [
+    {
+      "sha": "ce4648a94a114608756f7c8f5f5b5a71d199f79b",
+      "short_sha": "ce4648a",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T23:20:50-03:00",
+      "message": "feat(ui): simplificar comandos e esclarecer auditoria das sacadas"
+    },
     {
       "sha": "c1632dea3cd45f92c2910cf3bfd3337d1b310e11",
       "short_sha": "c1632de",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T14:40:58-03:00",
       "message": "feat(balancos): integrar tabela K e editor grafico de armadura"
-    },
-    {
-      "sha": "0e5dc6b2027deb08519b57be5f1a4f1976694028",
-      "short_sha": "0e5dc6b",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T14:15:35-03:00",
-      "message": "fix(ui): distinguir geometria de seguranca das sacadas e evitar re-registro"
     }
   ],
   "development": {
@@ -169,6 +169,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "UX-FOCO-COMANDOS-20261015",
+          "title": "Reorganização das barras de ferramentas em principais e avançadas com diálogos sem clonagem ou perda de listeners; ferramentas futuras desativadas ficam recolhidas. Auditoria de 10 frentes abre resumo compacto, assistente e detalhes opt-in, corrigindo mensagem que confundia 12 sacadas com ações de raiz rastreadas e ausência de oito ELU globais. Teste Chrome comprova Graph, cobertura, classificação, auditoria e fluxo assistido sem alterar o JSON.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/UX_FOCO_COMANDOS_2026_10_15.md / tests_support/organizar_comandos_browser.mjs"
+        },
         {
           "code": "ORQ-AUTO-10-UI-20261015",
           "title": "Assistente unificado no botão Calcular estrutura com 10 diagnósticos automáticos, ações prioritárias, reconciliação segura de referência de cobertura em 1 clique, seleção agrupada de cargas e acesso ao editor normativo. Relatório verificável dos oito casos ELU por pilar (1/40/256 testes), reaproveitamento de sondagens SP-01/SP-02 com nível d'água sem falsa invalidação e auditoria de 10 frentes corrigida para distinguir 8 ELU de fundação WAITING. JSON 40p intocado, testes CI portáveis e browser Chrome.",
@@ -2938,7 +2945,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 212,
+    "validator_count": 213,
     "validators": [
       {
         "name": "test:base",
@@ -3023,6 +3030,10 @@
       {
         "name": "test:browser-orq-assistente",
         "command": "node tests_support/orq_autoplano_dez_verificacoes_browser.mjs"
+      },
+      {
+        "name": "test:browser-ux-foco",
+        "command": "node tests_support/organizar_comandos_browser.mjs"
       },
       {
         "name": "test:schema-documental",
@@ -3797,7 +3808,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38836916608",
-    "run_number": "882"
+    "run_id": "38839970129",
+    "run_number": "883"
   }
 }
