@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="simettria-dashboard-build" content="9ef4db838e0523d24288e10f9aeb0c22b7e347a7" />
 <title>SIMETTRIA — Painel de Desenvolvimento</title>
 <meta name="robots" content="noindex" />
 <style>
@@ -768,7 +769,7 @@
         <p>Este painel mostra onde o desenvolvimento está, quanto já avançou em cada área, quais são as próximas etapas e o que já foi consolidado no SIMETTRIA. As informações são atualizadas a partir dos registros versionados do projeto.</p>
       </div>
       <div class="stat overall-progress-card" id="overall-progress-card" hidden>
-        <div class="stat-label">Progresso geral do projeto</div>
+        <div class="stat-label">Índice dos trabalhos cadastrados</div>
         <div class="stat-value" id="overall-progress-value">—</div>
         <div class="stat-hint" id="overall-progress-hint">trabalhos cadastrados concluídos</div>
       </div>
@@ -888,8 +889,8 @@
   </div>
 </footer>
 
-<script src="status_areas.js?v=99972144539910c2e0e8aec6886708d485ac0422"></script>
-<script src="status_sequence.js?v=99972144539910c2e0e8aec6886708d485ac0422"></script>
+<script src="status_areas.js?v=9ef4db838e0523d24288e10f9aeb0c22b7e347a7"></script>
+<script src="status_sequence.js?v=9ef4db838e0523d24288e10f9aeb0c22b7e347a7"></script>
 <script>
 (function () {
   function escapeHtml(value) {
@@ -1153,6 +1154,27 @@
     return houveTroca;
   }
 
+  function atualizarInterfacePublicadaSeNecessario(status) {
+    // O JSON pode avançar enquanto uma aba mantém o JS de um deploy anterior.
+    // Recarregar UMA vez por SHA busca o HTML com novos assets versionados.
+    var meta = document.querySelector('meta[name="simettria-dashboard-build"]');
+    var versaoHtml = meta && meta.getAttribute("content");
+    var versaoDados = status && status.head && status.head.sha;
+    if (!/^[a-f0-9]{40}$/i.test(versaoHtml || "") ||
+        !/^[a-f0-9]{40}$/i.test(versaoDados || "") ||
+        versaoHtml === versaoDados ||
+        !window.location || typeof window.location.replace !== "function" ||
+        !window.sessionStorage) return false;
+    var chave = "simettria:dashboard:reload:" + versaoDados;
+    try {
+      if (window.sessionStorage.getItem(chave) === "1") return false;
+      window.sessionStorage.setItem(chave, "1");
+    } catch (_) { return false; }
+    window.location.replace(window.location.pathname +
+      "?versao=" + versaoDados.slice(0,12) + (window.location.hash || ""));
+    return true;
+  }
+
   function verificar() {
     // Uma chamada concorrente (polling + foco + botão) não vira um "false"
     // silencioso: quem chamou recebe o resultado real da consulta em curso.
@@ -1165,6 +1187,7 @@
         return response.json();
       })
       .then(function (status) {
+        if (atualizarInterfacePublicadaSeNecessario(status)) return false;
         var houveTroca = aplicarStatus(status);
         hideError();
         definirVerificadoEm("Verificado agora às " + fmtHora(new Date()));
@@ -1222,6 +1245,6 @@
   }
 })();
 </script>
-<script src="status_coordination.js?v=99972144539910c2e0e8aec6886708d485ac0422"></script>
+<script src="status_coordination.js?v=9ef4db838e0523d24288e10f9aeb0c22b7e347a7"></script>
 </body>
 </html>

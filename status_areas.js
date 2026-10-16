@@ -73,10 +73,14 @@
     var execution = status?.development?.execution || {};
     var registros = coletarFrentesArea(Number(epic?.number), execution);
     if (!registros.length) return '<div class="area-item-context"><strong>Frentes registradas</strong><div class="area-item-empty">Nenhuma frente operacional específica registrada nesta área.</div></div>';
-    return '<div class="area-item-context"><div class="area-item-context-title"><strong>Frentes operacionais registradas</strong><span>' + esc(registros.length) + '</span></div>' + registros.map(function (registro) {
+    function renderRegistro(registro) {
       var front = registro.front;
-      return '<div style="margin-top:8px;padding-top:7px;border-top:1px dashed var(--border)"><div class="area-item-context-title"><strong>' + esc(front.code) + '</strong><span class="area-work-state ' + esc(front.state || "pending") + '">' + esc(rotuloEstado(front.state || "pending")) + '</span></div><div style="margin-top:3px">' + esc(front.title || "") + '</div><div class="area-source">' + esc(registro.grupo) + (front.source ? ' · ' + esc(front.source) : '') + '</div></div>';
-    }).join("") + '</div>';
+      var descricao = front.summary || front.title || "";
+      return '<div style="margin-top:8px;padding-top:7px;border-top:1px dashed var(--border)"><div class="area-item-context-title"><strong>' + esc(front.code) + '</strong><span class="area-work-state ' + esc(front.state || "pending") + '">' + esc(rotuloEstado(front.state || "pending")) + '</span></div><div style="margin-top:3px">' + esc(descricao.length > 230 ? descricao.slice(0,230).trimEnd() + "…" : descricao) + '</div>' + (descricao.length > 230 ? '<details style="margin-top:6px"><summary style="cursor:pointer;color:var(--blue)">Descrição completa</summary><div style="margin-top:5px;max-height:260px;overflow:auto">' + esc(descricao) + '</div></details>' : '') + '<div class="area-source">' + esc(registro.grupo) + (front.source ? ' · ' + esc(front.source) : '') + '</div></div>';
+    }
+    var primeiras = registros.slice(0,6).map(renderRegistro).join("");
+    var restantes = registros.length > 6 ? '<details style="margin-top:12px"><summary style="cursor:pointer;color:var(--blue);font-weight:700">Mostrar outras ' + (registros.length - 6) + ' frentes registradas</summary>' + registros.slice(6).map(renderRegistro).join("") + '</details>' : "";
+    return '<div class="area-item-context"><div class="area-item-context-title"><strong>Frentes operacionais registradas</strong><span>' + esc(registros.length) + '</span></div>' + primeiras + restantes + '</div>';
   }
 
   function checklistsArea(epic, status) {
