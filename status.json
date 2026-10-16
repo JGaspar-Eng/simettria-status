@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T16:28:34Z",
+  "generated_at": "2026-10-16T18:45:12Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "09835e3fa90d337b02f3e54feaf81cf37cb8d574",
-    "short_sha": "09835e3",
+    "sha": "43b12998feb1f4eb71a78baeaaae0980b1e8f091",
+    "short_sha": "43b1299",
     "author": "JGaspar-Eng",
-    "date": "2026-10-16T13:28:02-03:00",
-    "message": "fix(orq): exigir 8 ELU por pilar e insumos por apoio no assistente"
+    "date": "2026-10-16T15:44:40-03:00",
+    "message": "fix(sa-l1): bloquear orientacao sem vinculos e comparar cenario"
   },
   "commits": [
+    {
+      "sha": "43b12998feb1f4eb71a78baeaaae0980b1e8f091",
+      "short_sha": "43b1299",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-16T15:44:40-03:00",
+      "message": "fix(sa-l1): bloquear orientacao sem vinculos e comparar cenario"
+    },
     {
       "sha": "09835e3fa90d337b02f3e54feaf81cf37cb8d574",
       "short_sha": "09835e3",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T17:48:50-03:00",
       "message": "feat: executar oito ELU do modelo residencial em ensaio controlado"
-    },
-    {
-      "sha": "8bc7a7585ca10bd5199a6ed21091bb4a1a3393b7",
-      "short_sha": "8bc7a75",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T17:26:01-03:00",
-      "message": "feat(orq): compor acoes de balanco por trechos nos casos ELU"
     }
   ],
   "development": {
@@ -2959,7 +2959,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 216,
+    "validator_count": 218,
     "validators": [
       {
         "name": "test:base",
@@ -3268,6 +3268,14 @@
       {
         "name": "test:sa-l1-ui",
         "command": "node tests/validar_analise_lateral_auditoria_ui_sa_l1.mjs"
+      },
+      {
+        "name": "test:sa-l1-cenarios",
+        "command": "node tests_support/sa_l1_cenario_rotacional_hipotetico.mjs"
+      },
+      {
+        "name": "test:browser-sa-l1-cenarios",
+        "command": "node tests_support/vento_comparacao_vinculos_browser.mjs"
       },
       {
         "name": "test:vento-sa-gate",
@@ -3834,7 +3842,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38932202544",
-    "run_number": "887"
+    "run_id": "38949707358",
+    "run_number": "888"
   }
 }
