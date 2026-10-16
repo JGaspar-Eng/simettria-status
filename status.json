@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T11:29:23Z",
+  "generated_at": "2026-10-16T11:56:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1c3cad4a5b8f4ac9a407ba465874e7ec5161e964",
-    "short_sha": "1c3cad4",
+    "sha": "acd3946613b9a1f918c04c190ffcdf3bd14bdd19",
+    "short_sha": "acd3946",
     "author": "JGaspar-Eng",
-    "date": "2026-10-16T08:28:53-03:00",
-    "message": "fix(ui): realcar contraste dos comandos nos modais de ferramentas"
+    "date": "2026-10-16T08:56:01-03:00",
+    "message": "fix(vento): preservar W1 e diagnosticar vigas em cotas distintas no SA-L1"
   },
   "commits": [
+    {
+      "sha": "acd3946613b9a1f918c04c190ffcdf3bd14bdd19",
+      "short_sha": "acd3946",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-16T08:56:01-03:00",
+      "message": "fix(vento): preservar W1 e diagnosticar vigas em cotas distintas no SA-L1"
+    },
     {
       "sha": "1c3cad4a5b8f4ac9a407ba465874e7ec5161e964",
       "short_sha": "1c3cad4",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T15:06:31-03:00",
       "message": "feat(balancos): aplicar armadura por pavimentos tipo em lote"
-    },
-    {
-      "sha": "42d2640a548ea90649ad8d40d165aee49f61aa14",
-      "short_sha": "42d2640",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T14:51:30-03:00",
-      "message": "fix(tabela-k): selecionar proxima linha conservadora sem interpolar"
     }
   ],
   "development": {
@@ -2945,7 +2945,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 213,
+    "validator_count": 215,
     "validators": [
       {
         "name": "test:base",
@@ -3254,6 +3254,14 @@
       {
         "name": "test:sa-l1-ui",
         "command": "node tests/validar_analise_lateral_auditoria_ui_sa_l1.mjs"
+      },
+      {
+        "name": "test:vento-sa-gate",
+        "command": "node tests_support/vento_sa_l1_gate_geometrico.mjs"
+      },
+      {
+        "name": "test:browser-vento-niveis",
+        "command": "node tests_support/vento_modal_gate_niveis_browser.mjs"
       },
       {
         "name": "test:viga-vinculo-rotacional",
@@ -3808,7 +3816,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38894077710",
-    "run_number": "884"
+    "run_id": "38897094510",
+    "run_number": "885"
   }
 }
