@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T00:10:29Z",
+  "generated_at": "2026-10-16T01:08:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cb886efe07842e65b7ec2297a96accb6964ea74e",
-    "short_sha": "cb886ef",
+    "sha": "a4654d76f7124d4e7487a4d78f29792b538fc595",
+    "short_sha": "a4654d7",
     "author": "JGaspar-Eng",
-    "date": "2026-10-15T21:10:00-03:00",
-    "message": "feat: auditar cobertura e classificar cargas com origem rastreada"
+    "date": "2026-10-15T22:08:26-03:00",
+    "message": "feat(orq): classificar cargas em varios pavimentos por lote auditado"
   },
   "commits": [
+    {
+      "sha": "a4654d76f7124d4e7487a4d78f29792b538fc595",
+      "short_sha": "a4654d7",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-15T22:08:26-03:00",
+      "message": "feat(orq): classificar cargas em varios pavimentos por lote auditado"
+    },
     {
       "sha": "cb886efe07842e65b7ec2297a96accb6964ea74e",
       "short_sha": "cb886ef",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T13:51:14-03:00",
       "message": "feat(balancos): estudo generico de flexao negativa em qualquer quantidade de sacadas"
-    },
-    {
-      "sha": "6053a0c20b5b9f75f8d44af69f1e26980047ebef",
-      "short_sha": "6053a0c",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T11:13:26-03:00",
-      "message": "feat(balancos): envelope conservador automatico de acoes"
     }
   ],
   "development": {
@@ -169,6 +169,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-CLASS-LOTE-MULTI-20261015",
+          "title": "Classificação manual em múltiplos grupos de cargas lineares em pavimentos-tipo com confirmação única e inventário integral revalidado antes de registrar, sem inferência por valor e sem aplicação parcial. UI permite seleção de grupos iguais, seleção de todos, seleção manual e contagem de vigas; retorna proveniência rastreável. Testes 1/3/12/24 pavimentos e Chrome 3 pavimentos aprovados.",
+          "state": "completed",
+          "area": 1,
+          "source": "docs/ORQ_CLASS_LOTE_MULTI_2026_10_15.md / tests_support/orq_cargas_multiplos_lotes.mjs"
+        },
         {
           "code": "ORQ-CARGAS-COB-02-20261015",
           "title": "Auditoria do modelo residencial identifica 19 lajes no 4º Pavimento contra 1 laje no nível Cobertura, com referência atual apontando o pavimento residencial. Gate global/UI preserva segurança; nenhuma carga de cobertura é inferida. Cargas Gk/Qk de cobertura rastreadas por laje passam ao Graph somente com uso/fonte declarados e revisão dos presets. Reconciliação de alvenaria comprovada só em cópia de cálculo, inventário de classificação de vigas agrupado. Regressões e JSON original preservados.",
@@ -2924,7 +2931,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 208,
+    "validator_count": 210,
     "validators": [
       {
         "name": "test:base",
@@ -2932,7 +2939,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:orq-cobertura-dados && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:orq-cobertura-dados && npm run test:orq-cargas-multilote && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
@@ -2961,6 +2968,10 @@
       {
         "name": "test:orq-cobertura-dados",
         "command": "node tests_support/orq_cobertura_cargas_especificas_graph.mjs"
+      },
+      {
+        "name": "test:orq-cargas-multilote",
+        "command": "node tests_support/orq_cargas_multiplos_lotes.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -2993,6 +3004,10 @@
       {
         "name": "test:browser-cobertura-nivel",
         "command": "node tests_support/orq_cobertura_nivel_browser.mjs"
+      },
+      {
+        "name": "test:browser-orq-cargas-multilote",
+        "command": "node tests_support/orq_cargas_multiplos_lotes_browser.mjs"
       },
       {
         "name": "test:schema-documental",
@@ -3767,7 +3782,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38827933750",
-    "run_number": "880"
+    "run_id": "38833507946",
+    "run_number": "881"
   }
 }
