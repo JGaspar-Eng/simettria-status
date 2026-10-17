@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-17T13:08:34Z",
+  "generated_at": "2026-10-17T14:04:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "12b1459bd0aaf3f9a26f8bb28a35b978d29039bb",
-    "short_sha": "12b1459",
+    "sha": "8585b5b431590565984ecae530b5d90ae9e7a286",
+    "short_sha": "8585b5b",
     "author": "JGaspar-Eng",
-    "date": "2026-10-17T10:08:16-03:00",
-    "message": "fix(orq): exigir reacoes N H M completas nos oito ELU"
+    "date": "2026-10-17T11:03:54-03:00",
+    "message": "fix(orq): exigir proveniencia do solver e equilibrio nos oito ELU"
   },
   "commits": [
+    {
+      "sha": "8585b5b431590565984ecae530b5d90ae9e7a286",
+      "short_sha": "8585b5b",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T11:03:54-03:00",
+      "message": "fix(orq): exigir proveniencia do solver e equilibrio nos oito ELU"
+    },
     {
       "sha": "12b1459bd0aaf3f9a26f8bb28a35b978d29039bb",
       "short_sha": "12b1459",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-16T08:56:01-03:00",
       "message": "fix(vento): preservar W1 e diagnosticar vigas em cotas distintas no SA-L1"
-    },
-    {
-      "sha": "1c3cad4a5b8f4ac9a407ba465874e7ec5161e964",
-      "short_sha": "1c3cad4",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-16T08:28:53-03:00",
-      "message": "fix(ui): realcar contraste dos comandos nos modais de ferramentas"
     }
   ],
   "development": {
@@ -185,6 +185,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-8ELU-PROVENIENCIA-EQUILIBRIO-20261017",
+          "title": "Três lacunas corrigidas por ciclos de regressão: oito ELU devem corresponder aos quatro sentidos de vento e dois arranjos reais; cada caso deve trazer rastreabilidade da execução do solver e equilíbrio; reações de apoio devem coincidir com os DOFs matemáticos, autoridade e envelopes. Casos reetiquetados, ausência de solver, reações adulteradas e oito IDs artificiais são bloqueados. Não altera cargas, vínculos ou hipóteses do modelo residencial; não libera projeto executivo.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_PROVA_REACOES_VETORIAIS_8_ELU_2026_10_17.md / tests_support/orq_casos_envelope_global.mjs"
+        },
         {
           "code": "ORQ-8ELU-VETORES-REACOES-20261017",
           "title": "Implementada prova independente das seis componentes de reação por pilar e dos oito casos ELU: identidade dos apoios, N=±UZ, Hx/Hy/Mx/My/Mz, sinais, unidades e envelopes governantes; adulteração ou componentes ausentes bloqueiam a fundação. Regressão com saídas reais do solver sintético aprovada. Projeto residencial continua bloqueado pela origem das ações da cobertura e 272 vigas sem natureza comprovada; não libera dimensionamento executivo.",
@@ -3913,7 +3920,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "39035328553",
-    "run_number": "893"
+    "run_id": "39039161633",
+    "run_number": "894"
   }
 }
