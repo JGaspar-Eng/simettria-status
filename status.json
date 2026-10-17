@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-17T15:55:00Z",
+  "generated_at": "2026-10-17T18:31:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a48abb0520611e0d68e32476f7357619578a7744",
-    "short_sha": "a48abb0",
+    "sha": "9a69d68dda531e0691cd6c33e09bb6eaf0c1f2ba",
+    "short_sha": "9a69d68",
     "author": "JGaspar-Eng",
-    "date": "2026-10-17T12:54:41-03:00",
-    "message": "fix(orq): auditar pilares vigas lajes e identificar nivel tecnico"
+    "date": "2026-10-17T15:31:12-03:00",
+    "message": "fix(orq): restore calculation controls after DOM rebuild"
   },
   "commits": [
+    {
+      "sha": "9a69d68dda531e0691cd6c33e09bb6eaf0c1f2ba",
+      "short_sha": "9a69d68",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T15:31:12-03:00",
+      "message": "fix(orq): restore calculation controls after DOM rebuild"
+    },
     {
       "sha": "a48abb0520611e0d68e32476f7357619578a7744",
       "short_sha": "a48abb0",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-16T15:44:40-03:00",
       "message": "fix(sa-l1): bloquear orientacao sem vinculos e comparar cenario"
-    },
-    {
-      "sha": "09835e3fa90d337b02f3e54feaf81cf37cb8d574",
-      "short_sha": "09835e3",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-16T13:28:02-03:00",
-      "message": "fix(orq): exigir 8 ELU por pilar e insumos por apoio no assistente"
     }
   ],
   "development": {
@@ -3941,7 +3941,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "39047114282",
-    "run_number": "896"
+    "run_id": "39058453689",
+    "run_number": "897"
   }
 }
