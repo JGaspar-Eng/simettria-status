@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-17T15:36:50Z",
+  "generated_at": "2026-10-17T15:55:00Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1ed9ac04701b4dae1383736909942861afda0132",
-    "short_sha": "1ed9ac0",
+    "sha": "a48abb0520611e0d68e32476f7357619578a7744",
+    "short_sha": "a48abb0",
     "author": "JGaspar-Eng",
-    "date": "2026-10-17T12:36:32-03:00",
-    "message": "fix(orq): aceitar Gk declarado no residencial e recuperar assistente"
+    "date": "2026-10-17T12:54:41-03:00",
+    "message": "fix(orq): auditar pilares vigas lajes e identificar nivel tecnico"
   },
   "commits": [
+    {
+      "sha": "a48abb0520611e0d68e32476f7357619578a7744",
+      "short_sha": "a48abb0",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T12:54:41-03:00",
+      "message": "fix(orq): auditar pilares vigas lajes e identificar nivel tecnico"
+    },
     {
       "sha": "1ed9ac04701b4dae1383736909942861afda0132",
       "short_sha": "1ed9ac0",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-16T13:28:02-03:00",
       "message": "fix(orq): exigir 8 ELU por pilar e insumos por apoio no assistente"
-    },
-    {
-      "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
-      "short_sha": "0ab32da",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-16T09:31:33-03:00",
-      "message": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1"
     }
   ],
   "development": {
@@ -185,6 +185,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-AUDITORIA-OPERACIONAL-NIVEL-RESERVATORIO-20261017",
+          "title": "Auditado o JSON residencial real sem mutação: 40 pilares com geometria e continuidade cadastradas; 333 vigas com seções; zero vigas com ambas extremidades rotacionais contínuas explicitadas; 86 lajes maciças (12 em balanço), todas com campo de carga legado mas nenhuma com Gk/Qk específico lançado pelo autor; uma escada, zero fundações modeladas. O 4º Pavimento continua tipo; o último nível contém quatro vigas sem carga linear (sem platibanda superior) e uma laje e foi identificado como Nível técnico — Reservatório superior. Novo auditor operacional por módulo no Assistente, nomenclatura contextual no seletor e ajuste dos nomes somente por comando confirmado; nenhuma geometria, vínculo ou carga modificada automaticamente. Lajes e reservatório são etapas próprias posteriores. Não indica aprovação estrutural ou 8 ELU completos.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_AUDITORIA_OPERACIONAL_NIVEIS_2026_10_17.md / tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs / tests_support/orq_assistente_real_abertura_repetida_browser.mjs"
+        },
         {
           "code": "ORQ-ACEITE-CARGAS-USUARIO-ASSISTENTE-20261017",
           "title": "Corrigido bloqueio das 290 cargas lineares já aceitas pelo responsável do projeto residencial: 271 vigas com 4,5 kN/m como Gk de alvenaria e 19 com 1,5 kN/m como Gk de platibanda. Premissas aplicadas somente à cópia de cálculo identificada; nenhuma carga ou JSON alterado. Categoria residencial de uso adotada no ensaio como hipótese explicitada, sem liberação executiva. A auditoria de cargas passou a zero pendências e 14/20 frentes com dados conferidos. Reparado clique do Assistente após remontagem de barra, consolidada entrada duplicada da Infraestrutura e texto com acesso à revisão da laje de cobertura. Oito ELU e fundações continuam dependentes de outros dados.",
@@ -3091,7 +3098,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3131,7 +3138,7 @@
       },
       {
         "name": "test:browser-orq-assistente",
-        "command": "node tests_support/orq_autoplano_dez_verificacoes_browser.mjs"
+        "command": "node tests_support/orq_autoplano_dez_verificacoes_browser.mjs && node tests_support/orq_assistente_real_abertura_repetida_browser.mjs"
       },
       {
         "name": "test:browser-ux-foco",
@@ -3934,7 +3941,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "39045798393",
-    "run_number": "895"
+    "run_id": "39047114282",
+    "run_number": "896"
   }
 }
