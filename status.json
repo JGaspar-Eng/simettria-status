@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-16T21:59:52Z",
+  "generated_at": "2026-10-17T03:17:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "9ef4db838e0523d24288e10f9aeb0c22b7e347a7",
-    "short_sha": "9ef4db8",
+    "sha": "898d120b98050ec18077e8483a966d64e918e8f1",
+    "short_sha": "898d120",
     "author": "JGaspar-Eng",
-    "date": "2026-10-16T18:59:31-03:00",
-    "message": "fix(painel): linha de execucao compacta e sincronizacao automatica"
+    "date": "2026-10-17T00:17:09-03:00",
+    "message": "fix(orq-bal): validar cadeia e eixos dos trechos da raiz"
   },
   "commits": [
+    {
+      "sha": "898d120b98050ec18077e8483a966d64e918e8f1",
+      "short_sha": "898d120",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T00:17:09-03:00",
+      "message": "fix(orq-bal): validar cadeia e eixos dos trechos da raiz"
+    },
     {
       "sha": "9ef4db838e0523d24288e10f9aeb0c22b7e347a7",
       "short_sha": "9ef4db8",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T22:46:13-03:00",
       "message": "feat(orq): assistente intuitivo de entradas e dez verificacoes rastreadas"
-    },
-    {
-      "sha": "a4654d76f7124d4e7487a4d78f29792b538fc595",
-      "short_sha": "a4654d7",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T22:08:26-03:00",
-      "message": "feat(orq): classificar cargas em varios pavimentos por lote auditado"
     }
   ],
   "development": {
@@ -104,7 +104,8 @@
               "Escada com nós intermediários integrados ao SA-L1, sem duplicação das barras e com regressão geométrica.",
               "Auditoria de oito ELU por pilar e insumos de fundação agora rejeita identificações artificiais e evidências incompletas.",
               "Comparação de vínculos rotacionais sem modificar o modelo; otimização bloqueada enquanto os vínculos não forem comprovados.",
-              "Correção publicada de invariância do SA-L1 à ordem dos pilares, com testes no caso residencial e no Chrome."
+              "Correção publicada de invariância do SA-L1 à ordem dos pilares, com testes no caso residencial e no Chrome.",
+              "Validação de cadeia única de trechos e orientação local dos vetores de sacadas no pórtico 3D, com rejeição de ciclos e inversões."
             ],
             "blockers": [
               "Comprovar continuidade rotacional e rigidez efetiva nas ligações pilar–viga e pilar–fundação.",
@@ -182,6 +183,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-BAL-TRECHOS-CADEIA-EIXOS-20261017",
+          "title": "Transferência das ações de sacadas para o pórtico: rejeição de ciclos desconectados mesmo quando a soma dos comprimentos e os nós extremos pareciam corretos; verificação do eixo X da viga de raiz e do eixo Y vertical em trechos com orientação tridimensional materializada. Preserva Gk/Qk e o sinal da torção local. Regressão com modelos de 1 a 256 sacadas e oito ELU sintéticos; não representa aprovação resistente ou fundações executivas.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_BAL_TOPOLOGIA_EIXOS_2026_10_17.md / tests_support/orq_balancos_combinacoes_trechos.mjs"
+        },
         {
           "code": "SA-L1-ORDEM-NOS-DERIVA-20261016",
           "title": "Corrigida a dependência da ordem dos pilares no SA-L1 com nós intermediários de escada. Forças horizontais aplicadas aos topos físicos dos pavimentos; deriva calculada por alturas dos níveis físicos. Modal destaca deslocamento de topo e deriva separadamente. Testes portáteis, residenciais, Chrome e test:all aprovados; sem liberação executiva.",
@@ -1143,7 +1151,8 @@
             "Escada com nós intermediários integrados ao SA-L1, sem duplicação das barras e com regressão geométrica.",
             "Auditoria de oito ELU por pilar e insumos de fundação agora rejeita identificações artificiais e evidências incompletas.",
             "Comparação de vínculos rotacionais sem modificar o modelo; otimização bloqueada enquanto os vínculos não forem comprovados.",
-            "Correção publicada de invariância do SA-L1 à ordem dos pilares, com testes no caso residencial e no Chrome."
+            "Correção publicada de invariância do SA-L1 à ordem dos pilares, com testes no caso residencial e no Chrome.",
+            "Validação de cadeia única de trechos e orientação local dos vetores de sacadas no pórtico 3D, com rejeição de ciclos e inversões."
           ],
           "blockers": [
             "Comprovar continuidade rotacional e rigidez efetiva nas ligações pilar–viga e pilar–fundação.",
@@ -3886,7 +3895,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38972976678",
-    "run_number": "890"
+    "run_id": "38998196882",
+    "run_number": "891"
   }
 }
