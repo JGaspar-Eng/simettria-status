@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-17T03:17:29Z",
+  "generated_at": "2026-10-17T03:33:14Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "898d120b98050ec18077e8483a966d64e918e8f1",
-    "short_sha": "898d120",
+    "sha": "862127a8fc929ca9a8978014d53afcc26ea6302b",
+    "short_sha": "862127a",
     "author": "JGaspar-Eng",
-    "date": "2026-10-17T00:17:09-03:00",
-    "message": "fix(orq-bal): validar cadeia e eixos dos trechos da raiz"
+    "date": "2026-10-17T00:32:58-03:00",
+    "message": "feat(orq): auditar 20 frentes tecnicas sem liberar dimensionamento"
   },
   "commits": [
+    {
+      "sha": "862127a8fc929ca9a8978014d53afcc26ea6302b",
+      "short_sha": "862127a",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T00:32:58-03:00",
+      "message": "feat(orq): auditar 20 frentes tecnicas sem liberar dimensionamento"
+    },
     {
       "sha": "898d120b98050ec18077e8483a966d64e918e8f1",
       "short_sha": "898d120",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-15T23:20:50-03:00",
       "message": "feat(ui): simplificar comandos e esclarecer auditoria das sacadas"
-    },
-    {
-      "sha": "c1632dea3cd45f92c2910cf3bfd3337d1b310e11",
-      "short_sha": "c1632de",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-15T22:46:13-03:00",
-      "message": "feat(orq): assistente intuitivo de entradas e dez verificacoes rastreadas"
     }
   ],
   "development": {
@@ -105,7 +105,8 @@
               "Auditoria de oito ELU por pilar e insumos de fundação agora rejeita identificações artificiais e evidências incompletas.",
               "Comparação de vínculos rotacionais sem modificar o modelo; otimização bloqueada enquanto os vínculos não forem comprovados.",
               "Correção publicada de invariância do SA-L1 à ordem dos pilares, com testes no caso residencial e no Chrome.",
-              "Validação de cadeia única de trechos e orientação local dos vetores de sacadas no pórtico 3D, com rejeição de ciclos e inversões."
+              "Validação de cadeia única de trechos e orientação local dos vetores de sacadas no pórtico 3D, com rejeição de ciclos e inversões.",
+              "Auditoria complementar de 20 frentes técnicas no assistente, por identidade e evidências do modelo, com pendências rastreáveis e sem alteração do JSON."
             ],
             "blockers": [
               "Comprovar continuidade rotacional e rigidez efetiva nas ligações pilar–viga e pilar–fundação.",
@@ -183,6 +184,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-AUDITORIA-20-FRENTES-20261017",
+          "title": "Implementada auditoria complementar de vinte verificações de engenharia no assistente ORQ, com evidência por pilar/viga/laje/pavimento, classificação de ações, cobertura, vento, ELU, vínculos, SPT e fundações. Interface recolhível, diagnóstico sem aprovação implícita, testes genéricos de 5/40/100/200 pilares e regressão residencial sem mutação. Não equivale à conclusão das vinte frentes de dimensionamento estrutural.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_AUDITORIA_20_FRENTES_2026_10_17.md / tests_support/orq_auditoria_vinte_frentes.mjs"
+        },
         {
           "code": "ORQ-BAL-TRECHOS-CADEIA-EIXOS-20261017",
           "title": "Transferência das ações de sacadas para o pórtico: rejeição de ciclos desconectados mesmo quando a soma dos comprimentos e os nós extremos pareciam corretos; verificação do eixo X da viga de raiz e do eixo Y vertical em trechos com orientação tridimensional materializada. Preserva Gk/Qk e o sinal da torção local. Regressão com modelos de 1 a 256 sacadas e oito ELU sintéticos; não representa aprovação resistente ou fundações executivas.",
@@ -1152,7 +1160,8 @@
             "Auditoria de oito ELU por pilar e insumos de fundação agora rejeita identificações artificiais e evidências incompletas.",
             "Comparação de vínculos rotacionais sem modificar o modelo; otimização bloqueada enquanto os vínculos não forem comprovados.",
             "Correção publicada de invariância do SA-L1 à ordem dos pilares, com testes no caso residencial e no Chrome.",
-            "Validação de cadeia única de trechos e orientação local dos vetores de sacadas no pórtico 3D, com rejeição de ciclos e inversões."
+            "Validação de cadeia única de trechos e orientação local dos vetores de sacadas no pórtico 3D, com rejeição de ciclos e inversões.",
+            "Auditoria complementar de 20 frentes técnicas no assistente, por identidade e evidências do modelo, com pendências rastreáveis e sem alteração do JSON."
           ],
           "blockers": [
             "Comprovar continuidade rotacional e rigidez efetiva nas ligações pilar–viga e pilar–fundação.",
@@ -3052,7 +3061,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
+        "command": "node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3895,7 +3904,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "38998196882",
-    "run_number": "891"
+    "run_id": "38999213359",
+    "run_number": "892"
   }
 }
