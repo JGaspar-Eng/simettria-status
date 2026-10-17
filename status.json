@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-17T14:04:16Z",
+  "generated_at": "2026-10-17T15:36:50Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8585b5b431590565984ecae530b5d90ae9e7a286",
-    "short_sha": "8585b5b",
+    "sha": "1ed9ac04701b4dae1383736909942861afda0132",
+    "short_sha": "1ed9ac0",
     "author": "JGaspar-Eng",
-    "date": "2026-10-17T11:03:54-03:00",
-    "message": "fix(orq): exigir proveniencia do solver e equilibrio nos oito ELU"
+    "date": "2026-10-17T12:36:32-03:00",
+    "message": "fix(orq): aceitar Gk declarado no residencial e recuperar assistente"
   },
   "commits": [
+    {
+      "sha": "1ed9ac04701b4dae1383736909942861afda0132",
+      "short_sha": "1ed9ac0",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T12:36:32-03:00",
+      "message": "fix(orq): aceitar Gk declarado no residencial e recuperar assistente"
+    },
     {
       "sha": "8585b5b431590565984ecae530b5d90ae9e7a286",
       "short_sha": "8585b5b",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-16T09:31:33-03:00",
       "message": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1"
-    },
-    {
-      "sha": "acd3946613b9a1f918c04c190ffcdf3bd14bdd19",
-      "short_sha": "acd3946",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-16T08:56:01-03:00",
-      "message": "fix(vento): preservar W1 e diagnosticar vigas em cotas distintas no SA-L1"
     }
   ],
   "development": {
@@ -185,6 +185,20 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-ACEITE-CARGAS-USUARIO-ASSISTENTE-20261017",
+          "title": "Corrigido bloqueio das 290 cargas lineares já aceitas pelo responsável do projeto residencial: 271 vigas com 4,5 kN/m como Gk de alvenaria e 19 com 1,5 kN/m como Gk de platibanda. Premissas aplicadas somente à cópia de cálculo identificada; nenhuma carga ou JSON alterado. Categoria residencial de uso adotada no ensaio como hipótese explicitada, sem liberação executiva. A auditoria de cargas passou a zero pendências e 14/20 frentes com dados conferidos. Reparado clique do Assistente após remontagem de barra, consolidada entrada duplicada da Infraestrutura e texto com acesso à revisão da laje de cobertura. Oito ELU e fundações continuam dependentes de outros dados.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_ACOES_COBERTURA_FONTES_2026_10_17.md / tests_support/orq_cargas_residencial_confirmadas_usuario.mjs / tests_support/orq_assistente_real_abertura_repetida_browser.mjs"
+        },
+        {
+          "code": "ORQ-CARGAS-COBERTURA-EVIDENCIAS-20261017",
+          "title": "Fechadas falhas de segurança nas ações Gk/Qk e na cobertura. O inventário residencial passou de 272 para 290 vigas pendentes após revelar 18 etiquetas PERMANENTE/VARIAVEL sem fonte e correspondência numérica; não foram criadas cargas. O preparo do cálculo global agora bloqueia classificação sem procedência, inclusive quando o enum já está preenchido. Presets preliminares de platibanda e sem parede não liberam cobertura; cargas inválidas são rejeitadas, exigindo confirmação documentada. Sem alterar JSON, vínculos ou premissas do projeto; estabilidade global, oito ELU reais e fundações ainda dependem de dados e verificações.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_ACOES_COBERTURA_FONTES_2026_10_17.md / tests_support/orq_cobertura_presets_nao_comprovados.mjs"
+        },
         {
           "code": "ORQ-8ELU-PROVENIENCIA-EQUILIBRIO-20261017",
           "title": "Três lacunas corrigidas por ciclos de regressão: oito ELU devem corresponder aos quatro sentidos de vento e dois arranjos reais; cada caso deve trazer rastreabilidade da execução do solver e equilíbrio; reações de apoio devem coincidir com os DOFs matemáticos, autoridade e envelopes. Casos reetiquetados, ausência de solver, reações adulteradas e oito IDs artificiais são bloqueados. Não altera cargas, vínculos ou hipóteses do modelo residencial; não libera projeto executivo.",
@@ -3069,15 +3083,15 @@
       },
       {
         "name": "test:orq-cobertura-dados",
-        "command": "node tests_support/orq_cobertura_cargas_especificas_graph.mjs"
+        "command": "node tests_support/orq_cobertura_cargas_especificas_graph.mjs && node tests_support/orq_cobertura_presets_nao_comprovados.mjs"
       },
       {
         "name": "test:orq-cargas-multilote",
-        "command": "node tests_support/orq_cargas_multiplos_lotes.mjs"
+        "command": "node tests_support/orq_cargas_multiplos_lotes.mjs && node tests_support/wizard_alvenaria_gk_350_vigas.mjs"
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs"
       },
       {
         "name": "test:tabela-k",
@@ -3920,7 +3934,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "39039161633",
-    "run_number": "894"
+    "run_id": "39045798393",
+    "run_number": "895"
   }
 }
