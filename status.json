@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-17T18:31:29Z",
+  "generated_at": "2026-10-17T18:51:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "9a69d68dda531e0691cd6c33e09bb6eaf0c1f2ba",
-    "short_sha": "9a69d68",
+    "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
+    "short_sha": "0fc0cf4",
     "author": "JGaspar-Eng",
-    "date": "2026-10-17T15:31:12-03:00",
-    "message": "fix(orq): restore calculation controls after DOM rebuild"
+    "date": "2026-10-17T15:51:34-03:00",
+    "message": "feat(orq): auditar vinculos e validar segunda ordem experimental"
   },
   "commits": [
+    {
+      "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
+      "short_sha": "0fc0cf4",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-17T15:51:34-03:00",
+      "message": "feat(orq): auditar vinculos e validar segunda ordem experimental"
+    },
     {
       "sha": "9a69d68dda531e0691cd6c33e09bb6eaf0c1f2ba",
       "short_sha": "9a69d68",
@@ -72,13 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-16T18:37:27-03:00",
       "message": "fix(sa-l1): estabilizar niveis fisicos segmentados e auditar deriva"
-    },
-    {
-      "sha": "43b12998feb1f4eb71a78baeaaae0980b1e8f091",
-      "short_sha": "43b1299",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-16T15:44:40-03:00",
-      "message": "fix(sa-l1): bloquear orientacao sem vinculos e comparar cenario"
     }
   ],
   "development": {
@@ -185,6 +185,13 @@
         "policy": "O painel operacional mostra frentes reais em execução e planejadas. Estado vem de GitHub/#231/status versionado. Nenhum percentual é fabricado quando não há decomposição formal."
       },
       "recent": [
+        {
+          "code": "ORQ-AUDITORIA-WORK-PDELTA-20261017",
+          "title": "Auditado diretamente no Dell o único commit do Work 9a69d68 (recriação dos botões de cálculo) e o trabalho local não publicado. Corrigido teste Chrome com seletor ambíguo e revalidado clique real dos botões. Auditadas ligações das vigas por extremidade; o pórtico global não transforma vínculos indefinidos ou articulações em continuidade rígida. Corrigido o diagnóstico precoce de Calcular estrutura para apresentar conjuntamente a laje técnica sem Gk/Qk e os vínculos resistentes ausentes. Implementado e testado módulo matemático experimental de segunda ordem geométrica com 719 verificações, refinamento de malha e comparação analítica; não integrado à matriz com diafragma do edifício nem aprovado executivamente. Oito ELU e fundações residenciais continuam pendentes.",
+          "state": "completed",
+          "area": 3,
+          "source": "docs/ORQ_AUDITORIA_WORK_E_SEGUNDA_ORDEM_2026_10_17.md / tests_support/segunda_ordem_global.mjs / tests_support/orq_autoplano_dez_verificacoes_browser.mjs"
+        },
         {
           "code": "ORQ-AUDITORIA-OPERACIONAL-NIVEL-RESERVATORIO-20261017",
           "title": "Auditado o JSON residencial real sem mutação: 40 pilares com geometria e continuidade cadastradas; 333 vigas com seções; zero vigas com ambas extremidades rotacionais contínuas explicitadas; 86 lajes maciças (12 em balanço), todas com campo de carga legado mas nenhuma com Gk/Qk específico lançado pelo autor; uma escada, zero fundações modeladas. O 4º Pavimento continua tipo; o último nível contém quatro vigas sem carga linear (sem platibanda superior) e uma laje e foi identificado como Nível técnico — Reservatório superior. Novo auditor operacional por módulo no Assistente, nomenclatura contextual no seletor e ajuste dos nomes somente por comando confirmado; nenhuma geometria, vínculo ou carga modificada automaticamente. Lajes e reservatório são etapas próprias posteriores. Não indica aprovação estrutural ou 8 ELU completos.",
@@ -3882,7 +3889,7 @@
       },
       {
         "name": "test:orq-calculo-global",
-        "command": "node tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs"
+        "command": "node tests/validar_orquestrador_calculo_global_orq_estrut_01.mjs && node tests_support/segunda_ordem_global.mjs"
       },
       {
         "name": "test:orq-acoes-modelo",
@@ -3941,7 +3948,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "39058453689",
-    "run_number": "897"
+    "run_id": "39059950389",
+    "run_number": "898"
   }
 }
