@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-25T18:09:17Z",
+  "generated_at": "2026-10-25T18:14:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5306780808fd1807878b928fa9c548cc0844f8e9",
-    "short_sha": "53067808",
+    "sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
+    "short_sha": "6a073720",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T15:09:00-03:00",
-    "message": "merge: punção biaxial audita V/Mx/My por quadratura independente (#589)"
+    "date": "2026-10-25T15:14:17-03:00",
+    "message": "merge: geotecnia distingue SPT com e sem N conforme resultado canonico (#590)"
   },
   "commits": [
+    {
+      "sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
+      "short_sha": "6a073720",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:14:17-03:00",
+      "message": "merge: geotecnia distingue SPT com e sem N conforme resultado canonico (#590)"
+    },
+    {
+      "sha": "95f0a0a5628052c8f36863157c18ce927f625218",
+      "short_sha": "95f0a0a5",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:10:48-03:00",
+      "message": "test(geo): PH sem N, ordinario derivado, desconhecido bloqueado e N divergente auditado"
+    },
+    {
+      "sha": "18a90fc6ad8bb7e6ce39a86631546e4fc591a4e6",
+      "short_sha": "18a90fc6",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:10:21-03:00",
+      "message": "fix(geo): exigir medição para resultados SPT não ordinários sem N"
+    },
+    {
+      "sha": "b461f1010a4c95b2ff8b610dccde2336595f7996",
+      "short_sha": "b461f101",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:09:56-03:00",
+      "message": "fix(geo): diagnosticar SPT pela cravação canônica e distinguir camada sem índice N"
+    },
     {
       "sha": "5306780808fd1807878b928fa9c548cc0844f8e9",
       "short_sha": "53067808",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:57:37-03:00",
       "message": "merge: auditoria SPT detecta furos repetidos e NA invalido (#587)"
-    },
-    {
-      "sha": "1a9482ab26476163d8798db07db15bd45168ef24",
-      "short_sha": "1a9482ab",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:56:09-03:00",
-      "message": "merge: placa Mindlin confirma contato integral por ações N/Mx/My (#586)"
-    },
-    {
-      "sha": "70416a671354aca2f0cd01908a2f0c95b8b104a0",
-      "short_sha": "70416a67",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:55:28-03:00",
-      "message": "test(geo): sondagem duplicada bloqueia 18 associacoes e NA invalido sem quebra de legado"
-    },
-    {
-      "sha": "7689647119a4b47681e62c9daf85596876ca53db",
-      "short_sha": "76896471",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:55:05-03:00",
-      "message": "fix(geotecnia): rejeitar furo duplicado e NA explicitamente invalido sem alterar legado"
-    },
-    {
-      "sha": "441f327d7258b8511eed0e27fd7333a6d9aeadac",
-      "short_sha": "441f327d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:54:09-03:00",
-      "message": "fix(test): corrigir coeficiente de canto qmin na fixture 2x2 m"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40219861728",
-    "run_number": "945"
+    "run_id": "40220282995",
+    "run_number": "946"
   }
 }
