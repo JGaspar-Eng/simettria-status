@@ -1,21 +1,49 @@
 {
-  "generated_at": "2026-10-25T19:25:30Z",
+  "generated_at": "2026-10-25T19:28:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "67423835a114126ec797749a36822f2ad27475a8",
-    "short_sha": "67423835",
+    "sha": "c293b8cfe6e669dcd81e98f4da1ff31fd7cba35b",
+    "short_sha": "c293b8cf",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T16:25:11-03:00",
-    "message": "merge: memorial confere e publica massas reais da malha preliminar (#596)"
+    "date": "2026-10-25T16:27:51-03:00",
+    "message": "merge: placa Mindlin prova energia e sensibilidade ao refinamento (#597)"
   },
   "commits": [
+    {
+      "sha": "c293b8cfe6e669dcd81e98f4da1ff31fd7cba35b",
+      "short_sha": "c293b8cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:27:51-03:00",
+      "message": "merge: placa Mindlin prova energia e sensibilidade ao refinamento (#597)"
+    },
+    {
+      "sha": "568be0c37eaee310eac16dacdf879326c231f104",
+      "short_sha": "568be0c3",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:25:38-03:00",
+      "message": "feat(memorial): publicar energia e deslocamentos comparados entre duas malhas sem validar convergencia"
+    },
     {
       "sha": "67423835a114126ec797749a36822f2ad27475a8",
       "short_sha": "67423835",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:25:11-03:00",
       "message": "merge: memorial confere e publica massas reais da malha preliminar (#596)"
+    },
+    {
+      "sha": "645ff1fd83f629989ee395f5fb458e7d47a01c73",
+      "short_sha": "645ff1fd",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:24:45-03:00",
+      "message": "test(placa): energia positiva, identidade uTKu=uTf e sensibilidade ao refinamento/E"
+    },
+    {
+      "sha": "ecb68df444a7dba9ac9ee5cc16c2867d3e3ab54b",
+      "short_sha": "ecb68df4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:24:20-03:00",
+      "message": "feat(placa): provar energia por uTf e uTKu e ampliar sensibilidade a refino"
     },
     {
       "sha": "f39d3f103d7456c140adaec5e0d4f58e424a5633",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:18:53-03:00",
       "message": "merge: geotecnia USACE audita qmin qmax e caso governante (#595)"
-    },
-    {
-      "sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
-      "short_sha": "89175fd6",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:17:01-03:00",
-      "message": "merge: 8 ELU de flexão comprovados antes da revisão de ancoragem (#594)"
-    },
-    {
-      "sha": "e6b17fe86d781e728590bc4da98fc78010086fc6",
-      "short_sha": "e6b17fe8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:16:23-03:00",
-      "message": "test(geotecnia): envelopes USACE por utilizacao e rejeicao de qmax adulterada"
-    },
-    {
-      "sha": "d4601314d7920afd71882d81b799124bbb02aade",
-      "short_sha": "d4601314",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:15:40-03:00",
-      "message": "fix(geo): restabelecer escopo do map ao adicionar reconciliacao dupla de pressoes"
-    },
-    {
-      "sha": "e23a4b0bf5caac0bba43f1e5677244b51f2f00d9",
-      "short_sha": "e23a4b0b",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:15:18-03:00",
-      "message": "feat(geo): reconciliar qmin/qmax e eleger caso USACE critico por utilizacao"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40225946212",
-    "run_number": "953"
+    "run_id": "40226153812",
+    "run_number": "954"
   }
 }
