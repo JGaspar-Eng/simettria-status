@@ -1,0 +1,180 @@
+(function () {
+  "use strict";
+
+  // Renderiza docs/facts.json (gerado por scripts/gerar_status_fatos.py): para cada
+  // frente, o que é fato em quatro camadas distintas: local, PR, main e publicado.
+  // Fato não observado aparece como "sem evidência"; nada é inferido de outra camada.
+
+  function esc(value) {
+    return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function urlSegura(url) {
+    return /^https:\/\/github\.com\//.test(String(url || "")) ? String(url) : "";
+  }
+
+  function selo(texto, tom) {
+    return '<span class="fatos-selo fatos-' + tom + '">' + esc(texto) + "</span>";
+  }
+
+  function sha7(sha) {
+    return sha ? String(sha).slice(0, 7) : "";
+  }
+
+  function dia(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+    return m ? m[3] + "/" + m[2] + "/" + m[1] : "";
+  }
+
+  function dataHora(iso) {
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return "";
+    return d.toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", dateStyle: "short", timeStyle: "short" });
+  }
+
+  function seloCi(ci) {
+    if (ci === "passou") return selo("CI passou", "ok");
+    if (ci === "falhou") return selo("CI falhou", "falha");
+    if (ci === "pendente") return selo("CI pendente", "alerta");
+    return selo("CI sem evidência", "neutro");
+  }
+
+  function link(url, texto) {
+    var seguro = urlSegura(url);
+    return seguro ? '<a href="' + esc(seguro) + '" rel="noopener">' + esc(texto) + "</a>" : esc(texto);
+  }
+
+  function celulaLocal(c) {
+    var estado = (c && c.estado) || "sem_evidencia";
+    if (estado === "nao_verificavel_em_ci") return selo("Não verificável no CI", "neutro");
+    if (estado === "sem_branch") return selo("Sem branch local", "neutro");
+    if (estado === "com_branch") {
+      var itens = (c.itens || []).slice(0, 3).map(function (i) {
+        return '<div class="fatos-linha">' + esc(i.repositorio) + " · " + esc(i.branch) + " " + esc(sha7(i.sha)) + (i.rastro ? " " + esc(i.rastro) : "") + "</div>";
+      }).join("");
+      return selo((c.itens || []).length + " branch(es) local(is)", "alerta") + itens;
+    }
+    return selo("Sem evidência", "alerta");
+  }
+
+  function celulaPr(c) {
+    var estado = (c && c.estado) || "sem_evidencia";
+    if (estado === "nenhum") return selo("Nenhum PR aberto", "neutro");
+    if (estado === "nao_encontrado_na_janela") return selo("Não encontrado na janela consultada", "alerta");
+    if (estado !== "aberto") return selo("Sem evidência", "alerta");
+    var itens = c.itens || [];
+    var linhas = itens.slice(0, 4).map(function (p) {
+      return '<div class="fatos-linha">' + link(p.url, "#" + p.numero) + " · " + (p.rascunho ? "rascunho" : "pronto") + " · " + seloCi(p.ci) + "</div>";
+    }).join("");
+    var resto = itens.length > 4 ? '<div class="fatos-linha">+' + (itens.length - 4) + " PR(s)</div>" : "";
+    return selo(itens.length + " PR(s) aberto(s)", "alerta") + linhas + resto;
+  }
+
+  function celulaMain(c) {
+    var estado = (c && c.estado) || "sem_evidencia";
+    if (estado === "nenhum") return selo("Nada integrado", "neutro");
+    if (estado === "nao_encontrado_na_janela") return selo("Não encontrado na janela consultada", "alerta");
+    if (estado !== "integrado") return selo("Sem evidência", "alerta");
+    var partes = [selo("Integrado", "ok")];
+    if (c.ultimo) {
+      partes.push('<div class="fatos-linha">PR ' + link(c.ultimo.url, "#" + c.ultimo.numero) + " · " + esc(dia(c.ultimo.merged_at)) + " · " + seloCi(c.ultimo.ci) + "</div>");
+    }
+    if (c.ultimo_commit) {
+      partes.push('<div class="fatos-linha">commit ' + esc(sha7(c.ultimo_commit.sha)) + " · " + esc(dia(c.ultimo_commit.data)) + " · " + seloCi(c.ultimo_commit.ci) + "</div>");
+    }
+    return partes.join("");
+  }
+
+  function celulaPublicado(c) {
+    var estado = (c && c.estado) || "sem_evidencia";
+    if (estado === "publicado") return selo("Publicado", "ok");
+    if (estado === "aguardando_publicacao") return selo("Aguardando publicação", "alerta");
+    if (estado === "nao_aplicavel") return selo("Não se aplica", "neutro");
+    return selo("Sem evidência", "alerta");
+  }
+  var ESTILO =
+    ".fatos-wrap{overflow-x:auto}" +
+    ".fatos-tabela{width:100%;border-collapse:collapse;font-size:.88rem}" +
+    ".fatos-tabela th,.fatos-tabela td{border:1px solid rgba(127,127,127,.35);padding:8px 10px;text-align:left;vertical-align:top}" +
+    ".fatos-tabela th{font-weight:600}" +
+    ".fatos-selo{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;font-weight:600;margin:0 2px 2px 0}" +
+    ".fatos-ok{background:rgba(26,127,55,.16);color:#1a7f37}" +
+    ".fatos-alerta{background:rgba(191,135,0,.18);color:#9a6700}" +
+    ".fatos-falha{background:rgba(207,34,46,.16);color:#cf222e}" +
+    ".fatos-neutro{background:rgba(127,127,127,.18)}" +
+    ".fatos-linha{margin-top:4px;font-size:.82rem}" +
+    ".fatos-aviso{margin:8px 0;padding:8px 12px;border:1px solid rgba(207,34,46,.5);background:rgba(207,34,46,.1);border-radius:6px;font-weight:600}" +
+    ".fatos-meta{margin:6px 0 10px;font-size:.85rem}";
+
+  function montarHtml(fatos, agora, erroCarga) {
+    if (!fatos) {
+      return "<h2>Fatos por frente</h2>" +
+        '<div class="fatos-aviso">Fatos por frente indisponíveis: ' + esc(erroCarga || "facts.json ausente") + ". Nenhuma situação é inferida.</div>";
+    }
+    var agoraMs = (agora instanceof Date ? agora : new Date()).getTime();
+    var geradoMs = new Date(fatos.gerado_em).getTime();
+    var horas = isNaN(geradoMs) ? null : (agoraMs - geradoMs) / 3600000;
+    var limite = fatos.limite_horas || 6;
+    var aviso = "";
+    if (horas === null) aviso = '<div class="fatos-aviso">FATOS SEM DATA DE COLETA VÁLIDA</div>';
+    else if (horas > limite) aviso = '<div class="fatos-aviso">FATOS DESATUALIZADOS: coletados há ' + Math.floor(horas) + " h (limite " + limite + " h)</div>";
+
+    var pub = fatos.publicado;
+    var meta = "Coletado em " + esc(dataHora(fatos.gerado_em)) + " · main " + esc(sha7(fatos.main && fatos.main.sha) || "sem evidência") +
+      " · site publicado " + (pub ? esc(sha7(pub.sha)) + " (dados de " + esc(dataHora(pub.gerado_em)) +
+        (pub.defasagem_commits_main === 0 ? ", igual à main" : pub.defasagem_commits_main > 0 ? ", " + pub.defasagem_commits_main + " commit(s) atrás da main" : "") + ")" : "sem evidência");
+
+    var linhas = (fatos.frentes || []).map(function (f) {
+      return "<tr><th scope=\"row\">" + esc(f.titulo) + '<div class="fatos-linha">' + esc(f.epico) + "</div></th>" +
+        "<td>" + celulaLocal(f.local) + "</td><td>" + celulaPr(f.pr) + "</td><td>" + celulaMain(f.main) + "</td><td>" + celulaPublicado(f.publicado) + "</td></tr>";
+    }).join("");
+
+    var nc = fatos.nao_classificados || {};
+    var rodape = "";
+    if ((nc.abertos || []).length) rodape += "<p class=\"fatos-meta\">PRs abertos sem frente associada: " + esc(nc.abertos.map(function (n) { return "#" + n; }).join(", ")) + ".</p>";
+    if (fatos.prs_truncado || fatos.commits_main_truncado) rodape += '<p class="fatos-meta">Atenção: a janela consultada foi truncada; ausências podem não ser reais.</p>';
+    if ((fatos.erros || []).length) rodape += '<p class="fatos-meta">Camadas sem evidência nesta coleta: ' + esc(fatos.erros.join(" | ")) + "</p>";
+    if ((fatos.limitacoes || []).length) rodape += "<details><summary>Limitações</summary><ul>" + fatos.limitacoes.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul></details>";
+
+    return "<h2>Fatos por frente</h2>" + aviso + '<div class="fatos-meta">' + meta + "</div>" +
+      '<div class="fatos-wrap"><table class="fatos-tabela"><thead><tr><th>Frente</th><th>Local</th><th>PR</th><th>main</th><th>Publicado</th></tr></thead><tbody>' + linhas + "</tbody></table></div>" + rodape;
+  }
+
+  function instalar(fatos, erroCarga) {
+    if (typeof document === "undefined") return;
+    if (!document.getElementById("status-fatos-style")) {
+      var style = document.createElement("style");
+      style.id = "status-fatos-style";
+      style.textContent = ESTILO;
+      document.head.appendChild(style);
+    }
+    var antigo = document.getElementById("fatos-frentes");
+    if (antigo) antigo.remove();
+    var secao = document.createElement("section");
+    secao.id = "fatos-frentes";
+    secao.innerHTML = montarHtml(fatos, new Date(), erroCarga);
+    var alvo = document.getElementById("roadmap");
+    if (alvo && alvo.parentNode) alvo.parentNode.insertBefore(secao, alvo);
+    else (document.querySelector("main") || document.body).appendChild(secao);
+  }
+
+  function carregar() {
+    fetch("facts.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (fatos) { instalar(fatos); })
+      .catch(function (erro) { instalar(null, String(erro && erro.message || erro)); });
+  }
+
+  var api = { montarHtml: montarHtml, instalar: instalar, carregar: carregar };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  if (typeof window !== "undefined") {
+    window.SimettriaStatusFatos = api;
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", carregar, { once: true });
+    else carregar();
+  }
+})();

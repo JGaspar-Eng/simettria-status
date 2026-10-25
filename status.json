@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-18T19:25:15Z",
+  "generated_at": "2026-10-25T14:56:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
-    "short_sha": "0fc0cf4",
-    "author": "JGaspar-Eng",
-    "date": "2026-10-17T15:51:34-03:00",
-    "message": "feat(orq): auditar vinculos e validar segunda ordem experimental"
+    "sha": "a5958468e32dbfcb78f890ae17aa017b5ed91364",
+    "short_sha": "a5958468",
+    "author": "Joanez Gaspar",
+    "date": "2026-10-25T11:56:03-03:00",
+    "message": "fix: publicar fatos do painel e corrigir ordenacao de vigas (#577)"
   },
   "commits": [
     {
+      "sha": "a5958468e32dbfcb78f890ae17aa017b5ed91364",
+      "short_sha": "a5958468",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T11:56:03-03:00",
+      "message": "fix: publicar fatos do painel e corrigir ordenacao de vigas (#577)"
+    },
+    {
       "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
-      "short_sha": "0fc0cf4",
+      "short_sha": "0fc0cf4c",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T15:51:34-03:00",
       "message": "feat(orq): auditar vinculos e validar segunda ordem experimental"
     },
     {
       "sha": "9a69d68dda531e0691cd6c33e09bb6eaf0c1f2ba",
-      "short_sha": "9a69d68",
+      "short_sha": "9a69d68d",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T15:31:12-03:00",
       "message": "fix(orq): restore calculation controls after DOM rebuild"
     },
     {
       "sha": "a48abb0520611e0d68e32476f7357619578a7744",
-      "short_sha": "a48abb0",
+      "short_sha": "a48abb05",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T12:54:41-03:00",
       "message": "fix(orq): auditar pilares vigas lajes e identificar nivel tecnico"
     },
     {
       "sha": "1ed9ac04701b4dae1383736909942861afda0132",
-      "short_sha": "1ed9ac0",
+      "short_sha": "1ed9ac04",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T12:36:32-03:00",
       "message": "fix(orq): aceitar Gk declarado no residencial e recuperar assistente"
     },
     {
       "sha": "8585b5b431590565984ecae530b5d90ae9e7a286",
-      "short_sha": "8585b5b",
+      "short_sha": "8585b5b4",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T11:03:54-03:00",
       "message": "fix(orq): exigir proveniencia do solver e equilibrio nos oito ELU"
     },
     {
       "sha": "12b1459bd0aaf3f9a26f8bb28a35b978d29039bb",
-      "short_sha": "12b1459",
+      "short_sha": "12b1459b",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T10:08:16-03:00",
       "message": "fix(orq): exigir reacoes N H M completas nos oito ELU"
     },
     {
       "sha": "862127a8fc929ca9a8978014d53afcc26ea6302b",
-      "short_sha": "862127a",
+      "short_sha": "862127a8",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T00:32:58-03:00",
       "message": "feat(orq): auditar 20 frentes tecnicas sem liberar dimensionamento"
     },
     {
       "sha": "898d120b98050ec18077e8483a966d64e918e8f1",
-      "short_sha": "898d120",
+      "short_sha": "898d120b",
       "author": "JGaspar-Eng",
       "date": "2026-10-17T00:17:09-03:00",
       "message": "fix(orq-bal): validar cadeia e eixos dos trechos da raiz"
     },
     {
       "sha": "9ef4db838e0523d24288e10f9aeb0c22b7e347a7",
-      "short_sha": "9ef4db8",
+      "short_sha": "9ef4db83",
       "author": "JGaspar-Eng",
       "date": "2026-10-16T18:59:31-03:00",
       "message": "fix(painel): linha de execucao compacta e sincronizacao automatica"
-    },
-    {
-      "sha": "99972144539910c2e0e8aec6886708d485ac0422",
-      "short_sha": "9997214",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-16T18:37:27-03:00",
-      "message": "fix(sa-l1): estabilizar niveis fisicos segmentados e auditar deriva"
     }
   ],
   "development": {
@@ -3061,7 +3061,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 219,
+    "validator_count": 221,
     "validators": [
       {
         "name": "test:base",
@@ -3688,6 +3688,10 @@
         "command": "node tests/validar_status_dashboard_sync.mjs && node tests/validar_status_sequence_dinamico.mjs"
       },
       {
+        "name": "test:status-fatos",
+        "command": "python tests/validar_status_fatos.py && node tests/validar_status_fatos.mjs && node --check docs/status_fatos.js"
+      },
+      {
         "name": "test:abertura-renderer-2d",
         "command": "node tests/validar_renderer_2d_aberturas.mjs"
       },
@@ -3938,6 +3942,10 @@
       {
         "name": "test:u10a-state-ready",
         "command": "node tests/validar_state_ready_consumidores_unidade10a.mjs"
+      },
+      {
+        "name": "test:renumeracao",
+        "command": "node tests/validar_renumeracao_vigas.mjs"
       }
     ]
   },
@@ -3948,7 +3956,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "39158664822",
-    "run_number": "924"
+    "run_id": "40204550704",
+    "run_number": "930"
   }
 }

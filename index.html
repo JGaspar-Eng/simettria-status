@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="simettria-dashboard-build" content="0fc0cf4cfc4d885ac26603b5457849eb77eab53f" />
+<meta name="simettria-dashboard-build" content="a5958468e32dbfcb78f890ae17aa017b5ed91364" />
 <title>SIMETTRIA — Painel de Desenvolvimento</title>
 <meta name="robots" content="noindex" />
 <style>
@@ -749,7 +749,7 @@
           <div class="sync-line">
             <span class="sync-ref" id="sync-ref">—</span>
             <span class="sync-sep" aria-hidden="true">·</span>
-            <span class="sync-published" id="sync-published">Última atualização dos dados: —</span>
+            <span class="sync-published" id="sync-published">Arquivo do roadmap: —</span>
           </div>
           <div class="sync-message" id="sync-message" title="">—</div>
         </div>
@@ -765,8 +765,8 @@
     <div class="hero-top">
       <div class="hero-text">
         <div class="eyebrow">Painel técnico versionado</div>
-        <h1>Estado real do desenvolvimento do SIMETTRIA.</h1>
-        <p>Este painel mostra onde o desenvolvimento está, quanto já avançou em cada área, quais são as próximas etapas e o que já foi consolidado no SIMETTRIA. As informações são atualizadas a partir dos registros versionados do projeto.</p>
+        <h1>Roadmap cadastrado do SIMETTRIA.</h1>
+        <p>O progresso abaixo vem dos registros versionados do projeto. A tabela de fatos distingue o que está em PR, na main e no site publicado; itens do roadmap não comprovam execução nem aprovação por si só.</p>
       </div>
       <div class="stat overall-progress-card" id="overall-progress-card" hidden>
         <div class="stat-label">Índice dos trabalhos cadastrados</div>
@@ -889,8 +889,9 @@
   </div>
 </footer>
 
-<script src="status_areas.js?v=0fc0cf4cfc4d885ac26603b5457849eb77eab53f"></script>
-<script src="status_sequence.js?v=0fc0cf4cfc4d885ac26603b5457849eb77eab53f"></script>
+<script src="status_areas.js?v=a5958468e32dbfcb78f890ae17aa017b5ed91364"></script>
+<script src="status_sequence.js?v=a5958468e32dbfcb78f890ae17aa017b5ed91364"></script>
+<script src="status_fatos.js?v=a5958468e32dbfcb78f890ae17aa017b5ed91364"></script>
 <script>
 (function () {
   function escapeHtml(value) {
@@ -1084,6 +1085,16 @@
     if (alvo) alvo.textContent = titulo;
   }
 
+  function indicarFrescorDosDados(status) {
+    var geradoEm = Date.parse((status || {}).generated_at || "");
+    var fonteEm = Date.parse(((status || {}).head || {}).date || "");
+    var desatualizado = !Number.isFinite(geradoEm) || !Number.isFinite(fonteEm) ||
+      Date.now() - Math.min(geradoEm, fonteEm) > 24 * 60 * 60 * 1000;
+    definirEstadoSync(desatualizado ? "offline" : "ok", desatualizado
+      ? "Dados desatualizados; desenvolvimento não verificado"
+      : "Arquivo consultado; desenvolvimento não verificado");
+  }
+
   function definirVerificadoEm(texto) {
     var alvo = el("sync-checked");
     if (alvo) alvo.textContent = texto;
@@ -1094,7 +1105,7 @@
     var ref = el("sync-ref");
     if (ref) ref.textContent = (status.branch || "—") + " @ " + (head.short_sha || "—");
     var publicado = el("sync-published");
-    if (publicado) publicado.textContent = "Última atualização dos dados: " + fmtDate(status.generated_at)
+    if (publicado) publicado.textContent = "Arquivo gerado em: " + fmtDate(status.generated_at) + " · fonte main: " + fmtDate(head.date)
       + (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location?.hostname || "") ? " · painel local, não publicado" : "");
     var mensagem = el("sync-message");
     if (mensagem) {
@@ -1114,11 +1125,7 @@
       if (toast) toast.classList.remove("show");
       var card = el("sync-card");
       if (card && card.getAttribute("data-sync-state") === "updated") {
-        var geradoEm = Date.parse((ultimoStatusValido || {}).generated_at || "");
-        var desatualizado = !Number.isFinite(geradoEm) || Date.now() - geradoEm > 24 * 60 * 60 * 1000;
-        definirEstadoSync(desatualizado ? "offline" : "ok", desatualizado
-          ? "Dados desatualizados; desenvolvimento não verificado"
-          : "Arquivo consultado; desenvolvimento não verificado");
+        indicarFrescorDosDados(ultimoStatusValido);
       }
     }, DESTAQUE_NOVO_ESTADO_MS);
   }
@@ -1196,13 +1203,7 @@
         hideError();
         definirVerificadoEm("Arquivo consultado às " + fmtHora(new Date()));
         if (houveTroca) destacarNovoEstado();
-        else if (!timerDestaque) {
-          var geradoEm = Date.parse(status.generated_at || "");
-          var desatualizado = !Number.isFinite(geradoEm) || Date.now() - geradoEm > 24 * 60 * 60 * 1000;
-          definirEstadoSync(desatualizado ? "offline" : "ok", desatualizado
-            ? "Dados desatualizados; desenvolvimento não verificado"
-            : "Arquivo consultado; desenvolvimento não verificado");
-        }
+        else if (!timerDestaque) indicarFrescorDosDados(status);
         return houveTroca;
       })
       .catch(function (error) {
@@ -1255,6 +1256,6 @@
   }
 })();
 </script>
-<script src="status_coordination.js?v=0fc0cf4cfc4d885ac26603b5457849eb77eab53f"></script>
+<script src="status_coordination.js?v=a5958468e32dbfcb78f890ae17aa017b5ed91364"></script>
 </body>
 </html>

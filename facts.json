@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "gerado_em": "2026-10-25T14:57:08Z",
+  "repositorio": "JGaspar-Eng/simettria",
+  "limite_horas": 6,
+  "main": {
+    "sha": "a5958468e32dbfcb78f890ae17aa017b5ed91364",
+    "data": "2026-10-25T14:56:03Z"
+  },
+  "publicado": {
+    "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
+    "gerado_em": "2026-10-18T19:25:15Z",
+    "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
+    "defasagem_commits_main": 1,
+    "idade_horas": 163.5
+  },
+  "frentes": [
+    {
+      "id": "escada",
+      "titulo": "Escada",
+      "epico": "E1/E3",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 14,
+        "ultimo": {
+          "numero": 529,
+          "titulo": "feat(escada): Fase B — compatibilidade planar com reserva do trecho",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/529",
+          "merge_sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
+          "merged_at": "2026-09-14T21:56:44Z",
+          "ci": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
+          "data": "2026-10-16T09:31:33-03:00",
+          "assunto": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1",
+          "ci": "falhou"
+        }
+      },
+      "publicado": {
+        "estado": "publicado"
+      }
+    },
+    {
+      "id": "sacadas",
+      "titulo": "Sacadas",
+      "epico": "E1/E3",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 0,
+        "ultimo": null,
+        "ultimo_commit": {
+          "sha": "ce4648a94a114608756f7c8f5f5b5a71d199f79b",
+          "data": "2026-10-15T23:20:50-03:00",
+          "assunto": "feat(ui): simplificar comandos e esclarecer auditoria das sacadas",
+          "ci": "falhou"
+        }
+      },
+      "publicado": {
+        "estado": "publicado"
+      }
+    },
+    {
+      "id": "fundacoes",
+      "titulo": "Fundações",
+      "epico": "E2",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 573,
+            "titulo": "SIMETTRIA — otimização econômica de blocos com 6 pilares (BE9/BE12) por ELU/ELS/SPT",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/573",
+            "rascunho": true,
+            "head_sha": "c53821c9669459fd0d3b14f21b0aa1f479708a73",
+            "ci": "sem_evidencia"
+          },
+          {
+            "numero": 572,
+            "titulo": "SIMETTRIA: cadastrar fundações de todos os 40 pilares com agrupamento sem interferências",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/572",
+            "rascunho": true,
+            "head_sha": "f6f391d33ce3b68b00b1c0264cc81a5128df7178",
+            "ci": "passou"
+          },
+          {
+            "numero": 571,
+            "titulo": "SIMETTRIA — auditoria: impedir falsos bloqueios, 40/40 estacas estudadas e loading real em 8010",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/571",
+            "rascunho": true,
+            "head_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
+            "ci": "passou"
+          },
+          {
+            "numero": 563,
+            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
+            "rascunho": true,
+            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
+            "ci": "passou"
+          },
+          {
+            "numero": 559,
+            "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
+            "rascunho": true,
+            "head_sha": "4d7f396f014db945039b832a38e8332b7c6db99a",
+            "ci": "passou"
+          },
+          {
+            "numero": 557,
+            "titulo": "SIM-7: calcular prévia de estaca diretamente do SPT importado",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/557",
+            "rascunho": true,
+            "head_sha": "bd0d097ec18b19de082a55e09bb4f123a1643622",
+            "ci": "passou"
+          },
+          {
+            "numero": 556,
+            "titulo": "SIM-7: repartir Hx, Hy e Mz por estaca em estudo não executivo",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/556",
+            "rascunho": true,
+            "head_sha": "4a82ed969ebb1c20b953d54a9cdc0753f9fd54fb",
+            "ci": "passou"
+          },
+          {
+            "numero": 555,
+            "titulo": "SIM-7: mostrar demandas horizontais por apoio sem dimensionar estacas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/555",
+            "rascunho": true,
+            "head_sha": "b6839dcbbd42770c5f3dfcc877e96a19d5d36b1c",
+            "ci": "passou"
+          },
+          {
+            "numero": 554,
+            "titulo": "SIM-7: identificar ações não axiais antes de pedir dados de estacas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/554",
+            "rascunho": true,
+            "head_sha": "ed084c2c5d24dff3198ef1328dcc0a2d6562808d",
+            "ci": "passou"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 41,
+        "ultimo": {
+          "numero": 542,
+          "titulo": "Status: registra seleção por nível e estudo preliminar de estacas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/542",
+          "merge_sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
+          "merged_at": "2026-10-13T15:09:19Z",
+          "ci": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "088c304ba358eee777a60de9325c761f31a4955d",
+          "data": "2026-10-13T14:31:34-03:00",
+          "assunto": "fix(infra): exibir diagnostico ao estudar estacas",
+          "ci": "sem_evidencia"
+        }
+      },
+      "publicado": {
+        "estado": "publicado"
+      }
+    },
+    {
+      "id": "detalhamento",
+      "titulo": "Detalhamento",
+      "epico": "E5",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 567,
+            "titulo": "Armaduras: arraste longitudinal tipo Forecast com cobertura de flexão dos 8 ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/567",
+            "rascunho": true,
+            "head_sha": "43d515840cb5a43c00053b23674c0e5ecb120627",
+            "ci": "sem_evidencia"
+          },
+          {
+            "numero": 566,
+            "titulo": "Armaduras: Ø8–12,5 / estribos Ø5–6,3 c/10–20 e cortes 2D com memorial",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/566",
+            "rascunho": true,
+            "head_sha": "8cb59ffdeee7fefb03b7eb0946267b46e2a6c4ce",
+            "ci": "sem_evidencia"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 3,
+        "ultimo": {
+          "numero": 361,
+          "titulo": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/361",
+          "merge_sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
+          "merged_at": "2026-09-08T11:27:48Z",
+          "ci": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
+          "data": "2026-10-15T15:06:31-03:00",
+          "assunto": "feat(balancos): aplicar armadura por pavimentos tipo em lote",
+          "ci": "passou"
+        }
+      },
+      "publicado": {
+        "estado": "publicado"
+      }
+    },
+    {
+      "id": "inteligencia",
+      "titulo": "Inteligência",
+      "epico": "E9",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 571,
+            "titulo": "SIMETTRIA — auditoria: impedir falsos bloqueios, 40/40 estacas estudadas e loading real em 8010",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/571",
+            "rascunho": true,
+            "head_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
+            "ci": "passou"
+          },
+          {
+            "numero": 570,
+            "titulo": "SIMETTRIA — progresso real por ELU, barra visual e cálculo não bloqueante",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/570",
+            "rascunho": true,
+            "head_sha": "4904beaa087fb5fbc6d3366bd788fc76a591fa6d",
+            "ci": "passou"
+          },
+          {
+            "numero": 569,
+            "titulo": "ORQ: V370 — corrigir falsa revisão, detalhar continuidade e visualizar alternativas em todas as vigas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/569",
+            "rascunho": true,
+            "head_sha": "799103459d5f6d49ebcfa6ea8cf8c00f9b532ffe",
+            "ci": "sem_evidencia"
+          },
+          {
+            "numero": 568,
+            "titulo": "ORQ — 8 ELU de 2ª ordem: esforços em 333 vigas, estudo segregado e editor 2D preservado",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/568",
+            "rascunho": true,
+            "head_sha": "0c269ca5d371319ebb9ed38a172c361a39753a35",
+            "ci": "sem_evidencia"
+          },
+          {
+            "numero": 565,
+            "titulo": "ORQ 3D: 8 ELU de 2ª ordem reais, 40 apoios e comparação 1ª × 2ª ordem",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/565",
+            "rascunho": true,
+            "head_sha": "4262e4f0206293a791610010cbd257e4f92036c4",
+            "ci": "sem_evidencia"
+          },
+          {
+            "numero": 563,
+            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
+            "rascunho": true,
+            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
+            "ci": "passou"
+          },
+          {
+            "numero": 562,
+            "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
+            "rascunho": false,
+            "head_sha": "6ae81092ac9dbea220e38743fe588b1dacee53f5",
+            "ci": "passou"
+          },
+          {
+            "numero": 558,
+            "titulo": "Agrupar ELU pendente pela causa na cobertura",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/558",
+            "rascunho": true,
+            "head_sha": "f76a7af8aab4a8a6d94cd2323f6cb3e12f75b5e0",
+            "ci": "passou"
+          },
+          {
+            "numero": 544,
+            "titulo": "fix(orq): preservar proveniência das cargas do modelo real",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/544",
+            "rascunho": true,
+            "head_sha": "6440a947f21d51cf5b056252150200fec9fda4f3",
+            "ci": "passou"
+          },
+          {
+            "numero": 492,
+            "titulo": "fix(painel): padroniza detalhamento das 12 áreas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/492",
+            "rascunho": false,
+            "head_sha": "3f1a386f0f0b6beae72ef090cb28758a7af0dac5",
+            "ci": "passou"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 72,
+        "ultimo": {
+          "numero": 538,
+          "titulo": "ORQ #517 — ações equivalentes ELU das vigas globais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/538",
+          "merge_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
+          "merged_at": "2026-09-28T23:32:35Z",
+          "ci": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
+          "data": "2026-10-17T15:51:34-03:00",
+          "assunto": "feat(orq): auditar vinculos e validar segunda ordem experimental",
+          "ci": "falhou"
+        }
+      },
+      "publicado": {
+        "estado": "publicado"
+      }
+    },
+    {
+      "id": "normas",
+      "titulo": "Normas",
+      "epico": "E11",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 546,
+            "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
+            "rascunho": true,
+            "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
+            "ci": "passou"
+          },
+          {
+            "numero": 545,
+            "titulo": "SIMETTRIA: diagnósticos acionáveis e avisos de revisão normativa",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/545",
+            "rascunho": true,
+            "head_sha": "a53b51cad6e7783a018d44e00cbcfa3a5c12f236",
+            "ci": "passou"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 20,
+        "ultimo": {
+          "numero": 527,
+          "titulo": "feat(escada): ESCADA-DIM-01 Fase A — geometria preliminar (NBR9050)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/527",
+          "merge_sha": "ffded915c9e2b15f57871abb247ae186a58907bd",
+          "merged_at": "2026-09-14T16:15:04Z",
+          "ci": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "eee29503673625b6e8d6fb5e779360a53112ed56",
+          "data": "2026-10-11T14:36:07-03:00",
+          "assunto": "feat(fund): verifica limites resistentes NBR de cortante e puncao",
+          "ci": "passou"
+        }
+      },
+      "publicado": {
+        "estado": "publicado"
+      }
+    }
+  ],
+  "nao_classificados": {
+    "abertos": [
+      574,
+      575,
+      576,
+      564,
+      561,
+      553,
+      552,
+      551,
+      550,
+      549,
+      548,
+      547,
+      543,
+      463,
+      310
+    ],
+    "integrados_recentes": [
+      577,
+      537,
+      536,
+      535,
+      534,
+      533,
+      526,
+      509,
+      469,
+      482,
+      476,
+      480,
+      468,
+      467,
+      464,
+      462,
+      455,
+      458,
+      459,
+      453
+    ]
+  },
+  "local_repositorios": null,
+  "prs_truncado": false,
+  "janela_prs": 471,
+  "commits_main_analisados": 1937,
+  "commits_main_truncado": false,
+  "erros": [],
+  "limitacoes": [
+    "A camada local não é observável pelo CI: só existe quando o gerador roda na máquina de desenvolvimento.",
+    "\"Publicado\" significa que o SHA de merge está contido no status.json servido pelo Pages no momento da coleta; a próxima coleta confirma publicações mais recentes.",
+    "A associação entre pull requests e frentes é editorial (docs/STATUS_FRENTES.json); pull requests sem frente aparecem em nao_classificados."
+  ]
+}
