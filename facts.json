@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T15:09:14Z",
+  "gerado_em": "2026-10-25T15:46:55Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "b3c69bc251a6d4a45d4697c46b02def18381ba98",
-    "data": "2026-10-25T15:05:53Z"
+    "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
+    "data": "2026-10-25T15:46:03Z"
   },
   "publicado": {
     "sha": "b3c69bc251a6d4a45d4697c46b02def18381ba98",
-    "gerado_em": "2026-10-25T15:06:13Z",
+    "gerado_em": "2026-10-25T15:08:29Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 253,
+    "idade_horas": 0.6
   },
   "frentes": [
     {
@@ -66,14 +66,14 @@
         "total_integrados": 0,
         "ultimo": null,
         "ultimo_commit": {
-          "sha": "ce4648a94a114608756f7c8f5f5b5a71d199f79b",
-          "data": "2026-10-15T23:20:50-03:00",
-          "assunto": "feat(ui): simplificar comandos e esclarecer auditoria das sacadas",
-          "ci": "falhou"
+          "sha": "bfdb5e5272fe44350a8684933554297233ab4aef",
+          "data": "2026-10-22T09:36:51-03:00",
+          "assunto": "Separar piso terreo de laje e expor classificacao de baldrame e balanco",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -94,30 +94,6 @@
             "rascunho": true,
             "head_sha": "c53821c9669459fd0d3b14f21b0aa1f479708a73",
             "ci": "sem_evidencia"
-          },
-          {
-            "numero": 572,
-            "titulo": "SIMETTRIA: cadastrar fundações de todos os 40 pilares com agrupamento sem interferências",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/572",
-            "rascunho": true,
-            "head_sha": "f6f391d33ce3b68b00b1c0264cc81a5128df7178",
-            "ci": "passou"
-          },
-          {
-            "numero": 571,
-            "titulo": "SIMETTRIA — auditoria: impedir falsos bloqueios, 40/40 estacas estudadas e loading real em 8010",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/571",
-            "rascunho": true,
-            "head_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
-            "ci": "passou"
-          },
-          {
-            "numero": 563,
-            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
-            "rascunho": true,
-            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "ci": "passou"
           },
           {
             "numero": 559,
@@ -163,24 +139,24 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 41,
+        "total_integrados": 46,
         "ultimo": {
-          "numero": 542,
-          "titulo": "Status: registra seleção por nível e estudo preliminar de estacas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/542",
-          "merge_sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
-          "merged_at": "2026-10-13T15:09:19Z",
-          "ci": "passou"
+          "numero": 579,
+          "titulo": "Integração do desenvolvimento acumulado: ORQ global, fundações e editor 2D/3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/579",
+          "merge_sha": "e53ea8222b5a30c1e68409093cd293295883a3e5",
+          "merged_at": "2026-10-25T15:46:05Z",
+          "ci": "falhou"
         },
         "ultimo_commit": {
-          "sha": "088c304ba358eee777a60de9325c761f31a4955d",
-          "data": "2026-10-13T14:31:34-03:00",
-          "assunto": "fix(infra): exibir diagnostico ao estudar estacas",
-          "ci": "sem_evidencia"
+          "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
+          "data": "2026-10-25T12:46:03-03:00",
+          "assunto": "merge: consolidar cadeia de ORQ global, fundações e 2D/3D (#580)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -224,14 +200,14 @@
           "ci": "passou"
         },
         "ultimo_commit": {
-          "sha": "6ce86bfeb037858cbebb54c996fb1f60b472299b",
-          "data": "2026-10-15T15:06:31-03:00",
-          "assunto": "feat(balancos): aplicar armadura por pavimentos tipo em lote",
-          "ci": "passou"
+          "sha": "363170d4754f15e0935240c2439b3bfcbcbb302d",
+          "data": "2026-10-20T17:51:25-03:00",
+          "assunto": "test(ci): enforce zero-bending face diagnostics, legitimate alternatives and 2D preview alongside armaduras suite",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -245,14 +221,6 @@
       "pr": {
         "estado": "aberto",
         "itens": [
-          {
-            "numero": 571,
-            "titulo": "SIMETTRIA — auditoria: impedir falsos bloqueios, 40/40 estacas estudadas e loading real em 8010",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/571",
-            "rascunho": true,
-            "head_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
-            "ci": "passou"
-          },
           {
             "numero": 570,
             "titulo": "SIMETTRIA — progresso real por ELU, barra visual e cálculo não bloqueante",
@@ -284,14 +252,6 @@
             "rascunho": true,
             "head_sha": "4262e4f0206293a791610010cbd257e4f92036c4",
             "ci": "sem_evidencia"
-          },
-          {
-            "numero": 563,
-            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
-            "rascunho": true,
-            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "ci": "passou"
           },
           {
             "numero": 562,
@@ -329,24 +289,24 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 72,
+        "total_integrados": 76,
         "ultimo": {
-          "numero": 538,
-          "titulo": "ORQ #517 — ações equivalentes ELU das vigas globais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/538",
-          "merge_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
-          "merged_at": "2026-09-28T23:32:35Z",
-          "ci": "passou"
+          "numero": 579,
+          "titulo": "Integração do desenvolvimento acumulado: ORQ global, fundações e editor 2D/3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/579",
+          "merge_sha": "e53ea8222b5a30c1e68409093cd293295883a3e5",
+          "merged_at": "2026-10-25T15:46:05Z",
+          "ci": "falhou"
         },
         "ultimo_commit": {
-          "sha": "0fc0cf4cfc4d885ac26603b5457849eb77eab53f",
-          "data": "2026-10-17T15:51:34-03:00",
-          "assunto": "feat(orq): auditar vinculos e validar segunda ordem experimental",
-          "ci": "falhou"
+          "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
+          "data": "2026-10-25T12:46:03-03:00",
+          "assunto": "merge: consolidar cadeia de ORQ global, fundações e 2D/3D (#580)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -390,14 +350,14 @@
           "ci": "passou"
         },
         "ultimo_commit": {
-          "sha": "eee29503673625b6e8d6fb5e779360a53112ed56",
-          "data": "2026-10-11T14:36:07-03:00",
-          "assunto": "feat(fund): verifica limites resistentes NBR de cortante e puncao",
-          "ci": "passou"
+          "sha": "70f0510b5cbd246f3231977375c21eaac2da56bf",
+          "data": "2026-10-21T09:12:20-03:00",
+          "assunto": "fix(audit): initialize evidence collection before first use in effective NBR category proof",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -442,8 +402,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 472,
-  "commits_main_analisados": 1938,
+  "janela_prs": 474,
+  "commits_main_analisados": 2191,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
