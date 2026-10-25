@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T18:28:35Z",
+  "gerado_em": "2026-10-25T18:43:15Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
-    "data": "2026-10-25T18:15:26Z"
+    "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
+    "data": "2026-10-25T18:42:03Z"
   },
   "publicado": {
     "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
-    "gerado_em": "2026-10-25T18:15:46Z",
+    "gerado_em": "2026-10-25T18:27:24Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.2
+    "defasagem_commits_main": 3,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -149,14 +149,14 @@
           "ci": "passou"
         },
         "ultimo_commit": {
-          "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
-          "data": "2026-10-25T14:34:28-03:00",
-          "assunto": "merge: auditoria da segunda ordem independente das fundações (#585)",
-          "ci": "passou"
+          "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
+          "data": "2026-10-25T15:42:03-03:00",
+          "assunto": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -170,6 +170,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 593,
+            "titulo": "Detalhamento preliminar: reconciliar massa das famílias de armadura com quantitativo",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/593",
+            "rascunho": true,
+            "head_sha": "a5f9fdddc2f7d471530a8c6735b311c5be73476c",
+            "ci": "pendente"
+          },
           {
             "numero": 567,
             "titulo": "Armaduras: arraste longitudinal tipo Forecast com cobertura de flexão dos 8 ELU",
@@ -378,6 +386,7 @@
       310
     ],
     "integrados_recentes": [
+      592,
       591,
       590,
       589,
@@ -396,14 +405,13 @@
       509,
       469,
       482,
-      476,
-      480
+      476
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 485,
-  "commits_main_analisados": 2235,
+  "janela_prs": 487,
+  "commits_main_analisados": 2238,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

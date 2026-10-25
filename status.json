@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-25T18:27:24Z",
+  "generated_at": "2026-10-25T18:42:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
-    "short_sha": "e0abbcca",
+    "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
+    "short_sha": "850cf546",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T15:15:26-03:00",
-    "message": "merge: ELS fissuracao verifica equilibrio de secao fissurada (#591)"
+    "date": "2026-10-25T15:42:03-03:00",
+    "message": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)"
   },
   "commits": [
+    {
+      "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
+      "short_sha": "850cf546",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:42:03-03:00",
+      "message": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)"
+    },
+    {
+      "sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
+      "short_sha": "e3cbac55",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:38:40-03:00",
+      "message": "test(placa): nao reaproveitar Mindlin/Winkler apos troca de sapata, apoio ou pilar"
+    },
+    {
+      "sha": "6362fc8a68455d71994219b34cb060658a40412d",
+      "short_sha": "6362fc8a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:38:20-03:00",
+      "message": "fix(placa): vincular estudos Mindlin/Winkler a sapata física e apoio atuais"
+    },
     {
       "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
       "short_sha": "e0abbcca",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:09:56-03:00",
       "message": "fix(geo): diagnosticar SPT pela cravação canônica e distinguir camada sem índice N"
-    },
-    {
-      "sha": "5306780808fd1807878b928fa9c548cc0844f8e9",
-      "short_sha": "53067808",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:09:00-03:00",
-      "message": "merge: punção biaxial audita V/Mx/My por quadratura independente (#589)"
-    },
-    {
-      "sha": "033e681d41d0cc1ad7f1fe921f047dd0875b149d",
-      "short_sha": "033e681d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:06:38-03:00",
-      "message": "test(puncao): integrar independentemente V/Mx/My em C e C-prima, momentos opostos e nulos"
-    },
-    {
-      "sha": "72dbb823192e8bb60549d70faa6009f03108f282",
-      "short_sha": "72dbb823",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:06:09-03:00",
-      "message": "feat(puncao): comprovar equilíbrio V/Mx/My com quadratura numérica independente dos momentos J"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40221306697",
-    "run_number": "948"
+    "run_id": "40222492722",
+    "run_number": "949"
   }
 }
