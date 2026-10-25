@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-25T18:01:20Z",
+  "generated_at": "2026-10-25T18:09:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
-    "short_sha": "e6d2d246",
+    "sha": "5306780808fd1807878b928fa9c548cc0844f8e9",
+    "short_sha": "53067808",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T15:00:58-03:00",
-    "message": "merge: teste SPT suporta cardinalidade real do projeto (#588)"
+    "date": "2026-10-25T15:09:00-03:00",
+    "message": "merge: punção biaxial audita V/Mx/My por quadratura independente (#589)"
   },
   "commits": [
+    {
+      "sha": "5306780808fd1807878b928fa9c548cc0844f8e9",
+      "short_sha": "53067808",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:09:00-03:00",
+      "message": "merge: punção biaxial audita V/Mx/My por quadratura independente (#589)"
+    },
+    {
+      "sha": "033e681d41d0cc1ad7f1fe921f047dd0875b149d",
+      "short_sha": "033e681d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:06:38-03:00",
+      "message": "test(puncao): integrar independentemente V/Mx/My em C e C-prima, momentos opostos e nulos"
+    },
+    {
+      "sha": "72dbb823192e8bb60549d70faa6009f03108f282",
+      "short_sha": "72dbb823",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:06:09-03:00",
+      "message": "feat(puncao): comprovar equilíbrio V/Mx/My com quadratura numérica independente dos momentos J"
+    },
     {
       "sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
       "short_sha": "e6d2d246",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:54:09-03:00",
       "message": "fix(test): corrigir coeficiente de canto qmin na fixture 2x2 m"
-    },
-    {
-      "sha": "866725e40e774cbd9a23cfa1f511262cedeb3abd",
-      "short_sha": "866725e4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:52:28-03:00",
-      "message": "test(placa): rejeitar qmin forjada e contato integral com tração"
-    },
-    {
-      "sha": "dabf7142b1b31d77d0a3445af1d8881503a6b029",
-      "short_sha": "dabf7142",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:52:00-03:00",
-      "message": "fix(placa): verificar qmin fisica contra N/Mx/My antes de aceitar contato integral"
-    },
-    {
-      "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
-      "short_sha": "2852ace8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:34:28-03:00",
-      "message": "merge: auditoria da segunda ordem independente das fundações (#585)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40219222471",
-    "run_number": "944"
+    "run_id": "40219861728",
+    "run_number": "945"
   }
 }
