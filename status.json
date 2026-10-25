@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-10-25T22:13:42Z",
+  "generated_at": "2026-10-25T22:17:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "801630e8ec205797d495eafb5737392545884e33",
-    "short_sha": "801630e8",
+    "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
+    "short_sha": "8eddba75",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T19:13:23-03:00",
-    "message": "merge: placa Mindlin passa patch test de 3 movimentos rigidos (#599)"
+    "date": "2026-10-25T19:17:27-03:00",
+    "message": "merge: recalques diferenciais entre apoios ELS rastreados (#600)"
   },
   "commits": [
+    {
+      "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
+      "short_sha": "8eddba75",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:17:27-03:00",
+      "message": "merge: recalques diferenciais entre apoios ELS rastreados (#600)"
+    },
     {
       "sha": "801630e8ec205797d495eafb5737392545884e33",
       "short_sha": "801630e8",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:13:23-03:00",
       "message": "merge: placa Mindlin passa patch test de 3 movimentos rigidos (#599)"
+    },
+    {
+      "sha": "d4bf15b6423829fd254a456325b9cdac773de138",
+      "short_sha": "d4bf15b6",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:12:40-03:00",
+      "message": "test(els): diferencial entre dois apoios, horizonte, limites, fontes e pares invalidos"
+    },
+    {
+      "sha": "9a00409e39c8a980f11dd6f473cdfde87adbf75c",
+      "short_sha": "9a00409e",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:12:00-03:00",
+      "message": "feat(els): confrontar recalque diferencial e distorção angular entre apoios sob casos coincidentes"
     },
     {
       "sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:33:40-03:00",
       "message": "test(winkler): decomposição energética nos oito ELU e rigidez do solo aumentada"
-    },
-    {
-      "sha": "ed35552b72073203fa98644105007a94588e477a",
-      "short_sha": "ed35552b",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:32:47-03:00",
-      "message": "feat(placa): demonstrar particao de energia entre placa e molas Winkler em cada ELU"
-    },
-    {
-      "sha": "c293b8cfe6e669dcd81e98f4da1ff31fd7cba35b",
-      "short_sha": "c293b8cf",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:27:51-03:00",
-      "message": "merge: placa Mindlin prova energia e sensibilidade ao refinamento (#597)"
-    },
-    {
-      "sha": "568be0c37eaee310eac16dacdf879326c231f104",
-      "short_sha": "568be0c3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:25:38-03:00",
-      "message": "feat(memorial): publicar energia e deslocamentos comparados entre duas malhas sem validar convergencia"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40239173346",
-    "run_number": "956"
+    "run_id": "40239497577",
+    "run_number": "957"
   }
 }
