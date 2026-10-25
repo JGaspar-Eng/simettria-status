@@ -9,6 +9,7 @@ Executável sem dependências: `python tests/test_contrato_artefato.py`.
 """
 
 import sys
+import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -29,9 +30,9 @@ def html(corpo: str, tags: str = TAGS_VALIDAS) -> str:
     return f"<!doctype html><html><body>\n{corpo}\n{tags}\n</body></html>"
 
 
-def recusa(documento: str) -> str:
+def recusa(documento: str, raiz: Path | None = None) -> str:
     try:
-        validar_contrato(documento)
+        validar_contrato(documento, raiz)
     except ContratoInvalido as erro:
         return str(erro)
     raise AssertionError("o contrato deveria ter sido recusado, mas passou")
@@ -74,6 +75,20 @@ validar_contrato(
     )
 )
 
+# O painel novo acrescenta fatos por frente; o antigo segue publicável durante a transição.
+tags_fatos = TAGS_VALIDAS + '\n<script src="status_fatos.js?v=8274f8f"></script>'
+validar_contrato(html("", tags_fatos))
+assert "status_fatos.js" in recusa(html("", tags_fatos + '\n<script src="status_fatos.js"></script>'))
+with tempfile.TemporaryDirectory() as pasta:
+    raiz_fatos = Path(pasta)
+    for nome in ("status_areas.js", "status_sequence.js", "status_fatos.js"):
+        (raiz_fatos / nome).write_text("", encoding="utf-8")
+    assert "facts.json" in recusa(html("", tags_fatos), raiz_fatos)
+    (raiz_fatos / "facts.json").write_text('{"schema_version":1,"frentes":[]}', encoding="utf-8")
+    assert "contrato de frentes" in recusa(html("", tags_fatos), raiz_fatos)
+    (raiz_fatos / "facts.json").write_text('{"schema_version":1,"frentes":[{"id":"escada"}]}', encoding="utf-8")
+    validar_contrato(html("", tags_fatos), raiz_fatos)
+
 # ------------------------------------------------------------------ ordem
 erro = recusa(
     html(
@@ -110,11 +125,10 @@ assert "status_areas.js" in erro, erro
 # ------------------------------------------- o artefato real deste repositório
 raiz = Path(__file__).resolve().parents[1]
 publicado = (raiz / "index.html").read_text(encoding="utf-8")
-locais = validar_contrato(publicado)
-assert locais == [
-    "status_areas.js",
-    "status_sequence.js",
-    "status_coordination.js",
-], locais
+locais = validar_contrato(publicado, raiz)
+assert locais in (
+    ["status_areas.js", "status_sequence.js", "status_coordination.js"],
+    ["status_areas.js", "status_sequence.js", "status_coordination.js", "status_fatos.js"],
+), locais
 
 print("SIMETTRIA_STATUS_CONTRATO_ARTEFATO_OK")

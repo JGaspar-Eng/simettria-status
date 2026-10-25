@@ -35,6 +35,8 @@ jobs:
           cp status_sequence.js public/status_sequence.js
           cp status_coordination.js public/status_coordination.js
           cp coordination.json public/coordination.json
+          if [ -f status_fatos.js ]; then cp status_fatos.js public/status_fatos.js; fi
+          if [ -f facts.json ]; then cp facts.json public/facts.json; fi
           if [ -f preview-pr492.html ]; then
             cp preview-pr492.html public/preview-pr492.html
           fi
@@ -50,6 +52,7 @@ jobs:
           node --check public/status_areas.js
           node --check public/status_sequence.js
           node --check public/status_coordination.js
+          if [ -f public/status_fatos.js ]; then node --check public/status_fatos.js; fi
           python3 scripts/validar_contrato_artefato.py public
 
       - name: Upload Pages artifact

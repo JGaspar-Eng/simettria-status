@@ -82,6 +82,25 @@ def validar_contrato(html: str, raiz: Path | None = None) -> list[str]:
                 f"(encontradas: {quantas})"
             )
 
+    # A referência é opcional durante a migração, mas seu par de dados é obrigatório.
+    if locais.count("status_fatos.js") > 1:
+        raise ContratoInvalido("status_fatos.js deve ter no máximo uma tag <script src>")
+    if raiz is not None and "status_fatos.js" in locais:
+        fatos = raiz / "facts.json"
+        if not fatos.is_file():
+            raise ContratoInvalido("status_fatos.js requer facts.json no artefato")
+        try:
+            dados = json.loads(fatos.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as erro:
+            raise ContratoInvalido(f"facts.json inválido: {erro}") from erro
+        if (
+            not isinstance(dados, dict)
+            or dados.get("schema_version") != 1
+            or not isinstance(dados.get("frentes"), list)
+            or not dados["frentes"]
+        ):
+            raise ContratoInvalido("facts.json não tem o contrato de frentes esperado")
+
     if locais.index("status_areas.js") > locais.index("status_sequence.js"):
         raise ContratoInvalido(
             "status_areas.js deve carregar antes de status_sequence.js"
