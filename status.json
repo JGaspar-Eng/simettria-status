@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-10-25T16:07:20Z",
+  "generated_at": "2026-10-25T17:09:36Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
-    "short_sha": "c02f1b52",
+    "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
+    "short_sha": "47c66aca",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T13:07:02-03:00",
-    "message": "merge: preservar alterações do Claude e integrar ao SIMETTRIA (#581)"
+    "date": "2026-10-25T14:09:18-03:00",
+    "message": "merge: cadeias geométricas e condensação de articulações (#582)"
   },
   "commits": [
+    {
+      "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
+      "short_sha": "47c66aca",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:09:18-03:00",
+      "message": "merge: cadeias geométricas e condensação de articulações (#582)"
+    },
+    {
+      "sha": "52f54e9f8b5be32d9b8b7fba38cbc10d083673d8",
+      "short_sha": "52f54e9f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:06:49-03:00",
+      "message": "test(ci): incluir regressões de cadeias e condensação na suíte oficial"
+    },
+    {
+      "sha": "587b806517099d2c4364bd70f244125c668e9954",
+      "short_sha": "587b8065",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:06:31-03:00",
+      "message": "feat(sa-l1): anexar auditoria geométrica sem elevar status de rigidez"
+    },
+    {
+      "sha": "35d426d8bb532e10d622af4c747faed996776932",
+      "short_sha": "35d426d8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:06:28-03:00",
+      "message": "feat(sa-l1): anexar auditoria geométrica sem elevar status de rigidez"
+    },
+    {
+      "sha": "993cf9741b91127f9390b39a1f557c66c934c15c",
+      "short_sha": "993cf974",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:06:10-03:00",
+      "message": "test(estrutura): liberacoes_flexionais_portico_reconciliacao.mjs"
+    },
+    {
+      "sha": "d71bce6f84f310ba09713f64d17d996ff231f547",
+      "short_sha": "d71bce6f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:06:07-03:00",
+      "message": "test(estrutura): diagnostico_cadeias_vigas.mjs"
+    },
+    {
+      "sha": "4270de40d4a695bfcc87ab0f79aa501fad6401be",
+      "short_sha": "4270de40",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:05:17-03:00",
+      "message": "feat(estrutura): liberacoes_flexionais_portico.js"
+    },
+    {
+      "sha": "0488443f4fe7dc044ef5cad76450c3e64fd8f21c",
+      "short_sha": "0488443f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:05:14-03:00",
+      "message": "feat(estrutura): diagnostico_cadeias_vigas.js"
+    },
     {
       "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
       "short_sha": "c02f1b52",
@@ -23,62 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-25T13:05:10-03:00",
       "message": "test(orq): usar terreo fisico nos cenarios viga-viga e copia de niveis"
-    },
-    {
-      "sha": "bd47ab56b53c57bf88a492ab3d7f0862f04fda19",
-      "short_sha": "bd47ab56",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-25T13:02:10-03:00",
-      "message": "fix(infraestrutura): restaurar controles ORQ e cadastro, preservar balanco na exclusao"
-    },
-    {
-      "sha": "cd9d385096f34ba483f8e630fc8e63ce37a66253",
-      "short_sha": "cd9d3850",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-25T12:53:29-03:00",
-      "message": "test(escada): verificar limpeza de avaliacao no controlador de exclusao"
-    },
-    {
-      "sha": "d2863208d89257ca8309b8d06bfc9ccb8725ad12",
-      "short_sha": "d2863208",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-25T12:50:51-03:00",
-      "message": "merge(main): reconciliar atualizacoes ORQ e testes com correcoes locais Claude"
-    },
-    {
-      "sha": "58743671016fab5e82e100a4746d0307a400c874",
-      "short_sha": "58743671",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-25T12:46:41-03:00",
-      "message": "feat(reconciliacao): preservar correcoes locais de pavimentos, fundacoes e UI"
-    },
-    {
-      "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
-      "short_sha": "eab190e0",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:46:03-03:00",
-      "message": "merge: consolidar cadeia de ORQ global, fundações e 2D/3D (#580)"
-    },
-    {
-      "sha": "f434bc5952d269b4e59bd52b2c78d257b843f598",
-      "short_sha": "f434bc59",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:41:51-03:00",
-      "message": "test(wizard): cobrir rótulo integrado de JSON e consulta Forecast"
-    },
-    {
-      "sha": "366d5ae642a5a1139a97c98903f1aeda393d1e20",
-      "short_sha": "366d5ae6",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:39:30-03:00",
-      "message": "test(fundacoes): refletir painel modal dialog na fixture DOM"
-    },
-    {
-      "sha": "a49fb52df028a3b6a853f15f3d1cf24dcbbd228b",
-      "short_sha": "a49fb52d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:37:16-03:00",
-      "message": "test(fundacoes): fixture de dialog modela showModal e close reais"
     }
   ],
   "development": {
@@ -3061,7 +3061,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 226,
+    "validator_count": 228,
     "validators": [
       {
         "name": "test:base",
@@ -3966,6 +3966,14 @@
       {
         "name": "test:cardinalidade-dinamica",
         "command": "node tests/validar_cardinalidade_dinamica_fundacoes.mjs"
+      },
+      {
+        "name": "test:cadeias-vigas",
+        "command": "node tests_support/diagnostico_cadeias_vigas.mjs"
+      },
+      {
+        "name": "test:liberacoes-flexionais",
+        "command": "node tests_support/liberacoes_flexionais_portico_reconciliacao.mjs"
       }
     ]
   },
@@ -3976,7 +3984,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40210144739",
-    "run_number": "937"
+    "run_id": "40215086862",
+    "run_number": "938"
   }
 }
