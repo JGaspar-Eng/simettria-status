@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T17:35:17Z",
+  "gerado_em": "2026-10-25T17:57:11Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
-    "data": "2026-10-25T17:34:28Z"
+    "sha": "1a9482ab26476163d8798db07db15bd45168ef24",
+    "data": "2026-10-25T17:56:09Z"
   },
   "publicado": {
-    "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
-    "gerado_em": "2026-10-25T17:30:30Z",
+    "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
+    "gerado_em": "2026-10-25T17:34:48Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 4,
-    "idade_horas": 0.1
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -152,11 +152,11 @@
           "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
           "data": "2026-10-25T14:34:28-03:00",
           "assunto": "merge: auditoria da segunda ordem independente das fundações (#585)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -296,7 +296,7 @@
           "url": "https://github.com/JGaspar-Eng/simettria/pull/585",
           "merge_sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
           "merged_at": "2026-10-25T17:34:29Z",
-          "ci": "pendente"
+          "ci": "passou"
         },
         "ultimo_commit": {
           "sha": "ee626810544f578d1520a1de6c5204ff72a39ff4",
@@ -306,7 +306,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -363,6 +363,7 @@
   ],
   "nao_classificados": {
     "abertos": [
+      587,
       576,
       564,
       561,
@@ -378,6 +379,7 @@
       310
     ],
     "integrados_recentes": [
+      586,
       582,
       578,
       577,
@@ -396,14 +398,13 @@
       467,
       464,
       462,
-      455,
-      458
+      455
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 479,
-  "commits_main_analisados": 2216,
+  "janela_prs": 481,
+  "commits_main_analisados": 2220,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-25T17:34:48Z",
+  "generated_at": "2026-10-25T17:56:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
-    "short_sha": "2852ace8",
+    "sha": "1a9482ab26476163d8798db07db15bd45168ef24",
+    "short_sha": "1a9482ab",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T14:34:28-03:00",
-    "message": "merge: auditoria da segunda ordem independente das fundações (#585)"
+    "date": "2026-10-25T14:56:09-03:00",
+    "message": "merge: placa Mindlin confirma contato integral por ações N/Mx/My (#586)"
   },
   "commits": [
+    {
+      "sha": "1a9482ab26476163d8798db07db15bd45168ef24",
+      "short_sha": "1a9482ab",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:56:09-03:00",
+      "message": "merge: placa Mindlin confirma contato integral por ações N/Mx/My (#586)"
+    },
+    {
+      "sha": "441f327d7258b8511eed0e27fd7333a6d9aeadac",
+      "short_sha": "441f327d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:54:09-03:00",
+      "message": "fix(test): corrigir coeficiente de canto qmin na fixture 2x2 m"
+    },
+    {
+      "sha": "866725e40e774cbd9a23cfa1f511262cedeb3abd",
+      "short_sha": "866725e4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:52:28-03:00",
+      "message": "test(placa): rejeitar qmin forjada e contato integral com tração"
+    },
+    {
+      "sha": "dabf7142b1b31d77d0a3445af1d8881503a6b029",
+      "short_sha": "dabf7142",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:52:00-03:00",
+      "message": "fix(placa): verificar qmin fisica contra N/Mx/My antes de aceitar contato integral"
+    },
     {
       "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
       "short_sha": "2852ace8",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:26:27-03:00",
       "message": "test(ui): garantir diagnóstico independente antes de encerrar indicador pendente"
-    },
-    {
-      "sha": "99fe6d05d5f96753e2322f4acfc4d0b5fe39d500",
-      "short_sha": "99fe6d05",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:23:56-03:00",
-      "message": "test(ci): validar desacoplamento de resultados ORQ na suíte oficial"
-    },
-    {
-      "sha": "cde24f2db7c9a6dfb981b46d9725aadc9174ba78",
-      "short_sha": "cde24f2d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:23:42-03:00",
-      "message": "test(orq): conferir leitura independente no runtime global real"
-    },
-    {
-      "sha": "4ba35ae5e1b262fb4d1cc0f85c527cc927da8c35",
-      "short_sha": "4ba35ae5",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:23:23-03:00",
-      "message": "test(orq): estados separados com 0 a 150 pilares e 8 ELU não certificados"
-    },
-    {
-      "sha": "4bb7f0fbe10d7706e4d07db8d95f75274bd4ebd9",
-      "short_sha": "4bb7f0fb",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:22:41-03:00",
-      "message": "feat(ui): exibir reações globais separadas da etapa de fundações"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40217126215",
-    "run_number": "941"
+    "run_id": "40218844412",
+    "run_number": "942"
   }
 }
