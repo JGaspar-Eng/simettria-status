@@ -1,21 +1,49 @@
 {
-  "generated_at": "2026-10-25T19:17:20Z",
+  "generated_at": "2026-10-25T19:19:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
-    "short_sha": "89175fd6",
+    "sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
+    "short_sha": "b1e56b09",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T16:17:01-03:00",
-    "message": "merge: 8 ELU de flexão comprovados antes da revisão de ancoragem (#594)"
+    "date": "2026-10-25T16:18:53-03:00",
+    "message": "merge: geotecnia USACE audita qmin qmax e caso governante (#595)"
   },
   "commits": [
+    {
+      "sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
+      "short_sha": "b1e56b09",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:18:53-03:00",
+      "message": "merge: geotecnia USACE audita qmin qmax e caso governante (#595)"
+    },
     {
       "sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
       "short_sha": "89175fd6",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:17:01-03:00",
       "message": "merge: 8 ELU de flexão comprovados antes da revisão de ancoragem (#594)"
+    },
+    {
+      "sha": "e6b17fe86d781e728590bc4da98fc78010086fc6",
+      "short_sha": "e6b17fe8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:16:23-03:00",
+      "message": "test(geotecnia): envelopes USACE por utilizacao e rejeicao de qmax adulterada"
+    },
+    {
+      "sha": "d4601314d7920afd71882d81b799124bbb02aade",
+      "short_sha": "d4601314",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:15:40-03:00",
+      "message": "fix(geo): restabelecer escopo do map ao adicionar reconciliacao dupla de pressoes"
+    },
+    {
+      "sha": "e23a4b0bf5caac0bba43f1e5677244b51f2f00d9",
+      "short_sha": "e23a4b0b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:15:18-03:00",
+      "message": "feat(geo): reconciliar qmin/qmax e eleger caso USACE critico por utilizacao"
     },
     {
       "sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:41:17-03:00",
       "message": "test(malha): massas por familia, adulteracao de quantitativo e ausencia de densidade"
-    },
-    {
-      "sha": "02181d2341da741be2962195fad86ffbfd5d74fc",
-      "short_sha": "02181d23",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:40:50-03:00",
-      "message": "feat(detalhamento): conferir massa de cada familia de barras com quantitativo da malha"
-    },
-    {
-      "sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
-      "short_sha": "e3cbac55",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:38:40-03:00",
-      "message": "test(placa): nao reaproveitar Mindlin/Winkler apos troca de sapata, apoio ou pilar"
-    },
-    {
-      "sha": "6362fc8a68455d71994219b34cb060658a40412d",
-      "short_sha": "6362fc8a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:38:20-03:00",
-      "message": "fix(placa): vincular estudos Mindlin/Winkler a sapata física e apoio atuais"
-    },
-    {
-      "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
-      "short_sha": "e0abbcca",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:15:26-03:00",
-      "message": "merge: ELS fissuracao verifica equilibrio de secao fissurada (#591)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40225294965",
-    "run_number": "951"
+    "run_id": "40225441352",
+    "run_number": "952"
   }
 }
