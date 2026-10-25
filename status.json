@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-25T22:22:13Z",
+  "generated_at": "2026-10-25T22:36:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
-    "short_sha": "35c271fd",
+    "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
+    "short_sha": "703c31de",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T19:21:37-03:00",
-    "message": "merge: memorial comprova ELU governante de armadura X/Y (#602)"
+    "date": "2026-10-25T19:36:19-03:00",
+    "message": "merge: painel fatos atualiza sem congelar em abas abertas (#603)"
   },
   "commits": [
+    {
+      "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
+      "short_sha": "703c31de",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:36:19-03:00",
+      "message": "merge: painel fatos atualiza sem congelar em abas abertas (#603)"
+    },
+    {
+      "sha": "96daf6b0565e56861fc520241eb99f8e616f91c3",
+      "short_sha": "96daf6b0",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:34:13-03:00",
+      "message": "fix(painel): mostrar aviso de falha de rede também quando última coleta já está vencida"
+    },
+    {
+      "sha": "b86ab07abfa20422ba2b5b72b4f00216667160d8",
+      "short_sha": "b86ab07a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:32:46-03:00",
+      "message": "fix(painel): forçar atualização do script da tabela factual no Pages"
+    },
+    {
+      "sha": "c8561d18e635eb637cf5851061319dc75cb2849d",
+      "short_sha": "c8561d18",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:32:33-03:00",
+      "message": "test(painel): polling real da tabela fatos, foco, mudança de main, falha e deduplicação"
+    },
+    {
+      "sha": "f4bfa2bfb3630c9a438b0b1adeb3d81cf3e32e47",
+      "short_sha": "f4bfa2bf",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:31:40-03:00",
+      "message": "fix(painel): atualizar fatos por minuto, foco e mudanças da main sem apagar última coleta"
+    },
     {
       "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
       "short_sha": "35c271fd",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:18:55-03:00",
       "message": "feat(armaduras): recomprovar caso governante As em X/Y antes de mostrar no memorial"
-    },
-    {
-      "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
-      "short_sha": "8eddba75",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:17:27-03:00",
-      "message": "merge: recalques diferenciais entre apoios ELS rastreados (#600)"
-    },
-    {
-      "sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
-      "short_sha": "b60662cc",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:16:45-03:00",
-      "message": "test(puncao): bloquear solicitações adulteradas e reprovar por demanda ELU genuína"
-    },
-    {
-      "sha": "56bfbbe7f5e132e06ec2d87f586e10ea10b98ed6",
-      "short_sha": "56bfbbe7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:16:05-03:00",
-      "message": "fix(puncao): recalcular demandas de cortante e contorno antes de aprovar comparação resistente"
-    },
-    {
-      "sha": "801630e8ec205797d495eafb5737392545884e33",
-      "short_sha": "801630e8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:13:23-03:00",
-      "message": "merge: placa Mindlin passa patch test de 3 movimentos rigidos (#599)"
-    },
-    {
-      "sha": "d4bf15b6423829fd254a456325b9cdac773de138",
-      "short_sha": "d4bf15b6",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:12:40-03:00",
-      "message": "test(els): diferencial entre dois apoios, horizonte, limites, fontes e pares invalidos"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40239823026",
-    "run_number": "959"
+    "run_id": "40240981498",
+    "run_number": "962"
   }
 }

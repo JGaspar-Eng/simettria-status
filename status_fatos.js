@@ -117,9 +117,11 @@
     var geradoMs = new Date(fatos.gerado_em).getTime();
     var horas = isNaN(geradoMs) ? null : (agoraMs - geradoMs) / 3600000;
     var limite = fatos.limite_horas || 6;
-    var aviso = "";
-    if (horas === null) aviso = '<div class="fatos-aviso">FATOS SEM DATA DE COLETA VÁLIDA</div>';
-    else if (horas > limite) aviso = '<div class="fatos-aviso">FATOS DESATUALIZADOS: coletados há ' + Math.floor(horas) + " h (limite " + limite + " h)</div>";
+    var aviso = erroCarga
+      ? '<div class="fatos-aviso">FALHA NA CONSULTA MAIS RECENTE: ' +
+        esc(erroCarga) + ". Exibindo a última coleta válida, sem inferir atualização.</div>" : "";
+    if (horas === null) aviso += '<div class="fatos-aviso">FATOS SEM DATA DE COLETA VÁLIDA</div>';
+    else if (horas > limite) aviso += '<div class="fatos-aviso">FATOS DESATUALIZADOS: coletados há ' + Math.floor(horas) + " h (limite " + limite + " h)</div>";
 
     var pub = fatos.publicado;
     var meta = "Coletado em " + esc(dataHora(fatos.gerado_em)) + " · main " + esc(sha7(fatos.main && fatos.main.sha) || "sem evidência") +
@@ -150,31 +152,79 @@
       style.textContent = ESTILO;
       document.head.appendChild(style);
     }
-    var antigo = document.getElementById("fatos-frentes");
-    if (antigo) antigo.remove();
-    var secao = document.createElement("section");
-    secao.id = "fatos-frentes";
-    secao.innerHTML = montarHtml(fatos, new Date(), erroCarga);
-    var alvo = document.getElementById("roadmap");
-    if (alvo && alvo.parentNode) alvo.parentNode.insertBefore(secao, alvo);
-    else (document.querySelector("main") || document.body).appendChild(secao);
+    var secao = document.getElementById("fatos-frentes");
+    if (!secao) {
+      secao = document.createElement("section");
+      secao.id = "fatos-frentes";
+      var alvo = document.getElementById("roadmap");
+      if (alvo && alvo.parentNode) alvo.parentNode.insertBefore(secao, alvo);
+      else (document.querySelector("main") || document.body).appendChild(secao);
+    }
+    var html = montarHtml(fatos, new Date(), erroCarga);
+    if (secao.innerHTML !== html) secao.innerHTML = html;
   }
 
+  // A tabela de fatos possui fonte e cadência próprias. A consulta única
+  // inicial a deixava congelada em abas abertas, apesar de status.json
+  // atualizar o resto da interface. Jamais ocultar defasagem real do Pages.
+  var ultimaColetaValida = null;
+  var consultaEmCurso = null;
+  var ultimoShaRecebidoDoStatus = null;
+  var INTERVALO_MS = 60000;
+
   function carregar() {
-    fetch("facts.json?t=" + Date.now(), { cache: "no-store" })
+    if (consultaEmCurso) return consultaEmCurso;
+    consultaEmCurso = fetch("facts.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         return r.json();
       })
-      .then(function (fatos) { instalar(fatos); })
-      .catch(function (erro) { instalar(null, String(erro && erro.message || erro)); });
+      .then(function (fatos) {
+        if (!fatos || !fatos.gerado_em || !fatos.main ||
+          !Array.isArray(fatos.frentes))
+          throw new Error("facts.json sem campos de coleta obrigatórios");
+        ultimaColetaValida = fatos;
+        instalar(fatos);
+        return true;
+      })
+      .catch(function (erro) {
+        // Se a rede falhar, não apagar os últimos fatos conhecidos nem
+        // fabricar estados "Publicado"/"Integrado" a partir de outro JSON.
+        instalar(ultimaColetaValida, String(erro && erro.message || erro));
+        return false;
+      })
+      .finally(function () { consultaEmCurso = null; });
+    return consultaEmCurso;
   }
 
   var api = { montarHtml: montarHtml, instalar: instalar, carregar: carregar };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   if (typeof window !== "undefined") {
     window.SimettriaStatusFatos = api;
-    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", carregar, { once: true });
+    if (document.readyState === "loading")
+      document.addEventListener("DOMContentLoaded", carregar, { once: true });
     else carregar();
+
+    if (typeof window.setInterval === "function")
+      window.setInterval(function () {
+        if (!document.hidden) carregar();
+      }, INTERVALO_MS);
+    if (typeof document.addEventListener === "function")
+      document.addEventListener("visibilitychange", function () {
+        if (!document.hidden) carregar();
+      });
+    if (typeof window.addEventListener === "function") {
+      window.addEventListener("focus", function () {
+        if (!document.hidden) carregar();
+      });
+      window.addEventListener("simettria:status", function (evento) {
+        var sha = evento && evento.detail && evento.detail.head &&
+          evento.detail.head.sha;
+        if (sha && sha !== ultimoShaRecebidoDoStatus) {
+          ultimoShaRecebidoDoStatus = sha;
+          carregar();
+        }
+      });
+    }
   }
 })();

@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T22:22:54Z",
+  "gerado_em": "2026-10-25T22:37:29Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
-    "data": "2026-10-25T22:21:37Z"
+    "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
+    "data": "2026-10-25T22:36:19Z"
   },
   "publicado": {
-    "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
-    "gerado_em": "2026-10-25T22:20:59Z",
+    "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+    "gerado_em": "2026-10-25T22:22:13Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 4,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -197,17 +197,17 @@
           "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
           "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
           "merged_at": "2026-10-25T22:21:38Z",
-          "ci": "pendente"
+          "ci": "passou"
         },
         "ultimo_commit": {
           "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
           "data": "2026-10-25T19:21:37-03:00",
           "assunto": "merge: memorial comprova ELU governante de armadura X/Y (#602)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -378,6 +378,7 @@
       310
     ],
     "integrados_recentes": [
+      603,
       601,
       600,
       599,
@@ -396,14 +397,13 @@
       577,
       537,
       536,
-      535,
-      534
+      535
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 496,
-  "commits_main_analisados": 2275,
+  "janela_prs": 497,
+  "commits_main_analisados": 2280,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
