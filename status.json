@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-25T19:36:49Z",
+  "generated_at": "2026-10-25T22:13:42Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3503d7aa3ffed9934d2f6be47247e5336cc254e5",
-    "short_sha": "3503d7aa",
+    "sha": "801630e8ec205797d495eafb5737392545884e33",
+    "short_sha": "801630e8",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T16:36:31-03:00",
-    "message": "merge: energia de placa e molas Winkler conciliada nos oito ELU (#598)"
+    "date": "2026-10-25T19:13:23-03:00",
+    "message": "merge: placa Mindlin passa patch test de 3 movimentos rigidos (#599)"
   },
   "commits": [
+    {
+      "sha": "801630e8ec205797d495eafb5737392545884e33",
+      "short_sha": "801630e8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:13:23-03:00",
+      "message": "merge: placa Mindlin passa patch test de 3 movimentos rigidos (#599)"
+    },
+    {
+      "sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
+      "short_sha": "230125b1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:10:36-03:00",
+      "message": "test(placa): patch test dos 3 modos nas duas malhas e matriz identidade rejeitada"
+    },
+    {
+      "sha": "feac3b26c1a4aec748e8589a28605fcf94d7f131",
+      "short_sha": "feac3b26",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:10:13-03:00",
+      "message": "feat(placa): aplicar patch test de 3 modos rígidos ao K livre antes de impor referência"
+    },
     {
       "sha": "3503d7aa3ffed9934d2f6be47247e5336cc254e5",
       "short_sha": "3503d7aa",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:25:38-03:00",
       "message": "feat(memorial): publicar energia e deslocamentos comparados entre duas malhas sem validar convergencia"
-    },
-    {
-      "sha": "67423835a114126ec797749a36822f2ad27475a8",
-      "short_sha": "67423835",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:25:11-03:00",
-      "message": "merge: memorial confere e publica massas reais da malha preliminar (#596)"
-    },
-    {
-      "sha": "645ff1fd83f629989ee395f5fb458e7d47a01c73",
-      "short_sha": "645ff1fd",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:24:45-03:00",
-      "message": "test(placa): energia positiva, identidade uTKu=uTf e sensibilidade ao refinamento/E"
-    },
-    {
-      "sha": "ecb68df444a7dba9ac9ee5cc16c2867d3e3ab54b",
-      "short_sha": "ecb68df4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:24:20-03:00",
-      "message": "feat(placa): provar energia por uTf e uTKu e ampliar sensibilidade a refino"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40226838571",
-    "run_number": "955"
+    "run_id": "40239173346",
+    "run_number": "956"
   }
 }
