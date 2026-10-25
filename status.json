@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-25T19:19:09Z",
+  "generated_at": "2026-10-25T19:25:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
-    "short_sha": "b1e56b09",
+    "sha": "67423835a114126ec797749a36822f2ad27475a8",
+    "short_sha": "67423835",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T16:18:53-03:00",
-    "message": "merge: geotecnia USACE audita qmin qmax e caso governante (#595)"
+    "date": "2026-10-25T16:25:11-03:00",
+    "message": "merge: memorial confere e publica massas reais da malha preliminar (#596)"
   },
   "commits": [
+    {
+      "sha": "67423835a114126ec797749a36822f2ad27475a8",
+      "short_sha": "67423835",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:25:11-03:00",
+      "message": "merge: memorial confere e publica massas reais da malha preliminar (#596)"
+    },
+    {
+      "sha": "f39d3f103d7456c140adaec5e0d4f58e424a5633",
+      "short_sha": "f39d3f10",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:22:36-03:00",
+      "message": "test(memorial): massa com origem conciliada e cinco corrupções não publicáveis"
+    },
+    {
+      "sha": "2b1ba139dfe644f9abfc40706c510673dc5a6d94",
+      "short_sha": "2b1ba139",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:21:57-03:00",
+      "message": "fix(dossie): conferir novamente massa reta contra geometria antes de exibir no memorial"
+    },
+    {
+      "sha": "36da15fc31d7618d7be610ebb35d00fc485e5c34",
+      "short_sha": "36da15fc",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:20:29-03:00",
+      "message": "feat(memorial): publicar massas por familia e total com origem e aviso não executivo"
+    },
+    {
+      "sha": "ed164769b4598927789e0b9c73b806b024acc3e8",
+      "short_sha": "ed164769",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:19:35-03:00",
+      "message": "feat(dossie): expor massa auditada de malha reta sem inferir quantitativo executivo"
+    },
     {
       "sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
       "short_sha": "b1e56b09",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:15:18-03:00",
       "message": "feat(geo): reconciliar qmin/qmax e eleger caso USACE critico por utilizacao"
-    },
-    {
-      "sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
-      "short_sha": "4b39bae8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:13:40-03:00",
-      "message": "test(nbr): entradas reais de As e cenarios obsoletos/WAITING/duplicados bloqueiam ancoragem"
-    },
-    {
-      "sha": "2e433bb67881f3e6251f74a8c98cf656f1c37010",
-      "short_sha": "2e433bb6",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:12:58-03:00",
-      "message": "fix(nbr): exigir 8 provas de flexao por caso antes de calcular envelope As e ancoragens"
-    },
-    {
-      "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
-      "short_sha": "35729da9",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:43:29-03:00",
-      "message": "merge: malha preliminar audita massa por familia de armaduras (#593)"
-    },
-    {
-      "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
-      "short_sha": "850cf546",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:42:03-03:00",
-      "message": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)"
-    },
-    {
-      "sha": "a5f9fdddc2f7d471530a8c6735b311c5be73476c",
-      "short_sha": "a5f9fddd",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:41:17-03:00",
-      "message": "test(malha): massas por familia, adulteracao de quantitativo e ausencia de densidade"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40225441352",
-    "run_number": "952"
+    "run_id": "40225946212",
+    "run_number": "953"
   }
 }
