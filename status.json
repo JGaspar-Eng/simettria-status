@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-25T17:57:56Z",
+  "generated_at": "2026-10-25T18:01:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
-    "short_sha": "e2e816cf",
+    "sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
+    "short_sha": "e6d2d246",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T14:57:37-03:00",
-    "message": "merge: auditoria SPT detecta furos repetidos e NA invalido (#587)"
+    "date": "2026-10-25T15:00:58-03:00",
+    "message": "merge: teste SPT suporta cardinalidade real do projeto (#588)"
   },
   "commits": [
+    {
+      "sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
+      "short_sha": "e6d2d246",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:00:58-03:00",
+      "message": "merge: teste SPT suporta cardinalidade real do projeto (#588)"
+    },
+    {
+      "sha": "fd754b3a9b66a87f6b8102dd8bd1672b01545f44",
+      "short_sha": "fd754b3a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:58:44-03:00",
+      "message": "test(geotecnia): remover suposicao de 40 pilares e 2 furos do teste JSON real"
+    },
     {
       "sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
       "short_sha": "e2e816cf",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:34:28-03:00",
       "message": "merge: auditoria da segunda ordem independente das fundações (#585)"
-    },
-    {
-      "sha": "db8f61b87ca4996abb0df3ba6a6a77b0b306560a",
-      "short_sha": "db8f61b8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:32:15-03:00",
-      "message": "test(ci): registrar auditoria de segunda ordem na main atual"
-    },
-    {
-      "sha": "ee626810544f578d1520a1de6c5204ff72a39ff4",
-      "short_sha": "ee626810",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:32:03-03:00",
-      "message": "test(orq): cenarios de segunda ordem independente dinamica"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40218953449",
-    "run_number": "943"
+    "run_id": "40219222471",
+    "run_number": "944"
   }
 }
