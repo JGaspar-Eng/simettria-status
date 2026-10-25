@@ -1,21 +1,49 @@
 {
-  "generated_at": "2026-10-25T22:20:59Z",
+  "generated_at": "2026-10-25T22:22:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
-    "short_sha": "aa549bff",
+    "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+    "short_sha": "35c271fd",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T19:20:39-03:00",
-    "message": "merge: punção e cortante reexecutam demanda canonica por ELU (#601)"
+    "date": "2026-10-25T19:21:37-03:00",
+    "message": "merge: memorial comprova ELU governante de armadura X/Y (#602)"
   },
   "commits": [
+    {
+      "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+      "short_sha": "35c271fd",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:21:37-03:00",
+      "message": "merge: memorial comprova ELU governante de armadura X/Y (#602)"
+    },
     {
       "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
       "short_sha": "aa549bff",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:20:39-03:00",
       "message": "merge: punção e cortante reexecutam demanda canonica por ELU (#601)"
+    },
+    {
+      "sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
+      "short_sha": "1b7516c1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:19:52-03:00",
+      "message": "test(detalhamento): oito ELU governantes, memorial e cinco adulteracoes bloqueadas"
+    },
+    {
+      "sha": "491cf6f590a6f365caacf39929c6024fd053c00e",
+      "short_sha": "491cf6f5",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:19:12-03:00",
+      "message": "feat(memorial): identificar ELU governante de As em X/Y apenas com oito provas"
+    },
+    {
+      "sha": "8aa87bceb65864a3a4bdb477afa4955c05a6ffa3",
+      "short_sha": "8aa87bce",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:18:55-03:00",
+      "message": "feat(armaduras): recomprovar caso governante As em X/Y antes de mostrar no memorial"
     },
     {
       "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:12:40-03:00",
       "message": "test(els): diferencial entre dois apoios, horizonte, limites, fontes e pares invalidos"
-    },
-    {
-      "sha": "9a00409e39c8a980f11dd6f473cdfde87adbf75c",
-      "short_sha": "9a00409e",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:12:00-03:00",
-      "message": "feat(els): confrontar recalque diferencial e distorção angular entre apoios sob casos coincidentes"
-    },
-    {
-      "sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
-      "short_sha": "230125b1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:10:36-03:00",
-      "message": "test(placa): patch test dos 3 modos nas duas malhas e matriz identidade rejeitada"
-    },
-    {
-      "sha": "feac3b26c1a4aec748e8589a28605fcf94d7f131",
-      "short_sha": "feac3b26",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:10:13-03:00",
-      "message": "feat(placa): aplicar patch test de 3 modos rígidos ao K livre antes de impor referência"
-    },
-    {
-      "sha": "3503d7aa3ffed9934d2f6be47247e5336cc254e5",
-      "short_sha": "3503d7aa",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:36:31-03:00",
-      "message": "merge: energia de placa e molas Winkler conciliada nos oito ELU (#598)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40239747819",
-    "run_number": "958"
+    "run_id": "40239823026",
+    "run_number": "959"
   }
 }

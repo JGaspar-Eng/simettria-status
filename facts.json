@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T22:21:53Z",
+  "gerado_em": "2026-10-25T22:22:54Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
-    "data": "2026-10-25T22:20:39Z"
+    "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+    "data": "2026-10-25T22:21:37Z"
   },
   "publicado": {
-    "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
-    "gerado_em": "2026-10-25T22:17:45Z",
+    "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
+    "gerado_em": "2026-10-25T22:20:59Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 3,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 4,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -171,14 +171,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 602,
-            "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
-            "rascunho": true,
-            "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
-            "ci": "passou"
-          },
-          {
             "numero": 567,
             "titulo": "Armaduras: arraste longitudinal tipo Forecast com cobertura de flexão dos 8 ELU",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/567",
@@ -198,24 +190,24 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 5,
+        "total_integrados": 6,
         "ultimo": {
-          "numero": 596,
-          "titulo": "Memorial de armaduras: expor massa da malha apenas com reconciliação geométrica",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/596",
-          "merge_sha": "67423835a114126ec797749a36822f2ad27475a8",
-          "merged_at": "2026-10-25T19:25:11Z",
-          "ci": "passou"
+          "numero": 602,
+          "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
+          "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+          "merged_at": "2026-10-25T22:21:38Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
-          "data": "2026-10-25T15:43:29-03:00",
-          "assunto": "merge: malha preliminar audita massa por familia de armaduras (#593)",
-          "ci": "passou"
+          "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+          "data": "2026-10-25T19:21:37-03:00",
+          "assunto": "merge: memorial comprova ELU governante de armadura X/Y (#602)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -411,7 +403,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 496,
-  "commits_main_analisados": 2271,
+  "commits_main_analisados": 2275,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
