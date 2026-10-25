@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-25T17:30:30Z",
+  "generated_at": "2026-10-25T17:34:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
-    "short_sha": "12de2de5",
+    "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
+    "short_sha": "2852ace8",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T14:30:10-03:00",
-    "message": "merge: reações globais visíveis apesar das pendências de fundações (#583)"
+    "date": "2026-10-25T14:34:28-03:00",
+    "message": "merge: auditoria da segunda ordem independente das fundações (#585)"
   },
   "commits": [
+    {
+      "sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
+      "short_sha": "2852ace8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:34:28-03:00",
+      "message": "merge: auditoria da segunda ordem independente das fundações (#585)"
+    },
+    {
+      "sha": "db8f61b87ca4996abb0df3ba6a6a77b0b306560a",
+      "short_sha": "db8f61b8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:32:15-03:00",
+      "message": "test(ci): registrar auditoria de segunda ordem na main atual"
+    },
+    {
+      "sha": "ee626810544f578d1520a1de6c5204ff72a39ff4",
+      "short_sha": "ee626810",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:32:03-03:00",
+      "message": "test(orq): cenarios de segunda ordem independente dinamica"
+    },
+    {
+      "sha": "4e55254e79ab9fe3f6a64ce078608db3115ba8c8",
+      "short_sha": "4e55254e",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:32:01-03:00",
+      "message": "feat(orq): reconhecer 8 ELU convergidos sem dependência de fundações"
+    },
     {
       "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
       "short_sha": "12de2de5",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:22:41-03:00",
       "message": "feat(ui): exibir reações globais separadas da etapa de fundações"
-    },
-    {
-      "sha": "251f7d2cfda856138a7b9df0bd6986454ae81131",
-      "short_sha": "251f7d2c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:21:35-03:00",
-      "message": "feat(orq): prova de reações independente das pendências de fundação"
-    },
-    {
-      "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
-      "short_sha": "47c66aca",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:09:18-03:00",
-      "message": "merge: cadeias geométricas e condensação de articulações (#582)"
-    },
-    {
-      "sha": "52f54e9f8b5be32d9b8b7fba38cbc10d083673d8",
-      "short_sha": "52f54e9f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:06:49-03:00",
-      "message": "test(ci): incluir regressões de cadeias e condensação na suíte oficial"
-    },
-    {
-      "sha": "587b806517099d2c4364bd70f244125c668e9954",
-      "short_sha": "587b8065",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:06:31-03:00",
-      "message": "feat(sa-l1): anexar auditoria geométrica sem elevar status de rigidez"
     }
   ],
   "development": {
@@ -3061,7 +3061,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 229,
+    "validator_count": 230,
     "validators": [
       {
         "name": "test:base",
@@ -3978,6 +3978,10 @@
       {
         "name": "test:orq-resultados-independentes",
         "command": "node tests/validar_orq_resultados_independentes.mjs"
+      },
+      {
+        "name": "test:orq-segunda-ordem-auditoria",
+        "command": "node tests/validar_auditoria_segunda_ordem_independente.mjs"
       }
     ]
   },
@@ -3988,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40216774273",
-    "run_number": "939"
+    "run_id": "40217126215",
+    "run_number": "941"
   }
 }
