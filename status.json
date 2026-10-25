@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-25T18:43:44Z",
+  "generated_at": "2026-10-25T19:17:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
-    "short_sha": "35729da9",
+    "sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+    "short_sha": "89175fd6",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T15:43:29-03:00",
-    "message": "merge: malha preliminar audita massa por familia de armaduras (#593)"
+    "date": "2026-10-25T16:17:01-03:00",
+    "message": "merge: 8 ELU de flexão comprovados antes da revisão de ancoragem (#594)"
   },
   "commits": [
+    {
+      "sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+      "short_sha": "89175fd6",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:17:01-03:00",
+      "message": "merge: 8 ELU de flexão comprovados antes da revisão de ancoragem (#594)"
+    },
+    {
+      "sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
+      "short_sha": "4b39bae8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:13:40-03:00",
+      "message": "test(nbr): entradas reais de As e cenarios obsoletos/WAITING/duplicados bloqueiam ancoragem"
+    },
+    {
+      "sha": "2e433bb67881f3e6251f74a8c98cf656f1c37010",
+      "short_sha": "2e433bb6",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T16:12:58-03:00",
+      "message": "fix(nbr): exigir 8 provas de flexao por caso antes de calcular envelope As e ancoragens"
+    },
     {
       "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
       "short_sha": "35729da9",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:15:26-03:00",
       "message": "merge: ELS fissuracao verifica equilibrio de secao fissurada (#591)"
-    },
-    {
-      "sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
-      "short_sha": "6a073720",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:14:17-03:00",
-      "message": "merge: geotecnia distingue SPT com e sem N conforme resultado canonico (#590)"
-    },
-    {
-      "sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
-      "short_sha": "af9cbbd1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:13:33-03:00",
-      "message": "test(els): provar tracao=compressao e momento em X/Y incluindo M zero e escalado"
-    },
-    {
-      "sha": "2cf5adb7f3a5140c1d2c800aaa7333f779fbef79",
-      "short_sha": "2cf5adb7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:13:09-03:00",
-      "message": "feat(els): verificar equilibrio axial e momento da secao fissurada por faixa"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40222606145",
-    "run_number": "950"
+    "run_id": "40225294965",
+    "run_number": "951"
   }
 }

@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T18:44:13Z",
+  "gerado_em": "2026-10-25T19:17:54Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
-    "data": "2026-10-25T18:43:29Z"
+    "sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+    "data": "2026-10-25T19:17:01Z"
   },
   "publicado": {
-    "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
-    "gerado_em": "2026-10-25T18:42:22Z",
+    "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
+    "gerado_em": "2026-10-25T18:43:44Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 3,
-    "idade_horas": 0.0
+    "idade_horas": 0.6
   },
   "frentes": [
     {
@@ -197,17 +197,17 @@
           "url": "https://github.com/JGaspar-Eng/simettria/pull/593",
           "merge_sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
           "merged_at": "2026-10-25T18:43:29Z",
-          "ci": "pendente"
+          "ci": "passou"
         },
         "ultimo_commit": {
           "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
           "data": "2026-10-25T15:43:29-03:00",
           "assunto": "merge: malha preliminar audita massa por familia de armaduras (#593)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -340,29 +340,30 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 20,
+        "total_integrados": 21,
         "ultimo": {
-          "numero": 527,
-          "titulo": "feat(escada): ESCADA-DIM-01 Fase A — geometria preliminar (NBR9050)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/527",
-          "merge_sha": "ffded915c9e2b15f57871abb247ae186a58907bd",
-          "merged_at": "2026-09-14T16:15:04Z",
-          "ci": "passou"
+          "numero": 594,
+          "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/594",
+          "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+          "merged_at": "2026-10-25T19:17:02Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "70f0510b5cbd246f3231977375c21eaac2da56bf",
-          "data": "2026-10-21T09:12:20-03:00",
-          "assunto": "fix(audit): initialize evidence collection before first use in effective NBR category proof",
-          "ci": "sem_evidencia"
+          "sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
+          "data": "2026-10-25T16:13:40-03:00",
+          "assunto": "test(nbr): entradas reais de As e cenarios obsoletos/WAITING/duplicados bloqueiam ancoragem",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
   "nao_classificados": {
     "abertos": [
+      595,
       576,
       564,
       561,
@@ -402,8 +403,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 487,
-  "commits_main_analisados": 2241,
+  "janela_prs": 489,
+  "commits_main_analisados": 2244,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
