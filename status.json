@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-10-25T17:56:29Z",
+  "generated_at": "2026-10-25T17:57:56Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1a9482ab26476163d8798db07db15bd45168ef24",
-    "short_sha": "1a9482ab",
+    "sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
+    "short_sha": "e2e816cf",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T14:56:09-03:00",
-    "message": "merge: placa Mindlin confirma contato integral por ações N/Mx/My (#586)"
+    "date": "2026-10-25T14:57:37-03:00",
+    "message": "merge: auditoria SPT detecta furos repetidos e NA invalido (#587)"
   },
   "commits": [
+    {
+      "sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
+      "short_sha": "e2e816cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:57:37-03:00",
+      "message": "merge: auditoria SPT detecta furos repetidos e NA invalido (#587)"
+    },
     {
       "sha": "1a9482ab26476163d8798db07db15bd45168ef24",
       "short_sha": "1a9482ab",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:56:09-03:00",
       "message": "merge: placa Mindlin confirma contato integral por ações N/Mx/My (#586)"
+    },
+    {
+      "sha": "70416a671354aca2f0cd01908a2f0c95b8b104a0",
+      "short_sha": "70416a67",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:55:28-03:00",
+      "message": "test(geo): sondagem duplicada bloqueia 18 associacoes e NA invalido sem quebra de legado"
+    },
+    {
+      "sha": "7689647119a4b47681e62c9daf85596876ca53db",
+      "short_sha": "76896471",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:55:05-03:00",
+      "message": "fix(geotecnia): rejeitar furo duplicado e NA explicitamente invalido sem alterar legado"
     },
     {
       "sha": "441f327d7258b8511eed0e27fd7333a6d9aeadac",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:32:03-03:00",
       "message": "test(orq): cenarios de segunda ordem independente dinamica"
-    },
-    {
-      "sha": "4e55254e79ab9fe3f6a64ce078608db3115ba8c8",
-      "short_sha": "4e55254e",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:32:01-03:00",
-      "message": "feat(orq): reconhecer 8 ELU convergidos sem dependência de fundações"
-    },
-    {
-      "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
-      "short_sha": "12de2de5",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:30:10-03:00",
-      "message": "merge: reações globais visíveis apesar das pendências de fundações (#583)"
-    },
-    {
-      "sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
-      "short_sha": "f07b12a2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:26:27-03:00",
-      "message": "test(ui): garantir diagnóstico independente antes de encerrar indicador pendente"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40218844412",
-    "run_number": "942"
+    "run_id": "40218953449",
+    "run_number": "943"
   }
 }
