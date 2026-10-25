@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-10-25T22:17:45Z",
+  "generated_at": "2026-10-25T22:20:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
-    "short_sha": "8eddba75",
+    "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
+    "short_sha": "aa549bff",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T19:17:27-03:00",
-    "message": "merge: recalques diferenciais entre apoios ELS rastreados (#600)"
+    "date": "2026-10-25T19:20:39-03:00",
+    "message": "merge: punção e cortante reexecutam demanda canonica por ELU (#601)"
   },
   "commits": [
+    {
+      "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
+      "short_sha": "aa549bff",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:20:39-03:00",
+      "message": "merge: punção e cortante reexecutam demanda canonica por ELU (#601)"
+    },
     {
       "sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
       "short_sha": "8eddba75",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:17:27-03:00",
       "message": "merge: recalques diferenciais entre apoios ELS rastreados (#600)"
+    },
+    {
+      "sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
+      "short_sha": "b60662cc",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:16:45-03:00",
+      "message": "test(puncao): bloquear solicitações adulteradas e reprovar por demanda ELU genuína"
+    },
+    {
+      "sha": "56bfbbe7f5e132e06ec2d87f586e10ea10b98ed6",
+      "short_sha": "56bfbbe7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T19:16:05-03:00",
+      "message": "fix(puncao): recalcular demandas de cortante e contorno antes de aprovar comparação resistente"
     },
     {
       "sha": "801630e8ec205797d495eafb5737392545884e33",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T16:36:31-03:00",
       "message": "merge: energia de placa e molas Winkler conciliada nos oito ELU (#598)"
-    },
-    {
-      "sha": "b80188346993e58ffff202b99afa7e1d15820902",
-      "short_sha": "b8018834",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:34:08-03:00",
-      "message": "test(memorial): exibir auditoria energética Winkler e qualificar escopo"
-    },
-    {
-      "sha": "bdb4ebfe724c663ff4c93c7cedfcd3c18105047d",
-      "short_sha": "bdb4ebfe",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:33:54-03:00",
-      "message": "feat(memorial): apresentar energia da placa e do solo Winkler sem confundir com recalque"
-    },
-    {
-      "sha": "01a9620584e15692cd093a4ca4463621f9b06089",
-      "short_sha": "01a96205",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T16:33:40-03:00",
-      "message": "test(winkler): decomposição energética nos oito ELU e rigidez do solo aumentada"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40239497577",
-    "run_number": "957"
+    "run_id": "40239747819",
+    "run_number": "958"
   }
 }
