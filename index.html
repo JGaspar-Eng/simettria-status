@@ -880,7 +880,7 @@
 
 </main>
 
-<div class="sync-toast" id="sync-toast" aria-hidden="true">Novo estado do SIMETTRIA carregado agora</div>
+<div class="sync-toast" id="sync-toast" aria-hidden="true">Novo arquivo de status carregado</div>
 
 <footer class="site">
   <div class="wrap row">
@@ -1105,7 +1105,7 @@
   }
 
   function destacarNovoEstado() {
-    definirEstadoSync("updated", "Novo estado do SIMETTRIA carregado agora");
+    definirEstadoSync("updated", "Novo arquivo de status carregado");
     var toast = el("sync-toast");
     if (toast) toast.classList.add("show");
     if (timerDestaque) clearTimeout(timerDestaque);
@@ -1114,7 +1114,11 @@
       if (toast) toast.classList.remove("show");
       var card = el("sync-card");
       if (card && card.getAttribute("data-sync-state") === "updated") {
-        definirEstadoSync("ok", "Painel sincronizado");
+        var geradoEm = Date.parse((ultimoStatusValido || {}).generated_at || "");
+        var desatualizado = !Number.isFinite(geradoEm) || Date.now() - geradoEm > 24 * 60 * 60 * 1000;
+        definirEstadoSync(desatualizado ? "offline" : "ok", desatualizado
+          ? "Dados desatualizados; desenvolvimento não verificado"
+          : "Arquivo consultado; desenvolvimento não verificado");
       }
     }, DESTAQUE_NOVO_ESTADO_MS);
   }
@@ -1190,9 +1194,15 @@
         if (atualizarInterfacePublicadaSeNecessario(status)) return false;
         var houveTroca = aplicarStatus(status);
         hideError();
-        definirVerificadoEm("Verificado agora às " + fmtHora(new Date()));
+        definirVerificadoEm("Arquivo consultado às " + fmtHora(new Date()));
         if (houveTroca) destacarNovoEstado();
-        else if (!timerDestaque) definirEstadoSync("ok", "Painel sincronizado");
+        else if (!timerDestaque) {
+          var geradoEm = Date.parse(status.generated_at || "");
+          var desatualizado = !Number.isFinite(geradoEm) || Date.now() - geradoEm > 24 * 60 * 60 * 1000;
+          definirEstadoSync(desatualizado ? "offline" : "ok", desatualizado
+            ? "Dados desatualizados; desenvolvimento não verificado"
+            : "Arquivo consultado; desenvolvimento não verificado");
+        }
         return houveTroca;
       })
       .catch(function (error) {
