@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-10-25T18:42:22Z",
+  "generated_at": "2026-10-25T18:43:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
-    "short_sha": "850cf546",
+    "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
+    "short_sha": "35729da9",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T15:42:03-03:00",
-    "message": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)"
+    "date": "2026-10-25T15:43:29-03:00",
+    "message": "merge: malha preliminar audita massa por familia de armaduras (#593)"
   },
   "commits": [
+    {
+      "sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
+      "short_sha": "35729da9",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:43:29-03:00",
+      "message": "merge: malha preliminar audita massa por familia de armaduras (#593)"
+    },
     {
       "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
       "short_sha": "850cf546",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:42:03-03:00",
       "message": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)"
+    },
+    {
+      "sha": "a5f9fdddc2f7d471530a8c6735b311c5be73476c",
+      "short_sha": "a5f9fddd",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:41:17-03:00",
+      "message": "test(malha): massas por familia, adulteracao de quantitativo e ausencia de densidade"
+    },
+    {
+      "sha": "02181d2341da741be2962195fad86ffbfd5d74fc",
+      "short_sha": "02181d23",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:40:50-03:00",
+      "message": "feat(detalhamento): conferir massa de cada familia de barras com quantitativo da malha"
     },
     {
       "sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:13:09-03:00",
       "message": "feat(els): verificar equilibrio axial e momento da secao fissurada por faixa"
-    },
-    {
-      "sha": "95f0a0a5628052c8f36863157c18ce927f625218",
-      "short_sha": "95f0a0a5",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:10:48-03:00",
-      "message": "test(geo): PH sem N, ordinario derivado, desconhecido bloqueado e N divergente auditado"
-    },
-    {
-      "sha": "18a90fc6ad8bb7e6ce39a86631546e4fc591a4e6",
-      "short_sha": "18a90fc6",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:10:21-03:00",
-      "message": "fix(geo): exigir medição para resultados SPT não ordinários sem N"
-    },
-    {
-      "sha": "b461f1010a4c95b2ff8b610dccde2336595f7996",
-      "short_sha": "b461f101",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:09:56-03:00",
-      "message": "fix(geo): diagnosticar SPT pela cravação canônica e distinguir camada sem índice N"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40222492722",
-    "run_number": "949"
+    "run_id": "40222606145",
+    "run_number": "950"
   }
 }
