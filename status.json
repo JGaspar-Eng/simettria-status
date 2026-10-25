@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-10-25T18:14:37Z",
+  "generated_at": "2026-10-25T18:15:46Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
-    "short_sha": "6a073720",
+    "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
+    "short_sha": "e0abbcca",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T15:14:17-03:00",
-    "message": "merge: geotecnia distingue SPT com e sem N conforme resultado canonico (#590)"
+    "date": "2026-10-25T15:15:26-03:00",
+    "message": "merge: ELS fissuracao verifica equilibrio de secao fissurada (#591)"
   },
   "commits": [
+    {
+      "sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
+      "short_sha": "e0abbcca",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:15:26-03:00",
+      "message": "merge: ELS fissuracao verifica equilibrio de secao fissurada (#591)"
+    },
     {
       "sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
       "short_sha": "6a073720",
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:14:17-03:00",
       "message": "merge: geotecnia distingue SPT com e sem N conforme resultado canonico (#590)"
+    },
+    {
+      "sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
+      "short_sha": "af9cbbd1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:13:33-03:00",
+      "message": "test(els): provar tracao=compressao e momento em X/Y incluindo M zero e escalado"
+    },
+    {
+      "sha": "2cf5adb7f3a5140c1d2c800aaa7333f779fbef79",
+      "short_sha": "2cf5adb7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T15:13:09-03:00",
+      "message": "feat(els): verificar equilibrio axial e momento da secao fissurada por faixa"
     },
     {
       "sha": "95f0a0a5628052c8f36863157c18ce927f625218",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T15:06:09-03:00",
       "message": "feat(puncao): comprovar equilíbrio V/Mx/My com quadratura numérica independente dos momentos J"
-    },
-    {
-      "sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
-      "short_sha": "e6d2d246",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T15:00:58-03:00",
-      "message": "merge: teste SPT suporta cardinalidade real do projeto (#588)"
-    },
-    {
-      "sha": "fd754b3a9b66a87f6b8102dd8bd1672b01545f44",
-      "short_sha": "fd754b3a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:58:44-03:00",
-      "message": "test(geotecnia): remover suposicao de 40 pilares e 2 furos do teste JSON real"
-    },
-    {
-      "sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
-      "short_sha": "e2e816cf",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:57:37-03:00",
-      "message": "merge: auditoria SPT detecta furos repetidos e NA invalido (#587)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40220282995",
-    "run_number": "946"
+    "run_id": "40220380103",
+    "run_number": "947"
   }
 }
