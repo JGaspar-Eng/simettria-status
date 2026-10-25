@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T15:46:55Z",
+  "gerado_em": "2026-10-25T16:07:52Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
-    "data": "2026-10-25T15:46:03Z"
+    "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
+    "data": "2026-10-25T16:07:02Z"
   },
   "publicado": {
-    "sha": "b3c69bc251a6d4a45d4697c46b02def18381ba98",
-    "gerado_em": "2026-10-25T15:08:29Z",
+    "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
+    "gerado_em": "2026-10-25T15:46:24Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 253,
-    "idade_horas": 0.6
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -39,14 +39,14 @@
           "ci": "passou"
         },
         "ultimo_commit": {
-          "sha": "0ab32da2fd70dad496798fe0f30b1d2a514e8532",
-          "data": "2026-10-16T09:31:33-03:00",
-          "assunto": "feat(estrutura): integrar nos intermediarios de escada na matriz SA-L1",
+          "sha": "cd9d385096f34ba483f8e630fc8e63ce37a66253",
+          "data": "2026-10-25T12:53:29-03:00",
+          "assunto": "test(escada): verificar limpeza de avaliacao no controlador de exclusao",
           "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -66,10 +66,10 @@
         "total_integrados": 0,
         "ultimo": null,
         "ultimo_commit": {
-          "sha": "bfdb5e5272fe44350a8684933554297233ab4aef",
-          "data": "2026-10-22T09:36:51-03:00",
-          "assunto": "Separar piso terreo de laje e expor classificacao de baldrame e balanco",
-          "ci": "sem_evidencia"
+          "sha": "bd47ab56b53c57bf88a492ab3d7f0862f04fda19",
+          "data": "2026-10-25T13:02:10-03:00",
+          "assunto": "fix(infraestrutura): restaurar controles ORQ e cadastro, preservar balanco na exclusao",
+          "ci": "falhou"
         }
       },
       "publicado": {
@@ -139,20 +139,20 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 46,
+        "total_integrados": 47,
         "ultimo": {
-          "numero": 579,
-          "titulo": "Integração do desenvolvimento acumulado: ORQ global, fundações e editor 2D/3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/579",
-          "merge_sha": "e53ea8222b5a30c1e68409093cd293295883a3e5",
-          "merged_at": "2026-10-25T15:46:05Z",
-          "ci": "falhou"
+          "numero": 581,
+          "titulo": "Reconciliar alterações locais do Claude: pavimentos, ORQ, fundações e 2D/3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/581",
+          "merge_sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
+          "merged_at": "2026-10-25T16:07:02Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
-          "data": "2026-10-25T12:46:03-03:00",
-          "assunto": "merge: consolidar cadeia de ORQ global, fundações e 2D/3D (#580)",
-          "ci": "pendente"
+          "sha": "58743671016fab5e82e100a4746d0307a400c874",
+          "data": "2026-10-25T12:46:41-03:00",
+          "assunto": "feat(reconciliacao): preservar correcoes locais de pavimentos, fundacoes e UI",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
@@ -207,7 +207,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -289,20 +289,20 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 76,
+        "total_integrados": 77,
         "ultimo": {
-          "numero": 579,
-          "titulo": "Integração do desenvolvimento acumulado: ORQ global, fundações e editor 2D/3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/579",
-          "merge_sha": "e53ea8222b5a30c1e68409093cd293295883a3e5",
-          "merged_at": "2026-10-25T15:46:05Z",
-          "ci": "falhou"
+          "numero": 581,
+          "titulo": "Reconciliar alterações locais do Claude: pavimentos, ORQ, fundações e 2D/3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/581",
+          "merge_sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
+          "merged_at": "2026-10-25T16:07:02Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
-          "data": "2026-10-25T12:46:03-03:00",
-          "assunto": "merge: consolidar cadeia de ORQ global, fundações e 2D/3D (#580)",
-          "ci": "pendente"
+          "sha": "5d3f2429d350e0b35ec77bb5a535b3403e84ae3d",
+          "data": "2026-10-25T13:05:10-03:00",
+          "assunto": "test(orq): usar terreo fisico nos cenarios viga-viga e copia de niveis",
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -357,7 +357,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     }
   ],
@@ -402,8 +402,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 474,
-  "commits_main_analisados": 2191,
+  "janela_prs": 475,
+  "commits_main_analisados": 2197,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

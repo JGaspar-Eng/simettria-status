@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-25T15:46:24Z",
+  "generated_at": "2026-10-25T16:07:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
-    "short_sha": "eab190e0",
+    "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
+    "short_sha": "c02f1b52",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T12:46:03-03:00",
-    "message": "merge: consolidar cadeia de ORQ global, fundações e 2D/3D (#580)"
+    "date": "2026-10-25T13:07:02-03:00",
+    "message": "merge: preservar alterações do Claude e integrar ao SIMETTRIA (#581)"
   },
   "commits": [
+    {
+      "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
+      "short_sha": "c02f1b52",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T13:07:02-03:00",
+      "message": "merge: preservar alterações do Claude e integrar ao SIMETTRIA (#581)"
+    },
+    {
+      "sha": "5d3f2429d350e0b35ec77bb5a535b3403e84ae3d",
+      "short_sha": "5d3f2429",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-25T13:05:10-03:00",
+      "message": "test(orq): usar terreo fisico nos cenarios viga-viga e copia de niveis"
+    },
+    {
+      "sha": "bd47ab56b53c57bf88a492ab3d7f0862f04fda19",
+      "short_sha": "bd47ab56",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-25T13:02:10-03:00",
+      "message": "fix(infraestrutura): restaurar controles ORQ e cadastro, preservar balanco na exclusao"
+    },
+    {
+      "sha": "cd9d385096f34ba483f8e630fc8e63ce37a66253",
+      "short_sha": "cd9d3850",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-25T12:53:29-03:00",
+      "message": "test(escada): verificar limpeza de avaliacao no controlador de exclusao"
+    },
+    {
+      "sha": "d2863208d89257ca8309b8d06bfc9ccb8725ad12",
+      "short_sha": "d2863208",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-25T12:50:51-03:00",
+      "message": "merge(main): reconciliar atualizacoes ORQ e testes com correcoes locais Claude"
+    },
+    {
+      "sha": "58743671016fab5e82e100a4746d0307a400c874",
+      "short_sha": "58743671",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-25T12:46:41-03:00",
+      "message": "feat(reconciliacao): preservar correcoes locais de pavimentos, fundacoes e UI"
+    },
     {
       "sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
       "short_sha": "eab190e0",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T12:37:16-03:00",
       "message": "test(fundacoes): fixture de dialog modela showModal e close reais"
-    },
-    {
-      "sha": "6408e5666980c60235a99f8d434e6151e51afb1e",
-      "short_sha": "6408e566",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:35:09-03:00",
-      "message": "test(opt-pilar): verificar Worker responsivo em vez de bloquear UI"
-    },
-    {
-      "sha": "923e720b6dd3fb4a41a15c136bc3e5ad31cf62bb",
-      "short_sha": "923e720b",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:31:27-03:00",
-      "message": "fix(ci): registrar validadores com scripts npm nominais obrigatorios"
-    },
-    {
-      "sha": "1e46bb83a991521596a743989ee6ddb2c432e5bf",
-      "short_sha": "1e46bb83",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:30:03-03:00",
-      "message": "test(ci): vincular todas as novas regressões à suíte oficial"
-    },
-    {
-      "sha": "2cf27cbb2438ee4bc185a59f63b87247d17242ce",
-      "short_sha": "2cf27cbb",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:29:44-03:00",
-      "message": "test(fundacoes): regressao de modelos 0 a 150 pilares e multiplos niveis"
-    },
-    {
-      "sha": "ce5f25adabd19e4c04ebd076819483ae19f8e974",
-      "short_sha": "ce5f25ad",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:29:17-03:00",
-      "message": "fix(fundacoes): diferenciar modelo vazio de estudo preliminar"
-    },
-    {
-      "sha": "8f3853c29efdfbe396ff2da81665a8cec9b4cf12",
-      "short_sha": "8f3853c2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T12:29:01-03:00",
-      "message": "fix(ui): mostrar quantidade real de apoios da planta"
     }
   ],
   "development": {
@@ -3976,7 +3976,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40208505894",
-    "run_number": "936"
+    "run_id": "40210144739",
+    "run_number": "937"
   }
 }
