@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-10-25T17:09:36Z",
+  "generated_at": "2026-10-25T17:30:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
-    "short_sha": "47c66aca",
+    "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+    "short_sha": "12de2de5",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T14:09:18-03:00",
-    "message": "merge: cadeias geométricas e condensação de articulações (#582)"
+    "date": "2026-10-25T14:30:10-03:00",
+    "message": "merge: reações globais visíveis apesar das pendências de fundações (#583)"
   },
   "commits": [
+    {
+      "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+      "short_sha": "12de2de5",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:30:10-03:00",
+      "message": "merge: reações globais visíveis apesar das pendências de fundações (#583)"
+    },
+    {
+      "sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
+      "short_sha": "f07b12a2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:26:27-03:00",
+      "message": "test(ui): garantir diagnóstico independente antes de encerrar indicador pendente"
+    },
+    {
+      "sha": "99fe6d05d5f96753e2322f4acfc4d0b5fe39d500",
+      "short_sha": "99fe6d05",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:23:56-03:00",
+      "message": "test(ci): validar desacoplamento de resultados ORQ na suíte oficial"
+    },
+    {
+      "sha": "cde24f2db7c9a6dfb981b46d9725aadc9174ba78",
+      "short_sha": "cde24f2d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:23:42-03:00",
+      "message": "test(orq): conferir leitura independente no runtime global real"
+    },
+    {
+      "sha": "4ba35ae5e1b262fb4d1cc0f85c527cc927da8c35",
+      "short_sha": "4ba35ae5",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:23:23-03:00",
+      "message": "test(orq): estados separados com 0 a 150 pilares e 8 ELU não certificados"
+    },
+    {
+      "sha": "4bb7f0fbe10d7706e4d07db8d95f75274bd4ebd9",
+      "short_sha": "4bb7f0fb",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:22:41-03:00",
+      "message": "feat(ui): exibir reações globais separadas da etapa de fundações"
+    },
+    {
+      "sha": "251f7d2cfda856138a7b9df0bd6986454ae81131",
+      "short_sha": "251f7d2c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T14:21:35-03:00",
+      "message": "feat(orq): prova de reações independente das pendências de fundação"
+    },
     {
       "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
       "short_sha": "47c66aca",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T14:06:31-03:00",
       "message": "feat(sa-l1): anexar auditoria geométrica sem elevar status de rigidez"
-    },
-    {
-      "sha": "35d426d8bb532e10d622af4c747faed996776932",
-      "short_sha": "35d426d8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:06:28-03:00",
-      "message": "feat(sa-l1): anexar auditoria geométrica sem elevar status de rigidez"
-    },
-    {
-      "sha": "993cf9741b91127f9390b39a1f557c66c934c15c",
-      "short_sha": "993cf974",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:06:10-03:00",
-      "message": "test(estrutura): liberacoes_flexionais_portico_reconciliacao.mjs"
-    },
-    {
-      "sha": "d71bce6f84f310ba09713f64d17d996ff231f547",
-      "short_sha": "d71bce6f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:06:07-03:00",
-      "message": "test(estrutura): diagnostico_cadeias_vigas.mjs"
-    },
-    {
-      "sha": "4270de40d4a695bfcc87ab0f79aa501fad6401be",
-      "short_sha": "4270de40",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:05:17-03:00",
-      "message": "feat(estrutura): liberacoes_flexionais_portico.js"
-    },
-    {
-      "sha": "0488443f4fe7dc044ef5cad76450c3e64fd8f21c",
-      "short_sha": "0488443f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T14:05:14-03:00",
-      "message": "feat(estrutura): diagnostico_cadeias_vigas.js"
-    },
-    {
-      "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
-      "short_sha": "c02f1b52",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T13:07:02-03:00",
-      "message": "merge: preservar alterações do Claude e integrar ao SIMETTRIA (#581)"
-    },
-    {
-      "sha": "5d3f2429d350e0b35ec77bb5a535b3403e84ae3d",
-      "short_sha": "5d3f2429",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-25T13:05:10-03:00",
-      "message": "test(orq): usar terreo fisico nos cenarios viga-viga e copia de niveis"
     }
   ],
   "development": {
@@ -3061,7 +3061,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 228,
+    "validator_count": 229,
     "validators": [
       {
         "name": "test:base",
@@ -3974,6 +3974,10 @@
       {
         "name": "test:liberacoes-flexionais",
         "command": "node tests_support/liberacoes_flexionais_portico_reconciliacao.mjs"
+      },
+      {
+        "name": "test:orq-resultados-independentes",
+        "command": "node tests/validar_orq_resultados_independentes.mjs"
       }
     ]
   },
@@ -3984,7 +3988,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40215086862",
-    "run_number": "938"
+    "run_id": "40216774273",
+    "run_number": "939"
   }
 }

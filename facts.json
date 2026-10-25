@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-25T17:10:07Z",
+  "gerado_em": "2026-10-25T17:31:13Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
-    "data": "2026-10-25T17:09:18Z"
+    "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+    "data": "2026-10-25T17:30:10Z"
   },
   "publicado": {
-    "sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
-    "gerado_em": "2026-10-25T16:07:20Z",
+    "sha": "47c66acacd2db01ac9969962d7836f0f14788d6e",
+    "gerado_em": "2026-10-25T17:09:36Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 8,
-    "idade_horas": 1.0
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -88,6 +88,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 584,
+            "titulo": "ORQ: reconhecer 2ª ordem calculada na auditoria sem exigir fundações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/584",
+            "rascunho": true,
+            "head_sha": "5f9f25868a2a73d519144ee58e21611659a7dcd3",
+            "ci": "passou"
+          },
+          {
             "numero": 573,
             "titulo": "SIMETTRIA — otimização econômica de blocos com 6 pilares (BE9/BE12) por ELU/ELS/SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/573",
@@ -139,24 +147,24 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 47,
+        "total_integrados": 48,
         "ultimo": {
-          "numero": 581,
-          "titulo": "Reconciliar alterações locais do Claude: pavimentos, ORQ, fundações e 2D/3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/581",
-          "merge_sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
-          "merged_at": "2026-10-25T16:07:02Z",
-          "ci": "passou"
+          "numero": 583,
+          "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
+          "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+          "merged_at": "2026-10-25T17:30:11Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "58743671016fab5e82e100a4746d0307a400c874",
-          "data": "2026-10-25T12:46:41-03:00",
-          "assunto": "feat(reconciliacao): preservar correcoes locais de pavimentos, fundacoes e UI",
-          "ci": "sem_evidencia"
+          "sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+          "data": "2026-10-25T14:30:10-03:00",
+          "assunto": "merge: reações globais visíveis apesar das pendências de fundações (#583)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -221,6 +229,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 584,
+            "titulo": "ORQ: reconhecer 2ª ordem calculada na auditoria sem exigir fundações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/584",
+            "rascunho": true,
+            "head_sha": "5f9f25868a2a73d519144ee58e21611659a7dcd3",
+            "ci": "passou"
+          },
           {
             "numero": 570,
             "titulo": "SIMETTRIA — progresso real por ELU, barra visual e cálculo não bloqueante",
@@ -289,24 +305,24 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 77,
+        "total_integrados": 78,
         "ultimo": {
-          "numero": 581,
-          "titulo": "Reconciliar alterações locais do Claude: pavimentos, ORQ, fundações e 2D/3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/581",
-          "merge_sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
-          "merged_at": "2026-10-25T16:07:02Z",
-          "ci": "passou"
+          "numero": 583,
+          "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
+          "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+          "merged_at": "2026-10-25T17:30:11Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "5d3f2429d350e0b35ec77bb5a535b3403e84ae3d",
-          "data": "2026-10-25T13:05:10-03:00",
-          "assunto": "test(orq): usar terreo fisico nos cenarios viga-viga e copia de niveis",
-          "ci": "passou"
+          "sha": "99fe6d05d5f96753e2322f4acfc4d0b5fe39d500",
+          "data": "2026-10-25T14:23:56-03:00",
+          "assunto": "test(ci): validar desacoplamento de resultados ORQ na suíte oficial",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -402,8 +418,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 476,
-  "commits_main_analisados": 2205,
+  "janela_prs": 478,
+  "commits_main_analisados": 2212,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
