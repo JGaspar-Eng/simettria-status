@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T20:37:07Z",
+  "gerado_em": "2026-10-26T22:45:37Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-    "data": "2026-10-26T18:02:09Z"
+    "sha": "450754f063788e2d36319340ca661d39cd5bf202",
+    "data": "2026-10-26T22:43:59Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
     "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-    "gerado_em": "2026-10-26T18:02:30Z",
+    "gerado_em": "2026-10-26T20:35:48Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 2.6
+    "defasagem_commits_main": 12,
+    "idade_horas": 2.2
   },
   "frentes": [
     {
@@ -787,8 +787,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 10,
+        "total_integrados": 11,
         "integrados_recentes": [
+          {
+            "numero": 615,
+            "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
+            "merged_at": "2026-10-26T22:43:59Z",
+            "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
+            "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 614,
             "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
@@ -797,7 +807,7 @@
             "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
             "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 613,
@@ -891,25 +901,25 @@
           }
         ],
         "ultimo": {
-          "numero": 614,
-          "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
-          "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-          "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
-          "merged_at": "2026-10-26T18:02:10Z",
+          "numero": 615,
+          "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
+          "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
+          "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
+          "merged_at": "2026-10-26T22:43:59Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-          "data": "2026-10-26T15:02:09-03:00",
-          "assunto": "merge: aplicar e recalcular armadura dupla resistente por viga (#614)",
+          "sha": "450754f063788e2d36319340ca661d39cd5bf202",
+          "data": "2026-10-26T19:43:59-03:00",
+          "assunto": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)",
           "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -959,8 +969,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 84,
+        "total_integrados": 85,
         "integrados_recentes": [
+          {
+            "numero": 615,
+            "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
+            "merged_at": "2026-10-26T22:43:59Z",
+            "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
+            "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 614,
             "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
@@ -969,7 +989,7 @@
             "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
             "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 613,
@@ -1070,38 +1090,28 @@
             "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 580,
-            "titulo": "Reconciliação completa da cadeia ORQ, fundações e representação 2D/3D",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/580",
-            "merged_at": "2026-10-25T15:46:03Z",
-            "merge_sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
-            "head_sha": "f434bc5952d269b4e59bd52b2c78d257b843f598",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 614,
-          "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
-          "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-          "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
-          "merged_at": "2026-10-26T18:02:10Z",
+          "numero": 615,
+          "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
+          "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
+          "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
+          "merged_at": "2026-10-26T22:43:59Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
-          "data": "2026-10-26T14:59:50-03:00",
-          "assunto": "fix(ui): mostrar resultado real do novo ORQ após recálculo automático, sem aprovação falsa",
+          "sha": "af375275c4f747c4e45ab5a720d9099577fea84a",
+          "data": "2026-10-26T19:37:56-03:00",
+          "assunto": "test(orq): incluir teste da prancha com dupla ELU no comando de armaduras",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1495,8 +1505,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 508,
-  "commits_main_analisados": 2358,
+  "janela_prs": 509,
+  "commits_main_analisados": 2370,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

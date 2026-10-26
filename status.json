@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-26T20:35:48Z",
+  "generated_at": "2026-10-26T22:44:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-    "short_sha": "e6e5c9b0",
+    "sha": "450754f063788e2d36319340ca661d39cd5bf202",
+    "short_sha": "450754f0",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T15:02:09-03:00",
-    "message": "merge: aplicar e recalcular armadura dupla resistente por viga (#614)"
+    "date": "2026-10-26T19:43:59-03:00",
+    "message": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)"
   },
   "commits": [
     {
-      "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-      "short_sha": "e6e5c9b0",
+      "sha": "450754f063788e2d36319340ca661d39cd5bf202",
+      "short_sha": "450754f0",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T15:02:09-03:00",
-      "message": "merge: aplicar e recalcular armadura dupla resistente por viga (#614)"
+      "date": "2026-10-26T19:43:59-03:00",
+      "message": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)"
     },
     {
-      "sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
-      "short_sha": "b28ed620",
+      "sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
+      "short_sha": "2ef0438c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:59:50-03:00",
-      "message": "fix(ui): mostrar resultado real do novo ORQ após recálculo automático, sem aprovação falsa"
+      "date": "2026-10-26T19:41:55-03:00",
+      "message": "fix(2d): distância entre camadas ilustradas consistente com geometria MRd, incluindo Ø25"
     },
     {
-      "sha": "0be74f6735fafdfbc60e394b7dad93423b4123e8",
-      "short_sha": "0be74f67",
+      "sha": "1461722fbe8e1d0505d9719cb9086a41df1c7449",
+      "short_sha": "1461722f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:59:07-03:00",
-      "message": "feat(ui): disparar recálculo global automático após aplicar armadura dupla verificada"
+      "date": "2026-10-26T19:41:13-03:00",
+      "message": "fix(2d): posicionar legenda M+/M− sem colidir com escala e rodapé"
     },
     {
-      "sha": "dc0ddae7118fe7f1d099efb57e43984463420b86",
-      "short_sha": "dc0ddae7",
+      "sha": "4d19d4d3ffb71da9712f7c7362741c4b085117ad",
+      "short_sha": "4d19d4d3",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:58:02-03:00",
-      "message": "feat(ui): mostrar armadura dupla realmente aplicada, MRd e estado no quadro e CSV"
+      "date": "2026-10-26T19:39:26-03:00",
+      "message": "feat(ui): explicar 156 avisos 3D e exibir solicitações espaciais reais sem falsa reprovação"
     },
     {
-      "sha": "dc97e944b90bfbebcb442286d8760a1bf514de95",
-      "short_sha": "dc97e944",
+      "sha": "af375275c4f747c4e45ab5a720d9099577fea84a",
+      "short_sha": "af375275",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:56:06-03:00",
-      "message": "fix(orq): invalidar armadura aplicada se os diagramas M(x) de qualquer ELU mudarem"
+      "date": "2026-10-26T19:37:56-03:00",
+      "message": "test(orq): incluir teste da prancha com dupla ELU no comando de armaduras"
     },
     {
-      "sha": "68ec84c4ef75ce7de7dff4a59e6ebd5ea4960bf0",
-      "short_sha": "68ec84c4",
+      "sha": "3c0bedfec14fee373cdea1d580e5bb5de7b29124",
+      "short_sha": "3c0bedfe",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:55:49-03:00",
-      "message": "feat(orq): reportar ELU de armadura dupla e adicionar regressão de aplicação"
+      "date": "2026-10-26T19:37:40-03:00",
+      "message": "test(orq): V216 armadura dupla real na prancha e memorial; conferir barras, camadas, stale e JSON intacto"
     },
     {
-      "sha": "8e8d8a415251f143d275ed4d1212482881029a15",
-      "short_sha": "8e8d8a41",
+      "sha": "165114810a8f337a3816bcff1257050d98c7bf94",
+      "short_sha": "16511481",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:55:45-03:00",
-      "message": "feat(orq): reportar ELU de armadura dupla e adicionar regressão de aplicação"
+      "date": "2026-10-26T19:36:53-03:00",
+      "message": "fix(2d): proibir laudo de cobertura de flexão simples em prancha com armadura dupla"
     },
     {
-      "sha": "b5d814d3662cd5a5a8a7749e201a748b27d082a5",
-      "short_sha": "b5d814d3",
+      "sha": "00982d584f8f23cbe92d7e7367df9b1055e5454a",
+      "short_sha": "00982d58",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:55:42-03:00",
-      "message": "feat(orq): reportar ELU de armadura dupla e adicionar regressão de aplicação"
+      "date": "2026-10-26T19:36:12-03:00",
+      "message": "feat(ui): esclarecer interação 3D por viga com valores reais e sem classificar pendente como reprovado"
     },
     {
-      "sha": "485d432009808036c03db9ee1c3eaeb86e8e217c",
-      "short_sha": "485d4320",
+      "sha": "e6fe52bb9225bd577d590d1505d1302c530402eb",
+      "short_sha": "e6fe52bb",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:55:36-03:00",
-      "message": "feat(orq): reportar ELU de armadura dupla e adicionar regressão de aplicação"
+      "date": "2026-10-26T19:35:52-03:00",
+      "message": "feat(orq): detalhar solicitações espaciais My/T/N/Vz sem inventar aprovação"
     },
     {
-      "sha": "f869d7a22bc8ab286f9d14b02d4fa799447fb4a7",
-      "short_sha": "f869d7a2",
+      "sha": "ff6043631c1665fc7c0c5db0d81d2bc12b41b20f",
+      "short_sha": "ff604363",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T14:55:12-03:00",
-      "message": "test(orq): verificar capacidade real, 8 ELU, aplicação, stale, JSON e falha segura"
+      "date": "2026-10-26T19:35:01-03:00",
+      "message": "feat(ui): prancha dupla atualizada e bloqueio de edição simples sem recálculo"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40397003372",
-    "run_number": "979"
+    "run_id": "40414678362",
+    "run_number": "980"
   }
 }
