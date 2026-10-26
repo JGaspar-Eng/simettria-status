@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T17:05:41Z",
+  "gerado_em": "2026-10-26T17:18:22Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-    "data": "2026-10-26T17:04:28Z"
+    "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+    "data": "2026-10-26T17:16:52Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
-    "gerado_em": "2026-10-26T16:55:01Z",
+    "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+    "gerado_em": "2026-10-26T17:04:49Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 7,
+    "defasagem_commits_main": 6,
     "idade_horas": 0.2
   },
   "frentes": [
@@ -787,8 +787,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 8,
+        "total_integrados": 9,
         "integrados_recentes": [
+          {
+            "numero": 613,
+            "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
+            "merged_at": "2026-10-26T17:16:52Z",
+            "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+            "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 612,
             "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
@@ -797,7 +807,7 @@
             "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
             "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 610,
@@ -807,7 +817,7 @@
             "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
             "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 602,
@@ -871,20 +881,20 @@
           }
         ],
         "ultimo": {
-          "numero": 612,
-          "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
-          "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-          "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
-          "merged_at": "2026-10-26T17:04:29Z",
+          "numero": 613,
+          "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
+          "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+          "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
+          "merged_at": "2026-10-26T17:16:52Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-          "data": "2026-10-26T14:04:28-03:00",
-          "assunto": "merge: persistir estudo preliminar de armadura dupla com controle de obsolescência (#612)",
+          "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+          "data": "2026-10-26T14:16:52-03:00",
+          "assunto": "merge: seleção preliminar de barras na armadura dupla dos modais ORQ (#613)",
           "ci": "pendente"
         }
       },
@@ -939,8 +949,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 82,
+        "total_integrados": 83,
         "integrados_recentes": [
+          {
+            "numero": 613,
+            "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
+            "merged_at": "2026-10-26T17:16:52Z",
+            "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+            "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 612,
             "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
@@ -949,7 +969,7 @@
             "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
             "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 610,
@@ -959,7 +979,7 @@
             "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
             "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 605,
@@ -1050,34 +1070,24 @@
             "head_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 532,
-            "titulo": "feat(orq): consolida propriedades mecânicas espaciais G/J",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/532",
-            "merged_at": "2026-09-14T22:52:03Z",
-            "merge_sha": "6fa2afb540504c1280d9fa23e2f601fa985e3d0c",
-            "head_sha": "26e40848e40d770942c6317811d9af37abda5cf6",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 612,
-          "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
-          "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-          "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
-          "merged_at": "2026-10-26T17:04:29Z",
+          "numero": 613,
+          "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
+          "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+          "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
+          "merged_at": "2026-10-26T17:16:52Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-          "data": "2026-10-26T13:53:14-03:00",
-          "assunto": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)",
-          "ci": "passou"
+          "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+          "data": "2026-10-26T14:16:52-03:00",
+          "assunto": "merge: seleção preliminar de barras na armadura dupla dos modais ORQ (#613)",
+          "ci": "pendente"
         }
       },
       "publicado": {
@@ -1475,8 +1485,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 506,
-  "commits_main_analisados": 2337,
+  "janela_prs": 507,
+  "commits_main_analisados": 2343,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

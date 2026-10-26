@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-26T17:04:49Z",
+  "generated_at": "2026-10-26T17:17:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-    "short_sha": "30ad016b",
+    "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+    "short_sha": "f1ced84a",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T14:04:28-03:00",
-    "message": "merge: persistir estudo preliminar de armadura dupla com controle de obsolescência (#612)"
+    "date": "2026-10-26T14:16:52-03:00",
+    "message": "merge: seleção preliminar de barras na armadura dupla dos modais ORQ (#613)"
   },
   "commits": [
+    {
+      "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+      "short_sha": "f1ced84a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:16:52-03:00",
+      "message": "merge: seleção preliminar de barras na armadura dupla dos modais ORQ (#613)"
+    },
+    {
+      "sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
+      "short_sha": "3c18db1c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:15:06-03:00",
+      "message": "test(orq): cobrir M positivo/negativo, seleção obrigatória e coeficientes divergentes"
+    },
+    {
+      "sha": "888e74c6383077efb816be9d19640d9d70bf1dec",
+      "short_sha": "888e74c6",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:14:48-03:00",
+      "message": "fix(orq): impedir estudo com hipóteses de materiais distintas entre as faces"
+    },
+    {
+      "sha": "2e9336b2d292c3a8250b9a9ad79556c1685891a7",
+      "short_sha": "2e9336b2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:13:18-03:00",
+      "message": "test(orq): exigir seleção válida das barras e limite conjunto antes do registro"
+    },
+    {
+      "sha": "4f3bab62e8f7e561cb54da3059374dc467d48d69",
+      "short_sha": "4f3bab62",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:12:46-03:00",
+      "message": "feat(ui): seleção explícita de barras tracionadas e comprimidas nos dois modais"
+    },
+    {
+      "sha": "7e8daa101d064c127e7475264a15cdd983773b4a",
+      "short_sha": "7e8daa10",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:12:05-03:00",
+      "message": "feat(orq): gerar pré-montagens verificadas por área conjunta para armadura dupla"
+    },
     {
       "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
       "short_sha": "30ad016b",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-26T13:59:24-03:00",
       "message": "fix(viga): factory preserva estudo opcional de armadura dupla ao clonar"
-    },
-    {
-      "sha": "6fb2c7063fac0f39bf228f9a8211aac732e566ae",
-      "short_sha": "6fb2c706",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:56:55-03:00",
-      "message": "feat(armaduras): mostrar registro da viga e avisar se estudo duplo foi invalidado"
-    },
-    {
-      "sha": "11f7513854dded1b1dd53a50ad1660da6cdae43a",
-      "short_sha": "11f75138",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:56:34-03:00",
-      "message": "test(armadura dupla): validar roundtrip JSON no Lifecycle/Storage e cópia independente"
-    },
-    {
-      "sha": "61ca3caadd72c2bf61b5e5f1c92447fa5698dcb7",
-      "short_sha": "61ca3caa",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:56:06-03:00",
-      "message": "fix(viga): preservar hipótese dupla preliminar no contrato de serialização/restauração"
-    },
-    {
-      "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
-      "short_sha": "79a69652",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:53:50-03:00",
-      "message": "merge: auditoria de 9 PRs absorvidas e 22 antigas pendentes (#611)"
-    },
-    {
-      "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-      "short_sha": "e4edb882",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:53:14-03:00",
-      "message": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)"
-    },
-    {
-      "sha": "4fe9bcc2a0e2638b8d46e0f799310acbda0a7125",
-      "short_sha": "4fe9bcc2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:51:25-03:00",
-      "message": "docs(auditoria): registrar 9 PRs absorvidas e 22 antigas pendentes com critério de fechamento"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40365187256",
-    "run_number": "976"
+    "run_id": "40367138672",
+    "run_number": "977"
   }
 }
