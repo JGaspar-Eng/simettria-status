@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-26T04:58:39Z",
+  "generated_at": "2026-10-26T12:25:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-    "short_sha": "0ae45df7",
+    "sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+    "short_sha": "d6e4d883",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T23:59:37-03:00",
-    "message": "merge: pares ELS do projeto chegam ao painel operacional ORQ (#605)"
+    "date": "2026-10-26T09:24:43-03:00",
+    "message": "merge: painel ELS mostra Δs e confere origem comum dos recalques (#606)"
   },
   "commits": [
+    {
+      "sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+      "short_sha": "d6e4d883",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T09:24:43-03:00",
+      "message": "merge: painel ELS mostra Δs e confere origem comum dos recalques (#606)"
+    },
+    {
+      "sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
+      "short_sha": "0e891cba",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T09:22:11-03:00",
+      "message": "test(ELS): exibir valores e fontes no painel, bloquear dez alterações de rastreabilidade"
+    },
+    {
+      "sha": "d5d66e8661369f1f0e18361b9ac0bb469103e60a",
+      "short_sha": "d5d66e86",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T09:21:38-03:00",
+      "message": "fix(painel ELS): não expor valores sem horizontes e origens de projeto"
+    },
+    {
+      "sha": "85c7d4e8553c4055127f88cbd1d2cba3aac2addb",
+      "short_sha": "85c7d4e8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T09:21:19-03:00",
+      "message": "feat(painel ELS): exibir Δs, distorção, limites e fontes também nos pares atendidos"
+    },
+    {
+      "sha": "a79c83d1eb72449773be43a261ad46686e5a0153",
+      "short_sha": "a79c83d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T09:20:47-03:00",
+      "message": "fix(ELS): vincular entradas e parecer imediato ao mesmo pacote do recalque total"
+    },
     {
       "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
       "short_sha": "0ae45df7",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T23:54:17-03:00",
       "message": "feat(ELS): transportar pares cadastrados do projeto ao snapshot ORQ sem inferencia"
-    },
-    {
-      "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
-      "short_sha": "20b5c0de",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:40:09-03:00",
-      "message": "merge: painel ELS compara pares atuais com recálculo por apoio (#604)"
-    },
-    {
-      "sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
-      "short_sha": "2e66c5ba",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:37:24-03:00",
-      "message": "test(ELS): painel compara apoios atuais e bloqueia totais/imediatos adulterados"
-    },
-    {
-      "sha": "f3480934ab12b3280d578467788e25aabcb66d8b",
-      "short_sha": "f3480934",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:36:55-03:00",
-      "message": "feat(painel ELS): ligar pares de apoios globais a comparações diferenciais sem mutar modelo"
-    },
-    {
-      "sha": "efaea36da9b7c82d7465a029c835cb9329fe408d",
-      "short_sha": "efaea36d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:36:07-03:00",
-      "message": "fix(els): recalcular totais por apoio e verificar vinculo antes de comparar recalque diferencial"
-    },
-    {
-      "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
-      "short_sha": "703c31de",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:36:19-03:00",
-      "message": "merge: painel fatos atualiza sem congelar em abas abertas (#603)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40271774230",
-    "run_number": "966"
+    "run_id": "40322331034",
+    "run_number": "967"
   }
 }
