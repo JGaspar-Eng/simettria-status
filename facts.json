@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T17:18:22Z",
+  "gerado_em": "2026-10-26T18:03:26Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-    "data": "2026-10-26T17:16:52Z"
+    "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
+    "data": "2026-10-26T18:02:09Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-    "gerado_em": "2026-10-26T17:04:49Z",
+    "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
+    "gerado_em": "2026-10-26T17:17:15Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 6,
-    "idade_horas": 0.2
+    "defasagem_commits_main": 15,
+    "idade_horas": 0.8
   },
   "frentes": [
     {
@@ -787,8 +787,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 9,
+        "total_integrados": 10,
         "integrados_recentes": [
+          {
+            "numero": 614,
+            "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
+            "merged_at": "2026-10-26T18:02:10Z",
+            "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
+            "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 613,
             "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
@@ -797,7 +807,7 @@
             "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
             "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 612,
@@ -881,20 +891,20 @@
           }
         ],
         "ultimo": {
-          "numero": 613,
-          "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
-          "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-          "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
-          "merged_at": "2026-10-26T17:16:52Z",
+          "numero": 614,
+          "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
+          "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
+          "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
+          "merged_at": "2026-10-26T18:02:10Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-          "data": "2026-10-26T14:16:52-03:00",
-          "assunto": "merge: seleção preliminar de barras na armadura dupla dos modais ORQ (#613)",
+          "sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
+          "data": "2026-10-26T15:02:09-03:00",
+          "assunto": "merge: aplicar e recalcular armadura dupla resistente por viga (#614)",
           "ci": "pendente"
         }
       },
@@ -949,8 +959,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 83,
+        "total_integrados": 84,
         "integrados_recentes": [
+          {
+            "numero": 614,
+            "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
+            "merged_at": "2026-10-26T18:02:10Z",
+            "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
+            "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 613,
             "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
@@ -959,7 +979,7 @@
             "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
             "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 612,
@@ -1060,34 +1080,24 @@
             "head_sha": "f434bc5952d269b4e59bd52b2c78d257b843f598",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 538,
-            "titulo": "ORQ #517 — ações equivalentes ELU das vigas globais",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/538",
-            "merged_at": "2026-09-28T23:32:35Z",
-            "merge_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
-            "head_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 613,
-          "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
-          "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-          "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
-          "merged_at": "2026-10-26T17:16:52Z",
+          "numero": 614,
+          "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
+          "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
+          "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
+          "merged_at": "2026-10-26T18:02:10Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-          "data": "2026-10-26T14:16:52-03:00",
-          "assunto": "merge: seleção preliminar de barras na armadura dupla dos modais ORQ (#613)",
-          "ci": "pendente"
+          "sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
+          "data": "2026-10-26T14:59:50-03:00",
+          "assunto": "fix(ui): mostrar resultado real do novo ORQ após recálculo automático, sem aprovação falsa",
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -1485,8 +1495,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 507,
-  "commits_main_analisados": 2343,
+  "janela_prs": 508,
+  "commits_main_analisados": 2358,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
