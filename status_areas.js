@@ -137,7 +137,7 @@
     var valor = document.getElementById("overall-progress-value");
     var dica = document.getElementById("overall-progress-hint");
     if (valor) valor.textContent = overall.percent + "%";
-    if (dica) dica.textContent = "trabalhos cadastrados concluídos (" + Math.round(overall.done_equivalente) + " de " + overall.total_trabalhos_cadastrados + ")";
+    if (dica) dica.textContent = "trabalhos cadastrados concluídos (" + Math.round(overall.done_equivalente) + " de " + overall.total_trabalhos_cadastrados + "). PRs de avanços parciais não pontuam sem fechamento documentado; consulte Fatos por frente.";
     card.hidden = false;
   }
 

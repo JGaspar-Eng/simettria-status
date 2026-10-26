@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-26T12:25:01Z",
+  "generated_at": "2026-10-26T12:41:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
-    "short_sha": "d6e4d883",
+    "sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
+    "short_sha": "2437b64a",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T09:24:43-03:00",
-    "message": "merge: painel ELS mostra Δs e confere origem comum dos recalques (#606)"
+    "date": "2026-10-26T09:40:43-03:00",
+    "message": "merge: painel exibe entregas recentes, PRs pendentes e CI por origem (#607)"
   },
   "commits": [
     {
-      "sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
-      "short_sha": "d6e4d883",
+      "sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
+      "short_sha": "2437b64a",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:24:43-03:00",
-      "message": "merge: painel ELS mostra Δs e confere origem comum dos recalques (#606)"
+      "date": "2026-10-26T09:40:43-03:00",
+      "message": "merge: painel exibe entregas recentes, PRs pendentes e CI por origem (#607)"
     },
     {
-      "sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-      "short_sha": "0e891cba",
+      "sha": "3cd12cceb53adbfba4a851fbfaff77156c91a84d",
+      "short_sha": "3cd12cce",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:22:11-03:00",
-      "message": "test(ELS): exibir valores e fontes no painel, bloquear dez alterações de rastreabilidade"
+      "date": "2026-10-26T09:37:01-03:00",
+      "message": "fix(painel): explicitar critério dos 39% junto ao próprio índice"
     },
     {
-      "sha": "d5d66e8661369f1f0e18361b9ac0bb469103e60a",
-      "short_sha": "d5d66e86",
+      "sha": "98888b5dac0ebedf47e2e7247735e5ac71c3dbb7",
+      "short_sha": "98888b5d",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:21:38-03:00",
-      "message": "fix(painel ELS): não expor valores sem horizontes e origens de projeto"
+      "date": "2026-10-26T09:36:58-03:00",
+      "message": "chore(painel): invalidar cache do script de fatos com novo contrato de CI"
     },
     {
-      "sha": "85c7d4e8553c4055127f88cbd1d2cba3aac2addb",
-      "short_sha": "85c7d4e8",
+      "sha": "0ff59080921b96d4e7f87d7fd03fbdd0cf8d79ac",
+      "short_sha": "0ff59080",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:21:19-03:00",
-      "message": "feat(painel ELS): exibir Δs, distorção, limites e fontes também nos pares atendidos"
+      "date": "2026-10-26T09:36:32-03:00",
+      "message": "test(painel): lista 604-606, CI de três fontes, PR abertos e progresso do roadmap"
     },
     {
-      "sha": "a79c83d1eb72449773be43a261ad46686e5a0153",
-      "short_sha": "a79c83d1",
+      "sha": "8e7e4003ccfea1420b7625b5f6f439525e8014ec",
+      "short_sha": "8e7e4003",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:20:47-03:00",
-      "message": "fix(ELS): vincular entradas e parecer imediato ao mesmo pacote do recalque total"
+      "date": "2026-10-26T09:35:57-03:00",
+      "message": "test(painel): usar titulo completo da PR #605 na classificação multirrótulo"
     },
     {
-      "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-      "short_sha": "0ae45df7",
+      "sha": "02b5c21c1ee3c4b74947c9f9409511b895d5e077",
+      "short_sha": "02b5c21c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:59:37-03:00",
-      "message": "merge: pares ELS do projeto chegam ao painel operacional ORQ (#605)"
+      "date": "2026-10-26T09:35:30-03:00",
+      "message": "test(painel): classificar 604-606, mostrar todos e separar CI da PR e merge"
     },
     {
-      "sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
-      "short_sha": "907d7deb",
+      "sha": "db202742c8ad44ac8ebf7ce377193da4d57f6a09",
+      "short_sha": "db202742",
       "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:57:52-03:00",
-      "message": "test(ELS): validar pendência visível quando não há pares, sem afirmar sucesso falso"
+      "date": "2026-10-26T09:34:29-03:00",
+      "message": "feat(painel): apresentar PRs recentes, CI histórico separado, todos abertos e índice explicado"
     },
     {
-      "sha": "5853aee257db059fc5105f39c2ee68984dd61705",
-      "short_sha": "5853aee2",
+      "sha": "7c7d1085afc556dd1bf0b1e48d15ca38e58799ff",
+      "short_sha": "7c7d1085",
       "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:55:10-03:00",
-      "message": "test(ELS): testar cadastro -> snapshot ORQ -> painel com pares reais e ausencia segura"
+      "date": "2026-10-26T09:32:54-03:00",
+      "message": "feat(painel): registrar CI observado do SHA atual separadamente das falhas históricas"
     },
     {
-      "sha": "000992707c581cb96a0fe91d5282ef45b8a8d300",
-      "short_sha": "00099270",
+      "sha": "3d2e4a70f120480b666579182dcbb0dc1c61089f",
+      "short_sha": "3d2e4a70",
       "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:54:31-03:00",
-      "message": "feat(UI): ligar pares ELS persistidos ao snapshot do overlay e painel de fundacoes"
+      "date": "2026-10-26T09:32:22-03:00",
+      "message": "fix(painel): coletar CI do HEAD da PR e 12 merges recentes por frente separados do CI do merge"
     },
     {
-      "sha": "1f94c0b1fd0f229c238c6760e4aae1da30ce5fed",
-      "short_sha": "1f94c0b1",
+      "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
+      "short_sha": "fcfc3dd9",
       "author": "Joanez Gaspar",
-      "date": "2026-10-25T23:54:17-03:00",
-      "message": "feat(ELS): transportar pares cadastrados do projeto ao snapshot ORQ sem inferencia"
+      "date": "2026-10-26T09:31:18-03:00",
+      "message": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40322331034",
-    "run_number": "967"
+    "run_id": "40324383121",
+    "run_number": "969"
   }
 }

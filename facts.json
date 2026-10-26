@@ -1,18 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T12:25:37Z",
+  "gerado_em": "2026-10-26T12:42:06Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
-    "data": "2026-10-26T12:24:43Z"
+    "sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
+    "data": "2026-10-26T12:40:43Z"
   },
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-    "gerado_em": "2026-10-26T04:58:39Z",
+    "sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+    "gerado_em": "2026-10-26T12:25:01Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 5,
-    "idade_horas": 7.4
+    "defasagem_commits_main": 10,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -30,13 +31,138 @@
       "main": {
         "estado": "integrado",
         "total_integrados": 14,
+        "integrados_recentes": [
+          {
+            "numero": 529,
+            "titulo": "feat(escada): Fase B — compatibilidade planar com reserva do trecho",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/529",
+            "merged_at": "2026-09-14T21:56:44Z",
+            "merge_sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
+            "head_sha": "a778d20b29403ef32df264014b85e9f13ab17f01",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 527,
+            "titulo": "feat(escada): ESCADA-DIM-01 Fase A — geometria preliminar (NBR9050)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/527",
+            "merged_at": "2026-09-14T16:15:04Z",
+            "merge_sha": "ffded915c9e2b15f57871abb247ae186a58907bd",
+            "head_sha": "d54ee14fe5786b20c0c68283c314f4617bbb78c6",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 513,
+            "titulo": "feat(escada): edição e remoção de estado.escadas no modal — PR-B3",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/513",
+            "merged_at": "2026-09-13T19:21:43Z",
+            "merge_sha": "ebc31695c63374c65c22d34e3d44f10f87eebf5c",
+            "head_sha": "4877a73914d0259f98f3982597c8cba039051c81",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 512,
+            "titulo": "feat(escada): modal de cadastro (criação) de estado.escadas — PR-B1+B2",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/512",
+            "merged_at": "2026-09-12T21:49:02Z",
+            "merge_sha": "ef369df8110bdfd04fbaa312115b3effc4c128ec",
+            "head_sha": "2ada492a4d60f5c025e1e241f305fc9fb54bc82c",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 511,
+            "titulo": "feat(escada): uniformiza retorno de criarEscada/editarEscada em { ok, motivo, escada }",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/511",
+            "merged_at": "2026-09-12T18:16:53Z",
+            "merge_sha": "45790d748d5163d83beab04c7c20102947bf40be",
+            "head_sha": "cebe1f1e824345cf5b4ae436528417629c981627",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 508,
+            "titulo": "feat(escada): bloqueia atualizarPavimento(cota_m) que quebre ordem vertical da escada",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/508",
+            "merged_at": "2026-09-12T05:31:51Z",
+            "merge_sha": "575d24e841637ee39b6864e15ea838674dcd099e",
+            "head_sha": "7defd249cc5f29210391f2df0880198dfba0d343",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 505,
+            "titulo": "feat(escada): bloqueia remoção de abertura referenciada por escada.trechos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/505",
+            "merged_at": "2026-09-12T04:48:49Z",
+            "merge_sha": "d8463e289383c2986964e61227ebd1330a29aaca",
+            "head_sha": "011bde933337e2d6afa17c94fb4283fd6dbb5081",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 495,
+            "titulo": "feat(escada): fail-closed em materialização/reset de modelo com escada dependente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/495",
+            "merged_at": "2026-09-12T04:30:14Z",
+            "merge_sha": "d948dc663066fe4ddf2acb696f85227448a40632",
+            "head_sha": "549582680c9110e7491faafbd402afb5663608df",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 494,
+            "titulo": "feat(escada): bloqueia exclusão de pavimento referenciado em escada.paradas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/494",
+            "merged_at": "2026-09-11T20:08:22Z",
+            "merge_sha": "d60d8410f9a09756b51be8d62cf882cbb8998cf5",
+            "head_sha": "cb1746a54a278f6219cb7856ee0a76cf2994d323",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 493,
+            "titulo": "feat(escada): estado sem_laje e reserva_implantacao no contrato de trecho",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/493",
+            "merged_at": "2026-09-11T17:34:59Z",
+            "merge_sha": "ed2ae1ec83931be2e9fcbe524615b01864a8c82f",
+            "head_sha": "c266a05f47c6290baa6c9032eddc2072bec1b548",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 490,
+            "titulo": "docs(escada): atualiza ESCADA_01_ESCOPO.md com controller já mergeado",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/490",
+            "merged_at": "2026-09-11T16:34:26Z",
+            "merge_sha": "2601272cd123ff6fb5854a58e1477f39007617a5",
+            "head_sha": "c5133e88d2781978e3569f0cb626587507f12182",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 489,
+            "titulo": "feat(escada): ESCADA-01 — controller de domínio (criar/editar/remover)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/489",
+            "merged_at": "2026-09-11T15:55:17Z",
+            "merge_sha": "8de2232a2a43736d1b1f9ee6c7a88db4c2dd0932",
+            "head_sha": "8b3fb73d5519abe9cc9e524d3a5540e235f12ccd",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
         "ultimo": {
           "numero": 529,
           "titulo": "feat(escada): Fase B — compatibilidade planar com reserva do trecho",
           "url": "https://github.com/JGaspar-Eng/simettria/pull/529",
           "merge_sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
+          "head_sha": "a778d20b29403ef32df264014b85e9f13ab17f01",
           "merged_at": "2026-09-14T21:56:44Z",
-          "ci": "passou"
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "cd9d385096f34ba483f8e630fc8e63ce37a66253",
@@ -64,6 +190,7 @@
       "main": {
         "estado": "integrado",
         "total_integrados": 0,
+        "integrados_recentes": [],
         "ultimo": null,
         "ultimo_commit": {
           "sha": "bd47ab56b53c57bf88a492ab3d7f0862f04fda19",
@@ -134,29 +261,540 @@
             "rascunho": true,
             "head_sha": "ed084c2c5d24dff3198ef1328dcc0a2d6562808d",
             "ci": "passou"
+          },
+          {
+            "numero": 546,
+            "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
+            "rascunho": true,
+            "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
+            "ci": "passou"
           }
         ]
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 48,
+        "total_integrados": 67,
+        "integrados_recentes": [
+          {
+            "numero": 606,
+            "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
+            "merged_at": "2026-10-26T12:24:43Z",
+            "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+            "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 605,
+            "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
+            "merged_at": "2026-10-26T02:59:37Z",
+            "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+            "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 604,
+            "titulo": "ELS: integrar pares de recalque diferencial ao painel e revalidar totais de cada apoio",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/604",
+            "merged_at": "2026-10-26T02:40:09Z",
+            "merge_sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
+            "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 601,
+            "titulo": "Punção/cortante: recalcular solicitações canônicas antes de avaliar resistências",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/601",
+            "merged_at": "2026-10-25T22:20:40Z",
+            "merge_sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
+            "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 600,
+            "titulo": "ELS geotecnia: confrontar recalque diferencial documentado entre dois apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/600",
+            "merged_at": "2026-10-25T22:17:28Z",
+            "merge_sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
+            "head_sha": "d4bf15b6423829fd254a456325b9cdac773de138",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 599,
+            "titulo": "Placa Mindlin: patch test de três modos rígidos antes da solução",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/599",
+            "merged_at": "2026-10-25T22:13:24Z",
+            "merge_sha": "801630e8ec205797d495eafb5737392545884e33",
+            "head_sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 598,
+            "titulo": "Winkler: conferir partição de energia entre placa e molas nos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/598",
+            "merged_at": "2026-10-25T19:36:31Z",
+            "merge_sha": "3503d7aa3ffed9934d2f6be47247e5336cc254e5",
+            "head_sha": "b80188346993e58ffff202b99afa7e1d15820902",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 597,
+            "titulo": "Placa Mindlin: conferir energia elástica e sensibilidade de deslocamento ao refino",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/597",
+            "merged_at": "2026-10-25T19:27:52Z",
+            "merge_sha": "c293b8cfe6e669dcd81e98f4da1ff31fd7cba35b",
+            "head_sha": "568be0c37eaee310eac16dacdf879326c231f104",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 595,
+            "titulo": "Geotecnia USACE: reconciliar qmin/qmax e governante real dos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/595",
+            "merged_at": "2026-10-25T19:18:54Z",
+            "merge_sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
+            "head_sha": "e6b17fe86d781e728590bc4da98fc78010086fc6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 592,
+            "titulo": "Placa estrutural: invalidar estudo Mindlin/Winkler quando o vínculo físico muda",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/592",
+            "merged_at": "2026-10-25T18:42:04Z",
+            "merge_sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
+            "head_sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 591,
+            "titulo": "ELS fissuração: demonstrar força e momento da seção fissurada em X/Y",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/591",
+            "merged_at": "2026-10-25T18:15:27Z",
+            "merge_sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
+            "head_sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 590,
+            "titulo": "Geotecnia: diagnóstico utiliza resultado canônico do SPT sem inventar N",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/590",
+            "merged_at": "2026-10-25T18:14:17Z",
+            "merge_sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
+            "head_sha": "95f0a0a5628052c8f36863157c18ce927f625218",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
         "ultimo": {
-          "numero": 583,
-          "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
-          "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
-          "merged_at": "2026-10-25T17:30:11Z",
-          "ci": "passou"
+          "numero": 606,
+          "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
+          "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+          "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
+          "merged_at": "2026-10-26T12:24:43Z",
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "000992707c581cb96a0fe91d5282ef45b8a8d300",
-          "data": "2026-10-25T23:54:31-03:00",
-          "assunto": "feat(UI): ligar pares ELS persistidos ao snapshot do overlay e painel de fundacoes",
+          "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
+          "data": "2026-10-26T09:31:18-03:00",
+          "assunto": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
+      }
+    },
+    {
+      "id": "placa",
+      "titulo": "Placa estrutural",
+      "epico": "E2",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 5,
+        "integrados_recentes": [
+          {
+            "numero": 599,
+            "titulo": "Placa Mindlin: patch test de três modos rígidos antes da solução",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/599",
+            "merged_at": "2026-10-25T22:13:24Z",
+            "merge_sha": "801630e8ec205797d495eafb5737392545884e33",
+            "head_sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 598,
+            "titulo": "Winkler: conferir partição de energia entre placa e molas nos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/598",
+            "merged_at": "2026-10-25T19:36:31Z",
+            "merge_sha": "3503d7aa3ffed9934d2f6be47247e5336cc254e5",
+            "head_sha": "b80188346993e58ffff202b99afa7e1d15820902",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 597,
+            "titulo": "Placa Mindlin: conferir energia elástica e sensibilidade de deslocamento ao refino",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/597",
+            "merged_at": "2026-10-25T19:27:52Z",
+            "merge_sha": "c293b8cfe6e669dcd81e98f4da1ff31fd7cba35b",
+            "head_sha": "568be0c37eaee310eac16dacdf879326c231f104",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 592,
+            "titulo": "Placa estrutural: invalidar estudo Mindlin/Winkler quando o vínculo físico muda",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/592",
+            "merged_at": "2026-10-25T18:42:04Z",
+            "merge_sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
+            "head_sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 586,
+            "titulo": "Placa Mindlin: bloquear contato integral não demonstrado por N/Mx/My",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/586",
+            "merged_at": "2026-10-25T17:56:10Z",
+            "merge_sha": "1a9482ab26476163d8798db07db15bd45168ef24",
+            "head_sha": "441f327d7258b8511eed0e27fd7333a6d9aeadac",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
+        "ultimo": {
+          "numero": 599,
+          "titulo": "Placa Mindlin: patch test de três modos rígidos antes da solução",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/599",
+          "merge_sha": "801630e8ec205797d495eafb5737392545884e33",
+          "head_sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
+          "merged_at": "2026-10-25T22:13:24Z",
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
+          "data": "2026-10-26T09:31:18-03:00",
+          "assunto": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs",
+          "ci": "sem_evidencia"
+        }
+      },
+      "publicado": {
+        "estado": "aguardando_publicacao"
+      }
+    },
+    {
+      "id": "geotecnia",
+      "titulo": "Geotecnia e ELS",
+      "epico": "E2",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 573,
+            "titulo": "SIMETTRIA — otimização econômica de blocos com 6 pilares (BE9/BE12) por ELU/ELS/SPT",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/573",
+            "rascunho": true,
+            "head_sha": "c53821c9669459fd0d3b14f21b0aa1f479708a73",
+            "ci": "sem_evidencia"
+          },
+          {
+            "numero": 559,
+            "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
+            "rascunho": true,
+            "head_sha": "4d7f396f014db945039b832a38e8332b7c6db99a",
+            "ci": "passou"
+          },
+          {
+            "numero": 557,
+            "titulo": "SIM-7: calcular prévia de estaca diretamente do SPT importado",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/557",
+            "rascunho": true,
+            "head_sha": "bd0d097ec18b19de082a55e09bb4f123a1643622",
+            "ci": "passou"
+          },
+          {
+            "numero": 546,
+            "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
+            "rascunho": true,
+            "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
+            "ci": "passou"
+          },
+          {
+            "numero": 543,
+            "titulo": "fix(sondagens): compatibilidade do agrupamento com Node 20",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/543",
+            "rascunho": true,
+            "head_sha": "076f896f112f404d1a497695596c3fb81f3b2bea",
+            "ci": "passou"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 12,
+        "integrados_recentes": [
+          {
+            "numero": 606,
+            "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
+            "merged_at": "2026-10-26T12:24:43Z",
+            "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+            "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 605,
+            "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
+            "merged_at": "2026-10-26T02:59:37Z",
+            "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+            "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 604,
+            "titulo": "ELS: integrar pares de recalque diferencial ao painel e revalidar totais de cada apoio",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/604",
+            "merged_at": "2026-10-26T02:40:09Z",
+            "merge_sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
+            "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 600,
+            "titulo": "ELS geotecnia: confrontar recalque diferencial documentado entre dois apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/600",
+            "merged_at": "2026-10-25T22:17:28Z",
+            "merge_sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
+            "head_sha": "d4bf15b6423829fd254a456325b9cdac773de138",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 595,
+            "titulo": "Geotecnia USACE: reconciliar qmin/qmax e governante real dos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/595",
+            "merged_at": "2026-10-25T19:18:54Z",
+            "merge_sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
+            "head_sha": "e6b17fe86d781e728590bc4da98fc78010086fc6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 591,
+            "titulo": "ELS fissuração: demonstrar força e momento da seção fissurada em X/Y",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/591",
+            "merged_at": "2026-10-25T18:15:27Z",
+            "merge_sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
+            "head_sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 590,
+            "titulo": "Geotecnia: diagnóstico utiliza resultado canônico do SPT sem inventar N",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/590",
+            "merged_at": "2026-10-25T18:14:17Z",
+            "merge_sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
+            "head_sha": "95f0a0a5628052c8f36863157c18ce927f625218",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 588,
+            "titulo": "Geotecnia: teste de sondagens admite projeto real com quantidade variável",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/588",
+            "merged_at": "2026-10-25T18:00:59Z",
+            "merge_sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
+            "head_sha": "fd754b3a9b66a87f6b8102dd8bd1672b01545f44",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 587,
+            "titulo": "Geotecnia: impedir sondagem de ID duplicado e estado de N.A. inválido",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/587",
+            "merged_at": "2026-10-25T17:57:37Z",
+            "merge_sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
+            "head_sha": "70416a671354aca2f0cd01908a2f0c95b8b104a0",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 563,
+            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
+            "merged_at": "2026-10-25T15:46:05Z",
+            "merge_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
+            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 337,
+            "titulo": "fix(int-verify): ignora furos sem georreferenciamento válido",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/337",
+            "merged_at": "2026-09-07T21:27:48Z",
+            "merge_sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
+            "head_sha": "0d932039a9b2bb63a4379a1a2687a12f6c6df25a",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 281,
+            "titulo": "feat(area11): consolida contrato SPT e nível d'água",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/281",
+            "merged_at": "2026-09-02T02:06:28Z",
+            "merge_sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
+            "head_sha": "90244aa53bb8b09fdf8c69e6491211f36e947bf9",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
+        "ultimo": {
+          "numero": 606,
+          "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
+          "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+          "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
+          "merged_at": "2026-10-26T12:24:43Z",
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
+          "data": "2026-10-26T09:31:18-03:00",
+          "assunto": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs",
+          "ci": "sem_evidencia"
+        }
+      },
+      "publicado": {
+        "estado": "aguardando_publicacao"
+      }
+    },
+    {
+      "id": "resistencias",
+      "titulo": "Resistências",
+      "epico": "E2/E11",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 5,
+        "integrados_recentes": [
+          {
+            "numero": 601,
+            "titulo": "Punção/cortante: recalcular solicitações canônicas antes de avaliar resistências",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/601",
+            "merged_at": "2026-10-25T22:20:40Z",
+            "merge_sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
+            "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 594,
+            "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/594",
+            "merged_at": "2026-10-25T19:17:02Z",
+            "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+            "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 589,
+            "titulo": "Punção biaxial: conferir equilíbrio V, Mx e My por integração numérica independente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/589",
+            "merged_at": "2026-10-25T18:09:00Z",
+            "merge_sha": "5306780808fd1807878b928fa9c548cc0844f8e9",
+            "head_sha": "033e681d41d0cc1ad7f1fe921f047dd0875b149d",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 381,
+            "titulo": "feat(orq): transporta cortante SA-L1 até ações de base",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/381",
+            "merged_at": "2026-09-09T19:46:17Z",
+            "merge_sha": "305f15db35cce693b16c0f0709786d9950985dcb",
+            "head_sha": "f06d0eb7ea52342649bb1625e12663212a54f780",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 283,
+            "titulo": "feat(area11): verifica ancoragem dos arranques pilar→sapata (NOR-FUND-04)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/283",
+            "merged_at": "2026-09-02T03:12:48Z",
+            "merge_sha": "45c59af0b8a1bad4f91e684cd47a98ef5763c8c9",
+            "head_sha": "90963c51bbd17298b5de99f15b2b6a6b49df77f9",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
+        "ultimo": {
+          "numero": 601,
+          "titulo": "Punção/cortante: recalcular solicitações canônicas antes de avaliar resistências",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/601",
+          "merge_sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
+          "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
+          "merged_at": "2026-10-25T22:20:40Z",
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
+        },
+        "ultimo_commit": {
+          "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
+          "data": "2026-10-26T09:31:18-03:00",
+          "assunto": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs",
+          "ci": "sem_evidencia"
+        }
+      },
+      "publicado": {
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -191,13 +829,78 @@
       "main": {
         "estado": "integrado",
         "total_integrados": 6,
+        "integrados_recentes": [
+          {
+            "numero": 602,
+            "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
+            "merged_at": "2026-10-25T22:21:38Z",
+            "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+            "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 596,
+            "titulo": "Memorial de armaduras: expor massa da malha apenas com reconciliação geométrica",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/596",
+            "merged_at": "2026-10-25T19:25:11Z",
+            "merge_sha": "67423835a114126ec797749a36822f2ad27475a8",
+            "head_sha": "f39d3f103d7456c140adaec5e0d4f58e424a5633",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 593,
+            "titulo": "Detalhamento preliminar: reconciliar massa das famílias de armadura com quantitativo",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/593",
+            "merged_at": "2026-10-25T18:43:29Z",
+            "merge_sha": "35729da93a7e4fbda5c72768fb203f7abc312b2a",
+            "head_sha": "a5f9fdddc2f7d471530a8c6735b311c5be73476c",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 361,
+            "titulo": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/361",
+            "merged_at": "2026-09-08T11:27:48Z",
+            "merge_sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
+            "head_sha": "c3d6009f0db6ec50ee840b713dd7dcb0c320650f",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 289,
+            "titulo": "feat(area11): quita M3/M4 do detalhamento executivo da sapata",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/289",
+            "merged_at": "2026-09-02T20:09:46Z",
+            "merge_sha": "06025cc57f718ee6b574683f7276609626829c0a",
+            "head_sha": "014611a09289f0360fc001cacf5eedf0b97c76a0",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 287,
+            "titulo": "feat(area11): detalha armadura da sapata isolada (NOR-FUND-05)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/287",
+            "merged_at": "2026-09-02T17:08:18Z",
+            "merge_sha": "a5ccb3fba80ab75dbff512195d31506b2a82c20f",
+            "head_sha": "faf0bde358714cb0467f2d6236ae3d905dd493a9",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
         "ultimo": {
           "numero": 602,
           "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
           "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
           "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
+          "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
           "merged_at": "2026-10-25T22:21:38Z",
-          "ci": "passou"
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
@@ -290,13 +993,138 @@
       "main": {
         "estado": "integrado",
         "total_integrados": 80,
+        "integrados_recentes": [
+          {
+            "numero": 605,
+            "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
+            "merged_at": "2026-10-26T02:59:37Z",
+            "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+            "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 585,
+            "titulo": "ORQ: segunda ordem comprovada como frente independente (base atual)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/585",
+            "merged_at": "2026-10-25T17:34:29Z",
+            "merge_sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
+            "head_sha": "db8f61b87ca4996abb0df3ba6a6a77b0b306560a",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 583,
+            "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
+            "merged_at": "2026-10-25T17:30:11Z",
+            "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+            "head_sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 581,
+            "titulo": "Reconciliar alterações locais do Claude: pavimentos, ORQ, fundações e 2D/3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/581",
+            "merged_at": "2026-10-25T16:07:02Z",
+            "merge_sha": "c02f1b524c9bee5bf0cf59f6277c46ad881fa62b",
+            "head_sha": "5d3f2429d350e0b35ec77bb5a535b3403e84ae3d",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 579,
+            "titulo": "Integração do desenvolvimento acumulado: ORQ global, fundações e editor 2D/3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/579",
+            "merged_at": "2026-10-25T15:46:05Z",
+            "merge_sha": "e53ea8222b5a30c1e68409093cd293295883a3e5",
+            "head_sha": "bfdb5e5272fe44350a8684933554297233ab4aef",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 571,
+            "titulo": "SIMETTRIA — auditoria: impedir falsos bloqueios, 40/40 estacas estudadas e loading real em 8010",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/571",
+            "merged_at": "2026-10-25T15:46:05Z",
+            "merge_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
+            "head_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 563,
+            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
+            "merged_at": "2026-10-25T15:46:05Z",
+            "merge_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
+            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 580,
+            "titulo": "Reconciliação completa da cadeia ORQ, fundações e representação 2D/3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/580",
+            "merged_at": "2026-10-25T15:46:03Z",
+            "merge_sha": "eab190e0b5d21fd6dec36953d88c284d59092018",
+            "head_sha": "f434bc5952d269b4e59bd52b2c78d257b843f598",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 538,
+            "titulo": "ORQ #517 — ações equivalentes ELU das vigas globais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/538",
+            "merged_at": "2026-09-28T23:32:35Z",
+            "merge_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
+            "head_sha": "cd963b5c88ba725d9cc791c695025def038ad42a",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 532,
+            "titulo": "feat(orq): consolida propriedades mecânicas espaciais G/J",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/532",
+            "merged_at": "2026-09-14T22:52:03Z",
+            "merge_sha": "6fa2afb540504c1280d9fa23e2f601fa985e3d0c",
+            "head_sha": "26e40848e40d770942c6317811d9af37abda5cf6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 531,
+            "titulo": "feat(orq): deriva orientação espacial auditável",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/531",
+            "merged_at": "2026-09-14T22:31:26Z",
+            "merge_sha": "da3a08fafd028b3db964ac0ce56f0d2d41c61a45",
+            "head_sha": "209ea0a56a9c96ea370dd949f482169dc5f02ab1",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 528,
+            "titulo": "feat(orq): demonstra topologia vertical de pilares",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/528",
+            "merged_at": "2026-09-14T21:21:57Z",
+            "merge_sha": "dcea30cf3da28f21dcf500ba6406563483079699",
+            "head_sha": "d80013b72e4cc92f05a807c6e670583ec20dce80",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
         "ultimo": {
           "numero": 605,
           "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
           "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
           "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+          "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
           "merged_at": "2026-10-26T02:59:37Z",
-          "ci": "passou"
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
@@ -341,13 +1169,138 @@
       "main": {
         "estado": "integrado",
         "total_integrados": 21,
+        "integrados_recentes": [
+          {
+            "numero": 594,
+            "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/594",
+            "merged_at": "2026-10-25T19:17:02Z",
+            "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+            "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 527,
+            "titulo": "feat(escada): ESCADA-DIM-01 Fase A — geometria preliminar (NBR9050)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/527",
+            "merged_at": "2026-09-14T16:15:04Z",
+            "merge_sha": "ffded915c9e2b15f57871abb247ae186a58907bd",
+            "head_sha": "d54ee14fe5786b20c0c68283c314f4617bbb78c6",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 431,
+            "titulo": "fix(dim-pilar): esforço solicitante ausente deixa de virar zero válido nos contratos normativos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/431",
+            "merged_at": "2026-09-10T11:29:16Z",
+            "merge_sha": "02b7e1eced98b7421148662a245d87dcf86300b3",
+            "head_sha": "baf5d898dcae74ad734107ebf3b2dde18ffd574e",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 372,
+            "titulo": "feat(orq): preserva envelope normativo nas propostas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/372",
+            "merged_at": "2026-09-09T17:38:07Z",
+            "merge_sha": "374f535b33ca5adf95ed14291ee9907b944139a0",
+            "head_sha": "5e53368005c1c8b0ea96d960aef74731c1bad5c0",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 274,
+            "titulo": "fix(orq): endurece gate da classificação normativa de Fundação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/274",
+            "merged_at": "2026-09-01T11:52:42Z",
+            "merge_sha": "edcb3228d4e8091ea9c2c610ae909ce067f4e9b5",
+            "head_sha": "504becf83dddb58b82aa397483eb16079e6a144b",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 273,
+            "titulo": "feat(area11): classificador normativo rastreavel de fundacao (NOR-FUND-01)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/273",
+            "merged_at": "2026-09-01T11:07:03Z",
+            "merge_sha": "d905ccbd56e99fe073bd2e6062296156b54a581d",
+            "head_sha": "0cb78e01219c13e82240998094a45a30570482dd",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 204,
+            "titulo": "fix(wizard): preserva categoria NBR 8681 no JSON",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/204",
+            "merged_at": "2026-08-28T11:43:21Z",
+            "merge_sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
+            "head_sha": "ef77a5e3571bc2be91deba422934e7d20d8db867",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 203,
+            "titulo": "feat(wizard): incorpora categoria NBR 8681 ao onboarding",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/203",
+            "merged_at": "2026-08-28T03:56:13Z",
+            "merge_sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
+            "head_sha": "187a3cbd420db7bfd5ca01a9d561d7bcf3481bfc",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 201,
+            "titulo": "test: blinda persistência da categoria NBR 8681 no gate",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/201",
+            "merged_at": "2026-08-28T03:41:46Z",
+            "merge_sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
+            "head_sha": "26df90bbb8c82e81c9b946acf2ca484e9c3f0b20",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 198,
+            "titulo": "fix(wizard): preserva categoria NBR 8681 existente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/198",
+            "merged_at": "2026-08-27T17:23:55Z",
+            "merge_sha": "c8e0b26c95d8ee4c2843a63fc7519c2d8f081d8c",
+            "head_sha": "b599f078336a899cd811e60e0467f811f43fa8dd",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 197,
+            "titulo": "docs(status): recalibra plano funcional e confiabilidade",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/197",
+            "merged_at": "2026-08-27T17:15:56Z",
+            "merge_sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
+            "head_sha": "3bcdc00a9e83bd66f4dae64e8c4b79c7443fa264",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 188,
+            "titulo": "feat(fundacao): apresenta status normativo do DIM-FUND-01",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/188",
+            "merged_at": "2026-08-27T02:07:38Z",
+            "merge_sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
+            "head_sha": "380981d1b47584c8191263d7f53a5b317942d4a3",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
         "ultimo": {
           "numero": 594,
           "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
           "url": "https://github.com/JGaspar-Eng/simettria/pull/594",
           "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
+          "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
           "merged_at": "2026-10-25T19:17:02Z",
-          "ci": "passou"
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
@@ -358,6 +1311,182 @@
       },
       "publicado": {
         "estado": "publicado"
+      }
+    },
+    {
+      "id": "painel",
+      "titulo": "Painel e publicação",
+      "epico": "E9",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 492,
+            "titulo": "fix(painel): padroniza detalhamento das 12 áreas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/492",
+            "rascunho": false,
+            "head_sha": "3f1a386f0f0b6beae72ef090cb28758a7af0dac5",
+            "ci": "passou"
+          },
+          {
+            "numero": 463,
+            "titulo": "docs(area11): reconcilia status final da materialização",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/463",
+            "rascunho": false,
+            "head_sha": "f40e5202a19d22a747e08861fb7c31a47a7a37dc",
+            "ci": "passou"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 59,
+        "integrados_recentes": [
+          {
+            "numero": 607,
+            "titulo": "Painel auditável: mostrar PRs #604-606, CI correto e todas as pendências por frente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/607",
+            "merged_at": "2026-10-26T12:40:43Z",
+            "merge_sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
+            "head_sha": "3cd12cceb53adbfba4a851fbfaff77156c91a84d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
+          {
+            "numero": 606,
+            "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
+            "merged_at": "2026-10-26T12:24:43Z",
+            "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
+            "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 605,
+            "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
+            "merged_at": "2026-10-26T02:59:37Z",
+            "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+            "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 604,
+            "titulo": "ELS: integrar pares de recalque diferencial ao painel e revalidar totais de cada apoio",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/604",
+            "merged_at": "2026-10-26T02:40:09Z",
+            "merge_sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
+            "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 603,
+            "titulo": "Painel Fatos por frente: atualizar automaticamente, sem ocultar defasagem do Pages",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/603",
+            "merged_at": "2026-10-25T22:36:20Z",
+            "merge_sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
+            "head_sha": "96daf6b0565e56861fc520241eb99f8e616f91c3",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 583,
+            "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
+            "merged_at": "2026-10-25T17:30:11Z",
+            "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
+            "head_sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 578,
+            "titulo": "Corrigir falha de publicação do painel no GitHub Pages",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/578",
+            "merged_at": "2026-10-25T15:05:54Z",
+            "merge_sha": "b3c69bc251a6d4a45d4697c46b02def18381ba98",
+            "head_sha": "a322884181e12531a3863efe9d272d0a72988f28",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 577,
+            "titulo": "Integrar painel factual e renumeração correta das vigas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/577",
+            "merged_at": "2026-10-25T14:56:04Z",
+            "merge_sha": "a5958468e32dbfcb78f890ae17aa017b5ed91364",
+            "head_sha": "291d249265494b3688582308c2ac928dc61057e4",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 542,
+            "titulo": "Status: registra seleção por nível e estudo preliminar de estacas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/542",
+            "merged_at": "2026-10-13T15:09:19Z",
+            "merge_sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
+            "head_sha": "c88f411abc12651b69ffc13cd8ce6be7a5b91e3c",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 526,
+            "titulo": "fix(painel): reconcilia frentes reais e detalhamento operacional",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/526",
+            "merged_at": "2026-09-13T21:52:25Z",
+            "merge_sha": "c167b0e22aa2b0087cb09f65f90c81d6e5549d24",
+            "head_sha": "a5ef20e702ce105fec8f02634cb01a5f375a9f0d",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 509,
+            "titulo": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/509",
+            "merged_at": "2026-09-12T17:21:08Z",
+            "merge_sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
+            "head_sha": "e8ec5ecceab0d2208192e17bfc4f5d476100be0d",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 482,
+            "titulo": "feat(painel): detalha progresso de cada trabalho por área",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/482",
+            "merged_at": "2026-09-11T04:07:59Z",
+            "merge_sha": "c25d9328f2ca3444277e4accaf5d347a5b06d146",
+            "head_sha": "f2031e6f3e086cf4365f53b0e63231618562e956",
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
+        "ultimo": {
+          "numero": 607,
+          "titulo": "Painel auditável: mostrar PRs #604-606, CI correto e todas as pendências por frente",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/607",
+          "merge_sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
+          "head_sha": "3cd12cceb53adbfba4a851fbfaff77156c91a84d",
+          "merged_at": "2026-10-26T12:40:43Z",
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "pendente"
+        },
+        "ultimo_commit": {
+          "sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
+          "data": "2026-10-26T09:40:43-03:00",
+          "assunto": "merge: painel exibe entregas recentes, PRs pendentes e CI por origem (#607)",
+          "ci": "pendente"
+        }
+      },
+      "publicado": {
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -373,42 +1502,42 @@
       549,
       548,
       547,
-      543,
-      463,
       310
     ],
     "integrados_recentes": [
-      606,
-      604,
-      603,
-      601,
-      600,
-      599,
-      598,
-      597,
-      595,
-      592,
-      591,
-      590,
-      589,
-      588,
-      587,
-      586,
       582,
-      578,
-      577,
-      537
+      537,
+      536,
+      535,
+      534,
+      533,
+      469,
+      476,
+      480,
+      468,
+      467,
+      464,
+      462,
+      455,
+      459,
+      453,
+      447,
+      442,
+      428,
+      425
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 500,
-  "commits_main_analisados": 2294,
+  "janela_prs": 501,
+  "commits_main_analisados": 2304,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
     "A camada local não é observável pelo CI: só existe quando o gerador roda na máquina de desenvolvimento.",
     "\"Publicado\" significa que o SHA de merge está contido no status.json servido pelo Pages no momento da coleta; a próxima coleta confirma publicações mais recentes.",
-    "A associação entre pull requests e frentes é editorial (docs/STATUS_FRENTES.json); pull requests sem frente aparecem em nao_classificados."
+    "A associação entre pull requests e frentes é editorial e multirrótulo (docs/STATUS_FRENTES.json). As contagens por frente não devem ser somadas.",
+    "O CI da PR consulta o SHA do HEAD; CI do merge e do commit historico sao fontes distintas e nao indicam CI atual da main.",
+    "Os percentuais do roadmap nao aumentam com merges parciais: apenas com mudanca fundamentada do estado de trabalhos cadastrados."
   ]
 }

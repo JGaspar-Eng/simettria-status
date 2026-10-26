@@ -65,10 +65,16 @@
     if (estado === "nao_encontrado_na_janela") return selo("Não encontrado na janela consultada", "alerta");
     if (estado !== "aberto") return selo("Sem evidência", "alerta");
     var itens = c.itens || [];
-    var linhas = itens.slice(0, 4).map(function (p) {
-      return '<div class="fatos-linha">' + link(p.url, "#" + p.numero) + " · " + (p.rascunho ? "rascunho" : "pronto") + " · " + seloCi(p.ci) + "</div>";
-    }).join("");
-    var resto = itens.length > 4 ? '<div class="fatos-linha">+' + (itens.length - 4) + " PR(s)</div>" : "";
+    function linhaPr(p) {
+      return '<div class="fatos-linha">' + link(p.url, "#" + p.numero) +
+        " · " + (p.rascunho ? "rascunho" : "pronto") +
+        " · CI do HEAD da PR: " + seloCi(p.ci) + "</div>";
+    }
+    var linhas = itens.slice(0, 4).map(linhaPr).join("");
+    var resto = itens.length > 4
+      ? '<details class="fatos-detalhes"><summary>Ver outros ' +
+        (itens.length - 4) + ' PRs abertos</summary>' +
+        itens.slice(4).map(linhaPr).join("") + '</details>' : "";
     return selo(itens.length + " PR(s) aberto(s)", "alerta") + linhas + resto;
   }
 
@@ -78,11 +84,30 @@
     if (estado === "nao_encontrado_na_janela") return selo("Não encontrado na janela consultada", "alerta");
     if (estado !== "integrado") return selo("Sem evidência", "alerta");
     var partes = [selo("Integrado", "ok")];
+    var recentes = Array.isArray(c.integrados_recentes) ? c.integrados_recentes : [];
     if (c.ultimo) {
-      partes.push('<div class="fatos-linha">PR ' + link(c.ultimo.url, "#" + c.ultimo.numero) + " · " + esc(dia(c.ultimo.merged_at)) + " · " + seloCi(c.ultimo.ci) + "</div>");
+      partes.push('<div class="fatos-linha">Última PR: ' +
+        link(c.ultimo.url, "#" + c.ultimo.numero) + " · " +
+        esc(dia(c.ultimo.merged_at)) + " · CI da PR: " +
+        seloCi(c.ultimo.ci_pr || c.ultimo.ci) + "</div>");
+    }
+    if (recentes.length) {
+      partes.push('<details class="fatos-detalhes"><summary>Ver ' +
+        recentes.length + (c.total_integrados > recentes.length ? ' das ' +
+        c.total_integrados : '') + ' entregas integradas recentes</summary>' +
+        recentes.map(function(p) {
+          return '<div class="fatos-linha">' +
+            link(p.url, "#" + p.numero) + ' · ' + esc(p.titulo) +
+            ' · ' + esc(dia(p.merged_at)) + ' · CI da PR: ' +
+            seloCi(p.ci_pr) + ' · CI do merge: ' + seloCi(p.ci_merge) +
+            '</div>';
+        }).join("") + '</details>');
     }
     if (c.ultimo_commit) {
-      partes.push('<div class="fatos-linha">commit ' + esc(sha7(c.ultimo_commit.sha)) + " · " + esc(dia(c.ultimo_commit.data)) + " · " + seloCi(c.ultimo_commit.ci) + "</div>");
+      partes.push('<div class="fatos-linha">Commit histórico da frente ' +
+        esc(sha7(c.ultimo_commit.sha)) + " · " +
+        esc(dia(c.ultimo_commit.data)) + " · CI daquele commit: " +
+        seloCi(c.ultimo_commit.ci) + "</div>");
     }
     return partes.join("");
   }
@@ -106,6 +131,7 @@
     ".fatos-neutro{background:rgba(127,127,127,.18)}" +
     ".fatos-linha{margin-top:4px;font-size:.82rem}" +
     ".fatos-aviso{margin:8px 0;padding:8px 12px;border:1px solid rgba(207,34,46,.5);background:rgba(207,34,46,.1);border-radius:6px;font-weight:600}" +
+    ".fatos-detalhes{margin-top:8px;font-size:.79rem;max-width:480px}.fatos-detalhes>summary{cursor:pointer;color:#176a83;font-weight:700}.fatos-detalhes .fatos-linha{margin:6px 0;border-bottom:1px dashed rgba(127,127,127,.22);padding-bottom:5px}" +
     ".fatos-meta{margin:6px 0 10px;font-size:.85rem}";
 
   function montarHtml(fatos, agora, erroCarga) {
@@ -134,13 +160,24 @@
     }).join("");
 
     var nc = fatos.nao_classificados || {};
+    var ciAtual = fatos.ci_main_atual;
+    var atual = '<div class="fatos-meta"><strong>CI do SHA atual da main ' +
+      esc(sha7(fatos.main && fatos.main.sha)) + ':</strong> ' +
+      seloCi(ciAtual) +
+      ' · CI histórico de PRs/commits não informa o estado atual da main. ' +
+      'Uma PR pode pertencer a mais de uma frente; não somar contagens.</div>';
+    var explicacao = '<p class="fatos-meta">O percentual do roadmap mede ' +
+      'somente trabalhos cadastrados como concluídos. PRs parciais ' +
+      'integradas NÃO mudam o índice sem encerramento técnico documentado. ' +
+      'PR aberta não é entrega; CI da PR, CI do merge e publicação são fontes distintas.</p>';
     var rodape = "";
     if ((nc.abertos || []).length) rodape += "<p class=\"fatos-meta\">PRs abertos sem frente associada: " + esc(nc.abertos.map(function (n) { return "#" + n; }).join(", ")) + ".</p>";
     if (fatos.prs_truncado || fatos.commits_main_truncado) rodape += '<p class="fatos-meta">Atenção: a janela consultada foi truncada; ausências podem não ser reais.</p>';
     if ((fatos.erros || []).length) rodape += '<p class="fatos-meta">Camadas sem evidência nesta coleta: ' + esc(fatos.erros.join(" | ")) + "</p>";
     if ((fatos.limitacoes || []).length) rodape += "<details><summary>Limitações</summary><ul>" + fatos.limitacoes.map(function (l) { return "<li>" + esc(l) + "</li>"; }).join("") + "</ul></details>";
 
-    return "<h2>Fatos por frente</h2>" + aviso + '<div class="fatos-meta">' + meta + "</div>" +
+    return "<h2>Fatos por frente</h2>" + aviso +
+      '<div class="fatos-meta">' + meta + "</div>" + atual + explicacao +
       '<div class="fatos-wrap"><table class="fatos-tabela"><thead><tr><th>Frente</th><th>Local</th><th>PR</th><th>main</th><th>Publicado</th></tr></thead><tbody>' + linhas + "</tbody></table></div>" + rodape;
   }
 
