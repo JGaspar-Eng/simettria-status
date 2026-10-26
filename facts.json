@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T16:56:09Z",
+  "gerado_em": "2026-10-26T17:05:41Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
-    "data": "2026-10-26T16:53:50Z"
+    "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+    "data": "2026-10-26T17:04:28Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-    "gerado_em": "2026-10-26T16:53:33Z",
+    "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
+    "gerado_em": "2026-10-26T16:55:01Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 2,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -787,8 +787,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 7,
+        "total_integrados": 8,
         "integrados_recentes": [
+          {
+            "numero": 612,
+            "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
+            "merged_at": "2026-10-26T17:04:29Z",
+            "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+            "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 610,
             "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
@@ -861,25 +871,25 @@
           }
         ],
         "ultimo": {
-          "numero": 610,
-          "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
-          "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-          "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
-          "merged_at": "2026-10-26T16:53:14Z",
+          "numero": 612,
+          "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
+          "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+          "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
+          "merged_at": "2026-10-26T17:04:29Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-          "data": "2026-10-26T13:53:14-03:00",
-          "assunto": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)",
-          "ci": "passou"
+          "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+          "data": "2026-10-26T14:04:28-03:00",
+          "assunto": "merge: persistir estudo preliminar de armadura dupla com controle de obsolescência (#612)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -929,8 +939,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 81,
+        "total_integrados": 82,
         "integrados_recentes": [
+          {
+            "numero": 612,
+            "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
+            "merged_at": "2026-10-26T17:04:29Z",
+            "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+            "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 610,
             "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
@@ -1040,28 +1060,18 @@
             "head_sha": "26e40848e40d770942c6317811d9af37abda5cf6",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 531,
-            "titulo": "feat(orq): deriva orientação espacial auditável",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/531",
-            "merged_at": "2026-09-14T22:31:26Z",
-            "merge_sha": "da3a08fafd028b3db964ac0ce56f0d2d41c61a45",
-            "head_sha": "209ea0a56a9c96ea370dd949f482169dc5f02ab1",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 610,
-          "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
-          "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-          "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
-          "merged_at": "2026-10-26T16:53:14Z",
+          "numero": 612,
+          "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
+          "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+          "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
+          "merged_at": "2026-10-26T17:04:29Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
@@ -1071,7 +1081,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1465,8 +1475,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 505,
-  "commits_main_analisados": 2330,
+  "janela_prs": 506,
+  "commits_main_analisados": 2337,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

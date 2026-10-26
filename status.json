@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-10-26T16:55:01Z",
+  "generated_at": "2026-10-26T17:04:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
-    "short_sha": "79a69652",
+    "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+    "short_sha": "30ad016b",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T13:53:50-03:00",
-    "message": "merge: auditoria de 9 PRs absorvidas e 22 antigas pendentes (#611)"
+    "date": "2026-10-26T14:04:28-03:00",
+    "message": "merge: persistir estudo preliminar de armadura dupla com controle de obsolescência (#612)"
   },
   "commits": [
+    {
+      "sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
+      "short_sha": "30ad016b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:04:28-03:00",
+      "message": "merge: persistir estudo preliminar de armadura dupla com controle de obsolescência (#612)"
+    },
+    {
+      "sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
+      "short_sha": "4d218b3e",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T14:01:57-03:00",
+      "message": "test(armadura-dupla): corrigir expectativa de hipótese ao clonar com novo ID"
+    },
+    {
+      "sha": "57f1ef8cc9e06a08959d3a49cc40be6d363c94c8",
+      "short_sha": "57f1ef8c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:59:49-03:00",
+      "message": "fix(armaduras): clone físico da viga não herda estudo obsoleto de outro ID"
+    },
+    {
+      "sha": "2f1339d4e8a2f993fc5f0f476ae415fc987ef960",
+      "short_sha": "2f1339d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:59:24-03:00",
+      "message": "fix(viga): factory preserva estudo opcional de armadura dupla ao clonar"
+    },
+    {
+      "sha": "6fb2c7063fac0f39bf228f9a8211aac732e566ae",
+      "short_sha": "6fb2c706",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:56:55-03:00",
+      "message": "feat(armaduras): mostrar registro da viga e avisar se estudo duplo foi invalidado"
+    },
+    {
+      "sha": "11f7513854dded1b1dd53a50ad1660da6cdae43a",
+      "short_sha": "11f75138",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:56:34-03:00",
+      "message": "test(armadura dupla): validar roundtrip JSON no Lifecycle/Storage e cópia independente"
+    },
+    {
+      "sha": "61ca3caadd72c2bf61b5e5f1c92447fa5698dcb7",
+      "short_sha": "61ca3caa",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:56:06-03:00",
+      "message": "fix(viga): preservar hipótese dupla preliminar no contrato de serialização/restauração"
+    },
     {
       "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
       "short_sha": "79a69652",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-26T13:51:25-03:00",
       "message": "docs(auditoria): registrar 9 PRs absorvidas e 22 antigas pendentes com critério de fechamento"
-    },
-    {
-      "sha": "02ada8111b48417e10e6149133e8db6142d68a58",
-      "short_sha": "02ada811",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:47:38-03:00",
-      "message": "fix(armadura dupla): eliminar conflito de identificador para altura util d"
-    },
-    {
-      "sha": "3f39b2aa51c4d0a2ebfd60103ba96e8400dc35f3",
-      "short_sha": "3f39b2aa",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:45:35-03:00",
-      "message": "test(armaduras): incluir alternativa dupla e registro por viga no CI ORQ"
-    },
-    {
-      "sha": "ca9fc97a8dc915a949d80ecaf5acd9593efd9808",
-      "short_sha": "ca9fc97a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:45:23-03:00",
-      "message": "test(armadura dupla): mecânica, origem ELU, limites e registro exclusivamente preliminar"
-    },
-    {
-      "sha": "0ea8930335cf8ba10b46bf175b7726d6f76a4a68",
-      "short_sha": "0ea89303",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:44:25-03:00",
-      "message": "feat(armaduras): botão por viga no modal dos oito ELU de segunda ordem"
-    },
-    {
-      "sha": "add68a8fd6eab734a6df84eb309d96546da3179f",
-      "short_sha": "add68a8f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:44:02-03:00",
-      "message": "feat(armaduras): disponibilizar estudo de dupla no detalhe do modal dos oito ELU"
-    },
-    {
-      "sha": "2089f6b4ae2ef7b204d944275d9f16a28b0c8884",
-      "short_sha": "2089f6b4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:43:47-03:00",
-      "message": "feat(ui): permitir avaliação e registro explicitamente não executivo em ambos os modais ORQ"
-    },
-    {
-      "sha": "99bc0a7958e824dca21b9bc7f81aabce48b46cbf",
-      "short_sha": "99bc0a79",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:42:50-03:00",
-      "message": "feat(armaduras): estudo independente de compressão e tração por face com controle de escopo"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40363501116",
-    "run_number": "975"
+    "run_id": "40365187256",
+    "run_number": "976"
   }
 }
