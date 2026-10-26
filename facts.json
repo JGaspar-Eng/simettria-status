@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T16:40:28Z",
+  "gerado_em": "2026-10-26T16:54:38Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
-    "data": "2026-10-26T16:38:43Z"
+    "sha": "79a69652e5a4b4962de0de6cf55a891d58b4c9f1",
+    "data": "2026-10-26T16:53:50Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-    "gerado_em": "2026-10-26T13:17:38Z",
+    "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+    "gerado_em": "2026-10-26T16:39:05Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 3,
-    "idade_horas": 3.4
+    "defasagem_commits_main": 10,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -215,14 +215,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 573,
-            "titulo": "SIMETTRIA — otimização econômica de blocos com 6 pilares (BE9/BE12) por ELU/ELS/SPT",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/573",
-            "rascunho": true,
-            "head_sha": "c53821c9669459fd0d3b14f21b0aa1f479708a73",
-            "ci": "sem_evidencia"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -284,7 +276,7 @@
             "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
             "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 606,
@@ -304,7 +296,7 @@
             "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 604,
@@ -406,17 +398,17 @@
           "merged_at": "2026-10-26T16:38:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
           "data": "2026-10-26T13:38:43-03:00",
           "assunto": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -520,14 +512,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 573,
-            "titulo": "SIMETTRIA — otimização econômica de blocos com 6 pilares (BE9/BE12) por ELU/ELS/SPT",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/573",
-            "rascunho": true,
-            "head_sha": "c53821c9669459fd0d3b14f21b0aa1f479708a73",
-            "ci": "sem_evidencia"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -550,14 +534,6 @@
             "rascunho": true,
             "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
             "ci": "passou"
-          },
-          {
-            "numero": 543,
-            "titulo": "fix(sondagens): compatibilidade do agrupamento com Node 20",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/543",
-            "rascunho": true,
-            "head_sha": "076f896f112f404d1a497695596c3fb81f3b2bea",
-            "ci": "passou"
           }
         ]
       },
@@ -573,7 +549,7 @@
             "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
             "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 606,
@@ -593,7 +569,7 @@
             "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 604,
@@ -695,17 +671,17 @@
           "merged_at": "2026-10-26T16:38:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
           "data": "2026-10-26T13:38:43-03:00",
           "assunto": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -811,8 +787,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 6,
+        "total_integrados": 7,
         "integrados_recentes": [
+          {
+            "numero": 610,
+            "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
+            "merged_at": "2026-10-26T16:53:14Z",
+            "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+            "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 602,
             "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
@@ -821,7 +807,7 @@
             "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
             "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 596,
@@ -875,25 +861,25 @@
           }
         ],
         "ultimo": {
-          "numero": 602,
-          "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
-          "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
-          "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
-          "merged_at": "2026-10-25T22:21:38Z",
+          "numero": 610,
+          "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
+          "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+          "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
+          "merged_at": "2026-10-26T16:53:14Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
-          "data": "2026-10-25T19:21:37-03:00",
-          "assunto": "merge: memorial comprova ELU governante de armadura X/Y (#602)",
-          "ci": "passou"
+          "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+          "data": "2026-10-26T13:53:14-03:00",
+          "assunto": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -907,22 +893,6 @@
       "pr": {
         "estado": "aberto",
         "itens": [
-          {
-            "numero": 570,
-            "titulo": "SIMETTRIA — progresso real por ELU, barra visual e cálculo não bloqueante",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/570",
-            "rascunho": true,
-            "head_sha": "4904beaa087fb5fbc6d3366bd788fc76a591fa6d",
-            "ci": "passou"
-          },
-          {
-            "numero": 569,
-            "titulo": "ORQ: V370 — corrigir falsa revisão, detalhar continuidade e visualizar alternativas em todas as vigas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/569",
-            "rascunho": true,
-            "head_sha": "799103459d5f6d49ebcfa6ea8cf8c00f9b532ffe",
-            "ci": "sem_evidencia"
-          },
           {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
@@ -959,8 +929,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 80,
+        "total_integrados": 81,
         "integrados_recentes": [
+          {
+            "numero": 610,
+            "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
+            "merged_at": "2026-10-26T16:53:14Z",
+            "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+            "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 605,
             "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
@@ -969,7 +949,7 @@
             "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 585,
@@ -1070,38 +1050,28 @@
             "head_sha": "209ea0a56a9c96ea370dd949f482169dc5f02ab1",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 528,
-            "titulo": "feat(orq): demonstra topologia vertical de pilares",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/528",
-            "merged_at": "2026-09-14T21:21:57Z",
-            "merge_sha": "dcea30cf3da28f21dcf500ba6406563483079699",
-            "head_sha": "d80013b72e4cc92f05a807c6e670583ec20dce80",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 605,
-          "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
-          "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-          "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
-          "merged_at": "2026-10-26T02:59:37Z",
+          "numero": 610,
+          "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
+          "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+          "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
+          "merged_at": "2026-10-26T16:53:14Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-          "data": "2026-10-25T23:59:37-03:00",
-          "assunto": "merge: pares ELS do projeto chegam ao painel operacional ORQ (#605)",
-          "ci": "passou"
+          "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+          "data": "2026-10-26T13:53:14-03:00",
+          "assunto": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1351,7 +1321,7 @@
             "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 604,
@@ -1471,6 +1441,7 @@
       310
     ],
     "integrados_recentes": [
+      611,
       582,
       537,
       536,
@@ -1489,14 +1460,13 @@
       453,
       447,
       442,
-      428,
-      425
+      428
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 503,
-  "commits_main_analisados": 2320,
+  "janela_prs": 505,
+  "commits_main_analisados": 2328,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

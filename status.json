@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-10-26T16:39:05Z",
+  "generated_at": "2026-10-26T16:53:33Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
-    "short_sha": "295f3c8f",
+    "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+    "short_sha": "e4edb882",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T13:38:43-03:00",
-    "message": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)"
+    "date": "2026-10-26T13:53:14-03:00",
+    "message": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)"
   },
   "commits": [
+    {
+      "sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
+      "short_sha": "e4edb882",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:53:14-03:00",
+      "message": "merge: vigas estudam armadura dupla nos modais ORQ 1a e 2a ordem (#610)"
+    },
+    {
+      "sha": "02ada8111b48417e10e6149133e8db6142d68a58",
+      "short_sha": "02ada811",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:47:38-03:00",
+      "message": "fix(armadura dupla): eliminar conflito de identificador para altura util d"
+    },
+    {
+      "sha": "3f39b2aa51c4d0a2ebfd60103ba96e8400dc35f3",
+      "short_sha": "3f39b2aa",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:45:35-03:00",
+      "message": "test(armaduras): incluir alternativa dupla e registro por viga no CI ORQ"
+    },
+    {
+      "sha": "ca9fc97a8dc915a949d80ecaf5acd9593efd9808",
+      "short_sha": "ca9fc97a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:45:23-03:00",
+      "message": "test(armadura dupla): mecânica, origem ELU, limites e registro exclusivamente preliminar"
+    },
+    {
+      "sha": "0ea8930335cf8ba10b46bf175b7726d6f76a4a68",
+      "short_sha": "0ea89303",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:44:25-03:00",
+      "message": "feat(armaduras): botão por viga no modal dos oito ELU de segunda ordem"
+    },
+    {
+      "sha": "add68a8fd6eab734a6df84eb309d96546da3179f",
+      "short_sha": "add68a8f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:44:02-03:00",
+      "message": "feat(armaduras): disponibilizar estudo de dupla no detalhe do modal dos oito ELU"
+    },
+    {
+      "sha": "2089f6b4ae2ef7b204d944275d9f16a28b0c8884",
+      "short_sha": "2089f6b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:43:47-03:00",
+      "message": "feat(ui): permitir avaliação e registro explicitamente não executivo em ambos os modais ORQ"
+    },
+    {
+      "sha": "99bc0a7958e824dca21b9bc7f81aabce48b46cbf",
+      "short_sha": "99bc0a79",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:42:50-03:00",
+      "message": "feat(armaduras): estudo independente de compressão e tração por face com controle de escopo"
+    },
     {
       "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
       "short_sha": "295f3c8f",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-26T13:31:05-03:00",
       "message": "test(geo): bloquear duplicidade SPT mesmo quando uma sondagem não tem coordenadas"
-    },
-    {
-      "sha": "246bff8b28a08874892cf484b442cbb95b4b9994",
-      "short_sha": "246bff8b",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T13:30:46-03:00",
-      "message": "fix(geo): detectar ID SPT duplicado antes de filtrar furos sem coordenadas"
-    },
-    {
-      "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-      "short_sha": "486f7f83",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:56:12-03:00",
-      "message": "merge: painel usa percentuais decimais e distingue coleta de publicação (#608)"
-    },
-    {
-      "sha": "a2d3077fe141768fd87396b10e8f4e7895a42f9c",
-      "short_sha": "a2d3077f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:53:51-03:00",
-      "message": "test(painel): corrigir comparação falsa de 10 commits quando SHAs coincidem"
-    },
-    {
-      "sha": "41bbdc97702a4a9ccafbf1a54df742a9f08b1441",
-      "short_sha": "41bbdc97",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:53:25-03:00",
-      "message": "fix(painel): proteger comparação de coleta quando main estiver indisponível"
-    },
-    {
-      "sha": "eee3bffa2fd8e70de317e3a89bce1c2510732bce",
-      "short_sha": "eee3bffa",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:53:21-03:00",
-      "message": "chore(painel): atualizar asset fatos após correção de snapshots"
-    },
-    {
-      "sha": "eac4b27f0abde27e05455d27cefe663f8974690b",
-      "short_sha": "eac4b27f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:52:46-03:00",
-      "message": "test(painel): diferenciar snapshots do Pages para evitar defasagem obsoleta e CI antigo"
-    },
-    {
-      "sha": "83021d9aa931aefd6f4a82e0e9f8b373fccc8096",
-      "short_sha": "83021d9a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:52:18-03:00",
-      "message": "fix(painel): identificar atraso como snapshot histórico quando site publica novo SHA e CI como estado da coleta"
-    },
-    {
-      "sha": "c61417fca0315c590bba01cc5a708916a4db3272",
-      "short_sha": "c61417fc",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:51:46-03:00",
-      "message": "fix(fatos): garantir defasagem zero quando SHAs da mesma coleta coincidem"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40361102860",
-    "run_number": "973"
+    "run_id": "40363404918",
+    "run_number": "974"
   }
 }
