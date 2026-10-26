@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-26T02:40:26Z",
+  "generated_at": "2026-10-26T02:59:54Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
-    "short_sha": "20b5c0de",
+    "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+    "short_sha": "0ae45df7",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T23:40:09-03:00",
-    "message": "merge: painel ELS compara pares atuais com recálculo por apoio (#604)"
+    "date": "2026-10-25T23:59:37-03:00",
+    "message": "merge: pares ELS do projeto chegam ao painel operacional ORQ (#605)"
   },
   "commits": [
+    {
+      "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+      "short_sha": "0ae45df7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:59:37-03:00",
+      "message": "merge: pares ELS do projeto chegam ao painel operacional ORQ (#605)"
+    },
+    {
+      "sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
+      "short_sha": "907d7deb",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:57:52-03:00",
+      "message": "test(ELS): validar pendência visível quando não há pares, sem afirmar sucesso falso"
+    },
+    {
+      "sha": "5853aee257db059fc5105f39c2ee68984dd61705",
+      "short_sha": "5853aee2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:55:10-03:00",
+      "message": "test(ELS): testar cadastro -> snapshot ORQ -> painel com pares reais e ausencia segura"
+    },
+    {
+      "sha": "000992707c581cb96a0fe91d5282ef45b8a8d300",
+      "short_sha": "00099270",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:54:31-03:00",
+      "message": "feat(UI): ligar pares ELS persistidos ao snapshot do overlay e painel de fundacoes"
+    },
+    {
+      "sha": "1f94c0b1fd0f229c238c6760e4aae1da30ce5fed",
+      "short_sha": "1f94c0b1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:54:17-03:00",
+      "message": "feat(ELS): transportar pares cadastrados do projeto ao snapshot ORQ sem inferencia"
+    },
     {
       "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
       "short_sha": "20b5c0de",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:36:19-03:00",
       "message": "merge: painel fatos atualiza sem congelar em abas abertas (#603)"
-    },
-    {
-      "sha": "96daf6b0565e56861fc520241eb99f8e616f91c3",
-      "short_sha": "96daf6b0",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:34:13-03:00",
-      "message": "fix(painel): mostrar aviso de falha de rede também quando última coleta já está vencida"
-    },
-    {
-      "sha": "b86ab07abfa20422ba2b5b72b4f00216667160d8",
-      "short_sha": "b86ab07a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:32:46-03:00",
-      "message": "fix(painel): forçar atualização do script da tabela factual no Pages"
-    },
-    {
-      "sha": "c8561d18e635eb637cf5851061319dc75cb2849d",
-      "short_sha": "c8561d18",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:32:33-03:00",
-      "message": "test(painel): polling real da tabela fatos, foco, mudança de main, falha e deduplicação"
-    },
-    {
-      "sha": "f4bfa2bfb3630c9a438b0b1adeb3d81cf3e32e47",
-      "short_sha": "f4bfa2bf",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:31:40-03:00",
-      "message": "fix(painel): atualizar fatos por minuto, foco e mudanças da main sem apagar última coleta"
-    },
-    {
-      "sha": "35c271fd40f3ffb49b50108ee652d038370185af",
-      "short_sha": "35c271fd",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:21:37-03:00",
-      "message": "merge: memorial comprova ELU governante de armadura X/Y (#602)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40260234403",
-    "run_number": "964"
+    "run_id": "40261827190",
+    "run_number": "965"
   }
 }

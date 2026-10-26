@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T02:41:09Z",
+  "gerado_em": "2026-10-26T03:00:30Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
-    "data": "2026-10-26T02:40:09Z"
+    "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+    "data": "2026-10-26T02:59:37Z"
   },
   "publicado": {
-    "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
-    "gerado_em": "2026-10-25T23:20:33Z",
+    "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
+    "gerado_em": "2026-10-26T02:40:26Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 4,
-    "idade_horas": 3.3
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -149,14 +149,14 @@
           "ci": "passou"
         },
         "ultimo_commit": {
-          "sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
-          "data": "2026-10-25T15:42:03-03:00",
-          "assunto": "merge: placa exige vínculo atual entre sapata, apoio e pilar (#592)",
-          "ci": "passou"
+          "sha": "000992707c581cb96a0fe91d5282ef45b8a8d300",
+          "data": "2026-10-25T23:54:31-03:00",
+          "assunto": "feat(UI): ligar pares ELS persistidos ao snapshot do overlay e painel de fundacoes",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -289,24 +289,24 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 79,
+        "total_integrados": 80,
         "ultimo": {
-          "numero": 585,
-          "titulo": "ORQ: segunda ordem comprovada como frente independente (base atual)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/585",
-          "merge_sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
-          "merged_at": "2026-10-25T17:34:29Z",
-          "ci": "passou"
+          "numero": 605,
+          "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
+          "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+          "merged_at": "2026-10-26T02:59:37Z",
+          "ci": "pendente"
         },
         "ultimo_commit": {
-          "sha": "ee626810544f578d1520a1de6c5204ff72a39ff4",
-          "data": "2026-10-25T14:32:03-03:00",
-          "assunto": "test(orq): cenarios de segunda ordem independente dinamica",
-          "ci": "sem_evidencia"
+          "sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
+          "data": "2026-10-25T23:59:37-03:00",
+          "assunto": "merge: pares ELS do projeto chegam ao painel operacional ORQ (#605)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -402,8 +402,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 498,
-  "commits_main_analisados": 2284,
+  "janela_prs": 499,
+  "commits_main_analisados": 2289,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
