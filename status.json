@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-26T12:41:01Z",
+  "generated_at": "2026-10-26T12:56:40Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
-    "short_sha": "2437b64a",
+    "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
+    "short_sha": "486f7f83",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T09:40:43-03:00",
-    "message": "merge: painel exibe entregas recentes, PRs pendentes e CI por origem (#607)"
+    "date": "2026-10-26T09:56:12-03:00",
+    "message": "merge: painel usa percentuais decimais e distingue coleta de publicação (#608)"
   },
   "commits": [
     {
-      "sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
-      "short_sha": "2437b64a",
+      "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
+      "short_sha": "486f7f83",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:40:43-03:00",
-      "message": "merge: painel exibe entregas recentes, PRs pendentes e CI por origem (#607)"
+      "date": "2026-10-26T09:56:12-03:00",
+      "message": "merge: painel usa percentuais decimais e distingue coleta de publicação (#608)"
     },
     {
-      "sha": "3cd12cceb53adbfba4a851fbfaff77156c91a84d",
-      "short_sha": "3cd12cce",
+      "sha": "a2d3077fe141768fd87396b10e8f4e7895a42f9c",
+      "short_sha": "a2d3077f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:37:01-03:00",
-      "message": "fix(painel): explicitar critério dos 39% junto ao próprio índice"
+      "date": "2026-10-26T09:53:51-03:00",
+      "message": "test(painel): corrigir comparação falsa de 10 commits quando SHAs coincidem"
     },
     {
-      "sha": "98888b5dac0ebedf47e2e7247735e5ac71c3dbb7",
-      "short_sha": "98888b5d",
+      "sha": "41bbdc97702a4a9ccafbf1a54df742a9f08b1441",
+      "short_sha": "41bbdc97",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:36:58-03:00",
-      "message": "chore(painel): invalidar cache do script de fatos com novo contrato de CI"
+      "date": "2026-10-26T09:53:25-03:00",
+      "message": "fix(painel): proteger comparação de coleta quando main estiver indisponível"
     },
     {
-      "sha": "0ff59080921b96d4e7f87d7fd03fbdd0cf8d79ac",
-      "short_sha": "0ff59080",
+      "sha": "eee3bffa2fd8e70de317e3a89bce1c2510732bce",
+      "short_sha": "eee3bffa",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:36:32-03:00",
-      "message": "test(painel): lista 604-606, CI de três fontes, PR abertos e progresso do roadmap"
+      "date": "2026-10-26T09:53:21-03:00",
+      "message": "chore(painel): atualizar asset fatos após correção de snapshots"
     },
     {
-      "sha": "8e7e4003ccfea1420b7625b5f6f439525e8014ec",
-      "short_sha": "8e7e4003",
+      "sha": "eac4b27f0abde27e05455d27cefe663f8974690b",
+      "short_sha": "eac4b27f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:35:57-03:00",
-      "message": "test(painel): usar titulo completo da PR #605 na classificação multirrótulo"
+      "date": "2026-10-26T09:52:46-03:00",
+      "message": "test(painel): diferenciar snapshots do Pages para evitar defasagem obsoleta e CI antigo"
     },
     {
-      "sha": "02b5c21c1ee3c4b74947c9f9409511b895d5e077",
-      "short_sha": "02b5c21c",
+      "sha": "83021d9aa931aefd6f4a82e0e9f8b373fccc8096",
+      "short_sha": "83021d9a",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:35:30-03:00",
-      "message": "test(painel): classificar 604-606, mostrar todos e separar CI da PR e merge"
+      "date": "2026-10-26T09:52:18-03:00",
+      "message": "fix(painel): identificar atraso como snapshot histórico quando site publica novo SHA e CI como estado da coleta"
     },
     {
-      "sha": "db202742c8ad44ac8ebf7ce377193da4d57f6a09",
-      "short_sha": "db202742",
+      "sha": "c61417fca0315c590bba01cc5a708916a4db3272",
+      "short_sha": "c61417fc",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:34:29-03:00",
-      "message": "feat(painel): apresentar PRs recentes, CI histórico separado, todos abertos e índice explicado"
+      "date": "2026-10-26T09:51:46-03:00",
+      "message": "fix(fatos): garantir defasagem zero quando SHAs da mesma coleta coincidem"
     },
     {
-      "sha": "7c7d1085afc556dd1bf0b1e48d15ca38e58799ff",
-      "short_sha": "7c7d1085",
+      "sha": "6b8494c39fc1844cfbe4a9da026f51ff59cc41f4",
+      "short_sha": "6b8494c3",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:32:54-03:00",
-      "message": "feat(painel): registrar CI observado do SHA atual separadamente das falhas históricas"
+      "date": "2026-10-26T09:51:14-03:00",
+      "message": "test(painel): sync mostra percentual pt-BR com 2 casas, inclusive após refresh"
     },
     {
-      "sha": "3d2e4a70f120480b666579182dcbb0dc1c61089f",
-      "short_sha": "3d2e4a70",
+      "sha": "f027ac490370c18cbcec9688546a9f2e0a45cdca",
+      "short_sha": "f027ac49",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:32:22-03:00",
-      "message": "fix(painel): coletar CI do HEAD da PR e 12 merges recentes por frente separados do CI do merge"
+      "date": "2026-10-26T09:50:18-03:00",
+      "message": "docs(painel): documentar porcentagens duas casas sem progresso artificial ou arredondamento por 5"
     },
     {
-      "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
-      "short_sha": "fcfc3dd9",
+      "sha": "74b668d13702a12653bcb02e4962f654a997af5a",
+      "short_sha": "74b668d1",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:31:18-03:00",
-      "message": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs"
+      "date": "2026-10-26T09:49:48-03:00",
+      "message": "test(painel): conferir fórmulas decimais 90,91%, 38,59% e 12 áreas"
     }
   ],
   "development": {
@@ -2092,7 +2092,7 @@
         "done": 10,
         "in_progress": 0,
         "pending": 1,
-        "percent": 91,
+        "percent": 90.91,
         "items": [
           {
             "text": "auditar o modelo real de Fundação, as entradas geotécnicas, as ações estruturais disponíveis e as lacunas de proveniência antes de qualquer fórmula normativa",
@@ -2180,8 +2180,8 @@
         "number": 1,
         "code": "E1",
         "title": "Modelagem Estrutural",
-        "percent": 45,
-        "note": "Índice dos trabalhos cadastrados: 5 concluídos, 3 parciais, 0 em andamento e 3 planejados; total 11. Contribuição do bloco ativo: 0.00. Índice bruto 45.45%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 45.45,
+        "note": "Índice dos trabalhos cadastrados: 5 concluídos, 3 parciais, 0 em andamento e 3 planejados; total 11. Contribuição do bloco ativo: 0.00. Índice calculado 45.45% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2266,8 +2266,8 @@
         "number": 2,
         "code": "E2",
         "title": "Infraestrutura / Geotecnia",
-        "percent": 65,
-        "note": "Índice dos trabalhos cadastrados: 11 concluídos, 1 parciais, 0 em andamento e 5 planejados; total 17. Contribuição do bloco ativo: 0.00. Índice bruto 64.71%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 64.71,
+        "note": "Índice dos trabalhos cadastrados: 11 concluídos, 1 parciais, 0 em andamento e 5 planejados; total 17. Contribuição do bloco ativo: 0.00. Índice calculado 64.71% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2388,8 +2388,8 @@
         "number": 3,
         "code": "E3",
         "title": "Integração Estrutural",
-        "percent": 55,
-        "note": "Índice dos trabalhos cadastrados: 5 concluídos, 1 parciais, 0 em andamento e 3 planejados; total 9. Contribuição do bloco ativo: 0.00. Índice bruto 55.56%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 55.56,
+        "note": "Índice dos trabalhos cadastrados: 5 concluídos, 1 parciais, 0 em andamento e 3 planejados; total 9. Contribuição do bloco ativo: 0.00. Índice calculado 55.56% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2462,8 +2462,8 @@
         "number": 4,
         "code": "E4",
         "title": "Dimensionamento",
-        "percent": 15,
-        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 3 parciais, 1 em andamento e 3 planejados; total 7. Contribuição do bloco ativo: 0.91. Índice bruto 13.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 12.99,
+        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 3 parciais, 1 em andamento e 3 planejados; total 7. Contribuição do bloco ativo: 0.91. Índice calculado 12.99% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": true,
         "work": {
@@ -2525,7 +2525,7 @@
         "code": "E5",
         "title": "Detalhamento",
         "percent": 0,
-        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 1 parciais, 0 em andamento e 6 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice bruto 0.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 1 parciais, 0 em andamento e 6 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice calculado 0.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2586,8 +2586,8 @@
         "number": 6,
         "code": "E6",
         "title": "Visualização",
-        "percent": 20,
-        "note": "Índice dos trabalhos cadastrados: 1 concluídos, 0 parciais, 0 em andamento e 4 planejados; total 5. Contribuição do bloco ativo: 0.00. Índice bruto 20.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 20.0,
+        "note": "Índice dos trabalhos cadastrados: 1 concluídos, 0 parciais, 0 em andamento e 4 planejados; total 5. Contribuição do bloco ativo: 0.00. Índice calculado 20.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2636,8 +2636,8 @@
         "number": 7,
         "code": "E7",
         "title": "Produtividade",
-        "percent": 25,
-        "note": "Índice dos trabalhos cadastrados: 2 concluídos, 0 parciais, 0 em andamento e 6 planejados; total 8. Contribuição do bloco ativo: 0.00. Índice bruto 25.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 25.0,
+        "note": "Índice dos trabalhos cadastrados: 2 concluídos, 0 parciais, 0 em andamento e 6 planejados; total 8. Contribuição do bloco ativo: 0.00. Índice calculado 25.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2704,8 +2704,8 @@
         "number": 8,
         "code": "E8",
         "title": "BIM / Interoperabilidade",
-        "percent": 15,
-        "note": "Índice dos trabalhos cadastrados: 1 concluídos, 0 parciais, 0 em andamento e 5 planejados; total 6. Contribuição do bloco ativo: 0.00. Índice bruto 16.67%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 16.67,
+        "note": "Índice dos trabalhos cadastrados: 1 concluídos, 0 parciais, 0 em andamento e 5 planejados; total 6. Contribuição do bloco ativo: 0.00. Índice calculado 16.67% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2761,7 +2761,7 @@
         "code": "E9",
         "title": "Inteligência",
         "percent": 100,
-        "note": "Índice dos trabalhos cadastrados: 7 concluídos, 0 parciais, 0 em andamento e 0 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice bruto 100.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "note": "Índice dos trabalhos cadastrados: 7 concluídos, 0 parciais, 0 em andamento e 0 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice calculado 100.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2823,7 +2823,7 @@
         "code": "E10",
         "title": "Produto Final",
         "percent": 0,
-        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 2 parciais, 0 em andamento e 5 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice bruto 0.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "note": "Índice dos trabalhos cadastrados: 0 concluídos, 2 parciais, 0 em andamento e 5 planejados; total 7. Contribuição do bloco ativo: 0.00. Índice calculado 0.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2884,8 +2884,8 @@
         "number": 11,
         "code": "E11",
         "title": "Normas Técnicas",
-        "percent": 20,
-        "note": "Índice dos trabalhos cadastrados: 2 concluídos, 5 parciais, 0 em andamento e 3 planejados; total 10. Contribuição do bloco ativo: 0.00. Índice bruto 20.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 20.0,
+        "note": "Índice dos trabalhos cadastrados: 2 concluídos, 5 parciais, 0 em andamento e 3 planejados; total 10. Contribuição do bloco ativo: 0.00. Índice calculado 20.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -2964,8 +2964,8 @@
         "number": 12,
         "code": "E12",
         "title": "Qualidade e Validação",
-        "percent": 50,
-        "note": "Índice dos trabalhos cadastrados: 6 concluídos, 0 parciais, 0 em andamento e 6 planejados; total 12. Contribuição do bloco ativo: 0.00. Índice bruto 50.00%, arredondado a 5 pontos. Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
+        "percent": 50.0,
+        "note": "Índice dos trabalhos cadastrados: 6 concluídos, 0 parciais, 0 em andamento e 6 planejados; total 12. Contribuição do bloco ativo: 0.00. Índice calculado 50.00% (exibido com duas casas decimais). Parciais sem fração documentada não pontuam; não mede cobertura normativa nem aprovação de projeto.",
         "status": "measured",
         "active": false,
         "work": {
@@ -3056,7 +3056,7 @@
     "overall_progress": {
       "done_equivalente": 40.91,
       "total_trabalhos_cadastrados": 106,
-      "percent": 39
+      "percent": 38.59
     }
   },
   "tests": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40324383121",
-    "run_number": "969"
+    "run_id": "40326390245",
+    "run_number": "971"
   }
 }

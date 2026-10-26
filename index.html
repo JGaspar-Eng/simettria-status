@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="simettria-dashboard-build" content="2437b64a01317ac3e73c355a040cb186118cf14f" />
+<meta name="simettria-dashboard-build" content="486f7f83f79a04f6c3d816ed1057812181c04f2b" />
 <title>SIMETTRIA — Painel de Desenvolvimento</title>
 <meta name="robots" content="noindex" />
 <style>
@@ -889,8 +889,8 @@
   </div>
 </footer>
 
-<script src="status_areas.js?v=2437b64a01317ac3e73c355a040cb186118cf14f"></script>
-<script src="status_sequence.js?v=2437b64a01317ac3e73c355a040cb186118cf14f"></script>
+<script src="status_areas.js?v=486f7f83f79a04f6c3d816ed1057812181c04f2b"></script>
+<script src="status_sequence.js?v=486f7f83f79a04f6c3d816ed1057812181c04f2b"></script>
 
 <script>
 (function () {
@@ -898,6 +898,10 @@
     return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
+  }
+
+  function formatarPercentual(valor) {
+    return Number(valor).toFixed(2).replace(".", ",") + "%";
   }
 
   function fmtDate(iso) {
@@ -971,7 +975,7 @@
     var nextExecution = Array.isArray(execution.next) ? execution.next[0] : null;
 
     definirTexto("stat-current", current.code || "—");
-    definirTexto("stat-progress", Number(currentProgress.percent || 0) + "%");
+    definirTexto("stat-progress", formatarPercentual(Number(currentProgress.percent || 0)));
     definirTexto("stat-next", nextExecution ? nextExecution.code : "—");
     definirTexto("stat-updated", fmtDateShort(status.generated_at));
     definirTexto("current-code", current.code || "—");
@@ -986,7 +990,7 @@
     var percent = Number(progress.percent || 0);
 
     definirTexto("current-progress-count", done + " de " + total + " objetivos concluídos");
-    definirTexto("current-progress-percent", percent + "%");
+    definirTexto("current-progress-percent", formatarPercentual(percent));
     var barra = el("current-progress-fill");
     if (barra) barra.style.width = Math.max(0, Math.min(100, percent)) + "%";
     definirTexto("current-progress-meta", "Em andamento: " + inProgress + " · Pendentes: " + pending);
@@ -1003,7 +1007,7 @@
       ? epics.map(function (epic) {
           var measured = epic.status === "measured" && epic.percent != null;
           var value = measured ? Math.max(0, Math.min(100, Number(epic.percent))) : 0;
-          var percentLabel = measured ? "~" + value + "%" : "reestimativa pendente";
+          var percentLabel = measured ? formatarPercentual(value) : "reestimativa pendente";
           return '<article class="epic-progress-card' + (measured ? '"' : ' pending"') + ' title="' + escapeHtml(epic.note || "") + '">' +
             '<div class="epic-progress-head">' +
               '<div><div class="epic-code">ÁREA ' + escapeHtml(epic.number) + '</div>' +
@@ -1256,7 +1260,7 @@
   }
 })();
 </script>
-<script src="status_coordination.js?v=2437b64a01317ac3e73c355a040cb186118cf14f"></script>
-<script src="status_fatos.js?v=2437b64a01317ac3e73c355a040cb186118cf14f"></script>
+<script src="status_coordination.js?v=486f7f83f79a04f6c3d816ed1057812181c04f2b"></script>
+<script src="status_fatos.js?v=486f7f83f79a04f6c3d816ed1057812181c04f2b"></script>
 </body>
 </html>

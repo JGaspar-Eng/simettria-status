@@ -134,7 +134,7 @@
     ".fatos-detalhes{margin-top:8px;font-size:.79rem;max-width:480px}.fatos-detalhes>summary{cursor:pointer;color:#176a83;font-weight:700}.fatos-detalhes .fatos-linha{margin:6px 0;border-bottom:1px dashed rgba(127,127,127,.22);padding-bottom:5px}" +
     ".fatos-meta{margin:6px 0 10px;font-size:.85rem}";
 
-  function montarHtml(fatos, agora, erroCarga) {
+  function montarHtml(fatos, agora, erroCarga, statusObservado) {
     if (!fatos) {
       return "<h2>Fatos por frente</h2>" +
         '<div class="fatos-aviso">Fatos por frente indisponíveis: ' + esc(erroCarga || "facts.json ausente") + ". Nenhuma situação é inferida.</div>";
@@ -150,9 +150,26 @@
     else if (horas > limite) aviso += '<div class="fatos-aviso">FATOS DESATUALIZADOS: coletados há ' + Math.floor(horas) + " h (limite " + limite + " h)</div>";
 
     var pub = fatos.publicado;
-    var meta = "Coletado em " + esc(dataHora(fatos.gerado_em)) + " · main " + esc(sha7(fatos.main && fatos.main.sha) || "sem evidência") +
-      " · site publicado " + (pub ? esc(sha7(pub.sha)) + " (dados de " + esc(dataHora(pub.gerado_em)) +
-        (pub.defasagem_commits_main === 0 ? ", igual à main" : pub.defasagem_commits_main > 0 ? ", " + pub.defasagem_commits_main + " commit(s) atrás da main" : "") + ")" : "sem evidência");
+    var shaAtualSite = statusObservado && statusObservado.head && statusObservado.head.sha;
+    var statusMaisNovo = shaAtualSite &&
+      Date.parse(statusObservado.generated_at || "") >= Date.parse(fatos.gerado_em);
+    var siteAtualizadoDepois = statusMaisNovo && pub &&
+      shaAtualSite !== pub.sha;
+    var meta = "Coletado em " + esc(dataHora(fatos.gerado_em)) + " · main " +
+      esc(sha7(fatos.main && fatos.main.sha) || "sem evidência") +
+      " · site publicado NAQUELE MOMENTO " +
+      (pub ? esc(sha7(pub.sha)) + " (dados de " + esc(dataHora(pub.gerado_em)) +
+        (pub.defasagem_commits_main === 0 ? ", igual à main na coleta" :
+        pub.defasagem_commits_main > 0 ?
+        ", " + pub.defasagem_commits_main + " commit(s) atrás da main na coleta" :
+        ", defasagem não comprovada") + ")" : "sem evidência");
+    if (siteAtualizadoDepois) {
+      meta += ' · <strong>Publicação posterior observada no status.json: ' +
+        esc(sha7(shaAtualSite)) + '</strong>';
+      if (fatos.main && shaAtualSite === fatos.main.sha)
+        meta += " — igual à main desta coleta; o atraso anterior não é atual.";
+      else meta += " — reavaliar a defasagem na próxima coleta de fatos.";
+    }
 
     var linhas = (fatos.frentes || []).map(function (f) {
       return "<tr><th scope=\"row\">" + esc(f.titulo) + '<div class="fatos-linha">' + esc(f.epico) + "</div></th>" +
@@ -161,7 +178,7 @@
 
     var nc = fatos.nao_classificados || {};
     var ciAtual = fatos.ci_main_atual;
-    var atual = '<div class="fatos-meta"><strong>CI do SHA atual da main ' +
+    var atual = '<div class="fatos-meta"><strong>CI da main na coleta ' +
       esc(sha7(fatos.main && fatos.main.sha)) + ':</strong> ' +
       seloCi(ciAtual) +
       ' · CI histórico de PRs/commits não informa o estado atual da main. ' +
@@ -197,7 +214,7 @@
       if (alvo && alvo.parentNode) alvo.parentNode.insertBefore(secao, alvo);
       else (document.querySelector("main") || document.body).appendChild(secao);
     }
-    var html = montarHtml(fatos, new Date(), erroCarga);
+    var html = montarHtml(fatos, new Date(), erroCarga, ultimoStatusObservado);
     if (secao.innerHTML !== html) secao.innerHTML = html;
   }
 
@@ -207,6 +224,7 @@
   var ultimaColetaValida = null;
   var consultaEmCurso = null;
   var ultimoShaRecebidoDoStatus = null;
+  var ultimoStatusObservado = null;
   var INTERVALO_MS = 60000;
 
   function carregar() {
@@ -255,8 +273,12 @@
         if (!document.hidden) carregar();
       });
       window.addEventListener("simettria:status", function (evento) {
-        var sha = evento && evento.detail && evento.detail.head &&
-          evento.detail.head.sha;
+        var observado = evento && evento.detail;
+        var sha = observado && observado.head && observado.head.sha;
+        if (sha) {
+          ultimoStatusObservado = observado;
+          if (ultimaColetaValida) instalar(ultimaColetaValida);
+        }
         if (sha && sha !== ultimoShaRecebidoDoStatus) {
           ultimoShaRecebidoDoStatus = sha;
           carregar();

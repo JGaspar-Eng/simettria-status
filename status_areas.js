@@ -1,6 +1,13 @@
 (function () {
   "use strict";
 
+  function formatarPercentual(valor) {
+    return Number(valor).toFixed(2).replace(".", ",") + "%";
+  }
+  function formatarNumero(valor) {
+    return Number(valor).toFixed(2).replace(".", ",");
+  }
+
   function esc(value) {
     return String(value == null ? "" : value).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
@@ -116,13 +123,13 @@
     if (!epics.length) return;
     instalarEstiloAreas();
     var note = section.querySelector(".section-note");
-    if (note) note.textContent = "Índices calculados dos trabalhos cadastrados, arredondados a 5 pontos. Parciais sem fração documentada não pontuam. Não medem cobertura normativa nem aprovação de projetos.";
+    if (note) note.textContent = "Índices calculados dos trabalhos cadastrados, exibidos com duas casas decimais sem arredondamento em blocos de 5 pontos. Parciais sem fração documentada não pontuam. Não medem cobertura normativa nem aprovação de projetos.";
     grid.innerHTML = epics.map(function (epic) {
       var measured = epic.status === "measured" && epic.percent != null;
       var value = measured ? Math.max(0, Math.min(100, Number(epic.percent))) : 0;
       var ativa = Boolean(epic.active);
       return '<article class="epic-progress-card area-expanded' + (ativa ? ' active' : measured ? '' : ' pending') + '">' +
-        '<div class="epic-progress-head"><div><div class="epic-code">ÁREA ' + esc(epic.number) + '</div><div class="epic-title">' + esc(epic.title || "") + '</div></div><div class="epic-percent' + (measured ? '' : ' pending') + '">' + esc(measured ? '~' + value + '%' : 'reestimativa pendente') + '</div></div>' +
+        '<div class="epic-progress-head"><div><div class="epic-code">ÁREA ' + esc(epic.number) + '</div><div class="epic-title">' + esc(epic.title || "") + '</div></div><div class="epic-percent' + (measured ? '' : ' pending') + '">' + esc(measured ? formatarPercentual(value) : 'reestimativa pendente') + '</div></div>' +
         '<div class="epic-track"><div class="epic-fill" style="width:' + value + '%"></div></div>' +
         (ativa ? '<div class="epic-area-badge">EM EXECUÇÃO</div>' : '<div class="epic-note">índice dos trabalhos cadastrados</div>') +
         detalhesArea(epic, status) + '</article>';
@@ -136,8 +143,8 @@
     if (!overall || typeof overall.percent !== "number") return;
     var valor = document.getElementById("overall-progress-value");
     var dica = document.getElementById("overall-progress-hint");
-    if (valor) valor.textContent = overall.percent + "%";
-    if (dica) dica.textContent = "trabalhos cadastrados concluídos (" + Math.round(overall.done_equivalente) + " de " + overall.total_trabalhos_cadastrados + "). PRs de avanços parciais não pontuam sem fechamento documentado; consulte Fatos por frente.";
+    if (valor) valor.textContent = formatarPercentual(overall.percent);
+    if (dica) dica.textContent = "trabalhos equivalentes documentados (" + formatarNumero(overall.done_equivalente) + " de " + overall.total_trabalhos_cadastrados + "). PRs de avanços parciais não pontuam sem fechamento documentado; consulte Fatos por frente.";
     card.hidden = false;
   }
 
