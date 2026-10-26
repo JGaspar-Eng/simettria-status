@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-26T13:18:32Z",
+  "gerado_em": "2026-10-26T16:40:28Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-    "data": "2026-10-26T12:56:12Z"
+    "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+    "data": "2026-10-26T16:38:43Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
     "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-    "gerado_em": "2026-10-26T12:56:40Z",
+    "gerado_em": "2026-10-26T13:17:38Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.4
+    "defasagem_commits_main": 3,
+    "idade_horas": 3.4
   },
   "frentes": [
     {
@@ -274,8 +274,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 67,
+        "total_integrados": 68,
         "integrados_recentes": [
+          {
+            "numero": 609,
+            "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
+            "merged_at": "2026-10-26T16:38:43Z",
+            "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+            "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 606,
             "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
@@ -284,7 +294,7 @@
             "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
             "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 605,
@@ -385,38 +395,28 @@
             "head_sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 590,
-            "titulo": "Geotecnia: diagnóstico utiliza resultado canônico do SPT sem inventar N",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/590",
-            "merged_at": "2026-10-25T18:14:17Z",
-            "merge_sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
-            "head_sha": "95f0a0a5628052c8f36863157c18ce927f625218",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 606,
-          "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
-          "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
-          "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-          "merged_at": "2026-10-26T12:24:43Z",
+          "numero": 609,
+          "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
+          "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+          "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
+          "merged_at": "2026-10-26T16:38:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
-          "data": "2026-10-26T09:31:18-03:00",
-          "assunto": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs",
-          "ci": "sem_evidencia"
+          "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+          "data": "2026-10-26T13:38:43-03:00",
+          "assunto": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -563,8 +563,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 12,
+        "total_integrados": 13,
         "integrados_recentes": [
+          {
+            "numero": 609,
+            "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
+            "merged_at": "2026-10-26T16:38:43Z",
+            "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+            "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 606,
             "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
@@ -573,7 +583,7 @@
             "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
             "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 605,
@@ -674,38 +684,28 @@
             "head_sha": "0d932039a9b2bb63a4379a1a2687a12f6c6df25a",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 281,
-            "titulo": "feat(area11): consolida contrato SPT e nível d'água",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/281",
-            "merged_at": "2026-09-02T02:06:28Z",
-            "merge_sha": "1c6fba406b8420a6177ba96627dae969cc1cd9ad",
-            "head_sha": "90244aa53bb8b09fdf8c69e6491211f36e947bf9",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 606,
-          "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
-          "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
-          "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-          "merged_at": "2026-10-26T12:24:43Z",
+          "numero": 609,
+          "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
+          "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+          "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
+          "merged_at": "2026-10-26T16:38:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fcfc3dd9fda1164008269a92fce735e8e4c7d350",
-          "data": "2026-10-26T09:31:18-03:00",
-          "assunto": "fix(painel): incluir ELS, placa, geotecnia, resistências e painel no roteamento de PRs",
-          "ci": "sem_evidencia"
+          "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+          "data": "2026-10-26T13:38:43-03:00",
+          "assunto": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -806,25 +806,8 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
-          {
-            "numero": 567,
-            "titulo": "Armaduras: arraste longitudinal tipo Forecast com cobertura de flexão dos 8 ELU",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/567",
-            "rascunho": true,
-            "head_sha": "43d515840cb5a43c00053b23674c0e5ecb120627",
-            "ci": "sem_evidencia"
-          },
-          {
-            "numero": 566,
-            "titulo": "Armaduras: Ø8–12,5 / estribos Ø5–6,3 c/10–20 e cortes 2D com memorial",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/566",
-            "rascunho": true,
-            "head_sha": "8cb59ffdeee7fefb03b7eb0946267b46e2a6c4ce",
-            "ci": "sem_evidencia"
-          }
-        ]
+        "estado": "nenhum",
+        "itens": []
       },
       "main": {
         "estado": "integrado",
@@ -938,22 +921,6 @@
             "url": "https://github.com/JGaspar-Eng/simettria/pull/569",
             "rascunho": true,
             "head_sha": "799103459d5f6d49ebcfa6ea8cf8c00f9b532ffe",
-            "ci": "sem_evidencia"
-          },
-          {
-            "numero": 568,
-            "titulo": "ORQ — 8 ELU de 2ª ordem: esforços em 333 vigas, estudo segregado e editor 2D preservado",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/568",
-            "rascunho": true,
-            "head_sha": "0c269ca5d371319ebb9ed38a172c361a39753a35",
-            "ci": "sem_evidencia"
-          },
-          {
-            "numero": 565,
-            "titulo": "ORQ 3D: 8 ELU de 2ª ordem reais, 40 apoios e comparação 1ª × 2ª ordem",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/565",
-            "rascunho": true,
-            "head_sha": "4262e4f0206293a791610010cbd257e4f92036c4",
             "ci": "sem_evidencia"
           },
           {
@@ -1091,7 +1058,7 @@
             "merged_at": "2026-09-14T22:52:03Z",
             "merge_sha": "6fa2afb540504c1280d9fa23e2f601fa985e3d0c",
             "head_sha": "26e40848e40d770942c6317811d9af37abda5cf6",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1354,7 +1321,7 @@
             "merge_sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
             "head_sha": "a2d3077fe141768fd87396b10e8f4e7895a42f9c",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 607,
@@ -1374,7 +1341,7 @@
             "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
             "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 605,
@@ -1476,13 +1443,13 @@
           "merged_at": "2026-10-26T12:56:12Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
           "data": "2026-10-26T09:56:12-03:00",
           "assunto": "merge: painel usa percentuais decimais e distingue coleta de publicação (#608)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -1493,7 +1460,6 @@
   "nao_classificados": {
     "abertos": [
       576,
-      564,
       561,
       553,
       552,
@@ -1529,8 +1495,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 502,
-  "commits_main_analisados": 2317,
+  "janela_prs": 503,
+  "commits_main_analisados": 2320,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

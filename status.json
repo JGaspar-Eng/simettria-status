@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-26T13:17:38Z",
+  "generated_at": "2026-10-26T16:39:05Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-    "short_sha": "486f7f83",
+    "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+    "short_sha": "295f3c8f",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T09:56:12-03:00",
-    "message": "merge: painel usa percentuais decimais e distingue coleta de publicação (#608)"
+    "date": "2026-10-26T13:38:43-03:00",
+    "message": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)"
   },
   "commits": [
+    {
+      "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
+      "short_sha": "295f3c8f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:38:43-03:00",
+      "message": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)"
+    },
+    {
+      "sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
+      "short_sha": "1f07d37f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:31:05-03:00",
+      "message": "test(geo): bloquear duplicidade SPT mesmo quando uma sondagem não tem coordenadas"
+    },
+    {
+      "sha": "246bff8b28a08874892cf484b442cbb95b4b9994",
+      "short_sha": "246bff8b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-26T13:30:46-03:00",
+      "message": "fix(geo): detectar ID SPT duplicado antes de filtrar furos sem coordenadas"
+    },
     {
       "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
       "short_sha": "486f7f83",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-26T09:51:46-03:00",
       "message": "fix(fatos): garantir defasagem zero quando SHAs da mesma coleta coincidem"
-    },
-    {
-      "sha": "6b8494c39fc1844cfbe4a9da026f51ff59cc41f4",
-      "short_sha": "6b8494c3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:51:14-03:00",
-      "message": "test(painel): sync mostra percentual pt-BR com 2 casas, inclusive após refresh"
-    },
-    {
-      "sha": "f027ac490370c18cbcec9688546a9f2e0a45cdca",
-      "short_sha": "f027ac49",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:50:18-03:00",
-      "message": "docs(painel): documentar porcentagens duas casas sem progresso artificial ou arredondamento por 5"
-    },
-    {
-      "sha": "74b668d13702a12653bcb02e4962f654a997af5a",
-      "short_sha": "74b668d1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T09:49:48-03:00",
-      "message": "test(painel): conferir fórmulas decimais 90,91%, 38,59% e 12 áreas"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40329290283",
-    "run_number": "972"
+    "run_id": "40361102860",
+    "run_number": "973"
   }
 }
