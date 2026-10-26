@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-25T23:20:33Z",
+  "generated_at": "2026-10-26T02:40:26Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
-    "short_sha": "703c31de",
+    "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
+    "short_sha": "20b5c0de",
     "author": "Joanez Gaspar",
-    "date": "2026-10-25T19:36:19-03:00",
-    "message": "merge: painel fatos atualiza sem congelar em abas abertas (#603)"
+    "date": "2026-10-25T23:40:09-03:00",
+    "message": "merge: painel ELS compara pares atuais com recálculo por apoio (#604)"
   },
   "commits": [
+    {
+      "sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
+      "short_sha": "20b5c0de",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:40:09-03:00",
+      "message": "merge: painel ELS compara pares atuais com recálculo por apoio (#604)"
+    },
+    {
+      "sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
+      "short_sha": "2e66c5ba",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:37:24-03:00",
+      "message": "test(ELS): painel compara apoios atuais e bloqueia totais/imediatos adulterados"
+    },
+    {
+      "sha": "f3480934ab12b3280d578467788e25aabcb66d8b",
+      "short_sha": "f3480934",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:36:55-03:00",
+      "message": "feat(painel ELS): ligar pares de apoios globais a comparações diferenciais sem mutar modelo"
+    },
+    {
+      "sha": "efaea36da9b7c82d7465a029c835cb9329fe408d",
+      "short_sha": "efaea36d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-25T23:36:07-03:00",
+      "message": "fix(els): recalcular totais por apoio e verificar vinculo antes de comparar recalque diferencial"
+    },
     {
       "sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
       "short_sha": "703c31de",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-25T19:21:37-03:00",
       "message": "merge: memorial comprova ELU governante de armadura X/Y (#602)"
-    },
-    {
-      "sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
-      "short_sha": "aa549bff",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:20:39-03:00",
-      "message": "merge: punção e cortante reexecutam demanda canonica por ELU (#601)"
-    },
-    {
-      "sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
-      "short_sha": "1b7516c1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:19:52-03:00",
-      "message": "test(detalhamento): oito ELU governantes, memorial e cinco adulteracoes bloqueadas"
-    },
-    {
-      "sha": "491cf6f590a6f365caacf39929c6024fd053c00e",
-      "short_sha": "491cf6f5",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:19:12-03:00",
-      "message": "feat(memorial): identificar ELU governante de As em X/Y apenas com oito provas"
-    },
-    {
-      "sha": "8aa87bceb65864a3a4bdb477afa4955c05a6ffa3",
-      "short_sha": "8aa87bce",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-25T19:18:55-03:00",
-      "message": "feat(armaduras): recomprovar caso governante As em X/Y antes de mostrar no memorial"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40244301751",
-    "run_number": "963"
+    "run_id": "40260234403",
+    "run_number": "964"
   }
 }
