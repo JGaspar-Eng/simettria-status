@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-27T12:29:22Z",
+  "generated_at": "2026-10-27T13:17:17Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-    "short_sha": "7c2e043a",
+    "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+    "short_sha": "e6f5dd88",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T09:27:23-03:00",
-    "message": "merge: reparar seletor vazio de armadura dupla e validar renderizacao (#623)"
+    "date": "2026-10-27T10:16:56-03:00",
+    "message": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)"
   },
   "commits": [
     {
-      "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-      "short_sha": "7c2e043a",
+      "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+      "short_sha": "e6f5dd88",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T09:27:23-03:00",
-      "message": "merge: reparar seletor vazio de armadura dupla e validar renderizacao (#623)"
+      "date": "2026-10-27T10:16:56-03:00",
+      "message": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)"
     },
     {
-      "sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
-      "short_sha": "2b44b8e7",
+      "sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
+      "short_sha": "3dc3693a",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T09:25:14-03:00",
-      "message": "fix(ui): barras_por_camada é número preliminar, não array; montar opções antes de substituir DOM"
+      "date": "2026-10-27T10:15:16-03:00",
+      "message": "fix(orq): priorizar bitola imediatamente inferior para estudo, ex. Ø20→Ø16, evitando Ø8"
     },
     {
-      "sha": "372fbefc8de75230cad6a93a01fac637bb6e2a7a",
-      "short_sha": "372fbefc",
+      "sha": "455d91100ea6d800a8955f7b8a22fa0a7b895e13",
+      "short_sha": "455d9110",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T09:22:54-03:00",
-      "message": "test(orq): rodar regressão DOM de seletor vazio na suíte de armaduras"
+      "date": "2026-10-27T10:13:42-03:00",
+      "message": "fix(ui): sincronizar limite de sugestões com modal para incluir seção atual vermelha"
     },
     {
-      "sha": "f029522b81cbb22b9bdfef7aca27e032d6c41804",
-      "short_sha": "f029522b",
+      "sha": "f74c9f49d30d7118cb970056f44a25e7bda1f5c1",
+      "short_sha": "f74c9f49",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T09:22:40-03:00",
-      "message": "test(orq): exercitar clique DOM real de armadura dupla, alternativas e bloqueio vermelho"
+      "date": "2026-10-27T10:12:03-03:00",
+      "message": "test(orq): Ø8 falha na geometria c1 de 14cm; Ø5 c/5 só atende Asw preliminar (amarelo)"
     },
     {
-      "sha": "38bbae3248bae3b4c6e6f8586b64093d9caf8dbb",
-      "short_sha": "38bbae32",
+      "sha": "e48cef67c5d427bfe79908f7b159521a12683f6e",
+      "short_sha": "e48cef67",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T09:21:44-03:00",
-      "message": "fix(orq): corrigir escopo de podeRegistrar e manter opções visíveis se classificação falhar"
+      "date": "2026-10-27T10:10:39-03:00",
+      "message": "fix(ui): mostrar diversidade de propostas de largura, bitola e estribos, não esconder estribos"
     },
     {
-      "sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
-      "short_sha": "3bbdde62",
+      "sha": "5a0f9f31eea5915d3ab3a7a43d4454321123a545",
+      "short_sha": "5a0f9f31",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T09:00:31-03:00",
-      "message": "merge: classificação colorida e verificável das armaduras duplas (#622)"
+      "date": "2026-10-27T10:08:50-03:00",
+      "message": "test: adicionar semáforo de vigas, armaduras e fundações à suíte de regressão oficial"
     },
     {
-      "sha": "abbb0a3f5088195d5a3659d70716ff53755d65ba",
-      "short_sha": "abbb0a3f",
+      "sha": "0549eea7dad5c26abf984a3f2175146bf347b5aa",
+      "short_sha": "0549eea7",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:58:38-03:00",
-      "message": "fix(ui): não reabilitar botões quando falta alternativa em alguma região"
+      "date": "2026-10-27T10:08:29-03:00",
+      "message": "test(ui): regressão semáforo transversal, V117, 15x40, Ø16, estribos e fundações sem false green"
     },
     {
-      "sha": "004d91e16d8b97948c842d3ed487c02b03feed4f",
-      "short_sha": "004d91e1",
+      "sha": "d8af546fee1b3c6a7a237fe21ef86ad84985fedf",
+      "short_sha": "d8af546f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:57:06-03:00",
-      "message": "test(orq): incluir classificação visual/verificação de alternativas na suíte oficial"
+      "date": "2026-10-27T10:07:19-03:00",
+      "message": "feat(vigas): padronizar alternativas convencionais com semáforo e não confundir preferência com aprovação"
     },
     {
-      "sha": "c8d473be9085325b6329bc83d03073a96b70969c",
-      "short_sha": "c8d473be",
+      "sha": "b847561eb828f314e181123ad11d6a9de6fdc0ae",
+      "short_sha": "b847561e",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:56:52-03:00",
-      "message": "test(orq): colorir 3Ø16 amarelo e Ø20 vermelho na V117, verde somente escopo, fail-closed"
+      "date": "2026-10-27T10:06:35-03:00",
+      "message": "feat(fund): status verde/amarelo/vermelho com motivo e gate de segurança nas alternativas de bloco"
     },
     {
-      "sha": "4c1533fb62c6843320348af795180bed28b5659c",
-      "short_sha": "4c1533fb",
+      "sha": "6e031abc2b22617ff9192b4725ea87cebd0a7b0e",
+      "short_sha": "6e031abc",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:55:44-03:00",
-      "message": "feat(ui): alternativas de barras coloridas por verificação, motivos e bloqueio das incompatíveis"
+      "date": "2026-10-27T10:05:01-03:00",
+      "message": "feat(ui): recomendações semafóricas de seção, bitolas e estribos diretamente no modal ORQ"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40504099531",
-    "run_number": "997"
+    "run_id": "40510666159",
+    "run_number": "998"
   }
 }

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T12:30:27Z",
+  "gerado_em": "2026-10-27T13:18:25Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-    "data": "2026-10-27T12:27:23Z"
+    "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+    "data": "2026-10-27T13:16:56Z"
   },
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-    "gerado_em": "2026-10-27T12:27:45Z",
+    "gerado_em": "2026-10-27T12:29:22Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 14,
+    "idade_horas": 0.8
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 68,
+        "total_integrados": 69,
         "integrados_recentes": [
+          {
+            "numero": 624,
+            "titulo": "SIMETTRIA: semáforo transversal de alternativas, recomendações de vigas e comparador de fundações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/624",
+            "merged_at": "2026-10-27T13:16:56Z",
+            "merge_sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+            "head_sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
           {
             "numero": 609,
             "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
@@ -377,38 +387,28 @@
             "head_sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 591,
-            "titulo": "ELS fissuração: demonstrar força e momento da seção fissurada em X/Y",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/591",
-            "merged_at": "2026-10-25T18:15:27Z",
-            "merge_sha": "e0abbccafa2466214f45e2c37ef161f5c5ccd74e",
-            "head_sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 609,
-          "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
-          "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
-          "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
-          "merged_at": "2026-10-26T16:38:43Z",
+          "numero": 624,
+          "titulo": "SIMETTRIA: semáforo transversal de alternativas, recomendações de vigas e comparador de fundações",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/624",
+          "merge_sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+          "head_sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
+          "merged_at": "2026-10-27T13:16:56Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "8fbaa5d328e7977d56d4f0191f92280f42f11ef2",
-          "data": "2026-10-27T08:53:15-03:00",
-          "assunto": "feat(orq): classificar alternativas de armadura dupla por MRd, cortante, c1 e pendências reais",
-          "ci": "sem_evidencia"
+          "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+          "data": "2026-10-27T10:16:56-03:00",
+          "assunto": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -648,8 +648,8 @@
             "merged_at": "2026-10-25T15:46:05Z",
             "merge_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
             "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 337,
@@ -932,14 +932,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-          "data": "2026-10-27T09:27:23-03:00",
-          "assunto": "merge: reparar seletor vazio de armadura dupla e validar renderizacao (#623)",
+          "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
+          "data": "2026-10-27T10:16:56-03:00",
+          "assunto": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1132,14 +1132,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "372fbefc8de75230cad6a93a01fac637bb6e2a7a",
-          "data": "2026-10-27T09:22:54-03:00",
-          "assunto": "test(orq): rodar regressão DOM de seletor vazio na suíte de armaduras",
-          "ci": "falhou"
+          "sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
+          "data": "2026-10-27T10:15:16-03:00",
+          "assunto": "fix(orq): priorizar bitola imediatamente inferior para estudo, ex. Ø20→Ø16, evitando Ø8",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1484,14 +1484,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
-          "data": "2026-10-27T00:06:11-03:00",
-          "assunto": "fix(painel): atualizar CI ao concluir Testes SIMETTRIA (#618)",
-          "ci": "passou"
+          "sha": "b847561eb828f314e181123ad11d6a9de6fdc0ae",
+          "data": "2026-10-27T10:06:35-03:00",
+          "assunto": "feat(fund): status verde/amarelo/vermelho com motivo e gate de segurança nas alternativas de bloco",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1533,8 +1533,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 517,
-  "commits_main_analisados": 2411,
+  "janela_prs": 518,
+  "commits_main_analisados": 2425,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
