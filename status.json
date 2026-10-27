@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-27T00:34:10Z",
+  "generated_at": "2026-10-27T03:01:42Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "450754f063788e2d36319340ca661d39cd5bf202",
-    "short_sha": "450754f0",
+    "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+    "short_sha": "43b949bc",
     "author": "Joanez Gaspar",
-    "date": "2026-10-26T19:43:59-03:00",
-    "message": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)"
+    "date": "2026-10-27T00:01:20-03:00",
+    "message": "fix(painel): CI da main sem autoconsulta do workflow (#616)"
   },
   "commits": [
+    {
+      "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+      "short_sha": "43b949bc",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T00:01:20-03:00",
+      "message": "fix(painel): CI da main sem autoconsulta do workflow (#616)"
+    },
     {
       "sha": "450754f063788e2d36319340ca661d39cd5bf202",
       "short_sha": "450754f0",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-26T19:35:52-03:00",
       "message": "feat(orq): detalhar solicitações espaciais My/T/N/Vz sem inventar aprovação"
-    },
-    {
-      "sha": "ff6043631c1665fc7c0c5db0d81d2bc12b41b20f",
-      "short_sha": "ff604363",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:35:01-03:00",
-      "message": "feat(ui): prancha dupla atualizada e bloqueio de edição simples sem recálculo"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40427205065",
-    "run_number": "981"
+    "run_id": "40441806276",
+    "run_number": "983"
   }
 }

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T00:35:29Z",
+  "gerado_em": "2026-10-27T03:02:47Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "450754f063788e2d36319340ca661d39cd5bf202",
-    "data": "2026-10-26T22:43:59Z"
+    "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+    "data": "2026-10-27T03:01:20Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
     "sha": "450754f063788e2d36319340ca661d39cd5bf202",
-    "gerado_em": "2026-10-26T22:44:19Z",
+    "gerado_em": "2026-10-27T00:34:10Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 1.9
+    "defasagem_commits_main": 1,
+    "idade_horas": 2.5
   },
   "frentes": [
     {
@@ -797,7 +797,7 @@
             "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 614,
@@ -909,13 +909,13 @@
           "merged_at": "2026-10-26T22:43:59Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "450754f063788e2d36319340ca661d39cd5bf202",
           "data": "2026-10-26T19:43:59-03:00",
           "assunto": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -979,7 +979,7 @@
             "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 614,
@@ -1101,7 +1101,7 @@
           "merged_at": "2026-10-26T22:43:59Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "af375275c4f747c4e45ab5a720d9099577fea84a",
@@ -1321,8 +1321,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 60,
+        "total_integrados": 61,
         "integrados_recentes": [
+          {
+            "numero": 616,
+            "titulo": "fix(painel): impedir CI pendente por autoconsulta do workflow de publicação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/616",
+            "merged_at": "2026-10-27T03:01:21Z",
+            "merge_sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+            "head_sha": "bba9187a1de5619eaf22d1303a1ec296393a0139",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 608,
             "titulo": "Painel: percentuais reais com duas casas e reconciliação temporal do publicado",
@@ -1331,7 +1341,7 @@
             "merge_sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
             "head_sha": "a2d3077fe141768fd87396b10e8f4e7895a42f9c",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 607,
@@ -1432,38 +1442,28 @@
             "head_sha": "a5ef20e702ce105fec8f02634cb01a5f375a9f0d",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 509,
-            "titulo": "fix(ui): confirma sucesso ao aplicar propriedades de pavimento",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/509",
-            "merged_at": "2026-09-12T17:21:08Z",
-            "merge_sha": "1fe3d3d08fc16b811fccb7376de9b009b5bf5794",
-            "head_sha": "e8ec5ecceab0d2208192e17bfc4f5d476100be0d",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 608,
-          "titulo": "Painel: percentuais reais com duas casas e reconciliação temporal do publicado",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/608",
-          "merge_sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-          "head_sha": "a2d3077fe141768fd87396b10e8f4e7895a42f9c",
-          "merged_at": "2026-10-26T12:56:12Z",
+          "numero": 616,
+          "titulo": "fix(painel): impedir CI pendente por autoconsulta do workflow de publicação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/616",
+          "merge_sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+          "head_sha": "bba9187a1de5619eaf22d1303a1ec296393a0139",
+          "merged_at": "2026-10-27T03:01:21Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
-          "data": "2026-10-26T09:56:12-03:00",
-          "assunto": "merge: painel usa percentuais decimais e distingue coleta de publicação (#608)",
-          "ci": "passou"
+          "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+          "data": "2026-10-27T00:01:20-03:00",
+          "assunto": "fix(painel): CI da main sem autoconsulta do workflow (#616)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1505,8 +1505,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 509,
-  "commits_main_analisados": 2370,
+  "janela_prs": 510,
+  "commits_main_analisados": 2371,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
