@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T16:40:17Z",
+  "gerado_em": "2026-10-27T17:53:36Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
-    "data": "2026-10-27T16:36:56Z"
+    "sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+    "data": "2026-10-27T17:52:05Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
-    "gerado_em": "2026-10-27T16:37:16Z",
+    "gerado_em": "2026-10-27T16:39:05Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 9,
+    "idade_horas": 1.2
   },
   "frentes": [
     {
@@ -797,8 +797,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 14,
+        "total_integrados": 15,
         "integrados_recentes": [
+          {
+            "numero": 627,
+            "titulo": "ORQ: revisar várias vigas em lote e reverter armadura dupla desatualizada",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/627",
+            "merged_at": "2026-10-27T17:52:05Z",
+            "merge_sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+            "head_sha": "6f7ec417542b5589f49c05efe8af30f922aac553",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 623,
             "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
@@ -807,7 +817,7 @@
             "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
             "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 619,
@@ -908,38 +918,28 @@
             "head_sha": "a5f9fdddc2f7d471530a8c6735b311c5be73476c",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 361,
-            "titulo": "fix(viga): fck abaixo de C20 deixa de produzir armadura aprovada (#360)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/361",
-            "merged_at": "2026-09-08T11:27:48Z",
-            "merge_sha": "d3397c32cbf5d0f7cd31acec23ff8997e742074e",
-            "head_sha": "c3d6009f0db6ec50ee840b713dd7dcb0c320650f",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 623,
-          "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
-          "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-          "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
-          "merged_at": "2026-10-27T12:27:24Z",
+          "numero": 627,
+          "titulo": "ORQ: revisar várias vigas em lote e reverter armadura dupla desatualizada",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/627",
+          "merge_sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+          "head_sha": "6f7ec417542b5589f49c05efe8af30f922aac553",
+          "merged_at": "2026-10-27T17:52:05Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "5f8884842180389a3f5c6c641a495973735c625c",
-          "data": "2026-10-27T13:33:17-03:00",
-          "assunto": "test(orq): escolher automaticamente armadura dupla real com Ø16 e oito ELU",
-          "ci": "falhou"
+          "sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+          "data": "2026-10-27T14:52:05-03:00",
+          "assunto": "merge: revisão de vigas em lote e reversão da armadura dupla antiga (#627)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -997,8 +997,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 92,
+        "total_integrados": 93,
         "integrados_recentes": [
+          {
+            "numero": 627,
+            "titulo": "ORQ: revisar várias vigas em lote e reverter armadura dupla desatualizada",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/627",
+            "merged_at": "2026-10-27T17:52:05Z",
+            "merge_sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+            "head_sha": "6f7ec417542b5589f49c05efe8af30f922aac553",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 626,
             "titulo": "ORQ: clique no cartão efetiva correção no modelo oficial e recalcula os oito ELU",
@@ -1007,7 +1017,7 @@
             "merge_sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
             "head_sha": "a1fa37ec1e29abf31edcbed6ecc2db4f6d756fc6",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 625,
@@ -1027,7 +1037,7 @@
             "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
             "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 622,
@@ -1108,38 +1118,28 @@
             "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 610,
-            "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
-            "merged_at": "2026-10-26T16:53:14Z",
-            "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-            "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 626,
-          "titulo": "ORQ: clique no cartão efetiva correção no modelo oficial e recalcula os oito ELU",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/626",
-          "merge_sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
-          "head_sha": "a1fa37ec1e29abf31edcbed6ecc2db4f6d756fc6",
-          "merged_at": "2026-10-27T16:36:57Z",
+          "numero": 627,
+          "titulo": "ORQ: revisar várias vigas em lote e reverter armadura dupla desatualizada",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/627",
+          "merge_sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+          "head_sha": "6f7ec417542b5589f49c05efe8af30f922aac553",
+          "merged_at": "2026-10-27T17:52:05Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "5f8884842180389a3f5c6c641a495973735c625c",
-          "data": "2026-10-27T13:33:17-03:00",
-          "assunto": "test(orq): escolher automaticamente armadura dupla real com Ø16 e oito ELU",
-          "ci": "falhou"
+          "sha": "873a4e85ac663ec97aeace9383cde90a13cdef21",
+          "data": "2026-10-27T14:47:44-03:00",
+          "assunto": "test(orq): fila de múltiplas vigas, estorno de dupla, JSON, cancelamento stale e rollback transacional",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1533,8 +1533,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 520,
-  "commits_main_analisados": 2446,
+  "janela_prs": 521,
+  "commits_main_analisados": 2455,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-27T16:39:05Z",
+  "generated_at": "2026-10-27T17:52:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
-    "short_sha": "b835b3df",
+    "sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+    "short_sha": "43c7a2e0",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T13:36:56-03:00",
-    "message": "merge: aplicar correções de vigas diretamente ao clicar nos cartões (#626)"
+    "date": "2026-10-27T14:52:05-03:00",
+    "message": "merge: revisão de vigas em lote e reversão da armadura dupla antiga (#627)"
   },
   "commits": [
+    {
+      "sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
+      "short_sha": "43c7a2e0",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:52:05-03:00",
+      "message": "merge: revisão de vigas em lote e reversão da armadura dupla antiga (#627)"
+    },
+    {
+      "sha": "6f7ec417542b5589f49c05efe8af30f922aac553",
+      "short_sha": "6f7ec417",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:49:49-03:00",
+      "message": "test(dupla): permitir quarto argumento de fila na integração do modal de primeira ordem"
+    },
+    {
+      "sha": "4a85c2e770617e7fc45d2d653bd8f1d736c61b4e",
+      "short_sha": "4a85c2e7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:48:02-03:00",
+      "message": "test: incluir revisão em lote de vigas na suíte oficial de armaduras"
+    },
+    {
+      "sha": "873a4e85ac663ec97aeace9383cde90a13cdef21",
+      "short_sha": "873a4e85",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:47:44-03:00",
+      "message": "test(orq): fila de múltiplas vigas, estorno de dupla, JSON, cancelamento stale e rollback transacional"
+    },
+    {
+      "sha": "398a54d1faed728fcc7b9d33bbf3cc563ef1ea86",
+      "short_sha": "398a54d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:46:22-03:00",
+      "message": "feat(dupla): reaplicar barras de vigas anteriormente estudadas através da fila sem recalcular a cada escolha"
+    },
+    {
+      "sha": "c93d8b41b3009f4f7f606f306874e379c0846e9f",
+      "short_sha": "c93d8b41",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:45:58-03:00",
+      "message": "fix(ui): reconhecer códigos DIAM_CANTO e ESTRIBO nos cartões da fila"
+    },
+    {
+      "sha": "7731b384a282e49c1b42d94ae729b31a30b9339c",
+      "short_sha": "7731b384",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:45:33-03:00",
+      "message": "feat(ui): fila de revisão de múltiplas vigas, único ORQ, substituição de escolhas e reversão de armadura dupla"
+    },
+    {
+      "sha": "3c3b6ff2a3937c72a3fb04819128481d1a4fdad5",
+      "short_sha": "3c3b6ff2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:44:13-03:00",
+      "message": "fix(orq): mudar seção não conserva armadura dupla e seleções antigas como se ainda estivessem válidas"
+    },
+    {
+      "sha": "39a1293c20ddc917aec75d96d65ef4804f46c5fe",
+      "short_sha": "39a1293c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T14:43:26-03:00",
+      "message": "feat(orq): fila transacional de correções de vigas, armadura dupla reversível e validação antes do recálculo"
+    },
     {
       "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
       "short_sha": "b835b3df",
       "author": "Joanez Gaspar",
       "date": "2026-10-27T13:36:56-03:00",
       "message": "merge: aplicar correções de vigas diretamente ao clicar nos cartões (#626)"
-    },
-    {
-      "sha": "a1fa37ec1e29abf31edcbed6ecc2db4f6d756fc6",
-      "short_sha": "a1fa37ec",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:34:38-03:00",
-      "message": "fix(test): evitar variável calc duplicada na regressão do clique único"
-    },
-    {
-      "sha": "5f8884842180389a3f5c6c641a495973735c625c",
-      "short_sha": "5f888484",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:33:17-03:00",
-      "message": "test(orq): escolher automaticamente armadura dupla real com Ø16 e oito ELU"
-    },
-    {
-      "sha": "d79302a0503fd8a43e1cabfdd51451ff975a372d",
-      "short_sha": "d79302a0",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:31:41-03:00",
-      "message": "fix(lifecycle): viga clonada sob novo ID não herda escolha de estribo de outro membro"
-    },
-    {
-      "sha": "e56807566cb009f3a1cd6281d71cef6388898105",
-      "short_sha": "e5680756",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:29:50-03:00",
-      "message": "test(ELU): estribo do cartão entra no cálculo, sem fallback quando não atende"
-    },
-    {
-      "sha": "be962218ffcc0ac2a56b23b9327aab1de6ea8c8e",
-      "short_sha": "be962218",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:29:09-03:00",
-      "message": "test(orq): clique único aplica seção ou estribo no modelo, novo ORQ, cancelamento e persistência"
-    },
-    {
-      "sha": "72dacce851da0bd0ba19b6774b9504fe5f10ac33",
-      "short_sha": "72dacce8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:27:46-03:00",
-      "message": "feat(orq): clicar aplica seção, bitolas duplas resistentes ou estribo no estado oficial; recálculo obrigatório"
-    },
-    {
-      "sha": "21c13b4ce233b495e51cd8190160cc15068f7cd2",
-      "short_sha": "21c13b4c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:26:02-03:00",
-      "message": "feat(orq): usar estribo selecionado no cálculo real, bloquear fallback e registrar falha resistente"
-    },
-    {
-      "sha": "c55e6d7f1ee5481190810b539caa0ac47c31c2f4",
-      "short_sha": "c55e6d7f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:24:35-03:00",
-      "message": "fix(armadura): estimar d com estribo explicitamente escolhido e falhar sem fallback inexistente"
-    },
-    {
-      "sha": "cada74979aec796e44689fd02f80ebc382e766b5",
-      "short_sha": "cada7497",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:24:14-03:00",
-      "message": "feat(contract): persistir estudo de estribo por viga em modelo oficial, sem status executivo"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40542933318",
-    "run_number": "1004"
+    "run_id": "40554606079",
+    "run_number": "1005"
   }
 }
