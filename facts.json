@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T15:27:17Z",
+  "gerado_em": "2026-10-27T16:15:19Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
-    "data": "2026-10-27T13:16:56Z"
+    "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
+    "data": "2026-10-27T16:13:14Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
-    "gerado_em": "2026-10-27T13:18:46Z",
+    "gerado_em": "2026-10-27T15:26:07Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 2.1
+    "defasagem_commits_main": 9,
+    "idade_horas": 0.8
   },
   "frentes": [
     {
@@ -932,14 +932,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
-          "data": "2026-10-27T10:16:56-03:00",
-          "assunto": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)",
-          "ci": "passou"
+          "sha": "d2d96df74bb10d9bb48c9184316eebff5b8d9ca3",
+          "data": "2026-10-27T13:10:43-03:00",
+          "assunto": "test: incluir regressão interativa dos cartões no npm run test:orq-armaduras",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -997,8 +997,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 90,
+        "total_integrados": 91,
         "integrados_recentes": [
+          {
+            "numero": 625,
+            "titulo": "ORQ: tornar clicáveis as sugestões de vigas e permitir aplicar seção com recálculo seguro",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/625",
+            "merged_at": "2026-10-27T16:13:14Z",
+            "merge_sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
+            "head_sha": "5483243accf8008545b894a524edc03ba06abd34",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 623,
             "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
@@ -1108,38 +1118,28 @@
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 585,
-            "titulo": "ORQ: segunda ordem comprovada como frente independente (base atual)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/585",
-            "merged_at": "2026-10-25T17:34:29Z",
-            "merge_sha": "2852ace85873b5ebdb40ba038c03881cd3cd301a",
-            "head_sha": "db8f61b87ca4996abb0df3ba6a6a77b0b306560a",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 623,
-          "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
-          "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-          "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
-          "merged_at": "2026-10-27T12:27:24Z",
+          "numero": 625,
+          "titulo": "ORQ: tornar clicáveis as sugestões de vigas e permitir aplicar seção com recálculo seguro",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/625",
+          "merge_sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
+          "head_sha": "5483243accf8008545b894a524edc03ba06abd34",
+          "merged_at": "2026-10-27T16:13:14Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
-          "data": "2026-10-27T10:15:16-03:00",
-          "assunto": "fix(orq): priorizar bitola imediatamente inferior para estudo, ex. Ø20→Ø16, evitando Ø8",
-          "ci": "passou"
+          "sha": "d2d96df74bb10d9bb48c9184316eebff5b8d9ca3",
+          "data": "2026-10-27T13:10:43-03:00",
+          "assunto": "test: incluir regressão interativa dos cartões no npm run test:orq-armaduras",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1533,8 +1533,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 518,
-  "commits_main_analisados": 2425,
+  "janela_prs": 519,
+  "commits_main_analisados": 2434,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

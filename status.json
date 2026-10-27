@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-27T15:26:07Z",
+  "generated_at": "2026-10-27T16:13:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
-    "short_sha": "e6f5dd88",
+    "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
+    "short_sha": "a1196be4",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T10:16:56-03:00",
-    "message": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)"
+    "date": "2026-10-27T13:13:14-03:00",
+    "message": "merge: selecionar sugestões de viga por clique e aplicar seção com recálculo (#625)"
   },
   "commits": [
+    {
+      "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
+      "short_sha": "a1196be4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:13:14-03:00",
+      "message": "merge: selecionar sugestões de viga por clique e aplicar seção com recálculo (#625)"
+    },
+    {
+      "sha": "5483243accf8008545b894a524edc03ba06abd34",
+      "short_sha": "5483243a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:11:39-03:00",
+      "message": "fix: preservar render somente-leitura e testes anteriores sem listener DOM"
+    },
+    {
+      "sha": "d2d96df74bb10d9bb48c9184316eebff5b8d9ca3",
+      "short_sha": "d2d96df7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:10:43-03:00",
+      "message": "test: incluir regressão interativa dos cartões no npm run test:orq-armaduras"
+    },
+    {
+      "sha": "e54e76ae2eb892d657252ea4b04a2149b0daedd4",
+      "short_sha": "e54e76ae",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:10:29-03:00",
+      "message": "test(orq): seleção por clique, confirmação de seção, cancelamento, stale, bitola e estribos"
+    },
+    {
+      "sha": "f0da98c47cfec677ef08b9a538a5d20049104716",
+      "short_sha": "f0da98c4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:08:37-03:00",
+      "message": "feat(ui): habilitar clique e ações de seção, bitola e estribo no modal de vigas"
+    },
+    {
+      "sha": "72fcde8afce311ac332f17483c359a430e8fa77e",
+      "short_sha": "72fcde8a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:08:16-03:00",
+      "message": "feat(orq): executar opções clicadas com confirmação de seção e recálculo; bitola encaminhada ao estudo"
+    },
+    {
+      "sha": "0b90c48a149ccea9197c88b559b79c71461118a6",
+      "short_sha": "0b90c48a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:05:49-03:00",
+      "message": "feat(orq): seleção de bitola máxima abre pré-montagem dupla sem aprovação nem aplicação silenciosa"
+    },
+    {
+      "sha": "89c5e63d0898c2df3b5d6ad75815f868278d2a1c",
+      "short_sha": "89c5e63d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:04:44-03:00",
+      "message": "testability: manter DOM compatível com suíte fake sem append nativo"
+    },
+    {
+      "sha": "fd15c816f98478d6c02e2b845a86f054b7ce7181",
+      "short_sha": "fd15c816",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T13:04:27-03:00",
+      "message": "feat(ui): cartões clicáveis e acessíveis com seleção de cenário e ação explícita separada"
+    },
     {
       "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
       "short_sha": "e6f5dd88",
       "author": "Joanez Gaspar",
       "date": "2026-10-27T10:16:56-03:00",
       "message": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)"
-    },
-    {
-      "sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
-      "short_sha": "3dc3693a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:15:16-03:00",
-      "message": "fix(orq): priorizar bitola imediatamente inferior para estudo, ex. Ø20→Ø16, evitando Ø8"
-    },
-    {
-      "sha": "455d91100ea6d800a8955f7b8a22fa0a7b895e13",
-      "short_sha": "455d9110",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:13:42-03:00",
-      "message": "fix(ui): sincronizar limite de sugestões com modal para incluir seção atual vermelha"
-    },
-    {
-      "sha": "f74c9f49d30d7118cb970056f44a25e7bda1f5c1",
-      "short_sha": "f74c9f49",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:12:03-03:00",
-      "message": "test(orq): Ø8 falha na geometria c1 de 14cm; Ø5 c/5 só atende Asw preliminar (amarelo)"
-    },
-    {
-      "sha": "e48cef67c5d427bfe79908f7b159521a12683f6e",
-      "short_sha": "e48cef67",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:10:39-03:00",
-      "message": "fix(ui): mostrar diversidade de propostas de largura, bitola e estribos, não esconder estribos"
-    },
-    {
-      "sha": "5a0f9f31eea5915d3ab3a7a43d4454321123a545",
-      "short_sha": "5a0f9f31",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:08:50-03:00",
-      "message": "test: adicionar semáforo de vigas, armaduras e fundações à suíte de regressão oficial"
-    },
-    {
-      "sha": "0549eea7dad5c26abf984a3f2175146bf347b5aa",
-      "short_sha": "0549eea7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:08:29-03:00",
-      "message": "test(ui): regressão semáforo transversal, V117, 15x40, Ø16, estribos e fundações sem false green"
-    },
-    {
-      "sha": "d8af546fee1b3c6a7a237fe21ef86ad84985fedf",
-      "short_sha": "d8af546f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:07:19-03:00",
-      "message": "feat(vigas): padronizar alternativas convencionais com semáforo e não confundir preferência com aprovação"
-    },
-    {
-      "sha": "b847561eb828f314e181123ad11d6a9de6fdc0ae",
-      "short_sha": "b847561e",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:06:35-03:00",
-      "message": "feat(fund): status verde/amarelo/vermelho com motivo e gate de segurança nas alternativas de bloco"
-    },
-    {
-      "sha": "6e031abc2b22617ff9192b4725ea87cebd0a7b0e",
-      "short_sha": "6e031abc",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:05:01-03:00",
-      "message": "feat(ui): recomendações semafóricas de seção, bitolas e estribos diretamente no modal ORQ"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40530869824",
-    "run_number": "1000"
+    "run_id": "40538757239",
+    "run_number": "1001"
   }
 }
