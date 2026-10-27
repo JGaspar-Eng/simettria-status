@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-27T16:15:45Z",
+  "generated_at": "2026-10-27T16:37:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
-    "short_sha": "a1196be4",
+    "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
+    "short_sha": "b835b3df",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T13:13:14-03:00",
-    "message": "merge: selecionar sugestões de viga por clique e aplicar seção com recálculo (#625)"
+    "date": "2026-10-27T13:36:56-03:00",
+    "message": "merge: aplicar correções de vigas diretamente ao clicar nos cartões (#626)"
   },
   "commits": [
     {
-      "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
-      "short_sha": "a1196be4",
+      "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
+      "short_sha": "b835b3df",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:13:14-03:00",
-      "message": "merge: selecionar sugestões de viga por clique e aplicar seção com recálculo (#625)"
+      "date": "2026-10-27T13:36:56-03:00",
+      "message": "merge: aplicar correções de vigas diretamente ao clicar nos cartões (#626)"
     },
     {
-      "sha": "5483243accf8008545b894a524edc03ba06abd34",
-      "short_sha": "5483243a",
+      "sha": "a1fa37ec1e29abf31edcbed6ecc2db4f6d756fc6",
+      "short_sha": "a1fa37ec",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:11:39-03:00",
-      "message": "fix: preservar render somente-leitura e testes anteriores sem listener DOM"
+      "date": "2026-10-27T13:34:38-03:00",
+      "message": "fix(test): evitar variável calc duplicada na regressão do clique único"
     },
     {
-      "sha": "d2d96df74bb10d9bb48c9184316eebff5b8d9ca3",
-      "short_sha": "d2d96df7",
+      "sha": "5f8884842180389a3f5c6c641a495973735c625c",
+      "short_sha": "5f888484",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:10:43-03:00",
-      "message": "test: incluir regressão interativa dos cartões no npm run test:orq-armaduras"
+      "date": "2026-10-27T13:33:17-03:00",
+      "message": "test(orq): escolher automaticamente armadura dupla real com Ø16 e oito ELU"
     },
     {
-      "sha": "e54e76ae2eb892d657252ea4b04a2149b0daedd4",
-      "short_sha": "e54e76ae",
+      "sha": "d79302a0503fd8a43e1cabfdd51451ff975a372d",
+      "short_sha": "d79302a0",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:10:29-03:00",
-      "message": "test(orq): seleção por clique, confirmação de seção, cancelamento, stale, bitola e estribos"
+      "date": "2026-10-27T13:31:41-03:00",
+      "message": "fix(lifecycle): viga clonada sob novo ID não herda escolha de estribo de outro membro"
     },
     {
-      "sha": "f0da98c47cfec677ef08b9a538a5d20049104716",
-      "short_sha": "f0da98c4",
+      "sha": "e56807566cb009f3a1cd6281d71cef6388898105",
+      "short_sha": "e5680756",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:08:37-03:00",
-      "message": "feat(ui): habilitar clique e ações de seção, bitola e estribo no modal de vigas"
+      "date": "2026-10-27T13:29:50-03:00",
+      "message": "test(ELU): estribo do cartão entra no cálculo, sem fallback quando não atende"
     },
     {
-      "sha": "72fcde8afce311ac332f17483c359a430e8fa77e",
-      "short_sha": "72fcde8a",
+      "sha": "be962218ffcc0ac2a56b23b9327aab1de6ea8c8e",
+      "short_sha": "be962218",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:08:16-03:00",
-      "message": "feat(orq): executar opções clicadas com confirmação de seção e recálculo; bitola encaminhada ao estudo"
+      "date": "2026-10-27T13:29:09-03:00",
+      "message": "test(orq): clique único aplica seção ou estribo no modelo, novo ORQ, cancelamento e persistência"
     },
     {
-      "sha": "0b90c48a149ccea9197c88b559b79c71461118a6",
-      "short_sha": "0b90c48a",
+      "sha": "72dacce851da0bd0ba19b6774b9504fe5f10ac33",
+      "short_sha": "72dacce8",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:05:49-03:00",
-      "message": "feat(orq): seleção de bitola máxima abre pré-montagem dupla sem aprovação nem aplicação silenciosa"
+      "date": "2026-10-27T13:27:46-03:00",
+      "message": "feat(orq): clicar aplica seção, bitolas duplas resistentes ou estribo no estado oficial; recálculo obrigatório"
     },
     {
-      "sha": "89c5e63d0898c2df3b5d6ad75815f868278d2a1c",
-      "short_sha": "89c5e63d",
+      "sha": "21c13b4ce233b495e51cd8190160cc15068f7cd2",
+      "short_sha": "21c13b4c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:04:44-03:00",
-      "message": "testability: manter DOM compatível com suíte fake sem append nativo"
+      "date": "2026-10-27T13:26:02-03:00",
+      "message": "feat(orq): usar estribo selecionado no cálculo real, bloquear fallback e registrar falha resistente"
     },
     {
-      "sha": "fd15c816f98478d6c02e2b845a86f054b7ce7181",
-      "short_sha": "fd15c816",
+      "sha": "c55e6d7f1ee5481190810b539caa0ac47c31c2f4",
+      "short_sha": "c55e6d7f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T13:04:27-03:00",
-      "message": "feat(ui): cartões clicáveis e acessíveis com seleção de cenário e ação explícita separada"
+      "date": "2026-10-27T13:24:35-03:00",
+      "message": "fix(armadura): estimar d com estribo explicitamente escolhido e falhar sem fallback inexistente"
     },
     {
-      "sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
-      "short_sha": "e6f5dd88",
+      "sha": "cada74979aec796e44689fd02f80ebc382e766b5",
+      "short_sha": "cada7497",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T10:16:56-03:00",
-      "message": "merge: padrão semáforo de alternativas de vigas, armaduras e fundações (#624)"
+      "date": "2026-10-27T13:24:14-03:00",
+      "message": "feat(contract): persistir estudo de estribo por viga em modelo oficial, sem status executivo"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40539077232",
-    "run_number": "1002"
+    "run_id": "40542655536",
+    "run_number": "1003"
   }
 }

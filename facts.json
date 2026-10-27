@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T16:16:51Z",
+  "gerado_em": "2026-10-27T16:38:41Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
-    "data": "2026-10-27T16:13:14Z"
+    "sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
+    "data": "2026-10-27T16:36:56Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
-    "gerado_em": "2026-10-27T16:13:55Z",
+    "gerado_em": "2026-10-27T16:15:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 12,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -932,14 +932,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "d2d96df74bb10d9bb48c9184316eebff5b8d9ca3",
-          "data": "2026-10-27T13:10:43-03:00",
-          "assunto": "test: incluir regressão interativa dos cartões no npm run test:orq-armaduras",
+          "sha": "5f8884842180389a3f5c6c641a495973735c625c",
+          "data": "2026-10-27T13:33:17-03:00",
+          "assunto": "test(orq): escolher automaticamente armadura dupla real com Ø16 e oito ELU",
           "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -997,8 +997,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 91,
+        "total_integrados": 92,
         "integrados_recentes": [
+          {
+            "numero": 626,
+            "titulo": "ORQ: clique no cartão efetiva correção no modelo oficial e recalcula os oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/626",
+            "merged_at": "2026-10-27T16:36:57Z",
+            "merge_sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
+            "head_sha": "a1fa37ec1e29abf31edcbed6ecc2db4f6d756fc6",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 625,
             "titulo": "ORQ: tornar clicáveis as sugestões de vigas e permitir aplicar seção com recálculo seguro",
@@ -1007,7 +1017,7 @@
             "merge_sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
             "head_sha": "5483243accf8008545b894a524edc03ba06abd34",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 623,
@@ -1108,38 +1118,28 @@
             "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 605,
-            "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
-            "merged_at": "2026-10-26T02:59:37Z",
-            "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-            "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 625,
-          "titulo": "ORQ: tornar clicáveis as sugestões de vigas e permitir aplicar seção com recálculo seguro",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/625",
-          "merge_sha": "a1196be43a583ebbeb2a9ecd6792709109178966",
-          "head_sha": "5483243accf8008545b894a524edc03ba06abd34",
-          "merged_at": "2026-10-27T16:13:14Z",
+          "numero": 626,
+          "titulo": "ORQ: clique no cartão efetiva correção no modelo oficial e recalcula os oito ELU",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/626",
+          "merge_sha": "b835b3dfe5db5ec4737a60627f549b23751fa60a",
+          "head_sha": "a1fa37ec1e29abf31edcbed6ecc2db4f6d756fc6",
+          "merged_at": "2026-10-27T16:36:57Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "d2d96df74bb10d9bb48c9184316eebff5b8d9ca3",
-          "data": "2026-10-27T13:10:43-03:00",
-          "assunto": "test: incluir regressão interativa dos cartões no npm run test:orq-armaduras",
+          "sha": "5f8884842180389a3f5c6c641a495973735c625c",
+          "data": "2026-10-27T13:33:17-03:00",
+          "assunto": "test(orq): escolher automaticamente armadura dupla real com Ø16 e oito ELU",
           "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1484,14 +1484,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "b847561eb828f314e181123ad11d6a9de6fdc0ae",
-          "data": "2026-10-27T10:06:35-03:00",
-          "assunto": "feat(fund): status verde/amarelo/vermelho com motivo e gate de segurança nas alternativas de bloco",
+          "sha": "cada74979aec796e44689fd02f80ebc382e766b5",
+          "data": "2026-10-27T13:24:14-03:00",
+          "assunto": "feat(contract): persistir estudo de estribo por viga em modelo oficial, sem status executivo",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1533,8 +1533,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 519,
-  "commits_main_analisados": 2434,
+  "janela_prs": 520,
+  "commits_main_analisados": 2446,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
