@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T12:03:43Z",
+  "gerado_em": "2026-10-27T12:28:49Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
-    "data": "2026-10-27T12:00:31Z"
+    "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+    "data": "2026-10-27T12:27:23Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
-    "gerado_em": "2026-10-27T12:00:52Z",
+    "gerado_em": "2026-10-27T12:02:28Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -797,8 +797,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 13,
+        "total_integrados": 14,
         "integrados_recentes": [
+          {
+            "numero": 623,
+            "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
+            "merged_at": "2026-10-27T12:27:24Z",
+            "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+            "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 619,
             "titulo": "ORQ vigas: triagem V+T concomitante por 8 ELU e demanda preliminar de armadura de torção",
@@ -807,7 +817,7 @@
             "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
             "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 617,
@@ -908,38 +918,28 @@
             "head_sha": "c3d6009f0db6ec50ee840b713dd7dcb0c320650f",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 289,
-            "titulo": "feat(area11): quita M3/M4 do detalhamento executivo da sapata",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/289",
-            "merged_at": "2026-09-02T20:09:46Z",
-            "merge_sha": "06025cc57f718ee6b574683f7276609626829c0a",
-            "head_sha": "014611a09289f0360fc001cacf5eedf0b97c76a0",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 619,
-          "titulo": "ORQ vigas: triagem V+T concomitante por 8 ELU e demanda preliminar de armadura de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/619",
-          "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-          "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-          "merged_at": "2026-10-27T03:30:37Z",
+          "numero": 623,
+          "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
+          "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+          "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
+          "merged_at": "2026-10-27T12:27:24Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
-          "data": "2026-10-27T09:00:31-03:00",
-          "assunto": "merge: classificação colorida e verificável das armaduras duplas (#622)",
-          "ci": "passou"
+          "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+          "data": "2026-10-27T09:27:23-03:00",
+          "assunto": "merge: reparar seletor vazio de armadura dupla e validar renderizacao (#623)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -997,8 +997,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 89,
+        "total_integrados": 90,
         "integrados_recentes": [
+          {
+            "numero": 623,
+            "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
+            "merged_at": "2026-10-27T12:27:24Z",
+            "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+            "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 622,
             "titulo": "ORQ: classificar alternativas de barras por resistência, geometria c1 e pendências com cores",
@@ -1027,7 +1037,7 @@
             "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
             "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 617,
@@ -1108,38 +1118,28 @@
             "head_sha": "db8f61b87ca4996abb0df3ba6a6a77b0b306560a",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 583,
-            "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
-            "merged_at": "2026-10-25T17:30:11Z",
-            "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
-            "head_sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 622,
-          "titulo": "ORQ: classificar alternativas de barras por resistência, geometria c1 e pendências com cores",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/622",
-          "merge_sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
-          "head_sha": "abbb0a3f5088195d5a3659d70716ff53755d65ba",
-          "merged_at": "2026-10-27T12:00:31Z",
+          "numero": 623,
+          "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
+          "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+          "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
+          "merged_at": "2026-10-27T12:27:24Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "004d91e16d8b97948c842d3ed487c02b03feed4f",
-          "data": "2026-10-27T08:57:06-03:00",
-          "assunto": "test(orq): incluir classificação visual/verificação de alternativas na suíte oficial",
-          "ci": "passou"
+          "sha": "372fbefc8de75230cad6a93a01fac637bb6e2a7a",
+          "data": "2026-10-27T09:22:54-03:00",
+          "assunto": "test(orq): rodar regressão DOM de seletor vazio na suíte de armaduras",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1533,8 +1533,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 516,
-  "commits_main_analisados": 2406,
+  "janela_prs": 517,
+  "commits_main_analisados": 2411,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

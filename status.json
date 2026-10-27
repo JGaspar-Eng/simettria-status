@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-27T12:02:28Z",
+  "generated_at": "2026-10-27T12:27:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
-    "short_sha": "3bbdde62",
+    "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+    "short_sha": "7c2e043a",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T09:00:31-03:00",
-    "message": "merge: classificação colorida e verificável das armaduras duplas (#622)"
+    "date": "2026-10-27T09:27:23-03:00",
+    "message": "merge: reparar seletor vazio de armadura dupla e validar renderizacao (#623)"
   },
   "commits": [
+    {
+      "sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
+      "short_sha": "7c2e043a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T09:27:23-03:00",
+      "message": "merge: reparar seletor vazio de armadura dupla e validar renderizacao (#623)"
+    },
+    {
+      "sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
+      "short_sha": "2b44b8e7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T09:25:14-03:00",
+      "message": "fix(ui): barras_por_camada é número preliminar, não array; montar opções antes de substituir DOM"
+    },
+    {
+      "sha": "372fbefc8de75230cad6a93a01fac637bb6e2a7a",
+      "short_sha": "372fbefc",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T09:22:54-03:00",
+      "message": "test(orq): rodar regressão DOM de seletor vazio na suíte de armaduras"
+    },
+    {
+      "sha": "f029522b81cbb22b9bdfef7aca27e032d6c41804",
+      "short_sha": "f029522b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T09:22:40-03:00",
+      "message": "test(orq): exercitar clique DOM real de armadura dupla, alternativas e bloqueio vermelho"
+    },
+    {
+      "sha": "38bbae3248bae3b4c6e6f8586b64093d9caf8dbb",
+      "short_sha": "38bbae32",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T09:21:44-03:00",
+      "message": "fix(orq): corrigir escopo de podeRegistrar e manter opções visíveis se classificação falhar"
+    },
     {
       "sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
       "short_sha": "3bbdde62",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T08:55:44-03:00",
       "message": "feat(ui): alternativas de barras coloridas por verificação, motivos e bloqueio das incompatíveis"
-    },
-    {
-      "sha": "f599fb3928b913a955fee434ea5c33316306037c",
-      "short_sha": "f599fb39",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:54:03-03:00",
-      "message": "fix(orq): mostrar falha MRd/ductilidade/geometria como vermelha, e não pendente"
-    },
-    {
-      "sha": "8fbaa5d328e7977d56d4f0191f92280f42f11ef2",
-      "short_sha": "8fbaa5d3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:53:15-03:00",
-      "message": "feat(orq): classificar alternativas de armadura dupla por MRd, cortante, c1 e pendências reais"
-    },
-    {
-      "sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
-      "short_sha": "e4e679b8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:18:10-03:00",
-      "message": "merge: geometria c1 e torção NBR 6118:2026 sem aprovação indevida (#620)"
-    },
-    {
-      "sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
-      "short_sha": "57d0dabb",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:16:24-03:00",
-      "message": "feat(ui): mostrar causa geométrica de falha NBR 6118:2026 no diagnóstico da viga"
-    },
-    {
-      "sha": "95f8ef6c6b7c1720ef0689390bfedbd0ca6834cd",
-      "short_sha": "95f8ef6c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T08:15:51-03:00",
-      "message": "test(orq): barrar V117 com Ø20 aplicado se Ae/c1 da torção for fisicamente inviável"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40500630001",
-    "run_number": "995"
+    "run_id": "40503889272",
+    "run_number": "996"
   }
 }
