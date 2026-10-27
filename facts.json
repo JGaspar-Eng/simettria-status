@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T03:02:47Z",
+  "gerado_em": "2026-10-27T03:07:39Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
-    "data": "2026-10-27T03:01:20Z"
+    "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
+    "data": "2026-10-27T03:06:11Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "450754f063788e2d36319340ca661d39cd5bf202",
-    "gerado_em": "2026-10-27T00:34:10Z",
+    "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
+    "gerado_em": "2026-10-27T03:01:42Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 1,
-    "idade_horas": 2.5
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -782,8 +782,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 617,
+            "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
+            "rascunho": true,
+            "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+            "ci": "passou"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -933,6 +942,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 617,
+            "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
+            "rascunho": true,
+            "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+            "ci": "passou"
+          },
           {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
@@ -1321,8 +1338,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 61,
+        "total_integrados": 62,
         "integrados_recentes": [
+          {
+            "numero": 618,
+            "titulo": "fix(painel): republicar resultado da main após término dos testes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/618",
+            "merged_at": "2026-10-27T03:06:11Z",
+            "merge_sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
+            "head_sha": "7e6895277cae6b527b1d9b15b702e294dd49ee80",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 616,
             "titulo": "fix(painel): impedir CI pendente por autoconsulta do workflow de publicação",
@@ -1331,7 +1358,7 @@
             "merge_sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
             "head_sha": "bba9187a1de5619eaf22d1303a1ec296393a0139",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 608,
@@ -1432,33 +1459,23 @@
             "head_sha": "c88f411abc12651b69ffc13cd8ce6be7a5b91e3c",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 526,
-            "titulo": "fix(painel): reconcilia frentes reais e detalhamento operacional",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/526",
-            "merged_at": "2026-09-13T21:52:25Z",
-            "merge_sha": "c167b0e22aa2b0087cb09f65f90c81d6e5549d24",
-            "head_sha": "a5ef20e702ce105fec8f02634cb01a5f375a9f0d",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 616,
-          "titulo": "fix(painel): impedir CI pendente por autoconsulta do workflow de publicação",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/616",
-          "merge_sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
-          "head_sha": "bba9187a1de5619eaf22d1303a1ec296393a0139",
-          "merged_at": "2026-10-27T03:01:21Z",
+          "numero": 618,
+          "titulo": "fix(painel): republicar resultado da main após término dos testes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/618",
+          "merge_sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
+          "head_sha": "7e6895277cae6b527b1d9b15b702e294dd49ee80",
+          "merged_at": "2026-10-27T03:06:11Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
-          "data": "2026-10-27T00:01:20-03:00",
-          "assunto": "fix(painel): CI da main sem autoconsulta do workflow (#616)",
+          "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
+          "data": "2026-10-27T00:06:11-03:00",
+          "assunto": "fix(painel): atualizar CI ao concluir Testes SIMETTRIA (#618)",
           "ci": "pendente"
         }
       },
@@ -1505,8 +1522,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 510,
-  "commits_main_analisados": 2371,
+  "janela_prs": 512,
+  "commits_main_analisados": 2372,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
