@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T03:07:39Z",
+  "gerado_em": "2026-10-27T03:09:04Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
-    "data": "2026-10-27T03:06:11Z"
+    "sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+    "data": "2026-10-27T03:07:21Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
-    "gerado_em": "2026-10-27T03:01:42Z",
+    "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
+    "gerado_em": "2026-10-27T03:06:29Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 1,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -782,22 +782,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 12,
+        "integrados_recentes": [
           {
             "numero": 617,
             "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
-            "rascunho": true,
+            "merged_at": "2026-10-27T03:07:21Z",
+            "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
             "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 11,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
           {
             "numero": 615,
             "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
@@ -806,7 +807,7 @@
             "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 614,
@@ -910,25 +911,25 @@
           }
         ],
         "ultimo": {
-          "numero": 615,
-          "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
-          "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
-          "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
-          "merged_at": "2026-10-26T22:43:59Z",
+          "numero": 617,
+          "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
+          "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+          "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+          "merged_at": "2026-10-27T03:07:21Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "450754f063788e2d36319340ca661d39cd5bf202",
-          "data": "2026-10-26T19:43:59-03:00",
-          "assunto": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)",
+          "sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+          "data": "2026-10-27T00:07:21-03:00",
+          "assunto": "merge: corrigir camadas 2D da armadura dupla aplicada (#617)",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -942,14 +943,6 @@
       "pr": {
         "estado": "aberto",
         "itens": [
-          {
-            "numero": 617,
-            "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
-            "rascunho": true,
-            "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
-            "ci": "passou"
-          },
           {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
@@ -986,8 +979,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 85,
+        "total_integrados": 86,
         "integrados_recentes": [
+          {
+            "numero": 617,
+            "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
+            "merged_at": "2026-10-27T03:07:21Z",
+            "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+            "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
           {
             "numero": 615,
             "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
@@ -996,7 +999,7 @@
             "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 614,
@@ -1097,38 +1100,28 @@
             "head_sha": "c1a111928f9885ea0ca1636bf10abb3b7abbf94a",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 563,
-            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
-            "merged_at": "2026-10-25T15:46:05Z",
-            "merge_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 615,
-          "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
-          "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
-          "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
-          "merged_at": "2026-10-26T22:43:59Z",
+          "numero": 617,
+          "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
+          "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+          "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+          "merged_at": "2026-10-27T03:07:21Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "af375275c4f747c4e45ab5a720d9099577fea84a",
-          "data": "2026-10-26T19:37:56-03:00",
-          "assunto": "test(orq): incluir teste da prancha com dupla ELU no comando de armaduras",
+          "sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+          "data": "2026-10-27T00:05:02-03:00",
+          "assunto": "test(orq): usar arranjo real 3Ø16 [2+1] e 2Ø12,5 na regressão 2D",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1348,7 +1341,7 @@
             "merge_sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
             "head_sha": "7e6895277cae6b527b1d9b15b702e294dd49ee80",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 616,
@@ -1470,17 +1463,17 @@
           "merged_at": "2026-10-27T03:06:11Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
           "data": "2026-10-27T00:06:11-03:00",
           "assunto": "fix(painel): atualizar CI ao concluir Testes SIMETTRIA (#618)",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     }
   ],
@@ -1523,7 +1516,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 512,
-  "commits_main_analisados": 2372,
+  "commits_main_analisados": 2377,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

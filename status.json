@@ -1,21 +1,56 @@
 {
-  "generated_at": "2026-10-27T03:06:29Z",
+  "generated_at": "2026-10-27T03:08:00Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
-    "short_sha": "2902878b",
+    "sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+    "short_sha": "475803a7",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T00:06:11-03:00",
-    "message": "fix(painel): atualizar CI ao concluir Testes SIMETTRIA (#618)"
+    "date": "2026-10-27T00:07:21-03:00",
+    "message": "merge: corrigir camadas 2D da armadura dupla aplicada (#617)"
   },
   "commits": [
+    {
+      "sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
+      "short_sha": "475803a7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T00:07:21-03:00",
+      "message": "merge: corrigir camadas 2D da armadura dupla aplicada (#617)"
+    },
     {
       "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
       "short_sha": "2902878b",
       "author": "Joanez Gaspar",
       "date": "2026-10-27T00:06:11-03:00",
       "message": "fix(painel): atualizar CI ao concluir Testes SIMETTRIA (#618)"
+    },
+    {
+      "sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
+      "short_sha": "8e78b893",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T00:05:02-03:00",
+      "message": "test(orq): usar arranjo real 3Ø16 [2+1] e 2Ø12,5 na regressão 2D"
+    },
+    {
+      "sha": "f101f820e007d10f0be96f928bb377ab2ac43c84",
+      "short_sha": "f101f820",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T00:03:44-03:00",
+      "message": "fix(test): capturar marcadores SVG de camadas por expressão regular literal"
+    },
+    {
+      "sha": "802c0da7652cedfafa13c98642a7331dc7252385",
+      "short_sha": "802c0da7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T00:03:29-03:00",
+      "message": "test(orq): exigir longitudinal 2+1 / 2 e memorial com quantidade por camada"
+    },
+    {
+      "sha": "7d8d067fece833b847861b97bbd87de9fbad900b",
+      "short_sha": "7d8d067f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T00:03:13-03:00",
+      "message": "fix(orq): longitudinal 2D com linha por camada real e memorial por camadas"
     },
     {
       "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-26T19:41:13-03:00",
       "message": "fix(2d): posicionar legenda M+/M− sem colidir com escala e rodapé"
-    },
-    {
-      "sha": "4d19d4d3ffb71da9712f7c7362741c4b085117ad",
-      "short_sha": "4d19d4d3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:39:26-03:00",
-      "message": "feat(ui): explicar 156 avisos 3D e exibir solicitações espaciais reais sem falsa reprovação"
-    },
-    {
-      "sha": "af375275c4f747c4e45ab5a720d9099577fea84a",
-      "short_sha": "af375275",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:37:56-03:00",
-      "message": "test(orq): incluir teste da prancha com dupla ELU no comando de armaduras"
-    },
-    {
-      "sha": "3c0bedfec14fee373cdea1d580e5bb5de7b29124",
-      "short_sha": "3c0bedfe",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:37:40-03:00",
-      "message": "test(orq): V216 armadura dupla real na prancha e memorial; conferir barras, camadas, stale e JSON intacto"
-    },
-    {
-      "sha": "165114810a8f337a3816bcff1257050d98c7bf94",
-      "short_sha": "16511481",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:36:53-03:00",
-      "message": "fix(2d): proibir laudo de cobertura de flexão simples em prancha com armadura dupla"
-    },
-    {
-      "sha": "00982d584f8f23cbe92d7e7367df9b1055e5454a",
-      "short_sha": "00982d58",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:36:12-03:00",
-      "message": "feat(ui): esclarecer interação 3D por viga com valores reais e sem classificar pendente como reprovado"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40442274317",
-    "run_number": "985"
+    "run_id": "40442387096",
+    "run_number": "986"
   }
 }
