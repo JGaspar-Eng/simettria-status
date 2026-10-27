@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-27T03:09:28Z",
+  "generated_at": "2026-10-27T03:30:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
-    "short_sha": "475803a7",
+    "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
+    "short_sha": "d8c2de6e",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T00:07:21-03:00",
-    "message": "merge: corrigir camadas 2D da armadura dupla aplicada (#617)"
+    "date": "2026-10-27T00:30:37-03:00",
+    "message": "merge: interação V+T por 8 ELU e armadura preliminar de torção (#619)"
   },
   "commits": [
     {
-      "sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
-      "short_sha": "475803a7",
+      "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
+      "short_sha": "d8c2de6e",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:07:21-03:00",
-      "message": "merge: corrigir camadas 2D da armadura dupla aplicada (#617)"
+      "date": "2026-10-27T00:30:37-03:00",
+      "message": "merge: interação V+T por 8 ELU e armadura preliminar de torção (#619)"
     },
     {
-      "sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
-      "short_sha": "2902878b",
+      "sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
+      "short_sha": "c58f8e8c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:06:11-03:00",
-      "message": "fix(painel): atualizar CI ao concluir Testes SIMETTRIA (#618)"
+      "date": "2026-10-27T00:29:09-03:00",
+      "message": "test(orq): retirar diagnóstico temporário após corrigir a passagem dos esforços"
     },
     {
-      "sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
-      "short_sha": "8e78b893",
+      "sha": "d1fec0a8f11162eb751094a176c0a7a11585b4ed",
+      "short_sha": "d1fec0a8",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:05:02-03:00",
-      "message": "test(orq): usar arranjo real 3Ø16 [2+1] e 2Ø12,5 na regressão 2D"
+      "date": "2026-10-27T00:28:59-03:00",
+      "message": "fix(orq): transmitir esforços espaciais da reconstrução por trecho ao motor V+T"
     },
     {
-      "sha": "f101f820e007d10f0be96f928bb377ab2ac43c84",
-      "short_sha": "f101f820",
+      "sha": "1ff876ce5055365763c7345a1db43551603cb7cf",
+      "short_sha": "1ff876ce",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:03:44-03:00",
-      "message": "fix(test): capturar marcadores SVG de camadas por expressão regular literal"
+      "date": "2026-10-27T00:27:56-03:00",
+      "message": "debug(test): inspecionar origem da observação espacial no fixture sintético"
     },
     {
-      "sha": "802c0da7652cedfafa13c98642a7331dc7252385",
-      "short_sha": "802c0da7",
+      "sha": "8b884b4309d5b11a3f390192e0ea8d6787d54257",
+      "short_sha": "8b884b43",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:03:29-03:00",
-      "message": "test(orq): exigir longitudinal 2+1 / 2 e memorial com quantidade por camada"
+      "date": "2026-10-27T00:26:47-03:00",
+      "message": "fix(test): corrigir fechamento do fixture de 8 ELU espaciais"
     },
     {
-      "sha": "7d8d067fece833b847861b97bbd87de9fbad900b",
-      "short_sha": "7d8d067f",
+      "sha": "e0456830fc225a428e43ebe48b7845540063d60d",
+      "short_sha": "e0456830",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:03:13-03:00",
-      "message": "fix(orq): longitudinal 2D com linha por camada real e memorial por camadas"
+      "date": "2026-10-27T00:25:15-03:00",
+      "message": "feat(ui): mostrar índice V+T por viga e contagem de triagens com oito ELU"
     },
     {
-      "sha": "43b949bc332f1531b1ae8737823fed4e13bd4720",
-      "short_sha": "43b949bc",
+      "sha": "5a64005be9198137aab538fa56a02bbd179339dd",
+      "short_sha": "5a64005b",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:01:20-03:00",
-      "message": "fix(painel): CI da main sem autoconsulta do workflow (#616)"
+      "date": "2026-10-27T00:24:40-03:00",
+      "message": "test(orq): adicionar triagem concomitante V+T à suíte oficial de armaduras"
     },
     {
-      "sha": "450754f063788e2d36319340ca661d39cd5bf202",
-      "short_sha": "450754f0",
+      "sha": "0ff28d4f2597f33045827423b92da847e4864ce2",
+      "short_sha": "0ff28d4f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:43:59-03:00",
-      "message": "merge: prancha e memorial da armadura dupla revalidada + diagnóstico 3D (#615)"
+      "date": "2026-10-27T00:24:24-03:00",
+      "message": "test(orq): separar envelopes de casos diferentes e auditar interação V+T real dos 8 ELU"
     },
     {
-      "sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
-      "short_sha": "2ef0438c",
+      "sha": "bd97dc4993fca2308e37fc3ba9bd64ac56f1203b",
+      "short_sha": "bd97dc49",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:41:55-03:00",
-      "message": "fix(2d): distância entre camadas ilustradas consistente com geometria MRd, incluindo Ø25"
+      "date": "2026-10-27T00:23:32-03:00",
+      "message": "feat(ui): detalhar V+T concomitantes e demanda de aço por torção no modal de cada viga"
     },
     {
-      "sha": "1461722fbe8e1d0505d9719cb9086a41df1c7449",
-      "short_sha": "1461722f",
+      "sha": "04af8215143962fa92ffcb2a19ebc51cd29061dc",
+      "short_sha": "04af8215",
       "author": "Joanez Gaspar",
-      "date": "2026-10-26T19:41:13-03:00",
-      "message": "fix(2d): posicionar legenda M+/M− sem colidir com escala e rodapé"
+      "date": "2026-10-27T00:23:09-03:00",
+      "message": "fix(orq): contar pendências espaciais também nas vigas com armadura dupla"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40442503681",
-    "run_number": "988"
+    "run_id": "40444563832",
+    "run_number": "989"
   }
 }
