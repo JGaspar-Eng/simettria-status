@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-27T09:09:45Z",
+  "generated_at": "2026-10-27T11:18:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-    "short_sha": "d8c2de6e",
+    "sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+    "short_sha": "e4e679b8",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T00:30:37-03:00",
-    "message": "merge: interação V+T por 8 ELU e armadura preliminar de torção (#619)"
+    "date": "2026-10-27T08:18:10-03:00",
+    "message": "merge: geometria c1 e torção NBR 6118:2026 sem aprovação indevida (#620)"
   },
   "commits": [
     {
-      "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-      "short_sha": "d8c2de6e",
+      "sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+      "short_sha": "e4e679b8",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:30:37-03:00",
-      "message": "merge: interação V+T por 8 ELU e armadura preliminar de torção (#619)"
+      "date": "2026-10-27T08:18:10-03:00",
+      "message": "merge: geometria c1 e torção NBR 6118:2026 sem aprovação indevida (#620)"
     },
     {
-      "sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-      "short_sha": "c58f8e8c",
+      "sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
+      "short_sha": "57d0dabb",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:29:09-03:00",
-      "message": "test(orq): retirar diagnóstico temporário após corrigir a passagem dos esforços"
+      "date": "2026-10-27T08:16:24-03:00",
+      "message": "feat(ui): mostrar causa geométrica de falha NBR 6118:2026 no diagnóstico da viga"
     },
     {
-      "sha": "d1fec0a8f11162eb751094a176c0a7a11585b4ed",
-      "short_sha": "d1fec0a8",
+      "sha": "95f8ef6c6b7c1720ef0689390bfedbd0ca6834cd",
+      "short_sha": "95f8ef6c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:28:59-03:00",
-      "message": "fix(orq): transmitir esforços espaciais da reconstrução por trecho ao motor V+T"
+      "date": "2026-10-27T08:15:51-03:00",
+      "message": "test(orq): barrar V117 com Ø20 aplicado se Ae/c1 da torção for fisicamente inviável"
     },
     {
-      "sha": "1ff876ce5055365763c7345a1db43551603cb7cf",
-      "short_sha": "1ff876ce",
+      "sha": "5f5ac7c969c9e73df863faa981d6b7c66dc2ade1",
+      "short_sha": "5f5ac7c9",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:27:56-03:00",
-      "message": "debug(test): inspecionar origem da observação espacial no fixture sintético"
+      "date": "2026-10-27T08:15:33-03:00",
+      "message": "fix(orq): reter bitolas da armadura dupla escolhida no cálculo de c1 e torção"
     },
     {
-      "sha": "8b884b4309d5b11a3f390192e0ea8d6787d54257",
-      "short_sha": "8b884b43",
+      "sha": "6e38b799db042a57e878a82a9ece48b977fc2676",
+      "short_sha": "6e38b799",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:26:47-03:00",
-      "message": "fix(test): corrigir fechamento do fixture de 8 ELU espaciais"
+      "date": "2026-10-27T08:15:12-03:00",
+      "message": "fix(orq): incluir diâmetro das barras efetivamente aplicadas na geometria c1"
     },
     {
-      "sha": "e0456830fc225a428e43ebe48b7845540063d60d",
-      "short_sha": "e0456830",
+      "sha": "ca1e2e3ce2149636dee815c142777bffce000f09",
+      "short_sha": "ca1e2e3c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:25:15-03:00",
-      "message": "feat(ui): mostrar índice V+T por viga e contagem de triagens com oito ELU"
+      "date": "2026-10-27T08:13:29-03:00",
+      "message": "test(orq): revalidar caso V+T crítico após corrigir Ae/c1, mantendo simultaneidade ELU"
     },
     {
-      "sha": "5a64005be9198137aab538fa56a02bbd179339dd",
-      "short_sha": "5a64005b",
+      "sha": "46f28abf570c316692783f3663e0d2eb6be943e4",
+      "short_sha": "46f28abf",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:24:40-03:00",
-      "message": "test(orq): adicionar triagem concomitante V+T à suíte oficial de armaduras"
+      "date": "2026-10-27T08:12:05-03:00",
+      "message": "feat(ui): explicitar c1, Ae e geometria condicional da torção em NBR 6118:2026"
     },
     {
-      "sha": "0ff28d4f2597f33045827423b92da847e4864ce2",
-      "short_sha": "0ff28d4f",
+      "sha": "f715abac48c899e431da7af1d115872133256b20",
+      "short_sha": "f715abac",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:24:24-03:00",
-      "message": "test(orq): separar envelopes de casos diferentes e auditar interação V+T real dos 8 ELU"
+      "date": "2026-10-27T08:12:02-03:00",
+      "message": "test(orq): executar regressão da geometria de torção c1 NBR 6118:2026"
     },
     {
-      "sha": "bd97dc4993fca2308e37fc3ba9bd64ac56f1203b",
-      "short_sha": "bd97dc49",
+      "sha": "aa069b3dca8fb308bfad8831bc01593a4c741036",
+      "short_sha": "aa069b3d",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:23:32-03:00",
-      "message": "feat(ui): detalhar V+T concomitantes e demanda de aço por torção no modal de cada viga"
+      "date": "2026-10-27T08:11:45-03:00",
+      "message": "test(orq): V117 14x40, c1 real estimado, Ae corrigida conforme NBR 6118:2026 e gates seguros"
     },
     {
-      "sha": "04af8215143962fa92ffcb2a19ebc51cd29061dc",
-      "short_sha": "04af8215",
+      "sha": "1e183cc41446b12cf379bae2b595c70167eca07e",
+      "short_sha": "1e183cc4",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T00:23:09-03:00",
-      "message": "fix(orq): contar pendências espaciais também nas vigas com armadura dupla"
+      "date": "2026-10-27T08:10:52-03:00",
+      "message": "fix(orq): aplicar geometria Ae pelo eixo dos cantos e c1 na NBR 6118:2026"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40478653972",
-    "run_number": "991"
+    "run_id": "40495116016",
+    "run_number": "992"
   }
 }

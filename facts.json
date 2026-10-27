@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T09:10:46Z",
+  "gerado_em": "2026-10-27T11:19:17Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-    "data": "2026-10-27T03:30:37Z"
+    "sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+    "data": "2026-10-27T11:18:10Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-    "gerado_em": "2026-10-27T03:32:31Z",
+    "gerado_em": "2026-10-27T09:09:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 5.6
+    "defasagem_commits_main": 10,
+    "idade_horas": 2.2
   },
   "frentes": [
     {
@@ -718,7 +718,7 @@
             "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
             "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 589,
@@ -922,14 +922,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-          "data": "2026-10-27T00:30:37-03:00",
-          "assunto": "merge: interação V+T por 8 ELU e armadura preliminar de torção (#619)",
+          "sha": "5f5ac7c969c9e73df863faa981d6b7c66dc2ade1",
+          "data": "2026-10-27T08:15:33-03:00",
+          "assunto": "fix(orq): reter bitolas da armadura dupla escolhida no cálculo de c1 e torção",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -979,8 +979,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 87,
+        "total_integrados": 88,
         "integrados_recentes": [
+          {
+            "numero": 620,
+            "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/620",
+            "merged_at": "2026-10-27T11:18:10Z",
+            "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+            "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 619,
             "titulo": "ORQ vigas: triagem V+T concomitante por 8 ELU e demanda preliminar de armadura de torção",
@@ -1090,38 +1100,28 @@
             "head_sha": "5d3f2429d350e0b35ec77bb5a535b3403e84ae3d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 579,
-            "titulo": "Integração do desenvolvimento acumulado: ORQ global, fundações e editor 2D/3D",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/579",
-            "merged_at": "2026-10-25T15:46:05Z",
-            "merge_sha": "e53ea8222b5a30c1e68409093cd293295883a3e5",
-            "head_sha": "bfdb5e5272fe44350a8684933554297233ab4aef",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 619,
-          "titulo": "ORQ vigas: triagem V+T concomitante por 8 ELU e demanda preliminar de armadura de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/619",
-          "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-          "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-          "merged_at": "2026-10-27T03:30:37Z",
+          "numero": 620,
+          "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/620",
+          "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+          "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
+          "merged_at": "2026-10-27T11:18:10Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-          "data": "2026-10-27T00:29:09-03:00",
-          "assunto": "test(orq): retirar diagnóstico temporário após corrigir a passagem dos esforços",
+          "sha": "95f8ef6c6b7c1720ef0689390bfedbd0ca6834cd",
+          "data": "2026-10-27T08:15:51-03:00",
+          "assunto": "test(orq): barrar V117 com Ø20 aplicado se Ae/c1 da torção for fisicamente inviável",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1155,8 +1155,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 21,
+        "total_integrados": 22,
         "integrados_recentes": [
+          {
+            "numero": 620,
+            "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/620",
+            "merged_at": "2026-10-27T11:18:10Z",
+            "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+            "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 594,
             "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
@@ -1165,7 +1175,7 @@
             "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
             "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 527,
@@ -1266,38 +1276,28 @@
             "head_sha": "3bcdc00a9e83bd66f4dae64e8c4b79c7443fa264",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 188,
-            "titulo": "feat(fundacao): apresenta status normativo do DIM-FUND-01",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/188",
-            "merged_at": "2026-08-27T02:07:38Z",
-            "merge_sha": "c0b03527dfdace1e1413b61eca69261e61b044e2",
-            "head_sha": "380981d1b47584c8191263d7f53a5b317942d4a3",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 594,
-          "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/594",
-          "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
-          "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
-          "merged_at": "2026-10-25T19:17:02Z",
+          "numero": 620,
+          "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/620",
+          "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+          "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
+          "merged_at": "2026-10-27T11:18:10Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
-          "data": "2026-10-25T16:13:40-03:00",
-          "assunto": "test(nbr): entradas reais de As e cenarios obsoletos/WAITING/duplicados bloqueiam ancoragem",
-          "ci": "passou"
+          "sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
+          "data": "2026-10-27T08:18:10-03:00",
+          "assunto": "merge: geometria c1 e torção NBR 6118:2026 sem aprovação indevida (#620)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1440,7 +1440,7 @@
             "merged_at": "2026-10-25T14:56:04Z",
             "merge_sha": "a5958468e32dbfcb78f890ae17aa017b5ed91364",
             "head_sha": "291d249265494b3688582308c2ac928dc61057e4",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1515,8 +1515,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 513,
-  "commits_main_analisados": 2389,
+  "janela_prs": 514,
+  "commits_main_analisados": 2399,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
