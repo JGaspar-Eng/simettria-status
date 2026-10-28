@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T02:50:12Z",
+  "gerado_em": "2026-10-28T02:54:29Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-    "data": "2026-10-28T02:47:08Z"
+    "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
+    "data": "2026-10-28T02:53:11Z"
   },
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-    "gerado_em": "2026-10-28T02:47:27Z",
+    "gerado_em": "2026-10-28T02:48:53Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -474,7 +474,7 @@
             "merged_at": "2026-10-25T17:56:10Z",
             "merge_sha": "1a9482ab26476163d8798db07db15bd45168ef24",
             "head_sha": "441f327d7258b8511eed0e27fd7333a6d9aeadac",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           }
         ],
@@ -1017,8 +1017,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 97,
+        "total_integrados": 98,
         "integrados_recentes": [
+          {
+            "numero": 632,
+            "titulo": "fix(ORQ): rollback de revisão multivigas quando cálculo global falha",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/632",
+            "merged_at": "2026-10-28T02:53:12Z",
+            "merge_sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
+            "head_sha": "fa84858f0806251447926e5708dc7e38a124eee8",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
           {
             "numero": 631,
             "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
@@ -1128,38 +1138,28 @@
             "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 617,
-            "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
-            "merged_at": "2026-10-27T03:07:21Z",
-            "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
-            "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 631,
-          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
-          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-          "merged_at": "2026-10-28T02:47:08Z",
+          "numero": 632,
+          "titulo": "fix(ORQ): rollback de revisão multivigas quando cálculo global falha",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/632",
+          "merge_sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
+          "head_sha": "fa84858f0806251447926e5708dc7e38a124eee8",
+          "merged_at": "2026-10-28T02:53:12Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-          "data": "2026-10-27T23:45:22-03:00",
-          "assunto": "test(orq): exigir revalidacao anterior a triagem V+T no motor",
-          "ci": "passou"
+          "sha": "f3b4aa5d8225d9206f23a1174259a2371c9a8db9",
+          "data": "2026-10-27T23:50:28-03:00",
+          "assunto": "test(orq): simular falha de calculo apos aplicar duas vigas, rollback e conflito",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1553,8 +1553,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 525,
-  "commits_main_analisados": 2473,
+  "janela_prs": 526,
+  "commits_main_analisados": 2478,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

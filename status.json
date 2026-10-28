@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-28T02:48:53Z",
+  "generated_at": "2026-10-28T02:53:30Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-    "short_sha": "e4e94137",
+    "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
+    "short_sha": "fc35f339",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T23:47:08-03:00",
-    "message": "merge: separar barras duplas obsoletas da geometria de torção (#631)"
+    "date": "2026-10-27T23:53:11-03:00",
+    "message": "merge: reverter lote de vigas se calculo global falhar (#632)"
   },
   "commits": [
+    {
+      "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
+      "short_sha": "fc35f339",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:53:11-03:00",
+      "message": "merge: reverter lote de vigas se calculo global falhar (#632)"
+    },
+    {
+      "sha": "fa84858f0806251447926e5708dc7e38a124eee8",
+      "short_sha": "fa84858f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:50:45-03:00",
+      "message": "fix(ui): manter visivel diagnostico de falha global apos reversao"
+    },
+    {
+      "sha": "f3b4aa5d8225d9206f23a1174259a2371c9a8db9",
+      "short_sha": "f3b4aa5d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:50:28-03:00",
+      "message": "test(orq): simular falha de calculo apos aplicar duas vigas, rollback e conflito"
+    },
+    {
+      "sha": "87562b152f70a1ea963c4d81efae7ca41df8649f",
+      "short_sha": "87562b15",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:49:40-03:00",
+      "message": "fix(ui): desfazer alteracoes se ORQ falhar e bloquear resultados globais incompletos"
+    },
+    {
+      "sha": "b3e01c633fea0bde0532279ab5d38c3f0e5c7e7f",
+      "short_sha": "b3e01c63",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:48:22-03:00",
+      "message": "fix(orq): transacao de vigas com reversao segura se calculo global falhar"
+    },
     {
       "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
       "short_sha": "e4e94137",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T22:36:39-03:00",
       "message": "merge: revalidar barras duplas persistidas com novos ELU (#630)"
-    },
-    {
-      "sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
-      "short_sha": "1d6e5944",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T22:34:36-03:00",
-      "message": "test(orq): regressao mudanca real de esforcos V216 com barras persistidas e novo ELU"
-    },
-    {
-      "sha": "d3c13b95980287f6cdd86d2aae3bd09295772670",
-      "short_sha": "d3c13b95",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T22:34:02-03:00",
-      "message": "fix(orq): revalidar barras duplas persistidas com novos esforços sem reaplicar estudo"
-    },
-    {
-      "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-      "short_sha": "b5eba8d4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T21:07:44-03:00",
-      "message": "merge: painel unico de escolhas para vigas sem sugestoes duplicadas (#629)"
-    },
-    {
-      "sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
-      "short_sha": "5545f0c5",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T21:05:47-03:00",
-      "message": "test(orq): validar novo titulo do painel unico em vez de titulo legado"
-    },
-    {
-      "sha": "bb6acba3888a023d27156edb822f81789c889b19",
-      "short_sha": "bb6acba3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T21:04:44-03:00",
-      "message": "test(orq): localizar estudo de dupla no detalhe recolhido e preservar fluxo"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40623094877",
-    "run_number": "1015"
+    "run_id": "40623528412",
+    "run_number": "1016"
   }
 }
