@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-27T22:25:45Z",
+  "gerado_em": "2026-10-28T00:09:00Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-    "data": "2026-10-27T19:24:36Z"
+    "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+    "data": "2026-10-28T00:07:44Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-    "gerado_em": "2026-10-27T19:26:50Z",
+    "gerado_em": "2026-10-27T22:24:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 3.0
+    "defasagem_commits_main": 6,
+    "idade_horas": 1.7
   },
   "frentes": [
     {
@@ -942,14 +942,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-          "data": "2026-10-27T16:24:36-03:00",
-          "assunto": "merge: busca integrada de seção e armaduras para vigas (#628)",
-          "ci": "passou"
+          "sha": "79c921207e69dd4d5ee0203602b17b483b82f077",
+          "data": "2026-10-27T21:02:20-03:00",
+          "assunto": "fix(ui): um catalogo de escolhas por viga e armadura dupla como candidata unica",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1007,8 +1007,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 94,
+        "total_integrados": 95,
         "integrados_recentes": [
+          {
+            "numero": 629,
+            "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/629",
+            "merged_at": "2026-10-28T00:07:45Z",
+            "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+            "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 628,
             "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
@@ -1118,38 +1128,28 @@
             "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 613,
-            "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
-            "merged_at": "2026-10-26T17:16:52Z",
-            "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-            "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 628,
-          "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/628",
-          "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-          "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
-          "merged_at": "2026-10-27T19:24:37Z",
+          "numero": 629,
+          "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/629",
+          "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+          "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
+          "merged_at": "2026-10-28T00:07:45Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
-          "data": "2026-10-27T16:21:26-03:00",
-          "assunto": "test(orq): incluir solucoes integradas na suite oficial de armaduras",
+          "sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
+          "data": "2026-10-27T21:05:47-03:00",
+          "assunto": "test(orq): validar novo titulo do painel unico em vez de titulo legado",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1359,8 +1359,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 62,
+        "total_integrados": 63,
         "integrados_recentes": [
+          {
+            "numero": 629,
+            "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/629",
+            "merged_at": "2026-10-28T00:07:45Z",
+            "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+            "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 618,
             "titulo": "fix(painel): republicar resultado da main após término dos testes",
@@ -1369,7 +1379,7 @@
             "merge_sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
             "head_sha": "7e6895277cae6b527b1d9b15b702e294dd49ee80",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 616,
@@ -1470,38 +1480,28 @@
             "head_sha": "291d249265494b3688582308c2ac928dc61057e4",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 542,
-            "titulo": "Status: registra seleção por nível e estudo preliminar de estacas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/542",
-            "merged_at": "2026-10-13T15:09:19Z",
-            "merge_sha": "4a3ed4d932e93e2e280845911aba1b2713f222e8",
-            "head_sha": "c88f411abc12651b69ffc13cd8ce6be7a5b91e3c",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 618,
-          "titulo": "fix(painel): republicar resultado da main após término dos testes",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/618",
-          "merge_sha": "2902878be72c1e3f274d4e4a8a603dc584ae57de",
-          "head_sha": "7e6895277cae6b527b1d9b15b702e294dd49ee80",
-          "merged_at": "2026-10-27T03:06:11Z",
+          "numero": 629,
+          "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/629",
+          "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+          "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
+          "merged_at": "2026-10-28T00:07:45Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "cada74979aec796e44689fd02f80ebc382e766b5",
-          "data": "2026-10-27T13:24:14-03:00",
-          "assunto": "feat(contract): persistir estudo de estribo por viga em modelo oficial, sem status executivo",
-          "ci": "sem_evidencia"
+          "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+          "data": "2026-10-27T21:07:44-03:00",
+          "assunto": "merge: painel unico de escolhas para vigas sem sugestoes duplicadas (#629)",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1543,8 +1543,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 522,
-  "commits_main_analisados": 2460,
+  "janela_prs": 523,
+  "commits_main_analisados": 2466,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

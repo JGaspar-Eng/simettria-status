@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-27T22:24:45Z",
+  "generated_at": "2026-10-28T00:08:02Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-    "short_sha": "659b026f",
+    "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+    "short_sha": "b5eba8d4",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T16:24:36-03:00",
-    "message": "merge: busca integrada de seção e armaduras para vigas (#628)"
+    "date": "2026-10-27T21:07:44-03:00",
+    "message": "merge: painel unico de escolhas para vigas sem sugestoes duplicadas (#629)"
   },
   "commits": [
+    {
+      "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
+      "short_sha": "b5eba8d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T21:07:44-03:00",
+      "message": "merge: painel unico de escolhas para vigas sem sugestoes duplicadas (#629)"
+    },
+    {
+      "sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
+      "short_sha": "5545f0c5",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T21:05:47-03:00",
+      "message": "test(orq): validar novo titulo do painel unico em vez de titulo legado"
+    },
+    {
+      "sha": "bb6acba3888a023d27156edb822f81789c889b19",
+      "short_sha": "bb6acba3",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T21:04:44-03:00",
+      "message": "test(orq): localizar estudo de dupla no detalhe recolhido e preservar fluxo"
+    },
+    {
+      "sha": "279c7567ec1869e00b7a857e117fc2da05da4de6",
+      "short_sha": "279c7567",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T21:03:00-03:00",
+      "message": "test(orq): impedir retorno de catalogos de sugestoes duplicados"
+    },
+    {
+      "sha": "705e6a4e1e89c69d902f3e4aad7cef0ae63782cc",
+      "short_sha": "705e6a4e",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T21:02:57-03:00",
+      "message": "test(orq): impedir retorno de catalogos de sugestoes duplicados"
+    },
+    {
+      "sha": "79c921207e69dd4d5ee0203602b17b483b82f077",
+      "short_sha": "79c92120",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T21:02:20-03:00",
+      "message": "fix(ui): um catalogo de escolhas por viga e armadura dupla como candidata unica"
+    },
     {
       "sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
       "short_sha": "659b026f",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T16:19:51-03:00",
       "message": "feat(ui): priorizar escolhas conjuntas de viga e recolher sugestoes isoladas"
-    },
-    {
-      "sha": "33e35501d850bfa952a68a690f9d947d86dcacad",
-      "short_sha": "33e35501",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T16:19:07-03:00",
-      "message": "feat(orq): buscar secao conjunta com flexao cortante e geometria de torcao locais"
-    },
-    {
-      "sha": "43c7a2e071147bf53abb02eecf9509490e159e53",
-      "short_sha": "43c7a2e0",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T14:52:05-03:00",
-      "message": "merge: revisão de vigas em lote e reversão da armadura dupla antiga (#627)"
-    },
-    {
-      "sha": "6f7ec417542b5589f49c05efe8af30f922aac553",
-      "short_sha": "6f7ec417",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T14:49:49-03:00",
-      "message": "test(dupla): permitir quarto argumento de fila na integração do modal de primeira ordem"
-    },
-    {
-      "sha": "4a85c2e770617e7fc45d2d653bd8f1d736c61b4e",
-      "short_sha": "4a85c2e7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T14:48:02-03:00",
-      "message": "test: incluir revisão em lote de vigas na suíte oficial de armaduras"
-    },
-    {
-      "sha": "873a4e85ac663ec97aeace9383cde90a13cdef21",
-      "short_sha": "873a4e85",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T14:47:44-03:00",
-      "message": "test(orq): fila de múltiplas vigas, estorno de dupla, JSON, cancelamento stale e rollback transacional"
-    },
-    {
-      "sha": "398a54d1faed728fcc7b9d33bbf3cc563ef1ea86",
-      "short_sha": "398a54d1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T14:46:22-03:00",
-      "message": "feat(dupla): reaplicar barras de vigas anteriormente estudadas através da fila sem recalcular a cada escolha"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40594576216",
-    "run_number": "1009"
+    "run_id": "40606748867",
+    "run_number": "1010"
   }
 }
