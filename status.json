@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-28T11:58:05Z",
+  "generated_at": "2026-10-28T12:01:01Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
-    "short_sha": "cad2c510",
+    "sha": "7fc5d52ae88a38bebf6775e3c0321817af6d8bc0",
+    "short_sha": "7fc5d52a",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T08:55:56-03:00",
-    "message": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)"
+    "date": "2026-10-28T09:00:41-03:00",
+    "message": "merge: ancoragens locais de vigas com proveniência e testes (#639)"
   },
   "commits": [
+    {
+      "sha": "7fc5d52ae88a38bebf6775e3c0321817af6d8bc0",
+      "short_sha": "7fc5d52a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T09:00:41-03:00",
+      "message": "merge: ancoragens locais de vigas com proveniência e testes (#639)"
+    },
+    {
+      "sha": "4cd558f961e1f1e4d2efaec497305913c9e2b00b",
+      "short_sha": "4cd558f9",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:58:11-03:00",
+      "message": "test: incluir ancoragem local de barras de vigas na suíte estrutural"
+    },
+    {
+      "sha": "ac252f0a36b362844d8a03ecf64b5ebb628e315e",
+      "short_sha": "ac252f0a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:57:57-03:00",
+      "message": "test(ancoragens): confronto independente lb, gancho, falhas de proveniência e imutabilidade"
+    },
+    {
+      "sha": "70bdea2807b5863fa64ee0defe1bf69e8104c8bf",
+      "short_sha": "70bdea28",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:57:28-03:00",
+      "message": "feat(ancoragens): confrontar barras de viga com geometria física e núcleo NBR 6118"
+    },
     {
       "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
       "short_sha": "cad2c510",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T08:42:07-03:00",
       "message": "test(ORQ): provar matriz completa ELU x trecho com viga multitrecho"
-    },
-    {
-      "sha": "555b3dc3ecb6aaaa2e4e50eb74ace836a2d69ddd",
-      "short_sha": "555b3dc3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:41:42-03:00",
-      "message": "fix(ORQ): validar matriz oito ELU por trecho sem misturar extremidades"
-    },
-    {
-      "sha": "0968d744c295da39eeefcd066f7f4893e0596541",
-      "short_sha": "0968d744",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:35:07-03:00",
-      "message": "merge: gate de regressões por identidade da viga em V+T e esforços (#636)"
-    },
-    {
-      "sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
-      "short_sha": "97e9b501",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:32:39-03:00",
-      "message": "test(orq): trocas de biela e esforços com contagem constante"
-    },
-    {
-      "sha": "b39d132d0b0e65e9259c4687b4c58e7e1412cf84",
-      "short_sha": "b39d132d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:32:36-03:00",
-      "message": "fix(orq): bloquear novas falhas de V+T e esforços mesmo com totais iguais"
     }
   ],
   "development": {
@@ -3125,7 +3125,7 @@
       },
       {
         "name": "test:frentes-estruturais",
-        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs && node tests_support/viga_flecha_imediata_branson_20261028.mjs"
+        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs && node tests_support/viga_flecha_imediata_branson_20261028.mjs && node tests_support/viga_ancoragens_locais_20261028.mjs"
       },
       {
         "name": "test:escada-abertura",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40683901356",
-    "run_number": "1030"
+    "run_id": "40684366925",
+    "run_number": "1031"
   }
 }
