@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-28T03:32:31Z",
+  "generated_at": "2026-10-28T03:42:35Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
-    "short_sha": "5fe2f984",
+    "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
+    "short_sha": "e2d139e3",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T00:30:48-03:00",
-    "message": "merge: comparar conjuntos de intervenção mínima de vigas (#634)"
+    "date": "2026-10-28T00:42:17-03:00",
+    "message": "merge: proteção de regressões no recálculo multivigas (#635)"
   },
   "commits": [
     {
-      "sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
-      "short_sha": "5fe2f984",
+      "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
+      "short_sha": "e2d139e3",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:30:48-03:00",
-      "message": "merge: comparar conjuntos de intervenção mínima de vigas (#634)"
+      "date": "2026-10-28T00:42:17-03:00",
+      "message": "merge: proteção de regressões no recálculo multivigas (#635)"
     },
     {
-      "sha": "4bdfecd57cf13f57bd1649bd9e63bc99ce31adfe",
-      "short_sha": "4bdfecd5",
+      "sha": "cac239273a357f752d5be022d2ee04201e5b7d02",
+      "short_sha": "cac23927",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:26:45-03:00",
-      "message": "test(ORQ): garantir integração de comparador e fila sem mutação prévia"
+      "date": "2026-10-28T00:40:19-03:00",
+      "message": "fix(test): exigir que somente lote aceito limpe escolhas"
     },
     {
-      "sha": "7da7fb216c371f2f8447a02c50e12ff07bcfd8c1",
-      "short_sha": "7da7fb21",
+      "sha": "dfc554c4378b205df848cc58e6adbe0e796088a6",
+      "short_sha": "dfc554c4",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:26:07-03:00",
-      "message": "feat(ORQ): comparar conjuntos de vigas e enfileirar cenário atômico para um recálculo"
+      "date": "2026-10-28T00:38:48-03:00",
+      "message": "fix(ORQ): corrigir quebra de linha no gate de identidade de pavimentos"
     },
     {
-      "sha": "d5a1add1962a96407b2acff35f4b66965b3102f4",
-      "short_sha": "d5a1add1",
+      "sha": "922a4b42a96e4c7cde6235590b2d02e9227a476e",
+      "short_sha": "922a4b42",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:25:16-03:00",
-      "message": "test(ORQ): incluir otimizador de conjuntos na suíte de armaduras"
+      "date": "2026-10-28T00:37:33-03:00",
+      "message": "test(ORQ): impedir aceite de revisão com pavimento divergente"
     },
     {
-      "sha": "fe69f4e0eefc858ed394c822f2286980d670e514",
-      "short_sha": "fe69f4e0",
+      "sha": "c8e78669638f52f088286a0d2381ccaa7be1af2c",
+      "short_sha": "c8e78669",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:25:11-03:00",
-      "message": "test(ORQ): corrigir volume de referência independente de dois vãos"
+      "date": "2026-10-28T00:37:21-03:00",
+      "message": "fix(ORQ): bloquear auditoria antes-depois com identidade de pavimento divergente"
     },
     {
-      "sha": "cd973960ce40a886bd583fed40b3414f46a2df63",
-      "short_sha": "cd973960",
+      "sha": "60b2a12fe5cb593a612285caf1067f65134804af",
+      "short_sha": "60b2a12f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:24:28-03:00",
-      "message": "test(ORQ): referência independente de ranking, orçamento e fail closed"
+      "date": "2026-10-28T00:37:18-03:00",
+      "message": "test(ORQ): executar gate de regressão na suíte oficial"
     },
     {
-      "sha": "eeca88ea3cec77852ce555e2b65ef110342973f0",
-      "short_sha": "eeca88ea",
+      "sha": "f5285a897b5389b21dccf8becfd6d5ee1272111f",
+      "short_sha": "f5285a89",
       "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:23:58-03:00",
-      "message": "feat(ORQ): motor de comparação de conjuntos com intervenção mínima e gates locais"
+      "date": "2026-10-28T00:37:15-03:00",
+      "message": "test(ORQ): assegurar que lote não é esvaziado antes do gate"
     },
     {
-      "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
-      "short_sha": "5c699216",
+      "sha": "92e092a09a40bb85ff3623a631344084b60ed972",
+      "short_sha": "92e092a0",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:59:31-03:00",
-      "message": "merge: auditoria comparativa de vigas apos recálculo em lote (#633)"
+      "date": "2026-10-28T00:37:01-03:00",
+      "message": "test(ORQ): provar gate de regressões em 178 vigas e reversão do modelo"
     },
     {
-      "sha": "b150e8d22c3dac0bb10f8cf13786111b17a7a081",
-      "short_sha": "b150e8d2",
+      "sha": "a54267204361c81862ffdbe2988644c67f426c1e",
+      "short_sha": "a5426720",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:57:09-03:00",
-      "message": "test(ui): garantir exibicao de comparacao antes depois apos unico recálculo"
+      "date": "2026-10-28T00:36:38-03:00",
+      "message": "feat(ORQ): reverter lote que agrava resultados e revalidar cálculo-base"
     },
     {
-      "sha": "7283624c580c4f792e54a73cb6a855ea3bcd05ce",
-      "short_sha": "7283624c",
+      "sha": "abf91fd70b5ec10898d4f341e8f29c4fb74f35c3",
+      "short_sha": "abf91fd7",
       "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:56:50-03:00",
-      "message": "feat(ui): exibir auditoria antes depois das 178 vigas apos recálculo global"
+      "date": "2026-10-28T00:35:58-03:00",
+      "message": "feat(ORQ): gate pós-recálculo para impedir regressões resistentes no lote"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs && node tests_support/orq_viga_solucao_integrada_20261027.mjs && node tests_support/orq_vigas_auditoria_impacto_lote_20261027.mjs && node tests_support/orq_vigas_otimizacao_conjuntos_20261028.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs && node tests_support/orq_viga_solucao_integrada_20261027.mjs && node tests_support/orq_vigas_auditoria_impacto_lote_20261027.mjs && node tests_support/orq_vigas_otimizacao_conjuntos_20261028.mjs && node tests_support/orq_vigas_gate_regressao_recalculo_20261028.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40627247836",
-    "run_number": "1021"
+    "run_id": "40628202998",
+    "run_number": "1022"
   }
 }
