@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-28T05:54:37Z",
+  "generated_at": "2026-10-28T11:35:31Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
-    "short_sha": "e2d139e3",
+    "sha": "0968d744c295da39eeefcd066f7f4893e0596541",
+    "short_sha": "0968d744",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T00:42:17-03:00",
-    "message": "merge: proteção de regressões no recálculo multivigas (#635)"
+    "date": "2026-10-28T08:35:07-03:00",
+    "message": "merge: gate de regressões por identidade da viga em V+T e esforços (#636)"
   },
   "commits": [
+    {
+      "sha": "0968d744c295da39eeefcd066f7f4893e0596541",
+      "short_sha": "0968d744",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:35:07-03:00",
+      "message": "merge: gate de regressões por identidade da viga em V+T e esforços (#636)"
+    },
+    {
+      "sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
+      "short_sha": "97e9b501",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:32:39-03:00",
+      "message": "test(orq): trocas de biela e esforços com contagem constante"
+    },
+    {
+      "sha": "b39d132d0b0e65e9259c4687b4c58e7e1412cf84",
+      "short_sha": "b39d132d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:32:36-03:00",
+      "message": "fix(orq): bloquear novas falhas de V+T e esforços mesmo com totais iguais"
+    },
     {
       "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
       "short_sha": "e2d139e3",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T00:37:15-03:00",
       "message": "test(ORQ): assegurar que lote não é esvaziado antes do gate"
-    },
-    {
-      "sha": "92e092a09a40bb85ff3623a631344084b60ed972",
-      "short_sha": "92e092a0",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:37:01-03:00",
-      "message": "test(ORQ): provar gate de regressões em 178 vigas e reversão do modelo"
-    },
-    {
-      "sha": "a54267204361c81862ffdbe2988644c67f426c1e",
-      "short_sha": "a5426720",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:36:38-03:00",
-      "message": "feat(ORQ): reverter lote que agrava resultados e revalidar cálculo-base"
-    },
-    {
-      "sha": "abf91fd70b5ec10898d4f341e8f29c4fb74f35c3",
-      "short_sha": "abf91fd7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:35:58-03:00",
-      "message": "feat(ORQ): gate pós-recálculo para impedir regressões resistentes no lote"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40640674975",
-    "run_number": "1024"
+    "run_id": "40681104184",
+    "run_number": "1025"
   }
 }

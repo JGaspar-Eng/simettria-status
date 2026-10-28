@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T05:55:27Z",
+  "gerado_em": "2026-10-28T11:36:28Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
-    "data": "2026-10-28T03:42:17Z"
+    "sha": "0968d744c295da39eeefcd066f7f4893e0596541",
+    "data": "2026-10-28T11:35:07Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
-    "gerado_em": "2026-10-28T03:44:09Z",
+    "gerado_em": "2026-10-28T05:54:37Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 2.2
+    "defasagem_commits_main": 3,
+    "idade_horas": 5.7
   },
   "frentes": [
     {
@@ -618,7 +618,7 @@
             "merged_at": "2026-10-25T18:14:17Z",
             "merge_sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
             "head_sha": "95f0a0a5628052c8f36863157c18ce927f625218",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1017,8 +1017,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 101,
+        "total_integrados": 102,
         "integrados_recentes": [
+          {
+            "numero": 636,
+            "titulo": "fix(ORQ): impedir regressões ocultas de V+T e esforços com totais constantes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/636",
+            "merged_at": "2026-10-28T11:35:08Z",
+            "merge_sha": "0968d744c295da39eeefcd066f7f4893e0596541",
+            "head_sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 635,
             "titulo": "fix(ORQ): impedir regressões no recálculo multivigas e restaurar base automaticamente",
@@ -1027,7 +1037,7 @@
             "merge_sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
             "head_sha": "cac239273a357f752d5be022d2ee04201e5b7d02",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 634,
@@ -1128,38 +1138,28 @@
             "head_sha": "5483243accf8008545b894a524edc03ba06abd34",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 623,
-            "titulo": "fix(ORQ): seletor de armadura dupla vazio por erro de escopo em podeRegistrar",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/623",
-            "merged_at": "2026-10-27T12:27:24Z",
-            "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
-            "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 635,
-          "titulo": "fix(ORQ): impedir regressões no recálculo multivigas e restaurar base automaticamente",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/635",
-          "merge_sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
-          "head_sha": "cac239273a357f752d5be022d2ee04201e5b7d02",
-          "merged_at": "2026-10-28T03:42:18Z",
+          "numero": 636,
+          "titulo": "fix(ORQ): impedir regressões ocultas de V+T e esforços com totais constantes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/636",
+          "merge_sha": "0968d744c295da39eeefcd066f7f4893e0596541",
+          "head_sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
+          "merged_at": "2026-10-28T11:35:08Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "dfc554c4378b205df848cc58e6adbe0e796088a6",
-          "data": "2026-10-28T00:38:48-03:00",
-          "assunto": "fix(ORQ): corrigir quebra de linha no gate de identidade de pavimentos",
-          "ci": "falhou"
+          "sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
+          "data": "2026-10-28T08:32:39-03:00",
+          "assunto": "test(orq): trocas de biela e esforços com contagem constante",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1553,8 +1553,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 529,
-  "commits_main_analisados": 2501,
+  "janela_prs": 530,
+  "commits_main_analisados": 2504,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
