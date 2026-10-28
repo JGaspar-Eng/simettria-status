@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T01:39:38Z",
+  "gerado_em": "2026-10-28T02:48:32Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-    "data": "2026-10-28T01:36:39Z"
+    "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+    "data": "2026-10-28T02:47:08Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-    "gerado_em": "2026-10-28T01:36:59Z",
+    "gerado_em": "2026-10-28T01:38:36Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 4,
+    "idade_horas": 1.2
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 70,
+        "total_integrados": 71,
         "integrados_recentes": [
+          {
+            "numero": 631,
+            "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+            "merged_at": "2026-10-28T02:47:08Z",
+            "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+            "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 628,
             "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
@@ -276,7 +286,7 @@
             "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
             "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 624,
@@ -377,28 +387,18 @@
             "head_sha": "568be0c37eaee310eac16dacdf879326c231f104",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 595,
-            "titulo": "Geotecnia USACE: reconciliar qmin/qmax e governante real dos oito ELU",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/595",
-            "merged_at": "2026-10-25T19:18:54Z",
-            "merge_sha": "b1e56b09c6f4f4ce332c9774e9c281f081fc0b81",
-            "head_sha": "e6b17fe86d781e728590bc4da98fc78010086fc6",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 628,
-          "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/628",
-          "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-          "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
-          "merged_at": "2026-10-27T19:24:37Z",
+          "numero": 631,
+          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+          "merged_at": "2026-10-28T02:47:08Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "33e35501d850bfa952a68a690f9d947d86dcacad",
@@ -408,7 +408,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -698,8 +698,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 7,
+        "total_integrados": 8,
         "integrados_recentes": [
+          {
+            "numero": 631,
+            "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+            "merged_at": "2026-10-28T02:47:08Z",
+            "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+            "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 628,
             "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
@@ -708,7 +718,7 @@
             "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
             "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 622,
@@ -772,15 +782,15 @@
           }
         ],
         "ultimo": {
-          "numero": 628,
-          "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/628",
-          "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-          "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
-          "merged_at": "2026-10-27T19:24:37Z",
+          "numero": 631,
+          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+          "merged_at": "2026-10-28T02:47:08Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "33e35501d850bfa952a68a690f9d947d86dcacad",
@@ -790,7 +800,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -807,8 +817,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 17,
+        "total_integrados": 18,
         "integrados_recentes": [
+          {
+            "numero": 631,
+            "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+            "merged_at": "2026-10-28T02:47:08Z",
+            "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+            "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 630,
             "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
@@ -817,7 +837,7 @@
             "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
             "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 628,
@@ -827,7 +847,7 @@
             "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
             "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 627,
@@ -918,28 +938,18 @@
             "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 602,
-            "titulo": "Armaduras: memorial identifica ELU governante de As com reconciliação dos oito casos",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/602",
-            "merged_at": "2026-10-25T22:21:38Z",
-            "merge_sha": "35c271fd40f3ffb49b50108ee652d038370185af",
-            "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 630,
-          "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
-          "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-          "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
-          "merged_at": "2026-10-28T01:36:40Z",
+          "numero": 631,
+          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+          "merged_at": "2026-10-28T02:47:08Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "79c921207e69dd4d5ee0203602b17b483b82f077",
@@ -949,7 +959,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1007,8 +1017,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 96,
+        "total_integrados": 97,
         "integrados_recentes": [
+          {
+            "numero": 631,
+            "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+            "merged_at": "2026-10-28T02:47:08Z",
+            "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+            "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 630,
             "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
@@ -1017,7 +1037,7 @@
             "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
             "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 629,
@@ -1037,7 +1057,7 @@
             "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
             "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 627,
@@ -1118,38 +1138,28 @@
             "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 615,
-            "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
-            "merged_at": "2026-10-26T22:43:59Z",
-            "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
-            "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 630,
-          "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
-          "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-          "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
-          "merged_at": "2026-10-28T01:36:40Z",
+          "numero": 631,
+          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
+          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+          "merged_at": "2026-10-28T02:47:08Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
-          "data": "2026-10-27T22:34:36-03:00",
-          "assunto": "test(orq): regressao mudanca real de esforcos V216 com barras persistidas e novo ELU",
+          "sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+          "data": "2026-10-27T23:45:22-03:00",
+          "assunto": "test(orq): exigir revalidacao anterior a triagem V+T no motor",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1543,8 +1553,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 524,
-  "commits_main_analisados": 2469,
+  "janela_prs": 525,
+  "commits_main_analisados": 2473,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-28T01:38:36Z",
+  "generated_at": "2026-10-28T02:47:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-    "short_sha": "8e3dfdec",
+    "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+    "short_sha": "e4e94137",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T22:36:39-03:00",
-    "message": "merge: revalidar barras duplas persistidas com novos ELU (#630)"
+    "date": "2026-10-27T23:47:08-03:00",
+    "message": "merge: separar barras duplas obsoletas da geometria de torção (#631)"
   },
   "commits": [
+    {
+      "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
+      "short_sha": "e4e94137",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:47:08-03:00",
+      "message": "merge: separar barras duplas obsoletas da geometria de torção (#631)"
+    },
+    {
+      "sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
+      "short_sha": "ed6e7bea",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:45:22-03:00",
+      "message": "test(orq): exigir revalidacao anterior a triagem V+T no motor"
+    },
+    {
+      "sha": "fec99c1c8444f4b80f2a618bf4b83767b6de8eb8",
+      "short_sha": "fec99c1c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:43:37-03:00",
+      "message": "test(orq): impedir geometria de torcao com barras obsoletas apos mudanca de secao"
+    },
+    {
+      "sha": "61b5baf1c99f6b07e07207c05f9902f23b981f10",
+      "short_sha": "61b5baf1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:43:18-03:00",
+      "message": "fix(orq): impedir bitola de dupla obsoleta de contaminar geometria V+T"
+    },
     {
       "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
       "short_sha": "8e3dfdec",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T21:04:44-03:00",
       "message": "test(orq): localizar estudo de dupla no detalhe recolhido e preservar fluxo"
-    },
-    {
-      "sha": "279c7567ec1869e00b7a857e117fc2da05da4de6",
-      "short_sha": "279c7567",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T21:03:00-03:00",
-      "message": "test(orq): impedir retorno de catalogos de sugestoes duplicados"
-    },
-    {
-      "sha": "705e6a4e1e89c69d902f3e4aad7cef0ae63782cc",
-      "short_sha": "705e6a4e",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T21:02:57-03:00",
-      "message": "test(orq): impedir retorno de catalogos de sugestoes duplicados"
-    },
-    {
-      "sha": "79c921207e69dd4d5ee0203602b17b483b82f077",
-      "short_sha": "79c92120",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T21:02:20-03:00",
-      "message": "fix(ui): um catalogo de escolhas por viga e armadura dupla como candidata unica"
-    },
-    {
-      "sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-      "short_sha": "659b026f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T16:24:36-03:00",
-      "message": "merge: busca integrada de seção e armaduras para vigas (#628)"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40616230010",
-    "run_number": "1013"
+    "run_id": "40622959869",
+    "run_number": "1014"
   }
 }
