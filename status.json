@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-28T02:54:50Z",
+  "generated_at": "2026-10-28T02:59:49Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
-    "short_sha": "fc35f339",
+    "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
+    "short_sha": "5c699216",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T23:53:11-03:00",
-    "message": "merge: reverter lote de vigas se calculo global falhar (#632)"
+    "date": "2026-10-27T23:59:31-03:00",
+    "message": "merge: auditoria comparativa de vigas apos recálculo em lote (#633)"
   },
   "commits": [
+    {
+      "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
+      "short_sha": "5c699216",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:59:31-03:00",
+      "message": "merge: auditoria comparativa de vigas apos recálculo em lote (#633)"
+    },
+    {
+      "sha": "b150e8d22c3dac0bb10f8cf13786111b17a7a081",
+      "short_sha": "b150e8d2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:57:09-03:00",
+      "message": "test(ui): garantir exibicao de comparacao antes depois apos unico recálculo"
+    },
+    {
+      "sha": "7283624c580c4f792e54a73cb6a855ea3bcd05ce",
+      "short_sha": "7283624c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:56:50-03:00",
+      "message": "feat(ui): exibir auditoria antes depois das 178 vigas apos recálculo global"
+    },
+    {
+      "sha": "e6ecb4e8d4e8b7d6c529ce884950963710b6ce10",
+      "short_sha": "e6ecb4e8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:56:23-03:00",
+      "message": "test(orq): incluir auditoria comparativa na suite oficial"
+    },
+    {
+      "sha": "36afd6e222b708ea9893a5439419f58790d21d17",
+      "short_sha": "36afd6e2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:56:10-03:00",
+      "message": "test(orq): diferenca factual 178 vigas 5 para 7 e ids unicos"
+    },
+    {
+      "sha": "a5b7b66e9263325350e246632e6e95d54a6ca071",
+      "short_sha": "a5b7b66e",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T23:55:42-03:00",
+      "message": "feat(orq): motor de auditoria comparativa vigas antes/depois por ID"
+    },
     {
       "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
       "short_sha": "fc35f339",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T23:49:40-03:00",
       "message": "fix(ui): desfazer alteracoes se ORQ falhar e bloquear resultados globais incompletos"
-    },
-    {
-      "sha": "b3e01c633fea0bde0532279ab5d38c3f0e5c7e7f",
-      "short_sha": "b3e01c63",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:48:22-03:00",
-      "message": "fix(orq): transacao de vigas com reversao segura se calculo global falhar"
-    },
-    {
-      "sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-      "short_sha": "e4e94137",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:47:08-03:00",
-      "message": "merge: separar barras duplas obsoletas da geometria de torção (#631)"
-    },
-    {
-      "sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-      "short_sha": "ed6e7bea",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:45:22-03:00",
-      "message": "test(orq): exigir revalidacao anterior a triagem V+T no motor"
-    },
-    {
-      "sha": "fec99c1c8444f4b80f2a618bf4b83767b6de8eb8",
-      "short_sha": "fec99c1c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:43:37-03:00",
-      "message": "test(orq): impedir geometria de torcao com barras obsoletas apos mudanca de secao"
-    },
-    {
-      "sha": "61b5baf1c99f6b07e07207c05f9902f23b981f10",
-      "short_sha": "61b5baf1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:43:18-03:00",
-      "message": "fix(orq): impedir bitola de dupla obsoleta de contaminar geometria V+T"
-    },
-    {
-      "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-      "short_sha": "8e3dfdec",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T22:36:39-03:00",
-      "message": "merge: revalidar barras duplas persistidas com novos ELU (#630)"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs && node tests_support/orq_viga_solucao_integrada_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs && node tests_support/orq_viga_solucao_integrada_20261027.mjs && node tests_support/orq_vigas_auditoria_impacto_lote_20261027.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40623634660",
-    "run_number": "1017"
+    "run_id": "40624106250",
+    "run_number": "1018"
   }
 }

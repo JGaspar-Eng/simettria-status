@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T02:55:51Z",
+  "gerado_em": "2026-10-28T03:00:47Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
-    "data": "2026-10-28T02:53:11Z"
+    "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
+    "data": "2026-10-28T02:59:31Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
-    "gerado_em": "2026-10-28T02:53:30Z",
+    "gerado_em": "2026-10-28T02:54:50Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -638,7 +638,7 @@
             "merged_at": "2026-10-25T17:57:37Z",
             "merge_sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
             "head_sha": "70416a671354aca2f0cd01908a2f0c95b8b104a0",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1017,8 +1017,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 98,
+        "total_integrados": 99,
         "integrados_recentes": [
+          {
+            "numero": 633,
+            "titulo": "feat(ORQ): auditoria automática antes × depois de revisão multivigas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/633",
+            "merged_at": "2026-10-28T02:59:32Z",
+            "merge_sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
+            "head_sha": "b150e8d22c3dac0bb10f8cf13786111b17a7a081",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 632,
             "titulo": "fix(ORQ): rollback de revisão multivigas quando cálculo global falha",
@@ -1027,7 +1037,7 @@
             "merge_sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
             "head_sha": "fa84858f0806251447926e5708dc7e38a124eee8",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 631,
@@ -1128,38 +1138,28 @@
             "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 619,
-            "titulo": "ORQ vigas: triagem V+T concomitante por 8 ELU e demanda preliminar de armadura de torção",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/619",
-            "merged_at": "2026-10-27T03:30:37Z",
-            "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-            "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 632,
-          "titulo": "fix(ORQ): rollback de revisão multivigas quando cálculo global falha",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/632",
-          "merge_sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
-          "head_sha": "fa84858f0806251447926e5708dc7e38a124eee8",
-          "merged_at": "2026-10-28T02:53:12Z",
+          "numero": 633,
+          "titulo": "feat(ORQ): auditoria automática antes × depois de revisão multivigas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/633",
+          "merge_sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
+          "head_sha": "b150e8d22c3dac0bb10f8cf13786111b17a7a081",
+          "merged_at": "2026-10-28T02:59:32Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "f3b4aa5d8225d9206f23a1174259a2371c9a8db9",
-          "data": "2026-10-27T23:50:28-03:00",
-          "assunto": "test(orq): simular falha de calculo apos aplicar duas vigas, rollback e conflito",
+          "sha": "e6ecb4e8d4e8b7d6c529ce884950963710b6ce10",
+          "data": "2026-10-27T23:56:23-03:00",
+          "assunto": "test(orq): incluir auditoria comparativa na suite oficial",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1553,8 +1553,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 526,
-  "commits_main_analisados": 2478,
+  "janela_prs": 527,
+  "commits_main_analisados": 2484,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
