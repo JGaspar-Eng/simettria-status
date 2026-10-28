@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T00:10:16Z",
+  "gerado_em": "2026-10-28T01:37:46Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-    "data": "2026-10-28T00:07:44Z"
+    "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+    "data": "2026-10-28T01:36:39Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-    "gerado_em": "2026-10-28T00:08:02Z",
+    "gerado_em": "2026-10-28T00:09:28Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 3,
+    "idade_horas": 1.5
   },
   "frentes": [
     {
@@ -807,8 +807,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 16,
+        "total_integrados": 17,
         "integrados_recentes": [
+          {
+            "numero": 630,
+            "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
+            "merged_at": "2026-10-28T01:36:40Z",
+            "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+            "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 628,
             "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
@@ -918,28 +928,18 @@
             "head_sha": "1b7516c1d32c21a9c124b3b79ed2fce214893287",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 596,
-            "titulo": "Memorial de armaduras: expor massa da malha apenas com reconciliação geométrica",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/596",
-            "merged_at": "2026-10-25T19:25:11Z",
-            "merge_sha": "67423835a114126ec797749a36822f2ad27475a8",
-            "head_sha": "f39d3f103d7456c140adaec5e0d4f58e424a5633",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 628,
-          "titulo": "feat(ORQ): sugestões integradas de seção, flexão, cortante e geometria de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/628",
-          "merge_sha": "659b026f9f04262a23fd9bca9217f1ff56326afa",
-          "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
-          "merged_at": "2026-10-27T19:24:37Z",
+          "numero": 630,
+          "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
+          "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+          "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
+          "merged_at": "2026-10-28T01:36:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "79c921207e69dd4d5ee0203602b17b483b82f077",
@@ -949,7 +949,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1007,8 +1007,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 95,
+        "total_integrados": 96,
         "integrados_recentes": [
+          {
+            "numero": 630,
+            "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
+            "merged_at": "2026-10-28T01:36:40Z",
+            "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+            "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 629,
             "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
@@ -1118,38 +1128,28 @@
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 614,
-            "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
-            "merged_at": "2026-10-26T18:02:10Z",
-            "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-            "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 629,
-          "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/629",
-          "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-          "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
-          "merged_at": "2026-10-28T00:07:45Z",
+          "numero": 630,
+          "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
+          "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+          "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
+          "merged_at": "2026-10-28T01:36:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
-          "data": "2026-10-27T21:05:47-03:00",
-          "assunto": "test(orq): validar novo titulo do painel unico em vez de titulo legado",
+          "sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
+          "data": "2026-10-27T22:34:36-03:00",
+          "assunto": "test(orq): regressao mudanca real de esforcos V216 com barras persistidas e novo ELU",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1458,7 +1458,7 @@
             "merged_at": "2026-10-25T17:30:11Z",
             "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
             "head_sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1543,8 +1543,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 523,
-  "commits_main_analisados": 2466,
+  "janela_prs": 524,
+  "commits_main_analisados": 2469,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

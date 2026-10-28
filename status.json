@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-28T00:09:28Z",
+  "generated_at": "2026-10-28T01:36:59Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-    "short_sha": "b5eba8d4",
+    "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+    "short_sha": "8e3dfdec",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T21:07:44-03:00",
-    "message": "merge: painel unico de escolhas para vigas sem sugestoes duplicadas (#629)"
+    "date": "2026-10-27T22:36:39-03:00",
+    "message": "merge: revalidar barras duplas persistidas com novos ELU (#630)"
   },
   "commits": [
+    {
+      "sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
+      "short_sha": "8e3dfdec",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T22:36:39-03:00",
+      "message": "merge: revalidar barras duplas persistidas com novos ELU (#630)"
+    },
+    {
+      "sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
+      "short_sha": "1d6e5944",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T22:34:36-03:00",
+      "message": "test(orq): regressao mudanca real de esforcos V216 com barras persistidas e novo ELU"
+    },
+    {
+      "sha": "d3c13b95980287f6cdd86d2aae3bd09295772670",
+      "short_sha": "d3c13b95",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-27T22:34:02-03:00",
+      "message": "fix(orq): revalidar barras duplas persistidas com novos esforços sem reaplicar estudo"
+    },
     {
       "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
       "short_sha": "b5eba8d4",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T16:24:36-03:00",
       "message": "merge: busca integrada de seção e armaduras para vigas (#628)"
-    },
-    {
-      "sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
-      "short_sha": "bb48c150",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T16:21:26-03:00",
-      "message": "test(orq): incluir solucoes integradas na suite oficial de armaduras"
-    },
-    {
-      "sha": "e52ad40a317744eceb65bf09bfdc81924aa015cb",
-      "short_sha": "e52ad40a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T16:21:07-03:00",
-      "message": "test(orq): solucoes conjuntas reais e aplicacao de duas dimensoes em lote"
-    },
-    {
-      "sha": "e0ca87f3c0dc333c9b094a669f2859017f4b6a09",
-      "short_sha": "e0ca87f3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T16:19:51-03:00",
-      "message": "feat(ui): priorizar escolhas conjuntas de viga e recolher sugestoes isoladas"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40606913511",
-    "run_number": "1011"
+    "run_id": "40616074840",
+    "run_number": "1012"
   }
 }
