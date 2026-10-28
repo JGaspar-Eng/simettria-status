@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-28T11:37:21Z",
+  "generated_at": "2026-10-28T11:45:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0968d744c295da39eeefcd066f7f4893e0596541",
-    "short_sha": "0968d744",
+    "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
+    "short_sha": "931a3c49",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T08:35:07-03:00",
-    "message": "merge: gate de regressões por identidade da viga em V+T e esforços (#636)"
+    "date": "2026-10-28T08:44:57-03:00",
+    "message": "merge: validar matriz ELU por trecho na torção de vigas (#637)"
   },
   "commits": [
+    {
+      "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
+      "short_sha": "931a3c49",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:44:57-03:00",
+      "message": "merge: validar matriz ELU por trecho na torção de vigas (#637)"
+    },
+    {
+      "sha": "c7eacab2f8b8252089ef5e5252ac9b37937d100c",
+      "short_sha": "c7eacab2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:42:07-03:00",
+      "message": "test(ORQ): provar matriz completa ELU x trecho com viga multitrecho"
+    },
+    {
+      "sha": "555b3dc3ecb6aaaa2e4e50eb74ace836a2d69ddd",
+      "short_sha": "555b3dc3",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:41:42-03:00",
+      "message": "fix(ORQ): validar matriz oito ELU por trecho sem misturar extremidades"
+    },
     {
       "sha": "0968d744c295da39eeefcd066f7f4893e0596541",
       "short_sha": "0968d744",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T00:37:33-03:00",
       "message": "test(ORQ): impedir aceite de revisão com pavimento divergente"
-    },
-    {
-      "sha": "c8e78669638f52f088286a0d2381ccaa7be1af2c",
-      "short_sha": "c8e78669",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:37:21-03:00",
-      "message": "fix(ORQ): bloquear auditoria antes-depois com identidade de pavimento divergente"
-    },
-    {
-      "sha": "60b2a12fe5cb593a612285caf1067f65134804af",
-      "short_sha": "60b2a12f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:37:18-03:00",
-      "message": "test(ORQ): executar gate de regressão na suíte oficial"
-    },
-    {
-      "sha": "f5285a897b5389b21dccf8becfd6d5ee1272111f",
-      "short_sha": "f5285a89",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:37:15-03:00",
-      "message": "test(ORQ): assegurar que lote não é esvaziado antes do gate"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40681337230",
-    "run_number": "1026"
+    "run_id": "40682353166",
+    "run_number": "1027"
   }
 }
