@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-28T11:47:02Z",
+  "generated_at": "2026-10-28T11:56:19Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
-    "short_sha": "931a3c49",
+    "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+    "short_sha": "cad2c510",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T08:44:57-03:00",
-    "message": "merge: validar matriz ELU por trecho na torção de vigas (#637)"
+    "date": "2026-10-28T08:55:56-03:00",
+    "message": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)"
   },
   "commits": [
+    {
+      "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+      "short_sha": "cad2c510",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:55:56-03:00",
+      "message": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)"
+    },
+    {
+      "sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
+      "short_sha": "f06a947f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:53:35-03:00",
+      "message": "test: adicionar verificação de ELS flecha à suíte oficial estrutural"
+    },
+    {
+      "sha": "f597024267f7c6026641bb65b49fec5ff05ecadb",
+      "short_sha": "f5970242",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:53:25-03:00",
+      "message": "test(ELS): benchmarks independentes de flecha e rigidez fissurada, bloquear ELU e dados incompletos"
+    },
+    {
+      "sha": "69b47836d4ed8360959445006d065b8a607d365a",
+      "short_sha": "69b47836",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T08:52:36-03:00",
+      "message": "feat(ELS): rigidez fissurada Branson e flecha imediata biapoiada com fonte de serviço explícita"
+    },
     {
       "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
       "short_sha": "931a3c49",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T08:32:36-03:00",
       "message": "fix(orq): bloquear novas falhas de V+T e esforços mesmo com totais iguais"
-    },
-    {
-      "sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
-      "short_sha": "e2d139e3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:42:17-03:00",
-      "message": "merge: proteção de regressões no recálculo multivigas (#635)"
-    },
-    {
-      "sha": "cac239273a357f752d5be022d2ee04201e5b7d02",
-      "short_sha": "cac23927",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:40:19-03:00",
-      "message": "fix(test): exigir que somente lote aceito limpe escolhas"
-    },
-    {
-      "sha": "dfc554c4378b205df848cc58e6adbe0e796088a6",
-      "short_sha": "dfc554c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:38:48-03:00",
-      "message": "fix(ORQ): corrigir quebra de linha no gate de identidade de pavimentos"
-    },
-    {
-      "sha": "922a4b42a96e4c7cde6235590b2d02e9227a476e",
-      "short_sha": "922a4b42",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T00:37:33-03:00",
-      "message": "test(ORQ): impedir aceite de revisão com pavimento divergente"
     }
   ],
   "development": {
@@ -3125,7 +3125,7 @@
       },
       {
         "name": "test:frentes-estruturais",
-        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs"
+        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs && node tests_support/viga_flecha_imediata_branson_20261028.mjs"
       },
       {
         "name": "test:escada-abertura",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40682576634",
-    "run_number": "1028"
+    "run_id": "40683755813",
+    "run_number": "1029"
   }
 }

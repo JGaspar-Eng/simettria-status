@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T11:47:53Z",
+  "gerado_em": "2026-10-28T11:57:42Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
-    "data": "2026-10-28T11:44:57Z"
+    "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+    "data": "2026-10-28T11:55:56Z"
   },
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
-    "gerado_em": "2026-10-28T11:45:15Z",
+    "gerado_em": "2026-10-28T11:47:02Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 4,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 71,
+        "total_integrados": 72,
         "integrados_recentes": [
+          {
+            "numero": 638,
+            "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/638",
+            "merged_at": "2026-10-28T11:55:57Z",
+            "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+            "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
           {
             "numero": 631,
             "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
@@ -306,7 +316,7 @@
             "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
             "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 606,
@@ -377,38 +387,28 @@
             "head_sha": "b80188346993e58ffff202b99afa7e1d15820902",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 597,
-            "titulo": "Placa Mindlin: conferir energia elástica e sensibilidade de deslocamento ao refino",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/597",
-            "merged_at": "2026-10-25T19:27:52Z",
-            "merge_sha": "c293b8cfe6e669dcd81e98f4da1ff31fd7cba35b",
-            "head_sha": "568be0c37eaee310eac16dacdf879326c231f104",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 631,
-          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
-          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-          "merged_at": "2026-10-28T02:47:08Z",
+          "numero": 638,
+          "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/638",
+          "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+          "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
+          "merged_at": "2026-10-28T11:55:57Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "33e35501d850bfa952a68a690f9d947d86dcacad",
-          "data": "2026-10-27T16:19:07-03:00",
-          "assunto": "feat(orq): buscar secao conjunta com flexao cortante e geometria de torcao locais",
-          "ci": "sem_evidencia"
+          "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+          "data": "2026-10-28T08:55:56-03:00",
+          "assunto": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -464,7 +464,7 @@
             "merged_at": "2026-10-25T18:42:04Z",
             "merge_sha": "850cf5469e44029e8d82d6b8be562b3d45aff676",
             "head_sha": "e3cbac5596892e2b603f303f00f7d3ed9a8abe3b",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -539,8 +539,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 13,
+        "total_integrados": 14,
         "integrados_recentes": [
+          {
+            "numero": 638,
+            "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/638",
+            "merged_at": "2026-10-28T11:55:57Z",
+            "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+            "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
           {
             "numero": 609,
             "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
@@ -549,7 +559,7 @@
             "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
             "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 606,
@@ -650,38 +660,28 @@
             "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 337,
-            "titulo": "fix(int-verify): ignora furos sem georreferenciamento válido",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/337",
-            "merged_at": "2026-09-07T21:27:48Z",
-            "merge_sha": "6d80d4ecab0283a9025403ce7f272b1205038e25",
-            "head_sha": "0d932039a9b2bb63a4379a1a2687a12f6c6df25a",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 609,
-          "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
-          "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
-          "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
-          "merged_at": "2026-10-26T16:38:43Z",
+          "numero": 638,
+          "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/638",
+          "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+          "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
+          "merged_at": "2026-10-28T11:55:57Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
-          "data": "2026-10-26T13:38:43-03:00",
-          "assunto": "merge: SPT verifica IDs repetidos antes de filtrar coordenadas (#609)",
+          "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
+          "data": "2026-10-28T08:55:56-03:00",
+          "assunto": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1553,8 +1553,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 531,
-  "commits_main_analisados": 2507,
+  "janela_prs": 532,
+  "commits_main_analisados": 2511,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
