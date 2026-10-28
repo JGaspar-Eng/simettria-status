@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-28T03:02:26Z",
+  "gerado_em": "2026-10-28T03:31:55Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
-    "data": "2026-10-28T02:59:31Z"
+    "sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
+    "data": "2026-10-28T03:30:48Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
-    "gerado_em": "2026-10-28T02:59:49Z",
+    "gerado_em": "2026-10-28T03:01:08Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.5
   },
   "frentes": [
     {
@@ -628,7 +628,7 @@
             "merged_at": "2026-10-25T18:00:59Z",
             "merge_sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
             "head_sha": "fd754b3a9b66a87f6b8102dd8bd1672b01545f44",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -952,14 +952,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "79c921207e69dd4d5ee0203602b17b483b82f077",
-          "data": "2026-10-27T21:02:20-03:00",
-          "assunto": "fix(ui): um catalogo de escolhas por viga e armadura dupla como candidata unica",
+          "sha": "d5a1add1962a96407b2acff35f4b66965b3102f4",
+          "data": "2026-10-28T00:25:16-03:00",
+          "assunto": "test(ORQ): incluir otimizador de conjuntos na suíte de armaduras",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1017,8 +1017,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 99,
+        "total_integrados": 100,
         "integrados_recentes": [
+          {
+            "numero": 634,
+            "titulo": "feat(ORQ): comparar conjuntos de intervenções mínimas em várias vigas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/634",
+            "merged_at": "2026-10-28T03:30:48Z",
+            "merge_sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
+            "head_sha": "4bdfecd57cf13f57bd1649bd9e63bc99ce31adfe",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 633,
             "titulo": "feat(ORQ): auditoria automática antes × depois de revisão multivigas",
@@ -1027,7 +1037,7 @@
             "merge_sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
             "head_sha": "b150e8d22c3dac0bb10f8cf13786111b17a7a081",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 632,
@@ -1128,38 +1138,28 @@
             "head_sha": "abbb0a3f5088195d5a3659d70716ff53755d65ba",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 620,
-            "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/620",
-            "merged_at": "2026-10-27T11:18:10Z",
-            "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
-            "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 633,
-          "titulo": "feat(ORQ): auditoria automática antes × depois de revisão multivigas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/633",
-          "merge_sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
-          "head_sha": "b150e8d22c3dac0bb10f8cf13786111b17a7a081",
-          "merged_at": "2026-10-28T02:59:32Z",
+          "numero": 634,
+          "titulo": "feat(ORQ): comparar conjuntos de intervenções mínimas em várias vigas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/634",
+          "merge_sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
+          "head_sha": "4bdfecd57cf13f57bd1649bd9e63bc99ce31adfe",
+          "merged_at": "2026-10-28T03:30:48Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "e6ecb4e8d4e8b7d6c529ce884950963710b6ce10",
-          "data": "2026-10-27T23:56:23-03:00",
-          "assunto": "test(orq): incluir auditoria comparativa na suite oficial",
-          "ci": "sem_evidencia"
+          "sha": "4bdfecd57cf13f57bd1649bd9e63bc99ce31adfe",
+          "data": "2026-10-28T00:26:45-03:00",
+          "assunto": "test(ORQ): garantir integração de comparador e fila sem mutação prévia",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1553,8 +1553,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 527,
-  "commits_main_analisados": 2484,
+  "janela_prs": 528,
+  "commits_main_analisados": 2491,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

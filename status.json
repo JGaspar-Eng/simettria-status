@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-10-28T03:01:08Z",
+  "generated_at": "2026-10-28T03:31:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
-    "short_sha": "5c699216",
+    "sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
+    "short_sha": "5fe2f984",
     "author": "Joanez Gaspar",
-    "date": "2026-10-27T23:59:31-03:00",
-    "message": "merge: auditoria comparativa de vigas apos recálculo em lote (#633)"
+    "date": "2026-10-28T00:30:48-03:00",
+    "message": "merge: comparar conjuntos de intervenção mínima de vigas (#634)"
   },
   "commits": [
+    {
+      "sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
+      "short_sha": "5fe2f984",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:30:48-03:00",
+      "message": "merge: comparar conjuntos de intervenção mínima de vigas (#634)"
+    },
+    {
+      "sha": "4bdfecd57cf13f57bd1649bd9e63bc99ce31adfe",
+      "short_sha": "4bdfecd5",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:26:45-03:00",
+      "message": "test(ORQ): garantir integração de comparador e fila sem mutação prévia"
+    },
+    {
+      "sha": "7da7fb216c371f2f8447a02c50e12ff07bcfd8c1",
+      "short_sha": "7da7fb21",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:26:07-03:00",
+      "message": "feat(ORQ): comparar conjuntos de vigas e enfileirar cenário atômico para um recálculo"
+    },
+    {
+      "sha": "d5a1add1962a96407b2acff35f4b66965b3102f4",
+      "short_sha": "d5a1add1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:25:16-03:00",
+      "message": "test(ORQ): incluir otimizador de conjuntos na suíte de armaduras"
+    },
+    {
+      "sha": "fe69f4e0eefc858ed394c822f2286980d670e514",
+      "short_sha": "fe69f4e0",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:25:11-03:00",
+      "message": "test(ORQ): corrigir volume de referência independente de dois vãos"
+    },
+    {
+      "sha": "cd973960ce40a886bd583fed40b3414f46a2df63",
+      "short_sha": "cd973960",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:24:28-03:00",
+      "message": "test(ORQ): referência independente de ranking, orçamento e fail closed"
+    },
+    {
+      "sha": "eeca88ea3cec77852ce555e2b65ef110342973f0",
+      "short_sha": "eeca88ea",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T00:23:58-03:00",
+      "message": "feat(ORQ): motor de comparação de conjuntos com intervenção mínima e gates locais"
+    },
     {
       "sha": "5c699216053ae6c259b7838705a1dc9eadc16f38",
       "short_sha": "5c699216",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-27T23:56:50-03:00",
       "message": "feat(ui): exibir auditoria antes depois das 178 vigas apos recálculo global"
-    },
-    {
-      "sha": "e6ecb4e8d4e8b7d6c529ce884950963710b6ce10",
-      "short_sha": "e6ecb4e8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:56:23-03:00",
-      "message": "test(orq): incluir auditoria comparativa na suite oficial"
-    },
-    {
-      "sha": "36afd6e222b708ea9893a5439419f58790d21d17",
-      "short_sha": "36afd6e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:56:10-03:00",
-      "message": "test(orq): diferenca factual 178 vigas 5 para 7 e ids unicos"
-    },
-    {
-      "sha": "a5b7b66e9263325350e246632e6e95d54a6ca071",
-      "short_sha": "a5b7b66e",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:55:42-03:00",
-      "message": "feat(orq): motor de auditoria comparativa vigas antes/depois por ID"
-    },
-    {
-      "sha": "fc35f339238e2df4fb0099ec370edd42a757eef1",
-      "short_sha": "fc35f339",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:53:11-03:00",
-      "message": "merge: reverter lote de vigas se calculo global falhar (#632)"
-    },
-    {
-      "sha": "fa84858f0806251447926e5708dc7e38a124eee8",
-      "short_sha": "fa84858f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:50:45-03:00",
-      "message": "fix(ui): manter visivel diagnostico de falha global apos reversao"
-    },
-    {
-      "sha": "f3b4aa5d8225d9206f23a1174259a2371c9a8db9",
-      "short_sha": "f3b4aa5d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:50:28-03:00",
-      "message": "test(orq): simular falha de calculo apos aplicar duas vigas, rollback e conflito"
-    },
-    {
-      "sha": "87562b152f70a1ea963c4d81efae7ca41df8649f",
-      "short_sha": "87562b15",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-27T23:49:40-03:00",
-      "message": "fix(ui): desfazer alteracoes se ORQ falhar e bloquear resultados globais incompletos"
     }
   ],
   "development": {
@@ -3097,7 +3097,7 @@
       },
       {
         "name": "test:orq-armaduras",
-        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs && node tests_support/orq_viga_solucao_integrada_20261027.mjs && node tests_support/orq_vigas_auditoria_impacto_lote_20261027.mjs"
+        "command": "node tests_support/orq_armaduras_vigas_elu_20261020.mjs && node tests_support/pilar_armadura_biaxial_fibras_20261020.mjs && node tests_support/orq_armaduras_detalhamento_2d_20261020.mjs && node tests_support/orq_armaduras_arraste_cobertura_20261020.mjs && node tests_support/orq_armaduras_vigas_2ordem_20261020.mjs && node tests_support/orq_armaduras_viga_momento_zero_20261020.mjs && node tests_support/orq_armadura_dupla_estudo_20261026.mjs && node tests_support/orq_armadura_dupla_aplicacao_elu_20261026.mjs && node tests_support/orq_armadura_dupla_prancha_20261026.mjs && node tests_support/orq_vigas_interacao_torcao_elu_20261027.mjs && node tests_support/orq_vigas_torcao_geometria_c1_20261027.mjs && node tests_support/orq_armadura_dupla_classificacao_cores_20261027.mjs && node tests_support/orq_armadura_dupla_ui_select_render_20261027.mjs && node tests_support/alternativas_semaforo_vigas_fundacoes_20261027.mjs && node tests_support/orq_sugestoes_clicaveis_aplicacao_20261027.mjs && node tests_support/orq_vigas_revisao_lote_reversao_20261027.mjs && node tests_support/orq_viga_solucao_integrada_20261027.mjs && node tests_support/orq_vigas_auditoria_impacto_lote_20261027.mjs && node tests_support/orq_vigas_otimizacao_conjuntos_20261028.mjs"
       },
       {
         "name": "test:orq-reacoes-origem",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40624214765",
-    "run_number": "1019"
+    "run_id": "40627117503",
+    "run_number": "1020"
   }
 }
