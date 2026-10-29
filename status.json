@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-29T10:11:01Z",
+  "generated_at": "2026-10-29T17:20:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5fbb776b90bea8be100b297978a53f8b3fb966c3",
-    "short_sha": "5fbb776b",
+    "sha": "0622653cde82e65c5392f9c4c878edce07171f55",
+    "short_sha": "0622653c",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T22:19:05-03:00",
-    "message": "Merge pull request #640 from JGaspar-Eng/feat/orq-interacao-3d-8elu-20261028"
+    "date": "2026-10-29T14:20:15-03:00",
+    "message": "Merge pull request #641 from JGaspar-Eng/feat/orq-resistencia-3d-sprint014-20261028"
   },
   "commits": [
+    {
+      "sha": "0622653cde82e65c5392f9c4c878edce07171f55",
+      "short_sha": "0622653c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-29T14:20:15-03:00",
+      "message": "Merge pull request #641 from JGaspar-Eng/feat/orq-resistencia-3d-sprint014-20261028"
+    },
+    {
+      "sha": "3e0192bed19393042285af43546444e700df8593",
+      "short_sha": "3e0192be",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-29T14:17:51-03:00",
+      "message": "test(ci): integrar cinco testes recuperados na suite oficial"
+    },
+    {
+      "sha": "48d55a15b8002d863834565143967f8b7a549f90",
+      "short_sha": "48d55a15",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-29T13:59:13-03:00",
+      "message": "test(SIMETTRIA): consolidar oito testes de regressao recuperados"
+    },
+    {
+      "sha": "c09ccf6c4a540f2f337453ea797b132de9bced77",
+      "short_sha": "c09ccf6c",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-29T09:19:22-03:00",
+      "message": "fix(ORQ): validar identidade e inventario antes de aplicar premissas residenciais"
+    },
     {
       "sha": "5fbb776b90bea8be100b297978a53f8b3fb966c3",
       "short_sha": "5fbb776b",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T08:57:28-03:00",
       "message": "feat(ancoragens): confrontar barras de viga com geometria física e núcleo NBR 6118"
-    },
-    {
-      "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
-      "short_sha": "cad2c510",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:55:56-03:00",
-      "message": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)"
-    },
-    {
-      "sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
-      "short_sha": "f06a947f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:53:35-03:00",
-      "message": "test: adicionar verificação de ELS flecha à suíte oficial estrutural"
-    },
-    {
-      "sha": "f597024267f7c6026641bb65b49fec5ff05ecadb",
-      "short_sha": "f5970242",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:53:25-03:00",
-      "message": "test(ELS): benchmarks independentes de flecha e rigidez fissurada, bloquear ELU e dados incompletos"
-    },
-    {
-      "sha": "69b47836d4ed8360959445006d065b8a607d365a",
-      "short_sha": "69b47836",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:52:36-03:00",
-      "message": "feat(ELS): rigidez fissurada Branson e flecha imediata biapoiada com fonte de serviço explícita"
     }
   ],
   "development": {
@@ -3069,7 +3069,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:orq-cobertura-dados && npm run test:orq-cargas-multilote && npm run test:orq-assistente && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_abertura_escada_por_vao.mjs && node tests/validar_cobertura_nivel_tecnico_auto.mjs && node tests/validar_exclusao_contexto_objetos.mjs && node tests/validar_fundacoes_obsoletas_e_vistas_20261022.mjs && node tests/validar_infra_legada_vigas_20261022.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:orq-cobertura-dados && npm run test:orq-cargas-multilote && npm run test:orq-assistente && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
       },
       {
         "name": "test:sacadas-apoios",
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40855468334",
-    "run_number": "1038"
+    "run_id": "40920357658",
+    "run_number": "1039"
   }
 }
