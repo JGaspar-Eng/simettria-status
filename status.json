@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-29T17:22:24Z",
+  "generated_at": "2026-10-29T17:54:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0622653cde82e65c5392f9c4c878edce07171f55",
-    "short_sha": "0622653c",
+    "sha": "46fc224ac87295cf9cff6e5f8b4c9e6f419d72e1",
+    "short_sha": "46fc224a",
     "author": "Joanez Gaspar",
-    "date": "2026-10-29T14:20:15-03:00",
-    "message": "Merge pull request #641 from JGaspar-Eng/feat/orq-resistencia-3d-sprint014-20261028"
+    "date": "2026-10-29T14:53:43-03:00",
+    "message": "Merge pull request #642 from JGaspar-Eng/feat/orq-estacas-triangulo-sprint014-20261029"
   },
   "commits": [
+    {
+      "sha": "46fc224ac87295cf9cff6e5f8b4c9e6f419d72e1",
+      "short_sha": "46fc224a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-29T14:53:43-03:00",
+      "message": "Merge pull request #642 from JGaspar-Eng/feat/orq-estacas-triangulo-sprint014-20261029"
+    },
+    {
+      "sha": "666bac60a43ab38ae50c0fcb94f238e8e539b53d",
+      "short_sha": "666bac60",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-29T14:37:26-03:00",
+      "message": "feat(fundacoes): avaliar grupo triangular de tres estacas nos oito ELU"
+    },
     {
       "sha": "0622653cde82e65c5392f9c4c878edce07171f55",
       "short_sha": "0622653c",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T08:58:11-03:00",
       "message": "test: incluir ancoragem local de barras de vigas na suíte estrutural"
-    },
-    {
-      "sha": "ac252f0a36b362844d8a03ecf64b5ebb628e315e",
-      "short_sha": "ac252f0a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:57:57-03:00",
-      "message": "test(ancoragens): confronto independente lb, gancho, falhas de proveniência e imutabilidade"
-    },
-    {
-      "sha": "70bdea2807b5863fa64ee0defe1bf69e8104c8bf",
-      "short_sha": "70bdea28",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:57:28-03:00",
-      "message": "feat(ancoragens): confrontar barras de viga com geometria física e núcleo NBR 6118"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40920630363",
-    "run_number": "1040"
+    "run_id": "40925659712",
+    "run_number": "1041"
   }
 }
