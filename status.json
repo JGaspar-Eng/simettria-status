@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-29T01:03:02Z",
+  "generated_at": "2026-10-29T01:19:26Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7fc5d52ae88a38bebf6775e3c0321817af6d8bc0",
-    "short_sha": "7fc5d52a",
+    "sha": "5fbb776b90bea8be100b297978a53f8b3fb966c3",
+    "short_sha": "5fbb776b",
     "author": "Joanez Gaspar",
-    "date": "2026-10-28T09:00:41-03:00",
-    "message": "merge: ancoragens locais de vigas com proveniência e testes (#639)"
+    "date": "2026-10-28T22:19:05-03:00",
+    "message": "Merge pull request #640 from JGaspar-Eng/feat/orq-interacao-3d-8elu-20261028"
   },
   "commits": [
+    {
+      "sha": "5fbb776b90bea8be100b297978a53f8b3fb966c3",
+      "short_sha": "5fbb776b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-28T22:19:05-03:00",
+      "message": "Merge pull request #640 from JGaspar-Eng/feat/orq-interacao-3d-8elu-20261028"
+    },
+    {
+      "sha": "2dd333b7325493479d457eb4edd30b7be5a8796a",
+      "short_sha": "2dd333b7",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-28T13:57:25-03:00",
+      "message": "feat(ORQ): rastrear seis esforcos espaciais nos oito ELU"
+    },
     {
       "sha": "7fc5d52ae88a38bebf6775e3c0321817af6d8bc0",
       "short_sha": "7fc5d52a",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-28T08:52:36-03:00",
       "message": "feat(ELS): rigidez fissurada Branson e flecha imediata biapoiada com fonte de serviço explícita"
-    },
-    {
-      "sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
-      "short_sha": "931a3c49",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:44:57-03:00",
-      "message": "merge: validar matriz ELU por trecho na torção de vigas (#637)"
-    },
-    {
-      "sha": "c7eacab2f8b8252089ef5e5252ac9b37937d100c",
-      "short_sha": "c7eacab2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-28T08:42:07-03:00",
-      "message": "test(ORQ): provar matriz completa ELU x trecho com viga multitrecho"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40797962716",
-    "run_number": "1035"
+    "run_id": "40799683095",
+    "run_number": "1036"
   }
 }
