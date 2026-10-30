@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-30T02:10:33Z",
+  "generated_at": "2026-10-30T02:13:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
-    "short_sha": "1c60c187",
+    "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
+    "short_sha": "3486f3d8",
     "author": "Joanez Gaspar",
-    "date": "2026-10-29T23:08:31-03:00",
-    "message": "Merge pull request #644 from JGaspar-Eng/feat/fundacao-blevot-benchmark-20261029"
+    "date": "2026-10-29T23:13:37-03:00",
+    "message": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029"
   },
   "commits": [
+    {
+      "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
+      "short_sha": "3486f3d8",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-29T23:13:37-03:00",
+      "message": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029"
+    },
+    {
+      "sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
+      "short_sha": "3f04490f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-29T23:11:38-03:00",
+      "message": "test(fundacao): validar ligacao Blevot e invariantes do grupo axial"
+    },
+    {
+      "sha": "d209ccb999f28ea3978385feb9ece9faafda584e",
+      "short_sha": "d209ccb9",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-29T23:11:08-03:00",
+      "message": "feat(fundacao): vincular benchmark Blevot ao grupo axial compativel e aos oito ELU"
+    },
     {
       "sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
       "short_sha": "1c60c187",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-29T14:53:43-03:00",
       "message": "Merge pull request #642 from JGaspar-Eng/feat/orq-estacas-triangulo-sprint014-20261029"
-    },
-    {
-      "sha": "666bac60a43ab38ae50c0fcb94f238e8e539b53d",
-      "short_sha": "666bac60",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-29T14:37:26-03:00",
-      "message": "feat(fundacoes): avaliar grupo triangular de tres estacas nos oito ELU"
-    },
-    {
-      "sha": "0622653cde82e65c5392f9c4c878edce07171f55",
-      "short_sha": "0622653c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T14:20:15-03:00",
-      "message": "Merge pull request #641 from JGaspar-Eng/feat/orq-resistencia-3d-sprint014-20261028"
-    },
-    {
-      "sha": "3e0192bed19393042285af43546444e700df8593",
-      "short_sha": "3e0192be",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-29T14:17:51-03:00",
-      "message": "test(ci): integrar cinco testes recuperados na suite oficial"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "40990110795",
-    "run_number": "1048"
+    "run_id": "40990444547",
+    "run_number": "1049"
   }
 }
