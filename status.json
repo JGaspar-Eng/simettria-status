@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-10-30T12:11:30Z",
+  "generated_at": "2026-10-30T12:29:58Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "06af06f407497d55aac88585fb93eb10213fc597",
-    "short_sha": "06af06f4",
+    "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
+    "short_sha": "91ae0def",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T09:09:30-03:00",
-    "message": "Merge pull request #650 from JGaspar-Eng/fix/orq-classificacao-grupos-sequenciais-20261030"
+    "date": "2026-10-30T09:29:33-03:00",
+    "message": "Merge pull request #651 from JGaspar-Eng/feat/orq-csv-identidade-3d-rastreio-20261030"
   },
   "commits": [
+    {
+      "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
+      "short_sha": "91ae0def",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:29:33-03:00",
+      "message": "Merge pull request #651 from JGaspar-Eng/feat/orq-csv-identidade-3d-rastreio-20261030"
+    },
+    {
+      "sha": "e9fa82393295424c1d87948ca96d216ceb3e4ad8",
+      "short_sha": "e9fa8239",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:27:25-03:00",
+      "message": "test(orq): nao atribuir tupla 3D a viga 2D no CSV"
+    },
+    {
+      "sha": "d98bcc34702a31e5bd8869056f17782d56c6924f",
+      "short_sha": "d98bcc34",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:25:28-03:00",
+      "message": "test(ci): executar rastreabilidade CSV e tuplas 3D junto da suite de armaduras"
+    },
+    {
+      "sha": "b081feefe359eb2635eedc0008fad8b6a5c437c7",
+      "short_sha": "b081feef",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:25:04-03:00",
+      "message": "test(orq): 178 vigas 174 nomes, 164 pendentes e tuplas 3D sem mistura"
+    },
+    {
+      "sha": "0ac1313b246fa1723c4cfba12f005f7bbfd6d77e",
+      "short_sha": "0ac1313b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:24:17-03:00",
+      "message": "feat(ui): exportar vigas com UUID pavimento e tupla espacial rastreada"
+    },
+    {
+      "sha": "c7e457c713ba5b4e50e6caea68c72da630caa053",
+      "short_sha": "c7e457c7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:23:20-03:00",
+      "message": "fix(orq): tupla CSV 3D deriva dos seis esforcos assinados do mesmo caso e ponto"
+    },
+    {
+      "sha": "4862cb3136d7816e8b6f7afaea978e77c2d826a6",
+      "short_sha": "4862cb31",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:22:52-03:00",
+      "message": "feat(orq): exportacao CSV auditavel por UUID/pavimento e tuplas concomitantes 3D"
+    },
     {
       "sha": "06af06f407497d55aac88585fb93eb10213fc597",
       "short_sha": "06af06f4",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T09:06:31-03:00",
       "message": "test(browser): classificar grupos em sequencia na mesma janela, sem desabilitar botoes"
-    },
-    {
-      "sha": "3cb52f9496cd389426871bfd3261659663c4bc5e",
-      "short_sha": "3cb52f94",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:06:07-03:00",
-      "message": "fix(orq): exibir quebra de linha na lista de proximo grupo"
-    },
-    {
-      "sha": "dd3915b22573cdac8c460faa02dc25fd9fa7c1f1",
-      "short_sha": "dd3915b2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:05:33-03:00",
-      "message": "fix(orq): atualizar grupos restantes apos cada classificacao sem fechar modal"
-    },
-    {
-      "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
-      "short_sha": "4e452a9c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:55:44-03:00",
-      "message": "Merge pull request #649 from JGaspar-Eng/fix/orq-auditoria-fonte-cargas-modelo-20261030"
-    },
-    {
-      "sha": "eddc8e849bf92ffca46ff95c6d9d543477d8f41a",
-      "short_sha": "eddc8e84",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:53:29-03:00",
-      "message": "test(ci): incluir auditoria operacional 18P 178V na suíte oficial"
-    },
-    {
-      "sha": "3a13bc209ad29650145002d4c9731f6e66b9fb8e",
-      "short_sha": "3a13bc20",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:53:16-03:00",
-      "message": "test(orq): corrigir contagem Gk/Qk em modelo 18P e reservatorio nao aplicavel"
-    },
-    {
-      "sha": "5644da6bbbce43317380801064ea137f0566d788",
-      "short_sha": "5644da6b",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:52:37-03:00",
-      "message": "fix(orq): contar Gk/Qk por proveniencia valida e suprimir falso alerta de reservatorio"
-    },
-    {
-      "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-      "short_sha": "7043e587",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:36:36-03:00",
-      "message": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41053458608",
-    "run_number": "1061"
+    "run_id": "41055743531",
+    "run_number": "1062"
   }
 }
