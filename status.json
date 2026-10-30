@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-10-30T17:13:30Z",
+  "generated_at": "2026-10-30T17:19:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-    "short_sha": "844ede86",
+    "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+    "short_sha": "6fb148a0",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T14:11:32-03:00",
-    "message": "Merge pull request #654 from JGaspar-Eng/fix/orq-auditoria-poscalculo-infra-blocos-20261030"
+    "date": "2026-10-30T14:19:05-03:00",
+    "message": "Merge pull request #655 from JGaspar-Eng/feat/orq-centro-unico-vigas-pilares-desenhos-20261030"
   },
   "commits": [
+    {
+      "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+      "short_sha": "6fb148a0",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:19:05-03:00",
+      "message": "Merge pull request #655 from JGaspar-Eng/feat/orq-centro-unico-vigas-pilares-desenhos-20261030"
+    },
+    {
+      "sha": "7291297cb58ed94507647b5fcf499305254ce27c",
+      "short_sha": "7291297c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:17:08-03:00",
+      "message": "test(ci): rodar centro unificado vigas/pilares e rastreabilidade UUID na suite ORQ"
+    },
+    {
+      "sha": "c94129944a2d0c168d9671cf2d662451b7a377fc",
+      "short_sha": "c9412994",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:16:44-03:00",
+      "message": "test(orq): centro 178 vigas/18 pilares, identidades, 2a ordem e falha fechada"
+    },
+    {
+      "sha": "43c61fb01434dbf433dab174654b6b1e64135b25",
+      "short_sha": "43c61fb0",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:16:18-03:00",
+      "message": "fix(ui): controlar a fila em lote por identificador, nunca ocultar painel dos pilares"
+    },
+    {
+      "sha": "94e0fc89faf4b8a8a2496749af62dedb93a51946",
+      "short_sha": "94e0fc89",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:15:41-03:00",
+      "message": "refactor(orq): eliminar modais 1a/2a duplicados; centro único com editor 2D e pilares"
+    },
+    {
+      "sha": "6038e8788a20644aa247d4f5ba88d093d1446488",
+      "short_sha": "6038e878",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:15:05-03:00",
+      "message": "feat(ui): centro único vigas/pilares, 1a/2a ordem, cortes 2D e aplicação em lote"
+    },
+    {
+      "sha": "6a4aba2960e4708adf0e92175714a0419332d692",
+      "short_sha": "6a4aba29",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T14:13:28-03:00",
+      "message": "feat(orq): índice único por UUID reunindo vigas 1a/2a ordem e pilares 8 ELU"
+    },
     {
       "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
       "short_sha": "844ede86",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T14:07:23-03:00",
       "message": "fix(orq): distinguir insumos de sapatas e 18 blocos sobre 62 estacas no F10"
-    },
-    {
-      "sha": "54569f807033fb8ed150f9f39cc57e8b389d22e3",
-      "short_sha": "54569f80",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:06:26-03:00",
-      "message": "test(ci): integrar regressão 18/18 ELU, painel pós-cálculo e identidade P1"
-    },
-    {
-      "sha": "43e29b22d7dabd37ee3bd90b14a22fd56d2fef21",
-      "short_sha": "43e29b22",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:06:14-03:00",
-      "message": "test(orq): 18/18 reacoes e segunda ordem nao podem reaparecer como nao calculados"
-    },
-    {
-      "sha": "b160f28498da085664dc45101a4f5d81d34c495f",
-      "short_sha": "b160f284",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:05:41-03:00",
-      "message": "fix(ui): passar modelo para identidade dos pilares"
-    },
-    {
-      "sha": "fb8f3480fa32d2d5baa1fcfe1637ccbf14cc158e",
-      "short_sha": "fb8f3480",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:05:38-03:00",
-      "message": "fix(ui): mostrar P1/P2 no relatorio 8 ELU"
-    },
-    {
-      "sha": "87c93641962c72de3431ffb251eb4abdd523d9fe",
-      "short_sha": "87c93641",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:05:24-03:00",
-      "message": "fix(orq): exibir identificação humana P1/P2 e conferir IDs de pilares no relatório 8 ELU"
-    },
-    {
-      "sha": "aa57fd29713a5ed6b8000774bb936fe5081430a4",
-      "short_sha": "aa57fd29",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:04:51-03:00",
-      "message": "fix(orq): mensagem correta para 28 vigas Gk classificadas e zero lotes pendentes"
-    },
-    {
-      "sha": "34ca9077671dccbed9080403fb0f309f8d1af946",
-      "short_sha": "34ca9077",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:04:36-03:00",
-      "message": "fix(ui): auditoria pós-cálculo real e ligações paginadas com filtro por viga"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41096893978",
-    "run_number": "1069"
+    "run_id": "41097763356",
+    "run_number": "1070"
   }
 }

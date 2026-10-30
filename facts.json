@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T17:14:24Z",
+  "gerado_em": "2026-10-30T17:20:35Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-    "data": "2026-10-30T17:11:32Z"
+    "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+    "data": "2026-10-30T17:19:05Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-    "gerado_em": "2026-10-30T17:11:51Z",
+    "gerado_em": "2026-10-30T17:13:30Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -366,7 +366,7 @@
             "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
             "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 628,
@@ -568,7 +568,7 @@
             "merged_at": "2026-10-26T16:38:43Z",
             "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
             "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -718,7 +718,7 @@
             "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
             "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 628,
@@ -827,8 +827,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 18,
+        "total_integrados": 19,
         "integrados_recentes": [
+          {
+            "numero": 655,
+            "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/655",
+            "merged_at": "2026-10-30T17:19:06Z",
+            "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+            "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 631,
             "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
@@ -837,7 +847,7 @@
             "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
             "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 630,
@@ -938,28 +948,18 @@
             "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 610,
-            "titulo": "Vigas ORQ: estudar armadura dupla nos dois modais e registrar hipótese por viga",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/610",
-            "merged_at": "2026-10-26T16:53:14Z",
-            "merge_sha": "e4edb882f64afec9f47149ac817366fbedbbb3a5",
-            "head_sha": "02ada8111b48417e10e6149133e8db6142d68a58",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 631,
-          "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
-          "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-          "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-          "merged_at": "2026-10-28T02:47:08Z",
+          "numero": 655,
+          "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/655",
+          "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+          "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
+          "merged_at": "2026-10-30T17:19:06Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "d98bcc34702a31e5bd8869056f17782d56c6924f",
@@ -969,7 +969,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1027,8 +1027,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 113,
+        "total_integrados": 114,
         "integrados_recentes": [
+          {
+            "numero": 655,
+            "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/655",
+            "merged_at": "2026-10-30T17:19:06Z",
+            "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+            "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 654,
             "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
@@ -1138,38 +1148,28 @@
             "head_sha": "c7eacab2f8b8252089ef5e5252ac9b37937d100c",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 636,
-            "titulo": "fix(ORQ): impedir regressões ocultas de V+T e esforços com totais constantes",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/636",
-            "merged_at": "2026-10-28T11:35:08Z",
-            "merge_sha": "0968d744c295da39eeefcd066f7f4893e0596541",
-            "head_sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 654,
-          "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
-          "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-          "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
-          "merged_at": "2026-10-30T17:11:33Z",
+          "numero": 655,
+          "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/655",
+          "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+          "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
+          "merged_at": "2026-10-30T17:19:06Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-          "data": "2026-10-30T14:11:32-03:00",
-          "assunto": "Merge pull request #654 from JGaspar-Eng/fix/orq-auditoria-poscalculo-infra-blocos-20261030",
-          "ci": "passou"
+          "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
+          "data": "2026-10-30T14:19:05-03:00",
+          "assunto": "Merge pull request #655 from JGaspar-Eng/feat/orq-centro-unico-vigas-pilares-desenhos-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1514,14 +1514,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "54569f807033fb8ed150f9f39cc57e8b389d22e3",
-          "data": "2026-10-30T14:06:26-03:00",
-          "assunto": "test(ci): integrar regressão 18/18 ELU, painel pós-cálculo e identidade P1",
+          "sha": "43c61fb01434dbf433dab174654b6b1e64135b25",
+          "data": "2026-10-30T14:16:18-03:00",
+          "assunto": "fix(ui): controlar a fila em lote por identificador, nunca ocultar painel dos pilares",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 548,
-  "commits_main_analisados": 2591,
+  "janela_prs": 549,
+  "commits_main_analisados": 2598,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
