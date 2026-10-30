@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-30T11:19:06Z",
+  "generated_at": "2026-10-30T11:27:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-    "short_sha": "edd62db1",
+    "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+    "short_sha": "31c37a8c",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T08:17:05-03:00",
-    "message": "Merge pull request #646 from JGaspar-Eng/fix/fund-blevot-elu-maioracao-rastreada-20261030"
+    "date": "2026-10-30T08:26:50-03:00",
+    "message": "Merge pull request #647 from JGaspar-Eng/feat/fundacao-reacoes-6dof-auditoria-20261030"
   },
   "commits": [
+    {
+      "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+      "short_sha": "31c37a8c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:26:50-03:00",
+      "message": "Merge pull request #647 from JGaspar-Eng/feat/fundacao-reacoes-6dof-auditoria-20261030"
+    },
+    {
+      "sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
+      "short_sha": "98c1287c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:24:28-03:00",
+      "message": "test(ci): incluir auditoria de reacoes biaxiais no gate oficial"
+    },
+    {
+      "sha": "cc9d680c0cf50ee79621092244048274629e674b",
+      "short_sha": "cc9d680c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:24:16-03:00",
+      "message": "test(fundacao): conferir auditoria biaxial no estudo com oito ELU"
+    },
+    {
+      "sha": "b8653206cdd4db0cae9e85f2a362b14d9f2ce61e",
+      "short_sha": "b8653206",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:23:43-03:00",
+      "message": "feat(fundacao): anexar auditoria biaxial independente por estaca aos oito ELU"
+    },
+    {
+      "sha": "89fa51d2380cff22e1eb9a6c36f463766c6abd0c",
+      "short_sha": "89fa51d2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:23:19-03:00",
+      "message": "test(fundacao): conferir equilibrio 3E/2E oito ELU, Sxy, tracao e bloqueios"
+    },
+    {
+      "sha": "fd2a70e138350b9a1e20a5f1d0bf9436ec81f731",
+      "short_sha": "fd2a70e1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:22:16-03:00",
+      "message": "feat(fundacao): auditar oito ELU de N/Mx/My por estaca com equilibrio matricial"
+    },
     {
       "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
       "short_sha": "edd62db1",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-29T23:13:37-03:00",
       "message": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029"
-    },
-    {
-      "sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
-      "short_sha": "3f04490f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:11:38-03:00",
-      "message": "test(fundacao): validar ligacao Blevot e invariantes do grupo axial"
-    },
-    {
-      "sha": "d209ccb999f28ea3978385feb9ece9faafda584e",
-      "short_sha": "d209ccb9",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:11:08-03:00",
-      "message": "feat(fundacao): vincular benchmark Blevot ao grupo axial compativel e aos oito ELU"
-    },
-    {
-      "sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
-      "short_sha": "1c60c187",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:08:31-03:00",
-      "message": "Merge pull request #644 from JGaspar-Eng/feat/fundacao-blevot-benchmark-20261029"
-    },
-    {
-      "sha": "15ff85005e286f5d0d37c08a9c567fe8a8586529",
-      "short_sha": "15ff8500",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:06:19-03:00",
-      "message": "test(ci): executar benchmark de blocos Blévot na suíte oficial"
-    },
-    {
-      "sha": "329435b4dde322da4368b0a5cd66f6cca82b2d79",
-      "short_sha": "329435b4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:05:59-03:00",
-      "message": "test(fundacao): reproduzir Forecast P3 P11 e oito ELU com bloqueios"
-    },
-    {
-      "sha": "9e0479b911f197cc04672768f8b1396d166f4c5e",
-      "short_sha": "9e0479b9",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:05:06-03:00",
-      "message": "feat(fundacao): calcular bielas e tirantes de blocos 2/3 estacas como benchmark Forecast"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41047178937",
-    "run_number": "1053"
+    "run_id": "41048148173",
+    "run_number": "1054"
   }
 }

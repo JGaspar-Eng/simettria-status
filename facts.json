@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T11:20:29Z",
+  "gerado_em": "2026-10-30T11:28:14Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-    "data": "2026-10-30T11:17:05Z"
+    "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+    "data": "2026-10-30T11:26:50Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-    "gerado_em": "2026-10-30T11:17:25Z",
+    "gerado_em": "2026-10-30T11:19:06Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 76,
+        "total_integrados": 77,
         "integrados_recentes": [
+          {
+            "numero": 647,
+            "titulo": "feat(fundacoes): auditar reações biaxiais N/Mx/My nas 8 ELU por estaca",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/647",
+            "merged_at": "2026-10-30T11:26:50Z",
+            "merge_sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+            "head_sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 646,
             "titulo": "fix(fundacoes): impedir uso de Nk como Nd no Blévot sem fatores ELU rastreados",
@@ -276,7 +286,7 @@
             "merge_sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
             "head_sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 645,
@@ -377,38 +387,28 @@
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 604,
-            "titulo": "ELS: integrar pares de recalque diferencial ao painel e revalidar totais de cada apoio",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/604",
-            "merged_at": "2026-10-26T02:40:09Z",
-            "merge_sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
-            "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 646,
-          "titulo": "fix(fundacoes): impedir uso de Nk como Nd no Blévot sem fatores ELU rastreados",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/646",
-          "merge_sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-          "head_sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
-          "merged_at": "2026-10-30T11:17:05Z",
+          "numero": 647,
+          "titulo": "feat(fundacoes): auditar reações biaxiais N/Mx/My nas 8 ELU por estaca",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/647",
+          "merge_sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+          "head_sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
+          "merged_at": "2026-10-30T11:26:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-          "data": "2026-10-30T08:17:05-03:00",
-          "assunto": "Merge pull request #646 from JGaspar-Eng/fix/fund-blevot-elu-maioracao-rastreada-20261030",
-          "ci": "passou"
+          "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+          "data": "2026-10-30T08:26:50-03:00",
+          "assunto": "Merge pull request #647 from JGaspar-Eng/feat/fundacao-reacoes-6dof-auditoria-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -747,7 +747,7 @@
             "merged_at": "2026-10-25T22:20:40Z",
             "merge_sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
             "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 540,
-  "commits_main_analisados": 2535,
+  "janela_prs": 541,
+  "commits_main_analisados": 2541,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
