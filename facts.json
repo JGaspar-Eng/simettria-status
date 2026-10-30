@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T02:04:47Z",
+  "gerado_em": "2026-10-30T02:09:38Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "00417bc0cc22cf0467136b066e54543d138d044a",
-    "data": "2026-10-30T02:01:43Z"
+    "sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
+    "data": "2026-10-30T02:08:31Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "00417bc0cc22cf0467136b066e54543d138d044a",
-    "gerado_em": "2026-10-30T02:02:03Z",
+    "gerado_em": "2026-10-30T02:03:28Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 4,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 73,
+        "total_integrados": 74,
         "integrados_recentes": [
+          {
+            "numero": 644,
+            "titulo": "feat(fundacao): cálculo auditável Blévot 2/3 estacas com benchmark Forecast",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/644",
+            "merged_at": "2026-10-30T02:08:32Z",
+            "merge_sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
+            "head_sha": "15ff85005e286f5d0d37c08a9c567fe8a8586529",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 642,
             "titulo": "feat(fundacoes): alternativa triangular de 3 estacas no estudo axial",
@@ -377,38 +387,28 @@
             "head_sha": "d4bf15b6423829fd254a456325b9cdac773de138",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 599,
-            "titulo": "Placa Mindlin: patch test de três modos rígidos antes da solução",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/599",
-            "merged_at": "2026-10-25T22:13:24Z",
-            "merge_sha": "801630e8ec205797d495eafb5737392545884e33",
-            "head_sha": "230125b1e6eb568aca10ea43a8facdac7427c371",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 642,
-          "titulo": "feat(fundacoes): alternativa triangular de 3 estacas no estudo axial",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/642",
-          "merge_sha": "46fc224ac87295cf9cff6e5f8b4c9e6f419d72e1",
-          "head_sha": "666bac60a43ab38ae50c0fcb94f238e8e539b53d",
-          "merged_at": "2026-10-29T17:53:43Z",
+          "numero": 644,
+          "titulo": "feat(fundacao): cálculo auditável Blévot 2/3 estacas com benchmark Forecast",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/644",
+          "merge_sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
+          "head_sha": "15ff85005e286f5d0d37c08a9c567fe8a8586529",
+          "merged_at": "2026-10-30T02:08:32Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "46fc224ac87295cf9cff6e5f8b4c9e6f419d72e1",
-          "data": "2026-10-29T14:53:43-03:00",
-          "assunto": "Merge pull request #642 from JGaspar-Eng/feat/orq-estacas-triangulo-sprint014-20261029",
-          "ci": "passou"
+          "sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
+          "data": "2026-10-29T23:08:31-03:00",
+          "assunto": "Merge pull request #644 from JGaspar-Eng/feat/fundacao-blevot-benchmark-20261029",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -444,7 +444,7 @@
             "merged_at": "2026-10-25T19:36:31Z",
             "merge_sha": "3503d7aa3ffed9934d2f6be47247e5336cc254e5",
             "head_sha": "b80188346993e58ffff202b99afa7e1d15820902",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 537,
-  "commits_main_analisados": 2525,
+  "janela_prs": 538,
+  "commits_main_analisados": 2529,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
