@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T11:29:30Z",
+  "gerado_em": "2026-10-30T11:38:19Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
-    "data": "2026-10-30T11:26:50Z"
+    "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
+    "data": "2026-10-30T11:36:36Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-    "gerado_em": "2026-10-30T11:19:06Z",
+    "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
+    "gerado_em": "2026-10-30T11:28:36Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 6,
+    "defasagem_commits_main": 4,
     "idade_horas": 0.2
   },
   "frentes": [
@@ -296,7 +296,7 @@
             "merge_sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
             "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 644,
@@ -408,7 +408,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1027,8 +1027,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 107,
+        "total_integrados": 108,
         "integrados_recentes": [
+          {
+            "numero": 648,
+            "titulo": "fix(orq): exibir pendências e ações após concluir cálculo global",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/648",
+            "merged_at": "2026-10-30T11:36:37Z",
+            "merge_sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
+            "head_sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 645,
             "titulo": "feat(fundacao): conectar benchmark Blévot aos oito ELU do estudo axial",
@@ -1037,7 +1047,7 @@
             "merge_sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
             "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 642,
@@ -1138,38 +1148,28 @@
             "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 630,
-            "titulo": "fix(ORQ): revalidar armadura dupla existente após novos esforços, sem loop de reescolha",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/630",
-            "merged_at": "2026-10-28T01:36:40Z",
-            "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
-            "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 645,
-          "titulo": "feat(fundacao): conectar benchmark Blévot aos oito ELU do estudo axial",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/645",
-          "merge_sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-          "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
-          "merged_at": "2026-10-30T02:13:38Z",
+          "numero": 648,
+          "titulo": "fix(orq): exibir pendências e ações após concluir cálculo global",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/648",
+          "merge_sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
+          "head_sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
+          "merged_at": "2026-10-30T11:36:37Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-          "data": "2026-10-29T23:13:37-03:00",
-          "assunto": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029",
-          "ci": "passou"
+          "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
+          "data": "2026-10-30T08:36:36-03:00",
+          "assunto": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 541,
-  "commits_main_analisados": 2541,
+  "janela_prs": 542,
+  "commits_main_analisados": 2545,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

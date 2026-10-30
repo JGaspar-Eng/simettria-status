@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-30T11:28:36Z",
+  "generated_at": "2026-10-30T11:36:56Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
-    "short_sha": "31c37a8c",
+    "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
+    "short_sha": "7043e587",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T08:26:50-03:00",
-    "message": "Merge pull request #647 from JGaspar-Eng/feat/fundacao-reacoes-6dof-auditoria-20261030"
+    "date": "2026-10-30T08:36:36-03:00",
+    "message": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030"
   },
   "commits": [
+    {
+      "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
+      "short_sha": "7043e587",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:36:36-03:00",
+      "message": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030"
+    },
+    {
+      "sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
+      "short_sha": "efd21c23",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:34:39-03:00",
+      "message": "test(orq): validar pendencias visiveis e botao diagnostico no fim do calculo"
+    },
+    {
+      "sha": "bdb05a7f6e403589fb52e140c82691c3e2c51983",
+      "short_sha": "bdb05a7f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:34:08-03:00",
+      "message": "fix(orq): diagnostico acionavel ao fim e clique Verificar pendencias sem recalcular"
+    },
+    {
+      "sha": "da65eccfe7de211ddb1599d369bf331ac5723830",
+      "short_sha": "da65eccf",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:32:52-03:00",
+      "message": "fix(orq): exibir pendencias e botao de diagnostico ao concluir progresso"
+    },
     {
       "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
       "short_sha": "31c37a8c",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T08:22:16-03:00",
       "message": "feat(fundacao): auditar oito ELU de N/Mx/My por estaca com equilibrio matricial"
-    },
-    {
-      "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
-      "short_sha": "edd62db1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:17:05-03:00",
-      "message": "Merge pull request #646 from JGaspar-Eng/fix/fund-blevot-elu-maioracao-rastreada-20261030"
-    },
-    {
-      "sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
-      "short_sha": "87b7ba78",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:14:55-03:00",
-      "message": "test(fundacao): garantir fatores de oito ELU e rastreio da carga de cálculo"
-    },
-    {
-      "sha": "c40727d758cd2ad91ece0c9dafdb4f85be8884a8",
-      "short_sha": "c40727d7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:14:23-03:00",
-      "message": "fix(fundacao): exigir majoracao ELU rastreada por caso ao integrar Blevot"
-    },
-    {
-      "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-      "short_sha": "3486f3d8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:13:37-03:00",
-      "message": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41048285804",
-    "run_number": "1055"
+    "run_id": "41049308325",
+    "run_number": "1056"
   }
 }
