@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T12:39:20Z",
+  "gerado_em": "2026-10-30T13:00:37Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
-    "data": "2026-10-30T12:36:19Z"
+    "sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
+    "data": "2026-10-30T12:59:21Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
-    "gerado_em": "2026-10-30T12:36:38Z",
+    "gerado_em": "2026-10-30T12:38:15Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 13,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 78,
+        "total_integrados": 79,
         "integrados_recentes": [
+          {
+            "numero": 653,
+            "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/653",
+            "merged_at": "2026-10-30T12:59:22Z",
+            "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
+            "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 652,
             "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
@@ -377,38 +387,28 @@
             "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 606,
-            "titulo": "ELS diferencial: exibir valores no painel e impedir confronto com imediato obsoleto",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/606",
-            "merged_at": "2026-10-26T12:24:43Z",
-            "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
-            "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 652,
-          "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
-          "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
-          "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
-          "merged_at": "2026-10-30T12:36:19Z",
+          "numero": 653,
+          "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/653",
+          "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
+          "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
+          "merged_at": "2026-10-30T12:59:22Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
-          "data": "2026-10-30T09:36:19-03:00",
-          "assunto": "Merge pull request #652 from JGaspar-Eng/feat/fundacoes-auditoria-18-blocos-62-estacas-20261030",
-          "ci": "passou"
+          "sha": "cb49d93c18f6c9a2b72e44593ef52e7816324f86",
+          "data": "2026-10-30T09:55:36-03:00",
+          "assunto": "test(ci): incluir oito ELU de bielas/tirantes no gate oficial de fundações",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1027,8 +1027,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 111,
+        "total_integrados": 112,
         "integrados_recentes": [
+          {
+            "numero": 653,
+            "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/653",
+            "merged_at": "2026-10-30T12:59:22Z",
+            "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
+            "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 651,
             "titulo": "feat(orq): exportar 178 vigas com ID/pavimento e rastreio 3D por caso ELU",
@@ -1037,7 +1047,7 @@
             "merge_sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
             "head_sha": "e9fa82393295424c1d87948ca96d216ceb3e4ad8",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 650,
@@ -1138,38 +1148,28 @@
             "head_sha": "cac239273a357f752d5be022d2ee04201e5b7d02",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 634,
-            "titulo": "feat(ORQ): comparar conjuntos de intervenções mínimas em várias vigas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/634",
-            "merged_at": "2026-10-28T03:30:48Z",
-            "merge_sha": "5fe2f9849a8a28a990e8fdeca9091ce3c91a4219",
-            "head_sha": "4bdfecd57cf13f57bd1649bd9e63bc99ce31adfe",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 651,
-          "titulo": "feat(orq): exportar 178 vigas com ID/pavimento e rastreio 3D por caso ELU",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/651",
-          "merge_sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
-          "head_sha": "e9fa82393295424c1d87948ca96d216ceb3e4ad8",
-          "merged_at": "2026-10-30T12:29:34Z",
+          "numero": 653,
+          "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/653",
+          "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
+          "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
+          "merged_at": "2026-10-30T12:59:22Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "1f25d422f49cce4f2876e7c921dc342a03a23b0a",
-          "data": "2026-10-30T09:32:00-03:00",
-          "assunto": "feat(orq): ligar auditoria de blocos e sondagem ao resumo independente",
-          "ci": "sem_evidencia"
+          "sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
+          "data": "2026-10-30T09:59:21-03:00",
+          "assunto": "Merge pull request #653 from JGaspar-Eng/feat/orq-elu-3d-bielas-tirantes-ciclo01-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1428,7 +1428,7 @@
             "merged_at": "2026-10-26T12:40:43Z",
             "merge_sha": "2437b64a01317ac3e73c355a040cb186118cf14f",
             "head_sha": "3cd12cceb53adbfba4a851fbfaff77156c91a84d",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1514,14 +1514,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-          "data": "2026-10-27T21:07:44-03:00",
-          "assunto": "merge: painel unico de escolhas para vigas sem sugestoes duplicadas (#629)",
-          "ci": "passou"
+          "sha": "6701e581a2e5f244565621ee19ac027c17b19adf",
+          "data": "2026-10-30T09:54:51-03:00",
+          "assunto": "feat(ui): mostrar demanda 3D simultânea e limite teórico com status resistente pendente",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 546,
-  "commits_main_analisados": 2567,
+  "janela_prs": 547,
+  "commits_main_analisados": 2580,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
