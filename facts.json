@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T12:32:43Z",
+  "gerado_em": "2026-10-30T12:37:34Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
-    "data": "2026-10-30T12:29:33Z"
+    "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+    "data": "2026-10-30T12:36:19Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "06af06f407497d55aac88585fb93eb10213fc597",
-    "gerado_em": "2026-10-30T12:11:30Z",
+    "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
+    "gerado_em": "2026-10-30T12:31:26Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 7,
-    "idade_horas": 0.4
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 77,
+        "total_integrados": 78,
         "integrados_recentes": [
+          {
+            "numero": 652,
+            "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
+            "merged_at": "2026-10-30T12:36:19Z",
+            "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+            "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 647,
             "titulo": "feat(fundacoes): auditar reações biaxiais N/Mx/My nas 8 ELU por estaca",
@@ -276,7 +286,7 @@
             "merge_sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
             "head_sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 646,
@@ -326,7 +336,7 @@
             "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
             "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 631,
@@ -375,40 +385,30 @@
             "merged_at": "2026-10-26T12:24:43Z",
             "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
             "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 605,
-            "titulo": "ELS operacional: ligar cadastro de pares ao snapshot ORQ e painel de apoios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/605",
-            "merged_at": "2026-10-26T02:59:37Z",
-            "merge_sha": "0ae45df791cc9e1067a49a5c94553ab348fce4da",
-            "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 647,
-          "titulo": "feat(fundacoes): auditar reações biaxiais N/Mx/My nas 8 ELU por estaca",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/647",
-          "merge_sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
-          "head_sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
-          "merged_at": "2026-10-30T11:26:50Z",
+          "numero": 652,
+          "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
+          "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+          "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
+          "merged_at": "2026-10-30T12:36:19Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
-          "data": "2026-10-30T08:26:50-03:00",
-          "assunto": "Merge pull request #647 from JGaspar-Eng/feat/fundacao-reacoes-6dof-auditoria-20261030",
-          "ci": "passou"
+          "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+          "data": "2026-10-30T09:36:19-03:00",
+          "assunto": "Merge pull request #652 from JGaspar-Eng/feat/fundacoes-auditoria-18-blocos-62-estacas-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -539,8 +539,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 14,
+        "total_integrados": 15,
         "integrados_recentes": [
+          {
+            "numero": 652,
+            "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
+            "merged_at": "2026-10-30T12:36:19Z",
+            "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+            "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 638,
             "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
@@ -549,7 +559,7 @@
             "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
             "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 609,
@@ -568,7 +578,7 @@
             "merged_at": "2026-10-26T12:24:43Z",
             "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
             "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -650,38 +660,28 @@
             "head_sha": "70416a671354aca2f0cd01908a2f0c95b8b104a0",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 563,
-            "titulo": "ORQ: restaurar vento V0=35 m/s e manter LC101 Gk2/Qk0, 40 apoios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/563",
-            "merged_at": "2026-10-25T15:46:05Z",
-            "merge_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "head_sha": "4a60cb5192ca544891036c910acbe566ee0c07a1",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 638,
-          "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/638",
-          "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
-          "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
-          "merged_at": "2026-10-28T11:55:57Z",
+          "numero": 652,
+          "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
+          "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+          "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
+          "merged_at": "2026-10-30T12:36:19Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
-          "data": "2026-10-28T08:55:56-03:00",
-          "assunto": "merge: motor ELS de flecha imediata com benchmarks independentes (#638)",
-          "ci": "passou"
+          "sha": "af47ef48c18c463da1d19ca1441f53058897d429",
+          "data": "2026-10-30T09:33:23-03:00",
+          "assunto": "test(fundacao): bloco-pilar 18/62, 8 ELU, SPT anterior e bloqueios resistentes",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -969,7 +969,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1162,10 +1162,10 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
-          "data": "2026-10-30T09:29:33-03:00",
-          "assunto": "Merge pull request #651 from JGaspar-Eng/feat/orq-csv-identidade-3d-rastreio-20261030",
-          "ci": "passou"
+          "sha": "1f25d422f49cce4f2876e7c921dc342a03a23b0a",
+          "data": "2026-10-30T09:32:00-03:00",
+          "assunto": "feat(orq): ligar auditoria de blocos e sondagem ao resumo independente",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
@@ -1438,7 +1438,7 @@
             "merged_at": "2026-10-26T12:24:43Z",
             "merge_sha": "d6e4d8837ad5a2002c36aa6160853fb78542b966",
             "head_sha": "0e891cbaf71894a55f7c6c1e98f6f1758f737d96",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 545,
-  "commits_main_analisados": 2561,
+  "janela_prs": 546,
+  "commits_main_analisados": 2567,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

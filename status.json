@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-30T12:31:26Z",
+  "generated_at": "2026-10-30T12:36:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
-    "short_sha": "91ae0def",
+    "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+    "short_sha": "bfe4a11e",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T09:29:33-03:00",
-    "message": "Merge pull request #651 from JGaspar-Eng/feat/orq-csv-identidade-3d-rastreio-20261030"
+    "date": "2026-10-30T09:36:19-03:00",
+    "message": "Merge pull request #652 from JGaspar-Eng/feat/fundacoes-auditoria-18-blocos-62-estacas-20261030"
   },
   "commits": [
+    {
+      "sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
+      "short_sha": "bfe4a11e",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:36:19-03:00",
+      "message": "Merge pull request #652 from JGaspar-Eng/feat/fundacoes-auditoria-18-blocos-62-estacas-20261030"
+    },
+    {
+      "sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
+      "short_sha": "eb66f57a",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:33:43-03:00",
+      "message": "test(ci): auditar cardinalidade 18 blocos/62 estacas no gate infraestrutura"
+    },
+    {
+      "sha": "af47ef48c18c463da1d19ca1441f53058897d429",
+      "short_sha": "af47ef48",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:33:23-03:00",
+      "message": "test(fundacao): bloco-pilar 18/62, 8 ELU, SPT anterior e bloqueios resistentes"
+    },
+    {
+      "sha": "9ec3dea2d17fbd6ab19d2b74bcf92253c5458168",
+      "short_sha": "9ec3dea2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:32:34-03:00",
+      "message": "feat(ui): diagnostico de 18 blocos com proveniencia SPT e esforcos reais"
+    },
+    {
+      "sha": "1f25d422f49cce4f2876e7c921dc342a03a23b0a",
+      "short_sha": "1f25d422",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:32:00-03:00",
+      "message": "feat(orq): ligar auditoria de blocos e sondagem ao resumo independente"
+    },
+    {
+      "sha": "16c8413ffef615760dceeba83357ffd1fd096a57",
+      "short_sha": "16c8413f",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:31:30-03:00",
+      "message": "feat(fundacao): auditar por bloco 3/4 estacas, SPT anterior, reacoes e proveniencia"
+    },
     {
       "sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
       "short_sha": "91ae0def",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T09:25:04-03:00",
       "message": "test(orq): 178 vigas 174 nomes, 164 pendentes e tuplas 3D sem mistura"
-    },
-    {
-      "sha": "0ac1313b246fa1723c4cfba12f005f7bbfd6d77e",
-      "short_sha": "0ac1313b",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:24:17-03:00",
-      "message": "feat(ui): exportar vigas com UUID pavimento e tupla espacial rastreada"
-    },
-    {
-      "sha": "c7e457c713ba5b4e50e6caea68c72da630caa053",
-      "short_sha": "c7e457c7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:23:20-03:00",
-      "message": "fix(orq): tupla CSV 3D deriva dos seis esforcos assinados do mesmo caso e ponto"
-    },
-    {
-      "sha": "4862cb3136d7816e8b6f7afaea978e77c2d826a6",
-      "short_sha": "4862cb31",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:22:52-03:00",
-      "message": "feat(orq): exportacao CSV auditavel por UUID/pavimento e tuplas concomitantes 3D"
-    },
-    {
-      "sha": "06af06f407497d55aac88585fb93eb10213fc597",
-      "short_sha": "06af06f4",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:09:30-03:00",
-      "message": "Merge pull request #650 from JGaspar-Eng/fix/orq-classificacao-grupos-sequenciais-20261030"
-    },
-    {
-      "sha": "ac7cbcfa1f9643ffe8fd491f4dbf0ab5d0553ee7",
-      "short_sha": "ac7cbcfa",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:07:04-03:00",
-      "message": "test(ci): regressao quatro pavimentos e rerender sem bloqueio apos registro"
-    },
-    {
-      "sha": "3a64a3bbdd5f729d15b4ba10dd1b1c4515cd0ac4",
-      "short_sha": "3a64a3bb",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T09:06:31-03:00",
-      "message": "test(browser): classificar grupos em sequencia na mesma janela, sem desabilitar botoes"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41055901530",
-    "run_number": "1063"
+    "run_id": "41056601976",
+    "run_number": "1064"
   }
 }
