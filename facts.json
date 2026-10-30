@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T13:02:21Z",
+  "gerado_em": "2026-10-30T17:12:48Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
-    "data": "2026-10-30T12:59:21Z"
+    "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
+    "data": "2026-10-30T17:11:32Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
-    "gerado_em": "2026-10-30T12:59:41Z",
+    "gerado_em": "2026-10-30T13:01:19Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 11,
+    "idade_horas": 4.2
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 79,
+        "total_integrados": 80,
         "integrados_recentes": [
+          {
+            "numero": 654,
+            "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
+            "merged_at": "2026-10-30T17:11:33Z",
+            "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
+            "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 653,
             "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
@@ -276,7 +286,7 @@
             "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
             "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 652,
@@ -377,38 +387,28 @@
             "head_sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 609,
-            "titulo": "Geotecnia: impedir associação com SPT homônimo sem coordenadas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/609",
-            "merged_at": "2026-10-26T16:38:43Z",
-            "merge_sha": "295f3c8f3f1bbd20c6a9d1c5ff3533795e1310c5",
-            "head_sha": "1f07d37f7efb3d9608013739ba3cacd599a24e26",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 653,
-          "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/653",
-          "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
-          "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
-          "merged_at": "2026-10-30T12:59:22Z",
+          "numero": 654,
+          "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
+          "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
+          "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
+          "merged_at": "2026-10-30T17:11:33Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "cb49d93c18f6c9a2b72e44593ef52e7816324f86",
-          "data": "2026-10-30T09:55:36-03:00",
-          "assunto": "test(ci): incluir oito ELU de bielas/tirantes no gate oficial de fundações",
+          "sha": "6a38dc916c6f9af891987159683f1a774a06a832",
+          "data": "2026-10-30T14:07:23-03:00",
+          "assunto": "fix(orq): distinguir insumos de sapatas e 18 blocos sobre 62 estacas no F10",
           "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1027,8 +1027,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 112,
+        "total_integrados": 113,
         "integrados_recentes": [
+          {
+            "numero": 654,
+            "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
+            "merged_at": "2026-10-30T17:11:33Z",
+            "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
+            "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 653,
             "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
@@ -1037,7 +1047,7 @@
             "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
             "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 651,
@@ -1138,38 +1148,28 @@
             "head_sha": "97e9b50108070a3b9a0efb2cdf149683bfe1a45d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 635,
-            "titulo": "fix(ORQ): impedir regressões no recálculo multivigas e restaurar base automaticamente",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/635",
-            "merged_at": "2026-10-28T03:42:18Z",
-            "merge_sha": "e2d139e3e98f30ae092891286b3a00b2e0456112",
-            "head_sha": "cac239273a357f752d5be022d2ee04201e5b7d02",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 653,
-          "titulo": "feat(orq): demandas espaciais 8 ELU e bielas–tirantes 3/4 estacas com bloqueios resistentes",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/653",
-          "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
-          "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
-          "merged_at": "2026-10-30T12:59:22Z",
+          "numero": 654,
+          "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
+          "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
+          "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
+          "merged_at": "2026-10-30T17:11:33Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
-          "data": "2026-10-30T09:59:21-03:00",
-          "assunto": "Merge pull request #653 from JGaspar-Eng/feat/orq-elu-3d-bielas-tirantes-ciclo01-20261030",
-          "ci": "passou"
+          "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
+          "data": "2026-10-30T14:11:32-03:00",
+          "assunto": "Merge pull request #654 from JGaspar-Eng/fix/orq-auditoria-poscalculo-infra-blocos-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1418,7 +1418,7 @@
             "merged_at": "2026-10-26T12:56:12Z",
             "merge_sha": "486f7f83f79a04f6c3d816ed1057812181c04f2b",
             "head_sha": "a2d3077fe141768fd87396b10e8f4e7895a42f9c",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1514,14 +1514,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "6701e581a2e5f244565621ee19ac027c17b19adf",
-          "data": "2026-10-30T09:54:51-03:00",
-          "assunto": "feat(ui): mostrar demanda 3D simultânea e limite teórico com status resistente pendente",
+          "sha": "54569f807033fb8ed150f9f39cc57e8b389d22e3",
+          "data": "2026-10-30T14:06:26-03:00",
+          "assunto": "test(ci): integrar regressão 18/18 ELU, painel pós-cálculo e identidade P1",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 547,
-  "commits_main_analisados": 2580,
+  "janela_prs": 548,
+  "commits_main_analisados": 2591,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
