@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T10:14:06Z",
+  "gerado_em": "2026-10-30T11:18:20Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-    "data": "2026-10-30T02:13:37Z"
+    "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
+    "data": "2026-10-30T11:17:05Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-    "gerado_em": "2026-10-30T02:15:33Z",
+    "gerado_em": "2026-10-30T10:12:59Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 8.0
+    "defasagem_commits_main": 3,
+    "idade_horas": 1.1
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 75,
+        "total_integrados": 76,
         "integrados_recentes": [
+          {
+            "numero": 646,
+            "titulo": "fix(fundacoes): impedir uso de Nk como Nd no Blévot sem fatores ELU rastreados",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/646",
+            "merged_at": "2026-10-30T11:17:05Z",
+            "merge_sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
+            "head_sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 645,
             "titulo": "feat(fundacao): conectar benchmark Blévot aos oito ELU do estudo axial",
@@ -377,38 +387,28 @@
             "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 601,
-            "titulo": "Punção/cortante: recalcular solicitações canônicas antes de avaliar resistências",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/601",
-            "merged_at": "2026-10-25T22:20:40Z",
-            "merge_sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
-            "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 645,
-          "titulo": "feat(fundacao): conectar benchmark Blévot aos oito ELU do estudo axial",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/645",
-          "merge_sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-          "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
-          "merged_at": "2026-10-30T02:13:38Z",
+          "numero": 646,
+          "titulo": "fix(fundacoes): impedir uso de Nk como Nd no Blévot sem fatores ELU rastreados",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/646",
+          "merge_sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
+          "head_sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
+          "merged_at": "2026-10-30T11:17:05Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-          "data": "2026-10-29T23:13:37-03:00",
-          "assunto": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029",
-          "ci": "passou"
+          "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
+          "data": "2026-10-30T08:17:05-03:00",
+          "assunto": "Merge pull request #646 from JGaspar-Eng/fix/fund-blevot-elu-maioracao-rastreada-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -598,7 +598,7 @@
             "merged_at": "2026-10-25T22:17:28Z",
             "merge_sha": "8eddba752fe344a480aec3b67b35fbd77b31391d",
             "head_sha": "d4bf15b6423829fd254a456325b9cdac773de138",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 539,
-  "commits_main_analisados": 2532,
+  "janela_prs": 540,
+  "commits_main_analisados": 2535,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

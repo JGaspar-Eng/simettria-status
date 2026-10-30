@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-10-30T10:12:59Z",
+  "generated_at": "2026-10-30T11:17:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-    "short_sha": "3486f3d8",
+    "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
+    "short_sha": "edd62db1",
     "author": "Joanez Gaspar",
-    "date": "2026-10-29T23:13:37-03:00",
-    "message": "Merge pull request #645 from JGaspar-Eng/feat/fundacao-blevot-integracao-orq-20261029"
+    "date": "2026-10-30T08:17:05-03:00",
+    "message": "Merge pull request #646 from JGaspar-Eng/fix/fund-blevot-elu-maioracao-rastreada-20261030"
   },
   "commits": [
+    {
+      "sha": "edd62db14d1cbe66bef616a2fb8065665774ef6e",
+      "short_sha": "edd62db1",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:17:05-03:00",
+      "message": "Merge pull request #646 from JGaspar-Eng/fix/fund-blevot-elu-maioracao-rastreada-20261030"
+    },
+    {
+      "sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
+      "short_sha": "87b7ba78",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:14:55-03:00",
+      "message": "test(fundacao): garantir fatores de oito ELU e rastreio da carga de cálculo"
+    },
+    {
+      "sha": "c40727d758cd2ad91ece0c9dafdb4f85be8884a8",
+      "short_sha": "c40727d7",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:14:23-03:00",
+      "message": "fix(fundacao): exigir majoracao ELU rastreada por caso ao integrar Blevot"
+    },
     {
       "sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
       "short_sha": "3486f3d8",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-29T23:05:06-03:00",
       "message": "feat(fundacao): calcular bielas e tirantes de blocos 2/3 estacas como benchmark Forecast"
-    },
-    {
-      "sha": "00417bc0cc22cf0467136b066e54543d138d044a",
-      "short_sha": "00417bc0",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T23:01:43-03:00",
-      "message": "Merge pull request #643 from JGaspar-Eng/docs/forecast-matriz-engenharia-20261029"
-    },
-    {
-      "sha": "b75b5cab78afd98bd334da0383d5e46e5708eb30",
-      "short_sha": "b75b5cab",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T22:45:39-03:00",
-      "message": "docs(engenharia): estabelecer Forecast como benchmark metodologico por elemento"
-    },
-    {
-      "sha": "46fc224ac87295cf9cff6e5f8b4c9e6f419d72e1",
-      "short_sha": "46fc224a",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-29T14:53:43-03:00",
-      "message": "Merge pull request #642 from JGaspar-Eng/feat/orq-estacas-triangulo-sprint014-20261029"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41039062575",
-    "run_number": "1051"
+    "run_id": "41046979521",
+    "run_number": "1052"
   }
 }
