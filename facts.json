@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T17:22:23Z",
+  "gerado_em": "2026-10-30T18:07:10Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -10,10 +10,10 @@
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-    "gerado_em": "2026-10-30T17:19:25Z",
+    "gerado_em": "2026-10-30T17:21:04Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "idade_horas": 0.8
   },
   "frentes": [
     {
@@ -214,6 +214,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 656,
+            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
+            "rascunho": false,
+            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+            "ci": "passou"
+          },
           {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
@@ -984,6 +992,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 656,
+            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
+            "rascunho": false,
+            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+            "ci": "passou"
+          },
+          {
             "numero": 621,
             "titulo": "ORQ: diagnóstico da incompatibilidade c1 e alternativas geométricas seguras para torção",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/621",
@@ -1563,7 +1579,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 549,
+  "janela_prs": 550,
   "commits_main_analisados": 2598,
   "commits_main_truncado": false,
   "erros": [],
