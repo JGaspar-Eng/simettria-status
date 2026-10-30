@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T11:39:45Z",
+  "gerado_em": "2026-10-30T11:57:19Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-    "data": "2026-10-30T11:36:36Z"
+    "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
+    "data": "2026-10-30T11:55:44Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-    "gerado_em": "2026-10-30T11:36:56Z",
+    "gerado_em": "2026-10-30T11:38:44Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 4,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -1027,8 +1027,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 108,
+        "total_integrados": 109,
         "integrados_recentes": [
+          {
+            "numero": 649,
+            "titulo": "fix(orq): auditoria deve reconhecer Gk/Qk por origem em qualquer projeto",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/649",
+            "merged_at": "2026-10-30T11:55:44Z",
+            "merge_sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
+            "head_sha": "eddc8e849bf92ffca46ff95c6d9d543477d8f41a",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 648,
             "titulo": "fix(orq): exibir pendências e ações após concluir cálculo global",
@@ -1037,7 +1047,7 @@
             "merge_sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
             "head_sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 645,
@@ -1138,38 +1148,28 @@
             "head_sha": "fa84858f0806251447926e5708dc7e38a124eee8",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 631,
-            "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
-            "merged_at": "2026-10-28T02:47:08Z",
-            "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-            "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 648,
-          "titulo": "fix(orq): exibir pendências e ações após concluir cálculo global",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/648",
-          "merge_sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-          "head_sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
-          "merged_at": "2026-10-30T11:36:37Z",
+          "numero": 649,
+          "titulo": "fix(orq): auditoria deve reconhecer Gk/Qk por origem em qualquer projeto",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/649",
+          "merge_sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
+          "head_sha": "eddc8e849bf92ffca46ff95c6d9d543477d8f41a",
+          "merged_at": "2026-10-30T11:55:44Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-          "data": "2026-10-30T08:36:36-03:00",
-          "assunto": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030",
-          "ci": "passou"
+          "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
+          "data": "2026-10-30T08:55:44-03:00",
+          "assunto": "Merge pull request #649 from JGaspar-Eng/fix/orq-auditoria-fonte-cargas-modelo-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1468,7 +1468,7 @@
             "merged_at": "2026-10-25T22:36:20Z",
             "merge_sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
             "head_sha": "96daf6b0565e56861fc520241eb99f8e616f91c3",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 542,
-  "commits_main_analisados": 2545,
+  "janela_prs": 543,
+  "commits_main_analisados": 2549,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

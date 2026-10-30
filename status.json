@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-10-30T11:38:44Z",
+  "generated_at": "2026-10-30T11:56:05Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-    "short_sha": "7043e587",
+    "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
+    "short_sha": "4e452a9c",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T08:36:36-03:00",
-    "message": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030"
+    "date": "2026-10-30T08:55:44-03:00",
+    "message": "Merge pull request #649 from JGaspar-Eng/fix/orq-auditoria-fonte-cargas-modelo-20261030"
   },
   "commits": [
+    {
+      "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
+      "short_sha": "4e452a9c",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:55:44-03:00",
+      "message": "Merge pull request #649 from JGaspar-Eng/fix/orq-auditoria-fonte-cargas-modelo-20261030"
+    },
+    {
+      "sha": "eddc8e849bf92ffca46ff95c6d9d543477d8f41a",
+      "short_sha": "eddc8e84",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:53:29-03:00",
+      "message": "test(ci): incluir auditoria operacional 18P 178V na suíte oficial"
+    },
+    {
+      "sha": "3a13bc209ad29650145002d4c9731f6e66b9fb8e",
+      "short_sha": "3a13bc20",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:53:16-03:00",
+      "message": "test(orq): corrigir contagem Gk/Qk em modelo 18P e reservatorio nao aplicavel"
+    },
+    {
+      "sha": "5644da6bbbce43317380801064ea137f0566d788",
+      "short_sha": "5644da6b",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T08:52:37-03:00",
+      "message": "fix(orq): contar Gk/Qk por proveniencia valida e suprimir falso alerta de reservatorio"
+    },
     {
       "sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
       "short_sha": "7043e587",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T08:24:28-03:00",
       "message": "test(ci): incluir auditoria de reacoes biaxiais no gate oficial"
-    },
-    {
-      "sha": "cc9d680c0cf50ee79621092244048274629e674b",
-      "short_sha": "cc9d680c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:24:16-03:00",
-      "message": "test(fundacao): conferir auditoria biaxial no estudo com oito ELU"
-    },
-    {
-      "sha": "b8653206cdd4db0cae9e85f2a362b14d9f2ce61e",
-      "short_sha": "b8653206",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:23:43-03:00",
-      "message": "feat(fundacao): anexar auditoria biaxial independente por estaca aos oito ELU"
-    },
-    {
-      "sha": "89fa51d2380cff22e1eb9a6c36f463766c6abd0c",
-      "short_sha": "89fa51d2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:23:19-03:00",
-      "message": "test(fundacao): conferir equilibrio 3E/2E oito ELU, Sxy, tracao e bloqueios"
-    },
-    {
-      "sha": "fd2a70e138350b9a1e20a5f1d0bf9436ec81f731",
-      "short_sha": "fd2a70e1",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:22:16-03:00",
-      "message": "feat(fundacao): auditar oito ELU de N/Mx/My por estaca com equilibrio matricial"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41049476494",
-    "run_number": "1057"
+    "run_id": "41051590394",
+    "run_number": "1058"
   }
 }
