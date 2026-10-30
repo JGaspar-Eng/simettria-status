@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-10-30T11:57:47Z",
+  "generated_at": "2026-10-30T12:09:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
-    "short_sha": "4e452a9c",
+    "sha": "06af06f407497d55aac88585fb93eb10213fc597",
+    "short_sha": "06af06f4",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T08:55:44-03:00",
-    "message": "Merge pull request #649 from JGaspar-Eng/fix/orq-auditoria-fonte-cargas-modelo-20261030"
+    "date": "2026-10-30T09:09:30-03:00",
+    "message": "Merge pull request #650 from JGaspar-Eng/fix/orq-classificacao-grupos-sequenciais-20261030"
   },
   "commits": [
+    {
+      "sha": "06af06f407497d55aac88585fb93eb10213fc597",
+      "short_sha": "06af06f4",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:09:30-03:00",
+      "message": "Merge pull request #650 from JGaspar-Eng/fix/orq-classificacao-grupos-sequenciais-20261030"
+    },
+    {
+      "sha": "ac7cbcfa1f9643ffe8fd491f4dbf0ab5d0553ee7",
+      "short_sha": "ac7cbcfa",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:07:04-03:00",
+      "message": "test(ci): regressao quatro pavimentos e rerender sem bloqueio apos registro"
+    },
+    {
+      "sha": "3a64a3bbdd5f729d15b4ba10dd1b1c4515cd0ac4",
+      "short_sha": "3a64a3bb",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:06:31-03:00",
+      "message": "test(browser): classificar grupos em sequencia na mesma janela, sem desabilitar botoes"
+    },
+    {
+      "sha": "3cb52f9496cd389426871bfd3261659663c4bc5e",
+      "short_sha": "3cb52f94",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:06:07-03:00",
+      "message": "fix(orq): exibir quebra de linha na lista de proximo grupo"
+    },
+    {
+      "sha": "dd3915b22573cdac8c460faa02dc25fd9fa7c1f1",
+      "short_sha": "dd3915b2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-30T09:05:33-03:00",
+      "message": "fix(orq): atualizar grupos restantes apos cada classificacao sem fechar modal"
+    },
     {
       "sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
       "short_sha": "4e452a9c",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T08:36:36-03:00",
       "message": "Merge pull request #648 from JGaspar-Eng/fix/orq-pos-calculo-pendencias-visiveis-20261030"
-    },
-    {
-      "sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
-      "short_sha": "efd21c23",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:34:39-03:00",
-      "message": "test(orq): validar pendencias visiveis e botao diagnostico no fim do calculo"
-    },
-    {
-      "sha": "bdb05a7f6e403589fb52e140c82691c3e2c51983",
-      "short_sha": "bdb05a7f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:34:08-03:00",
-      "message": "fix(orq): diagnostico acionavel ao fim e clique Verificar pendencias sem recalcular"
-    },
-    {
-      "sha": "da65eccfe7de211ddb1599d369bf331ac5723830",
-      "short_sha": "da65eccf",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:32:52-03:00",
-      "message": "fix(orq): exibir pendencias e botao de diagnostico ao concluir progresso"
-    },
-    {
-      "sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
-      "short_sha": "31c37a8c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:26:50-03:00",
-      "message": "Merge pull request #647 from JGaspar-Eng/feat/fundacao-reacoes-6dof-auditoria-20261030"
-    },
-    {
-      "sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
-      "short_sha": "98c1287c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T08:24:28-03:00",
-      "message": "test(ci): incluir auditoria de reacoes biaxiais no gate oficial"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41051789556",
-    "run_number": "1059"
+    "run_id": "41053252670",
+    "run_number": "1060"
   }
 }
