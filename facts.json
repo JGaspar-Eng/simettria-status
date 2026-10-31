@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-31T05:56:46Z",
+  "gerado_em": "2026-10-31T11:18:57Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-    "data": "2026-10-31T03:31:38Z"
+    "sha": "a3db3c503a2a34edf402a10c031e151a61185e1e",
+    "data": "2026-10-31T11:17:32Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-    "gerado_em": "2026-10-31T03:33:13Z",
+    "gerado_em": "2026-10-31T05:55:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 2.4
+    "defasagem_commits_main": 6,
+    "idade_horas": 5.4
   },
   "frentes": [
     {
@@ -1162,14 +1162,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-          "data": "2026-10-31T00:31:38-03:00",
-          "assunto": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030",
+          "sha": "659f7396b0741075c12f4e9505a661f8f4eb8dd5",
+          "data": "2026-10-31T00:50:54-03:00",
+          "assunto": "test(orq): cobrir 26 alvos V+T e segunda ordem crítica",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1527,7 +1527,6 @@
   ],
   "nao_classificados": {
     "abertos": [
-      657,
       576,
       561,
       553,
@@ -1540,6 +1539,7 @@
       310
     ],
     "integrados_recentes": [
+      657,
       643,
       639,
       611,
@@ -1558,14 +1558,13 @@
       462,
       455,
       459,
-      453,
-      447
+      453
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 551,
-  "commits_main_analisados": 2613,
+  "commits_main_analisados": 2619,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

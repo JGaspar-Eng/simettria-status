@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-10-31T05:55:45Z",
+  "generated_at": "2026-10-31T11:17:52Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-    "short_sha": "bbbf0c07",
+    "sha": "a3db3c503a2a34edf402a10c031e151a61185e1e",
+    "short_sha": "a3db3c50",
     "author": "Joanez Gaspar",
-    "date": "2026-10-31T00:31:38-03:00",
-    "message": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030"
+    "date": "2026-10-31T08:17:32-03:00",
+    "message": "Merge pull request #657 from JGaspar-Eng/fix/centro-auto-vt-alvos-20261031"
   },
   "commits": [
+    {
+      "sha": "a3db3c503a2a34edf402a10c031e151a61185e1e",
+      "short_sha": "a3db3c50",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T08:17:32-03:00",
+      "message": "Merge pull request #657 from JGaspar-Eng/fix/centro-auto-vt-alvos-20261031"
+    },
+    {
+      "sha": "659f7396b0741075c12f4e9505a661f8f4eb8dd5",
+      "short_sha": "659f7396",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T00:50:54-03:00",
+      "message": "test(orq): cobrir 26 alvos V+T e segunda ordem crítica"
+    },
+    {
+      "sha": "99fb35f331efc8bf80dfd14158466909e29caaf9",
+      "short_sha": "99fb35f3",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T00:50:08-03:00",
+      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
+    },
+    {
+      "sha": "51f4f9e3752c17e1bdf78426574efdff3c0a2edf",
+      "short_sha": "51f4f9e3",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T00:50:02-03:00",
+      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
+    },
+    {
+      "sha": "64cffdc2bb758b7c8aaa5228f898eec2fe64d410",
+      "short_sha": "64cffdc2",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T00:49:59-03:00",
+      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
+    },
+    {
+      "sha": "8c37c57d5bc63a5a6e114c039bbe6ef2bcec27ee",
+      "short_sha": "8c37c57d",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T00:49:55-03:00",
+      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
+    },
     {
       "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
       "short_sha": "bbbf0c07",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-30T14:33:38-03:00",
       "message": "test(auto): regressões segunda ordem, 18 blocos 68 lajes, fail closed e recálculo"
-    },
-    {
-      "sha": "92c1be205f8d4ba268752061926250f376d8a6a7",
-      "short_sha": "92c1be20",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:33:19-03:00",
-      "message": "feat(auto): bloquear alterações sem estudo completo da segunda ordem"
-    },
-    {
-      "sha": "ec3d8718ab0fef25fef546629cad89b395ed9517",
-      "short_sha": "ec3d8718",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:33:02-03:00",
-      "message": "feat(auto): segundo gate obrigatório de 2ª ordem no rollback do recálculo global"
-    },
-    {
-      "sha": "60b3ab6c9ebedd5768e51e8aaddfed6aeaf1a529",
-      "short_sha": "60b3ab6c",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:32:46-03:00",
-      "message": "feat(auto): gate segunda ordem independente para reverter mudanças que agravam/nao resolvem vigas"
-    },
-    {
-      "sha": "4732d1f227e0b1a0039bc317e6164757375616b9",
-      "short_sha": "4732d1f2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:30:23-03:00",
-      "message": "test(ci): incluir fluxo único dos quatro elementos e autorresolução na suíte de armaduras"
-    },
-    {
-      "sha": "f1064bf8192b83fa21f61606659e932d0e03d42f",
-      "short_sha": "f1064bf8",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:30:11-03:00",
-      "message": "test(orq): 178 vigas 18 pilares 68 lajes 18 blocos 62 estacas e autorresolução com rollback"
-    },
-    {
-      "sha": "9a326398b3f9b851d39e14522ca003b1afa6b8ee",
-      "short_sha": "9a326398",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:29:08-03:00",
-      "message": "feat(ui): um botão autorresolução e quatro abas vinculadas aos mesmos resultados/2D"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41174493889",
-    "run_number": "1076"
+    "run_id": "41196247567",
+    "run_number": "1077"
   }
 }
