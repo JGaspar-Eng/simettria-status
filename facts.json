@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-10-30T22:29:32Z",
+  "gerado_em": "2026-10-31T03:32:47Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-    "data": "2026-10-30T17:19:05Z"
+    "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+    "data": "2026-10-31T03:31:38Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-    "gerado_em": "2026-10-30T18:05:37Z",
+    "gerado_em": "2026-10-30T22:28:41Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 4.4
+    "defasagem_commits_main": 15,
+    "idade_horas": 5.1
   },
   "frentes": [
     {
@@ -215,14 +215,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 656,
-            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
-            "rascunho": false,
-            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -274,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 80,
+        "total_integrados": 81,
         "integrados_recentes": [
+          {
+            "numero": 656,
+            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
+            "merged_at": "2026-10-31T03:31:39Z",
+            "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 654,
             "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
@@ -284,7 +286,7 @@
             "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
             "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 653,
@@ -385,38 +387,28 @@
             "head_sha": "bb48c15044d8c00808224be30a9fa76529a3207d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 624,
-            "titulo": "SIMETTRIA: semáforo transversal de alternativas, recomendações de vigas e comparador de fundações",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/624",
-            "merged_at": "2026-10-27T13:16:56Z",
-            "merge_sha": "e6f5dd882533d82ba77baad898d9aaca8d637e51",
-            "head_sha": "3dc3693a60a974d14ad39fd921f5552b5cc84f63",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 654,
-          "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
-          "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-          "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
-          "merged_at": "2026-10-30T17:11:33Z",
+          "numero": 656,
+          "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
+          "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+          "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+          "merged_at": "2026-10-31T03:31:39Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "6a38dc916c6f9af891987159683f1a774a06a832",
-          "data": "2026-10-30T14:07:23-03:00",
-          "assunto": "fix(orq): distinguir insumos de sapatas e 18 blocos sobre 62 estacas no F10",
-          "ci": "falhou"
+          "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+          "data": "2026-10-31T00:31:38-03:00",
+          "assunto": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -970,14 +962,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "d98bcc34702a31e5bd8869056f17782d56c6924f",
-          "data": "2026-10-30T09:25:28-03:00",
-          "assunto": "test(ci): executar rastreabilidade CSV e tuplas 3D junto da suite de armaduras",
-          "ci": "falhou"
+          "sha": "4732d1f227e0b1a0039bc317e6164757375616b9",
+          "data": "2026-10-30T14:30:23-03:00",
+          "assunto": "test(ci): incluir fluxo único dos quatro elementos e autorresolução na suíte de armaduras",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -991,14 +983,6 @@
       "pr": {
         "estado": "aberto",
         "itens": [
-          {
-            "numero": 656,
-            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
-            "rascunho": false,
-            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-            "ci": "passou"
-          },
           {
             "numero": 621,
             "titulo": "ORQ: diagnóstico da incompatibilidade c1 e alternativas geométricas seguras para torção",
@@ -1043,8 +1027,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 114,
+        "total_integrados": 115,
         "integrados_recentes": [
+          {
+            "numero": 656,
+            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
+            "merged_at": "2026-10-31T03:31:39Z",
+            "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 655,
             "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
@@ -1063,7 +1057,7 @@
             "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
             "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 653,
@@ -1154,38 +1148,28 @@
             "head_sha": "2dd333b7325493479d457eb4edd30b7be5a8796a",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 637,
-            "titulo": "fix(ORQ): exigir matriz completa de trechos nos oito ELU da torção",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/637",
-            "merged_at": "2026-10-28T11:44:57Z",
-            "merge_sha": "931a3c49d48b9379caf42dc59cf15a0421bb9581",
-            "head_sha": "c7eacab2f8b8252089ef5e5252ac9b37937d100c",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 655,
-          "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/655",
-          "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-          "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
-          "merged_at": "2026-10-30T17:19:06Z",
+          "numero": 656,
+          "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
+          "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+          "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+          "merged_at": "2026-10-31T03:31:39Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-          "data": "2026-10-30T14:19:05-03:00",
-          "assunto": "Merge pull request #655 from JGaspar-Eng/feat/orq-centro-unico-vigas-pilares-desenhos-20261030",
-          "ci": "passou"
+          "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+          "data": "2026-10-31T00:31:38-03:00",
+          "assunto": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1580,7 +1564,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 550,
-  "commits_main_analisados": 2598,
+  "commits_main_analisados": 2613,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

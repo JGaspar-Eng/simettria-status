@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-10-30T22:28:41Z",
+  "generated_at": "2026-10-31T03:31:58Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-    "short_sha": "6fb148a0",
+    "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+    "short_sha": "bbbf0c07",
     "author": "Joanez Gaspar",
-    "date": "2026-10-30T14:19:05-03:00",
-    "message": "Merge pull request #655 from JGaspar-Eng/feat/orq-centro-unico-vigas-pilares-desenhos-20261030"
+    "date": "2026-10-31T00:31:38-03:00",
+    "message": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030"
   },
   "commits": [
     {
-      "sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-      "short_sha": "6fb148a0",
+      "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
+      "short_sha": "bbbf0c07",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:19:05-03:00",
-      "message": "Merge pull request #655 from JGaspar-Eng/feat/orq-centro-unico-vigas-pilares-desenhos-20261030"
+      "date": "2026-10-31T00:31:38-03:00",
+      "message": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030"
     },
     {
-      "sha": "7291297cb58ed94507647b5fcf499305254ce27c",
-      "short_sha": "7291297c",
+      "sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
+      "short_sha": "eeb5409f",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:17:08-03:00",
-      "message": "test(ci): rodar centro unificado vigas/pilares e rastreabilidade UUID na suite ORQ"
+      "date": "2026-10-30T14:39:24-03:00",
+      "message": "feat(auto): reverter correção se viga modificada permanece crítica na primeira ordem"
     },
     {
-      "sha": "c94129944a2d0c168d9671cf2d662451b7a377fc",
-      "short_sha": "c9412994",
+      "sha": "8f35e8bee7ed6c47aa3b4e1eac511c1d19378510",
+      "short_sha": "8f35e8be",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:16:44-03:00",
-      "message": "test(orq): centro 178 vigas/18 pilares, identidades, 2a ordem e falha fechada"
+      "date": "2026-10-30T14:36:17-03:00",
+      "message": "fix(ci): preservar contrato de falha fechada gate.aceitar nas regressões existentes"
     },
     {
-      "sha": "43c61fb01434dbf433dab174654b6b1e64135b25",
-      "short_sha": "43c61fb0",
+      "sha": "cc2ea8d7904c1f68ef5910af7d5adf88e0645a70",
+      "short_sha": "cc2ea8d7",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:16:18-03:00",
-      "message": "fix(ui): controlar a fila em lote por identificador, nunca ocultar painel dos pilares"
+      "date": "2026-10-30T14:33:38-03:00",
+      "message": "test(auto): regressões segunda ordem, 18 blocos 68 lajes, fail closed e recálculo"
     },
     {
-      "sha": "94e0fc89faf4b8a8a2496749af62dedb93a51946",
-      "short_sha": "94e0fc89",
+      "sha": "92c1be205f8d4ba268752061926250f376d8a6a7",
+      "short_sha": "92c1be20",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:15:41-03:00",
-      "message": "refactor(orq): eliminar modais 1a/2a duplicados; centro único com editor 2D e pilares"
+      "date": "2026-10-30T14:33:19-03:00",
+      "message": "feat(auto): bloquear alterações sem estudo completo da segunda ordem"
     },
     {
-      "sha": "6038e8788a20644aa247d4f5ba88d093d1446488",
-      "short_sha": "6038e878",
+      "sha": "ec3d8718ab0fef25fef546629cad89b395ed9517",
+      "short_sha": "ec3d8718",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:15:05-03:00",
-      "message": "feat(ui): centro único vigas/pilares, 1a/2a ordem, cortes 2D e aplicação em lote"
+      "date": "2026-10-30T14:33:02-03:00",
+      "message": "feat(auto): segundo gate obrigatório de 2ª ordem no rollback do recálculo global"
     },
     {
-      "sha": "6a4aba2960e4708adf0e92175714a0419332d692",
-      "short_sha": "6a4aba29",
+      "sha": "60b3ab6c9ebedd5768e51e8aaddfed6aeaf1a529",
+      "short_sha": "60b3ab6c",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:13:28-03:00",
-      "message": "feat(orq): índice único por UUID reunindo vigas 1a/2a ordem e pilares 8 ELU"
+      "date": "2026-10-30T14:32:46-03:00",
+      "message": "feat(auto): gate segunda ordem independente para reverter mudanças que agravam/nao resolvem vigas"
     },
     {
-      "sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-      "short_sha": "844ede86",
+      "sha": "4732d1f227e0b1a0039bc317e6164757375616b9",
+      "short_sha": "4732d1f2",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:11:32-03:00",
-      "message": "Merge pull request #654 from JGaspar-Eng/fix/orq-auditoria-poscalculo-infra-blocos-20261030"
+      "date": "2026-10-30T14:30:23-03:00",
+      "message": "test(ci): incluir fluxo único dos quatro elementos e autorresolução na suíte de armaduras"
     },
     {
-      "sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
-      "short_sha": "efed07fe",
+      "sha": "f1064bf8192b83fa21f61606659e932d0e03d42f",
+      "short_sha": "f1064bf8",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:09:15-03:00",
-      "message": "test(orq): avaliar prova de reacoes na evidencia e proxima acao no campo correto"
+      "date": "2026-10-30T14:30:11-03:00",
+      "message": "test(orq): 178 vigas 18 pilares 68 lajes 18 blocos 62 estacas e autorresolução com rollback"
     },
     {
-      "sha": "6a38dc916c6f9af891987159683f1a774a06a832",
-      "short_sha": "6a38dc91",
+      "sha": "9a326398b3f9b851d39e14522ca003b1afa6b8ee",
+      "short_sha": "9a326398",
       "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:07:23-03:00",
-      "message": "fix(orq): distinguir insumos de sapatas e 18 blocos sobre 62 estacas no F10"
+      "date": "2026-10-30T14:29:08-03:00",
+      "message": "feat(ui): um botão autorresolução e quatro abas vinculadas aos mesmos resultados/2D"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41138350381",
-    "run_number": "1073"
+    "run_id": "41164754130",
+    "run_number": "1074"
   }
 }
