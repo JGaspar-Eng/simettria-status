@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-01T14:01:01Z",
+  "generated_at": "2026-11-01T14:19:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "92f64dd210bb0d31ba6752149fa5a7357e7a6d83",
-    "short_sha": "92f64dd2",
+    "sha": "2eecbddf3e84b4fb4808f4f212f4c7926e132356",
+    "short_sha": "2eecbddf",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T10:58:55-03:00",
-    "message": "Merge pull request #660 from JGaspar-Eng/fix/centro-progresso-fluxo-autonomo-20261101"
+    "date": "2026-11-01T11:18:50-03:00",
+    "message": "Merge pull request #661 from JGaspar-Eng/fix/centro-linguagem-progresso-didatico-20261101"
   },
   "commits": [
+    {
+      "sha": "2eecbddf3e84b4fb4808f4f212f4c7926e132356",
+      "short_sha": "2eecbddf",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T11:18:50-03:00",
+      "message": "Merge pull request #661 from JGaspar-Eng/fix/centro-linguagem-progresso-didatico-20261101"
+    },
+    {
+      "sha": "4a9cf00673c0456d17fed8c121e80475f3159cea",
+      "short_sha": "4a9cf006",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T11:15:49-03:00",
+      "message": "feat(orq): explicar resultados e separar processo de cada análise"
+    },
     {
       "sha": "92f64dd210bb0d31ba6752149fa5a7357e7a6d83",
       "short_sha": "92f64dd2",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-10-31T23:49:53-03:00",
       "message": "fix(orq): impedir execuções simultâneas durante reconstrução do centro"
-    },
-    {
-      "sha": "c4b9e8c340d6e2331bf5bac825b3071e933997d1",
-      "short_sha": "c4b9e8c3",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-31T23:49:21-03:00",
-      "message": "fix(orq): replanejar alvos persistentes com esforços do recálculo"
-    },
-    {
-      "sha": "a3db3c503a2a34edf402a10c031e151a61185e1e",
-      "short_sha": "a3db3c50",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T08:17:32-03:00",
-      "message": "Merge pull request #657 from JGaspar-Eng/fix/centro-auto-vt-alvos-20261031"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41314011916",
-    "run_number": "1088"
+    "run_id": "41315572018",
+    "run_number": "1089"
   }
 }

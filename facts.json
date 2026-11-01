@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-01T14:02:13Z",
+  "gerado_em": "2026-11-01T14:20:13Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "92f64dd210bb0d31ba6752149fa5a7357e7a6d83",
-    "data": "2026-11-01T13:58:55Z"
+    "sha": "2eecbddf3e84b4fb4808f4f212f4c7926e132356",
+    "data": "2026-11-01T14:18:50Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "73efed0f4217d3886a31c246701d0c8330a7c9a6",
-    "gerado_em": "2026-11-01T06:23:40Z",
+    "sha": "92f64dd210bb0d31ba6752149fa5a7357e7a6d83",
+    "gerado_em": "2026-11-01T14:01:01Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 2,
-    "idade_horas": 7.6
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -916,7 +916,7 @@
             "merged_at": "2026-10-26T22:43:59Z",
             "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1162,9 +1162,9 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "321779c895f7f1133b616bacec65218e313f4ebb",
-          "data": "2026-11-01T10:56:13-03:00",
-          "assunto": "feat(orq): progresso por etapas e Centro com fluxo autônomo protegido",
+          "sha": "4a9cf00673c0456d17fed8c121e80475f3159cea",
+          "data": "2026-11-01T11:15:49-03:00",
+          "assunto": "feat(orq): explicar resultados e separar processo de cada análise",
           "ci": "passou"
         }
       },
@@ -1539,6 +1539,7 @@
       310
     ],
     "integrados_recentes": [
+      661,
       660,
       659,
       658,
@@ -1557,14 +1558,13 @@
       480,
       468,
       467,
-      464,
-      462
+      464
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 554,
-  "commits_main_analisados": 2628,
+  "janela_prs": 555,
+  "commits_main_analisados": 2630,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
