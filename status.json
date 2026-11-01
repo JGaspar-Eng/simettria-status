@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-11-01T02:53:46Z",
+  "generated_at": "2026-11-01T03:16:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "005e1a24bca265f961a8ef47a9d9107b8738f2d1",
-    "short_sha": "005e1a24",
+    "sha": "73efed0f4217d3886a31c246701d0c8330a7c9a6",
+    "short_sha": "73efed0f",
     "author": "Joanez Gaspar",
-    "date": "2026-10-31T23:51:45-03:00",
-    "message": "Merge pull request #658 from JGaspar-Eng/fix/centro-auto-replanejamento-global-20261031"
+    "date": "2026-11-01T00:16:04-03:00",
+    "message": "Merge pull request #659 from JGaspar-Eng/feat/centro-m2-interior-20261101"
   },
   "commits": [
+    {
+      "sha": "73efed0f4217d3886a31c246701d0c8330a7c9a6",
+      "short_sha": "73efed0f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T00:16:04-03:00",
+      "message": "Merge pull request #659 from JGaspar-Eng/feat/centro-m2-interior-20261101"
+    },
+    {
+      "sha": "1e3d853b4100c47a1ba0ca2c70fdf1123653bf07",
+      "short_sha": "1e3d853b",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T00:14:04-03:00",
+      "message": "feat(orq): informar alvos de segunda ordem efetivamente resolvidos"
+    },
+    {
+      "sha": "b785afc232855b248efad43dcd707a3cf5e5b04c",
+      "short_sha": "b785afc2",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T00:13:18-03:00",
+      "message": "fix(orq): explorar outra hipótese após reprovação restrita ao próprio alvo"
+    },
+    {
+      "sha": "59ff35f43f93a2824cb901115ca8ff25465b893e",
+      "short_sha": "59ff35f4",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T00:11:29-03:00",
+      "message": "feat(orq): recuperar M2 interior por equilíbrio e planejar vigas críticas"
+    },
     {
       "sha": "005e1a24bca265f961a8ef47a9d9107b8738f2d1",
       "short_sha": "005e1a24",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-31T00:50:08-03:00",
       "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
-    },
-    {
-      "sha": "51f4f9e3752c17e1bdf78426574efdff3c0a2edf",
-      "short_sha": "51f4f9e3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T00:50:02-03:00",
-      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
-    },
-    {
-      "sha": "64cffdc2bb758b7c8aaa5228f898eec2fe64d410",
-      "short_sha": "64cffdc2",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T00:49:59-03:00",
-      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
-    },
-    {
-      "sha": "8c37c57d5bc63a5a6e114c039bbe6ef2bcec27ee",
-      "short_sha": "8c37c57d",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T00:49:55-03:00",
-      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
-    },
-    {
-      "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-      "short_sha": "bbbf0c07",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T00:31:38-03:00",
-      "message": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41266963122",
-    "run_number": "1083"
+    "run_id": "41268483794",
+    "run_number": "1084"
   }
 }
