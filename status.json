@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-01T16:07:44Z",
+  "generated_at": "2026-11-01T16:39:39Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "1b4bdd7cb9e37e6f501ace5afbc11f00c7f2a8d4",
-    "short_sha": "1b4bdd7c",
+    "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
+    "short_sha": "d86b3dd1",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T13:02:11-03:00",
-    "message": "Merge pull request #662 from JGaspar-Eng/feat/centro-pilares-elu-entrega-versionada-20261101"
+    "date": "2026-11-01T13:39:21-03:00",
+    "message": "Merge pull request #663 from JGaspar-Eng/fix/blocos-excentricidade-pilar-20261101"
   },
   "commits": [
+    {
+      "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
+      "short_sha": "d86b3dd1",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T13:39:21-03:00",
+      "message": "Merge pull request #663 from JGaspar-Eng/fix/blocos-excentricidade-pilar-20261101"
+    },
+    {
+      "sha": "c71829ce6bcab0c65ad06c526d45d4a8bf923357",
+      "short_sha": "c71829ce",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T13:37:38-03:00",
+      "message": "fix: transport pillar actions to pile group centroid before strut study"
+    },
     {
       "sha": "1b4bdd7cb9e37e6f501ace5afbc11f00c7f2a8d4",
       "short_sha": "1b4bdd7c",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-11-01T00:14:04-03:00",
       "message": "feat(orq): informar alvos de segunda ordem efetivamente resolvidos"
-    },
-    {
-      "sha": "b785afc232855b248efad43dcd707a3cf5e5b04c",
-      "short_sha": "b785afc2",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T00:13:18-03:00",
-      "message": "fix(orq): explorar outra hipótese após reprovação restrita ao próprio alvo"
-    },
-    {
-      "sha": "59ff35f43f93a2824cb901115ca8ff25465b893e",
-      "short_sha": "59ff35f4",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T00:11:29-03:00",
-      "message": "feat(orq): recuperar M2 interior por equilíbrio e planejar vigas críticas"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41324680210",
-    "run_number": "1093"
+    "run_id": "41327439616",
+    "run_number": "1094"
   }
 }
