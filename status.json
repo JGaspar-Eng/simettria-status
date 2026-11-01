@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-01T14:20:35Z",
+  "generated_at": "2026-11-01T16:02:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2eecbddf3e84b4fb4808f4f212f4c7926e132356",
-    "short_sha": "2eecbddf",
+    "sha": "1b4bdd7cb9e37e6f501ace5afbc11f00c7f2a8d4",
+    "short_sha": "1b4bdd7c",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T11:18:50-03:00",
-    "message": "Merge pull request #661 from JGaspar-Eng/fix/centro-linguagem-progresso-didatico-20261101"
+    "date": "2026-11-01T13:02:11-03:00",
+    "message": "Merge pull request #662 from JGaspar-Eng/feat/centro-pilares-elu-entrega-versionada-20261101"
   },
   "commits": [
+    {
+      "sha": "1b4bdd7cb9e37e6f501ace5afbc11f00c7f2a8d4",
+      "short_sha": "1b4bdd7c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T13:02:11-03:00",
+      "message": "Merge pull request #662 from JGaspar-Eng/feat/centro-pilares-elu-entrega-versionada-20261101"
+    },
+    {
+      "sha": "38b32baf48046cba6a89201a51748007449041d6",
+      "short_sha": "38b32baf",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T12:58:52-03:00",
+      "message": "feat(orq): calcular armaduras de pilares por ELU e versionar entrega local"
+    },
     {
       "sha": "2eecbddf3e84b4fb4808f4f212f4c7926e132356",
       "short_sha": "2eecbddf",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-11-01T00:11:29-03:00",
       "message": "feat(orq): recuperar M2 interior por equilíbrio e planejar vigas críticas"
-    },
-    {
-      "sha": "005e1a24bca265f961a8ef47a9d9107b8738f2d1",
-      "short_sha": "005e1a24",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T23:51:45-03:00",
-      "message": "Merge pull request #658 from JGaspar-Eng/fix/centro-auto-replanejamento-global-20261031"
-    },
-    {
-      "sha": "a5202d9c3ad99b4d265a496447bdc3d4e3b7cdc4",
-      "short_sha": "a5202d9c",
-      "author": "JGaspar-Eng",
-      "date": "2026-10-31T23:49:53-03:00",
-      "message": "fix(orq): impedir execuções simultâneas durante reconstrução do centro"
     }
   ],
   "development": {
@@ -3061,8 +3061,12 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 230,
+    "validator_count": 231,
     "validators": [
+      {
+        "name": "test:servidor-versionado",
+        "command": "python tests/test_servidor_versionado.py"
+      },
       {
         "name": "test:base",
         "command": "python tests/validar_base_simettria.py"
@@ -3992,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41315694697",
-    "run_number": "1090"
+    "run_id": "41324224617",
+    "run_number": "1091"
   }
 }
