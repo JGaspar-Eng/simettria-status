@@ -1,21 +1,56 @@
 {
-  "generated_at": "2026-11-01T17:47:45Z",
+  "generated_at": "2026-11-01T17:48:51Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
-    "short_sha": "0ed70bd9",
+    "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
+    "short_sha": "467a13bd",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T14:45:46-03:00",
-    "message": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101"
+    "date": "2026-11-01T14:48:04-03:00",
+    "message": "Merge pull request #667 from JGaspar-Eng/fix/fundacoes-pilar-abrir-e-conflitos-20261101"
   },
   "commits": [
+    {
+      "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
+      "short_sha": "467a13bd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:48:04-03:00",
+      "message": "Merge pull request #667 from JGaspar-Eng/fix/fundacoes-pilar-abrir-e-conflitos-20261101"
+    },
     {
       "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
       "short_sha": "0ed70bd9",
       "author": "Joanez Gaspar",
       "date": "2026-11-01T14:45:46-03:00",
       "message": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101"
+    },
+    {
+      "sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
+      "short_sha": "5d45c8f7",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:45:31-03:00",
+      "message": "test(fund): navegacao unica e conflito duplo bloqueados em DOM"
+    },
+    {
+      "sha": "f4d9a366bcde8e7feb7ff6308db8b48b7c538733",
+      "short_sha": "f4d9a366",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:45:10-03:00",
+      "message": "refactor(fund): isolar gate de navegação por ID para regressão"
+    },
+    {
+      "sha": "e9be9d7359d06fd8bf3eb895119fd6a4d33d4642",
+      "short_sha": "e9be9d73",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:44:43-03:00",
+      "message": "fix(fund): bloquear formulário no apoio com múltiplos blocos por ID"
+    },
+    {
+      "sha": "7c0ec9fcfb71d85c9adb77c6f885ba9b946b5e36",
+      "short_sha": "7c0ec9fc",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:44:29-03:00",
+      "message": "fix(ui): permitir abrir bloco existente a partir do pilar e sinalizar conflitos"
     },
     {
       "sha": "be3464c4e5f79788aa4ff213faa5eca7fe376a64",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-01T14:41:11-03:00",
       "message": "feat(ui): apresentar partilha lateral hipotetica sem promover capacidade"
-    },
-    {
-      "sha": "a27dfaa57ce62c52f6849de29f5ae09560954622",
-      "short_sha": "a27dfaa5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:40:50-03:00",
-      "message": "feat(fund): integrar estudo lateral hipotetico e manter gates resistentes"
-    },
-    {
-      "sha": "8d8d02c383d8e2be9502b60625ce45d230c4a0c5",
-      "short_sha": "8d8d02c3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:40:27-03:00",
-      "message": "feat(fund): estudo lateral hipotetico Fx Fy Mz com equilibrio por estaca nos oito ELU"
-    },
-    {
-      "sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
-      "short_sha": "cfc4f139",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:38:23-03:00",
-      "message": "Merge pull request #665 from JGaspar-Eng/fix/fundacoes-vinculos-paineis-20261101"
-    },
-    {
-      "sha": "586690395f9b1e8e85427ac3a91a5c9757281a55",
-      "short_sha": "58669039",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T14:27:01-03:00",
-      "message": "fix: recognize pile cap UUID links and refresh foundation reactions after calculation"
-    },
-    {
-      "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
-      "short_sha": "b32ad080",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T13:52:59-03:00",
-      "message": "Merge pull request #664 from JGaspar-Eng/feat/fundacoes-reacoes-por-estaca-20261101"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41333263396",
-    "run_number": "1101"
+    "run_id": "41333317438",
+    "run_number": "1102"
   }
 }

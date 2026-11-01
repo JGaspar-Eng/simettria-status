@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-01T17:48:32Z",
+  "gerado_em": "2026-11-01T17:49:37Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
-    "data": "2026-11-01T17:45:46Z"
+    "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
+    "data": "2026-11-01T17:48:04Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
-    "gerado_em": "2026-11-01T17:46:04Z",
+    "gerado_em": "2026-11-01T17:47:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 5,
     "idade_horas": 0.0
   },
   "frentes": [
@@ -215,14 +215,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 667,
-            "titulo": "Permitir abrir bloco pelo pilar e bloquear fichas com vínculos duplicados",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/667",
-            "rascunho": false,
-            "head_sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -274,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 85,
+        "total_integrados": 86,
         "integrados_recentes": [
+          {
+            "numero": 667,
+            "titulo": "Permitir abrir bloco pelo pilar e bloquear fichas com vínculos duplicados",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/667",
+            "merged_at": "2026-11-01T17:48:04Z",
+            "merge_sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
+            "head_sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 666,
             "titulo": "Estudar repartição lateral hipotética Fx/Fy/Mz das estacas nos oito ELU",
@@ -284,7 +286,7 @@
             "merge_sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
             "head_sha": "be3464c4e5f79788aa4ff213faa5eca7fe376a64",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 665,
@@ -385,38 +387,28 @@
             "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 644,
-            "titulo": "feat(fundacao): cálculo auditável Blévot 2/3 estacas com benchmark Forecast",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/644",
-            "merged_at": "2026-10-30T02:08:32Z",
-            "merge_sha": "1c60c187778c5c64051f1ab50b7b2a8d6ab38ebe",
-            "head_sha": "15ff85005e286f5d0d37c08a9c567fe8a8586529",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 666,
-          "titulo": "Estudar repartição lateral hipotética Fx/Fy/Mz das estacas nos oito ELU",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/666",
-          "merge_sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
-          "head_sha": "be3464c4e5f79788aa4ff213faa5eca7fe376a64",
-          "merged_at": "2026-11-01T17:45:46Z",
+          "numero": 667,
+          "titulo": "Permitir abrir bloco pelo pilar e bloquear fichas com vínculos duplicados",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/667",
+          "merge_sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
+          "head_sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
+          "merged_at": "2026-11-01T17:48:04Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
-          "data": "2026-11-01T14:45:46-03:00",
-          "assunto": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101",
-          "ci": "passou"
+          "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
+          "data": "2026-11-01T14:48:04-03:00",
+          "assunto": "Merge pull request #667 from JGaspar-Eng/fix/fundacoes-pilar-abrir-e-conflitos-20261101",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -745,7 +737,7 @@
             "merged_at": "2026-10-27T12:00:31Z",
             "merge_sha": "3bbdde62063a2c69bd01d38a0a03e2e6a0bc84f4",
             "head_sha": "abbb0a3f5088195d5a3659d70716ff53755d65ba",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1572,7 +1564,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 561,
-  "commits_main_analisados": 2645,
+  "commits_main_analisados": 2650,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
