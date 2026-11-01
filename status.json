@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-11-01T17:40:09Z",
+  "generated_at": "2026-11-01T17:46:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
-    "short_sha": "cfc4f139",
+    "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
+    "short_sha": "0ed70bd9",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T14:38:23-03:00",
-    "message": "Merge pull request #665 from JGaspar-Eng/fix/fundacoes-vinculos-paineis-20261101"
+    "date": "2026-11-01T14:45:46-03:00",
+    "message": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101"
   },
   "commits": [
+    {
+      "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
+      "short_sha": "0ed70bd9",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:45:46-03:00",
+      "message": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101"
+    },
+    {
+      "sha": "be3464c4e5f79788aa4ff213faa5eca7fe376a64",
+      "short_sha": "be3464c4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:42:37-03:00",
+      "message": "docs(fund): escopo e limites do equilibrio lateral de estacas"
+    },
+    {
+      "sha": "843361846330d6c107e1960748e7052b447054dd",
+      "short_sha": "84336184",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:42:13-03:00",
+      "message": "test(ci): incluir regressao lateral das estacas na suite oficial"
+    },
+    {
+      "sha": "e1c35c47d3c55086abef9247ce15ddd0a018effa",
+      "short_sha": "e1c35c47",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:41:58-03:00",
+      "message": "test(fund): equilibrio lateral por oito ELU, excentricidade e recusas de aprovacao"
+    },
+    {
+      "sha": "989bc41cdf81ec24a2e9ec3eb99021879f0b8721",
+      "short_sha": "989bc41c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:41:11-03:00",
+      "message": "feat(ui): apresentar partilha lateral hipotetica sem promover capacidade"
+    },
+    {
+      "sha": "a27dfaa57ce62c52f6849de29f5ae09560954622",
+      "short_sha": "a27dfaa5",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:40:50-03:00",
+      "message": "feat(fund): integrar estudo lateral hipotetico e manter gates resistentes"
+    },
+    {
+      "sha": "8d8d02c383d8e2be9502b60625ce45d230c4a0c5",
+      "short_sha": "8d8d02c3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T14:40:27-03:00",
+      "message": "feat(fund): estudo lateral hipotetico Fx Fy Mz com equilibrio por estaca nos oito ELU"
+    },
     {
       "sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
       "short_sha": "cfc4f139",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-01T13:52:59-03:00",
       "message": "Merge pull request #664 from JGaspar-Eng/feat/fundacoes-reacoes-por-estaca-20261101"
-    },
-    {
-      "sha": "109a12c519c83c570363332a716dc78f0d303cbb",
-      "short_sha": "109a12c5",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T13:50:29-03:00",
-      "message": "feat: calculate traced vertical pile loads for all eight ELU in structural center"
-    },
-    {
-      "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
-      "short_sha": "d86b3dd1",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T13:39:21-03:00",
-      "message": "Merge pull request #663 from JGaspar-Eng/fix/blocos-excentricidade-pilar-20261101"
-    },
-    {
-      "sha": "c71829ce6bcab0c65ad06c526d45d4a8bf923357",
-      "short_sha": "c71829ce",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T13:37:38-03:00",
-      "message": "fix: transport pillar actions to pile group centroid before strut study"
-    },
-    {
-      "sha": "1b4bdd7cb9e37e6f501ace5afbc11f00c7f2a8d4",
-      "short_sha": "1b4bdd7c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T13:02:11-03:00",
-      "message": "Merge pull request #662 from JGaspar-Eng/feat/centro-pilares-elu-entrega-versionada-20261101"
-    },
-    {
-      "sha": "38b32baf48046cba6a89201a51748007449041d6",
-      "short_sha": "38b32baf",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T12:58:52-03:00",
-      "message": "feat(orq): calcular armaduras de pilares por ELU e versionar entrega local"
-    },
-    {
-      "sha": "2eecbddf3e84b4fb4808f4f212f4c7926e132356",
-      "short_sha": "2eecbddf",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T11:18:50-03:00",
-      "message": "Merge pull request #661 from JGaspar-Eng/fix/centro-linguagem-progresso-didatico-20261101"
-    },
-    {
-      "sha": "4a9cf00673c0456d17fed8c121e80475f3159cea",
-      "short_sha": "4a9cf006",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T11:15:49-03:00",
-      "message": "feat(orq): explicar resultados e separar processo de cada análise"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41332602000",
-    "run_number": "1099"
+    "run_id": "41333120224",
+    "run_number": "1100"
   }
 }
