@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-01T16:55:29Z",
+  "gerado_em": "2026-11-01T17:39:46Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
-    "data": "2026-11-01T16:52:59Z"
+    "sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
+    "data": "2026-11-01T17:38:23Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
-    "gerado_em": "2026-11-01T16:53:16Z",
+    "gerado_em": "2026-11-01T16:54:43Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 2,
+    "idade_horas": 0.8
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 83,
+        "total_integrados": 84,
         "integrados_recentes": [
+          {
+            "numero": 665,
+            "titulo": "Corrigir vínculos dos blocos e reações desatualizadas nos painéis de fundação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/665",
+            "merged_at": "2026-11-01T17:38:24Z",
+            "merge_sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
+            "head_sha": "586690395f9b1e8e85427ac3a91a5c9757281a55",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 664,
             "titulo": "Calcular e rastrear cargas verticais nas estacas dos oito ELU no Centro",
@@ -276,7 +286,7 @@
             "merge_sha": "b32ad080640182bb792a456b6a91292358b0fef1",
             "head_sha": "109a12c519c83c570363332a716dc78f0d303cbb",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 663,
@@ -377,38 +387,28 @@
             "head_sha": "666bac60a43ab38ae50c0fcb94f238e8e539b53d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 638,
-            "titulo": "feat(ELS): cálculo de flecha imediata por Branson com benchmarks independentes",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/638",
-            "merged_at": "2026-10-28T11:55:57Z",
-            "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
-            "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 664,
-          "titulo": "Calcular e rastrear cargas verticais nas estacas dos oito ELU no Centro",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/664",
-          "merge_sha": "b32ad080640182bb792a456b6a91292358b0fef1",
-          "head_sha": "109a12c519c83c570363332a716dc78f0d303cbb",
-          "merged_at": "2026-11-01T16:53:00Z",
+          "numero": 665,
+          "titulo": "Corrigir vínculos dos blocos e reações desatualizadas nos painéis de fundação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/665",
+          "merge_sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
+          "head_sha": "586690395f9b1e8e85427ac3a91a5c9757281a55",
+          "merged_at": "2026-11-01T17:38:24Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
-          "data": "2026-11-01T13:52:59-03:00",
-          "assunto": "Merge pull request #664 from JGaspar-Eng/feat/fundacoes-reacoes-por-estaca-20261101",
-          "ci": "passou"
+          "sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
+          "data": "2026-11-01T14:38:23-03:00",
+          "assunto": "Merge pull request #665 from JGaspar-Eng/fix/fundacoes-vinculos-paineis-20261101",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -896,7 +896,7 @@
             "merged_at": "2026-10-27T03:30:37Z",
             "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
             "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 558,
-  "commits_main_analisados": 2636,
+  "janela_prs": 559,
+  "commits_main_analisados": 2638,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
