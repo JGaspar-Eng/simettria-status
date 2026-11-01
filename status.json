@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-01T06:23:40Z",
+  "generated_at": "2026-11-01T13:59:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "73efed0f4217d3886a31c246701d0c8330a7c9a6",
-    "short_sha": "73efed0f",
+    "sha": "92f64dd210bb0d31ba6752149fa5a7357e7a6d83",
+    "short_sha": "92f64dd2",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T00:16:04-03:00",
-    "message": "Merge pull request #659 from JGaspar-Eng/feat/centro-m2-interior-20261101"
+    "date": "2026-11-01T10:58:55-03:00",
+    "message": "Merge pull request #660 from JGaspar-Eng/fix/centro-progresso-fluxo-autonomo-20261101"
   },
   "commits": [
+    {
+      "sha": "92f64dd210bb0d31ba6752149fa5a7357e7a6d83",
+      "short_sha": "92f64dd2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T10:58:55-03:00",
+      "message": "Merge pull request #660 from JGaspar-Eng/fix/centro-progresso-fluxo-autonomo-20261101"
+    },
+    {
+      "sha": "321779c895f7f1133b616bacec65218e313f4ebb",
+      "short_sha": "321779c8",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T10:56:13-03:00",
+      "message": "feat(orq): progresso por etapas e Centro com fluxo autônomo protegido"
+    },
     {
       "sha": "73efed0f4217d3886a31c246701d0c8330a7c9a6",
       "short_sha": "73efed0f",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-31T08:17:32-03:00",
       "message": "Merge pull request #657 from JGaspar-Eng/fix/centro-auto-vt-alvos-20261031"
-    },
-    {
-      "sha": "659f7396b0741075c12f4e9505a661f8f4eb8dd5",
-      "short_sha": "659f7396",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T00:50:54-03:00",
-      "message": "test(orq): cobrir 26 alvos V+T e segunda ordem crítica"
-    },
-    {
-      "sha": "99fb35f331efc8bf80dfd14158466909e29caaf9",
-      "short_sha": "99fb35f3",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-31T00:50:08-03:00",
-      "message": "fix(orq): avaliar alvos V+T e exigir melhora após recálculo"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41280632023",
-    "run_number": "1086"
+    "run_id": "41313865987",
+    "run_number": "1087"
   }
 }
