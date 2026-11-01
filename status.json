@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-11-01T00:11:47Z",
+  "generated_at": "2026-11-01T02:52:03Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a3db3c503a2a34edf402a10c031e151a61185e1e",
-    "short_sha": "a3db3c50",
+    "sha": "005e1a24bca265f961a8ef47a9d9107b8738f2d1",
+    "short_sha": "005e1a24",
     "author": "Joanez Gaspar",
-    "date": "2026-10-31T08:17:32-03:00",
-    "message": "Merge pull request #657 from JGaspar-Eng/fix/centro-auto-vt-alvos-20261031"
+    "date": "2026-10-31T23:51:45-03:00",
+    "message": "Merge pull request #658 from JGaspar-Eng/fix/centro-auto-replanejamento-global-20261031"
   },
   "commits": [
+    {
+      "sha": "005e1a24bca265f961a8ef47a9d9107b8738f2d1",
+      "short_sha": "005e1a24",
+      "author": "Joanez Gaspar",
+      "date": "2026-10-31T23:51:45-03:00",
+      "message": "Merge pull request #658 from JGaspar-Eng/fix/centro-auto-replanejamento-global-20261031"
+    },
+    {
+      "sha": "a5202d9c3ad99b4d265a496447bdc3d4e3b7cdc4",
+      "short_sha": "a5202d9c",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-31T23:49:53-03:00",
+      "message": "fix(orq): impedir execuções simultâneas durante reconstrução do centro"
+    },
+    {
+      "sha": "c4b9e8c340d6e2331bf5bac825b3071e933997d1",
+      "short_sha": "c4b9e8c3",
+      "author": "JGaspar-Eng",
+      "date": "2026-10-31T23:49:21-03:00",
+      "message": "fix(orq): replanejar alvos persistentes com esforços do recálculo"
+    },
     {
       "sha": "a3db3c503a2a34edf402a10c031e151a61185e1e",
       "short_sha": "a3db3c50",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-10-31T00:31:38-03:00",
       "message": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030"
-    },
-    {
-      "sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-      "short_sha": "eeb5409f",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:39:24-03:00",
-      "message": "feat(auto): reverter correção se viga modificada permanece crítica na primeira ordem"
-    },
-    {
-      "sha": "8f35e8bee7ed6c47aa3b4e1eac511c1d19378510",
-      "short_sha": "8f35e8be",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:36:17-03:00",
-      "message": "fix(ci): preservar contrato de falha fechada gate.aceitar nas regressões existentes"
-    },
-    {
-      "sha": "cc2ea8d7904c1f68ef5910af7d5adf88e0645a70",
-      "short_sha": "cc2ea8d7",
-      "author": "Joanez Gaspar",
-      "date": "2026-10-30T14:33:38-03:00",
-      "message": "test(auto): regressões segunda ordem, 18 blocos 68 lajes, fail closed e recálculo"
     }
   ],
   "development": {
@@ -3992,7 +3992,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41255649185",
-    "run_number": "1081"
+    "run_id": "41266880751",
+    "run_number": "1082"
   }
 }
