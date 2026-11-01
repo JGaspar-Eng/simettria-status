@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-01T16:42:20Z",
+  "gerado_em": "2026-11-01T16:54:23Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
-    "data": "2026-11-01T16:39:21Z"
+    "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
+    "data": "2026-11-01T16:52:59Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
-    "gerado_em": "2026-11-01T16:39:39Z",
+    "gerado_em": "2026-11-01T16:41:17Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 2,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 82,
+        "total_integrados": 83,
         "integrados_recentes": [
+          {
+            "numero": 664,
+            "titulo": "Calcular e rastrear cargas verticais nas estacas dos oito ELU no Centro",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/664",
+            "merged_at": "2026-11-01T16:53:00Z",
+            "merge_sha": "b32ad080640182bb792a456b6a91292358b0fef1",
+            "head_sha": "109a12c519c83c570363332a716dc78f0d303cbb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 663,
             "titulo": "Corrigir transporte das reações do pilar ao centroide das estacas",
@@ -276,7 +286,7 @@
             "merge_sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
             "head_sha": "c71829ce6bcab0c65ad06c526d45d4a8bf923357",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 656,
@@ -377,38 +387,28 @@
             "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 631,
-            "titulo": "fix(ORQ): excluir armadura dupla obsoleta das premissas da triagem torção+cortante",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/631",
-            "merged_at": "2026-10-28T02:47:08Z",
-            "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
-            "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 663,
-          "titulo": "Corrigir transporte das reações do pilar ao centroide das estacas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/663",
-          "merge_sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
-          "head_sha": "c71829ce6bcab0c65ad06c526d45d4a8bf923357",
-          "merged_at": "2026-11-01T16:39:21Z",
+          "numero": 664,
+          "titulo": "Calcular e rastrear cargas verticais nas estacas dos oito ELU no Centro",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/664",
+          "merge_sha": "b32ad080640182bb792a456b6a91292358b0fef1",
+          "head_sha": "109a12c519c83c570363332a716dc78f0d303cbb",
+          "merged_at": "2026-11-01T16:53:00Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-          "data": "2026-10-31T00:31:38-03:00",
-          "assunto": "Merge pull request #656 from JGaspar-Eng/feat/orq-centro-unico-lajes-fundacoes-20261030",
-          "ci": "passou"
+          "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
+          "data": "2026-11-01T13:52:59-03:00",
+          "assunto": "Merge pull request #664 from JGaspar-Eng/feat/fundacoes-reacoes-por-estaca-20261101",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -906,7 +906,7 @@
             "merged_at": "2026-10-27T03:07:21Z",
             "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
             "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 557,
-  "commits_main_analisados": 2634,
+  "janela_prs": 558,
+  "commits_main_analisados": 2636,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

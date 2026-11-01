@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-01T16:41:17Z",
+  "generated_at": "2026-11-01T16:53:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
-    "short_sha": "d86b3dd1",
+    "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
+    "short_sha": "b32ad080",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T13:39:21-03:00",
-    "message": "Merge pull request #663 from JGaspar-Eng/fix/blocos-excentricidade-pilar-20261101"
+    "date": "2026-11-01T13:52:59-03:00",
+    "message": "Merge pull request #664 from JGaspar-Eng/feat/fundacoes-reacoes-por-estaca-20261101"
   },
   "commits": [
+    {
+      "sha": "b32ad080640182bb792a456b6a91292358b0fef1",
+      "short_sha": "b32ad080",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T13:52:59-03:00",
+      "message": "Merge pull request #664 from JGaspar-Eng/feat/fundacoes-reacoes-por-estaca-20261101"
+    },
+    {
+      "sha": "109a12c519c83c570363332a716dc78f0d303cbb",
+      "short_sha": "109a12c5",
+      "author": "JGaspar-Eng",
+      "date": "2026-11-01T13:50:29-03:00",
+      "message": "feat: calculate traced vertical pile loads for all eight ELU in structural center"
+    },
     {
       "sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
       "short_sha": "d86b3dd1",
@@ -65,20 +79,6 @@
       "author": "JGaspar-Eng",
       "date": "2026-11-01T10:56:13-03:00",
       "message": "feat(orq): progresso por etapas e Centro com fluxo autônomo protegido"
-    },
-    {
-      "sha": "73efed0f4217d3886a31c246701d0c8330a7c9a6",
-      "short_sha": "73efed0f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T00:16:04-03:00",
-      "message": "Merge pull request #659 from JGaspar-Eng/feat/centro-m2-interior-20261101"
-    },
-    {
-      "sha": "1e3d853b4100c47a1ba0ca2c70fdf1123653bf07",
-      "short_sha": "1e3d853b",
-      "author": "JGaspar-Eng",
-      "date": "2026-11-01T00:14:04-03:00",
-      "message": "feat(orq): informar alvos de segunda ordem efetivamente resolvidos"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41327576679",
-    "run_number": "1095"
+    "run_id": "41328588599",
+    "run_number": "1096"
   }
 }
