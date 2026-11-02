@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T06:25:31Z",
+  "gerado_em": "2026-11-02T13:30:21Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
-    "data": "2026-11-02T01:50:33Z"
+    "sha": "a0de5eb09b62907aa6ae11fb5b2497c0ed27839f",
+    "data": "2026-11-02T13:28:30Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
-    "gerado_em": "2026-11-02T01:52:28Z",
+    "gerado_em": "2026-11-02T06:24:34Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 4.6
+    "defasagem_commits_main": 13,
+    "idade_horas": 7.1
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 89,
+        "total_integrados": 90,
         "integrados_recentes": [
+          {
+            "numero": 671,
+            "titulo": "Corrigir geometria de 3 estacas P8/P11 com contorno Forecast no 2D, 3D e auditoria",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/671",
+            "merged_at": "2026-11-02T13:28:30Z",
+            "merge_sha": "a0de5eb09b62907aa6ae11fb5b2497c0ed27839f",
+            "head_sha": "bcd1a45d8f23eef0d3cc3273a516af69202a2b06",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 670,
             "titulo": "Alinhar fck30 e fundações ao Forecast e exportar memorial estrutural por elemento",
@@ -276,7 +286,7 @@
             "merge_sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
             "head_sha": "9ae657f9c17e4df07e0547d82aaa7eb22c1fbd85",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 669,
@@ -377,38 +387,28 @@
             "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 652,
-            "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
-            "merged_at": "2026-10-30T12:36:19Z",
-            "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
-            "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 670,
-          "titulo": "Alinhar fck30 e fundações ao Forecast e exportar memorial estrutural por elemento",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/670",
-          "merge_sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
-          "head_sha": "9ae657f9c17e4df07e0547d82aaa7eb22c1fbd85",
-          "merged_at": "2026-11-02T01:50:33Z",
+          "numero": 671,
+          "titulo": "Corrigir geometria de 3 estacas P8/P11 com contorno Forecast no 2D, 3D e auditoria",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/671",
+          "merge_sha": "a0de5eb09b62907aa6ae11fb5b2497c0ed27839f",
+          "head_sha": "bcd1a45d8f23eef0d3cc3273a516af69202a2b06",
+          "merged_at": "2026-11-02T13:28:30Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "998522fc99e517bd1911a1235aefb1fcf6eeadfb",
-          "data": "2026-11-01T22:47:06-03:00",
-          "assunto": "feat(fund-ui): preservar contorno poligonal da fundacao no indice do Centro",
+          "sha": "bcd1a45d8f23eef0d3cc3273a516af69202a2b06",
+          "data": "2026-11-02T10:26:23-03:00",
+          "assunto": "test(ci): remover declaracao duplicada em teste do ciclo JSON de fundacoes",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -674,14 +674,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "a611106743f60c20ef2b6c39ef0c78209b253481",
-          "data": "2026-11-01T22:39:38-03:00",
-          "assunto": "test(forecast): 18 blocos, grupos 1 a 5, fck30, identidade, SPT e gates",
-          "ci": "sem_evidencia"
+          "sha": "66111762f4d96e9bb57b41cd479efd63f4c4f66a",
+          "data": "2026-11-02T10:24:20-03:00",
+          "assunto": "fix(persistencia): preservar contorno Forecast e estudos geotecnicos no contrato fundacoes",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 564,
-  "commits_main_analisados": 2685,
+  "janela_prs": 565,
+  "commits_main_analisados": 2698,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
