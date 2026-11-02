@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-11-02T13:34:53Z",
+  "generated_at": "2026-11-02T13:56:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "612434e36146c4db85229e344a94bcd315e5d5af",
-    "short_sha": "612434e3",
+    "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
+    "short_sha": "26105a1c",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T10:32:51-03:00",
-    "message": "Merge pull request #672 from JGaspar-Eng/fix/forecast-p8-p11-recuperacao-json-legado-20261102"
+    "date": "2026-11-02T10:55:35-03:00",
+    "message": "Merge pull request #673 from JGaspar-Eng/fix/fundacao-3d-juncoes-visuais-faces-20261102"
   },
   "commits": [
+    {
+      "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
+      "short_sha": "26105a1c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:55:35-03:00",
+      "message": "Merge pull request #673 from JGaspar-Eng/fix/fundacao-3d-juncoes-visuais-faces-20261102"
+    },
+    {
+      "sha": "688a2ecb0849445247de5f201e65bb10097a7ee4",
+      "short_sha": "688a2ecb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:53:08-03:00",
+      "message": "test(3d): respeitar ordem intercalada topo/base dos triangulos no calculo de normais"
+    },
+    {
+      "sha": "cc250e0cd5fb872f8ad95d6e26cad8dc351fa6e0",
+      "short_sha": "cc250e0c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:50:23-03:00",
+      "message": "docs(3d): especificar uniao visual nao estrutural, contorno Forecast e provas Babylon"
+    },
+    {
+      "sha": "b95bc32cf21de83188908df3582067010e186df1",
+      "short_sha": "b95bc32c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:49:54-03:00",
+      "message": "test(ci): executar renderizador Babylon real com mocks P8 P11 no pipeline"
+    },
+    {
+      "sha": "3da4e11168bbdcd1a8e7e3126d94397d0e3a2045",
+      "short_sha": "3da4e111",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:49:41-03:00",
+      "message": "test(3d): checar faces, iluminacao e contato real do renderer P8 P11 sem alterar estacas"
+    },
+    {
+      "sha": "9d660f9722b5bc88c08af5bb0bbf896a665ad622",
+      "short_sha": "9d660f97",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:48:45-03:00",
+      "message": "fix(3d): tornar base dos blocos visível e unir visualmente cabeças das estacas com cotas intactas"
+    },
+    {
+      "sha": "1d10ff7b278c63e233a399a708b544d95a79dcb8",
+      "short_sha": "1d10ff7b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:48:21-03:00",
+      "message": "fix(3d): definir geometria visual da costura estaca/bloco sem alterar comprimento"
+    },
     {
       "sha": "612434e36146c4db85229e344a94bcd315e5d5af",
       "short_sha": "612434e3",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T10:30:30-03:00",
       "message": "test(storage): recuperar somente P8 P11 de snapshots antigos sem perder VC116"
-    },
-    {
-      "sha": "16c8f77a125be113c5ed3f7d1d4dd82bfbabae0f",
-      "short_sha": "16c8f77a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:30:00-03:00",
-      "message": "fix(storage): restaurar poligonos P8 P11 antigos sem resetar vigas nem lajes"
-    },
-    {
-      "sha": "b9d255fd9995c3e8ba772beb030a57c1313f0fed",
-      "short_sha": "b9d255fd",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:29:46-03:00",
-      "message": "fix(legado): recuperar contornos P8 P11 somente por assinatura exata do Forecast"
-    },
-    {
-      "sha": "a0de5eb09b62907aa6ae11fb5b2497c0ed27839f",
-      "short_sha": "a0de5eb0",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:28:30-03:00",
-      "message": "Merge pull request #671 from JGaspar-Eng/fix/forecast-p8-p11-contorno-2d-3d-auditoria-20261102"
-    },
-    {
-      "sha": "bcd1a45d8f23eef0d3cc3273a516af69202a2b06",
-      "short_sha": "bcd1a45d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:26:23-03:00",
-      "message": "test(ci): remover declaracao duplicada em teste do ciclo JSON de fundacoes"
-    },
-    {
-      "sha": "f94d4961d7704d476cb18ecd9dfc8f94f41d92bd",
-      "short_sha": "f94d4961",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:24:42-03:00",
-      "message": "test(storage): preservar vertices e estudos de blocos em ciclo restore/serialize"
-    },
-    {
-      "sha": "66111762f4d96e9bb57b41cd479efd63f4c4f66a",
-      "short_sha": "66111762",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:24:20-03:00",
-      "message": "fix(persistencia): preservar contorno Forecast e estudos geotecnicos no contrato fundacoes"
-    },
-    {
-      "sha": "27cd8d1a8e0ee72ffbbaa97266ecf007ffb63ce4",
-      "short_sha": "27cd8d1a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:23:06-03:00",
-      "message": "docs(fund): evidencias Forecast P8/P11, interferencia da caixa e contorno correto"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41454163496",
-    "run_number": "1115"
+    "run_id": "41457207922",
+    "run_number": "1116"
   }
 }
