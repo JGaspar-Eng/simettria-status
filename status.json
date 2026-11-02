@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-11-02T13:30:44Z",
+  "generated_at": "2026-11-02T13:33:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "a0de5eb09b62907aa6ae11fb5b2497c0ed27839f",
-    "short_sha": "a0de5eb0",
+    "sha": "612434e36146c4db85229e344a94bcd315e5d5af",
+    "short_sha": "612434e3",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T10:28:30-03:00",
-    "message": "Merge pull request #671 from JGaspar-Eng/fix/forecast-p8-p11-contorno-2d-3d-auditoria-20261102"
+    "date": "2026-11-02T10:32:51-03:00",
+    "message": "Merge pull request #672 from JGaspar-Eng/fix/forecast-p8-p11-recuperacao-json-legado-20261102"
   },
   "commits": [
+    {
+      "sha": "612434e36146c4db85229e344a94bcd315e5d5af",
+      "short_sha": "612434e3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:32:51-03:00",
+      "message": "Merge pull request #672 from JGaspar-Eng/fix/forecast-p8-p11-recuperacao-json-legado-20261102"
+    },
+    {
+      "sha": "27db67ac44dab1db4ac0817625c360f176570607",
+      "short_sha": "27db67ac",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:30:41-03:00",
+      "message": "test(ci): executar recuperacao de snapshots legados P8 P11"
+    },
+    {
+      "sha": "d22d8a27e873c248dd8a8b3be8331f431701c74b",
+      "short_sha": "d22d8a27",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:30:30-03:00",
+      "message": "test(storage): recuperar somente P8 P11 de snapshots antigos sem perder VC116"
+    },
+    {
+      "sha": "16c8f77a125be113c5ed3f7d1d4dd82bfbabae0f",
+      "short_sha": "16c8f77a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:30:00-03:00",
+      "message": "fix(storage): restaurar poligonos P8 P11 antigos sem resetar vigas nem lajes"
+    },
+    {
+      "sha": "b9d255fd9995c3e8ba772beb030a57c1313f0fed",
+      "short_sha": "b9d255fd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T10:29:46-03:00",
+      "message": "fix(legado): recuperar contornos P8 P11 somente por assinatura exata do Forecast"
+    },
     {
       "sha": "a0de5eb09b62907aa6ae11fb5b2497c0ed27839f",
       "short_sha": "a0de5eb0",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T10:23:06-03:00",
       "message": "docs(fund): evidencias Forecast P8/P11, interferencia da caixa e contorno correto"
-    },
-    {
-      "sha": "f43a38fb0c50764d00379d579697d9a81c9a8344",
-      "short_sha": "f43a38fb",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:22:29-03:00",
-      "message": "test(ci): executar regressao P8 P11 contorno real na suite oficial"
-    },
-    {
-      "sha": "d9ad280934213b2c16687cf9c9f6a7b96d86d219",
-      "short_sha": "d9ad2809",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:22:16-03:00",
-      "message": "test(fund): P8 P11 contorno Forecast seis vertices em auditoria, 2D, 3D e gate"
-    },
-    {
-      "sha": "b4b35df7f55b7e311b91b71d5a4f0d8717e154f9",
-      "short_sha": "b4b35df7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:21:12-03:00",
-      "message": "fix(ui): desenhar e diagnosticar contorno poligonal P8 P11 sem retangulo enganoso"
-    },
-    {
-      "sha": "36605e63ae5118749433f18945630c0c43f137a9",
-      "short_sha": "36605e63",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:20:53-03:00",
-      "message": "fix(centro): propagar geometria poligonal mesmo de referencia Forecast vinculada"
-    },
-    {
-      "sha": "ef87fe1c7741e24a5556b97e56960eed4a0a2804",
-      "short_sha": "ef87fe1c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:20:41-03:00",
-      "message": "fix(auditoria): usar contorno poligonal original ou referencia vinculada e mostrar folga real"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41453549700",
-    "run_number": "1113"
+    "run_id": "41453919500",
+    "run_number": "1114"
   }
 }
