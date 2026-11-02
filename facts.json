@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T15:31:33Z",
+  "gerado_em": "2026-11-02T16:05:02Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
-    "data": "2026-11-02T15:27:50Z"
+    "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+    "data": "2026-11-02T16:03:15Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
-    "gerado_em": "2026-11-02T15:28:11Z",
+    "gerado_em": "2026-11-02T15:30:01Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 22,
+    "idade_horas": 0.6
   },
   "frentes": [
     {
@@ -219,8 +219,8 @@
             "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
             "rascunho": false,
-            "head_sha": "23a3e9fc71ee4296a75e263d255383009ac093ac",
-            "ci": "pendente"
+            "head_sha": "1b1e27f6ff3c5959d9667a4435a305c750c4fa27",
+            "ci": "passou"
           },
           {
             "numero": 559,
@@ -274,8 +274,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 92,
+        "total_integrados": 93,
         "integrados_recentes": [
+          {
+            "numero": 676,
+            "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
+            "merged_at": "2026-11-02T16:03:15Z",
+            "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+            "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 674,
             "titulo": "Corrigir contagem real de blocos e estacas renderizados no Babylon 3D",
@@ -284,7 +294,7 @@
             "merge_sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
             "head_sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 673,
@@ -385,38 +395,28 @@
             "head_sha": "c71829ce6bcab0c65ad06c526d45d4a8bf923357",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 656,
-            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
-            "merged_at": "2026-10-31T03:31:39Z",
-            "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 674,
-          "titulo": "Corrigir contagem real de blocos e estacas renderizados no Babylon 3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/674",
-          "merge_sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
-          "head_sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
-          "merged_at": "2026-11-02T15:27:50Z",
+          "numero": 676,
+          "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
+          "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+          "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
+          "merged_at": "2026-11-02T16:03:15Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
-          "data": "2026-11-02T12:27:50-03:00",
-          "assunto": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102",
-          "ci": "passou"
+          "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+          "data": "2026-11-02T13:03:15-03:00",
+          "assunto": "Merge pull request #676 from JGaspar-Eng/fix/babylon-estacas-fidelidade-camera-20261102",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -864,7 +864,7 @@
             "merged_at": "2026-10-28T01:36:40Z",
             "merge_sha": "8e3dfdec8ce7fd9837a2a302276041c843b07a0d",
             "head_sha": "1d6e594468170bdf89e0e0b40d10f8398215d2b5",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1211,8 +1211,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 22,
+        "total_integrados": 23,
         "integrados_recentes": [
+          {
+            "numero": 676,
+            "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
+            "merged_at": "2026-11-02T16:03:15Z",
+            "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+            "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 620,
             "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
@@ -1220,8 +1230,8 @@
             "merged_at": "2026-10-27T11:18:10Z",
             "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
             "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 594,
@@ -1322,38 +1332,28 @@
             "head_sha": "b599f078336a899cd811e60e0467f811f43fa8dd",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 197,
-            "titulo": "docs(status): recalibra plano funcional e confiabilidade",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/197",
-            "merged_at": "2026-08-27T17:15:56Z",
-            "merge_sha": "f669dfdc96b98c94d1890d7f85dd4fe756d4680a",
-            "head_sha": "3bcdc00a9e83bd66f4dae64e8c4b79c7443fa264",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 620,
-          "titulo": "ORQ: corrigir seção equivalente de torção por c1 conforme NBR 6118:2026",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/620",
-          "merge_sha": "e4e679b85ff9be6d5c1bef0f755867bdd823c002",
-          "head_sha": "57d0dabbbc115991f486201c6759c7e5f16961c4",
-          "merged_at": "2026-10-27T11:18:10Z",
+          "numero": 676,
+          "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
+          "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+          "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
+          "merged_at": "2026-11-02T16:03:15Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "688a2ecb0849445247de5f201e65bb10097a7ee4",
-          "data": "2026-11-02T10:53:08-03:00",
-          "assunto": "test(3d): respeitar ordem intercalada topo/base dos triangulos no calculo de normais",
+          "sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
+          "data": "2026-11-02T12:59:50-03:00",
+          "assunto": "fix(babylon): alinhar normais do prisma poligonal às faces físicas topo/base",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1571,8 +1571,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 569,
-  "commits_main_analisados": 2715,
+  "janela_prs": 570,
+  "commits_main_analisados": 2737,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

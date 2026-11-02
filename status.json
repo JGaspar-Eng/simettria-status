@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-02T15:30:01Z",
+  "generated_at": "2026-11-02T16:03:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
-    "short_sha": "d2770aae",
+    "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+    "short_sha": "b0c2ac6e",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T12:27:50-03:00",
-    "message": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102"
+    "date": "2026-11-02T13:03:15-03:00",
+    "message": "Merge pull request #676 from JGaspar-Eng/fix/babylon-estacas-fidelidade-camera-20261102"
   },
   "commits": [
     {
-      "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
-      "short_sha": "d2770aae",
+      "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
+      "short_sha": "b0c2ac6e",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:27:50-03:00",
-      "message": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102"
+      "date": "2026-11-02T13:03:15-03:00",
+      "message": "Merge pull request #676 from JGaspar-Eng/fix/babylon-estacas-fidelidade-camera-20261102"
     },
     {
-      "sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
-      "short_sha": "6a92043c",
+      "sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
+      "short_sha": "13a3200c",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:25:51-03:00",
-      "message": "fix(3d): expor diagnóstico real da renderização no estado da cena"
+      "date": "2026-11-02T12:59:50-03:00",
+      "message": "fix(babylon): alinhar normais do prisma poligonal às faces físicas topo/base"
     },
     {
-      "sha": "145951fdf777564ea611a36670a9eed4525f72d2",
-      "short_sha": "145951fd",
+      "sha": "ab8121ca5268ba7383474905dc01b03fe07fafdd",
+      "short_sha": "ab8121ca",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:24:57-03:00",
-      "message": "test(3d): detectar triângulos inválidos e contagem real de malhas e estacas"
+      "date": "2026-11-02T12:58:28-03:00",
+      "message": "test(webgl): ajustar alvo antes de alfa e beta e validar câmera realmente inferior"
     },
     {
-      "sha": "b4b64d9e78e222b97fa5d3b7a25b1223d3646baa",
-      "short_sha": "b4b64d9e",
+      "sha": "a5536075dc5e1b5bc7f8e655f9e1ad485fcdbe96",
+      "short_sha": "a5536075",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:24:26-03:00",
-      "message": "fix(babylon): contar malhas efetivamente desenhadas e sinalizar falha parcial"
+      "date": "2026-11-02T12:58:15-03:00",
+      "message": "fix(camera): restaurar ângulos após atualizar o alvo Babylon"
     },
     {
-      "sha": "39df97e9d4ca4460072da39cf73fe058dc409b08",
-      "short_sha": "39df97e9",
+      "sha": "aedad4b5ba183e7b3e247f80dc12113d22d9799a",
+      "short_sha": "aedad4b5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:24:09-03:00",
-      "message": "fix(3d): rejeitar contornos não trianguláveis antes de declarar READY"
+      "date": "2026-11-02T12:56:46-03:00",
+      "message": "test(webgl): conferir normais físicas superior/inferior e iluminação unilateral do bloco"
     },
     {
-      "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-      "short_sha": "26105a1c",
+      "sha": "4cb268f5f3c966b93ceb114d9082ecafa12ac45f",
+      "short_sha": "4cb268f5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:55:35-03:00",
-      "message": "Merge pull request #673 from JGaspar-Eng/fix/fundacao-3d-juncoes-visuais-faces-20261102"
+      "date": "2026-11-02T12:56:16-03:00",
+      "message": "fix(babylon): manter iluminação externa consistente entre tampas poligonais e blocos retangulares"
     },
     {
-      "sha": "688a2ecb0849445247de5f201e65bb10097a7ee4",
-      "short_sha": "688a2ecb",
+      "sha": "ec6720ca552d4e12663e7c4f4ab052f9594f9623",
+      "short_sha": "ec6720ca",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:53:08-03:00",
-      "message": "test(3d): respeitar ordem intercalada topo/base dos triangulos no calculo de normais"
+      "date": "2026-11-02T12:54:53-03:00",
+      "message": "test(webgl): comprovar posição física da câmera de inspeção inferior"
     },
     {
-      "sha": "cc250e0cd5fb872f8ad95d6e26cad8dc351fa6e0",
-      "short_sha": "cc250e0c",
+      "sha": "6a5372a5afaa79ca373d50a945399cde560bc41b",
+      "short_sha": "6a5372a5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:50:23-03:00",
-      "message": "docs(3d): especificar uniao visual nao estrutural, contorno Forecast e provas Babylon"
+      "date": "2026-11-02T12:52:41-03:00",
+      "message": "ci: testar Babylon 18 blocos e 30 estacas em Chrome real"
     },
     {
-      "sha": "b95bc32cf21de83188908df3582067010e186df1",
-      "short_sha": "b95bc32c",
+      "sha": "346aa3ae684cd781f9351a5f1f9844cf193bde91",
+      "short_sha": "346aa3ae",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:49:54-03:00",
-      "message": "test(ci): executar renderizador Babylon real com mocks P8 P11 no pipeline"
+      "date": "2026-11-02T12:52:30-03:00",
+      "message": "test(webgl): regressão visual completa 18 blocos e 30 estacas Forecast"
     },
     {
-      "sha": "3da4e11168bbdcd1a8e7e3126d94397d0e3a2045",
-      "short_sha": "3da4e111",
+      "sha": "971c368220d39a851cfeeb0aeb0c085f10130c47",
+      "short_sha": "971c3682",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:49:41-03:00",
-      "message": "test(3d): checar faces, iluminacao e contato real do renderer P8 P11 sem alterar estacas"
+      "date": "2026-11-02T12:51:18-03:00",
+      "message": "test(webgl): validar pixel contra face vazada e fotografar bloco pela face inferior"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41472107484",
-    "run_number": "1119"
+    "run_id": "41477665607",
+    "run_number": "1120"
   }
 }
