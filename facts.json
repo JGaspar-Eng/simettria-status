@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T15:29:28Z",
+  "gerado_em": "2026-11-02T15:31:33Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
     "data": "2026-11-02T15:27:50Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-    "gerado_em": "2026-11-02T13:58:01Z",
+    "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+    "gerado_em": "2026-11-02T15:28:11Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 5,
-    "idade_horas": 1.5
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -215,6 +215,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 675,
+            "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
+            "rascunho": false,
+            "head_sha": "23a3e9fc71ee4296a75e263d255383009ac093ac",
+            "ci": "pendente"
+          },
+          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -276,7 +284,7 @@
             "merge_sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
             "head_sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 673,
@@ -398,17 +406,17 @@
           "merged_at": "2026-11-02T15:27:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
           "data": "2026-11-02T12:27:50-03:00",
           "assunto": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1563,7 +1571,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 568,
+  "janela_prs": 569,
   "commits_main_analisados": 2715,
   "commits_main_truncado": false,
   "erros": [],
