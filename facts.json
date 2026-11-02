@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-01T22:12:06Z",
+  "gerado_em": "2026-11-02T01:11:16Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-    "data": "2026-11-01T17:48:04Z"
+    "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+    "data": "2026-11-02T01:09:34Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-    "gerado_em": "2026-11-01T17:49:59Z",
+    "gerado_em": "2026-11-01T22:10:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 4.4
+    "defasagem_commits_main": 8,
+    "idade_horas": 3.0
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 86,
+        "total_integrados": 87,
         "integrados_recentes": [
+          {
+            "numero": 668,
+            "titulo": "Dimensionamento preliminar lateral: molas kx/ky individuais nas estacas e oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/668",
+            "merged_at": "2026-11-02T01:09:35Z",
+            "merge_sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+            "head_sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 667,
             "titulo": "Permitir abrir bloco pelo pilar e bloquear fichas com vínculos duplicados",
@@ -276,7 +286,7 @@
             "merge_sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
             "head_sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 666,
@@ -377,38 +387,28 @@
             "head_sha": "87b7ba78feeabcfdc914d122873f2f6c69db7468",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 645,
-            "titulo": "feat(fundacao): conectar benchmark Blévot aos oito ELU do estudo axial",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/645",
-            "merged_at": "2026-10-30T02:13:38Z",
-            "merge_sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-            "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 667,
-          "titulo": "Permitir abrir bloco pelo pilar e bloquear fichas com vínculos duplicados",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/667",
-          "merge_sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-          "head_sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
-          "merged_at": "2026-11-01T17:48:04Z",
+          "numero": 668,
+          "titulo": "Dimensionamento preliminar lateral: molas kx/ky individuais nas estacas e oito ELU",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/668",
+          "merge_sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+          "head_sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
+          "merged_at": "2026-11-02T01:09:35Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-          "data": "2026-11-01T14:48:04-03:00",
-          "assunto": "Merge pull request #667 from JGaspar-Eng/fix/fundacoes-pilar-abrir-e-conflitos-20261101",
-          "ci": "passou"
+          "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+          "data": "2026-11-01T22:09:34-03:00",
+          "assunto": "Merge pull request #668 from JGaspar-Eng/feat/fundacoes-molas-laterais-individuais-20261101",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -886,7 +886,7 @@
             "merged_at": "2026-10-27T12:27:24Z",
             "merge_sha": "7c2e043a7e91dc1ad82bee382a494c71e8c9d44c",
             "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 561,
-  "commits_main_analisados": 2650,
+  "janela_prs": 562,
+  "commits_main_analisados": 2658,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

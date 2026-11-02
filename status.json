@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-01T22:10:45Z",
+  "generated_at": "2026-11-02T01:09:53Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-    "short_sha": "467a13bd",
+    "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+    "short_sha": "bca21471",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T14:48:04-03:00",
-    "message": "Merge pull request #667 from JGaspar-Eng/fix/fundacoes-pilar-abrir-e-conflitos-20261101"
+    "date": "2026-11-01T22:09:34-03:00",
+    "message": "Merge pull request #668 from JGaspar-Eng/feat/fundacoes-molas-laterais-individuais-20261101"
   },
   "commits": [
+    {
+      "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+      "short_sha": "bca21471",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:09:34-03:00",
+      "message": "Merge pull request #668 from JGaspar-Eng/feat/fundacoes-molas-laterais-individuais-20261101"
+    },
+    {
+      "sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
+      "short_sha": "948d9520",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:07:33-03:00",
+      "message": "test(ci): restaurar DOM global após teste de ficha das estacas"
+    },
+    {
+      "sha": "e38662cff8afb555371247eb292949ffbe52a70a",
+      "short_sha": "e38662cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:05:28-03:00",
+      "message": "docs(fund): contrato de rigidez lateral individual, equacoes e limites"
+    },
+    {
+      "sha": "adcea1d0fc0a34da07f8507d518655b47605e07d",
+      "short_sha": "adcea1d0",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:04:50-03:00",
+      "message": "test(ci): integrar suite molas individuais ao pipeline oficial"
+    },
+    {
+      "sha": "ed7e6b12f86ff80941f53b84ed2d38aaa66070e8",
+      "short_sha": "ed7e6b12",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:04:40-03:00",
+      "message": "test(fund): benchmarks independentes de molas lateral kx ky, gates e DOM"
+    },
+    {
+      "sha": "5ffa318bd62969474481b38678c18c82662d357e",
+      "short_sha": "5ffa318b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:03:41-03:00",
+      "message": "feat(ui): mostrar rigidezes laterais declaradas e oito casos com alerta nao executivo"
+    },
+    {
+      "sha": "1df7e0f3d1ac98739d7d528a98fbfc53bb0e08c6",
+      "short_sha": "1df7e0f3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:03:09-03:00",
+      "message": "feat(fund): ligar estudo lateral de rigidez individual ao inventario sem alterar aprovacao"
+    },
+    {
+      "sha": "16518be33a5656c3c88af85b0810c8e461600bac",
+      "short_sha": "16518be3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:02:34-03:00",
+      "message": "feat(fund): resolver rigidez lateral anisotropica individual por estaca com oito ELU e gate"
+    },
     {
       "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
       "short_sha": "467a13bd",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-01T14:45:46-03:00",
       "message": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101"
-    },
-    {
-      "sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
-      "short_sha": "5d45c8f7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:45:31-03:00",
-      "message": "test(fund): navegacao unica e conflito duplo bloqueados em DOM"
-    },
-    {
-      "sha": "f4d9a366bcde8e7feb7ff6308db8b48b7c538733",
-      "short_sha": "f4d9a366",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:45:10-03:00",
-      "message": "refactor(fund): isolar gate de navegação por ID para regressão"
-    },
-    {
-      "sha": "e9be9d7359d06fd8bf3eb895119fd6a4d33d4642",
-      "short_sha": "e9be9d73",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:44:43-03:00",
-      "message": "fix(fund): bloquear formulário no apoio com múltiplos blocos por ID"
-    },
-    {
-      "sha": "7c0ec9fcfb71d85c9adb77c6f885ba9b946b5e36",
-      "short_sha": "7c0ec9fc",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:44:29-03:00",
-      "message": "fix(ui): permitir abrir bloco existente a partir do pilar e sinalizar conflitos"
-    },
-    {
-      "sha": "be3464c4e5f79788aa4ff213faa5eca7fe376a64",
-      "short_sha": "be3464c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:42:37-03:00",
-      "message": "docs(fund): escopo e limites do equilibrio lateral de estacas"
-    },
-    {
-      "sha": "843361846330d6c107e1960748e7052b447054dd",
-      "short_sha": "84336184",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:42:13-03:00",
-      "message": "test(ci): incluir regressao lateral das estacas na suite oficial"
-    },
-    {
-      "sha": "e1c35c47d3c55086abef9247ce15ddd0a018effa",
-      "short_sha": "e1c35c47",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:41:58-03:00",
-      "message": "test(fund): equilibrio lateral por oito ELU, excentricidade e recusas de aprovacao"
-    },
-    {
-      "sha": "989bc41cdf81ec24a2e9ec3eb99021879f0b8721",
-      "short_sha": "989bc41c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:41:11-03:00",
-      "message": "feat(ui): apresentar partilha lateral hipotetica sem promover capacidade"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41355773817",
-    "run_number": "1104"
+    "run_id": "41370974267",
+    "run_number": "1105"
   }
 }
