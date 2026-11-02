@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T01:11:16Z",
+  "gerado_em": "2026-11-02T01:12:43Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
     "data": "2026-11-02T01:09:34Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-    "gerado_em": "2026-11-01T22:10:45Z",
+    "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
+    "gerado_em": "2026-11-02T01:09:53Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 8,
-    "idade_horas": 3.0
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -215,6 +215,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 669,
+            "titulo": "Invalidar rigidezes laterais de estacas após mudança geométrica",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/669",
+            "rascunho": false,
+            "head_sha": "d3290ae912ad72a759b7708165b64f657d749f52",
+            "ci": "pendente"
+          },
+          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -276,7 +284,7 @@
             "merge_sha": "bca214716ce52b78ba9236afba51441b0088d14e",
             "head_sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 667,
@@ -398,17 +406,17 @@
           "merged_at": "2026-11-02T01:09:35Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
           "data": "2026-11-01T22:09:34-03:00",
           "assunto": "Merge pull request #668 from JGaspar-Eng/feat/fundacoes-molas-laterais-individuais-20261101",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1563,7 +1571,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 562,
+  "janela_prs": 563,
   "commits_main_analisados": 2658,
   "commits_main_truncado": false,
   "erros": [],
