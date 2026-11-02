@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-11-02T01:11:40Z",
+  "generated_at": "2026-11-02T01:14:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
-    "short_sha": "bca21471",
+    "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
+    "short_sha": "ec8d0fb4",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T22:09:34-03:00",
-    "message": "Merge pull request #668 from JGaspar-Eng/feat/fundacoes-molas-laterais-individuais-20261101"
+    "date": "2026-11-01T22:13:52-03:00",
+    "message": "Merge pull request #669 from JGaspar-Eng/fix/fundacoes-rigidez-geometry-stale-20261101"
   },
   "commits": [
+    {
+      "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
+      "short_sha": "ec8d0fb4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:13:52-03:00",
+      "message": "Merge pull request #669 from JGaspar-Eng/fix/fundacoes-rigidez-geometry-stale-20261101"
+    },
+    {
+      "sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
+      "short_sha": "70a40b36",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:12:07-03:00",
+      "message": "test(fund): conservar armadura geométrica de cenário degenerado após gate de stale"
+    },
+    {
+      "sha": "d3290ae912ad72a759b7708165b64f657d749f52",
+      "short_sha": "d3290ae9",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:11:39-03:00",
+      "message": "docs(fund): referencia geometrica obrigatoria para rigidez lateral"
+    },
+    {
+      "sha": "ae2fe1c20b4a1d2c4a37878ab5238f497f3a2de6",
+      "short_sha": "ae2fe1c2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:11:13-03:00",
+      "message": "test(fund): recusar molas de geometria antiga sem alterar modelo"
+    },
+    {
+      "sha": "fce0ec4023dc940c9b42479c8e045c9e5a766ad4",
+      "short_sha": "fce0ec40",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:10:53-03:00",
+      "message": "fix(fund): propagar dimensoes fisicas para validacao de rigidez"
+    },
+    {
+      "sha": "30f33558451d45e2144cfcd65d23520ea0b9cd40",
+      "short_sha": "30f33558",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-01T22:10:45-03:00",
+      "message": "fix(fund): amarrar rigidez lateral ao snapshot geometrico de cada estaca"
+    },
     {
       "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
       "short_sha": "bca21471",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-01T22:04:50-03:00",
       "message": "test(ci): integrar suite molas individuais ao pipeline oficial"
-    },
-    {
-      "sha": "ed7e6b12f86ff80941f53b84ed2d38aaa66070e8",
-      "short_sha": "ed7e6b12",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:04:40-03:00",
-      "message": "test(fund): benchmarks independentes de molas lateral kx ky, gates e DOM"
-    },
-    {
-      "sha": "5ffa318bd62969474481b38678c18c82662d357e",
-      "short_sha": "5ffa318b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:03:41-03:00",
-      "message": "feat(ui): mostrar rigidezes laterais declaradas e oito casos com alerta nao executivo"
-    },
-    {
-      "sha": "1df7e0f3d1ac98739d7d528a98fbfc53bb0e08c6",
-      "short_sha": "1df7e0f3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:03:09-03:00",
-      "message": "feat(fund): ligar estudo lateral de rigidez individual ao inventario sem alterar aprovacao"
-    },
-    {
-      "sha": "16518be33a5656c3c88af85b0810c8e461600bac",
-      "short_sha": "16518be3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:02:34-03:00",
-      "message": "feat(fund): resolver rigidez lateral anisotropica individual por estaca com oito ELU e gate"
-    },
-    {
-      "sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-      "short_sha": "467a13bd",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:48:04-03:00",
-      "message": "Merge pull request #667 from JGaspar-Eng/fix/fundacoes-pilar-abrir-e-conflitos-20261101"
-    },
-    {
-      "sha": "0ed70bd909ec126eea2e5da8c2e00e9906e4e6a7",
-      "short_sha": "0ed70bd9",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-01T14:45:46-03:00",
-      "message": "Merge pull request #666 from JGaspar-Eng/feat/fundacoes-estacas-lateral-equilibrio-20261101"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41371129524",
-    "run_number": "1106"
+    "run_id": "41371376815",
+    "run_number": "1107"
   }
 }
