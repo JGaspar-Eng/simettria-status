@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T01:17:09Z",
+  "gerado_em": "2026-11-02T01:51:54Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-    "data": "2026-11-02T01:13:52Z"
+    "sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
+    "data": "2026-11-02T01:50:33Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-    "gerado_em": "2026-11-02T01:14:10Z",
+    "gerado_em": "2026-11-02T01:15:56Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 21,
+    "idade_horas": 0.6
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 88,
+        "total_integrados": 89,
         "integrados_recentes": [
+          {
+            "numero": 670,
+            "titulo": "Alinhar fck30 e fundações ao Forecast e exportar memorial estrutural por elemento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/670",
+            "merged_at": "2026-11-02T01:50:33Z",
+            "merge_sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
+            "head_sha": "9ae657f9c17e4df07e0547d82aaa7eb22c1fbd85",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 669,
             "titulo": "Invalidar rigidezes laterais de estacas após mudança geométrica",
@@ -276,7 +286,7 @@
             "merge_sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
             "head_sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 668,
@@ -377,38 +387,28 @@
             "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 647,
-            "titulo": "feat(fundacoes): auditar reações biaxiais N/Mx/My nas 8 ELU por estaca",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/647",
-            "merged_at": "2026-10-30T11:26:50Z",
-            "merge_sha": "31c37a8c02d7c40f60ea27a2f1f68ad205804808",
-            "head_sha": "98c1287c0cd656c61d28470a95b56a0abeeccb33",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 669,
-          "titulo": "Invalidar rigidezes laterais de estacas após mudança geométrica",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/669",
-          "merge_sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-          "head_sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
-          "merged_at": "2026-11-02T01:13:53Z",
+          "numero": 670,
+          "titulo": "Alinhar fck30 e fundações ao Forecast e exportar memorial estrutural por elemento",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/670",
+          "merge_sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
+          "head_sha": "9ae657f9c17e4df07e0547d82aaa7eb22c1fbd85",
+          "merged_at": "2026-11-02T01:50:33Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-          "data": "2026-11-01T22:13:52-03:00",
-          "assunto": "Merge pull request #669 from JGaspar-Eng/fix/fundacoes-rigidez-geometry-stale-20261101",
+          "sha": "998522fc99e517bd1911a1235aefb1fcf6eeadfb",
+          "data": "2026-11-01T22:47:06-03:00",
+          "assunto": "feat(fund-ui): preservar contorno poligonal da fundacao no indice do Centro",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -674,14 +674,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "af47ef48c18c463da1d19ca1441f53058897d429",
-          "data": "2026-10-30T09:33:23-03:00",
-          "assunto": "test(fundacao): bloco-pilar 18/62, 8 ELU, SPT anterior e bloqueios resistentes",
+          "sha": "a611106743f60c20ef2b6c39ef0c78209b253481",
+          "data": "2026-11-01T22:39:38-03:00",
+          "assunto": "test(forecast): 18 blocos, grupos 1 a 5, fck30, identidade, SPT e gates",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -803,14 +803,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "0622653cde82e65c5392f9c4c878edce07171f55",
-          "data": "2026-10-29T14:20:15-03:00",
-          "assunto": "Merge pull request #641 from JGaspar-Eng/feat/orq-resistencia-3d-sprint014-20261028",
-          "ci": "passou"
+          "sha": "431a076ec91b7b098a765e1e506322d9775d61a6",
+          "data": "2026-11-01T22:38:38-03:00",
+          "assunto": "feat(forecast): vincular SPT somente com perfil completo coincidente, sem estimar resistencia",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1162,14 +1162,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "38b32baf48046cba6a89201a51748007449041d6",
-          "data": "2026-11-01T12:58:52-03:00",
-          "assunto": "feat(orq): calcular armaduras de pilares por ELU e versionar entrega local",
-          "ci": "passou"
+          "sha": "0ab66907a3d2f162aa517b4263efe4418e2e3e82",
+          "data": "2026-11-01T22:42:22-03:00",
+          "assunto": "feat(ui): baixar memorial detalhado do Centro ORQ em HTML A4 imprimivel como PDF",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 563,
-  "commits_main_analisados": 2664,
+  "janela_prs": 564,
+  "commits_main_analisados": 2685,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

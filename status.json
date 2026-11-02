@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-02T01:15:56Z",
+  "generated_at": "2026-11-02T01:50:53Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-    "short_sha": "ec8d0fb4",
+    "sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
+    "short_sha": "974b0558",
     "author": "Joanez Gaspar",
-    "date": "2026-11-01T22:13:52-03:00",
-    "message": "Merge pull request #669 from JGaspar-Eng/fix/fundacoes-rigidez-geometry-stale-20261101"
+    "date": "2026-11-01T22:50:33-03:00",
+    "message": "Merge pull request #670 from JGaspar-Eng/feat/forecast-paridade-memorial-rastreavel-20261101"
   },
   "commits": [
     {
-      "sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-      "short_sha": "ec8d0fb4",
+      "sha": "974b0558d5748131f8a99a93d0e3323bd58c442c",
+      "short_sha": "974b0558",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:13:52-03:00",
-      "message": "Merge pull request #669 from JGaspar-Eng/fix/fundacoes-rigidez-geometry-stale-20261101"
+      "date": "2026-11-01T22:50:33-03:00",
+      "message": "Merge pull request #670 from JGaspar-Eng/feat/forecast-paridade-memorial-rastreavel-20261101"
     },
     {
-      "sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
-      "short_sha": "70a40b36",
+      "sha": "9ae657f9c17e4df07e0547d82aaa7eb22c1fbd85",
+      "short_sha": "9ae657f9",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:12:07-03:00",
-      "message": "test(fund): conservar armadura geométrica de cenário degenerado após gate de stale"
+      "date": "2026-11-01T22:49:09-03:00",
+      "message": "test(memorial): gerar desenho poligonal de bloco em relatorio A4"
     },
     {
-      "sha": "d3290ae912ad72a759b7708165b64f657d749f52",
-      "short_sha": "d3290ae9",
+      "sha": "11ba3f7aa8021c639f7eefeed6bc52600da3af68",
+      "short_sha": "11ba3f7a",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:11:39-03:00",
-      "message": "docs(fund): referencia geometrica obrigatoria para rigidez lateral"
+      "date": "2026-11-01T22:48:55-03:00",
+      "message": "test(ci): validar contornos poligonais Forecast no fluxo oficial"
     },
     {
-      "sha": "ae2fe1c20b4a1d2c4a37878ab5238f497f3a2de6",
-      "short_sha": "ae2fe1c2",
+      "sha": "7afb34fbe2cbf65b714aae101305fdc5b64e10a3",
+      "short_sha": "7afb34fb",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:11:13-03:00",
-      "message": "test(fund): recusar molas de geometria antiga sem alterar modelo"
+      "date": "2026-11-01T22:48:47-03:00",
+      "message": "test(fund): geometria hexagonal Forecast, folga 15cm, auditoria sem falso negativo"
     },
     {
-      "sha": "fce0ec4023dc940c9b42479c8e045c9e5a766ad4",
-      "short_sha": "fce0ec40",
+      "sha": "600bcfd0e7262aa5e4ae0f04e95f521930d3b6ad",
+      "short_sha": "600bcfd0",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:10:53-03:00",
-      "message": "fix(fund): propagar dimensoes fisicas para validacao de rigidez"
+      "date": "2026-11-01T22:48:25-03:00",
+      "message": "test(forecast): importar contorno verdadeiro dos blocos triangulares"
     },
     {
-      "sha": "30f33558451d45e2144cfcd65d23520ea0b9cd40",
-      "short_sha": "30f33558",
+      "sha": "2e52493e29c462197711259ba4e0a0572eb37d3a",
+      "short_sha": "2e52493e",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:10:45-03:00",
-      "message": "fix(fund): amarrar rigidez lateral ao snapshot geometrico de cada estaca"
+      "date": "2026-11-01T22:48:05-03:00",
+      "message": "fix(memorial): imprimir planta de blocos poligonais com vertices reais"
     },
     {
-      "sha": "bca214716ce52b78ba9236afba51441b0088d14e",
-      "short_sha": "bca21471",
+      "sha": "1e317265b2c342b356e38f964390bcda0be9bdcb",
+      "short_sha": "1e317265",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:09:34-03:00",
-      "message": "Merge pull request #668 from JGaspar-Eng/feat/fundacoes-molas-laterais-individuais-20261101"
+      "date": "2026-11-01T22:47:32-03:00",
+      "message": "feat(ui): desenhar perimetro poligonal real dos blocos triangulares Forecast"
     },
     {
-      "sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
-      "short_sha": "948d9520",
+      "sha": "998522fc99e517bd1911a1235aefb1fcf6eeadfb",
+      "short_sha": "998522fc",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:07:33-03:00",
-      "message": "test(ci): restaurar DOM global após teste de ficha das estacas"
+      "date": "2026-11-01T22:47:06-03:00",
+      "message": "feat(fund-ui): preservar contorno poligonal da fundacao no indice do Centro"
     },
     {
-      "sha": "e38662cff8afb555371247eb292949ffbe52a70a",
-      "short_sha": "e38662cf",
+      "sha": "a189b94a6e71b256a3f09a42cb1c1f99b7c7faf7",
+      "short_sha": "a189b94a",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:05:28-03:00",
-      "message": "docs(fund): contrato de rigidez lateral individual, equacoes e limites"
+      "date": "2026-11-01T22:46:56-03:00",
+      "message": "fix(fund): validar poligonos Forecast pelo contorno real e folga das estacas"
     },
     {
-      "sha": "adcea1d0fc0a34da07f8507d518655b47605e07d",
-      "short_sha": "adcea1d0",
+      "sha": "d4d7023af49d0b1267f2db75d56e1785586d3a3b",
+      "short_sha": "d4d7023a",
       "author": "Joanez Gaspar",
-      "date": "2026-11-01T22:04:50-03:00",
-      "message": "test(ci): integrar suite molas individuais ao pipeline oficial"
+      "date": "2026-11-01T22:46:40-03:00",
+      "message": "feat(fund): verificar estacas de blocos poligonais sem fingir geometria retangular"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41371541097",
-    "run_number": "1108"
+    "run_id": "41374567724",
+    "run_number": "1109"
   }
 }
