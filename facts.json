@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T13:59:13Z",
+  "gerado_em": "2026-11-02T15:29:28Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-    "data": "2026-11-02T13:55:35Z"
+    "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+    "data": "2026-11-02T15:27:50Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-    "gerado_em": "2026-11-02T13:56:09Z",
+    "gerado_em": "2026-11-02T13:58:01Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 5,
+    "idade_horas": 1.5
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 91,
+        "total_integrados": 92,
         "integrados_recentes": [
+          {
+            "numero": 674,
+            "titulo": "Corrigir contagem real de blocos e estacas renderizados no Babylon 3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/674",
+            "merged_at": "2026-11-02T15:27:50Z",
+            "merge_sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+            "head_sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 673,
             "titulo": "Corrigir costura visual das estacas e leitura inferior dos blocos no Babylon 3D",
@@ -276,7 +286,7 @@
             "merge_sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
             "head_sha": "688a2ecb0849445247de5f201e65bb10097a7ee4",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 671,
@@ -377,38 +387,28 @@
             "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 654,
-            "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
-            "merged_at": "2026-10-30T17:11:33Z",
-            "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-            "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 673,
-          "titulo": "Corrigir costura visual das estacas e leitura inferior dos blocos no Babylon 3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/673",
-          "merge_sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-          "head_sha": "688a2ecb0849445247de5f201e65bb10097a7ee4",
-          "merged_at": "2026-11-02T13:55:36Z",
+          "numero": 674,
+          "titulo": "Corrigir contagem real de blocos e estacas renderizados no Babylon 3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/674",
+          "merge_sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+          "head_sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
+          "merged_at": "2026-11-02T15:27:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-          "data": "2026-11-02T10:55:35-03:00",
-          "assunto": "Merge pull request #673 from JGaspar-Eng/fix/fundacao-3d-juncoes-visuais-faces-20261102",
-          "ci": "passou"
+          "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+          "data": "2026-11-02T12:27:50-03:00",
+          "assunto": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 567,
-  "commits_main_analisados": 2710,
+  "janela_prs": 568,
+  "commits_main_analisados": 2715,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

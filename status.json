@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-11-02T13:58:01Z",
+  "generated_at": "2026-11-02T15:28:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-    "short_sha": "26105a1c",
+    "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+    "short_sha": "d2770aae",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T10:55:35-03:00",
-    "message": "Merge pull request #673 from JGaspar-Eng/fix/fundacao-3d-juncoes-visuais-faces-20261102"
+    "date": "2026-11-02T12:27:50-03:00",
+    "message": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102"
   },
   "commits": [
+    {
+      "sha": "d2770aae8204b9fab73a2fb24c113df7ae38d989",
+      "short_sha": "d2770aae",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T12:27:50-03:00",
+      "message": "Merge pull request #674 from JGaspar-Eng/fix/fundacao-3d-contagem-real-preflight-20261102"
+    },
+    {
+      "sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
+      "short_sha": "6a92043c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T12:25:51-03:00",
+      "message": "fix(3d): expor diagnóstico real da renderização no estado da cena"
+    },
+    {
+      "sha": "145951fdf777564ea611a36670a9eed4525f72d2",
+      "short_sha": "145951fd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T12:24:57-03:00",
+      "message": "test(3d): detectar triângulos inválidos e contagem real de malhas e estacas"
+    },
+    {
+      "sha": "b4b64d9e78e222b97fa5d3b7a25b1223d3646baa",
+      "short_sha": "b4b64d9e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T12:24:26-03:00",
+      "message": "fix(babylon): contar malhas efetivamente desenhadas e sinalizar falha parcial"
+    },
+    {
+      "sha": "39df97e9d4ca4460072da39cf73fe058dc409b08",
+      "short_sha": "39df97e9",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T12:24:09-03:00",
+      "message": "fix(3d): rejeitar contornos não trianguláveis antes de declarar READY"
+    },
     {
       "sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
       "short_sha": "26105a1c",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T10:49:41-03:00",
       "message": "test(3d): checar faces, iluminacao e contato real do renderer P8 P11 sem alterar estacas"
-    },
-    {
-      "sha": "9d660f9722b5bc88c08af5bb0bbf896a665ad622",
-      "short_sha": "9d660f97",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:48:45-03:00",
-      "message": "fix(3d): tornar base dos blocos visível e unir visualmente cabeças das estacas com cotas intactas"
-    },
-    {
-      "sha": "1d10ff7b278c63e233a399a708b544d95a79dcb8",
-      "short_sha": "1d10ff7b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:48:21-03:00",
-      "message": "fix(3d): definir geometria visual da costura estaca/bloco sem alterar comprimento"
-    },
-    {
-      "sha": "612434e36146c4db85229e344a94bcd315e5d5af",
-      "short_sha": "612434e3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:32:51-03:00",
-      "message": "Merge pull request #672 from JGaspar-Eng/fix/forecast-p8-p11-recuperacao-json-legado-20261102"
-    },
-    {
-      "sha": "27db67ac44dab1db4ac0817625c360f176570607",
-      "short_sha": "27db67ac",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:30:41-03:00",
-      "message": "test(ci): executar recuperacao de snapshots legados P8 P11"
-    },
-    {
-      "sha": "d22d8a27e873c248dd8a8b3be8331f431701c74b",
-      "short_sha": "d22d8a27",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T10:30:30-03:00",
-      "message": "test(storage): recuperar somente P8 P11 de snapshots antigos sem perder VC116"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41457484013",
-    "run_number": "1117"
+    "run_id": "41471835147",
+    "run_number": "1118"
   }
 }
