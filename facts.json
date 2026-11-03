@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T12:12:35Z",
+  "gerado_em": "2026-11-03T14:42:45Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-    "data": "2026-11-03T12:08:24Z"
+    "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+    "data": "2026-11-03T14:40:53Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-    "gerado_em": "2026-11-03T12:08:44Z",
+    "gerado_em": "2026-11-03T12:11:10Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 4,
+    "idade_horas": 2.5
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 97,
+        "total_integrados": 98,
         "integrados_recentes": [
+          {
+            "numero": 680,
+            "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
+            "merged_at": "2026-11-03T14:40:54Z",
+            "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+            "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 679,
             "titulo": "Auditar oito combinações ELU de blocos com uma estaca sem inventar resistência a momento",
@@ -377,38 +387,28 @@
             "head_sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 667,
-            "titulo": "Permitir abrir bloco pelo pilar e bloquear fichas com vínculos duplicados",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/667",
-            "merged_at": "2026-11-01T17:48:04Z",
-            "merge_sha": "467a13bde813b4d6e9d1666fe55bd7a3d809813a",
-            "head_sha": "5d45c8f7ed03ec2f76a57f79be11068cbb86fdc1",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 679,
-          "titulo": "Auditar oito combinações ELU de blocos com uma estaca sem inventar resistência a momento",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/679",
-          "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-          "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
-          "merged_at": "2026-11-03T12:08:24Z",
+          "numero": 680,
+          "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
+          "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+          "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
+          "merged_at": "2026-11-03T14:40:54Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-          "data": "2026-11-03T09:08:24-03:00",
-          "assunto": "Merge pull request #679 from JGaspar-Eng/feat/fund-reacoes-oito-elu-estaca-unica-20261103",
+          "sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
+          "data": "2026-11-03T11:37:39-03:00",
+          "assunto": "ci: incorporar regressão 18 blocos/30 estacas/144 ELU Forecast à suíte oficial",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1037,8 +1037,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 115,
+        "total_integrados": 116,
         "integrados_recentes": [
+          {
+            "numero": 680,
+            "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
+            "merged_at": "2026-11-03T14:40:54Z",
+            "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+            "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 656,
             "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
@@ -1047,7 +1057,7 @@
             "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
             "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 655,
@@ -1148,38 +1158,28 @@
             "head_sha": "3e0192bed19393042285af43546444e700df8593",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 640,
-            "titulo": "feat(ORQ): rastrear seis esforços espaciais concomitantes nos oito ELU",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/640",
-            "merged_at": "2026-10-29T01:19:05Z",
-            "merge_sha": "5fbb776b90bea8be100b297978a53f8b3fb966c3",
-            "head_sha": "2dd333b7325493479d457eb4edd30b7be5a8796a",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 656,
-          "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
-          "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-          "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-          "merged_at": "2026-10-31T03:31:39Z",
+          "numero": 680,
+          "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
+          "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+          "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
+          "merged_at": "2026-11-03T14:40:54Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "0ab66907a3d2f162aa517b4263efe4418e2e3e82",
-          "data": "2026-11-01T22:42:22-03:00",
-          "assunto": "feat(ui): baixar memorial detalhado do Centro ORQ em HTML A4 imprimivel como PDF",
-          "ci": "sem_evidencia"
+          "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+          "data": "2026-11-03T11:40:53-03:00",
+          "assunto": "Merge pull request #680 from JGaspar-Eng/fix/forecast-18-30-orq-vinculos-pilares-20261103",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1573,8 +1573,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 573,
-  "commits_main_analisados": 2764,
+  "janela_prs": 574,
+  "commits_main_analisados": 2768,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

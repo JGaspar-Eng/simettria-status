@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-11-03T12:11:10Z",
+  "generated_at": "2026-11-03T14:41:15Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-    "short_sha": "2eabd7fe",
+    "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+    "short_sha": "8b706664",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T09:08:24-03:00",
-    "message": "Merge pull request #679 from JGaspar-Eng/feat/fund-reacoes-oito-elu-estaca-unica-20261103"
+    "date": "2026-11-03T11:40:53-03:00",
+    "message": "Merge pull request #680 from JGaspar-Eng/fix/forecast-18-30-orq-vinculos-pilares-20261103"
   },
   "commits": [
+    {
+      "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
+      "short_sha": "8b706664",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T11:40:53-03:00",
+      "message": "Merge pull request #680 from JGaspar-Eng/fix/forecast-18-30-orq-vinculos-pilares-20261103"
+    },
+    {
+      "sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
+      "short_sha": "1ad95ecc",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T11:37:39-03:00",
+      "message": "ci: incorporar regressão 18 blocos/30 estacas/144 ELU Forecast à suíte oficial"
+    },
+    {
+      "sha": "0b82f7d5d7d97fb7886a0ab468fc4617eac01c94",
+      "short_sha": "0b82f7d5",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T11:37:24-03:00",
+      "message": "test(fundacoes): 18 blocos Forecast, 30 estacas, 144 ELU, pixel/metro e vínculos explícitos"
+    },
+    {
+      "sha": "6e4321ecb987c66494fe0304c910bf9043d3896a",
+      "short_sha": "6e4321ec",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T11:36:25-03:00",
+      "message": "fix(fundacoes): conciliar coordenadas dos pilares Forecast e vínculo de estacas por apoio"
+    },
     {
       "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
       "short_sha": "2eabd7fe",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T23:42:33-03:00",
       "message": "test(3d): corrigir nome de variável do contrato de contagens"
-    },
-    {
-      "sha": "1efc938e7c7a83b9a9cf88d772126d286cafa176",
-      "short_sha": "1efc938e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:41:30-03:00",
-      "message": "test(camera): impedir enquadramento por estacas obsoletas quando fundações são inválidas"
-    },
-    {
-      "sha": "0831a9b83a405ae09de94d1549c34bf9fa8c9be6",
-      "short_sha": "0831a9b8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:41:13-03:00",
-      "message": "fix(camera): não enquadrar 3D por prévia antiga quando cadastro de fundações falhou"
-    },
-    {
-      "sha": "19fbf5ad715aef17abb2323b72cb950ec3bd6e37",
-      "short_sha": "19fbf5ad",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:40:23-03:00",
-      "message": "ci: executar teste real da sinalização Babylon quando fundações estão inconsistentes"
-    },
-    {
-      "sha": "5ac31639a0bbf1b78a905517127a47238c3451c8",
-      "short_sha": "5ac31639",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:40:15-03:00",
-      "message": "test(ci): adicionar regressão de diagnóstico de fundação inválida à suíte oficial"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41633542250",
-    "run_number": "1132"
+    "run_id": "41656094362",
+    "run_number": "1133"
   }
 }
