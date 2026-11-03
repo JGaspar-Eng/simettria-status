@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-11-03T20:36:49Z",
+  "generated_at": "2026-11-03T21:36:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c83aef56a0fc9be2a2e93f37b66af547d2b7dfdc",
-    "short_sha": "c83aef56",
+    "sha": "3331b193e55f27ebdf1b0053ac673d26d59db06a",
+    "short_sha": "3331b193",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T17:33:01-03:00",
-    "message": "Merge pull request #688 from JGaspar-Eng/fix/importacao-sem-descarte-silencioso-20261103"
+    "date": "2026-11-03T18:35:41-03:00",
+    "message": "Merge pull request #689 from JGaspar-Eng/fix/p8-p11-poligonos-importacao-geometria-20261103"
   },
   "commits": [
+    {
+      "sha": "3331b193e55f27ebdf1b0053ac673d26d59db06a",
+      "short_sha": "3331b193",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T18:35:41-03:00",
+      "message": "Merge pull request #689 from JGaspar-Eng/fix/p8-p11-poligonos-importacao-geometria-20261103"
+    },
+    {
+      "sha": "812631822f97c39ddaa2ecd66c733083f0a86717",
+      "short_sha": "81263182",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T18:31:24-03:00",
+      "message": "ci: exigir importação Forecast legada e polígono real BE8/BE11 no Chromium 2D/3D"
+    },
+    {
+      "sha": "24ec18e26d4e8d4e50d4160faf902229421cb799",
+      "short_sha": "24ec18e2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T18:31:13-03:00",
+      "message": "test: ambos blocos retangulares legados falham, dois polígonos recuperados validam"
+    },
+    {
+      "sha": "ab4791d1d951a61c6fcf10e23d7a5e23b8d70cc5",
+      "short_sha": "ab4791d1",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T18:30:54-03:00",
+      "message": "test(browser): importar JSON parcialmente legado e validar blocos P8/P11 poligonais reais em 2D e 3D"
+    },
+    {
+      "sha": "8c83703d489bde61a8f2793405da177dc06ce9a6",
+      "short_sha": "8c83703d",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T18:29:28-03:00",
+      "message": "test(forecast): reproduzir 16/18 com caixa em P8 e restaurar 18/18 com contorno poligonal"
+    },
+    {
+      "sha": "b196e94b70a40a8b964915b51534c25558a6e874",
+      "short_sha": "b196e94b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T18:29:06-03:00",
+      "message": "fix(forecast): recuperar contornos P8/P11 mesmo com metadata parcial sem substituir geometrias divergentes"
+    },
     {
       "sha": "c83aef56a0fc9be2a2e93f37b66af547d2b7dfdc",
       "short_sha": "c83aef56",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-03T17:27:13-03:00",
       "message": "test(import): exigir modo estrito e validar rollback de cinco coleções na suite oficial"
-    },
-    {
-      "sha": "1d42e95776f44fd423104265f8e98a0f0fc58646",
-      "short_sha": "1d42e957",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:26:54-03:00",
-      "message": "fix(storage): impedir que coordenadas nulas virem 0 ao importar JSON"
-    },
-    {
-      "sha": "34b8446609ea082aadb4366733c069380c30afe5",
-      "short_sha": "34b84466",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:26:29-03:00",
-      "message": "test(storage): bloquear descarte silencioso de cinco coleções com rollback e schema preservados"
-    },
-    {
-      "sha": "1712fb8b2365365c369e54c02640c6349ae394b6",
-      "short_sha": "1712fb8b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:25:56-03:00",
-      "message": "fix(import): exigir modo sem descarte estrutural na abertura de JSON"
-    },
-    {
-      "sha": "8aad57830913cb127397a080885fff2b5ad8aff8",
-      "short_sha": "8aad5783",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:25:45-03:00",
-      "message": "fix(storage): modo estrito desfaz importação que descartaria elementos estruturais"
-    },
-    {
-      "sha": "cb1129974734778e7349733e4d20edb0b59ce697",
-      "short_sha": "cb112997",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:23:35-03:00",
-      "message": "Merge pull request #687 from JGaspar-Eng/fix/importacao-projeto-backup-conflito-vc116-20261103"
-    },
-    {
-      "sha": "83b04b88471d04cc30ce3d6a7d5e846e7adc1897",
-      "short_sha": "83b04b88",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:19:12-03:00",
-      "message": "ci: validar em Chrome o bloqueio de importação obsoleta e backup anterior"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41714090625",
-    "run_number": "1152"
+    "run_id": "41723228457",
+    "run_number": "1153"
   }
 }
