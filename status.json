@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-03T01:59:47Z",
+  "generated_at": "2026-11-03T02:46:07Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-    "short_sha": "b38977ba",
+    "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
+    "short_sha": "46bad309",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T22:56:53-03:00",
-    "message": "Merge pull request #677 from JGaspar-Eng/fix/babylon-plano-base-fundacoes-20261102"
+    "date": "2026-11-02T23:45:43-03:00",
+    "message": "Merge pull request #678 from JGaspar-Eng/fix/babylon-fundacoes-invalidas-sem-previa-20261102"
   },
   "commits": [
     {
-      "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-      "short_sha": "b38977ba",
+      "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
+      "short_sha": "46bad309",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:56:53-03:00",
-      "message": "Merge pull request #677 from JGaspar-Eng/fix/babylon-plano-base-fundacoes-20261102"
+      "date": "2026-11-02T23:45:43-03:00",
+      "message": "Merge pull request #678 from JGaspar-Eng/fix/babylon-fundacoes-invalidas-sem-previa-20261102"
     },
     {
-      "sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
-      "short_sha": "90f35162",
+      "sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
+      "short_sha": "c00b2f1f",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:53:45-03:00",
-      "message": "ci: executar regressão browser da alternância do plano-base"
+      "date": "2026-11-02T23:42:46-03:00",
+      "message": "test(3d): usar objeto totais no primeiro caso de regressão"
     },
     {
-      "sha": "7759738e2153ba604dfc64a9da0b924a990072cf",
-      "short_sha": "7759738e",
+      "sha": "0ab1aa9c1118464331f96e1b09f5cb2bdc41374a",
+      "short_sha": "0ab1aa9c",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:53:37-03:00",
-      "message": "test(browser): validar botão real de ocultar/restaurar plano-base no modal Babylon"
+      "date": "2026-11-02T23:42:33-03:00",
+      "message": "test(3d): corrigir nome de variável do contrato de contagens"
     },
     {
-      "sha": "3bcdbe4e2d032c000854ff85a349c4e8715a8fe7",
-      "short_sha": "3bcdbe4e",
+      "sha": "1efc938e7c7a83b9a9cf88d772126d286cafa176",
+      "short_sha": "1efc938e",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:52:36-03:00",
-      "message": "test(webgl): garantir plano de base em cota 0 e alternância sem perda de estacas"
+      "date": "2026-11-02T23:41:30-03:00",
+      "message": "test(camera): impedir enquadramento por estacas obsoletas quando fundações são inválidas"
     },
     {
-      "sha": "53a0250f688b01bc2d23416f9bdf607bfb86bcbc",
-      "short_sha": "53a0250f",
+      "sha": "0831a9b83a405ae09de94d1549c34bf9fa8c9be6",
+      "short_sha": "0831a9b8",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:52:12-03:00",
-      "message": "feat(ui): ocultar e restaurar plano-base no Babylon sem mover estrutura"
+      "date": "2026-11-02T23:41:13-03:00",
+      "message": "fix(camera): não enquadrar 3D por prévia antiga quando cadastro de fundações falhou"
     },
     {
-      "sha": "7963298887debdf1dd92f8fad215bb7670a6052e",
-      "short_sha": "79632988",
+      "sha": "19fbf5ad715aef17abb2323b72cb950ec3bd6e37",
+      "short_sha": "19fbf5ad",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:51:27-03:00",
-      "message": "fix(babylon): posicionar grid na base estrutural e separar de terreno natural; permitir ocultar plano"
+      "date": "2026-11-02T23:40:23-03:00",
+      "message": "ci: executar teste real da sinalização Babylon quando fundações estão inconsistentes"
     },
     {
-      "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-      "short_sha": "3454e1d4",
+      "sha": "5ac31639a0bbf1b78a905517127a47238c3451c8",
+      "short_sha": "5ac31639",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:50:18-03:00",
-      "message": "Merge pull request #675 from JGaspar-Eng/test/fundacoes-forecast-18-blocos-30-estacas-render-20261102"
+      "date": "2026-11-02T23:40:15-03:00",
+      "message": "test(ci): adicionar regressão de diagnóstico de fundação inválida à suíte oficial"
     },
     {
-      "sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
-      "short_sha": "0a5dd227",
+      "sha": "33db5475bbc6c1b83449b9850fa051c79cde7068",
+      "short_sha": "33db5475",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T22:48:28-03:00",
-      "message": "test(babylon): atualizar regressão Forecast real para cilindro único e tolerância 1 mm"
+      "date": "2026-11-02T23:39:56-03:00",
+      "message": "test(browser): impedir prévia antiga com cadastro inválido e exibir alerta de erro"
     },
     {
-      "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-      "short_sha": "b0c2ac6e",
+      "sha": "7e6e67e2d8aba9a70ce25c17545bcca80ecfdee0",
+      "short_sha": "7e6e67e2",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T13:03:15-03:00",
-      "message": "Merge pull request #676 from JGaspar-Eng/fix/babylon-estacas-fidelidade-camera-20261102"
+      "date": "2026-11-02T23:39:17-03:00",
+      "message": "test(3d): rejeitar cadastro incompleto e distinguir prévia legítima de fundações cadastradas"
     },
     {
-      "sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
-      "short_sha": "13a3200c",
+      "sha": "1fb6c53d43dfc60ea40e09863b13595f79d71764",
+      "short_sha": "1fb6c53d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:59:50-03:00",
-      "message": "fix(babylon): alinhar normais do prisma poligonal às faces físicas topo/base"
+      "date": "2026-11-02T23:38:36-03:00",
+      "message": "fix(ui): exibir erros reais do cadastro 3D e impedir avisos de completude falsa"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41563243818",
-    "run_number": "1126"
+    "run_id": "41568093699",
+    "run_number": "1127"
   }
 }

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T02:00:54Z",
+  "gerado_em": "2026-11-03T02:47:13Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-    "data": "2026-11-03T01:56:53Z"
+    "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
+    "data": "2026-11-03T02:45:43Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-    "gerado_em": "2026-11-03T01:57:13Z",
+    "gerado_em": "2026-11-03T01:59:47Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 13,
+    "idade_horas": 0.8
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 95,
+        "total_integrados": 96,
         "integrados_recentes": [
+          {
+            "numero": 678,
+            "titulo": "Impedir prévia obsoleta e expor falhas de cadastro de fundações no Babylon",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/678",
+            "merged_at": "2026-11-03T02:45:43Z",
+            "merge_sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
+            "head_sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 677,
             "titulo": "Corrigir plano de referência do Babylon: base estrutural em vez da ponta das estacas",
@@ -276,7 +286,7 @@
             "merge_sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
             "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 675,
@@ -377,38 +387,28 @@
             "head_sha": "be3464c4e5f79788aa4ff213faa5eca7fe376a64",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 665,
-            "titulo": "Corrigir vínculos dos blocos e reações desatualizadas nos painéis de fundação",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/665",
-            "merged_at": "2026-11-01T17:38:24Z",
-            "merge_sha": "cfc4f13930cc05092d6f1bfb361c6cb51e147a7f",
-            "head_sha": "586690395f9b1e8e85427ac3a91a5c9757281a55",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 677,
-          "titulo": "Corrigir plano de referência do Babylon: base estrutural em vez da ponta das estacas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/677",
-          "merge_sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-          "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
-          "merged_at": "2026-11-03T01:56:54Z",
+          "numero": 678,
+          "titulo": "Impedir prévia obsoleta e expor falhas de cadastro de fundações no Babylon",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/678",
+          "merge_sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
+          "head_sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
+          "merged_at": "2026-11-03T02:45:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-          "data": "2026-11-02T22:56:53-03:00",
-          "assunto": "Merge pull request #677 from JGaspar-Eng/fix/babylon-plano-base-fundacoes-20261102",
-          "ci": "passou"
+          "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
+          "data": "2026-11-02T23:45:43-03:00",
+          "assunto": "Merge pull request #678 from JGaspar-Eng/fix/babylon-fundacoes-invalidas-sem-previa-20261102",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1563,8 +1563,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 571,
-  "commits_main_analisados": 2748,
+  "janela_prs": 572,
+  "commits_main_analisados": 2761,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
