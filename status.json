@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-03T20:27:31Z",
+  "generated_at": "2026-11-03T20:33:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "cb1129974734778e7349733e4d20edb0b59ce697",
-    "short_sha": "cb112997",
+    "sha": "c83aef56a0fc9be2a2e93f37b66af547d2b7dfdc",
+    "short_sha": "c83aef56",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T17:23:35-03:00",
-    "message": "Merge pull request #687 from JGaspar-Eng/fix/importacao-projeto-backup-conflito-vc116-20261103"
+    "date": "2026-11-03T17:33:01-03:00",
+    "message": "Merge pull request #688 from JGaspar-Eng/fix/importacao-sem-descarte-silencioso-20261103"
   },
   "commits": [
+    {
+      "sha": "c83aef56a0fc9be2a2e93f37b66af547d2b7dfdc",
+      "short_sha": "c83aef56",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:33:01-03:00",
+      "message": "Merge pull request #688 from JGaspar-Eng/fix/importacao-sem-descarte-silencioso-20261103"
+    },
+    {
+      "sha": "d187dbd6e7e43030b190e4b47c406846bff94337",
+      "short_sha": "d187dbd6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:30:18-03:00",
+      "message": "test(storage): atualizar gate estático para importação estrita do JSON"
+    },
+    {
+      "sha": "2316e558ff0b4cacb74eab9c52c285e08cf147da",
+      "short_sha": "2316e558",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:27:36-03:00",
+      "message": "test(browser): rejeitar JSON com viga inválida e recuperar o modelo anterior"
+    },
+    {
+      "sha": "f2c0be295eecc9f236464eb92c3cd7c07125df14",
+      "short_sha": "f2c0be29",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:27:13-03:00",
+      "message": "test(import): exigir modo estrito e validar rollback de cinco coleções na suite oficial"
+    },
+    {
+      "sha": "1d42e95776f44fd423104265f8e98a0f0fc58646",
+      "short_sha": "1d42e957",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:26:54-03:00",
+      "message": "fix(storage): impedir que coordenadas nulas virem 0 ao importar JSON"
+    },
+    {
+      "sha": "34b8446609ea082aadb4366733c069380c30afe5",
+      "short_sha": "34b84466",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:26:29-03:00",
+      "message": "test(storage): bloquear descarte silencioso de cinco coleções com rollback e schema preservados"
+    },
+    {
+      "sha": "1712fb8b2365365c369e54c02640c6349ae394b6",
+      "short_sha": "1712fb8b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:25:56-03:00",
+      "message": "fix(import): exigir modo sem descarte estrutural na abertura de JSON"
+    },
+    {
+      "sha": "8aad57830913cb127397a080885fff2b5ad8aff8",
+      "short_sha": "8aad5783",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:25:45-03:00",
+      "message": "fix(storage): modo estrito desfaz importação que descartaria elementos estruturais"
+    },
     {
       "sha": "cb1129974734778e7349733e4d20edb0b59ce697",
       "short_sha": "cb112997",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-03T17:19:12-03:00",
       "message": "ci: validar em Chrome o bloqueio de importação obsoleta e backup anterior"
-    },
-    {
-      "sha": "8cb2177e2a3a098043f772a426674043ce15e10f",
-      "short_sha": "8cb2177e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:19:01-03:00",
-      "message": "test(browser): recusar JSON obsoleto, salvar backup VC116 e bloquear cancelamento do seletor"
-    },
-    {
-      "sha": "2949418336b8d313d00ae9d40ff5575bc5dbcf23",
-      "short_sha": "29494183",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:17:48-03:00",
-      "message": "test(import): gate oficial exige confirmação backup e Wizard mantém-se aberto ao cancelar"
-    },
-    {
-      "sha": "1af39f022e5c4665716a9160ba71992fe13abc2b",
-      "short_sha": "1af39f02",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:17:19-03:00",
-      "message": "test(import): detectar snapshot VC116 obsoleto, perda de elementos e preservar entradas"
-    },
-    {
-      "sha": "de314fcaa2804e88b3963d0ebef7a064f1ec2b3c",
-      "short_sha": "de314fca",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:16:27-03:00",
-      "message": "fix(wizard): não fechar quando importação é cancelada por risco ou backup"
-    },
-    {
-      "sha": "c5d3e33a56dc182307eb18d81f2d0614aa172e81",
-      "short_sha": "c5d3e33a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:16:06-03:00",
-      "message": "fix(import): impedir substituição silenciosa de trabalho existente sem salvar backup"
-    },
-    {
-      "sha": "7238eb715997094866ae9764a7b2bb7e89329003",
-      "short_sha": "7238eb71",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:15:06-03:00",
-      "message": "feat(storage): detectar conflito de importação e seções de viga divergentes sem alterar estado"
-    },
-    {
-      "sha": "b3b9797da21cf204272e9e5ce3f96ef9d5ceda5d",
-      "short_sha": "b3b9797d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:01:12-03:00",
-      "message": "Merge pull request #686 from JGaspar-Eng/test/ci-browser-fluxos-criticos-20261103"
-    },
-    {
-      "sha": "0a09d4337930581ef0a201107700204dc6e9b82e",
-      "short_sha": "0a09d433",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:41:59-03:00",
-      "message": "test(browser): manter aplicação de fundações recolhida e cálculo de estaca acessível"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41712643925",
-    "run_number": "1149"
+    "run_id": "41713604680",
+    "run_number": "1150"
   }
 }
