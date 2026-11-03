@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-03T20:05:05Z",
+  "generated_at": "2026-11-03T20:24:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b3b9797da21cf204272e9e5ce3f96ef9d5ceda5d",
-    "short_sha": "b3b9797d",
+    "sha": "cb1129974734778e7349733e4d20edb0b59ce697",
+    "short_sha": "cb112997",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T17:01:12-03:00",
-    "message": "Merge pull request #686 from JGaspar-Eng/test/ci-browser-fluxos-criticos-20261103"
+    "date": "2026-11-03T17:23:35-03:00",
+    "message": "Merge pull request #687 from JGaspar-Eng/fix/importacao-projeto-backup-conflito-vc116-20261103"
   },
   "commits": [
+    {
+      "sha": "cb1129974734778e7349733e4d20edb0b59ce697",
+      "short_sha": "cb112997",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:23:35-03:00",
+      "message": "Merge pull request #687 from JGaspar-Eng/fix/importacao-projeto-backup-conflito-vc116-20261103"
+    },
+    {
+      "sha": "83b04b88471d04cc30ce3d6a7d5e846e7adc1897",
+      "short_sha": "83b04b88",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:19:12-03:00",
+      "message": "ci: validar em Chrome o bloqueio de importação obsoleta e backup anterior"
+    },
+    {
+      "sha": "8cb2177e2a3a098043f772a426674043ce15e10f",
+      "short_sha": "8cb2177e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:19:01-03:00",
+      "message": "test(browser): recusar JSON obsoleto, salvar backup VC116 e bloquear cancelamento do seletor"
+    },
+    {
+      "sha": "2949418336b8d313d00ae9d40ff5575bc5dbcf23",
+      "short_sha": "29494183",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:17:48-03:00",
+      "message": "test(import): gate oficial exige confirmação backup e Wizard mantém-se aberto ao cancelar"
+    },
+    {
+      "sha": "1af39f022e5c4665716a9160ba71992fe13abc2b",
+      "short_sha": "1af39f02",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:17:19-03:00",
+      "message": "test(import): detectar snapshot VC116 obsoleto, perda de elementos e preservar entradas"
+    },
+    {
+      "sha": "de314fcaa2804e88b3963d0ebef7a064f1ec2b3c",
+      "short_sha": "de314fca",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:16:27-03:00",
+      "message": "fix(wizard): não fechar quando importação é cancelada por risco ou backup"
+    },
+    {
+      "sha": "c5d3e33a56dc182307eb18d81f2d0614aa172e81",
+      "short_sha": "c5d3e33a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:16:06-03:00",
+      "message": "fix(import): impedir substituição silenciosa de trabalho existente sem salvar backup"
+    },
+    {
+      "sha": "7238eb715997094866ae9764a7b2bb7e89329003",
+      "short_sha": "7238eb71",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T17:15:06-03:00",
+      "message": "feat(storage): detectar conflito de importação e seções de viga divergentes sem alterar estado"
+    },
     {
       "sha": "b3b9797da21cf204272e9e5ce3f96ef9d5ceda5d",
       "short_sha": "b3b9797d",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-03T13:41:59-03:00",
       "message": "test(browser): manter aplicação de fundações recolhida e cálculo de estaca acessível"
-    },
-    {
-      "sha": "1ad282d0227e8ef5fdac80697510c559afcc7a44",
-      "short_sha": "1ad282d0",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:41:24-03:00",
-      "message": "test(browser): validar que WAITING abre pendências e nova execução exige resultado invalidado"
-    },
-    {
-      "sha": "cc948f7274b7d9d3eab25b3c1a11f81349a241f3",
-      "short_sha": "cc948f72",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:36:53-03:00",
-      "message": "test(browser): validar ações principais da infraestrutura acessíveis na barra"
-    },
-    {
-      "sha": "1d39a044c425fd396fc9e7ffae7f656043902f87",
-      "short_sha": "1d39a044",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:36:33-03:00",
-      "message": "test(browser): reconciliar seletores com DOM atual sem esconder ações úteis"
-    },
-    {
-      "sha": "eea44e152d8a6821e73d36a1e4d1a262d18e359b",
-      "short_sha": "eea44e15",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:36:30-03:00",
-      "message": "test(browser): reconciliar seletores com DOM atual sem esconder ações úteis"
-    },
-    {
-      "sha": "6588c4b501717ec245de3d286a744565c48e3cdb",
-      "short_sha": "6588c4b5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:32:15-03:00",
-      "message": "test(ci): reunir falhas de todos os fluxos browser em uma única execução"
-    },
-    {
-      "sha": "e25711aeb0f0d793a0a3619dfc3f92cd8728a968",
-      "short_sha": "e25711ae",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:31:41-03:00",
-      "message": "test(browser): selecionar diagnóstico da sacada sem locator ambíguo"
-    },
-    {
-      "sha": "ed99011feee66262be50355ea8e360c147df285c",
-      "short_sha": "ed99011f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:29:06-03:00",
-      "message": "test: registrar validador Chromium no controle de cobertura"
-    },
-    {
-      "sha": "c2df7f0828e9abd19e06ad438e6258c77e0da1ca",
-      "short_sha": "c2df7f08",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:27:28-03:00",
-      "message": "ci: ampliar teste de navegador para sete fluxos 2D, sacadas, cobertura e ORQ"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41709124793",
-    "run_number": "1146"
+    "run_id": "41712148274",
+    "run_number": "1147"
   }
 }
