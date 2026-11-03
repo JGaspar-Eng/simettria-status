@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T16:27:08Z",
+  "gerado_em": "2026-11-03T16:31:18Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
     "data": "2026-11-03T16:25:44Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "229e096995bf35bf6f6b7f7ac5a00ec77e58af95",
-    "gerado_em": "2026-11-03T15:48:05Z",
+    "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+    "gerado_em": "2026-11-03T16:26:06Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 13,
-    "idade_horas": 0.7
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -276,7 +276,7 @@
             "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
             "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 680,
@@ -398,17 +398,17 @@
           "merged_at": "2026-11-03T16:25:44Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
           "data": "2026-11-03T13:25:44-03:00",
           "assunto": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1047,7 +1047,7 @@
             "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
             "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 680,
@@ -1169,17 +1169,17 @@
           "merged_at": "2026-11-03T16:25:44Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
           "data": "2026-11-03T13:25:44-03:00",
           "assunto": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1537,6 +1537,7 @@
   ],
   "nao_classificados": {
     "abertos": [
+      686,
       576,
       561,
       553,
@@ -1573,7 +1574,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 576,
+  "janela_prs": 577,
   "commits_main_analisados": 2786,
   "commits_main_truncado": false,
   "erros": [],
