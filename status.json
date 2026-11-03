@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-03T21:39:54Z",
+  "generated_at": "2026-11-03T23:43:47Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3331b193e55f27ebdf1b0053ac673d26d59db06a",
-    "short_sha": "3331b193",
+    "sha": "244687d0167dc8457a8a70767e418655a3555946",
+    "short_sha": "244687d0",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T18:35:41-03:00",
-    "message": "Merge pull request #689 from JGaspar-Eng/fix/p8-p11-poligonos-importacao-geometria-20261103"
+    "date": "2026-11-03T20:43:26-03:00",
+    "message": "Merge pull request #690 from JGaspar-Eng/fix/be8-be11-contorno-live-2d-3d-20261103"
   },
   "commits": [
     {
-      "sha": "3331b193e55f27ebdf1b0053ac673d26d59db06a",
-      "short_sha": "3331b193",
+      "sha": "244687d0167dc8457a8a70767e418655a3555946",
+      "short_sha": "244687d0",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T18:35:41-03:00",
-      "message": "Merge pull request #689 from JGaspar-Eng/fix/p8-p11-poligonos-importacao-geometria-20261103"
+      "date": "2026-11-03T20:43:26-03:00",
+      "message": "Merge pull request #690 from JGaspar-Eng/fix/be8-be11-contorno-live-2d-3d-20261103"
     },
     {
-      "sha": "812631822f97c39ddaa2ecd66c733083f0a86717",
-      "short_sha": "81263182",
+      "sha": "ae3eeec6dbd528bf3a50308c423ce81f6b09b193",
+      "short_sha": "ae3eeec6",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T18:31:24-03:00",
-      "message": "ci: exigir importação Forecast legada e polígono real BE8/BE11 no Chromium 2D/3D"
+      "date": "2026-11-03T20:39:54-03:00",
+      "message": "test: auditor do estado vivo projeta contornos sem mudar cadastro legado"
     },
     {
-      "sha": "24ec18e26d4e8d4e50d4160faf902229421cb799",
-      "short_sha": "24ec18e2",
+      "sha": "00f2563b4d824858b12800b561016cc8a5135af5",
+      "short_sha": "00f2563b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T18:31:13-03:00",
-      "message": "test: ambos blocos retangulares legados falham, dois polígonos recuperados validam"
+      "date": "2026-11-03T20:37:18-03:00",
+      "message": "ci: bloquear regressão BE8/BE11 do estado vivo no 2D, auditor e Babylon"
     },
     {
-      "sha": "ab4791d1d951a61c6fcf10e23d7a5e23b8d70cc5",
-      "short_sha": "ab4791d1",
+      "sha": "dfe25ef39ed9a7a54d7920754b68db6e227d53b9",
+      "short_sha": "dfe25ef3",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T18:30:54-03:00",
-      "message": "test(browser): importar JSON parcialmente legado e validar blocos P8/P11 poligonais reais em 2D e 3D"
+      "date": "2026-11-03T20:36:59-03:00",
+      "message": "test(browser): degradar estado vivo BE8/BE11 após importação e exigir 2D/3D corretos sem reimportar"
     },
     {
-      "sha": "8c83703d489bde61a8f2793405da177dc06ce9a6",
-      "short_sha": "8c83703d",
+      "sha": "c2d6b494296725abcdabb78e7404b07112bc0dc4",
+      "short_sha": "c2d6b494",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T18:29:28-03:00",
-      "message": "test(forecast): reproduzir 16/18 com caixa em P8 e restaurar 18/18 com contorno poligonal"
+      "date": "2026-11-03T20:36:28-03:00",
+      "message": "test(BE8/BE11): comprovar indice real do Centro de Cálculo a partir do estado vivo"
     },
     {
-      "sha": "b196e94b70a40a8b964915b51534c25558a6e874",
-      "short_sha": "b196e94b",
+      "sha": "feb6bc3d1849fe0b391f557436d8a50091ae3d78",
+      "short_sha": "feb6bc3d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T18:29:06-03:00",
-      "message": "fix(forecast): recuperar contornos P8/P11 mesmo com metadata parcial sem substituir geometrias divergentes"
+      "date": "2026-11-03T20:35:27-03:00",
+      "message": "test(BE8/BE11): estado vivo legado 2D/3D válido sem reimportar JSON e sem mutações"
     },
     {
-      "sha": "c83aef56a0fc9be2a2e93f37b66af547d2b7dfdc",
-      "short_sha": "c83aef56",
+      "sha": "fcd8469d6ef3fae02775797b23af358c715c1cdd",
+      "short_sha": "fcd8469d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:33:01-03:00",
-      "message": "Merge pull request #688 from JGaspar-Eng/fix/importacao-sem-descarte-silencioso-20261103"
+      "date": "2026-11-03T20:34:44-03:00",
+      "message": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_desenhos_lajes_fundacoes_ui.js"
     },
     {
-      "sha": "d187dbd6e7e43030b190e4b47c406846bff94337",
-      "short_sha": "d187dbd6",
+      "sha": "36f98771c43cce3c8ad74a96e16bf284aea8210f",
+      "short_sha": "36f98771",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:30:18-03:00",
-      "message": "test(storage): atualizar gate estático para importação estrita do JSON"
+      "date": "2026-11-03T20:34:40-03:00",
+      "message": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_estrutural_service.js"
     },
     {
-      "sha": "2316e558ff0b4cacb74eab9c52c285e08cf147da",
-      "short_sha": "2316e558",
+      "sha": "e99aaff66d3e2ce3b5a8b68b7cbc3410f8093837",
+      "short_sha": "e99aaff6",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:27:36-03:00",
-      "message": "test(browser): rejeitar JSON com viga inválida e recuperar o modelo anterior"
+      "date": "2026-11-03T20:34:37-03:00",
+      "message": "fix(BE8/BE11): usar polígono recuperável no leitor fundacao_visao_3d_estudo_service.js"
     },
     {
-      "sha": "f2c0be295eecc9f236464eb92c3cd7c07125df14",
-      "short_sha": "f2c0be29",
+      "sha": "c7b11f41f7df8770c3b012147a10769f8b3a6ad0",
+      "short_sha": "c7b11f41",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T17:27:13-03:00",
-      "message": "test(import): exigir modo estrito e validar rollback de cinco coleções na suite oficial"
+      "date": "2026-11-03T20:34:32-03:00",
+      "message": "fix(BE8/BE11): usar polígono recuperável no leitor orq_fundacoes_implantacao_auditoria_service.js"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41723740526",
-    "run_number": "1156"
+    "run_id": "41741391148",
+    "run_number": "1158"
   }
 }

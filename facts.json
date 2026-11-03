@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T21:40:56Z",
+  "gerado_em": "2026-11-03T23:44:46Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3331b193e55f27ebdf1b0053ac673d26d59db06a",
-    "data": "2026-11-03T21:35:41Z"
+    "sha": "244687d0167dc8457a8a70767e418655a3555946",
+    "data": "2026-11-03T23:43:26Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "3331b193e55f27ebdf1b0053ac673d26d59db06a",
-    "gerado_em": "2026-11-03T21:36:28Z",
+    "gerado_em": "2026-11-03T21:39:54Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 11,
+    "idade_horas": 2.1
   },
   "frentes": [
     {
@@ -401,14 +401,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "0a09d4337930581ef0a201107700204dc6e9b82e",
-          "data": "2026-11-03T13:41:59-03:00",
-          "assunto": "test(browser): manter aplicação de fundações recolhida e cálculo de estaca acessível",
-          "ci": "passou"
+          "sha": "fcd8469d6ef3fae02775797b23af358c715c1cdd",
+          "data": "2026-11-03T20:34:44-03:00",
+          "assunto": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_desenhos_lajes_fundacoes_ui.js",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1156,7 +1156,7 @@
             "merged_at": "2026-10-29T17:53:43Z",
             "merge_sha": "46fc224ac87295cf9cff6e5f8b4c9e6f419d72e1",
             "head_sha": "666bac60a43ab38ae50c0fcb94f238e8e539b53d",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           }
         ],
@@ -1172,14 +1172,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "c2df7f0828e9abd19e06ad438e6258c77e0da1ca",
-          "data": "2026-11-03T13:27:28-03:00",
-          "assunto": "ci: ampliar teste de navegador para sete fluxos 2D, sacadas, cobertura e ORQ",
-          "ci": "falhou"
+          "sha": "fcd8469d6ef3fae02775797b23af358c715c1cdd",
+          "data": "2026-11-03T20:34:44-03:00",
+          "assunto": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_desenhos_lajes_fundacoes_ui.js",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1549,6 +1549,7 @@
       310
     ],
     "integrados_recentes": [
+      690,
       689,
       688,
       687,
@@ -1567,14 +1568,13 @@
       582,
       537,
       536,
-      535,
-      534
+      535
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 580,
-  "commits_main_analisados": 2819,
+  "janela_prs": 581,
+  "commits_main_analisados": 2830,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
