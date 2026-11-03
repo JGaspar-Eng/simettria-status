@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-02T19:35:57Z",
+  "generated_at": "2026-11-03T01:50:37Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-    "short_sha": "b0c2ac6e",
+    "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
+    "short_sha": "3454e1d4",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T13:03:15-03:00",
-    "message": "Merge pull request #676 from JGaspar-Eng/fix/babylon-estacas-fidelidade-camera-20261102"
+    "date": "2026-11-02T22:50:18-03:00",
+    "message": "Merge pull request #675 from JGaspar-Eng/test/fundacoes-forecast-18-blocos-30-estacas-render-20261102"
   },
   "commits": [
+    {
+      "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
+      "short_sha": "3454e1d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:50:18-03:00",
+      "message": "Merge pull request #675 from JGaspar-Eng/test/fundacoes-forecast-18-blocos-30-estacas-render-20261102"
+    },
+    {
+      "sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
+      "short_sha": "0a5dd227",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:48:28-03:00",
+      "message": "test(babylon): atualizar regressão Forecast real para cilindro único e tolerância 1 mm"
+    },
     {
       "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
       "short_sha": "b0c2ac6e",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T12:52:41-03:00",
       "message": "ci: testar Babylon 18 blocos e 30 estacas em Chrome real"
-    },
-    {
-      "sha": "346aa3ae684cd781f9351a5f1f9844cf193bde91",
-      "short_sha": "346aa3ae",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:52:30-03:00",
-      "message": "test(webgl): regressão visual completa 18 blocos e 30 estacas Forecast"
-    },
-    {
-      "sha": "971c368220d39a851cfeeb0aeb0c085f10130c47",
-      "short_sha": "971c3682",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:51:18-03:00",
-      "message": "test(webgl): validar pixel contra face vazada e fotografar bloco pela face inferior"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41511372731",
-    "run_number": "1122"
+    "run_id": "41562319490",
+    "run_number": "1123"
   }
 }

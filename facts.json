@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-02T19:37:32Z",
+  "gerado_em": "2026-11-03T01:51:40Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-    "data": "2026-11-02T16:03:15Z"
+    "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
+    "data": "2026-11-03T01:50:18Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-    "gerado_em": "2026-11-02T16:06:01Z",
+    "gerado_em": "2026-11-02T19:35:57Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 3.5
+    "defasagem_commits_main": 5,
+    "idade_horas": 6.3
   },
   "frentes": [
     {
@@ -215,14 +215,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 675,
-            "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
-            "rascunho": false,
-            "head_sha": "1b1e27f6ff3c5959d9667a4435a305c750c4fa27",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -274,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 93,
+        "total_integrados": 94,
         "integrados_recentes": [
+          {
+            "numero": 675,
+            "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
+            "merged_at": "2026-11-03T01:50:19Z",
+            "merge_sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
+            "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 676,
             "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
@@ -385,38 +387,28 @@
             "head_sha": "109a12c519c83c570363332a716dc78f0d303cbb",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 663,
-            "titulo": "Corrigir transporte das reações do pilar ao centroide das estacas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/663",
-            "merged_at": "2026-11-01T16:39:21Z",
-            "merge_sha": "d86b3dd101c01d0b137d843110cff3a2da2b883f",
-            "head_sha": "c71829ce6bcab0c65ad06c526d45d4a8bf923357",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 676,
-          "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
-          "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-          "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
-          "merged_at": "2026-11-02T16:03:15Z",
+          "numero": 675,
+          "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
+          "merge_sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
+          "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
+          "merged_at": "2026-11-03T01:50:19Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-          "data": "2026-11-02T13:03:15-03:00",
-          "assunto": "Merge pull request #676 from JGaspar-Eng/fix/babylon-estacas-fidelidade-camera-20261102",
-          "ci": "passou"
+          "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
+          "data": "2026-11-02T22:50:18-03:00",
+          "assunto": "Merge pull request #675 from JGaspar-Eng/test/fundacoes-forecast-18-blocos-30-estacas-render-20261102",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -725,7 +717,7 @@
             "merged_at": "2026-10-28T02:47:08Z",
             "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
             "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -854,7 +846,7 @@
             "merged_at": "2026-10-28T02:47:08Z",
             "merge_sha": "e4e941379dba45a27bd8a96323b8ff93fadba681",
             "head_sha": "ed6e7bea0f9acb871e3f71aaf736048791a0fffd",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1572,7 +1564,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 570,
-  "commits_main_analisados": 2737,
+  "commits_main_analisados": 2742,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
