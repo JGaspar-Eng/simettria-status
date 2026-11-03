@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-11-03T15:46:40.921024+00:00",
+  "generated_at": "2026-11-03T15:48:25.821664+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -40,14 +40,14 @@
         "12 cadeias de três vigas rastreadas, sem inclusão de pilares nem inserção de rigidez fictícia",
         "dados originais preservados; novo código instalado localmente com backup e teste unitário"
       ],
-      "suite_gaps": [
-        "aprovação normativa das ações da cobertura, segunda ordem, estabilidade global, rigidez viga-viga e geotecnia executiva NÃO CONCLUÍDAS",
-        "confirmar visualmente após atualização da página no Dell"
-      ],
       "next_for_chatgpt": [
         "implementar rigidez de cadeias viga-viga com condensação/montagem 3D validada",
         "fechar método de fundação e demarcações sobre as reações ELU disponíveis",
         "comprovar estados limites, não ocultar requisitos normativos"
+      ],
+      "suite_gaps": [
+        "aprovação normativa das ações da cobertura, segunda ordem, estabilidade global, rigidez viga-viga e geotecnia executiva NÃO CONCLUÍDAS",
+        "confirmar visualmente após atualização da página no Dell"
       ],
       "pr_state": "open",
       "pr_merged": false
@@ -75,12 +75,12 @@
         "frente #514 assumida como sucessora direta da #507 já mergeada",
         "objetivo: transformar somente dados autoritativos do modelo real em entradas do pipeline global, mantendo fail-closed para qualquer parcela sem autoridade"
       ],
-      "suite_gaps": [
-        "em auditoria"
-      ],
       "next_for_chatgpt": [
         "auditar autoridades atuais para DOFs/vínculos, propriedades mecânicas, conectividade/orientação, cargas, mapa apoio↔pilar, convenção e unidades",
         "só abrir PR de código se existir uma unidade pequena e demonstrável sem fallback silencioso"
+      ],
+      "suite_gaps": [
+        "em auditoria"
       ]
     },
     {
@@ -99,8 +99,8 @@
       "next_for_claude": [],
       "ci": [],
       "result": [],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -125,11 +125,11 @@
         "sucessora de #496; só promoverá reações matemáticas quando solver, recuperação, equilíbrio, contrato de DOFs, mapeamento apoio↔pilar, convenção de componente/sinal e unidades estiverem todos explícitos e completos",
         "sem proximidade, sem zero implícito, sem promoção parcial"
       ],
-      "suite_gaps": [
-        "serão cobertos casos de mapa ausente/duplicado, DOF restringido sem cobertura, componente normal ausente, unidades inválidas e reação matemática incompleta"
-      ],
       "next_for_chatgpt": [
         "implementar em branch feat/orq-global-reacoes-autoridade e abrir PR empilhada sobre feat/orq-global-recuperacao-esforcos; não mergear antes de #497"
+      ],
+      "suite_gaps": [
+        "serão cobertos casos de mapa ausente/duplicado, DOF restringido sem cobertura, componente normal ausente, unidades inválidas e reação matemática incompleta"
       ]
     },
     {
@@ -158,11 +158,11 @@
         "traço de equilíbrio compara forças internas com ações nodais explícitas, exige equilíbrio em DOFs livres e pode conferir reações matemáticas do solver",
         "`reacoes_globais_demonstradas` permanece false; nenhuma reação é promovida ao ORQ nesta frente"
       ],
-      "suite_gaps": [
-        "NONE identificado no escopo: identidade, rotação 90° Z, ação equivalente explícita, ausência/invalidade de ação equivalente, índices DOF inválidos, desequilíbrio livre e reação divergente cobertos no gate oficial"
-      ],
       "next_for_chatgpt": [
         "aguardar revisão cruzada do HEAD e712e67; se aprovada sem achados e NOT_REQUIRED confirmado, mergear #497 com expected_head_sha exato e seguir para integração/autoria de reações globais"
+      ],
+      "suite_gaps": [
+        "NONE identificado no escopo: identidade, rotação 90° Z, ação equivalente explícita, ausência/invalidade de ação equivalente, índices DOF inválidos, desequilíbrio livre e reação divergente cobertos no gate oficial"
       ]
     },
     {
@@ -189,8 +189,8 @@
         "não resolver deslocamentos/reacões nesta unidade",
         "`reacoes_globais_demonstradas` permanece false"
       ],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -218,11 +218,11 @@
         "frentes ativas da área aparecem como contexto separado, sem serem promovidas indevidamente a progresso específico do item",
         "sincronização viva permanece baseada no mesmo evento simettria:status; docs/index.html não foi tocado"
       ],
-      "suite_gaps": [
-        "validação visual obrigatória; CI existente protege a presença do listener simettria:status e o motor de sync em docs/index.html"
-      ],
       "next_for_chatgpt": [
         "abrir PR, aguardar CI e parar em READY_FOR_USER_VISUAL_REVIEW"
+      ],
+      "suite_gaps": [
+        "validação visual obrigatória; CI existente protege a presença do listener simettria:status e o motor de sync em docs/index.html"
       ]
     },
     {
@@ -247,8 +247,8 @@
         "cadeia de sapata reconciliada como concluída; GLOBAL permanece planned; Área 11 sai de execution.active.",
         "BLOCKER: aprovação visual do usuário antes do merge."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [],
+      "suite_gaps": [],
       "pr_state": "open",
       "pr_merged": false
     },
@@ -274,11 +274,11 @@
       "result": [
         "corrigir promoção implícita de `reacoes_por_pilar` sem declaração global explícita"
       ],
-      "suite_gaps": [
-        "regressão #465 será incorporada à suíte oficial ORQ"
-      ],
       "next_for_chatgpt": [
         "implementar fail-closed, rodar CI e mergear se verde no HEAD exato"
+      ],
+      "suite_gaps": [
+        "regressão #465 será incorporada à suíte oficial ORQ"
       ]
     },
     {
@@ -312,13 +312,13 @@
         "auditoria de cobertura passa a considerar pilares esperados do modelo, evitando falso desaparecimento de pilar ausente dos mapas parciais",
         "Área 11 ganhou documento executável consolidando evidências de STALE/EDIT/MEMORIAL/2D/3D/TRACE; GLOBAL permanece separado"
       ],
-      "suite_gaps": [
-        "ainda falta reconciliar `docs/DEVELOPMENT_STATUS.json` da Área 11 e verificar o que realmente permanece ativo após a evidência consolidada",
-        "ORQ-ESTRUT-01 ainda não pode ser marcado DONE enquanto reações globais/rastreabilidade estrutural completa não estiverem demonstradas"
-      ],
       "next_for_chatgpt": [
         "reconciliar status da Área 11 em branch própria, retirando apenas itens comprovadamente concluídos e preservando GLOBAL separado; se a mudança alterar painel visível, parar em READY_FOR_USER_VISUAL_REVIEW antes do merge",
         "continuar ORQ-ESTRUT-01 a partir do `main` atual, fechando lacunas reais de reações globais/rastreabilidade sem fabricar READY"
+      ],
+      "suite_gaps": [
+        "ainda falta reconciliar `docs/DEVELOPMENT_STATUS.json` da Área 11 e verificar o que realmente permanece ativo após a evidência consolidada",
+        "ORQ-ESTRUT-01 ainda não pode ser marcado DONE enquanto reações globais/rastreabilidade estrutural completa não estiverem demonstradas"
       ]
     },
     {
@@ -347,11 +347,11 @@
         "regressão incorporada diretamente ao validador oficial `validar_propostas_estado_visual_infra_orq_estrut_01.mjs`: string numérica/vazia/null/undefined rejeitadas; zero numérico explícito preservado",
         "PR antigo #451 fechado como superseded"
       ],
-      "suite_gaps": [
-        "NONE para esta frente; não foi criado teste órfão nem allowlist"
-      ],
       "next_for_chatgpt": [
         "após revisão cruzada, merge com expected_head_sha; então refazer #443 sobre o novo main para eliminar a mesma coerção na fronteira de materialização"
+      ],
+      "suite_gaps": [
+        "NONE para esta frente; não foi criado teste órfão nem allowlist"
       ]
     },
     {
@@ -373,8 +373,8 @@
         "defeito do PR antigo #445 confirmado ainda presente no main atual: `x_m/y_m` de pilar são lidos por helper coercivo e aceitam strings numéricas",
         "arquivos-alvo no main não mudaram desde a base do #445; reaplicação limpa e cirúrgica possível sobre o main atual"
       ],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -401,12 +401,12 @@
         "identificada divergência documental: DEVELOPMENT_STATUS ainda marca STALE in_progress e EDIT/MEMORIAL/2D/3D/TRACE planned",
         "item GLOBAL mantido separado enquanto significar generalização transversal para vigas/pilares/lajes; não será usado para reabrir a cadeia de sapata"
       ],
-      "suite_gaps": [
-        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
-      ],
       "next_for_chatgpt": [
         "reconciliar DEVELOPMENT_STATUS e seus testes para retirar FUND-MATERIALIZACAO-STALE da lista ativa e marcar capacidades já implementadas como concluídas",
         "continuar fechamento ORQ Área 4 em paralelo"
+      ],
+      "suite_gaps": [
+        "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
       ]
     },
     {
@@ -438,12 +438,12 @@
         "`area_m2` derivada dos vãos em metros, ordem-independente.",
         "teste discriminante: falha sem a fase, passa com ela."
       ],
-      "suite_gaps": [
-        "NONE."
-      ],
       "next_for_chatgpt": [
         "rever #453 no HEAD exato. Confirmar naming (`tipo_funcional`, `area_m2`, `laje_ids`)",
         "e NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha e fechar."
+      ],
+      "suite_gaps": [
+        "NONE."
       ]
     },
     {
@@ -468,11 +468,11 @@
         "helper endurecido para number finito apenas; zero numérico explícito preservado",
         "regressão dedicada criada"
       ],
-      "suite_gaps": [
-        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
-      ],
       "next_for_chatgpt": [
         "após #443 liberar a superfície, incorporar a regressão à suíte oficial, rodar CI no HEAD exato e retirar draft"
+      ],
+      "suite_gaps": [
+        "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
       ]
     },
     {
@@ -508,11 +508,11 @@
         "scripts/gerar_status_dashboard.py não alterado; execution.panel.active continua",
         "derivado de execution.active (issue #379 intacta)."
       ],
-      "suite_gaps": [
-        "NONE."
-      ],
       "next_for_chatgpt": [
         "mergear #449 quando puder (docs-only, CI verde, sem dependência cruzada)."
+      ],
+      "suite_gaps": [
+        "NONE."
       ]
     },
     {
@@ -540,10 +540,10 @@
         "ID textual válido preservado",
         "frente reconstruída sobre main atual; regressões e comentários pré-existentes do teste preservados"
       ],
+      "next_for_chatgpt": [],
       "suite_gaps": [
         "NONE"
-      ],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CLAUDE",
@@ -590,6 +590,13 @@
         "inalterados (face sem momento continua sem armadura de flexão calculada —",
         "escopo declarado do motor de pré-dimensionamento)."
       ],
+      "next_for_chatgpt": [
+        "revisão cruzada do PR #447 no HEAD exato 68769c3: confirmar (a) que nenhum consumidor",
+        "keya em `As_max_cm2 === null` como sinal de sem_flexao (dominio:\"sem_flexao\" permanece),",
+        "(b) que a face sem momento passar a APROVADO no ELU não mascara insuficiência real",
+        "(só ocorre com As_calc=0, i.e. Md<=0; As_adotada<As_calc segue REPROVANDO),",
+        "(c) NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha exato e fechar #446."
+      ],
       "suite_gaps": [
         "NONE no escopo do defeito. Regressão nova (validar_verificacao_elu_viga_sem_momento_negativo.mjs)",
         "assere: viga biapoiada só com momentos >=0 -> ELU APROVADO + statusCanonico PRONTO;",
@@ -598,13 +605,6 @@
         "FALHA no código pré-correção (As_max_cm2 = null). O teste existente",
         "validarDadoAusenteGeraIndeterminado (injeta As_max_cm2=null manualmente em armadura",
         "de momentos não nulos) continua verde — invariante \"null -> INDETERMINADO\" preservado."
-      ],
-      "next_for_chatgpt": [
-        "revisão cruzada do PR #447 no HEAD exato 68769c3: confirmar (a) que nenhum consumidor",
-        "keya em `As_max_cm2 === null` como sinal de sem_flexao (dominio:\"sem_flexao\" permanece),",
-        "(b) que a face sem momento passar a APROVADO no ELU não mascara insuficiência real",
-        "(só ocorre com As_calc=0, i.e. Md<=0; As_adotada<As_calc segue REPROVANDO),",
-        "(c) NOT_REQUIRED de visual. Se aprovado, merge com expected_head_sha exato e fechar #446."
       ]
     },
     {
@@ -632,10 +632,10 @@
         "(0,0) numérico explícito preservado",
         "diff cirúrgico: 2 arquivos, +26/-2"
       ],
+      "next_for_chatgpt": [],
       "suite_gaps": [
         "NONE; regressão no validador oficial já encadeado em test:all"
-      ],
-      "next_for_chatgpt": []
+      ]
     },
     {
       "from": "CHATGPT",
@@ -662,11 +662,11 @@
         "zero numérico explícito preservado",
         "regressão adicionada ao validador ORQ oficial já presente em test:all"
       ],
-      "suite_gaps": [
-        "NONE"
-      ],
       "next_for_chatgpt": [
         "aguardar CI; revisar diff final; não mergear sem revisão cruzada"
+      ],
+      "suite_gaps": [
+        "NONE"
       ]
     },
     {
@@ -707,18 +707,18 @@
         "e > 0 no ramo READY) e não injeta null/\"\" hoje — mas o contrato deve falhar fechado",
         "por si, conforme a tese de #428/#431/#433."
       ],
-      "suite_gaps": [
-        "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
-        "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
-        "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
-        "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
-      ],
       "next_for_chatgpt": [
         "revisão cruzada do PR #442 no HEAD exato fcd7042: confirmar (a) que `typeof valor === \"number\"`",
         "não regride nenhum caller legítimo de numeroNaoNegativo (nenhum passa string numérica;",
         "pipeline passa number), (b) que calcularLambdaLimiteBruto/limitarLambdaNormativo não têm",
         "consumidor fora de teste/pipeline, (c) NOT_REQUIRED de visual. Se aprovado, merge com",
         "expected_head_sha exato e fechar #441."
+      ],
+      "suite_gaps": [
+        "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
+        "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
+        "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
+        "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
       ]
     },
     {
@@ -747,11 +747,11 @@
         "nenhuma promoção de reação parcial para global e nenhuma inferência geométrica/proximidade",
         "regressão oficial cobre dois pilares esperados com apenas um observado e propagação no fluxo integrado"
       ],
-      "suite_gaps": [
-        "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
-      ],
       "next_for_chatgpt": [
         "aguardar CI exato e revisão cruzada; corrigir qualquer achado antes de merge"
+      ],
+      "suite_gaps": [
+        "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
       ]
     },
     {
@@ -776,8 +776,8 @@
         "DEVELOPMENT_STATUS.json corrigido: SA-L1-VIGA-AUTORIDADE-GEO-MAT e VIGA-PILAR-CONTRATO-ROTACIONAL completed; CALC-GRAPH-PROVENIENCIA active (área 3)",
         "teste regressivo dedicado prova a correção (falha no código pré-patch)"
       ],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CLAUDE",
@@ -795,8 +795,8 @@
       "next_for_claude": [],
       "ci": [],
       "result": [],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -820,11 +820,11 @@
       "result": [
         "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
       ],
-      "suite_gaps": [
-        "regressão ainda será adicionada"
-      ],
       "next_for_chatgpt": [
         "implementar auditor por pilar, integrar ao retorno parcial, testar e mergear se verde."
+      ],
+      "suite_gaps": [
+        "regressão ainda será adicionada"
       ]
     },
     {
@@ -845,8 +845,8 @@
       ],
       "ci": [],
       "result": [],
-      "suite_gaps": [],
-      "next_for_chatgpt": []
+      "next_for_chatgpt": [],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -871,11 +871,11 @@
         "PR #299 JSON mergeado e aprovado",
         "STALE passa a ser a atividade corrente da Área 11"
       ],
-      "suite_gaps": [
-        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
-      ],
       "next_for_chatgpt": [
         "implementar STALE em branch própria a partir do main atual"
+      ],
+      "suite_gaps": [
+        "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
       ]
     },
     {
@@ -903,11 +903,11 @@
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
       ],
-      "suite_gaps": [
-        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
-      ],
       "next_for_chatgpt": [
         "não implementar Criar Fundação até existir autorização normativa rastreável de materialização; depois ligar ação explícita ao apoio selecionado e parar em validação visual"
+      ],
+      "suite_gaps": [
+        "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
       ]
     },
     {
@@ -934,11 +934,11 @@
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
       ],
-      "suite_gaps": [
-        "a definir após inspeção do wiring atual"
-      ],
       "next_for_chatgpt": [
         "inspecionar wiring atual de ORQ-ESTRUT-01 e implementar a menor lacuna funcional que aproxime Calcular Tudo -> reações -> infraestrutura rastreável"
+      ],
+      "suite_gaps": [
+        "a definir após inspeção do wiring atual"
       ]
     }
   ],
@@ -970,15 +970,15 @@
         "Auditoria com rastreabilidade e prioridades: #681",
         "Correção não visual em PR #682; gates resistentes: #683; gate browser e aceitação visual: #684"
       ],
-      "suite_gaps": [
-        "projeto residencial atualizado completo não exercitado como usuário no navegador",
-        "10 suites test:browser sem execução no gate principal",
-        "revisão independente por todos os elementos e disciplinas ainda ausente"
-      ],
       "next_for_chatgpt": [
         "concluir #682 após CI, sem alterar UI",
         "atacar gate de autenticidade dos oito ELU #683",
         "construir cobertura de navegador #684 sem declarar a apresentação aprovada"
+      ],
+      "suite_gaps": [
+        "projeto residencial atualizado completo não exercitado como usuário no navegador",
+        "10 suites test:browser sem execução no gate principal",
+        "revisão independente por todos os elementos e disciplinas ainda ausente"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1011,14 +1011,14 @@
         "12 cadeias de três vigas rastreadas, sem inclusão de pilares nem inserção de rigidez fictícia",
         "dados originais preservados; novo código instalado localmente com backup e teste unitário"
       ],
-      "suite_gaps": [
-        "aprovação normativa das ações da cobertura, segunda ordem, estabilidade global, rigidez viga-viga e geotecnia executiva NÃO CONCLUÍDAS",
-        "confirmar visualmente após atualização da página no Dell"
-      ],
       "next_for_chatgpt": [
         "implementar rigidez de cadeias viga-viga com condensação/montagem 3D validada",
         "fechar método de fundação e demarcações sobre as reações ELU disponíveis",
         "comprovar estados limites, não ocultar requisitos normativos"
+      ],
+      "suite_gaps": [
+        "aprovação normativa das ações da cobertura, segunda ordem, estabilidade global, rigidez viga-viga e geotecnia executiva NÃO CONCLUÍDAS",
+        "confirmar visualmente após atualização da página no Dell"
       ],
       "pr_state": "open",
       "pr_merged": false
@@ -1047,10 +1047,10 @@
         "vigas suporte são segmentadas nos nós internos explicitamente incidentes;",
         "painel reconciliado: #516 concluída; #517 e #518 são os próximos bloqueios da entrada global completa."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "iniciar #517 sem invadir #518, UI/2D/3D, fundações ou escadas."
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -1080,11 +1080,11 @@
         "ADR vertical formal criado",
         "sem fallback, proximidade, migração ou alteração de geometria/persistência"
       ],
-      "suite_gaps": [
-        "NONE identificado até o momento"
-      ],
       "next_for_chatgpt": [
         "aguardar revisão técnica do PR #537 e mergear somente se revisão + CI estiverem verdes"
+      ],
+      "suite_gaps": [
+        "NONE identificado até o momento"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1117,11 +1117,11 @@
         "teste novo incorporado ao test:all;",
         "PR #534 mergeada por squash."
       ],
-      "suite_gaps": [
-        "NONE bloqueante no escopo do lote"
-      ],
       "next_for_chatgpt": [
         "NONE"
+      ],
+      "suite_gaps": [
+        "NONE bloqueante no escopo do lote"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1154,11 +1154,11 @@
         "PRÉ-1A0 concluída: contexto documental, proveniência ortogonal, legado v1/v2 preservado, promoção explícita e restore transacional",
         "nenhum consumidor estrutural usa schema v3 ainda; geometria calculada permanece inalterada"
       ],
-      "suite_gaps": [
-        "NONE bloqueante para PRÉ-1A0"
-      ],
       "next_for_chatgpt": [
         "próximo passo recomendado: preparar PRÉ-1A1 em branch própria a partir do main atual, contendo ADR vertical formal + resolvedor central de laje, autorizado somente quando schema_semantico=v3; preservar legado fail-closed e não iniciar PRÉ-1B sem nova autorização"
+      ],
+      "suite_gaps": [
+        "NONE bloqueante para PRÉ-1A0"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1193,11 +1193,11 @@
         "USER_VISUAL_APPROVAL: NOT_REQUIRED confirmado pela frente revisora;",
         "SUITE_GAPS: NONE confirmado."
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "reabrir a leitura de #231/main e retomar a conclusão da #516 (materialização dos elementos globais) sem invadir #517 ações globais.",
         "manter contexto.analise_global incompleto até todos os contratos exigidos estarem demonstrados."
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -1220,12 +1220,12 @@
         "CLAUDE_REVIEW: #231 comment 5671690361 / REVIEWED / MERGE_POLICY: AUTO_OK"
       ],
       "result": [],
-      "suite_gaps": [
-        "NONE blocking"
-      ],
       "next_for_chatgpt": [
         "reler #231 e main antes da próxima frente ORQ;",
         "cadeia prevista: #519 (G/J) -> completar #516 -> #517, salvo reserva mais recente."
+      ],
+      "suite_gaps": [
+        "NONE blocking"
       ]
     },
     {
@@ -1263,12 +1263,12 @@
         "cabe limita-se à projeção planar preliminar de lance único na reserva própria do trecho sem_laje e na pose declarada",
         "nenhuma Fase C/UI/2D/3D iniciada"
       ],
-      "suite_gaps": [
-        "NONE no escopo revisado e aprovado; limitações físicas e numéricas documentadas permanecem explícitas"
-      ],
       "next_for_chatgpt": [
         "aguardar autorização; próximo passo recomendado apenas: definir contrato da futura compatibilidade com abertura, baseado em passagem/recorte da escada no plano da laje, com identidade e posição vertical autoritativas; não reutilizar contenção integral da projeção",
         "não implementar Fase C/UI/2D/3D nem promover materializavel"
+      ],
+      "suite_gaps": [
+        "NONE no escopo revisado e aprovado; limitações físicas e numéricas documentadas permanecem explícitas"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1308,12 +1308,12 @@
         "tests_support/orq_entradas_modelo_base.mjs",
         "tests_support/orq_topologia_vertical_pilares.mjs"
       ],
-      "suite_gaps": [],
       "next_for_chatgpt": [
         "ler novamente o estado corrente de #231/main antes de assumir a próxima frente ORQ",
         "considerar a observação do revisor ao planejar #519/#521/#517: adicionar teste dedicado para discrepância entre cota_topo_m do pilar e cota do próximo pavimento físico",
         "não iniciar frente sucessora se houver reserva mais recente em #231"
-      ]
+      ],
+      "suite_gaps": []
     },
     {
       "from": "CHATGPT",
@@ -1349,12 +1349,12 @@
         "integração com estado/UI/envelope pertence às fases seguintes; nenhuma Fase B ou UI iniciada nesta rodada",
         "classificação 6.8.1/6.7.2 e largura geral NBR9077 continuam nao_demonstradas; nenhuma decisão normativa reaberta"
       ],
-      "suite_gaps": [
-        "NONE no escopo aprovado da Fase A"
-      ],
       "next_for_chatgpt": [
         "aguardar autorização para a próxima fase; recomendação apenas: definir escopo e contrato explícito da Fase B, com dados autoritativos, critérios de aceitação e fronteiras de integração estado/envelope/UI antes de implementar",
         "não promover materializavel nem conformidade não demonstrada sem autoridade e validação próprias"
+      ],
+      "suite_gaps": [
+        "NONE no escopo aprovado da Fase A"
       ],
       "pr_state": "closed",
       "pr_merged": true
@@ -1385,14 +1385,14 @@
         "PR #524 revalidada como OPEN/MERGEABLE no HEAD exato e mergeada por squash com `expected_head_sha=1eda5f61fd4c29e35ac9fd392dd2cba6129d327d`",
         "merge commit em main: c0f31a46ad07dfb9bb2d2c4af828107db10cba8d"
       ],
-      "suite_gaps": [
-        "nenhum bloqueante para #524",
-        "sucessoras devem cobrir explicitamente continuidade vertical dos pilares antes de materializar elementos globais completos"
-      ],
       "next_for_chatgpt": [
         "iniciar #516 ORQ-GLOBAL-ELEMENTOS-MODELO-01 em branch própria a partir de main=c0f31a46ad07dfb9bb2d2c4af828107db10cba8d",
         "antes de materializar conectividade de elementos, respeitar #520 como autoridade necessária para continuidade vertical por identidade; sem associação por proximidade",
         "auditar também dependências #519 (G/J) e #521 (orientação espacial) antes de declarar elementos espaciais completos"
+      ],
+      "suite_gaps": [
+        "nenhum bloqueante para #524",
+        "sucessoras devem cobrir explicitamente continuidade vertical dos pilares antes de materializar elementos globais completos"
       ],
       "pr_state": "closed",
       "pr_merged": true
