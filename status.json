@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-11-03T11:02:14Z",
+  "generated_at": "2026-11-03T12:08:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
-    "short_sha": "46bad309",
+    "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
+    "short_sha": "2eabd7fe",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T23:45:43-03:00",
-    "message": "Merge pull request #678 from JGaspar-Eng/fix/babylon-fundacoes-invalidas-sem-previa-20261102"
+    "date": "2026-11-03T09:08:24-03:00",
+    "message": "Merge pull request #679 from JGaspar-Eng/feat/fund-reacoes-oito-elu-estaca-unica-20261103"
   },
   "commits": [
+    {
+      "sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
+      "short_sha": "2eabd7fe",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T09:08:24-03:00",
+      "message": "Merge pull request #679 from JGaspar-Eng/feat/fund-reacoes-oito-elu-estaca-unica-20261103"
+    },
+    {
+      "sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
+      "short_sha": "2b459185",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T09:04:49-03:00",
+      "message": "test(fundacoes): 8 ELU de estaca unica, compressao/tracao, momentos e lateral fail closed"
+    },
+    {
+      "sha": "6a45185f9683999482f1fd788e185d6523262130",
+      "short_sha": "6a45185f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T09:04:21-03:00",
+      "message": "feat(fundacoes): auditar oito ELU de estaca unica somente sob solicitacao axial"
+    },
     {
       "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
       "short_sha": "46bad309",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T23:40:15-03:00",
       "message": "test(ci): adicionar regressão de diagnóstico de fundação inválida à suíte oficial"
-    },
-    {
-      "sha": "33db5475bbc6c1b83449b9850fa051c79cde7068",
-      "short_sha": "33db5475",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:39:56-03:00",
-      "message": "test(browser): impedir prévia antiga com cadastro inválido e exibir alerta de erro"
-    },
-    {
-      "sha": "7e6e67e2d8aba9a70ce25c17545bcca80ecfdee0",
-      "short_sha": "7e6e67e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:39:17-03:00",
-      "message": "test(3d): rejeitar cadastro incompleto e distinguir prévia legítima de fundações cadastradas"
-    },
-    {
-      "sha": "1fb6c53d43dfc60ea40e09863b13595f79d71764",
-      "short_sha": "1fb6c53d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:38:36-03:00",
-      "message": "fix(ui): exibir erros reais do cadastro 3D e impedir avisos de completude falsa"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41624148266",
-    "run_number": "1130"
+    "run_id": "41633206932",
+    "run_number": "1131"
   }
 }
