@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T15:45:39Z",
+  "gerado_em": "2026-11-03T15:47:30Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "229e096995bf35bf6f6b7f7ac5a00ec77e58af95",
     "data": "2026-11-03T15:44:00Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
     "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-    "gerado_em": "2026-11-03T14:43:51Z",
+    "gerado_em": "2026-11-03T15:44:04Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 5,
-    "idade_horas": 1.0
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -1172,14 +1172,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-          "data": "2026-11-03T11:40:53-03:00",
-          "assunto": "Merge pull request #680 from JGaspar-Eng/fix/forecast-18-30-orq-vinculos-pilares-20261103",
+          "sha": "12a2a4b4e510e02f96f1028eddbd1cee909a2ada",
+          "data": "2026-11-03T12:41:13-03:00",
+          "assunto": "test(ci): exigir independência do JSON do Desktop e manter teste real em opt-in",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1574,7 +1574,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 575,
-  "commits_main_analisados": 2768,
+  "commits_main_analisados": 2773,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

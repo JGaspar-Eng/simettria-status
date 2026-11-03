@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-11-03T15:44:04Z",
+  "generated_at": "2026-11-03T15:46:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-    "short_sha": "8b706664",
+    "sha": "229e096995bf35bf6f6b7f7ac5a00ec77e58af95",
+    "short_sha": "229e0969",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T11:40:53-03:00",
-    "message": "Merge pull request #680 from JGaspar-Eng/fix/forecast-18-30-orq-vinculos-pilares-20261103"
+    "date": "2026-11-03T12:44:00-03:00",
+    "message": "Merge pull request #682 from JGaspar-Eng/fix/auditoria-fixtures-testall-deterministico-20261103"
   },
   "commits": [
+    {
+      "sha": "229e096995bf35bf6f6b7f7ac5a00ec77e58af95",
+      "short_sha": "229e0969",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T12:44:00-03:00",
+      "message": "Merge pull request #682 from JGaspar-Eng/fix/auditoria-fixtures-testall-deterministico-20261103"
+    },
+    {
+      "sha": "12a2a4b4e510e02f96f1028eddbd1cee909a2ada",
+      "short_sha": "12a2a4b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T12:41:13-03:00",
+      "message": "test(ci): exigir independência do JSON do Desktop e manter teste real em opt-in"
+    },
+    {
+      "sha": "a0c4d662f06844c13be47a299cc71de04b9fde45",
+      "short_sha": "a0c4d662",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T12:40:46-03:00",
+      "message": "test(opt-in): analisar JSON real por identidade sem contagens históricas ou mutação"
+    },
+    {
+      "sha": "f54df5cb5e1ed9d6b84e20bf6f9d2820ed64483b",
+      "short_sha": "f54df5cb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T12:40:22-03:00",
+      "message": "test(auditoria): provar que fixture não depende de JSON mutável presente no Desktop"
+    },
+    {
+      "sha": "808e85285a1960d7d682a9a02933757b300a76a7",
+      "short_sha": "808e8528",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T12:40:06-03:00",
+      "message": "fix(test): isolar carga residencial em fixture determinística sem JSON do Desktop"
+    },
     {
       "sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
       "short_sha": "8b706664",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-03T09:08:24-03:00",
       "message": "Merge pull request #679 from JGaspar-Eng/feat/fund-reacoes-oito-elu-estaca-unica-20261103"
-    },
-    {
-      "sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
-      "short_sha": "2b459185",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T09:04:49-03:00",
-      "message": "test(fundacoes): 8 ELU de estaca unica, compressao/tracao, momentos e lateral fail closed"
-    },
-    {
-      "sha": "6a45185f9683999482f1fd788e185d6523262130",
-      "short_sha": "6a45185f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T09:04:21-03:00",
-      "message": "feat(fundacoes): auditar oito ELU de estaca unica somente sob solicitacao axial"
-    },
-    {
-      "sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
-      "short_sha": "46bad309",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:45:43-03:00",
-      "message": "Merge pull request #678 from JGaspar-Eng/fix/babylon-fundacoes-invalidas-sem-previa-20261102"
-    },
-    {
-      "sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
-      "short_sha": "c00b2f1f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:42:46-03:00",
-      "message": "test(3d): usar objeto totais no primeiro caso de regressão"
-    },
-    {
-      "sha": "0ab1aa9c1118464331f96e1b09f5cb2bdc41374a",
-      "short_sha": "0ab1aa9c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T23:42:33-03:00",
-      "message": "test(3d): corrigir nome de variável do contrato de contagens"
     }
   ],
   "development": {
@@ -3061,7 +3061,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 231,
+    "validator_count": 232,
     "validators": [
       {
         "name": "test:servidor-versionado",
@@ -3117,7 +3117,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -3986,6 +3986,10 @@
       {
         "name": "test:orq-segunda-ordem-auditoria",
         "command": "node tests/validar_auditoria_segunda_ordem_independente.mjs"
+      },
+      {
+        "name": "test:orq-cargas-real-optin",
+        "command": "node tests_support/orq_cargas_residencial_real_optin_20261103.mjs"
       }
     ]
   },
@@ -3996,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41666850014",
-    "run_number": "1135"
+    "run_id": "41666934942",
+    "run_number": "1137"
   }
 }
