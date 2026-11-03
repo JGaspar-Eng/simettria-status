@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T15:49:06Z",
+  "gerado_em": "2026-11-03T16:27:08Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "229e096995bf35bf6f6b7f7ac5a00ec77e58af95",
-    "data": "2026-11-03T15:44:00Z"
+    "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+    "data": "2026-11-03T16:25:44Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "229e096995bf35bf6f6b7f7ac5a00ec77e58af95",
-    "gerado_em": "2026-11-03T15:46:11Z",
+    "gerado_em": "2026-11-03T15:48:05Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 13,
+    "idade_horas": 0.7
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 98,
+        "total_integrados": 99,
         "integrados_recentes": [
+          {
+            "numero": 685,
+            "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
+            "merged_at": "2026-11-03T16:25:44Z",
+            "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+            "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 680,
             "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
@@ -276,7 +286,7 @@
             "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
             "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 679,
@@ -377,38 +387,28 @@
             "head_sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 668,
-            "titulo": "Dimensionamento preliminar lateral: molas kx/ky individuais nas estacas e oito ELU",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/668",
-            "merged_at": "2026-11-02T01:09:35Z",
-            "merge_sha": "bca214716ce52b78ba9236afba51441b0088d14e",
-            "head_sha": "948d952008afc3efcc9449e88eddce23e1ac71b6",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 680,
-          "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
-          "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-          "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-          "merged_at": "2026-11-03T14:40:54Z",
+          "numero": 685,
+          "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
+          "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+          "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
+          "merged_at": "2026-11-03T16:25:44Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-          "data": "2026-11-03T11:37:39-03:00",
-          "assunto": "ci: incorporar regressão 18 blocos/30 estacas/144 ELU Forecast à suíte oficial",
-          "ci": "passou"
+          "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+          "data": "2026-11-03T13:25:44-03:00",
+          "assunto": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1037,8 +1037,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 116,
+        "total_integrados": 117,
         "integrados_recentes": [
+          {
+            "numero": 685,
+            "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
+            "merged_at": "2026-11-03T16:25:44Z",
+            "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+            "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 680,
             "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
@@ -1047,7 +1057,7 @@
             "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
             "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 656,
@@ -1148,38 +1158,28 @@
             "head_sha": "666bac60a43ab38ae50c0fcb94f238e8e539b53d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 641,
-            "titulo": "fix(ORQ): validar premissas residenciais e recuperar 8 testes de regressão",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/641",
-            "merged_at": "2026-10-29T17:20:16Z",
-            "merge_sha": "0622653cde82e65c5392f9c4c878edce07171f55",
-            "head_sha": "3e0192bed19393042285af43546444e700df8593",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 680,
-          "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
-          "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-          "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-          "merged_at": "2026-11-03T14:40:54Z",
+          "numero": 685,
+          "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
+          "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+          "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
+          "merged_at": "2026-11-03T16:25:44Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "12a2a4b4e510e02f96f1028eddbd1cee909a2ada",
-          "data": "2026-11-03T12:41:13-03:00",
-          "assunto": "test(ci): exigir independência do JSON do Desktop e manter teste real em opt-in",
-          "ci": "passou"
+          "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
+          "data": "2026-11-03T13:25:44-03:00",
+          "assunto": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1573,8 +1573,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 575,
-  "commits_main_analisados": 2773,
+  "janela_prs": 576,
+  "commits_main_analisados": 2786,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
