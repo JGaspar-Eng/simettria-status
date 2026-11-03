@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T19:38:03Z",
+  "gerado_em": "2026-11-03T20:03:22Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-    "data": "2026-11-03T16:25:44Z"
+    "sha": "b3b9797da21cf204272e9e5ce3f96ef9d5ceda5d",
+    "data": "2026-11-03T20:01:12Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-    "gerado_em": "2026-11-03T16:30:03Z",
+    "gerado_em": "2026-11-03T19:36:58Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 3.1
+    "defasagem_commits_main": 11,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -193,14 +193,14 @@
         "integrados_recentes": [],
         "ultimo": null,
         "ultimo_commit": {
-          "sha": "bd47ab56b53c57bf88a492ab3d7f0862f04fda19",
-          "data": "2026-10-25T13:02:10-03:00",
-          "assunto": "fix(infraestrutura): restaurar controles ORQ e cadastro, preservar balanco na exclusao",
+          "sha": "e25711aeb0f0d793a0a3619dfc3f92cd8728a968",
+          "data": "2026-11-03T13:31:41-03:00",
+          "assunto": "test(browser): selecionar diagnóstico da sacada sem locator ambíguo",
           "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -401,14 +401,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-          "data": "2026-11-03T13:25:44-03:00",
-          "assunto": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103",
+          "sha": "0a09d4337930581ef0a201107700204dc6e9b82e",
+          "data": "2026-11-03T13:41:59-03:00",
+          "assunto": "test(browser): manter aplicação de fundações recolhida e cálculo de estaca acessível",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -558,7 +558,7 @@
             "merged_at": "2026-10-28T11:55:57Z",
             "merge_sha": "cad2c510164190f71d28dcdb7863fae55d74c894",
             "head_sha": "f06a947fd233b45e907f05aafe11eb3e4d1d19be",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1172,14 +1172,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-          "data": "2026-11-03T13:25:44-03:00",
-          "assunto": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103",
-          "ci": "passou"
+          "sha": "c2df7f0828e9abd19e06ad438e6258c77e0da1ca",
+          "data": "2026-11-03T13:27:28-03:00",
+          "assunto": "ci: ampliar teste de navegador para sete fluxos 2D, sacadas, cobertura e ORQ",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1537,7 +1537,6 @@
   ],
   "nao_classificados": {
     "abertos": [
-      686,
       576,
       561,
       553,
@@ -1550,6 +1549,7 @@
       310
     ],
     "integrados_recentes": [
+      686,
       682,
       672,
       662,
@@ -1568,14 +1568,13 @@
       534,
       533,
       469,
-      476,
-      480
+      476
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 577,
-  "commits_main_analisados": 2786,
+  "commits_main_analisados": 2797,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

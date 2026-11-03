@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-03T19:36:58Z",
+  "generated_at": "2026-11-03T20:02:08Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-    "short_sha": "acaacf4f",
+    "sha": "b3b9797da21cf204272e9e5ce3f96ef9d5ceda5d",
+    "short_sha": "b3b9797d",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T13:25:44-03:00",
-    "message": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103"
+    "date": "2026-11-03T17:01:12-03:00",
+    "message": "Merge pull request #686 from JGaspar-Eng/test/ci-browser-fluxos-criticos-20261103"
   },
   "commits": [
     {
-      "sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-      "short_sha": "acaacf4f",
+      "sha": "b3b9797da21cf204272e9e5ce3f96ef9d5ceda5d",
+      "short_sha": "b3b9797d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:25:44-03:00",
-      "message": "Merge pull request #685 from JGaspar-Eng/fix/orq-fundacoes-elu-prova-integridade-20261103"
+      "date": "2026-11-03T17:01:12-03:00",
+      "message": "Merge pull request #686 from JGaspar-Eng/test/ci-browser-fluxos-criticos-20261103"
     },
     {
-      "sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
-      "short_sha": "d5378584",
+      "sha": "0a09d4337930581ef0a201107700204dc6e9b82e",
+      "short_sha": "0a09d433",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:23:01-03:00",
-      "message": "test: validar bielas e tirantes somente com casos sintéticos de seis componentes completos"
+      "date": "2026-11-03T13:41:59-03:00",
+      "message": "test(browser): manter aplicação de fundações recolhida e cálculo de estaca acessível"
     },
     {
-      "sha": "08f6cd6cac032145f108ef8495432dfc2b22bddb",
-      "short_sha": "08f6cd6c",
+      "sha": "1ad282d0227e8ef5fdac80697510c559afcc7a44",
+      "short_sha": "1ad282d0",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:22:45-03:00",
-      "message": "test: manter ensaios de molas com contrato de oito ELU numericamente verificável"
+      "date": "2026-11-03T13:41:24-03:00",
+      "message": "test(browser): validar que WAITING abre pendências e nova execução exige resultado invalidado"
     },
     {
-      "sha": "a81d814f4a71904692aa056a6c58bbdec4dcc763",
-      "short_sha": "a81d814f",
+      "sha": "cc948f7274b7d9d3eab25b3c1a11f81349a241f3",
+      "short_sha": "cc948f72",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:22:10-03:00",
-      "message": "test: adaptar fixture lateral ao contrato assinado de seis componentes"
+      "date": "2026-11-03T13:36:53-03:00",
+      "message": "test(browser): validar ações principais da infraestrutura acessíveis na barra"
     },
     {
-      "sha": "b4d4143d0f8c47e6be83f5de0c20a93a4439b9ce",
-      "short_sha": "b4d4143d",
+      "sha": "1d39a044c425fd396fc9e7ffae7f656043902f87",
+      "short_sha": "1d39a044",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:20:33-03:00",
-      "message": "test: conferir rigidez desigual com identidade da fixture atualizada"
+      "date": "2026-11-03T13:36:33-03:00",
+      "message": "test(browser): reconciliar seletores com DOM atual sem esconder ações úteis"
     },
     {
-      "sha": "342030d197c87b9b0082f547302de287dbcfd9b7",
-      "short_sha": "342030d1",
+      "sha": "eea44e152d8a6821e73d36a1e4d1a262d18e359b",
+      "short_sha": "eea44e15",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:19:22-03:00",
-      "message": "ci: exigir regressão de integridade ORQ dos oito ELU em toda suíte oficial"
+      "date": "2026-11-03T13:36:30-03:00",
+      "message": "test(browser): reconciliar seletores com DOM atual sem esconder ações úteis"
     },
     {
-      "sha": "e1de02f86cd9374d12ca1cc933b7e232bca5ee83",
-      "short_sha": "e1de02f8",
+      "sha": "6588c4b501717ec245de3d286a744565c48e3cdb",
+      "short_sha": "6588c4b5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:19:12-03:00",
-      "message": "test(auditoria): 8 ELU exigem seis valores, proveniência, equilíbrio e identidade sem falsos positivos"
+      "date": "2026-11-03T13:32:15-03:00",
+      "message": "test(ci): reunir falhas de todos os fluxos browser em uma única execução"
     },
     {
-      "sha": "4aa1f6d3cb93e2d410a336137f863043559c4021",
-      "short_sha": "4aa1f6d3",
+      "sha": "e25711aeb0f0d793a0a3619dfc3f92cd8728a968",
+      "short_sha": "e25711ae",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:18:19-03:00",
-      "message": "test: validar 144 ELU Forecast com seis componentes e identidade de modelo conciliada"
+      "date": "2026-11-03T13:31:41-03:00",
+      "message": "test(browser): selecionar diagnóstico da sacada sem locator ambíguo"
     },
     {
-      "sha": "04f882638f1b3b1765fb24fcacbf4071b12d614b",
-      "short_sha": "04f88263",
+      "sha": "ed99011feee66262be50355ea8e360c147df285c",
+      "short_sha": "ed99011f",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:17:52-03:00",
-      "message": "test: substituir falsas declarações 6 ELU por contratos sintéticos numericamente consistentes"
+      "date": "2026-11-03T13:29:06-03:00",
+      "message": "test: registrar validador Chromium no controle de cobertura"
     },
     {
-      "sha": "dc9ba9a0f07b9d238056da0dfdd1fdde2c2db283",
-      "short_sha": "dc9ba9a0",
+      "sha": "c2df7f0828e9abd19e06ad438e6258c77e0da1ca",
+      "short_sha": "c2df7f08",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T13:17:01-03:00",
-      "message": "test: contrato sintético explícito de seis ações e reações com identidade de modelo"
+      "date": "2026-11-03T13:27:28-03:00",
+      "message": "ci: ampliar teste de navegador para sete fluxos 2D, sacadas, cobertura e ORQ"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41704864068",
-    "run_number": "1143"
+    "run_id": "41708661848",
+    "run_number": "1144"
   }
 }
