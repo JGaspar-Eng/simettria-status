@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-03T01:53:46Z",
+  "gerado_em": "2026-11-03T01:58:18Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-    "data": "2026-11-03T01:50:18Z"
+    "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
+    "data": "2026-11-03T01:56:53Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-    "gerado_em": "2026-11-03T01:50:37Z",
+    "gerado_em": "2026-11-03T01:52:55Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 6,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -215,14 +215,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 677,
-            "titulo": "Corrigir plano de referência do Babylon: base estrutural em vez da ponta das estacas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/677",
-            "rascunho": false,
-            "head_sha": "3bcdbe4e2d032c000854ff85a349c4e8715a8fe7",
-            "ci": "pendente"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -274,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 94,
+        "total_integrados": 95,
         "integrados_recentes": [
+          {
+            "numero": 677,
+            "titulo": "Corrigir plano de referência do Babylon: base estrutural em vez da ponta das estacas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/677",
+            "merged_at": "2026-11-03T01:56:54Z",
+            "merge_sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
+            "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 675,
             "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
@@ -284,7 +286,7 @@
             "merge_sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
             "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 676,
@@ -385,38 +387,28 @@
             "head_sha": "586690395f9b1e8e85427ac3a91a5c9757281a55",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 664,
-            "titulo": "Calcular e rastrear cargas verticais nas estacas dos oito ELU no Centro",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/664",
-            "merged_at": "2026-11-01T16:53:00Z",
-            "merge_sha": "b32ad080640182bb792a456b6a91292358b0fef1",
-            "head_sha": "109a12c519c83c570363332a716dc78f0d303cbb",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 675,
-          "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
-          "merge_sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-          "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
-          "merged_at": "2026-11-03T01:50:19Z",
+          "numero": 677,
+          "titulo": "Corrigir plano de referência do Babylon: base estrutural em vez da ponta das estacas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/677",
+          "merge_sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
+          "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
+          "merged_at": "2026-11-03T01:56:54Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-          "data": "2026-11-02T22:50:18-03:00",
-          "assunto": "Merge pull request #675 from JGaspar-Eng/test/fundacoes-forecast-18-blocos-30-estacas-render-20261102",
-          "ci": "passou"
+          "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
+          "data": "2026-11-02T22:56:53-03:00",
+          "assunto": "Merge pull request #677 from JGaspar-Eng/fix/babylon-plano-base-fundacoes-20261102",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1572,7 +1564,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 571,
-  "commits_main_analisados": 2742,
+  "commits_main_analisados": 2748,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

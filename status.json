@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-11-03T01:52:55Z",
+  "generated_at": "2026-11-03T01:57:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-    "short_sha": "3454e1d4",
+    "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
+    "short_sha": "b38977ba",
     "author": "Joanez Gaspar",
-    "date": "2026-11-02T22:50:18-03:00",
-    "message": "Merge pull request #675 from JGaspar-Eng/test/fundacoes-forecast-18-blocos-30-estacas-render-20261102"
+    "date": "2026-11-02T22:56:53-03:00",
+    "message": "Merge pull request #677 from JGaspar-Eng/fix/babylon-plano-base-fundacoes-20261102"
   },
   "commits": [
+    {
+      "sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
+      "short_sha": "b38977ba",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:56:53-03:00",
+      "message": "Merge pull request #677 from JGaspar-Eng/fix/babylon-plano-base-fundacoes-20261102"
+    },
+    {
+      "sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
+      "short_sha": "90f35162",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:53:45-03:00",
+      "message": "ci: executar regressão browser da alternância do plano-base"
+    },
+    {
+      "sha": "7759738e2153ba604dfc64a9da0b924a990072cf",
+      "short_sha": "7759738e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:53:37-03:00",
+      "message": "test(browser): validar botão real de ocultar/restaurar plano-base no modal Babylon"
+    },
+    {
+      "sha": "3bcdbe4e2d032c000854ff85a349c4e8715a8fe7",
+      "short_sha": "3bcdbe4e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:52:36-03:00",
+      "message": "test(webgl): garantir plano de base em cota 0 e alternância sem perda de estacas"
+    },
+    {
+      "sha": "53a0250f688b01bc2d23416f9bdf607bfb86bcbc",
+      "short_sha": "53a0250f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:52:12-03:00",
+      "message": "feat(ui): ocultar e restaurar plano-base no Babylon sem mover estrutura"
+    },
+    {
+      "sha": "7963298887debdf1dd92f8fad215bb7670a6052e",
+      "short_sha": "79632988",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-02T22:51:27-03:00",
+      "message": "fix(babylon): posicionar grid na base estrutural e separar de terreno natural; permitir ocultar plano"
+    },
     {
       "sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
       "short_sha": "3454e1d4",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-02T12:59:50-03:00",
       "message": "fix(babylon): alinhar normais do prisma poligonal às faces físicas topo/base"
-    },
-    {
-      "sha": "ab8121ca5268ba7383474905dc01b03fe07fafdd",
-      "short_sha": "ab8121ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:58:28-03:00",
-      "message": "test(webgl): ajustar alvo antes de alfa e beta e validar câmera realmente inferior"
-    },
-    {
-      "sha": "a5536075dc5e1b5bc7f8e655f9e1ad485fcdbe96",
-      "short_sha": "a5536075",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:58:15-03:00",
-      "message": "fix(camera): restaurar ângulos após atualizar o alvo Babylon"
-    },
-    {
-      "sha": "aedad4b5ba183e7b3e247f80dc12113d22d9799a",
-      "short_sha": "aedad4b5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:56:46-03:00",
-      "message": "test(webgl): conferir normais físicas superior/inferior e iluminação unilateral do bloco"
-    },
-    {
-      "sha": "4cb268f5f3c966b93ceb114d9082ecafa12ac45f",
-      "short_sha": "4cb268f5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:56:16-03:00",
-      "message": "fix(babylon): manter iluminação externa consistente entre tampas poligonais e blocos retangulares"
-    },
-    {
-      "sha": "ec6720ca552d4e12663e7c4f4ab052f9594f9623",
-      "short_sha": "ec6720ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:54:53-03:00",
-      "message": "test(webgl): comprovar posição física da câmera de inspeção inferior"
-    },
-    {
-      "sha": "6a5372a5afaa79ca373d50a945399cde560bc41b",
-      "short_sha": "6a5372a5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-02T12:52:41-03:00",
-      "message": "ci: testar Babylon 18 blocos e 30 estacas em Chrome real"
     }
   ],
   "development": {
@@ -3996,7 +3996,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41562549715",
-    "run_number": "1124"
+    "run_id": "41563005278",
+    "run_number": "1125"
   }
 }
