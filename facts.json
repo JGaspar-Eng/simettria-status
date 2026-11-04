@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-04T23:52:19Z",
+  "gerado_em": "2026-11-04T23:53:30Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-    "data": "2026-11-04T23:47:20Z"
+    "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+    "data": "2026-11-04T23:51:41Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-    "gerado_em": "2026-11-04T23:47:39Z",
+    "gerado_em": "2026-11-04T23:50:58Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 10,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -215,14 +215,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 699,
-            "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
-            "rascunho": true,
-            "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -274,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 102,
+        "total_integrados": 103,
         "integrados_recentes": [
+          {
+            "numero": 699,
+            "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
+            "merged_at": "2026-11-04T23:51:41Z",
+            "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+            "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 694,
             "titulo": "Fundações: acoplar flexão do fuste por viga de Winkler ao equilíbrio espacial 6GL",
@@ -334,7 +336,7 @@
             "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
             "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 678,
@@ -385,38 +387,28 @@
             "head_sha": "6a92043c86cf2e01780ba408cea49dc77404dd2c",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 673,
-            "titulo": "Corrigir costura visual das estacas e leitura inferior dos blocos no Babylon 3D",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/673",
-            "merged_at": "2026-11-02T13:55:36Z",
-            "merge_sha": "26105a1cbd28c70ab3dfd70b2b9285cca3bfb7ec",
-            "head_sha": "688a2ecb0849445247de5f201e65bb10097a7ee4",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 694,
-          "titulo": "Fundações: acoplar flexão do fuste por viga de Winkler ao equilíbrio espacial 6GL",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/694",
-          "merge_sha": "5b365d911e4bee6ea9f6de865c040e4f0e7fe9ac",
-          "head_sha": "bf105548506741585107efd1d8c0b9a2d5482073",
-          "merged_at": "2026-11-04T16:41:29Z",
+          "numero": 699,
+          "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
+          "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+          "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
+          "merged_at": "2026-11-04T23:51:41Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "68d08cdb5c15ae9fd7ed4fd2341269e0895629ed",
-          "data": "2026-11-04T14:49:02-03:00",
-          "assunto": "test(pv1): conferir ELU/ELS e 21 pontos por benchmarks analiticos e entradas adversas",
-          "ci": "sem_evidencia"
+          "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+          "data": "2026-11-04T20:51:41-03:00",
+          "assunto": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -711,22 +703,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 11,
+        "integrados_recentes": [
           {
             "numero": 699,
             "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
-            "rascunho": true,
+            "merged_at": "2026-11-04T23:51:41Z",
+            "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
             "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 10,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 679,
             "titulo": "Auditar oito combinações ELU de blocos com uma estaca sem inventar resistência a momento",
@@ -735,7 +728,7 @@
             "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
             "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 641,
@@ -829,25 +822,25 @@
           }
         ],
         "ultimo": {
-          "numero": 679,
-          "titulo": "Auditar oito combinações ELU de blocos com uma estaca sem inventar resistência a momento",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/679",
-          "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-          "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
-          "merged_at": "2026-11-03T12:08:24Z",
+          "numero": 699,
+          "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
+          "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+          "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
+          "merged_at": "2026-11-04T23:51:41Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "628a220645cd2db27f3a0efe9bef0f20f028272a",
-          "data": "2026-11-04T12:46:06-03:00",
-          "assunto": "ui(fundacoes): apresentar momento e cortante do fuste Winkler por ELU sem aprovar resistencia",
-          "ci": "sem_evidencia"
+          "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+          "data": "2026-11-04T20:51:41-03:00",
+          "assunto": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1153,7 +1146,7 @@
             "merged_at": "2026-10-30T12:29:34Z",
             "merge_sha": "91ae0def290bfb0e88836b55e5f856cb9d10c1f9",
             "head_sha": "e9fa82393295424c1d87948ca96d216ceb3e4ad8",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1199,9 +1192,9 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "74960536fc642ac329770c36d272b9720439e47b",
-          "data": "2026-11-04T20:31:58-03:00",
-          "assunto": "feat(vigas3d): projetar apenas barras e estribos com origem ORQ assinada e geometria validada",
+          "sha": "0abc7537f80d4fc467e577094630f571a38036eb",
+          "data": "2026-11-04T20:42:38-03:00",
+          "assunto": "test(memorial): comprovar presenca de diagramas M/V nos mesmos oito ELU do ORQ",
           "ci": "sem_evidencia"
         }
       },
@@ -1601,7 +1594,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 590,
-  "commits_main_analisados": 2927,
+  "commits_main_analisados": 2937,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

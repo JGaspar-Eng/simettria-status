@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-11-04T23:50:58Z",
+  "generated_at": "2026-11-04T23:52:44Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-    "short_sha": "28f78c16",
+    "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+    "short_sha": "49fcbe6e",
     "author": "Joanez Gaspar",
-    "date": "2026-11-04T20:47:20-03:00",
-    "message": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104"
+    "date": "2026-11-04T20:51:41-03:00",
+    "message": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104"
   },
   "commits": [
+    {
+      "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
+      "short_sha": "49fcbe6e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T20:51:41-03:00",
+      "message": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104"
+    },
+    {
+      "sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
+      "short_sha": "f446de48",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T20:48:28-03:00",
+      "message": "merge: integrar diagramas M/V ao 3D validado na main preservando CI integral"
+    },
     {
       "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
       "short_sha": "28f78c16",
       "author": "Joanez Gaspar",
       "date": "2026-11-04T20:47:20-03:00",
       "message": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104"
+    },
+    {
+      "sha": "8ca759330647ab58a786145ee1c4b9cbe199a836",
+      "short_sha": "8ca75933",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T20:44:58-03:00",
+      "message": "fix(diagramas): diagnosticar cobertura inferior a oito ELU sem mascarar como entrada invalida"
     },
     {
       "sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
@@ -25,60 +46,39 @@
       "message": "fix(vigas3d): conservar contagem de estribos fora do escopo do try no Babylon"
     },
     {
-      "sha": "d4e92b5af8ef64d52d643bfd6b006297356dc83b",
-      "short_sha": "d4e92b5a",
+      "sha": "c806a4bba271b660952f67a054f6bcd66d63caea",
+      "short_sha": "c806a4bb",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:39:27-03:00",
-      "message": "fix(test-browser): ler instancia Babylon do backdrop correto do modal"
+      "date": "2026-11-04T20:42:49-03:00",
+      "message": "ci(diagramas): conferir extremos analiticos de M/V e integracao no memorial"
     },
     {
-      "sha": "5792bf99848727cd6c2e0990a7bde4c7498591fb",
-      "short_sha": "5792bf99",
+      "sha": "0abc7537f80d4fc467e577094630f571a38036eb",
+      "short_sha": "0abc7537",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:37:36-03:00",
-      "message": "test(browser): remover captura posterior ao fechamento e manter prova funcional real"
+      "date": "2026-11-04T20:42:38-03:00",
+      "message": "test(memorial): comprovar presenca de diagramas M/V nos mesmos oito ELU do ORQ"
     },
     {
-      "sha": "754bb9c5e29a79de58b56c9ccbc347bbc33d7d5b",
-      "short_sha": "754bb9c5",
+      "sha": "603d0f94572cc07d27680fff16c5ceb4cc44ef86",
+      "short_sha": "603d0f94",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:37:24-03:00",
-      "message": "test(browser): guardar evidência PNG da interação da viga no Babylon real"
+      "date": "2026-11-04T20:42:25-03:00",
+      "message": "ui(diagramas): incluir M+ M- e V max com valores e cotas de vao no SVG"
     },
     {
-      "sha": "d98f7b253ce20d50bf9e242c9d431f7201f044e9",
-      "short_sha": "d98f7b25",
+      "sha": "2c425b5db9a7fb05714f8c93d1084c9a106b984f",
+      "short_sha": "2c425b5d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:36:43-03:00",
-      "message": "ci(vigas3d): exercitar Babylon real no browser e verificar selecao/restauracao"
+      "date": "2026-11-04T20:42:05-03:00",
+      "message": "test(diagramas): M/V reais por 8 ELU com benchmark analitico e recusa de dados importados"
     },
     {
-      "sha": "f0c6360fd26c013dadee4b414302190375f1493a",
-      "short_sha": "f0c6360f",
+      "sha": "fe9471a94c750862a69c5ce1dd314858dce11ed6",
+      "short_sha": "fe9471a9",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:36:32-03:00",
-      "message": "test(browser): provar clique real no 3D, opacidade isolada, barras, restauracao e bloqueio"
-    },
-    {
-      "sha": "7ddfb6e7004e49fecb94085f9f517cb2f3db99b7",
-      "short_sha": "7ddfb6e7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:34:59-03:00",
-      "message": "docs(vigas3d): especificar paridade visual com Forecast sem copiar numeros nem simular ancoragens"
-    },
-    {
-      "sha": "3c1d5bc8ce318ae902d2fefc0ab4effaaed411ce",
-      "short_sha": "3c1d5bc8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:34:36-03:00",
-      "message": "ci(vigas3d): testar fidelidade de bitolas, camadas, geometria e bloqueios"
-    },
-    {
-      "sha": "b1d2bce386ba60b5499dc79a507a25a8041e2e06",
-      "short_sha": "b1d2bce3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:34:22-03:00",
-      "message": "test(vigas3d): contrato de barras para biapoiadas e continuas, oito ELU e bloqueios contra armadura inventada"
+      "date": "2026-11-04T20:41:31-03:00",
+      "message": "ui(vigas): exibir e exportar M/V por oito ELU antes das pranchas de armadura"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41936864977",
-    "run_number": "1180"
+    "run_id": "41936997356",
+    "run_number": "1181"
   }
 }
