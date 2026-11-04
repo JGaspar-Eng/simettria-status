@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-04T11:10:10Z",
+  "generated_at": "2026-11-04T13:08:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0ff2d526f4a2be4582a3242f529b233428834ff8",
-    "short_sha": "0ff2d526",
+    "sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
+    "short_sha": "e59dae87",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T23:49:33-03:00",
-    "message": "Merge pull request #691 from JGaspar-Eng/fix/servidor-build-automatico-main-unica-20261103"
+    "date": "2026-11-04T10:08:04-03:00",
+    "message": "Merge pull request #692 from JGaspar-Eng/fix/fundacoes-16-impedimentos-momento-vetorial-20261104"
   },
   "commits": [
     {
-      "sha": "0ff2d526f4a2be4582a3242f529b233428834ff8",
-      "short_sha": "0ff2d526",
+      "sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
+      "short_sha": "e59dae87",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T23:49:33-03:00",
-      "message": "Merge pull request #691 from JGaspar-Eng/fix/servidor-build-automatico-main-unica-20261103"
+      "date": "2026-11-04T10:08:04-03:00",
+      "message": "Merge pull request #692 from JGaspar-Eng/fix/fundacoes-16-impedimentos-momento-vetorial-20261104"
     },
     {
-      "sha": "83236ca0a47cb6adb7cb5abd6b99c9614ef39fb0",
-      "short_sha": "83236ca0",
+      "sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
+      "short_sha": "969f2614",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T23:45:22-03:00",
-      "message": "ci(server): exigir teste HTTP de sincronização automática Git/build"
+      "date": "2026-11-04T10:04:05-03:00",
+      "message": "ci(ORQ): conferir N das tabelas de pilares contra soma das reações por estaca"
     },
     {
-      "sha": "0541c1a23d60bf07177dc56a201b5a2ec94ed509",
-      "short_sha": "0541c1a2",
+      "sha": "3a6fd7ccee492ad27757a592f6483b96feddb3d9",
+      "short_sha": "3a6fd7cc",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T23:45:08-03:00",
-      "message": "test(server): comprovar renovação do build por commit e metadados HTTP coerentes"
+      "date": "2026-11-04T10:03:47-03:00",
+      "message": "test(ORQ): impedir N de primeira ordem em tabela quando fundações usam N consolidado"
     },
     {
-      "sha": "4863b65e3b8a99d63b2e6e488e8f61433bf2e929",
-      "short_sha": "4863b65e",
+      "sha": "f91e03c584370d74ebcc74259df7aaf1651635e1",
+      "short_sha": "f91e03c5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T23:44:31-03:00",
-      "message": "fix(server): acompanhar HEAD do Git e renovar fingerprint sem restart após merge"
+      "date": "2026-11-04T10:02:46-03:00",
+      "message": "ui(ELU): indicar se relatório usa mesmas reações consolidadas das fundações"
     },
     {
-      "sha": "244687d0167dc8457a8a70767e418655a3555946",
-      "short_sha": "244687d0",
+      "sha": "e5ed6e4b4f9225a81becf1d169bbf69268d4def1",
+      "short_sha": "e5ed6e4b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:43:26-03:00",
-      "message": "Merge pull request #690 from JGaspar-Eng/fix/be8-be11-contorno-live-2d-3d-20261103"
+      "date": "2026-11-04T10:02:28-03:00",
+      "message": "fix(ELU): relatório de pilares usar reações consolidadas e identidade idênticas às fundações"
     },
     {
-      "sha": "ae3eeec6dbd528bf3a50308c423ce81f6b09b193",
-      "short_sha": "ae3eeec6",
+      "sha": "3efbb41b06573a808ab2aa7a956c62628ebf3897",
+      "short_sha": "3efbb41b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:39:54-03:00",
-      "message": "test: auditor do estado vivo projeta contornos sem mudar cadastro legado"
+      "date": "2026-11-04T09:58:13-03:00",
+      "message": "ci(browser): usar Babylon local npm na CI e aguardar HTTP para eliminar flakiness de CDN externa"
     },
     {
-      "sha": "00f2563b4d824858b12800b561016cc8a5135af5",
-      "short_sha": "00f2563b",
+      "sha": "17354cd8dd6ef87b0ccc32b59d7aa6216d6110bc",
+      "short_sha": "17354cd8",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:37:18-03:00",
-      "message": "ci: bloquear regressão BE8/BE11 do estado vivo no 2D, auditor e Babylon"
+      "date": "2026-11-04T09:53:08-03:00",
+      "message": "test(avisos): blocos de 1/2 estacas não são elegíveis ao motor radial de bielas 3/4"
     },
     {
-      "sha": "dfe25ef39ed9a7a54d7920754b68db6e227d53b9",
-      "short_sha": "dfe25ef3",
+      "sha": "a017d716cd1dafdf5710c15da260aee68c11c665",
+      "short_sha": "a017d716",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:36:59-03:00",
-      "message": "test(browser): degradar estado vivo BE8/BE11 após importação e exigir 2D/3D corretos sem reimportar"
+      "date": "2026-11-04T09:52:50-03:00",
+      "message": "fix(ui): proteger resumo de bielas quando auditoria parcial não inclui blocos"
     },
     {
-      "sha": "c2d6b494296725abcdabb78e7404b07112bc0dc4",
-      "short_sha": "c2d6b494",
+      "sha": "8a183e7097cff5dead1710dbb057966a849f4359",
+      "short_sha": "8a183e70",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:36:28-03:00",
-      "message": "test(BE8/BE11): comprovar indice real do Centro de Cálculo a partir do estado vivo"
+      "date": "2026-11-04T09:52:28-03:00",
+      "message": "fix(avisos): separar bielas de 3/4 estacas e modelos específicos para 1/2, sem alegar 18 casos elegíveis"
     },
     {
-      "sha": "feb6bc3d1849fe0b391f557436d8a50091ae3d78",
-      "short_sha": "feb6bc3d",
+      "sha": "51aa12380bf2a4fe8588aa84a36b55cfb1957ea8",
+      "short_sha": "51aa1238",
       "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:35:27-03:00",
-      "message": "test(BE8/BE11): estado vivo legado 2D/3D válido sem reimportar JSON e sem mutações"
+      "date": "2026-11-04T09:52:23-03:00",
+      "message": "fix(avisos): separar bielas de 3/4 estacas e modelos específicos para 1/2, sem alegar 18 casos elegíveis"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41819037632",
-    "run_number": "1165"
+    "run_id": "41835343524",
+    "run_number": "1166"
   }
 }

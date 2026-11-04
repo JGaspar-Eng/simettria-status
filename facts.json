@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-04T11:11:56Z",
+  "gerado_em": "2026-11-04T13:09:40Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "0ff2d526f4a2be4582a3242f529b233428834ff8",
-    "data": "2026-11-04T02:49:33Z"
+    "sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
+    "data": "2026-11-04T13:08:04Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "0ff2d526f4a2be4582a3242f529b233428834ff8",
-    "gerado_em": "2026-11-04T02:52:54Z",
+    "gerado_em": "2026-11-04T11:10:10Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 8.3
+    "defasagem_commits_main": 21,
+    "idade_horas": 2.0
   },
   "frentes": [
     {
@@ -266,8 +266,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 99,
+        "total_integrados": 100,
         "integrados_recentes": [
+          {
+            "numero": 692,
+            "titulo": "Fundação: diagnosticar matematicamente por que 16 blocos não têm repartição axial completa",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/692",
+            "merged_at": "2026-11-04T13:08:05Z",
+            "merge_sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
+            "head_sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 685,
             "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
@@ -377,38 +387,28 @@
             "head_sha": "9ae657f9c17e4df07e0547d82aaa7eb22c1fbd85",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 669,
-            "titulo": "Invalidar rigidezes laterais de estacas após mudança geométrica",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/669",
-            "merged_at": "2026-11-02T01:13:53Z",
-            "merge_sha": "ec8d0fb4a5059372fbcb567aa60bf3f4c1ce5b1a",
-            "head_sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 685,
-          "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
-          "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-          "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
-          "merged_at": "2026-11-03T16:25:44Z",
+          "numero": 692,
+          "titulo": "Fundação: diagnosticar matematicamente por que 16 blocos não têm repartição axial completa",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/692",
+          "merge_sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
+          "head_sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
+          "merged_at": "2026-11-04T13:08:05Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fcd8469d6ef3fae02775797b23af358c715c1cdd",
-          "data": "2026-11-03T20:34:44-03:00",
-          "assunto": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_desenhos_lajes_fundacoes_ui.js",
-          "ci": "sem_evidencia"
+          "sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
+          "data": "2026-11-04T10:08:04-03:00",
+          "assunto": "Merge pull request #692 from JGaspar-Eng/fix/fundacoes-16-impedimentos-momento-vetorial-20261104",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1172,14 +1172,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "fcd8469d6ef3fae02775797b23af358c715c1cdd",
-          "data": "2026-11-03T20:34:44-03:00",
-          "assunto": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_desenhos_lajes_fundacoes_ui.js",
-          "ci": "sem_evidencia"
+          "sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
+          "data": "2026-11-04T10:04:05-03:00",
+          "assunto": "ci(ORQ): conferir N das tabelas de pilares contra soma das reações por estaca",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1573,8 +1573,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 582,
-  "commits_main_analisados": 2834,
+  "janela_prs": 583,
+  "commits_main_analisados": 2855,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
