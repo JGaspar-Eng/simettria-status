@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-04T16:54:20Z",
+  "generated_at": "2026-11-04T17:46:16Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f485acfa537f6482931e5439d33256aeae3ff899",
-    "short_sha": "f485acfa",
+    "sha": "bce9879ac4efef899062103e35649758a15abe29",
+    "short_sha": "bce9879a",
     "author": "Joanez Gaspar",
-    "date": "2026-11-04T13:50:42-03:00",
-    "message": "Merge pull request #695 from JGaspar-Eng/feat/orq-gate-exequibilidade-memorial-obra-20261104"
+    "date": "2026-11-04T14:45:54-03:00",
+    "message": "Merge pull request #696 from JGaspar-Eng/feat/produto-vigas-mvp-gates-20261104"
   },
   "commits": [
+    {
+      "sha": "bce9879ac4efef899062103e35649758a15abe29",
+      "short_sha": "bce9879a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T14:45:54-03:00",
+      "message": "Merge pull request #696 from JGaspar-Eng/feat/produto-vigas-mvp-gates-20261104"
+    },
+    {
+      "sha": "9aba83b492c38deeeeef6e4b4559e7024d4761c5",
+      "short_sha": "9aba83b4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:55:58-03:00",
+      "message": "test(vigas): confrontar fichas com origem ORQ e impedir indice adulterado"
+    },
+    {
+      "sha": "1470bea43e016c92603087ddf7f9660767bcde56",
+      "short_sha": "1470bea4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:55:40-03:00",
+      "message": "fix(vigas): informar duplicidade do modelo antes da conferência da fonte ORQ"
+    },
+    {
+      "sha": "ebca07c3fccc482b8f730c595fce189eee04813b",
+      "short_sha": "ebca07c3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:55:11-03:00",
+      "message": "fix(vigas): vincular cada ficha diretamente aos resultados originais da execucao ORQ"
+    },
+    {
+      "sha": "f6ff626e4442bad602709019eca486bf583cd7fd",
+      "short_sha": "f6ff626e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:53:12-03:00",
+      "message": "docs(produto): explicitar que assinatura ORQ e comparacao de snapshot nao ART"
+    },
+    {
+      "sha": "59aa2140b892474a652384abad0aa0e6768f59b7",
+      "short_sha": "59aa2140",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:52:59-03:00",
+      "message": "test(produto): snapshot ORQ nao equivale a assinatura profissional"
+    },
+    {
+      "sha": "0bb2d3662a6e7a5cbc9577e07467248cd15b9a2a",
+      "short_sha": "0bb2d366",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:52:55-03:00",
+      "message": "fix(produto): diferenciar identidade de snapshot de assinatura digital profissional"
+    },
+    {
+      "sha": "04f72ac7d7cfa4485709381cc230e8ffe9e66fbf",
+      "short_sha": "04f72ac7",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:51:20-03:00",
+      "message": "docs(roadmap): priorizar produto Vigas com dominio validado e evitar quatro engines"
+    },
+    {
+      "sha": "8b05a67e6e930449ca519e43537ac7e708a54c5b",
+      "short_sha": "8b05a67e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:51:04-03:00",
+      "message": "docs(milestones): estabelecer PV-01 Vigas como primeiro produto com marcos de saida"
+    },
     {
       "sha": "f485acfa537f6482931e5439d33256aeae3ff899",
       "short_sha": "f485acfa",
       "author": "Joanez Gaspar",
       "date": "2026-11-04T13:50:42-03:00",
       "message": "Merge pull request #695 from JGaspar-Eng/feat/orq-gate-exequibilidade-memorial-obra-20261104"
-    },
-    {
-      "sha": "4f7f0725cdbe6894e62f88f8ac93d45ce050f8ae",
-      "short_sha": "4f7f0725",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:42:32-03:00",
-      "message": "merge: reconciliar #695 com fundacoes Winkler validado na main (#694)"
-    },
-    {
-      "sha": "5b365d911e4bee6ea9f6de865c040e4f0e7fe9ac",
-      "short_sha": "5b365d91",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:41:28-03:00",
-      "message": "Merge pull request #694 from JGaspar-Eng/feat/fundacoes-viga-winkler-rigidez-acoplada-20261104"
-    },
-    {
-      "sha": "371e0b632cdf3e790ee193a43f7c0bb3e7f75ae5",
-      "short_sha": "371e0b63",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:07:09-03:00",
-      "message": "ci: impedir regressões do gate de obra e memorial descritivo"
-    },
-    {
-      "sha": "7e1ca0f61f33cc1e652267d977e1a392f09a4172",
-      "short_sha": "7e1ca0f6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:07:00-03:00",
-      "message": "docs: fixar critérios de viabilidade construtiva, segurança e custo subordinado"
-    },
-    {
-      "sha": "6024e718599e9854056e9e3976627fcafe4148ff",
-      "short_sha": "6024e718",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:06:12-03:00",
-      "message": "test(execucao): tolerar capitalizacao no termo escoramentos"
-    },
-    {
-      "sha": "a24cecf1a230a14f3cd4b6631d0ec5234f24d3a9",
-      "short_sha": "a24cecf1",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:05:59-03:00",
-      "message": "test(execucao): 6GL nao implica obra liberada, memorial completo e entrada imutavel"
-    },
-    {
-      "sha": "45500dff35e1588358ec56d16c8f6780c726baa1",
-      "short_sha": "45500dff",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:05:27-03:00",
-      "message": "test(memorial): conferir anexo exequibilidade e total de folhas"
-    },
-    {
-      "sha": "30db5c6f57797e247b8c7a8c20619732a335c634",
-      "short_sha": "30db5c6f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:05:07-03:00",
-      "message": "feat(memorial): inserir anexo descritivo de obra e registrar seis componentes por estaca"
-    },
-    {
-      "sha": "b5496874b8c005373916a72cef3ef0a86d020d77",
-      "short_sha": "b5496874",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T13:04:06-03:00",
-      "message": "feat(executivo): contrato fail-closed de exequibilidade e segurança de obra por elemento"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41872122430",
-    "run_number": "1173"
+    "run_id": "41880294359",
+    "run_number": "1174"
   }
 }
