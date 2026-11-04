@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-04T13:10:51Z",
+  "generated_at": "2026-11-04T15:39:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
-    "short_sha": "e59dae87",
+    "sha": "2f7e636b02e316e66a7dabad15d0109e475c624b",
+    "short_sha": "2f7e636b",
     "author": "Joanez Gaspar",
-    "date": "2026-11-04T10:08:04-03:00",
-    "message": "Merge pull request #692 from JGaspar-Eng/fix/fundacoes-16-impedimentos-momento-vetorial-20261104"
+    "date": "2026-11-04T12:39:23-03:00",
+    "message": "Merge pull request #693 from JGaspar-Eng/feat/fundacoes-equilibrio-espacial-6gl-20261104"
   },
   "commits": [
     {
-      "sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
-      "short_sha": "e59dae87",
+      "sha": "2f7e636b02e316e66a7dabad15d0109e475c624b",
+      "short_sha": "2f7e636b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T10:08:04-03:00",
-      "message": "Merge pull request #692 from JGaspar-Eng/fix/fundacoes-16-impedimentos-momento-vetorial-20261104"
+      "date": "2026-11-04T12:39:23-03:00",
+      "message": "Merge pull request #693 from JGaspar-Eng/feat/fundacoes-equilibrio-espacial-6gl-20261104"
     },
     {
-      "sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
-      "short_sha": "969f2614",
+      "sha": "d0b3e611f66c5ddecf9ebba23a124c12ecea5a17",
+      "short_sha": "d0b3e611",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T10:04:05-03:00",
-      "message": "ci(ORQ): conferir N das tabelas de pilares contra soma das reações por estaca"
+      "date": "2026-11-04T12:03:49-03:00",
+      "message": "fix(test): evitar escape de barra na assercao da ficha axial"
     },
     {
-      "sha": "3a6fd7ccee492ad27757a592f6483b96feddb3d9",
-      "short_sha": "3a6fd7cc",
+      "sha": "36bd3dfb059da1bee5679197b6937ddf035b9524",
+      "short_sha": "36bd3dfb",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T10:03:47-03:00",
-      "message": "test(ORQ): impedir N de primeira ordem em tabela quando fundações usam N consolidado"
+      "date": "2026-11-04T12:03:04-03:00",
+      "message": "test(ui): alinhar asserção ao título real do diagnóstico axial"
     },
     {
-      "sha": "f91e03c584370d74ebcc74259df7aaf1651635e1",
-      "short_sha": "f91e03c5",
+      "sha": "45861c4b4e0fd6960bdee2d7109413b7d85aee9a",
+      "short_sha": "45861c4b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T10:02:46-03:00",
-      "message": "ui(ELU): indicar se relatório usa mesmas reações consolidadas das fundações"
+      "date": "2026-11-04T12:02:13-03:00",
+      "message": "test(ui): conferir ficha 6GL e impedir aprovação implícita do bloco"
     },
     {
-      "sha": "e5ed6e4b4f9225a81becf1d169bbf69268d4def1",
-      "short_sha": "e5ed6e4b",
+      "sha": "6426c145b1ac56eb082f55c38f8bc1b890f364d8",
+      "short_sha": "6426c145",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T10:02:28-03:00",
-      "message": "fix(ELU): relatório de pilares usar reações consolidadas e identidade idênticas às fundações"
+      "date": "2026-11-04T12:00:52-03:00",
+      "message": "docs(fundacoes): contrato matematico e limites do estudo espacial 6GL"
     },
     {
-      "sha": "3efbb41b06573a808ab2aa7a956c62628ebf3897",
-      "short_sha": "3efbb41b",
+      "sha": "68ce01c1cb50b6a22f94bc4ea82818a93227fb91",
+      "short_sha": "68ce01c1",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T09:58:13-03:00",
-      "message": "ci(browser): usar Babylon local npm na CI e aguardar HTTP para eliminar flakiness de CDN externa"
+      "date": "2026-11-04T12:00:12-03:00",
+      "message": "ui(fundacoes): mostrar solicitações por estaca 6GL, resíduos e bloqueios"
     },
     {
-      "sha": "17354cd8dd6ef87b0ccc32b59d7aa6216d6110bc",
-      "short_sha": "17354cd8",
+      "sha": "724eabfeb1612e180a84aa8108836af39bcbdecf",
+      "short_sha": "724eabfe",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T09:53:08-03:00",
-      "message": "test(avisos): blocos de 1/2 estacas não são elegíveis ao motor radial de bielas 3/4"
+      "date": "2026-11-04T11:59:36-03:00",
+      "message": "ci: executar prova 6GL para grupos de uma a três estacas"
     },
     {
-      "sha": "a017d716cd1dafdf5710c15da260aee68c11c665",
-      "short_sha": "a017d716",
+      "sha": "de9cfa7bd565406f6e3300f4579f0a5f85d89d3a",
+      "short_sha": "de9cfa7b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T09:52:50-03:00",
-      "message": "fix(ui): proteger resumo de bielas quando auditoria parcial não inclui blocos"
+      "date": "2026-11-04T11:59:24-03:00",
+      "message": "test(fundacoes): referencia independente 6GL 1/2/3 estacas e bloqueios"
     },
     {
-      "sha": "8a183e7097cff5dead1710dbb057966a849f4359",
-      "short_sha": "8a183e70",
+      "sha": "a9f4f9ff03498e532fd56f5f7ae5ec1d2b5d6959",
+      "short_sha": "a9f4f9ff",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T09:52:28-03:00",
-      "message": "fix(avisos): separar bielas de 3/4 estacas e modelos específicos para 1/2, sem alegar 18 casos elegíveis"
+      "date": "2026-11-04T11:58:06-03:00",
+      "message": "feat(fundacoes): integrar estudo 6GL opcional a auditoria dos oito ELU"
     },
     {
-      "sha": "51aa12380bf2a4fe8588aa84a36b55cfb1957ea8",
-      "short_sha": "51aa1238",
+      "sha": "acb82ebe83a77578e25e190f90078e4bda081c8a",
+      "short_sha": "acb82ebe",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T09:52:23-03:00",
-      "message": "fix(avisos): separar bielas de 3/4 estacas e modelos específicos para 1/2, sem alegar 18 casos elegíveis"
+      "date": "2026-11-04T11:57:29-03:00",
+      "message": "feat(fundacoes): solver elastico 6GL rastreavel com molas individuais e oito ELU"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41835701105",
-    "run_number": "1167"
+    "run_id": "41860011648",
+    "run_number": "1168"
   }
 }
