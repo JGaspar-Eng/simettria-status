@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-04T16:44:10Z",
+  "generated_at": "2026-11-04T16:51:14Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5b365d911e4bee6ea9f6de865c040e4f0e7fe9ac",
-    "short_sha": "5b365d91",
+    "sha": "f485acfa537f6482931e5439d33256aeae3ff899",
+    "short_sha": "f485acfa",
     "author": "Joanez Gaspar",
-    "date": "2026-11-04T13:41:28-03:00",
-    "message": "Merge pull request #694 from JGaspar-Eng/feat/fundacoes-viga-winkler-rigidez-acoplada-20261104"
+    "date": "2026-11-04T13:50:42-03:00",
+    "message": "Merge pull request #695 from JGaspar-Eng/feat/orq-gate-exequibilidade-memorial-obra-20261104"
   },
   "commits": [
+    {
+      "sha": "f485acfa537f6482931e5439d33256aeae3ff899",
+      "short_sha": "f485acfa",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:50:42-03:00",
+      "message": "Merge pull request #695 from JGaspar-Eng/feat/orq-gate-exequibilidade-memorial-obra-20261104"
+    },
+    {
+      "sha": "4f7f0725cdbe6894e62f88f8ac93d45ce050f8ae",
+      "short_sha": "4f7f0725",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-04T13:42:32-03:00",
+      "message": "merge: reconciliar #695 com fundacoes Winkler validado na main (#694)"
+    },
     {
       "sha": "5b365d911e4bee6ea9f6de865c040e4f0e7fe9ac",
       "short_sha": "5b365d91",
@@ -18,67 +32,53 @@
       "message": "Merge pull request #694 from JGaspar-Eng/feat/fundacoes-viga-winkler-rigidez-acoplada-20261104"
     },
     {
-      "sha": "bf105548506741585107efd1d8c0b9a2d5482073",
-      "short_sha": "bf105548",
+      "sha": "371e0b632cdf3e790ee193a43f7c0bb3e7f75ae5",
+      "short_sha": "371e0b63",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:50:34-03:00",
-      "message": "test(ui): conferir fuste Winkler e limites do antigo repartidor axial"
+      "date": "2026-11-04T13:07:09-03:00",
+      "message": "ci: impedir regressões do gate de obra e memorial descritivo"
     },
     {
-      "sha": "bd55b8e25637c1b9289daf1b0f4114fbd43748d4",
-      "short_sha": "bd55b8e2",
+      "sha": "7e1ca0f61f33cc1e652267d977e1a392f09a4172",
+      "short_sha": "7e1ca0f6",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:50:25-03:00",
-      "message": "test(ui): exigir separacao visual entre impedimento axial e estudo 6GL"
+      "date": "2026-11-04T13:07:00-03:00",
+      "message": "docs: fixar critérios de viabilidade construtiva, segurança e custo subordinado"
     },
     {
-      "sha": "5ac109c5be28d5aeed5b8ec0627cf05b6b2de226",
-      "short_sha": "5ac109c5",
+      "sha": "6024e718599e9854056e9e3976627fcafe4148ff",
+      "short_sha": "6024e718",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:50:12-03:00",
-      "message": "fix(ui): distinguir impedimento do modelo axial de equilibrio 6GL demonstrado"
+      "date": "2026-11-04T13:06:12-03:00",
+      "message": "test(execucao): tolerar capitalizacao no termo escoramentos"
     },
     {
-      "sha": "39b3376410954946da50d2d968e559d6834b5899",
-      "short_sha": "39b33764",
+      "sha": "a24cecf1a230a14f3cd4b6631d0ec5234f24d3a9",
+      "short_sha": "a24cecf1",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:49:43-03:00",
-      "message": "test(fundacoes): checar transferencia cabeca-fuste de forca e momento pelo cantilever"
+      "date": "2026-11-04T13:05:59-03:00",
+      "message": "test(execucao): 6GL nao implica obra liberada, memorial completo e entrada imutavel"
     },
     {
-      "sha": "4ca5f1cb8b5048d91964c4a241e6cf7613d6f2ae",
-      "short_sha": "4ca5f1cb",
+      "sha": "45500dff35e1588358ec56d16c8f6780c726baa1",
+      "short_sha": "45500dff",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:48:46-03:00",
-      "message": "test(fundacoes): validar Winkler contra solucao analitica semi-infinita"
+      "date": "2026-11-04T13:05:27-03:00",
+      "message": "test(memorial): conferir anexo exequibilidade e total de folhas"
     },
     {
-      "sha": "a85b2594b439f8d7f805cb5f29569148ea45981c",
-      "short_sha": "a85b2594",
+      "sha": "30db5c6f57797e247b8c7a8c20619732a335c634",
+      "short_sha": "30db5c6f",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:46:54-03:00",
-      "message": "docs(fundacoes): contrato e limites fisicos do fuste Winkler 1D"
+      "date": "2026-11-04T13:05:07-03:00",
+      "message": "feat(memorial): inserir anexo descritivo de obra e registrar seis componentes por estaca"
     },
     {
-      "sha": "8920e9a78cf05dad59d9f4a83007cafedb00341c",
-      "short_sha": "8920e9a7",
+      "sha": "b5496874b8c005373916a72cef3ef0a86d020d77",
+      "short_sha": "b5496874",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:46:16-03:00",
-      "message": "ci(fundacoes): adicionar referencia analitica Winkler/cantilever ao pipeline"
-    },
-    {
-      "sha": "628a220645cd2db27f3a0efe9bef0f20f028272a",
-      "short_sha": "628a2206",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:46:06-03:00",
-      "message": "ui(fundacoes): apresentar momento e cortante do fuste Winkler por ELU sem aprovar resistencia"
-    },
-    {
-      "sha": "0c72d7a5bf1e7ae17ed15d559fd3d2b977c83239",
-      "short_sha": "0c72d7a5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T12:45:47-03:00",
-      "message": "test(fundacoes): benchmark de cantilever, Winkler estratificado, 8 ELU e auditoria"
+      "date": "2026-11-04T13:04:06-03:00",
+      "message": "feat(executivo): contrato fail-closed de exequibilidade e segurança de obra por elemento"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41870316730",
-    "run_number": "1171"
+    "run_id": "41871578780",
+    "run_number": "1172"
   }
 }
