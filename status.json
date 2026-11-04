@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-11-04T01:28:32Z",
+  "generated_at": "2026-11-04T02:49:53Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "244687d0167dc8457a8a70767e418655a3555946",
-    "short_sha": "244687d0",
+    "sha": "0ff2d526f4a2be4582a3242f529b233428834ff8",
+    "short_sha": "0ff2d526",
     "author": "Joanez Gaspar",
-    "date": "2026-11-03T20:43:26-03:00",
-    "message": "Merge pull request #690 from JGaspar-Eng/fix/be8-be11-contorno-live-2d-3d-20261103"
+    "date": "2026-11-03T23:49:33-03:00",
+    "message": "Merge pull request #691 from JGaspar-Eng/fix/servidor-build-automatico-main-unica-20261103"
   },
   "commits": [
+    {
+      "sha": "0ff2d526f4a2be4582a3242f529b233428834ff8",
+      "short_sha": "0ff2d526",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T23:49:33-03:00",
+      "message": "Merge pull request #691 from JGaspar-Eng/fix/servidor-build-automatico-main-unica-20261103"
+    },
+    {
+      "sha": "83236ca0a47cb6adb7cb5abd6b99c9614ef39fb0",
+      "short_sha": "83236ca0",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T23:45:22-03:00",
+      "message": "ci(server): exigir teste HTTP de sincronização automática Git/build"
+    },
+    {
+      "sha": "0541c1a23d60bf07177dc56a201b5a2ec94ed509",
+      "short_sha": "0541c1a2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T23:45:08-03:00",
+      "message": "test(server): comprovar renovação do build por commit e metadados HTTP coerentes"
+    },
+    {
+      "sha": "4863b65e3b8a99d63b2e6e488e8f61433bf2e929",
+      "short_sha": "4863b65e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-03T23:44:31-03:00",
+      "message": "fix(server): acompanhar HEAD do Git e renovar fingerprint sem restart após merge"
+    },
     {
       "sha": "244687d0167dc8457a8a70767e418655a3555946",
       "short_sha": "244687d0",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-03T20:35:27-03:00",
       "message": "test(BE8/BE11): estado vivo legado 2D/3D válido sem reimportar JSON e sem mutações"
-    },
-    {
-      "sha": "fcd8469d6ef3fae02775797b23af358c715c1cdd",
-      "short_sha": "fcd8469d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:34:44-03:00",
-      "message": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_desenhos_lajes_fundacoes_ui.js"
-    },
-    {
-      "sha": "36f98771c43cce3c8ad74a96e16bf284aea8210f",
-      "short_sha": "36f98771",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:34:40-03:00",
-      "message": "fix(BE8/BE11): usar polígono recuperável no leitor orq_centro_unico_estrutural_service.js"
-    },
-    {
-      "sha": "e99aaff66d3e2ce3b5a8b68b7cbc3410f8093837",
-      "short_sha": "e99aaff6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:34:37-03:00",
-      "message": "fix(BE8/BE11): usar polígono recuperável no leitor fundacao_visao_3d_estudo_service.js"
-    },
-    {
-      "sha": "c7b11f41f7df8770c3b012147a10769f8b3a6ad0",
-      "short_sha": "c7b11f41",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-03T20:34:32-03:00",
-      "message": "fix(BE8/BE11): usar polígono recuperável no leitor orq_fundacoes_implantacao_auditoria_service.js"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41754269266",
-    "run_number": "1162"
+    "run_id": "41763229184",
+    "run_number": "1163"
   }
 }
