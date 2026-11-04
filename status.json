@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-04T23:31:21Z",
+  "generated_at": "2026-11-04T23:47:39Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7af377a5b3b4f362480ba10d6dd1321b9c4d7287",
-    "short_sha": "7af377a5",
+    "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+    "short_sha": "28f78c16",
     "author": "Joanez Gaspar",
-    "date": "2026-11-04T20:28:43-03:00",
-    "message": "Merge pull request #697 from JGaspar-Eng/feat/pv1-viga-biapoiada-solver-compartilhado-20261104"
+    "date": "2026-11-04T20:47:20-03:00",
+    "message": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104"
   },
   "commits": [
     {
-      "sha": "7af377a5b3b4f362480ba10d6dd1321b9c4d7287",
-      "short_sha": "7af377a5",
+      "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+      "short_sha": "28f78c16",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:28:43-03:00",
-      "message": "Merge pull request #697 from JGaspar-Eng/feat/pv1-viga-biapoiada-solver-compartilhado-20261104"
+      "date": "2026-11-04T20:47:20-03:00",
+      "message": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104"
     },
     {
-      "sha": "71406739705f0293d2f2f07f4d96329cf755f839",
-      "short_sha": "71406739",
+      "sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
+      "short_sha": "c7ffc21b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:52:31-03:00",
-      "message": "test(pv0): manter falta de entrada isolada distinta de motor nao implementado"
+      "date": "2026-11-04T20:43:36-03:00",
+      "message": "fix(vigas3d): conservar contagem de estribos fora do escopo do try no Babylon"
     },
     {
-      "sha": "2ed75db4a7e5cf2bad2e9c24f61a588db8e2b921",
-      "short_sha": "2ed75db4",
+      "sha": "d4e92b5af8ef64d52d643bfd6b006297356dc83b",
+      "short_sha": "d4e92b5a",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:52:20-03:00",
-      "message": "test(pv1): caderno isolado ligado ao produto, quatro combinacoes e XSS"
+      "date": "2026-11-04T20:39:27-03:00",
+      "message": "fix(test-browser): ler instancia Babylon do backdrop correto do modal"
     },
     {
-      "sha": "5511b9453dc9741347e0b25ebc8409f56093ce72",
-      "short_sha": "5511b945",
+      "sha": "5792bf99848727cd6c2e0990a7bde4c7498591fb",
+      "short_sha": "5792bf99",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:52:05-03:00",
-      "message": "feat(pv1): habilitar caderno A4 de solicitacoes do modo isolado com bloqueio executivo"
+      "date": "2026-11-04T20:37:36-03:00",
+      "message": "test(browser): remover captura posterior ao fechamento e manter prova funcional real"
     },
     {
-      "sha": "a007525bb2704f1feab24e9ab5198d80ea4345e2",
-      "short_sha": "a007525b",
+      "sha": "754bb9c5e29a79de58b56c9ccbc347bbc33d7d5b",
+      "short_sha": "754bb9c5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:51:40-03:00",
-      "message": "feat(pv1): ligar adaptador isolado ao produto Vigas sem declarar aptidão executiva"
+      "date": "2026-11-04T20:37:24-03:00",
+      "message": "test(browser): guardar evidência PNG da interação da viga no Babylon real"
     },
     {
-      "sha": "46d40b8f57c4699a7a6ec48a6ad6a4334b9dd970",
-      "short_sha": "46d40b8f",
+      "sha": "d98f7b253ce20d50bf9e242c9d431f7201f044e9",
+      "short_sha": "d98f7b25",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:49:36-03:00",
-      "message": "docs(pv1): delimitar entrega de solicitacoes, hipoteses e pendencias executivas"
+      "date": "2026-11-04T20:36:43-03:00",
+      "message": "ci(vigas3d): exercitar Babylon real no browser e verificar selecao/restauracao"
     },
     {
-      "sha": "a5865bda7377f338d14830722e0d2132a6b4a25e",
-      "short_sha": "a5865bda",
+      "sha": "f0c6360fd26c013dadee4b414302190375f1493a",
+      "short_sha": "f0c6360f",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:49:18-03:00",
-      "message": "ci(pv1): executar benchmark biapoiada e entradas adversas no Node20"
+      "date": "2026-11-04T20:36:32-03:00",
+      "message": "test(browser): provar clique real no 3D, opacidade isolada, barras, restauracao e bloqueio"
     },
     {
-      "sha": "68d08cdb5c15ae9fd7ed4fd2341269e0895629ed",
-      "short_sha": "68d08cdb",
+      "sha": "7ddfb6e7004e49fecb94085f9f517cb2f3db99b7",
+      "short_sha": "7ddfb6e7",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:49:02-03:00",
-      "message": "test(pv1): conferir ELU/ELS e 21 pontos por benchmarks analiticos e entradas adversas"
+      "date": "2026-11-04T20:34:59-03:00",
+      "message": "docs(vigas3d): especificar paridade visual com Forecast sem copiar numeros nem simular ancoragens"
     },
     {
-      "sha": "a3bb59735ed3c85b97a94e9adb68b6b1145a1124",
-      "short_sha": "a3bb5973",
+      "sha": "3c1d5bc8ce318ae902d2fefc0ab4effaaed411ce",
+      "short_sha": "3c1d5bc8",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:48:24-03:00",
-      "message": "feat(pv1): analise biapoiada isolada reutilizando Graph, NBR8681 e solver 1D"
+      "date": "2026-11-04T20:34:36-03:00",
+      "message": "ci(vigas3d): testar fidelidade de bitolas, camadas, geometria e bloqueios"
     },
     {
-      "sha": "fde36f4cbff5b1ac3786be02fdd0e255ac951917",
-      "short_sha": "fde36f4c",
+      "sha": "b1d2bce386ba60b5499dc79a507a25a8041e2e06",
+      "short_sha": "b1d2bce3",
       "author": "Joanez Gaspar",
-      "date": "2026-11-04T14:47:24-03:00",
-      "message": "feat(pv1): incluir ELS rara no nucleo canonico de combinacoes"
+      "date": "2026-11-04T20:34:22-03:00",
+      "message": "test(vigas3d): contrato de barras para biapoiadas e continuas, oito ELU e bloqueios contra armadura inventada"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41934332420",
-    "run_number": "1178"
+    "run_id": "41936457973",
+    "run_number": "1179"
   }
 }

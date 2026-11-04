@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-04T23:32:31Z",
+  "gerado_em": "2026-11-04T23:48:36Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "7af377a5b3b4f362480ba10d6dd1321b9c4d7287",
-    "data": "2026-11-04T23:28:43Z"
+    "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+    "data": "2026-11-04T23:47:20Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "7af377a5b3b4f362480ba10d6dd1321b9c4d7287",
-    "gerado_em": "2026-11-04T23:29:02Z",
+    "gerado_em": "2026-11-04T23:31:21Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 14,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -214,6 +214,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 699,
+            "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
+            "rascunho": true,
+            "head_sha": "8ca759330647ab58a786145ee1c4b9cbe199a836",
+            "ci": "passou"
+          },
           {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
@@ -703,8 +711,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 699,
+            "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
+            "rascunho": true,
+            "head_sha": "8ca759330647ab58a786145ee1c4b9cbe199a836",
+            "ci": "passou"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -847,8 +864,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 19,
+        "total_integrados": 20,
         "integrados_recentes": [
+          {
+            "numero": 698,
+            "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
+            "merged_at": "2026-11-04T23:47:20Z",
+            "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+            "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 655,
             "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
@@ -857,7 +884,7 @@
             "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
             "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 631,
@@ -958,38 +985,28 @@
             "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 612,
-            "titulo": "Armadura dupla: persistir hipótese de viga no JSON e sinalizar estudo obsoleto",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/612",
-            "merged_at": "2026-10-26T17:04:29Z",
-            "merge_sha": "30ad016b88d18997a0656296c46b4ff2c951939f",
-            "head_sha": "4d218b3e0f6a23272c342f7839a0ce8433089e98",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 655,
-          "titulo": "feat(orq): centro único de vigas, pilares, 1ª/2ª ordem, armaduras e cortes 2D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/655",
-          "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
-          "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
-          "merged_at": "2026-10-30T17:19:06Z",
+          "numero": 698,
+          "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
+          "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+          "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
+          "merged_at": "2026-11-04T23:47:20Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "70a40b36628dbb869901eca5ed5cd7343bb0684b",
-          "data": "2026-11-01T22:12:07-03:00",
-          "assunto": "test(fund): conservar armadura geométrica de cenário degenerado após gate de stale",
-          "ci": "passou"
+          "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+          "data": "2026-11-04T20:47:20-03:00",
+          "assunto": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1047,8 +1064,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 118,
+        "total_integrados": 119,
         "integrados_recentes": [
+          {
+            "numero": 698,
+            "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
+            "merged_at": "2026-11-04T23:47:20Z",
+            "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+            "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 695,
             "titulo": "SIMETTRIA: impedir uso executivo sem exequibilidade comprovada e memorial descritivo de obra",
@@ -1057,7 +1084,7 @@
             "merge_sha": "f485acfa537f6482931e5439d33256aeae3ff899",
             "head_sha": "4f7f0725cdbe6894e62f88f8ac93d45ce050f8ae",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 685,
@@ -1097,7 +1124,7 @@
             "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
             "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 654,
@@ -1136,7 +1163,7 @@
             "merged_at": "2026-10-30T12:09:30Z",
             "merge_sha": "06af06f407497d55aac88585fb93eb10213fc597",
             "head_sha": "ac7cbcfa1f9643ffe8fd491f4dbf0ab5d0553ee7",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1158,38 +1185,28 @@
             "head_sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 645,
-            "titulo": "feat(fundacao): conectar benchmark Blévot aos oito ELU do estudo axial",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/645",
-            "merged_at": "2026-10-30T02:13:38Z",
-            "merge_sha": "3486f3d87783c3f5c21a1a8ce355862b848ff013",
-            "head_sha": "3f04490f2615b661e976ecc02bf8778280025a7c",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 695,
-          "titulo": "SIMETTRIA: impedir uso executivo sem exequibilidade comprovada e memorial descritivo de obra",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/695",
-          "merge_sha": "f485acfa537f6482931e5439d33256aeae3ff899",
-          "head_sha": "4f7f0725cdbe6894e62f88f8ac93d45ce050f8ae",
-          "merged_at": "2026-11-04T16:50:43Z",
+          "numero": 698,
+          "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
+          "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
+          "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
+          "merged_at": "2026-11-04T23:47:20Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "9aba83b492c38deeeeef6e4b4559e7024d4761c5",
-          "data": "2026-11-04T13:55:58-03:00",
-          "assunto": "test(vigas): confrontar fichas com origem ORQ e impedir indice adulterado",
-          "ci": "passou"
+          "sha": "74960536fc642ac329770c36d272b9720439e47b",
+          "data": "2026-11-04T20:31:58-03:00",
+          "assunto": "feat(vigas3d): projetar apenas barras e estribos com origem ORQ assinada e geometria validada",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1534,14 +1551,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "04f72ac7d7cfa4485709381cc230e8ffe9e66fbf",
-          "data": "2026-11-04T13:51:20-03:00",
-          "assunto": "docs(roadmap): priorizar produto Vigas com dominio validado e evitar quatro engines",
-          "ci": "passou"
+          "sha": "38629c513ef9433b977dd48b1bf38929095d7995",
+          "data": "2026-11-04T20:33:19-03:00",
+          "assunto": "ui(vigas3d): clique transparente, barras rastreadas, M/V no painel e selecao reversivel",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1583,8 +1600,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 588,
-  "commits_main_analisados": 2913,
+  "janela_prs": 590,
+  "commits_main_analisados": 2927,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
