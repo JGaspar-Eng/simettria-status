@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-05T12:16:38Z",
+  "generated_at": "2026-11-05T16:42:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
-    "short_sha": "ff7741bb",
+    "sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
+    "short_sha": "bdc5d068",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T09:14:15-03:00",
-    "message": "Merge pull request #703 from JGaspar-Eng/feat/vigas-det04-zonas-estribos-babylon-20261105"
+    "date": "2026-11-05T13:42:34-03:00",
+    "message": "Merge pull request #704 from JGaspar-Eng/feat/vigas-det05-continuidade-no-apoio-20261105"
   },
   "commits": [
     {
-      "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
-      "short_sha": "ff7741bb",
+      "sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
+      "short_sha": "bdc5d068",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:14:15-03:00",
-      "message": "Merge pull request #703 from JGaspar-Eng/feat/vigas-det04-zonas-estribos-babylon-20261105"
+      "date": "2026-11-05T13:42:34-03:00",
+      "message": "Merge pull request #704 from JGaspar-Eng/feat/vigas-det05-continuidade-no-apoio-20261105"
     },
     {
-      "sha": "85ba31f0a2aac2d475ebd306828169d6ea86c1f2",
-      "short_sha": "85ba31f0",
+      "sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
+      "short_sha": "90fa8f5a",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:10:43-03:00",
-      "message": "docs(det04): mesma origem de zonas para 3D pranchas e memorial sem posições executivas"
+      "date": "2026-11-05T09:24:30-03:00",
+      "message": "fix(det05): comparar altura da segunda viga com modelo, não interpretar valor válido como erro"
     },
     {
-      "sha": "1dae8f7cbdb523aec4cfefa773705f39b2e6867f",
-      "short_sha": "1dae8f7c",
+      "sha": "31c06ad155c690204ffb49e92f52c7b343b12a80",
+      "short_sha": "31c06ad1",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:09:47-03:00",
-      "message": "test(browser-det04): validar zonas do ORQ e esconder estribos uniformes sem dados"
+      "date": "2026-11-05T09:20:56-03:00",
+      "message": "docs(det05): auditar continuidade documental e não confundir rigidez rotacional com vergalhão físico"
     },
     {
-      "sha": "fdca23930b4323b7188293f568e1158d60dfdd01",
-      "short_sha": "fdca2393",
+      "sha": "cca6198064f644073a0dab583d81751192d81a8c",
+      "short_sha": "cca61980",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:08:43-03:00",
-      "message": "test(det04): conferir zonas realistas no contrato 3D e ocultar estribos sem gamma"
+      "date": "2026-11-05T09:20:21-03:00",
+      "message": "test(det05): memorial exige declaração de passagem física em apoio"
     },
     {
-      "sha": "b9d2e36908d0b858b53270bdcb856a04595c217e",
-      "short_sha": "b9d2e369",
+      "sha": "6096ddf816f16c4b5ab8a3baf80c0cbc7408c07a",
+      "short_sha": "6096ddf8",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:07:55-03:00",
-      "message": "ui(det04): exibir cada zona Vy com inicio/fim e passo sem prometer posição executiva"
+      "date": "2026-11-05T09:20:05-03:00",
+      "message": "ci(det05): proteger compatibilidade de nó, peças físicas e ancoragens de vigas contínuas"
     },
     {
-      "sha": "33ff6634e42f3a80442f46f7b129ee739a3f268c",
-      "short_sha": "33ff6634",
+      "sha": "012680c31c74bc9f815f24c671daad91ca6bec93",
+      "short_sha": "012680c3",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:07:25-03:00",
-      "message": "feat(det04): desenhar estribos Babylon apenas nas zonas DET-03 e impedir perfil uniforme fictício"
+      "date": "2026-11-05T09:19:46-03:00",
+      "message": "feat(det05): incluir auditoria de continuidade por nó no mesmo memorial de vigas"
     },
     {
-      "sha": "b0bcbb633a6e068579223dc664e5bea607849ccc",
-      "short_sha": "b0bcbb63",
+      "sha": "760d92e25ccd05b80785d1f3135ddcd148cd255f",
+      "short_sha": "760d92e2",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:06:30-03:00",
-      "message": "feat(det04): inspeção 3D consome zonas reais do DET-03 e oculta estribos se não comprovados"
+      "date": "2026-11-05T09:19:22-03:00",
+      "message": "ui(det05): inspecionar continuidade documental por grupo no nó e usar auditoria no memorial"
     },
     {
-      "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-      "short_sha": "0e605d6c",
+      "sha": "2cc44c78b584953021939e7e50e0b1453048795e",
+      "short_sha": "2cc44c78",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:04:28-03:00",
-      "message": "Merge pull request #702 from JGaspar-Eng/feat/vigas-det03-zonas-cortante-oito-elu-20261105"
+      "date": "2026-11-05T09:18:26-03:00",
+      "message": "test(det05): conferir continuidade declarada em P2 com apoio 3D, grupos e ancoragens de oito ELU"
     },
     {
-      "sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
-      "short_sha": "ba0f6322",
+      "sha": "ceed05e4cf4083979840753c97bc2a3e61f38d15",
+      "short_sha": "ceed05e4",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:00:58-03:00",
-      "message": "docs(det03): zones of shear study and limitations without fictional construction details"
+      "date": "2026-11-05T09:17:35-03:00",
+      "message": "fix(det05): exigir mesmo identificador físico de grupo em ambos planos de barras"
     },
     {
-      "sha": "db3121ae1b6533e0657f2a1895c039b57d77986e",
-      "short_sha": "db3121ae",
+      "sha": "34afb4e1c426c07bc3ae2c1a7aeae35cbf55f15d",
+      "short_sha": "34afb4e1",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:00:23-03:00",
-      "message": "ci(det03): benchmark de zonas de estribos baseado em cortantes dos oito ELU"
+      "date": "2026-11-05T09:16:59-03:00",
+      "message": "feat(det05): conferir continuidade declarada no mesmo apoio por topologia, ORQ e ancoragens locais"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42025724442",
-    "run_number": "1192"
+    "run_id": "42067223378",
+    "run_number": "1193"
   }
 }

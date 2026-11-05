@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T12:17:34Z",
+  "gerado_em": "2026-11-05T16:44:01Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
-    "data": "2026-11-05T12:14:15Z"
+    "sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
+    "data": "2026-11-05T16:42:34Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
-    "gerado_em": "2026-11-05T12:14:32Z",
+    "gerado_em": "2026-11-05T12:16:38Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 10,
+    "idade_horas": 4.5
   },
   "frentes": [
     {
@@ -867,8 +867,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 20,
+        "total_integrados": 21,
         "integrados_recentes": [
+          {
+            "numero": 704,
+            "titulo": "VIGA-DET-05: auditar continuidade de armaduras em nós de vigas contínuas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/704",
+            "merged_at": "2026-11-05T16:42:34Z",
+            "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
+            "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 698,
             "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
@@ -978,28 +988,18 @@
             "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 613,
-            "titulo": "ORQ vigas: escolher pré-montagem de barras para armadura dupla nos dois modais",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/613",
-            "merged_at": "2026-10-26T17:16:52Z",
-            "merge_sha": "f1ced84a3a55c79a1eadb9d822724b57d3d0a959",
-            "head_sha": "3c18db1ceec96c0b41a0f0d481058e6a9775881b",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 698,
-          "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
-          "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-          "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
-          "merged_at": "2026-11-04T23:47:20Z",
+          "numero": 704,
+          "titulo": "VIGA-DET-05: auditar continuidade de armaduras em nós de vigas contínuas",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/704",
+          "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
+          "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
+          "merged_at": "2026-11-05T16:42:34Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
@@ -1009,7 +1009,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1116,7 +1116,7 @@
             "merged_at": "2026-10-31T03:31:39Z",
             "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
             "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1202,14 +1202,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "1dae8f7cbdb523aec4cfefa773705f39b2e6867f",
-          "data": "2026-11-05T09:09:47-03:00",
-          "assunto": "test(browser-det04): validar zonas do ORQ e esconder estribos uniformes sem dados",
+          "sha": "34afb4e1c426c07bc3ae2c1a7aeae35cbf55f15d",
+          "data": "2026-11-05T09:16:59-03:00",
+          "assunto": "feat(det05): conferir continuidade declarada no mesmo apoio por topologia, ORQ e ancoragens locais",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1603,8 +1603,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 594,
-  "commits_main_analisados": 2968,
+  "janela_prs": 595,
+  "commits_main_analisados": 2978,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
