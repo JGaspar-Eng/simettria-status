@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-05T22:51:10Z",
+  "generated_at": "2026-11-05T22:52:38Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-    "short_sha": "f53d6547",
+    "sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
+    "short_sha": "70caa7a8",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T19:46:51-03:00",
-    "message": "Merge pull request #717 from JGaspar-Eng/fix/vigas-vf2-gate-pontos-esforcos-invalidos-20261105"
+    "date": "2026-11-05T19:51:31-03:00",
+    "message": "Merge pull request #718 from JGaspar-Eng/test/vigas-vf2-benchmark-continuas-dois-vaos-20261105"
   },
   "commits": [
+    {
+      "sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
+      "short_sha": "70caa7a8",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:51:31-03:00",
+      "message": "Merge pull request #718 from JGaspar-Eng/test/vigas-vf2-benchmark-continuas-dois-vaos-20261105"
+    },
+    {
+      "sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
+      "short_sha": "bd335d46",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:48:07-03:00",
+      "message": "test(vf2): benchmark independente de viga continua em dois vaos"
+    },
     {
       "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
       "short_sha": "f53d6547",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:31:21-03:00",
       "message": "Merge pull request #716 from JGaspar-Eng/fix/vigas-vf2-fail-closed-carga-ausente-solver-20261105"
-    },
-    {
-      "sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
-      "short_sha": "60ebd771",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:27:01-03:00",
-      "message": "test(vf2): bloquear brancos boolean e array sem perder zero explicito"
-    },
-    {
-      "sha": "3b50ea687572818a07d17ab4ba0b1c11eb7deda6",
-      "short_sha": "3b50ea68",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:26:58-03:00",
-      "message": "fix(vf2): rejeitar whitespace boolean e objetos como cargas estruturais"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42124910867",
-    "run_number": "1229"
+    "run_id": "42125095618",
+    "run_number": "1232"
   }
 }
