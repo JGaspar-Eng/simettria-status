@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-05T17:15:33Z",
+  "generated_at": "2026-11-05T17:25:10Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
-    "short_sha": "907322db",
+    "sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
+    "short_sha": "58d057fd",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T14:12:08-03:00",
-    "message": "Merge pull request #707 from JGaspar-Eng/fix/vigas-det08-persistencia-identidade-planos-20261105"
+    "date": "2026-11-05T14:24:52-03:00",
+    "message": "Merge pull request #709 from JGaspar-Eng/feat/vigas-det09-formulario-geometria-ancoragem-20261105"
   },
   "commits": [
     {
-      "sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
-      "short_sha": "907322db",
+      "sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
+      "short_sha": "58d057fd",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:12:08-03:00",
-      "message": "Merge pull request #707 from JGaspar-Eng/fix/vigas-det08-persistencia-identidade-planos-20261105"
+      "date": "2026-11-05T14:24:52-03:00",
+      "message": "Merge pull request #709 from JGaspar-Eng/feat/vigas-det09-formulario-geometria-ancoragem-20261105"
     },
     {
-      "sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
-      "short_sha": "1060a155",
+      "sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
+      "short_sha": "7c844c2b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:07:59-03:00",
-      "message": "fix(test-det08): comparar assinatura antes e depois da edição na mesma versão restaurada do modelo"
+      "date": "2026-11-05T14:20:48-03:00",
+      "message": "docs(det09): entrada documental sem defaults e aplicacao transacional com ORQ"
     },
     {
-      "sha": "36a517fb7dc85611270ce8006f6da974edaa1a01",
-      "short_sha": "36a517fb",
+      "sha": "5aee2985763f2c339dbb2f429a892026de565ced",
+      "short_sha": "5aee2985",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:06:01-03:00",
-      "message": "docs(det08): corrigir perda silenciosa de documentos DET02 e DET05 no snapshot"
+      "date": "2026-11-05T14:20:20-03:00",
+      "message": "ci(det09): validar contrato puro e formulario real no navegador, inclusive recálculo e rollback"
     },
     {
-      "sha": "c83156616c60fd527a7906f860a31741c2f293e9",
-      "short_sha": "c8315661",
+      "sha": "afc1cd72ce1c7f16809548eecaad6eaaee36ba07",
+      "short_sha": "afc1cd72",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:05:42-03:00",
-      "message": "ci(det08): teste de salvar carregar JSON com planos e continuidade e bloquear clones obsoletos"
+      "date": "2026-11-05T14:20:07-03:00",
+      "message": "test(browser-det09): preencher fontes, exigir assinatura, recusar medida curta, aplicar com recálculo e reverter falha"
     },
     {
-      "sha": "3ac727db62e412b6f12906170bac941ffddd93b8",
-      "short_sha": "3ac727db",
+      "sha": "698d21b486022a7bf4566a64c3b06dc131272d10",
+      "short_sha": "698d21b4",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:04:55-03:00",
-      "message": "test(det08): registrar assinatura após normalização controlada do snapshot"
+      "date": "2026-11-05T14:19:08-03:00",
+      "message": "ui(det09): exigir validacao de todos campos inclusive submissao programatica; melhorar rotulos acessiveis"
     },
     {
-      "sha": "bc4cdd011ded9d123e4ce4939133be75a84c4a6e",
-      "short_sha": "bc4cdd01",
+      "sha": "411ead4016ad20e8d96d23d124e377e8652fd39d",
+      "short_sha": "411ead40",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:04:38-03:00",
-      "message": "test(det08): roundtrip plano DET02 continuidade DET05 signature e clone sem heranca"
+      "date": "2026-11-05T14:18:38-03:00",
+      "message": "fix(det09): tolerancia de comparacao de vao alinhada ao ORQ sem aceitar comprimentos inconsistentes"
     },
     {
-      "sha": "b64c49e653e7f16ff1ecff9047482d3f78635439",
-      "short_sha": "b64c49e6",
+      "sha": "205e6a8b9a5e866a9d545e4504ff9cdafc0a36b8",
+      "short_sha": "205e6a8b",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:03:54-03:00",
-      "message": "fix(det08): clonagem com novo UUID descarta documentação de ancoragem e continuidade da viga de origem"
+      "date": "2026-11-05T14:18:08-03:00",
+      "message": "feat(det09): integrar cadastro guiado de medidas no inspetor existente de vigas"
     },
     {
-      "sha": "448e16734e06b9ffae61610a3bf030a728fabb44",
-      "short_sha": "448e1673",
+      "sha": "d0c34cd42a73bba4cbffedbb4bcd2580a9ff5dbe",
+      "short_sha": "d0c34cd4",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:03:39-03:00",
-      "message": "fix(det08): incluir planos DET-02 e nos DET-05 no contrato e na factory das vigas"
+      "date": "2026-11-05T14:17:53-03:00",
+      "message": "ui(det09): form real sem defaults, comprovacao de fontes, validacao DET02 e aplicacao transacional com recálculo"
     },
     {
-      "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
-      "short_sha": "52bafa03",
+      "sha": "84e1183a728ba4b51bd9868af9f6818600fbbce9",
+      "short_sha": "84e1183a",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:01:39-03:00",
-      "message": "Merge pull request #706 from JGaspar-Eng/feat/vigas-det07-segmentos-longitudinais-babylon-20261105"
+      "date": "2026-11-05T14:16:26-03:00",
+      "message": "test(det09): entradas manuais obrigatórias, 8 ELU, apoio, falhas fechadas e duplo sinal de M"
     },
     {
-      "sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
-      "short_sha": "0113b5f5",
+      "sha": "a1ffae7d2d926f303739c6e3d93102decf77122a",
+      "short_sha": "a1ffae7d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:58:47-03:00",
-      "message": "docs(det07): segmentos de armadura longitudinais provados no vão e testemunhos sem cota"
+      "date": "2026-11-05T14:14:13-03:00",
+      "message": "feat(det09): criar plano documental somente de cotas e materiais declarados pelo usuario com confronto DET02"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42072781340",
-    "run_number": "1201"
+    "run_id": "42074383019",
+    "run_number": "1202"
   }
 }
