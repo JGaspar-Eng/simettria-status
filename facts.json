@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:30:01Z",
+  "gerado_em": "2026-11-05T22:33:08Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-    "data": "2026-11-05T22:25:48Z"
+    "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
+    "data": "2026-11-05T22:31:21Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-    "gerado_em": "2026-11-05T22:26:05Z",
+    "gerado_em": "2026-11-05T22:28:54Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 5,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -28,14 +28,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 716,
-            "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/716",
-            "rascunho": true,
-            "head_sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
-            "ci": "pendente"
-          },
-          {
             "numero": 549,
             "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/549",
@@ -47,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 83,
+        "total_integrados": 84,
         "integrados_recentes": [
+          {
+            "numero": 716,
+            "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/716",
+            "merged_at": "2026-11-05T22:31:22Z",
+            "merge_sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
+            "head_sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 715,
             "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
@@ -158,38 +160,28 @@
             "head_sha": "85ba31f0a2aac2d475ebd306828169d6ea86c1f2",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 702,
-            "titulo": "VIGA-DET-03: zonas conservadoras de estribos dos 8 ELU no inspetor e memorial",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/702",
-            "merged_at": "2026-11-05T12:04:29Z",
-            "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-            "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 715,
-          "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
-          "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-          "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
-          "merged_at": "2026-11-05T22:25:49Z",
+          "numero": 716,
+          "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/716",
+          "merge_sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
+          "head_sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
+          "merged_at": "2026-11-05T22:31:22Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-          "data": "2026-11-05T19:25:48-03:00",
-          "assunto": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105",
-          "ci": "passou"
+          "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
+          "data": "2026-11-05T19:31:21-03:00",
+          "assunto": "Merge pull request #716 from JGaspar-Eng/fix/vigas-vf2-fail-closed-carga-ausente-solver-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1779,7 +1771,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 606,
-  "commits_main_analisados": 3041,
+  "commits_main_analisados": 3046,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

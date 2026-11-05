@@ -1,21 +1,56 @@
 {
-  "generated_at": "2026-11-05T22:28:54Z",
+  "generated_at": "2026-11-05T22:31:43Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-    "short_sha": "034554c6",
+    "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
+    "short_sha": "fa3db879",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T19:25:48-03:00",
-    "message": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105"
+    "date": "2026-11-05T19:31:21-03:00",
+    "message": "Merge pull request #716 from JGaspar-Eng/fix/vigas-vf2-fail-closed-carga-ausente-solver-20261105"
   },
   "commits": [
+    {
+      "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
+      "short_sha": "fa3db879",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:31:21-03:00",
+      "message": "Merge pull request #716 from JGaspar-Eng/fix/vigas-vf2-fail-closed-carga-ausente-solver-20261105"
+    },
+    {
+      "sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
+      "short_sha": "60ebd771",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:27:01-03:00",
+      "message": "test(vf2): bloquear brancos boolean e array sem perder zero explicito"
+    },
+    {
+      "sha": "3b50ea687572818a07d17ab4ba0b1c11eb7deda6",
+      "short_sha": "3b50ea68",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:26:58-03:00",
+      "message": "fix(vf2): rejeitar whitespace boolean e objetos como cargas estruturais"
+    },
     {
       "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
       "short_sha": "034554c6",
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:25:48-03:00",
       "message": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105"
+    },
+    {
+      "sha": "a1590e18b965ffd5bcb509621b9f5fd0e1ead0f0",
+      "short_sha": "a1590e18",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:25:09-03:00",
+      "message": "test(vf2): benchmark qL2/8 e fail-closed para cargas ausentes"
+    },
+    {
+      "sha": "90a67fd3fd2bfb6e93eabaebb349519cb4c71ed8",
+      "short_sha": "90a67fd3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:24:31-03:00",
+      "message": "fix(vf2): impedir que cargas ausentes gerem analise de viga com q=0"
     },
     {
       "sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:15:12-03:00",
       "message": "test(vf2): exigir ELU indeterminado para solicitacao desconhecida"
-    },
-    {
-      "sha": "98061b7ad045f483b68c9b6e508dfbd445fbb2cd",
-      "short_sha": "98061b7a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:14:56-03:00",
-      "message": "fix(vf2): ausencia de solicitacao resulta veredito ELU indeterminado"
-    },
-    {
-      "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
-      "short_sha": "877ef8c0",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:13:29-03:00",
-      "message": "Merge pull request #712 from JGaspar-Eng/docs/vigas-ciclo-fechamento-painel-20261105"
-    },
-    {
-      "sha": "6840509c0eda5e14b1c14aa0303c86a3c651529d",
-      "short_sha": "6840509c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:12:20-03:00",
-      "message": "test(vf2): incluir gate de solicitacoes invalidas na suite oficial"
-    },
-    {
-      "sha": "49373c8b9571ae8cb753690d3ce48c0ab205ce6a",
-      "short_sha": "49373c8b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:12:06-03:00",
-      "message": "test(vf2): provar que Md e Vsd invalidos nao viram zero"
-    },
-    {
-      "sha": "33d5d13040493ac6b291c88cf2ac8cb22144eea6",
-      "short_sha": "33d5d130",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:11:36-03:00",
-      "message": "fix(vf2): rejeitar solicitacoes Md e Vsd ausentes ou nao finitas"
     }
   ],
   "development": {
@@ -4047,7 +4047,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42121810198",
-    "run_number": "1223"
+    "run_id": "42122195615",
+    "run_number": "1224"
   }
 }
