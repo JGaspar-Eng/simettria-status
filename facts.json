@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:36:02Z",
+  "gerado_em": "2026-11-05T22:48:32Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-    "data": "2026-11-05T22:31:21Z"
+    "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+    "data": "2026-11-05T22:46:51Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-    "gerado_em": "2026-11-05T22:31:43Z",
+    "gerado_em": "2026-11-05T22:34:50Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 84,
+        "total_integrados": 85,
         "integrados_recentes": [
+          {
+            "numero": 717,
+            "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
+            "merged_at": "2026-11-05T22:46:52Z",
+            "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+            "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 716,
             "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
@@ -49,7 +59,7 @@
             "merge_sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
             "head_sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 715,
@@ -129,7 +139,7 @@
             "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
             "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 705,
@@ -150,38 +160,28 @@
             "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 703,
-            "titulo": "VIGA-DET-04: sincronizar estribos do 3D com zonas Vy dos oito ELU",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/703",
-            "merged_at": "2026-11-05T12:14:15Z",
-            "merge_sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
-            "head_sha": "85ba31f0a2aac2d475ebd306828169d6ea86c1f2",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 716,
-          "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/716",
-          "merge_sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-          "head_sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
-          "merged_at": "2026-11-05T22:31:22Z",
+          "numero": 717,
+          "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
+          "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+          "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
+          "merged_at": "2026-11-05T22:46:52Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-          "data": "2026-11-05T19:31:21-03:00",
-          "assunto": "Merge pull request #716 from JGaspar-Eng/fix/vigas-vf2-fail-closed-carga-ausente-solver-20261105",
-          "ci": "passou"
+          "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+          "data": "2026-11-05T19:46:51-03:00",
+          "assunto": "Merge pull request #717 from JGaspar-Eng/fix/vigas-vf2-gate-pontos-esforcos-invalidos-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -569,14 +569,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-          "data": "2026-11-05T09:04:28-03:00",
-          "assunto": "Merge pull request #702 from JGaspar-Eng/feat/vigas-det03-zonas-cortante-oito-elu-20261105",
-          "ci": "passou"
+          "sha": "3f3e2c80a74fdc7e8232c6d38e80f680887bd9ce",
+          "data": "2026-11-05T19:39:11-03:00",
+          "assunto": "test(vf2): declarar cortante nos pontos sinteticos do ensaio manual",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1011,14 +1011,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
-          "data": "2026-11-05T14:24:52-03:00",
-          "assunto": "Merge pull request #709 from JGaspar-Eng/feat/vigas-det09-formulario-geometria-ancoragem-20261105",
-          "ci": "passou"
+          "sha": "3f3e2c80a74fdc7e8232c6d38e80f680887bd9ce",
+          "data": "2026-11-05T19:39:11-03:00",
+          "assunto": "test(vf2): declarar cortante nos pontos sinteticos do ensaio manual",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1035,8 +1035,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 22,
+        "total_integrados": 23,
         "integrados_recentes": [
+          {
+            "numero": 717,
+            "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
+            "merged_at": "2026-11-05T22:46:52Z",
+            "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+            "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 706,
             "titulo": "VIGA-DET-07: armaduras longitudinais cotadas no 3D e testemunhos sem comprimento",
@@ -1045,7 +1055,7 @@
             "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
             "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 704,
@@ -1146,38 +1156,28 @@
             "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 615,
-            "titulo": "ORQ: prancha 2D e memorial exibem barras duplas aplicadas; esclarecer interação 3D",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/615",
-            "merged_at": "2026-10-26T22:43:59Z",
-            "merge_sha": "450754f063788e2d36319340ca661d39cd5bf202",
-            "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 706,
-          "titulo": "VIGA-DET-07: armaduras longitudinais cotadas no 3D e testemunhos sem comprimento",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/706",
-          "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
-          "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
-          "merged_at": "2026-11-05T17:01:40Z",
+          "numero": 717,
+          "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
+          "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+          "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
+          "merged_at": "2026-11-05T22:46:52Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
-          "data": "2026-11-05T13:58:47-03:00",
-          "assunto": "docs(det07): segmentos de armadura longitudinais provados no vão e testemunhos sem cota",
-          "ci": "passou"
+          "sha": "526a4825b55a2956959cbf8d570479db4dbaef70",
+          "data": "2026-11-05T19:39:35-03:00",
+          "assunto": "test(vf2): exigir diagramas M/V numericos antes de calcular armadura",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1722,14 +1722,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-          "data": "2026-11-05T19:25:48-03:00",
-          "assunto": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105",
-          "ci": "passou"
+          "sha": "2f65eaaaf499b956c0bb3177f141383dd2778988",
+          "data": "2026-11-05T19:41:18-03:00",
+          "assunto": "test(vf2): explicitar M e V nos pontos do contrato de status",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 606,
-  "commits_main_analisados": 3046,
+  "janela_prs": 607,
+  "commits_main_analisados": 3053,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

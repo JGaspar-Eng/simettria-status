@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-11-05T22:34:50Z",
+  "generated_at": "2026-11-05T22:47:13Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-    "short_sha": "fa3db879",
+    "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+    "short_sha": "f53d6547",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T19:31:21-03:00",
-    "message": "Merge pull request #716 from JGaspar-Eng/fix/vigas-vf2-fail-closed-carga-ausente-solver-20261105"
+    "date": "2026-11-05T19:46:51-03:00",
+    "message": "Merge pull request #717 from JGaspar-Eng/fix/vigas-vf2-gate-pontos-esforcos-invalidos-20261105"
   },
   "commits": [
+    {
+      "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+      "short_sha": "f53d6547",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:46:51-03:00",
+      "message": "Merge pull request #717 from JGaspar-Eng/fix/vigas-vf2-gate-pontos-esforcos-invalidos-20261105"
+    },
+    {
+      "sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
+      "short_sha": "c1834818",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:42:51-03:00",
+      "message": "test(vf2): declarar ambos esforcos nos pontos do ensaio ELU"
+    },
+    {
+      "sha": "2f65eaaaf499b956c0bb3177f141383dd2778988",
+      "short_sha": "2f65eaaa",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:41:18-03:00",
+      "message": "test(vf2): explicitar M e V nos pontos do contrato de status"
+    },
+    {
+      "sha": "d7716356c8d1cf288aef21ac708a48ed3ba4aa1f",
+      "short_sha": "d7716356",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:39:47-03:00",
+      "message": "test(vf2): executar gate de pontos M/V em toda suite oficial"
+    },
+    {
+      "sha": "526a4825b55a2956959cbf8d570479db4dbaef70",
+      "short_sha": "526a4825",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:39:35-03:00",
+      "message": "test(vf2): exigir diagramas M/V numericos antes de calcular armadura"
+    },
+    {
+      "sha": "3f3e2c80a74fdc7e8232c6d38e80f680887bd9ce",
+      "short_sha": "3f3e2c80",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:39:11-03:00",
+      "message": "test(vf2): declarar cortante nos pontos sinteticos do ensaio manual"
+    },
+    {
+      "sha": "07f7720ae83dc3a028376b15f943f41ff794a447",
+      "short_sha": "07f7720a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:39:00-03:00",
+      "message": "fix(vf2): bloquear armadura com pontos ELU de momento ou cortante invalidos"
+    },
     {
       "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
       "short_sha": "fa3db879",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:26:58-03:00",
       "message": "fix(vf2): rejeitar whitespace boolean e objetos como cargas estruturais"
-    },
-    {
-      "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-      "short_sha": "034554c6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:25:48-03:00",
-      "message": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105"
-    },
-    {
-      "sha": "a1590e18b965ffd5bcb509621b9f5fd0e1ead0f0",
-      "short_sha": "a1590e18",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:25:09-03:00",
-      "message": "test(vf2): benchmark qL2/8 e fail-closed para cargas ausentes"
-    },
-    {
-      "sha": "90a67fd3fd2bfb6e93eabaebb349519cb4c71ed8",
-      "short_sha": "90a67fd3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:24:31-03:00",
-      "message": "fix(vf2): impedir que cargas ausentes gerem analise de viga com q=0"
-    },
-    {
-      "sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
-      "short_sha": "fd70b5c2",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:21:53-03:00",
-      "message": "test(status): alinhar frente ativa VF-2 e proxima fila VF-3 a VF-5"
-    },
-    {
-      "sha": "ee210c4ba365a57a6622eb8d289cec6f06ced5cb",
-      "short_sha": "ee210c4b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:21:42-03:00",
-      "message": "docs(status): avancar frente principal para VF-2 com provas e bloqueios"
-    },
-    {
-      "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-      "short_sha": "786fcc9b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:18:45-03:00",
-      "message": "Merge pull request #713 from JGaspar-Eng/fix/vigas-vf2-gate-solicitacoes-nao-finitas-20261105"
-    },
-    {
-      "sha": "31569c1521c7d04366518282a3fd8b676600aca4",
-      "short_sha": "31569c15",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:15:12-03:00",
-      "message": "test(vf2): exigir ELU indeterminado para solicitacao desconhecida"
     }
   ],
   "development": {
@@ -3104,7 +3104,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 233,
+    "validator_count": 234,
     "validators": [
       {
         "name": "test:servidor-versionado",
@@ -3831,6 +3831,10 @@
         "command": "node tests/validar_vigas_vf2_solicitacoes_nao_finitas.mjs"
       },
       {
+        "name": "test:viga-vf2-diagramas",
+        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs"
+      },
+      {
         "name": "test:viga-armadura",
         "command": "node tests/validar_armadura_viga.mjs"
       },
@@ -4047,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42122635622",
-    "run_number": "1225"
+    "run_id": "42124366292",
+    "run_number": "1226"
   }
 }
