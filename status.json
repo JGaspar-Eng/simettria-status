@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-05T17:27:42Z",
+  "generated_at": "2026-11-05T17:31:05Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
-    "short_sha": "58d057fd",
+    "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
+    "short_sha": "43e0f03e",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T14:24:52-03:00",
-    "message": "Merge pull request #709 from JGaspar-Eng/feat/vigas-det09-formulario-geometria-ancoragem-20261105"
+    "date": "2026-11-05T14:30:43-03:00",
+    "message": "Merge pull request #710 from JGaspar-Eng/fix/vigas-det09-edicao-lifecycle-20261105"
   },
   "commits": [
+    {
+      "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
+      "short_sha": "43e0f03e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:30:43-03:00",
+      "message": "Merge pull request #710 from JGaspar-Eng/fix/vigas-det09-edicao-lifecycle-20261105"
+    },
+    {
+      "sha": "e7f199741c1dce5c8550a7b8b13eb060fbac3c65",
+      "short_sha": "e7f19974",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:26:14-03:00",
+      "message": "fix(vigas): aplicar e restaurar DET-09 via Structural Lifecycle"
+    },
     {
       "sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
       "short_sha": "58d057fd",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T14:17:53-03:00",
       "message": "ui(det09): form real sem defaults, comprovacao de fontes, validacao DET02 e aplicacao transacional com recálculo"
-    },
-    {
-      "sha": "84e1183a728ba4b51bd9868af9f6818600fbbce9",
-      "short_sha": "84e1183a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:16:26-03:00",
-      "message": "test(det09): entradas manuais obrigatórias, 8 ELU, apoio, falhas fechadas e duplo sinal de M"
-    },
-    {
-      "sha": "a1ffae7d2d926f303739c6e3d93102decf77122a",
-      "short_sha": "a1ffae7d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:14:13-03:00",
-      "message": "feat(det09): criar plano documental somente de cotas e materiais declarados pelo usuario com confronto DET02"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42074787621",
-    "run_number": "1203"
+    "run_id": "42075331386",
+    "run_number": "1204"
   }
 }
