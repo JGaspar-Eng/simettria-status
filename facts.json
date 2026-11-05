@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:02:50Z",
+  "gerado_em": "2026-11-05T22:07:35Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
-    "data": "2026-11-05T17:30:43Z"
+    "sha": "6bf223d69562fe381909403a39e08d23d1697810",
+    "data": "2026-11-05T22:06:12Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
-    "gerado_em": "2026-11-05T20:05:42Z",
+    "gerado_em": "2026-11-05T22:01:45Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 2.0
+    "defasagem_commits_main": 3,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -897,7 +897,7 @@
             "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
             "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 655,
@@ -1024,14 +1024,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 711,
-            "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
-            "rascunho": true,
-            "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
-            "ci": "passou"
-          },
-          {
             "numero": 621,
             "titulo": "ORQ: diagnóstico da incompatibilidade c1 e alternativas geométricas seguras para torção",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/621",
@@ -1075,8 +1067,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 119,
+        "total_integrados": 120,
         "integrados_recentes": [
+          {
+            "numero": 711,
+            "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
+            "merged_at": "2026-11-05T22:06:12Z",
+            "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
+            "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 698,
             "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
@@ -1085,7 +1087,7 @@
             "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
             "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 695,
@@ -1186,38 +1188,28 @@
             "head_sha": "eddc8e849bf92ffca46ff95c6d9d543477d8f41a",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 648,
-            "titulo": "fix(orq): exibir pendências e ações após concluir cálculo global",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/648",
-            "merged_at": "2026-10-30T11:36:37Z",
-            "merge_sha": "7043e58709ec849783df54e70a87cc99d4af96bb",
-            "head_sha": "efd21c232dd0363db08cc3ab577a160b29d444b0",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 698,
-          "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
-          "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-          "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
-          "merged_at": "2026-11-04T23:47:20Z",
+          "numero": 711,
+          "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
+          "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
+          "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
+          "merged_at": "2026-11-05T22:06:12Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
-          "data": "2026-11-05T14:20:48-03:00",
-          "assunto": "docs(det09): entrada documental sem defaults e aplicacao transacional com ORQ",
+          "sha": "4aa40a566244022609859b40448104d6b1df7f0e",
+          "data": "2026-11-05T14:27:38-03:00",
+          "assunto": "ci(det10): executar teste de integracao do formulário dentro do inspetor ORQ real",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1412,8 +1404,8 @@
             "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
             "rascunho": true,
-            "head_sha": "964a02e701afe1d877140e69b7025065cfb9e5ab",
-            "ci": "falhou"
+            "head_sha": "15645e4d90930db7ad080c06d4d3b535d8544929",
+            "ci": "pendente"
           },
           {
             "numero": 492,
@@ -1620,7 +1612,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 603,
-  "commits_main_analisados": 3018,
+  "commits_main_analisados": 3021,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

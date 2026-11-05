@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-11-05T22:01:45Z",
+  "generated_at": "2026-11-05T22:06:31Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
-    "short_sha": "43e0f03e",
+    "sha": "6bf223d69562fe381909403a39e08d23d1697810",
+    "short_sha": "6bf223d6",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T14:30:43-03:00",
-    "message": "Merge pull request #710 from JGaspar-Eng/fix/vigas-det09-edicao-lifecycle-20261105"
+    "date": "2026-11-05T19:06:12-03:00",
+    "message": "Merge pull request #711 from JGaspar-Eng/test/vigas-det10-integracao-formulario-inspetor-20261105"
   },
   "commits": [
+    {
+      "sha": "6bf223d69562fe381909403a39e08d23d1697810",
+      "short_sha": "6bf223d6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:06:12-03:00",
+      "message": "Merge pull request #711 from JGaspar-Eng/test/vigas-det10-integracao-formulario-inspetor-20261105"
+    },
     {
       "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
       "short_sha": "43e0f03e",
       "author": "Joanez Gaspar",
       "date": "2026-11-05T14:30:43-03:00",
       "message": "Merge pull request #710 from JGaspar-Eng/fix/vigas-det09-edicao-lifecycle-20261105"
+    },
+    {
+      "sha": "4aa40a566244022609859b40448104d6b1df7f0e",
+      "short_sha": "4aa40a56",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:27:38-03:00",
+      "message": "ci(det10): executar teste de integracao do formulário dentro do inspetor ORQ real"
+    },
+    {
+      "sha": "1b97a6967468cf46ebb2658c85809cb471763ba1",
+      "short_sha": "1b97a696",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:27:23-03:00",
+      "message": "test(browser-det10): conferir insercao real do cadastro no inspetor ORQ e recusa de modelo obsoleto"
     },
     {
       "sha": "e7f199741c1dce5c8550a7b8b13eb060fbac3c65",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T14:19:08-03:00",
       "message": "ui(det09): exigir validacao de todos campos inclusive submissao programatica; melhorar rotulos acessiveis"
-    },
-    {
-      "sha": "411ead4016ad20e8d96d23d124e377e8652fd39d",
-      "short_sha": "411ead40",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:18:38-03:00",
-      "message": "fix(det09): tolerancia de comparacao de vao alinhada ao ORQ sem aceitar comprimentos inconsistentes"
-    },
-    {
-      "sha": "205e6a8b9a5e866a9d545e4504ff9cdafc0a36b8",
-      "short_sha": "205e6a8b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:18:08-03:00",
-      "message": "feat(det09): integrar cadastro guiado de medidas no inspetor existente de vigas"
-    },
-    {
-      "sha": "d0c34cd42a73bba4cbffedbb4bcd2580a9ff5dbe",
-      "short_sha": "d0c34cd4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T14:17:53-03:00",
-      "message": "ui(det09): form real sem defaults, comprovacao de fontes, validacao DET02 e aplicacao transacional com recálculo"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42117862033",
-    "run_number": "1209"
+    "run_id": "42118568517",
+    "run_number": "1213"
   }
 }
