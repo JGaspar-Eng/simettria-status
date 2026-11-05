@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T17:06:59Z",
+  "gerado_em": "2026-11-05T17:13:22Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
-    "data": "2026-11-05T17:01:39Z"
+    "sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
+    "data": "2026-11-05T17:12:08Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
-    "gerado_em": "2026-11-05T17:01:58Z",
+    "gerado_em": "2026-11-05T17:05:32Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 8,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -708,8 +708,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 13,
+        "total_integrados": 14,
         "integrados_recentes": [
+          {
+            "numero": 707,
+            "titulo": "VIGA-DET-08: impedir perda de planos de ancoragem e continuidade ao salvar/reabrir",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/707",
+            "merged_at": "2026-11-05T17:12:08Z",
+            "merge_sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
+            "head_sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 702,
             "titulo": "VIGA-DET-03: zonas conservadoras de estribos dos 8 ELU no inspetor e memorial",
@@ -819,38 +829,28 @@
             "head_sha": "033e681d41d0cc1ad7f1fe921f047dd0875b149d",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 381,
-            "titulo": "feat(orq): transporta cortante SA-L1 até ações de base",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/381",
-            "merged_at": "2026-09-09T19:46:17Z",
-            "merge_sha": "305f15db35cce693b16c0f0709786d9950985dcb",
-            "head_sha": "f06d0eb7ea52342649bb1625e12663212a54f780",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 702,
-          "titulo": "VIGA-DET-03: zonas conservadoras de estribos dos 8 ELU no inspetor e memorial",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/702",
-          "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-          "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
-          "merged_at": "2026-11-05T12:04:29Z",
+          "numero": 707,
+          "titulo": "VIGA-DET-08: impedir perda de planos de ancoragem e continuidade ao salvar/reabrir",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/707",
+          "merge_sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
+          "head_sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
+          "merged_at": "2026-11-05T17:12:08Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-          "data": "2026-11-05T09:04:28-03:00",
-          "assunto": "Merge pull request #702 from JGaspar-Eng/feat/vigas-det03-zonas-cortante-oito-elu-20261105",
-          "ci": "passou"
+          "sha": "b64c49e653e7f16ff1ecff9047482d3f78635439",
+          "data": "2026-11-05T14:03:54-03:00",
+          "assunto": "fix(det08): clonagem com novo UUID descarta documentação de ancoragem e continuidade da viga de origem",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1378,14 +1378,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "ade48da7f23fbcdf059b9bc241291fc1fd239466",
-          "data": "2026-11-05T08:57:17-03:00",
-          "assunto": "feat(det03): verificar zonas de estribos por maximo exato de Vy nos 8 ELU com solver normativo comum",
+          "sha": "3ac727db62e412b6f12906170bac941ffddd93b8",
+          "data": "2026-11-05T14:04:55-03:00",
+          "assunto": "test(det08): registrar assinatura após normalização controlada do snapshot",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1603,8 +1603,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 597,
-  "commits_main_analisados": 2998,
+  "janela_prs": 598,
+  "commits_main_analisados": 3006,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

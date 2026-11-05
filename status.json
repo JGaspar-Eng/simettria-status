@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-05T17:05:32Z",
+  "generated_at": "2026-11-05T17:12:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
-    "short_sha": "52bafa03",
+    "sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
+    "short_sha": "907322db",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T14:01:39-03:00",
-    "message": "Merge pull request #706 from JGaspar-Eng/feat/vigas-det07-segmentos-longitudinais-babylon-20261105"
+    "date": "2026-11-05T14:12:08-03:00",
+    "message": "Merge pull request #707 from JGaspar-Eng/fix/vigas-det08-persistencia-identidade-planos-20261105"
   },
   "commits": [
+    {
+      "sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
+      "short_sha": "907322db",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:12:08-03:00",
+      "message": "Merge pull request #707 from JGaspar-Eng/fix/vigas-det08-persistencia-identidade-planos-20261105"
+    },
+    {
+      "sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
+      "short_sha": "1060a155",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:07:59-03:00",
+      "message": "fix(test-det08): comparar assinatura antes e depois da edição na mesma versão restaurada do modelo"
+    },
+    {
+      "sha": "36a517fb7dc85611270ce8006f6da974edaa1a01",
+      "short_sha": "36a517fb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:06:01-03:00",
+      "message": "docs(det08): corrigir perda silenciosa de documentos DET02 e DET05 no snapshot"
+    },
+    {
+      "sha": "c83156616c60fd527a7906f860a31741c2f293e9",
+      "short_sha": "c8315661",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:05:42-03:00",
+      "message": "ci(det08): teste de salvar carregar JSON com planos e continuidade e bloquear clones obsoletos"
+    },
+    {
+      "sha": "3ac727db62e412b6f12906170bac941ffddd93b8",
+      "short_sha": "3ac727db",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:04:55-03:00",
+      "message": "test(det08): registrar assinatura após normalização controlada do snapshot"
+    },
+    {
+      "sha": "bc4cdd011ded9d123e4ce4939133be75a84c4a6e",
+      "short_sha": "bc4cdd01",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:04:38-03:00",
+      "message": "test(det08): roundtrip plano DET02 continuidade DET05 signature e clone sem heranca"
+    },
+    {
+      "sha": "b64c49e653e7f16ff1ecff9047482d3f78635439",
+      "short_sha": "b64c49e6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:03:54-03:00",
+      "message": "fix(det08): clonagem com novo UUID descarta documentação de ancoragem e continuidade da viga de origem"
+    },
+    {
+      "sha": "448e16734e06b9ffae61610a3bf030a728fabb44",
+      "short_sha": "448e1673",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:03:39-03:00",
+      "message": "fix(det08): incluir planos DET-02 e nos DET-05 no contrato e na factory das vigas"
+    },
     {
       "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
       "short_sha": "52bafa03",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T13:58:47-03:00",
       "message": "docs(det07): segmentos de armadura longitudinais provados no vão e testemunhos sem cota"
-    },
-    {
-      "sha": "28499e2e7bd7ae10011d4677fef9fd9134462297",
-      "short_sha": "28499e2e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:58:12-03:00",
-      "message": "test(browser-det07): confirmar comprimentos Babylon reais no vão e testemunhos curtos sem documento"
-    },
-    {
-      "sha": "14e0e9ef039e8794a38b4e4bebc89d62eae05c4e",
-      "short_sha": "14e0e9ef",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:57:29-03:00",
-      "message": "ui(det07): reforçar que segmentos no vão não validam corte, ganchos nem ancoragens"
-    },
-    {
-      "sha": "600a391896107c41e63f332f5dc58b763fd99c90",
-      "short_sha": "600a3918",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:56:53-03:00",
-      "message": "test(det07): barras sem cotas são seccionais e segmentos DET02 cotados aparecem no 3D"
-    },
-    {
-      "sha": "5725ddcb82744413c45d8ef5ce52857e5c4fc820",
-      "short_sha": "5725ddcb",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:56:06-03:00",
-      "message": "ui(det07): informar segmentos cotados e testemunhos curtos sem liberar comprimento de corte"
-    },
-    {
-      "sha": "185e8775d9f9e83a0a10cfcba9ca875854246ff6",
-      "short_sha": "185e8775",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:55:51-03:00",
-      "message": "fix(det07): validar limites reais de trecho sem desigualdade redundante"
-    },
-    {
-      "sha": "9d93889794da7d5e1f5783456a4449ba6de5627c",
-      "short_sha": "9d938897",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:55:41-03:00",
-      "message": "feat(det07): cilindros de armadura seguem extensão dentro do vão ou seção curta sem inventar comprimento"
-    },
-    {
-      "sha": "2784c06a35edb8d2f467a6576f6f84f7b0d68d61",
-      "short_sha": "2784c06a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:55:15-03:00",
-      "message": "feat(det07): 3D recebe segmentos longitudinais medidos via DET06 ou testemunhos curtos de seção"
-    },
-    {
-      "sha": "fa35dae503d3066033369da2d3bd13665758173d",
-      "short_sha": "fa35dae5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:53:41-03:00",
-      "message": "Merge pull request #705 from JGaspar-Eng/feat/vigas-det06-quadro-geometrico-barras-20261105"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42071111853",
-    "run_number": "1199"
+    "run_id": "42072268608",
+    "run_number": "1200"
   }
 }
