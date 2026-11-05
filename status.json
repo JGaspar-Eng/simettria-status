@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-11-05T23:19:53Z",
+  "generated_at": "2026-11-05T23:38:12Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
-    "short_sha": "fa576b63",
+    "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+    "short_sha": "63d3dbda",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T20:16:34-03:00",
-    "message": "Merge pull request #719 from JGaspar-Eng/fix/vf2-v102-memorial-fail-closed-20261105"
+    "date": "2026-11-05T20:37:52-03:00",
+    "message": "Merge pull request #720 from JGaspar-Eng/fix/vf3-viga-continua-visual-e-categoria-explicita-20261105"
   },
   "commits": [
+    {
+      "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+      "short_sha": "63d3dbda",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:37:52-03:00",
+      "message": "Merge pull request #720 from JGaspar-Eng/fix/vf3-viga-continua-visual-e-categoria-explicita-20261105"
+    },
+    {
+      "sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
+      "short_sha": "6b136b84",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:33:37-03:00",
+      "message": "test(vigas): aceite visual V102 bloqueada e armadura visível após categoria declarada"
+    },
+    {
+      "sha": "b5e19a8c7fbefcfd6affb8503d9ce05fa8941af4",
+      "short_sha": "b5e19a8c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:32:41-03:00",
+      "message": "feat(vigas): substituir falso detalhamento por diagrama de armadura real ou bloqueio corrigível"
+    },
+    {
+      "sha": "3ebeee99898b950175b97688e83fd5aef0d80a25",
+      "short_sha": "3ebeee99",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:29:34-03:00",
+      "message": "fix(vigas): preservar categoria normativa declarada ao criar e editar viga"
+    },
     {
       "sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
       "short_sha": "fa576b63",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T20:10:30-03:00",
       "message": "fix(vigas): mostrar Gk real e identificar trecho que bloqueia ELU global"
-    },
-    {
-      "sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
-      "short_sha": "70caa7a8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:51:31-03:00",
-      "message": "Merge pull request #718 from JGaspar-Eng/test/vigas-vf2-benchmark-continuas-dois-vaos-20261105"
-    },
-    {
-      "sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
-      "short_sha": "bd335d46",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:48:07-03:00",
-      "message": "test(vf2): benchmark independente de viga continua em dois vaos"
-    },
-    {
-      "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-      "short_sha": "f53d6547",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:46:51-03:00",
-      "message": "Merge pull request #717 from JGaspar-Eng/fix/vigas-vf2-gate-pontos-esforcos-invalidos-20261105"
-    },
-    {
-      "sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
-      "short_sha": "c1834818",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:42:51-03:00",
-      "message": "test(vf2): declarar ambos esforcos nos pontos do ensaio ELU"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42128724891",
-    "run_number": "1237"
+    "run_id": "42130857158",
+    "run_number": "1238"
   }
 }

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T23:20:46Z",
+  "gerado_em": "2026-11-05T23:38:57Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
-    "data": "2026-11-05T23:16:34Z"
+    "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+    "data": "2026-11-05T23:37:52Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
-    "gerado_em": "2026-11-05T23:18:34Z",
+    "gerado_em": "2026-11-05T23:19:53Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 4,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 87,
+        "total_integrados": 88,
         "integrados_recentes": [
+          {
+            "numero": 720,
+            "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
+            "merged_at": "2026-11-05T23:37:52Z",
+            "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+            "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 719,
             "titulo": "VIGAS-VF-2: corrigir Gk da V102 e identificar bloqueio ELU da V101",
@@ -49,7 +59,7 @@
             "merge_sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
             "head_sha": "808f6bfe9e83d4af70feac3bf8f96ed1a099802d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 718,
@@ -69,7 +79,7 @@
             "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 716,
@@ -150,38 +160,28 @@
             "head_sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 706,
-            "titulo": "VIGA-DET-07: armaduras longitudinais cotadas no 3D e testemunhos sem comprimento",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/706",
-            "merged_at": "2026-11-05T17:01:40Z",
-            "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
-            "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 719,
-          "titulo": "VIGAS-VF-2: corrigir Gk da V102 e identificar bloqueio ELU da V101",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/719",
-          "merge_sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
-          "head_sha": "808f6bfe9e83d4af70feac3bf8f96ed1a099802d",
-          "merged_at": "2026-11-05T23:16:35Z",
+          "numero": 720,
+          "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
+          "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+          "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
+          "merged_at": "2026-11-05T23:37:52Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "808f6bfe9e83d4af70feac3bf8f96ed1a099802d",
-          "data": "2026-11-05T20:13:43-03:00",
-          "assunto": "fix(vigas): identificar explicitamente no ELU ausente antes do diagnostico",
-          "ci": "passou"
+          "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+          "data": "2026-11-05T20:37:52-03:00",
+          "assunto": "Merge pull request #720 from JGaspar-Eng/fix/vf3-viga-continua-visual-e-categoria-explicita-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1035,8 +1035,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 23,
+        "total_integrados": 24,
         "integrados_recentes": [
+          {
+            "numero": 720,
+            "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
+            "merged_at": "2026-11-05T23:37:52Z",
+            "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+            "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 717,
             "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
@@ -1045,7 +1055,7 @@
             "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 706,
@@ -1146,38 +1156,28 @@
             "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 617,
-            "titulo": "ORQ 2D: desenhar camadas longitudinais da armadura dupla aplicada",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/617",
-            "merged_at": "2026-10-27T03:07:21Z",
-            "merge_sha": "475803a792a5de6361450d7e6abd71e1b39c3dcb",
-            "head_sha": "8e78b893bd7c728f8dd78ce7bc90df06048977d1",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 717,
-          "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
-          "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-          "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
-          "merged_at": "2026-11-05T22:46:52Z",
+          "numero": 720,
+          "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
+          "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
+          "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
+          "merged_at": "2026-11-05T23:37:52Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "526a4825b55a2956959cbf8d570479db4dbaef70",
-          "data": "2026-11-05T19:39:35-03:00",
-          "assunto": "test(vf2): exigir diagramas M/V numericos antes de calcular armadura",
-          "ci": "sem_evidencia"
+          "sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
+          "data": "2026-11-05T20:33:37-03:00",
+          "assunto": "test(vigas): aceite visual V102 bloqueada e armadura visível após categoria declarada",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1546,14 +1546,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "3ac727db62e412b6f12906170bac941ffddd93b8",
-          "data": "2026-11-05T14:04:55-03:00",
-          "assunto": "test(det08): registrar assinatura após normalização controlada do snapshot",
+          "sha": "3ebeee99898b950175b97688e83fd5aef0d80a25",
+          "data": "2026-11-05T20:29:34-03:00",
+          "assunto": "fix(vigas): preservar categoria normativa declarada ao criar e editar viga",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 609,
-  "commits_main_analisados": 3061,
+  "janela_prs": 610,
+  "commits_main_analisados": 3065,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
