@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-11-05T22:22:28Z",
+  "generated_at": "2026-11-05T22:26:05Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-    "short_sha": "786fcc9b",
+    "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+    "short_sha": "034554c6",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T19:18:45-03:00",
-    "message": "Merge pull request #713 from JGaspar-Eng/fix/vigas-vf2-gate-solicitacoes-nao-finitas-20261105"
+    "date": "2026-11-05T19:25:48-03:00",
+    "message": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105"
   },
   "commits": [
+    {
+      "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+      "short_sha": "034554c6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:25:48-03:00",
+      "message": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105"
+    },
+    {
+      "sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+      "short_sha": "fd70b5c2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:21:53-03:00",
+      "message": "test(status): alinhar frente ativa VF-2 e proxima fila VF-3 a VF-5"
+    },
+    {
+      "sha": "ee210c4ba365a57a6622eb8d289cec6f06ced5cb",
+      "short_sha": "ee210c4b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:21:42-03:00",
+      "message": "docs(status): avancar frente principal para VF-2 com provas e bloqueios"
+    },
     {
       "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
       "short_sha": "786fcc9b",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:11:36-03:00",
       "message": "fix(vf2): rejeitar solicitacoes Md e Vsd ausentes ou nao finitas"
-    },
-    {
-      "sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
-      "short_sha": "e2034629",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:08:22-03:00",
-      "message": "docs(status): refletir merge VF-1 do inspetor e abrir auditoria VF-2"
-    },
-    {
-      "sha": "14e50a55d178871a15acc634d35447d7535b7f63",
-      "short_sha": "14e50a55",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:08:18-03:00",
-      "message": "docs(vf1): registrar teste do inspetor integrado no PR 711"
-    },
-    {
-      "sha": "6bf223d69562fe381909403a39e08d23d1697810",
-      "short_sha": "6bf223d6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:06:12-03:00",
-      "message": "Merge pull request #711 from JGaspar-Eng/test/vigas-det10-integracao-formulario-inspetor-20261105"
     }
   ],
   "development": {
@@ -98,19 +98,19 @@
       "panel": {
         "active": [
           {
-            "code": "VIGAS-VF-01",
-            "title": "VIGAS — ciclo de fechamento: integração no inspetor ORQ e provas de navegador (06–09/11); próximo marco VF-2",
-            "summary": "Cronograma fechado VF-0 a VF-5 com decisão de entrega em 19/11. DET-01 a DET-09A integrados, DET-10 integrada pelo PR #711 em main@6bf223d; 30 etapas de CI aprovadas. Integração automatizada VF-1 concluída, aceite visual pendente; VF-2 em auditoria. Dimensões físicas, ELU/ELS, ancoragens e liberação executiva exigem provas específicas; não há conclusão automática por CI.",
+            "code": "VIGAS-VF-02",
+            "title": "VIGAS — verificação resistente em andamento: flexão, cortante, torção, oito ELU e ancoragens (10–12/11); VF-1 automatizada integrada, revisão visual pendente",
+            "summary": "VF-0: cronograma e painel integrados (#712). VF-1: inspetor ORQ e regressão em navegador integrados (#711; 30/30 CI), aguardando aprovação visual de Gaspar. VF-2: correção de Md/Vsd inválidos convertidos em zero integrada (#713; 30/30 CI), veredito INDETERMINADO; matriz de aceite aberta na issue #714. Oito ELU por elemento real, casos independentes, torção, ancoragens/continuidade e exequibilidade ainda precisam de prova.",
             "highlights": [
-              "DET-01 a DET-09A rastreados no GitHub; PR #708 duplicado encerrado sem merge.",
-              "PR #711 integrado em main: teste do inspetor e bloqueio de assinatura obsoleta, sem aprovação visual presumida.",
-              "Entregas restantes agrupadas em VF-2 (resistência), VF-3 (ELS/detalhamento), VF-4 (aceite) e VF-5 (decisão), sem novas séries DET.",
-              "Aprovação visual da interface e comprovação normativa permanecem requisitos de aceite."
+              "PR #711 incorporou teste no inspetor ORQ real: assinatura obsoleta bloqueia formulário sem recálculo.",
+              "PR #713 corrigiu entrada inválida de momentos/cortantes; NaN/null não equivalem a zero e ELU fica INDETERMINADO.",
+              "Issue #714 concentra VF-2, sem criar novas etapas DET; provar flexão, cisalhamento, torção, oito ELU e ancoragens.",
+              "Próximos marcos: VF-3 ELS/detalhamento, VF-4 aceite integrado, VF-5 decisão de entrega."
             ],
             "blockers": [
-              "Revisão visual do usuário do inspetor ORQ 2D/3D ainda não documentada; não concluir VF-1 integralmente.",
-              "Sem prova independente integral de resistência/ELS em todas as hipóteses aplicáveis.",
-              "Aprovação visual explícita do usuário e validação em projeto real ainda pendentes."
+              "VF-1: aprovação visual explícita da interface por Gaspar ainda pendente.",
+              "VF-2: verificações independentes para diferentes casos resistentes e origem dos oito ELU reais ainda incompletas.",
+              "VF-2: torção/interação e ancoragens integrais não comprovadas; sem liberação executiva."
             ],
             "state": "in_progress",
             "area": 4,
@@ -118,13 +118,6 @@
           }
         ],
         "planned": [
-          {
-            "code": "VIGAS-VF-02",
-            "title": "10–12/11: verificação resistente — flexão, cisalhamento, torção aplicável, apoios e ancoragens; provas independentes",
-            "state": "planned",
-            "area": 4,
-            "source": "docs/VIGAS_PLANO_FECHAMENTO_20261105.md"
-          },
           {
             "code": "VIGAS-VF-03",
             "title": "13–16/11: ELS aplicáveis e compatibilidade de detalhamento ORQ, 2D/3D, quantitativos e persistência",
@@ -1221,19 +1214,19 @@
       ],
       "active": [
         {
-          "code": "VIGAS-VF-01",
-          "title": "VIGAS — ciclo de fechamento: integração no inspetor ORQ e provas de navegador (06–09/11); próximo marco VF-2",
-          "summary": "Cronograma fechado VF-0 a VF-5 com decisão de entrega em 19/11. DET-01 a DET-09A integrados, DET-10 integrada pelo PR #711 em main@6bf223d; 30 etapas de CI aprovadas. Integração automatizada VF-1 concluída, aceite visual pendente; VF-2 em auditoria. Dimensões físicas, ELU/ELS, ancoragens e liberação executiva exigem provas específicas; não há conclusão automática por CI.",
+          "code": "VIGAS-VF-02",
+          "title": "VIGAS — verificação resistente em andamento: flexão, cortante, torção, oito ELU e ancoragens (10–12/11); VF-1 automatizada integrada, revisão visual pendente",
+          "summary": "VF-0: cronograma e painel integrados (#712). VF-1: inspetor ORQ e regressão em navegador integrados (#711; 30/30 CI), aguardando aprovação visual de Gaspar. VF-2: correção de Md/Vsd inválidos convertidos em zero integrada (#713; 30/30 CI), veredito INDETERMINADO; matriz de aceite aberta na issue #714. Oito ELU por elemento real, casos independentes, torção, ancoragens/continuidade e exequibilidade ainda precisam de prova.",
           "highlights": [
-            "DET-01 a DET-09A rastreados no GitHub; PR #708 duplicado encerrado sem merge.",
-            "PR #711 integrado em main: teste do inspetor e bloqueio de assinatura obsoleta, sem aprovação visual presumida.",
-            "Entregas restantes agrupadas em VF-2 (resistência), VF-3 (ELS/detalhamento), VF-4 (aceite) e VF-5 (decisão), sem novas séries DET.",
-            "Aprovação visual da interface e comprovação normativa permanecem requisitos de aceite."
+            "PR #711 incorporou teste no inspetor ORQ real: assinatura obsoleta bloqueia formulário sem recálculo.",
+            "PR #713 corrigiu entrada inválida de momentos/cortantes; NaN/null não equivalem a zero e ELU fica INDETERMINADO.",
+            "Issue #714 concentra VF-2, sem criar novas etapas DET; provar flexão, cisalhamento, torção, oito ELU e ancoragens.",
+            "Próximos marcos: VF-3 ELS/detalhamento, VF-4 aceite integrado, VF-5 decisão de entrega."
           ],
           "blockers": [
-            "Revisão visual do usuário do inspetor ORQ 2D/3D ainda não documentada; não concluir VF-1 integralmente.",
-            "Sem prova independente integral de resistência/ELS em todas as hipóteses aplicáveis.",
-            "Aprovação visual explícita do usuário e validação em projeto real ainda pendentes."
+            "VF-1: aprovação visual explícita da interface por Gaspar ainda pendente.",
+            "VF-2: verificações independentes para diferentes casos resistentes e origem dos oito ELU reais ainda incompletas.",
+            "VF-2: torção/interação e ancoragens integrais não comprovadas; sem liberação executiva."
           ],
           "state": "in_progress",
           "area": 4,
@@ -1670,13 +1663,6 @@
         }
       ],
       "next": [
-        {
-          "code": "VIGAS-VF-02",
-          "title": "10–12/11: verificação resistente — flexão, cisalhamento, torção aplicável, apoios e ancoragens; provas independentes",
-          "state": "planned",
-          "area": 4,
-          "source": "docs/VIGAS_PLANO_FECHAMENTO_20261105.md"
-        },
         {
           "code": "VIGAS-VF-03",
           "title": "13–16/11: ELS aplicáveis e compatibilidade de detalhamento ORQ, 2D/3D, quantitativos e persistência",
@@ -4061,7 +4047,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42120900088",
-    "run_number": "1221"
+    "run_id": "42121421743",
+    "run_number": "1222"
   }
 }

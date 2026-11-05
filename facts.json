@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:23:33Z",
+  "gerado_em": "2026-11-05T22:27:15Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-    "data": "2026-11-05T22:18:45Z"
+    "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+    "data": "2026-11-05T22:25:48Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-    "gerado_em": "2026-11-05T22:20:49Z",
+    "gerado_em": "2026-11-05T22:22:28Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 3,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -28,11 +28,11 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 715,
-            "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+            "numero": 716,
+            "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/716",
             "rascunho": true,
-            "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+            "head_sha": "a1590e18b965ffd5bcb509621b9f5fd0e1ead0f0",
             "ci": "pendente"
           },
           {
@@ -47,8 +47,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 82,
+        "total_integrados": 83,
         "integrados_recentes": [
+          {
+            "numero": 715,
+            "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+            "merged_at": "2026-11-05T22:25:49Z",
+            "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+            "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 713,
             "titulo": "VIGAS-VF-2: impedir Md/Vsd inválidos de virar esforço nulo no dimensionamento",
@@ -57,7 +67,7 @@
             "merge_sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
             "head_sha": "31569c1521c7d04366518282a3fd8b676600aca4",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 712,
@@ -67,7 +77,7 @@
             "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
             "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 711,
@@ -158,38 +168,28 @@
             "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 701,
-            "titulo": "VIGA-DET-02: confronto de ancoragens e prolongamentos reais por apoio, sem cortes fictícios",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/701",
-            "merged_at": "2026-11-05T11:50:05Z",
-            "merge_sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
-            "head_sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 713,
-          "titulo": "VIGAS-VF-2: impedir Md/Vsd inválidos de virar esforço nulo no dimensionamento",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/713",
-          "merge_sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-          "head_sha": "31569c1521c7d04366518282a3fd8b676600aca4",
-          "merged_at": "2026-11-05T22:18:45Z",
+          "numero": 715,
+          "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+          "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+          "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+          "merged_at": "2026-11-05T22:25:49Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-          "data": "2026-11-05T19:18:45-03:00",
-          "assunto": "Merge pull request #713 from JGaspar-Eng/fix/vigas-vf2-gate-solicitacoes-nao-finitas-20261105",
-          "ci": "passou"
+          "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+          "data": "2026-11-05T19:25:48-03:00",
+          "assunto": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1576,14 +1576,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 715,
-            "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
-            "rascunho": true,
-            "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
-            "ci": "pendente"
-          },
-          {
             "numero": 492,
             "titulo": "fix(painel): padroniza detalhamento das 12 áreas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/492",
@@ -1603,8 +1595,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 64,
+        "total_integrados": 65,
         "integrados_recentes": [
+          {
+            "numero": 715,
+            "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+            "merged_at": "2026-11-05T22:25:49Z",
+            "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+            "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 712,
             "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
@@ -1613,7 +1615,7 @@
             "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
             "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 629,
@@ -1714,38 +1716,28 @@
             "head_sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 578,
-            "titulo": "Corrigir falha de publicação do painel no GitHub Pages",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/578",
-            "merged_at": "2026-10-25T15:05:54Z",
-            "merge_sha": "b3c69bc251a6d4a45d4697c46b02def18381ba98",
-            "head_sha": "a322884181e12531a3863efe9d272d0a72988f28",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 712,
-          "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
-          "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
-          "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
-          "merged_at": "2026-11-05T22:13:30Z",
+          "numero": 715,
+          "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+          "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+          "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+          "merged_at": "2026-11-05T22:25:49Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
-          "data": "2026-11-05T19:13:29-03:00",
-          "assunto": "Merge pull request #712 from JGaspar-Eng/docs/vigas-ciclo-fechamento-painel-20261105",
-          "ci": "passou"
+          "sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
+          "data": "2026-11-05T19:25:48-03:00",
+          "assunto": "Merge pull request #715 from JGaspar-Eng/docs/vigas-vf2-painel-execucao-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1786,8 +1778,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 605,
-  "commits_main_analisados": 3038,
+  "janela_prs": 606,
+  "commits_main_analisados": 3041,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
