@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-11-05T12:08:08Z",
+  "generated_at": "2026-11-05T12:14:32Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-    "short_sha": "0e605d6c",
+    "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
+    "short_sha": "ff7741bb",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T09:04:28-03:00",
-    "message": "Merge pull request #702 from JGaspar-Eng/feat/vigas-det03-zonas-cortante-oito-elu-20261105"
+    "date": "2026-11-05T09:14:15-03:00",
+    "message": "Merge pull request #703 from JGaspar-Eng/feat/vigas-det04-zonas-estribos-babylon-20261105"
   },
   "commits": [
+    {
+      "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
+      "short_sha": "ff7741bb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:14:15-03:00",
+      "message": "Merge pull request #703 from JGaspar-Eng/feat/vigas-det04-zonas-estribos-babylon-20261105"
+    },
+    {
+      "sha": "85ba31f0a2aac2d475ebd306828169d6ea86c1f2",
+      "short_sha": "85ba31f0",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:10:43-03:00",
+      "message": "docs(det04): mesma origem de zonas para 3D pranchas e memorial sem posições executivas"
+    },
+    {
+      "sha": "1dae8f7cbdb523aec4cfefa773705f39b2e6867f",
+      "short_sha": "1dae8f7c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:09:47-03:00",
+      "message": "test(browser-det04): validar zonas do ORQ e esconder estribos uniformes sem dados"
+    },
+    {
+      "sha": "fdca23930b4323b7188293f568e1158d60dfdd01",
+      "short_sha": "fdca2393",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:08:43-03:00",
+      "message": "test(det04): conferir zonas realistas no contrato 3D e ocultar estribos sem gamma"
+    },
+    {
+      "sha": "b9d2e36908d0b858b53270bdcb856a04595c217e",
+      "short_sha": "b9d2e369",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:07:55-03:00",
+      "message": "ui(det04): exibir cada zona Vy com inicio/fim e passo sem prometer posição executiva"
+    },
+    {
+      "sha": "33ff6634e42f3a80442f46f7b129ee739a3f268c",
+      "short_sha": "33ff6634",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:07:25-03:00",
+      "message": "feat(det04): desenhar estribos Babylon apenas nas zonas DET-03 e impedir perfil uniforme fictício"
+    },
+    {
+      "sha": "b0bcbb633a6e068579223dc664e5bea607849ccc",
+      "short_sha": "b0bcbb63",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T09:06:30-03:00",
+      "message": "feat(det04): inspeção 3D consome zonas reais do DET-03 e oculta estribos se não comprovados"
+    },
     {
       "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
       "short_sha": "0e605d6c",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T09:00:23-03:00",
       "message": "ci(det03): benchmark de zonas de estribos baseado em cortantes dos oito ELU"
-    },
-    {
-      "sha": "e8b348e21fb985e66fe0b869699ae46c4356b91b",
-      "short_sha": "e8b348e2",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:00:04-03:00",
-      "message": "test(det03): memorial informa falhas de dados sem atribuir zonas fictícias"
-    },
-    {
-      "sha": "0d3f5e39fd16ce51a049f15f30fa12f1f5323d2a",
-      "short_sha": "0d3f5e39",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T08:59:50-03:00",
-      "message": "ui(det03): mostrar zonas de estribos e exportacao SVG por viga no inspetor"
-    },
-    {
-      "sha": "afa6abce5a73fa1c4e90a4e81d9588aefb23ec87",
-      "short_sha": "afa6abce",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T08:59:22-03:00",
-      "message": "feat(det03): inserir faixas de estribos do 8 ELU no memorial sem autorizar corte"
-    },
-    {
-      "sha": "56f4b45e19458a72e0918b8d9c26245b568e5292",
-      "short_sha": "56f4b45e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T08:58:17-03:00",
-      "message": "test(det03): provar zonas por 8 ELU, maximo Vy exato e dominio fisico bloqueado"
-    },
-    {
-      "sha": "ade48da7f23fbcdf059b9bc241291fc1fd239466",
-      "short_sha": "ade48da7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T08:57:17-03:00",
-      "message": "feat(det03): verificar zonas de estribos por maximo exato de Vy nos 8 ELU com solver normativo comum"
-    },
-    {
-      "sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
-      "short_sha": "e906bdef",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T08:50:04-03:00",
-      "message": "Merge pull request #701 from JGaspar-Eng/feat/vigas-det02-ancoragem-prolongamentos-auditaveis-20261105"
-    },
-    {
-      "sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
-      "short_sha": "2b52b984",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T08:45:50-03:00",
-      "message": "docs(det02): especificar contrato real de apoios e limites de ancoragem não executiva"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42024541111",
-    "run_number": "1190"
+    "run_id": "42025431319",
+    "run_number": "1191"
   }
 }

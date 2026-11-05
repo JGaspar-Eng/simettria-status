@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T12:09:10Z",
+  "gerado_em": "2026-11-05T12:15:34Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-    "data": "2026-11-05T12:04:28Z"
+    "sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
+    "data": "2026-11-05T12:14:15Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-    "gerado_em": "2026-11-05T12:04:50Z",
+    "gerado_em": "2026-11-05T12:08:08Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 7,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -886,7 +886,7 @@
             "merged_at": "2026-10-30T17:19:06Z",
             "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
             "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1126,7 +1126,7 @@
             "merged_at": "2026-10-30T17:19:06Z",
             "merge_sha": "6fb148a02618380e6b9cdb1cc09e9a3f0ac54637",
             "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1202,14 +1202,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "0067a84f931aa415d2bf7491eb393f410af56728",
-          "data": "2026-11-05T08:41:52-03:00",
-          "assunto": "test(det02): ancoragens de ambos extremos, ligacoes medidas, decalagem, As ORQ e bloqueios",
+          "sha": "1dae8f7cbdb523aec4cfefa773705f39b2e6867f",
+          "data": "2026-11-05T09:09:47-03:00",
+          "assunto": "test(browser-det04): validar zonas do ORQ e esconder estribos uniformes sem dados",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1579,6 +1579,7 @@
       310
     ],
     "integrados_recentes": [
+      703,
       700,
       697,
       696,
@@ -1597,14 +1598,13 @@
       658,
       657,
       643,
-      639,
-      611
+      639
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 593,
-  "commits_main_analisados": 2961,
+  "janela_prs": 594,
+  "commits_main_analisados": 2968,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
