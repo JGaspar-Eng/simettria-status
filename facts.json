@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T20:06:58Z",
+  "gerado_em": "2026-11-05T22:02:50Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -10,10 +10,10 @@
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
-    "gerado_em": "2026-11-05T17:33:51Z",
+    "gerado_em": "2026-11-05T20:05:42Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 0,
-    "idade_horas": 2.6
+    "idade_horas": 2.0
   },
   "frentes": [
     {
@@ -1408,6 +1408,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 712,
+            "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
+            "rascunho": true,
+            "head_sha": "964a02e701afe1d877140e69b7025065cfb9e5ab",
+            "ci": "falhou"
+          },
+          {
             "numero": 492,
             "titulo": "fix(painel): padroniza detalhamento das 12 áreas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/492",
@@ -1611,7 +1619,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 602,
+  "janela_prs": 603,
   "commits_main_analisados": 3018,
   "commits_main_truncado": false,
   "erros": [],
