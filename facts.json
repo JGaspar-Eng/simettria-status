@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T11:11:35Z",
+  "gerado_em": "2026-11-05T11:51:29Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
-    "data": "2026-11-05T03:12:41Z"
+    "sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+    "data": "2026-11-05T11:50:04Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
-    "gerado_em": "2026-11-05T03:15:49Z",
+    "gerado_em": "2026-11-05T11:10:37Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 7.9
+    "defasagem_commits_main": 8,
+    "idade_horas": 0.7
   },
   "frentes": [
     {
@@ -708,8 +708,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 11,
+        "total_integrados": 12,
         "integrados_recentes": [
+          {
+            "numero": 701,
+            "titulo": "VIGA-DET-02: confronto de ancoragens e prolongamentos reais por apoio, sem cortes fictícios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/701",
+            "merged_at": "2026-11-05T11:50:05Z",
+            "merge_sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+            "head_sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 699,
             "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
@@ -822,25 +832,25 @@
           }
         ],
         "ultimo": {
-          "numero": 699,
-          "titulo": "Vigas: diagramas M(x)/V(x) dos oito ELU no visor, prancha SVG e memorial",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/699",
-          "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
-          "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
-          "merged_at": "2026-11-04T23:51:41Z",
+          "numero": 701,
+          "titulo": "VIGA-DET-02: confronto de ancoragens e prolongamentos reais por apoio, sem cortes fictícios",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/701",
+          "merge_sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+          "head_sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
+          "merged_at": "2026-11-05T11:50:05Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
-          "data": "2026-11-04T20:51:41-03:00",
-          "assunto": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104",
-          "ci": "passou"
+          "sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+          "data": "2026-11-05T08:50:04-03:00",
+          "assunto": "Merge pull request #701 from JGaspar-Eng/feat/vigas-det02-ancoragem-prolongamentos-auditaveis-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1136,7 +1146,7 @@
             "merged_at": "2026-10-30T12:59:22Z",
             "merge_sha": "fc3a39630a9a8fc42979242a979310d1bb55b587",
             "head_sha": "7bdca9286daafaf5ebc68ee8ecb79ee1a4c1964f",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1192,14 +1202,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "0abc7537f80d4fc467e577094630f571a38036eb",
-          "data": "2026-11-04T20:42:38-03:00",
-          "assunto": "test(memorial): comprovar presenca de diagramas M/V nos mesmos oito ELU do ORQ",
+          "sha": "0067a84f931aa415d2bf7491eb393f410af56728",
+          "data": "2026-11-05T08:41:52-03:00",
+          "assunto": "test(det02): ancoragens de ambos extremos, ligacoes medidas, decalagem, As ORQ e bloqueios",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1368,14 +1378,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "a3bb59735ed3c85b97a94e9adb68b6b1145a1124",
-          "data": "2026-11-04T14:48:24-03:00",
-          "assunto": "feat(pv1): analise biapoiada isolada reutilizando Graph, NBR8681 e solver 1D",
+          "sha": "8d20deeac4c95c3114d8dafa12dda55d6be46707",
+          "data": "2026-11-05T08:40:23-03:00",
+          "assunto": "feat(det02): confrontar ancoragem normativa e prolongamentos medidos nas zonas reais dos oito ELU",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1593,8 +1603,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 591,
-  "commits_main_analisados": 2945,
+  "janela_prs": 592,
+  "commits_main_analisados": 2953,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

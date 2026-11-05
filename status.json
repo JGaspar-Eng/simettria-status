@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-05T11:10:37Z",
+  "generated_at": "2026-11-05T11:50:22Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
-    "short_sha": "ce618b82",
+    "sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+    "short_sha": "e906bdef",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T00:12:41-03:00",
-    "message": "Merge pull request #700 from JGaspar-Eng/feat/vigas-det01-faixas-exatas-demandas-20261105"
+    "date": "2026-11-05T08:50:04-03:00",
+    "message": "Merge pull request #701 from JGaspar-Eng/feat/vigas-det02-ancoragem-prolongamentos-auditaveis-20261105"
   },
   "commits": [
+    {
+      "sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+      "short_sha": "e906bdef",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:50:04-03:00",
+      "message": "Merge pull request #701 from JGaspar-Eng/feat/vigas-det02-ancoragem-prolongamentos-auditaveis-20261105"
+    },
+    {
+      "sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
+      "short_sha": "2b52b984",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:45:50-03:00",
+      "message": "docs(det02): especificar contrato real de apoios e limites de ancoragem não executiva"
+    },
+    {
+      "sha": "9a48a9ddcdc3ecdeef641a6f1d43d241746748ea",
+      "short_sha": "9a48a9dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:45:04-03:00",
+      "message": "test(det02): memorial informa ausência de geometria de ancoragem em vez de preencher dados fictícios"
+    },
+    {
+      "sha": "5a29130a4c026bfffd983f6753b00e765713d937",
+      "short_sha": "5a29130a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:44:40-03:00",
+      "message": "ci(det02): testar ancoragens, cotas de apoio, decalagem e bloqueios"
+    },
+    {
+      "sha": "9b5fdb8cba4e4f521ff4e579434eed786dfc6a68",
+      "short_sha": "9b5fdb8c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:44:09-03:00",
+      "message": "ui(det02): mostrar ancoragens por apoio e impedir exportacao de memorial com modelo alterado"
+    },
+    {
+      "sha": "d66ed932343de975409ea085d6c88250106d33f1",
+      "short_sha": "d66ed932",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:43:01-03:00",
+      "message": "feat(det02): incluir ancoragem local por extremo no memorial de vigas e bloquear quando nao documentada"
+    },
+    {
+      "sha": "0067a84f931aa415d2bf7491eb393f410af56728",
+      "short_sha": "0067a84f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:41:52-03:00",
+      "message": "test(det02): ancoragens de ambos extremos, ligacoes medidas, decalagem, As ORQ e bloqueios"
+    },
+    {
+      "sha": "8d20deeac4c95c3114d8dafa12dda55d6be46707",
+      "short_sha": "8d20deea",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T08:40:23-03:00",
+      "message": "feat(det02): confrontar ancoragem normativa e prolongamentos medidos nas zonas reais dos oito ELU"
+    },
     {
       "sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
       "short_sha": "ce618b82",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T00:08:37-03:00",
       "message": "docs(det01): delimitar fronteiras M=0 e separar zonas de demanda de cortes executivos"
-    },
-    {
-      "sha": "b62aeb51d3d6f72e5861f7911edcd6234ff2146d",
-      "short_sha": "b62aeb51",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T00:07:54-03:00",
-      "message": "ci(det01): bloquear regressao das zonas exatas e suas comparacoes de barras"
-    },
-    {
-      "sha": "ce6e59b6485a2127f1dec560a23b4fb29135f72a",
-      "short_sha": "ce6e59b6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T00:07:38-03:00",
-      "message": "test(det01): memorial precisa incluir zonas analiticas M+/M− e avisar sobre cortes"
-    },
-    {
-      "sha": "fa009f9457195fed7aecdf8f4a4eb4ec8bee14d2",
-      "short_sha": "fa009f94",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T00:07:22-03:00",
-      "message": "ui(det01): exibir faixas M+/M− e confrontar barras arrastadas contra demanda analitica"
-    },
-    {
-      "sha": "6d0dbeeec85c2e2b6f80563344e5c89abfebfcf7",
-      "short_sha": "6d0dbeee",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T00:06:34-03:00",
-      "message": "feat(det01): adicionar zonas analiticas com coordenadas no memorial e impedir titulo executivo de corte"
-    },
-    {
-      "sha": "77987b91528ea4fe0d48d71d3bf1d96910bd7ad6",
-      "short_sha": "77987b91",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T00:05:58-03:00",
-      "message": "test(det01): limites analiticos por oito ELU, viga biapoiada, viga com negativos e lacunas declaradas"
-    },
-    {
-      "sha": "f661f8ddeaae2aa77713a5731b36eba63fa7d95b",
-      "short_sha": "f661f8dd",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T00:04:54-03:00",
-      "message": "feat(det01): extrair zonas exatas de M+/M- dos oito ELU e confrontar barras declaradas sem forjar cortes"
-    },
-    {
-      "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
-      "short_sha": "49fcbe6e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:51:41-03:00",
-      "message": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104"
-    },
-    {
-      "sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
-      "short_sha": "f446de48",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:48:28-03:00",
-      "message": "merge: integrar diagramas M/V ao 3D validado na main preservando CI integral"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42016771521",
-    "run_number": "1186"
+    "run_id": "42022154115",
+    "run_number": "1187"
   }
 }
