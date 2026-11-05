@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T23:43:09Z",
+  "gerado_em": "2026-11-05T23:53:37Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-    "data": "2026-11-05T23:37:52Z"
+    "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
+    "data": "2026-11-05T23:52:32Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-    "gerado_em": "2026-11-05T23:39:18Z",
+    "gerado_em": "2026-11-05T23:41:53Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 88,
+        "total_integrados": 89,
         "integrados_recentes": [
+          {
+            "numero": 721,
+            "titulo": "VF-3: aplicar alvenaria 4,50 kN/m na viga por confirmação visual",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/721",
+            "merged_at": "2026-11-05T23:52:32Z",
+            "merge_sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
+            "head_sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 720,
             "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
@@ -150,38 +160,28 @@
             "head_sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 707,
-            "titulo": "VIGA-DET-08: impedir perda de planos de ancoragem e continuidade ao salvar/reabrir",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/707",
-            "merged_at": "2026-11-05T17:12:08Z",
-            "merge_sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
-            "head_sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 720,
-          "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
-          "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-          "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
-          "merged_at": "2026-11-05T23:37:52Z",
+          "numero": 721,
+          "titulo": "VF-3: aplicar alvenaria 4,50 kN/m na viga por confirmação visual",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/721",
+          "merge_sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
+          "head_sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
+          "merged_at": "2026-11-05T23:52:32Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-          "data": "2026-11-05T20:37:52-03:00",
-          "assunto": "Merge pull request #720 from JGaspar-Eng/fix/vf3-viga-continua-visual-e-categoria-explicita-20261105",
+          "sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
+          "data": "2026-11-05T20:48:03-03:00",
+          "assunto": "test(vigas): carga 4,50 apenas com clique; preservar viga sem parede e classificar Gk",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 610,
-  "commits_main_analisados": 3065,
+  "janela_prs": 611,
+  "commits_main_analisados": 3070,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

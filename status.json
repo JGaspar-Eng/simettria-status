@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-11-05T23:41:53Z",
+  "generated_at": "2026-11-05T23:52:50Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-    "short_sha": "63d3dbda",
+    "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
+    "short_sha": "3580ca6c",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T20:37:52-03:00",
-    "message": "Merge pull request #720 from JGaspar-Eng/fix/vf3-viga-continua-visual-e-categoria-explicita-20261105"
+    "date": "2026-11-05T20:52:32-03:00",
+    "message": "Merge pull request #721 from JGaspar-Eng/fix/vf3-alvenaria-explicita-sincronizacao-20261105"
   },
   "commits": [
+    {
+      "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
+      "short_sha": "3580ca6c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:52:32-03:00",
+      "message": "Merge pull request #721 from JGaspar-Eng/fix/vf3-alvenaria-explicita-sincronizacao-20261105"
+    },
+    {
+      "sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
+      "short_sha": "28501ac8",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:48:03-03:00",
+      "message": "test(vigas): carga 4,50 apenas com clique; preservar viga sem parede e classificar Gk"
+    },
+    {
+      "sha": "9770255522cd4f0ff50cf143d91dfa4ef521586c",
+      "short_sha": "97702555",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:47:14-03:00",
+      "message": "feat(ui/vigas): mostrar zero real e permitir aplicar alvenaria 4,50 por clique"
+    },
+    {
+      "sha": "24952f360d057d4a13f6079208045a38e7dc3394",
+      "short_sha": "24952f36",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:46:37-03:00",
+      "message": "fix(vigas): permitir alvenaria 4,5 kN/m por declaração explícita mesmo em projeto legado"
+    },
+    {
+      "sha": "5d1f6aeafe4e787f044e0b35f92fa2e0af749d34",
+      "short_sha": "5d1f6aea",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T20:45:17-03:00",
+      "message": "feat(vigas): aplicar carga de alvenaria do projeto por clique explícito"
+    },
     {
       "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
       "short_sha": "63d3dbda",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T20:16:34-03:00",
       "message": "Merge pull request #719 from JGaspar-Eng/fix/vf2-v102-memorial-fail-closed-20261105"
-    },
-    {
-      "sha": "808f6bfe9e83d4af70feac3bf8f96ed1a099802d",
-      "short_sha": "808f6bfe",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:13:43-03:00",
-      "message": "fix(vigas): identificar explicitamente no ELU ausente antes do diagnostico"
-    },
-    {
-      "sha": "eaabf94266caf2fd1e17775e1c8a9ca858445183",
-      "short_sha": "eaabf942",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:12:06-03:00",
-      "message": "test(vigas): integrar regressao V102 ao test:all"
-    },
-    {
-      "sha": "3de1a482c42038095db6baef679fdf36e8320cbe",
-      "short_sha": "3de1a482",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:11:56-03:00",
-      "message": "test(vigas): reproduzir V101 bloqueada e Gk/Qk distintos na V102"
-    },
-    {
-      "sha": "734b041d42a5b66d9802fcfaee5b78bab14734cd",
-      "short_sha": "734b041d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:10:57-03:00",
-      "message": "fix(ui/vigas): não mostrar ELU ausente como zero e distinguir Gk/Qk"
-    },
-    {
-      "sha": "8b8ea4efc702ce1108d8bfeac09853d63a7c3668",
-      "short_sha": "8b8ea4ef",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:10:30-03:00",
-      "message": "fix(vigas): mostrar Gk real e identificar trecho que bloqueia ELU global"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42131324970",
-    "run_number": "1241"
+    "run_id": "42132690897",
+    "run_number": "1242"
   }
 }
