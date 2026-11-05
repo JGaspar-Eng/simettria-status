@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-05T16:45:53Z",
+  "generated_at": "2026-11-05T16:54:02Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
-    "short_sha": "bdc5d068",
+    "sha": "fa35dae503d3066033369da2d3bd13665758173d",
+    "short_sha": "fa35dae5",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T13:42:34-03:00",
-    "message": "Merge pull request #704 from JGaspar-Eng/feat/vigas-det05-continuidade-no-apoio-20261105"
+    "date": "2026-11-05T13:53:41-03:00",
+    "message": "Merge pull request #705 from JGaspar-Eng/feat/vigas-det06-quadro-geometrico-barras-20261105"
   },
   "commits": [
     {
-      "sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
-      "short_sha": "bdc5d068",
+      "sha": "fa35dae503d3066033369da2d3bd13665758173d",
+      "short_sha": "fa35dae5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:42:34-03:00",
-      "message": "Merge pull request #704 from JGaspar-Eng/feat/vigas-det05-continuidade-no-apoio-20261105"
+      "date": "2026-11-05T13:53:41-03:00",
+      "message": "Merge pull request #705 from JGaspar-Eng/feat/vigas-det06-quadro-geometrico-barras-20261105"
     },
     {
-      "sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
-      "short_sha": "90fa8f5a",
+      "sha": "57be9c405dd247e7a605a68f842cc2d1f37f3584",
+      "short_sha": "57be9c40",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:24:30-03:00",
-      "message": "fix(det05): comparar altura da segunda viga com modelo, não interpretar valor válido como erro"
+      "date": "2026-11-05T13:49:47-03:00",
+      "message": "test(det06): recusar duas declaracoes contraditorias para a mesma barra em P2"
     },
     {
-      "sha": "31c06ad155c690204ffb49e92f52c7b343b12a80",
-      "short_sha": "31c06ad1",
+      "sha": "ad17064d06d856da1d293c6a08e78ac5d673d206",
+      "short_sha": "ad17064d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:20:56-03:00",
-      "message": "docs(det05): auditar continuidade documental e não confundir rigidez rotacional com vergalhão físico"
+      "date": "2026-11-05T13:49:36-03:00",
+      "message": "fix(det06): bloquear declaracoes de continuidade repetidas com geometrias conflitantes"
     },
     {
-      "sha": "cca6198064f644073a0dab583d81751192d81a8c",
-      "short_sha": "cca61980",
+      "sha": "70074db755d68a631bfbe2b303839252d756a2f3",
+      "short_sha": "70074db7",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:20:21-03:00",
-      "message": "test(det05): memorial exige declaração de passagem física em apoio"
+      "date": "2026-11-05T13:48:20-03:00",
+      "message": "docs(det06): justificar massa teorica por barra, limites de compra e nao duplicidade em vigas continuas"
     },
     {
-      "sha": "6096ddf816f16c4b5ab8a3baf80c0cbc7408c07a",
-      "short_sha": "6096ddf8",
+      "sha": "ec99bb68c77547be216a6e12e66c2298edc5f6a5",
+      "short_sha": "ec99bb68",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:20:05-03:00",
-      "message": "ci(det05): proteger compatibilidade de nó, peças físicas e ancoragens de vigas contínuas"
+      "date": "2026-11-05T13:47:52-03:00",
+      "message": "test(det06): memorial nunca informa comprimento ou massa se faltam dados assinados"
     },
     {
-      "sha": "012680c31c74bc9f815f24c671daad91ca6bec93",
-      "short_sha": "012680c3",
+      "sha": "e988e649ba6808bb143569ed040c2c095a51041a",
+      "short_sha": "e988e649",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:19:46-03:00",
-      "message": "feat(det05): incluir auditoria de continuidade por nó no mesmo memorial de vigas"
+      "date": "2026-11-05T13:47:42-03:00",
+      "message": "ci(det06): verificar massa geometrica sem soma global de barras continuas"
     },
     {
-      "sha": "760d92e25ccd05b80785d1f3135ddcd148cd255f",
-      "short_sha": "760d92e2",
+      "sha": "2ea94789c97b7165c4619e77b2cfd47b4f10c1a2",
+      "short_sha": "2ea94789",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:19:22-03:00",
-      "message": "ui(det05): inspecionar continuidade documental por grupo no nó e usar auditoria no memorial"
+      "date": "2026-11-05T13:47:28-03:00",
+      "message": "ui(det06): exibir quadro de barras rastreadas e massas no inspetor com exportacao SVG"
     },
     {
-      "sha": "2cc44c78b584953021939e7e50e0b1453048795e",
-      "short_sha": "2cc44c78",
+      "sha": "9b6c552dd9bd07cae3ac8b70aad17522d5c73b46",
+      "short_sha": "9b6c552d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:18:26-03:00",
-      "message": "test(det05): conferir continuidade declarada em P2 com apoio 3D, grupos e ancoragens de oito ELU"
+      "date": "2026-11-05T13:47:07-03:00",
+      "message": "feat(det06): quadro de barras e massas condicionais no memorial, sempre sem corte executivo"
     },
     {
-      "sha": "ceed05e4cf4083979840753c97bc2a3e61f38d15",
-      "short_sha": "ceed05e4",
+      "sha": "20c9d0e845af73d3958da453b126e0ab1616ec0a",
+      "short_sha": "20c9d0e8",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:17:35-03:00",
-      "message": "fix(det05): exigir mesmo identificador físico de grupo em ambos planos de barras"
+      "date": "2026-11-05T13:46:35-03:00",
+      "message": "test(det06): impedir dupla contagem de barra contínua entre VE-P2-VD"
     },
     {
-      "sha": "34afb4e1c426c07bc3ae2c1a7aeae35cbf55f15d",
-      "short_sha": "34afb4e1",
+      "sha": "56dd012dffd7b44987316d78cf3a464939106b3c",
+      "short_sha": "56dd012d",
       "author": "Joanez Gaspar",
-      "date": "2026-11-05T09:16:59-03:00",
-      "message": "feat(det05): conferir continuidade declarada no mesmo apoio por topologia, ORQ e ancoragens locais"
+      "date": "2026-11-05T13:46:03-03:00",
+      "message": "test(det06): mass benchmark, source signatures, 8 ELU, plan mismatch, SVG safety and no executive cut"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42067745185",
-    "run_number": "1195"
+    "run_id": "42069147398",
+    "run_number": "1196"
   }
 }
