@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T16:58:13Z",
+  "gerado_em": "2026-11-05T17:02:57Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "fa35dae503d3066033369da2d3bd13665758173d",
-    "data": "2026-11-05T16:53:41Z"
+    "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
+    "data": "2026-11-05T17:01:39Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "fa35dae503d3066033369da2d3bd13665758173d",
-    "gerado_em": "2026-11-05T16:54:02Z",
+    "gerado_em": "2026-11-05T16:57:05Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 9,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -867,8 +867,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 21,
+        "total_integrados": 22,
         "integrados_recentes": [
+          {
+            "numero": 706,
+            "titulo": "VIGA-DET-07: armaduras longitudinais cotadas no 3D e testemunhos sem comprimento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/706",
+            "merged_at": "2026-11-05T17:01:40Z",
+            "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
+            "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 704,
             "titulo": "VIGA-DET-05: auditar continuidade de armaduras em nós de vigas contínuas",
@@ -877,7 +887,7 @@
             "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
             "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 698,
@@ -978,38 +988,28 @@
             "head_sha": "2ef0438c4e4807b35f86c86bcf2f32d5da64f4a5",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 614,
-            "titulo": "ORQ: aplicar arranjo de armadura dupla, recalcular MRd e atualizar 8 ELU por viga",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/614",
-            "merged_at": "2026-10-26T18:02:10Z",
-            "merge_sha": "e6e5c9b02e601ab9568f7812d4c7d7e43605758a",
-            "head_sha": "b28ed620d49840f9630107ec8eca68b2347f72c4",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 704,
-          "titulo": "VIGA-DET-05: auditar continuidade de armaduras em nós de vigas contínuas",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/704",
-          "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
-          "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
-          "merged_at": "2026-11-05T16:42:34Z",
+          "numero": 706,
+          "titulo": "VIGA-DET-07: armaduras longitudinais cotadas no 3D e testemunhos sem comprimento",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/706",
+          "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
+          "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
+          "merged_at": "2026-11-05T17:01:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-          "data": "2026-11-04T20:47:20-03:00",
-          "assunto": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104",
+          "sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
+          "data": "2026-11-05T13:58:47-03:00",
+          "assunto": "docs(det07): segmentos de armadura longitudinais provados no vão e testemunhos sem cota",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1603,8 +1603,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 596,
-  "commits_main_analisados": 2989,
+  "janela_prs": 597,
+  "commits_main_analisados": 2998,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

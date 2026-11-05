@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-05T16:57:05Z",
+  "generated_at": "2026-11-05T17:01:58Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fa35dae503d3066033369da2d3bd13665758173d",
-    "short_sha": "fa35dae5",
+    "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
+    "short_sha": "52bafa03",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T13:53:41-03:00",
-    "message": "Merge pull request #705 from JGaspar-Eng/feat/vigas-det06-quadro-geometrico-barras-20261105"
+    "date": "2026-11-05T14:01:39-03:00",
+    "message": "Merge pull request #706 from JGaspar-Eng/feat/vigas-det07-segmentos-longitudinais-babylon-20261105"
   },
   "commits": [
+    {
+      "sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
+      "short_sha": "52bafa03",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T14:01:39-03:00",
+      "message": "Merge pull request #706 from JGaspar-Eng/feat/vigas-det07-segmentos-longitudinais-babylon-20261105"
+    },
+    {
+      "sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
+      "short_sha": "0113b5f5",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:58:47-03:00",
+      "message": "docs(det07): segmentos de armadura longitudinais provados no vão e testemunhos sem cota"
+    },
+    {
+      "sha": "28499e2e7bd7ae10011d4677fef9fd9134462297",
+      "short_sha": "28499e2e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:58:12-03:00",
+      "message": "test(browser-det07): confirmar comprimentos Babylon reais no vão e testemunhos curtos sem documento"
+    },
+    {
+      "sha": "14e0e9ef039e8794a38b4e4bebc89d62eae05c4e",
+      "short_sha": "14e0e9ef",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:57:29-03:00",
+      "message": "ui(det07): reforçar que segmentos no vão não validam corte, ganchos nem ancoragens"
+    },
+    {
+      "sha": "600a391896107c41e63f332f5dc58b763fd99c90",
+      "short_sha": "600a3918",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:56:53-03:00",
+      "message": "test(det07): barras sem cotas são seccionais e segmentos DET02 cotados aparecem no 3D"
+    },
+    {
+      "sha": "5725ddcb82744413c45d8ef5ce52857e5c4fc820",
+      "short_sha": "5725ddcb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:56:06-03:00",
+      "message": "ui(det07): informar segmentos cotados e testemunhos curtos sem liberar comprimento de corte"
+    },
+    {
+      "sha": "185e8775d9f9e83a0a10cfcba9ca875854246ff6",
+      "short_sha": "185e8775",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:55:51-03:00",
+      "message": "fix(det07): validar limites reais de trecho sem desigualdade redundante"
+    },
+    {
+      "sha": "9d93889794da7d5e1f5783456a4449ba6de5627c",
+      "short_sha": "9d938897",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:55:41-03:00",
+      "message": "feat(det07): cilindros de armadura seguem extensão dentro do vão ou seção curta sem inventar comprimento"
+    },
+    {
+      "sha": "2784c06a35edb8d2f467a6576f6f84f7b0d68d61",
+      "short_sha": "2784c06a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T13:55:15-03:00",
+      "message": "feat(det07): 3D recebe segmentos longitudinais medidos via DET06 ou testemunhos curtos de seção"
+    },
     {
       "sha": "fa35dae503d3066033369da2d3bd13665758173d",
       "short_sha": "fa35dae5",
       "author": "Joanez Gaspar",
       "date": "2026-11-05T13:53:41-03:00",
       "message": "Merge pull request #705 from JGaspar-Eng/feat/vigas-det06-quadro-geometrico-barras-20261105"
-    },
-    {
-      "sha": "57be9c405dd247e7a605a68f842cc2d1f37f3584",
-      "short_sha": "57be9c40",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:49:47-03:00",
-      "message": "test(det06): recusar duas declaracoes contraditorias para a mesma barra em P2"
-    },
-    {
-      "sha": "ad17064d06d856da1d293c6a08e78ac5d673d206",
-      "short_sha": "ad17064d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:49:36-03:00",
-      "message": "fix(det06): bloquear declaracoes de continuidade repetidas com geometrias conflitantes"
-    },
-    {
-      "sha": "70074db755d68a631bfbe2b303839252d756a2f3",
-      "short_sha": "70074db7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:48:20-03:00",
-      "message": "docs(det06): justificar massa teorica por barra, limites de compra e nao duplicidade em vigas continuas"
-    },
-    {
-      "sha": "ec99bb68c77547be216a6e12e66c2298edc5f6a5",
-      "short_sha": "ec99bb68",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:47:52-03:00",
-      "message": "test(det06): memorial nunca informa comprimento ou massa se faltam dados assinados"
-    },
-    {
-      "sha": "e988e649ba6808bb143569ed040c2c095a51041a",
-      "short_sha": "e988e649",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:47:42-03:00",
-      "message": "ci(det06): verificar massa geometrica sem soma global de barras continuas"
-    },
-    {
-      "sha": "2ea94789c97b7165c4619e77b2cfd47b4f10c1a2",
-      "short_sha": "2ea94789",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:47:28-03:00",
-      "message": "ui(det06): exibir quadro de barras rastreadas e massas no inspetor com exportacao SVG"
-    },
-    {
-      "sha": "9b6c552dd9bd07cae3ac8b70aad17522d5c73b46",
-      "short_sha": "9b6c552d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:47:07-03:00",
-      "message": "feat(det06): quadro de barras e massas condicionais no memorial, sempre sem corte executivo"
-    },
-    {
-      "sha": "20c9d0e845af73d3958da453b126e0ab1616ec0a",
-      "short_sha": "20c9d0e8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:46:35-03:00",
-      "message": "test(det06): impedir dupla contagem de barra contínua entre VE-P2-VD"
-    },
-    {
-      "sha": "56dd012dffd7b44987316d78cf3a464939106b3c",
-      "short_sha": "56dd012d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T13:46:03-03:00",
-      "message": "test(det06): mass benchmark, source signatures, 8 ELU, plan mismatch, SVG safety and no executive cut"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42069675187",
-    "run_number": "1197"
+    "run_id": "42070511422",
+    "run_number": "1198"
   }
 }
