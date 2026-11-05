@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:50:36Z",
+  "gerado_em": "2026-11-05T22:52:17Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-    "data": "2026-11-05T22:46:51Z"
+    "sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
+    "data": "2026-11-05T22:51:31Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
     "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-    "gerado_em": "2026-11-05T22:47:13Z",
+    "gerado_em": "2026-11-05T22:49:37Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 2,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -28,14 +28,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 718,
-            "titulo": "VIGAS-VF-2: confrontar viga contínua com solução analítica de dois vãos",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/718",
-            "rascunho": true,
-            "head_sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
-            "ci": "pendente"
-          },
-          {
             "numero": 549,
             "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/549",
@@ -47,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 85,
+        "total_integrados": 86,
         "integrados_recentes": [
+          {
+            "numero": 718,
+            "titulo": "VIGAS-VF-2: confrontar viga contínua com solução analítica de dois vãos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/718",
+            "merged_at": "2026-11-05T22:51:31Z",
+            "merge_sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
+            "head_sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 717,
             "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
@@ -57,7 +59,7 @@
             "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 716,
@@ -158,25 +160,15 @@
             "head_sha": "57be9c405dd247e7a605a68f842cc2d1f37f3584",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 704,
-            "titulo": "VIGA-DET-05: auditar continuidade de armaduras em nós de vigas contínuas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/704",
-            "merged_at": "2026-11-05T16:42:34Z",
-            "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
-            "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 717,
-          "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
-          "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-          "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
-          "merged_at": "2026-11-05T22:46:52Z",
+          "numero": 718,
+          "titulo": "VIGAS-VF-2: confrontar viga contínua com solução analítica de dois vãos",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/718",
+          "merge_sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
+          "head_sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
+          "merged_at": "2026-11-05T22:51:31Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
@@ -185,11 +177,11 @@
           "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
           "data": "2026-11-05T19:46:51-03:00",
           "assunto": "Merge pull request #717 from JGaspar-Eng/fix/vigas-vf2-gate-pontos-esforcos-invalidos-20261105",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1053,7 +1045,7 @@
             "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 706,
@@ -1175,7 +1167,7 @@
           "merged_at": "2026-11-05T22:46:52Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "526a4825b55a2956959cbf8d570479db4dbaef70",
