@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:48:32Z",
+  "gerado_em": "2026-11-05T22:50:36Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -9,11 +9,11 @@
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-    "gerado_em": "2026-11-05T22:34:50Z",
+    "sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
+    "gerado_em": "2026-11-05T22:47:13Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 7,
-    "idade_horas": 0.2
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -27,6 +27,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 718,
+            "titulo": "VIGAS-VF-2: confrontar viga contínua com solução analítica de dois vãos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/718",
+            "rascunho": true,
+            "head_sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
+            "ci": "pendente"
+          },
           {
             "numero": 549,
             "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
@@ -181,7 +189,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -576,7 +584,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1018,7 +1026,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1177,7 +1185,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1729,7 +1737,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     }
   ],
@@ -1770,7 +1778,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 607,
+  "janela_prs": 608,
   "commits_main_analisados": 3053,
   "commits_main_truncado": false,
   "erros": [],
