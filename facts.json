@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:21:56Z",
+  "gerado_em": "2026-11-05T22:23:33Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
     "data": "2026-11-05T22:18:45Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
     "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
-    "gerado_em": "2026-11-05T22:19:06Z",
+    "gerado_em": "2026-11-05T22:20:49Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 0,
     "idade_horas": 0.0
@@ -27,6 +27,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 715,
+            "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+            "rascunho": true,
+            "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+            "ci": "pendente"
+          },
           {
             "numero": 549,
             "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
@@ -49,7 +57,7 @@
             "merge_sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
             "head_sha": "31569c1521c7d04366518282a3fd8b676600aca4",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 712,
@@ -171,13 +179,13 @@
           "merged_at": "2026-11-05T22:18:45Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
           "data": "2026-11-05T19:18:45-03:00",
           "assunto": "Merge pull request #713 from JGaspar-Eng/fix/vigas-vf2-gate-solicitacoes-nao-finitas-20261105",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -1568,6 +1576,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 715,
+            "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
+            "rascunho": true,
+            "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
+            "ci": "pendente"
+          },
+          {
             "numero": 492,
             "titulo": "fix(painel): padroniza detalhamento das 12 áreas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/492",
@@ -1770,7 +1786,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 604,
+  "janela_prs": 605,
   "commits_main_analisados": 3038,
   "commits_main_truncado": false,
   "erros": [],
