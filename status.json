@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-05T01:30:05Z",
+  "generated_at": "2026-11-05T03:13:00Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
-    "short_sha": "49fcbe6e",
+    "sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
+    "short_sha": "ce618b82",
     "author": "Joanez Gaspar",
-    "date": "2026-11-04T20:51:41-03:00",
-    "message": "Merge pull request #699 from JGaspar-Eng/feat/vigas-diagramas-momento-cortante-prancha-memorial-20261104"
+    "date": "2026-11-05T00:12:41-03:00",
+    "message": "Merge pull request #700 from JGaspar-Eng/feat/vigas-det01-faixas-exatas-demandas-20261105"
   },
   "commits": [
+    {
+      "sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
+      "short_sha": "ce618b82",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:12:41-03:00",
+      "message": "Merge pull request #700 from JGaspar-Eng/feat/vigas-det01-faixas-exatas-demandas-20261105"
+    },
+    {
+      "sha": "97a47fc5c0d3aa6f8b2e5583bd6b076c008a362b",
+      "short_sha": "97a47fc5",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:08:37-03:00",
+      "message": "docs(det01): delimitar fronteiras M=0 e separar zonas de demanda de cortes executivos"
+    },
+    {
+      "sha": "b62aeb51d3d6f72e5861f7911edcd6234ff2146d",
+      "short_sha": "b62aeb51",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:07:54-03:00",
+      "message": "ci(det01): bloquear regressao das zonas exatas e suas comparacoes de barras"
+    },
+    {
+      "sha": "ce6e59b6485a2127f1dec560a23b4fb29135f72a",
+      "short_sha": "ce6e59b6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:07:38-03:00",
+      "message": "test(det01): memorial precisa incluir zonas analiticas M+/M− e avisar sobre cortes"
+    },
+    {
+      "sha": "fa009f9457195fed7aecdf8f4a4eb4ec8bee14d2",
+      "short_sha": "fa009f94",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:07:22-03:00",
+      "message": "ui(det01): exibir faixas M+/M− e confrontar barras arrastadas contra demanda analitica"
+    },
+    {
+      "sha": "6d0dbeeec85c2e2b6f80563344e5c89abfebfcf7",
+      "short_sha": "6d0dbeee",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:06:34-03:00",
+      "message": "feat(det01): adicionar zonas analiticas com coordenadas no memorial e impedir titulo executivo de corte"
+    },
+    {
+      "sha": "77987b91528ea4fe0d48d71d3bf1d96910bd7ad6",
+      "short_sha": "77987b91",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:05:58-03:00",
+      "message": "test(det01): limites analiticos por oito ELU, viga biapoiada, viga com negativos e lacunas declaradas"
+    },
+    {
+      "sha": "f661f8ddeaae2aa77713a5731b36eba63fa7d95b",
+      "short_sha": "f661f8dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T00:04:54-03:00",
+      "message": "feat(det01): extrair zonas exatas de M+/M- dos oito ELU e confrontar barras declaradas sem forjar cortes"
+    },
     {
       "sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
       "short_sha": "49fcbe6e",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-04T20:48:28-03:00",
       "message": "merge: integrar diagramas M/V ao 3D validado na main preservando CI integral"
-    },
-    {
-      "sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-      "short_sha": "28f78c16",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:47:20-03:00",
-      "message": "Merge pull request #698 from JGaspar-Eng/feat/vigas-3d-clique-transparencia-armadura-rastreada-20261104"
-    },
-    {
-      "sha": "8ca759330647ab58a786145ee1c4b9cbe199a836",
-      "short_sha": "8ca75933",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:44:58-03:00",
-      "message": "fix(diagramas): diagnosticar cobertura inferior a oito ELU sem mascarar como entrada invalida"
-    },
-    {
-      "sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
-      "short_sha": "c7ffc21b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:43:36-03:00",
-      "message": "fix(vigas3d): conservar contagem de estribos fora do escopo do try no Babylon"
-    },
-    {
-      "sha": "c806a4bba271b660952f67a054f6bcd66d63caea",
-      "short_sha": "c806a4bb",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:42:49-03:00",
-      "message": "ci(diagramas): conferir extremos analiticos de M/V e integracao no memorial"
-    },
-    {
-      "sha": "0abc7537f80d4fc467e577094630f571a38036eb",
-      "short_sha": "0abc7537",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:42:38-03:00",
-      "message": "test(memorial): comprovar presenca de diagramas M/V nos mesmos oito ELU do ORQ"
-    },
-    {
-      "sha": "603d0f94572cc07d27680fff16c5ceb4cc44ef86",
-      "short_sha": "603d0f94",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:42:25-03:00",
-      "message": "ui(diagramas): incluir M+ M- e V max com valores e cotas de vao no SVG"
-    },
-    {
-      "sha": "2c425b5db9a7fb05714f8c93d1084c9a106b984f",
-      "short_sha": "2c425b5d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:42:05-03:00",
-      "message": "test(diagramas): M/V reais por 8 ELU com benchmark analitico e recusa de dados importados"
-    },
-    {
-      "sha": "fe9471a94c750862a69c5ce1dd314858dce11ed6",
-      "short_sha": "fe9471a9",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-04T20:41:31-03:00",
-      "message": "ui(vigas): exibir e exportar M/V por oito ELU antes das pranchas de armadura"
     }
   ],
   "development": {
@@ -4000,7 +4000,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "41948899097",
-    "run_number": "1183"
+    "run_id": "41960152006",
+    "run_number": "1184"
   }
 }
