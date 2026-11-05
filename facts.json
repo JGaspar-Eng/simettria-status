@@ -1,21 +1,197 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-05T22:11:05Z",
+  "gerado_em": "2026-11-05T22:14:40Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "6bf223d69562fe381909403a39e08d23d1697810",
-    "data": "2026-11-05T22:06:12Z"
+    "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+    "data": "2026-11-05T22:13:29Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "6bf223d69562fe381909403a39e08d23d1697810",
-    "gerado_em": "2026-11-05T22:06:31Z",
+    "gerado_em": "2026-11-05T22:09:57Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 11,
     "idade_horas": 0.1
   },
   "frentes": [
+    {
+      "id": "vigas",
+      "titulo": "Vigas — cálculo e detalhamento",
+      "epico": "E4/E5",
+      "local": {
+        "estado": "nao_verificavel_em_ci",
+        "itens": []
+      },
+      "pr": {
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 713,
+            "titulo": "VIGAS-VF-2: impedir Md/Vsd inválidos de virar esforço nulo no dimensionamento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/713",
+            "rascunho": true,
+            "head_sha": "6840509c0eda5e14b1c14aa0303c86a3c651529d",
+            "ci": "pendente"
+          },
+          {
+            "numero": 549,
+            "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/549",
+            "rascunho": true,
+            "head_sha": "586ff482e24b8dfacf89d06f94909aeef5309c92",
+            "ci": "passou"
+          }
+        ]
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 81,
+        "integrados_recentes": [
+          {
+            "numero": 712,
+            "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
+            "merged_at": "2026-11-05T22:13:30Z",
+            "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+            "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
+          {
+            "numero": 711,
+            "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
+            "merged_at": "2026-11-05T22:06:12Z",
+            "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
+            "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 710,
+            "titulo": "VIGA-DET-09A: aplicar e restaurar plano pelo Structural Lifecycle",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/710",
+            "merged_at": "2026-11-05T17:30:44Z",
+            "merge_sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
+            "head_sha": "e7f199741c1dce5c8550a7b8b13eb060fbac3c65",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 709,
+            "titulo": "VIGA-DET-09: cadastro guiado de geometria física e origem de ancoragens com recálculo seguro",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/709",
+            "merged_at": "2026-11-05T17:24:52Z",
+            "merge_sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
+            "head_sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 707,
+            "titulo": "VIGA-DET-08: impedir perda de planos de ancoragem e continuidade ao salvar/reabrir",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/707",
+            "merged_at": "2026-11-05T17:12:08Z",
+            "merge_sha": "907322db9848d7cf4d0e0b4855c2f153bb828700",
+            "head_sha": "1060a155c62e651ad04ed5a5f0eaa335b6733522",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 706,
+            "titulo": "VIGA-DET-07: armaduras longitudinais cotadas no 3D e testemunhos sem comprimento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/706",
+            "merged_at": "2026-11-05T17:01:40Z",
+            "merge_sha": "52bafa03a9b6759e1b2ae4e1aeca8526787f9e81",
+            "head_sha": "0113b5f5c4e28996facd2e57d007fca1410062e4",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 705,
+            "titulo": "VIGA-DET-06: quadro de comprimentos geométricos e massa teórica rastreáveis",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/705",
+            "merged_at": "2026-11-05T16:53:42Z",
+            "merge_sha": "fa35dae503d3066033369da2d3bd13665758173d",
+            "head_sha": "57be9c405dd247e7a605a68f842cc2d1f37f3584",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 704,
+            "titulo": "VIGA-DET-05: auditar continuidade de armaduras em nós de vigas contínuas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/704",
+            "merged_at": "2026-11-05T16:42:34Z",
+            "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
+            "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 703,
+            "titulo": "VIGA-DET-04: sincronizar estribos do 3D com zonas Vy dos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/703",
+            "merged_at": "2026-11-05T12:14:15Z",
+            "merge_sha": "ff7741bb14bcc510e13fb50c2f776b4768d8e37f",
+            "head_sha": "85ba31f0a2aac2d475ebd306828169d6ea86c1f2",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 702,
+            "titulo": "VIGA-DET-03: zonas conservadoras de estribos dos 8 ELU no inspetor e memorial",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/702",
+            "merged_at": "2026-11-05T12:04:29Z",
+            "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
+            "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
+            "ci_pr": "passou",
+            "ci_merge": "passou"
+          },
+          {
+            "numero": 701,
+            "titulo": "VIGA-DET-02: confronto de ancoragens e prolongamentos reais por apoio, sem cortes fictícios",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/701",
+            "merged_at": "2026-11-05T11:50:05Z",
+            "merge_sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
+            "head_sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
+          {
+            "numero": 700,
+            "titulo": "VIGA-DET-01: zonas analíticas M+/M− dos 8 ELU, confronto de barras e pranchas",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/700",
+            "merged_at": "2026-11-05T03:12:42Z",
+            "merge_sha": "ce618b82fab1fb6bf787271f2aab6782ed0a6147",
+            "head_sha": "97a47fc5c0d3aa6f8b2e5583bd6b076c008a362b",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          }
+        ],
+        "ultimo": {
+          "numero": 712,
+          "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
+          "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+          "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
+          "merged_at": "2026-11-05T22:13:30Z",
+          "ci": "passou",
+          "ci_pr": "passou",
+          "ci_merge": "pendente"
+        },
+        "ultimo_commit": {
+          "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+          "data": "2026-11-05T19:13:29-03:00",
+          "assunto": "Merge pull request #712 from JGaspar-Eng/docs/vigas-ciclo-fechamento-painel-20261105",
+          "ci": "pendente"
+        }
+      },
+      "publicado": {
+        "estado": "aguardando_publicacao"
+      }
+    },
     {
       "id": "escada",
       "titulo": "Escada",
@@ -1400,14 +1576,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 712,
-            "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
-            "rascunho": true,
-            "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
-            "ci": "pendente"
-          },
-          {
             "numero": 492,
             "titulo": "fix(painel): padroniza detalhamento das 12 áreas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/492",
@@ -1427,8 +1595,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 63,
+        "total_integrados": 64,
         "integrados_recentes": [
+          {
+            "numero": 712,
+            "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
+            "merged_at": "2026-11-05T22:13:30Z",
+            "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+            "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 629,
             "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
@@ -1436,8 +1614,8 @@
             "merged_at": "2026-10-28T00:07:45Z",
             "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
             "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 618,
@@ -1538,38 +1716,28 @@
             "head_sha": "a322884181e12531a3863efe9d272d0a72988f28",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 577,
-            "titulo": "Integrar painel factual e renumeração correta das vigas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/577",
-            "merged_at": "2026-10-25T14:56:04Z",
-            "merge_sha": "a5958468e32dbfcb78f890ae17aa017b5ed91364",
-            "head_sha": "291d249265494b3688582308c2ac928dc61057e4",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 629,
-          "titulo": "fix(ORQ): painel único de recomendações de vigas sem três listas concorrentes",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/629",
-          "merge_sha": "b5eba8d49be77a46b865b7fabd3de6705bba7b0f",
-          "head_sha": "5545f0c5ef43ff5572ad26f32e7d1192cbf2dcdb",
-          "merged_at": "2026-10-28T00:07:45Z",
+          "numero": 712,
+          "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
+          "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+          "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
+          "merged_at": "2026-11-05T22:13:30Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "38629c513ef9433b977dd48b1bf38929095d7995",
-          "data": "2026-11-04T20:33:19-03:00",
-          "assunto": "ui(vigas3d): clique transparente, barras rastreadas, M/V no painel e selecao reversivel",
-          "ci": "sem_evidencia"
+          "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
+          "data": "2026-11-05T19:13:29-03:00",
+          "assunto": "Merge pull request #712 from JGaspar-Eng/docs/vigas-ciclo-fechamento-painel-20261105",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1581,18 +1749,11 @@
       552,
       551,
       550,
-      549,
       548,
       547,
       310
     ],
     "integrados_recentes": [
-      710,
-      705,
-      703,
-      700,
-      697,
-      696,
       691,
       690,
       689,
@@ -1602,17 +1763,23 @@
       682,
       672,
       662,
-      661,
       660,
       659,
-      658,
-      657
+      657,
+      643,
+      611,
+      537,
+      536,
+      535,
+      533,
+      469,
+      476
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 603,
-  "commits_main_analisados": 3021,
+  "janela_prs": 604,
+  "commits_main_analisados": 3032,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
