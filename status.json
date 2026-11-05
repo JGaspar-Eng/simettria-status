@@ -1,21 +1,63 @@
 {
-  "generated_at": "2026-11-05T22:16:55Z",
+  "generated_at": "2026-11-05T22:19:06Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
-    "short_sha": "877ef8c0",
+    "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
+    "short_sha": "786fcc9b",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T19:13:29-03:00",
-    "message": "Merge pull request #712 from JGaspar-Eng/docs/vigas-ciclo-fechamento-painel-20261105"
+    "date": "2026-11-05T19:18:45-03:00",
+    "message": "Merge pull request #713 from JGaspar-Eng/fix/vigas-vf2-gate-solicitacoes-nao-finitas-20261105"
   },
   "commits": [
+    {
+      "sha": "786fcc9b34554733bcdbebc678fff18db2140aec",
+      "short_sha": "786fcc9b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:18:45-03:00",
+      "message": "Merge pull request #713 from JGaspar-Eng/fix/vigas-vf2-gate-solicitacoes-nao-finitas-20261105"
+    },
+    {
+      "sha": "31569c1521c7d04366518282a3fd8b676600aca4",
+      "short_sha": "31569c15",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:15:12-03:00",
+      "message": "test(vf2): exigir ELU indeterminado para solicitacao desconhecida"
+    },
+    {
+      "sha": "98061b7ad045f483b68c9b6e508dfbd445fbb2cd",
+      "short_sha": "98061b7a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:14:56-03:00",
+      "message": "fix(vf2): ausencia de solicitacao resulta veredito ELU indeterminado"
+    },
     {
       "sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
       "short_sha": "877ef8c0",
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:13:29-03:00",
       "message": "Merge pull request #712 from JGaspar-Eng/docs/vigas-ciclo-fechamento-painel-20261105"
+    },
+    {
+      "sha": "6840509c0eda5e14b1c14aa0303c86a3c651529d",
+      "short_sha": "6840509c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:12:20-03:00",
+      "message": "test(vf2): incluir gate de solicitacoes invalidas na suite oficial"
+    },
+    {
+      "sha": "49373c8b9571ae8cb753690d3ce48c0ab205ce6a",
+      "short_sha": "49373c8b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:12:06-03:00",
+      "message": "test(vf2): provar que Md e Vsd invalidos nao viram zero"
+    },
+    {
+      "sha": "33d5d13040493ac6b291c88cf2ac8cb22144eea6",
+      "short_sha": "33d5d130",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-05T19:11:36-03:00",
+      "message": "fix(vf2): rejeitar solicitacoes Md e Vsd ausentes ou nao finitas"
     },
     {
       "sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T19:06:12-03:00",
       "message": "Merge pull request #711 from JGaspar-Eng/test/vigas-det10-integracao-formulario-inspetor-20261105"
-    },
-    {
-      "sha": "15645e4d90930db7ad080c06d4d3b535d8544929",
-      "short_sha": "15645e4d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:05:35-03:00",
-      "message": "test(fatos): atualizar contrato de categorias para frente de vigas"
-    },
-    {
-      "sha": "7cdf6009a47fadb06b666033bd6b262337071348",
-      "short_sha": "7cdf6009",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:04:46-03:00",
-      "message": "test(fatos): reconhecer categoria explicita de vigas"
-    },
-    {
-      "sha": "068274328faa620d6b2165e22ffddbbfa9aa6f4c",
-      "short_sha": "06827432",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:04:43-03:00",
-      "message": "test(status): reconhecer fila programada de fechamento das vigas"
-    },
-    {
-      "sha": "2afce5134d4ea73094313a44c1f8957737cb8b64",
-      "short_sha": "2afce513",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:02:56-03:00",
-      "message": "test(status): refletir unica frente ativa de vigas e marcos planejados"
-    },
-    {
-      "sha": "964a02e701afe1d877140e69b7025065cfb9e5ab",
-      "short_sha": "964a02e7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T19:00:47-03:00",
-      "message": "fix(status): usar numero da area para contrato do gerador do painel"
-    },
-    {
-      "sha": "51d7cdd66d029b745025a41541eb54b051648c33",
-      "short_sha": "51d7cdd6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T18:59:06-03:00",
-      "message": "docs(status): classificar PRs de vigas no painel factual"
     }
   ],
   "development": {
@@ -3118,7 +3118,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 232,
+    "validator_count": 233,
     "validators": [
       {
         "name": "test:servidor-versionado",
@@ -3841,6 +3841,10 @@
         "command": "node tests/validar_verificacao_elu_viga_sem_momento_negativo.mjs"
       },
       {
+        "name": "test:viga-vf2-solicitacoes",
+        "command": "node tests/validar_vigas_vf2_solicitacoes_nao_finitas.mjs"
+      },
+      {
         "name": "test:viga-armadura",
         "command": "node tests/validar_armadura_viga.mjs"
       },
@@ -4057,7 +4061,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42120072843",
-    "run_number": "1217"
+    "run_id": "42120410608",
+    "run_number": "1218"
   }
 }
