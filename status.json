@@ -1,15 +1,50 @@
 {
-  "generated_at": "2026-11-06T23:06:07Z",
+  "generated_at": "2026-11-06T23:08:29Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-    "short_sha": "225e8951",
+    "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+    "short_sha": "2828f27f",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T20:02:48-03:00",
-    "message": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106"
+    "date": "2026-11-06T20:08:06-03:00",
+    "message": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106"
   },
   "commits": [
+    {
+      "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+      "short_sha": "2828f27f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:08:06-03:00",
+      "message": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106"
+    },
+    {
+      "sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+      "short_sha": "29f6bb53",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:03:51-03:00",
+      "message": "test(normas): conciliar suite com o novo contrato das ligacoes ORQ"
+    },
+    {
+      "sha": "5388c9cbe9cb34819ca192b9c60afc8de5da9066",
+      "short_sha": "5388c9cb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:03:47-03:00",
+      "message": "feat(ui): alertar revisoes ABNT atuais mantendo calculo antigo explicitado"
+    },
+    {
+      "sha": "f0efb143d62fb10bfdb3755f06076fb1f433f86e",
+      "short_sha": "f0efb143",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:03:44-03:00",
+      "message": "feat(normas): recuperar orq_vigencia_normativa_atual.mjs com CI atual"
+    },
+    {
+      "sha": "3c62cd78ed09e8504733d20779153332c1d920d9",
+      "short_sha": "3c62cd78",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:03:40-03:00",
+      "message": "feat(normas): recuperar revisao_normativa_service.js com CI atual"
+    },
     {
       "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
       "short_sha": "225e8951",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T19:55:13-03:00",
       "message": "fix(browser): preservar contrato do texto do grupo concluido sem perder origem"
-    },
-    {
-      "sha": "c667d94f90f944930534bfee655f97082d06118f",
-      "short_sha": "c667d94f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:54:33-03:00",
-      "message": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106"
-    },
-    {
-      "sha": "3608a48eee1cf1700e0a0150421f6239429e7a51",
-      "short_sha": "3608a48e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:53:56-03:00",
-      "message": "test(orq): executar verificacao auditavel dos rotulos Gk Qk e ligacoes"
-    },
-    {
-      "sha": "7987a1c1ab29f5d4d188badf200ffdbec0042edb",
-      "short_sha": "7987a1c1",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:53:53-03:00",
-      "message": "test(orq): diagnosticos de ligacoes e rotulos 2D sem avisos desatualizados"
-    },
-    {
-      "sha": "729ee629ebcc3bc4fab70c291c3643abc8b64369",
-      "short_sha": "729ee629",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:53:22-03:00",
-      "message": "feat(2d): mostrar Gk/Qk cadastrado sem prometer carga ou ELU comprovados"
-    },
-    {
-      "sha": "8d6b7f0616c5913d6f51bebccb9f3cf40127bd20",
-      "short_sha": "8d6b7f06",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:52:29-03:00",
-      "message": "fix(orq): auditoria reconhece ligações automáticas e articulações já suportadas"
     }
   ],
   "development": {
@@ -3160,7 +3160,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42309511851",
-    "run_number": "1310"
+    "run_id": "42309792385",
+    "run_number": "1315"
   }
 }

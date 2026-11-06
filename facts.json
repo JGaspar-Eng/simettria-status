@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T23:07:09Z",
+  "gerado_em": "2026-11-06T23:09:12Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-    "data": "2026-11-06T23:02:48Z"
+    "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+    "data": "2026-11-06T23:08:06Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-    "gerado_em": "2026-11-06T23:03:11Z",
+    "gerado_em": "2026-11-06T23:06:07Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 5,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -34,14 +34,6 @@
             "rascunho": true,
             "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
             "ci": "pendente"
-          },
-          {
-            "numero": 549,
-            "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/549",
-            "rascunho": true,
-            "head_sha": "586ff482e24b8dfacf89d06f94909aeef5309c92",
-            "ci": "passou"
           }
         ]
       },
@@ -501,7 +493,7 @@
             "merged_at": "2026-11-04T13:08:05Z",
             "merge_sha": "e59dae872fb6e08f70a34452ff731ff7b83a422b",
             "head_sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1208,22 +1200,6 @@
             "ci": "pendente"
           },
           {
-            "numero": 740,
-            "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
-            "rascunho": true,
-            "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
-            "ci": "pendente"
-          },
-          {
-            "numero": 739,
-            "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/739",
-            "rascunho": true,
-            "head_sha": "18b027b80d168610e7da3119426a556397a4dfb6",
-            "ci": "passou"
-          },
-          {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
@@ -1259,8 +1235,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 128,
+        "total_integrados": 129,
         "integrados_recentes": [
+          {
+            "numero": 740,
+            "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
+            "merged_at": "2026-11-06T23:08:07Z",
+            "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+            "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 738,
             "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
@@ -1370,38 +1356,28 @@
             "head_sha": "4f7f0725cdbe6894e62f88f8ac93d45ce050f8ae",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 685,
-            "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
-            "merged_at": "2026-11-03T16:25:44Z",
-            "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-            "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 738,
-          "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
-          "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-          "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
-          "merged_at": "2026-11-06T23:02:49Z",
+          "numero": 740,
+          "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
+          "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+          "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+          "merged_at": "2026-11-06T23:08:07Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-          "data": "2026-11-06T20:02:48-03:00",
-          "assunto": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106",
-          "ci": "passou"
+          "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+          "data": "2026-11-06T20:08:06-03:00",
+          "assunto": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1416,43 +1392,29 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 740,
-            "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
-            "rascunho": true,
-            "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
-            "ci": "pendente"
-          },
-          {
-            "numero": 739,
-            "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/739",
-            "rascunho": true,
-            "head_sha": "18b027b80d168610e7da3119426a556397a4dfb6",
-            "ci": "passou"
-          },
-          {
             "numero": 546,
             "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
             "rascunho": true,
             "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
             "ci": "passou"
-          },
-          {
-            "numero": 545,
-            "titulo": "SIMETTRIA: diagnósticos acionáveis e avisos de revisão normativa",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/545",
-            "rascunho": true,
-            "head_sha": "a53b51cad6e7783a018d44e00cbcfa3a5c12f236",
-            "ci": "passou"
           }
         ]
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 25,
+        "total_integrados": 26,
         "integrados_recentes": [
+          {
+            "numero": 740,
+            "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
+            "merged_at": "2026-11-06T23:08:07Z",
+            "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+            "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 728,
             "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
@@ -1562,38 +1524,28 @@
             "head_sha": "ef77a5e3571bc2be91deba422934e7d20d8db867",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 203,
-            "titulo": "feat(wizard): incorpora categoria NBR 8681 ao onboarding",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/203",
-            "merged_at": "2026-08-28T03:56:13Z",
-            "merge_sha": "bb9146a3df32e98fb0ef5de74ec5d39e482bcded",
-            "head_sha": "187a3cbd420db7bfd5ca01a9d561d7bcf3481bfc",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 728,
-          "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
-          "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
-          "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
-          "merged_at": "2026-11-06T16:02:40Z",
+          "numero": 740,
+          "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
+          "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+          "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+          "merged_at": "2026-11-06T23:08:07Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fc56a348a58d9d05d6818748760d3b80775e67bf",
-          "data": "2026-11-06T12:55:17-03:00",
-          "assunto": "fix(ui): diferenciar vigas normais e patamares coincidentes em planta e permitir alternar pelo ID",
-          "ci": "sem_evidencia"
+          "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
+          "data": "2026-11-06T20:08:06-03:00",
+          "assunto": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1769,9 +1721,7 @@
     "abertos": [
       561,
       553,
-      552,
       551,
-      547,
       310
     ],
     "integrados_recentes": [
@@ -1800,7 +1750,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 631,
-  "commits_main_analisados": 3185,
+  "commits_main_analisados": 3190,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
