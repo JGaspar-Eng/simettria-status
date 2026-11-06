@@ -1,21 +1,56 @@
 {
-  "generated_at": "2026-11-06T22:58:45Z",
+  "generated_at": "2026-11-06T23:01:33Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "c667d94f90f944930534bfee655f97082d06118f",
-    "short_sha": "c667d94f",
+    "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
+    "short_sha": "0afd170b",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T19:54:33-03:00",
-    "message": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106"
+    "date": "2026-11-06T19:58:34-03:00",
+    "message": "Merge pull request #737 from JGaspar-Eng/fix/orq-inventario-proveniencia-real-sem-recadastro-20261106"
   },
   "commits": [
+    {
+      "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
+      "short_sha": "0afd170b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:58:34-03:00",
+      "message": "Merge pull request #737 from JGaspar-Eng/fix/orq-inventario-proveniencia-real-sem-recadastro-20261106"
+    },
+    {
+      "sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
+      "short_sha": "757d0a40",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:55:13-03:00",
+      "message": "fix(browser): preservar contrato do texto do grupo concluido sem perder origem"
+    },
     {
       "sha": "c667d94f90f944930534bfee655f97082d06118f",
       "short_sha": "c667d94f",
       "author": "Joanez Gaspar",
       "date": "2026-11-06T19:54:33-03:00",
       "message": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106"
+    },
+    {
+      "sha": "57cfaf71e55386754e6ea0621f376ccfa485e9d1",
+      "short_sha": "57cfaf71",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:50:24-03:00",
+      "message": "test(orq): origem das cargas pendentes sem mudar classificação cadastrada"
+    },
+    {
+      "sha": "e2badcdbee43a740f695ba7136416e66500bca4a",
+      "short_sha": "e2badcdb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:50:00-03:00",
+      "message": "feat(ui): informar se pendencia vem de preset, desclassificacao ou falta de origem"
+    },
+    {
+      "sha": "bd0cef1d55ce1de5435af3e2e57f6acb187e9155",
+      "short_sha": "bd0cef1d",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:49:43-03:00",
+      "message": "feat(orq): discriminar origem das cargas ainda pendentes no inventario"
     },
     {
       "sha": "80beb169e36f0445dbd57a229b488914bbddc583",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T18:45:42-03:00",
       "message": "Merge pull request #735 from JGaspar-Eng/fix/orq-ui-diagnostico-ligacoes-auto-sem-recadastrar-20261106"
-    },
-    {
-      "sha": "5c651d81de112c10acb5a89e1cc3b20cac4c153b",
-      "short_sha": "5c651d81",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:42:15-03:00",
-      "message": "test(browser): remover expectativa obsoleta de bloqueio manual apos ORQ-LIG-01"
-    },
-    {
-      "sha": "f47e8528b6292b4cbf8a76334a8740a8b589aa7e",
-      "short_sha": "f47e8528",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:37:53-03:00",
-      "message": "test(orq): integrar regressao browser PR576 na mesma entrega do diagnostico"
-    },
-    {
-      "sha": "4809546dc4acdc0aa6facb2ffdbde0e42a5dfb42",
-      "short_sha": "4809546d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:37:50-03:00",
-      "message": "test(browser): reconciliar PR576 com modelo 5 niveis e contagens dinamicas"
-    },
-    {
-      "sha": "6f1670a3cbff6991e91fbdee33ae7f19544b3698",
-      "short_sha": "6f1670a3",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:37:48-03:00",
-      "message": "test(browser): reconciliar PR576 com modelo 5 niveis e contagens dinamicas"
-    },
-    {
-      "sha": "b8f069e6a3883cba6d563a45add87f3243580123",
-      "short_sha": "b8f069e6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:37:11-03:00",
-      "message": "test(orq): incluir diagnóstico de cargas declaradas na suíte oficial"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42308595383",
-    "run_number": "1305"
+    "run_id": "42308953497",
+    "run_number": "1308"
   }
 }
