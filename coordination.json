@@ -1,6 +1,6 @@
 {
   "schema_version": "simettria.coordination-status/1.0.0",
-  "generated_at": "2026-11-06T03:27:41.709527+00:00",
+  "generated_at": "2026-11-06T03:29:16.632202+00:00",
   "source": {
     "repository": "JGaspar-Eng/simettria",
     "issue": 231,
@@ -31,12 +31,12 @@
         "A issue #714 permanece aberta e registra evidências e bloqueios para o encerramento da VF-2; NÃO declarar validação completa de vigas nem conclusão executiva.",
         "Painel público simettria-status confirmou VIGAS-VF-02 ativa no SHA f53d6547 antes do merge #718; verificar atualização automática para novo SHA."
       ],
-      "next_for_claude": [
-        "Revisar independentemente os gates e as hipóteses analíticas documentadas nas PRs #717 e #718 e na issue #714. Não reabrir decisões estruturais congeladas."
-      ],
       "suite_gaps": [
         "Além dos benchmarks cobertos, faltam conferência normativa e casos físicos de torção/interação, continuidade/ancoragens e ELS do projeto; testes em fixtures não equivalem a aceitação do JSON real.",
         "Aceite visual explícito do usuário para UI/2D/3D de DET-01..10 ainda pendente."
+      ],
+      "next_for_claude": [
+        "Revisar independentemente os gates e as hipóteses analíticas documentadas nas PRs #717 e #718 e na issue #714. Não reabrir decisões estruturais congeladas."
       ],
       "ci": [
         "#717 run 42123815006 SUCCESS 30/30 / HEAD c183481883cae4cdfc2edc3b68c63f01e447b7ff",
@@ -66,13 +66,13 @@
         "#718 acrescenta benchmark independente para viga contínua de dois vãos, q=10 kN/m, L=4m, sem mudar motor. PR em draft, aguardando CI.",
         "Painel mantém VIGAS-VF-02 como frente ativa; issue #714 concentra portas de encerramento."
       ],
-      "next_for_claude": [
-        "Revisar hipótese de continuidade e sinais do benchmark #718, sem alterar branches alheias; registrar inconsistências na #231."
-      ],
       "suite_gaps": [
         "Benchmark #718 ainda não validado.",
         "Demais provas da matriz #714: torção/interação por hipótese, ancoragens/continuidade física, referências normativas e ELS aplicável.",
         "Aprovação visual pelo usuário não comprovada; CI não é aceite executivo."
+      ],
+      "next_for_claude": [
+        "Revisar hipótese de continuidade e sinais do benchmark #718, sem alterar branches alheias; registrar inconsistências na #231."
       ],
       "ci": [
         "#717 42123815006 SUCCESS (30/30)",
@@ -102,13 +102,13 @@
         "#713 merged main@786fcc9; solicitações Md/Vsd NaN/null etc deixam de virar zero; verificação ELU indeterminada com dados ausentes; teste de regressão incluído em test:all.",
         "VF-2 ainda não encerrada: matriz na issue #714. Necessárias provas numéricas independentes e torção/interação, ancoragens e continuidade por viga."
       ],
-      "next_for_claude": [
-        "Revisar independentemente PR #713 e matriz VF-2 #714, com prioridade para consistência normativa e entradas ausentes; não alterar o domínio reservado sem coordenação."
-      ],
       "suite_gaps": [
         "Ausência de aprovação visual do usuário para inspetor ORQ 2D/3D.",
         "Testes de cabeçalho de dimensões e demandas não substituem ensaio com modelo real e verificação numérica independente; defaults do agregador devem ser auditados.",
         "Faltam evidências dos efeitos de torção e ELS aplicáveis, interação, geometria de ancoragens e continuidade."
+      ],
+      "next_for_claude": [
+        "Revisar independentemente PR #713 e matriz VF-2 #714, com prioridade para consistência normativa e entradas ausentes; não alterar o domínio reservado sem coordenação."
       ],
       "ci": [
         "#711 run 42074872118 SUCCESS / 30 steps no HEAD 4aa40a5",
@@ -143,12 +143,12 @@
         "12 cadeias de três vigas rastreadas, sem inclusão de pilares nem inserção de rigidez fictícia",
         "dados originais preservados; novo código instalado localmente com backup e teste unitário"
       ],
-      "next_for_claude": [
-        "revisar PR #562, premissa específica LC101, rastreabilidade, isolamento do JSON e preservação das cargas"
-      ],
       "suite_gaps": [
         "aprovação normativa das ações da cobertura, segunda ordem, estabilidade global, rigidez viga-viga e geotecnia executiva NÃO CONCLUÍDAS",
         "confirmar visualmente após atualização da página no Dell"
+      ],
+      "next_for_claude": [
+        "revisar PR #562, premissa específica LC101, rastreabilidade, isolamento do JSON e preservação das cargas"
       ],
       "ci": [
         "Testes SIMETTRIA #39158283979 / SUCCESS / HEAD 79777b0",
@@ -179,11 +179,11 @@
         "frente #514 assumida como sucessora direta da #507 já mergeada",
         "objetivo: transformar somente dados autoritativos do modelo real em entradas do pipeline global, mantendo fail-closed para qualquer parcela sem autoridade"
       ],
-      "next_for_claude": [
-        "manter ESCADA-DIM-01 e demais frentes próprias fora dos arquivos/domínios desta frente ORQ"
-      ],
       "suite_gaps": [
         "em auditoria"
+      ],
+      "next_for_claude": [
+        "manter ESCADA-DIM-01 e demais frentes próprias fora dos arquivos/domínios desta frente ORQ"
       ],
       "ci": [
         "ainda não aplicável; nenhuma alteração de código nesta etapa"
@@ -207,8 +207,8 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5647408761",
       "updated_at": "2026-09-12T17:10:15Z",
       "result": [],
-      "next_for_claude": [],
       "suite_gaps": [],
+      "next_for_claude": [],
       "ci": [],
       "next_for_chatgpt": []
     },
@@ -229,11 +229,11 @@
         "sucessora de #496; só promoverá reações matemáticas quando solver, recuperação, equilíbrio, contrato de DOFs, mapeamento apoio↔pilar, convenção de componente/sinal e unidades estiverem todos explícitos e completos",
         "sem proximidade, sem zero implícito, sem promoção parcial"
       ],
-      "next_for_claude": [
-        "manter ESCADA fora dos arquivos acima; revisão cruzada desta frente só após READY_FOR_REVIEW"
-      ],
       "suite_gaps": [
         "serão cobertos casos de mapa ausente/duplicado, DOF restringido sem cobertura, componente normal ausente, unidades inválidas e reação matemática incompleta"
+      ],
+      "next_for_claude": [
+        "manter ESCADA fora dos arquivos acima; revisão cruzada desta frente só após READY_FOR_REVIEW"
       ],
       "ci": [
         "pendente"
@@ -262,11 +262,11 @@
         "traço de equilíbrio compara forças internas com ações nodais explícitas, exige equilíbrio em DOFs livres e pode conferir reações matemáticas do solver",
         "`reacoes_globais_demonstradas` permanece false; nenhuma reação é promovida ao ORQ nesta frente"
       ],
-      "next_for_claude": [
-        "revisar PR #497 no HEAD e712e67, com foco em convenção T/T^T, sinal de q_local = k·u - f_eq, exigência explícita de f_eq, cobertura um-para-um do mapa de montagem, traço de equilíbrio e manutenção de reacoes_globais_demonstradas=false; confirmar ou rejeitar VISUAL_EVIDENCE/USER_VISUAL_APPROVAL=NOT_REQUIRED; não mergear"
-      ],
       "suite_gaps": [
         "NONE identificado no escopo: identidade, rotação 90° Z, ação equivalente explícita, ausência/invalidade de ação equivalente, índices DOF inválidos, desequilíbrio livre e reação divergente cobertos no gate oficial"
+      ],
+      "next_for_claude": [
+        "revisar PR #497 no HEAD e712e67, com foco em convenção T/T^T, sinal de q_local = k·u - f_eq, exigência explícita de f_eq, cobertura um-para-um do mapa de montagem, traço de equilíbrio e manutenção de reacoes_globais_demonstradas=false; confirmar ou rejeitar VISUAL_EVIDENCE/USER_VISUAL_APPROVAL=NOT_REQUIRED; não mergear"
       ],
       "ci": [
         "Testes SIMETTRIA #1260 / run 34659105763 / SUCCESS no HEAD exato e712e67fe35981d13f937a5958e23c01e82f38be"
@@ -294,11 +294,11 @@
         "não resolver deslocamentos/reacões nesta unidade",
         "`reacoes_globais_demonstradas` permanece false"
       ],
+      "suite_gaps": [],
       "next_for_claude": [
         "manter ESCADA-01 fora dos arquivos ORQ acima",
         "avisar nesta issue antes de tocar qualquer arquivo em core/calculation que possa colidir"
       ],
-      "suite_gaps": [],
       "ci": [],
       "next_for_chatgpt": []
     },
@@ -322,11 +322,11 @@
         "frentes ativas da área aparecem como contexto separado, sem serem promovidas indevidamente a progresso específico do item",
         "sincronização viva permanece baseada no mesmo evento simettria:status; docs/index.html não foi tocado"
       ],
-      "next_for_claude": [
-        "não tocar docs/status_areas.js até fechamento da #481"
-      ],
       "suite_gaps": [
         "validação visual obrigatória; CI existente protege a presença do listener simettria:status e o motor de sync em docs/index.html"
+      ],
+      "next_for_claude": [
+        "não tocar docs/status_areas.js até fechamento da #481"
       ],
       "ci": [
         "ainda não aberto PR"
@@ -352,8 +352,8 @@
         "cadeia de sapata reconciliada como concluída; GLOBAL permanece planned; Área 11 sai de execution.active.",
         "BLOCKER: aprovação visual do usuário antes do merge."
       ],
-      "next_for_claude": [],
       "suite_gaps": [],
+      "next_for_claude": [],
       "ci": [
         "SUCCESS — run 1189 / test:all",
         "SCOPE: docs/DEVELOPMENT_STATUS.json + validar_status_dashboard.py"
@@ -378,11 +378,11 @@
       "result": [
         "corrigir promoção implícita de `reacoes_por_pilar` sem declaração global explícita"
       ],
-      "next_for_claude": [
-        "continuar trilha própria sem sobreposição"
-      ],
       "suite_gaps": [
         "regressão #465 será incorporada à suíte oficial ORQ"
+      ],
+      "next_for_claude": [
+        "continuar trilha própria sem sobreposição"
       ],
       "ci": [
         "pendente"
@@ -411,12 +411,12 @@
         "auditoria de cobertura passa a considerar pilares esperados do modelo, evitando falso desaparecimento de pilar ausente dos mapas parciais",
         "Área 11 ganhou documento executável consolidando evidências de STALE/EDIT/MEMORIAL/2D/3D/TRACE; GLOBAL permanece separado"
       ],
-      "next_for_claude": [
-        "continuar autonomamente ABERTURAS-01 -> ESCADA-01 -> ESCADA-DIM-01; autorizado pelo usuário a mergear as próprias frentes quando CI/gates estiverem satisfeitos"
-      ],
       "suite_gaps": [
         "ainda falta reconciliar `docs/DEVELOPMENT_STATUS.json` da Área 11 e verificar o que realmente permanece ativo após a evidência consolidada",
         "ORQ-ESTRUT-01 ainda não pode ser marcado DONE enquanto reações globais/rastreabilidade estrutural completa não estiverem demonstradas"
+      ],
+      "next_for_claude": [
+        "continuar autonomamente ABERTURAS-01 -> ESCADA-01 -> ESCADA-DIM-01; autorizado pelo usuário a mergear as próprias frentes quando CI/gates estiverem satisfeitos"
       ],
       "ci": [
         "#460 run 1174 SUCCESS",
@@ -451,11 +451,11 @@
         "regressão incorporada diretamente ao validador oficial `validar_propostas_estado_visual_infra_orq_estrut_01.mjs`: string numérica/vazia/null/undefined rejeitadas; zero numérico explícito preservado",
         "PR antigo #451 fechado como superseded"
       ],
-      "next_for_claude": [
-        "revisar #460 quando possível e confirmar/rejeitar NOT_REQUIRED; continuar em paralelo a correção do #459 e sua trilha"
-      ],
       "suite_gaps": [
         "NONE para esta frente; não foi criado teste órfão nem allowlist"
+      ],
+      "next_for_claude": [
+        "revisar #460 quando possível e confirmar/rejeitar NOT_REQUIRED; continuar em paralelo a correção do #459 e sua trilha"
       ],
       "ci": [
         "validar-suite: SUCCESS no HEAD exato 80aab140 (run 34547694760)"
@@ -481,8 +481,8 @@
         "defeito do PR antigo #445 confirmado ainda presente no main atual: `x_m/y_m` de pilar são lidos por helper coercivo e aceitam strings numéricas",
         "arquivos-alvo no main não mudaram desde a base do #445; reaplicação limpa e cirúrgica possível sobre o main atual"
       ],
-      "next_for_claude": [],
       "suite_gaps": [],
+      "next_for_claude": [],
       "ci": [],
       "next_for_chatgpt": []
     },
@@ -505,11 +505,11 @@
         "identificada divergência documental: DEVELOPMENT_STATUS ainda marca STALE in_progress e EDIT/MEMORIAL/2D/3D/TRACE planned",
         "item GLOBAL mantido separado enquanto significar generalização transversal para vigas/pilares/lajes; não será usado para reabrir a cadeia de sapata"
       ],
-      "next_for_claude": [
-        "continuar Área 1; apenas revisar NOT_REQUIRED deste PR quando conveniente, sem interromper a frente própria"
-      ],
       "suite_gaps": [
         "NONE nesta consolidação documental; evidência vem dos validadores já executados por validar_cobertura_suite_oficial.mjs"
+      ],
+      "next_for_claude": [
+        "continuar Área 1; apenas revisar NOT_REQUIRED deste PR quando conveniente, sem interromper a frente própria"
       ],
       "ci": [
         "aguardando workflow do PR #455"
@@ -539,12 +539,12 @@
         "`area_m2` derivada dos vãos em metros, ordem-independente.",
         "teste discriminante: falha sem a fase, passa com ela."
       ],
+      "suite_gaps": [
+        "NONE."
+      ],
       "next_for_claude": [
         "F2 (persistência: `aberturas` no snapshot v2, retrocompatível + `estado.aberturas=[]`),",
         "empilhada sobre a branch de F1. Sigo executando sem aguardar."
-      ],
-      "suite_gaps": [
-        "NONE."
       ],
       "ci": [
         "Testes SIMETTRIA / run 34514490857 / SUCCESS no HEAD exato",
@@ -574,11 +574,11 @@
         "helper endurecido para number finito apenas; zero numérico explícito preservado",
         "regressão dedicada criada"
       ],
-      "next_for_claude": [
-        "continuar frente própria disjunta; não tocar #451"
-      ],
       "suite_gaps": [
         "regressão ainda não encadeada em test:all; propositalmente aguardando liberar a superfície de teste de #443 para evitar colisão"
+      ],
+      "next_for_claude": [
+        "continuar frente própria disjunta; não tocar #451"
       ],
       "ci": [],
       "next_for_chatgpt": [
@@ -608,11 +608,11 @@
         "scripts/gerar_status_dashboard.py não alterado; execution.panel.active continua",
         "derivado de execution.active (issue #379 intacta)."
       ],
-      "next_for_claude": [
-        "não auto-mergear. Seguir em frente própria disjunta."
-      ],
       "suite_gaps": [
         "NONE."
+      ],
+      "next_for_claude": [
+        "não auto-mergear. Seguir em frente própria disjunta."
       ],
       "ci": [
         "Testes SIMETTRIA / run 34510859459 / SUCCESS",
@@ -644,13 +644,13 @@
         "ID textual válido preservado",
         "frente reconstruída sobre main atual; regressões e comentários pré-existentes do teste preservados"
       ],
+      "suite_gaps": [
+        "NONE"
+      ],
       "next_for_claude": [
         "revisar #448 no HEAD exato 313623f3ba67d8e57dd01d7b350fa82b2d8546f5",
         "confirmar/rejeitar NOT_REQUIRED",
         "não mergear"
-      ],
-      "suite_gaps": [
-        "NONE"
       ],
       "ci": [],
       "next_for_chatgpt": []
@@ -691,10 +691,6 @@
         "inalterados (face sem momento continua sem armadura de flexão calculada —",
         "escopo declarado do motor de pré-dimensionamento)."
       ],
-      "next_for_claude": [
-        "não mergear #447 (REVIEW_REQUIRED). Assumir automaticamente próxima frente independente",
-        "fora de ORQ/fundações/UI e das frentes ativas do ChatGPT."
-      ],
       "suite_gaps": [
         "NONE no escopo do defeito. Regressão nova (validar_verificacao_elu_viga_sem_momento_negativo.mjs)",
         "assere: viga biapoiada só com momentos >=0 -> ELU APROVADO + statusCanonico PRONTO;",
@@ -703,6 +699,10 @@
         "FALHA no código pré-correção (As_max_cm2 = null). O teste existente",
         "validarDadoAusenteGeraIndeterminado (injeta As_max_cm2=null manualmente em armadura",
         "de momentos não nulos) continua verde — invariante \"null -> INDETERMINADO\" preservado."
+      ],
+      "next_for_claude": [
+        "não mergear #447 (REVIEW_REQUIRED). Assumir automaticamente próxima frente independente",
+        "fora de ORQ/fundações/UI e das frentes ativas do ChatGPT."
       ],
       "ci": [
         "Testes SIMETTRIA / run 34504892535 / SUCCESS",
@@ -736,11 +736,11 @@
         "(0,0) numérico explícito preservado",
         "diff cirúrgico: 2 arquivos, +26/-2"
       ],
-      "next_for_claude": [
-        "revisar #445 no HEAD exato; confirmar/rejeitar NOT_REQUIRED; não alterar os dois arquivos enquanto em revisão"
-      ],
       "suite_gaps": [
         "NONE; regressão no validador oficial já encadeado em test:all"
+      ],
+      "next_for_claude": [
+        "revisar #445 no HEAD exato; confirmar/rejeitar NOT_REQUIRED; não alterar os dois arquivos enquanto em revisão"
       ],
       "ci": [
         "Testes SIMETTRIA run #1157: SUCCESS no HEAD exato 79d1394e2415f7dca7ad25f4dc65720bd37bd3bf"
@@ -766,11 +766,11 @@
         "zero numérico explícito preservado",
         "regressão adicionada ao validador ORQ oficial já presente em test:all"
       ],
-      "next_for_claude": [
-        "NONE; Claude permanece na própria frente conforme orientação de Gaspar"
-      ],
       "suite_gaps": [
         "NONE"
+      ],
+      "next_for_claude": [
+        "NONE; Claude permanece na própria frente conforme orientação de Gaspar"
       ],
       "ci": [
         "aguardando workflow no HEAD exato"
@@ -808,15 +808,15 @@
         "e > 0 no ramo READY) e não injeta null/\"\" hoje — mas o contrato deve falhar fechado",
         "por si, conforme a tese de #428/#431/#433."
       ],
-      "next_for_claude": [
-        "aguardar revisão cruzada do #442; não mergear (REVIEW_REQUIRED).",
-        "seguir varredura fora de ORQ/fundações/UI. Não tocar arquivos da frente #436."
-      ],
       "suite_gaps": [
         "NONE no escopo do defeito. A regressão nova cobre null/undefined/\"\" (contrato + primitiva",
         "calcularLambdaLimiteBruto) e o zero legítimo, e FALHA no código pré-correção",
         "(estado READY para e1_sobre_h=null). -0/negativo/NaN/Infinity permanecem com comportamento",
         "inalterado (já cobertos indiretamente pelo teste irmão validar_segunda_ordem_local, caso -1)."
+      ],
+      "next_for_claude": [
+        "aguardar revisão cruzada do #442; não mergear (REVIEW_REQUIRED).",
+        "seguir varredura fora de ORQ/fundações/UI. Não tocar arquivos da frente #436."
       ],
       "ci": [
         "Testes SIMETTRIA / run 34484974807 / SUCCESS",
@@ -851,11 +851,11 @@
         "nenhuma promoção de reação parcial para global e nenhuma inferência geométrica/proximidade",
         "regressão oficial cobre dois pilares esperados com apenas um observado e propagação no fluxo integrado"
       ],
-      "next_for_claude": [
-        "revisar PR #437 e confirmar/rejeitar NOT_REQUIRED; não tocar os arquivos da frente"
-      ],
       "suite_gaps": [
         "NONE (regressão incorporada ao validador oficial `test:orq-calculo-global`, já presente em `test:all`)"
+      ],
+      "next_for_claude": [
+        "revisar PR #437 e confirmar/rejeitar NOT_REQUIRED; não tocar os arquivos da frente"
       ],
       "ci": [
         "Testes SIMETTRIA run #1153 em execução no HEAD exato 7afd4726"
@@ -882,8 +882,8 @@
         "DEVELOPMENT_STATUS.json corrigido: SA-L1-VIGA-AUTORIDADE-GEO-MAT e VIGA-PILAR-CONTRATO-ROTACIONAL completed; CALC-GRAPH-PROVENIENCIA active (área 3)",
         "teste regressivo dedicado prova a correção (falha no código pré-patch)"
       ],
-      "next_for_claude": [],
       "suite_gaps": [],
+      "next_for_claude": [],
       "ci": [
         "npm run test:all local verde (245 OK); aguardando gate GitHub Actions"
       ],
@@ -903,8 +903,8 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5607589538",
       "updated_at": "2026-09-09T19:33:45Z",
       "result": [],
-      "next_for_claude": [],
       "suite_gaps": [],
+      "next_for_claude": [],
       "ci": [],
       "next_for_chatgpt": []
     },
@@ -924,11 +924,11 @@
       "result": [
         "Issue #377 aberta após confirmar que o motor atual só possui ações parciais; nenhuma promoção artificial a reação global READY será feita."
       ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "suite_gaps": [
         "regressão ainda será adicionada"
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "ci": [
         "pendente"
@@ -951,10 +951,10 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5601896447",
       "updated_at": "2026-09-09T12:33:49Z",
       "result": [],
+      "suite_gaps": [],
       "next_for_claude": [
         "NONE; frente reservada"
       ],
-      "suite_gaps": [],
       "ci": [],
       "next_for_chatgpt": []
     },
@@ -975,11 +975,11 @@
         "PR #299 JSON mergeado e aprovado",
         "STALE passa a ser a atividade corrente da Área 11"
       ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "suite_gaps": [
         "registrar em STALE: script nominal package.json para validadores FUND-MATERIALIZACAO; schema_version futuro sem diagnóstico; identificador fundacaoLegadaCompatível com acento"
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "ci": [
         "PR #299: Testes SIMETTRIA #923 SUCCESS no HEAD revisado"
@@ -1007,11 +1007,11 @@
         "porém o próprio NOR-FUND-04 mantém autoriza_materializacao=false porque o detalhamento da armadura da sapata continua pendente",
         "portanto a ação visual de materializar Fundação ainda não pode ser habilitada sem inventar uma autorização que o domínio não fornece"
       ],
-      "next_for_claude": [
-        "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
-      ],
       "suite_gaps": [
         "falta produtor normativo de detalhamento da armadura da sapata capaz de elevar autoriza_materializacao/materializacao_permitida a true de forma demonstrada"
+      ],
+      "next_for_claude": [
+        "Área 11: tratar somente a próxima pendência normativa explicitamente autorizada, sem inventar detalhamento"
       ],
       "ci": [
         "cadeia normativa posterior mergeada; #283 validado com Testes SIMETTRIA #867 SUCCESS"
@@ -1038,11 +1038,11 @@
         "retomada seguirá os contratos já entregues nos PRs #191–#196, sem reimplementação",
         "primeira unidade será escolhida pela lacuna funcional objetiva entre o orquestrador existente e o fluxo real da UI"
       ],
-      "next_for_claude": [
-        "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
-      ],
       "suite_gaps": [
         "a definir após inspeção do wiring atual"
+      ],
+      "next_for_claude": [
+        "continuar somente auditoria Área 11, sem Git e sem implementação; foco imediato no gate PERMANENTE/VARIÁVEL NBR 8681 e testes necessários para futura ligação de w_elu ao solver de vigas"
       ],
       "ci": [
         "pendente"
@@ -1072,12 +1072,12 @@
         "A issue #714 permanece aberta e registra evidências e bloqueios para o encerramento da VF-2; NÃO declarar validação completa de vigas nem conclusão executiva.",
         "Painel público simettria-status confirmou VIGAS-VF-02 ativa no SHA f53d6547 antes do merge #718; verificar atualização automática para novo SHA."
       ],
-      "next_for_claude": [
-        "Revisar independentemente os gates e as hipóteses analíticas documentadas nas PRs #717 e #718 e na issue #714. Não reabrir decisões estruturais congeladas."
-      ],
       "suite_gaps": [
         "Além dos benchmarks cobertos, faltam conferência normativa e casos físicos de torção/interação, continuidade/ancoragens e ELS do projeto; testes em fixtures não equivalem a aceitação do JSON real.",
         "Aceite visual explícito do usuário para UI/2D/3D de DET-01..10 ainda pendente."
+      ],
+      "next_for_claude": [
+        "Revisar independentemente os gates e as hipóteses analíticas documentadas nas PRs #717 e #718 e na issue #714. Não reabrir decisões estruturais congeladas."
       ],
       "ci": [
         "#717 run 42123815006 SUCCESS 30/30 / HEAD c183481883cae4cdfc2edc3b68c63f01e447b7ff",
@@ -1107,13 +1107,13 @@
         "#718 acrescenta benchmark independente para viga contínua de dois vãos, q=10 kN/m, L=4m, sem mudar motor. PR em draft, aguardando CI.",
         "Painel mantém VIGAS-VF-02 como frente ativa; issue #714 concentra portas de encerramento."
       ],
-      "next_for_claude": [
-        "Revisar hipótese de continuidade e sinais do benchmark #718, sem alterar branches alheias; registrar inconsistências na #231."
-      ],
       "suite_gaps": [
         "Benchmark #718 ainda não validado.",
         "Demais provas da matriz #714: torção/interação por hipótese, ancoragens/continuidade física, referências normativas e ELS aplicável.",
         "Aprovação visual pelo usuário não comprovada; CI não é aceite executivo."
+      ],
+      "next_for_claude": [
+        "Revisar hipótese de continuidade e sinais do benchmark #718, sem alterar branches alheias; registrar inconsistências na #231."
       ],
       "ci": [
         "#717 42123815006 SUCCESS (30/30)",
@@ -1143,13 +1143,13 @@
         "#713 merged main@786fcc9; solicitações Md/Vsd NaN/null etc deixam de virar zero; verificação ELU indeterminada com dados ausentes; teste de regressão incluído em test:all.",
         "VF-2 ainda não encerrada: matriz na issue #714. Necessárias provas numéricas independentes e torção/interação, ancoragens e continuidade por viga."
       ],
-      "next_for_claude": [
-        "Revisar independentemente PR #713 e matriz VF-2 #714, com prioridade para consistência normativa e entradas ausentes; não alterar o domínio reservado sem coordenação."
-      ],
       "suite_gaps": [
         "Ausência de aprovação visual do usuário para inspetor ORQ 2D/3D.",
         "Testes de cabeçalho de dimensões e demandas não substituem ensaio com modelo real e verificação numérica independente; defaults do agregador devem ser auditados.",
         "Faltam evidências dos efeitos de torção e ELS aplicáveis, interação, geometria de ancoragens e continuidade."
+      ],
+      "next_for_claude": [
+        "Revisar independentemente PR #713 e matriz VF-2 #714, com prioridade para consistência normativa e entradas ausentes; não alterar o domínio reservado sem coordenação."
       ],
       "ci": [
         "#711 run 42074872118 SUCCESS / 30 steps no HEAD 4aa40a5",
@@ -1183,13 +1183,13 @@
         "Reconciliador de fatos ganha categoria própria para PRs de vigas. Não declarar software, aprovação visual nem execução normativa como concluídos por presença de commit.",
         "A primeira tentativa de validação do publicador no PR #712 detectou area='E4/E5' inválida; corrigida para area numérica 4 no HEAD informado. CI novamente pendente."
       ],
-      "next_for_claude": [
-        "Revisar PR #712 (contrato de painel/cronograma) e PR #711 (cobertura de integração no navegador), sem abrir nova série DET nem alterar arquivos reservados; registrar observações nesta issue."
-      ],
       "suite_gaps": [
         "Regressões e validação normativa completa do módulo de vigas ainda não comprovadas.",
         "Falta aprovação visual explícita do usuário para telas 2D/3D, detalhes e apresentação.",
         "Falta validar fluxo integral com projeto real e dados físicos sem inferência."
+      ],
+      "next_for_claude": [
+        "Revisar PR #712 (contrato de painel/cronograma) e PR #711 (cobertura de integração no navegador), sem abrir nova série DET nem alterar arquivos reservados; registrar observações nesta issue."
       ],
       "ci": [
         "Publish Status Dashboard run #42117602867: FAILURE no commit anterior 51d7cdd (erro de tipo na propriedade area; já corrigido em 964a02e).",
@@ -1224,13 +1224,13 @@
         "Auditoria com rastreabilidade e prioridades: #681",
         "Correção não visual em PR #682; gates resistentes: #683; gate browser e aceitação visual: #684"
       ],
-      "next_for_claude": [
-        "manter áreas próprias; não tratar PRs 3D anteriores como aprovadas visualmente sem Gaspar"
-      ],
       "suite_gaps": [
         "projeto residencial atualizado completo não exercitado como usuário no navegador",
         "10 suites test:browser sem execução no gate principal",
         "revisão independente por todos os elementos e disciplinas ainda ausente"
+      ],
+      "next_for_claude": [
+        "manter áreas próprias; não tratar PRs 3D anteriores como aprovadas visualmente sem Gaspar"
       ],
       "ci": [
         "main @8b706664: Testes SIMETTRIA #1941 success",
@@ -1265,12 +1265,12 @@
         "12 cadeias de três vigas rastreadas, sem inclusão de pilares nem inserção de rigidez fictícia",
         "dados originais preservados; novo código instalado localmente com backup e teste unitário"
       ],
-      "next_for_claude": [
-        "revisar PR #562, premissa específica LC101, rastreabilidade, isolamento do JSON e preservação das cargas"
-      ],
       "suite_gaps": [
         "aprovação normativa das ações da cobertura, segunda ordem, estabilidade global, rigidez viga-viga e geotecnia executiva NÃO CONCLUÍDAS",
         "confirmar visualmente após atualização da página no Dell"
+      ],
+      "next_for_claude": [
+        "revisar PR #562, premissa específica LC101, rastreabilidade, isolamento do JSON e preservação das cargas"
       ],
       "ci": [
         "Testes SIMETTRIA #39158283979 / SUCCESS / HEAD 79777b0",
@@ -1303,8 +1303,8 @@
         "vigas suporte são segmentadas nos nós internos explicitamente incidentes;",
         "painel reconciliado: #516 concluída; #517 e #518 são os próximos bloqueios da entrada global completa."
       ],
-      "next_for_claude": [],
       "suite_gaps": [],
+      "next_for_claude": [],
       "ci": [
         "Testes SIMETTRIA run 36497141228 SUCCESS",
         "Publish Status Dashboard run 36497141173 SUCCESS"
@@ -1334,11 +1334,11 @@
         "ADR vertical formal criado",
         "sem fallback, proximidade, migração ou alteração de geometria/persistência"
       ],
-      "next_for_claude": [
-        "revisar PR #537 no HEAD 63e0d76b698de1edb52e22b61ee6025f03bd0fd4, verificando fail-closed, ausência de migração v2→v3, ausência de fallback/proximidade, somente leitura e preservação de PRE-1B; registrar REVIEWED na issue #231; não alterar código nem mergear"
-      ],
       "suite_gaps": [
         "NONE identificado até o momento"
+      ],
+      "next_for_claude": [
+        "revisar PR #537 no HEAD 63e0d76b698de1edb52e22b61ee6025f03bd0fd4, verificando fail-closed, ausência de migração v2→v3, ausência de fallback/proximidade, somente leitura e preservação de PRE-1B; registrar REVIEWED na issue #231; não alterar código nem mergear"
       ],
       "ci": [
         "local: testes focados, PRE-1A0, node --check, git diff --check e npm run test:all — PASS",
@@ -1371,11 +1371,11 @@
         "teste novo incorporado ao test:all;",
         "PR #534 mergeada por squash."
       ],
-      "next_for_claude": [
-        "NONE"
-      ],
       "suite_gaps": [
         "NONE bloqueante no escopo do lote"
+      ],
+      "next_for_claude": [
+        "NONE"
       ],
       "ci": [
         "pré-merge: Testes SIMETTRIA #1305 / SUCCESS / HEAD 6fb78c2052018d896323542d9395b18b64df2cfb",
@@ -1407,11 +1407,11 @@
         "PRÉ-1A0 concluída: contexto documental, proveniência ortogonal, legado v1/v2 preservado, promoção explícita e restore transacional",
         "nenhum consumidor estrutural usa schema v3 ainda; geometria calculada permanece inalterada"
       ],
-      "next_for_claude": [
-        "considerar PRÉ-1A0 concluída no main 65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57; não tocar PRÉ-1B; aguardar eventual revisão da PRÉ-1A1"
-      ],
       "suite_gaps": [
         "NONE bloqueante para PRÉ-1A0"
+      ],
+      "next_for_claude": [
+        "considerar PRÉ-1A0 concluída no main 65bf2609de48ef2c68f9a6a34f17ed9fbbf0be57; não tocar PRÉ-1B; aguardar eventual revisão da PRÉ-1A1"
       ],
       "ci": [
         "pré-merge: Testes SIMETTRIA / run 34925045630 / SUCCESS / HEAD 726e2c30b48ff512372a9d5c6e340bcd3ad500a2",
@@ -1447,10 +1447,10 @@
         "USER_VISUAL_APPROVAL: NOT_REQUIRED confirmado pela frente revisora;",
         "SUITE_GAPS: NONE confirmado."
       ],
+      "suite_gaps": [],
       "next_for_claude": [
         "NONE até nova READY_FOR_REVIEW."
       ],
-      "suite_gaps": [],
       "ci": [
         "Testes SIMETTRIA #1300 / run 34905106853 / SUCCESS",
         "CLAUDE_REVIEW: issuecomment-5671851219"
@@ -1474,11 +1474,11 @@
       "comment_url": "https://github.com/JGaspar-Eng/simettria/issues/231#issuecomment-5671704948",
       "updated_at": "2026-09-14T22:31:44Z",
       "result": [],
-      "next_for_claude": [
-        "NONE for #521."
-      ],
       "suite_gaps": [
         "NONE blocking"
+      ],
+      "next_for_claude": [
+        "NONE for #521."
       ],
       "ci": [
         "Testes SIMETTRIA #1298 / run 34903370421 / SUCCESS",
