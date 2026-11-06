@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T22:56:12Z",
+  "gerado_em": "2026-11-06T23:00:03Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "c667d94f90f944930534bfee655f97082d06118f",
-    "data": "2026-11-06T22:54:33Z"
+    "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
+    "data": "2026-11-06T22:58:34Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
-    "gerado_em": "2026-11-06T21:49:16Z",
+    "sha": "c667d94f90f944930534bfee655f97082d06118f",
+    "gerado_em": "2026-11-06T22:54:53Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 4,
-    "idade_horas": 1.1
+    "defasagem_commits_main": 5,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -32,8 +32,8 @@
             "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
             "rascunho": true,
-            "head_sha": "3608a48eee1cf1700e0a0150421f6239429e7a51",
-            "ci": "falhou"
+            "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+            "ci": "pendente"
           },
           {
             "numero": 549,
@@ -57,7 +57,7 @@
             "merge_sha": "c667d94f90f944930534bfee655f97082d06118f",
             "head_sha": "80beb169e36f0445dbd57a229b488914bbddc583",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 733,
@@ -179,17 +179,17 @@
           "merged_at": "2026-11-06T22:54:34Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "c667d94f90f944930534bfee655f97082d06118f",
           "data": "2026-11-06T19:54:33-03:00",
           "assunto": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1200,20 +1200,20 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 737,
-            "titulo": "ORQ: exibir a causa real das cargas pendentes sem solicitar novo cadastro",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/737",
-            "rascunho": true,
-            "head_sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
-            "ci": "pendente"
-          },
-          {
             "numero": 738,
             "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
             "rascunho": true,
-            "head_sha": "3608a48eee1cf1700e0a0150421f6239429e7a51",
-            "ci": "falhou"
+            "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+            "ci": "pendente"
+          },
+          {
+            "numero": 739,
+            "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/739",
+            "rascunho": true,
+            "head_sha": "18b027b80d168610e7da3119426a556397a4dfb6",
+            "ci": "pendente"
           },
           {
             "numero": 562,
@@ -1251,8 +1251,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 126,
+        "total_integrados": 127,
         "integrados_recentes": [
+          {
+            "numero": 737,
+            "titulo": "ORQ: exibir a causa real das cargas pendentes sem solicitar novo cadastro",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/737",
+            "merged_at": "2026-11-06T22:58:34Z",
+            "merge_sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
+            "head_sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 736,
             "titulo": "Vigas: registrar uma só vez valor e natureza da carga na edição",
@@ -1261,7 +1271,7 @@
             "merge_sha": "c667d94f90f944930534bfee655f97082d06118f",
             "head_sha": "80beb169e36f0445dbd57a229b488914bbddc583",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 735,
@@ -1362,25 +1372,15 @@
             "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 656,
-            "titulo": "feat(orq): fluxo único vigas/pilares/lajes/fundações com botão de autorresolução",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/656",
-            "merged_at": "2026-10-31T03:31:39Z",
-            "merge_sha": "bbbf0c072f0fd144f366f79ab5d142e9d27c9434",
-            "head_sha": "eeb5409f0ac91cedea09eb56418f5319a2b1632d",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 736,
-          "titulo": "Vigas: registrar uma só vez valor e natureza da carga na edição",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/736",
-          "merge_sha": "c667d94f90f944930534bfee655f97082d06118f",
-          "head_sha": "80beb169e36f0445dbd57a229b488914bbddc583",
-          "merged_at": "2026-11-06T22:54:34Z",
+          "numero": 737,
+          "titulo": "ORQ: exibir a causa real das cargas pendentes sem solicitar novo cadastro",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/737",
+          "merge_sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
+          "head_sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
+          "merged_at": "2026-11-06T22:58:34Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
@@ -1389,7 +1389,7 @@
           "sha": "c667d94f90f944930534bfee655f97082d06118f",
           "data": "2026-11-06T19:54:33-03:00",
           "assunto": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -1407,6 +1407,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 739,
+            "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/739",
+            "rascunho": true,
+            "head_sha": "18b027b80d168610e7da3119426a556397a4dfb6",
+            "ci": "pendente"
+          },
           {
             "numero": 546,
             "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
@@ -1747,7 +1755,6 @@
       553,
       552,
       551,
-      550,
       547,
       310
     ],
@@ -1776,7 +1783,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 628,
+  "janela_prs": 629,
   "commits_main_analisados": 3173,
   "commits_main_truncado": false,
   "erros": [],
