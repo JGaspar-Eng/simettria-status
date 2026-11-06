@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T13:58:05Z",
+  "gerado_em": "2026-11-06T15:28:59Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
-    "data": "2026-11-06T13:53:44Z"
+    "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+    "data": "2026-11-06T15:27:30Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "8c9f30234f2d39116d9fcd020ae5dbca84589273",
-    "gerado_em": "2026-11-06T13:47:52Z",
+    "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
+    "gerado_em": "2026-11-06T13:56:57Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 4,
-    "idade_horas": 0.2
+    "defasagem_commits_main": 7,
+    "idade_horas": 1.5
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 90,
+        "total_integrados": 91,
         "integrados_recentes": [
+          {
+            "numero": 727,
+            "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/727",
+            "merged_at": "2026-11-06T15:27:31Z",
+            "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+            "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 723,
             "titulo": "VF-3: alvenaria 4,50 kN/m em lote por pavimentos com exceções e seleção do nível técnico",
@@ -49,7 +59,7 @@
             "merge_sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
             "head_sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 721,
@@ -150,38 +160,28 @@
             "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
             "ci_pr": "passou",
             "ci_merge": "passou"
-          },
-          {
-            "numero": 710,
-            "titulo": "VIGA-DET-09A: aplicar e restaurar plano pelo Structural Lifecycle",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/710",
-            "merged_at": "2026-11-05T17:30:44Z",
-            "merge_sha": "43e0f03e1608781acb88c09d359c6bc61e5c0e92",
-            "head_sha": "e7f199741c1dce5c8550a7b8b13eb060fbac3c65",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 723,
-          "titulo": "VF-3: alvenaria 4,50 kN/m em lote por pavimentos com exceções e seleção do nível técnico",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/723",
-          "merge_sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
-          "head_sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
-          "merged_at": "2026-11-06T03:49:38Z",
+          "numero": 727,
+          "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/727",
+          "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+          "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
+          "merged_at": "2026-11-06T15:27:31Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "9404ad8ba51c1bf21c372fb474077e3b2bcf1cb8",
-          "data": "2026-11-06T10:34:07-03:00",
-          "assunto": "fix(viga): contrato FE pontual inclui M/V extremos e x local por trecho real",
-          "ci": "sem_evidencia"
+          "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+          "data": "2026-11-06T12:27:30-03:00",
+          "assunto": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -533,7 +533,7 @@
             "merged_at": "2026-11-03T01:56:54Z",
             "merge_sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
             "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1177,7 +1177,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1587,8 +1587,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 66,
+        "total_integrados": 67,
         "integrados_recentes": [
+          {
+            "numero": 727,
+            "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/727",
+            "merged_at": "2026-11-06T15:27:31Z",
+            "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+            "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 724,
             "titulo": "VF-3: VB102 não abre detalhamento; atualizar carga do painel lateral após lote",
@@ -1597,7 +1607,7 @@
             "merge_sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
             "head_sha": "a1b1189ef2e932c9a0f67c5d70ad7c7608c6ca30",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 715,
@@ -1698,34 +1708,24 @@
             "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 603,
-            "titulo": "Painel Fatos por frente: atualizar automaticamente, sem ocultar defasagem do Pages",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/603",
-            "merged_at": "2026-10-25T22:36:20Z",
-            "merge_sha": "703c31de5341cdd5580313b1784dbb2e47e20b8b",
-            "head_sha": "96daf6b0565e56861fc520241eb99f8e616f91c3",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 724,
-          "titulo": "VF-3: VB102 não abre detalhamento; atualizar carga do painel lateral após lote",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/724",
-          "merge_sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
-          "head_sha": "a1b1189ef2e932c9a0f67c5d70ad7c7608c6ca30",
-          "merged_at": "2026-11-06T13:13:48Z",
+          "numero": 727,
+          "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/727",
+          "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+          "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
+          "merged_at": "2026-11-06T15:27:31Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "a1b8bb8f8b7382f5d17cfe8628b9f0547c9335e9",
-          "data": "2026-11-06T10:48:52-03:00",
-          "assunto": "test(vf3): adicionar auditoria de status visível de ELU parcial à suíte oficial",
-          "ci": "passou"
+          "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+          "data": "2026-11-06T12:27:30-03:00",
+          "assunto": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 616,
-  "commits_main_analisados": 3103,
+  "janela_prs": 617,
+  "commits_main_analisados": 3110,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

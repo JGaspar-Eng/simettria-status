@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-11-06T13:56:57Z",
+  "generated_at": "2026-11-06T15:27:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
-    "short_sha": "32308307",
+    "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+    "short_sha": "8fd7397f",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T10:53:44-03:00",
-    "message": "Merge pull request #726 from JGaspar-Eng/fix/vf3-semaforo-parcial-armadura-sem-aprovacao-executiva-20261106"
+    "date": "2026-11-06T12:27:30-03:00",
+    "message": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106"
   },
   "commits": [
+    {
+      "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+      "short_sha": "8fd7397f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:27:30-03:00",
+      "message": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106"
+    },
+    {
+      "sha": "298c63c97c83bfed07779983466eb306e656c3c2",
+      "short_sha": "298c63c9",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:23:52-03:00",
+      "message": "test(vf3): checklist exige rótulo fiel ao registro, sem presumir parede padrão"
+    },
+    {
+      "sha": "798a38cf41e267e55090baa178d403bbd82c54a3",
+      "short_sha": "798a38cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:21:21-03:00",
+      "message": "test(vf3): executar regressão de identidade de carga no 2D e painel na suíte oficial"
+    },
+    {
+      "sha": "7615ae3e85cac6d8152b720c1102bb4a813af865",
+      "short_sha": "7615ae3e",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:21:01-03:00",
+      "message": "test(vf3): carga VB102 2D e painel por mesma identidade, zero explícito, metadados e cobertura"
+    },
+    {
+      "sha": "86fa6d8d32779819a3316278f9fff29bf6763919",
+      "short_sha": "86fa6d8d",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:20:23-03:00",
+      "message": "testability(vf3): isolar etiqueta de carga 2D por ID para confronto direto com painel"
+    },
+    {
+      "sha": "1b5fb9042776f24e2f1c0e1086a8b67da8f5faa3",
+      "short_sha": "1b5fb904",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:19:35-03:00",
+      "message": "fix(vf3): painel mostra carga por identidade sem zero fictício e oferece aplicação segura da parede"
+    },
+    {
+      "sha": "83d45cbf4ddb8e0a9b772757134373ff94ea00c0",
+      "short_sha": "83d45cbf",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:18:47-03:00",
+      "message": "fix(vf3): identificar a viga dona de cada etiqueta de carga no 2D"
+    },
     {
       "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
       "short_sha": "32308307",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T10:48:36-03:00",
       "message": "test(vf3): preservar aprovação no motor mas indicar somente ELU parcial na UI"
-    },
-    {
-      "sha": "bc1256ca53b60d7aa93d6966fee6755b3ca0cec5",
-      "short_sha": "bc1256ca",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:47:51-03:00",
-      "message": "fix(vf3): status visível da armadura deixa de declarar aprovação completa"
-    },
-    {
-      "sha": "8c9f30234f2d39116d9fcd020ae5dbca84589273",
-      "short_sha": "8c9f3023",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:44:03-03:00",
-      "message": "Merge pull request #725 from JGaspar-Eng/fix/vf3-vb102-carga-pontual-contrato-memorial-20261106"
-    },
-    {
-      "sha": "a48d60cb3cc58c91e34736bbb5338afa74194b7e",
-      "short_sha": "a48d60cb",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:40:14-03:00",
-      "message": "test(vf3): incluir integração VB102 com nó FE virtual na suíte oficial"
-    },
-    {
-      "sha": "59421db2ebcd7838de16d24d1799452a4757b564",
-      "short_sha": "59421db2",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:39:41-03:00",
-      "message": "test(vf3): VB102 com P concentrada e q, salto V, M contínuo, equilíbrio e desenho"
-    },
-    {
-      "sha": "6babe359bc38569d01ee3495f02c8be1300a1399",
-      "short_sha": "6babe359",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:37:54-03:00",
-      "message": "feat(vf3): diagrama global exibe força P ELU nas coordenadas FE efetivas"
-    },
-    {
-      "sha": "f4c10d4bc83c2786e8abdbae303baf489d394018",
-      "short_sha": "f4c10d4b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:37:34-03:00",
-      "message": "feat(vf3): distinguir visualmente forças pontuais P (kN) de q (kN/m) no diagrama ELU"
-    },
-    {
-      "sha": "1897720fc7f2ebeb828a43fdaf0b2743e9adb14f",
-      "short_sha": "1897720f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:35:36-03:00",
-      "message": "fix(vf3): modal suporta segmentos FE de cargas pontuais, diagnóstico e auditoria sem falsos negativos"
     }
   ],
   "development": {
@@ -3832,7 +3832,7 @@
       },
       {
         "name": "test:viga-vf2-diagramas",
-        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs && node tests/validar_viga_modal_falha_e_rightbar_vf3.mjs && node tests/validar_viga_transferencia_pontual_modal_vf3.mjs && node tests/validar_viga_status_armadura_parcial_vf3.mjs"
+        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs && node tests/validar_viga_modal_falha_e_rightbar_vf3.mjs && node tests/validar_viga_transferencia_pontual_modal_vf3.mjs && node tests/validar_viga_status_armadura_parcial_vf3.mjs && node tests/validar_vf3_carga_vb102_painel_2d_id.mjs"
       },
       {
         "name": "test:viga-armadura",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42229562432",
-    "run_number": "1265"
+    "run_id": "42243226198",
+    "run_number": "1266"
   }
 }
