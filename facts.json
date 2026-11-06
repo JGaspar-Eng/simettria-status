@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T11:09:23Z",
+  "gerado_em": "2026-11-06T13:15:23Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
-    "data": "2026-11-06T03:49:37Z"
+    "sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
+    "data": "2026-11-06T13:13:47Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
-    "gerado_em": "2026-11-06T03:53:21Z",
+    "gerado_em": "2026-11-06T11:08:12Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 7.3
+    "defasagem_commits_main": 5,
+    "idade_horas": 2.1
   },
   "frentes": [
     {
@@ -119,7 +119,7 @@
             "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
             "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 713,
@@ -174,14 +174,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
-          "data": "2026-11-06T00:49:37-03:00",
-          "assunto": "Merge pull request #723 from JGaspar-Eng/feat/vf3-alvenaria-lote-pavimentos-vigas-tecnico-20261106",
+          "sha": "a1b1189ef2e932c9a0f67c5d70ad7c7608c6ca30",
+          "data": "2026-11-06T10:09:26-03:00",
+          "assunto": "test(vigas): incluir abertura VB102 e sincronização da rightbar no CI",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1587,8 +1587,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 65,
+        "total_integrados": 66,
         "integrados_recentes": [
+          {
+            "numero": 724,
+            "titulo": "VF-3: VB102 não abre detalhamento; atualizar carga do painel lateral após lote",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/724",
+            "merged_at": "2026-11-06T13:13:48Z",
+            "merge_sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
+            "head_sha": "a1b1189ef2e932c9a0f67c5d70ad7c7608c6ca30",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 715,
             "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
@@ -1597,7 +1607,7 @@
             "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
             "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 712,
@@ -1698,38 +1708,28 @@
             "head_sha": "96daf6b0565e56861fc520241eb99f8e616f91c3",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 583,
-            "titulo": "ORQ: separar reações globais calculadas das pendências de fundações",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/583",
-            "merged_at": "2026-10-25T17:30:11Z",
-            "merge_sha": "12de2de5703a5d5a98ab9e25ac1e27d67d97c8e4",
-            "head_sha": "f07b12a2ac801e53562d43acdb1db489ffe1ecfc",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 715,
-          "titulo": "VIGAS-VF-2: painel registra verificação resistente ativa e bloqueios reais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/715",
-          "merge_sha": "034554c63bf6a8d4cccb01f292ce1c972b5b61b6",
-          "head_sha": "fd70b5c249efa11effa3a0ef47fab81694c04822",
-          "merged_at": "2026-11-05T22:25:49Z",
+          "numero": 724,
+          "titulo": "VF-3: VB102 não abre detalhamento; atualizar carga do painel lateral após lote",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/724",
+          "merge_sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
+          "head_sha": "a1b1189ef2e932c9a0f67c5d70ad7c7608c6ca30",
+          "merged_at": "2026-11-06T13:13:48Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "6d77ff0924e76441af4dc34b4558804ed16f9e6f",
-          "data": "2026-11-06T00:18:25-03:00",
-          "assunto": "feat(ui/vigas): painel de categoria NBR 8681 com seleção de pavimentos e edição em lote",
+          "sha": "8464701f6a5e66381a2fa9e146dbbcfb0dfbaae8",
+          "data": "2026-11-06T10:07:32-03:00",
+          "assunto": "fix(vigas): modal visível em falhas por trecho e atualização imediata do painel lateral",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 613,
-  "commits_main_analisados": 3087,
+  "janela_prs": 614,
+  "commits_main_analisados": 3092,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
