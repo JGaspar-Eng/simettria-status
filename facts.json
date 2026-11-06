@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T21:11:51Z",
+  "gerado_em": "2026-11-06T21:13:27Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -9,11 +9,11 @@
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "792180fdd4705b5350b5c915631782806b8b6963",
-    "gerado_em": "2026-11-06T20:49:52Z",
+    "sha": "7a65cc96c2a6bf4460de94bbd39a22e5cd3c32e7",
+    "gerado_em": "2026-11-06T21:11:04Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 21,
-    "idade_horas": 0.4
+    "defasagem_commits_main": 17,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -174,14 +174,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "d8ca6cd101363f9e039bf807b57813dcd595c9e4",
-          "data": "2026-11-06T14:16:30-03:00",
-          "assunto": "VF-3: legenda persistente e identificacao por ID e cota das vigas de patamar no 3D",
-          "ci": "sem_evidencia"
+          "sha": "9e61982157f343333dc55eba5f35b0a6b29c273f",
+          "data": "2026-11-06T15:44:19-03:00",
+          "assunto": "test(orq): regressao 18 pilares 179 vigas com 132 cargas 4.5 sem mutacao",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1370,10 +1370,10 @@
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "2c5bede6bbe6989d65c85c5f3cbf35c4c5bbfeea",
-          "data": "2026-11-06T14:47:54-03:00",
-          "assunto": "test(orq): regredir identificacao explicita do reservatorio sem mutacao",
-          "ci": "passou"
+          "sha": "b736348c2c00ef16935c04079435cf2b7e7f4fbc",
+          "data": "2026-11-06T18:10:58-03:00",
+          "assunto": "Merge pull request #732 from JGaspar-Eng/fix/orq-reconhecer-gk-alvenaria-cadastrada-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
@@ -1771,7 +1771,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 622,
-  "commits_main_analisados": 3130,
+  "commits_main_analisados": 3147,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

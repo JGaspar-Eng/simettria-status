@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-06T21:11:04Z",
+  "generated_at": "2026-11-06T21:12:21Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "7a65cc96c2a6bf4460de94bbd39a22e5cd3c32e7",
-    "short_sha": "7a65cc96",
+    "sha": "b736348c2c00ef16935c04079435cf2b7e7f4fbc",
+    "short_sha": "b736348c",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T18:10:44-03:00",
-    "message": "Merge pull request #730 from JGaspar-Eng/fix/vf3-nivel-tecnico-explicito-20261106"
+    "date": "2026-11-06T18:10:58-03:00",
+    "message": "Merge pull request #732 from JGaspar-Eng/fix/orq-reconhecer-gk-alvenaria-cadastrada-20261106"
   },
   "commits": [
+    {
+      "sha": "b736348c2c00ef16935c04079435cf2b7e7f4fbc",
+      "short_sha": "b736348c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T18:10:58-03:00",
+      "message": "Merge pull request #732 from JGaspar-Eng/fix/orq-reconhecer-gk-alvenaria-cadastrada-20261106"
+    },
+    {
+      "sha": "8b49248a6cca0003386bb723026649199f99e995",
+      "short_sha": "8b49248a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T18:10:51-03:00",
+      "message": "Merge pull request #731 from JGaspar-Eng/fix/orq-cargas-vinculos-preflight-5niveis-20261106"
+    },
     {
       "sha": "7a65cc96c2a6bf4460de94bbd39a22e5cd3c32e7",
       "short_sha": "7a65cc96",
@@ -18,67 +32,53 @@
       "message": "Merge pull request #730 from JGaspar-Eng/fix/vf3-nivel-tecnico-explicito-20261106"
     },
     {
-      "sha": "2c5bede6bbe6989d65c85c5f3cbf35c4c5bbfeea",
-      "short_sha": "2c5bede6",
+      "sha": "f74cc1d2bd10dd15fea8d4eae0a8e89b61994d4a",
+      "short_sha": "f74cc1d2",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:47:54-03:00",
-      "message": "test(orq): regredir identificacao explicita do reservatorio sem mutacao"
+      "date": "2026-11-06T17:46:09-03:00",
+      "message": "test(orq): precedencia config.cargas sobre padrao na auditoria de lajes"
     },
     {
-      "sha": "474819b2864bf57ff2d6a4fd8e4e14306cb08a72",
-      "short_sha": "474819b2",
+      "sha": "d0af7d2978d00ea917bf4eab5dcefdf8c29c8fbe",
+      "short_sha": "d0af7d29",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:47:47-03:00",
-      "message": "fix(orq): emitir diagnostico fiel do nivel tecnico declarado"
+      "date": "2026-11-06T17:46:07-03:00",
+      "message": "fix(orq): auditoria de lajes respeita precedencia efetiva de cargas do runtime"
     },
     {
-      "sha": "ee807a66a2b488629650eccbdda3af3ec271b68a",
-      "short_sha": "ee807a66",
+      "sha": "2bd33e955af63d6be7a5a34c98aa648cdbbeba25",
+      "short_sha": "2bd33e95",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:47:45-03:00",
-      "message": "fix(orq): reconhecer nivel tecnico configurado em projeto de cinco pavimentos"
+      "date": "2026-11-06T17:45:03-03:00",
+      "message": "fix(orq): preservar texto de nivel tecnico historico e Gk/Qk de cobertura atual"
     },
     {
-      "sha": "792180fdd4705b5350b5c915631782806b8b6963",
-      "short_sha": "792180fd",
+      "sha": "5181d0eb1dd3732641b0a4e88757b2692f7c9ac5",
+      "short_sha": "5181d0eb",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:26:02-03:00",
-      "message": "Merge pull request #729 from JGaspar-Eng/fix/vf3-etiquetas-carga-patamar-3d-20261106"
+      "date": "2026-11-06T17:43:47-03:00",
+      "message": "test(orq): heranca dos Gk/Qk iniciais e agrupamento dos 4 tipos de ligacao"
     },
     {
-      "sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
-      "short_sha": "51115cc7",
+      "sha": "837c5a3c8391b0a4c48f58818be30cbeafb591d1",
+      "short_sha": "837c5a3c",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:21:53-03:00",
-      "message": "VF-3: compatibilidade headless do painel de identificação 3D sem perder DOM seguro"
+      "date": "2026-11-06T17:43:15-03:00",
+      "message": "fix(orq): discriminar vinculos por topologia e reconhecer Gk/Qk cadastrado no projeto"
     },
     {
-      "sha": "6bd06dcee3be351989c021620d994c306c1a9bf4",
-      "short_sha": "6bd06dce",
+      "sha": "de2e2d750d830d43901ad5046336899a9f291bb3",
+      "short_sha": "de2e2d75",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:20:21-03:00",
-      "message": "VF-3: tratar mock 3D sem APIs completas de DOM ao criar legenda"
+      "date": "2026-11-06T15:48:52-03:00",
+      "message": "test(orq): segunda leitura da mesma carga permanece idempotente"
     },
     {
-      "sha": "59b3d15a5ac4f28219b05e8b5d5b512c4234b0b0",
-      "short_sha": "59b3d15a",
+      "sha": "e80a9d65dd68e894616acf05dc358dd4bd2d8b85",
+      "short_sha": "e80a9d65",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:17:27-03:00",
-      "message": "VF-3: integrar regressão de sobreposição 2D e destaque 3D na suíte"
-    },
-    {
-      "sha": "ad7a32fc1cc0b0a2914fe511d638152146b8dcb3",
-      "short_sha": "ad7a32fc",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:17:23-03:00",
-      "message": "VF-3: regressão de etiquetas sobrepostas, rotação 2D e identidade do patamar 3D"
-    },
-    {
-      "sha": "d8ca6cd101363f9e039bf807b57813dcd595c9e4",
-      "short_sha": "d8ca6cd1",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:16:30-03:00",
-      "message": "VF-3: legenda persistente e identificacao por ID e cota das vigas de patamar no 3D"
+      "date": "2026-11-06T15:48:48-03:00",
+      "message": "fix(orq): carga declarada idempotente sem empilhar proveniencia em leituras sucessivas"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42294562105",
-    "run_number": "1286"
+    "run_id": "42294593080",
+    "run_number": "1288"
   }
 }
