@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T23:04:27Z",
+  "gerado_em": "2026-11-06T23:07:09Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
     "data": "2026-11-06T23:02:48Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
-    "gerado_em": "2026-11-06T23:01:33Z",
+    "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+    "gerado_em": "2026-11-06T23:03:11Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 7,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -27,6 +27,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 741,
+            "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
+            "rascunho": true,
+            "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
+            "ci": "pendente"
+          },
           {
             "numero": 549,
             "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
@@ -49,7 +57,7 @@
             "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
             "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 736,
@@ -171,7 +179,7 @@
           "merged_at": "2026-11-06T23:02:49Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "818a5ea80f23ce15bf5d6ee33b9676b3141c5fe5",
@@ -181,7 +189,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1192,6 +1200,22 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 741,
+            "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
+            "rascunho": true,
+            "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
+            "ci": "pendente"
+          },
+          {
+            "numero": 740,
+            "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
+            "rascunho": true,
+            "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+            "ci": "pendente"
+          },
+          {
             "numero": 739,
             "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/739",
@@ -1245,7 +1269,7 @@
             "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
             "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 737,
@@ -1367,17 +1391,17 @@
           "merged_at": "2026-11-06T23:02:49Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
           "data": "2026-11-06T20:02:48-03:00",
           "assunto": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1391,6 +1415,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 740,
+            "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
+            "rascunho": true,
+            "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
+            "ci": "pendente"
+          },
           {
             "numero": 739,
             "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
@@ -1767,7 +1799,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 629,
+  "janela_prs": 631,
   "commits_main_analisados": 3185,
   "commits_main_truncado": false,
   "erros": [],
