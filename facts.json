@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T01:38:35Z",
+  "gerado_em": "2026-11-06T03:26:45Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
-    "data": "2026-11-05T23:52:32Z"
+    "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
+    "data": "2026-11-06T03:25:12Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
-    "gerado_em": "2026-11-05T23:56:31Z",
+    "gerado_em": "2026-11-06T01:37:47Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 1.7
+    "defasagem_commits_main": 8,
+    "idade_horas": 1.8
   },
   "frentes": [
     {
@@ -174,14 +174,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
-          "data": "2026-11-05T20:48:03-03:00",
-          "assunto": "test(vigas): carga 4,50 apenas com clique; preservar viga sem parede e classificar Gk",
+          "sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
+          "data": "2026-11-06T00:21:16-03:00",
+          "assunto": "test(vigas): executar regressão categoria de uso lote na suíte oficial",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -554,7 +554,7 @@
             "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
             "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
@@ -1411,8 +1411,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 23,
+        "total_integrados": 24,
         "integrados_recentes": [
+          {
+            "numero": 722,
+            "titulo": "VF-3: categoria NBR 8681 declarada no projeto e aplicação por pavimentos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/722",
+            "merged_at": "2026-11-06T03:25:12Z",
+            "merge_sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
+            "head_sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 676,
             "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
@@ -1421,7 +1431,7 @@
             "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
             "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 620,
@@ -1522,38 +1532,28 @@
             "head_sha": "26df90bbb8c82e81c9b946acf2ca484e9c3f0b20",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 198,
-            "titulo": "fix(wizard): preserva categoria NBR 8681 existente",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/198",
-            "merged_at": "2026-08-27T17:23:55Z",
-            "merge_sha": "c8e0b26c95d8ee4c2843a63fc7519c2d8f081d8c",
-            "head_sha": "b599f078336a899cd811e60e0467f811f43fa8dd",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 676,
-          "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
-          "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-          "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
-          "merged_at": "2026-11-02T16:03:15Z",
+          "numero": 722,
+          "titulo": "VF-3: categoria NBR 8681 declarada no projeto e aplicação por pavimentos",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/722",
+          "merge_sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
+          "head_sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
+          "merged_at": "2026-11-06T03:25:12Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3ebeee99898b950175b97688e83fd5aef0d80a25",
-          "data": "2026-11-05T20:29:34-03:00",
-          "assunto": "fix(vigas): preservar categoria normativa declarada ao criar e editar viga",
+          "sha": "6d77ff0924e76441af4dc34b4558804ed16f9e6f",
+          "data": "2026-11-06T00:18:25-03:00",
+          "assunto": "feat(ui/vigas): painel de categoria NBR 8681 com seleção de pavimentos e edição em lote",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1722,14 +1722,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "2f65eaaaf499b956c0bb3177f141383dd2778988",
-          "data": "2026-11-05T19:41:18-03:00",
-          "assunto": "test(vf2): explicitar M e V nos pontos do contrato de status",
-          "ci": "falhou"
+          "sha": "6d77ff0924e76441af4dc34b4558804ed16f9e6f",
+          "data": "2026-11-06T00:18:25-03:00",
+          "assunto": "feat(ui/vigas): painel de categoria NBR 8681 com seleção de pavimentos e edição em lote",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 611,
-  "commits_main_analisados": 3070,
+  "janela_prs": 612,
+  "commits_main_analisados": 3078,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

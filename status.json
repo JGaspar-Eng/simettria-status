@@ -1,15 +1,71 @@
 {
-  "generated_at": "2026-11-06T01:37:47Z",
+  "generated_at": "2026-11-06T03:25:34Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
-    "short_sha": "3580ca6c",
+    "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
+    "short_sha": "e3a8423a",
     "author": "Joanez Gaspar",
-    "date": "2026-11-05T20:52:32-03:00",
-    "message": "Merge pull request #721 from JGaspar-Eng/fix/vf3-alvenaria-explicita-sincronizacao-20261105"
+    "date": "2026-11-06T00:25:12-03:00",
+    "message": "Merge pull request #722 from JGaspar-Eng/feat/vf3-categoria-projeto-lote-pavimentos-20261106"
   },
   "commits": [
+    {
+      "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
+      "short_sha": "e3a8423a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:25:12-03:00",
+      "message": "Merge pull request #722 from JGaspar-Eng/feat/vf3-categoria-projeto-lote-pavimentos-20261106"
+    },
+    {
+      "sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
+      "short_sha": "fbb77f4a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:21:16-03:00",
+      "message": "test(vigas): executar regressão categoria de uso lote na suíte oficial"
+    },
+    {
+      "sha": "791a872336a582cb1f2bbe1184c122fa5dc39931",
+      "short_sha": "791a8723",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:21:04-03:00",
+      "message": "test(vigas): fallback declarado do projeto e aplicação seletiva em múltiplos pavimentos"
+    },
+    {
+      "sha": "5b791555d8468360a86ca6af5b8f999c44e99326",
+      "short_sha": "5b791555",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:20:18-03:00",
+      "message": "fix(ui/vigas): explicar categoria herdada do projeto e evitar solicitação duplicada"
+    },
+    {
+      "sha": "5ea8bc7684b35b9e2ec2df54a840415174175c7d",
+      "short_sha": "5ea8bc76",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:19:15-03:00",
+      "message": "feat(vigas): rastrear origem da categoria de uso no cálculo e memorial"
+    },
+    {
+      "sha": "6d77ff0924e76441af4dc34b4558804ed16f9e6f",
+      "short_sha": "6d77ff09",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:18:25-03:00",
+      "message": "feat(ui/vigas): painel de categoria NBR 8681 com seleção de pavimentos e edição em lote"
+    },
+    {
+      "sha": "b37e7fbdb0e22f018f2cd035e4b994ccf36312be",
+      "short_sha": "b37e7fbd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:17:19-03:00",
+      "message": "feat(vigas): aplicar categoria normativa em lote a pavimentos selecionados sem sobrescrever por padrão"
+    },
+    {
+      "sha": "97739e36b6f76cbd033636fef9334262673179ce",
+      "short_sha": "97739e36",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:17:01-03:00",
+      "message": "fix(vigas): usar categoria NBR 8681 explícita do projeto quando trecho não a declarou"
+    },
     {
       "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
       "short_sha": "3580ca6c",
@@ -23,62 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-05T20:48:03-03:00",
       "message": "test(vigas): carga 4,50 apenas com clique; preservar viga sem parede e classificar Gk"
-    },
-    {
-      "sha": "9770255522cd4f0ff50cf143d91dfa4ef521586c",
-      "short_sha": "97702555",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:47:14-03:00",
-      "message": "feat(ui/vigas): mostrar zero real e permitir aplicar alvenaria 4,50 por clique"
-    },
-    {
-      "sha": "24952f360d057d4a13f6079208045a38e7dc3394",
-      "short_sha": "24952f36",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:46:37-03:00",
-      "message": "fix(vigas): permitir alvenaria 4,5 kN/m por declaração explícita mesmo em projeto legado"
-    },
-    {
-      "sha": "5d1f6aeafe4e787f044e0b35f92fa2e0af749d34",
-      "short_sha": "5d1f6aea",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:45:17-03:00",
-      "message": "feat(vigas): aplicar carga de alvenaria do projeto por clique explícito"
-    },
-    {
-      "sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-      "short_sha": "63d3dbda",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:37:52-03:00",
-      "message": "Merge pull request #720 from JGaspar-Eng/fix/vf3-viga-continua-visual-e-categoria-explicita-20261105"
-    },
-    {
-      "sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
-      "short_sha": "6b136b84",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:33:37-03:00",
-      "message": "test(vigas): aceite visual V102 bloqueada e armadura visível após categoria declarada"
-    },
-    {
-      "sha": "b5e19a8c7fbefcfd6affb8503d9ce05fa8941af4",
-      "short_sha": "b5e19a8c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:32:41-03:00",
-      "message": "feat(vigas): substituir falso detalhamento por diagrama de armadura real ou bloqueio corrigível"
-    },
-    {
-      "sha": "3ebeee99898b950175b97688e83fd5aef0d80a25",
-      "short_sha": "3ebeee99",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:29:34-03:00",
-      "message": "fix(vigas): preservar categoria normativa declarada ao criar e editar viga"
-    },
-    {
-      "sha": "fa576b63d209d5869c3a5ccd4ad0c0abfb8cdd2a",
-      "short_sha": "fa576b63",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:16:34-03:00",
-      "message": "Merge pull request #719 from JGaspar-Eng/fix/vf2-v102-memorial-fail-closed-20261105"
     }
   ],
   "development": {
@@ -3832,7 +3832,7 @@
       },
       {
         "name": "test:viga-vf2-diagramas",
-        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs"
+        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs"
       },
       {
         "name": "test:viga-armadura",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42145073201",
-    "run_number": "1246"
+    "run_id": "42156440807",
+    "run_number": "1247"
   }
 }
