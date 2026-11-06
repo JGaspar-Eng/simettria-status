@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-11-06T21:49:16Z",
+  "generated_at": "2026-11-06T22:54:53Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
-    "short_sha": "32814f52",
+    "sha": "c667d94f90f944930534bfee655f97082d06118f",
+    "short_sha": "c667d94f",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T18:45:42-03:00",
-    "message": "Merge pull request #735 from JGaspar-Eng/fix/orq-ui-diagnostico-ligacoes-auto-sem-recadastrar-20261106"
+    "date": "2026-11-06T19:54:33-03:00",
+    "message": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106"
   },
   "commits": [
+    {
+      "sha": "c667d94f90f944930534bfee655f97082d06118f",
+      "short_sha": "c667d94f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:54:33-03:00",
+      "message": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106"
+    },
+    {
+      "sha": "80beb169e36f0445dbd57a229b488914bbddc583",
+      "short_sha": "80beb169",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:48:46-03:00",
+      "message": "fix(ui): distinguir SA-L1 do ORQ e explicar declaração única de carga da viga"
+    },
+    {
+      "sha": "c15ab027c8f3f92bf891f37887ae7d2c0cb6761e",
+      "short_sha": "c15ab027",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:48:14-03:00",
+      "message": "test(vigas): comprovar cadastro unico, idempotencia, zero e snapshot de Gk"
+    },
+    {
+      "sha": "0a0a611c28d619cf1273ffe1071247db176c341f",
+      "short_sha": "0a0a611c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:47:47-03:00",
+      "message": "fix(vigas): registrar a declaração única de valor e natureza na edição, sem recadastro"
+    },
     {
       "sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
       "short_sha": "32814f52",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T18:37:11-03:00",
       "message": "test(orq): incluir diagnóstico de cargas declaradas na suíte oficial"
-    },
-    {
-      "sha": "f892c22bc8740e77c3cd5267f734e5302a8dae65",
-      "short_sha": "f892c22b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:37:08-03:00",
-      "message": "test(orq): diagnóstico com Gk Qk uma vez e sem bloqueio rotacional obsoleto"
-    },
-    {
-      "sha": "31cc3fa8a363480047bfdfa382f9cf8f459789e3",
-      "short_sha": "31cc3fa8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:36:47-03:00",
-      "message": "fix(orq): remover avisos obsoletos de vinculos manuais e articulacoes nao suportadas"
-    },
-    {
-      "sha": "1d06ca5fe956b84ee3bb1abcd2d7744397872cff",
-      "short_sha": "1d06ca5f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:36:44-03:00",
-      "message": "feat(orq): diagnóstico de cobertura reconhece Gk/Qk iniciais e não exige engastes manuais"
-    },
-    {
-      "sha": "9c019e93ce5ab1d86d29bb73e73859481a03d7ed",
-      "short_sha": "9c019e93",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:32:44-03:00",
-      "message": "Merge pull request #621 from JGaspar-Eng/feat/orq-torcao-diagnostico-c1-alternativas-20261027"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42299799181",
-    "run_number": "1302"
+    "run_id": "42308166684",
+    "run_number": "1303"
   }
 }
