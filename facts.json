@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T15:32:13Z",
+  "gerado_em": "2026-11-06T16:04:07Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-    "data": "2026-11-06T15:27:30Z"
+    "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+    "data": "2026-11-06T16:02:39Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
-    "gerado_em": "2026-11-06T13:56:57Z",
+    "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
+    "gerado_em": "2026-11-06T15:31:22Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 7,
-    "idade_horas": 1.6
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.5
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 91,
+        "total_integrados": 92,
         "integrados_recentes": [
+          {
+            "numero": 728,
+            "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
+            "merged_at": "2026-11-06T16:02:40Z",
+            "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+            "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 727,
             "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
@@ -150,34 +160,24 @@
             "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 711,
-            "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
-            "merged_at": "2026-11-05T22:06:12Z",
-            "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
-            "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 727,
-          "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/727",
-          "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-          "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
-          "merged_at": "2026-11-06T15:27:31Z",
+          "numero": 728,
+          "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
+          "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+          "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+          "merged_at": "2026-11-06T16:02:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-          "data": "2026-11-06T12:27:30-03:00",
-          "assunto": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106",
-          "ci": "passou"
+          "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+          "data": "2026-11-06T13:02:39-03:00",
+          "assunto": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
@@ -198,8 +198,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 14,
+        "total_integrados": 15,
         "integrados_recentes": [
+          {
+            "numero": 728,
+            "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
+            "merged_at": "2026-11-06T16:02:40Z",
+            "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+            "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 529,
             "titulo": "feat(escada): Fase B — compatibilidade planar com reserva do trecho",
@@ -207,8 +217,8 @@
             "merged_at": "2026-09-14T21:56:44Z",
             "merge_sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
             "head_sha": "a778d20b29403ef32df264014b85e9f13ab17f01",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 527,
@@ -309,38 +319,28 @@
             "head_sha": "c5133e88d2781978e3569f0cb626587507f12182",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 489,
-            "titulo": "feat(escada): ESCADA-01 — controller de domínio (criar/editar/remover)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/489",
-            "merged_at": "2026-09-11T15:55:17Z",
-            "merge_sha": "8de2232a2a43736d1b1f9ee6c7a88db4c2dd0932",
-            "head_sha": "8b3fb73d5519abe9cc9e524d3a5540e235f12ccd",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 529,
-          "titulo": "feat(escada): Fase B — compatibilidade planar com reserva do trecho",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/529",
-          "merge_sha": "f8a2b2267a7ffd7cf3916a0a85dcab58eb0092f4",
-          "head_sha": "a778d20b29403ef32df264014b85e9f13ab17f01",
-          "merged_at": "2026-09-14T21:56:44Z",
+          "numero": 728,
+          "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
+          "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+          "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+          "merged_at": "2026-11-06T16:02:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "cd9d385096f34ba483f8e630fc8e63ce37a66253",
-          "data": "2026-10-25T12:53:29-03:00",
-          "assunto": "test(escada): verificar limpeza de avaliacao no controlador de exclusao",
-          "ci": "falhou"
+          "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+          "data": "2026-11-06T13:02:39-03:00",
+          "assunto": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -523,7 +523,7 @@
             "merged_at": "2026-11-03T02:45:43Z",
             "merge_sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
             "head_sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1411,8 +1411,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 24,
+        "total_integrados": 25,
         "integrados_recentes": [
+          {
+            "numero": 728,
+            "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
+            "merged_at": "2026-11-06T16:02:40Z",
+            "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+            "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 722,
             "titulo": "VF-3: categoria NBR 8681 declarada no projeto e aplicação por pavimentos",
@@ -1421,7 +1431,7 @@
             "merge_sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
             "head_sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 676,
@@ -1522,38 +1532,28 @@
             "head_sha": "187a3cbd420db7bfd5ca01a9d561d7bcf3481bfc",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 201,
-            "titulo": "test: blinda persistência da categoria NBR 8681 no gate",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/201",
-            "merged_at": "2026-08-28T03:41:46Z",
-            "merge_sha": "f96818603ef4a88b8b474017753a76e2348e58e8",
-            "head_sha": "26df90bbb8c82e81c9b946acf2ca484e9c3f0b20",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 722,
-          "titulo": "VF-3: categoria NBR 8681 declarada no projeto e aplicação por pavimentos",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/722",
-          "merge_sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
-          "head_sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
-          "merged_at": "2026-11-06T03:25:12Z",
+          "numero": 728,
+          "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
+          "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+          "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+          "merged_at": "2026-11-06T16:02:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "6d77ff0924e76441af4dc34b4558804ed16f9e6f",
-          "data": "2026-11-06T00:18:25-03:00",
-          "assunto": "feat(ui/vigas): painel de categoria NBR 8681 com seleção de pavimentos e edição em lote",
+          "sha": "fc56a348a58d9d05d6818748760d3b80775e67bf",
+          "data": "2026-11-06T12:55:17-03:00",
+          "assunto": "fix(ui): diferenciar vigas normais e patamares coincidentes em planta e permitir alternar pelo ID",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1729,7 +1729,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     }
   ],
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 617,
-  "commits_main_analisados": 3110,
+  "janela_prs": 618,
+  "commits_main_analisados": 3116,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

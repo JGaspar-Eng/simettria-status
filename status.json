@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-11-06T15:31:22Z",
+  "generated_at": "2026-11-06T16:02:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-    "short_sha": "8fd7397f",
+    "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+    "short_sha": "2fc17150",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T12:27:30-03:00",
-    "message": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106"
+    "date": "2026-11-06T13:02:39-03:00",
+    "message": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106"
   },
   "commits": [
+    {
+      "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+      "short_sha": "2fc17150",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T13:02:39-03:00",
+      "message": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106"
+    },
+    {
+      "sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
+      "short_sha": "b5afbf67",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:57:46-03:00",
+      "message": "test(vf3): incluir regressão pavimento versus apoio de patamar na suite oficial"
+    },
+    {
+      "sha": "142081cd95e1eadd59aad4f1d9e2d5a681513d58",
+      "short_sha": "142081cd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:57:26-03:00",
+      "message": "test(vf3): distinguir pavimento/patamar sobrepostos e preservar carga ao sincronizar escada"
+    },
+    {
+      "sha": "ec34bab0409716a51a4e2ca2626d3f496bb64084",
+      "short_sha": "ec34bab0",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:55:56-03:00",
+      "message": "fix(2d): distinguir vigas intermediárias de patamar sem deslocar geometria real"
+    },
+    {
+      "sha": "fc56a348a58d9d05d6818748760d3b80775e67bf",
+      "short_sha": "fc56a348",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:55:17-03:00",
+      "message": "fix(ui): diferenciar vigas normais e patamares coincidentes em planta e permitir alternar pelo ID"
+    },
+    {
+      "sha": "b60924826a4fa88bffbc8506e578cf6ce1e08ead",
+      "short_sha": "b6092482",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T12:54:37-03:00",
+      "message": "fix(escada): preservar carga linear extra e origem ao sincronizar viga intermediária existente"
+    },
     {
       "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
       "short_sha": "8fd7397f",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T12:21:01-03:00",
       "message": "test(vf3): carga VB102 2D e painel por mesma identidade, zero explícito, metadados e cobertura"
-    },
-    {
-      "sha": "86fa6d8d32779819a3316278f9fff29bf6763919",
-      "short_sha": "86fa6d8d",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T12:20:23-03:00",
-      "message": "testability(vf3): isolar etiqueta de carga 2D por ID para confronto direto com painel"
-    },
-    {
-      "sha": "1b5fb9042776f24e2f1c0e1086a8b67da8f5faa3",
-      "short_sha": "1b5fb904",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T12:19:35-03:00",
-      "message": "fix(vf3): painel mostra carga por identidade sem zero fictício e oferece aplicação segura da parede"
-    },
-    {
-      "sha": "83d45cbf4ddb8e0a9b772757134373ff94ea00c0",
-      "short_sha": "83d45cbf",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T12:18:47-03:00",
-      "message": "fix(vf3): identificar a viga dona de cada etiqueta de carga no 2D"
-    },
-    {
-      "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
-      "short_sha": "32308307",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:53:44-03:00",
-      "message": "Merge pull request #726 from JGaspar-Eng/fix/vf3-semaforo-parcial-armadura-sem-aprovacao-executiva-20261106"
-    },
-    {
-      "sha": "a1b8bb8f8b7382f5d17cfe8628b9f0547c9335e9",
-      "short_sha": "a1b8bb8f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:48:52-03:00",
-      "message": "test(vf3): adicionar auditoria de status visível de ELU parcial à suíte oficial"
-    },
-    {
-      "sha": "0efe208240edf361e5db24bb51f4dc19c3145ed5",
-      "short_sha": "0efe2082",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:48:36-03:00",
-      "message": "test(vf3): preservar aprovação no motor mas indicar somente ELU parcial na UI"
     }
   ],
   "development": {
@@ -3832,7 +3832,7 @@
       },
       {
         "name": "test:viga-vf2-diagramas",
-        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs && node tests/validar_viga_modal_falha_e_rightbar_vf3.mjs && node tests/validar_viga_transferencia_pontual_modal_vf3.mjs && node tests/validar_viga_status_armadura_parcial_vf3.mjs && node tests/validar_vf3_carga_vb102_painel_2d_id.mjs"
+        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs && node tests/validar_viga_modal_falha_e_rightbar_vf3.mjs && node tests/validar_viga_transferencia_pontual_modal_vf3.mjs && node tests/validar_viga_status_armadura_parcial_vf3.mjs && node tests/validar_vf3_carga_vb102_painel_2d_id.mjs && node tests/validar_vf3_vigas_pavimento_patamar_cotas.mjs"
       },
       {
         "name": "test:viga-armadura",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42243773204",
-    "run_number": "1269"
+    "run_id": "42248661670",
+    "run_number": "1270"
   }
 }
