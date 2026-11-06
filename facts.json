@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T20:50:49Z",
+  "gerado_em": "2026-11-06T21:11:51Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "792180fdd4705b5350b5c915631782806b8b6963",
-    "data": "2026-11-06T17:26:02Z"
+    "sha": "b736348c2c00ef16935c04079435cf2b7e7f4fbc",
+    "data": "2026-11-06T21:10:58Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "792180fdd4705b5350b5c915631782806b8b6963",
-    "gerado_em": "2026-11-06T20:48:06Z",
+    "gerado_em": "2026-11-06T20:49:52Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 21,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -503,7 +503,7 @@
             "merged_at": "2026-11-03T16:25:44Z",
             "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
             "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -513,7 +513,7 @@
             "merged_at": "2026-11-03T14:40:54Z",
             "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
             "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1192,22 +1192,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 731,
-            "titulo": "ORQ: corrigir preflight de cobertura e vínculos no modelo real de cinco níveis",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/731",
-            "rascunho": true,
-            "head_sha": "f74cc1d2bd10dd15fea8d4eae0a8e89b61994d4a",
-            "ci": "passou"
-          },
-          {
-            "numero": 732,
-            "titulo": "ORQ: reconhecer 4,50 kN/m de alvenaria já cadastrados sem segunda confirmação",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/732",
-            "rascunho": true,
-            "head_sha": "de2e2d750d830d43901ad5046336899a9f291bb3",
-            "ci": "passou"
-          },
-          {
             "numero": 621,
             "titulo": "ORQ: diagnóstico da incompatibilidade c1 e alternativas geométricas seguras para torção",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/621",
@@ -1251,8 +1235,28 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 120,
+        "total_integrados": 122,
         "integrados_recentes": [
+          {
+            "numero": 732,
+            "titulo": "ORQ: reconhecer 4,50 kN/m de alvenaria já cadastrados sem segunda confirmação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/732",
+            "merged_at": "2026-11-06T21:10:58Z",
+            "merge_sha": "b736348c2c00ef16935c04079435cf2b7e7f4fbc",
+            "head_sha": "de2e2d750d830d43901ad5046336899a9f291bb3",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
+          {
+            "numero": 731,
+            "titulo": "ORQ: corrigir preflight de cobertura e vínculos no modelo real de cinco níveis",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/731",
+            "merged_at": "2026-11-06T21:10:52Z",
+            "merge_sha": "8b49248a6cca0003386bb723026649199f99e995",
+            "head_sha": "f74cc1d2bd10dd15fea8d4eae0a8e89b61994d4a",
+            "ci_pr": "passou",
+            "ci_merge": "sem_evidencia"
+          },
           {
             "numero": 711,
             "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
@@ -1261,7 +1265,7 @@
             "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
             "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 698,
@@ -1290,7 +1294,7 @@
             "merged_at": "2026-11-03T16:25:44Z",
             "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
             "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1300,7 +1304,7 @@
             "merged_at": "2026-11-03T14:40:54Z",
             "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
             "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1352,48 +1356,28 @@
             "head_sha": "e9fa82393295424c1d87948ca96d216ceb3e4ad8",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 650,
-            "titulo": "fix(orq): permitir classificação sequencial dos quatro grupos sem reabrir janela",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/650",
-            "merged_at": "2026-10-30T12:09:30Z",
-            "merge_sha": "06af06f407497d55aac88585fb93eb10213fc597",
-            "head_sha": "ac7cbcfa1f9643ffe8fd491f4dbf0ab5d0553ee7",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 649,
-            "titulo": "fix(orq): auditoria deve reconhecer Gk/Qk por origem em qualquer projeto",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/649",
-            "merged_at": "2026-10-30T11:55:44Z",
-            "merge_sha": "4e452a9c5fb0fe73f54a30cbfea4c0e369c62b78",
-            "head_sha": "eddc8e849bf92ffca46ff95c6d9d543477d8f41a",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 711,
-          "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
-          "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
-          "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
-          "merged_at": "2026-11-05T22:06:12Z",
+          "numero": 732,
+          "titulo": "ORQ: reconhecer 4,50 kN/m de alvenaria já cadastrados sem segunda confirmação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/732",
+          "merge_sha": "b736348c2c00ef16935c04079435cf2b7e7f4fbc",
+          "head_sha": "de2e2d750d830d43901ad5046336899a9f291bb3",
+          "merged_at": "2026-11-06T21:10:58Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "4aa40a566244022609859b40448104d6b1df7f0e",
-          "data": "2026-11-05T14:27:38-03:00",
-          "assunto": "ci(det10): executar teste de integracao do formulário dentro do inspetor ORQ real",
+          "sha": "2c5bede6bbe6989d65c85c5f3cbf35c4c5bbfeea",
+          "data": "2026-11-06T14:47:54-03:00",
+          "assunto": "test(orq): regredir identificacao explicita do reservatorio sem mutacao",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1751,7 +1735,6 @@
   ],
   "nao_classificados": {
     "abertos": [
-      730,
       576,
       561,
       553,
@@ -1763,6 +1746,7 @@
       310
     ],
     "integrados_recentes": [
+      730,
       725,
       691,
       690,
@@ -1781,14 +1765,13 @@
       537,
       536,
       535,
-      533,
-      469
+      533
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 622,
-  "commits_main_analisados": 3126,
+  "commits_main_analisados": 3130,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

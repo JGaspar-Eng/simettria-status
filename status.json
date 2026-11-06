@@ -1,15 +1,43 @@
 {
-  "generated_at": "2026-11-06T20:49:52Z",
+  "generated_at": "2026-11-06T21:11:04Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "792180fdd4705b5350b5c915631782806b8b6963",
-    "short_sha": "792180fd",
+    "sha": "7a65cc96c2a6bf4460de94bbd39a22e5cd3c32e7",
+    "short_sha": "7a65cc96",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T14:26:02-03:00",
-    "message": "Merge pull request #729 from JGaspar-Eng/fix/vf3-etiquetas-carga-patamar-3d-20261106"
+    "date": "2026-11-06T18:10:44-03:00",
+    "message": "Merge pull request #730 from JGaspar-Eng/fix/vf3-nivel-tecnico-explicito-20261106"
   },
   "commits": [
+    {
+      "sha": "7a65cc96c2a6bf4460de94bbd39a22e5cd3c32e7",
+      "short_sha": "7a65cc96",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T18:10:44-03:00",
+      "message": "Merge pull request #730 from JGaspar-Eng/fix/vf3-nivel-tecnico-explicito-20261106"
+    },
+    {
+      "sha": "2c5bede6bbe6989d65c85c5f3cbf35c4c5bbfeea",
+      "short_sha": "2c5bede6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T14:47:54-03:00",
+      "message": "test(orq): regredir identificacao explicita do reservatorio sem mutacao"
+    },
+    {
+      "sha": "474819b2864bf57ff2d6a4fd8e4e14306cb08a72",
+      "short_sha": "474819b2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T14:47:47-03:00",
+      "message": "fix(orq): emitir diagnostico fiel do nivel tecnico declarado"
+    },
+    {
+      "sha": "ee807a66a2b488629650eccbdda3af3ec271b68a",
+      "short_sha": "ee807a66",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T14:47:45-03:00",
+      "message": "fix(orq): reconhecer nivel tecnico configurado em projeto de cinco pavimentos"
+    },
     {
       "sha": "792180fdd4705b5350b5c915631782806b8b6963",
       "short_sha": "792180fd",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T14:16:30-03:00",
       "message": "VF-3: legenda persistente e identificacao por ID e cota das vigas de patamar no 3D"
-    },
-    {
-      "sha": "3730e4a2c8735d92b681364a3c0886c011983857",
-      "short_sha": "3730e4a2",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:15:58-03:00",
-      "message": "VF-3: destacar em âmbar apenas as vigas de patamar no modelo Babylon 3D"
-    },
-    {
-      "sha": "6b943cbf037962d8f96bcaec8b79f18776d41146",
-      "short_sha": "6b943cbf",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:15:15-03:00",
-      "message": "VF-3: separar etiquetas coincidentes por ID, cota e faixa visual"
-    },
-    {
-      "sha": "9c11969154053535fa1f01408f500cd6fb19eb2c",
-      "short_sha": "9c119691",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:14:22-03:00",
-      "message": "VF-3: introduzir layout puro de etiquetas e identidade fisica do patamar 3D"
-    },
-    {
-      "sha": "4ce3c4acdc587bed17cca014e0d56ffb67e8b2ac",
-      "short_sha": "4ce3c4ac",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T14:14:20-03:00",
-      "message": "VF-3: introduzir layout puro de etiquetas e identidade fisica do patamar 3D"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42291604472",
-    "run_number": "1285"
+    "run_id": "42294562105",
+    "run_number": "1286"
   }
 }
