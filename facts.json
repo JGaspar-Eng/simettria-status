@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T03:29:45Z",
+  "gerado_em": "2026-11-06T03:51:00Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
-    "data": "2026-11-06T03:25:12Z"
+    "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
+    "data": "2026-11-06T03:49:37Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
-    "gerado_em": "2026-11-06T03:27:11Z",
+    "gerado_em": "2026-11-06T03:28:53Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 9,
+    "idade_horas": 0.4
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 89,
+        "total_integrados": 90,
         "integrados_recentes": [
+          {
+            "numero": 723,
+            "titulo": "VF-3: alvenaria 4,50 kN/m em lote por pavimentos com exceções e seleção do nível técnico",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/723",
+            "merged_at": "2026-11-06T03:49:38Z",
+            "merge_sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
+            "head_sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 721,
             "titulo": "VF-3: aplicar alvenaria 4,50 kN/m na viga por confirmação visual",
@@ -49,7 +59,7 @@
             "merge_sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
             "head_sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 720,
@@ -150,38 +160,28 @@
             "head_sha": "e7f199741c1dce5c8550a7b8b13eb060fbac3c65",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 709,
-            "titulo": "VIGA-DET-09: cadastro guiado de geometria física e origem de ancoragens com recálculo seguro",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/709",
-            "merged_at": "2026-11-05T17:24:52Z",
-            "merge_sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
-            "head_sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
           }
         ],
         "ultimo": {
-          "numero": 721,
-          "titulo": "VF-3: aplicar alvenaria 4,50 kN/m na viga por confirmação visual",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/721",
-          "merge_sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
-          "head_sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
-          "merged_at": "2026-11-05T23:52:32Z",
+          "numero": 723,
+          "titulo": "VF-3: alvenaria 4,50 kN/m em lote por pavimentos com exceções e seleção do nível técnico",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/723",
+          "merge_sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
+          "head_sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
+          "merged_at": "2026-11-06T03:49:38Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
-          "data": "2026-11-06T00:21:16-03:00",
-          "assunto": "test(vigas): executar regressão categoria de uso lote na suíte oficial",
-          "ci": "passou"
+          "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
+          "data": "2026-11-06T00:49:37-03:00",
+          "assunto": "Merge pull request #723 from JGaspar-Eng/feat/vf3-alvenaria-lote-pavimentos-vigas-tecnico-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1170,14 +1170,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
-          "data": "2026-11-05T20:33:37-03:00",
-          "assunto": "test(vigas): aceite visual V102 bloqueada e armadura visível após categoria declarada",
-          "ci": "passou"
+          "sha": "7e14d2c822202b6b50ca38344d27cec2e520debc",
+          "data": "2026-11-06T00:39:30-03:00",
+          "assunto": "fix(vigas): remover rótulo APROVADO do desenho de armadura ainda preliminar",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 612,
-  "commits_main_analisados": 3078,
+  "janela_prs": 613,
+  "commits_main_analisados": 3087,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

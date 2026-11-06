@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-06T03:28:53Z",
+  "generated_at": "2026-11-06T03:49:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
-    "short_sha": "e3a8423a",
+    "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
+    "short_sha": "397f9417",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T00:25:12-03:00",
-    "message": "Merge pull request #722 from JGaspar-Eng/feat/vf3-categoria-projeto-lote-pavimentos-20261106"
+    "date": "2026-11-06T00:49:37-03:00",
+    "message": "Merge pull request #723 from JGaspar-Eng/feat/vf3-alvenaria-lote-pavimentos-vigas-tecnico-20261106"
   },
   "commits": [
+    {
+      "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
+      "short_sha": "397f9417",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:49:37-03:00",
+      "message": "Merge pull request #723 from JGaspar-Eng/feat/vf3-alvenaria-lote-pavimentos-vigas-tecnico-20261106"
+    },
+    {
+      "sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
+      "short_sha": "8441c857",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:44:07-03:00",
+      "message": "test(vigas): avaliar ELU após restaurar fixture do Graph global sem geometria parcial"
+    },
+    {
+      "sha": "4e8bbd691d473d5219b76c78a8f7e713fc0b703f",
+      "short_sha": "4e8bbd69",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:41:45-03:00",
+      "message": "test(vigas): integrar regressão de alvenaria em lote à suíte oficial"
+    },
+    {
+      "sha": "a456924c2ea23f99d55df8bb3832ac6d8189214a",
+      "short_sha": "a456924c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:41:31-03:00",
+      "message": "fix(vigas): idempotência do lote mantém ok=false quando nada resta a alterar"
+    },
+    {
+      "sha": "7a5c5ce491cac9bb885dbdc542b661a66b1bf322",
+      "short_sha": "7a5c5ce4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:41:07-03:00",
+      "message": "test(vigas): validar lote 4,5 kN/m por pavimentos, exclusões e nível técnico individual"
+    },
+    {
+      "sha": "83aa27747d4f2e251e7ef3f9b3436ce1b9e70cc3",
+      "short_sha": "83aa2774",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:39:59-03:00",
+      "message": "style(vigas): controles de lote recolhíveis e seleção de vigas por nível técnico"
+    },
+    {
+      "sha": "7e14d2c822202b6b50ca38344d27cec2e520debc",
+      "short_sha": "7e14d2c8",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:39:30-03:00",
+      "message": "fix(vigas): remover rótulo APROVADO do desenho de armadura ainda preliminar"
+    },
+    {
+      "sha": "006662a2a040756d6a36950372f446c0d6ac8805",
+      "short_sha": "006662a2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:38:58-03:00",
+      "message": "feat(ui/vigas): alvenaria em lote por pavimento com exclusões e escolha individual no nível técnico; priorizar desenho"
+    },
+    {
+      "sha": "35261014bc8260c463fda8788546bf03909b0b51",
+      "short_sha": "35261014",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T00:37:44-03:00",
+      "message": "feat(vigas): carga de alvenaria em lote por pavimentos com exceções e vigas técnicas explícitas"
+    },
     {
       "sha": "e3a8423a522916c569b57bd19745e515efd53ef1",
       "short_sha": "e3a8423a",
       "author": "Joanez Gaspar",
       "date": "2026-11-06T00:25:12-03:00",
       "message": "Merge pull request #722 from JGaspar-Eng/feat/vf3-categoria-projeto-lote-pavimentos-20261106"
-    },
-    {
-      "sha": "fbb77f4a468db3ac239e7d63ec6ad168b4929c46",
-      "short_sha": "fbb77f4a",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:21:16-03:00",
-      "message": "test(vigas): executar regressão categoria de uso lote na suíte oficial"
-    },
-    {
-      "sha": "791a872336a582cb1f2bbe1184c122fa5dc39931",
-      "short_sha": "791a8723",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:21:04-03:00",
-      "message": "test(vigas): fallback declarado do projeto e aplicação seletiva em múltiplos pavimentos"
-    },
-    {
-      "sha": "5b791555d8468360a86ca6af5b8f999c44e99326",
-      "short_sha": "5b791555",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:20:18-03:00",
-      "message": "fix(ui/vigas): explicar categoria herdada do projeto e evitar solicitação duplicada"
-    },
-    {
-      "sha": "5ea8bc7684b35b9e2ec2df54a840415174175c7d",
-      "short_sha": "5ea8bc76",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:19:15-03:00",
-      "message": "feat(vigas): rastrear origem da categoria de uso no cálculo e memorial"
-    },
-    {
-      "sha": "6d77ff0924e76441af4dc34b4558804ed16f9e6f",
-      "short_sha": "6d77ff09",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:18:25-03:00",
-      "message": "feat(ui/vigas): painel de categoria NBR 8681 com seleção de pavimentos e edição em lote"
-    },
-    {
-      "sha": "b37e7fbdb0e22f018f2cd035e4b994ccf36312be",
-      "short_sha": "b37e7fbd",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:17:19-03:00",
-      "message": "feat(vigas): aplicar categoria normativa em lote a pavimentos selecionados sem sobrescrever por padrão"
-    },
-    {
-      "sha": "97739e36b6f76cbd033636fef9334262673179ce",
-      "short_sha": "97739e36",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:17:01-03:00",
-      "message": "fix(vigas): usar categoria NBR 8681 explícita do projeto quando trecho não a declarou"
-    },
-    {
-      "sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
-      "short_sha": "3580ca6c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:52:32-03:00",
-      "message": "Merge pull request #721 from JGaspar-Eng/fix/vf3-alvenaria-explicita-sincronizacao-20261105"
-    },
-    {
-      "sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
-      "short_sha": "28501ac8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-05T20:48:03-03:00",
-      "message": "test(vigas): carga 4,50 apenas com clique; preservar viga sem parede e classificar Gk"
     }
   ],
   "development": {
@@ -3832,7 +3832,7 @@
       },
       {
         "name": "test:viga-vf2-diagramas",
-        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs"
+        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs"
       },
       {
         "name": "test:viga-armadura",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42156751867",
-    "run_number": "1250"
+    "run_id": "42158855093",
+    "run_number": "1251"
   }
 }
