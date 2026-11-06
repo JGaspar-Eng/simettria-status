@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-11-06T23:01:33Z",
+  "generated_at": "2026-11-06T23:03:11Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
-    "short_sha": "0afd170b",
+    "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+    "short_sha": "225e8951",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T19:58:34-03:00",
-    "message": "Merge pull request #737 from JGaspar-Eng/fix/orq-inventario-proveniencia-real-sem-recadastro-20261106"
+    "date": "2026-11-06T20:02:48-03:00",
+    "message": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106"
   },
   "commits": [
+    {
+      "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+      "short_sha": "225e8951",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:02:48-03:00",
+      "message": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106"
+    },
+    {
+      "sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+      "short_sha": "a0b0cc34",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:59:15-03:00",
+      "message": "test(2d): manter identidade patamar e nome com natureza do carregamento"
+    },
     {
       "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
       "short_sha": "0afd170b",
       "author": "Joanez Gaspar",
       "date": "2026-11-06T19:58:34-03:00",
       "message": "Merge pull request #737 from JGaspar-Eng/fix/orq-inventario-proveniencia-real-sem-recadastro-20261106"
+    },
+    {
+      "sha": "818a5ea80f23ce15bf5d6ee33b9676b3141c5fe5",
+      "short_sha": "818a5ea8",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T19:55:44-03:00",
+      "message": "test(vigas): rotulo 2D mostra natureza da propria viga sem copiar da vizinha"
     },
     {
       "sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
@@ -32,53 +53,32 @@
       "message": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106"
     },
     {
-      "sha": "57cfaf71e55386754e6ea0621f376ccfa485e9d1",
-      "short_sha": "57cfaf71",
+      "sha": "3608a48eee1cf1700e0a0150421f6239429e7a51",
+      "short_sha": "3608a48e",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:50:24-03:00",
-      "message": "test(orq): origem das cargas pendentes sem mudar classificação cadastrada"
+      "date": "2026-11-06T19:53:56-03:00",
+      "message": "test(orq): executar verificacao auditavel dos rotulos Gk Qk e ligacoes"
     },
     {
-      "sha": "e2badcdbee43a740f695ba7136416e66500bca4a",
-      "short_sha": "e2badcdb",
+      "sha": "7987a1c1ab29f5d4d188badf200ffdbec0042edb",
+      "short_sha": "7987a1c1",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:50:00-03:00",
-      "message": "feat(ui): informar se pendencia vem de preset, desclassificacao ou falta de origem"
+      "date": "2026-11-06T19:53:53-03:00",
+      "message": "test(orq): diagnosticos de ligacoes e rotulos 2D sem avisos desatualizados"
     },
     {
-      "sha": "bd0cef1d55ce1de5435af3e2e57f6acb187e9155",
-      "short_sha": "bd0cef1d",
+      "sha": "729ee629ebcc3bc4fab70c291c3643abc8b64369",
+      "short_sha": "729ee629",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:49:43-03:00",
-      "message": "feat(orq): discriminar origem das cargas ainda pendentes no inventario"
+      "date": "2026-11-06T19:53:22-03:00",
+      "message": "feat(2d): mostrar Gk/Qk cadastrado sem prometer carga ou ELU comprovados"
     },
     {
-      "sha": "80beb169e36f0445dbd57a229b488914bbddc583",
-      "short_sha": "80beb169",
+      "sha": "8d6b7f0616c5913d6f51bebccb9f3cf40127bd20",
+      "short_sha": "8d6b7f06",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:48:46-03:00",
-      "message": "fix(ui): distinguir SA-L1 do ORQ e explicar declaração única de carga da viga"
-    },
-    {
-      "sha": "c15ab027c8f3f92bf891f37887ae7d2c0cb6761e",
-      "short_sha": "c15ab027",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:48:14-03:00",
-      "message": "test(vigas): comprovar cadastro unico, idempotencia, zero e snapshot de Gk"
-    },
-    {
-      "sha": "0a0a611c28d619cf1273ffe1071247db176c341f",
-      "short_sha": "0a0a611c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:47:47-03:00",
-      "message": "fix(vigas): registrar a declaração única de valor e natureza na edição, sem recadastro"
-    },
-    {
-      "sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
-      "short_sha": "32814f52",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T18:45:42-03:00",
-      "message": "Merge pull request #735 from JGaspar-Eng/fix/orq-ui-diagnostico-ligacoes-auto-sem-recadastrar-20261106"
+      "date": "2026-11-06T19:52:29-03:00",
+      "message": "fix(orq): auditoria reconhece ligações automáticas e articulações já suportadas"
     }
   ],
   "development": {
@@ -3160,7 +3160,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42308953497",
-    "run_number": "1308"
+    "run_id": "42309141813",
+    "run_number": "1309"
   }
 }

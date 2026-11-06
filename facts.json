@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T23:02:37Z",
+  "gerado_em": "2026-11-06T23:04:27Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
-    "data": "2026-11-06T22:58:34Z"
+    "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+    "data": "2026-11-06T23:02:48Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "c667d94f90f944930534bfee655f97082d06118f",
-    "gerado_em": "2026-11-06T22:58:45Z",
+    "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
+    "gerado_em": "2026-11-06T23:01:33Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 5,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -28,14 +28,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 738,
-            "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
-            "rascunho": true,
-            "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
-            "ci": "pendente"
-          },
-          {
             "numero": 549,
             "titulo": "SIM-5: declaração guiada da continuidade das vigas conectadas",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/549",
@@ -47,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 95,
+        "total_integrados": 96,
         "integrados_recentes": [
+          {
+            "numero": 738,
+            "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
+            "merged_at": "2026-11-06T23:02:49Z",
+            "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+            "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 736,
             "titulo": "Vigas: registrar uma só vez valor e natureza da carga na edição",
@@ -57,7 +59,7 @@
             "merge_sha": "c667d94f90f944930534bfee655f97082d06118f",
             "head_sha": "80beb169e36f0445dbd57a229b488914bbddc583",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 733,
@@ -158,38 +160,28 @@
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 716,
-            "titulo": "VIGAS-VF-2: carga linear ausente não gera diagrama de esforço nulo",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/716",
-            "merged_at": "2026-11-05T22:31:22Z",
-            "merge_sha": "fa3db879ab42dab93ef32f6b9514d66b43cc407d",
-            "head_sha": "60ebd771ee7bc9e90f089557f43c553928a8617a",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 736,
-          "titulo": "Vigas: registrar uma só vez valor e natureza da carga na edição",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/736",
-          "merge_sha": "c667d94f90f944930534bfee655f97082d06118f",
-          "head_sha": "80beb169e36f0445dbd57a229b488914bbddc583",
-          "merged_at": "2026-11-06T22:54:34Z",
+          "numero": 738,
+          "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
+          "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+          "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+          "merged_at": "2026-11-06T23:02:49Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "c667d94f90f944930534bfee655f97082d06118f",
-          "data": "2026-11-06T19:54:33-03:00",
-          "assunto": "Merge pull request #736 from JGaspar-Eng/fix/orq-vigas-edicao-carga-proveniencia-20261106",
-          "ci": "passou"
+          "sha": "818a5ea80f23ce15bf5d6ee33b9676b3141c5fe5",
+          "data": "2026-11-06T19:55:44-03:00",
+          "assunto": "test(vigas): rotulo 2D mostra natureza da propria viga sem copiar da vizinha",
+          "ci": "falhou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1200,14 +1192,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 738,
-            "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
-            "rascunho": true,
-            "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
-            "ci": "pendente"
-          },
-          {
             "numero": 739,
             "titulo": "Normas: avisar NBR 8681:2025 e NBR 6118:2026 sem alterar coeficientes legados",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/739",
@@ -1251,8 +1235,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 127,
+        "total_integrados": 128,
         "integrados_recentes": [
+          {
+            "numero": 738,
+            "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
+            "merged_at": "2026-11-06T23:02:49Z",
+            "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+            "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 737,
             "titulo": "ORQ: exibir a causa real das cargas pendentes sem solicitar novo cadastro",
@@ -1261,7 +1255,7 @@
             "merge_sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
             "head_sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 736,
@@ -1271,7 +1265,7 @@
             "merge_sha": "c667d94f90f944930534bfee655f97082d06118f",
             "head_sha": "80beb169e36f0445dbd57a229b488914bbddc583",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 735,
@@ -1362,34 +1356,24 @@
             "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 680,
-            "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
-            "merged_at": "2026-11-03T14:40:54Z",
-            "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-            "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 737,
-          "titulo": "ORQ: exibir a causa real das cargas pendentes sem solicitar novo cadastro",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/737",
-          "merge_sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
-          "head_sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
-          "merged_at": "2026-11-06T22:58:34Z",
+          "numero": 738,
+          "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
+          "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+          "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
+          "merged_at": "2026-11-06T23:02:49Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
-          "data": "2026-11-06T19:58:34-03:00",
-          "assunto": "Merge pull request #737 from JGaspar-Eng/fix/orq-inventario-proveniencia-real-sem-recadastro-20261106",
-          "ci": "passou"
+          "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
+          "data": "2026-11-06T20:02:48-03:00",
+          "assunto": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
@@ -1784,7 +1768,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 629,
-  "commits_main_analisados": 3178,
+  "commits_main_analisados": 3185,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
