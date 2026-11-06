@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T23:09:12Z",
+  "gerado_em": "2026-11-06T23:11:23Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-    "data": "2026-11-06T23:08:06Z"
+    "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+    "data": "2026-11-06T23:10:06Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
     "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
     "gerado_em": "2026-11-06T23:06:07Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 5,
+    "defasagem_commits_main": 9,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -25,22 +25,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 97,
+        "integrados_recentes": [
           {
             "numero": 741,
             "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
-            "rascunho": true,
+            "merged_at": "2026-11-06T23:10:06Z",
+            "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
             "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
-            "ci": "pendente"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 96,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 738,
             "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
@@ -49,7 +50,7 @@
             "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
             "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 736,
@@ -150,38 +151,28 @@
             "head_sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 717,
-            "titulo": "VIGAS-VF-2: bloquear pontos M/V incompletos antes de dimensionar armadura",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/717",
-            "merged_at": "2026-11-05T22:46:52Z",
-            "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
-            "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 738,
-          "titulo": "Vigas: alinhar auditoria e rótulos 2D ao cálculo automático de ligações",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/738",
-          "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-          "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
-          "merged_at": "2026-11-06T23:02:49Z",
+          "numero": 741,
+          "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
+          "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+          "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
+          "merged_at": "2026-11-06T23:10:06Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "818a5ea80f23ce15bf5d6ee33b9676b3141c5fe5",
-          "data": "2026-11-06T19:55:44-03:00",
-          "assunto": "test(vigas): rotulo 2D mostra natureza da propria viga sem copiar da vizinha",
-          "ci": "falhou"
+          "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+          "data": "2026-11-06T20:10:06-03:00",
+          "assunto": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -483,7 +474,7 @@
             "merged_at": "2026-11-04T15:39:24Z",
             "merge_sha": "2f7e636b02e316e66a7dabad15d0109e475c624b",
             "head_sha": "d0b3e611f66c5ddecf9ebba23a124c12ecea5a17",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1192,14 +1183,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 741,
-            "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
-            "rascunho": true,
-            "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
-            "ci": "pendente"
-          },
-          {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
@@ -1235,8 +1218,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 129,
+        "total_integrados": 130,
         "integrados_recentes": [
+          {
+            "numero": 741,
+            "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
+            "merged_at": "2026-11-06T23:10:06Z",
+            "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+            "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 740,
             "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
@@ -1255,7 +1248,7 @@
             "merge_sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
             "head_sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 737,
@@ -1346,33 +1339,23 @@
             "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 695,
-            "titulo": "SIMETTRIA: impedir uso executivo sem exequibilidade comprovada e memorial descritivo de obra",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/695",
-            "merged_at": "2026-11-04T16:50:43Z",
-            "merge_sha": "f485acfa537f6482931e5439d33256aeae3ff899",
-            "head_sha": "4f7f0725cdbe6894e62f88f8ac93d45ce050f8ae",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 740,
-          "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
-          "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-          "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
-          "merged_at": "2026-11-06T23:08:07Z",
+          "numero": 741,
+          "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
+          "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+          "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
+          "merged_at": "2026-11-06T23:10:06Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-          "data": "2026-11-06T20:08:06-03:00",
-          "assunto": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106",
+          "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+          "data": "2026-11-06T20:10:06-03:00",
+          "assunto": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106",
           "ci": "pendente"
         }
       },
@@ -1721,7 +1704,6 @@
     "abertos": [
       561,
       553,
-      551,
       310
     ],
     "integrados_recentes": [
@@ -1750,7 +1732,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 631,
-  "commits_main_analisados": 3190,
+  "commits_main_analisados": 3194,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

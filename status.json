@@ -1,21 +1,49 @@
 {
-  "generated_at": "2026-11-06T23:08:29Z",
+  "generated_at": "2026-11-06T23:10:27Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-    "short_sha": "2828f27f",
+    "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+    "short_sha": "74f4f9ad",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T20:08:06-03:00",
-    "message": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106"
+    "date": "2026-11-06T20:10:06-03:00",
+    "message": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106"
   },
   "commits": [
+    {
+      "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
+      "short_sha": "74f4f9ad",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:10:06-03:00",
+      "message": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106"
+    },
     {
       "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
       "short_sha": "2828f27f",
       "author": "Joanez Gaspar",
       "date": "2026-11-06T20:08:06-03:00",
       "message": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106"
+    },
+    {
+      "sha": "62e8907317a047c4a58a366ebe977985190c4071",
+      "short_sha": "62e89073",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:05:11-03:00",
+      "message": "test(vigas): impedir falsa desclassificacao e rotular apenas origem registrada"
+    },
+    {
+      "sha": "c84fb659711d02f8b401f9be3ab35a9b6dc68013",
+      "short_sha": "c84fb659",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:04:52-03:00",
+      "message": "feat(ui): distinguir platibanda e alvenaria somente quando origem estiver registrada"
+    },
+    {
+      "sha": "593f596a87c3b4ace0b7f39cdcc16f4d0f15ec7f",
+      "short_sha": "593f596a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T20:04:42-03:00",
+      "message": "fix(vigas): registrar desclassificacao apenas quando houve classe anterior"
     },
     {
       "sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
@@ -51,34 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T20:02:48-03:00",
       "message": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106"
-    },
-    {
-      "sha": "a0b0cc3484c8af2000d14a371d3179c7b1c71755",
-      "short_sha": "a0b0cc34",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:59:15-03:00",
-      "message": "test(2d): manter identidade patamar e nome com natureza do carregamento"
-    },
-    {
-      "sha": "0afd170b2f0c34ad0dbe2d32d21d5fa97b009bc6",
-      "short_sha": "0afd170b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:58:34-03:00",
-      "message": "Merge pull request #737 from JGaspar-Eng/fix/orq-inventario-proveniencia-real-sem-recadastro-20261106"
-    },
-    {
-      "sha": "818a5ea80f23ce15bf5d6ee33b9676b3141c5fe5",
-      "short_sha": "818a5ea8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:55:44-03:00",
-      "message": "test(vigas): rotulo 2D mostra natureza da propria viga sem copiar da vizinha"
-    },
-    {
-      "sha": "757d0a40a42b62fea852e68a05d1f4dd948f02d7",
-      "short_sha": "757d0a40",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T19:55:13-03:00",
-      "message": "fix(browser): preservar contrato do texto do grupo concluido sem perder origem"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42309792385",
-    "run_number": "1315"
+    "run_id": "42309994722",
+    "run_number": "1318"
   }
 }
