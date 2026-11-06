@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T21:36:47Z",
+  "gerado_em": "2026-11-06T21:47:06Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "9c019e93ce5ab1d86d29bb73e73859481a03d7ed",
-    "data": "2026-11-06T21:32:44Z"
+    "sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
+    "data": "2026-11-06T21:45:42Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "9c019e93ce5ab1d86d29bb73e73859481a03d7ed",
-    "gerado_em": "2026-11-06T21:33:04Z",
+    "gerado_em": "2026-11-06T21:35:36Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 9,
+    "idade_horas": 0.2
   },
   "frentes": [
     {
@@ -1192,14 +1192,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 734,
-            "titulo": "test(browser): substituir contagens 40/333 por modelo real atual em testes ORQ e vento",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/734",
-            "rascunho": true,
-            "head_sha": "74ae3d76053ab0bf5eb78ecb80a9aaecc5bd2a38",
-            "ci": "pendente"
-          },
-          {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
@@ -1235,8 +1227,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 124,
+        "total_integrados": 125,
         "integrados_recentes": [
+          {
+            "numero": 735,
+            "titulo": "ORQ: eliminar avisos obsoletos de engastes e modernizar testes do modelo real",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/735",
+            "merged_at": "2026-11-06T21:45:42Z",
+            "merge_sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
+            "head_sha": "5c651d81de112c10acb5a89e1cc3b20cac4c153b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 621,
             "titulo": "ORQ: diagnóstico da incompatibilidade c1 e alternativas geométricas seguras para torção",
@@ -1245,7 +1247,7 @@
             "merge_sha": "9c019e93ce5ab1d86d29bb73e73859481a03d7ed",
             "head_sha": "0b167defa7b2c195e0150d029dc09b8c8709a515",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 733,
@@ -1346,38 +1348,28 @@
             "head_sha": "7291297cb58ed94507647b5fcf499305254ce27c",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 654,
-            "titulo": "fix(orq): eliminar falso '8 ELU pendentes' e distinguir 18 blocos de sapatas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/654",
-            "merged_at": "2026-10-30T17:11:33Z",
-            "merge_sha": "844ede86220047bf01fff9dc3f0636df591a8c3d",
-            "head_sha": "efed07fe2a149c4b06069fdd4d3290b18036ac57",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 621,
-          "titulo": "ORQ: diagnóstico da incompatibilidade c1 e alternativas geométricas seguras para torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/621",
-          "merge_sha": "9c019e93ce5ab1d86d29bb73e73859481a03d7ed",
-          "head_sha": "0b167defa7b2c195e0150d029dc09b8c8709a515",
-          "merged_at": "2026-11-06T21:32:45Z",
+          "numero": 735,
+          "titulo": "ORQ: eliminar avisos obsoletos de engastes e modernizar testes do modelo real",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/735",
+          "merge_sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
+          "head_sha": "5c651d81de112c10acb5a89e1cc3b20cac4c153b",
+          "merged_at": "2026-11-06T21:45:42Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "9c019e93ce5ab1d86d29bb73e73859481a03d7ed",
-          "data": "2026-11-06T18:32:44-03:00",
-          "assunto": "Merge pull request #621 from JGaspar-Eng/feat/orq-torcao-diagnostico-c1-alternativas-20261027",
-          "ci": "passou"
+          "sha": "32814f52d33857d2cdec12eaa2d412112d6c2144",
+          "data": "2026-11-06T18:45:42-03:00",
+          "assunto": "Merge pull request #735 from JGaspar-Eng/fix/orq-ui-diagnostico-ligacoes-auto-sem-recadastrar-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1727,7 +1719,6 @@
   ],
   "nao_classificados": {
     "abertos": [
-      576,
       561,
       553,
       552,
@@ -1762,8 +1753,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 624,
-  "commits_main_analisados": 3160,
+  "janela_prs": 625,
+  "commits_main_analisados": 3169,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
