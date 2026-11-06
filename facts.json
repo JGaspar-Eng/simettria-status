@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T16:07:51Z",
+  "gerado_em": "2026-11-06T17:27:29Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
-    "data": "2026-11-06T16:02:39Z"
+    "sha": "792180fdd4705b5350b5c915631782806b8b6963",
+    "data": "2026-11-06T17:26:02Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-    "gerado_em": "2026-11-06T15:31:22Z",
+    "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
+    "gerado_em": "2026-11-06T16:06:37Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 6,
-    "idade_horas": 0.6
+    "defasagem_commits_main": 10,
+    "idade_horas": 1.3
   },
   "frentes": [
     {
@@ -39,8 +39,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 92,
+        "total_integrados": 93,
         "integrados_recentes": [
+          {
+            "numero": 729,
+            "titulo": "VF-3: separar etiquetas coincidentes e destacar vigas de patamar no 3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/729",
+            "merged_at": "2026-11-06T17:26:02Z",
+            "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
+            "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 728,
             "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
@@ -150,34 +160,24 @@
             "head_sha": "31569c1521c7d04366518282a3fd8b676600aca4",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 712,
-            "titulo": "VIGAS-VF-0: cronograma fechado e sincronização do painel de desenvolvimento",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/712",
-            "merged_at": "2026-11-05T22:13:30Z",
-            "merge_sha": "877ef8c0df910aad2ed27087ae0c6cf865a943f5",
-            "head_sha": "e20346298ec71535448e1f12d17f3d53523e5f2d",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 728,
-          "titulo": "VF-3: distinguir viga normal e apoio intermediário de patamar na mesma projeção 2D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/728",
-          "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
-          "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
-          "merged_at": "2026-11-06T16:02:40Z",
+          "numero": 729,
+          "titulo": "VF-3: separar etiquetas coincidentes e destacar vigas de patamar no 3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/729",
+          "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
+          "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
+          "merged_at": "2026-11-06T17:26:02Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
-          "data": "2026-11-06T13:02:39-03:00",
-          "assunto": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106",
-          "ci": "passou"
+          "sha": "d8ca6cd101363f9e039bf807b57813dcd595c9e4",
+          "data": "2026-11-06T14:16:30-03:00",
+          "assunto": "VF-3: legenda persistente e identificacao por ID e cota das vigas de patamar no 3D",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
@@ -340,7 +340,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -434,8 +434,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 104,
+        "total_integrados": 105,
         "integrados_recentes": [
+          {
+            "numero": 729,
+            "titulo": "VF-3: separar etiquetas coincidentes e destacar vigas de patamar no 3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/729",
+            "merged_at": "2026-11-06T17:26:02Z",
+            "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
+            "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 702,
             "titulo": "VIGA-DET-03: zonas conservadoras de estribos dos 8 ELU no inspetor e memorial",
@@ -444,7 +454,7 @@
             "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
             "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 699,
@@ -513,7 +523,7 @@
             "merged_at": "2026-11-03T12:08:24Z",
             "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
             "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -545,38 +555,28 @@
             "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 676,
-            "titulo": "Corrigir Babylon 3D: culling e normais dos blocos, estacas facetadas e câmera",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/676",
-            "merged_at": "2026-11-02T16:03:15Z",
-            "merge_sha": "b0c2ac6e6e38b8cc72afae0940e21e6dc46e249c",
-            "head_sha": "13a3200c7ac8b559e200df3610a62be11f1b3bbf",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 702,
-          "titulo": "VIGA-DET-03: zonas conservadoras de estribos dos 8 ELU no inspetor e memorial",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/702",
-          "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
-          "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
-          "merged_at": "2026-11-05T12:04:29Z",
+          "numero": 729,
+          "titulo": "VF-3: separar etiquetas coincidentes e destacar vigas de patamar no 3D",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/729",
+          "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
+          "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
+          "merged_at": "2026-11-06T17:26:02Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3f3e2c80a74fdc7e8232c6d38e80f680887bd9ce",
-          "data": "2026-11-05T19:39:11-03:00",
-          "assunto": "test(vf2): declarar cortante nos pontos sinteticos do ensaio manual",
+          "sha": "3730e4a2c8735d92b681364a3c0886c011983857",
+          "data": "2026-11-06T14:15:58-03:00",
+          "assunto": "VF-3: destacar em âmbar apenas as vigas de patamar no modelo Babylon 3D",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -906,7 +906,7 @@
             "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
             "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 701,
@@ -935,7 +935,7 @@
             "merged_at": "2026-11-03T12:08:24Z",
             "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
             "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1553,7 +1553,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1722,14 +1722,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-          "data": "2026-11-06T12:27:30-03:00",
-          "assunto": "Merge pull request #727 from JGaspar-Eng/fix/vf3-rastreio-carga-painel-2d-por-viga-20261106",
+          "sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
+          "data": "2026-11-06T14:21:53-03:00",
+          "assunto": "VF-3: compatibilidade headless do painel de identificação 3D sem perder DOM seguro",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 618,
-  "commits_main_analisados": 3116,
+  "janela_prs": 619,
+  "commits_main_analisados": 3126,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
