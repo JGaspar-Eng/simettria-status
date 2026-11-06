@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T13:49:08Z",
+  "gerado_em": "2026-11-06T13:54:55Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "8c9f30234f2d39116d9fcd020ae5dbca84589273",
-    "data": "2026-11-06T13:44:03Z"
+    "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
+    "data": "2026-11-06T13:53:44Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "8c9f30234f2d39116d9fcd020ae5dbca84589273",
-    "gerado_em": "2026-11-06T13:44:25Z",
+    "gerado_em": "2026-11-06T13:47:52Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 4,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -69,7 +69,7 @@
             "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
             "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 719,
@@ -543,7 +543,7 @@
             "merged_at": "2026-11-03T01:50:19Z",
             "merge_sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
             "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1035,8 +1035,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 24,
+        "total_integrados": 25,
         "integrados_recentes": [
+          {
+            "numero": 726,
+            "titulo": "VF-3: impedir rótulo APROVADO no memorial preliminar de armadura",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/726",
+            "merged_at": "2026-11-06T13:53:45Z",
+            "merge_sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
+            "head_sha": "a1b8bb8f8b7382f5d17cfe8628b9f0547c9335e9",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 720,
             "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
@@ -1045,7 +1055,7 @@
             "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
             "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 717,
@@ -1146,38 +1156,28 @@
             "head_sha": "2b44b8e734bac1090bf1adbf5bcde7bf955c4344",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 619,
-            "titulo": "ORQ vigas: triagem V+T concomitante por 8 ELU e demanda preliminar de armadura de torção",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/619",
-            "merged_at": "2026-10-27T03:30:37Z",
-            "merge_sha": "d8c2de6e0644918459c72e5fcb702af8922c147c",
-            "head_sha": "c58f8e8c881e32d55f73903b6db8cfc24ced0faa",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 720,
-          "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
-          "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-          "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
-          "merged_at": "2026-11-05T23:37:52Z",
+          "numero": 726,
+          "titulo": "VF-3: impedir rótulo APROVADO no memorial preliminar de armadura",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/726",
+          "merge_sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
+          "head_sha": "a1b8bb8f8b7382f5d17cfe8628b9f0547c9335e9",
+          "merged_at": "2026-11-06T13:53:45Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "7e14d2c822202b6b50ca38344d27cec2e520debc",
-          "data": "2026-11-06T00:39:30-03:00",
-          "assunto": "fix(vigas): remover rótulo APROVADO do desenho de armadura ainda preliminar",
-          "ci": "sem_evidencia"
+          "sha": "3230830780f2eca9d12bfd1196e5089fe27eadd4",
+          "data": "2026-11-06T10:53:44-03:00",
+          "assunto": "Merge pull request #726 from JGaspar-Eng/fix/vf3-semaforo-parcial-armadura-sem-aprovacao-executiva-20261106",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1722,14 +1722,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "8464701f6a5e66381a2fa9e146dbbcfb0dfbaae8",
-          "data": "2026-11-06T10:07:32-03:00",
-          "assunto": "fix(vigas): modal visível em falhas por trecho e atualização imediata do painel lateral",
-          "ci": "sem_evidencia"
+          "sha": "a1b8bb8f8b7382f5d17cfe8628b9f0547c9335e9",
+          "data": "2026-11-06T10:48:52-03:00",
+          "assunto": "test(vf3): adicionar auditoria de status visível de ELU parcial à suíte oficial",
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1770,8 +1770,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 615,
-  "commits_main_analisados": 3099,
+  "janela_prs": 616,
+  "commits_main_analisados": 3103,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
