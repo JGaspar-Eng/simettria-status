@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-06T16:05:37Z",
+  "gerado_em": "2026-11-06T16:07:51Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
     "data": "2026-11-06T16:02:39Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
     "sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
     "gerado_em": "2026-11-06T15:31:22Z",
@@ -49,7 +49,7 @@
             "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
             "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 727,
@@ -118,7 +118,7 @@
             "merged_at": "2026-11-05T22:46:52Z",
             "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
-            "ci_pr": "sem_evidencia",
+            "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -171,13 +171,13 @@
           "merged_at": "2026-11-06T16:02:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
           "data": "2026-11-06T13:02:39-03:00",
           "assunto": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -208,7 +208,7 @@
             "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
             "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 529,
@@ -330,13 +330,13 @@
           "merged_at": "2026-11-06T16:02:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "2fc1715088d8e4a31707de85197055f992d01b47",
           "data": "2026-11-06T13:02:39-03:00",
           "assunto": "Merge pull request #728 from JGaspar-Eng/fix/vf3-viga-escada-pavimento-identidade-coincidente-20261106",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
@@ -1064,7 +1064,7 @@
             "merged_at": "2026-11-05T22:46:52Z",
             "merge_sha": "f53d6547cb4f8e875dcfaf6b6520dfc22795071a",
             "head_sha": "c183481883cae4cdfc2edc3b68c63f01e447b7ff",
-            "ci_pr": "sem_evidencia",
+            "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1421,7 +1421,7 @@
             "merge_sha": "2fc1715088d8e4a31707de85197055f992d01b47",
             "head_sha": "b5afbf67897db50bb3bac705918f62beb187bf9d",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 722,
@@ -1543,7 +1543,7 @@
           "merged_at": "2026-11-06T16:02:40Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "fc56a348a58d9d05d6818748760d3b80775e67bf",
@@ -1773,9 +1773,7 @@
   "janela_prs": 618,
   "commits_main_analisados": 3116,
   "commits_main_truncado": false,
-  "erros": [
-    "ci c183481: https://api.github.com/repos/JGaspar-Eng/simettria/commits/c183481883cae4cdfc2edc3b68c63f01e447b7ff/check-runs?per_page=100: HTTP Error 503: Service Unavailable"
-  ],
+  "erros": [],
   "limitacoes": [
     "A camada local não é observável pelo CI: só existe quando o gerador roda na máquina de desenvolvimento.",
     "\"Publicado\" significa que o SHA de merge está contido no status.json servido pelo Pages no momento da coleta; a próxima coleta confirma publicações mais recentes.",
