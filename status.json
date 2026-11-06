@@ -1,15 +1,64 @@
 {
-  "generated_at": "2026-11-06T13:18:05Z",
+  "generated_at": "2026-11-06T13:44:25Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
-    "short_sha": "dd5cd59e",
+    "sha": "8c9f30234f2d39116d9fcd020ae5dbca84589273",
+    "short_sha": "8c9f3023",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T10:13:47-03:00",
-    "message": "Merge pull request #724 from JGaspar-Eng/fix/vf3-modal-vb102-e-rightbar-carga-sincronizada-20261106"
+    "date": "2026-11-06T10:44:03-03:00",
+    "message": "Merge pull request #725 from JGaspar-Eng/fix/vf3-vb102-carga-pontual-contrato-memorial-20261106"
   },
   "commits": [
+    {
+      "sha": "8c9f30234f2d39116d9fcd020ae5dbca84589273",
+      "short_sha": "8c9f3023",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:44:03-03:00",
+      "message": "Merge pull request #725 from JGaspar-Eng/fix/vf3-vb102-carga-pontual-contrato-memorial-20261106"
+    },
+    {
+      "sha": "a48d60cb3cc58c91e34736bbb5338afa74194b7e",
+      "short_sha": "a48d60cb",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:40:14-03:00",
+      "message": "test(vf3): incluir integração VB102 com nó FE virtual na suíte oficial"
+    },
+    {
+      "sha": "59421db2ebcd7838de16d24d1799452a4757b564",
+      "short_sha": "59421db2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:39:41-03:00",
+      "message": "test(vf3): VB102 com P concentrada e q, salto V, M contínuo, equilíbrio e desenho"
+    },
+    {
+      "sha": "6babe359bc38569d01ee3495f02c8be1300a1399",
+      "short_sha": "6babe359",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:37:54-03:00",
+      "message": "feat(vf3): diagrama global exibe força P ELU nas coordenadas FE efetivas"
+    },
+    {
+      "sha": "f4c10d4bc83c2786e8abdbae303baf489d394018",
+      "short_sha": "f4c10d4b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:37:34-03:00",
+      "message": "feat(vf3): distinguir visualmente forças pontuais P (kN) de q (kN/m) no diagrama ELU"
+    },
+    {
+      "sha": "1897720fc7f2ebeb828a43fdaf0b2743e9adb14f",
+      "short_sha": "1897720f",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:35:36-03:00",
+      "message": "fix(vf3): modal suporta segmentos FE de cargas pontuais, diagnóstico e auditoria sem falsos negativos"
+    },
+    {
+      "sha": "9404ad8ba51c1bf21c372fb474077e3b2bcf1cb8",
+      "short_sha": "9404ad8b",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-06T10:34:07-03:00",
+      "message": "fix(viga): contrato FE pontual inclui M/V extremos e x local por trecho real"
+    },
     {
       "sha": "dd5cd59e3cdcd021454895b3bea046217ea92d30",
       "short_sha": "dd5cd59e",
@@ -30,55 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-06T10:09:11-03:00",
       "message": "test(vigas): modal de VB102 sempre abre e inspector atualiza carga sem reseleção"
-    },
-    {
-      "sha": "db770de9b22ddffe00fd338b9a0b5163c495527c",
-      "short_sha": "db770de9",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:08:11-03:00",
-      "message": "fix(ui): expor sincronização leve da rightbar para edições do modal de viga"
-    },
-    {
-      "sha": "8464701f6a5e66381a2fa9e146dbbcfb0dfbaae8",
-      "short_sha": "8464701f",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T10:07:32-03:00",
-      "message": "fix(vigas): modal visível em falhas por trecho e atualização imediata do painel lateral"
-    },
-    {
-      "sha": "397f9417fe2bb60f3e3805837817f4afecc5fddd",
-      "short_sha": "397f9417",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:49:37-03:00",
-      "message": "Merge pull request #723 from JGaspar-Eng/feat/vf3-alvenaria-lote-pavimentos-vigas-tecnico-20261106"
-    },
-    {
-      "sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
-      "short_sha": "8441c857",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:44:07-03:00",
-      "message": "test(vigas): avaliar ELU após restaurar fixture do Graph global sem geometria parcial"
-    },
-    {
-      "sha": "4e8bbd691d473d5219b76c78a8f7e713fc0b703f",
-      "short_sha": "4e8bbd69",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:41:45-03:00",
-      "message": "test(vigas): integrar regressão de alvenaria em lote à suíte oficial"
-    },
-    {
-      "sha": "a456924c2ea23f99d55df8bb3832ac6d8189214a",
-      "short_sha": "a456924c",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:41:31-03:00",
-      "message": "fix(vigas): idempotência do lote mantém ok=false quando nada resta a alterar"
-    },
-    {
-      "sha": "7a5c5ce491cac9bb885dbdc542b661a66b1bf322",
-      "short_sha": "7a5c5ce4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-06T00:41:07-03:00",
-      "message": "test(vigas): validar lote 4,5 kN/m por pavimentos, exclusões e nível técnico individual"
     }
   ],
   "development": {
@@ -3832,7 +3832,7 @@
       },
       {
         "name": "test:viga-vf2-diagramas",
-        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs && node tests/validar_viga_modal_falha_e_rightbar_vf3.mjs"
+        "command": "node tests/validar_vigas_vf2_pontos_esforcos_invalidos.mjs && node tests/validar_vigas_vf2_memorial_bloqueios_e_gk.mjs && node tests/validar_vigas_categoria_projeto_lote_pavimentos_vf3.mjs && node tests/validar_vigas_alvenaria_lote_vf3.mjs && node tests/validar_viga_modal_falha_e_rightbar_vf3.mjs && node tests/validar_viga_transferencia_pontual_modal_vf3.mjs"
       },
       {
         "name": "test:viga-armadura",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42224345114",
-    "run_number": "1259"
+    "run_id": "42227882576",
+    "run_number": "1260"
   }
 }
