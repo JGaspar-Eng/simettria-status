@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-07T12:19:49Z",
+  "generated_at": "2026-11-07T12:22:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-    "short_sha": "8fa75077",
+    "sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
+    "short_sha": "d543d8ac",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T09:16:00-03:00",
-    "message": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107"
+    "date": "2026-11-07T09:22:01-03:00",
+    "message": "Merge pull request #753 from JGaspar-Eng/fix/opt-pilar-progresso-timeout-main-20261107"
   },
   "commits": [
+    {
+      "sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
+      "short_sha": "d543d8ac",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T09:22:01-03:00",
+      "message": "Merge pull request #753 from JGaspar-Eng/fix/opt-pilar-progresso-timeout-main-20261107"
+    },
+    {
+      "sha": "113a1e52c5f3bc51cb27563935e9c27bce765059",
+      "short_sha": "113a1e52",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T09:17:50-03:00",
+      "message": "fix(opt-pilar): barra real de progresso, cancelamento e watchdog de estagnação"
+    },
     {
       "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
       "short_sha": "8fa75077",
@@ -65,20 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:58:16-03:00",
       "message": "feat(ui): exibir revisao direta da cobertura quando bloquear ELU"
-    },
-    {
-      "sha": "852486dc3d49f3e0b9ce62f34a82a41e17ad7b65",
-      "short_sha": "852486dc",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:57:48-03:00",
-      "message": "feat(fund): agrupar alerta por causa raiz da cobertura antes dos oito ELU"
-    },
-    {
-      "sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
-      "short_sha": "a666a446",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:56:18-03:00",
-      "message": "test(fund): incluir teste 3GDL sem perder verificação TRd2 TRd3 TRd4 da main"
     }
   ],
   "development": {
@@ -4055,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42371967085",
-    "run_number": "1363"
+    "run_id": "42372160802",
+    "run_number": "1364"
   }
 }

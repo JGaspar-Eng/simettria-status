@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T12:20:52Z",
+  "gerado_em": "2026-11-07T12:22:55Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-    "data": "2026-11-07T12:16:00Z"
+    "sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
+    "data": "2026-11-07T12:22:01Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-    "gerado_em": "2026-11-07T12:16:20Z",
+    "gerado_em": "2026-11-07T12:19:49Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
+    "defasagem_commits_main": 2,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -1011,7 +1011,7 @@
             "merged_at": "2026-11-05T16:42:34Z",
             "merge_sha": "bdc5d0687707c751ea5f76c854204a156d9441ed",
             "head_sha": "90fa8f5a39b2b3ed4e3eef1b8d30f27fb2250f7a",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1106,30 +1106,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 132,
+        "integrados_recentes": [
           {
             "numero": 753,
             "titulo": "OPT-PILAR: progresso mensurável, cancelamento e detector de estagnação",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/753",
-            "rascunho": false,
+            "merged_at": "2026-11-07T12:22:01Z",
+            "merge_sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
             "head_sha": "113a1e52c5f3bc51cb27563935e9c27bce765059",
-            "ci": "pendente"
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
           },
-          {
-            "numero": 562,
-            "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
-            "rascunho": false,
-            "head_sha": "6ae81092ac9dbea220e38743fe588b1dacee53f5",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 131,
-        "integrados_recentes": [
           {
             "numero": 742,
             "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
@@ -1239,38 +1232,28 @@
             "head_sha": "f74cc1d2bd10dd15fea8d4eae0a8e89b61994d4a",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 711,
-            "titulo": "VIGA-DET-10: prova de navegador do cadastro dentro do inspetor ORQ real",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/711",
-            "merged_at": "2026-11-05T22:06:12Z",
-            "merge_sha": "6bf223d69562fe381909403a39e08d23d1697810",
-            "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 742,
-          "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
-          "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
-          "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
-          "merged_at": "2026-11-07T04:23:30Z",
+          "numero": 753,
+          "titulo": "OPT-PILAR: progresso mensurável, cancelamento e detector de estagnação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/753",
+          "merge_sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
+          "head_sha": "113a1e52c5f3bc51cb27563935e9c27bce765059",
+          "merged_at": "2026-11-07T12:22:01Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
-          "data": "2026-11-07T01:51:13-03:00",
-          "assunto": "test(orq): executar verificação TRd2 TRd3 TRd4 com oito ELU na suíte oficial",
-          "ci": "passou"
+          "sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
+          "data": "2026-11-07T09:22:01-03:00",
+          "assunto": "Merge pull request #753 from JGaspar-Eng/fix/opt-pilar-progresso-timeout-main-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1623,7 +1606,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 643,
-  "commits_main_analisados": 3255,
+  "commits_main_analisados": 3257,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
