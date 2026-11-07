@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-11-07T04:38:26Z",
+  "generated_at": "2026-11-07T04:41:09Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
-    "short_sha": "3c038c77",
+    "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
+    "short_sha": "fc8ac6cf",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T01:34:26-03:00",
-    "message": "Merge pull request #743 from JGaspar-Eng/feat/vigas-torcao-armadura-perimetral-automatica-20261107"
+    "date": "2026-11-07T01:38:24-03:00",
+    "message": "Merge pull request #744 from JGaspar-Eng/fix/cobertura-revisao-um-clique-gkqk-sem-duplicar-20261107"
   },
   "commits": [
+    {
+      "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
+      "short_sha": "fc8ac6cf",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:38:24-03:00",
+      "message": "Merge pull request #744 from JGaspar-Eng/fix/cobertura-revisao-um-clique-gkqk-sem-duplicar-20261107"
+    },
     {
       "sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
       "short_sha": "3c038c77",
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:34:26-03:00",
       "message": "Merge pull request #743 from JGaspar-Eng/feat/vigas-torcao-armadura-perimetral-automatica-20261107"
+    },
+    {
+      "sha": "96cbd8d5d4b52a7dca21409e2b0811f157995a50",
+      "short_sha": "96cbd8d5",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:32:01-03:00",
+      "message": "test(browser): revisão cobertura preserva lajes e reconhece Gk Qk gerais cadastrados"
+    },
+    {
+      "sha": "814ec9628bc302a31348b9ae60b18e728c1b4441",
+      "short_sha": "814ec962",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:31:37-03:00",
+      "message": "feat(cobertura): revisar lajes por botão sem recadastrar Gk Qk gerais"
     },
     {
       "sha": "e331326d5de2f74f8a580f46d680d4d360a7c92e",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:23:29-03:00",
       "message": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107"
-    },
-    {
-      "sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
-      "short_sha": "2aeebfc4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:20:10-03:00",
-      "message": "test(orq): falta de rotação do pilar não vira apoio fictício mas mantém cálculo de lb"
-    },
-    {
-      "sha": "758953e7daf24ec776546f5bcb74df017af54c5b",
-      "short_sha": "758953e7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:20:05-03:00",
-      "message": "fix(orq): não assumir rotação zero do pilar para estimar espaço físico de ancoragem"
-    },
-    {
-      "sha": "0d9db8625d915780d58695b3a95799519de137ba",
-      "short_sha": "0d9db862",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:18:19-03:00",
-      "message": "test(orq): comprovar esforcos nodais I J concomitantes nos oito ELU"
     }
   ],
   "development": {
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42339299518",
-    "run_number": "1330"
+    "run_id": "42339495306",
+    "run_number": "1334"
   }
 }
