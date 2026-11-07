@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T12:12:17Z",
+  "gerado_em": "2026-11-07T12:17:27Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
-    "data": "2026-11-07T05:01:58Z"
+    "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+    "data": "2026-11-07T12:16:00Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
-    "gerado_em": "2026-11-07T10:26:32Z",
+    "gerado_em": "2026-11-07T12:11:13Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 1.8
+    "defasagem_commits_main": 3,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -371,38 +371,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
-          {
-            "numero": 557,
-            "titulo": "SIM-7: calcular prévia de estaca diretamente do SPT importado",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/557",
-            "rascunho": true,
-            "head_sha": "bd0d097ec18b19de082a55e09bb4f123a1643622",
-            "ci": "passou"
-          },
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 110,
+        "integrados_recentes": [
           {
             "numero": 752,
             "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/752",
-            "rascunho": false,
-            "head_sha": "fdc613fc07dda9a606d2415f8c944da255390c19",
-            "ci": "passou"
+            "merged_at": "2026-11-07T12:16:00Z",
+            "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+            "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
           },
-          {
-            "numero": 559,
-            "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
-            "rascunho": true,
-            "head_sha": "4d7f396f014db945039b832a38e8332b7c6db99a",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 109,
-        "integrados_recentes": [
           {
             "numero": 751,
             "titulo": "Fundações: causa raiz da cobertura e revisão direta sem avisos repetidos",
@@ -411,7 +396,7 @@
             "merge_sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
             "head_sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 750,
@@ -512,38 +497,28 @@
             "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 680,
-            "titulo": "Corrigir vínculo Forecast de estacas e coordenadas de pilares no auditor ORQ (18/30)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/680",
-            "merged_at": "2026-11-03T14:40:54Z",
-            "merge_sha": "8b706664cb80ffbc532ce775f5ba7a174c04a55d",
-            "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 751,
-          "titulo": "Fundações: causa raiz da cobertura e revisão direta sem avisos repetidos",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/751",
-          "merge_sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
-          "head_sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
-          "merged_at": "2026-11-07T05:01:59Z",
+          "numero": 752,
+          "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/752",
+          "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+          "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
+          "merged_at": "2026-11-07T12:16:00Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
-          "data": "2026-11-07T02:01:58-03:00",
-          "assunto": "Merge pull request #751 from JGaspar-Eng/fix/fundacoes-acao-raiz-cobertura-sem-alertas-duplicados-20261107",
-          "ci": "passou"
+          "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+          "data": "2026-11-07T09:16:00-03:00",
+          "assunto": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -654,38 +629,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
-          {
-            "numero": 557,
-            "titulo": "SIM-7: calcular prévia de estaca diretamente do SPT importado",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/557",
-            "rascunho": true,
-            "head_sha": "bd0d097ec18b19de082a55e09bb4f123a1643622",
-            "ci": "passou"
-          },
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 17,
+        "integrados_recentes": [
           {
             "numero": 752,
             "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/752",
-            "rascunho": false,
-            "head_sha": "fdc613fc07dda9a606d2415f8c944da255390c19",
-            "ci": "passou"
+            "merged_at": "2026-11-07T12:16:00Z",
+            "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+            "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
           },
-          {
-            "numero": 559,
-            "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
-            "rascunho": true,
-            "head_sha": "4d7f396f014db945039b832a38e8332b7c6db99a",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 16,
-        "integrados_recentes": [
           {
             "numero": 745,
             "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
@@ -795,38 +755,28 @@
             "head_sha": "95f0a0a5628052c8f36863157c18ce927f625218",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 588,
-            "titulo": "Geotecnia: teste de sondagens admite projeto real com quantidade variável",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/588",
-            "merged_at": "2026-10-25T18:00:59Z",
-            "merge_sha": "e6d2d24689b7ba70f70cc38e6d4e8ec67c8c5188",
-            "head_sha": "fd754b3a9b66a87f6b8102dd8bd1672b01545f44",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 745,
-          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-          "merged_at": "2026-11-07T04:42:16Z",
+          "numero": 752,
+          "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/752",
+          "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+          "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
+          "merged_at": "2026-11-07T12:16:00Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-          "data": "2026-11-07T01:42:16-03:00",
-          "assunto": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107",
-          "ci": "passou"
+          "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+          "data": "2026-11-07T09:16:00-03:00",
+          "assunto": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1665,7 +1615,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 642,
-  "commits_main_analisados": 3252,
+  "commits_main_analisados": 3255,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

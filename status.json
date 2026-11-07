@@ -1,15 +1,36 @@
 {
-  "generated_at": "2026-11-07T12:11:13Z",
+  "generated_at": "2026-11-07T12:16:20Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
-    "short_sha": "ce66e19a",
+    "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+    "short_sha": "8fa75077",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T02:01:58-03:00",
-    "message": "Merge pull request #751 from JGaspar-Eng/fix/fundacoes-acao-raiz-cobertura-sem-alertas-duplicados-20261107"
+    "date": "2026-11-07T09:16:00-03:00",
+    "message": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107"
   },
   "commits": [
+    {
+      "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+      "short_sha": "8fa75077",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T09:16:00-03:00",
+      "message": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107"
+    },
+    {
+      "sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
+      "short_sha": "6a8b8fd6",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T09:12:02-03:00",
+      "message": "refactor(fundacoes): reusar motor oficial Aoki–Velloso sem duplicar coeficientes"
+    },
+    {
+      "sha": "fdc613fc07dda9a606d2415f8c944da255390c19",
+      "short_sha": "fdc613fc",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T09:05:33-03:00",
+      "message": "feat(fundacoes): reconciliar capacidade preliminar SPT Aoki–Velloso na main atual"
+    },
     {
       "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
       "short_sha": "ce66e19a",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:56:18-03:00",
       "message": "test(fund): incluir teste 3GDL sem perder verificação TRd2 TRd3 TRd4 da main"
-    },
-    {
-      "sha": "07a892c28b7a0e2f14f3d914db409b994dd13e9c",
-      "short_sha": "07a892c2",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:56:01-03:00",
-      "message": "feat(fund): reconciliar cálculo 3GDL de estacas laterais com motor de torção atual"
-    },
-    {
-      "sha": "158f0986118ec43a80c6bf071a517823f5d06011",
-      "short_sha": "158f0986",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:55:56-03:00",
-      "message": "feat(fund): reconciliar cálculo 3GDL de estacas laterais com motor de torção atual"
-    },
-    {
-      "sha": "667320a63c0404d65ddb49f55814e4c019f2bbd9",
-      "short_sha": "667320a6",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:55:49-03:00",
-      "message": "feat(fund): reconciliar cálculo 3GDL de estacas laterais com motor de torção atual"
     }
   ],
   "development": {
@@ -3172,7 +3172,7 @@
       },
       {
         "name": "test:frentes-estruturais",
-        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs && node tests_support/viga_flecha_imediata_branson_20261028.mjs && node tests_support/viga_ancoragens_locais_20261028.mjs"
+        "command": "node tests_support/fundacao_placa_mindlin_exploratoria.mjs && node tests_support/fundacao_placa_winkler_contato_linear.mjs && node tests_support/fundacao_capacidade_undrenada_usace_parcial.mjs && node tests_support/fundacao_fluxo_puncao_biaxial_mecanico.mjs && node tests_support/fundacao_fissuracao_els_faixas_parcial.mjs && node tests_support/fundacao_flexao_local_armadura_ui.mjs && node tests_support/viga_flecha_imediata_branson_20261028.mjs && node tests_support/viga_ancoragens_locais_20261028.mjs && node tests_support/fundacao_estaca_spt_aoki_velloso_preliminar.mjs"
       },
       {
         "name": "test:escada-abertura",
@@ -4055,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42371331402",
-    "run_number": "1358"
+    "run_id": "42371709792",
+    "run_number": "1360"
   }
 }
