@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:42:09Z",
+  "gerado_em": "2026-11-07T04:43:29Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
-    "data": "2026-11-07T04:38:24Z"
+    "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+    "data": "2026-11-07T04:42:16Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
-    "gerado_em": "2026-11-07T04:38:26Z",
+    "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
+    "gerado_em": "2026-11-07T04:41:09Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 3,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 9,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -25,22 +25,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 100,
+        "integrados_recentes": [
           {
             "numero": 745,
             "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:42:16Z",
+            "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
             "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 99,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 743,
             "titulo": "Vigas: dimensionar e posicionar automaticamente barras longitudinais de torção",
@@ -109,7 +110,7 @@
             "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
             "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 728,
@@ -129,7 +130,7 @@
             "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
             "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 723,
@@ -150,38 +151,28 @@
             "head_sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 720,
-            "titulo": "VF-3: armadura visível no topo do detalhe e correção do bloqueio por trecho",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/720",
-            "merged_at": "2026-11-05T23:37:52Z",
-            "merge_sha": "63d3dbda05de3d82a27b83e8df914d3f54ca07ed",
-            "head_sha": "6b136b84be562e87ce9e7604b7409e119d86a599",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 743,
-          "titulo": "Vigas: dimensionar e posicionar automaticamente barras longitudinais de torção",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/743",
-          "merge_sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
-          "head_sha": "e331326d5de2f74f8a580f46d680d4d360a7c92e",
-          "merged_at": "2026-11-07T04:34:27Z",
+          "numero": 745,
+          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+          "merged_at": "2026-11-07T04:42:16Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
-          "data": "2026-11-07T01:34:26-03:00",
-          "assunto": "Merge pull request #743 from JGaspar-Eng/feat/vigas-torcao-armadura-perimetral-automatica-20261107",
-          "ci": "passou"
+          "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "data": "2026-11-07T01:42:16-03:00",
+          "assunto": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -383,14 +374,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 745,
-            "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-            "rascunho": true,
-            "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -429,21 +412,23 @@
             "rascunho": true,
             "head_sha": "ed084c2c5d24dff3198ef1328dcc0a2d6562808d",
             "ci": "passou"
-          },
-          {
-            "numero": 546,
-            "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
-            "rascunho": true,
-            "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
-            "ci": "passou"
           }
         ]
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 105,
+        "total_integrados": 106,
         "integrados_recentes": [
+          {
+            "numero": 745,
+            "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+            "merged_at": "2026-11-07T04:42:16Z",
+            "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+            "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 729,
             "titulo": "VF-3: separar etiquetas coincidentes e destacar vigas de patamar no 3D",
@@ -452,7 +437,7 @@
             "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
             "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 702,
@@ -553,38 +538,28 @@
             "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 675,
-            "titulo": "Adicionar regressão Babylon dos 18 blocos e 30 estacas do Forecast",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/675",
-            "merged_at": "2026-11-03T01:50:19Z",
-            "merge_sha": "3454e1d4f907c9da2cec6635ca796ddfd3ef8896",
-            "head_sha": "0a5dd227f3c267c504c0409b5f9a0c5218678004",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 729,
-          "titulo": "VF-3: separar etiquetas coincidentes e destacar vigas de patamar no 3D",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/729",
-          "merge_sha": "792180fdd4705b5350b5c915631782806b8b6963",
-          "head_sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
-          "merged_at": "2026-11-06T17:26:02Z",
+          "numero": 745,
+          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+          "merged_at": "2026-11-07T04:42:16Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3730e4a2c8735d92b681364a3c0886c011983857",
-          "data": "2026-11-06T14:15:58-03:00",
-          "assunto": "VF-3: destacar em âmbar apenas as vigas de patamar no modelo Babylon 3D",
-          "ci": "sem_evidencia"
+          "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "data": "2026-11-07T01:42:16-03:00",
+          "assunto": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -698,14 +673,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 745,
-            "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-            "rascunho": true,
-            "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -720,21 +687,23 @@
             "rascunho": true,
             "head_sha": "bd0d097ec18b19de082a55e09bb4f123a1643622",
             "ci": "passou"
-          },
-          {
-            "numero": 546,
-            "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
-            "rascunho": true,
-            "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
-            "ci": "passou"
           }
         ]
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 15,
+        "total_integrados": 16,
         "integrados_recentes": [
+          {
+            "numero": 745,
+            "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+            "merged_at": "2026-11-07T04:42:16Z",
+            "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+            "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 652,
             "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
@@ -742,8 +711,8 @@
             "merged_at": "2026-10-30T12:36:19Z",
             "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
             "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
-            "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_pr": "sem_evidencia",
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 638,
@@ -844,38 +813,28 @@
             "head_sha": "fd754b3a9b66a87f6b8102dd8bd1672b01545f44",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 587,
-            "titulo": "Geotecnia: impedir sondagem de ID duplicado e estado de N.A. inválido",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/587",
-            "merged_at": "2026-10-25T17:57:37Z",
-            "merge_sha": "e2e816cf8863001aaa43bac080a3f7fda86df1b5",
-            "head_sha": "70416a671354aca2f0cd01908a2f0c95b8b104a0",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 652,
-          "titulo": "feat(fundacoes): conciliar 18 blocos, 62 estacas, SPT anterior e oito ELU reais",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/652",
-          "merge_sha": "bfe4a11e2fbc898dd9043ac928a604f89169d771",
-          "head_sha": "eb66f57ac0e135fc9d7f8f2ae127e7ed5604802a",
-          "merged_at": "2026-10-30T12:36:19Z",
+          "numero": 745,
+          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+          "merged_at": "2026-11-07T04:42:16Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "68d08cdb5c15ae9fd7ed4fd2341269e0895629ed",
-          "data": "2026-11-04T14:49:02-03:00",
-          "assunto": "test(pv1): conferir ELU/ELS e 21 pontos por benchmarks analiticos e entradas adversas",
-          "ci": "sem_evidencia"
+          "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "data": "2026-11-07T01:42:16-03:00",
+          "assunto": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1265,7 +1224,7 @@
             "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
             "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 738,
@@ -1389,30 +1348,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 27,
+        "integrados_recentes": [
           {
             "numero": 745,
             "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:42:16Z",
+            "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
             "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-            "ci": "passou"
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
           },
-          {
-            "numero": 546,
-            "titulo": "SIM-6: combinação ELS rara com edição normativa explícita",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/546",
-            "rascunho": true,
-            "head_sha": "422cf73a0968989c64b0f6fadb3ea1e86f2224c7",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 26,
-        "integrados_recentes": [
           {
             "numero": 740,
             "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
@@ -1421,7 +1373,7 @@
             "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
             "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 728,
@@ -1522,38 +1474,28 @@
             "head_sha": "0cb78e01219c13e82240998094a45a30570482dd",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 204,
-            "titulo": "fix(wizard): preserva categoria NBR 8681 no JSON",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/204",
-            "merged_at": "2026-08-28T11:43:21Z",
-            "merge_sha": "03a036eaccbd6aeaa4a0d9bbac9fc47484d202df",
-            "head_sha": "ef77a5e3571bc2be91deba422934e7d20d8db867",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 740,
-          "titulo": "Normas: conferir edições NBR 8681:2025 e NBR 6118:2026 no ORQ (main reconciliada)",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/740",
-          "merge_sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-          "head_sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
-          "merged_at": "2026-11-06T23:08:07Z",
+          "numero": 745,
+          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+          "merged_at": "2026-11-07T04:42:16Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-          "data": "2026-11-06T20:08:06-03:00",
-          "assunto": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106",
-          "ci": "passou"
+          "sha": "7f897483f523570dcb70155984f64eca30bff845",
+          "data": "2026-11-07T01:36:09-03:00",
+          "assunto": "feat(graph): expor ELS rara de vigas com edição normativa e fonte rastreável",
+          "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1565,22 +1507,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 68,
+        "integrados_recentes": [
           {
             "numero": 745,
             "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:42:16Z",
+            "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
             "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-            "ci": "passou"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 67,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 727,
             "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
@@ -1589,7 +1532,7 @@
             "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
             "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 724,
@@ -1690,28 +1633,18 @@
             "head_sha": "907d7deb18c7f8c55d10c351ae209f399434c96e",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 604,
-            "titulo": "ELS: integrar pares de recalque diferencial ao painel e revalidar totais de cada apoio",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/604",
-            "merged_at": "2026-10-26T02:40:09Z",
-            "merge_sha": "20b5c0de1b9d10461b5b4fae6de7637311b45cd3",
-            "head_sha": "2e66c5baac9934c6c4813e7f8608a0633b107ab6",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 727,
-          "titulo": "VF-3: identificar carga de cada viga no 2D e permitir corrigir zero diretamente na rightbar",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/727",
-          "merge_sha": "8fd7397ff085bcee25105eb406337447e2a9f81a",
-          "head_sha": "298c63c97c83bfed07779983466eb306e656c3c2",
-          "merged_at": "2026-11-06T15:27:31Z",
+          "numero": 745,
+          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
+          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
+          "merged_at": "2026-11-07T04:42:16Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "51115cc7f043fbdfb4c02055fd914383eb6199eb",
@@ -1721,7 +1654,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     }
   ],
@@ -1757,7 +1690,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 636,
-  "commits_main_analisados": 3216,
+  "commits_main_analisados": 3225,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
