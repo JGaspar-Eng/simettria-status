@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T12:17:27Z",
+  "gerado_em": "2026-11-07T12:20:52Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
     "data": "2026-11-07T12:16:00Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
-    "gerado_em": "2026-11-07T12:11:13Z",
+    "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
+    "gerado_em": "2026-11-07T12:16:20Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 3,
+    "defasagem_commits_main": 0,
     "idade_horas": 0.1
   },
   "frentes": [
@@ -386,7 +386,7 @@
             "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
             "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 751,
@@ -508,17 +508,17 @@
           "merged_at": "2026-11-07T12:16:00Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
           "data": "2026-11-07T09:16:00-03:00",
           "assunto": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -644,7 +644,7 @@
             "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
             "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 745,
@@ -766,17 +766,17 @@
           "merged_at": "2026-11-07T12:16:00Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
           "data": "2026-11-07T09:16:00-03:00",
           "assunto": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1108,6 +1108,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 753,
+            "titulo": "OPT-PILAR: progresso mensurável, cancelamento e detector de estagnação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/753",
+            "rascunho": false,
+            "head_sha": "113a1e52c5f3bc51cb27563935e9c27bce765059",
+            "ci": "pendente"
+          },
           {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
@@ -1614,7 +1622,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 642,
+  "janela_prs": 643,
   "commits_main_analisados": 3255,
   "commits_main_truncado": false,
   "erros": [],
