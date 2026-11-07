@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T12:26:45Z",
+  "gerado_em": "2026-11-07T12:45:54Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
-    "data": "2026-11-07T12:22:01Z"
+    "sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+    "data": "2026-11-07T12:44:43Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "d543d8ac9ea42981380fab6a871a047aa46ec934",
-    "gerado_em": "2026-11-07T12:22:18Z",
+    "gerado_em": "2026-11-07T12:25:52Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 1,
+    "idade_horas": 0.3
   },
   "frentes": [
     {
@@ -376,8 +376,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 110,
+        "total_integrados": 111,
         "integrados_recentes": [
+          {
+            "numero": 755,
+            "titulo": "test(fund): caso Aoki–Velloso de oito camadas SPT validado independentemente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/755",
+            "merged_at": "2026-11-07T12:44:43Z",
+            "merge_sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+            "head_sha": "54f0266488100c591606b7aca6fbcc0ad8574b4b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 752,
             "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
@@ -386,7 +396,7 @@
             "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
             "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 751,
@@ -487,38 +497,28 @@
             "head_sha": "969f2614086174e95aa8a53dcaeba2f2d8516fa0",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 685,
-            "titulo": "Impedir falsas comprovações de 8 ELU nos blocos de fundação (auditoria #683)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/685",
-            "merged_at": "2026-11-03T16:25:44Z",
-            "merge_sha": "acaacf4f23caeb8ac22e2e80ff95f43ebc857d23",
-            "head_sha": "d5378584814bedd0598cd442ee3556d6d2a94192",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 752,
-          "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/752",
-          "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-          "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
-          "merged_at": "2026-11-07T12:16:00Z",
+          "numero": 755,
+          "titulo": "test(fund): caso Aoki–Velloso de oito camadas SPT validado independentemente",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/755",
+          "merge_sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+          "head_sha": "54f0266488100c591606b7aca6fbcc0ad8574b4b",
+          "merged_at": "2026-11-07T12:44:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-          "data": "2026-11-07T09:16:00-03:00",
-          "assunto": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107",
-          "ci": "passou"
+          "sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+          "data": "2026-11-07T09:44:43-03:00",
+          "assunto": "test(fund): validar benchmark SPT Aoki-Velloso independente de oito camadas",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -634,8 +634,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 17,
+        "total_integrados": 18,
         "integrados_recentes": [
+          {
+            "numero": 755,
+            "titulo": "test(fund): caso Aoki–Velloso de oito camadas SPT validado independentemente",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/755",
+            "merged_at": "2026-11-07T12:44:43Z",
+            "merge_sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+            "head_sha": "54f0266488100c591606b7aca6fbcc0ad8574b4b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 752,
             "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
@@ -644,7 +654,7 @@
             "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
             "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 745,
@@ -745,38 +755,28 @@
             "head_sha": "af9cbbd17186129a1ce642e6c47cd0e6f1d5e86d",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 590,
-            "titulo": "Geotecnia: diagnóstico utiliza resultado canônico do SPT sem inventar N",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/590",
-            "merged_at": "2026-10-25T18:14:17Z",
-            "merge_sha": "6a073720ffd85f0241aacd61cb1b34e3bf27b749",
-            "head_sha": "95f0a0a5628052c8f36863157c18ce927f625218",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 752,
-          "titulo": "Fundações: capacidade preliminar de estaca isolada pelo SPT — reconciliada com main",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/752",
-          "merge_sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-          "head_sha": "6a8b8fd6ad68a912388c819a67f0c3aa400fba5e",
-          "merged_at": "2026-11-07T12:16:00Z",
+          "numero": 755,
+          "titulo": "test(fund): caso Aoki–Velloso de oito camadas SPT validado independentemente",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/755",
+          "merge_sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+          "head_sha": "54f0266488100c591606b7aca6fbcc0ad8574b4b",
+          "merged_at": "2026-11-07T12:44:43Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "8fa75077f7f2386f79559056fcaa46012764b5e6",
-          "data": "2026-11-07T09:16:00-03:00",
-          "assunto": "Merge pull request #752 from JGaspar-Eng/feat/fundacao-spt-av-reconciliada-main-20261107",
-          "ci": "passou"
+          "sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
+          "data": "2026-11-07T09:44:43-03:00",
+          "assunto": "test(fund): validar benchmark SPT Aoki-Velloso independente de oito camadas",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1577,7 +1577,7 @@
   ],
   "nao_classificados": {
     "abertos": [
-      310
+      754
     ],
     "integrados_recentes": [
       746,
@@ -1604,8 +1604,8 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 643,
-  "commits_main_analisados": 3257,
+  "janela_prs": 645,
+  "commits_main_analisados": 3258,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
