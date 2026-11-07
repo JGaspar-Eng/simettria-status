@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-11-07T14:23:06Z",
+  "generated_at": "2026-11-07T14:31:57Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
-    "short_sha": "fc713f9c",
+    "sha": "13fe68656e9989226bbffa9140db9d7c5df6e68d",
+    "short_sha": "13fe6865",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T09:44:43-03:00",
-    "message": "test(fund): validar benchmark SPT Aoki-Velloso independente de oito camadas"
+    "date": "2026-11-07T11:31:37-03:00",
+    "message": "feat(ux): edição CAD em lote, progresso gráfico ORQ e destaque 3D (#754)"
   },
   "commits": [
+    {
+      "sha": "13fe68656e9989226bbffa9140db9d7c5df6e68d",
+      "short_sha": "13fe6865",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T11:31:37-03:00",
+      "message": "feat(ux): edição CAD em lote, progresso gráfico ORQ e destaque 3D (#754)"
+    },
     {
       "sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
       "short_sha": "fc713f9c",
@@ -72,13 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:58:44-03:00",
       "message": "test(fund): causa raiz única de cobertura em diagnósticos diretos e aninhados"
-    },
-    {
-      "sha": "435c3376f0c97c8583062ddcfbdb270ec4f3fe7c",
-      "short_sha": "435c3376",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:58:27-03:00",
-      "message": "feat(ui): agrupar bloqueio de cobertura e abrir editor por ação real"
     }
   ],
   "development": {
@@ -3116,7 +3116,7 @@
       },
       {
         "name": "test:flow",
-        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_abertura_escada_por_vao.mjs && node tests/validar_cobertura_nivel_tecnico_auto.mjs && node tests/validar_exclusao_contexto_objetos.mjs && node tests/validar_fundacoes_obsoletas_e_vistas_20261022.mjs && node tests/validar_infra_legada_vigas_20261022.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:orq-cobertura-dados && npm run test:orq-cargas-multilote && npm run test:orq-assistente && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs"
+        "command": "node tests/validar_schema_documental_pre1a0.mjs && node tests/validar_intervalo_vertical_laje_pre1a1.mjs && node tests/validar_intervalo_vertical_pavimentos_pre1b1.mjs && node tests/validar_compatibilidade_abertura_escada.mjs && node tests/validar_fluxo_estrutural.mjs && node tests/validar_abertura_escada_por_vao.mjs && node tests/validar_cobertura_nivel_tecnico_auto.mjs && node tests/validar_exclusao_contexto_objetos.mjs && node tests/validar_fundacoes_obsoletas_e_vistas_20261022.mjs && node tests/validar_infra_legada_vigas_20261022.mjs && node tests/validar_auto_laje_reconciliacao.mjs && node tests/validar_resolvedor_laje_pre1a1.mjs && node tests_support/sacadas_apoios_provisorios.mjs && node tests_support/sacadas_flexao_generica_escala.mjs && npm run test:sacadas-tipo && npm run test:sacadas-raiz-orq && npm run test:balancos-orq-trechos && npm run test:orq-cobertura-dados && npm run test:orq-cargas-multilote && npm run test:orq-assistente && npm run test:tabela-k && node tests_support/sacadas_orq_gates.mjs && node tests_support/selecao_2d_lote_dimensoes.mjs && node tests_support/orq_progresso_visual_service.mjs && node tests_support/destaque_lote_dimensoes_3d.mjs"
       },
       {
         "name": "test:sacadas-apoios",
@@ -4055,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42381316652",
-    "run_number": "1376"
+    "run_id": "42382008454",
+    "run_number": "1378"
   }
 }
