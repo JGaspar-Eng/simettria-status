@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:56:06Z",
+  "gerado_em": "2026-11-07T04:59:30Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
     "data": "2026-11-07T04:54:49Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
-    "gerado_em": "2026-11-07T04:53:26Z",
+    "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+    "gerado_em": "2026-11-07T04:55:28Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 6,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -40,7 +40,7 @@
             "merge_sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
             "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 745,
@@ -162,17 +162,17 @@
           "merged_at": "2026-11-07T04:54:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
           "data": "2026-11-07T01:54:49-03:00",
           "assunto": "Merge pull request #748 from JGaspar-Eng/feat/vigas-torcao-confronto-resistente-oito-elu-20261107",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -374,12 +374,28 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 751,
+            "titulo": "Fundações: causa raiz da cobertura e revisão direta sem avisos repetidos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/751",
+            "rascunho": true,
+            "head_sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
+            "ci": "pendente"
+          },
+          {
+            "numero": 750,
+            "titulo": "Fundações: repartir Hx/Hy/Mz por grupo de estacas — reconciliado com main",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/750",
+            "rascunho": true,
+            "head_sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
+            "ci": "pendente"
+          },
+          {
             "numero": 749,
             "titulo": "Fundações: calcular distribuição lateral Hx/Hy/Mz por estaca em 8 ELU (3 GDL)",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/749",
             "rascunho": true,
             "head_sha": "d0b38a9f4ce524bee06158b5013df077306dee68",
-            "ci": "pendente"
+            "ci": "passou"
           },
           {
             "numero": 559,
@@ -853,7 +869,7 @@
             "merge_sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
             "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 742,
@@ -975,7 +991,7 @@
           "merged_at": "2026-11-07T04:54:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
@@ -985,7 +1001,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1320,7 +1336,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1672,7 +1688,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 639,
+  "janela_prs": 641,
   "commits_main_analisados": 3240,
   "commits_main_truncado": false,
   "erros": [],
