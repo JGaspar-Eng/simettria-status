@@ -1,21 +1,63 @@
 {
-  "generated_at": "2026-11-07T04:53:26Z",
+  "generated_at": "2026-11-07T04:55:28Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
-    "short_sha": "6b8817d4",
+    "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+    "short_sha": "c37727dd",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T01:50:20-03:00",
-    "message": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107"
+    "date": "2026-11-07T01:54:49-03:00",
+    "message": "Merge pull request #748 from JGaspar-Eng/feat/vigas-torcao-confronto-resistente-oito-elu-20261107"
   },
   "commits": [
+    {
+      "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+      "short_sha": "c37727dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:54:49-03:00",
+      "message": "Merge pull request #748 from JGaspar-Eng/feat/vigas-torcao-confronto-resistente-oito-elu-20261107"
+    },
+    {
+      "sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
+      "short_sha": "60974282",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:51:13-03:00",
+      "message": "test(orq): executar verificação TRd2 TRd3 TRd4 com oito ELU na suíte oficial"
+    },
+    {
+      "sha": "16be0d159e78d71804bcfcfb529d52329c2b9a47",
+      "short_sha": "16be0d15",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:50:56-03:00",
+      "message": "feat(ui): mostrar TRd2 TRd3 TRd4 e índice resistente por ELU na ficha da viga"
+    },
     {
       "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
       "short_sha": "6b8817d4",
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:50:20-03:00",
       "message": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107"
+    },
+    {
+      "sha": "9373e54d9ce4caafa47a444bf47a28854fc90aeb",
+      "short_sha": "9373e54d",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:48:42-03:00",
+      "message": "test(orq): confrontar biela, estribos e barras longitudinais em oito ELU"
+    },
+    {
+      "sha": "5aba92166c44559426c21c731f02aa4da5d0155d",
+      "short_sha": "5aba9216",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:48:10-03:00",
+      "message": "feat(orq): confrontar Tsd com TRd2 TRd3 TRd4 em cada caso ELU das vigas"
+    },
+    {
+      "sha": "a48539a36164fa6558d9e2686b5dba9fc12690c1",
+      "short_sha": "a48539a3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:47:43-03:00",
+      "message": "feat(vigas): verificar capacidade de biela e aço torcional nos oito ELU concomitantes"
     },
     {
       "sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:43:55-03:00",
       "message": "test(fund): oito ELU Hx Hy Mz sem novos campos e sem misturar máximos"
-    },
-    {
-      "sha": "08682c49279fd0c2e629c5785cde4922ac0caf31",
-      "short_sha": "08682c49",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:43:51-03:00",
-      "message": "test(fund): oito ELU Hx Hy Mz sem novos campos e sem misturar máximos"
-    },
-    {
-      "sha": "a966e2c4e9ccf4178145f7c51b09864bb96f8afe",
-      "short_sha": "a966e2c4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:43:33-03:00",
-      "message": "feat(fund): dar ao usuário esforços Hx Hy Mz e casos sem esconder sob exigências de cadastro"
-    },
-    {
-      "sha": "435e9db4b8d5e613d8ba5861572b9ebce57b638d",
-      "short_sha": "435e9db4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:43:12-03:00",
-      "message": "fix(fund): calcular e mostrar Hx Hy Mz por ELU antes de solicitar parametros de estacas"
-    },
-    {
-      "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-      "short_sha": "4e3c6a62",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:42:16-03:00",
-      "message": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107"
-    },
-    {
-      "sha": "6b032c576e69e1c1b62089a71f160ecac9051151",
-      "short_sha": "6b032c57",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:39:41-03:00",
-      "message": "test(ci): valida sintaxe do teste real opt-in de lajes sem arquivo privado"
-    },
-    {
-      "sha": "04ffb5dd7d0880c88a1856ec10832d2eb2118361",
-      "short_sha": "04ffb5dd",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:39:23-03:00",
-      "message": "test(ui): recuperar teste dinamico real de lajes sem contagens antigas"
     }
   ],
   "development": {
@@ -3160,7 +3160,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node --check tests_support/selecao_lajes_modelo_real_browser.mjs && node tests_support/orq_viga_torcao_barras_perimetrais_auto.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node --check tests_support/selecao_lajes_modelo_real_browser.mjs && node tests_support/orq_viga_torcao_confronto_resistente_elu.mjs && node tests_support/orq_viga_torcao_barras_perimetrais_auto.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -4055,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42340358218",
-    "run_number": "1344"
+    "run_id": "42340474960",
+    "run_number": "1345"
   }
 }

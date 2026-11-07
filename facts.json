@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:54:35Z",
+  "gerado_em": "2026-11-07T04:56:06Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
-    "data": "2026-11-07T04:50:20Z"
+    "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+    "data": "2026-11-07T04:54:49Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
-    "gerado_em": "2026-11-07T04:50:39Z",
+    "gerado_em": "2026-11-07T04:53:26Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -25,22 +25,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 101,
+        "integrados_recentes": [
           {
             "numero": 748,
             "titulo": "Vigas: confrontar TEd/VEd com resistência TRd2/TRd3/TRd4 nos oito ELU",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/748",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:54:50Z",
+            "merge_sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
             "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
-            "ci": "pendente"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 100,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 745,
             "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
@@ -150,38 +151,28 @@
             "head_sha": "8441c8570b4003a404bb67401f4fe1a87a90a818",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 721,
-            "titulo": "VF-3: aplicar alvenaria 4,50 kN/m na viga por confirmação visual",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/721",
-            "merged_at": "2026-11-05T23:52:32Z",
-            "merge_sha": "3580ca6cd1ad89ef85f61393a65b4ce544fa99c9",
-            "head_sha": "28501ac838b4ceb19489ce1542cf540fd2602611",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 745,
-          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-          "merged_at": "2026-11-07T04:42:16Z",
+          "numero": 748,
+          "titulo": "Vigas: confrontar TEd/VEd com resistência TRd2/TRd3/TRd4 nos oito ELU",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/748",
+          "merge_sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+          "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
+          "merged_at": "2026-11-07T04:54:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-          "data": "2026-11-07T01:42:16-03:00",
-          "assunto": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107",
-          "ci": "passou"
+          "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+          "data": "2026-11-07T01:54:49-03:00",
+          "assunto": "Merge pull request #748 from JGaspar-Eng/feat/vigas-torcao-confronto-resistente-oito-elu-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -847,22 +838,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 17,
+        "integrados_recentes": [
           {
             "numero": 748,
             "titulo": "Vigas: confrontar TEd/VEd com resistência TRd2/TRd3/TRd4 nos oito ELU",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/748",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:54:50Z",
+            "merge_sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
             "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
-            "ci": "pendente"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 16,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 742,
             "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
@@ -972,28 +964,18 @@
             "head_sha": "abbb0a3f5088195d5a3659d70716ff53755d65ba",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 601,
-            "titulo": "Punção/cortante: recalcular solicitações canônicas antes de avaliar resistências",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/601",
-            "merged_at": "2026-10-25T22:20:40Z",
-            "merge_sha": "aa549bffb6c5590818fe70c5922ff09fe72d4827",
-            "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 742,
-          "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
-          "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
-          "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
-          "merged_at": "2026-11-07T04:23:30Z",
+          "numero": 748,
+          "titulo": "Vigas: confrontar TEd/VEd com resistência TRd2/TRd3/TRd4 nos oito ELU",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/748",
+          "merge_sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
+          "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
+          "merged_at": "2026-11-07T04:54:50Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
           "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
@@ -1003,7 +985,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1331,14 +1313,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "6b032c576e69e1c1b62089a71f160ecac9051151",
-          "data": "2026-11-07T01:39:41-03:00",
-          "assunto": "test(ci): valida sintaxe do teste real opt-in de lajes sem arquivo privado",
+          "sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
+          "data": "2026-11-07T01:51:13-03:00",
+          "assunto": "test(orq): executar verificação TRd2 TRd3 TRd4 com oito ELU na suíte oficial",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1691,7 +1673,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 639,
-  "commits_main_analisados": 3234,
+  "commits_main_analisados": 3240,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
