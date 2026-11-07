@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T00:59:19Z",
+  "gerado_em": "2026-11-07T04:20:58Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -10,10 +10,10 @@
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-    "gerado_em": "2026-11-06T23:14:59Z",
+    "gerado_em": "2026-11-07T00:58:37Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 0,
-    "idade_horas": 1.7
+    "idade_horas": 3.4
   },
   "frentes": [
     {
@@ -25,8 +25,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 742,
+            "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+            "rascunho": true,
+            "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+            "ci": "pendente"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -862,8 +871,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 742,
+            "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+            "rascunho": true,
+            "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+            "ci": "pendente"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -1182,6 +1200,14 @@
       "pr": {
         "estado": "aberto",
         "itens": [
+          {
+            "numero": 742,
+            "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+            "rascunho": true,
+            "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+            "ci": "pendente"
+          },
           {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
@@ -1731,7 +1757,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 631,
+  "janela_prs": 632,
   "commits_main_analisados": 3194,
   "commits_main_truncado": false,
   "erros": [],
