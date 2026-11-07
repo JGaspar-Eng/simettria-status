@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:20:58Z",
+  "gerado_em": "2026-11-07T04:24:44Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-    "data": "2026-11-06T23:10:06Z"
+    "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+    "data": "2026-11-07T04:23:29Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-    "gerado_em": "2026-11-07T00:58:37Z",
+    "gerado_em": "2026-11-07T04:20:04Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 3.4
+    "defasagem_commits_main": 13,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -25,22 +25,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 98,
+        "integrados_recentes": [
           {
             "numero": 742,
             "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:23:30Z",
+            "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
             "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
-            "ci": "pendente"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 97,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 741,
             "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
@@ -49,7 +50,7 @@
             "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
             "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 738,
@@ -150,38 +151,28 @@
             "head_sha": "808f6bfe9e83d4af70feac3bf8f96ed1a099802d",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 718,
-            "titulo": "VIGAS-VF-2: confrontar viga contínua com solução analítica de dois vãos",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/718",
-            "merged_at": "2026-11-05T22:51:31Z",
-            "merge_sha": "70caa7a8dffbaac8ddea3be412bb41cc97765f97",
-            "head_sha": "bd335d468926a5db4754265b80a228bf7e7c247e",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 741,
-          "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
-          "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-          "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
-          "merged_at": "2026-11-06T23:10:06Z",
+          "numero": 742,
+          "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+          "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+          "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+          "merged_at": "2026-11-07T04:23:30Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-          "data": "2026-11-06T20:10:06-03:00",
-          "assunto": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106",
-          "ci": "passou"
+          "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+          "data": "2026-11-07T01:23:29-03:00",
+          "assunto": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -361,14 +352,14 @@
         "integrados_recentes": [],
         "ultimo": null,
         "ultimo_commit": {
-          "sha": "a2605666d1d9c9cf75fbe41c53ae2c476e350fed",
-          "data": "2026-11-06T18:18:06-03:00",
-          "assunto": "test(orq): ligação T, ponta livre natural, balanço legado e oito ELU com rigidez automática",
+          "sha": "1871c565e7cac9c7a45ce38d9b4e30572dacce67",
+          "data": "2026-11-07T01:14:04-03:00",
+          "assunto": "test(orq): calculo mm ancoragens e alternativas V+T no T, pilar e balanco sem editar modelo",
           "ci": "sem_evidencia"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -871,22 +862,23 @@
         "itens": []
       },
       "pr": {
-        "estado": "aberto",
-        "itens": [
+        "estado": "nenhum",
+        "itens": []
+      },
+      "main": {
+        "estado": "integrado",
+        "total_integrados": 16,
+        "integrados_recentes": [
           {
             "numero": 742,
             "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
-            "rascunho": true,
+            "merged_at": "2026-11-07T04:23:30Z",
+            "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
             "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
-            "ci": "pendente"
-          }
-        ]
-      },
-      "main": {
-        "estado": "integrado",
-        "total_integrados": 15,
-        "integrados_recentes": [
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 709,
             "titulo": "VIGA-DET-09: cadastro guiado de geometria física e origem de ancoragens com recálculo seguro",
@@ -895,7 +887,7 @@
             "merge_sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
             "head_sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 707,
@@ -996,38 +988,28 @@
             "head_sha": "b60662cc34d23d86390b36634afcfd3a9efe060c",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 594,
-            "titulo": "NBR 6118: impedir ancoragem com As de ELU ausente ou obsoleto",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/594",
-            "merged_at": "2026-10-25T19:17:02Z",
-            "merge_sha": "89175fd6c3b07be068fdfca0b985003ea30d1ddc",
-            "head_sha": "4b39bae8a3161b5cc42169c7730890e4c5dbc65a",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 709,
-          "titulo": "VIGA-DET-09: cadastro guiado de geometria física e origem de ancoragens com recálculo seguro",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/709",
-          "merge_sha": "58d057fd9d3df62be70f7b89b440caf5cc8d69f5",
-          "head_sha": "7c844c2b36f21845941b78e63c215ab836dd2bce",
-          "merged_at": "2026-11-05T17:24:52Z",
+          "numero": 742,
+          "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+          "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+          "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+          "merged_at": "2026-11-07T04:23:30Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3f3e2c80a74fdc7e8232c6d38e80f680887bd9ce",
-          "data": "2026-11-05T19:39:11-03:00",
-          "assunto": "test(vf2): declarar cortante nos pontos sinteticos do ensaio manual",
-          "ci": "sem_evidencia"
+          "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+          "data": "2026-11-07T01:23:29-03:00",
+          "assunto": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1201,14 +1183,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 742,
-            "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
-            "rascunho": true,
-            "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
-            "ci": "pendente"
-          },
-          {
             "numero": 562,
             "titulo": "fix: orientação de pilares responsiva, vento didático e auditoria ORQ coerente",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
@@ -1244,8 +1218,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 130,
+        "total_integrados": 131,
         "integrados_recentes": [
+          {
+            "numero": 742,
+            "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+            "merged_at": "2026-11-07T04:23:30Z",
+            "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+            "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 741,
             "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
@@ -1254,7 +1238,7 @@
             "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
             "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 740,
@@ -1355,38 +1339,28 @@
             "head_sha": "4aa40a566244022609859b40448104d6b1df7f0e",
             "ci_pr": "passou",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 698,
-            "titulo": "Vigas 3D: selecionar, tornar translúcida e revelar armaduras rastreadas do ORQ",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/698",
-            "merged_at": "2026-11-04T23:47:20Z",
-            "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
-            "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
-            "ci_pr": "passou",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 741,
-          "titulo": "Vigas: distinguir alvenaria/platibanda declaradas e evitar desclassificação fictícia",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/741",
-          "merge_sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-          "head_sha": "62e8907317a047c4a58a366ebe977985190c4071",
-          "merged_at": "2026-11-06T23:10:06Z",
+          "numero": 742,
+          "titulo": "Vigas ORQ: calcular automaticamente ancoragens e alternativas V+T em cada ligação",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/742",
+          "merge_sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+          "head_sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+          "merged_at": "2026-11-07T04:23:30Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-          "data": "2026-11-06T20:10:06-03:00",
-          "assunto": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106",
-          "ci": "passou"
+          "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+          "data": "2026-11-07T01:23:29-03:00",
+          "assunto": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1758,7 +1732,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 632,
-  "commits_main_analisados": 3194,
+  "commits_main_analisados": 3207,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

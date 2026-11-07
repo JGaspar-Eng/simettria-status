@@ -1,84 +1,84 @@
 {
-  "generated_at": "2026-11-07T04:20:04Z",
+  "generated_at": "2026-11-07T04:23:45Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-    "short_sha": "74f4f9ad",
+    "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+    "short_sha": "59dfb745",
     "author": "Joanez Gaspar",
-    "date": "2026-11-06T20:10:06-03:00",
-    "message": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106"
+    "date": "2026-11-07T01:23:29-03:00",
+    "message": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107"
   },
   "commits": [
     {
-      "sha": "74f4f9ad494fe6deda96b82a19a43aa62c63e6a1",
-      "short_sha": "74f4f9ad",
+      "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
+      "short_sha": "59dfb745",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:10:06-03:00",
-      "message": "Merge pull request #741 from JGaspar-Eng/fix/orq-viga-desclassificacao-e-identidade-carga-20261106"
+      "date": "2026-11-07T01:23:29-03:00",
+      "message": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107"
     },
     {
-      "sha": "2828f27fd592ec9953b5053eb0a1f707c9466650",
-      "short_sha": "2828f27f",
+      "sha": "2aeebfc4c31abc615d604567fe6d6d70c078263b",
+      "short_sha": "2aeebfc4",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:08:06-03:00",
-      "message": "Merge pull request #740 from JGaspar-Eng/fix/orq-vigencia-normativa-main-atual-20261106"
+      "date": "2026-11-07T01:20:10-03:00",
+      "message": "test(orq): falta de rotação do pilar não vira apoio fictício mas mantém cálculo de lb"
     },
     {
-      "sha": "62e8907317a047c4a58a366ebe977985190c4071",
-      "short_sha": "62e89073",
+      "sha": "758953e7daf24ec776546f5bcb74df017af54c5b",
+      "short_sha": "758953e7",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:05:11-03:00",
-      "message": "test(vigas): impedir falsa desclassificacao e rotular apenas origem registrada"
+      "date": "2026-11-07T01:20:05-03:00",
+      "message": "fix(orq): não assumir rotação zero do pilar para estimar espaço físico de ancoragem"
     },
     {
-      "sha": "c84fb659711d02f8b401f9be3ab35a9b6dc68013",
-      "short_sha": "c84fb659",
+      "sha": "0d9db8625d915780d58695b3a95799519de137ba",
+      "short_sha": "0d9db862",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:04:52-03:00",
-      "message": "feat(ui): distinguir platibanda e alvenaria somente quando origem estiver registrada"
+      "date": "2026-11-07T01:18:19-03:00",
+      "message": "test(orq): comprovar esforcos nodais I J concomitantes nos oito ELU"
     },
     {
-      "sha": "593f596a87c3b4ace0b7f39cdcc16f4d0f15ec7f",
-      "short_sha": "593f596a",
+      "sha": "db0e5f37d6e2a697168362a83f91b27b6f076d83",
+      "short_sha": "db0e5f37",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:04:42-03:00",
-      "message": "fix(vigas): registrar desclassificacao apenas quando houve classe anterior"
+      "date": "2026-11-07T01:18:05-03:00",
+      "message": "feat(ui): mostrar momentos e torcoes por no e caso ELU junto de ancoragens"
     },
     {
-      "sha": "29f6bb53de56bcd25299eca663266fcfd77f78f8",
-      "short_sha": "29f6bb53",
+      "sha": "9fd9ee475bc469a0b40bab174b3f3767d1cbdc44",
+      "short_sha": "9fd9ee47",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:03:51-03:00",
-      "message": "test(normas): conciliar suite com o novo contrato das ligacoes ORQ"
+      "date": "2026-11-07T01:17:49-03:00",
+      "message": "feat(orq): alimentar verificacao nodal I J com oito ELU e esforcos concomitantes"
     },
     {
-      "sha": "5388c9cbe9cb34819ca192b9c60afc8de5da9066",
-      "short_sha": "5388c9cb",
+      "sha": "91c0fd74de254d2b35e892f792778cdd521c5448",
+      "short_sha": "91c0fd74",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:03:47-03:00",
-      "message": "feat(ui): alertar revisoes ABNT atuais mantendo calculo antigo explicitado"
+      "date": "2026-11-07T01:17:36-03:00",
+      "message": "feat(orq): calcular as seis solicitacoes do mesmo ELU nas duas pontas dos nos de vigas"
     },
     {
-      "sha": "f0efb143d62fb10bfdb3755f06076fb1f433f86e",
-      "short_sha": "f0efb143",
+      "sha": "0ca2d143874bb07d02cb4dbe978b83e0eaebfcf9",
+      "short_sha": "0ca2d143",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:03:44-03:00",
-      "message": "feat(normas): recuperar orq_vigencia_normativa_atual.mjs com CI atual"
+      "date": "2026-11-07T01:16:52-03:00",
+      "message": "test(orq): provar que 8 ELU alimentam o calculo automatico de ancoragem"
     },
     {
-      "sha": "3c62cd78ed09e8504733d20779153332c1d920d9",
-      "short_sha": "3c62cd78",
+      "sha": "718b76e56b9eb41cc51c6f261930880db416265a",
+      "short_sha": "718b76e5",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:03:40-03:00",
-      "message": "feat(normas): recuperar revisao_normativa_service.js com CI atual"
+      "date": "2026-11-07T01:15:54-03:00",
+      "message": "feat(ui): exibir ancoragens mm, déficit do nó e estribos V+T calculados por viga"
     },
     {
-      "sha": "225e8951fd72401b4f1f1f17ec12415b8e07f23c",
-      "short_sha": "225e8951",
+      "sha": "6c8964f761604e642c5642c6f75de3c23a887ca6",
+      "short_sha": "6c8964f7",
       "author": "Joanez Gaspar",
-      "date": "2026-11-06T20:02:48-03:00",
-      "message": "Merge pull request #738 from JGaspar-Eng/fix/orq-auditoria-nodal-sem-alerta-obsoleto-20261106"
+      "date": "2026-11-07T01:14:08-03:00",
+      "message": "test(orq): executar novo dimensionamento automatico de ligacoes na suite oficial"
     }
   ],
   "development": {
@@ -3160,7 +3160,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42337956766",
-    "run_number": "1325"
+    "run_id": "42338250547",
+    "run_number": "1326"
   }
 }
