@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:50:00Z",
+  "gerado_em": "2026-11-07T04:51:18Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
-    "data": "2026-11-07T04:44:29Z"
+    "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+    "data": "2026-11-07T04:50:20Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
-    "gerado_em": "2026-11-07T04:46:26Z",
+    "gerado_em": "2026-11-07T04:49:08Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 6,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -374,14 +374,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 747,
-            "titulo": "Fundações: calcular e apresentar Hx/Hy/Mz dos oito ELU antes de exigir novos dados",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/747",
-            "rascunho": true,
-            "head_sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -404,29 +396,23 @@
             "rascunho": true,
             "head_sha": "4a82ed969ebb1c20b953d54a9cdc0753f9fd54fb",
             "ci": "passou"
-          },
-          {
-            "numero": 555,
-            "titulo": "SIM-7: mostrar demandas horizontais por apoio sem dimensionar estacas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/555",
-            "rascunho": true,
-            "head_sha": "b6839dcbbd42770c5f3dfcc877e96a19d5d36b1c",
-            "ci": "passou"
-          },
-          {
-            "numero": 554,
-            "titulo": "SIM-7: identificar ações não axiais antes de pedir dados de estacas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/554",
-            "rascunho": true,
-            "head_sha": "ed084c2c5d24dff3198ef1328dcc0a2d6562808d",
-            "ci": "passou"
           }
         ]
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 106,
+        "total_integrados": 107,
         "integrados_recentes": [
+          {
+            "numero": 747,
+            "titulo": "Fundações: calcular e apresentar Hx/Hy/Mz dos oito ELU antes de exigir novos dados",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/747",
+            "merged_at": "2026-11-07T04:50:20Z",
+            "merge_sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+            "head_sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 745,
             "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
@@ -464,7 +450,7 @@
             "merged_at": "2026-11-04T23:51:41Z",
             "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
             "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -536,38 +522,28 @@
             "head_sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 677,
-            "titulo": "Corrigir plano de referência do Babylon: base estrutural em vez da ponta das estacas",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/677",
-            "merged_at": "2026-11-03T01:56:54Z",
-            "merge_sha": "b38977ba1a98d557badf8925b7c5f9e9b2fc023c",
-            "head_sha": "90f3516210a3ef98b05f4cedf853ad72c39fd188",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 745,
-          "titulo": "Vigas: concluir publicação da ELS rara no Graph, com edição normativa rastreável",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/745",
-          "merge_sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-          "head_sha": "7dc6ee99d9423038836b615cb82424840359636b",
-          "merged_at": "2026-11-07T04:42:16Z",
+          "numero": 747,
+          "titulo": "Fundações: calcular e apresentar Hx/Hy/Mz dos oito ELU antes de exigir novos dados",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/747",
+          "merge_sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+          "head_sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
+          "merged_at": "2026-11-07T04:50:20Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-          "data": "2026-11-07T01:42:16-03:00",
-          "assunto": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107",
-          "ci": "passou"
+          "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+          "data": "2026-11-07T01:50:20-03:00",
+          "assunto": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -918,7 +894,7 @@
             "merged_at": "2026-11-04T23:51:41Z",
             "merge_sha": "49fcbe6ee851b1baba1ade409024eb46c1f2e9c6",
             "head_sha": "f446de4866ca7fe2ff76f2f6a2ff2c0f435f3d7e",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1689,7 +1665,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 637,
-  "commits_main_analisados": 3228,
+  "commits_main_analisados": 3234,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [

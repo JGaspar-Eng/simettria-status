@@ -1,21 +1,63 @@
 {
-  "generated_at": "2026-11-07T04:49:08Z",
+  "generated_at": "2026-11-07T04:50:39Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
-    "short_sha": "5af0a969",
+    "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+    "short_sha": "6b8817d4",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T01:44:29-03:00",
-    "message": "Merge pull request #746 from JGaspar-Eng/test/lajes-modelo-real-selecao-exportacao-regressao-20261107"
+    "date": "2026-11-07T01:50:20-03:00",
+    "message": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107"
   },
   "commits": [
+    {
+      "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+      "short_sha": "6b8817d4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:50:20-03:00",
+      "message": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107"
+    },
+    {
+      "sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
+      "short_sha": "608c9612",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:45:48-03:00",
+      "message": "test(fund): assert textual exato do alerta sobre envelopes não simultâneos"
+    },
     {
       "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
       "short_sha": "5af0a969",
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:44:29-03:00",
       "message": "Merge pull request #746 from JGaspar-Eng/test/lajes-modelo-real-selecao-exportacao-regressao-20261107"
+    },
+    {
+      "sha": "52bb9b70993b4cc667275d50ab673a2cbf4ba2ac",
+      "short_sha": "52bb9b70",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:43:55-03:00",
+      "message": "test(fund): oito ELU Hx Hy Mz sem novos campos e sem misturar máximos"
+    },
+    {
+      "sha": "08682c49279fd0c2e629c5785cde4922ac0caf31",
+      "short_sha": "08682c49",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:43:51-03:00",
+      "message": "test(fund): oito ELU Hx Hy Mz sem novos campos e sem misturar máximos"
+    },
+    {
+      "sha": "a966e2c4e9ccf4178145f7c51b09864bb96f8afe",
+      "short_sha": "a966e2c4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:43:33-03:00",
+      "message": "feat(fund): dar ao usuário esforços Hx Hy Mz e casos sem esconder sob exigências de cadastro"
+    },
+    {
+      "sha": "435e9db4b8d5e613d8ba5861572b9ebce57b638d",
+      "short_sha": "435e9db4",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:43:12-03:00",
+      "message": "fix(fund): calcular e mostrar Hx Hy Mz por ELU antes de solicitar parametros de estacas"
     },
     {
       "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:39:23-03:00",
       "message": "test(ui): recuperar teste dinamico real de lajes sem contagens antigas"
-    },
-    {
-      "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
-      "short_sha": "fc8ac6cf",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:38:24-03:00",
-      "message": "Merge pull request #744 from JGaspar-Eng/fix/cobertura-revisao-um-clique-gkqk-sem-duplicar-20261107"
-    },
-    {
-      "sha": "7dc6ee99d9423038836b615cb82424840359636b",
-      "short_sha": "7dc6ee99",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:37:42-03:00",
-      "message": "docs(els): adendo da combinação rara com versão histórica e resultado do estudo"
-    },
-    {
-      "sha": "2adf8f68745c69f141e2d5e0eda150b51a6f53a6",
-      "short_sha": "2adf8f68",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:37:13-03:00",
-      "message": "test(els): rastrear combinação rara no grafo de vigas e preservar demais combinações"
-    },
-    {
-      "sha": "97d29d60834c2903f2515500f7bc43c2f7aeff8f",
-      "short_sha": "97d29d60",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:37:09-03:00",
-      "message": "test(els): rastrear combinação rara no grafo de vigas e preservar demais combinações"
-    },
-    {
-      "sha": "05d961f489193d360c63715c20bdd49a800fd296",
-      "short_sha": "05d961f4",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:37:05-03:00",
-      "message": "test(els): rastrear combinação rara no grafo de vigas e preservar demais combinações"
-    },
-    {
-      "sha": "022a00d86d2ed3dc3dc57d55f468462593d891aa",
-      "short_sha": "022a00d8",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:37:00-03:00",
-      "message": "test(els): rastrear combinação rara no grafo de vigas e preservar demais combinações"
     }
   ],
   "development": {
@@ -4055,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42340054167",
-    "run_number": "1340"
+    "run_id": "42340168551",
+    "run_number": "1341"
   }
 }
