@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-11-07T04:42:34Z",
+  "generated_at": "2026-11-07T04:44:55Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-    "short_sha": "4e3c6a62",
+    "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
+    "short_sha": "5af0a969",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T01:42:16-03:00",
-    "message": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107"
+    "date": "2026-11-07T01:44:29-03:00",
+    "message": "Merge pull request #746 from JGaspar-Eng/test/lajes-modelo-real-selecao-exportacao-regressao-20261107"
   },
   "commits": [
+    {
+      "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
+      "short_sha": "5af0a969",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:44:29-03:00",
+      "message": "Merge pull request #746 from JGaspar-Eng/test/lajes-modelo-real-selecao-exportacao-regressao-20261107"
+    },
     {
       "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
       "short_sha": "4e3c6a62",
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:42:16-03:00",
       "message": "Merge pull request #745 from JGaspar-Eng/feat/vigas-els-rara-grafo-versao-rastreavel-20261107"
+    },
+    {
+      "sha": "6b032c576e69e1c1b62089a71f160ecac9051151",
+      "short_sha": "6b032c57",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:39:41-03:00",
+      "message": "test(ci): valida sintaxe do teste real opt-in de lajes sem arquivo privado"
+    },
+    {
+      "sha": "04ffb5dd7d0880c88a1856ec10832d2eb2118361",
+      "short_sha": "04ffb5dd",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:39:23-03:00",
+      "message": "test(ui): recuperar teste dinamico real de lajes sem contagens antigas"
     },
     {
       "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
@@ -58,27 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:37:00-03:00",
       "message": "test(els): rastrear combinação rara no grafo de vigas e preservar demais combinações"
-    },
-    {
-      "sha": "46a9883645621a95b0d6d0b178f1519f9a429ad9",
-      "short_sha": "46a98836",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:36:22-03:00",
-      "message": "feat(els): publicar ELS rara na projeção da viga sem mudar ELU"
-    },
-    {
-      "sha": "7f897483f523570dcb70155984f64eca30bff845",
-      "short_sha": "7f897483",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:36:09-03:00",
-      "message": "feat(graph): expor ELS rara de vigas com edição normativa e fonte rastreável"
-    },
-    {
-      "sha": "90e0f58b5d0045df698b934ec3a143e112ee72b1",
-      "short_sha": "90e0f58b",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:35:07-03:00",
-      "message": "feat(els): manter ELS rara Gk+Qk mesmo sem categoria, com norma legada identificada"
     }
   ],
   "development": {
@@ -3104,7 +3104,7 @@
   },
   "tests": {
     "command": "npm run test:all",
-    "validator_count": 234,
+    "validator_count": 235,
     "validators": [
       {
         "name": "test:servidor-versionado",
@@ -3160,7 +3160,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_viga_torcao_barras_perimetrais_auto.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node --check tests_support/selecao_lajes_modelo_real_browser.mjs && node tests_support/orq_viga_torcao_barras_perimetrais_auto.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -4041,6 +4041,10 @@
       {
         "name": "test:orq-cargas-real-optin",
         "command": "node tests_support/orq_cargas_residencial_real_optin_20261103.mjs"
+      },
+      {
+        "name": "test:real:lajes",
+        "command": "node tests_support/selecao_lajes_modelo_real_browser.mjs"
       }
     ]
   },
@@ -4051,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42339598187",
-    "run_number": "1335"
+    "run_id": "42339752278",
+    "run_number": "1337"
   }
 }

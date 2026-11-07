@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:43:29Z",
+  "gerado_em": "2026-11-07T04:46:03Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
-    "data": "2026-11-07T04:42:16Z"
+    "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
+    "data": "2026-11-07T04:44:29Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "fc8ac6cf1df3d5a79c6e7381936916caa5926da4",
-    "gerado_em": "2026-11-07T04:41:09Z",
+    "sha": "4e3c6a62e26b57a1eb39f6fb7f7ef9a05ec73fe3",
+    "gerado_em": "2026-11-07T04:42:34Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 9,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 3,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -172,7 +172,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -374,6 +374,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 747,
+            "titulo": "Fundações: calcular e apresentar Hx/Hy/Mz dos oito ELU antes de exigir novos dados",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/747",
+            "rascunho": true,
+            "head_sha": "52bb9b70993b4cc667275d50ab673a2cbf4ba2ac",
+            "ci": "falhou"
+          },
+          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -559,7 +567,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -834,7 +842,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1079,7 +1087,7 @@
             "merged_at": "2026-11-04T23:47:20Z",
             "merge_sha": "28f78c16686c38fea5e488557a4bc2ff64e0af76",
             "head_sha": "c7ffc21b42f281dfd9c036078964bdf4558984eb",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1180,14 +1188,6 @@
             "url": "https://github.com/JGaspar-Eng/simettria/pull/558",
             "rascunho": true,
             "head_sha": "f76a7af8aab4a8a6d94cd2323f6cb3e12f75b5e0",
-            "ci": "passou"
-          },
-          {
-            "numero": 544,
-            "titulo": "fix(orq): preservar proveniência das cargas do modelo real",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/544",
-            "rascunho": true,
-            "head_sha": "6440a947f21d51cf5b056252150200fec9fda4f3",
             "ci": "passou"
           }
         ]
@@ -1329,14 +1329,14 @@
           "ci_merge": "passou"
         },
         "ultimo_commit": {
-          "sha": "e331326d5de2f74f8a580f46d680d4d360a7c92e",
-          "data": "2026-11-07T01:29:59-03:00",
-          "assunto": "test(orq): incluir dimensionamento de aço longitudinal de torção no CI completo",
+          "sha": "6b032c576e69e1c1b62089a71f160ecac9051151",
+          "data": "2026-11-07T01:39:41-03:00",
+          "assunto": "test(ci): valida sintaxe do teste real opt-in de lajes sem arquivo privado",
           "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -1495,7 +1495,7 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -1654,17 +1654,17 @@
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     }
   ],
   "nao_classificados": {
     "abertos": [
-      746,
       561,
       310
     ],
     "integrados_recentes": [
+      746,
       744,
       730,
       725,
@@ -1683,14 +1683,13 @@
       643,
       611,
       537,
-      536,
-      535
+      536
     ]
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 636,
-  "commits_main_analisados": 3225,
+  "janela_prs": 637,
+  "commits_main_analisados": 3228,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
