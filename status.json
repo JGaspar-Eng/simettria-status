@@ -1,15 +1,57 @@
 {
-  "generated_at": "2026-11-07T04:27:17Z",
+  "generated_at": "2026-11-07T04:34:48Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
-    "short_sha": "59dfb745",
+    "sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
+    "short_sha": "3c038c77",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T01:23:29-03:00",
-    "message": "Merge pull request #742 from JGaspar-Eng/feat/orq-calculo-automatico-ancoragem-torcao-ligacoes-vigas-20261107"
+    "date": "2026-11-07T01:34:26-03:00",
+    "message": "Merge pull request #743 from JGaspar-Eng/feat/vigas-torcao-armadura-perimetral-automatica-20261107"
   },
   "commits": [
+    {
+      "sha": "3c038c77f4445a45a46dc7afcfde9dedd575ceaf",
+      "short_sha": "3c038c77",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:34:26-03:00",
+      "message": "Merge pull request #743 from JGaspar-Eng/feat/vigas-torcao-armadura-perimetral-automatica-20261107"
+    },
+    {
+      "sha": "e331326d5de2f74f8a580f46d680d4d360a7c92e",
+      "short_sha": "e331326d",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:29:59-03:00",
+      "message": "test(orq): incluir dimensionamento de aço longitudinal de torção no CI completo"
+    },
+    {
+      "sha": "a471c84cf350d0f92f2d2bc7fa5de9b25d0c968d",
+      "short_sha": "a471c84c",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:29:49-03:00",
+      "message": "feat(ui): mostrar barras longitudinais de torção calculadas com área, Ø e espaçamento"
+    },
+    {
+      "sha": "f310f22a91e1840356b521a12679be88782e932e",
+      "short_sha": "f310f22a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:29:32-03:00",
+      "message": "test(orq): aço longitudinal perimetral, coordenadas, espaçamento e V+T sem aprovação fictícia"
+    },
+    {
+      "sha": "66a86699620e1492763011107442aa67ed6605c8",
+      "short_sha": "66a86699",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:29:05-03:00",
+      "message": "feat(orq): integrar barras longitudinais de torcao e combinacoes de estribos calculadas"
+    },
+    {
+      "sha": "c4b063c21a14418f5cc94c21075eb3ca6efdd18f",
+      "short_sha": "c4b063c2",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:28:42-03:00",
+      "message": "feat(vigas): dimensionar barras longitudinais perimetrais de torcao com coordenadas e area real"
+    },
     {
       "sha": "59dfb7458a4c668cc1b1b28053b85828e5650a2a",
       "short_sha": "59dfb745",
@@ -37,48 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:18:19-03:00",
       "message": "test(orq): comprovar esforcos nodais I J concomitantes nos oito ELU"
-    },
-    {
-      "sha": "db0e5f37d6e2a697168362a83f91b27b6f076d83",
-      "short_sha": "db0e5f37",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:18:05-03:00",
-      "message": "feat(ui): mostrar momentos e torcoes por no e caso ELU junto de ancoragens"
-    },
-    {
-      "sha": "9fd9ee475bc469a0b40bab174b3f3767d1cbdc44",
-      "short_sha": "9fd9ee47",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:17:49-03:00",
-      "message": "feat(orq): alimentar verificacao nodal I J com oito ELU e esforcos concomitantes"
-    },
-    {
-      "sha": "91c0fd74de254d2b35e892f792778cdd521c5448",
-      "short_sha": "91c0fd74",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:17:36-03:00",
-      "message": "feat(orq): calcular as seis solicitacoes do mesmo ELU nas duas pontas dos nos de vigas"
-    },
-    {
-      "sha": "0ca2d143874bb07d02cb4dbe978b83e0eaebfcf9",
-      "short_sha": "0ca2d143",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:16:52-03:00",
-      "message": "test(orq): provar que 8 ELU alimentam o calculo automatico de ancoragem"
-    },
-    {
-      "sha": "718b76e56b9eb41cc51c6f261930880db416265a",
-      "short_sha": "718b76e5",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:15:54-03:00",
-      "message": "feat(ui): exibir ancoragens mm, déficit do nó e estribos V+T calculados por viga"
-    },
-    {
-      "sha": "6c8964f761604e642c5642c6f75de3c23a887ca6",
-      "short_sha": "6c8964f7",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:14:08-03:00",
-      "message": "test(orq): executar novo dimensionamento automatico de ligacoes na suite oficial"
     }
   ],
   "development": {
@@ -3160,7 +3160,7 @@
       },
       {
         "name": "test:orq-assistente",
-        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
+        "command": "node tests_support/orq_cargas_residencial_confirmadas_usuario.mjs && node tests/validar_fixture_residencial_independente_desktop_20261103.mjs && node tests_support/orq_auditoria_niveis_pv_lajes_reservatorio.mjs && node tests_support/orq_auditoria_vinte_frentes.mjs && node tests_support/orq_autoplano_dez_verificacoes.mjs && node tests_support/orq_autoplano_prova_oito_elu_apoios.mjs && node tests_support/orq_relatorio_oito_elu.mjs && node tests_support/fundacao_sondagens_autodiagnostico.mjs && node tests_support/fundacao_10_frentes_auditoria_gates.mjs && node --check tests_support/orq_assistente_real_abertura_repetida_browser.mjs && node --check tests_support/vento_comparacao_vinculos_browser.mjs && node tests_support/orq_pendencia_cobertura_calculo.mjs && node tests_support/orq_vigencia_normativa_atual.mjs && node tests_support/orq_ligacoes_rotulos_coerencia_pos_orq.mjs && node tests_support/orq_viga_torcao_barras_perimetrais_auto.mjs && node tests_support/orq_vigas_ancoragem_torcao_automatica.mjs && node tests_support/orq_vinculos_automaticos_portico.mjs && npm run test:orq-reacoes-origem"
       },
       {
         "name": "test:tabela-k",
@@ -4051,7 +4051,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42338506203",
-    "run_number": "1328"
+    "run_id": "42339048190",
+    "run_number": "1329"
   }
 }
