@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:59:30Z",
+  "gerado_em": "2026-11-07T05:01:23Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
-    "data": "2026-11-07T04:54:49Z"
+    "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
+    "data": "2026-11-07T05:00:08Z"
   },
-  "ci_main_atual": "passou",
+  "ci_main_atual": "pendente",
   "publicado": {
     "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
-    "gerado_em": "2026-11-07T04:55:28Z",
+    "gerado_em": "2026-11-07T04:58:35Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "defasagem_commits_main": 7,
+    "idade_horas": 0.0
   },
   "frentes": [
     {
@@ -382,22 +382,6 @@
             "ci": "pendente"
           },
           {
-            "numero": 750,
-            "titulo": "Fundações: repartir Hx/Hy/Mz por grupo de estacas — reconciliado com main",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/750",
-            "rascunho": true,
-            "head_sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
-            "ci": "pendente"
-          },
-          {
-            "numero": 749,
-            "titulo": "Fundações: calcular distribuição lateral Hx/Hy/Mz por estaca em 8 ELU (3 GDL)",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/749",
-            "rascunho": true,
-            "head_sha": "d0b38a9f4ce524bee06158b5013df077306dee68",
-            "ci": "passou"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -412,21 +396,23 @@
             "rascunho": true,
             "head_sha": "bd0d097ec18b19de082a55e09bb4f123a1643622",
             "ci": "passou"
-          },
-          {
-            "numero": 556,
-            "titulo": "SIM-7: repartir Hx, Hy e Mz por estaca em estudo não executivo",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/556",
-            "rascunho": true,
-            "head_sha": "4a82ed969ebb1c20b953d54a9cdc0753f9fd54fb",
-            "ci": "passou"
           }
         ]
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 107,
+        "total_integrados": 108,
         "integrados_recentes": [
+          {
+            "numero": 750,
+            "titulo": "Fundações: repartir Hx/Hy/Mz por grupo de estacas — reconciliado com main",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/750",
+            "merged_at": "2026-11-07T05:00:09Z",
+            "merge_sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
+            "head_sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 747,
             "titulo": "Fundações: calcular e apresentar Hx/Hy/Mz dos oito ELU antes de exigir novos dados",
@@ -435,7 +421,7 @@
             "merge_sha": "6b8817d42d5676a55a221b29389e158596ecb433",
             "head_sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
             "ci_pr": "passou",
-            "ci_merge": "passou"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 745,
@@ -536,38 +522,28 @@
             "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 678,
-            "titulo": "Impedir prévia obsoleta e expor falhas de cadastro de fundações no Babylon",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/678",
-            "merged_at": "2026-11-03T02:45:43Z",
-            "merge_sha": "46bad3092ec9fbbbd18ce5a388a20ff75be41b21",
-            "head_sha": "c00b2f1fda744e2a952eebd285761cfbac6a34e0",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 747,
-          "titulo": "Fundações: calcular e apresentar Hx/Hy/Mz dos oito ELU antes de exigir novos dados",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/747",
-          "merge_sha": "6b8817d42d5676a55a221b29389e158596ecb433",
-          "head_sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
-          "merged_at": "2026-11-07T04:50:20Z",
+          "numero": 750,
+          "titulo": "Fundações: repartir Hx/Hy/Mz por grupo de estacas — reconciliado com main",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/750",
+          "merge_sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
+          "head_sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
+          "merged_at": "2026-11-07T05:00:09Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "passou"
+          "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
-          "data": "2026-11-07T01:50:20-03:00",
-          "assunto": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107",
-          "ci": "passou"
+          "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
+          "data": "2026-11-07T02:00:08-03:00",
+          "assunto": "Merge pull request #750 from JGaspar-Eng/feat/fundacoes-lateral-capitel-3gdl-main-reconciliada-20261107",
+          "ci": "pendente"
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "aguardando_publicacao"
       }
     },
     {
@@ -918,7 +894,7 @@
             "merged_at": "2026-11-05T11:50:05Z",
             "merge_sha": "e906bdef9fe7ef9578d0f879736a8baca7fee2c2",
             "head_sha": "2b52b984d2b40382d6bafc88b90e430e56fbb4f6",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1689,7 +1665,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 641,
-  "commits_main_analisados": 3240,
+  "commits_main_analisados": 3247,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
