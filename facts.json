@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T12:49:43Z",
+  "gerado_em": "2026-11-07T13:42:41Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -10,10 +10,10 @@
   "ci_main_atual": "passou",
   "publicado": {
     "sha": "fc713f9c2f53513366cf359e772c44b17151e08a",
-    "gerado_em": "2026-11-07T12:46:16Z",
+    "gerado_em": "2026-11-07T12:48:44Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
     "defasagem_commits_main": 0,
-    "idade_horas": 0.1
+    "idade_horas": 0.9
   },
   "frentes": [
     {
@@ -1106,8 +1106,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 754,
+            "titulo": "feat(ux): edição CAD em lote, progresso gráfico ORQ e comparação visual 2D/3D",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/754",
+            "rascunho": true,
+            "head_sha": "ec6761fb08d5d3bc21ff4d97fffb6fae35645c5b",
+            "ci": "passou"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -1576,9 +1585,7 @@
     }
   ],
   "nao_classificados": {
-    "abertos": [
-      754
-    ],
+    "abertos": [],
     "integrados_recentes": [
       746,
       744,
