@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T04:51:18Z",
+  "gerado_em": "2026-11-07T04:54:35Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
     "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
     "data": "2026-11-07T04:50:20Z"
   },
-  "ci_main_atual": "pendente",
+  "ci_main_atual": "passou",
   "publicado": {
-    "sha": "5af0a969edb19ab147006d1b6b71a86f9626fd5d",
-    "gerado_em": "2026-11-07T04:49:08Z",
+    "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
+    "gerado_em": "2026-11-07T04:50:39Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 6,
-    "idade_horas": 0.0
+    "defasagem_commits_main": 0,
+    "idade_horas": 0.1
   },
   "frentes": [
     {
@@ -25,8 +25,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 748,
+            "titulo": "Vigas: confrontar TEd/VEd com resistência TRd2/TRd3/TRd4 nos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/748",
+            "rascunho": true,
+            "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
+            "ci": "pendente"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -374,6 +383,14 @@
         "estado": "aberto",
         "itens": [
           {
+            "numero": 749,
+            "titulo": "Fundações: calcular distribuição lateral Hx/Hy/Mz por estaca em 8 ELU (3 GDL)",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/749",
+            "rascunho": true,
+            "head_sha": "d0b38a9f4ce524bee06158b5013df077306dee68",
+            "ci": "pendente"
+          },
+          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -411,7 +428,7 @@
             "merge_sha": "6b8817d42d5676a55a221b29389e158596ecb433",
             "head_sha": "608c9612abbfa8568bad238e5b90f23435ed7ed8",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "passou"
           },
           {
             "numero": 745,
@@ -533,17 +550,17 @@
           "merged_at": "2026-11-07T04:50:20Z",
           "ci": "passou",
           "ci_pr": "passou",
-          "ci_merge": "pendente"
+          "ci_merge": "passou"
         },
         "ultimo_commit": {
           "sha": "6b8817d42d5676a55a221b29389e158596ecb433",
           "data": "2026-11-07T01:50:20-03:00",
           "assunto": "Merge pull request #747 from JGaspar-Eng/fix/fundacoes-oito-elu-nonaxial-sempre-visivel-20261107",
-          "ci": "pendente"
+          "ci": "passou"
         }
       },
       "publicado": {
-        "estado": "aguardando_publicacao"
+        "estado": "publicado"
       }
     },
     {
@@ -830,8 +847,17 @@
         "itens": []
       },
       "pr": {
-        "estado": "nenhum",
-        "itens": []
+        "estado": "aberto",
+        "itens": [
+          {
+            "numero": 748,
+            "titulo": "Vigas: confrontar TEd/VEd com resistência TRd2/TRd3/TRd4 nos oito ELU",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/748",
+            "rascunho": true,
+            "head_sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
+            "ci": "pendente"
+          }
+        ]
       },
       "main": {
         "estado": "integrado",
@@ -1664,7 +1690,7 @@
   },
   "local_repositorios": null,
   "prs_truncado": false,
-  "janela_prs": 637,
+  "janela_prs": 639,
   "commits_main_analisados": 3234,
   "commits_main_truncado": false,
   "erros": [],
