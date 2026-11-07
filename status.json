@@ -1,21 +1,56 @@
 {
-  "generated_at": "2026-11-07T05:00:29Z",
+  "generated_at": "2026-11-07T05:02:18Z",
   "repository": "JGaspar-Eng/simettria",
   "branch": "main",
   "head": {
-    "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
-    "short_sha": "3ef2d131",
+    "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
+    "short_sha": "ce66e19a",
     "author": "Joanez Gaspar",
-    "date": "2026-11-07T02:00:08-03:00",
-    "message": "Merge pull request #750 from JGaspar-Eng/feat/fundacoes-lateral-capitel-3gdl-main-reconciliada-20261107"
+    "date": "2026-11-07T02:01:58-03:00",
+    "message": "Merge pull request #751 from JGaspar-Eng/fix/fundacoes-acao-raiz-cobertura-sem-alertas-duplicados-20261107"
   },
   "commits": [
+    {
+      "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
+      "short_sha": "ce66e19a",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T02:01:58-03:00",
+      "message": "Merge pull request #751 from JGaspar-Eng/fix/fundacoes-acao-raiz-cobertura-sem-alertas-duplicados-20261107"
+    },
     {
       "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
       "short_sha": "3ef2d131",
       "author": "Joanez Gaspar",
       "date": "2026-11-07T02:00:08-03:00",
       "message": "Merge pull request #750 from JGaspar-Eng/feat/fundacoes-lateral-capitel-3gdl-main-reconciliada-20261107"
+    },
+    {
+      "sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
+      "short_sha": "2e9ec876",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:58:44-03:00",
+      "message": "test(fund): causa raiz única de cobertura em diagnósticos diretos e aninhados"
+    },
+    {
+      "sha": "435c3376f0c97c8583062ddcfbdb270ec4f3fe7c",
+      "short_sha": "435c3376",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:58:27-03:00",
+      "message": "feat(ui): agrupar bloqueio de cobertura e abrir editor por ação real"
+    },
+    {
+      "sha": "b71d07a300436be71492218da96b941c5c120e1c",
+      "short_sha": "b71d07a3",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:58:16-03:00",
+      "message": "feat(ui): exibir revisao direta da cobertura quando bloquear ELU"
+    },
+    {
+      "sha": "852486dc3d49f3e0b9ce62f34a82a41e17ad7b65",
+      "short_sha": "852486dc",
+      "author": "Joanez Gaspar",
+      "date": "2026-11-07T01:57:48-03:00",
+      "message": "feat(fund): agrupar alerta por causa raiz da cobertura antes dos oito ELU"
     },
     {
       "sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
@@ -44,41 +79,6 @@
       "author": "Joanez Gaspar",
       "date": "2026-11-07T01:55:49-03:00",
       "message": "feat(fund): reconciliar cálculo 3GDL de estacas laterais com motor de torção atual"
-    },
-    {
-      "sha": "d3663a70805c2d539c0a4655628bbfbb6186775d",
-      "short_sha": "d3663a70",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:55:43-03:00",
-      "message": "feat(fund): reconciliar cálculo 3GDL de estacas laterais com motor de torção atual"
-    },
-    {
-      "sha": "e692f67ef87043ba5a827a790ed8fb869047bf31",
-      "short_sha": "e692f67e",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:55:37-03:00",
-      "message": "feat(fund): reconciliar cálculo 3GDL de estacas laterais com motor de torção atual"
-    },
-    {
-      "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
-      "short_sha": "c37727dd",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:54:49-03:00",
-      "message": "Merge pull request #748 from JGaspar-Eng/feat/vigas-torcao-confronto-resistente-oito-elu-20261107"
-    },
-    {
-      "sha": "60974282b6eb37cc0acdec8a008f88b620a558af",
-      "short_sha": "60974282",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:51:13-03:00",
-      "message": "test(orq): executar verificação TRd2 TRd3 TRd4 com oito ELU na suíte oficial"
-    },
-    {
-      "sha": "16be0d159e78d71804bcfcfb529d52329c2b9a47",
-      "short_sha": "16be0d15",
-      "author": "Joanez Gaspar",
-      "date": "2026-11-07T01:50:56-03:00",
-      "message": "feat(ui): mostrar TRd2 TRd3 TRd4 e índice resistente por ELU na ficha da viga"
     }
   ],
   "development": {
@@ -4055,7 +4055,7 @@
     "tests": "package.json"
   },
   "workflow_run": {
-    "run_id": "42340827286",
-    "run_number": "1347"
+    "run_id": "42340972630",
+    "run_number": "1350"
   }
 }

@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-07T05:01:23Z",
+  "gerado_em": "2026-11-07T05:02:57Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
-    "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
-    "data": "2026-11-07T05:00:08Z"
+    "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
+    "data": "2026-11-07T05:01:58Z"
   },
   "ci_main_atual": "pendente",
   "publicado": {
-    "sha": "c37727ddf417804ca0487368c6a43987b581b0b5",
-    "gerado_em": "2026-11-07T04:58:35Z",
+    "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
+    "gerado_em": "2026-11-07T05:00:29Z",
     "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 7,
+    "defasagem_commits_main": 5,
     "idade_horas": 0.0
   },
   "frentes": [
@@ -374,14 +374,6 @@
         "estado": "aberto",
         "itens": [
           {
-            "numero": 751,
-            "titulo": "Fundações: causa raiz da cobertura e revisão direta sem avisos repetidos",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/751",
-            "rascunho": true,
-            "head_sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
-            "ci": "pendente"
-          },
-          {
             "numero": 559,
             "titulo": "Pré-dimensionar blocos sobre estacas a partir de ELU e SPT",
             "url": "https://github.com/JGaspar-Eng/simettria/pull/559",
@@ -401,8 +393,18 @@
       },
       "main": {
         "estado": "integrado",
-        "total_integrados": 108,
+        "total_integrados": 109,
         "integrados_recentes": [
+          {
+            "numero": 751,
+            "titulo": "Fundações: causa raiz da cobertura e revisão direta sem avisos repetidos",
+            "url": "https://github.com/JGaspar-Eng/simettria/pull/751",
+            "merged_at": "2026-11-07T05:01:59Z",
+            "merge_sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
+            "head_sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
+            "ci_pr": "passou",
+            "ci_merge": "pendente"
+          },
           {
             "numero": 750,
             "titulo": "Fundações: repartir Hx/Hy/Mz por grupo de estacas — reconciliado com main",
@@ -411,7 +413,7 @@
             "merge_sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
             "head_sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
             "ci_pr": "passou",
-            "ci_merge": "pendente"
+            "ci_merge": "sem_evidencia"
           },
           {
             "numero": 747,
@@ -450,7 +452,7 @@
             "merged_at": "2026-11-05T12:04:29Z",
             "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
             "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -512,33 +514,23 @@
             "head_sha": "1ad95eccb1c2f173249d91cd6324f2779f2e8b73",
             "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
-          },
-          {
-            "numero": 679,
-            "titulo": "Auditar oito combinações ELU de blocos com uma estaca sem inventar resistência a momento",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/679",
-            "merged_at": "2026-11-03T12:08:24Z",
-            "merge_sha": "2eabd7fe8be05c9ccfc3975ab3d9e5aae89d1dd3",
-            "head_sha": "2b459185d89569eae1e45d9a44c34ca81c6ffa56",
-            "ci_pr": "sem_evidencia",
-            "ci_merge": "sem_evidencia"
           }
         ],
         "ultimo": {
-          "numero": 750,
-          "titulo": "Fundações: repartir Hx/Hy/Mz por grupo de estacas — reconciliado com main",
-          "url": "https://github.com/JGaspar-Eng/simettria/pull/750",
-          "merge_sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
-          "head_sha": "a666a446bdabe257c4edd07f63e80b5eff466fb0",
-          "merged_at": "2026-11-07T05:00:09Z",
+          "numero": 751,
+          "titulo": "Fundações: causa raiz da cobertura e revisão direta sem avisos repetidos",
+          "url": "https://github.com/JGaspar-Eng/simettria/pull/751",
+          "merge_sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
+          "head_sha": "2e9ec8768d2f764e0a593e0d0bc431a4f2f2e37a",
+          "merged_at": "2026-11-07T05:01:59Z",
           "ci": "passou",
           "ci_pr": "passou",
           "ci_merge": "pendente"
         },
         "ultimo_commit": {
-          "sha": "3ef2d131c744619d5c91f8d36f375ad5e0b8b274",
-          "data": "2026-11-07T02:00:08-03:00",
-          "assunto": "Merge pull request #750 from JGaspar-Eng/feat/fundacoes-lateral-capitel-3gdl-main-reconciliada-20261107",
+          "sha": "ce66e19ad3d2315372e049aa831cd6b727631c70",
+          "data": "2026-11-07T02:01:58-03:00",
+          "assunto": "Merge pull request #751 from JGaspar-Eng/fix/fundacoes-acao-raiz-cobertura-sem-alertas-duplicados-20261107",
           "ci": "pendente"
         }
       },
@@ -884,7 +876,7 @@
             "merged_at": "2026-11-05T12:04:29Z",
             "merge_sha": "0e605d6cd05e79700ba4f7e1b96433d43ea2caa4",
             "head_sha": "ba0f63221183be0cbbfb819da7e861ac57cafc3d",
-            "ci_pr": "passou",
+            "ci_pr": "sem_evidencia",
             "ci_merge": "sem_evidencia"
           },
           {
@@ -1156,14 +1148,6 @@
             "url": "https://github.com/JGaspar-Eng/simettria/pull/562",
             "rascunho": false,
             "head_sha": "6ae81092ac9dbea220e38743fe588b1dacee53f5",
-            "ci": "passou"
-          },
-          {
-            "numero": 558,
-            "titulo": "Agrupar ELU pendente pela causa na cobertura",
-            "url": "https://github.com/JGaspar-Eng/simettria/pull/558",
-            "rascunho": true,
-            "head_sha": "f76a7af8aab4a8a6d94cd2323f6cb3e12f75b5e0",
             "ci": "passou"
           }
         ]
@@ -1665,7 +1649,7 @@
   "local_repositorios": null,
   "prs_truncado": false,
   "janela_prs": 641,
-  "commits_main_analisados": 3247,
+  "commits_main_analisados": 3252,
   "commits_main_truncado": false,
   "erros": [],
   "limitacoes": [
