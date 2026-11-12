@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "gerado_em": "2026-11-12T00:51:14Z",
+  "gerado_em": "2026-11-12T11:30:09Z",
   "repositorio": "JGaspar-Eng/simettria",
   "limite_horas": 6,
   "main": {
@@ -8,13 +8,7 @@
     "data": "2026-11-07T14:31:37Z"
   },
   "ci_main_atual": "passou",
-  "publicado": {
-    "sha": "13fe68656e9989226bbffa9140db9d7c5df6e68d",
-    "gerado_em": "2026-11-11T17:15:50Z",
-    "url": "https://jgaspar-eng.github.io/simettria-status/status.json",
-    "defasagem_commits_main": 0,
-    "idade_horas": 7.6
-  },
+  "publicado": null,
   "frentes": [
     {
       "id": "vigas",
@@ -172,7 +166,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -331,7 +325,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -359,7 +353,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -518,7 +512,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -617,7 +611,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -776,7 +770,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -935,7 +929,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -1094,7 +1088,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -1253,7 +1247,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -1412,7 +1406,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     },
     {
@@ -1571,7 +1565,7 @@
         }
       },
       "publicado": {
-        "estado": "publicado"
+        "estado": "sem_evidencia"
       }
     }
   ],
@@ -1607,7 +1601,9 @@
   "janela_prs": 646,
   "commits_main_analisados": 3259,
   "commits_main_truncado": false,
-  "erros": [],
+  "erros": [
+    "publicado: https://jgaspar-eng.github.io/simettria-status/status.json?nocache=1794482980: HTTP Error 503: backend read error"
+  ],
   "limitacoes": [
     "A camada local não é observável pelo CI: só existe quando o gerador roda na máquina de desenvolvimento.",
     "\"Publicado\" significa que o SHA de merge está contido no status.json servido pelo Pages no momento da coleta; a próxima coleta confirma publicações mais recentes.",
